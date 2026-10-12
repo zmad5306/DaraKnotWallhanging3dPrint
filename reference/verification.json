@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-11",
+  "scad_sha256": "d214952476c9a398b54235cc27edc35c7365a6b085cf850d1e967f29ffa2a237",
+  "openscad_version": "2021.01",
+  "saved_polygons_valid": true,
+  "external_scad_dependencies": false,
+  "uniform_scaling": {
+    "factor_xyz": [
+      0.75,
+      0.75,
+      0.75
+    ],
+    "overall_width_inches": 36,
+    "measured_extents_mm": [
+      914.3999633789062,
+      914.3999633789062,
+      24.0
+    ],
+    "volume_ratio_to_previous": 0.4218750073742362,
+    "expected_volume_ratio": 0.421875
+  },
+  "renders": [
+    {
+      "mode": "front",
+      "passed": true,
+      "seconds": 1.22,
+      "log": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 3 elements\nGeometries in cache: 334\nGeometry cache size in bytes: 13462600\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.848\n"
+    },
+    {
+      "mode": "angle",
+      "passed": true,
+      "seconds": 1.09,
+      "log": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 3 elements\nGeometries in cache: 334\nGeometry cache size in bytes: 13462600\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.739\n"
+    },
+    {
+      "mode": "back",
+      "passed": true,
+      "seconds": 1.08,
+      "log": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 3 elements\nGeometries in cache: 334\nGeometry cache size in bytes: 13462600\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.731\n"
+    },
+    {
+      "mode": "svg",
+      "passed": true,
+      "seconds": 0.56,
+      "log": "Geometries in cache: 338\nGeometry cache size in bytes: 6200960\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.279\n   Top level object is a 2D object:\n   Contours:     4534\n"
+    },
+    {
+      "mode": "bare",
+      "passed": true,
+      "seconds": 27.55,
+      "log": "Geometries in cache: 7\nGeometry cache size in bytes: 3080896\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 13335104\nTotal rendering time: 0:00:26.800\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     9564\n   Halfedges:   28754\n   Edges:       14377\n   Halffacets:   9558\n   Facets:       4779\n   Volumes:         2\n"
+    },
+    {
+      "mode": "mesh",
+      "passed": true,
+      "seconds": 204.09,
+      "log": "Geometries in cache: 339\nGeometry cache size in bytes: 30457464\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 77065680\nTotal rendering time: 0:03:20.563\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:    55250\n   Halfedges:  165818\n   Edges:       82909\n   Halffacets:  50766\n   Facets:      25383\n   Volumes:         2\n"
+    }
+  ],
+  "full_render_mesh": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_components": 1,
+    "bounds_mm": [
+      [
+        -457.1999816894531,
+        -457.1999816894531,
+        0.0
+      ],
+      [
+        457.1999816894531,
+        457.1999816894531,
+        24.0
+      ]
+    ],
+    "faces": 132728,
+    "positive_volume": true
+  },
+  "fabric_support_check": {
+    "method": "Compare horizontal sections of the full render with the knot-and-M-only render.",
+    "result": "Fabric geometry exists only at its designated thin decorative layer; no lower support structures.",
+    "sections": [
+      {
+        "z_mm": 0.75,
+        "fabric_only_area_mm2": 0.00165
+      },
+      {
+        "z_mm": 4.5,
+        "fabric_only_area_mm2": 0.00832
+      },
+      {
+        "z_mm": 8.925,
+        "fabric_only_area_mm2": 0.01288
+      },
+      {
+        "z_mm": 9.3,
+        "fabric_only_area_mm2": 73851.44788
+      },
+      {
+        "z_mm": 9.75,
+        "fabric_only_area_mm2": 0.01272
+      },
+      {
+        "z_mm": 13.424999999999999,
+        "fabric_only_area_mm2": 0.00039
+      },
+      {
+        "z_mm": 15.0,
+        "fabric_only_area_mm2": 0.0
+      },
+      {
+        "z_mm": 23.924999999999997,
+        "fabric_only_area_mm2": 0.0
+      }
+    ]
+  },
+  "visual_review": [
+    "front",
+    "angle",
+    "back"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "purpose": "Continuous theoretical design reference; no manufacturing features",
+  "source_package": "Dara-Solid-Joint-Backs-v26",
+  "inputs": [
+    {
+      "file": "project-data.json",
+      "sha256": "2237e371c00abf6540ecfaf5d6fb3d9a253eb8343c282dfc10b5926ced41d869"
+    },
+    {
+      "file": "source/approved-knot-master.geojson",
+      "sha256": "46e198894d3476a79a519d02c90e013451a34773815946648b32baf708a54b0f"
+    },
+    {
+      "file": "STL/letter/M_01.stl",
+      "sha256": "b803ba8ba33be76b4e5badbfee8b4e209e7b6f58c536cc661c461e47bf1809af"
+    },
+    {
+      "file": "STL/letter/M_02.stl",
+      "sha256": "710f7abc95d3239980666c2065a5d49c939d38b9abfd0e553b89d70f12259927"
+    },
+    {
+      "file": "STL/letter/M_03.stl",
+      "sha256": "b80168cea008c7799224cf811ef41e0b1a2ccccb664da6bd235a327e6915a139"
+    },
+    {
+      "file": "STL/letter/M_04.stl",
+      "sha256": "bd0dcc5d5013cc664fbea5f0c0c28fa9ffe85c859567addcd95ffe458b85644a"
+    },
+    {
+      "file": "STL/letter/M_05.stl",
+      "sha256": "7651b61c49f17a5b7b3988eef54e2770d217460af133ac203f2fdac3d492ac3b"
+    },
+    {
+      "file": "STL/letter/M_06.stl",
+      "sha256": "3c213bc532c68902a14ae004d7075c03106a1dbd97d5d64e66a4f9c15e4ba23e"
+    },
+    {
+      "file": "STL/letter/M_07.stl",
+      "sha256": "1bc5ee97b9c7cd3bfc38d3d4f382bd0edd2899bd715995bd8cedcf64b1e1e63e"
+    },
+    {
+      "file": "STL/letter/M_08.stl",
+      "sha256": "5b1bb88e830c9fb678443c10e3e6b04a272a7e6cd3128de2979e35a334a8a357"
+    }
+  ],
+  "outline_processing": {
+    "channel_ends_rounded": 24,
+    "channel_corner_radius_mm": 2,
+    "local_curve_cleanups": [
+      {
+        "centre_mm": [
+          -303.54,
+          -478.6
+        ],
+        "max_boundary_change_mm": 0.49837761925835933
+      },
+      {
+        "centre_mm": [
+          -303.54,
+          478.6
+        ],
+        "max_boundary_change_mm": 0.49134170935201654
+      }
+    ],
+    "M_seam_closing_radius_mm": 0.12,
+    "outline_simplification_tolerance_mm": 0.02,
+    "coordinate_grid_mm": 0.001,
+    "M_closed_seam_area_mm2": 94.06005892064422
+  },
+  "reference_dimensions_mm": {
+    "knot_width": 914.4,
+    "knot_height": 914.4,
+    "knot_depth": 13.5,
+    "M_width": 599.88,
+    "M_height": 358.7355,
+    "M_back_z": 13.5,
+    "M_front_z": 24.0,
+    "fabric_back_z": 9.0,
+    "fabric_front_z": 9.6
+  },
+  "outline_checks": {
+    "valid_polygons": true,
+    "continuous_knot_outline": true,
+    "continuous_M_outline": true,
+    "M_holes": 0,
+    "fabric_regions": 12
+  },
+  "omitted": [
+    "part seams",
+    "tongues",
+    "sockets",
+    "dowels",
+    "screw bosses",
+    "wall mounts",
+    "photo clips and recesses",
+    "rear labels",
+    "fabric backing",
+    "fabric support walls",
+    "end ties",
+    "braces"
+  ],
+  "fabric": "Schematic 1.5 mm open grid at 6 mm pitch, 0.6 mm thick; 0.1125 mm edge overlap",
+  "scad_sha256": "d214952476c9a398b54235cc27edc35c7365a6b085cf850d1e967f29ffa2a237",
+  "master_dimensions_mm": {
+    "knot_width": 1219.2,
+    "knot_height": 1219.2,
+    "knot_depth": 18,
+    "M_width": 799.84,
+    "M_height": 478.314,
+    "M_back_z": 18,
+    "M_front_z": 32,
+    "fabric_back_z": 12,
+    "fabric_front_z": 12.8
+  },
+  "uniform_scale": 0.75
+}

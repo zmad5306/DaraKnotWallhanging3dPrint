@@ -1,5 +1,10 @@
 # Dara knot wall hanging
 
+![Dara knot wall hanging on a dark blue wall, with white ribbon, bone-white woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Bone-Copper.png)
+
+Concept rendering: white ribbon, bone-white woven fabric, and a copper manuscript M
+on a dark blue wall.
+
 The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
 passed the digital checks on 2026-10-12. The current photo, wall-block, and M
 hardware fits have **not been physically tested**. Start with the

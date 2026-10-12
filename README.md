@@ -1,5 +1,11 @@
 # Dara knot wall hanging
 
+The jointed model's [individual STL exports](working/stl/Dara-Photo-Frame-A1-Jointed/README.md)
+contain all 39 distinct printable parts, stored with Git LFS. Print one of each
+frame section, letter section, backer, and wall block, plus 32 copies of the
+universal retainer. The export folder includes mesh checks and regeneration
+instructions.
+
 The jointed manufacturing model is
 [working/Dara-Photo-Frame-A1-Jointed.scad](working/Dara-Photo-Frame-A1-Jointed.scad).
 It now includes four separate keyed wall-mounting blocks. Each block is

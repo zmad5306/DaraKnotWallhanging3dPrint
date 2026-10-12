@@ -2,7 +2,8 @@
 __pycache__/
 *.pyc
 
-# Keep print projects and generated meshes outside the CAD/docs repository.
+# Keep print projects and scratch meshes outside Git; production STLs use LFS.
 *.[3][mM][fF]
 *.[sS][tT][lL]
 *.[gG][cC][oO][dD][eE]
+!/working/stl/Dara-Photo-Frame-A1-Jointed/*.stl

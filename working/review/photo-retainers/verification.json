@@ -1,0 +1,1141 @@
+{
+  "source": "working\\Dara-Photo-Frame-A1-Jointed.scad",
+  "parts": [
+    {
+      "part": "F1",
+      "size_mm": [
+        176.30989837646484,
+        173.49291229248047,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0015387558094747818,
+        0.005709326614600188
+      ]
+    },
+    {
+      "part": "F2",
+      "size_mm": [
+        164.07621002197266,
+        164.7662124633789,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0012868146118602789,
+        0.005925191905670781
+      ]
+    },
+    {
+      "part": "F3",
+      "size_mm": [
+        150.6986541748047,
+        154.6599884033203,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0015899278864868248,
+        0.006029075239643735
+      ]
+    },
+    {
+      "part": "F4",
+      "size_mm": [
+        232.0457000732422,
+        233.21115112304688,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0025096146012616957,
+        0.010508779830163984
+      ]
+    },
+    {
+      "part": "F5",
+      "size_mm": [
+        236.75690460205078,
+        234.29745483398438,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0029253251741085933,
+        0.012216015870409857
+      ]
+    },
+    {
+      "part": "F6",
+      "size_mm": [
+        156.1750717163086,
+        150.00800323486328,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0016246453227723372,
+        0.006576768095029507
+      ]
+    },
+    {
+      "part": "F7",
+      "size_mm": [
+        154.18663787841797,
+        151.8833770751953,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0013708727819108971,
+        0.006677444096815434
+      ]
+    },
+    {
+      "part": "F8",
+      "size_mm": [
+        138.98082733154297,
+        135.5099639892578,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.00012607371074276893,
+        0.00013425862845473677
+      ]
+    },
+    {
+      "part": "F9",
+      "size_mm": [
+        170.02908325195312,
+        173.08985900878906,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0014641189208774,
+        0.005526451686334478
+      ]
+    },
+    {
+      "part": "F10",
+      "size_mm": [
+        181.2509536743164,
+        182.9279022216797,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0016112161281169133,
+        0.007375730878732291
+      ]
+    },
+    {
+      "part": "F11",
+      "size_mm": [
+        210.87757873535156,
+        215.5774688720703,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.001914335974390509,
+        0.010803813498376048
+      ]
+    },
+    {
+      "part": "F12",
+      "size_mm": [
+        231.31037139892578,
+        228.55752563476562,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.00024652661046173065,
+        0.000262197100593919
+      ]
+    },
+    {
+      "part": "F13",
+      "size_mm": [
+        175.0219268798828,
+        173.00497436523438,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.00020546409297041043,
+        0.00021921149081325267
+      ]
+    },
+    {
+      "part": "F14",
+      "size_mm": [
+        153.2997283935547,
+        152.24725341796875,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.000974374414326183,
+        0.005676442307773157
+      ]
+    },
+    {
+      "part": "F15",
+      "size_mm": [
+        230.72608947753906,
+        232.08072662353516,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.003444643016068759,
+        0.012296351011612663
+      ]
+    },
+    {
+      "part": "F16",
+      "size_mm": [
+        157.60791778564453,
+        162.96971893310547,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0015201315869202453,
+        0.005592036775416889
+      ]
+    },
+    {
+      "part": "F17",
+      "size_mm": [
+        165.82715606689453,
+        159.08329010009766,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.001646691237036426,
+        0.0067983193640416655
+      ]
+    },
+    {
+      "part": "F18",
+      "size_mm": [
+        179.74210357666016,
+        170.12686157226562,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.00021295951410536473,
+        0.00020499531585513404
+      ]
+    },
+    {
+      "part": "F19",
+      "size_mm": [
+        144.35865783691406,
+        167.5618667602539,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0001556897617826128,
+        0.00020360203046640104
+      ]
+    },
+    {
+      "part": "F20",
+      "size_mm": [
+        114.92867660522461,
+        110.43296813964844,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.00011313425057458912,
+        0.00012325410022537365
+      ]
+    },
+    {
+      "part": "F21",
+      "size_mm": [
+        158.09033966064453,
+        157.58474731445312,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0012973521511739428,
+        0.0058246368938273275
+      ]
+    },
+    {
+      "part": "F22",
+      "size_mm": [
+        171.32957458496094,
+        201.6766128540039,
+        16.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0022274910576852145,
+        0.008502210467989497
+      ]
+    },
+    {
+      "part": "F23",
+      "size_mm": [
+        171.90555572509766,
+        170.3422622680664,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0012928732207773343,
+        0.007364985623384204
+      ]
+    },
+    {
+      "part": "F24",
+      "size_mm": [
+        148.5057144165039,
+        145.04045867919922,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0013217403884749161,
+        0.005239181579991613
+      ]
+    },
+    {
+      "part": "F25",
+      "size_mm": [
+        176.96322631835938,
+        171.96705627441406,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.002064932870325972,
+        0.006069562649480812
+      ]
+    },
+    {
+      "part": "F26",
+      "size_mm": [
+        175.30972290039062,
+        128.8569793701172,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0015747491380187111,
+        0.007748226982999079
+      ]
+    },
+    {
+      "part": "F27",
+      "size_mm": [
+        226.8417510986328,
+        226.2926254272461,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.002177981763860004,
+        0.010996681758539571
+      ]
+    },
+    {
+      "part": "F28",
+      "size_mm": [
+        128.38148498535156,
+        132.9374237060547,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0010694051597826386,
+        0.0063004767015082015
+      ]
+    },
+    {
+      "part": "F29",
+      "size_mm": [
+        172.67220306396484,
+        178.68292236328125,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0014803338816952235,
+        0.006701268381621008
+      ]
+    },
+    {
+      "part": "F30",
+      "size_mm": [
+        175.56436157226562,
+        174.66024780273438,
+        13.5
+      ],
+      "minimum_print_z_mm": 0,
+      "watertight": true,
+      "connected_solids": 1,
+      "outside_allowed_changes_mm3": [
+        0.0013425270668198813,
+        0.007628343163730928
+      ]
+    }
+  ],
+  "pilots": [
+    {
+      "retainer": 1,
+      "frame": 11,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 58.76204952843509
+    },
+    {
+      "retainer": 2,
+      "frame": 5,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 24.36309354381594
+    },
+    {
+      "retainer": 3,
+      "frame": 5,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 26.520632105991858
+    },
+    {
+      "retainer": 4,
+      "frame": 11,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 5.129096496983813
+    },
+    {
+      "retainer": 5,
+      "frame": 2,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 18.4214636681813
+    },
+    {
+      "retainer": 6,
+      "frame": 6,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 7.881446331553509
+    },
+    {
+      "retainer": 7,
+      "frame": 5,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 8.800142008293026
+    },
+    {
+      "retainer": 8,
+      "frame": 1,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 47.15967679708066
+    },
+    {
+      "retainer": 9,
+      "frame": 4,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 39.83950778791474
+    },
+    {
+      "retainer": 10,
+      "frame": 7,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 5.89603290974712
+    },
+    {
+      "retainer": 11,
+      "frame": 3,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 26.098532533553826
+    },
+    {
+      "retainer": 12,
+      "frame": 4,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 54.651584606610044
+    },
+    {
+      "retainer": 13,
+      "frame": 10,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 8.4019204933596
+    },
+    {
+      "retainer": 14,
+      "frame": 10,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 25.852678457045418
+    },
+    {
+      "retainer": 15,
+      "frame": 14,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 7.623060207298556
+    },
+    {
+      "retainer": 16,
+      "frame": 9,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 32.5863343136928
+    },
+    {
+      "retainer": 17,
+      "frame": 22,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 31.18093535781292
+    },
+    {
+      "retainer": 18,
+      "frame": 15,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 25.964725244261313
+    },
+    {
+      "retainer": 19,
+      "frame": 23,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 6.338290061922425
+    },
+    {
+      "retainer": 20,
+      "frame": 23,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 8.267951006937034
+    },
+    {
+      "retainer": 21,
+      "frame": 26,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 6.794163897504982
+    },
+    {
+      "retainer": 22,
+      "frame": 30,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 14.385206630286959
+    },
+    {
+      "retainer": 23,
+      "frame": 30,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 7.936291438220616
+    },
+    {
+      "retainer": 24,
+      "frame": 29,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 31.092573629719475
+    },
+    {
+      "retainer": 25,
+      "frame": 27,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 22.1694649587178
+    },
+    {
+      "retainer": 26,
+      "frame": 25,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 26.136970074494023
+    },
+    {
+      "retainer": 27,
+      "frame": 28,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 9.143958479051658
+    },
+    {
+      "retainer": 28,
+      "frame": 27,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 73.23988824477627
+    },
+    {
+      "retainer": 29,
+      "frame": 16,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 35.02077062125994
+    },
+    {
+      "retainer": 30,
+      "frame": 17,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 24.571014259204727
+    },
+    {
+      "retainer": 31,
+      "frame": 24,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 5.815271660437013
+    },
+    {
+      "retainer": 32,
+      "frame": 21,
+      "bore_obstruction_mm3": 0.0,
+      "front_cover_missing_mm3": 0.0,
+      "surrounding_stock_missing_mm3": 0.0,
+      "joint_clearance_mm": 19.77560650633358
+    }
+  ],
+  "tabs": [
+    {
+      "retainer": 1,
+      "closed_backer_overlap_mm2": 80.97191500875839,
+      "open_backer_clearance_mm": 0.7999999999999892
+    },
+    {
+      "retainer": 2,
+      "closed_backer_overlap_mm2": 80.97613999742762,
+      "open_backer_clearance_mm": 0.7999999999999504
+    },
+    {
+      "retainer": 3,
+      "closed_backer_overlap_mm2": 81.26596563665962,
+      "open_backer_clearance_mm": 0.7999999999982156
+    },
+    {
+      "retainer": 4,
+      "closed_backer_overlap_mm2": 81.26596563665974,
+      "open_backer_clearance_mm": 0.7999999999999956
+    },
+    {
+      "retainer": 5,
+      "closed_backer_overlap_mm2": 81.26596563665998,
+      "open_backer_clearance_mm": 0.7999999999999899
+    },
+    {
+      "retainer": 6,
+      "closed_backer_overlap_mm2": 81.2659656366598,
+      "open_backer_clearance_mm": 0.7999999999976041
+    },
+    {
+      "retainer": 7,
+      "closed_backer_overlap_mm2": 81.14392658389565,
+      "open_backer_clearance_mm": 0.8000000000000126
+    },
+    {
+      "retainer": 8,
+      "closed_backer_overlap_mm2": 80.79287643358523,
+      "open_backer_clearance_mm": 0.7999999999993667
+    },
+    {
+      "retainer": 9,
+      "closed_backer_overlap_mm2": 81.26596563665932,
+      "open_backer_clearance_mm": 0.8000000000000519
+    },
+    {
+      "retainer": 10,
+      "closed_backer_overlap_mm2": 81.26596563665953,
+      "open_backer_clearance_mm": 0.7999999999995687
+    },
+    {
+      "retainer": 11,
+      "closed_backer_overlap_mm2": 81.3698839428015,
+      "open_backer_clearance_mm": 0.7396733735567733
+    },
+    {
+      "retainer": 12,
+      "closed_backer_overlap_mm2": 80.83632901487246,
+      "open_backer_clearance_mm": 0.7999999999999914
+    },
+    {
+      "retainer": 13,
+      "closed_backer_overlap_mm2": 81.03917781101727,
+      "open_backer_clearance_mm": 0.8000000000000083
+    },
+    {
+      "retainer": 14,
+      "closed_backer_overlap_mm2": 81.00163484249434,
+      "open_backer_clearance_mm": 0.7999999999999471
+    },
+    {
+      "retainer": 15,
+      "closed_backer_overlap_mm2": 81.26596563665967,
+      "open_backer_clearance_mm": 0.799999999999532
+    },
+    {
+      "retainer": 16,
+      "closed_backer_overlap_mm2": 81.26596563666003,
+      "open_backer_clearance_mm": 0.7999999999971275
+    },
+    {
+      "retainer": 17,
+      "closed_backer_overlap_mm2": 81.26596563665986,
+      "open_backer_clearance_mm": 0.7999999999974589
+    },
+    {
+      "retainer": 18,
+      "closed_backer_overlap_mm2": 81.26596563665949,
+      "open_backer_clearance_mm": 0.7999999999999917
+    },
+    {
+      "retainer": 19,
+      "closed_backer_overlap_mm2": 80.95494396078041,
+      "open_backer_clearance_mm": 0.8000000000000612
+    },
+    {
+      "retainer": 20,
+      "closed_backer_overlap_mm2": 81.0009629376362,
+      "open_backer_clearance_mm": 0.8000000000000205
+    },
+    {
+      "retainer": 21,
+      "closed_backer_overlap_mm2": 81.2659656366596,
+      "open_backer_clearance_mm": 0.8000000000000085
+    },
+    {
+      "retainer": 22,
+      "closed_backer_overlap_mm2": 80.98834128365678,
+      "open_backer_clearance_mm": 0.7999999999997003
+    },
+    {
+      "retainer": 23,
+      "closed_backer_overlap_mm2": 80.87095094932353,
+      "open_backer_clearance_mm": 0.7999999999991657
+    },
+    {
+      "retainer": 24,
+      "closed_backer_overlap_mm2": 81.26596563665936,
+      "open_backer_clearance_mm": 0.7999999999999401
+    },
+    {
+      "retainer": 25,
+      "closed_backer_overlap_mm2": 81.2659656366599,
+      "open_backer_clearance_mm": 0.7999999999916407
+    },
+    {
+      "retainer": 26,
+      "closed_backer_overlap_mm2": 81.26596563665962,
+      "open_backer_clearance_mm": 0.7999999999999508
+    },
+    {
+      "retainer": 27,
+      "closed_backer_overlap_mm2": 81.32098047878245,
+      "open_backer_clearance_mm": 0.7514923926236096
+    },
+    {
+      "retainer": 28,
+      "closed_backer_overlap_mm2": 80.83183379409542,
+      "open_backer_clearance_mm": 0.7999999999998593
+    },
+    {
+      "retainer": 29,
+      "closed_backer_overlap_mm2": 81.26596563665976,
+      "open_backer_clearance_mm": 0.7999999999999919
+    },
+    {
+      "retainer": 30,
+      "closed_backer_overlap_mm2": 81.26596563665986,
+      "open_backer_clearance_mm": 0.7999999999934013
+    },
+    {
+      "retainer": 31,
+      "closed_backer_overlap_mm2": 81.18509579230351,
+      "open_backer_clearance_mm": 0.7999999999992083
+    },
+    {
+      "retainer": 32,
+      "closed_backer_overlap_mm2": 80.81089693900499,
+      "open_backer_clearance_mm": 0.800000000000044
+    }
+  ],
+  "screw": {
+    "description": "#6-19 x 1/2-inch pan-head plastic thread-forming screw",
+    "under_head_length_mm": 12.7,
+    "tab_thickness_mm": 3,
+    "clearance_diameter_mm": 4,
+    "pilot_diameter_mm": 3.175,
+    "pilot_depth_mm": 10.7,
+    "penetration_mm": 9.7,
+    "tip_clearance_mm": 1,
+    "front_cover_mm": 2.8,
+    "physical_fit": "Provisional until printed coupon is checked with actual screw"
+  },
+  "largest_frame_overlap_mm3": 2.2204037788520816e-06,
+  "baseline_geometry_unchanged": true,
+  "fit_sample_connected_solids": 3,
+  "tab_supports_required": false,
+  "physical_test_performed": false,
+  "preview_cache": {
+    "regenerated_sections": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      14,
+      15,
+      16,
+      17,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "native_comparisons": [
+      {
+        "part": "F1",
+        "difference_mm3": 0.0002585371582025186
+      },
+      {
+        "part": "F2",
+        "difference_mm3": 0.0002883590106520338
+      },
+      {
+        "part": "F3",
+        "difference_mm3": 0.0002751418746895994
+      },
+      {
+        "part": "F4",
+        "difference_mm3": 0.0005071186917444354
+      },
+      {
+        "part": "F5",
+        "difference_mm3": 0.000568802995343683
+      },
+      {
+        "part": "F6",
+        "difference_mm3": 0.0003937169821643007
+      },
+      {
+        "part": "F7",
+        "difference_mm3": 0.0004232321883311362
+      },
+      {
+        "part": "F8",
+        "difference_mm3": 0.0002603323391975057
+      },
+      {
+        "part": "F9",
+        "difference_mm3": 0.00035187604061442793
+      },
+      {
+        "part": "F10",
+        "difference_mm3": 0.0003572192842552383
+      },
+      {
+        "part": "F11",
+        "difference_mm3": 0.0005104093153009337
+      },
+      {
+        "part": "F12",
+        "difference_mm3": 0.0005087237110556497
+      },
+      {
+        "part": "F13",
+        "difference_mm3": 0.00042467558378366313
+      },
+      {
+        "part": "F14",
+        "difference_mm3": 0.0003294253585160841
+      },
+      {
+        "part": "F15",
+        "difference_mm3": 0.0005773463610836999
+      },
+      {
+        "part": "F16",
+        "difference_mm3": 0.0002743803585536954
+      },
+      {
+        "part": "F17",
+        "difference_mm3": 0.00039578374429137373
+      },
+      {
+        "part": "F18",
+        "difference_mm3": 0.00041795482996049877
+      },
+      {
+        "part": "F19",
+        "difference_mm3": 0.00035929179224901387
+      },
+      {
+        "part": "F20",
+        "difference_mm3": 0.00023638835079996278
+      },
+      {
+        "part": "F21",
+        "difference_mm3": 0.0002956099378680194
+      },
+      {
+        "part": "F22",
+        "difference_mm3": 0.00041011914919435584
+      },
+      {
+        "part": "F23",
+        "difference_mm3": 0.0003791419635229928
+      },
+      {
+        "part": "F24",
+        "difference_mm3": 0.0003527068831157268
+      },
+      {
+        "part": "F25",
+        "difference_mm3": 0.0003044185944567274
+      },
+      {
+        "part": "F26",
+        "difference_mm3": 0.00047656674804013644
+      },
+      {
+        "part": "F27",
+        "difference_mm3": 0.000574336921418903
+      },
+      {
+        "part": "F28",
+        "difference_mm3": 0.000330398410183056
+      },
+      {
+        "part": "F29",
+        "difference_mm3": 0.0003365032117082961
+      },
+      {
+        "part": "F30",
+        "difference_mm3": 0.0003967873524044956
+      }
+    ]
+  },
+  "cache_parameter_checks": [
+    {
+      "case": "default",
+      "expected_frame_cache": true,
+      "expected_M_cache": true,
+      "pilot_depth_mm": 10.7,
+      "passed": true
+    },
+    {
+      "case": "pilot-tuning",
+      "expected_frame_cache": false,
+      "expected_M_cache": true,
+      "pilot_depth_mm": 10.7,
+      "passed": true
+    },
+    {
+      "case": "thickness-tuning",
+      "expected_frame_cache": false,
+      "expected_M_cache": true,
+      "pilot_depth_mm": 11.2,
+      "passed": true
+    },
+    {
+      "case": "tab-hole-tuning",
+      "expected_frame_cache": true,
+      "expected_M_cache": true,
+      "pilot_depth_mm": 10.7,
+      "passed": true
+    },
+    {
+      "case": "plain-fabric",
+      "expected_frame_cache": false,
+      "expected_M_cache": false,
+      "pilot_depth_mm": 10.7,
+      "passed": true
+    }
+  ],
+  "preview_renders": [
+    {
+      "view": "screw-cutaway",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 3 elements\nCompiling background (1 CSG Trees)...\nGeometries in cache: 27\nGeometry cache size in bytes: 231376\nCGAL Polyhedrons in cache: 4\nCGAL cache size in bytes: 251872\nTotal rendering time: 0:00:00.659\n"
+    },
+    {
+      "view": "tab-closed",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 3 elements\nCompiling background (1 CSG Trees)...\nGeometries in cache: 27\nGeometry cache size in bytes: 295312\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 195728\nTotal rendering time: 0:00:00.434\n"
+    },
+    {
+      "view": "tab-open",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 3 elements\nCompiling background (1 CSG Trees)...\nGeometries in cache: 27\nGeometry cache size in bytes: 295312\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 195728\nTotal rendering time: 0:00:00.381\n"
+    },
+    {
+      "view": "fit-sample",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 5 elements\nGeometries in cache: 13\nGeometry cache size in bytes: 59600\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.236\n"
+    },
+    {
+      "view": "tab-print",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 1 elements\nGeometries in cache: 9\nGeometry cache size in bytes: 48208\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.235\n"
+    },
+    {
+      "view": "assembly-rear",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 76 elements\nCompiling background (52 CSG Trees)...\nGeometries in cache: 72\nGeometry cache size in bytes: 12660304\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:01.079\n"
+    },
+    {
+      "view": "assembly-front",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 76 elements\nCompiling background (52 CSG Trees)...\nGeometries in cache: 72\nGeometry cache size in bytes: 12660304\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:01.111\n"
+    },
+    {
+      "view": "F5-rear",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 1 elements\nGeometries in cache: 1\nGeometry cache size in bytes: 619744\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.244\n"
+    },
+    {
+      "view": "assembly-open",
+      "ok": true,
+      "stderr": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 76 elements\nCompiling background (52 CSG Trees)...\nGeometries in cache: 72\nGeometry cache size in bytes: 12660304\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:01.106\n"
+    }
+  ],
+  "source_sha256": "098241f192a051535abe3d2d7a5a71ea97392e8b90638a2e81005d51bc3ba61c",
+  "review_date": "2026-10-12",
+  "CAD_scope": "Photo-retainer revision only; no slicer or production-project changes.",
+  "visual_review": {
+    "reviewed_views": [
+      "screw-cutaway",
+      "fit-sample",
+      "tab-open",
+      "tab-closed",
+      "assembly-rear",
+      "assembly-front",
+      "F5-rear"
+    ],
+    "result": "Passed: cutaway exposes blind pilot and front cover; tabs overlap/release backers; frame rear has no track projections."
+  }
+}

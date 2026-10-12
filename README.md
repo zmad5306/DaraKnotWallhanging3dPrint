@@ -1,5 +1,34 @@
 # Dara knot wall hanging
 
+The jointed manufacturing model is
+[working/Dara-Photo-Frame-A1-Jointed.scad](working/Dara-Photo-Frame-A1-Jointed.scad).
+Its photo retainers are separate 20 x 10 x 3 mm rotating tabs, four per photo,
+installed after printing with the selected
+[#6-19 x 1/2-inch pan-head screws](https://www.amazon.com/dp/B00GDYBX9O).
+The knot sections print rear-down at Z=0 without projecting retainer tracks.
+Tabs have 4 mm clearance holes; the frame has 3.175 mm blind pilots, 10.7 mm
+deep at the default tab thickness. This leaves 1 mm beyond the screw tip and
+2.8 mm of front cover. No photo-retainer washers or countersinks are needed.
+Loosen each screw slightly, turn the tab 90 degrees to release the backer,
+and snug it again after closing. The assembled tabs and screw heads project
+behind the knot; they are not present during frame printing.
+
+In this jointed file, `retainer` shows one tab flat for printing, `fit_sample`
+lays out a full-depth frame coupon, backer strip, and tab separately, and
+`retainer_detail` shows the assembled screw stack. `retainer_cutaway` toggles
+the detail section; `retainers_open` rotates the installed tabs. Metal screws
+are preview-only. Photo-retainer thickness, pilot diameter, and clearance-hole
+diameter have independent controls; pilot depth follows thickness to retain
+1 mm tip clearance. Check the printed coupon with the actual screws before
+printing the full frame. Existing rabbets and lap sockets still require local
+support assessment. Artwork, backers, lap joints, and M attachments are preserved.
+
+- [Retainer screw cutaway](working/review/photo-retainers/screw-cutaway.png)
+- [Closed tab](working/review/photo-retainers/tab-closed.png) and [open tab](working/review/photo-retainers/tab-open.png)
+- [Fit sample](working/review/photo-retainers/fit-sample.png)
+- [Rear assembly](working/review/photo-retainers/assembly-rear.png)
+- [Geometry verification](working/review/photo-retainers/verification.json)
+
 The editable feature model is [working/Dara-Photo-Frame.scad](working/Dara-Photo-Frame.scad).
 The clean reference remains unchanged. The working CAD adds rear photo rabbets
 to the eight outer openings, 1.6 mm removable backers, and four identical printed

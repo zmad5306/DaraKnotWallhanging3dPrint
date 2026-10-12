@@ -1,5 +1,13 @@
 # Dara knot wall hanging
 
+The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
+contains all 70 printed pieces on 29 A1 plates. The
+[printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
+part in the assembly and shows the shared backer and hardware plates. The project
+uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
+See the [project notes and verification](working/bambu/Dara-Photo-Frame-A1-Jointed/README.md).
+Run `git lfs pull` after cloning to retrieve the 3MF and STL files.
+
 The jointed model's [individual STL exports](working/stl/Dara-Photo-Frame-A1-Jointed/README.md)
 contain all 39 distinct printable parts, stored with Git LFS. Print one of each
 frame section, letter section, backer, and wall block, plus 32 copies of the
@@ -149,5 +157,5 @@ after changes.
 The [tested keyed lap joints](reference/tested-lap-joints/README.md) preserve the
 75% straight and curved samples reported as rock solid on 2026-10-12. The folder
 includes self-contained OpenSCAD reference CAD, print settings and verification
-records. Print projects and STL exports are kept outside Git in Nextcloud. This is a separate joint
+records. The exact test project is stored with Git LFS; test STL exports remain in Nextcloud. This is a separate joint
 baseline; it does not yet add segmentation or joints to the working full frame.

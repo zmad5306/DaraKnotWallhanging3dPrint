@@ -13,9 +13,10 @@ The preview shows one M boss and washer; the print project contains two of each.
 
 ![Exploded reference](preview.png)
 
-The exact one-plate Bambu project and individual STL exports are kept outside
-Git in the Nextcloud test package: `Tests/Integrated-Joint-Mount-Tests/Three-Foot-75pct/`.
-This repository contains the self-contained CAD and reference documentation only.
+The exact one-plate [Bambu project](Tested-Joints-One-Plate.3mf) is stored with
+Git LFS and supplies the tested print preset for the complete production project.
+Individual test STL exports and the original project remain in the Nextcloud
+test package: `Tests/Integrated-Joint-Mount-Tests/Three-Foot-75pct/`.
 
 ## Joint dimensions and printing
 

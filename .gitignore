@@ -2,8 +2,10 @@
 __pycache__/
 *.pyc
 
-# Keep print projects and scratch meshes outside Git; production STLs use LFS.
+# Keep scratch meshes and projects outside Git; named production files use LFS.
 *.[3][mM][fF]
 *.[sS][tT][lL]
 *.[gG][cC][oO][dD][eE]
 !/working/stl/Dara-Photo-Frame-A1-Jointed/*.stl
+!/working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf
+!/reference/tested-lap-joints/Tested-Joints-One-Plate.3mf

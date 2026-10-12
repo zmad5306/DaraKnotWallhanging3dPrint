@@ -1,3 +1,8 @@
 .work/
 __pycache__/
 *.pyc
+
+# Keep print projects and generated meshes outside the CAD/docs repository.
+*.[3][mM][fF]
+*.[sS][tT][lL]
+*.[gG][cC][oO][dD][eE]

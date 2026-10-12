@@ -66,3 +66,11 @@ contours, closes the M seams, and applies the channel-end and local curve
 cleanup recorded in `provenance.json`. Running it overwrites the SCAD and resets
 its parameters; make future design edits deliberately and regenerate previews
 after changes.
+
+## Physically tested joint reference
+
+The [tested keyed lap joints](reference/tested-lap-joints/README.md) preserve the
+75% straight and curved samples reported as rock solid on 2026-10-12. The folder
+includes self-contained OpenSCAD reference CAD, print settings and verification
+records. Print projects and STL exports are kept outside Git in Nextcloud. This is a separate joint
+baseline; it does not yet add segmentation or joints to the working full frame.

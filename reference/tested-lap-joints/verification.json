@@ -1,0 +1,118 @@
+{
+  "curved_socket": {
+    "watertight": true,
+    "volume_mm3": 36783.36217354943,
+    "bounds_mm": [
+      [
+        -18.73125457763672,
+        -56.25,
+        0.0
+      ],
+      [
+        18.73125457763672,
+        56.25,
+        14.09999942779541
+      ]
+    ]
+  },
+  "curved_tongue": {
+    "watertight": true,
+    "volume_mm3": 40550.650208889565,
+    "bounds_mm": [
+      [
+        -27.75,
+        -56.25,
+        0.0
+      ],
+      [
+        27.75,
+        56.25,
+        14.09999942779541
+      ]
+    ]
+  },
+  "m_boss": {
+    "watertight": true,
+    "volume_mm3": 2731.5722438335238,
+    "bounds_mm": [
+      [
+        -12.0,
+        -12.0,
+        0.0
+      ],
+      [
+        12.0,
+        12.0,
+        17.0
+      ]
+    ]
+  },
+  "straight_socket": {
+    "watertight": true,
+    "volume_mm3": 25208.135846060177,
+    "bounds_mm": [
+      [
+        -18.73124885559082,
+        -33.77276611328125,
+        -2.148281552649678e-14
+      ],
+      [
+        18.73124885559082,
+        33.772769927978516,
+        14.09999942779541
+      ]
+    ]
+  },
+  "straight_tongue": {
+    "watertight": true,
+    "volume_mm3": 35881.865025555155,
+    "bounds_mm": [
+      [
+        -27.75,
+        -33.75815200805664,
+        -2.148281552649678e-14
+      ],
+      [
+        27.75,
+        33.77234649658203,
+        14.09999942779541
+      ]
+    ]
+  },
+  "washer": {
+    "watertight": true,
+    "volume_mm3": 65.91290272456445,
+    "bounds_mm": [
+      [
+        -5.0,
+        -5.0,
+        0.0
+      ],
+      [
+        5.0,
+        5.0,
+        1.0
+      ]
+    ]
+  },
+  "straight_pair": {
+    "intersection_mm3": 0.0,
+    "socket_translation_mm": [
+      28.518748855,
+      0,
+      0
+    ]
+  },
+  "curved_pair": {
+    "intersection_mm3": 0.0,
+    "socket_translation_mm": [
+      28.518745423,
+      0,
+      0
+    ]
+  },
+  "openscad": {
+    "preview": "All six reference components rendered successfully and visually reviewed",
+    "straight_tongue_export": "Watertight; volume matches source within 0.01 cubic mm"
+  }
+}

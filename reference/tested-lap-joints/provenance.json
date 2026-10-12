@@ -1,0 +1,35 @@
+{
+  "reference_date": "2026-10-12",
+  "physical_feedback": "User reports: These joints are rock solid.",
+  "scope": "Straight and curved 75 percent keyed lap samples; screw grip not separately confirmed. This is not a full assembly load test.",
+  "dimensions_mm": {
+    "lap_overlap": 18,
+    "lap_thickness": 4.8,
+    "shoulder_radius": 0.75,
+    "hidden_clearance": 0.15,
+    "visible_seam": 0.075,
+    "pilot_diameter": 3.175,
+    "pilot_depth": 12,
+    "counterbore_diameter": 12,
+    "clearance_hole": 4,
+    "screw_seat_skin": 1.6
+  },
+  "settings": {
+    "wall_loops": 6,
+    "sparse_infill_density": "30%",
+    "sparse_infill_pattern": "gyroid",
+    "layer_height_mm": 0.2,
+    "local_solid": "Screw-seat regions and M bosses only"
+  },
+  "external_source_hashes": {
+    "slicing.json": "c2f77d19f60e2667f7768a5c1d1362461c50d1c28237c0b95159551c9173c42f",
+    "Tested-Joints-One-Plate.3mf": "e426dbf0000612226215ba51baf24aecb79d5de77619b848c09f33a9ef0701bc",
+    "meshes\\curved-socket.stl": "b6153832254dffee73dbdf07381e4d6828937ddb8e31e009f02d7ee32f68faf6",
+    "meshes\\curved-tongue.stl": "e5cc444de5b1fdea4cc78d28e109d440172867ab12b9423d74194dd0f93cb35e",
+    "meshes\\m-boss.stl": "fccf43c28fefdd2d9dff6087060bb182ea16016a5fe074793963360b5f6a8089",
+    "meshes\\straight-socket.stl": "2ad6eedab9648a5b48127f2e24797121f36b4cca1d7b16b56abd9b632413e4ff",
+    "meshes\\straight-tongue.stl": "63bd9b7614ac44246254fc8dd708949e68e878c9eb67c953e976718b2575c632",
+    "meshes\\washer.stl": "9da00e9b9c503dde9ee40e55bef785da29412e4b0fad5aacb826d4b6d63bcfef"
+  },
+  "external_source_note": "Hashes identify the original test artifacts; 3MF and STL files are not tracked in this repository. Exact geometry is embedded in Tested-Lap-Joints.scad."
+}

@@ -1,0 +1,312 @@
+{
+  "source_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+  "blocks": [
+    {
+      "block": "B1",
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "volume_mm3": 52428.98369430186,
+      "connected_solids": 1,
+      "installed_frame_collision_mm3": 0.0,
+      "fastener_count": 2,
+      "fastener_head_recess_mm": 4.5,
+      "pilot_depth_mm": 10.7,
+      "screw_engagement_mm": 9.7
+    },
+    {
+      "block": "B2",
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "volume_mm3": 52428.98368001528,
+      "connected_solids": 1,
+      "installed_frame_collision_mm3": 0.0,
+      "fastener_count": 2,
+      "fastener_head_recess_mm": 4.5,
+      "pilot_depth_mm": 10.7,
+      "screw_engagement_mm": 9.7
+    },
+    {
+      "block": "B3",
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "volume_mm3": 52428.98368001528,
+      "connected_solids": 1,
+      "installed_frame_collision_mm3": 0.0,
+      "fastener_count": 2,
+      "fastener_head_recess_mm": 4.5,
+      "pilot_depth_mm": 10.7,
+      "screw_engagement_mm": 9.7
+    },
+    {
+      "block": "B4",
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "volume_mm3": 52428.98369905791,
+      "connected_solids": 1,
+      "installed_frame_collision_mm3": 0.0,
+      "fastener_count": 2,
+      "fastener_head_recess_mm": 4.5,
+      "pilot_depth_mm": 10.7,
+      "screw_engagement_mm": 9.7
+    }
+  ],
+  "sections": [
+    {
+      "section": "F3",
+      "added_mm3": -1.0682562081531808e-15,
+      "removed_outside_slots_mm3": 6.260082856491243e-05,
+      "missing_cut_mm3": 3.384098556935555e-14,
+      "cache_difference_mm3": 1.0749636510574873e-06,
+      "remaining_key_cover_mm": 10.2,
+      "remaining_pilot_cover_mm": 2.8
+    },
+    {
+      "section": "F5",
+      "added_mm3": 1.4655025240215003e-15,
+      "removed_outside_slots_mm3": 1.4655025240215003e-15,
+      "missing_cut_mm3": 3.658184866139891e-14,
+      "cache_difference_mm3": 1.0749636312923532e-06,
+      "remaining_key_cover_mm": 10.2,
+      "remaining_pilot_cover_mm": 2.8
+    },
+    {
+      "section": "F16",
+      "added_mm3": 0.0,
+      "removed_outside_slots_mm3": 0.0,
+      "missing_cut_mm3": -1.2434497875801753e-14,
+      "cache_difference_mm3": 1.0749636633981196e-06,
+      "remaining_key_cover_mm": 10.2,
+      "remaining_pilot_cover_mm": 2.8
+    },
+    {
+      "section": "F18",
+      "added_mm3": 0.0,
+      "removed_outside_slots_mm3": 0.16026328516448984,
+      "missing_cut_mm3": 7.244899125069537e-14,
+      "cache_difference_mm3": 1.0749599845538702e-06,
+      "remaining_key_cover_mm": 10.2,
+      "remaining_pilot_cover_mm": 2.8
+    }
+  ],
+  "physical_test_performed": false,
+  "fit-sample": {
+    "connected_solids": 2,
+    "bounds_mm": [
+      [
+        -70.0,
+        -45.0,
+        0.0
+      ],
+      [
+        70.0,
+        45.0,
+        13.5
+      ]
+    ]
+  },
+  "four-blocks": {
+    "connected_solids": 4,
+    "bounds_mm": [
+      [
+        -70.0,
+        -91.0,
+        0.0
+      ],
+      [
+        70.0,
+        91.0,
+        13.0
+      ]
+    ]
+  },
+  "default_wall_clearance_mm": 4.5,
+  "wall_clearance_at_4mm_tabs_mm": 3.5,
+  "strip_area_mm": [
+    95,
+    20
+  ],
+  "passed": true,
+  "locations": [
+    {
+      "block": "B1",
+      "frame": "F3",
+      "centre_mm": [
+        -196,
+        224
+      ],
+      "full_tab_sweep_clearance_mm": 8.203243719599666,
+      "backer_pocket_clearance_mm": 2.6581847348378096,
+      "slot_to_lap_clearance_mm": 3.4883268174551407,
+      "slot_to_rail_edge_mm": 2.606322629472305,
+      "frame_print_footprint_mm": [
+        250.61966972290105,
+        250.65741119224558,
+        13.5
+      ]
+    },
+    {
+      "block": "B2",
+      "frame": "F5",
+      "centre_mm": [
+        196,
+        224
+      ],
+      "full_tab_sweep_clearance_mm": 3.4931681784618718,
+      "backer_pocket_clearance_mm": 3.0998654935567598,
+      "slot_to_lap_clearance_mm": 42.264202120129,
+      "slot_to_rail_edge_mm": 2.650917574381593,
+      "frame_print_footprint_mm": [
+        225.06602272578476,
+        213.05770664441872,
+        13.5
+      ]
+    },
+    {
+      "block": "B3",
+      "frame": "F16",
+      "centre_mm": [
+        -196,
+        -224
+      ],
+      "full_tab_sweep_clearance_mm": 3.4933413073947577,
+      "backer_pocket_clearance_mm": 2.6580755185644604,
+      "slot_to_lap_clearance_mm": 3.290730263905056,
+      "slot_to_rail_edge_mm": 2.649499999999989,
+      "frame_print_footprint_mm": [
+        205.31527330424933,
+        181.53072926474917,
+        16.5
+      ]
+    },
+    {
+      "block": "B4",
+      "frame": "F18",
+      "centre_mm": [
+        196,
+        -224
+      ],
+      "full_tab_sweep_clearance_mm": 3.477344375138273,
+      "backer_pocket_clearance_mm": 2.96220593487835,
+      "slot_to_lap_clearance_mm": 18.02767777915765,
+      "slot_to_rail_edge_mm": 2.583435233713657,
+      "frame_print_footprint_mm": [
+        235.41750473061674,
+        222.72699943435603,
+        16.5
+      ]
+    }
+  ],
+  "unchanged_existing_modules": [
+    "knot_outline",
+    "fabric_outline",
+    "letter_outline",
+    "retainer_mm",
+    "photo_backer",
+    "photo_pilot_mm",
+    "tested_tongue_xz",
+    "tested_socket_void_xz",
+    "tested_key",
+    "tested_key_pocket",
+    "M_pilot",
+    "frame_screw_cuts",
+    "locating_dowel",
+    "locating_hole"
+  ],
+  "numerical_comparison_note": "F18 has 0.1603 mm3 of CGAL triangulation variation in a pre-existing weave-edge sliver (Z=9..9.6); no source artwork was changed. Preview/native differences are below 0.000002 mm3.",
+  "cache_parameter_checks": [
+    {
+      "arguments": [],
+      "frame_cache": true,
+      "passed": true
+    },
+    {
+      "arguments": [
+        "-D",
+        "wall_key_clearance=.3"
+      ],
+      "frame_cache": false,
+      "passed": true
+    },
+    {
+      "arguments": [
+        "-D",
+        "wall_key_depth_clearance=.4"
+      ],
+      "frame_cache": false,
+      "passed": true
+    },
+    {
+      "arguments": [
+        "-D",
+        "wall_standoff=12"
+      ],
+      "frame_cache": true,
+      "passed": true
+    },
+    {
+      "arguments": [
+        "-D",
+        "wall_fastener_pilot=3.2"
+      ],
+      "frame_cache": false,
+      "passed": true
+    }
+  ],
+  "preview_renders": [
+    "assembly-rear",
+    "blocks-keys",
+    "block-rear",
+    "mount-exploded",
+    "keyhole-cutaway",
+    "fit-sample"
+  ],
+  "preview_renders_passed": true,
+  "visual_review": [
+    "assembly-rear",
+    "blocks-keys",
+    "block-rear",
+    "mount-exploded",
+    "keyhole-cutaway"
+  ],
+  "last_change": "Keyhole-detail camera centered on the cutaway; geometry unchanged."
+}

@@ -2,6 +2,48 @@
 
 The jointed manufacturing model is
 [working/Dara-Photo-Frame-A1-Jointed.scad](working/Dara-Photo-Frame-A1-Jointed.scad).
+It now includes four separate keyed wall-mounting blocks. Each block is
+140 x 38 mm with a 10 mm stand-off and two 20 x 10 x 3 mm locating keys.
+The matching blind slots are in F3, F5, F16, and F18. Each block fastens
+to the knot with two of the same #6-19 x 1/2-inch pan-head screws used for
+the photo tabs. The keys locate the block; the screws secure it.
+The four wall-facing surfaces share one plane and leave
+4.5 mm behind the default photo tabs and modeled screw heads, before adding
+any strip thickness.
+
+Each block has two 9 mm counterbores with 3 mm seats and 4 mm through holes.
+The knot pilots are 3.175 mm diameter and 10.7 mm deep: screw engagement is
+9.7 mm, with 1 mm tip clearance and 2.8 mm of material remaining at the front.
+No washers are needed. The modeled 7 x 2.5 mm heads sit 4.5 mm below the
+block's wall-facing surface at the default stand-off.
+
+Each block has a flat, uninterrupted 95 x 20 mm strip area along the opposite
+edge from its two counterbores, also clear of the keyhole. Apply the strip
+after installing the block screws. The separate keyhole has a 9 mm head entry, 4.5 mm
+shaft slot, 4 mm deep hidden head channel, and 3 mm retaining lip. Insert
+the screw head through the lower round opening, then lower the frame 11 mm
+to seat it. Starting screw dimensions are a 4 mm shaft and 8 mm head;
+choose the screw projection to fit the lip and channel. Strip dimensions
+are a generic allowance, not a verified Command product or weight rating.
+
+Use `wall_blocks` to arrange all four blocks rear-down within 140 x 182 mm,
+or `wall_block` and `wall_mount_index` to select one. B1/B2 are upper
+left/right and B3/B4 lower left/right **when viewed from the front**;
+their key patterns differ. `wall_mount_detail` shows the selected block
+and actual knot slots; set `wall_mount_explode=0` to inspect the seated fit.
+`wall_keyhole_detail` sections the head channel, and `wall_fit_sample`
+provides the selected block plus a separate slot coupon. `show_wall_blocks`
+only changes assembly visibility: frame slots remain in previews and exports.
+`wall_standoff`, key clearances, and screw dimensions are adjustable.
+Check the coupon with the actual hardware before
+printing the affected frame sections. The enclosed keyhole channel needs
+a local bridging/support check; the CAD has not been physically load-tested.
+
+- [Rear assembly with the four blocks](working/review/wall-blocks/assembly-rear.png)
+- [Exploded mounting detail](working/review/wall-blocks/mount-exploded.png)
+- [Four keyed blocks](working/review/wall-blocks/blocks-keys.png) and [keyhole section](working/review/wall-blocks/keyhole-cutaway.png)
+- [Wall-mount geometry verification](working/review/wall-blocks/verification.json)
+
 Its photo retainers are separate 20 x 10 x 3 mm rotating tabs, four per photo,
 installed after printing with the selected
 [#6-19 x 1/2-inch pan-head screws](https://www.amazon.com/dp/B00GDYBX9O).

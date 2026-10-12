@@ -1,10 +1,15 @@
 """Regression checks for compact decimal G-code and conservative arc bounds."""
 import unittest
 
-from validate_print_project import scan_gcode
+from validate_print_project import scan_gcode, filament_weights
 
 
 class GcodeBoundsTests(unittest.TestCase):
+    def test_multicolor_mass_includes_every_filament(self):
+        self.assertEqual(filament_weights('; total filament weight [g] : 101.82, 8.71, 0.00\n'), [101.82, 8.71, 0.0])
+        self.assertEqual(filament_weights('; total filament weight [g] : 150,34\n; filament: 1,3\n'), [150, 0, 34])
+        self.assertEqual(filament_weights('; total filament weight [g] : 60\n; filament: 3\n'), [0, 0, 60])
+
     def test_compact_decimals_and_width(self):
         result = scan_gcode('M83\nG1 X.5 Y1\n; FEATURE: Outer wall\n; LINE_WIDTH: 0.4\nG1 X2 Y1 E.123\n')
         self.assertEqual(result['extrusion_moves_checked'], 1)

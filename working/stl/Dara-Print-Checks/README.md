@@ -1,11 +1,15 @@
-# Hardware fit coupons
+# Hardware fit and weave coupons
 
 **Print plate 30 in the [complete Bambu project](../../bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf).**
-It is named **30 - PRINT FIRST - Hardware and lap fit tests**, contains nine
+It is named **30 - PRINT FIRST - Hardware, lap and weave tests**, contains ten
 separate pieces, and is already sliced for the A1, 0.4 mm nozzle, PLA and 0.2 mm
 layers. It uses four walls, 15% gyroid and nine local 100% screw/keyhole zones.
-Estimated use is **160.18 g and 5 h 30 min**. Production plates 1-29 are unchanged.
-[plate-30-manifest.json](plate-30-manifest.json) records the nine source meshes,
+Estimated use is **204.72 g and 8 h 24 min**.
+Test-M-Letter prints in copper / Generic PLA Silk. The full-width weave sample
+uses white and wood / Generic PLA; the other eight pieces use white. This plate
+has 59 filament changes, six more than the previous hardware-only plate.
+The three small photo coupons were moved to make room for the new sample.
+[plate-30-manifest.json](plate-30-manifest.json) records the ten source meshes,
 their hashes, plate positions, reinforcement zones, and sliced checks.
 
 | Named objects on plate 30 | Check |
@@ -14,6 +18,20 @@ their hashes, plate positions, reinforcement zones, and sliced checks.
 | Test-Wall-Block-B1, Test-Wall-Socket-B1 | Key fit, two recessed screws, wall keyhole and support removal |
 | Test-M-Frame, Test-M-Letter | Actual F14/M5 screw stack and both locating pins, including the relieved hole |
 | Test-Lap-Tongue, Test-Lap-Socket | Actual F7/F4 lap fit and bonded joint at the production infill settings |
+| Test-Weave-Full-Width | Full-width white rails, recessed wood backing, and raised weave finish |
+
+The weave sample is **68.45 mm wide x 24 mm long x 13.5 mm high**, cropped from
+a straight section of the production F7 STL. Both outer rails remain intact;
+only the short ends are cut. It uses the frame's actual weave geometry, four-wall /
+15% gyroid profile, and wood filament modifier at Z=8.4-9.6 mm (layers 43-48).
+Inspect the thread detail, recessed surface, white/wood boundary, and color
+contrast before printing the frame. The sample lies near the back-left of the
+plate, beside the prime tower. Its short ends are exposed cross-sections.
+
+The updated plate uses about 14.23 g and 36 minutes more than the previous
+nine-piece plate, including the additional purge. Production plates 1-29 are
+unchanged. A standalone [STL](Test-Weave-Full-Width.stl) is also provided;
+use the complete 3MF to preserve the two-color assignment.
 
 The M and lap coupons are cropped directly from current production STLs. The M
 pair retains its actual pin spacing and full local thickness; no surrogate boss
@@ -26,7 +44,10 @@ the keyhole check. Remove support before assembly. Align the M pair by both
 pins; its cropped outlines need not coincide. Let a bonded lap sample cure
 according to the adhesive instructions before assessing it.
 
-![Sliced fit-test plate](../../bambu/Dara-Photo-Frame-A1-Jointed/fit-test-plate.png)
+![Ten-piece test plate model layout](../../bambu/Dara-Photo-Frame-A1-Jointed/fit-test-plate.png)
+
+The model thumbnail shows modifier-colored areas in the base color. Use sliced
+Preview's Filament view to see the wood weave assignment.
 
 ## Standalone source coupons
 
@@ -58,7 +79,7 @@ For the actual M screw and paired locator fit, print **F14 (plate 14) and M5
 (plate 25)** from the complete production project. They share one screw and both
 M5 locating pins; use a 10 mm OD x 4 mm ID x 1 mm washer. Check the seated fit
 before printing the other M sections. The fit coupons add material beyond the
-3.254 kg production estimate.
+3.330 kg production estimate.
 
 To regenerate these two exports with OpenSCAD (from the repository root):
 

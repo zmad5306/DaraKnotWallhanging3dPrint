@@ -134,6 +134,21 @@ def nearest_error(reference, query):
     return maximum
 
 
+def filament_weights(gcode):
+    values = re.search(r'^; total filament weight \[g\] : ([^\n]+)', gcode, re.M)
+    assert values, 'Missing filament weight header'
+    weights = [float(n.strip()) for n in values[1].split(',')]
+    ids = re.search(r'^; filament: ([^\n]+)', gcode, re.M)
+    if not ids:
+        return weights
+    slots = [int(n) for n in ids[1].split(',')]
+    assert len(slots) == len(weights)
+    mapped = [0.] * max(slots)
+    for slot, weight in zip(slots, weights):
+        mapped[slot - 1] = weight
+    return mapped
+
+
 def assembly_checks(meshes, array):
     assembled = {}
     for family, prefix, count in [('frame', 'F', 20), ('M', 'M', 6)]:
@@ -239,6 +254,16 @@ def main():
                              'sparse_infill_pattern': 'gyroid', 'layer_height': '0.2', 'print_sequence': 'by layer'}
         for key, value in expected_settings.items():
             assert settings[key] == value, (key, settings[key])
+        colored = len(settings['filament_colour']) == 3
+        if colored:
+            for key, value in {
+                'filament_colour': ['#FFFFFF', '#C2AB84', '#B87333'],
+                'filament_settings_id': ['Generic PLA @BBL A1', 'Generic PLA @BBL A1', 'Generic PLA Silk @BBL A1'],
+                'enable_prime_tower': '1', 'flush_into_infill': '0',
+                'flush_into_objects': '0', 'flush_into_support': '0',
+            }.items():
+                assert settings[key] == value, (key, settings[key])
+                expected_settings[key] = value
         report['settings'] = expected_settings
         objects = {o.get('id'): o for o in root.find('m:resources', N)}
         builds = collections.defaultdict(list)
@@ -250,7 +275,7 @@ def main():
             for item in plate['items']:
                 source_positions[item['name']].append(np.array([item['xy'][0] + (pi % 6) * 307.2,
                                                                item['xy'][1] - (pi // 6) * 307.2, 0]))
-        names, normal_errors, modifier_count = {}, [], 0
+        names, normal_errors, modifier_count, color_modifiers = {}, [], 0, []
         for obj in config.findall('object'):
             oid, op = obj.get('id'), props(obj)
             name = names[oid] = op['name']
@@ -259,6 +284,11 @@ def main():
             assert len(builds[oid]) == (32 if name == 'Retainer' else 1)
             components = {c.get('objectid'): c for c in objects[oid].find('m:components', N)}
             assert len(obj.findall("part[@subtype='normal_part']")) == 1
+            expected_slot = '3' if name.startswith('M') or name == 'Test-M-Letter' else '1'
+            if colored:
+                assert op['extruder'] == expected_slot, (name, op)
+                if expected_slot == '3':
+                    assert op['outer_wall_speed'] == op['top_surface_speed'] == '40'
             for part in obj.findall('part'):
                 comp = components[part.get('id')]
                 child = ET.fromstring(archive.read(comp.get(P + 'path').lstrip('/')))
@@ -276,6 +306,13 @@ def main():
                 mesh.apply_transform(builds[oid][0])
                 mesh.apply_translation(-source_positions[name][0])
                 if part.get('subtype') == 'modifier_part':
+                    if colored and props(part).get('extruder') == '2':
+                        assert name.startswith('F') or name == test_plate.get('full_width_weave_test')
+                        assert np.allclose(mesh.bounds[:, 2], [8.4, 9.6], atol=1e-4)
+                        assert 'sparse_infill_density' not in props(part)
+                        assert trimesh.boolean.intersection([mesh, meshes[name]], engine='manifold').volume > 100
+                        color_modifiers.append({'part': name, 'filament': 2, 'z_mm': mesh.bounds[:, 2].tolist()})
+                        continue
                     assert props(part)['sparse_infill_density'] == '100%'
                     assert trimesh.boolean.intersection([mesh, meshes[name]], engine='manifold').volume > 1
                     modifier_count += 1
@@ -283,6 +320,11 @@ def main():
                     for key in ('wall_loops', 'sparse_infill_density', 'sparse_infill_pattern', 'layer_height'):
                         assert props(part).get(key, expected_settings[key]) == expected_settings[key], (name, key)
                     ref = meshes[name]
+                    if colored:
+                        # Bambu omits redundant part-level assignments for
+                        # some single-volume objects; they inherit the object.
+                        slot = props(part).get('extruder', op['extruder'])
+                        assert slot == expected_slot, (name, slot)
                     assert len(mesh.faces) == len(ref.faces)
                     error = max(nearest_error(ref.vertices, mesh.vertices), nearest_error(mesh.vertices, ref.vertices),
                                 nearest_error(ref.triangles_center, mesh.triangles_center))
@@ -294,9 +336,18 @@ def main():
         assert len(normal_errors) == len(meshes) and modifier_count == expected_modifiers
         report['normal_mesh_comparisons'] = normal_errors
         report['solid_modifiers_verified'] = modifier_count
-        print(f'3MF meshes, all instance placements and {modifier_count} solid modifiers verified', flush=True)
+        if colored:
+            expected_color_parts = [f'F{i}' for i in range(1, 21)]
+            if test_plate.get('full_width_weave_test'):
+                expected_color_parts.append(test_plate['full_width_weave_test'])
+            assert sorted(p['part'] for p in color_modifiers) == sorted(expected_color_parts)
+            report['color_modifiers_verified'] = color_modifiers
+        print(f'3MF meshes, all instance placements, {modifier_count} solid modifiers and '
+              f'{len(color_modifiers)} color modifiers verified', flush=True)
         plates = config.findall('plate')
         assert len(plates) == expected_plate_count
+        slice_info = ET.fromstring(archive.read('Metadata/slice_info.config'))
+        sliced_plates = {int(props(p)['index']): p for p in slice_info.findall('plate')}
         quantity = collections.Counter()
         for plate in plates:
             pp = props(plate)
@@ -324,11 +375,33 @@ def main():
                 assert f'; {key} = {expected_settings[key]}\n' in gcode
             scan = scan_gcode(gcode)
             assert scan['conservative_bed_edge_clearance_mm'] >= 0, (number, scan)
-            mass = float(re.search(r'total filament weight \[g\] : ([\d.]+)', gcode)[1])
+            weights = filament_weights(gcode)
+            mass = sum(weights)
+            color_info = {}
+            if colored:
+                stat = sliced_plates[number]
+                slots = {int(f.get('id')) for f in stat.findall('filament')}
+                test_slots = {1, 2, 3} if test_plate.get('full_width_weave_test') else {1, 3}
+                expected_slots = {1, 2} if number <= 20 else {3} if number <= 26 else {1} if number <= 29 else test_slots
+                assert slots == expected_slots, (number, slots)
+                for filament in stat.findall('filament'):
+                    slot = int(filament.get('id'))
+                    assert filament.get('color') == settings['filament_colour'][slot - 1]
+                    assert abs(float(filament.get('used_g')) - weights[slot - 1]) < .02
+                layers = [dict(p.attrib) for p in stat.findall('layer_filament_lists/layer_filament_list')]
+                if number <= 20 or (number == 30 and test_plate.get('full_width_weave_test')):
+                    wood_layers = [p for p in layers if '1' in p['filament_list'].split()]
+                    assert len(wood_layers) == 1 and wood_layers[0]['layer_ranges'] == '42 47', (number, wood_layers)
+                color_info = {'filament_slots': sorted(slots), 'layer_filament_lists': layers,
+                              'filament_changes': len(re.findall(r'^; CP TOOLCHANGE START', gcode, re.M)),
+                              'slicer_notices': [dict(w.attrib) for w in stat.findall('warning')]}
+                if number <= 20:
+                    assert color_info['filament_changes'] == 6, (number, color_info)
             duration = re.search(r'total estimated time: ([^\n]+)', gcode)[1]
             seconds = sum(int(n) * {'h': 3600, 'm': 60, 's': 1}[u] for n, u in re.findall(r'(\d+)([hms])', duration))
             report['plates'].append({'plate': number, 'parts': dict(actual), 'weight_g': mass,
-                                     'estimated_seconds': seconds, 'settings_verified': True, **scan})
+                                     'filament_weights_g': weights,
+                                     'estimated_seconds': seconds, 'settings_verified': True, **color_info, **scan})
             print(f'Plate {number}: {scan["extrusion_moves_checked"]} extrusion moves; edge {scan["conservative_bed_edge_clearance_mm"]:.3f} mm', flush=True)
         assert dict(quantity) == expected_quantities
     report['summary'] = {'digital_checks_passed': True, 'distinct_meshes': len(meshes),
@@ -338,6 +411,9 @@ def main():
                          'extrusion_moves_checked': sum(p['extrusion_moves_checked'] for p in report['plates']),
                          'total_weight_g': round(sum(p['weight_g'] for p in report['plates']), 2),
                          'total_estimated_seconds': sum(p['estimated_seconds'] for p in report['plates'])}
+    report['summary']['filament_weights_g'] = [round(sum(p['filament_weights_g'][i] if i < len(p['filament_weights_g']) else 0
+                                                       for p in report['plates']), 2)
+                                                for i in range(len(settings['filament_colour']))]
     args.report.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report['summary'], indent=2))
 

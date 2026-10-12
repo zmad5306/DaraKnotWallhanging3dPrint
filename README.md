@@ -1,8 +1,8 @@
 # Dara knot wall hanging
 
-![Dara knot wall hanging on a dark blue wall, with white ribbon, bone-white woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Bone-Copper.png)
+![Dara knot wall hanging on a dark blue wall, with white ribbon, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper.png)
 
-Concept rendering: white ribbon, bone-white woven fabric, and a copper manuscript M
+Concept rendering: white ribbon, wood-tan woven fabric, and a copper manuscript M
 on a dark blue wall.
 
 The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
@@ -12,11 +12,17 @@ hardware fits have **not been physically tested**. Start with the
 before committing to all 29 production plates.
 
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
-contains all 70 assembly pieces on plates 1-29, plus nine fit-test pieces on
-**plate 30 - PRINT FIRST**. The
+contains all 70 assembly pieces on plates 1-29, plus ten test pieces on
+**plate 30 - PRINT FIRST**, including a 68.45 x 24 mm full-width white/wood
+weave sample cropped from F7. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
 part in the assembly and shows the shared backer and hardware plates. The project
 uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
+The saved AMS palette is **1 white / Generic PLA, 2 wood tan / Generic PLA,
+3 copper / Generic PLA Silk**. Frame sections print their shallow weave in wood;
+the M sections print entirely in copper. Match these project colors to your
+loaded AMS Lite spools in the print dialog. No painting or separate weave inserts
+are needed. Use the 3MF to retain these assignments; STL files contain geometry only.
 See the [project notes and verification](working/bambu/Dara-Photo-Frame-A1-Jointed/README.md).
 Run `git lfs pull` after cloning to retrieve the 3MF and STL files.
 

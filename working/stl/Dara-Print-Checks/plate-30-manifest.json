@@ -1,6 +1,6 @@
 {
   "plate": 30,
-  "pieces": 9,
+  "pieces": 10,
   "production_pieces": 70,
   "production_plates": 29,
   "source_project_sha256": "a8fe39fdc67523c7e2b1ba53d94efcaac6d157bb32923b23ae4f98d01a86fa34",
@@ -110,82 +110,108 @@
       "modifiers": [],
       "quantity": 1,
       "plate": 30
+    },
+    {
+      "name": "Test-Weave-Full-Width",
+      "file": "Test-Weave-Full-Width.stl",
+      "sha256": "2e5aec0a4a0d2e8634c19332967765fd74d21e9c6fff5cd0700f5a1f9b8ac61e",
+      "triangles": 1070,
+      "source": "F7.stl; frame-joint-1 coordinates X=-110..30, Y=-90..-66; both side rails uncut",
+      "source_stl_sha256": "a04dc81e2a745fae72da05b71fe6aee2c3ce383945f9352e8ca5c688ba8f4375",
+      "dimensions_mm": [
+        68.44780731201172,
+        24.0,
+        13.5
+      ],
+      "modifiers": [],
+      "color_modifier": {
+        "filament": 2,
+        "z_mm": [
+          8.4,
+          9.6
+        ],
+        "modifier_volume_mm3": 775.9632442917472,
+        "footprint_area_mm2": 646.635498046875,
+        "printable_mesh_unchanged": true
+      },
+      "quantity": 1,
+      "plate": 30
     }
   ],
   "plate_layout": {
-    "name": "PRINT FIRST - Hardware and lap fit tests",
+    "name": "PRINT FIRST - Hardware, lap and weave tests",
     "items": [
       {
         "name": "Test-Photo-Frame",
-        "object_id": 1000,
+        "object_id": 174,
         "instance_id": 0,
-        "identify_id": 301,
+        "identify_id": 2505,
         "xy": [
-          21.0,
-          220.0
+          154.0,
+          228.0
         ],
         "bounds": [
           [
-            12.0,
-            210.0,
+            145.0,
+            218.0,
             0.0
           ],
           [
-            30.0,
-            230.0,
+            163.0,
+            238.0,
             13.5
           ]
         ]
       },
       {
         "name": "Test-Photo-Backer",
-        "object_id": 1020,
+        "object_id": 176,
         "instance_id": 0,
-        "identify_id": 302,
+        "identify_id": 2516,
         "xy": [
-          48.85000038146973,
-          219.0
+          180.85000038146973,
+          231.0
         ],
         "bounds": [
           [
-            42.0,
-            210.0,
+            174.0,
+            222.0,
             0.0
           ],
           [
-            55.70000076293945,
-            228.0,
+            187.70000076293945,
+            240.0,
             1.5999994277954102
           ]
         ]
       },
       {
         "name": "Test-Photo-Tab",
-        "object_id": 1040,
+        "object_id": 179,
         "instance_id": 0,
-        "identify_id": 303,
+        "identify_id": 2533,
         "xy": [
-          78.0,
-          215.0
+          155.0,
+          203.0
         ],
         "bounds": [
           [
-            68.0,
-            210.0,
+            145.0,
+            198.0,
             0.0
           ],
           [
-            88.0,
-            220.0,
+            165.0,
+            208.0,
             3.0
           ]
         ]
       },
       {
         "name": "Test-Wall-Block-B1",
-        "object_id": 1060,
+        "object_id": 184,
         "instance_id": 0,
-        "identify_id": 304,
+        "identify_id": 2562,
         "xy": [
           82.0,
           31.0
@@ -205,9 +231,9 @@
       },
       {
         "name": "Test-Wall-Socket-B1",
-        "object_id": 1080,
+        "object_id": 188,
         "instance_id": 0,
-        "identify_id": 305,
+        "identify_id": 2585,
         "xy": [
           82.0,
           81.0
@@ -227,9 +253,9 @@
       },
       {
         "name": "Test-M-Frame",
-        "object_id": 1100,
+        "object_id": 191,
         "instance_id": 0,
-        "identify_id": 306,
+        "identify_id": 2602,
         "xy": [
           90.5,
           125.84766387939453
@@ -249,9 +275,9 @@
       },
       {
         "name": "Test-M-Letter",
-        "object_id": 1120,
+        "object_id": 194,
         "instance_id": 0,
-        "identify_id": 307,
+        "identify_id": 2619,
         "xy": [
           87.68387603759766,
           170.5643711090088
@@ -271,9 +297,9 @@
       },
       {
         "name": "Test-Lap-Tongue",
-        "object_id": 1140,
+        "object_id": 196,
         "instance_id": 0,
-        "identify_id": 308,
+        "identify_id": 2630,
         "xy": [
           216.00000095367432,
           57.65303039550781
@@ -293,9 +319,9 @@
       },
       {
         "name": "Test-Lap-Socket",
-        "object_id": 1160,
+        "object_id": 198,
         "instance_id": 0,
-        "identify_id": 309,
+        "identify_id": 2641,
         "xy": [
           215.4812306649983,
           165.6530303955078
@@ -312,14 +338,34 @@
             13.5
           ]
         ]
+      },
+      {
+        "name": "Test-Weave-Full-Width",
+        "object_id": 30000,
+        "instance_id": 0,
+        "identify_id": 2658,
+        "xy": [
+          46.22390365600586,
+          222.0
+        ],
+        "bounds": [
+          [
+            12.0,
+            210.0,
+            0.0
+          ],
+          [
+            80.44780731201172,
+            234.0,
+            13.5
+          ]
+        ]
       }
     ]
   },
   "modifier_count": 9,
   "sliced": true,
-  "production_gcodes_byte_identical": true,
   "slicer_warnings": [],
-  "bambu_reload_verified": true,
   "slice_summary": {
     "plate": 30,
     "parts": {
@@ -331,27 +377,55 @@
       "Test-M-Frame": 1,
       "Test-M-Letter": 1,
       "Test-Lap-Tongue": 1,
-      "Test-Lap-Socket": 1
+      "Test-Lap-Socket": 1,
+      "Test-Weave-Full-Width": 1
     },
-    "weight_g": 160.18,
-    "estimated_seconds": 19800,
+    "weight_g": 204.72,
+    "filament_weights_g": [
+      166.63,
+      3.31,
+      34.78
+    ],
+    "estimated_seconds": 30269,
     "settings_verified": true,
-    "extrusion_moves_checked": 339557,
+    "filament_slots": [
+      1,
+      2,
+      3
+    ],
+    "layer_filament_lists": [
+      {
+        "filament_list": "0 2",
+        "layer_ranges": "0 41,48 52"
+      },
+      {
+        "filament_list": "0 1 2",
+        "layer_ranges": "42 47"
+      },
+      {
+        "filament_list": "0",
+        "layer_ranges": "53 82"
+      }
+    ],
+    "filament_changes": 59,
+    "slicer_notices": [],
+    "extrusion_moves_checked": 368071,
     "features": {
-      "Support": 3242,
-      "Brim": 1017,
-      "Outer wall": 10337,
-      "Inner wall": 29103,
-      "Bottom surface": 3537,
-      "Gap infill": 1303,
-      "Internal solid infill": 34066,
-      "Sparse infill": 239629,
-      "Support transition": 574,
-      "Support interface": 1105,
-      "Floating vertical shell": 3725,
-      "Top surface": 4783,
-      "Bridge": 6874,
-      "Overhang wall": 262
+      "Support": 4444,
+      "Brim": 1128,
+      "Outer wall": 11390,
+      "Inner wall": 31547,
+      "Gap infill": 2625,
+      "Bottom surface": 3809,
+      "Prime tower": 4633,
+      "Internal solid infill": 37590,
+      "Sparse infill": 251557,
+      "Support transition": 594,
+      "Top surface": 5372,
+      "Support interface": 1151,
+      "Floating vertical shell": 4349,
+      "Overhang wall": 274,
+      "Bridge": 7608
     },
     "extruding_xy_bounds_mm": [
       [
@@ -360,7 +434,7 @@
       ],
       [
         238.75,
-        231.75
+        248.80170728059346
       ]
     ],
     "bead_xy_bounds_mm": [
@@ -370,9 +444,23 @@
       ],
       [
         239.0,
-        232.0
+        249.05170728059346
       ]
     ],
-    "conservative_bed_edge_clearance_mm": 10.0
-  }
+    "conservative_bed_edge_clearance_mm": 6.948292719406538
+  },
+  "current_project_sha256": "49d869ee9f90df76c3f22dcf4890444922c03ab6952bb06c94def2e6c2e4d7e4",
+  "source_project_note": "source_project_sha256 identifies the historical source for the original nine coupons; the full-width weave entry records its production STL source and hash.",
+  "filament_assignment": {
+    "Test-M-Letter": 3,
+    "Test-Weave-Full-Width": {
+      "body": 1,
+      "weave_and_backing": 2
+    },
+    "other_test_pieces": 1
+  },
+  "bambu_reload_verified": true,
+  "full_width_weave_test": "Test-Weave-Full-Width",
+  "color_modifier_count": 1,
+  "production_gcodes_byte_identical": true
 }

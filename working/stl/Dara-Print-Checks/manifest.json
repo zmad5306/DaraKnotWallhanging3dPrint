@@ -1,0 +1,33 @@
+{
+  "source_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+  "source": "working/Dara-Photo-Frame-A1-Jointed.scad",
+  "wall_mount_index": 1,
+  "files": [
+    {
+      "file": "Photo-Fit-Sample.stl",
+      "sha256": "36aaf8fba84a297c3322238f3b7fb9b5240216b1bcb1817a5ea9f01e826ce543",
+      "view_mode": "fit_sample",
+      "connected_solids": 3,
+      "size_mm": [
+        47.0,
+        39.0,
+        13.5
+      ],
+      "all_solids_watertight_on_bed": true
+    },
+    {
+      "file": "Wall-Fit-Sample-B1.stl",
+      "sha256": "4f64f6853f3263070366db47617851f43e0f48954bdb08f58ef84076e314db5f",
+      "view_mode": "wall_fit_sample",
+      "connected_solids": 2,
+      "size_mm": [
+        140.0,
+        90.0,
+        13.5
+      ],
+      "all_solids_watertight_on_bed": true
+    }
+  ],
+  "sliced": false,
+  "physical_test_performed": false
+}

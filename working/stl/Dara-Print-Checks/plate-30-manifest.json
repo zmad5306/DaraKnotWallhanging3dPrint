@@ -1,0 +1,378 @@
+{
+  "plate": 30,
+  "pieces": 9,
+  "production_pieces": 70,
+  "production_plates": 29,
+  "source_project_sha256": "a8fe39fdc67523c7e2b1ba53d94efcaac6d157bb32923b23ae4f98d01a86fa34",
+  "source_cad_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+  "parts": [
+    {
+      "name": "Test-Photo-Frame",
+      "source": "Photo-Fit-Sample.stl",
+      "file": "Test-Photo-Frame.stl",
+      "sha256": "a707f23f47a6ff8d6737e14761b872322f66fe7c8e7b69e09a6e45b1e9dad2bd",
+      "triangles": 276,
+      "modifiers": [
+        "100% photo pilot"
+      ],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-Photo-Backer",
+      "source": "Photo-Fit-Sample.stl",
+      "file": "Test-Photo-Backer.stl",
+      "sha256": "61eae6089926d26123eb1dd11d5c4a1176c510b6268312b6be1b9699ea737087",
+      "triangles": 12,
+      "modifiers": [],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-Photo-Tab",
+      "source": "Photo-Fit-Sample.stl",
+      "file": "Test-Photo-Tab.stl",
+      "sha256": "c3aeb893190fba0d947ca09eb0b082502ec1bfdde4cdf994b4d00ebb2345edf2",
+      "triangles": 520,
+      "modifiers": [
+        "100% photo tab seat"
+      ],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-Wall-Block-B1",
+      "source": "Wall-Fit-Sample-B1.stl",
+      "file": "Test-Wall-Block-B1.stl",
+      "sha256": "a3817058562bed45cbe478213eaea86828249b309232d174d860a7d33ea7e253",
+      "triangles": 2152,
+      "modifiers": [
+        "100% B1 screw 1 seat",
+        "100% B1 screw 2 seat",
+        "100% B1 keyhole lip"
+      ],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-Wall-Socket-B1",
+      "source": "Wall-Fit-Sample-B1.stl",
+      "file": "Test-Wall-Socket-B1.stl",
+      "sha256": "115c563e62db05926128d20e53e9c731366782ec44d5725383aff6907aef5124",
+      "triangles": 1084,
+      "modifiers": [
+        "100% B1 pilot 1",
+        "100% B1 pilot 2"
+      ],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-M-Frame",
+      "source": "F14.stl; native assembly crop X=-45..-13, Y=-185..-28",
+      "file": "Test-M-Frame.stl",
+      "sha256": "779ef9e43fc9ae760654d89573650a00bf6883d45cf026ecb4d67add82f5d078",
+      "triangles": 2294,
+      "modifiers": [
+        "100% M screw zone"
+      ],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-M-Letter",
+      "source": "M5.stl; native assembly crop X=-45..-13, Y=-185..-28",
+      "file": "Test-M-Letter.stl",
+      "sha256": "fe0520d4fcb6ae4ffe75b96fe1445848b00a068a289e94949079cb55640d9e84",
+      "triangles": 1308,
+      "modifiers": [
+        "100% M screw zone"
+      ],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-Lap-Tongue",
+      "source": "F7.stl; native frame joint 1 crop",
+      "file": "Test-Lap-Tongue.stl",
+      "sha256": "68617bc95d217d26a8067bb6451f7b2fda23236d0208cb4613a5eca65a00d56a",
+      "triangles": 674,
+      "modifiers": [],
+      "quantity": 1,
+      "plate": 30
+    },
+    {
+      "name": "Test-Lap-Socket",
+      "source": "F4.stl; native frame joint 1 crop",
+      "file": "Test-Lap-Socket.stl",
+      "sha256": "c543b0dfbbd7f096c0245ba850737bde28632adf8c9af3edc55115b7f3fbbb1b",
+      "triangles": 1148,
+      "modifiers": [],
+      "quantity": 1,
+      "plate": 30
+    }
+  ],
+  "plate_layout": {
+    "name": "PRINT FIRST - Hardware and lap fit tests",
+    "items": [
+      {
+        "name": "Test-Photo-Frame",
+        "object_id": 1000,
+        "instance_id": 0,
+        "identify_id": 301,
+        "xy": [
+          21.0,
+          220.0
+        ],
+        "bounds": [
+          [
+            12.0,
+            210.0,
+            0.0
+          ],
+          [
+            30.0,
+            230.0,
+            13.5
+          ]
+        ]
+      },
+      {
+        "name": "Test-Photo-Backer",
+        "object_id": 1020,
+        "instance_id": 0,
+        "identify_id": 302,
+        "xy": [
+          48.85000038146973,
+          219.0
+        ],
+        "bounds": [
+          [
+            42.0,
+            210.0,
+            0.0
+          ],
+          [
+            55.70000076293945,
+            228.0,
+            1.5999994277954102
+          ]
+        ]
+      },
+      {
+        "name": "Test-Photo-Tab",
+        "object_id": 1040,
+        "instance_id": 0,
+        "identify_id": 303,
+        "xy": [
+          78.0,
+          215.0
+        ],
+        "bounds": [
+          [
+            68.0,
+            210.0,
+            0.0
+          ],
+          [
+            88.0,
+            220.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "Test-Wall-Block-B1",
+        "object_id": 1060,
+        "instance_id": 0,
+        "identify_id": 304,
+        "xy": [
+          82.0,
+          31.0
+        ],
+        "bounds": [
+          [
+            12.0,
+            12.0,
+            0.0
+          ],
+          [
+            152.0,
+            50.0,
+            13.0
+          ]
+        ]
+      },
+      {
+        "name": "Test-Wall-Socket-B1",
+        "object_id": 1080,
+        "instance_id": 0,
+        "identify_id": 305,
+        "xy": [
+          82.0,
+          81.0
+        ],
+        "bounds": [
+          [
+            12.0,
+            62.0,
+            0.0
+          ],
+          [
+            152.0,
+            100.0,
+            13.5
+          ]
+        ]
+      },
+      {
+        "name": "Test-M-Frame",
+        "object_id": 1100,
+        "instance_id": 0,
+        "identify_id": 306,
+        "xy": [
+          90.5,
+          125.84766387939453
+        ],
+        "bounds": [
+          [
+            12.0,
+            112.0,
+            0.0
+          ],
+          [
+            169.0,
+            139.69532775878906,
+            16.5
+          ]
+        ]
+      },
+      {
+        "name": "Test-M-Letter",
+        "object_id": 1120,
+        "instance_id": 0,
+        "identify_id": 307,
+        "xy": [
+          87.68387603759766,
+          170.5643711090088
+        ],
+        "bounds": [
+          [
+            12.0,
+            157.0,
+            0.0
+          ],
+          [
+            163.3677520751953,
+            184.12874221801758,
+            10.5
+          ]
+        ]
+      },
+      {
+        "name": "Test-Lap-Tongue",
+        "object_id": 1140,
+        "instance_id": 0,
+        "identify_id": 308,
+        "xy": [
+          216.00000095367432,
+          57.65303039550781
+        ],
+        "bounds": [
+          [
+            195.00000095367432,
+            12.0,
+            0.0
+          ],
+          [
+            237.00000095367432,
+            103.30606079101562,
+            13.5
+          ]
+        ]
+      },
+      {
+        "name": "Test-Lap-Socket",
+        "object_id": 1160,
+        "instance_id": 0,
+        "identify_id": 309,
+        "xy": [
+          215.4812306649983,
+          165.6530303955078
+        ],
+        "bounds": [
+          [
+            195.0000008828938,
+            120.0,
+            0.0
+          ],
+          [
+            235.96246044710279,
+            211.30606079101562,
+            13.5
+          ]
+        ]
+      }
+    ]
+  },
+  "modifier_count": 9,
+  "sliced": true,
+  "production_gcodes_byte_identical": true,
+  "slicer_warnings": [],
+  "bambu_reload_verified": true,
+  "slice_summary": {
+    "plate": 30,
+    "parts": {
+      "Test-Photo-Frame": 1,
+      "Test-Photo-Backer": 1,
+      "Test-Photo-Tab": 1,
+      "Test-Wall-Block-B1": 1,
+      "Test-Wall-Socket-B1": 1,
+      "Test-M-Frame": 1,
+      "Test-M-Letter": 1,
+      "Test-Lap-Tongue": 1,
+      "Test-Lap-Socket": 1
+    },
+    "weight_g": 160.18,
+    "estimated_seconds": 19800,
+    "settings_verified": true,
+    "extrusion_moves_checked": 339557,
+    "features": {
+      "Support": 3242,
+      "Brim": 1017,
+      "Outer wall": 10337,
+      "Inner wall": 29103,
+      "Bottom surface": 3537,
+      "Gap infill": 1303,
+      "Internal solid infill": 34066,
+      "Sparse infill": 239629,
+      "Support transition": 574,
+      "Support interface": 1105,
+      "Floating vertical shell": 3725,
+      "Top surface": 4783,
+      "Bridge": 6874,
+      "Overhang wall": 262
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        10.25,
+        10.25
+      ],
+      [
+        238.75,
+        231.75
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        10.0,
+        10.0
+      ],
+      [
+        239.0,
+        232.0
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 10.0
+  }
+}

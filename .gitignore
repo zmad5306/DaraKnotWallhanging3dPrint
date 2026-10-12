@@ -7,5 +7,6 @@ __pycache__/
 *.[sS][tT][lL]
 *.[gG][cC][oO][dD][eE]
 !/working/stl/Dara-Photo-Frame-A1-Jointed/*.stl
+!/working/stl/Dara-Print-Checks/*.stl
 !/working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf
 !/reference/tested-lap-joints/Tested-Joints-One-Plate.3mf

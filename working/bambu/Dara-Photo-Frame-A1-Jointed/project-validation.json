@@ -1,8 +1,8 @@
 {
   "project": "Dara-Photo-Frame-A1-Complete.3mf",
-  "pieces": 70,
-  "distinct_parts": 39,
-  "plates": 29,
+  "pieces": 79,
+  "distinct_parts": 48,
+  "plates": 30,
   "settings": {
     "printer_settings_id": "Bambu Lab A1 0.4 nozzle",
     "filament_settings_id": [
@@ -2585,482 +2585,955 @@
           ]
         }
       ]
+    },
+    {
+      "name": "PRINT FIRST - Hardware and lap fit tests",
+      "items": [
+        {
+          "name": "Test-Photo-Frame",
+          "object_id": 1000,
+          "instance_id": 0,
+          "identify_id": 301,
+          "xy": [
+            21.0,
+            220.0
+          ],
+          "bounds": [
+            [
+              12.0,
+              210.0,
+              0.0
+            ],
+            [
+              30.0,
+              230.0,
+              13.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-Photo-Backer",
+          "object_id": 1020,
+          "instance_id": 0,
+          "identify_id": 302,
+          "xy": [
+            48.85000038146973,
+            219.0
+          ],
+          "bounds": [
+            [
+              42.0,
+              210.0,
+              0.0
+            ],
+            [
+              55.70000076293945,
+              228.0,
+              1.5999994277954102
+            ]
+          ]
+        },
+        {
+          "name": "Test-Photo-Tab",
+          "object_id": 1040,
+          "instance_id": 0,
+          "identify_id": 303,
+          "xy": [
+            78.0,
+            215.0
+          ],
+          "bounds": [
+            [
+              68.0,
+              210.0,
+              0.0
+            ],
+            [
+              88.0,
+              220.0,
+              3.0
+            ]
+          ]
+        },
+        {
+          "name": "Test-Wall-Block-B1",
+          "object_id": 1060,
+          "instance_id": 0,
+          "identify_id": 304,
+          "xy": [
+            82.0,
+            31.0
+          ],
+          "bounds": [
+            [
+              12.0,
+              12.0,
+              0.0
+            ],
+            [
+              152.0,
+              50.0,
+              13.0
+            ]
+          ]
+        },
+        {
+          "name": "Test-Wall-Socket-B1",
+          "object_id": 1080,
+          "instance_id": 0,
+          "identify_id": 305,
+          "xy": [
+            82.0,
+            81.0
+          ],
+          "bounds": [
+            [
+              12.0,
+              62.0,
+              0.0
+            ],
+            [
+              152.0,
+              100.0,
+              13.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-M-Frame",
+          "object_id": 1100,
+          "instance_id": 0,
+          "identify_id": 306,
+          "xy": [
+            90.5,
+            125.84766387939453
+          ],
+          "bounds": [
+            [
+              12.0,
+              112.0,
+              0.0
+            ],
+            [
+              169.0,
+              139.69532775878906,
+              16.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-M-Letter",
+          "object_id": 1120,
+          "instance_id": 0,
+          "identify_id": 307,
+          "xy": [
+            87.68387603759766,
+            170.5643711090088
+          ],
+          "bounds": [
+            [
+              12.0,
+              157.0,
+              0.0
+            ],
+            [
+              163.3677520751953,
+              184.12874221801758,
+              10.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-Lap-Tongue",
+          "object_id": 1140,
+          "instance_id": 0,
+          "identify_id": 308,
+          "xy": [
+            216.00000095367432,
+            57.65303039550781
+          ],
+          "bounds": [
+            [
+              195.00000095367432,
+              12.0,
+              0.0
+            ],
+            [
+              237.00000095367432,
+              103.30606079101562,
+              13.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-Lap-Socket",
+          "object_id": 1160,
+          "instance_id": 0,
+          "identify_id": 309,
+          "xy": [
+            215.4812306649983,
+            165.6530303955078
+          ],
+          "bounds": [
+            [
+              195.0000008828938,
+              120.0,
+              0.0
+            ],
+            [
+              235.96246044710279,
+              211.30606079101562,
+              13.5
+            ]
+          ]
+        }
+      ]
     }
   ],
-  "project_sha256": "a8fe39fdc67523c7e2b1ba53d94efcaac6d157bb32923b23ae4f98d01a86fa34",
+  "project_sha256": "d7dcf74aa88ff198dacdf59a1a63568e0ebf6f07f99776a2bc77f8a8f701a7a6",
   "bambu_studio_slice": {
     "all_plates_sliced": true,
-    "plate_count": 29,
+    "plate_count": 30,
     "all_extrusions_within_bed": true,
-    "total_weight_g": 3254.0699999999997,
-    "total_estimated_seconds": 401989,
-    "minimum_edge_clearance_mm": 0.8260000000000001,
+    "total_weight_g": 3414.25,
+    "total_estimated_seconds": 421789,
+    "minimum_edge_clearance_mm": 0.673,
+    "extrusion_moves_checked": 7398227,
+    "validation_note": "Production plates 1-29 retain byte-identical toolpaths. Plate 30 sliced in Bambu Studio 02.08.02.61, then combined and reloaded successfully. All toolpaths checked, including compact decimals and arc extrema. Excludes printer custom routines.",
     "plates": [
       {
         "plate": 1,
+        "parts": {
+          "F1": 1
+        },
         "weight_g": 106.68,
         "estimated_seconds": 13311,
+        "settings_verified": true,
+        "extrusion_moves_checked": 261549,
+        "features": {
+          "Support": 973,
+          "Brim": 456,
+          "Outer wall": 11726,
+          "Inner wall": 27783,
+          "Gap infill": 7191,
+          "Bottom surface": 1040,
+          "Internal solid infill": 15184,
+          "Sparse infill": 183878,
+          "Support transition": 305,
+          "Support interface": 617,
+          "Overhang wall": 102,
+          "Bridge": 5012,
+          "Floating vertical shell": 1150,
+          "Top surface": 6132
+        },
         "extruding_xy_bounds_mm": [
           [
-            19.739,
-            17.261
+            16.902,
+            16.912
           ],
           [
-            238.392,
-            236.926
+            239.099,
+            239.095
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 17.011,
-        "features": {
-          "Support": 11,
-          "Brim": 12,
-          "Outer wall": 266,
-          "Inner wall": 803,
-          "Bottom surface": 484,
-          "Internal solid infill": 3201,
-          "Overhang wall": 4,
-          "Bridge": 920,
-          "Floating vertical shell": 31,
-          "Top surface": 449
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            16.652,
+            16.662
+          ],
+          [
+            239.349,
+            239.345
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 16.65100000000001
       },
       {
         "plate": 2,
+        "parts": {
+          "F2": 1
+        },
         "weight_g": 116.76,
         "estimated_seconds": 14344,
+        "settings_verified": true,
+        "extrusion_moves_checked": 286573,
+        "features": {
+          "Support": 1435,
+          "Brim": 489,
+          "Outer wall": 14112,
+          "Inner wall": 34221,
+          "Gap infill": 1701,
+          "Bottom surface": 944,
+          "Internal solid infill": 16510,
+          "Sparse infill": 201869,
+          "Support transition": 439,
+          "Support interface": 688,
+          "Overhang wall": 161,
+          "Bridge": 5229,
+          "Floating vertical shell": 1432,
+          "Top surface": 7343
+        },
         "extruding_xy_bounds_mm": [
           [
-            14.036,
-            11.957
+            11.851,
+            11.837
           ],
           [
-            243.927,
-            240.731
+            244.137,
+            244.178
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 11.707,
-        "features": {
-          "Support": 10,
-          "Brim": 12,
-          "Outer wall": 265,
-          "Inner wall": 810,
-          "Bottom surface": 421,
-          "Internal solid infill": 3293,
-          "Support interface": 3,
-          "Overhang wall": 4,
-          "Bridge": 1024,
-          "Floating vertical shell": 27,
-          "Top surface": 362
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            11.601,
+            11.587
+          ],
+          [
+            244.387,
+            244.428
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 11.572000000000003
       },
       {
         "plate": 3,
+        "parts": {
+          "F3": 1
+        },
         "weight_g": 119.22,
         "estimated_seconds": 15285,
+        "settings_verified": true,
+        "extrusion_moves_checked": 279873,
+        "features": {
+          "Support": 2855,
+          "Brim": 194,
+          "Outer wall": 11718,
+          "Inner wall": 28102,
+          "Gap infill": 7647,
+          "Bottom surface": 1271,
+          "Internal solid infill": 20637,
+          "Sparse infill": 191134,
+          "Support transition": 655,
+          "Support interface": 1183,
+          "Overhang wall": 302,
+          "Bridge": 6169,
+          "Floating vertical shell": 1235,
+          "Top surface": 6771
+        },
         "extruding_xy_bounds_mm": [
           [
             2.958,
-            2.026
+            1.842
           ],
           [
-            253.577,
-            254.109
+            254.142,
+            254.152
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.6409999999999911,
-        "features": {
-          "Support": 7,
-          "Brim": 6,
-          "Outer wall": 337,
-          "Inner wall": 1024,
-          "Bottom surface": 425,
-          "Internal solid infill": 2998,
-          "Support transition": 23,
-          "Support interface": 25,
-          "Overhang wall": 8,
-          "Bridge": 819,
-          "Floating vertical shell": 28,
-          "Top surface": 360
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            2.748,
+            1.592
+          ],
+          [
+            254.392,
+            254.402
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.592
       },
       {
         "plate": 4,
+        "parts": {
+          "F4": 1
+        },
         "weight_g": 99.26,
         "estimated_seconds": 13122,
+        "settings_verified": true,
+        "extrusion_moves_checked": 207112,
+        "features": {
+          "Support": 4656,
+          "Brim": 94,
+          "Outer wall": 7284,
+          "Inner wall": 14910,
+          "Gap infill": 1127,
+          "Bottom surface": 956,
+          "Internal solid infill": 16546,
+          "Sparse infill": 146925,
+          "Support transition": 794,
+          "Support interface": 1418,
+          "Overhang wall": 813,
+          "Bridge": 6904,
+          "Floating vertical shell": 307,
+          "Top surface": 4378
+        },
         "extruding_xy_bounds_mm": [
           [
             13.484,
-            14.378
+            13.478
           ],
           [
             242.211,
             242.216
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 13.234,
-        "features": {
-          "Support": 237,
-          "Brim": 12,
-          "Outer wall": 544,
-          "Inner wall": 1652,
-          "Bottom surface": 459,
-          "Internal solid infill": 1878,
-          "Support transition": 74,
-          "Support interface": 116,
-          "Floating vertical shell": 15,
-          "Overhang wall": 16,
-          "Bridge": 714,
-          "Top surface": 309
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            13.234,
+            13.228
+          ],
+          [
+            242.461,
+            242.466
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 13.228
       },
       {
         "plate": 5,
+        "parts": {
+          "F5": 1
+        },
         "weight_g": 136.21,
         "estimated_seconds": 17937,
+        "settings_verified": true,
+        "extrusion_moves_checked": 311544,
+        "features": {
+          "Support": 4946,
+          "Brim": 204,
+          "Outer wall": 11309,
+          "Inner wall": 25875,
+          "Gap infill": 2553,
+          "Bottom surface": 1623,
+          "Internal solid infill": 27364,
+          "Sparse infill": 213567,
+          "Support transition": 1376,
+          "Support interface": 2404,
+          "Overhang wall": 726,
+          "Bridge": 9083,
+          "Floating vertical shell": 1997,
+          "Top surface": 8517
+        },
         "extruding_xy_bounds_mm": [
           [
             13.698,
-            21.709
+            19.759
           ],
           [
             242.219,
             236.34
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 13.448,
-        "features": {
-          "Support": 280,
-          "Brim": 12,
-          "Outer wall": 575,
-          "Inner wall": 1724,
-          "Bottom surface": 454,
-          "Internal solid infill": 3588,
-          "Overhang wall": 20,
-          "Bridge": 1441,
-          "Floating vertical shell": 65,
-          "Support transition": 19,
-          "Support interface": 100,
-          "Top surface": 710
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            13.448,
+            19.509
+          ],
+          [
+            242.469,
+            236.59
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 13.448
       },
       {
         "plate": 6,
+        "parts": {
+          "F6": 1
+        },
         "weight_g": 182.06,
         "estimated_seconds": 23198,
+        "settings_verified": true,
+        "extrusion_moves_checked": 430113,
+        "features": {
+          "Support": 6265,
+          "Brim": 230,
+          "Outer wall": 19511,
+          "Inner wall": 46366,
+          "Gap infill": 2809,
+          "Bottom surface": 1321,
+          "Internal solid infill": 29289,
+          "Sparse infill": 295703,
+          "Support transition": 1635,
+          "Support interface": 2518,
+          "Overhang wall": 642,
+          "Bridge": 9755,
+          "Floating vertical shell": 2119,
+          "Top surface": 11950
+        },
         "extruding_xy_bounds_mm": [
           [
-            2.693,
-            1.076
+            0.934,
+            0.923
           ],
           [
-            253.559,
+            253.607,
             254.005
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 0.8260000000000001,
-        "features": {
-          "Support": 355,
-          "Brim": 2,
-          "Outer wall": 512,
-          "Inner wall": 1573,
-          "Bottom surface": 526,
-          "Internal solid infill": 5086,
-          "Support interface": 112,
-          "Overhang wall": 16,
-          "Bridge": 1974,
-          "Floating vertical shell": 58,
-          "Support transition": 42,
-          "Top surface": 799
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            0.684,
+            0.673
+          ],
+          [
+            253.857,
+            254.215
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 0.673
       },
       {
         "plate": 7,
+        "parts": {
+          "F7": 1
+        },
         "weight_g": 116.27,
         "estimated_seconds": 15072,
+        "settings_verified": true,
+        "extrusion_moves_checked": 254421,
+        "features": {
+          "Support": 4438,
+          "Brim": 261,
+          "Outer wall": 10101,
+          "Inner wall": 22176,
+          "Gap infill": 2539,
+          "Bottom surface": 1326,
+          "Internal solid infill": 19106,
+          "Sparse infill": 178269,
+          "Support transition": 732,
+          "Floating vertical shell": 1812,
+          "Support interface": 1354,
+          "Overhang wall": 656,
+          "Bridge": 6344,
+          "Top surface": 5307
+        },
         "extruding_xy_bounds_mm": [
           [
             2.032,
             2.738
           ],
           [
-            250.656,
-            252.349
+            252.823,
+            252.821
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.782,
-        "features": {
-          "Support": 502,
-          "Brim": 22,
-          "Outer wall": 425,
-          "Inner wall": 1483,
-          "Bottom surface": 553,
-          "Internal solid infill": 2032,
-          "Floating vertical shell": 10,
-          "Bridge": 913,
-          "Support transition": 72,
-          "Support interface": 102,
-          "Top surface": 296,
-          "Overhang wall": 12
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            1.782,
+            2.488
+          ],
+          [
+            253.073,
+            253.071
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.782
       },
       {
         "plate": 8,
+        "parts": {
+          "F8": 1
+        },
         "weight_g": 138.61,
         "estimated_seconds": 17097,
+        "settings_verified": true,
+        "extrusion_moves_checked": 345324,
+        "features": {
+          "Support": 1612,
+          "Brim": 295,
+          "Outer wall": 16224,
+          "Inner wall": 39227,
+          "Gap infill": 3577,
+          "Bottom surface": 1509,
+          "Internal solid infill": 19951,
+          "Sparse infill": 244689,
+          "Support transition": 459,
+          "Support interface": 889,
+          "Overhang wall": 159,
+          "Bridge": 6715,
+          "Floating vertical shell": 1711,
+          "Top surface": 8307
+        },
         "extruding_xy_bounds_mm": [
           [
-            1.242,
-            1.185
+            1.17,
+            1.147
           ],
           [
-            253.586,
-            252.494
+            254.84,
+            254.853
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 0.935,
-        "features": {
-          "Support": 9,
-          "Brim": 6,
-          "Outer wall": 282,
-          "Inner wall": 850,
-          "Bottom surface": 661,
-          "Internal solid infill": 3922,
-          "Support transition": 2,
-          "Support interface": 4,
-          "Overhang wall": 4,
-          "Bridge": 993,
-          "Floating vertical shell": 27,
-          "Top surface": 707
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            0.9199999999999999,
+            0.897
+          ],
+          [
+            255.09,
+            255.103
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 0.8969999999999914
       },
       {
         "plate": 9,
+        "parts": {
+          "F9": 1
+        },
         "weight_g": 107.13,
         "estimated_seconds": 13473,
+        "settings_verified": true,
+        "extrusion_moves_checked": 227330,
+        "features": {
+          "Support": 1915,
+          "Brim": 284,
+          "Outer wall": 6707,
+          "Inner wall": 13476,
+          "Bottom surface": 909,
+          "Internal solid infill": 18287,
+          "Sparse infill": 165979,
+          "Support transition": 424,
+          "Support interface": 607,
+          "Overhang wall": 273,
+          "Bridge": 6309,
+          "Floating vertical shell": 1181,
+          "Gap infill": 5105,
+          "Top surface": 5874
+        },
         "extruding_xy_bounds_mm": [
           [
-            4.233,
-            4.504
+            4.195,
+            4.188
           ],
           [
-            251.419,
-            251.149
+            251.807,
+            251.819
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 3.9829999999999997,
-        "features": {
-          "Support": 171,
-          "Brim": 28,
-          "Outer wall": 549,
-          "Inner wall": 1659,
-          "Bottom surface": 339,
-          "Internal solid infill": 2934,
-          "Floating vertical shell": 15,
-          "Bridge": 1032,
-          "Support interface": 27,
-          "Top surface": 344,
-          "Overhang wall": 4
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            3.9450000000000003,
+            3.9379999999999997
+          ],
+          [
+            252.057,
+            252.069
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 3.9310000000000116
       },
       {
         "plate": 10,
+        "parts": {
+          "F10": 1
+        },
         "weight_g": 127.64,
         "estimated_seconds": 15988,
+        "settings_verified": true,
+        "extrusion_moves_checked": 287196,
+        "features": {
+          "Support": 2681,
+          "Brim": 184,
+          "Outer wall": 10790,
+          "Inner wall": 23089,
+          "Gap infill": 5345,
+          "Bottom surface": 805,
+          "Internal solid infill": 18907,
+          "Sparse infill": 209800,
+          "Support transition": 539,
+          "Support interface": 907,
+          "Overhang wall": 447,
+          "Bridge": 5232,
+          "Floating vertical shell": 1308,
+          "Top surface": 7162
+        },
         "extruding_xy_bounds_mm": [
           [
-            1.377,
-            2.508
+            1.269,
+            1.252
           ],
           [
             253.586,
-            253.6
+            253.632
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.127,
-        "features": {
-          "Support": 147,
-          "Brim": 13,
-          "Outer wall": 467,
-          "Inner wall": 1436,
-          "Bottom surface": 328,
-          "Internal solid infill": 2977,
-          "Support transition": 21,
-          "Support interface": 42,
-          "Overhang wall": 12,
-          "Bridge": 714,
-          "Floating vertical shell": 29,
-          "Top surface": 367
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            1.019,
+            1.002
+          ],
+          [
+            253.79600000000002,
+            253.842
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.002
       },
       {
         "plate": 11,
+        "parts": {
+          "F11": 1
+        },
         "weight_g": 114.57,
         "estimated_seconds": 14378,
+        "settings_verified": true,
+        "extrusion_moves_checked": 251854,
+        "features": {
+          "Support": 2135,
+          "Brim": 380,
+          "Outer wall": 8072,
+          "Inner wall": 16809,
+          "Gap infill": 2864,
+          "Bottom surface": 1233,
+          "Internal solid infill": 20750,
+          "Sparse infill": 183270,
+          "Support transition": 460,
+          "Support interface": 841,
+          "Overhang wall": 291,
+          "Bridge": 5849,
+          "Floating vertical shell": 1453,
+          "Top surface": 7447
+        },
         "extruding_xy_bounds_mm": [
           [
-            10.7,
+            9.324,
             37.296
           ],
           [
-            246.37,
-            218.587
+            246.488,
+            218.62
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 9.379999999999995,
-        "features": {
-          "Support": 44,
-          "Brim": 32,
-          "Outer wall": 561,
-          "Inner wall": 1675,
-          "Bottom surface": 434,
-          "Internal solid infill": 3379,
-          "Overhang wall": 8,
-          "Bridge": 1400,
-          "Floating vertical shell": 18,
-          "Top surface": 517
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            9.074,
+            37.046
+          ],
+          [
+            246.738,
+            218.87
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 9.074
       },
       {
         "plate": 12,
+        "parts": {
+          "F12": 1
+        },
         "weight_g": 130.58,
         "estimated_seconds": 16655,
+        "settings_verified": true,
+        "extrusion_moves_checked": 298270,
+        "features": {
+          "Support": 3282,
+          "Brim": 173,
+          "Outer wall": 10450,
+          "Inner wall": 22655,
+          "Bottom surface": 832,
+          "Internal solid infill": 20777,
+          "Sparse infill": 212219,
+          "Support transition": 765,
+          "Support interface": 1201,
+          "Overhang wall": 607,
+          "Bridge": 7305,
+          "Floating vertical shell": 1091,
+          "Gap infill": 9370,
+          "Top surface": 7543
+        },
         "extruding_xy_bounds_mm": [
           [
-            2.621,
+            1.364,
             2.504
           ],
           [
             253.474,
-            254.514
+            254.634
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.23599999999999,
-        "features": {
-          "Support": 309,
-          "Brim": 12,
-          "Outer wall": 628,
-          "Inner wall": 1962,
-          "Bottom surface": 339,
-          "Internal solid infill": 3374,
-          "Floating vertical shell": 15,
-          "Bridge": 981,
-          "Support transition": 18,
-          "Support interface": 65,
-          "Overhang wall": 12,
-          "Top surface": 416
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            1.114,
+            2.294
+          ],
+          [
+            253.684,
+            254.884
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.114
       },
       {
         "plate": 13,
+        "parts": {
+          "F13": 1
+        },
         "weight_g": 135.92,
         "estimated_seconds": 17237,
+        "settings_verified": true,
+        "extrusion_moves_checked": 339563,
+        "features": {
+          "Support": 3287,
+          "Brim": 418,
+          "Outer wall": 15212,
+          "Inner wall": 35971,
+          "Gap infill": 9258,
+          "Bottom surface": 1263,
+          "Internal solid infill": 20287,
+          "Sparse infill": 233619,
+          "Support transition": 815,
+          "Support interface": 1479,
+          "Overhang wall": 528,
+          "Bridge": 8361,
+          "Floating vertical shell": 1277,
+          "Top surface": 7788
+        },
         "extruding_xy_bounds_mm": [
           [
-            7.968,
-            8.413
+            5.801,
+            5.809
           ],
           [
             250.528,
             250.788
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 4.961999999999989,
-        "features": {
-          "Support": 116,
-          "Brim": 4,
-          "Outer wall": 263,
-          "Inner wall": 789,
-          "Bottom surface": 561,
-          "Internal solid infill": 3261,
-          "Support transition": 37,
-          "Support interface": 37,
-          "Overhang wall": 12,
-          "Bridge": 961,
-          "Floating vertical shell": 31,
-          "Top surface": 557
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            5.551,
+            5.559
+          ],
+          [
+            250.778,
+            251.038
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 4.961999999999989
       },
       {
         "plate": 14,
+        "parts": {
+          "F14": 1
+        },
         "weight_g": 118.83,
         "estimated_seconds": 14782,
+        "settings_verified": true,
+        "extrusion_moves_checked": 267381,
+        "features": {
+          "Support": 1659,
+          "Brim": 231,
+          "Outer wall": 10179,
+          "Inner wall": 22020,
+          "Gap infill": 6529,
+          "Bottom surface": 1196,
+          "Internal solid infill": 17791,
+          "Sparse infill": 192717,
+          "Support transition": 371,
+          "Support interface": 508,
+          "Overhang wall": 230,
+          "Bridge": 6599,
+          "Floating vertical shell": 1226,
+          "Top surface": 6125
+        },
         "extruding_xy_bounds_mm": [
           [
-            1.3,
-            2.371
+            1.219,
+            2.338
           ],
           [
-            254.588,
-            253.535
+            254.78,
+            254.793
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.05,
-        "features": {
-          "Support": 156,
-          "Brim": 16,
-          "Outer wall": 567,
-          "Inner wall": 1714,
-          "Bottom surface": 548,
-          "Internal solid infill": 2481,
-          "Support interface": 24,
-          "Overhang wall": 8,
-          "Bridge": 830,
-          "Floating vertical shell": 33,
-          "Top surface": 486
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            0.9690000000000001,
+            2.128
+          ],
+          [
+            255.03,
+            255.043
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 0.9569999999999936
       },
       {
         "plate": 15,
+        "parts": {
+          "F15": 1
+        },
         "weight_g": 141.6,
         "estimated_seconds": 17532,
+        "settings_verified": true,
+        "extrusion_moves_checked": 355434,
+        "features": {
+          "Support": 1491,
+          "Brim": 548,
+          "Outer wall": 16226,
+          "Inner wall": 39121,
+          "Gap infill": 8835,
+          "Bottom surface": 1446,
+          "Internal solid infill": 20131,
+          "Sparse infill": 250038,
+          "Support transition": 479,
+          "Support interface": 896,
+          "Overhang wall": 192,
+          "Bridge": 5986,
+          "Floating vertical shell": 1723,
+          "Top surface": 8322
+        },
         "extruding_xy_bounds_mm": [
           [
-            3.47,
-            2.549
+            2.397,
+            2.423
           ],
           [
-            250.994,
-            251.404
+            253.616,
+            253.584
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 2.299,
-        "features": {
-          "Support": 11,
-          "Brim": 12,
-          "Outer wall": 271,
-          "Inner wall": 795,
-          "Bottom surface": 649,
-          "Internal solid infill": 3723,
-          "Support transition": 3,
-          "Support interface": 3,
-          "Overhang wall": 4,
-          "Bridge": 1278,
-          "Floating vertical shell": 31,
-          "Top surface": 656
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            2.147,
+            2.173
+          ],
+          [
+            253.866,
+            253.834
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 2.133999999999986
       },
       {
         "plate": 16,
+        "parts": {
+          "F16": 1
+        },
         "weight_g": 117.53,
         "estimated_seconds": 15723,
+        "settings_verified": true,
+        "extrusion_moves_checked": 276214,
+        "features": {
+          "Support": 4662,
+          "Brim": 211,
+          "Outer wall": 10859,
+          "Inner wall": 26441,
+          "Gap infill": 2017,
+          "Bottom surface": 1274,
+          "Internal solid infill": 23802,
+          "Sparse infill": 186265,
+          "Support transition": 1224,
+          "Support interface": 2113,
+          "Overhang wall": 679,
+          "Bridge": 7621,
+          "Floating vertical shell": 1815,
+          "Top surface": 7231
+        },
         "extruding_xy_bounds_mm": [
           [
-            24.375,
+            23.264,
             35.385
           ],
           [
@@ -3068,325 +3541,509 @@
             220.313
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 23.639999999999986,
-        "features": {
-          "Support": 309,
-          "Brim": 12,
-          "Outer wall": 527,
-          "Inner wall": 1593,
-          "Bottom surface": 337,
-          "Internal solid infill": 2973,
-          "Overhang wall": 20,
-          "Bridge": 1016,
-          "Floating vertical shell": 52,
-          "Support transition": 16,
-          "Support interface": 16,
-          "Top surface": 894
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            23.014,
+            35.135
+          ],
+          [
+            232.36,
+            220.563
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 23.014
       },
       {
         "plate": 17,
+        "parts": {
+          "F17": 1
+        },
         "weight_g": 99.07,
         "estimated_seconds": 12793,
+        "settings_verified": true,
+        "extrusion_moves_checked": 207578,
+        "features": {
+          "Support": 4233,
+          "Brim": 87,
+          "Outer wall": 6425,
+          "Inner wall": 12588,
+          "Gap infill": 1387,
+          "Bottom surface": 1024,
+          "Internal solid infill": 15761,
+          "Sparse infill": 153473,
+          "Support transition": 610,
+          "Support interface": 1309,
+          "Overhang wall": 646,
+          "Bridge": 5109,
+          "Floating vertical shell": 489,
+          "Top surface": 4437
+        },
         "extruding_xy_bounds_mm": [
           [
-            14.098,
-            13.659
+            13.61,
+            12.952
           ],
           [
             242.782,
-            241.922
+            242.411
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 12.96799999999999,
-        "features": {
-          "Support": 178,
-          "Brim": 16,
-          "Outer wall": 489,
-          "Inner wall": 1466,
-          "Bottom surface": 500,
-          "Internal solid infill": 1682,
-          "Support transition": 48,
-          "Support interface": 71,
-          "Overhang wall": 16,
-          "Bridge": 717,
-          "Floating vertical shell": 21,
-          "Top surface": 155
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            13.36,
+            12.702
+          ],
+          [
+            243.032,
+            242.661
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 12.702
       },
       {
         "plate": 18,
+        "parts": {
+          "F18": 1
+        },
         "weight_g": 143.08,
         "estimated_seconds": 18689,
+        "settings_verified": true,
+        "extrusion_moves_checked": 335611,
+        "features": {
+          "Support": 4349,
+          "Brim": 251,
+          "Outer wall": 12734,
+          "Inner wall": 29501,
+          "Gap infill": 3091,
+          "Bottom surface": 1689,
+          "Internal solid infill": 27132,
+          "Sparse infill": 233622,
+          "Support transition": 1217,
+          "Support interface": 2143,
+          "Overhang wall": 538,
+          "Bridge": 8190,
+          "Floating vertical shell": 2155,
+          "Top surface": 8999
+        },
         "extruding_xy_bounds_mm": [
           [
             8.532,
-            16.455
+            14.758
           ],
           [
             247.161,
             240.943
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 8.282,
-        "features": {
-          "Support": 195,
-          "Brim": 16,
-          "Outer wall": 543,
-          "Inner wall": 1638,
-          "Bottom surface": 544,
-          "Internal solid infill": 3932,
-          "Overhang wall": 16,
-          "Bridge": 1498,
-          "Floating vertical shell": 77,
-          "Top surface": 739
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            8.282,
+            14.508
+          ],
+          [
+            247.411,
+            241.193
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 8.282
       },
       {
         "plate": 19,
+        "parts": {
+          "F19": 1
+        },
         "weight_g": 141.46,
         "estimated_seconds": 17480,
+        "settings_verified": true,
+        "extrusion_moves_checked": 352309,
+        "features": {
+          "Support": 1730,
+          "Brim": 546,
+          "Outer wall": 15511,
+          "Inner wall": 36738,
+          "Gap infill": 8587,
+          "Bottom surface": 1261,
+          "Internal solid infill": 19856,
+          "Sparse infill": 248488,
+          "Support transition": 516,
+          "Support interface": 899,
+          "Overhang wall": 153,
+          "Bridge": 7952,
+          "Floating vertical shell": 1523,
+          "Top surface": 8549
+        },
         "extruding_xy_bounds_mm": [
           [
-            2.46,
-            4.849
+            2.33,
+            2.316
           ],
           [
-            251.483,
-            252.606
+            253.679,
+            253.67
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 2.21,
-        "features": {
-          "Support": 7,
-          "Brim": 12,
-          "Outer wall": 268,
-          "Inner wall": 795,
-          "Bottom surface": 567,
-          "Internal solid infill": 3824,
-          "Support interface": 3,
-          "Overhang wall": 4,
-          "Bridge": 996,
-          "Floating vertical shell": 27,
-          "Top surface": 500
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            2.08,
+            2.066
+          ],
+          [
+            253.929,
+            253.92
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 2.066
       },
       {
         "plate": 20,
+        "parts": {
+          "F20": 1
+        },
         "weight_g": 102.83,
         "estimated_seconds": 12692,
+        "settings_verified": true,
+        "extrusion_moves_checked": 253952,
+        "features": {
+          "Support": 970,
+          "Brim": 491,
+          "Outer wall": 12480,
+          "Inner wall": 30443,
+          "Gap infill": 5967,
+          "Bottom surface": 801,
+          "Internal solid infill": 14549,
+          "Sparse infill": 174921,
+          "Support transition": 366,
+          "Support interface": 576,
+          "Overhang wall": 135,
+          "Bridge": 4743,
+          "Floating vertical shell": 1112,
+          "Top surface": 6398
+        },
         "extruding_xy_bounds_mm": [
           [
-            17.631,
-            19.639
+            17.468,
+            17.472
           ],
           [
-            235.485,
-            238.263
+            238.554,
+            238.506
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 17.381,
-        "features": {
-          "Support": 10,
-          "Brim": 12,
-          "Outer wall": 221,
-          "Inner wall": 663,
-          "Bottom surface": 372,
-          "Internal solid infill": 2905,
-          "Support interface": 3,
-          "Overhang wall": 4,
-          "Bridge": 885,
-          "Floating vertical shell": 25,
-          "Top surface": 294
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            17.218,
+            17.222
+          ],
+          [
+            238.804,
+            238.756
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 17.195999999999998
       },
       {
         "plate": 21,
+        "parts": {
+          "M1": 1
+        },
         "weight_g": 59.15,
         "estimated_seconds": 7238,
+        "settings_verified": true,
+        "extrusion_moves_checked": 118409,
+        "features": {
+          "Support": 347,
+          "Brim": 1197,
+          "Outer wall": 2836,
+          "Inner wall": 7998,
+          "Bottom surface": 981,
+          "Gap infill": 914,
+          "Internal solid infill": 10965,
+          "Sparse infill": 90305,
+          "Support transition": 27,
+          "Support interface": 41,
+          "Bridge": 1761,
+          "Floating vertical shell": 79,
+          "Top surface": 958
+        },
         "extruding_xy_bounds_mm": [
           [
-            8.3287961961654,
-            6.569
+            6.247,
+            6.26
           ],
           [
-            249.366,
-            241.613
+            249.749,
+            249.769
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 6.319,
-        "features": {
-          "Brim": 8,
-          "Outer wall": 383,
-          "Inner wall": 1197,
-          "Bottom surface": 347,
-          "Internal solid infill": 2110,
-          "Floating vertical shell": 9,
-          "Bridge": 426,
-          "Top surface": 335
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            5.997,
+            6.01
+          ],
+          [
+            249.999,
+            250.019
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 5.9809999999999945
       },
       {
         "plate": 22,
+        "parts": {
+          "M2": 1
+        },
         "weight_g": 57.02,
         "estimated_seconds": 7125,
+        "settings_verified": true,
+        "extrusion_moves_checked": 117901,
+        "features": {
+          "Support": 1186,
+          "Brim": 373,
+          "Outer wall": 2809,
+          "Inner wall": 7731,
+          "Gap infill": 470,
+          "Bottom surface": 931,
+          "Internal solid infill": 8339,
+          "Sparse infill": 92450,
+          "Support transition": 271,
+          "Support interface": 465,
+          "Bridge": 1783,
+          "Floating vertical shell": 66,
+          "Top surface": 829,
+          "Overhang wall": 198
+        },
         "extruding_xy_bounds_mm": [
           [
-            47.242,
-            47.268
+            46.962,
+            47.125
           ],
           [
-            208.954,
-            208.6
+            209.03,
+            208.881
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 46.79599999999999,
-        "features": {
-          "Support": 40,
-          "Brim": 16,
-          "Outer wall": 185,
-          "Inner wall": 540,
-          "Bottom surface": 360,
-          "Internal solid infill": 1882,
-          "Floating vertical shell": 4,
-          "Bridge": 308,
-          "Overhang wall": 2,
-          "Top surface": 383
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            46.712,
+            46.875
+          ],
+          [
+            209.28,
+            209.131
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 46.712
       },
       {
         "plate": 23,
+        "parts": {
+          "M3": 1
+        },
         "weight_g": 74.97,
         "estimated_seconds": 9216,
+        "settings_verified": true,
+        "extrusion_moves_checked": 153709,
+        "features": {
+          "Support": 2218,
+          "Brim": 508,
+          "Outer wall": 3146,
+          "Inner wall": 9150,
+          "Gap infill": 532,
+          "Bottom surface": 838,
+          "Internal solid infill": 12154,
+          "Sparse infill": 120932,
+          "Support transition": 381,
+          "Support interface": 710,
+          "Bridge": 2094,
+          "Floating vertical shell": 55,
+          "Overhang wall": 389,
+          "Top surface": 602
+        },
         "extruding_xy_bounds_mm": [
           [
-            2.846379613740453,
+            1.796,
             3.076
           ],
           [
             252.965,
-            253.13905709564344
+            254.183
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 2.636379613740453,
-        "features": {
-          "Support": 233,
-          "Outer wall": 385,
-          "Inner wall": 1506,
-          "Bottom surface": 247,
-          "Internal solid infill": 2262,
-          "Support transition": 27,
-          "Support interface": 27,
-          "Floating vertical shell": 7,
-          "Overhang wall": 4,
-          "Bridge": 353,
-          "Top surface": 362
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            1.546,
+            2.866
+          ],
+          [
+            253.175,
+            254.433
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.546
       },
       {
         "plate": 24,
+        "parts": {
+          "M4": 1
+        },
         "weight_g": 96.26,
         "estimated_seconds": 11395,
+        "settings_verified": true,
+        "extrusion_moves_checked": 206412,
+        "features": {
+          "Support": 1462,
+          "Brim": 646,
+          "Outer wall": 2636,
+          "Inner wall": 7992,
+          "Gap infill": 430,
+          "Bottom surface": 1271,
+          "Internal solid infill": 9051,
+          "Sparse infill": 179485,
+          "Support transition": 265,
+          "Support interface": 470,
+          "Bridge": 1639,
+          "Floating vertical shell": 49,
+          "Overhang wall": 205,
+          "Top surface": 811
+        },
         "extruding_xy_bounds_mm": [
           [
             6.918,
-            7.011
+            6.94
           ],
           [
-            247.847,
+            249.054,
             249.547
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 6.203000000000003,
-        "features": {
-          "Support": 152,
-          "Brim": 4,
-          "Outer wall": 549,
-          "Inner wall": 1625,
-          "Bottom surface": 540,
-          "Internal solid infill": 2684,
-          "Support transition": 19,
-          "Support interface": 19,
-          "Floating vertical shell": 10,
-          "Overhang wall": 4,
-          "Bridge": 327,
-          "Top surface": 696
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            6.668,
+            6.69
+          ],
+          [
+            249.304,
+            249.797
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 6.203000000000003
       },
       {
         "plate": 25,
+        "parts": {
+          "M5": 1
+        },
         "weight_g": 55.89,
         "estimated_seconds": 6906,
+        "settings_verified": true,
+        "extrusion_moves_checked": 111492,
+        "features": {
+          "Support": 1261,
+          "Brim": 72,
+          "Outer wall": 929,
+          "Inner wall": 2744,
+          "Gap infill": 420,
+          "Bottom surface": 756,
+          "Internal solid infill": 5414,
+          "Sparse infill": 97404,
+          "Support transition": 225,
+          "Support interface": 381,
+          "Bridge": 1205,
+          "Floating vertical shell": 17,
+          "Overhang wall": 188,
+          "Top surface": 476
+        },
         "extruding_xy_bounds_mm": [
           [
             39.721,
-            40.553
+            40.085
           ],
           [
-            215.439,
+            215.907,
             216.566
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 39.184,
-        "features": {
-          "Support": 67,
-          "Brim": 12,
-          "Outer wall": 214,
-          "Inner wall": 637,
-          "Bottom surface": 333,
-          "Internal solid infill": 1665,
-          "Support transition": 18,
-          "Support interface": 18,
-          "Floating vertical shell": 5,
-          "Overhang wall": 4,
-          "Bridge": 233,
-          "Top surface": 461
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            39.471,
+            39.835
+          ],
+          [
+            216.157,
+            216.816
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 39.184
       },
       {
         "plate": 26,
+        "parts": {
+          "M6": 1
+        },
         "weight_g": 65.93,
         "estimated_seconds": 7926,
+        "settings_verified": true,
+        "extrusion_moves_checked": 136925,
+        "features": {
+          "Support": 272,
+          "Brim": 779,
+          "Outer wall": 1874,
+          "Inner wall": 5275,
+          "Bottom surface": 1153,
+          "Gap infill": 232,
+          "Internal solid infill": 7275,
+          "Sparse infill": 117819,
+          "Support transition": 27,
+          "Support interface": 40,
+          "Bridge": 1196,
+          "Floating vertical shell": 40,
+          "Top surface": 943
+        },
         "extruding_xy_bounds_mm": [
           [
-            23.172,
-            27.427
+            22.742,
+            22.762
           ],
           [
-            230.734,
-            232.638
+            233.264,
+            233.248
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 22.922,
-        "features": {
-          "Brim": 4,
-          "Outer wall": 477,
-          "Inner wall": 1404,
-          "Bottom surface": 430,
-          "Internal solid infill": 2140,
-          "Floating vertical shell": 12,
-          "Bridge": 337,
-          "Top surface": 489
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            22.492,
+            22.512
+          ],
+          [
+            233.514,
+            233.498
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 22.48599999999999
       },
       {
         "plate": 27,
+        "parts": {
+          "Backer1": 1,
+          "Backer3": 1,
+          "Backer5": 1,
+          "Backer7": 1
+        },
         "weight_g": 99.32,
         "estimated_seconds": 8324,
+        "settings_verified": true,
+        "extrusion_moves_checked": 29055,
+        "features": {
+          "Inner wall": 4337,
+          "Outer wall": 1659,
+          "Bottom surface": 2550,
+          "Internal solid infill": 18651,
+          "Top surface": 1588,
+          "Gap infill": 270
+        },
         "extruding_xy_bounds_mm": [
           [
-            1.71,
+            1.7083262165514412,
             1.71
           ],
           [
@@ -3394,67 +4051,165 @@
             254.29
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.5,
-        "features": {
-          "Inner wall": 168,
-          "Outer wall": 64,
-          "Bottom surface": 1107,
-          "Internal solid infill": 7794,
-          "Top surface": 1338
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            1.4983262165514413,
+            1.5
+          ],
+          [
+            254.5,
+            254.5
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.4983262165514413
       },
       {
         "plate": 28,
+        "parts": {
+          "Backer2": 1,
+          "Backer4": 1,
+          "Backer6": 1,
+          "Backer8": 1
+        },
         "weight_g": 99.33,
         "estimated_seconds": 8315,
+        "settings_verified": true,
+        "extrusion_moves_checked": 29060,
+        "features": {
+          "Inner wall": 4316,
+          "Outer wall": 1666,
+          "Bottom surface": 2554,
+          "Internal solid infill": 18633,
+          "Top surface": 1573,
+          "Gap infill": 318
+        },
         "extruding_xy_bounds_mm": [
           [
-            1.71,
-            1.71
+            1.7098435019542215,
+            1.7097143042809222
           ],
           [
-            254.29,
-            254.29
+            254.2900286647074,
+            254.2902022360424
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 1.5,
-        "features": {
-          "Inner wall": 192,
-          "Outer wall": 70,
-          "Bottom surface": 1106,
-          "Internal solid infill": 7800,
-          "Top surface": 1342
-        },
-        "settings_verified": true
+        "bead_xy_bounds_mm": [
+          [
+            1.4998435019542216,
+            1.4997143042809222
+          ],
+          [
+            254.5000286647074,
+            254.5002022360424
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.4997143042809222
       },
       {
         "plate": 29,
+        "parts": {
+          "B1": 1,
+          "B2": 1,
+          "B3": 1,
+          "B4": 1,
+          "Retainer": 32
+        },
         "weight_g": 150.89,
         "estimated_seconds": 18756,
+        "settings_verified": true,
+        "extrusion_moves_checked": 326506,
+        "features": {
+          "Inner wall": 26766,
+          "Outer wall": 10390,
+          "Gap infill": 11430,
+          "Bottom surface": 4229,
+          "Support": 3095,
+          "Brim": 664,
+          "Internal solid infill": 37459,
+          "Sparse infill": 214059,
+          "Floating vertical shell": 5726,
+          "Bridge": 6604,
+          "Top surface": 4446,
+          "Support interface": 1158,
+          "Support transition": 366,
+          "Overhang wall": 114
+        },
         "extruding_xy_bounds_mm": [
           [
             12.25,
             34.25
           ],
           [
-            155.75,
+            240.7891136729727,
             219.75
           ]
         ],
-        "conservative_bed_edge_clearance_mm": 12.0,
-        "features": {
-          "Brim": 68,
-          "Outer wall": 804,
-          "Inner wall": 2616,
-          "Bottom surface": 676,
-          "Internal solid infill": 4005,
-          "Sparse infill": 605,
-          "Floating vertical shell": 50,
-          "Bridge": 810,
-          "Top surface": 650
+        "bead_xy_bounds_mm": [
+          [
+            12.0,
+            34.0
+          ],
+          [
+            240.9991136729727,
+            220.0
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 12.0
+      },
+      {
+        "plate": 30,
+        "parts": {
+          "Test-Photo-Frame": 1,
+          "Test-Photo-Backer": 1,
+          "Test-Photo-Tab": 1,
+          "Test-Wall-Block-B1": 1,
+          "Test-Wall-Socket-B1": 1,
+          "Test-M-Frame": 1,
+          "Test-M-Letter": 1,
+          "Test-Lap-Tongue": 1,
+          "Test-Lap-Socket": 1
         },
-        "settings_verified": true
+        "weight_g": 160.18,
+        "estimated_seconds": 19800,
+        "settings_verified": true,
+        "extrusion_moves_checked": 339557,
+        "features": {
+          "Support": 3242,
+          "Brim": 1017,
+          "Outer wall": 10337,
+          "Inner wall": 29103,
+          "Bottom surface": 3537,
+          "Gap infill": 1303,
+          "Internal solid infill": 34066,
+          "Sparse infill": 239629,
+          "Support transition": 574,
+          "Support interface": 1105,
+          "Floating vertical shell": 3725,
+          "Top surface": 4783,
+          "Bridge": 6874,
+          "Overhang wall": 262
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            10.25,
+            10.25
+          ],
+          [
+            238.75,
+            231.75
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            10.0,
+            10.0
+          ],
+          [
+            239.0,
+            232.0
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 10.0
       }
     ]
   },
@@ -3700,7 +4455,8 @@
     "plates": 29,
     "pieces": 70,
     "modifier_volumes": 73,
-    "source_part_count": 39
+    "source_part_count": 39,
+    "scope": "Production plates 1-29; see final-review.json for all 30 plates."
   },
   "bambu_studio_version": "02.08.02.61",
   "bambu_studio_slice_warnings": [],
@@ -3722,5 +4478,387 @@
     "minimum_part_gap_mm": 1.8061603106698412,
     "minimum_model_bed_edge_margin_mm": 1.5,
     "scale_percent": 100
-  }
+  },
+  "production_plates": 29,
+  "production_pieces": 70,
+  "test_pieces": 9,
+  "test_plate": {
+    "plate": 30,
+    "pieces": 9,
+    "production_pieces": 70,
+    "production_plates": 29,
+    "source_project_sha256": "a8fe39fdc67523c7e2b1ba53d94efcaac6d157bb32923b23ae4f98d01a86fa34",
+    "source_cad_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+    "parts": [
+      {
+        "name": "Test-Photo-Frame",
+        "source": "Photo-Fit-Sample.stl",
+        "file": "Test-Photo-Frame.stl",
+        "sha256": "a707f23f47a6ff8d6737e14761b872322f66fe7c8e7b69e09a6e45b1e9dad2bd",
+        "triangles": 276,
+        "modifiers": [
+          "100% photo pilot"
+        ],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-Photo-Backer",
+        "source": "Photo-Fit-Sample.stl",
+        "file": "Test-Photo-Backer.stl",
+        "sha256": "61eae6089926d26123eb1dd11d5c4a1176c510b6268312b6be1b9699ea737087",
+        "triangles": 12,
+        "modifiers": [],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-Photo-Tab",
+        "source": "Photo-Fit-Sample.stl",
+        "file": "Test-Photo-Tab.stl",
+        "sha256": "c3aeb893190fba0d947ca09eb0b082502ec1bfdde4cdf994b4d00ebb2345edf2",
+        "triangles": 520,
+        "modifiers": [
+          "100% photo tab seat"
+        ],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-Wall-Block-B1",
+        "source": "Wall-Fit-Sample-B1.stl",
+        "file": "Test-Wall-Block-B1.stl",
+        "sha256": "a3817058562bed45cbe478213eaea86828249b309232d174d860a7d33ea7e253",
+        "triangles": 2152,
+        "modifiers": [
+          "100% B1 screw 1 seat",
+          "100% B1 screw 2 seat",
+          "100% B1 keyhole lip"
+        ],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-Wall-Socket-B1",
+        "source": "Wall-Fit-Sample-B1.stl",
+        "file": "Test-Wall-Socket-B1.stl",
+        "sha256": "115c563e62db05926128d20e53e9c731366782ec44d5725383aff6907aef5124",
+        "triangles": 1084,
+        "modifiers": [
+          "100% B1 pilot 1",
+          "100% B1 pilot 2"
+        ],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-M-Frame",
+        "source": "F14.stl; native assembly crop X=-45..-13, Y=-185..-28",
+        "file": "Test-M-Frame.stl",
+        "sha256": "779ef9e43fc9ae760654d89573650a00bf6883d45cf026ecb4d67add82f5d078",
+        "triangles": 2294,
+        "modifiers": [
+          "100% M screw zone"
+        ],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-M-Letter",
+        "source": "M5.stl; native assembly crop X=-45..-13, Y=-185..-28",
+        "file": "Test-M-Letter.stl",
+        "sha256": "fe0520d4fcb6ae4ffe75b96fe1445848b00a068a289e94949079cb55640d9e84",
+        "triangles": 1308,
+        "modifiers": [
+          "100% M screw zone"
+        ],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-Lap-Tongue",
+        "source": "F7.stl; native frame joint 1 crop",
+        "file": "Test-Lap-Tongue.stl",
+        "sha256": "68617bc95d217d26a8067bb6451f7b2fda23236d0208cb4613a5eca65a00d56a",
+        "triangles": 674,
+        "modifiers": [],
+        "quantity": 1,
+        "plate": 30
+      },
+      {
+        "name": "Test-Lap-Socket",
+        "source": "F4.stl; native frame joint 1 crop",
+        "file": "Test-Lap-Socket.stl",
+        "sha256": "c543b0dfbbd7f096c0245ba850737bde28632adf8c9af3edc55115b7f3fbbb1b",
+        "triangles": 1148,
+        "modifiers": [],
+        "quantity": 1,
+        "plate": 30
+      }
+    ],
+    "plate_layout": {
+      "name": "PRINT FIRST - Hardware and lap fit tests",
+      "items": [
+        {
+          "name": "Test-Photo-Frame",
+          "object_id": 1000,
+          "instance_id": 0,
+          "identify_id": 301,
+          "xy": [
+            21.0,
+            220.0
+          ],
+          "bounds": [
+            [
+              12.0,
+              210.0,
+              0.0
+            ],
+            [
+              30.0,
+              230.0,
+              13.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-Photo-Backer",
+          "object_id": 1020,
+          "instance_id": 0,
+          "identify_id": 302,
+          "xy": [
+            48.85000038146973,
+            219.0
+          ],
+          "bounds": [
+            [
+              42.0,
+              210.0,
+              0.0
+            ],
+            [
+              55.70000076293945,
+              228.0,
+              1.5999994277954102
+            ]
+          ]
+        },
+        {
+          "name": "Test-Photo-Tab",
+          "object_id": 1040,
+          "instance_id": 0,
+          "identify_id": 303,
+          "xy": [
+            78.0,
+            215.0
+          ],
+          "bounds": [
+            [
+              68.0,
+              210.0,
+              0.0
+            ],
+            [
+              88.0,
+              220.0,
+              3.0
+            ]
+          ]
+        },
+        {
+          "name": "Test-Wall-Block-B1",
+          "object_id": 1060,
+          "instance_id": 0,
+          "identify_id": 304,
+          "xy": [
+            82.0,
+            31.0
+          ],
+          "bounds": [
+            [
+              12.0,
+              12.0,
+              0.0
+            ],
+            [
+              152.0,
+              50.0,
+              13.0
+            ]
+          ]
+        },
+        {
+          "name": "Test-Wall-Socket-B1",
+          "object_id": 1080,
+          "instance_id": 0,
+          "identify_id": 305,
+          "xy": [
+            82.0,
+            81.0
+          ],
+          "bounds": [
+            [
+              12.0,
+              62.0,
+              0.0
+            ],
+            [
+              152.0,
+              100.0,
+              13.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-M-Frame",
+          "object_id": 1100,
+          "instance_id": 0,
+          "identify_id": 306,
+          "xy": [
+            90.5,
+            125.84766387939453
+          ],
+          "bounds": [
+            [
+              12.0,
+              112.0,
+              0.0
+            ],
+            [
+              169.0,
+              139.69532775878906,
+              16.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-M-Letter",
+          "object_id": 1120,
+          "instance_id": 0,
+          "identify_id": 307,
+          "xy": [
+            87.68387603759766,
+            170.5643711090088
+          ],
+          "bounds": [
+            [
+              12.0,
+              157.0,
+              0.0
+            ],
+            [
+              163.3677520751953,
+              184.12874221801758,
+              10.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-Lap-Tongue",
+          "object_id": 1140,
+          "instance_id": 0,
+          "identify_id": 308,
+          "xy": [
+            216.00000095367432,
+            57.65303039550781
+          ],
+          "bounds": [
+            [
+              195.00000095367432,
+              12.0,
+              0.0
+            ],
+            [
+              237.00000095367432,
+              103.30606079101562,
+              13.5
+            ]
+          ]
+        },
+        {
+          "name": "Test-Lap-Socket",
+          "object_id": 1160,
+          "instance_id": 0,
+          "identify_id": 309,
+          "xy": [
+            215.4812306649983,
+            165.6530303955078
+          ],
+          "bounds": [
+            [
+              195.0000008828938,
+              120.0,
+              0.0
+            ],
+            [
+              235.96246044710279,
+              211.30606079101562,
+              13.5
+            ]
+          ]
+        }
+      ]
+    },
+    "modifier_count": 9,
+    "sliced": true,
+    "production_gcodes_byte_identical": true,
+    "slicer_warnings": [],
+    "bambu_reload_verified": true,
+    "slice_summary": {
+      "plate": 30,
+      "parts": {
+        "Test-Photo-Frame": 1,
+        "Test-Photo-Backer": 1,
+        "Test-Photo-Tab": 1,
+        "Test-Wall-Block-B1": 1,
+        "Test-Wall-Socket-B1": 1,
+        "Test-M-Frame": 1,
+        "Test-M-Letter": 1,
+        "Test-Lap-Tongue": 1,
+        "Test-Lap-Socket": 1
+      },
+      "weight_g": 160.18,
+      "estimated_seconds": 19800,
+      "settings_verified": true,
+      "extrusion_moves_checked": 339557,
+      "features": {
+        "Support": 3242,
+        "Brim": 1017,
+        "Outer wall": 10337,
+        "Inner wall": 29103,
+        "Bottom surface": 3537,
+        "Gap infill": 1303,
+        "Internal solid infill": 34066,
+        "Sparse infill": 239629,
+        "Support transition": 574,
+        "Support interface": 1105,
+        "Floating vertical shell": 3725,
+        "Top surface": 4783,
+        "Bridge": 6874,
+        "Overhang wall": 262
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          10.25,
+          10.25
+        ],
+        [
+          238.75,
+          231.75
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          10.0,
+          10.0
+        ],
+        [
+          239.0,
+          232.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 10.0
+    }
+  },
+  "production_distinct_parts": 39
 }

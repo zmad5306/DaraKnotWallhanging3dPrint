@@ -2,7 +2,10 @@
 
 These are the exact 75% straight and curved samples that Zach reported as
 "rock solid" on 2026-10-12. Preserve these as the joint baseline for the
-three-foot design. They have not yet been integrated into the working full frame.
+three-foot design. Their joint profiles are now used in
+[the jointed manufacturing model](../../working/Dara-Photo-Frame-A1-Jointed.scad).
+The production project uses four walls and 15% infill, so this six-wall, 30%
+infill test does not establish the production joints' strength.
 
 Open [Tested-Lap-Joints.scad](Tested-Lap-Joints.scad) in OpenSCAD.
 It is self-contained and embeds the tested meshes as polyhedra, with no external

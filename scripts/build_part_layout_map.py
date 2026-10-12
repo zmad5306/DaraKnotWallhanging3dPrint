@@ -54,8 +54,10 @@ def prepare():
             item = actual.setdefault(name, {'plate': number, 'quantity': 0})
             assert item['plate'] == number
             item['quantity'] += 1
-    assert len(actual) == 39 and sum(p['quantity'] for p in actual.values()) == 70
-    assert len(config.findall('plate')) == 29
+    test_parts = report.get('test_plate', {}).get('parts', [])
+    assert len(actual) == 39 + len(test_parts)
+    assert sum(p['quantity'] for p in actual.values()) == 70 + len(test_parts)
+    assert len(config.findall('plate')) == 29 + bool(test_parts)
 
     def rings(geometry):
         polys = [geometry] if geometry.geom_type == 'Polygon' else list(geometry.geoms)
@@ -142,7 +144,7 @@ def render():
     def page(title, subtitle, number):
         text(32, H - 39, title, 22, 'Helvetica-Bold')
         text(32, H - 59, subtitle, 10, color=muted)
-        text(32, 23, 'Dara photo frame  |  29 plates  |  70 printed pieces  |  100% scale', 8.5, color=muted)
+        text(32, 23, 'Dara photo frame  |  29 production plates  |  70 assembly pieces  |  100% scale', 8.5, color=muted)
         c.setFont('Helvetica', 8.5)
         c.drawRightString(W - 32, 23, f'{number} / 4')
 

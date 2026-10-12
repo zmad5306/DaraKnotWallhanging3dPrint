@@ -1,0 +1,3174 @@
+{
+  "project_sha256": "d7dcf74aa88ff198dacdf59a1a63568e0ebf6f07f99776a2bc77f8a8f701a7a6",
+  "source_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+  "scope": "Digital checks only. No physical fit, strength or wall-load qualification.",
+  "source_meshes": [
+    {
+      "part": "F1",
+      "sha256": "bcab7f5bc0f7a35314c772baa302ecb09706f2ab493078f3dad105b5ea640b47",
+      "bytes": 296584,
+      "triangles": 5930,
+      "bounds_mm": [
+        [
+          -109.35381317138672,
+          -109.34545135498047,
+          0.0
+        ],
+        [
+          109.35382080078125,
+          109.34547424316406,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        218.70763397216797,
+        218.69092559814453,
+        13.5
+      ],
+      "volume_mm3": 226349.2858476051,
+      "minimum_bed_edge_clearance_mm": 18.64617919921875,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F2",
+      "sha256": "c8fb736d35bb3bfdb07f403909bb3a5409e6657327176a903e6a92049c42c40f",
+      "bytes": 344884,
+      "triangles": 6896,
+      "bounds_mm": [
+        [
+          -114.4035415649414,
+          -114.42800903320312,
+          0.0
+        ],
+        [
+          114.40354919433594,
+          114.42797088623047,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        228.80709075927734,
+        228.8559799194336,
+        13.5
+      ],
+      "volume_mm3": 250070.98291466062,
+      "minimum_bed_edge_clearance_mm": 13.571990966796875,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F3",
+      "sha256": "f429b79dac6def9a01d5412349728a3fc7fefd26596b86e3adacfce2833e6fea",
+      "bytes": 360484,
+      "triangles": 7208,
+      "bounds_mm": [
+        [
+          -125.30079650878906,
+          -125.32870483398438,
+          0.0
+        ],
+        [
+          125.31888580322266,
+          125.32872009277344,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        250.61968231201172,
+        250.6574249267578,
+        13.5
+      ],
+      "volume_mm3": 230691.45753518492,
+      "minimum_bed_edge_clearance_mm": 2.6712799072265625,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F4",
+      "sha256": "51e2f271c4d202bc284953e306034f68f14c98fb97fd82d7e1102f19ed2c3a8e",
+      "bytes": 329684,
+      "triangles": 6592,
+      "bounds_mm": [
+        [
+          -112.08260345458984,
+          -112.08147430419922,
+          0.0
+        ],
+        [
+          112.08258056640625,
+          112.08140563964844,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        224.1651840209961,
+        224.16287994384766,
+        16.5
+      ],
+      "volume_mm3": 188348.57990971862,
+      "minimum_bed_edge_clearance_mm": 15.917396545410156,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F5",
+      "sha256": "a8200071669a4deb952c260e7e31a103a989ea776ead500c79d4dea3bbf01970",
+      "bytes": 448884,
+      "triangles": 8976,
+      "bounds_mm": [
+        [
+          -112.55220031738281,
+          -106.52999114990234,
+          0.0
+        ],
+        [
+          112.5138168334961,
+          106.52771759033203,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        225.0660171508789,
+        213.05770874023438,
+        13.5
+      ],
+      "volume_mm3": 256627.69764648122,
+      "minimum_bed_edge_clearance_mm": 15.447799682617188,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F6",
+      "sha256": "adb87075f2f24de627fce97e03cc2872aeab69ec3413e13dcb130cddf6a4bb18",
+      "bytes": 536784,
+      "triangles": 10734,
+      "bounds_mm": [
+        [
+          -126.23100280761719,
+          -126.24175262451172,
+          0.0
+        ],
+        [
+          126.1607666015625,
+          126.22805786132812,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        252.3917694091797,
+        252.46981048583984,
+        13.5
+      ],
+      "volume_mm3": 361952.5218139463,
+      "minimum_bed_edge_clearance_mm": 1.7582473754882812,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F7",
+      "sha256": "a04dc81e2a745fae72da05b71fe6aee2c3ce383945f9352e8ca5c688ba8f4375",
+      "bytes": 412084,
+      "triangles": 8240,
+      "bounds_mm": [
+        [
+          -123.04359436035156,
+          -123.05596160888672,
+          0.0
+        ],
+        [
+          123.07320404052734,
+          123.0831298828125,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        246.1167984008789,
+        246.13909149169922,
+        16.5
+      ],
+      "volume_mm3": 226868.94676091793,
+      "minimum_bed_edge_clearance_mm": 4.9168701171875,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F8",
+      "sha256": "d09f397f487c8d34607ae8de7272101a6f9bab01f7f01e4970398b611e2bb3eb",
+      "bytes": 406684,
+      "triangles": 8132,
+      "bounds_mm": [
+        [
+          -126.00448608398438,
+          -126.02792358398438,
+          0.0
+        ],
+        [
+          126.00447845458984,
+          126.02790069580078,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        252.00896453857422,
+        252.05582427978516,
+        13.5
+      ],
+      "volume_mm3": 296779.13670413697,
+      "minimum_bed_edge_clearance_mm": 1.972076416015625,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F9",
+      "sha256": "68e6903a13764b5410aa5bbec815d082e7198636b91728f7241e0fc1376d7e18",
+      "bytes": 311684,
+      "triangles": 6232,
+      "bounds_mm": [
+        [
+          -122.06021118164062,
+          -122.07254791259766,
+          0.0
+        ],
+        [
+          122.06021118164062,
+          122.0725326538086,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        244.12042236328125,
+        244.14508056640625,
+        16.5
+      ],
+      "volume_mm3": 216266.68190192306,
+      "minimum_bed_edge_clearance_mm": 5.927452087402344,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F10",
+      "sha256": "a259532cb55bc80d1945f904f78c13bb47618d2e1d3d2478279b107675e53150",
+      "bytes": 383284,
+      "triangles": 7664,
+      "bounds_mm": [
+        [
+          -125.91841125488281,
+          -125.91253662109375,
+          0.0
+        ],
+        [
+          125.8951187133789,
+          125.91250610351562,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        251.81352996826172,
+        251.82504272460938,
+        16.5
+      ],
+      "volume_mm3": 268902.12509719044,
+      "minimum_bed_edge_clearance_mm": 2.0815887451171875,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F11",
+      "sha256": "b212c558577c9af47e48fe7b668975f9e1b734a8a12547a4ea0b28ea24eb98a7",
+      "bytes": 317384,
+      "triangles": 6346,
+      "bounds_mm": [
+        [
+          -116.93592834472656,
+          -88.88005828857422,
+          0.0
+        ],
+        [
+          116.89845275878906,
+          88.88005828857422,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        233.83438110351562,
+        177.76011657714844,
+        13.5
+      ],
+      "volume_mm3": 234050.5217259137,
+      "minimum_bed_edge_clearance_mm": 11.064071655273438,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F12",
+      "sha256": "c316a4d34c38c67d8b5779d8a8dd55af4756f08989d149d7e4e6548aad3ee017",
+      "bytes": 397484,
+      "triangles": 7948,
+      "bounds_mm": [
+        [
+          -125.80016326904297,
+          -125.78570556640625,
+          0.0
+        ],
+        [
+          125.7681884765625,
+          125.81767272949219,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        251.56835174560547,
+        251.60337829589844,
+        16.5
+      ],
+      "volume_mm3": 271684.0940477537,
+      "minimum_bed_edge_clearance_mm": 2.1823272705078125,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F13",
+      "sha256": "1c97c939c791c19a75d587899436541a69429a63eb1c06613736bbf52b2031ac",
+      "bytes": 406984,
+      "triangles": 8138,
+      "bounds_mm": [
+        [
+          -120.44902038574219,
+          -120.44208526611328,
+          0.0
+        ],
+        [
+          120.41415405273438,
+          120.42239379882812,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        240.86317443847656,
+        240.8644790649414,
+        13.5
+      ],
+      "volume_mm3": 286673.0026121852,
+      "minimum_bed_edge_clearance_mm": 7.5509796142578125,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F14",
+      "sha256": "a1eeffc5635691447d3ebbd7acc705eb79a3624f65587652591ade9f3fa0a686",
+      "bytes": 367984,
+      "triangles": 7358,
+      "bounds_mm": [
+        [
+          -125.95709991455078,
+          -125.95748138427734,
+          0.0
+        ],
+        [
+          125.95709228515625,
+          125.95750427246094,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        251.91419219970703,
+        251.91498565673828,
+        16.5
+      ],
+      "volume_mm3": 249809.6660035999,
+      "minimum_bed_edge_clearance_mm": 2.0424957275390625,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F15",
+      "sha256": "3feb841a06bf19f2ab51c1f76dccf3ce1915a9b160edf7c679f443a890f5ea45",
+      "bytes": 401784,
+      "triangles": 8034,
+      "bounds_mm": [
+        [
+          -123.86679077148438,
+          -123.84129333496094,
+          0.0
+        ],
+        [
+          123.86676025390625,
+          123.8412857055664,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        247.73355102539062,
+        247.68257904052734,
+        13.5
+      ],
+      "volume_mm3": 303136.9410673376,
+      "minimum_bed_edge_clearance_mm": 4.133209228515625,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F16",
+      "sha256": "43c407970b48ce2feba559fd251265b7211a4fa7b3a1b0293dca3f2a06ad0b05",
+      "bytes": 431884,
+      "triangles": 8636,
+      "bounds_mm": [
+        [
+          -102.6763687133789,
+          -90.766357421875,
+          0.0
+        ],
+        [
+          102.6388931274414,
+          90.76437377929688,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        205.3152618408203,
+        181.53073120117188,
+        16.5
+      ],
+      "volume_mm3": 217737.99383253613,
+      "minimum_bed_edge_clearance_mm": 25.323631286621094,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F17",
+      "sha256": "3a442546d6e18088b46aea97ee919b07147bf8c023404af25014bb46ef883d46",
+      "bytes": 279584,
+      "triangles": 5590,
+      "bounds_mm": [
+        [
+          -112.65203857421875,
+          -112.64703369140625,
+          0.0
+        ],
+        [
+          112.62499237060547,
+          112.67317199707031,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        225.27703094482422,
+        225.32020568847656,
+        13.5
+      ],
+      "volume_mm3": 196012.07433496288,
+      "minimum_bed_edge_clearance_mm": 15.326828002929688,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F18",
+      "sha256": "ad76e04e8ab4e1d79bece7568c8b3cb8d44e6235994a4b5285ddaa7b015d90ed",
+      "bytes": 485584,
+      "triangles": 9710,
+      "bounds_mm": [
+        [
+          -117.72748565673828,
+          -111.38243865966797,
+          0.0
+        ],
+        [
+          117.69001770019531,
+          111.34455108642578,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        235.4175033569336,
+        222.72698974609375,
+        16.5
+      ],
+      "volume_mm3": 274193.6297122697,
+      "minimum_bed_edge_clearance_mm": 10.272514343261719,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F19",
+      "sha256": "3e51cab26d0f6bf2262458264a2d26a53f4404cd954bee49cfd52b1682d16651",
+      "bytes": 403484,
+      "triangles": 8068,
+      "bounds_mm": [
+        [
+          -123.93431091308594,
+          -123.9346923828125,
+          0.0
+        ],
+        [
+          123.9343032836914,
+          123.93470764160156,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        247.86861419677734,
+        247.86940002441406,
+        13.5
+      ],
+      "volume_mm3": 302945.76978541224,
+      "minimum_bed_edge_clearance_mm": 4.0652923583984375,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "F20",
+      "sha256": "d15aae520536ee86e8012ad89291b783f7f9e422891200728245828f7bed5583",
+      "bytes": 293884,
+      "triangles": 5876,
+      "bounds_mm": [
+        [
+          -108.80402374267578,
+          -108.77864074707031,
+          0.0
+        ],
+        [
+          108.80400085449219,
+          108.77864074707031,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        217.60802459716797,
+        217.55728149414062,
+        13.5
+      ],
+      "volume_mm3": 221310.4157668068,
+      "minimum_bed_edge_clearance_mm": 19.19597625732422,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "M1",
+      "sha256": "a1ac65ecc9efa0f9ff019774c3ad4017ffe037d7d037be126f27a2bc1db85493",
+      "bytes": 154484,
+      "triangles": 3088,
+      "bounds_mm": [
+        [
+          -120.00360107421875,
+          -120.02359771728516,
+          0.0
+        ],
+        [
+          120.00360870361328,
+          120.02359771728516,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        240.00720977783203,
+        240.0471954345703,
+        10.5
+      ],
+      "volume_mm3": 111706.53870178033,
+      "minimum_bed_edge_clearance_mm": 7.976402282714844,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "M2",
+      "sha256": "7a6e1de622362aca089b59b69cf5547d754e223fa4b2c373c951e81dbda6c873",
+      "bytes": 123484,
+      "triangles": 2468,
+      "bounds_mm": [
+        [
+          -79.29006958007812,
+          -79.13916778564453,
+          0.0
+        ],
+        [
+          79.29400634765625,
+          79.13917541503906,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        158.58407592773438,
+        158.2783432006836,
+        10.5
+      ],
+      "volume_mm3": 117425.91675249586,
+      "minimum_bed_edge_clearance_mm": 48.70599365234375,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "M3",
+      "sha256": "9fb787a78c2f6db4d92147d595a43cdb9c5698412be67a134be143f4c93611b8",
+      "bytes": 164884,
+      "triangles": 3296,
+      "bounds_mm": [
+        [
+          -125.3685073852539,
+          -125.3078384399414,
+          0.0
+        ],
+        [
+          125.33195495605469,
+          125.34749603271484,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        250.7004623413086,
+        250.65533447265625,
+        10.5
+      ],
+      "volume_mm3": 147660.93676689474,
+      "minimum_bed_edge_clearance_mm": 2.6314926147460938,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "M4",
+      "sha256": "cc59e5104d99da8c236585060a44cc726058251718bad4c04c3b219a8d9e940a",
+      "bytes": 125284,
+      "triangles": 2504,
+      "bounds_mm": [
+        [
+          -119.31623840332031,
+          -119.32852935791016,
+          0.0
+        ],
+        [
+          119.3170394897461,
+          119.29067993164062,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        238.6332778930664,
+        238.61920928955078,
+        10.5
+      ],
+      "volume_mm3": 215579.46464738602,
+      "minimum_bed_edge_clearance_mm": 8.671470642089844,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "M5",
+      "sha256": "2e0a3fc707a95540663baee8e7a3b5230a8d88326c17dc83b869b07cda1088a3",
+      "bytes": 82484,
+      "triangles": 1648,
+      "bounds_mm": [
+        [
+          -86.1405258178711,
+          -86.17607116699219,
+          0.0
+        ],
+        [
+          86.1680908203125,
+          86.15033721923828,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        172.3086166381836,
+        172.32640838623047,
+        10.5
+      ],
+      "volume_mm3": 120483.46613056566,
+      "minimum_bed_edge_clearance_mm": 41.82392883300781,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "M6",
+      "sha256": "9a46f1cc005aad46459b600f3cae2a6d537151974b589e24e5660872369a1584",
+      "bytes": 123484,
+      "triangles": 2468,
+      "bounds_mm": [
+        [
+          -103.5147933959961,
+          -103.5056381225586,
+          0.0
+        ],
+        [
+          103.51477813720703,
+          103.50563049316406,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        207.02957153320312,
+        207.01126861572266,
+        10.5
+      ],
+      "volume_mm3": 140970.77439366182,
+      "minimum_bed_edge_clearance_mm": 24.485206604003906,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer1",
+      "sha256": "d1e5b16a2b2132d4c46cec81ea4d09471f8cdda930fa726a85d59bee2a0efb37",
+      "bytes": 16084,
+      "triangles": 320,
+      "bounds_mm": [
+        [
+          -71.06490325927734,
+          -54.29450225830078,
+          0.0
+        ],
+        [
+          54.43391799926758,
+          71.02452850341797,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.49882125854492,
+        125.31903076171875,
+        1.600000023841858
+      ],
+      "volume_mm3": 20394.230980835466,
+      "minimum_bed_edge_clearance_mm": 56.935096740722656,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer2",
+      "sha256": "cc47b8464b7a675e69a210a4d18c4978f5ccd1864ea4bc519f080e9476b28108",
+      "bytes": 14484,
+      "triangles": 288,
+      "bounds_mm": [
+        [
+          -71.14961242675781,
+          -54.47589111328125,
+          0.0
+        ],
+        [
+          54.378292083740234,
+          71.09700012207031,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.52790451049805,
+        125.57289123535156,
+        1.600000023841858
+      ],
+      "volume_mm3": 20422.07747386261,
+      "minimum_bed_edge_clearance_mm": 56.85038757324219,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer3",
+      "sha256": "b3db4f9be7ecd78bb929d2cb320a707c2cbf1c6f75253e76a38a92325feaaca5",
+      "bytes": 16284,
+      "triangles": 324,
+      "bounds_mm": [
+        [
+          -54.40537643432617,
+          -54.479209899902344,
+          0.0
+        ],
+        [
+          71.02908325195312,
+          71.17467498779297,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.4344596862793,
+        125.65388488769531,
+        1.600000023841858
+      ],
+      "volume_mm3": 20416.570895399072,
+      "minimum_bed_edge_clearance_mm": 56.82532501220703,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer4",
+      "sha256": "b15be6ad0203b07d4e3165f6e53b52f198f05cd36842e5b2569ff5d70c46cfe1",
+      "bytes": 18284,
+      "triangles": 364,
+      "bounds_mm": [
+        [
+          -54.437713623046875,
+          -54.390987396240234,
+          0.0
+        ],
+        [
+          71.13709259033203,
+          71.2273178100586,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.5748062133789,
+        125.61830520629883,
+        1.600000023841858
+      ],
+      "volume_mm3": 20393.703027938744,
+      "minimum_bed_edge_clearance_mm": 56.772682189941406,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer5",
+      "sha256": "526e746d2b94d9e17f6e6ec1ece9854d41db98afe842de04e98c47c65ad69582",
+      "bytes": 15284,
+      "triangles": 304,
+      "bounds_mm": [
+        [
+          -54.460636138916016,
+          -71.13119506835938,
+          0.0
+        ],
+        [
+          71.0504150390625,
+          54.4104118347168,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.51105117797852,
+        125.54160690307617,
+        1.600000023841858
+      ],
+      "volume_mm3": 20390.514376434272,
+      "minimum_bed_edge_clearance_mm": 56.868804931640625,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer6",
+      "sha256": "75950662d17d8f7ea91bd159adec60ae9a1cca7513716aae0dddcc8d5bde0fbb",
+      "bytes": 13884,
+      "triangles": 276,
+      "bounds_mm": [
+        [
+          -54.36857604980469,
+          -71.13170623779297,
+          0.0
+        ],
+        [
+          71.14540100097656,
+          54.45732116699219,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.51397705078125,
+        125.58902740478516,
+        1.600000023841858
+      ],
+      "volume_mm3": 20420.807269652567,
+      "minimum_bed_edge_clearance_mm": 56.85459899902344,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer7",
+      "sha256": "49beb5594263fd41e5288118b2b7ad1e5e14a007828012dcf2d6a732096f8ff2",
+      "bytes": 14884,
+      "triangles": 296,
+      "bounds_mm": [
+        [
+          -71.1515884399414,
+          -71.10062408447266,
+          0.0
+        ],
+        [
+          54.37750244140625,
+          54.47227096557617,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.52909088134766,
+        125.57289505004883,
+        1.600000023841858
+      ],
+      "volume_mm3": 20420.811784928435,
+      "minimum_bed_edge_clearance_mm": 56.848411560058594,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Backer8",
+      "sha256": "a02539114f7dd3afffa78d4be363d070aae481408aba09e8cdd9c4116f76e4aa",
+      "bytes": 17684,
+      "triangles": 352,
+      "bounds_mm": [
+        [
+          -71.06793975830078,
+          -71.04085540771484,
+          0.0
+        ],
+        [
+          54.472206115722656,
+          54.33894348144531,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        125.54014587402344,
+        125.37979888916016,
+        1.600000023841858
+      ],
+      "volume_mm3": 20395.1035810364,
+      "minimum_bed_edge_clearance_mm": 56.93206024169922,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "B1",
+      "sha256": "d57485ce6e02911495166168fd3ba72c806a97a01e684a9191cad42f0a99cf06",
+      "bytes": 107684,
+      "triangles": 2152,
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "size_mm": [
+        140.0,
+        38.0,
+        13.0
+      ],
+      "volume_mm3": 52428.98369428922,
+      "minimum_bed_edge_clearance_mm": 58.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "B2",
+      "sha256": "78b1d955b540b96a69e61b79433cef7d0d6613f74e19331b9e781aa3c1426451",
+      "bytes": 107684,
+      "triangles": 2152,
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "size_mm": [
+        140.0,
+        38.0,
+        13.0
+      ],
+      "volume_mm3": 52428.98368024978,
+      "minimum_bed_edge_clearance_mm": 58.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "B3",
+      "sha256": "6ed5f4f1313c12db08b302d062ed5c9590de3ef731277f9fe8617d7c1fe87ac8",
+      "bytes": 107684,
+      "triangles": 2152,
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "size_mm": [
+        140.0,
+        38.0,
+        13.0
+      ],
+      "volume_mm3": 52428.983680249796,
+      "minimum_bed_edge_clearance_mm": 58.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "B4",
+      "sha256": "eef79a64499214889de64f57408c50077c739757d03995f3f8deb5f19698cfcf",
+      "bytes": 107684,
+      "triangles": 2152,
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "size_mm": [
+        140.0,
+        38.0,
+        13.0
+      ],
+      "volume_mm3": 52428.98369929242,
+      "minimum_bed_edge_clearance_mm": 58.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Retainer",
+      "sha256": "21cb25e98fd1be36f96d9897551249770e826d8ef28ad8e3309342babc177ae3",
+      "bytes": 26084,
+      "triangles": 520,
+      "bounds_mm": [
+        [
+          -10.0,
+          -5.0,
+          0.0
+        ],
+        [
+          10.0,
+          5.0,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        20.0,
+        10.0,
+        3.0
+      ],
+      "volume_mm3": 497.6017280810047,
+      "minimum_bed_edge_clearance_mm": 118.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Photo-Frame",
+      "test_coupon": true,
+      "sha256": "a707f23f47a6ff8d6737e14761b872322f66fe7c8e7b69e09a6e45b1e9dad2bd",
+      "bytes": 13884,
+      "triangles": 276,
+      "bounds_mm": [
+        [
+          -9.0,
+          -10.0,
+          0.0
+        ],
+        [
+          9.0,
+          10.0,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        18.0,
+        20.0,
+        13.5
+      ],
+      "volume_mm3": 4615.420924675811,
+      "minimum_bed_edge_clearance_mm": 118.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Photo-Backer",
+      "test_coupon": true,
+      "sha256": "61eae6089926d26123eb1dd11d5c4a1176c510b6268312b6be1b9699ea737087",
+      "bytes": 684,
+      "triangles": 12,
+      "bounds_mm": [
+        [
+          -6.850000381469727,
+          -9.0,
+          0.0
+        ],
+        [
+          6.850000381469727,
+          9.0,
+          1.5999994277954102
+        ]
+      ],
+      "size_mm": [
+        13.700000762939453,
+        18.0,
+        1.5999994277954102
+      ],
+      "volume_mm3": 394.55988086699654,
+      "minimum_bed_edge_clearance_mm": 119.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Photo-Tab",
+      "test_coupon": true,
+      "sha256": "c3aeb893190fba0d947ca09eb0b082502ec1bfdde4cdf994b4d00ebb2345edf2",
+      "bytes": 26084,
+      "triangles": 520,
+      "bounds_mm": [
+        [
+          -10.0,
+          -5.0,
+          0.0
+        ],
+        [
+          10.0,
+          5.0,
+          3.0
+        ]
+      ],
+      "size_mm": [
+        20.0,
+        10.0,
+        3.0
+      ],
+      "volume_mm3": 497.6017280810047,
+      "minimum_bed_edge_clearance_mm": 118.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Wall-Block-B1",
+      "test_coupon": true,
+      "sha256": "a3817058562bed45cbe478213eaea86828249b309232d174d860a7d33ea7e253",
+      "bytes": 107684,
+      "triangles": 2152,
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.0
+        ]
+      ],
+      "size_mm": [
+        140.0,
+        38.0,
+        13.0
+      ],
+      "volume_mm3": 52428.98369893289,
+      "minimum_bed_edge_clearance_mm": 58.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Wall-Socket-B1",
+      "test_coupon": true,
+      "sha256": "115c563e62db05926128d20e53e9c731366782ec44d5725383aff6907aef5124",
+      "bytes": 54284,
+      "triangles": 1084,
+      "bounds_mm": [
+        [
+          -70.0,
+          -19.0,
+          0.0
+        ],
+        [
+          70.0,
+          19.0,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        140.0,
+        38.0,
+        13.5
+      ],
+      "volume_mm3": 70204.09927232764,
+      "minimum_bed_edge_clearance_mm": 58.0,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-M-Frame",
+      "test_coupon": true,
+      "sha256": "779ef9e43fc9ae760654d89573650a00bf6883d45cf026ecb4d67add82f5d078",
+      "bytes": 114784,
+      "triangles": 2294,
+      "bounds_mm": [
+        [
+          -78.5,
+          -13.847663879394531,
+          0.0
+        ],
+        [
+          78.5,
+          13.847663879394531,
+          16.5
+        ]
+      ],
+      "size_mm": [
+        157.0,
+        27.695327758789062,
+        16.5
+      ],
+      "volume_mm3": 50151.206452353006,
+      "minimum_bed_edge_clearance_mm": 49.5,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-M-Letter",
+      "test_coupon": true,
+      "sha256": "fe0520d4fcb6ae4ffe75b96fe1445848b00a068a289e94949079cb55640d9e84",
+      "bytes": 65484,
+      "triangles": 1308,
+      "bounds_mm": [
+        [
+          -75.68387603759766,
+          -13.564371109008789,
+          0.0
+        ],
+        [
+          75.68387603759766,
+          13.564371109008789,
+          10.5
+        ]
+      ],
+      "size_mm": [
+        151.3677520751953,
+        27.128742218017578,
+        10.5
+      ],
+      "volume_mm3": 42944.2989004863,
+      "minimum_bed_edge_clearance_mm": 52.316123962402344,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Lap-Tongue",
+      "test_coupon": true,
+      "sha256": "68617bc95d217d26a8067bb6451f7b2fda23236d0208cb4613a5eca65a00d56a",
+      "bytes": 33784,
+      "triangles": 674,
+      "bounds_mm": [
+        [
+          -21.0,
+          -45.65303039550781,
+          0.0
+        ],
+        [
+          21.0,
+          45.65303039550781,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        42.0,
+        91.30606079101562,
+        13.5
+      ],
+      "volume_mm3": 28432.709895389067,
+      "minimum_bed_edge_clearance_mm": 82.34696960449219,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    },
+    {
+      "part": "Test-Lap-Socket",
+      "test_coupon": true,
+      "sha256": "c543b0dfbbd7f096c0245ba850737bde28632adf8c9af3edc55115b7f3fbbb1b",
+      "bytes": 57484,
+      "triangles": 1148,
+      "bounds_mm": [
+        [
+          -20.481229782104492,
+          -45.65303039550781,
+          0.0
+        ],
+        [
+          20.481229782104492,
+          45.65303039550781,
+          13.5
+        ]
+      ],
+      "size_mm": [
+        40.962459564208984,
+        91.30606079101562,
+        13.5
+      ],
+      "volume_mm3": 33280.61788117688,
+      "minimum_bed_edge_clearance_mm": 82.34696960449219,
+      "connected_solids": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "on_bed": true,
+      "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
+    }
+  ],
+  "assembly": {
+    "assembled_pieces": 70,
+    "intersecting_bounds_pairs_checked": 94,
+    "maximum_overlap_mm3": 0.0001593672830608739,
+    "overlaps_above_1e_5_mm3": [
+      {
+        "parts": [
+          "F3",
+          "F7"
+        ],
+        "volume_mm3": 2.0276077312549507e-05
+      },
+      {
+        "parts": [
+          "F4",
+          "F5"
+        ],
+        "volume_mm3": 0.0001593672830608739
+      },
+      {
+        "parts": [
+          "F5",
+          "F8"
+        ],
+        "volume_mm3": 3.100588806622303e-05
+      },
+      {
+        "parts": [
+          "F7",
+          "F9"
+        ],
+        "volume_mm3": 1.2023172104136393e-05
+      },
+      {
+        "parts": [
+          "F9",
+          "F11"
+        ],
+        "volume_mm3": 0.0001377117308341743
+      },
+      {
+        "parts": [
+          "F14",
+          "F17"
+        ],
+        "volume_mm3": 1.765856887203654e-05
+      },
+      {
+        "parts": [
+          "F17",
+          "F18"
+        ],
+        "volume_mm3": 1.9450075617063096e-05
+      }
+    ],
+    "overlap_tolerance_mm3": 0.01,
+    "lap_assembly_orders_valid": true,
+    "frame_assembly_order": [
+      1,
+      2,
+      8,
+      15,
+      19,
+      20,
+      3,
+      14,
+      18,
+      11,
+      17,
+      9,
+      16,
+      12,
+      6,
+      7,
+      13,
+      10,
+      5,
+      4
+    ],
+    "M_assembly_order": [
+      1,
+      6,
+      2,
+      4,
+      3,
+      5
+    ]
+  },
+  "plates": [
+    {
+      "plate": 1,
+      "parts": {
+        "F1": 1
+      },
+      "weight_g": 106.68,
+      "estimated_seconds": 13311,
+      "settings_verified": true,
+      "extrusion_moves_checked": 261549,
+      "features": {
+        "Support": 973,
+        "Brim": 456,
+        "Outer wall": 11726,
+        "Inner wall": 27783,
+        "Gap infill": 7191,
+        "Bottom surface": 1040,
+        "Internal solid infill": 15184,
+        "Sparse infill": 183878,
+        "Support transition": 305,
+        "Support interface": 617,
+        "Overhang wall": 102,
+        "Bridge": 5012,
+        "Floating vertical shell": 1150,
+        "Top surface": 6132
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          16.902,
+          16.912
+        ],
+        [
+          239.099,
+          239.095
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          16.652,
+          16.662
+        ],
+        [
+          239.349,
+          239.345
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 16.65100000000001
+    },
+    {
+      "plate": 2,
+      "parts": {
+        "F2": 1
+      },
+      "weight_g": 116.76,
+      "estimated_seconds": 14344,
+      "settings_verified": true,
+      "extrusion_moves_checked": 286573,
+      "features": {
+        "Support": 1435,
+        "Brim": 489,
+        "Outer wall": 14112,
+        "Inner wall": 34221,
+        "Gap infill": 1701,
+        "Bottom surface": 944,
+        "Internal solid infill": 16510,
+        "Sparse infill": 201869,
+        "Support transition": 439,
+        "Support interface": 688,
+        "Overhang wall": 161,
+        "Bridge": 5229,
+        "Floating vertical shell": 1432,
+        "Top surface": 7343
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          11.851,
+          11.837
+        ],
+        [
+          244.137,
+          244.178
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          11.601,
+          11.587
+        ],
+        [
+          244.387,
+          244.428
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 11.572000000000003
+    },
+    {
+      "plate": 3,
+      "parts": {
+        "F3": 1
+      },
+      "weight_g": 119.22,
+      "estimated_seconds": 15285,
+      "settings_verified": true,
+      "extrusion_moves_checked": 279873,
+      "features": {
+        "Support": 2855,
+        "Brim": 194,
+        "Outer wall": 11718,
+        "Inner wall": 28102,
+        "Gap infill": 7647,
+        "Bottom surface": 1271,
+        "Internal solid infill": 20637,
+        "Sparse infill": 191134,
+        "Support transition": 655,
+        "Support interface": 1183,
+        "Overhang wall": 302,
+        "Bridge": 6169,
+        "Floating vertical shell": 1235,
+        "Top surface": 6771
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.958,
+          1.842
+        ],
+        [
+          254.142,
+          254.152
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.748,
+          1.592
+        ],
+        [
+          254.392,
+          254.402
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.592
+    },
+    {
+      "plate": 4,
+      "parts": {
+        "F4": 1
+      },
+      "weight_g": 99.26,
+      "estimated_seconds": 13122,
+      "settings_verified": true,
+      "extrusion_moves_checked": 207112,
+      "features": {
+        "Support": 4656,
+        "Brim": 94,
+        "Outer wall": 7284,
+        "Inner wall": 14910,
+        "Gap infill": 1127,
+        "Bottom surface": 956,
+        "Internal solid infill": 16546,
+        "Sparse infill": 146925,
+        "Support transition": 794,
+        "Support interface": 1418,
+        "Overhang wall": 813,
+        "Bridge": 6904,
+        "Floating vertical shell": 307,
+        "Top surface": 4378
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          13.484,
+          13.478
+        ],
+        [
+          242.211,
+          242.216
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          13.234,
+          13.228
+        ],
+        [
+          242.461,
+          242.466
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 13.228
+    },
+    {
+      "plate": 5,
+      "parts": {
+        "F5": 1
+      },
+      "weight_g": 136.21,
+      "estimated_seconds": 17937,
+      "settings_verified": true,
+      "extrusion_moves_checked": 311544,
+      "features": {
+        "Support": 4946,
+        "Brim": 204,
+        "Outer wall": 11309,
+        "Inner wall": 25875,
+        "Gap infill": 2553,
+        "Bottom surface": 1623,
+        "Internal solid infill": 27364,
+        "Sparse infill": 213567,
+        "Support transition": 1376,
+        "Support interface": 2404,
+        "Overhang wall": 726,
+        "Bridge": 9083,
+        "Floating vertical shell": 1997,
+        "Top surface": 8517
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          13.698,
+          19.759
+        ],
+        [
+          242.219,
+          236.34
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          13.448,
+          19.509
+        ],
+        [
+          242.469,
+          236.59
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 13.448
+    },
+    {
+      "plate": 6,
+      "parts": {
+        "F6": 1
+      },
+      "weight_g": 182.06,
+      "estimated_seconds": 23198,
+      "settings_verified": true,
+      "extrusion_moves_checked": 430113,
+      "features": {
+        "Support": 6265,
+        "Brim": 230,
+        "Outer wall": 19511,
+        "Inner wall": 46366,
+        "Gap infill": 2809,
+        "Bottom surface": 1321,
+        "Internal solid infill": 29289,
+        "Sparse infill": 295703,
+        "Support transition": 1635,
+        "Support interface": 2518,
+        "Overhang wall": 642,
+        "Bridge": 9755,
+        "Floating vertical shell": 2119,
+        "Top surface": 11950
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          0.934,
+          0.923
+        ],
+        [
+          253.607,
+          254.005
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.684,
+          0.673
+        ],
+        [
+          253.857,
+          254.215
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.673
+    },
+    {
+      "plate": 7,
+      "parts": {
+        "F7": 1
+      },
+      "weight_g": 116.27,
+      "estimated_seconds": 15072,
+      "settings_verified": true,
+      "extrusion_moves_checked": 254421,
+      "features": {
+        "Support": 4438,
+        "Brim": 261,
+        "Outer wall": 10101,
+        "Inner wall": 22176,
+        "Gap infill": 2539,
+        "Bottom surface": 1326,
+        "Internal solid infill": 19106,
+        "Sparse infill": 178269,
+        "Support transition": 732,
+        "Floating vertical shell": 1812,
+        "Support interface": 1354,
+        "Overhang wall": 656,
+        "Bridge": 6344,
+        "Top surface": 5307
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.032,
+          2.738
+        ],
+        [
+          252.823,
+          252.821
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.782,
+          2.488
+        ],
+        [
+          253.073,
+          253.071
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.782
+    },
+    {
+      "plate": 8,
+      "parts": {
+        "F8": 1
+      },
+      "weight_g": 138.61,
+      "estimated_seconds": 17097,
+      "settings_verified": true,
+      "extrusion_moves_checked": 345324,
+      "features": {
+        "Support": 1612,
+        "Brim": 295,
+        "Outer wall": 16224,
+        "Inner wall": 39227,
+        "Gap infill": 3577,
+        "Bottom surface": 1509,
+        "Internal solid infill": 19951,
+        "Sparse infill": 244689,
+        "Support transition": 459,
+        "Support interface": 889,
+        "Overhang wall": 159,
+        "Bridge": 6715,
+        "Floating vertical shell": 1711,
+        "Top surface": 8307
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.17,
+          1.147
+        ],
+        [
+          254.84,
+          254.853
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.9199999999999999,
+          0.897
+        ],
+        [
+          255.09,
+          255.103
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8969999999999914
+    },
+    {
+      "plate": 9,
+      "parts": {
+        "F9": 1
+      },
+      "weight_g": 107.13,
+      "estimated_seconds": 13473,
+      "settings_verified": true,
+      "extrusion_moves_checked": 227330,
+      "features": {
+        "Support": 1915,
+        "Brim": 284,
+        "Outer wall": 6707,
+        "Inner wall": 13476,
+        "Bottom surface": 909,
+        "Internal solid infill": 18287,
+        "Sparse infill": 165979,
+        "Support transition": 424,
+        "Support interface": 607,
+        "Overhang wall": 273,
+        "Bridge": 6309,
+        "Floating vertical shell": 1181,
+        "Gap infill": 5105,
+        "Top surface": 5874
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          4.195,
+          4.188
+        ],
+        [
+          251.807,
+          251.819
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          3.9450000000000003,
+          3.9379999999999997
+        ],
+        [
+          252.057,
+          252.069
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.9310000000000116
+    },
+    {
+      "plate": 10,
+      "parts": {
+        "F10": 1
+      },
+      "weight_g": 127.64,
+      "estimated_seconds": 15988,
+      "settings_verified": true,
+      "extrusion_moves_checked": 287196,
+      "features": {
+        "Support": 2681,
+        "Brim": 184,
+        "Outer wall": 10790,
+        "Inner wall": 23089,
+        "Gap infill": 5345,
+        "Bottom surface": 805,
+        "Internal solid infill": 18907,
+        "Sparse infill": 209800,
+        "Support transition": 539,
+        "Support interface": 907,
+        "Overhang wall": 447,
+        "Bridge": 5232,
+        "Floating vertical shell": 1308,
+        "Top surface": 7162
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.269,
+          1.252
+        ],
+        [
+          253.586,
+          253.632
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.019,
+          1.002
+        ],
+        [
+          253.79600000000002,
+          253.842
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.002
+    },
+    {
+      "plate": 11,
+      "parts": {
+        "F11": 1
+      },
+      "weight_g": 114.57,
+      "estimated_seconds": 14378,
+      "settings_verified": true,
+      "extrusion_moves_checked": 251854,
+      "features": {
+        "Support": 2135,
+        "Brim": 380,
+        "Outer wall": 8072,
+        "Inner wall": 16809,
+        "Gap infill": 2864,
+        "Bottom surface": 1233,
+        "Internal solid infill": 20750,
+        "Sparse infill": 183270,
+        "Support transition": 460,
+        "Support interface": 841,
+        "Overhang wall": 291,
+        "Bridge": 5849,
+        "Floating vertical shell": 1453,
+        "Top surface": 7447
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.324,
+          37.296
+        ],
+        [
+          246.488,
+          218.62
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.074,
+          37.046
+        ],
+        [
+          246.738,
+          218.87
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 9.074
+    },
+    {
+      "plate": 12,
+      "parts": {
+        "F12": 1
+      },
+      "weight_g": 130.58,
+      "estimated_seconds": 16655,
+      "settings_verified": true,
+      "extrusion_moves_checked": 298270,
+      "features": {
+        "Support": 3282,
+        "Brim": 173,
+        "Outer wall": 10450,
+        "Inner wall": 22655,
+        "Bottom surface": 832,
+        "Internal solid infill": 20777,
+        "Sparse infill": 212219,
+        "Support transition": 765,
+        "Support interface": 1201,
+        "Overhang wall": 607,
+        "Bridge": 7305,
+        "Floating vertical shell": 1091,
+        "Gap infill": 9370,
+        "Top surface": 7543
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.364,
+          2.504
+        ],
+        [
+          253.474,
+          254.634
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.114,
+          2.294
+        ],
+        [
+          253.684,
+          254.884
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.114
+    },
+    {
+      "plate": 13,
+      "parts": {
+        "F13": 1
+      },
+      "weight_g": 135.92,
+      "estimated_seconds": 17237,
+      "settings_verified": true,
+      "extrusion_moves_checked": 339563,
+      "features": {
+        "Support": 3287,
+        "Brim": 418,
+        "Outer wall": 15212,
+        "Inner wall": 35971,
+        "Gap infill": 9258,
+        "Bottom surface": 1263,
+        "Internal solid infill": 20287,
+        "Sparse infill": 233619,
+        "Support transition": 815,
+        "Support interface": 1479,
+        "Overhang wall": 528,
+        "Bridge": 8361,
+        "Floating vertical shell": 1277,
+        "Top surface": 7788
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          5.801,
+          5.809
+        ],
+        [
+          250.528,
+          250.788
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.551,
+          5.559
+        ],
+        [
+          250.778,
+          251.038
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.961999999999989
+    },
+    {
+      "plate": 14,
+      "parts": {
+        "F14": 1
+      },
+      "weight_g": 118.83,
+      "estimated_seconds": 14782,
+      "settings_verified": true,
+      "extrusion_moves_checked": 267381,
+      "features": {
+        "Support": 1659,
+        "Brim": 231,
+        "Outer wall": 10179,
+        "Inner wall": 22020,
+        "Gap infill": 6529,
+        "Bottom surface": 1196,
+        "Internal solid infill": 17791,
+        "Sparse infill": 192717,
+        "Support transition": 371,
+        "Support interface": 508,
+        "Overhang wall": 230,
+        "Bridge": 6599,
+        "Floating vertical shell": 1226,
+        "Top surface": 6125
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.219,
+          2.338
+        ],
+        [
+          254.78,
+          254.793
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.9690000000000001,
+          2.128
+        ],
+        [
+          255.03,
+          255.043
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.9569999999999936
+    },
+    {
+      "plate": 15,
+      "parts": {
+        "F15": 1
+      },
+      "weight_g": 141.6,
+      "estimated_seconds": 17532,
+      "settings_verified": true,
+      "extrusion_moves_checked": 355434,
+      "features": {
+        "Support": 1491,
+        "Brim": 548,
+        "Outer wall": 16226,
+        "Inner wall": 39121,
+        "Gap infill": 8835,
+        "Bottom surface": 1446,
+        "Internal solid infill": 20131,
+        "Sparse infill": 250038,
+        "Support transition": 479,
+        "Support interface": 896,
+        "Overhang wall": 192,
+        "Bridge": 5986,
+        "Floating vertical shell": 1723,
+        "Top surface": 8322
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.397,
+          2.423
+        ],
+        [
+          253.616,
+          253.584
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.147,
+          2.173
+        ],
+        [
+          253.866,
+          253.834
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 2.133999999999986
+    },
+    {
+      "plate": 16,
+      "parts": {
+        "F16": 1
+      },
+      "weight_g": 117.53,
+      "estimated_seconds": 15723,
+      "settings_verified": true,
+      "extrusion_moves_checked": 276214,
+      "features": {
+        "Support": 4662,
+        "Brim": 211,
+        "Outer wall": 10859,
+        "Inner wall": 26441,
+        "Gap infill": 2017,
+        "Bottom surface": 1274,
+        "Internal solid infill": 23802,
+        "Sparse infill": 186265,
+        "Support transition": 1224,
+        "Support interface": 2113,
+        "Overhang wall": 679,
+        "Bridge": 7621,
+        "Floating vertical shell": 1815,
+        "Top surface": 7231
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          23.264,
+          35.385
+        ],
+        [
+          232.11,
+          220.313
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          23.014,
+          35.135
+        ],
+        [
+          232.36,
+          220.563
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 23.014
+    },
+    {
+      "plate": 17,
+      "parts": {
+        "F17": 1
+      },
+      "weight_g": 99.07,
+      "estimated_seconds": 12793,
+      "settings_verified": true,
+      "extrusion_moves_checked": 207578,
+      "features": {
+        "Support": 4233,
+        "Brim": 87,
+        "Outer wall": 6425,
+        "Inner wall": 12588,
+        "Gap infill": 1387,
+        "Bottom surface": 1024,
+        "Internal solid infill": 15761,
+        "Sparse infill": 153473,
+        "Support transition": 610,
+        "Support interface": 1309,
+        "Overhang wall": 646,
+        "Bridge": 5109,
+        "Floating vertical shell": 489,
+        "Top surface": 4437
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          13.61,
+          12.952
+        ],
+        [
+          242.782,
+          242.411
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          13.36,
+          12.702
+        ],
+        [
+          243.032,
+          242.661
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 12.702
+    },
+    {
+      "plate": 18,
+      "parts": {
+        "F18": 1
+      },
+      "weight_g": 143.08,
+      "estimated_seconds": 18689,
+      "settings_verified": true,
+      "extrusion_moves_checked": 335611,
+      "features": {
+        "Support": 4349,
+        "Brim": 251,
+        "Outer wall": 12734,
+        "Inner wall": 29501,
+        "Gap infill": 3091,
+        "Bottom surface": 1689,
+        "Internal solid infill": 27132,
+        "Sparse infill": 233622,
+        "Support transition": 1217,
+        "Support interface": 2143,
+        "Overhang wall": 538,
+        "Bridge": 8190,
+        "Floating vertical shell": 2155,
+        "Top surface": 8999
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          8.532,
+          14.758
+        ],
+        [
+          247.161,
+          240.943
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          8.282,
+          14.508
+        ],
+        [
+          247.411,
+          241.193
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 8.282
+    },
+    {
+      "plate": 19,
+      "parts": {
+        "F19": 1
+      },
+      "weight_g": 141.46,
+      "estimated_seconds": 17480,
+      "settings_verified": true,
+      "extrusion_moves_checked": 352309,
+      "features": {
+        "Support": 1730,
+        "Brim": 546,
+        "Outer wall": 15511,
+        "Inner wall": 36738,
+        "Gap infill": 8587,
+        "Bottom surface": 1261,
+        "Internal solid infill": 19856,
+        "Sparse infill": 248488,
+        "Support transition": 516,
+        "Support interface": 899,
+        "Overhang wall": 153,
+        "Bridge": 7952,
+        "Floating vertical shell": 1523,
+        "Top surface": 8549
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.33,
+          2.316
+        ],
+        [
+          253.679,
+          253.67
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.08,
+          2.066
+        ],
+        [
+          253.929,
+          253.92
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 2.066
+    },
+    {
+      "plate": 20,
+      "parts": {
+        "F20": 1
+      },
+      "weight_g": 102.83,
+      "estimated_seconds": 12692,
+      "settings_verified": true,
+      "extrusion_moves_checked": 253952,
+      "features": {
+        "Support": 970,
+        "Brim": 491,
+        "Outer wall": 12480,
+        "Inner wall": 30443,
+        "Gap infill": 5967,
+        "Bottom surface": 801,
+        "Internal solid infill": 14549,
+        "Sparse infill": 174921,
+        "Support transition": 366,
+        "Support interface": 576,
+        "Overhang wall": 135,
+        "Bridge": 4743,
+        "Floating vertical shell": 1112,
+        "Top surface": 6398
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          17.468,
+          17.472
+        ],
+        [
+          238.554,
+          238.506
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          17.218,
+          17.222
+        ],
+        [
+          238.804,
+          238.756
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 17.195999999999998
+    },
+    {
+      "plate": 21,
+      "parts": {
+        "M1": 1
+      },
+      "weight_g": 59.15,
+      "estimated_seconds": 7238,
+      "settings_verified": true,
+      "extrusion_moves_checked": 118409,
+      "features": {
+        "Support": 347,
+        "Brim": 1197,
+        "Outer wall": 2836,
+        "Inner wall": 7998,
+        "Bottom surface": 981,
+        "Gap infill": 914,
+        "Internal solid infill": 10965,
+        "Sparse infill": 90305,
+        "Support transition": 27,
+        "Support interface": 41,
+        "Bridge": 1761,
+        "Floating vertical shell": 79,
+        "Top surface": 958
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.247,
+          6.26
+        ],
+        [
+          249.749,
+          249.769
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.997,
+          6.01
+        ],
+        [
+          249.999,
+          250.019
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.9809999999999945
+    },
+    {
+      "plate": 22,
+      "parts": {
+        "M2": 1
+      },
+      "weight_g": 57.02,
+      "estimated_seconds": 7125,
+      "settings_verified": true,
+      "extrusion_moves_checked": 117901,
+      "features": {
+        "Support": 1186,
+        "Brim": 373,
+        "Outer wall": 2809,
+        "Inner wall": 7731,
+        "Gap infill": 470,
+        "Bottom surface": 931,
+        "Internal solid infill": 8339,
+        "Sparse infill": 92450,
+        "Support transition": 271,
+        "Support interface": 465,
+        "Bridge": 1783,
+        "Floating vertical shell": 66,
+        "Top surface": 829,
+        "Overhang wall": 198
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          46.962,
+          47.125
+        ],
+        [
+          209.03,
+          208.881
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          46.712,
+          46.875
+        ],
+        [
+          209.28,
+          209.131
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 46.712
+    },
+    {
+      "plate": 23,
+      "parts": {
+        "M3": 1
+      },
+      "weight_g": 74.97,
+      "estimated_seconds": 9216,
+      "settings_verified": true,
+      "extrusion_moves_checked": 153709,
+      "features": {
+        "Support": 2218,
+        "Brim": 508,
+        "Outer wall": 3146,
+        "Inner wall": 9150,
+        "Gap infill": 532,
+        "Bottom surface": 838,
+        "Internal solid infill": 12154,
+        "Sparse infill": 120932,
+        "Support transition": 381,
+        "Support interface": 710,
+        "Bridge": 2094,
+        "Floating vertical shell": 55,
+        "Overhang wall": 389,
+        "Top surface": 602
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.796,
+          3.076
+        ],
+        [
+          252.965,
+          254.183
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.546,
+          2.866
+        ],
+        [
+          253.175,
+          254.433
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.546
+    },
+    {
+      "plate": 24,
+      "parts": {
+        "M4": 1
+      },
+      "weight_g": 96.26,
+      "estimated_seconds": 11395,
+      "settings_verified": true,
+      "extrusion_moves_checked": 206412,
+      "features": {
+        "Support": 1462,
+        "Brim": 646,
+        "Outer wall": 2636,
+        "Inner wall": 7992,
+        "Gap infill": 430,
+        "Bottom surface": 1271,
+        "Internal solid infill": 9051,
+        "Sparse infill": 179485,
+        "Support transition": 265,
+        "Support interface": 470,
+        "Bridge": 1639,
+        "Floating vertical shell": 49,
+        "Overhang wall": 205,
+        "Top surface": 811
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.918,
+          6.94
+        ],
+        [
+          249.054,
+          249.547
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          6.668,
+          6.69
+        ],
+        [
+          249.304,
+          249.797
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.203000000000003
+    },
+    {
+      "plate": 25,
+      "parts": {
+        "M5": 1
+      },
+      "weight_g": 55.89,
+      "estimated_seconds": 6906,
+      "settings_verified": true,
+      "extrusion_moves_checked": 111492,
+      "features": {
+        "Support": 1261,
+        "Brim": 72,
+        "Outer wall": 929,
+        "Inner wall": 2744,
+        "Gap infill": 420,
+        "Bottom surface": 756,
+        "Internal solid infill": 5414,
+        "Sparse infill": 97404,
+        "Support transition": 225,
+        "Support interface": 381,
+        "Bridge": 1205,
+        "Floating vertical shell": 17,
+        "Overhang wall": 188,
+        "Top surface": 476
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          39.721,
+          40.085
+        ],
+        [
+          215.907,
+          216.566
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          39.471,
+          39.835
+        ],
+        [
+          216.157,
+          216.816
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 39.184
+    },
+    {
+      "plate": 26,
+      "parts": {
+        "M6": 1
+      },
+      "weight_g": 65.93,
+      "estimated_seconds": 7926,
+      "settings_verified": true,
+      "extrusion_moves_checked": 136925,
+      "features": {
+        "Support": 272,
+        "Brim": 779,
+        "Outer wall": 1874,
+        "Inner wall": 5275,
+        "Bottom surface": 1153,
+        "Gap infill": 232,
+        "Internal solid infill": 7275,
+        "Sparse infill": 117819,
+        "Support transition": 27,
+        "Support interface": 40,
+        "Bridge": 1196,
+        "Floating vertical shell": 40,
+        "Top surface": 943
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          22.742,
+          22.762
+        ],
+        [
+          233.264,
+          233.248
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          22.492,
+          22.512
+        ],
+        [
+          233.514,
+          233.498
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 22.48599999999999
+    },
+    {
+      "plate": 27,
+      "parts": {
+        "Backer1": 1,
+        "Backer3": 1,
+        "Backer5": 1,
+        "Backer7": 1
+      },
+      "weight_g": 99.32,
+      "estimated_seconds": 8324,
+      "settings_verified": true,
+      "extrusion_moves_checked": 29055,
+      "features": {
+        "Inner wall": 4337,
+        "Outer wall": 1659,
+        "Bottom surface": 2550,
+        "Internal solid infill": 18651,
+        "Top surface": 1588,
+        "Gap infill": 270
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.7083262165514412,
+          1.71
+        ],
+        [
+          254.29,
+          254.29
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.4983262165514413,
+          1.5
+        ],
+        [
+          254.5,
+          254.5
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.4983262165514413
+    },
+    {
+      "plate": 28,
+      "parts": {
+        "Backer2": 1,
+        "Backer4": 1,
+        "Backer6": 1,
+        "Backer8": 1
+      },
+      "weight_g": 99.33,
+      "estimated_seconds": 8315,
+      "settings_verified": true,
+      "extrusion_moves_checked": 29060,
+      "features": {
+        "Inner wall": 4316,
+        "Outer wall": 1666,
+        "Bottom surface": 2554,
+        "Internal solid infill": 18633,
+        "Top surface": 1573,
+        "Gap infill": 318
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.7098435019542215,
+          1.7097143042809222
+        ],
+        [
+          254.2900286647074,
+          254.2902022360424
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.4998435019542216,
+          1.4997143042809222
+        ],
+        [
+          254.5000286647074,
+          254.5002022360424
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.4997143042809222
+    },
+    {
+      "plate": 29,
+      "parts": {
+        "B1": 1,
+        "B2": 1,
+        "B3": 1,
+        "B4": 1,
+        "Retainer": 32
+      },
+      "weight_g": 150.89,
+      "estimated_seconds": 18756,
+      "settings_verified": true,
+      "extrusion_moves_checked": 326506,
+      "features": {
+        "Inner wall": 26766,
+        "Outer wall": 10390,
+        "Gap infill": 11430,
+        "Bottom surface": 4229,
+        "Support": 3095,
+        "Brim": 664,
+        "Internal solid infill": 37459,
+        "Sparse infill": 214059,
+        "Floating vertical shell": 5726,
+        "Bridge": 6604,
+        "Top surface": 4446,
+        "Support interface": 1158,
+        "Support transition": 366,
+        "Overhang wall": 114
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.25,
+          34.25
+        ],
+        [
+          240.7891136729727,
+          219.75
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.0,
+          34.0
+        ],
+        [
+          240.9991136729727,
+          220.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 12.0
+    },
+    {
+      "plate": 30,
+      "parts": {
+        "Test-Photo-Frame": 1,
+        "Test-Photo-Backer": 1,
+        "Test-Photo-Tab": 1,
+        "Test-Wall-Block-B1": 1,
+        "Test-Wall-Socket-B1": 1,
+        "Test-M-Frame": 1,
+        "Test-M-Letter": 1,
+        "Test-Lap-Tongue": 1,
+        "Test-Lap-Socket": 1
+      },
+      "weight_g": 160.18,
+      "estimated_seconds": 19800,
+      "settings_verified": true,
+      "extrusion_moves_checked": 339557,
+      "features": {
+        "Support": 3242,
+        "Brim": 1017,
+        "Outer wall": 10337,
+        "Inner wall": 29103,
+        "Bottom surface": 3537,
+        "Gap infill": 1303,
+        "Internal solid infill": 34066,
+        "Sparse infill": 239629,
+        "Support transition": 574,
+        "Support interface": 1105,
+        "Floating vertical shell": 3725,
+        "Top surface": 4783,
+        "Bridge": 6874,
+        "Overhang wall": 262
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          10.25,
+          10.25
+        ],
+        [
+          238.75,
+          231.75
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          10.0,
+          10.0
+        ],
+        [
+          239.0,
+          232.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 10.0
+    }
+  ],
+  "settings": {
+    "printer_model": "Bambu Lab A1",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "wall_loops": "4",
+    "sparse_infill_density": "15%",
+    "sparse_infill_pattern": "gyroid",
+    "layer_height": "0.2",
+    "print_sequence": "by layer"
+  },
+  "normal_mesh_comparisons": [
+    {
+      "part": "F8",
+      "maximum_geometry_error_mm": 5.944529382193286e-06
+    },
+    {
+      "part": "F16",
+      "maximum_geometry_error_mm": 5.003061507091811e-07
+    },
+    {
+      "part": "F17",
+      "maximum_geometry_error_mm": 4.312857160674361e-06
+    },
+    {
+      "part": "F18",
+      "maximum_geometry_error_mm": 4.309629212524799e-06
+    },
+    {
+      "part": "F20",
+      "maximum_geometry_error_mm": 4.292404372722432e-06
+    },
+    {
+      "part": "M1",
+      "maximum_geometry_error_mm": 4.319595677330614e-06
+    },
+    {
+      "part": "M3",
+      "maximum_geometry_error_mm": 4.3208510959912095e-06
+    },
+    {
+      "part": "F14",
+      "maximum_geometry_error_mm": 5.990762752448734e-06
+    },
+    {
+      "part": "F15",
+      "maximum_geometry_error_mm": 4.316266224079515e-06
+    },
+    {
+      "part": "F19",
+      "maximum_geometry_error_mm": 4.303061401659592e-06
+    },
+    {
+      "part": "M2",
+      "maximum_geometry_error_mm": 3.864749550608572e-06
+    },
+    {
+      "part": "F2",
+      "maximum_geometry_error_mm": 5.9782406335909614e-06
+    },
+    {
+      "part": "F11",
+      "maximum_geometry_error_mm": 5.010315215868305e-07
+    },
+    {
+      "part": "F5",
+      "maximum_geometry_error_mm": 4.311825255180157e-06
+    },
+    {
+      "part": "B3",
+      "maximum_geometry_error_mm": 6.83863122164029e-08
+    },
+    {
+      "part": "Retainer",
+      "maximum_geometry_error_mm": 6.7188446531006135e-09
+    },
+    {
+      "part": "Backer1",
+      "maximum_geometry_error_mm": 6.0349398007498156e-06
+    },
+    {
+      "part": "M5",
+      "maximum_geometry_error_mm": 3.864646946920632e-06
+    },
+    {
+      "part": "B2",
+      "maximum_geometry_error_mm": 6.83863122164029e-08
+    },
+    {
+      "part": "M6",
+      "maximum_geometry_error_mm": 4.307942137775779e-06
+    },
+    {
+      "part": "M4",
+      "maximum_geometry_error_mm": 5.75613126780995e-06
+    },
+    {
+      "part": "Backer6",
+      "maximum_geometry_error_mm": 3.7829961491957272e-06
+    },
+    {
+      "part": "Backer7",
+      "maximum_geometry_error_mm": 4.463923143235997e-06
+    },
+    {
+      "part": "Backer4",
+      "maximum_geometry_error_mm": 4.953373796813638e-06
+    },
+    {
+      "part": "B4",
+      "maximum_geometry_error_mm": 6.838639468798369e-08
+    },
+    {
+      "part": "Backer5",
+      "maximum_geometry_error_mm": 5.79878152591514e-06
+    },
+    {
+      "part": "Backer3",
+      "maximum_geometry_error_mm": 3.4050162107567504e-06
+    },
+    {
+      "part": "B1",
+      "maximum_geometry_error_mm": 6.83863122164029e-08
+    },
+    {
+      "part": "Backer2",
+      "maximum_geometry_error_mm": 6.2620907431385785e-06
+    },
+    {
+      "part": "Backer8",
+      "maximum_geometry_error_mm": 3.840891927147591e-06
+    },
+    {
+      "part": "F12",
+      "maximum_geometry_error_mm": 4.312828052046653e-06
+    },
+    {
+      "part": "F1",
+      "maximum_geometry_error_mm": 5.741295603362073e-06
+    },
+    {
+      "part": "F6",
+      "maximum_geometry_error_mm": 4.3138640162087845e-06
+    },
+    {
+      "part": "F9",
+      "maximum_geometry_error_mm": 6.729651543215444e-07
+    },
+    {
+      "part": "F7",
+      "maximum_geometry_error_mm": 5.8918930598464474e-06
+    },
+    {
+      "part": "F4",
+      "maximum_geometry_error_mm": 5.755187439784232e-06
+    },
+    {
+      "part": "F3",
+      "maximum_geometry_error_mm": 4.310790422744961e-06
+    },
+    {
+      "part": "F10",
+      "maximum_geometry_error_mm": 4.314944615954661e-06
+    },
+    {
+      "part": "F13",
+      "maximum_geometry_error_mm": 4.33101173550732e-06
+    },
+    {
+      "part": "Test-Photo-Frame",
+      "maximum_geometry_error_mm": 5.589569770400893e-09
+    },
+    {
+      "part": "Test-Photo-Backer",
+      "maximum_geometry_error_mm": 3.8293961560229463e-07
+    },
+    {
+      "part": "Test-Photo-Tab",
+      "maximum_geometry_error_mm": 6.718767980833367e-09
+    },
+    {
+      "part": "Test-Wall-Block-B1",
+      "maximum_geometry_error_mm": 6.83863122164029e-08
+    },
+    {
+      "part": "Test-Wall-Socket-B1",
+      "maximum_geometry_error_mm": 6.428511523441202e-08
+    },
+    {
+      "part": "Test-M-Frame",
+      "maximum_geometry_error_mm": 3.928325104805431e-06
+    },
+    {
+      "part": "Test-M-Letter",
+      "maximum_geometry_error_mm": 4.1671416985146154e-06
+    },
+    {
+      "part": "Test-Lap-Tongue",
+      "maximum_geometry_error_mm": 1.092188581888091e-06
+    },
+    {
+      "part": "Test-Lap-Socket",
+      "maximum_geometry_error_mm": 8.348915439592405e-07
+    }
+  ],
+  "solid_modifiers_verified": 82,
+  "summary": {
+    "digital_checks_passed": true,
+    "distinct_meshes": 48,
+    "pieces": 79,
+    "plates": 30,
+    "production_pieces": 70,
+    "test_pieces": 9,
+    "minimum_edge_clearance_mm": 0.673,
+    "extrusion_moves_checked": 7398227,
+    "total_weight_g": 3414.25,
+    "total_estimated_seconds": 421789
+  }
+}

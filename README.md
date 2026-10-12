@@ -1,7 +1,14 @@
 # Dara knot wall hanging
 
+The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
+passed the digital checks on 2026-10-12. The current photo, wall-block, and M
+hardware fits have **not been physically tested**. Start with the
+[fit tests on plate 30](working/stl/Dara-Print-Checks/README.md) and the F14/M5 fit check
+before committing to all 29 production plates.
+
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
-contains all 70 printed pieces on 29 A1 plates. The
+contains all 70 assembly pieces on plates 1-29, plus nine fit-test pieces on
+**plate 30 - PRINT FIRST**. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
 part in the assembly and shows the shared backer and hardware plates. The project
 uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
@@ -85,7 +92,9 @@ support assessment. Artwork, backers, lap joints, and M attachments are preserve
 - [Rear assembly](working/review/photo-retainers/assembly-rear.png)
 - [Geometry verification](working/review/photo-retainers/verification.json)
 
-The editable feature model is [working/Dara-Photo-Frame.scad](working/Dara-Photo-Frame.scad).
+The earlier, unsegmented feature model is [working/Dara-Photo-Frame.scad](working/Dara-Photo-Frame.scad).
+The following sliding-retainer description applies only to that earlier design;
+use the jointed manufacturing model and complete 3MF above for production.
 The clean reference remains unchanged. The working CAD adds rear photo rabbets
 to the eight outer openings, 1.6 mm removable backers, and four identical printed
 sliding retainers per backer in integral rear T tracks. There are no screw holes.
@@ -158,4 +167,5 @@ The [tested keyed lap joints](reference/tested-lap-joints/README.md) preserve th
 75% straight and curved samples reported as rock solid on 2026-10-12. The folder
 includes self-contained OpenSCAD reference CAD, print settings and verification
 records. The exact test project is stored with Git LFS; test STL exports remain in Nextcloud. This is a separate joint
-baseline; it does not yet add segmentation or joints to the working full frame.
+baseline used by the current jointed manufacturing model. Its six-wall, 30%
+infill test preset differs from the production project's four walls and 15% infill.

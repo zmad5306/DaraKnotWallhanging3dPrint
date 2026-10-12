@@ -38,8 +38,11 @@ layer settings. The three small photo coupons were moved to make space.
   Test-M-Letter. Copper outer walls and top surfaces run at 40 mm/s.
 - Match these project colors to the loaded AMS Lite spools in the print dialog;
   the project numbers are not a requirement to use particular physical slots.
-- Nozzle 220 C and textured plate 60 C. The copper uses the Generic PLA Silk
-  flow/retraction profile. Colors are display approximations of the filament.
+- Nozzle 220 C. Saved textured-plate temperatures are 65 C for white/wood
+  and 55 C for copper. The mixed test plate starts at 55 C and switches to
+  65 C in its saved toolpath. Copper uses the Generic PLA Silk flow/retraction
+  profile, with a 7.5 mm3/s maximum volumetric speed (white/wood: 12 mm3/s).
+  Colors are display approximations of the filament.
 - Four wall loops and 15% gyroid infill for the body.
 - Local 100% infill around M screw seats and pilots, photo-tab screws, wall-block
   screws, wall keyhole seats, and retainer screw seats. The lap tongues and roots

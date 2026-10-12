@@ -1,4 +1,4 @@
-DARA - CLEAN DESIGN REFERENCE
+# Dara — clean design reference
 
 Open Dara-Clean-Reference.scad in OpenSCAD and press F5.
 This one file is self-contained and can be moved or copied on its own.

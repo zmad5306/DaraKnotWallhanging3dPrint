@@ -1,12 +1,6 @@
 # Dara knot wall hanging
 
-## Print this Bambu project
-
-**[PRINT-THIS-Dara-A1.3mf](PRINT-THIS-Dara-A1.3mf)** is the current, verified file to open in Bambu Studio and print. It contains the corrected curves, all colors and settings, and saved slices for all 31 plates.
-
-Print **plate 30** first to check the white/wood/blue finish. **Plates 1-29** contain the full assembly; **plate 31** is the copper sample. After cloning, run `git lfs pull` to download the actual 3MF.
-
-The root file is byte-identical to the [production project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) and is refreshed automatically when a validated project is published. [Print instructions and assembly order](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
+[Dara.3mf](Dara.3mf) is the Bambu Studio project with all 31 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
 ![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 

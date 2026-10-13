@@ -50,6 +50,10 @@ def main(work=None, revision_key='blue_ribbon_edge'):
     base['blue_ribbon_edge'].update(digital_checks_passed=True, physical_tested=False,
         sample_plate=30, sliced_blue_layers=[66, 68], sliced_blue_z_mm=[13.2, 13.4, 13.6])
     shutil.copy2(candidate, project)
+    # Keep the obvious repository-root print file synchronized with publication.
+    print_project = ROOT / 'PRINT-THIS-Dara-A1.3mf'
+    shutil.copy2(project, print_project)
+    assert digest(print_project) == audit['project_sha256']
     (PACKAGE / 'project-validation.json').write_text(json.dumps(base, indent=2) + '\n')
     (PACKAGE / 'final-review.json').write_text(json.dumps(audit, indent=2) + '\n')
     (ROOT / 'working/review/blue-ribbon-edge/design.json').write_text(json.dumps(base['blue_ribbon_edge'], indent=2) + '\n')

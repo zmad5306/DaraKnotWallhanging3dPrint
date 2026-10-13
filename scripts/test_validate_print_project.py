@@ -5,10 +5,16 @@ from validate_print_project import scan_gcode, filament_weights
 
 
 class GcodeBoundsTests(unittest.TestCase):
+    def test_model_color_heights_exclude_purge_tower(self):
+        result = scan_gcode('M83\nT3\nG1 X10 Y10 Z1\n; FEATURE: Prime tower\nG1 X11 E.1\n'
+                            'G1 Z13.2\n; FEATURE: Outer wall\nG1 X12 E.1\nT0\nG1 Z16.6\nG1 X13 E.1\n')
+        self.assertEqual(result['model_extrusion_z_by_filament_mm'], {'4': [13.2], '1': [16.6]})
+
     def test_multicolor_mass_includes_every_filament(self):
         self.assertEqual(filament_weights('; total filament weight [g] : 101.82, 8.71, 0.00\n'), [101.82, 8.71, 0.0])
         self.assertEqual(filament_weights('; total filament weight [g] : 150,34\n; filament: 1,3\n'), [150, 0, 34])
         self.assertEqual(filament_weights('; total filament weight [g] : 60\n; filament: 3\n'), [0, 0, 60])
+        self.assertEqual(filament_weights('; total filament weight [g] : 12,2,1.5\n; filament: 1,2,4\n'), [12, 2, 0, 1.5])
 
     def test_compact_decimals_and_width(self):
         result = scan_gcode('M83\nG1 X.5 Y1\n; FEATURE: Outer wall\n; LINE_WIDTH: 0.4\nG1 X2 Y1 E.123\n')

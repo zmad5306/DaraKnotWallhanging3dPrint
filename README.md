@@ -1,28 +1,38 @@
 # Dara knot wall hanging
 
-![Dara knot wall hanging on a dark blue wall, with white ribbon, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper.png)
+![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 
-Concept rendering: white ribbon, wood-tan woven fabric, and a copper manuscript M
-on a dark blue wall.
+Concept rendering: white ribbon with a fine Azurite blue edge thread, wood-tan
+woven fabric, and a copper manuscript M on a dark blue wall.
 
 The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
-passed the digital checks on 2026-10-12. The current photo, wall-block, and M
-hardware fits have **not been physically tested**. Start with the
-[fit tests on plate 30](working/stl/Dara-Print-Checks/README.md) and the F14/M5 fit check
-before committing to all 29 production plates.
+records the digital checks. The user has printed the earlier hardware/lap
+test pieces and reported insufficient photo clearance. The jointed model now
+has 2.4 mm deep rabbets, giving the 1.6 mm backer 0.8 mm of photo and surface
+clearance. The extra 0.4 mm addresses the reported fit issue; the revised
+physical fit has not yet been checked. The two remaining
+[material tests](working/stl/Dara-Print-Checks/README.md) have separate plates.
 
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
-contains all 70 assembly pieces on plates 1-29, plus ten test pieces on
-**plate 30 - PRINT FIRST**, including a 68.45 x 24 mm full-width white/wood
-weave sample cropped from F7. The
+contains all 70 assembly pieces on plates 1-29, a **68.45 x 24 mm white/wood/blue
+weave-and-edging sample alone on plate 30**, and the **copper M test alone on plate 31**.
+The already printed hardware and lap coupons have been removed from this project;
+their standalone STL files remain available. The weave has alternating raised
+crossings restored from the earlier texture, and its color region follows the
+surface relief. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
 part in the assembly and shows the shared backer and hardware plates. The project
 uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
 The saved AMS palette is **1 white / Generic PLA, 2 wood tan / Generic PLA,
-3 copper / Generic PLA Silk**. Frame sections print their shallow weave in wood;
-the M sections print entirely in copper. Match these project colors to your
+3 copper / Generic PLA Silk, 4 Azurite blue / Generic PLA**. Frame sections
+print their shallow weave in wood and a **flush 1.5 mm blue line** on each
+fabric-facing white rail. A 1.25 mm white gap separates the line from the weave.
+The blue modifier is 0.6 mm deep; it prints in the final three rail layers,
+after the wood is complete. The M sections print entirely in copper. Match these project colors to your
 loaded AMS Lite spools in the print dialog. No painting or separate weave inserts
 are needed. Use the 3MF to retain these assignments; STL files contain geometry only.
+The [actual CAD color map](working/review/blue-ribbon-edge/assembly-color-map.png)
+shows the continuous edge path used by the section modifiers.
 See the [project notes and verification](working/bambu/Dara-Photo-Frame-A1-Jointed/README.md).
 Run `git lfs pull` after cloning to retrieve the 3MF and STL files.
 

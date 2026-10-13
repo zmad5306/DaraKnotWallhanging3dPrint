@@ -22,7 +22,9 @@ def main():
     ap.add_argument('--models', required=True, type=Path)
     ap.add_argument('--slices', required=True, type=Path)
     ap.add_argument('--output', required=True, type=Path)
+    ap.add_argument('--baseline', type=Path, default=PACKAGE / 'project-validation.json')
     args = ap.parse_args()
+    baseline = json.loads(args.baseline.read_text())
     with zipfile.ZipFile(args.models) as z:
         files = {n: z.read(n) for n in z.namelist()}
     with zipfile.ZipFile(args.slices) as z:
@@ -32,7 +34,7 @@ def main():
     info = ET.fromstring(sliced['Metadata/slice_info.config'])
     root = ET.fromstring(files['3D/3dmodel.model'])
     names = {o.get('id'): props(o)['name'] for o in model.findall('object')}
-    assert len(model.findall('plate')) == len(toolpaths.findall('plate')) == len(info.findall('plate')) == 30
+    assert len(model.findall('plate')) == len(toolpaths.findall('plate')) == len(info.findall('plate')) == len(baseline['plate_layout'])
     for plate, sliced_plate, stat in zip(model.findall('plate'), toolpaths.findall('plate'), info.findall('plate')):
         number = props(plate)['plater_id']
         assert number == props(sliced_plate)['plater_id'] == props(stat)['index']
@@ -76,7 +78,6 @@ def main():
     with zipfile.ZipFile(args.output, 'w', zipfile.ZIP_DEFLATED) as z:
         for n, data in files.items():
             z.writestr(n, data)
-    baseline = json.loads((PACKAGE / 'project-validation.json').read_text())
     # Refresh Bambu's re-numbered IDs without changing the verified geometry
     # and XY placement records used by the independent audit.
     for layout, plate in zip(baseline['plate_layout'], model.findall('plate')):
@@ -86,7 +87,10 @@ def main():
             remaining.remove(instance)
             item.update({k: int(props(instance)[k]) for k in ('object_id', 'instance_id', 'identify_id')})
         assert not remaining
-    baseline['test_plate']['plate_layout'] = copy.deepcopy(baseline['plate_layout'][-1])
+    if 'plates' in baseline['test_plate']:
+        baseline['test_plate']['plate_layouts'] = copy.deepcopy(baseline['plate_layout'][29:])
+    else:
+        baseline['test_plate']['plate_layout'] = copy.deepcopy(baseline['plate_layout'][-1])
     baseline['project_sha256'] = digest(args.output)
     baseline['settings'] = {k: v for k, v in json.loads(files['Metadata/project_settings.config']).items()
                             if k in baseline['settings'] or k == 'filament_colour'}
@@ -96,7 +100,8 @@ def main():
     baseline['test_plate'].pop('production_gcodes_byte_identical', None)
     baseline['ams_color_workflow'] = {
         'models_sha256': digest(args.models), 'slices_sha256': digest(args.slices),
-        'color_assignment': 'Original printable meshes; wood filament modifiers at Z=8.4..9.6 mm; copper M.',
+        'color_assignment': 'Source printable meshes; wood filament modifiers follow the recorded weave height; copper M.' +
+                            (' Flush Azurite edging follows the continuous white ribbon.' if 'blue_ribbon_edge' in baseline else ''),
         'slice_export': 'Bambu Studio GUI: Slice all, Export all sliced file',
         'audit': 'Run validate_print_project.py against this candidate before publishing.'}
     args.output.with_suffix('.json').write_text(json.dumps(baseline, indent=2) + '\n')

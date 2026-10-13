@@ -1,91 +1,21 @@
-# Final print review - 2026-10-12
+# Print review - 2026-10-13
 
-**Digital review: passed. Ready to start fit-test printing. Full production
-release remains conditional on the hardware checks below.** The user confirmed
-that the current photo tabs, keyed wall blocks, and flat-back M hardware fits
-have not been physically tested. No physical test was performed during this review.
+**The revised project passes the digital audit.** The user has printed the earlier hardware and lap tests and reports that the backer left insufficient photo room, possibly due to support roughness. The preceding clearance revision deepened the rabbet from **2.0 to 2.4 mm**. With the existing 1.6 mm backer, 0.8 mm remains for the photo and surface clearance. Physical fit remains unverified. This color revision adds a flush 1.5 mm Azurite blue edge thread to the white ribbon, preserving that geometry.
 
-Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) for production:
-Bambu Lab A1, 0.4 mm nozzle, white/wood Generic PLA and copper Generic PLA Silk,
-textured PEI plate, 0.2 mm layers,
-four walls, 15% gyroid, and the saved local 100% modifiers. Keep the 100% scale,
-orientations, plate assignments, and support/brim overrides. Plate 30 now contains
-ten test pieces, including a 68.45 x 24 x 13.5 mm full-width weave sample from F7.
-The three small photo coupons were moved to make space. Production geometry,
-joint fits, placements, and G-code on plates 1-29 are unchanged. Plate 30 was
-re-sliced with the saved AMS colors. Match
-1 white, 2 wood, and 3 copper to the actual loaded spools in the print dialog.
+Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). Plate **30** contains only the **68.45 x 24 x 13.5 mm** white/wood/blue sample from F7. Plate **31** contains only **Test-M-Letter**, with the copper Generic PLA Silk profile and 55 C bed. The optional standalone [photo-frame fit coupon](../../stl/Dara-Print-Checks/Test-Photo-Frame.stl) also has the deeper recess; the material test plates remain unchanged in purpose.
 
-## Verified against the saved files
+The alternating 0.3 mm weave crossing pads are preserved. The [rabbet comparison](../../review/rabbet-clearance/geometry-verification.json) verifies all 20 frame sections: only the recess depth changes, with geometry outside Z=2.0-2.4 mm unchanged within numerical tolerance. The M, backer, wall-block and retainer STL files are byte-identical to the preceding revision. Production placements and saved material settings are retained.
 
-- Source CAD hash matches the export manifest; every STL hash matches its record.
-- All 39 distinct STLs are single, watertight, consistently wound solids with
-  positive volume, rest at Z=0, and fit the A1 model footprint allowance.
-- All 70 assembled pieces were reconstructed from their native placement data.
-  The largest intersection is 0.000160 mm3, within the 0.01 mm3 numerical tolerance.
-  Frame/M laps, M locators, backers, closed tabs, and wall keys have no material
-  interference at the saved dimensions. This is a nominal CAD fit check.
-- All 49 normal meshes in the final 3MF match their source geometry within 0.0001 mm.
-  All instance placements, 82 solid modifiers, and 21 weave-color modifiers
-  were checked; each modifier intersects its intended printable part. Wood is
-  confined to layers 43-48 on every frame plate, with six changes per plate.
-  The full-width weave coupon also uses wood on layers 43-48.
-  All M sections use copper; backers and hardware use white.
-- All 29 production plates contain the expected pieces and toolpaths: 20 frame
-  sections, six M sections, eight backers, four blocks, and 32 tabs.
-  Plate 30 adds ten test pieces: photo frame/backer/tab, B1 block/socket,
-  the current M5/F14 interface pair, the current F7/F4 lap pair, and a full-width
-  F7 weave coupon with both white rails intact.
-- All saved non-custom extrusion moves were checked, including 7,452,639
-  moves across production and test plates, including compact
-  decimals, arc extrema, support, brim and bead widths. Minimum conservative
-  bed clearance is **0.673 mm on F6 / plate 06**. The model paths stay on the bed.
-  Printer purge, wipe and parking routines are intentionally outside this check.
-- Estimated production use is **3,329.69 g and 120 h 31 min**.
-  The included plate 30 adds **204.72 g and 8 h 24 min**.
-  All 30 plates use approximately **2.884 kg white,
-  0.206 kg wood, and 0.444 kg copper**,
-  including the slicer's support, brim, purge and tower estimates.
-- The only slice notices concern unsupported traditional timelapse on plates
-  21-29. Leave timelapse off for those single-color plates.
-- The four-page part/plate map was rendered and visually reviewed. Its labels,
-  quantities and front-view orientation agree with the project mapping.
+## Saved-file checks
 
-The old bounds checker skipped numbers such as `E.123`, which excluded many
-extrusions. That verification defect is fixed in the tracked
-[validator](../../../scripts/validate_print_project.py), with six regression
-tests, including multi-filament weight accounting. The corrected report is [final-review.json](final-review.json); the
-color project's slice summary has also been refreshed. Previously reported
-0.826 mm clearance should be replaced by 0.673 mm.
+- All 39 production STLs and two test meshes are valid solids; the current CAD hash and STL hashes match their manifests.
+- All 70 production pieces were checked in their assembled positions, including lap order and mating interfaces.
+- All 41 normal meshes in the 3MF match their source geometry within 0.0001 mm. The 74 reinforcement modifiers, 21 wood modifiers and 21 blue modifiers were checked. Blue paths were compared with the continuous CAD edge offsets.
+- Wood occupies layers 43-50 on the frame and short test, with eight wood/white color changes. Blue occupies layers 66-68 only, after the wood is complete. Total changes are 11 per frame/test plate, or 12 where taller white M locating pins require a final return to white. Plate 31 uses copper only, with no filament changes and a 55 C bed throughout printing; plate 30 uses a 65 C bed.
+- All 31 saved toolpaths pass the extrusion-bounds audit: 7,356,694 checked moves and 0.673 mm minimum bed-edge clearance. Printer purge/wipe/parking routines are outside that model-path check.
+- Estimated production use: 3,402.99 g and 126 h 57 min. Weave test: 18.44 g and 0 h 59 min. Copper test: 23.28 g and 1 h 10 min.
 
-## First-print sequence
-
-1. Print **plate 30 - PRINT FIRST - Hardware, lap and weave tests** from the saved
-   project. All [ten coupons](../../stl/Dara-Print-Checks/README.md) are already sliced.
-   Inspect the weave detail and white/wood contrast on the full-width sample.
-   Test with the actual screws, photo/backer stack, and intended wall screw.
-   Check key seating, tab rotation, screw grip, and removal of support from the
-   keyhole channel. The M coupons retain the actual M5 pin spacing, relieved
-   second hole, and screw stack; use the specified 1 mm washer. Do not force
-   a fit or scale an individual mating part.
-2. Print **F14 on plate 14 and M5 on plate 25**. Test their shared screw and
-   both locating pins, with the specified 1 mm washer. M5 must sit flush on the
-   rail without forcing the locators or bottoming the screw.
-3. Check and bond the lap pair from plate 30 using the intended adhesive. It is
-   cropped from the actual current F7/F4 joint and uses the **production four-wall /
-   15% preset**, with no lap infill override. The previously successful reference
-   used six walls and 30% infill; its strength result does not validate this
-   lighter production preset.
-4. After these checks pass, print the remaining production plates. Inspect the
-   first layer especially closely on plate 06; the saved brim/support placement
-   has little spare bed margin. A changed brim, support setting, filament profile,
-   nozzle, or placement requires re-slicing and renewed bounds inspection.
-
-Nominal bridge/support generation passes digital inspection, but support removal,
-surface quality, printer dimensional error, screw grip, adhesive durability and
-full assembled wall load still require physical checking. The provided B1 coupon
-tests one wall-key pattern; check every final B1-B4 against its assigned frame
-section before bonding the frame. No adhesive-strip weight rating is established.
+The matching report is [final-review.json](final-review.json). Inspect the weave sample for crossing detail, both blue edge lines, clean white beside the blue, and surface finish. Map slot 4 to the Azurite spool. The lines finish flush with the white rails; no assembly of separate thread inserts is needed. The separate copper sample checks the silk finish using the same settings as the M plates. The digital review does not record physical print results for these revised samples.
 
 ## Assembly supplies and order
 

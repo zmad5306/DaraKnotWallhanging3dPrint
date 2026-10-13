@@ -2,8 +2,8 @@
 
 Run against the saved, single-material project, then slice the staged output in
 Bambu Studio. Re-running on a colorized file is deliberately rejected. Visible
-weave is identified by the CAD's two horizontal surface levels. A filament
-modifier colors the 0.6 mm backing skin and raised threads. Printable vertex
+weave is identified by the CAD's horizontal surface levels. A filament
+modifier follows the backing skin, raised threads, and crossing relief. Printable vertex
 and triangle data stay unchanged; Bambu intersects the modifier at slicing.
 """
 import argparse
@@ -25,7 +25,7 @@ from shapely import union_all
 PACKAGE = ROOT / 'working/bambu/Dara-Photo-Frame-A1-Jointed'
 COLORS = ['#FFFFFF', '#C2AB84', '#B87333']
 WOOD_BOTTOM = 8.4
-WOOD_TOP = 9.6
+WOOD_TOP = 9.9
 
 
 def setmeta(el, key, value):
@@ -51,7 +51,8 @@ def weave_modifier(mesh):
     heights = mesh.triangles[:, :, 2]
     top = (mesh.face_normals[:, 2] > .99) & (
         np.all(np.abs(heights - 9.0) < 1e-4, axis=1) |
-        np.all(np.abs(heights - 9.6) < 1e-4, axis=1))
+        np.all(np.abs(heights - 9.6) < 1e-4, axis=1) |
+        np.all(np.abs(heights - 9.9) < 1e-4, axis=1))
     if not top.any():
         return None
     footprint = union_all([Polygon(t[:, :2]) for t in mesh.triangles[top]]).buffer(0).simplify(1e-5, preserve_topology=True)
@@ -62,12 +63,54 @@ def weave_modifier(mesh):
         p = orient(p, sign=1)
         contours.append(np.asarray(p.exterior.coords)[:-1])
         contours.extend(np.asarray(r.coords)[:-1] for r in p.interiors)
-    solid = manifold3d.CrossSection(contours).extrude(WOOD_TOP - WOOD_BOTTOM + 1e-6).translate([0, 0, WOOD_BOTTOM])
-    raw = solid.to_mesh64()
-    mask = trimesh.Trimesh(raw.vert_properties[:, :3], raw.tri_verts, process=False)
-    assert mask.is_volume
-    return mask, {'modifier_volume_mm3': mask.volume, 'footprint_area_mm2': footprint.area,
-                  'printable_mesh_unchanged': True}
+    footprint_section = manifold3d.CrossSection(contours)
+    # Follow the printable relief in Prepare as well as at slicing. A full
+    # prism hides the recessed squares and alternating raised crossings.
+    # Keep double precision through the boolean: float32 conversion can lose
+    # coplanar thread faces, especially on the many small crossings of F16.
+    body = manifold3d.Manifold(manifold3d.Mesh64(mesh.vertices, mesh.faces.astype(np.uint64)))
+    # The CAD relief has three constant cross-section bands. Extrude their
+    # exact 2D intersections instead of clipping a prism through coincident
+    # triangulated 3D surfaces; that boolean is unstable even at float64 on
+    # some OpenSCAD sections.
+    layers = []
+    sections = []
+    for bottom, top in ((WOOD_BOTTOM, 9.0), (9.0, 9.6), (9.6, WOOD_TOP)):
+        # A one-micron inset removes zero-width contour contacts introduced
+        # by CAD tessellation. It is far below the slicer's 0.012 mm mesh
+        # resolution and keeps the modifier strictly inside the real surface.
+        section = (body.slice((bottom + top) / 2) ^ footprint_section).simplify(1e-4).offset(-.001).simplify(1e-5)
+        sections.append(((bottom + top) / 2, section))
+        if section.area() > 0:
+            layer = section.extrude(top - bottom).translate([0, 0, bottom])
+            actual = layer.slice((bottom + top) / 2)
+            error = (actual - section).area() + (section - actual).area()
+            assert abs(error) < .02, (bottom, top, error)
+            raw = layer.to_mesh64()
+            # Manifold may split coincident property vertices at contour
+            # contacts. Join its explicitly paired indices, without rounding
+            # away small valid edges as Trimesh's generic processing can do.
+            indices = np.arange(len(raw.vert_properties))
+            for a, b in zip(raw.merge_from_vert, raw.merge_to_vert):
+                indices[a] = b
+            while not np.array_equal(indices, indices[indices]):
+                indices = indices[indices]
+            layers.append(trimesh.Trimesh(raw.vert_properties[:, :3], indices[raw.tri_verts], process=False))
+    # A second 3D subtraction along thousands of identical coplanar faces can
+    # itself produce signed slivers. Check each constant-shape height band in
+    # 2D instead, including both missing and excess colored area.
+    # Keep the closed bands as distinct shells in the modifier. Their flat
+    # boundaries touch; no printable geometry is added. A coplanar 3D union
+    # can erase thin relief contours, whereas the slicer intersects these
+    # volume regions separately at each layer.
+    mask = trimesh.util.concatenate(layers)
+    assert mask.is_volume, [(m.is_watertight, m.is_winding_consistent, m.volume, len(m.faces)) for m in layers]
+    mask_body = manifold3d.Manifold(manifold3d.Mesh64(mask.vertices, mask.faces.astype(np.uint64)))
+    for height, expected in sections:
+        actual = mask_body.slice(height)
+        assert abs((actual - expected).area() + (expected - actual).area()) < .02
+    return mask, {'modifier_volume_mm3': mask.volume, 'footprint_area_mm2': footprint.area, 'boundary_inset_mm': .001,
+                  'printable_mesh_unchanged': True, 'follows_surface_relief': True}
 
 
 def resolved_profile(folder, name):

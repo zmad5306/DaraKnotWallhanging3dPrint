@@ -1,11 +1,11 @@
 {
-  "source_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+  "source_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994",
   "source": "working/Dara-Photo-Frame-A1-Jointed.scad",
   "wall_mount_index": 1,
   "files": [
     {
       "file": "Photo-Fit-Sample.stl",
-      "sha256": "36aaf8fba84a297c3322238f3b7fb9b5240216b1bcb1817a5ea9f01e826ce543",
+      "sha256": "806dd5f5098d6a10840c48ff007cdfe8018cf5fe2573a871c34ca63ffef490d4",
       "view_mode": "fit_sample",
       "connected_solids": 3,
       "size_mm": [
@@ -13,7 +13,8 @@
         39.0,
         13.5
       ],
-      "all_solids_watertight_on_bed": true
+      "all_solids_watertight_on_bed": true,
+      "source_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994"
     },
     {
       "file": "Wall-Fit-Sample-B1.stl",
@@ -25,9 +26,26 @@
         90.0,
         13.5
       ],
-      "all_solids_watertight_on_bed": true
+      "all_solids_watertight_on_bed": true,
+      "source_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258"
     }
   ],
   "sliced": false,
-  "physical_test_performed": false
+  "physical_test_performed": false,
+  "source_hash_note": "Photo sample uses current CAD; other archived samples retain their per-file source hashes.",
+  "standalone_photo_frame": {
+    "file": "Test-Photo-Frame.stl",
+    "sha256": "185098d799decf35ffe2f2af93e6b22a9af6796639c39fb8f9133da20e16cfbb",
+    "source_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994",
+    "rabbet_depth_mm": 2.4,
+    "size_mm": [
+      18.0,
+      20.0,
+      13.5
+    ],
+    "connected_solids": 1,
+    "watertight": true
+  },
+  "prior_photo_fit_feedback": "2.0 mm rabbet left insufficient photo room; user suspects support roughness.",
+  "revised_photo_fit_tested": false
 }

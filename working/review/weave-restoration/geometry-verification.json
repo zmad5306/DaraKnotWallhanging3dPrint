@@ -1,0 +1,157 @@
+{
+  "baseline_sha256": "49d869ee9f90df76c3f22dcf4890444922c03ab6952bb06c94def2e6c2e4d7e4",
+  "tolerance_mm3": 0.02,
+  "unchanged_bands_mm": [
+    [
+      0,
+      9.598
+    ],
+    [
+      9.902,
+      30
+    ]
+  ],
+  "all_passed": true,
+  "parts": [
+    {
+      "part": "F1",
+      "removed_volume_mm3": 0.0055769952984216315,
+      "lower_body_symmetric_difference_mm3": 0.004569081958228102,
+      "above_relief_symmetric_difference_mm3": 0.002258609055085496,
+      "added_relief_volume_mm3": 290.3821301127027
+    },
+    {
+      "part": "F2",
+      "removed_volume_mm3": 0.005528822201692189,
+      "lower_body_symmetric_difference_mm3": 0.005751141521614045,
+      "above_relief_symmetric_difference_mm3": 0.0026088054922486963,
+      "added_relief_volume_mm3": 325.0465803468833
+    },
+    {
+      "part": "F3",
+      "removed_volume_mm3": 0.0018350604659644887,
+      "lower_body_symmetric_difference_mm3": 0.003029073418777746,
+      "above_relief_symmetric_difference_mm3": 0.0008447241197776141,
+      "added_relief_volume_mm3": 291.71756182960235
+    },
+    {
+      "part": "F4",
+      "removed_volume_mm3": 0.0029871197136041396,
+      "lower_body_symmetric_difference_mm3": 0.004790682374732569,
+      "above_relief_symmetric_difference_mm3": 0.001833506611243744,
+      "added_relief_volume_mm3": 280.00718421360943
+    },
+    {
+      "part": "F5",
+      "removed_volume_mm3": 0.002061447196562464,
+      "lower_body_symmetric_difference_mm3": 0.005333003908162937,
+      "above_relief_symmetric_difference_mm3": 0.0018573815299684309,
+      "added_relief_volume_mm3": 348.1913083262043
+    },
+    {
+      "part": "F6",
+      "removed_volume_mm3": 0.002848003180891586,
+      "lower_body_symmetric_difference_mm3": 0.007225301263436752,
+      "above_relief_symmetric_difference_mm3": 0.002470716905008885,
+      "added_relief_volume_mm3": 529.4279834731715
+    },
+    {
+      "part": "F7",
+      "removed_volume_mm3": 0.003684873180948974,
+      "lower_body_symmetric_difference_mm3": 0.004775513526207456,
+      "above_relief_symmetric_difference_mm3": 0.001015406007960943,
+      "added_relief_volume_mm3": 323.3529842234857
+    },
+    {
+      "part": "F8",
+      "removed_volume_mm3": 0.006132399779744446,
+      "lower_body_symmetric_difference_mm3": 0.008231260736162463,
+      "above_relief_symmetric_difference_mm3": 0.0029463961958147897,
+      "added_relief_volume_mm3": 390.8924279739731
+    },
+    {
+      "part": "F9",
+      "removed_volume_mm3": 2.5106974741599213e-05,
+      "lower_body_symmetric_difference_mm3": 7.973042291572104e-07,
+      "above_relief_symmetric_difference_mm3": 6.383881858103753e-05,
+      "added_relief_volume_mm3": 256.3859563234437
+    },
+    {
+      "part": "F10",
+      "removed_volume_mm3": 0.0028429803205654025,
+      "lower_body_symmetric_difference_mm3": 0.0039761518613280105,
+      "above_relief_symmetric_difference_mm3": 0.0008678534730203562,
+      "added_relief_volume_mm3": 359.3873755885288
+    },
+    {
+      "part": "F11",
+      "removed_volume_mm3": 6.612187280552462e-05,
+      "lower_body_symmetric_difference_mm3": 1.0444362353867476e-06,
+      "above_relief_symmetric_difference_mm3": 9.860908297317414e-06,
+      "added_relief_volume_mm3": 291.6669592434773
+    },
+    {
+      "part": "F12",
+      "removed_volume_mm3": 0.0020351156466252482,
+      "lower_body_symmetric_difference_mm3": 0.006157354839767019,
+      "above_relief_symmetric_difference_mm3": 0.0015771506696182769,
+      "added_relief_volume_mm3": 371.41848398093134
+    },
+    {
+      "part": "F13",
+      "removed_volume_mm3": 0.005121446954338656,
+      "lower_body_symmetric_difference_mm3": 0.003143191521909709,
+      "above_relief_symmetric_difference_mm3": 0.0018745881072087893,
+      "added_relief_volume_mm3": 409.38367151201237
+    },
+    {
+      "part": "F14",
+      "removed_volume_mm3": 0.008042809398223957,
+      "lower_body_symmetric_difference_mm3": 0.009449854987906292,
+      "above_relief_symmetric_difference_mm3": 0.0017982696069035833,
+      "added_relief_volume_mm3": 310.9713681622816
+    },
+    {
+      "part": "F15",
+      "removed_volume_mm3": 0.0028676273747502514,
+      "lower_body_symmetric_difference_mm3": 0.0023743482803790053,
+      "above_relief_symmetric_difference_mm3": 0.0016185617338730176,
+      "added_relief_volume_mm3": 402.67277058784384
+    },
+    {
+      "part": "F16",
+      "removed_volume_mm3": 7.396067318647208e-05,
+      "lower_body_symmetric_difference_mm3": 6.3582486842979815e-06,
+      "above_relief_symmetric_difference_mm3": 0.00016142547102463803,
+      "added_relief_volume_mm3": 299.2928325374087
+    },
+    {
+      "part": "F17",
+      "removed_volume_mm3": 0.0018120796764075446,
+      "lower_body_symmetric_difference_mm3": 0.0021869455255606835,
+      "above_relief_symmetric_difference_mm3": 0.004836266445939448,
+      "added_relief_volume_mm3": 275.03942435007775
+    },
+    {
+      "part": "F18",
+      "removed_volume_mm3": 0.0019705607410287485,
+      "lower_body_symmetric_difference_mm3": 0.0027283456559719825,
+      "above_relief_symmetric_difference_mm3": 0.0001303674616792705,
+      "added_relief_volume_mm3": 360.2684304988943
+    },
+    {
+      "part": "F19",
+      "removed_volume_mm3": 0.0033682799839880317,
+      "lower_body_symmetric_difference_mm3": 0.0032787710467043025,
+      "above_relief_symmetric_difference_mm3": 0.0009342566916833068,
+      "added_relief_volume_mm3": 397.2592787198373
+    },
+    {
+      "part": "F20",
+      "removed_volume_mm3": 0.0019413912038241203,
+      "lower_body_symmetric_difference_mm3": 0.004110498775844462,
+      "above_relief_symmetric_difference_mm3": 0.001153287882971199,
+      "added_relief_volume_mm3": 285.55504923456465
+    }
+  ]
+}

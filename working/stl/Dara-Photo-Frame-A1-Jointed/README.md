@@ -3,7 +3,12 @@
 Generated from [Dara-Photo-Frame-A1-Jointed.scad](../../Dara-Photo-Frame-A1-Jointed.scad)
 at its saved defaults: 914.4 mm overall width, woven frame surface, keyed lap
 joints, M mounting holes and locating pins, photo screw pilots, and wall-block
-slots. These are binary STL files in **millimetres**.
+slots. These are binary STL files in **millimetres**. The frame exports include restored alternating
+3.3 x 1.5 mm crossing pads, 0.3 mm above the thread grid. The joints and
+hardware interfaces retain their dimensions; M and accessory STLs are unchanged.
+Photo rabbets are now 2.4 mm deep, leaving 0.8 mm for a photo and surface
+clearance beyond the existing 1.6 mm backer. This adds 0.4 mm to accommodate
+the reported clearance issue and possible support roughness.
 
 | Files | Part | Print quantity |
 | --- | --- | --- |

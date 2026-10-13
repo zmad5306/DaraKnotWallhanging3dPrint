@@ -57,7 +57,7 @@ def prepare():
     test_parts = report.get('test_plate', {}).get('parts', [])
     assert len(actual) == 39 + len(test_parts)
     assert sum(p['quantity'] for p in actual.values()) == 70 + len(test_parts)
-    assert len(config.findall('plate')) == 29 + bool(test_parts)
+    assert len(config.findall('plate')) == len(report['plate_layout'])
 
     def rings(geometry):
         polys = [geometry] if geometry.geom_type == 'Polygon' else list(geometry.geoms)

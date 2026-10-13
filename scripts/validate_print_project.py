@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / '.work/python-libs'))
 import numpy as np
 import trimesh
+import manifold3d
 from export_jointed_stls import verify
 
 PACKAGE = ROOT / 'working/bambu/Dara-Photo-Frame-A1-Jointed'
@@ -68,6 +69,8 @@ def scan_gcode(text):
     low, high = [math.inf] * 2, [-math.inf] * 2
     bead_low, bead_high = [math.inf] * 2, [-math.inf] * 2
     features = collections.Counter()
+    tool = None
+    model_z = collections.defaultdict(set)
     for raw in text.splitlines():
         line = raw.strip()
         if line.startswith('; FEATURE: '):
@@ -78,7 +81,9 @@ def scan_gcode(text):
         if not code:
             continue
         command = code.split()[0]
-        if command == 'M83':
+        if re.fullmatch(r'T[0-3]', command):
+            tool = int(command[1:]) + 1
+        elif command == 'M83':
             relative_e = True
         elif command == 'M82':
             relative_e = False
@@ -106,10 +111,13 @@ def scan_gcode(text):
                         bead_low[axis] = min(bead_low[axis], point[axis] - width / 2)
                         bead_high[axis] = max(bead_high[axis], point[axis] + width / 2)
                 features[feature] += 1
+                if tool is not None and feature not in ('Prime tower', 'Support', 'Support interface', 'Brim', 'Skirt'):
+                    model_z[tool].add(round(nz, 4))
             x, y, z = nx, ny, nz
             e = e + v.get('E', 0) if relative_e else v.get('E', e)
     assert features, 'No model extrusion found'
     return {'extrusion_moves_checked': sum(features.values()), 'features': dict(features),
+            'model_extrusion_z_by_filament_mm': {str(t): sorted(v) for t, v in model_z.items()},
             'extruding_xy_bounds_mm': [low, high],
             'bead_xy_bounds_mm': [bead_low, bead_high],
             'conservative_bed_edge_clearance_mm': min(*bead_low, *(256 - n for n in bead_high))}
@@ -239,7 +247,8 @@ def main():
         mesh_records.append({'part': entry['name'], 'test_coupon': True, **record})
         expected_quantities[entry['name']] = entry['quantity']
     expected_modifiers = 73 + test_plate.get('modifier_count', 0)
-    expected_plate_count = 29 + bool(test_parts)
+    expected_plate_count = 29 + (len(test_plate.get('plates', [30])) if test_parts else 0)
+    wood_top = baseline.get('weave_restoration', {}).get('wood_z_mm', [8.4, 9.6])[1]
     report = {'project_sha256': digest(project), 'source_sha256': digest(CAD),
               'scope': 'Digital checks only. No physical fit, strength or wall-load qualification.',
               'source_meshes': mesh_records, 'assembly': assembly, 'plates': []}
@@ -254,11 +263,20 @@ def main():
                              'sparse_infill_pattern': 'gyroid', 'layer_height': '0.2', 'print_sequence': 'by layer'}
         for key, value in expected_settings.items():
             assert settings[key] == value, (key, settings[key])
-        colored = len(settings['filament_colour']) == 3
+        blue_edge = 'blue_ribbon_edge' in baseline
+        colored = len(settings['filament_colour']) in (3, 4)
+        if blue_edge:
+            from add_blue_ribbon_edge import artwork, in_print_coordinates, coupon_shape, section, WIDTH, GAP
+            spec = baseline['blue_ribbon_edge']
+            assert spec['source_cad_sha256'] == digest(CAD)
+            assert spec['width_mm'] == WIDTH and spec['white_gap_to_weave_mm'] == GAP
+            fabric = artwork(cad, 'fabric_outline').buffer(.1125, quad_segs=16)
+            blue_path = (fabric.buffer(GAP + WIDTH, quad_segs=16) - fabric.buffer(GAP, quad_segs=16)).intersection(artwork(cad, 'knot_outline'))
+            blue_path = blue_path.simplify(.001, preserve_topology=True)
         if colored:
             for key, value in {
-                'filament_colour': ['#FFFFFF', '#C2AB84', '#B87333'],
-                'filament_settings_id': ['Generic PLA @BBL A1', 'Generic PLA @BBL A1', 'Generic PLA Silk @BBL A1'],
+                'filament_colour': ['#FFFFFF', '#C2AB84', '#B87333'] + (['#295D8A'] if blue_edge else []),
+                'filament_settings_id': ['Generic PLA @BBL A1', 'Generic PLA @BBL A1', 'Generic PLA Silk @BBL A1'] + (['Generic PLA @BBL A1'] if blue_edge else []),
                 'enable_prime_tower': '1', 'flush_into_infill': '0',
                 'flush_into_objects': '0', 'flush_into_support': '0',
             }.items():
@@ -306,11 +324,43 @@ def main():
                 mesh.apply_transform(builds[oid][0])
                 mesh.apply_translation(-source_positions[name][0])
                 if part.get('subtype') == 'modifier_part':
+                    if blue_edge and props(part).get('extruder') == '4':
+                        spec = baseline['blue_ribbon_edge']
+                        record = next(r for r in spec['masks'] if r['part'] == name)
+                        assert np.allclose(mesh.bounds[:, 2], spec['z_mm'], atol=1e-4)
+                        assert abs(mesh.volume - record['volume_mm3']) < .02
+                        assert 'sparse_infill_density' not in props(part)
+                        mask_solid = manifold3d.Manifold(manifold3d.Mesh64(mesh.vertices, mesh.faces.astype(np.uint64)))
+                        source_solid = manifold3d.Manifold(manifold3d.Mesh64(meshes[name].vertices, meshes[name].faces.astype(np.uint64)))
+                        local = (coupon_shape(blue_path, cad) if name == test_plate.get('full_width_weave_test') else
+                                 in_print_coordinates(blue_path, array('frame_placements')[int(name[1:]) - 1]))
+                        expected_blue = section(local) ^ source_solid.slice(13.2)
+                        actual_blue = mask_solid.slice(13.2)
+                        path_error = abs((actual_blue - expected_blue).area()) + abs((expected_blue - actual_blue).area())
+                        assert path_error < .05, (name, path_error)
+                        for height in (12.901, 13.2, 13.499):
+                            outside = (mask_solid.slice(height) - source_solid.slice(height).offset(.0001)).area()
+                            assert abs(outside) < .02, (name, height, outside)
+                        color_modifiers.append({'part': name, 'filament': 4, 'z_mm': mesh.bounds[:, 2].tolist(),
+                                                'volume_mm3': float(mesh.volume), 'path_error_mm2': path_error, 'flush': True})
+                        continue
                     if colored and props(part).get('extruder') == '2':
                         assert name.startswith('F') or name == test_plate.get('full_width_weave_test')
-                        assert np.allclose(mesh.bounds[:, 2], [8.4, 9.6], atol=1e-4)
+                        assert np.allclose(mesh.bounds[:, 2], [8.4, wood_top], atol=1e-4)
                         assert 'sparse_infill_density' not in props(part)
-                        assert trimesh.boolean.intersection([mesh, meshes[name]], engine='manifold').volume > 100
+                        mask_solid = manifold3d.Manifold(manifold3d.Mesh64(mesh.vertices, mesh.faces.astype(np.uint64)))
+                        source_solid = manifold3d.Manifold(manifold3d.Mesh64(meshes[name].vertices, meshes[name].faces.astype(np.uint64)))
+                        overlap = (mask_solid ^ source_solid).volume()
+                        assert overlap > 100
+                        if 'weave_restoration' in baseline:
+                            # The modifier must follow the recesses and caps;
+                            # reject a filled prism that visually hides them.
+                            # Avoid subtracting exactly coincident 3D faces.
+                            # The weave is piecewise constant across these
+                            # three bands; test the cross-sections directly.
+                            for height in (8.7, 9.3, 9.75):
+                                outside = (mask_solid.slice(height) - source_solid.slice(height).offset(.0001)).area()
+                                assert abs(outside) < .02, (name, height, outside)
                         color_modifiers.append({'part': name, 'filament': 2, 'z_mm': mesh.bounds[:, 2].tolist()})
                         continue
                     assert props(part)['sparse_infill_density'] == '100%'
@@ -340,7 +390,8 @@ def main():
             expected_color_parts = [f'F{i}' for i in range(1, 21)]
             if test_plate.get('full_width_weave_test'):
                 expected_color_parts.append(test_plate['full_width_weave_test'])
-            assert sorted(p['part'] for p in color_modifiers) == sorted(expected_color_parts)
+            for slot in ([2, 4] if blue_edge else [2]):
+                assert sorted(p['part'] for p in color_modifiers if p['filament'] == slot) == sorted(expected_color_parts)
             report['color_modifiers_verified'] = color_modifiers
         print(f'3MF meshes, all instance placements, {modifier_count} solid modifiers and '
               f'{len(color_modifiers)} color modifiers verified', flush=True)
@@ -381,8 +432,9 @@ def main():
             if colored:
                 stat = sliced_plates[number]
                 slots = {int(f.get('id')) for f in stat.findall('filament')}
-                test_slots = {1, 2, 3} if test_plate.get('full_width_weave_test') else {1, 3}
-                expected_slots = {1, 2} if number <= 20 else {3} if number <= 26 else {1} if number <= 29 else test_slots
+                frame_slots = {1, 2, 4} if blue_edge else {1, 2}
+                test_slots = (frame_slots if number == 30 else {3}) if 'plates' in test_plate else ({1, 2, 3} if test_plate.get('full_width_weave_test') else {1, 3})
+                expected_slots = frame_slots if number <= 20 else {3} if number <= 26 else {1} if number <= 29 else test_slots
                 assert slots == expected_slots, (number, slots)
                 for filament in stat.findall('filament'):
                     slot = int(filament.get('id'))
@@ -391,12 +443,27 @@ def main():
                 layers = [dict(p.attrib) for p in stat.findall('layer_filament_lists/layer_filament_list')]
                 if number <= 20 or (number == 30 and test_plate.get('full_width_weave_test')):
                     wood_layers = [p for p in layers if '1' in p['filament_list'].split()]
-                    assert len(wood_layers) == 1 and wood_layers[0]['layer_ranges'] == '42 47', (number, wood_layers)
+                    expected_range = '42 49' if wood_top == 9.9 else '42 47'
+                    assert len(wood_layers) == 1 and wood_layers[0]['layer_ranges'] == expected_range, (number, wood_layers)
+                    if blue_edge:
+                        blue_layers = [p for p in layers if '3' in p['filament_list'].split()]
+                        assert len(blue_layers) == 1 and blue_layers[0]['layer_ranges'] == '65 67', (number, blue_layers)
+                        assert all('1' not in p['filament_list'].split() for p in blue_layers)
+                        assert scan['model_extrusion_z_by_filament_mm']['4'] == [13.2, 13.4, 13.6], (number, scan['model_extrusion_z_by_filament_mm'])
                 color_info = {'filament_slots': sorted(slots), 'layer_filament_lists': layers,
                               'filament_changes': len(re.findall(r'^; CP TOOLCHANGE START', gcode, re.M)),
                               'slicer_notices': [dict(w.attrib) for w in stat.findall('warning')]}
-                if number <= 20:
-                    assert color_info['filament_changes'] == 6, (number, color_info)
+                if number <= 20 or (blue_edge and number == 30):
+                    # Tall M locating pins continue in white above the rail face.
+                    blue_changes = (3 + int(maximum_z > 13.601)) if blue_edge else 0
+                    assert color_info['filament_changes'] == (8 if wood_top == 9.9 else 6) + blue_changes, (number, color_info)
+                if 'plates' in test_plate and number >= 30:
+                    bed_temps = [float(v) for v in re.findall(r'^M1[49]0 S([\d.]+)', gcode, re.M) if float(v) > 0]
+                    expected_bed = 65 if number == 30 else 55
+                    assert bed_temps and set(bed_temps) == {expected_bed}, (number, bed_temps)
+                    if number == 31:
+                        assert color_info['filament_changes'] == 0
+                    color_info['bed_temperatures_c'] = bed_temps
             duration = re.search(r'total estimated time: ([^\n]+)', gcode)[1]
             seconds = sum(int(n) * {'h': 3600, 'm': 60, 's': 1}[u] for n, u in re.findall(r'(\d+)([hms])', duration))
             report['plates'].append({'plate': number, 'parts': dict(actual), 'weight_g': mass,

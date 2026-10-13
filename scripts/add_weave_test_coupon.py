@@ -149,11 +149,11 @@ def stage(source, baseline_path):
     test['parts'].append({'name': NAME, 'file': path.name, 'sha256': sha(path), 'triangles': len(mesh.faces),
                           'source': 'F7.stl; frame-joint-1 coordinates X=-110..30, Y=-90..-66; both side rails uncut',
                           'source_stl_sha256': sha(STLS/'F7.stl'), 'dimensions_mm': mesh.extents.tolist(),
-                          'modifiers': [], 'color_modifier': {'filament': 2, 'z_mm': [8.4, 9.6], **evidence},
+                          'modifiers': [], 'color_modifier': {'filament': 2, 'z_mm': wood.bounds[:, 2].tolist(), **evidence},
                           'quantity': 1, 'plate': 30})
     test.update(pieces=10, plate_layout=copy.deepcopy(layout), sliced=False,
                 full_width_weave_test=NAME, color_modifier_count=1)
-    test['filament_assignment'][NAME] = 'White body; wood weave/backing at Z=8.4..9.6 mm'
+    test['filament_assignment'][NAME] = f'White body; wood weave/backing at Z={wood.bounds[0,2]:g}..{wood.bounds[1,2]:g} mm'
     base.update(pieces=80, distinct_parts=49, test_pieces=10, project_sha256=sha(out))
     (WORK / 'staged-validation.json').write_text(json.dumps(base, indent=2)+'\n')
     print(json.dumps({'project': str(out), 'coupon_dimensions_mm': mesh.extents.tolist()}, indent=2))

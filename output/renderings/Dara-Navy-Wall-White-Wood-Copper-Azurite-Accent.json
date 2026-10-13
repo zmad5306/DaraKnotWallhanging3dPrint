@@ -1,0 +1,21 @@
+{
+  "title": "Dara knot — white rails, wood weave, copper M, subtle Azurite accent",
+  "created": "2026-10-13",
+  "mode": "Built-in image_gen",
+  "output": "Dara-Navy-Wall-White-Wood-Copper-Azurite-Accent.png",
+  "reference_images": [
+    "Dara-Navy-Wall-White-Wood-Copper.png"
+  ],
+  "purpose": "Concept exploration retaining the committed white / wood / copper palette with a narrow blue stitch line through the woven insets.",
+  "accent_filament": {
+    "brand": "SUNLU",
+    "material": "PLA Metallic",
+    "color": "Metal Azurite",
+    "asin": "B0H3SFMXKW",
+    "url": "https://www.amazon.com/dp/B0H3SFMXKW",
+    "manufacturer_color_hex": "#295D8A",
+    "color_source": "https://www.sunlu.com/products/pla-metal-3d-printing-filament"
+  },
+  "note": "Concept rendering only. Colors and sheen are approximate. CAD, geometry and slicer assignments were not modified.",
+  "prompt": "Use case: precise-object-edit\nAsset type: restrained fourth-color concept for an existing Dara knot wall hanging.\nPrimary request: Preserve the attached white-knot / wood-fabric / copper-M rendering, adding just a delicate touch of SUNLU PLA Metal Azurite blue to tie the object to its navy wall.\nInput image 1: EDIT TARGET. It is the authoritative existing design and palette. Keep its entire composition and design unchanged.\nSpecific accent design: Within the WOOD-TAN WOVEN INSET CHANNELS ONLY, color ONE slim centered row of the existing woven stitches metallic Azurite blue, creating a delicate blue accent thread that follows the centerline of each inset ribbon around the knot. Keep the stripe about one stitch wide, approximately 8 percent of the tan inset width. On straight channel segments the fine blue stitch line is straight; on bends it follows the bend, maintaining consistent width. The repeated accents follow the existing knot paths symmetrically. Preserve tan weave on BOTH sides of each blue stitch line; at least 90 percent of the woven inset area stays the original warm wood tan. Blue is a restrained decorative stitch detail, noticeable up close and subtle in the full view. At overlaps, respect the same original occlusion and layering. Treat this as a color change to existing woven relief, not added cords or geometry.\nColor/material: SUNLU PLA Metallic Metal Azurite, manufacturer base #295D8A, rich deep mineral blue with a restrained metallic satin glint. The thin blue accent is slightly brighter and more saturated than the navy wall so it reads clearly. No turquoise, green, or electric blue.\nKeep ALL white rails satin white exactly as in the source. Keep the ENTIRE raised manuscript M the same warm reddish metallic copper as the source, including its edges and sides. Keep the wood-tan weave original color and texture except for the single narrow blue stitch line within its channels. Preserve the existing navy painted wall exactly.\nPreserve invariants: exact outline, rail routing, crossings, eight open photo spaces, negative spaces, weave spacing, raised M silhouette with curved outer strokes and straight central stem, scale, material thickness, lighting direction, shadows, centered frontal camera, square image, and margins. All empty openings continue to show the navy wall.\nStyle: polished photorealistic product visualization, subtle existing printed surface details, believable relief and shadows. Full object visible.\nAvoid: broad blue panels, wholesale recoloring, blue rails, blue outline around the M, blue M highlights, blue background changes, extra patterns or ornaments, redesigning the letter or knot, props, text, swatches, legends, branding, watermarks. One finished concept image only."
+}

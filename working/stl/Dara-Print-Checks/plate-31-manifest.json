@@ -1,0 +1,185 @@
+{
+  "plate": 31,
+  "pieces": 1,
+  "source_cad_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994",
+  "project_sha256": "aaeff8be8c38757c6c9564f9229f2f380e733f4ee6a12a6d2ec64c4b7c76749e",
+  "parts": [
+    {
+      "name": "Test-M-Letter",
+      "source": "M5.stl; native assembly crop X=-45..-13, Y=-185..-28",
+      "file": "Test-M-Letter.stl",
+      "sha256": "fe0520d4fcb6ae4ffe75b96fe1445848b00a068a289e94949079cb55640d9e84",
+      "triangles": 1308,
+      "modifiers": [
+        "100% M screw zone"
+      ],
+      "quantity": 1,
+      "plate": 31
+    }
+  ],
+  "plate_layout": {
+    "plate": 31,
+    "name": "Copper silk test",
+    "items": [
+      {
+        "name": "Test-M-Letter",
+        "object_id": 194,
+        "instance_id": 0,
+        "identify_id": 11511,
+        "xy": [
+          128.0,
+          128.0
+        ],
+        "bounds": [
+          [
+            52.316123962402344,
+            114.43562889099121,
+            0.0
+          ],
+          [
+            203.68387603759766,
+            141.5643711090088,
+            10.5
+          ]
+        ]
+      }
+    ]
+  },
+  "sliced": true,
+  "audit": {
+    "plate": 31,
+    "parts": {
+      "Test-M-Letter": 1
+    },
+    "weight_g": 23.28,
+    "filament_weights_g": [
+      0.0,
+      0.0,
+      23.28
+    ],
+    "estimated_seconds": 4252,
+    "settings_verified": true,
+    "filament_slots": [
+      3
+    ],
+    "layer_filament_lists": [
+      {
+        "filament_list": "2",
+        "layer_ranges": "0 74"
+      }
+    ],
+    "filament_changes": 0,
+    "slicer_notices": [
+      {
+        "msg": "not_support_traditional_timelapse",
+        "level": "2",
+        "error_code": "10018003"
+      },
+      {
+        "msg": "not_support_traditional_timelapse",
+        "level": "3",
+        "error_code": "1000C003"
+      }
+    ],
+    "bed_temperatures_c": [
+      55.0,
+      55.0
+    ],
+    "extrusion_moves_checked": 46140,
+    "features": {
+      "Support": 221,
+      "Brim": 109,
+      "Outer wall": 612,
+      "Inner wall": 1893,
+      "Gap infill": 210,
+      "Bottom surface": 587,
+      "Internal solid infill": 4673,
+      "Sparse infill": 36679,
+      "Support transition": 26,
+      "Support interface": 34,
+      "Bridge": 751,
+      "Floating vertical shell": 15,
+      "Top surface": 330
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "3": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.44,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5.0,
+        5.2,
+        5.4,
+        5.6,
+        5.8,
+        6.0,
+        6.2,
+        6.4,
+        6.6,
+        6.8,
+        7.0,
+        7.2,
+        7.4,
+        7.6,
+        7.8,
+        8.0,
+        8.067,
+        8.2,
+        8.4,
+        8.6,
+        8.8,
+        9.0,
+        9.2,
+        9.4,
+        9.6,
+        9.8,
+        10.0,
+        10.2,
+        10.4,
+        10.6
+      ]
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        50.566,
+        112.686
+      ],
+      [
+        205.434,
+        143.314
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        50.316,
+        112.436
+      ],
+      [
+        205.684,
+        143.564
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 50.316
+  }
+}

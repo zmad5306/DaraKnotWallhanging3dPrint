@@ -1,123 +1,16 @@
 {
   "plate": 30,
-  "pieces": 10,
-  "production_pieces": 70,
-  "production_plates": 29,
-  "source_project_sha256": "a8fe39fdc67523c7e2b1ba53d94efcaac6d157bb32923b23ae4f98d01a86fa34",
-  "source_cad_sha256": "bbaa566b1431d23953f7afb0c07547e32f9ba18746aba976066e5d11d0c48258",
+  "pieces": 1,
+  "source_cad_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994",
+  "project_sha256": "aaeff8be8c38757c6c9564f9229f2f380e733f4ee6a12a6d2ec64c4b7c76749e",
   "parts": [
-    {
-      "name": "Test-Photo-Frame",
-      "source": "Photo-Fit-Sample.stl",
-      "file": "Test-Photo-Frame.stl",
-      "sha256": "a707f23f47a6ff8d6737e14761b872322f66fe7c8e7b69e09a6e45b1e9dad2bd",
-      "triangles": 276,
-      "modifiers": [
-        "100% photo pilot"
-      ],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-Photo-Backer",
-      "source": "Photo-Fit-Sample.stl",
-      "file": "Test-Photo-Backer.stl",
-      "sha256": "61eae6089926d26123eb1dd11d5c4a1176c510b6268312b6be1b9699ea737087",
-      "triangles": 12,
-      "modifiers": [],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-Photo-Tab",
-      "source": "Photo-Fit-Sample.stl",
-      "file": "Test-Photo-Tab.stl",
-      "sha256": "c3aeb893190fba0d947ca09eb0b082502ec1bfdde4cdf994b4d00ebb2345edf2",
-      "triangles": 520,
-      "modifiers": [
-        "100% photo tab seat"
-      ],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-Wall-Block-B1",
-      "source": "Wall-Fit-Sample-B1.stl",
-      "file": "Test-Wall-Block-B1.stl",
-      "sha256": "a3817058562bed45cbe478213eaea86828249b309232d174d860a7d33ea7e253",
-      "triangles": 2152,
-      "modifiers": [
-        "100% B1 screw 1 seat",
-        "100% B1 screw 2 seat",
-        "100% B1 keyhole lip"
-      ],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-Wall-Socket-B1",
-      "source": "Wall-Fit-Sample-B1.stl",
-      "file": "Test-Wall-Socket-B1.stl",
-      "sha256": "115c563e62db05926128d20e53e9c731366782ec44d5725383aff6907aef5124",
-      "triangles": 1084,
-      "modifiers": [
-        "100% B1 pilot 1",
-        "100% B1 pilot 2"
-      ],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-M-Frame",
-      "source": "F14.stl; native assembly crop X=-45..-13, Y=-185..-28",
-      "file": "Test-M-Frame.stl",
-      "sha256": "779ef9e43fc9ae760654d89573650a00bf6883d45cf026ecb4d67add82f5d078",
-      "triangles": 2294,
-      "modifiers": [
-        "100% M screw zone"
-      ],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-M-Letter",
-      "source": "M5.stl; native assembly crop X=-45..-13, Y=-185..-28",
-      "file": "Test-M-Letter.stl",
-      "sha256": "fe0520d4fcb6ae4ffe75b96fe1445848b00a068a289e94949079cb55640d9e84",
-      "triangles": 1308,
-      "modifiers": [
-        "100% M screw zone"
-      ],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-Lap-Tongue",
-      "source": "F7.stl; native frame joint 1 crop",
-      "file": "Test-Lap-Tongue.stl",
-      "sha256": "68617bc95d217d26a8067bb6451f7b2fda23236d0208cb4613a5eca65a00d56a",
-      "triangles": 674,
-      "modifiers": [],
-      "quantity": 1,
-      "plate": 30
-    },
-    {
-      "name": "Test-Lap-Socket",
-      "source": "F4.stl; native frame joint 1 crop",
-      "file": "Test-Lap-Socket.stl",
-      "sha256": "c543b0dfbbd7f096c0245ba850737bde28632adf8c9af3edc55115b7f3fbbb1b",
-      "triangles": 1148,
-      "modifiers": [],
-      "quantity": 1,
-      "plate": 30
-    },
     {
       "name": "Test-Weave-Full-Width",
       "file": "Test-Weave-Full-Width.stl",
-      "sha256": "2e5aec0a4a0d2e8634c19332967765fd74d21e9c6fff5cd0700f5a1f9b8ac61e",
-      "triangles": 1070,
+      "sha256": "cb89cfee4da29e460fbab485656f59774ef90a1045c98258dc057beaaa6dd9b4",
+      "triangles": 1396,
       "source": "F7.stl; frame-joint-1 coordinates X=-110..30, Y=-90..-66; both side rails uncut",
-      "source_stl_sha256": "a04dc81e2a745fae72da05b71fe6aee2c3ce383945f9352e8ca5c688ba8f4375",
+      "source_stl_sha256": "5d1b9acfc0a2376c75ea0b29a36d732faefbb84d9b9925f52b12605130ad3813",
       "dimensions_mm": [
         68.44780731201172,
         24.0,
@@ -128,339 +21,216 @@
         "filament": 2,
         "z_mm": [
           8.4,
-          9.6
+          9.9
         ],
-        "modifier_volume_mm3": 775.9632442917472,
-        "footprint_area_mm2": 646.635498046875,
-        "printable_mesh_unchanged": true
+        "follows_surface_relief": true
       },
       "quantity": 1,
-      "plate": 30
+      "plate": 30,
+      "blue_color_modifier": {
+        "filament": 4,
+        "z_mm": [
+          12.9,
+          13.5
+        ],
+        "width_mm": 1.5,
+        "flush": true
+      }
     }
   ],
   "plate_layout": {
-    "name": "PRINT FIRST - Hardware, lap and weave tests",
+    "plate": 30,
+    "name": "White wood and blue edge test",
     "items": [
       {
-        "name": "Test-Photo-Frame",
-        "object_id": 174,
-        "instance_id": 0,
-        "identify_id": 2505,
-        "xy": [
-          154.0,
-          228.0
-        ],
-        "bounds": [
-          [
-            145.0,
-            218.0,
-            0.0
-          ],
-          [
-            163.0,
-            238.0,
-            13.5
-          ]
-        ]
-      },
-      {
-        "name": "Test-Photo-Backer",
-        "object_id": 176,
-        "instance_id": 0,
-        "identify_id": 2516,
-        "xy": [
-          180.85000038146973,
-          231.0
-        ],
-        "bounds": [
-          [
-            174.0,
-            222.0,
-            0.0
-          ],
-          [
-            187.70000076293945,
-            240.0,
-            1.5999994277954102
-          ]
-        ]
-      },
-      {
-        "name": "Test-Photo-Tab",
-        "object_id": 179,
-        "instance_id": 0,
-        "identify_id": 2533,
-        "xy": [
-          155.0,
-          203.0
-        ],
-        "bounds": [
-          [
-            145.0,
-            198.0,
-            0.0
-          ],
-          [
-            165.0,
-            208.0,
-            3.0
-          ]
-        ]
-      },
-      {
-        "name": "Test-Wall-Block-B1",
-        "object_id": 184,
-        "instance_id": 0,
-        "identify_id": 2562,
-        "xy": [
-          82.0,
-          31.0
-        ],
-        "bounds": [
-          [
-            12.0,
-            12.0,
-            0.0
-          ],
-          [
-            152.0,
-            50.0,
-            13.0
-          ]
-        ]
-      },
-      {
-        "name": "Test-Wall-Socket-B1",
-        "object_id": 188,
-        "instance_id": 0,
-        "identify_id": 2585,
-        "xy": [
-          82.0,
-          81.0
-        ],
-        "bounds": [
-          [
-            12.0,
-            62.0,
-            0.0
-          ],
-          [
-            152.0,
-            100.0,
-            13.5
-          ]
-        ]
-      },
-      {
-        "name": "Test-M-Frame",
-        "object_id": 191,
-        "instance_id": 0,
-        "identify_id": 2602,
-        "xy": [
-          90.5,
-          125.84766387939453
-        ],
-        "bounds": [
-          [
-            12.0,
-            112.0,
-            0.0
-          ],
-          [
-            169.0,
-            139.69532775878906,
-            16.5
-          ]
-        ]
-      },
-      {
-        "name": "Test-M-Letter",
-        "object_id": 194,
-        "instance_id": 0,
-        "identify_id": 2619,
-        "xy": [
-          87.68387603759766,
-          170.5643711090088
-        ],
-        "bounds": [
-          [
-            12.0,
-            157.0,
-            0.0
-          ],
-          [
-            163.3677520751953,
-            184.12874221801758,
-            10.5
-          ]
-        ]
-      },
-      {
-        "name": "Test-Lap-Tongue",
-        "object_id": 196,
-        "instance_id": 0,
-        "identify_id": 2630,
-        "xy": [
-          216.00000095367432,
-          57.65303039550781
-        ],
-        "bounds": [
-          [
-            195.00000095367432,
-            12.0,
-            0.0
-          ],
-          [
-            237.00000095367432,
-            103.30606079101562,
-            13.5
-          ]
-        ]
-      },
-      {
-        "name": "Test-Lap-Socket",
+        "name": "Test-Weave-Full-Width",
         "object_id": 198,
         "instance_id": 0,
-        "identify_id": 2641,
+        "identify_id": 11534,
         "xy": [
-          215.4812306649983,
-          165.6530303955078
+          128.0,
+          128.0
         ],
         "bounds": [
           [
-            195.0000008828938,
-            120.0,
+            93.77609634399414,
+            116.0,
             0.0
           ],
           [
-            235.96246044710279,
-            211.30606079101562,
-            13.5
-          ]
-        ]
-      },
-      {
-        "name": "Test-Weave-Full-Width",
-        "object_id": 30000,
-        "instance_id": 0,
-        "identify_id": 2658,
-        "xy": [
-          46.22390365600586,
-          222.0
-        ],
-        "bounds": [
-          [
-            12.0,
-            210.0,
-            0.0
-          ],
-          [
-            80.44780731201172,
-            234.0,
+            162.22390365600586,
+            140.0,
             13.5
           ]
         ]
       }
     ]
   },
-  "modifier_count": 9,
   "sliced": true,
-  "slicer_warnings": [],
-  "slice_summary": {
+  "audit": {
     "plate": 30,
     "parts": {
-      "Test-Photo-Frame": 1,
-      "Test-Photo-Backer": 1,
-      "Test-Photo-Tab": 1,
-      "Test-Wall-Block-B1": 1,
-      "Test-Wall-Socket-B1": 1,
-      "Test-M-Frame": 1,
-      "Test-M-Letter": 1,
-      "Test-Lap-Tongue": 1,
-      "Test-Lap-Socket": 1,
       "Test-Weave-Full-Width": 1
     },
-    "weight_g": 204.72,
+    "weight_g": 18.439999999999998,
     "filament_weights_g": [
-      166.63,
-      3.31,
-      34.78
+      15.64,
+      2.15,
+      0.0,
+      0.65
     ],
-    "estimated_seconds": 30269,
+    "estimated_seconds": 3552,
     "settings_verified": true,
     "filament_slots": [
       1,
       2,
-      3
+      4
     ],
     "layer_filament_lists": [
       {
-        "filament_list": "0 2",
-        "layer_ranges": "0 41,48 52"
-      },
-      {
-        "filament_list": "0 1 2",
-        "layer_ranges": "42 47"
-      },
-      {
         "filament_list": "0",
-        "layer_ranges": "53 82"
+        "layer_ranges": "0 41,50 64"
+      },
+      {
+        "filament_list": "0 3",
+        "layer_ranges": "65 67"
+      },
+      {
+        "filament_list": "0 1",
+        "layer_ranges": "42 49"
       }
     ],
-    "filament_changes": 59,
+    "filament_changes": 11,
     "slicer_notices": [],
-    "extrusion_moves_checked": 368071,
+    "bed_temperatures_c": [
+      65.0,
+      65.0
+    ],
+    "extrusion_moves_checked": 27192,
     "features": {
-      "Support": 4444,
-      "Brim": 1128,
-      "Outer wall": 11390,
-      "Inner wall": 31547,
-      "Gap infill": 2625,
-      "Bottom surface": 3809,
-      "Prime tower": 4633,
-      "Internal solid infill": 37590,
-      "Sparse infill": 251557,
-      "Support transition": 594,
-      "Top surface": 5372,
-      "Support interface": 1151,
-      "Floating vertical shell": 4349,
-      "Overhang wall": 274,
-      "Bridge": 7608
+      "Prime tower": 3484,
+      "Support": 391,
+      "Brim": 115,
+      "Outer wall": 1325,
+      "Inner wall": 2661,
+      "Gap infill": 1335,
+      "Bottom surface": 272,
+      "Internal solid infill": 3486,
+      "Sparse infill": 11928,
+      "Floating vertical shell": 625,
+      "Bridge": 730,
+      "Support transition": 32,
+      "Top surface": 743,
+      "Support interface": 51,
+      "Overhang wall": 14
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "1": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5.0,
+        5.2,
+        5.4,
+        5.6,
+        5.8,
+        6.0,
+        6.2,
+        6.4,
+        6.6,
+        6.8,
+        7.0,
+        7.2,
+        7.4,
+        7.6,
+        7.8,
+        8.0,
+        8.2,
+        8.4,
+        8.6,
+        8.8,
+        9.0,
+        9.2,
+        9.4,
+        9.6,
+        9.8,
+        10.0,
+        10.2,
+        10.4,
+        10.6,
+        10.8,
+        11.0,
+        11.2,
+        11.4,
+        11.6,
+        11.8,
+        12.0,
+        12.2,
+        12.4,
+        12.6,
+        12.8,
+        13.0,
+        13.2,
+        13.4,
+        13.6
+      ],
+      "2": [
+        8.6,
+        8.8,
+        9.0,
+        9.2,
+        9.4,
+        9.6,
+        9.8,
+        10.0
+      ],
+      "4": [
+        13.2,
+        13.4,
+        13.6
+      ]
     },
     "extruding_xy_bounds_mm": [
       [
-        10.25,
-        10.25
+        92.027,
+        114.25
       ],
       [
-        238.75,
-        248.80170728059346
+        207.73456945888316,
+        207.2886036446544
       ]
     ],
     "bead_xy_bounds_mm": [
       [
-        10.0,
-        10.0
+        91.777,
+        114.0
       ],
       [
-        239.0,
-        249.05170728059346
+        207.98456945888316,
+        207.5386036446544
       ]
     ],
-    "conservative_bed_edge_clearance_mm": 6.948292719406538
-  },
-  "current_project_sha256": "49d869ee9f90df76c3f22dcf4890444922c03ab6952bb06c94def2e6c2e4d7e4",
-  "source_project_note": "source_project_sha256 identifies the historical source for the original nine coupons; the full-width weave entry records its production STL source and hash.",
-  "filament_assignment": {
-    "Test-M-Letter": 3,
-    "Test-Weave-Full-Width": {
-      "body": 1,
-      "weave_and_backing": 2
-    },
-    "other_test_pieces": 1
-  },
-  "bambu_reload_verified": true,
-  "full_width_weave_test": "Test-Weave-Full-Width",
-  "color_modifier_count": 1,
-  "production_gcodes_byte_identical": true
+    "conservative_bed_edge_clearance_mm": 48.01543054111684
+  }
 }

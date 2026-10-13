@@ -1,0 +1,321 @@
+{
+  "all_passed": true,
+  "old_depth_mm": 2,
+  "depth_mm": 2.4,
+  "backer_thickness_mm": 1.6,
+  "photo_and_surface_allowance_mm": 0.8,
+  "source_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994",
+  "unchanged_bands_mm": [
+    [
+      0,
+      1.998
+    ],
+    [
+      2.402,
+      30
+    ]
+  ],
+  "numerical_tolerance_mm3": 0.02,
+  "parts": [
+    {
+      "part": "F1",
+      "old_sha256": "f40cd0a5b0783354357a785f2428a66a380cea685fc837c682100dd29b5297f6",
+      "sha256": "12da91b8712b6ebebb2dfd41ae80cd1064dbae4624a026c374a28545a2366745",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 795.6802168943672,
+      "removed_volume_mm3": 318.271786290803,
+      "expected_removed_volume_mm3": 318.2720867577469,
+      "added_volume_mm3": 4.8796308078635775e-06,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        5.2469486149675504e-05
+      ]
+    },
+    {
+      "part": "F2",
+      "old_sha256": "ee355f724de4ae12be18e070e5dcdddcfb7c853f82034def675fd40ae78db04a",
+      "sha256": "15b58989920960a44f5e98b0f0caf473969fd954efaf84c457863d2defa8e0bd",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 910.8979332944535,
+      "removed_volume_mm3": 364.35885719009093,
+      "expected_removed_volume_mm3": 364.3591733177814,
+      "added_volume_mm3": 1.7991346226153837e-06,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        2.7659174413293314e-05
+      ]
+    },
+    {
+      "part": "F3",
+      "old_sha256": "97a7deee1f5475856bf68a19cc08972ecbf32ff4e29d15473d36dd4da5d06f07",
+      "sha256": "33339a07ffc9dcac3ec67cb8d969a1180afc6de8cdab8ffc5897b6e3950d7915",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 905.4604364167282,
+      "removed_volume_mm3": 362.18372727706446,
+      "expected_removed_volume_mm3": 362.1841745666913,
+      "added_volume_mm3": 3.059788347551754e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        0.00010237511292513861
+      ]
+    },
+    {
+      "part": "F4",
+      "old_sha256": "595e50c0a8b586b80ea13cef76ae3d80d5bd4548f1b31c2c950969c5c6ed9e3b",
+      "sha256": "3467e8e62ea126c59d2538b681e75a4a00e4eed755b045c2f90b2916b1e339b8",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 103.29744980148826,
+      "removed_volume_mm3": 41.31894149759319,
+      "expected_removed_volume_mm3": 41.318979920595304,
+      "added_volume_mm3": 1.6462057828903198e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        8.431051962058215e-06
+      ]
+    },
+    {
+      "part": "F5",
+      "old_sha256": "2339809db1d3c786c34ff4d9ef9c89f08c613bfb19551c4374ab44440fa01d40",
+      "sha256": "840a41c325be1d9dad99c10aa17db42d947df5d1b82bf7e178108ba067557ae0",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 1010.3326758199182,
+      "removed_volume_mm3": 404.13271491852356,
+      "expected_removed_volume_mm3": 404.1330703279673,
+      "added_volume_mm3": 4.705677467124284e-05,
+      "unchanged_band_errors_mm3": [
+        1.905364873285483e-07,
+        0.000651013900897458
+      ]
+    },
+    {
+      "part": "F6",
+      "old_sha256": "2a039c6b7e13f6cedfb98f4650d6b3b455ed52a416faf748521fc6802a98cea5",
+      "sha256": "8db7dd13018f8fa34b489dbdb4b0d0b5cdeafd4a78baafdadca0fb06a9badaa0",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 1564.937717565588,
+      "removed_volume_mm3": 625.9744528082665,
+      "expected_removed_volume_mm3": 625.9750870262352,
+      "added_volume_mm3": 8.017520363183077e-05,
+      "unchanged_band_errors_mm3": [
+        5.013528546745268e-05,
+        0.0001668059267103672
+      ]
+    },
+    {
+      "part": "F7",
+      "old_sha256": "c9c3b73aa73abd39f6222eff9af6acfdce5469764348f9f045ec8e23e72313cd",
+      "sha256": "5d1b9acfc0a2376c75ea0b29a36d732faefbb84d9b9925f52b12605130ad3813",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 37.248051087983185,
+      "removed_volume_mm3": 14.899186036956962,
+      "expected_removed_volume_mm3": 14.899220435193275,
+      "added_volume_mm3": 4.5009496321551934e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        2.6867099238594056e-05
+      ]
+    },
+    {
+      "part": "F8",
+      "old_sha256": "8fabd6d97a50fb0c5174bfb9a10f028116be71a3f6ea825fa15bdf0a35e7f03f",
+      "sha256": "f91cf7407ef2cefc0c537a2a8bc3c1e608752d317f78b92b86f160be2016e3e6",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 1153.6329767724148,
+      "removed_volume_mm3": 461.4527613451937,
+      "expected_removed_volume_mm3": 461.45319070896596,
+      "added_volume_mm3": 5.161612534720916e-06,
+      "unchanged_band_errors_mm3": [
+        1.2126596023639042e-12,
+        0.00044928198068494574
+      ]
+    },
+    {
+      "part": "F9",
+      "old_sha256": "fd642c67a20a9421ce7b3dd48d69bc8fa7a6b3049cbf3eb8a6fa58bc451d8ce0",
+      "sha256": "f752619cfe2f2053b02e161a921bad876d1558811b6f082ae9c7315028dc551c",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 171.71753879550488,
+      "removed_volume_mm3": 68.68697513599182,
+      "expected_removed_volume_mm3": 68.68701551820196,
+      "added_volume_mm3": 4.801626346306875e-06,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "part": "F10",
+      "old_sha256": "a5b32f3d02f6e6bf435c38d2fd0a2611817c5370173eb7c71a08697ef56f0b86",
+      "sha256": "9dd187234bdff8637fd450ad6014765380868e13ce99f031d89bf78a489e0a7d",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 281.96626690078847,
+      "removed_volume_mm3": 112.78640430688392,
+      "expected_removed_volume_mm3": 112.78650676031539,
+      "added_volume_mm3": 1.898897532252401e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        0.000132916360598756
+      ]
+    },
+    {
+      "part": "F11",
+      "old_sha256": "2d35302642e88bf3520cff8ba89cea99f7c8079a4006b967fd4593c6e976821f",
+      "sha256": "d5e51a11f25d72d8c31ee843bd0430fa548968e929558e55eacbfcb61a4216bc",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 351.67109313054243,
+      "removed_volume_mm3": 140.66830696491525,
+      "expected_removed_volume_mm3": 140.668437252217,
+      "added_volume_mm3": 5.2592101080032684e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        0.0001349160053602342
+      ]
+    },
+    {
+      "part": "F12",
+      "old_sha256": "3421bdce48fda7a74f8cc549ce5fe50400bc47e3fda5be76ee5fc9429e810253",
+      "sha256": "c7a13f8b01991662897767bfa6f30584e53f76222d0355cbca679f3ad5ad553c",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 106.00006880288129,
+      "removed_volume_mm3": 42.39990051399218,
+      "expected_removed_volume_mm3": 42.400027521152516,
+      "added_volume_mm3": 5.724680695114633e-06,
+      "unchanged_band_errors_mm3": [
+        2.4646239277596276e-05,
+        0.00017367267783178578
+      ]
+    },
+    {
+      "part": "F13",
+      "old_sha256": "44fe6b6ccdde87ac8d1297ca72082a193bbfdf49bcb76c8b7d6b1aeae5d15ee6",
+      "sha256": "1077ac243c608d784b8e06674ba85106e0c14c24ffcc1c887af8b4f034145c11",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 932.0331903949298,
+      "removed_volume_mm3": 372.8128935081186,
+      "expected_removed_volume_mm3": 372.8132761579719,
+      "added_volume_mm3": 3.099395069365111e-05,
+      "unchanged_band_errors_mm3": [
+        3.5498787849993124e-07,
+        0.00010071867538267536
+      ]
+    },
+    {
+      "part": "F14",
+      "old_sha256": "d3b6cc66f5cba822cddada036a637d12a44906e5c9f51d7b3a63f637e6a08838",
+      "sha256": "918850ea9595adcd413b2ad0623e35b7058bd4e667cb407ddcc541347a45aa89",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 245.4939449930098,
+      "removed_volume_mm3": 98.19748588406947,
+      "expected_removed_volume_mm3": 98.19757799720392,
+      "added_volume_mm3": 5.45832275141341e-06,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        1.3313477135549573e-07
+      ]
+    },
+    {
+      "part": "F15",
+      "old_sha256": "383a07f02e01707d52e8780b08dab79e99a80cba743d49bfe7ec35fca40974c4",
+      "sha256": "957bdd132e18164a1717143a64d6b17faf12f36f3d9a600437809ea24e1d7ed8",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 1183.8463132272495,
+      "removed_volume_mm3": 473.5380784412846,
+      "expected_removed_volume_mm3": 473.5385252908998,
+      "added_volume_mm3": 1.5350712298337992e-06,
+      "unchanged_band_errors_mm3": [
+        5.567921956147378e-05,
+        4.110399369035751e-05
+      ]
+    },
+    {
+      "part": "F16",
+      "old_sha256": "6ccd20e3a51ee31055192793042f317e7862efa5acf49a40e6232026f4b961a9",
+      "sha256": "347fff730501b5edbd3496ddbf5ee0781ca1554b2461abb3eb11b49daaf9f6e3",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 758.9902366534086,
+      "removed_volume_mm3": 303.5958173687977,
+      "expected_removed_volume_mm3": 303.59609466136345,
+      "added_volume_mm3": 9.156393449908744e-05,
+      "unchanged_band_errors_mm3": [
+        0.00010570999900968066,
+        4.765711838846294e-06
+      ]
+    },
+    {
+      "part": "F17",
+      "old_sha256": "428a9f55fcd09d2a45ffd056a579a26fbd61014997eb41a5103199d4e4f329fa",
+      "sha256": "f5f5f5e0b94b1d7966da4113840d7dec99118796c1ddfef24a0a54ef0339d849",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 190.31349029472221,
+      "removed_volume_mm3": 76.12534009112278,
+      "expected_removed_volume_mm3": 76.12539611788888,
+      "added_volume_mm3": 3.0378456358448602e-05,
+      "unchanged_band_errors_mm3": [
+        8.559309208067134e-07,
+        7.891907443990931e-05
+      ]
+    },
+    {
+      "part": "F18",
+      "old_sha256": "26a78c610470706763d6c133a2766328648050fee1f2881d89f6917da6f139d3",
+      "sha256": "bcfff4dd9d92d19db695dba4efe4dbe9fa454f4cac760c33d1cd4103f4653ea7",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 1212.6344569641594,
+      "removed_volume_mm3": 485.053342555766,
+      "expected_removed_volume_mm3": 485.05378278566377,
+      "added_volume_mm3": 9.239713229665843e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        0.0008280793414693713
+      ]
+    },
+    {
+      "part": "F19",
+      "old_sha256": "cfbf9b7ac307caed347854c5211cb350547d76fd106ab00c8438d358d91f91ac",
+      "sha256": "67eaa8eb2ddfa8a700ea403afe1778476bf3b04aabee54ad74f076350caf337f",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 1179.9937069000503,
+      "removed_volume_mm3": 471.9969574477291,
+      "expected_removed_volume_mm3": 471.99748276002015,
+      "added_volume_mm3": 9.562124735869777e-05,
+      "unchanged_band_errors_mm3": [
+        1.7750119999012288e-06,
+        0.00010368303766957372
+      ]
+    },
+    {
+      "part": "F20",
+      "old_sha256": "b43de1b56d52a8fb8ed4edb50ba6db49cfce92e8c9fe147ae98a71ffd463c073",
+      "sha256": "cb9d9d1ec4c2976c6e1f2df152021c07cf2c0ace44ab0cf02bee682832d18d4b",
+      "old_floor_z_mm": 2,
+      "floor_z_mm": 2.4,
+      "floor_area_mm2": 775.0237617850964,
+      "removed_volume_mm3": 310.0092001692392,
+      "expected_removed_volume_mm3": 310.0095047140386,
+      "added_volume_mm3": 3.293036813071618e-05,
+      "unchanged_band_errors_mm3": [
+        0.0,
+        8.111229439787075e-05
+      ]
+    }
+  ]
+}

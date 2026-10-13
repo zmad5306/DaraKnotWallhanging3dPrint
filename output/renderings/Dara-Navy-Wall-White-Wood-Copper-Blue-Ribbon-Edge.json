@@ -1,0 +1,21 @@
+{
+  "title": "Dara knot — Azurite thread edging on the white ribbon, wood fabric, copper M",
+  "created": "2026-10-13",
+  "mode": "Built-in image_gen",
+  "output": "Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png",
+  "reference_images": [
+    "Dara-Navy-Wall-White-Wood-Copper.png"
+  ],
+  "purpose": "Concept requested by the user: ribbon-style blue edge thread on the white rails.",
+  "accent_filament": {
+    "brand": "SUNLU",
+    "material": "PLA Metallic",
+    "color": "Metal Azurite",
+    "asin": "B0H3SFMXKW",
+    "url": "https://www.amazon.com/dp/B0H3SFMXKW",
+    "manufacturer_color_hex": "#295D8A",
+    "color_source": "https://www.sunlu.com/products/pla-metal-3d-printing-filament"
+  },
+  "note": "Concept rendering only; exact line width and finish are not validated. No CAD, slicer or production-plan changes.",
+  "prompt": "Use case: precise-object-edit\nAsset type: concept rendering of a 3D-printed Dara knot wall hanging with blue thread edging on its white ribbon.\nPrimary request: Starting from the supplied original white-knot / wood-fabric / copper-M rendering, give the WHITE RIBBON a fine Azurite-blue edge thread, like decorative selvedge stitching on a ribbon. Keep the existing white, wood tan, and copper as the dominant palette.\nInput image 1 is the EDIT TARGET and authoritative design reference.\nAccent placement: Add one extremely fine blue thread line ON THE FRONT WHITE FACE of each white rail, slightly inset from its edge bordering the tan woven channel. This frames the wood inset with a delicate blue thread on each of its two bordering WHITE rails. Keep a small visible sliver of white between the blue line and the wood fabric, so it is unmistakably edging IN THE WHITE RIBBON, not a blue row in the tan weave. Run the edge thread parallel to the ribbon edge, precisely following all curves and straight portions of the existing knot, respecting the original crossing occlusions and hiding beneath the copper M where appropriate.\nAppearance: A neat, subtle single blue edge thread, approximately 1–1.5 mm wide on this 914 mm overall object, with very fine stitched/threadlike microtexture and a restrained satin-metallic glint. Most of every white rail remains clean satin white. Keep the thread visually fine but legible. Consistent slim width throughout; no bulky cords, broad stripes, large dashes, piping tubes, or loose fibers. This is a printed thread-like decorative inlay on the existing rail face, with almost no additional height.\nAccent color: SUNLU PLA Metallic Metal Azurite, manufacturer's base #295D8A, deep mineral blue. No electric blue, cyan, or turquoise.\nAll wood-tan fabric insets retain their original warm tan color and woven texture throughout. The entire M retains the original warm reddish copper color, sheen, curved manuscript outer strokes, straight center stem, and edge faces. The white rails retain their original smooth satin-white material except for the very fine new blue edge thread.\nPreserve exactly: the source silhouette, geometry, scale, rail widths and routes, crossings, weave layout, eight outer open spaces, remaining negative spaces, M shape and placement, shallow depth, navy wall background, soft lighting, shadows, centered frontal square composition and generous margins. All open spaces reveal the navy wall.\nStyle: polished photorealistic product concept, realistic fine details, source lighting and viewpoint.\nNo blue accent within the wood weave, no blue center stripe across white rails, no blue on the M, no wholesale recoloring, no geometry redesign, no extra objects, photographs, text, labels, swatches, logos, or watermarks. Deliver one clean full-object rendering."
+}

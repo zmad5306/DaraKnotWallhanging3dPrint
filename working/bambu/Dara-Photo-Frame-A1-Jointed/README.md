@@ -1,176 +1,90 @@
 # Complete A1 print project
 
-[Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) contains one
-complete assembly: 39 distinct production parts and 70 assembly pieces across
-plates 1-29, plus **ten test pieces on plate 30** (80 pieces total).
-It includes editable models, local infill modifiers, plate thumbnails, and sliced
-toolpaths. The file is stored with Git LFS; run `git lfs pull` after cloning.
-Studio regenerates Preview when reopening the editable project; use **Slice all**
-with the saved settings if it requests slicing again.
+[Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) contains 70 production pieces on plates 1-29 and two separate material tests on plates 30-31: **72 pieces on 31 plates**. The previously printed hardware and lap coupons have been removed from the project; their STL files remain available.
 
-The [four-page part and plate map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf)
-shows the 29 production plates: frame and M assembly positions, backer and wall-block
-locations, and the three shared production plate layouts. Assembly maps all use
-the same front-view orientation. Plate 30 is described in the
-[fit-test guide](../../stl/Dara-Print-Checks/README.md).
+The project includes editable models, local infill and color modifiers, thumbnails, and sliced toolpaths. Use Git LFS to retrieve it after cloning. If Bambu Studio asks to regenerate Preview when opening the editable file, use **Slice all** with its saved settings.
 
-| Plates | Parts | Quantity |
-| --- | --- | --- |
-| 01-20 | F1-F20 | One section per matching plate |
-| 21-26 | M1-M6 | One section per plate, in order |
-| 27 | Backer1, Backer3, Backer5, Backer7 | One each |
-| 28 | Backer2, Backer4, Backer6, Backer8 | One each |
-| 29 | B1-B4 and Retainer | One of each block and 32 retainers |
-| 30 | Photo, B1, M, lap and full-width weave tests | Ten test pieces; print first |
+| Plates | Contents |
+| --- | --- |
+| 01-20 | F1-F20, one frame section per plate |
+| 21-26 | M1-M6, one copper letter section per plate |
+| 27 | Backer1, Backer3, Backer5, Backer7 |
+| 28 | Backer2, Backer4, Backer6, Backer8 |
+| 29 | B1-B4 and 32 retainers |
+| 30 | One short white/wood/blue weave sample |
+| 31 | One copper Test-M-Letter sample |
 
-Plate 30 includes a **68.45 x 24 x 13.5 mm** full-width sample cropped from F7.
-Both white rails and the recessed wood weave use the production geometry and
-layer settings. The three small photo coupons were moved to make space.
+The [four-page part and plate map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf) still describes the unchanged production assignments. See the [test guide](../../stl/Dara-Print-Checks/README.md) for the two material tests.
 
-## Print settings
+## Flush blue ribbon edging
 
-- Bambu Lab A1, 0.4 mm nozzle, textured PEI plate, 0.2 mm layers.
-- Project filament 1: **white `#FFFFFF`, Generic PLA** - frame, backers,
-  wall blocks, retainers, and test-piece bodies except the M letter.
-- Project filament 2: **wood tan `#C2AB84`, Generic PLA** - the recessed weave
-  and its backing skin on F1-F20 and Test-Weave-Full-Width. This is ordinary wood-colored PLA.
-- Project filament 3: **copper `#B87333`, Generic PLA Silk** - M1-M6 and
-  Test-M-Letter. Copper outer walls and top surfaces run at 40 mm/s.
-- Match these project colors to the loaded AMS Lite spools in the print dialog;
-  the project numbers are not a requirement to use particular physical slots.
-- Nozzle 220 C. Saved textured-plate temperatures are 65 C for white/wood
-  and 55 C for copper. The mixed test plate starts at 55 C and switches to
-  65 C in its saved toolpath. Copper uses the Generic PLA Silk flow/retraction
-  profile, with a 7.5 mm3/s maximum volumetric speed (white/wood: 12 mm3/s).
-  Colors are display approximations of the filament.
-- Four wall loops and 15% gyroid infill for the body.
-- Local 100% infill around M screw seats and pilots, photo-tab screws, wall-block
-  screws, wall keyhole seats, and retainer screw seats. The lap tongues and roots
-  use the normal body settings. This follows the reference's modifier placement;
-  its physical joint test used six walls and 30% infill, not four walls and 15%.
-- All parts keep their original scale and rear-down print orientations.
-- Backers print four per plate, by layer, with no brim or supports. Their minimum
-  spacing is about 1.8 mm, with a 1.5 mm model clearance from the bed edge.
-- The tightest frame and M plates use a 1 mm brim and zero additional support-base
-  expansion to keep their generated toolpaths on the bed.
+The white rails now carry a **1.5 mm-wide Azurite blue thread**, with a **1.25 mm white gap** from the wood-facing edge. The blue ends level with the white face: its modifier occupies **Z=12.9-13.5 mm**. It changes filament assignment within the existing solid; the frame geometry, joints, photo recesses and normal STL files keep their dimensions.
 
-The production meshes and joints are unchanged. Twenty-one filament
-modifiers (20 frame sections plus the weave test) assign wood only at Z=8.4-9.6 mm: a 0.6 mm backing skin plus the
-0.6 mm raised weave. This keeps the recess between threads wood-colored too.
-The weave is printed in place; no separate inserts or painting are required.
-Keep the modifiers when editing. Plain STL exports do not retain color settings.
+The path is generated on the continuous assembled artwork before clipping into F1-F20, so it does not outline manufacturing seams. See the [actual CAD color map](../../review/blue-ribbon-edge/assembly-color-map.png) and [design record](../../review/blue-ribbon-edge/design.json). Plate 30 includes the same line on both white rails for a finish/purge check.
 
-The frame plates use six mixed-color layers (layers 43-48), with six filament
-changes per plate. Prime towers are placed in clear areas; flushing into the
-model, infill, and supports is disabled to keep residual dark color out of white
-surfaces. Plate 30 switches white/copper through the letter coupon's height,
-with wood added on layers 43-48, for 59 changes in total. Production M plates and white accessory plates
-each use one filament.
+Blue prints on **layers 66-68**, at nozzle heights **13.2, 13.4 and 13.6 mm**, after the wood layers have finished. That adds three changes; sections with taller white M locating pins add a fourth return to white. Total changes are **11 per ordinary frame/test plate**, or **12 on F4, F7, F9, F10, F12, F14, F16 and F18**. No layer mixes wood and blue.
 
-The supplied project was sliced in Bambu Studio 02.08.02.61. All 30 plates
-finished. Extrusion paths, including support, brim, and prime-tower bead widths,
-stay inside the 256 mm bed. The minimum checked edge clearance is
-0.673 mm on plate 06. Plates 21-29 carry only the slicer's
-`not_support_traditional_timelapse` notices; leave timelapse off when printing
-those plates. No other slice notices were recorded.
+Slot 4 is [SUNLU PLA Metal Azurite](https://www.amazon.com/dp/B0H3SFMXKW), represented by `#295D8A`, using a Generic PLA starting profile with 7.5 mm3/s maximum flow. The saved blue-to-white flush is 650 mm3, with flushing into the model disabled. Print plate 30 to check the actual metallic finish, opacity and white cleanliness before the frame plates; these settings have not been physically verified.
 
-| Filament | All 30 plates, including fit tests and purge/towers |
+## Photo rabbet clearance
+
+All photo rabbets are now **2.4 mm deep**, increased from 2.0 mm after the printed backer left insufficient room for the photo. The backer remains **1.6 mm** thick, leaving **0.8 mm total for the photo and surface clearance**: the original 0.4 mm photo allowance plus 0.4 mm to accommodate supported-surface roughness.
+
+The native CAD, preview cache, F1-F20 STLs, and sliced project use the deeper recess. [Geometry verification](../../review/rabbet-clearance/geometry-verification.json) checks every frame section and confirms that the revision only removes material in the 2.0-2.4 mm rabbet depth band. The restored weave, joints, screws, tabs, and other parts retain their geometry. The [optional photo-frame coupon](../../stl/Dara-Print-Checks/Test-Photo-Frame.stl) is updated separately; plates 30 and 31 retain only their material tests. The new physical fit has not yet been checked.
+
+## Restored weave
+
+F1-F20 and the short F7 sample now include the older alternating crossing detail: **3.3 x 1.5 mm crossing pads raised 0.3 mm above the 0.6 mm thread grid**, on a 6 mm pitch. Adjacent crossings alternate direction. The native CAD, embedded preview meshes, STL exports, and sliced project agree. Frame joints, hardware interfaces, and production plate placements retain their dimensions. The rear photo rabbet has the additional clearance described above.
+
+Wood modifiers follow the recessed backing, threads, and raised crossings at Z=8.4-9.9 mm. They no longer fill the relief with a flat prism in model view. Wood prints in place on layers **43-50**, with **eight wood/white filament changes**, followed later by the blue changes described above. Keep these modifiers when editing; plain STL files do not retain color assignments.
+
+[Geometry comparison](../../review/weave-restoration/texture-comparison.png) and [geometry verification](../../review/weave-restoration/geometry-verification.json) document the restoration. Those reports describe the preceding weave-only revision; the separate rabbet report above records this subsequent clearance change.
+
+## Saved print settings
+
+- Bambu Lab A1, 0.4 mm nozzle, textured PEI plate, 0.2 mm layers, four walls, 15% gyroid.
+- Filament 1: white `#FFFFFF`, Generic PLA; filament 2: wood tan `#C2AB84`, ordinary Generic PLA; filament 3: copper `#B87333`, Generic PLA Silk; filament 4: Azurite blue `#295D8A`, Generic PLA.
+- Match those colors to the actual AMS Lite spools in the print dialog.
+- Nozzle 220 C. White/wood/blue plates use a 65 C bed; copper plates, including plate 31, use 55 C throughout printing.
+- Copper outer walls and top surfaces run at 40 mm/s. Copper and blue maximum volumetric speed is 7.5 mm3/s; white/wood use 12 mm3/s.
+- 74 local 100% infill modifiers: 73 production screw/keyhole zones and the copper test screw zone. Lap tongues and roots use the normal body settings.
+- Original rear-down orientations and 100% scale are retained. Backers print four per plate, by layer, without supports or brim. Tight frame/M plates retain their 1 mm brim and zero extra support-base expansion.
+- Prime towers remain clear of the pieces. Flushing into objects, infill, and supports is disabled.
+
+All 31 plates finished slicing in Bambu Studio 02.08.02.61. The independent audit checked 7,356,694 extrusion moves including bead widths, brims, support, and towers. Minimum bed-edge clearance is **0.673 mm**. The only slicer notices concern unsupported traditional timelapse on the single-color plates; leave timelapse off for those plates.
+
+| Material | All 31 plates, including support and purge/towers |
 | --- | ---: |
-| White | 2884.38 g |
-| Wood tan | 206.03 g |
-| Copper silk | 444.00 g |
+| White | 2761.14 g |
+| Wood tan | 222.40 g |
+| Copper silk | 432.50 g |
+| Azurite blue | 28.67 g |
 
-Production plates 1-29 total **3329.69 g and 120 h 31 min**.
-Plate 30 adds **204.72 g and 8 h 24 min**.
-Combined: **3534.41 g and 128 h 55 min**.
-These are slicer estimates; small rounding differences from the GUI total are
-normal. The planned stock of 3.5 kg white, 1 kg wood, and 1 kg copper covers this
-slice, leaving approximately 0.616 kg white,
-0.794 kg wood, and
-0.556 kg copper for calibration and retries.
+Production plates 1-29: **3,402.99 g; 126 h 57 min**. Plate 30: **18.44 g; 0 h 59 min**. Plate 31: **23.28 g; 1 h 10 min**. Total: **3,444.71 g; 129 h 7 min**. These are slicer estimates.
 
-[project-validation.json](project-validation.json) records the final project hash,
-part quantities and source hashes, placements, modifiers, per-plate estimates,
-toolpath bounds, and the geometry comparison after Bambu Studio re-export. All
-normal meshes match the source STLs within 0.0001 mm. Purchased screws and
-reference M washers are not printed parts.
+[project-validation.json](project-validation.json) records the final hash, source hashes, quantities, plate positions, settings, and slice estimates. [final-review.json](final-review.json) independently verifies the geometry, 74 reinforcement modifiers, 21 wood and 21 blue modifiers, filament assignments, and saved toolpaths. All 41 normal meshes match their source STLs within 0.0001 mm. [PRINT-READINESS.md](PRINT-READINESS.md) retains the hardware and assembly guide.
 
-[PRINT-READINESS.md](PRINT-READINESS.md) records the final review, hardware list,
-assembly order, and required physical fit checks. The user confirmed on
-2026-10-12 that the current photo, wall-block, and M hardware fits are untested.
-The digital audit does not qualify those fits or the wall mounting load.
+## Rebuilding and checking
 
-The tracked `scripts/validate_print_project.py` independently verifies current
-source hashes and solids, assembled interference, lap order, all 3MF placements,
-82 reinforcement modifiers (73 production and nine test), 21 weave-color
-modifiers, filament assignments, plate quantities, and saved G-code bounds. It accepts
-Bambu's compact decimals such as `E.123` and `I-.5`, which the earlier scratch
-checker missed. [final-review.json](final-review.json) contains the corrected
-audit. Plate 30 was re-sliced after adding the weave sample; the saved production
-G-code on plates 1-29 is byte-identical to the previous AMS version.
+For this color revision, retain the preceding **three-color** 31-plate project and validation report under `.work/blue-ribbon-edge/` as `baseline.3mf` and `baseline.json`. The CAD and printable STLs do not need to be exported again.
+
+```powershell
+python scripts/add_blue_ribbon_edge.py
+```
+
+Open `.work/blue-ribbon-edge/blue-edge.3mf` in Bambu Studio, **Slice all**, **Save Project As** `.work/blue-ribbon-edge/models.3mf`, and **Export all sliced file** to `.work/blue-ribbon-edge/models.gcode.3mf` from that same project. Combine, audit and publish:
+
+```powershell
+python scripts/combine_ams_slices.py --models .work/blue-ribbon-edge/models.3mf --slices .work/blue-ribbon-edge/models.gcode.3mf --baseline .work/blue-ribbon-edge/staged.json --output .work/blue-ribbon-edge/complete.3mf
+python scripts/validate_print_project.py --project .work/blue-ribbon-edge/complete.3mf --baseline .work/blue-ribbon-edge/complete.json --report .work/blue-ribbon-edge/audit.json
+python scripts/publish_blue_ribbon_edge.py
+```
+
+The publishing script requires a matching successful audit and refuses to replace an unrelated newer production file. Earlier weave and rabbet scripts describe their own geometry revisions; running them alone does not recreate the blue edging.
+
+To audit the published artifacts without changing the project:
 
 ```powershell
 python -m unittest discover -s scripts -p test_validate_print_project.py
 python scripts/validate_print_project.py
-```
-
-## Rebuilding
-
-`python scripts/build_jointed_bambu_project.py`, run from the repository root,
-creates the initial **unsliced, 29-plate production** 3MF and layout report from the validated STL set
-and tracked joint-test preset. It replaces the output project and report. The
-supplied sliced project was subsequently exported and verified in Bambu Studio.
-Re-slice and refresh validation before replacing that published artifact.
-
-To add the test plate after building/saving the production project, run
-`python scripts/append_print_check_plate.py`. It exports the nine named coupons
-and stages `.work/print-check-plate/with-tests.3mf`. Slice plate 30 in Bambu Studio;
-the saved project uses the production four-wall/15% profile and local solid screw
-zones, not a whole-coupon 100% infill override. `scripts/combine_print_check_slice.py`
-combines the slicer's test-only export with the untouched production project and
-produces a candidate for `scripts/validate_print_project.py`. See its module
-documentation; publishing is separate from staging and validation.
-
-To apply the AMS palette to a saved **single-filament** complete 30-plate project:
-
-```powershell
-python scripts/colorize_print_project.py --source path/to/single-color-complete.3mf --output .work/ams-colors/colored.3mf
-```
-
-Open the staged project in Bambu Studio and use **Slice all**. From that same
-unchanged project, use **Save Project As** for editable models and **Export all
-sliced file** for the G-code export. Combine and audit them before publishing:
-
-```powershell
-python scripts/combine_ams_slices.py --models .work/ams-colors/models.3mf --slices .work/ams-colors/models.gcode.3mf --output .work/ams-colors/complete.3mf
-python scripts/validate_print_project.py --project .work/ams-colors/complete.3mf --baseline .work/ams-colors/complete.json --report .work/ams-colors/audit.json
-```
-
-The colorizer deliberately rejects an already-colored source. A full rebuild
-must start from the single-filament project generation steps above. The saved
-production 3MF already contains the palette, editable modifiers, and toolpaths.
-
-The PDF uses the saved project's actual object-to-plate mapping, checked against
-the validation report, and projects the source meshes into their CAD assembly
-positions. To regenerate it from the validated project:
-
-```powershell
-python scripts/build_part_layout_map.py prepare
-python scripts/build_part_layout_map.py render
-```
-
-The prepare stage needs numpy, shapely, and trimesh. The render stage needs
-reportlab and can run with a separate Python interpreter. Intermediate map data
-goes in ignored `.work/part-layout-map/`; the final PDF goes in `output/pdf/`.
-
-To add the full-width weave coupon after the AMS project is ready, run
-`python scripts/add_weave_test_coupon.py` against the nine-coupon version.
-Open `.work/weave-coupon/with-weave.3mf`, select plate 30, use **Slice plate**,
-and **Export plate sliced file**. Save an editable copy with **Save Project As**
-to refresh the plate thumbnails. Combine the single-plate export while
-preserving production toolpaths, then audit before publishing:
-
-```powershell
-python scripts/add_weave_test_coupon.py --slices .work/weave-coupon/plate30.gcode.3mf --previews .work/weave-coupon/previews.3mf
-python scripts/validate_print_project.py --project .work/weave-coupon/complete-with-weave.3mf --baseline .work/weave-coupon/complete-with-weave.json --report .work/weave-coupon/audit.json
 ```

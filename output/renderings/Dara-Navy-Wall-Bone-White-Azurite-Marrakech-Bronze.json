@@ -1,0 +1,38 @@
+{
+  "title": "Dara knot wall hanging — Bone White / Metal Azurite / Marrakech Bronze",
+  "created": "2026-10-13",
+  "mode": "Built-in image_gen",
+  "output": "Dara-Navy-Wall-Bone-White-Azurite-Marrakech-Bronze.png",
+  "reference_images": [
+    "Dara-Navy-Wall-White-Wood-Copper.png"
+  ],
+  "purpose": "Requested filament color option; approximate material preview on the existing navy wall.",
+  "filaments": {
+    "knot": {
+      "brand": "SUNLU",
+      "material": "PLA",
+      "color": "Bone White",
+      "asin": "B0DPFYCRBL",
+      "url": "https://www.amazon.com/dp/B0DPFYCRBL"
+    },
+    "fabric": {
+      "brand": "SUNLU",
+      "material": "PLA Metallic",
+      "color": "Metal Azurite",
+      "asin": "B0H3SFMXKW",
+      "url": "https://www.amazon.com/dp/B0H3SFMXKW",
+      "manufacturer_color_hex": "#295D8A"
+    },
+    "M": {
+      "brand": "SUNLU",
+      "material": "PLA Metallic",
+      "color": "Metal Marrakech Bronze",
+      "asin": "B0H3T352PP",
+      "url": "https://www.amazon.com/dp/B0H3T352PP",
+      "manufacturer_color_hex": "#946B3A"
+    }
+  },
+  "metallic_color_source": "https://www.sunlu.com/products/pla-metal-3d-printing-filament",
+  "note": "Concept preview, not a color-calibrated prediction of the printed result. Geometry, CAD and slicer material assignments were not modified.",
+  "prompt": "Use case: precise-object-edit\nAsset type: Filament color option rendering for the existing Dara knot wall hanging.\nPrimary request: Recolor the supplied existing wall-hanging rendering to the user's exact filament combination. This is a color/material edit, preserving the design and composition.\nInput image 1 is the EDIT TARGET: existing Dara-Navy-Wall-White-Wood-Copper rendering. Preserve its exact silhouette, rail paths, crossings, opening shapes, fine woven inset texture, raised manuscript M shape, camera position, scale, navy wall background, and lighting placement.\nReplace the three materials:\n1. KNOT RAILS: SUNLU standard PLA Bone White, Amazon ASIN B0DPFYCRBL. All currently bright white rails should become subtly warm creamy bone white / ivory, a low-sheen satin printed plastic. Clearly off-white but not yellow or beige. Keep clean edges and shallow relief.\n2. FABRIC / WOVEN INSETS: SUNLU PLA Metallic Metal Azurite, Amazon ASIN B0H3SFMXKW. Recolor ALL currently tan woven inset regions to rich deep mineral BLUE with manufacturer's published base color #295D8A (RGB 41,93,138), a restrained metallic finish with small blue-silver highlights across the existing raised woven crossings. It must visibly read blue and be lighter/more saturated than the dark navy wall. Preserve the precise finely woven relief texture and inset footprints. These are 3D-printed woven surfaces, not actual cloth. Do not make these tan, green, turquoise, or plain navy. Do not recolor the background.\n3. RAISED M: SUNLU PLA Metallic Metal Marrakech Bronze, Amazon ASIN B0H3T352PP. Recolor the whole current copper manuscript M, including sides, to manufacturer's published base color #946B3A (RGB 148,107,58): subdued warm brown bronze, with a fine metallic luster and gentle bronze highlights. This is a brown-bronze filament effect; remove the bright orange/red copper look from the source. Use realistic subtle printed surface lines and metallic plastic sheen, not mirror metal or exaggerated brushed scratches. Preserve the broad curved outer strokes, straight central stem, thickness and exact original silhouette.\nStyle: polished photorealistic product visualization; believable shallow 3D relief, fine surface detail, soft contact shadows.\nComposition: identical to the source: full object visible, upright centered square composition on a matte dark navy painted wall, generous even margins, nearly straight-on front view. The eight large outer openings and remaining negative spaces are empty and reveal the same wall.\nConstraints: Change ONLY component colors and material appearance. Preserve geometry, topology, proportions, weave spacing, M identity and placement, background, framing, and existing light direction. No photographs, no backing in empty spaces, no labels, text, logos, swatches, frames, props or watermark. One clean rendering."
+}

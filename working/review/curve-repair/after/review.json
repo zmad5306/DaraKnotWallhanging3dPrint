@@ -1,0 +1,803 @@
+{
+  "project_sha256": "7f1ad1439c0c90b751bd251baa1493716657f975249fb2e3b5e7c8c475f6173e",
+  "source_cad_sha256": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d",
+  "reference_cad_sha256": "d214952476c9a398b54235cc27edc35c7365a6b085cf850d1e967f29ffa2a237",
+  "knot_difference_from_clean_reference_mm2": 9.751877333870121,
+  "scope": "Source-outline cosmetic screening, matching source STL vertices, all-plate saved motion parsing, and blue/white surface path placement.",
+  "screening": {
+    "min_isolated_turn_degrees": 6,
+    "neighborhood_radius_mm": 5,
+    "max_neighborhood_absolute_turn_degrees": 45,
+    "limitation": "Smaller deviations and intentional/high-curvature corners require visual judgment; this is not a guarantee of an artifact-free physical print."
+  },
+  "outline_vertices_screened": {
+    "knot": 5105,
+    "fabric": 2438,
+    "letter": 883
+  },
+  "raw_candidates": {
+    "knot": [],
+    "fabric": [],
+    "letter": [
+      {
+        "polygon": 0,
+        "ring": 0,
+        "vertex": 51,
+        "assembly_xy_mm": [
+          -227.394,
+          -179.36775
+        ],
+        "turn_degrees": 43.09165902617309,
+        "nearby_absolute_turn_degrees": 44.242973029935385,
+        "neighbor_chord_deviation_mm": 2.494512413349429
+      }
+    ]
+  },
+  "findings": [],
+  "plates": [
+    {
+      "plate": 1,
+      "name": "F1",
+      "model_extrusion_moves_parsed": 265767,
+      "model_arcs_parsed": 130515,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 321,
+          "white_extrusion_moves": 2719,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 320,
+          "white_extrusion_moves": 2850,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1869,
+          "white_extrusion_moves": 2230,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 2,
+      "name": "F2",
+      "model_extrusion_moves_parsed": 287999,
+      "model_arcs_parsed": 147609,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 320,
+          "white_extrusion_moves": 3500,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 322,
+          "white_extrusion_moves": 2661,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1432,
+          "white_extrusion_moves": 1917,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 3,
+      "name": "F3",
+      "model_extrusion_moves_parsed": 281744,
+      "model_arcs_parsed": 127774,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 252,
+          "white_extrusion_moves": 2642,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 249,
+          "white_extrusion_moves": 2568,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1743,
+          "white_extrusion_moves": 2048,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 3
+    },
+    {
+      "plate": 4,
+      "name": "F4",
+      "model_extrusion_moves_parsed": 205502,
+      "model_arcs_parsed": 97217,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 99,
+          "white_extrusion_moves": 1250,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 103,
+          "white_extrusion_moves": 2441,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 745,
+          "white_extrusion_moves": 1368,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 5,
+      "name": "F5",
+      "model_extrusion_moves_parsed": 309795,
+      "model_arcs_parsed": 142937,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 216,
+          "white_extrusion_moves": 3183,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 209,
+          "white_extrusion_moves": 3290,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1503,
+          "white_extrusion_moves": 1824,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 6,
+      "name": "F6",
+      "model_extrusion_moves_parsed": 428163,
+      "model_arcs_parsed": 206238,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 508,
+          "white_extrusion_moves": 5618,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 511,
+          "white_extrusion_moves": 4417,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 2478,
+          "white_extrusion_moves": 3149,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 3
+    },
+    {
+      "plate": 7,
+      "name": "F7",
+      "model_extrusion_moves_parsed": 252481,
+      "model_arcs_parsed": 120778,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 202,
+          "white_extrusion_moves": 1424,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 203,
+          "white_extrusion_moves": 3490,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 792,
+          "white_extrusion_moves": 1860,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 8,
+      "name": "F8",
+      "model_extrusion_moves_parsed": 347787,
+      "model_arcs_parsed": 175624,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 412,
+          "white_extrusion_moves": 3346,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 413,
+          "white_extrusion_moves": 4093,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1934,
+          "white_extrusion_moves": 2480,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 9,
+      "name": "F9",
+      "model_extrusion_moves_parsed": 230387,
+      "model_arcs_parsed": 110409,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 107,
+          "white_extrusion_moves": 2309,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 108,
+          "white_extrusion_moves": 1682,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1668,
+          "white_extrusion_moves": 3311,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 10,
+      "name": "F10",
+      "model_extrusion_moves_parsed": 290485,
+      "model_arcs_parsed": 142037,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 175,
+          "white_extrusion_moves": 3502,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 180,
+          "white_extrusion_moves": 1895,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 2011,
+          "white_extrusion_moves": 4007,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 11,
+      "name": "F11",
+      "model_extrusion_moves_parsed": 252262,
+      "model_arcs_parsed": 122810,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 116,
+          "white_extrusion_moves": 2778,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 111,
+          "white_extrusion_moves": 2371,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1478,
+          "white_extrusion_moves": 1637,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 12,
+      "name": "F12",
+      "model_extrusion_moves_parsed": 304597,
+      "model_arcs_parsed": 143733,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 181,
+          "white_extrusion_moves": 3077,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 179,
+          "white_extrusion_moves": 2802,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 2809,
+          "white_extrusion_moves": 5355,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 13,
+      "name": "F13",
+      "model_extrusion_moves_parsed": 343463,
+      "model_arcs_parsed": 167118,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 410,
+          "white_extrusion_moves": 3675,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 412,
+          "white_extrusion_moves": 3781,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 2153,
+          "white_extrusion_moves": 2624,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 14,
+      "name": "F14",
+      "model_extrusion_moves_parsed": 271651,
+      "model_arcs_parsed": 131291,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 168,
+          "white_extrusion_moves": 2106,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 168,
+          "white_extrusion_moves": 2811,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1815,
+          "white_extrusion_moves": 3627,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 15,
+      "name": "F15",
+      "model_extrusion_moves_parsed": 359892,
+      "model_arcs_parsed": 176642,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 430,
+          "white_extrusion_moves": 3551,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 431,
+          "white_extrusion_moves": 3959,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 2104,
+          "white_extrusion_moves": 2657,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 16,
+      "name": "F16",
+      "model_extrusion_moves_parsed": 275615,
+      "model_arcs_parsed": 122873,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 202,
+          "white_extrusion_moves": 2738,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 200,
+          "white_extrusion_moves": 2906,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1299,
+          "white_extrusion_moves": 2799,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 17,
+      "name": "F17",
+      "model_extrusion_moves_parsed": 207388,
+      "model_arcs_parsed": 99989,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 100,
+          "white_extrusion_moves": 801,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 97,
+          "white_extrusion_moves": 2719,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 455,
+          "white_extrusion_moves": 620,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 18,
+      "name": "F18",
+      "model_extrusion_moves_parsed": 335933,
+      "model_arcs_parsed": 154332,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 278,
+          "white_extrusion_moves": 3349,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 280,
+          "white_extrusion_moves": 3548,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1709,
+          "white_extrusion_moves": 3653,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 4
+    },
+    {
+      "plate": 19,
+      "name": "F19",
+      "model_extrusion_moves_parsed": 356734,
+      "model_arcs_parsed": 179531,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 422,
+          "white_extrusion_moves": 3876,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 423,
+          "white_extrusion_moves": 3485,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 2214,
+          "white_extrusion_moves": 2729,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 20,
+      "name": "F20",
+      "model_extrusion_moves_parsed": 259956,
+      "model_arcs_parsed": 127187,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 338,
+          "white_extrusion_moves": 3235,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 338,
+          "white_extrusion_moves": 2360,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 1590,
+          "white_extrusion_moves": 1951,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 21,
+      "name": "M1",
+      "model_extrusion_moves_parsed": 116810,
+      "model_arcs_parsed": 64194
+    },
+    {
+      "plate": 22,
+      "name": "M2",
+      "model_extrusion_moves_parsed": 115858,
+      "model_arcs_parsed": 63527
+    },
+    {
+      "plate": 23,
+      "name": "M3",
+      "model_extrusion_moves_parsed": 150246,
+      "model_arcs_parsed": 85390
+    },
+    {
+      "plate": 24,
+      "name": "M4",
+      "model_extrusion_moves_parsed": 203816,
+      "model_arcs_parsed": 120619
+    },
+    {
+      "plate": 25,
+      "name": "M5",
+      "model_extrusion_moves_parsed": 109770,
+      "model_arcs_parsed": 63434
+    },
+    {
+      "plate": 26,
+      "name": "M6",
+      "model_extrusion_moves_parsed": 135815,
+      "model_arcs_parsed": 79413
+    },
+    {
+      "plate": 27,
+      "name": "Backers 1, 3, 5, 7",
+      "model_extrusion_moves_parsed": 29055,
+      "model_arcs_parsed": 3083
+    },
+    {
+      "plate": 28,
+      "name": "Backers 2, 4, 6, 8",
+      "model_extrusion_moves_parsed": 29060,
+      "model_arcs_parsed": 3260
+    },
+    {
+      "plate": 29,
+      "name": "B1-B4 and 32 Retainers",
+      "model_extrusion_moves_parsed": 321589,
+      "model_arcs_parsed": 126534
+    },
+    {
+      "plate": 30,
+      "name": "White wood and blue edge test",
+      "model_extrusion_moves_parsed": 23150,
+      "model_arcs_parsed": 8984,
+      "surface_color_checks": [
+        {
+          "z_mm": 13.2,
+          "blue_extrusion_moves": 22,
+          "white_extrusion_moves": 360,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "blue_extrusion_moves": 24,
+          "white_extrusion_moves": 357,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        },
+        {
+          "z_mm": 13.6,
+          "blue_extrusion_moves": 98,
+          "white_extrusion_moves": 192,
+          "blue_centerline_length_outside_mask_plus_0_03_mm": 0.0,
+          "max_sampled_blue_centerline_outside_mm": 0.0,
+          "white_centerline_length_in_blue_core_mm": 0.0
+        }
+      ],
+      "blue_mask_regions": 2
+    },
+    {
+      "plate": 31,
+      "name": "Copper silk test",
+      "model_extrusion_moves_parsed": 45776,
+      "model_arcs_parsed": 23326
+    }
+  ],
+  "summary": {
+    "unique_curve_findings": 0,
+    "affected_plates": [],
+    "blue_edge_findings": 0,
+    "plates_parsed": 31,
+    "model_extrusions_parsed": 7148546,
+    "blue_white_layers_checked": 63,
+    "surface_color_checks_passed": true,
+    "cosmetic_review_passed": true,
+    "production_artifacts_modified": false
+  }
+}

@@ -16,9 +16,15 @@ The project includes editable models, local infill and color modifiers, thumbnai
 
 The [four-page part and plate map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf) still describes the unchanged production assignments. See the [test guide](../../stl/Dara-Print-Checks/README.md) for the two material tests.
 
+## Curve repair
+
+All 12 reviewed bends on F1, F2, F6, F8, F13, F15, and F19 have been smoothed in the native CAD. The five fabric-facing boundaries and their blue offsets were updated together. Maximum outline adjustment is **0.305 mm**. The other 32 production STLs, joints, hardware interfaces, photo clearance, plate placements, and slicing settings are preserved.
+
+All 31 plates were re-sliced. The [final repair review](../../review/curve-repair/README.md) includes before/after curves, actual saved toolpath close-ups at all 12 locations, and passing geometry and color-path audits. Bambu's white diamond symbols are seam markers; they do not specify white extrusion in the blue stripe. Plate 30 remains the physical finish and purge check.
+
 ## Flush blue ribbon edging
 
-The white rails now carry a **1.5 mm-wide Azurite blue thread**, with a **1.25 mm white gap** from the wood-facing edge. The blue ends level with the white face: its modifier occupies **Z=12.9-13.5 mm**. It changes filament assignment within the existing solid; the frame geometry, joints, photo recesses and normal STL files keep their dimensions.
+The white rails carry a **1.5 mm-wide Azurite blue thread**, with a **1.25 mm white gap** from the wood-facing edge. The blue ends level with the white face: its modifier occupies **Z=12.9-13.5 mm**. The color modifier assigns filament within the solid. Its path follows the repaired outline described above.
 
 The path is generated on the continuous assembled artwork before clipping into F1-F20, so it does not outline manufacturing seams. See the [actual CAD color map](../../review/blue-ribbon-edge/assembly-color-map.png) and [design record](../../review/blue-ribbon-edge/design.json). Plate 30 includes the same line on both white rails for a finish/purge check.
 
@@ -51,40 +57,27 @@ Wood modifiers follow the recessed backing, threads, and raised crossings at Z=8
 - Original rear-down orientations and 100% scale are retained. Backers print four per plate, by layer, without supports or brim. Tight frame/M plates retain their 1 mm brim and zero extra support-base expansion.
 - Prime towers remain clear of the pieces. Flushing into objects, infill, and supports is disabled.
 
-All 31 plates finished slicing in Bambu Studio 02.08.02.61. The independent audit checked 7,356,694 extrusion moves including bead widths, brims, support, and towers. Minimum bed-edge clearance is **0.673 mm**. The only slicer notices concern unsupported traditional timelapse on the single-color plates; leave timelapse off for those plates.
+All 31 plates finished slicing in Bambu Studio 02.08.02.61. The independent audit checked 7,347,762 extrusion moves including bead widths, brims, support, and towers. Minimum bed-edge clearance is **0.673 mm**. The only slicer notices concern unsupported traditional timelapse on the single-color plates; leave timelapse off for those plates.
 
 | Material | All 31 plates, including support and purge/towers |
 | --- | ---: |
-| White | 2761.14 g |
+| White | 2761.15 g |
 | Wood tan | 222.40 g |
 | Copper silk | 432.50 g |
 | Azurite blue | 28.67 g |
 
-Production plates 1-29: **3,402.99 g; 126 h 57 min**. Plate 30: **18.44 g; 0 h 59 min**. Plate 31: **23.28 g; 1 h 10 min**. Total: **3,444.71 g; 129 h 7 min**. These are slicer estimates.
+Production plates 1-29: **3,403.00 g; 126 h 57 min**. Plate 30: **18.44 g; 0 h 59 min**. Plate 31: **23.28 g; 1 h 10 min**. Total: **3,444.72 g; 129 h 7 min**. These are slicer estimates.
 
 [project-validation.json](project-validation.json) records the final hash, source hashes, quantities, plate positions, settings, and slice estimates. [final-review.json](final-review.json) independently verifies the geometry, 74 reinforcement modifiers, 21 wood and 21 blue modifiers, filament assignments, and saved toolpaths. All 41 normal meshes match their source STLs within 0.0001 mm. [PRINT-READINESS.md](PRINT-READINESS.md) retains the hardware and assembly guide.
 
 ## Rebuilding and checking
 
-For this color revision, retain the preceding **three-color** 31-plate project and validation report under `.work/blue-ribbon-edge/` as `baseline.3mf` and `baseline.json`. The CAD and printable STLs do not need to be exported again.
-
-```powershell
-python scripts/add_blue_ribbon_edge.py
-```
-
-Open `.work/blue-ribbon-edge/blue-edge.3mf` in Bambu Studio, **Slice all**, **Save Project As** `.work/blue-ribbon-edge/models.3mf`, and **Export all sliced file** to `.work/blue-ribbon-edge/models.gcode.3mf` from that same project. Combine, audit and publish:
-
-```powershell
-python scripts/combine_ams_slices.py --models .work/blue-ribbon-edge/models.3mf --slices .work/blue-ribbon-edge/models.gcode.3mf --baseline .work/blue-ribbon-edge/staged.json --output .work/blue-ribbon-edge/complete.3mf
-python scripts/validate_print_project.py --project .work/blue-ribbon-edge/complete.3mf --baseline .work/blue-ribbon-edge/complete.json --report .work/blue-ribbon-edge/audit.json
-python scripts/publish_blue_ribbon_edge.py
-```
-
-The publishing script requires a matching successful audit and refuses to replace an unrelated newer production file. Earlier weave and rabbet scripts describe their own geometry revisions; running them alone does not recreate the blue edging.
+The [curve repair record](../../review/curve-repair/README.md#rebuilding-this-revision) documents the current native export, modifier refresh, all-plate slice, and publication sequence. It uses the preserved pre-repair four-color project under `.work/curve-repair/`. Earlier weave, rabbet, and blue-edge scripts describe their own historical revisions; running their publication steps alone does not recreate this repaired project.
 
 To audit the published artifacts without changing the project:
 
 ```powershell
-python -m unittest discover -s scripts -p test_validate_print_project.py
+python -m unittest discover -s scripts -p 'test_*.py'
 python scripts/validate_print_project.py
+python scripts/review_curve_artifacts.py --output working/review/curve-repair/after --repaired-findings working/review/curve-artifacts/review.json
 ```

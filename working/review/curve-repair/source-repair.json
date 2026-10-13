@@ -1,0 +1,144 @@
+{
+  "original_source_sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994",
+  "method": "Gaussian local fairing, sigma 2.5 mm, quintic taper between 7 and 14 mm, 0.25 mm sampling; shared rail/fabric edges updated together.",
+  "findings_repaired": [
+    {
+      "id": "C01",
+      "assembly_xy_mm": [
+        -160.7955,
+        420.74925
+      ],
+      "plate": 1,
+      "affects_blue_edge": true,
+      "changed_area_mm2": 0.6684074791569347,
+      "max_boundary_shift_mm": 0.21957900721337936
+    },
+    {
+      "id": "C02",
+      "assembly_xy_mm": [
+        -178.512,
+        434.25
+      ],
+      "plate": 1,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 0.49058079587159675,
+      "max_boundary_shift_mm": 0.13087226965293133
+    },
+    {
+      "id": "C03",
+      "assembly_xy_mm": [
+        169.72125,
+        414.942
+      ],
+      "plate": 2,
+      "affects_blue_edge": true,
+      "changed_area_mm2": 0.6866294792731928,
+      "max_boundary_shift_mm": 0.10556782314274282
+    },
+    {
+      "id": "C04",
+      "assembly_xy_mm": [
+        202.53674999999998,
+        347.21175
+      ],
+      "plate": 2,
+      "affects_blue_edge": true,
+      "changed_area_mm2": 0.9236368912618984,
+      "max_boundary_shift_mm": 0.1404275089239558
+    },
+    {
+      "id": "C05",
+      "assembly_xy_mm": [
+        45.05925,
+        451.8075
+      ],
+      "plate": 2,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 1.2773003936314626,
+      "max_boundary_shift_mm": 0.3032330045123745
+    },
+    {
+      "id": "C06",
+      "assembly_xy_mm": [
+        -434.27324999999996,
+        178.49775
+      ],
+      "plate": 6,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 0.4776557752323556,
+      "max_boundary_shift_mm": 0.1324808592909038
+    },
+    {
+      "id": "C07",
+      "assembly_xy_mm": [
+        354.0795,
+        230.00400000000002
+      ],
+      "plate": 8,
+      "affects_blue_edge": true,
+      "changed_area_mm2": 0.7606664498762548,
+      "max_boundary_shift_mm": 0.11036498168703333
+    },
+    {
+      "id": "C08",
+      "assembly_xy_mm": [
+        434.25600000000003,
+        178.49775
+      ],
+      "plate": 8,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 0.4938068182254007,
+      "max_boundary_shift_mm": 0.13196407107576172
+    },
+    {
+      "id": "C09",
+      "assembly_xy_mm": [
+        -434.27324999999996,
+        -178.49775
+      ],
+      "plate": 13,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 0.4639006734971412,
+      "max_boundary_shift_mm": 0.13422154386073418
+    },
+    {
+      "id": "C10",
+      "assembly_xy_mm": [
+        347.21475,
+        -202.53825
+      ],
+      "plate": 15,
+      "affects_blue_edge": true,
+      "changed_area_mm2": 0.9329202995762309,
+      "max_boundary_shift_mm": 0.14361097367107697
+    },
+    {
+      "id": "C11",
+      "assembly_xy_mm": [
+        451.81425,
+        -45.066
+      ],
+      "plate": 15,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 1.2775812401711757,
+      "max_boundary_shift_mm": 0.30356794146712734
+    },
+    {
+      "id": "C12",
+      "assembly_xy_mm": [
+        -45.076499999999996,
+        -451.8075
+      ],
+      "plate": 19,
+      "affects_blue_edge": false,
+      "changed_area_mm2": 1.2987833191710465,
+      "max_boundary_shift_mm": 0.30466756136093015
+    }
+  ],
+  "max_boundary_shift_mm": 0.30466756136093015,
+  "changed_outline_area_mm2": 9.751869618138166,
+  "changed_area_outside_reviewed_regions_mm2": 3.1929807080939884e-09,
+  "outline_bounds_unchanged": true,
+  "isolated_curve_findings_after": 0,
+  "native_feature_code_unchanged": true
+}

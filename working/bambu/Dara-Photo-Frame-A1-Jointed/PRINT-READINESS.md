@@ -1,10 +1,12 @@
 # Print review - 2026-10-13
 
-**The revised project passes the digital audit.** The user has printed the earlier hardware and lap tests and reports that the backer left insufficient photo room, possibly due to support roughness. The preceding clearance revision deepened the rabbet from **2.0 to 2.4 mm**. With the existing 1.6 mm backer, 0.8 mm remains for the photo and surface clearance. Physical fit remains unverified. This color revision adds a flush 1.5 mm Azurite blue edge thread to the white ribbon, preserving that geometry.
+**The 12 identified curve defects are repaired, and all 31 plates have been re-sliced.** The [repair review](../../review/curve-repair/README.md) documents the corrections on plates 1, 2, 6, 8, 13, 15, and 19. The final geometry and cosmetic audits pass: no remaining isolated bends above the review threshold, no blue paths outside their masks, and no white paths crossing the blue core on any of the 63 blue-bearing layers checked. Physical surface finish remains to be tested on plate 30.
+
+The user has printed the earlier hardware and lap tests and reports that the backer left insufficient photo room, possibly due to support roughness. The preceding clearance revision deepened the rabbet from **2.0 to 2.4 mm**. With the existing 1.6 mm backer, 0.8 mm remains for the photo and surface clearance. Physical fit remains unverified. The flush 1.5 mm Azurite blue edge thread is retained. This curve repair changes only the reviewed outline neighborhoods, with a maximum boundary shift of 0.305 mm; joints, rabbets, and hardware interfaces remain unchanged.
 
 Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). Plate **30** contains only the **68.45 x 24 x 13.5 mm** white/wood/blue sample from F7. Plate **31** contains only **Test-M-Letter**, with the copper Generic PLA Silk profile and 55 C bed. The optional standalone [photo-frame fit coupon](../../stl/Dara-Print-Checks/Test-Photo-Frame.stl) also has the deeper recess; the material test plates remain unchanged in purpose.
 
-The alternating 0.3 mm weave crossing pads are preserved. The [rabbet comparison](../../review/rabbet-clearance/geometry-verification.json) verifies all 20 frame sections: only the recess depth changes, with geometry outside Z=2.0-2.4 mm unchanged within numerical tolerance. The M, backer, wall-block and retainer STL files are byte-identical to the preceding revision. Production placements and saved material settings are retained.
+The alternating 0.3 mm weave crossing pads are preserved. The historical [rabbet comparison](../../review/rabbet-clearance/geometry-verification.json) records the preceding recess-depth change. The current [curve geometry comparison](../../review/curve-repair/geometry-verification.json) verifies all 39 production exports: only seven frame sections change, and all 32 other STLs are byte-identical to the preceding revision. Production placements and saved material settings are retained.
 
 ## Saved-file checks
 
@@ -12,8 +14,8 @@ The alternating 0.3 mm weave crossing pads are preserved. The [rabbet comparison
 - All 70 production pieces were checked in their assembled positions, including lap order and mating interfaces.
 - All 41 normal meshes in the 3MF match their source geometry within 0.0001 mm. The 74 reinforcement modifiers, 21 wood modifiers and 21 blue modifiers were checked. Blue paths were compared with the continuous CAD edge offsets.
 - Wood occupies layers 43-50 on the frame and short test, with eight wood/white color changes. Blue occupies layers 66-68 only, after the wood is complete. Total changes are 11 per frame/test plate, or 12 where taller white M locating pins require a final return to white. Plate 31 uses copper only, with no filament changes and a 55 C bed throughout printing; plate 30 uses a 65 C bed.
-- All 31 saved toolpaths pass the extrusion-bounds audit: 7,356,694 checked moves and 0.673 mm minimum bed-edge clearance. Printer purge/wipe/parking routines are outside that model-path check.
-- Estimated production use: 3,402.99 g and 126 h 57 min. Weave test: 18.44 g and 0 h 59 min. Copper test: 23.28 g and 1 h 10 min.
+- All 31 saved toolpaths pass the extrusion-bounds audit: 7,347,762 checked moves and 0.673 mm minimum bed-edge clearance. Printer purge/wipe/parking routines are outside that model-path check.
+- Estimated production use: 3,403.00 g and 126 h 57 min. Weave test: 18.44 g and 0 h 59 min. Copper test: 23.28 g and 1 h 10 min.
 
 The matching report is [final-review.json](final-review.json). Inspect the weave sample for crossing detail, both blue edge lines, clean white beside the blue, and surface finish. Map slot 4 to the Azurite spool. The lines finish flush with the white rails; no assembly of separate thread inserts is needed. The separate copper sample checks the silk finish using the same settings as the M plates. The digital review does not record physical print results for these revised samples.
 
@@ -50,8 +52,9 @@ pass does not establish a safe load rating for the completed hanging.
 From the repository root, with numpy, trimesh and manifold3d available:
 
 ```powershell
-python -m unittest discover -s scripts -p test_validate_print_project.py
+python -m unittest discover -s scripts -p 'test_*.py'
 python scripts/validate_print_project.py
+python scripts/review_curve_artifacts.py --output working/review/curve-repair/after --repaired-findings working/review/curve-artifacts/review.json
 ```
 
 This audits the existing saved artifacts and writes `final-review.json`; it does

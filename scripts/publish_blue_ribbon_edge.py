@@ -6,8 +6,8 @@ import zipfile
 from validate_print_project import ROOT, PACKAGE, digest
 
 
-def main():
-    work = ROOT / '.work/blue-ribbon-edge'
+def main(work=None, revision_key='blue_ribbon_edge'):
+    work = work or ROOT / '.work/blue-ribbon-edge'
     project = PACKAGE / 'Dara-Photo-Frame-A1-Complete.3mf'
     candidate = work / 'complete.3mf'
     audit = json.loads((work / 'audit.json').read_text())
@@ -15,7 +15,7 @@ def main():
     summary = audit['summary']
     assert summary['digital_checks_passed'] and summary['plates'] == 31
     assert audit['project_sha256'] == base['project_sha256'] == digest(candidate)
-    assert digest(project) in (base['blue_ribbon_edge']['prior_project_sha256'], digest(candidate))
+    assert digest(project) in (base[revision_key]['prior_project_sha256'], digest(candidate))
     assert len(audit['color_modifiers_verified']) == 42
     production = audit['plates'][:29]
     colors = base['settings']['filament_colour']
@@ -32,7 +32,8 @@ def main():
         production_estimated_seconds=sum(p['estimated_seconds'] for p in production),
         production_filament_weights_g=[round(sum(p['filament_weights_g'][i] if i < len(p['filament_weights_g']) else 0
                                                  for p in production), 2) for i in range(len(colors))],
-        validation_note='Flush Azurite ribbon edging; independent geometry, color-height and toolpath audit passed.',
+        validation_note=('Locally repaired source curves; ' if revision_key == 'curve_repair' else 'Flush Azurite ribbon edging; ')+
+                        'independent geometry, color-height and toolpath audit passed.',
         plates=audit['plates'])
     base['bambu_studio_round_trip'] = dict(normal_meshes_match_source=True, settings_verified=True,
         solid_modifiers_verified=audit['solid_modifiers_verified'], color_modifiers_verified=audit['color_modifiers_verified'],

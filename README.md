@@ -5,6 +5,13 @@
 Concept rendering: white ribbon with a fine Azurite blue edge thread, wood-tan
 woven fabric, and a copper manuscript M on a dark blue wall.
 
+**Curve repairs complete: all 12 identified bends are corrected.** The
+[repair review](working/review/curve-repair/README.md) documents the local changes
+on plates 1, 2, 6, 8, 13, 15, and 19. All 31 plates have been re-sliced and pass
+the geometry, bed-boundary, curve, and blue/white toolpath checks. The white
+diamonds in Bambu Preview are seam markers. Print plate 30 to check the actual
+surface finish and blue-to-white color transition before the production plates.
+
 The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
 records the digital checks. The user has printed the earlier hardware/lap
 test pieces and reported insufficient photo clearance. The jointed model now

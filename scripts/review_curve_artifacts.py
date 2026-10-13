@@ -19,6 +19,7 @@ import trimesh
 from shapely import affinity, points, distance
 from shapely.geometry import Point, Polygon, LineString, GeometryCollection
 import manifold3d
+from mesh_sections import mesh_slice
 
 
 def curve_candidates(shape, threshold=6):
@@ -214,7 +215,8 @@ def main():
     affected=sorted({l['plate'] for r in findings for l in r['locations']})
     fig.suptitle(f'Curve review - {len(findings)} locations on {len(affected)} frame plates',fontsize=16)
     fig.tight_layout();fig.savefig(out/'assembly-findings.png',dpi=180);plt.close(fig)
-    reference=ROOT/'reference/Dara-Clean-Reference.scad'
+    reference=ROOT/'working/Dara-Clean-Artwork.scad'
+    if not reference.exists():reference=ROOT/'reference/Dara-Clean-Reference.scad'
     reference_knot=artwork(reference.read_text(),'knot_outline')
     report=dict(project_sha256=digest(project),source_cad_sha256=digest(CAD),
                 reference_cad_sha256=digest(reference),
@@ -236,7 +238,7 @@ def main():
                 local=(in_print_coordinates(blue,placements[number-1]) if number<=20 else coupon_shape(blue,cad))
                 mesh=meshes[name] if number<=20 else trimesh.load_mesh(ROOT/'working/stl/Dara-Print-Checks'/f'{name}.stl')
                 body=manifold3d.Manifold(manifold3d.Mesh64(mesh.vertices,mesh.faces.astype(np.uint64)))
-                footprint=shape_from_section(body.slice(13.2))
+                footprint=mesh_slice(mesh,13.2)
                 mask=affinity.translate(local.intersection(footprint),*origin)
                 core=mask.buffer(-.3)
                 layers=[]

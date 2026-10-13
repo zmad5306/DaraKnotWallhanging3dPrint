@@ -4,12 +4,12 @@ Open the [complete Bambu project](../../bambu/Dara-Photo-Frame-A1-Jointed/Dara-P
 
 | Plate | Piece | Materials and settings | Estimate |
 | --- | --- | --- | --- |
-| 30 | Test-Weave-Full-Width | White/wood/Azurite blue Generic PLA; 65 C bed | 18.44 g; 0 h 59 min |
+| 30 | Test-Weave-Full-Width | White/wood/Azurite blue Generic PLA; 65 C bed | 18.42 g; 0 h 59 min |
 | 31 | Test-M-Letter | Copper Generic PLA Silk; 55 C bed | 23.28 g; 1 h 10 min |
 
 Both use the A1, 0.4 mm nozzle, 0.2 mm layers, four walls, and 15% gyroid. Copper retains its local solid screw zone, silk flow/retraction settings, and 40 mm/s outer-wall/top-surface speeds. It prints with zero filament changes on its own plate.
 
-The weave coupon is **68.45 mm wide x 24 mm long x 13.5 mm high**, cropped from the restored F7 mesh. Both white side rails remain intact; only the short ends are cut. The recessed backing and raised threads include the alternating **3.3 x 1.5 x 0.3 mm crossing pads**. Wood is assigned at Z=8.4-9.9 mm, layers 43-50, with eight wood/white color changes. A **1.5 mm blue line**, inset **1.25 mm** from the weave, finishes flush on each rail. Blue uses slot 4 and occupies layers 66-68 (three more changes, **11 total**). Inspect the actual texture, blue opacity and clean white boundaries in Preview's Filament view and on the printed sample.
+The weave coupon is **68.36 x 24.00 x 13.50 mm**, cropped from the clean reconstructed F7 mesh. Both white side rails remain intact; only the short ends are cut. The recessed backing and raised threads include the alternating **3.3 x 1.5 x 0.3 mm crossing pads**. Wood is assigned at Z=8.4-9.9 mm, layers 43-50, with eight wood/white color changes. A **1.5 mm blue line**, inset **1.25 mm** from the weave, finishes flush on each rail. Blue uses slot 4 and occupies layers 66-68 (three more changes, **11 total**). Inspect the actual texture, blue opacity and clean white boundaries in Preview's Filament view and on the printed sample.
 
 ![Short weave test on plate 30](../../bambu/Dara-Photo-Frame-A1-Jointed/fit-test-plate.png)
 

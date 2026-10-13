@@ -1,6 +1,6 @@
 {
   "prior_project_sha256": "f8001353e7dd5d2815ad2c13cc596b97c377addd0b2c02ec06b673f97aa24dd7",
-  "source_cad_sha256": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d",
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
   "filament_slot": 4,
   "filament_color": "#295D8A",
   "filament_name": "SUNLU PLA Metal Azurite",
@@ -16,277 +16,277 @@
   "new_color_modifiers": 21,
   "masks": [
     {
+      "part": "F20",
+      "area_mm2": 791.776608878522,
+      "volume_mm3": 475.06596532712024,
+      "source_stl_sha256": "94305e03ec2021eb2e9a1b3c9d3332608a58a328f54624d661d5d32474330859",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 3296,
+      "connected_regions": 2,
+      "printable_geometry_unchanged": false
+    },
+    {
+      "part": "F14",
+      "area_mm2": 997.4823502442614,
+      "volume_mm3": 598.4894101465605,
+      "source_stl_sha256": "4a666e2856c50ea397dfb0985e46ef51b12663146aa7a1852c4466004bfe3d02",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 2184,
+      "connected_regions": 4,
+      "printable_geometry_unchanged": false
+    },
+    {
+      "part": "F15",
+      "area_mm2": 1104.281158034522,
+      "volume_mm3": 662.5686948207195,
+      "source_stl_sha256": "8de80c24e007ed07adfebf43d9521b01e44c1a44e7277ae568ad18f4c9b27dbe",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 3980,
+      "connected_regions": 2,
+      "printable_geometry_unchanged": false
+    },
+    {
+      "part": "F17",
+      "area_mm2": 885.216755298638,
+      "volume_mm3": 531.1300531791818,
+      "source_stl_sha256": "4f4aa316681b85ede08410570ed26ca097eb8258343eae66ebd37e5c6e18b16a",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 1612,
+      "connected_regions": 4,
+      "printable_geometry_unchanged": false
+    },
+    {
+      "part": "F18",
+      "area_mm2": 1151.554508688202,
+      "volume_mm3": 690.9327052129198,
+      "source_stl_sha256": "849de0edbf29b7f3ae134d12a32ca2bb1b06002ef795d3fa706714b2be9d8cc8",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 3104,
+      "connected_regions": 4,
+      "printable_geometry_unchanged": false
+    },
+    {
+      "part": "F19",
+      "area_mm2": 1098.9364468661881,
+      "volume_mm3": 659.3618681197112,
+      "source_stl_sha256": "535987584957cd49fd4ac8b7af00bef8499749ed63638a5219c9b267e3e09347",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 3936,
+      "connected_regions": 2,
+      "printable_geometry_unchanged": false
+    },
+    {
+      "part": "F16",
+      "area_mm2": 981.6826245673593,
+      "volume_mm3": 589.0095747404151,
+      "source_stl_sha256": "655b746017aabaca6a5ff5a737772290781a23adb476449e72d6fcf46242e9af",
+      "z_mm": [
+        12.9,
+        13.5
+      ],
+      "triangles": 2472,
+      "connected_regions": 4,
+      "printable_geometry_unchanged": false
+    },
+    {
       "part": "Test-Weave-Full-Width",
-      "area_mm2": 72.00266754627228,
-      "volume_mm3": 43.201600527763276,
-      "source_stl_sha256": "cb89cfee4da29e460fbab485656f59774ef90a1045c98258dc057beaaa6dd9b4",
+      "area_mm2": 72.00197777152061,
+      "volume_mm3": 43.201186662912356,
+      "source_stl_sha256": "e70e7f84ae721c08c69ee1a9011ee9e1174af03569765598df16d08444769bb4",
       "z_mm": [
         12.9,
         13.5
       ],
       "triangles": 24,
       "connected_regions": 2,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
-      "part": "F17",
-      "area_mm2": 884.9661488333848,
-      "volume_mm3": 530.979689300031,
-      "source_stl_sha256": "f5f5f5e0b94b1d7966da4113840d7dec99118796c1ddfef24a0a54ef0339d849",
+      "part": "F10",
+      "area_mm2": 1117.4516568947752,
+      "volume_mm3": 670.4709941368646,
+      "source_stl_sha256": "81793bffe2d3361a0e707260ef06bc76791a9654e99591a3348cfa36937b7f2e",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1080,
+      "triangles": 2224,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
-      "part": "F18",
-      "area_mm2": 1151.2365964402493,
-      "volume_mm3": 690.7419578641501,
-      "source_stl_sha256": "bcfff4dd9d92d19db695dba4efe4dbe9fa454f4cac760c33d1cd4103f4653ea7",
+      "part": "F4",
+      "area_mm2": 911.9470083845985,
+      "volume_mm3": 547.1682050307608,
+      "source_stl_sha256": "6c34a07da40f95048ed5ddb930219075fcaf8f3ad4687f025cb05b1e31daa2f5",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1532,
+      "triangles": 1600,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
-      "part": "F9",
-      "area_mm2": 848.8742837401041,
-      "volume_mm3": 509.3245702440607,
-      "source_stl_sha256": "f752619cfe2f2053b02e161a921bad876d1558811b6f082ae9c7315028dc551c",
+      "part": "F5",
+      "area_mm2": 1119.4495590069077,
+      "volume_mm3": 671.6697354041468,
+      "source_stl_sha256": "0b712938a9e82cec097d1a7df87529af3ce57f96d86092262fbc2394e21ddd8d",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1080,
+      "triangles": 2624,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
-      "part": "F16",
-      "area_mm2": 981.2930432786844,
-      "volume_mm3": 588.7758259672094,
-      "source_stl_sha256": "347fff730501b5edbd3496ddbf5ee0781ca1554b2461abb3eb11b49daaf9f6e3",
+      "part": "F6",
+      "area_mm2": 1534.6398283452982,
+      "volume_mm3": 920.7838970071751,
+      "source_stl_sha256": "5091b5241f83035355730a195a6585badb5f91f9289b239eb8461d9c16647aea",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1344,
-      "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "triangles": 5068,
+      "connected_regions": 3,
+      "printable_geometry_unchanged": false
     },
     {
       "part": "F12",
-      "area_mm2": 1170.663293136055,
-      "volume_mm3": 702.3979758816355,
-      "source_stl_sha256": "c7a13f8b01991662897767bfa6f30584e53f76222d0355cbca679f3ad5ad553c",
+      "area_mm2": 1171.1288026299442,
+      "volume_mm3": 702.6772815779683,
+      "source_stl_sha256": "5742b5ea7e2abcaf057980fcc2d28b4daac93c1e8edfbd9cc40da2645353f8dc",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1592,
+      "triangles": 2224,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
-    },
-    {
-      "part": "F11",
-      "area_mm2": 930.9091158220052,
-      "volume_mm3": 558.5454694932032,
-      "source_stl_sha256": "d5e51a11f25d72d8c31ee843bd0430fa548968e929558e55eacbfcb61a4216bc",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 1108,
-      "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
       "part": "F13",
-      "area_mm2": 1131.4357483427061,
-      "volume_mm3": 678.8614490056258,
-      "source_stl_sha256": "d554e64a95be7c77e4abba4c3d7932c0e7e80b84122986a5cbd0f84f88e4a0ea",
+      "area_mm2": 1131.4616295929288,
+      "volume_mm3": 678.8769777557594,
+      "source_stl_sha256": "aa5483b741d11853f78460eb5c06f12603e576662a0c6a00c847816efc357976",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1396,
+      "triangles": 3968,
       "connected_regions": 2,
       "printable_geometry_unchanged": false
     },
     {
-      "part": "F14",
-      "area_mm2": 996.9645443548741,
-      "volume_mm3": 598.1787266129226,
-      "source_stl_sha256": "918850ea9595adcd413b2ad0623e35b7058bd4e667cb407ddcc541347a45aa89",
+      "part": "F9",
+      "area_mm2": 848.9661495082438,
+      "volume_mm3": 509.3796897049451,
+      "source_stl_sha256": "2fc5f1f31e4f004a97f1edb0cb78d1a28d6a239ef175451caa61c10ebf5c174d",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1556,
+      "triangles": 1604,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
-      "part": "F10",
-      "area_mm2": 1117.2103320921,
-      "volume_mm3": 670.3261992552598,
-      "source_stl_sha256": "9dd187234bdff8637fd450ad6014765380868e13ce99f031d89bf78a489e0a7d",
+      "part": "F11",
+      "area_mm2": 930.9982408398355,
+      "volume_mm3": 558.5989445039021,
+      "source_stl_sha256": "db56bbb668a00e4c65d73c83c6d80f97c93ba39d498bb6ea39df901b1ef83dbc",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1440,
+      "triangles": 1640,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
-    },
-    {
-      "part": "F15",
-      "area_mm2": 1104.324674926539,
-      "volume_mm3": 662.5948049559244,
-      "source_stl_sha256": "bf4daa93a8b75b1d2b0883fd48e69221bcd31a0e8dc97235b46982ad4c572459",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 1672,
-      "connected_regions": 2,
       "printable_geometry_unchanged": false
     },
     {
       "part": "F7",
-      "area_mm2": 1019.8036601002865,
-      "volume_mm3": 611.882196060172,
-      "source_stl_sha256": "5d1b9acfc0a2376c75ea0b29a36d732faefbb84d9b9925f52b12605130ad3813",
+      "area_mm2": 1019.8832728826274,
+      "volume_mm3": 611.9299637295763,
+      "source_stl_sha256": "59b90f5a0b1ddd214d0360bdbfdf32ce263320e4e7c90e5d80cc899b780d9f35",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1508,
+      "triangles": 2228,
       "connected_regions": 4,
-      "printable_geometry_unchanged": true
+      "printable_geometry_unchanged": false
     },
     {
       "part": "F8",
-      "area_mm2": 1078.6922898222635,
-      "volume_mm3": 647.2153738933672,
-      "source_stl_sha256": "fded3dcbf813827b831a94016c1f99db41346cea5b059dbf501f0354abe529a2",
+      "area_mm2": 1078.5469638512782,
+      "volume_mm3": 647.1281783107626,
+      "source_stl_sha256": "5715a70ddad52487ac365ee69efc8bb3f6e21a8b9ff3f34ed40e8b6ace5d5021",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1660,
+      "triangles": 4104,
       "connected_regions": 2,
       "printable_geometry_unchanged": false
     },
     {
-      "part": "F3",
-      "area_mm2": 881.3251869459551,
-      "volume_mm3": 528.7951121675716,
-      "source_stl_sha256": "33339a07ffc9dcac3ec67cb8d969a1180afc6de8cdab8ffc5897b6e3950d7915",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 1100,
-      "connected_regions": 3,
-      "printable_geometry_unchanged": true
-    },
-    {
-      "part": "F4",
-      "area_mm2": 911.3850718330825,
-      "volume_mm3": 546.8310430998486,
-      "source_stl_sha256": "3467e8e62ea126c59d2538b681e75a4a00e4eed755b045c2f90b2916b1e339b8",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 1156,
-      "connected_regions": 4,
-      "printable_geometry_unchanged": true
-    },
-    {
-      "part": "F6",
-      "area_mm2": 1534.2382429498919,
-      "volume_mm3": 920.5429457699365,
-      "source_stl_sha256": "8929a5afb3474b9b7c3c91c93f2fb330ce93e1d7d34d924c8eff01e655c68995",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 2124,
-      "connected_regions": 3,
-      "printable_geometry_unchanged": false
-    },
-    {
       "part": "F1",
-      "area_mm2": 806.7433700758043,
-      "volume_mm3": 484.046022045482,
-      "source_stl_sha256": "18548b6ba5d0c2df20f6dab8870732f585008c7c18af594c5d9512dbe7948416",
+      "area_mm2": 806.7673095183429,
+      "volume_mm3": 484.0603857110055,
+      "source_stl_sha256": "b2ab6911703450e7a964d6c33318dae3f06aacbf2bed0ac06d33bf7b7c24b391",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1260,
+      "triangles": 2624,
       "connected_regions": 2,
       "printable_geometry_unchanged": false
     },
     {
       "part": "F2",
-      "area_mm2": 900.1252476102673,
-      "volume_mm3": 540.0751485661575,
-      "source_stl_sha256": "03674504c82f95dfecf143d8ecb08c572a0ba1239a3a7467e4123ff588e413d9",
+      "area_mm2": 900.0718741533678,
+      "volume_mm3": 540.0431244920238,
+      "source_stl_sha256": "b2c653dfd1ce56780628858afeb99141e955f9b1c27eeaa29fc483b46ee3e634",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1744,
+      "triangles": 3644,
       "connected_regions": 2,
       "printable_geometry_unchanged": false
     },
     {
-      "part": "F5",
-      "area_mm2": 1119.2029294429449,
-      "volume_mm3": 671.5217576657669,
-      "source_stl_sha256": "840a41c325be1d9dad99c10aa17db42d947df5d1b82bf7e178108ba067557ae0",
+      "part": "F3",
+      "area_mm2": 880.7215981724057,
+      "volume_mm3": 528.4329589034436,
+      "source_stl_sha256": "6144df51e6f57cc1b108369260d024bd86b3f16cfd0d7566d460df3043a099bc",
       "z_mm": [
         12.9,
         13.5
       ],
-      "triangles": 1412,
-      "connected_regions": 4,
-      "printable_geometry_unchanged": true
-    },
-    {
-      "part": "F19",
-      "area_mm2": 1098.964757495337,
-      "volume_mm3": 659.3788544972014,
-      "source_stl_sha256": "1a703f01fb38b13d5f3f327fe03a90811d0a6e861474ed970170de6d56e8e8a8",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 1488,
-      "connected_regions": 2,
+      "triangles": 2676,
+      "connected_regions": 3,
       "printable_geometry_unchanged": false
-    },
-    {
-      "part": "F20",
-      "area_mm2": 791.7988401087073,
-      "volume_mm3": 475.0793040652257,
-      "source_stl_sha256": "cb9d9d1ec4c2976c6e1f2df152021c07cf2c0ace44ab0cf02bee682832d18d4b",
-      "z_mm": [
-        12.9,
-        13.5
-      ],
-      "triangles": 1208,
-      "connected_regions": 2,
-      "printable_geometry_unchanged": true
     }
   ],
   "physical_tested": false,
@@ -303,5 +303,6 @@
     13.4,
     13.6
   ],
-  "curve_repair": "working/review/curve-repair/source-repair.json"
+  "curve_repair": "working/review/curve-repair/source-repair.json",
+  "clean_edges": "working/review/clean-edges/cad-rebuild.json"
 }

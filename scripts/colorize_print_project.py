@@ -21,6 +21,7 @@ import trimesh
 import manifold3d
 from shapely.geometry import Polygon, box
 from shapely import union_all
+from mesh_sections import mesh_cross_section
 
 PACKAGE = ROOT / 'working/bambu/Dara-Photo-Frame-A1-Jointed'
 COLORS = ['#FFFFFF', '#C2AB84', '#B87333']
@@ -79,7 +80,7 @@ def weave_modifier(mesh):
         # A one-micron inset removes zero-width contour contacts introduced
         # by CAD tessellation. It is far below the slicer's 0.012 mm mesh
         # resolution and keeps the modifier strictly inside the real surface.
-        section = (body.slice((bottom + top) / 2) ^ footprint_section).simplify(1e-4).offset(-.001).simplify(1e-5)
+        section = (mesh_cross_section(mesh,(bottom + top) / 2) ^ footprint_section).simplify(1e-4).offset(-.001).simplify(1e-5)
         sections.append(((bottom + top) / 2, section))
         if section.area() > 0:
             layer = section.extrude(top - bottom).translate([0, 0, bottom])
@@ -107,7 +108,7 @@ def weave_modifier(mesh):
     assert mask.is_volume, [(m.is_watertight, m.is_winding_consistent, m.volume, len(m.faces)) for m in layers]
     mask_body = manifold3d.Manifold(manifold3d.Mesh64(mask.vertices, mask.faces.astype(np.uint64)))
     for height, expected in sections:
-        actual = mask_body.slice(height)
+        actual = mesh_cross_section(mask,height)
         assert abs((actual - expected).area() + (expected - actual).area()) < .02
     return mask, {'modifier_volume_mm3': mask.volume, 'footprint_area_mm2': footprint.area, 'boundary_inset_mm': .001,
                   'printable_mesh_unchanged': True, 'follows_surface_relief': True}

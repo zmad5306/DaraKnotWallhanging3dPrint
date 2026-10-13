@@ -1,0 +1,411 @@
+{
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "native_feature_code_unchanged": true,
+  "outline_derived_partition_polygons_rebuilt": true,
+  "unchanged_stl_files": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "Retainer"
+  ],
+  "changed_stl_files": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "Backer1",
+    "Backer2",
+    "Backer3",
+    "Backer4",
+    "Backer5",
+    "Backer6",
+    "Backer7",
+    "Backer8"
+  ],
+  "parts": [
+    {
+      "part": "F1",
+      "symmetric_difference_mm3": 528.079440180347,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0013143419074982874,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 49,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0002748044749564157,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F2",
+      "symmetric_difference_mm3": 449.05998868975644,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0017080554889182414,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 48,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0004372473813669316,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F3",
+      "symmetric_difference_mm3": 432.76189366199276,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0013200195577664103,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 88,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0006126836502420068,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F4",
+      "symmetric_difference_mm3": 270.67226506468955,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.002580554668399264,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 48,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.000545487572686145,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F5",
+      "symmetric_difference_mm3": 473.27554163982944,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0024919677000671335,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 92,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0007727404616823139,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F6",
+      "symmetric_difference_mm3": 543.2693233627484,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.13127466136154603,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 46,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.000903271413955304,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F7",
+      "symmetric_difference_mm3": 378.7181567538922,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0015690435562735786,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 91,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0004947363053075491,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F8",
+      "symmetric_difference_mm3": 480.0170501674029,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0010194463527494972,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 46,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0002961202664215145,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F9",
+      "symmetric_difference_mm3": 246.5511139715599,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0031330493385864407,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 89,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0007926989402446956,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F10",
+      "symmetric_difference_mm3": 393.9326337715425,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.06710703598039845,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 83,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0005549146158320734,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F11",
+      "symmetric_difference_mm3": 404.38621227625094,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.004423720739782405,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 79,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.000843858536474467,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F12",
+      "symmetric_difference_mm3": 532.2838858991896,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0023306363956003134,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 84,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.000524357871472396,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F13",
+      "symmetric_difference_mm3": 460.1028744468884,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.002499100717943783,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 45,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0004921277271995353,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F14",
+      "symmetric_difference_mm3": 465.12767537889897,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0028552585937920596,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 84,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0006892681029085034,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F15",
+      "symmetric_difference_mm3": 526.3163896165065,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0016158875095725455,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 47,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0003437455682881703,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F16",
+      "symmetric_difference_mm3": 444.2159031127875,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.004052496154879151,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 88,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0008748043475874247,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F17",
+      "symmetric_difference_mm3": 245.2720254188771,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0037486741687844717,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 78,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0007669020344535173,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F18",
+      "symmetric_difference_mm3": 504.2783198376705,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0024119843910492115,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 91,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.000896061926596253,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F19",
+      "symmetric_difference_mm3": 638.8286334774695,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0014398550901262882,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 48,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.0003042194768896403,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "F20",
+      "symmetric_difference_mm3": 444.3431696759723,
+      "watertight": true,
+      "boolean_delta_outside_allowed_regions_mm3": 0.0013250818026124488,
+      "verification": "Original STL triangle-plane contours in every distinct vertex-height interval; reject changes wider than 0.002 mm outside derived regions.",
+      "cross_sections_checked": 48,
+      "max_roundoff_area_outside_allowed_regions_mm2": 0.00028261437592457656,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "M1",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "M2",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "M3",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "M4",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "M5",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "M6",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "Backer1",
+      "symmetric_difference_mm3": 33.64671082113751,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer2",
+      "symmetric_difference_mm3": 34.913837269040634,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer3",
+      "symmetric_difference_mm3": 47.859910044873814,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer4",
+      "symmetric_difference_mm3": 51.32918284304582,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer5",
+      "symmetric_difference_mm3": 48.77279639627793,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer6",
+      "symmetric_difference_mm3": 34.48605818886856,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer7",
+      "symmetric_difference_mm3": 35.71091334556722,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "Backer8",
+      "symmetric_difference_mm3": 47.86316816347787,
+      "watertight": true,
+      "thickness_unchanged": true
+    },
+    {
+      "part": "B1",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "B2",
+      "symmetric_difference_mm3": 1.3552527156068805e-20,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "B3",
+      "symmetric_difference_mm3": 1.3552527156068805e-20,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "B4",
+      "symmetric_difference_mm3": 1.3552527156068805e-20,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    },
+    {
+      "part": "Retainer",
+      "symmetric_difference_mm3": 0.0,
+      "watertight": true,
+      "byte_identical_to_prior": true
+    }
+  ],
+  "verified_inputs": {
+    "cad": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+    "baseline": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d",
+    "script": "b27df9cf4912cd12930a88c3468f107588b4c943c0c733172e8c24010821a4dc",
+    "mesh_sections": "f1b8566b924ca41aff0f52aae86161bf1ae06db836315a16e1c086f5a12c9f95",
+    "stls": {
+      "B1.stl": "d57485ce6e02911495166168fd3ba72c806a97a01e684a9191cad42f0a99cf06",
+      "B2.stl": "78b1d955b540b96a69e61b79433cef7d0d6613f74e19331b9e781aa3c1426451",
+      "B3.stl": "6ed5f4f1313c12db08b302d062ed5c9590de3ef731277f9fe8617d7c1fe87ac8",
+      "B4.stl": "eef79a64499214889de64f57408c50077c739757d03995f3f8deb5f19698cfcf",
+      "Backer1.stl": "8b4f83047e0a1b2d92d6a0ab2aa27880e9220ac8f1bbbcdff7bb31c2a164ab01",
+      "Backer2.stl": "ca67b4fb566969a8083ec33cf36b581639487162bd758b3dcb444f2dee2de1e9",
+      "Backer3.stl": "d6bc006258379c0779817551f092944053b3c5c35211664d3295847eb6ff6c74",
+      "Backer4.stl": "7aa181126be9e5bdc2b96e88d7141daed82051c5477a398c675e3d65b3ea8445",
+      "Backer5.stl": "f45092ff0a4c869990a19da32e5ddf709f63db5b98a9eee7c98fe18d3df57e18",
+      "Backer6.stl": "586b36724c47c655fc1583c5e4ee3d41c86fd93a9ff2c8cf78c1b6d1b582573f",
+      "Backer7.stl": "3eca557bd61aaf60259b3c469cbdfea1473b8c92b5aab89121e84bbf8bda4e13",
+      "Backer8.stl": "58f50b9ab9dc5f1b341a5b06836bc91d6c7abcfab442a2dd773ff9e5494fa6b4",
+      "F1.stl": "b2ab6911703450e7a964d6c33318dae3f06aacbf2bed0ac06d33bf7b7c24b391",
+      "F10.stl": "81793bffe2d3361a0e707260ef06bc76791a9654e99591a3348cfa36937b7f2e",
+      "F11.stl": "db56bbb668a00e4c65d73c83c6d80f97c93ba39d498bb6ea39df901b1ef83dbc",
+      "F12.stl": "5742b5ea7e2abcaf057980fcc2d28b4daac93c1e8edfbd9cc40da2645353f8dc",
+      "F13.stl": "aa5483b741d11853f78460eb5c06f12603e576662a0c6a00c847816efc357976",
+      "F14.stl": "4a666e2856c50ea397dfb0985e46ef51b12663146aa7a1852c4466004bfe3d02",
+      "F15.stl": "8de80c24e007ed07adfebf43d9521b01e44c1a44e7277ae568ad18f4c9b27dbe",
+      "F16.stl": "655b746017aabaca6a5ff5a737772290781a23adb476449e72d6fcf46242e9af",
+      "F17.stl": "4f4aa316681b85ede08410570ed26ca097eb8258343eae66ebd37e5c6e18b16a",
+      "F18.stl": "849de0edbf29b7f3ae134d12a32ca2bb1b06002ef795d3fa706714b2be9d8cc8",
+      "F19.stl": "535987584957cd49fd4ac8b7af00bef8499749ed63638a5219c9b267e3e09347",
+      "F2.stl": "b2c653dfd1ce56780628858afeb99141e955f9b1c27eeaa29fc483b46ee3e634",
+      "F20.stl": "94305e03ec2021eb2e9a1b3c9d3332608a58a328f54624d661d5d32474330859",
+      "F3.stl": "6144df51e6f57cc1b108369260d024bd86b3f16cfd0d7566d460df3043a099bc",
+      "F4.stl": "6c34a07da40f95048ed5ddb930219075fcaf8f3ad4687f025cb05b1e31daa2f5",
+      "F5.stl": "0b712938a9e82cec097d1a7df87529af3ce57f96d86092262fbc2394e21ddd8d",
+      "F6.stl": "5091b5241f83035355730a195a6585badb5f91f9289b239eb8461d9c16647aea",
+      "F7.stl": "59b90f5a0b1ddd214d0360bdbfdf32ce263320e4e7c90e5d80cc899b780d9f35",
+      "F8.stl": "5715a70ddad52487ac365ee69efc8bb3f6e21a8b9ff3f34ed40e8b6ace5d5021",
+      "F9.stl": "2fc5f1f31e4f004a97f1edb0cb78d1a28d6a239ef175451caa61c10ebf5c174d",
+      "M1.stl": "a1ac65ecc9efa0f9ff019774c3ad4017ffe037d7d037be126f27a2bc1db85493",
+      "M2.stl": "7a6e1de622362aca089b59b69cf5547d754e223fa4b2c373c951e81dbda6c873",
+      "M3.stl": "9fb787a78c2f6db4d92147d595a43cdb9c5698412be67a134be143f4c93611b8",
+      "M4.stl": "cc59e5104d99da8c236585060a44cc726058251718bad4c04c3b219a8d9e940a",
+      "M5.stl": "2e0a3fc707a95540663baee8e7a3b5230a8d88326c17dc83b869b07cda1088a3",
+      "M6.stl": "9a46f1cc005aad46459b600f3cae2a6d537151974b589e24e5660872369a1584",
+      "Retainer.stl": "21cb25e98fd1be36f96d9897551249770e826d8ef28ad8e3309342babc177ae3"
+    }
+  }
+}

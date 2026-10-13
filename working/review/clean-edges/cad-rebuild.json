@@ -1,0 +1,250 @@
+{
+  "primitive_source_sha256": "1f08ee4edd1284a51dc924e2b1790a2f8a57f6217304f02c4a6692c71a831947",
+  "method": "Complete tangent line/circle reconstruction; shared fabric edges and photo loops use identical canonical boundaries.",
+  "loops": 26,
+  "primitives": 320,
+  "max_chord_error_mm": 0.0019990925857515385,
+  "max_tangent_discontinuity_degrees": 6.313584316830409e-10,
+  "max_boundary_shift_mm": 1.4606489464500496,
+  "photo_ring_mapping": [
+    12,
+    10,
+    5,
+    2,
+    1,
+    7,
+    8,
+    13
+  ],
+  "overall_bounds_mm": [
+    -457.19999999991046,
+    -457.2000000004515,
+    457.1999999999657,
+    457.19999999996924
+  ],
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "files": [
+    {
+      "file": "working\\Dara-Photo-Frame-A1-Jointed.scad",
+      "prior_sha256": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d",
+      "sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f"
+    },
+    {
+      "file": "working\\Dara-Photo-Frame.scad",
+      "prior_sha256": "dcd467893411bca2ddaefc2110132db8b98dfd855f9dfdf1902084aa4d63706b",
+      "sha256": "059b2ee26b2b19ea5942b6aac3fdf09348c9f0de3dcec6d861fb24a6aa083a0d"
+    }
+  ],
+  "ring_checks": [
+    {
+      "ring": 0,
+      "primitives": 48,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 6.313584316830409e-10,
+      "max_chord_error_mm": 0.0019874494073453845,
+      "vertices": 3235
+    },
+    {
+      "ring": 1,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 9.175900256022248e-13,
+      "max_chord_error_mm": 0.001999013322677101,
+      "vertices": 233
+    },
+    {
+      "ring": 2,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 8.859832634551808e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 3,
+      "primitives": 24,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.7290913694760504e-10,
+      "max_chord_error_mm": 0.0019873027331502053,
+      "vertices": 503
+    },
+    {
+      "ring": 4,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 5,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.18407788675572e-13,
+      "max_chord_error_mm": 0.00199753418865517,
+      "vertices": 234
+    },
+    {
+      "ring": 6,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 7,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.484468978848651e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 8,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.999321267910558e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 9,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 10,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.430570874569142e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 11,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 12,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.943661560984948e-13,
+      "max_chord_error_mm": 0.0019990925857515385,
+      "vertices": 234
+    },
+    {
+      "ring": 13,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.883799916677692e-13,
+      "max_chord_error_mm": 0.0019975213376862144,
+      "vertices": 234
+    },
+    {
+      "ring": 14,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 15,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.0694112773401793e-10,
+      "max_chord_error_mm": 0.001991511607414564,
+      "vertices": 714
+    },
+    {
+      "ring": 16,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 17,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.391576865101682e-10,
+      "max_chord_error_mm": 0.001989668925213867,
+      "vertices": 622
+    },
+    {
+      "ring": 18,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.823471949300437e-10,
+      "max_chord_error_mm": 0.0019939028786848316,
+      "vertices": 714
+    },
+    {
+      "ring": 19,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.0251756072752883e-10,
+      "max_chord_error_mm": 0.0019428371141775932,
+      "vertices": 624
+    },
+    {
+      "ring": 20,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 21,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.528321555792354e-10,
+      "max_chord_error_mm": 0.0019887816849598304,
+      "vertices": 713
+    },
+    {
+      "ring": 22,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 23,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.7378590130150694e-10,
+      "max_chord_error_mm": 0.001989248720449897,
+      "vertices": 623
+    },
+    {
+      "ring": 24,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.812215729852755e-10,
+      "max_chord_error_mm": 0.0019962717639574077,
+      "vertices": 622
+    },
+    {
+      "ring": 25,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.9488896682972594e-10,
+      "max_chord_error_mm": 0.0019941929257511555,
+      "vertices": 713
+    }
+  ],
+  "letter_outline_unchanged": true,
+  "manufacturing_parameters_unchanged": true
+}

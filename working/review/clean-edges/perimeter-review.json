@@ -1,0 +1,368 @@
+{
+  "project_sha256": "56560e6c587f65be8c4c0d9d915d6aeffbd1abb138849a393db517bd1d3f919d",
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "canonical_geometry_sha256": "1f08ee4edd1284a51dc924e2b1790a2f8a57f6217304f02c4a6692c71a831947",
+  "scope": "All canonical line/arc joins plus saved top-face white/blue perimeter arcs on every production frame plate; native mesh and full-layer color checks are separate.",
+  "acceptance_radial_error_mm": 0.06,
+  "join_checks": [
+    {
+      "ring": 0,
+      "primitives": 48,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 6.313584316830409e-10,
+      "max_chord_error_mm": 0.0019874494073453845,
+      "vertices": 3235
+    },
+    {
+      "ring": 1,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 9.175900256022248e-13,
+      "max_chord_error_mm": 0.001999013322677101,
+      "vertices": 233
+    },
+    {
+      "ring": 2,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 8.859832634551808e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 3,
+      "primitives": 24,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.7290913694760504e-10,
+      "max_chord_error_mm": 0.0019873027331502053,
+      "vertices": 503
+    },
+    {
+      "ring": 4,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 5,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.18407788675572e-13,
+      "max_chord_error_mm": 0.00199753418865517,
+      "vertices": 234
+    },
+    {
+      "ring": 6,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 7,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.484468978848651e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 8,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.999321267910558e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 9,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 10,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.430570874569142e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 11,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 12,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.943661560984948e-13,
+      "max_chord_error_mm": 0.0019990925857515385,
+      "vertices": 234
+    },
+    {
+      "ring": 13,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.883799916677692e-13,
+      "max_chord_error_mm": 0.0019975213376862144,
+      "vertices": 234
+    },
+    {
+      "ring": 14,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 15,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.0694112773401793e-10,
+      "max_chord_error_mm": 0.001991511607414564,
+      "vertices": 714
+    },
+    {
+      "ring": 16,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 17,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.391576865101682e-10,
+      "max_chord_error_mm": 0.001989668925213867,
+      "vertices": 622
+    },
+    {
+      "ring": 18,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.823471949300437e-10,
+      "max_chord_error_mm": 0.0019939028786848316,
+      "vertices": 714
+    },
+    {
+      "ring": 19,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.0251756072752883e-10,
+      "max_chord_error_mm": 0.0019428371141775932,
+      "vertices": 624
+    },
+    {
+      "ring": 20,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 21,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.528321555792354e-10,
+      "max_chord_error_mm": 0.0019887816849598304,
+      "vertices": 713
+    },
+    {
+      "ring": 22,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 23,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.7378590130150694e-10,
+      "max_chord_error_mm": 0.001989248720449897,
+      "vertices": 623
+    },
+    {
+      "ring": 24,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.812215729852755e-10,
+      "max_chord_error_mm": 0.0019962717639574077,
+      "vertices": 622
+    },
+    {
+      "ring": 25,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.9488896682972594e-10,
+      "max_chord_error_mm": 0.0019941929257511555,
+      "vertices": 713
+    }
+  ],
+  "plates": [
+    {
+      "plate": 1,
+      "perimeter_arcs_checked": 26,
+      "samples": 1325,
+      "max_radial_error_mm": 0.008868507526869962,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 2,
+      "perimeter_arcs_checked": 21,
+      "samples": 1806,
+      "max_radial_error_mm": 0.008873716399865117,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 3,
+      "perimeter_arcs_checked": 21,
+      "samples": 899,
+      "max_radial_error_mm": 0.010983512166518494,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 4,
+      "perimeter_arcs_checked": 0,
+      "samples": 0,
+      "max_radial_error_mm": 0,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 5,
+      "perimeter_arcs_checked": 28,
+      "samples": 469,
+      "max_radial_error_mm": 0.007505555375530548,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 6,
+      "perimeter_arcs_checked": 23,
+      "samples": 2095,
+      "max_radial_error_mm": 0.009147926057472944,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 7,
+      "perimeter_arcs_checked": 9,
+      "samples": 388,
+      "max_radial_error_mm": 0.009498099520079961,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 8,
+      "perimeter_arcs_checked": 26,
+      "samples": 2047,
+      "max_radial_error_mm": 0.008875587056049739,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 9,
+      "perimeter_arcs_checked": 0,
+      "samples": 0,
+      "max_radial_error_mm": 0,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 10,
+      "perimeter_arcs_checked": 9,
+      "samples": 389,
+      "max_radial_error_mm": 0.008910610040686606,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 11,
+      "perimeter_arcs_checked": 1,
+      "samples": 5,
+      "max_radial_error_mm": 0.001835146024134815,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 12,
+      "perimeter_arcs_checked": 6,
+      "samples": 386,
+      "max_radial_error_mm": 0.008586577833192166,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 13,
+      "perimeter_arcs_checked": 32,
+      "samples": 1989,
+      "max_radial_error_mm": 0.00909095496756862,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 14,
+      "perimeter_arcs_checked": 6,
+      "samples": 379,
+      "max_radial_error_mm": 0.009068506532116771,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 15,
+      "perimeter_arcs_checked": 24,
+      "samples": 1978,
+      "max_radial_error_mm": 0.003628462052489567,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 16,
+      "perimeter_arcs_checked": 28,
+      "samples": 380,
+      "max_radial_error_mm": 0.00606446547007522,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 17,
+      "perimeter_arcs_checked": 0,
+      "samples": 0,
+      "max_radial_error_mm": 0,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 18,
+      "perimeter_arcs_checked": 29,
+      "samples": 704,
+      "max_radial_error_mm": 0.00939433864533612,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 19,
+      "perimeter_arcs_checked": 28,
+      "samples": 1966,
+      "max_radial_error_mm": 0.009542180390496924,
+      "over_0_06_mm": []
+    },
+    {
+      "plate": 20,
+      "perimeter_arcs_checked": 31,
+      "samples": 1652,
+      "max_radial_error_mm": 0.008837594581240893,
+      "over_0_06_mm": []
+    }
+  ],
+  "summary": {
+    "plates_checked": 20,
+    "canonical_loops_checked": 26,
+    "canonical_large_arcs": 56,
+    "large_arcs_covered": 56,
+    "perimeter_arcs_checked": 348,
+    "max_radial_error_mm": 0.010983512166518494,
+    "passed": true
+  }
+}

@@ -1,4 +1,6 @@
-# Curve repair and final review — 2026-10-13
+> Historical reference: superseded by the complete clean-edge reconstruction in working/review/clean-edges. The original traced geometry and local repair are retained as history, not current production evidence.
+
+# Curve repair and final review â€” 2026-10-13
 
 **All 12 identified curve defects are repaired. Geometry and cosmetic checks pass on the freshly sliced 31-plate project.** Use the current [Dara-Photo-Frame-A1-Complete.3mf](../../bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf). The [original review](../curve-artifacts/README.md) preserves the before-repair evidence.
 
@@ -8,7 +10,7 @@ The repaired CAD, production STLs, color modifiers, and saved extrusion paths ag
 
 The twelve local outline bends were smoothed on F1, F2, F6, F8, F13, F15, and F19. At the five fabric-facing locations, the fabric boundary was changed together with the adjoining white rail, and the blue edge was regenerated from that boundary. The local smoothing uses a 2.5 mm Gaussian kernel, 0.25 mm samples, and a gradual taper to the exact original vertices at 14 mm along either side of each defect.
 
-The largest boundary shift is **0.305 mm**; the reported plate-one blue-edge bend moves by at most **0.220 mm**. Total changed outline area is 9.752 mm². The assembled outline bounds and topology are preserved. See the [before/after overlays](before-after-curves.png), [repaired assembly color map](assembly-color-map.png), and [measured source changes](source-repair.json).
+The largest boundary shift is **0.305 mm**; the reported plate-one blue-edge bend moves by at most **0.220 mm**. Total changed outline area is 9.752 mmÂ². The assembled outline bounds and topology are preserved. See the [before/after overlays](before-after-curves.png), [repaired assembly color map](assembly-color-map.png), and [measured source changes](source-repair.json).
 
 All 39 production parts were exported from the repaired native CAD and compared as solids. Only the seven expected frame sections changed. The other **32 STL files are byte-identical** to their pre-repair versions. The solid differences stay within the reviewed neighborhoods. Joints, hardware interfaces, the 2.4 mm photo rabbets, weave detail away from those boundaries, plate placements, and print settings remain intact. The minimum separation between outline changes and any protected hardware region is 3.632 mm. [Geometry verification](geometry-verification.json).
 

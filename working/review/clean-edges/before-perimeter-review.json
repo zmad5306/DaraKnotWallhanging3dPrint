@@ -1,0 +1,1594 @@
+{
+  "project_sha256": "7f1ad1439c0c90b751bd251baa1493716657f975249fb2e3b5e7c8c475f6173e",
+  "source_cad_sha256": "da67ee482c33ca7e912335887a753b7113232624b1e1d74c2eee702ffba5236e",
+  "canonical_geometry_sha256": "1f08ee4edd1284a51dc924e2b1790a2f8a57f6217304f02c4a6692c71a831947",
+  "scope": "All canonical line/arc joins plus saved top-face white/blue perimeter arcs on every production frame plate; native mesh and full-layer color checks are separate.",
+  "acceptance_radial_error_mm": 0.06,
+  "join_checks": [
+    {
+      "ring": 0,
+      "primitives": 48,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 6.313584316830409e-10,
+      "max_chord_error_mm": 0.0019874494073453845,
+      "vertices": 3235
+    },
+    {
+      "ring": 1,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 9.175900256022248e-13,
+      "max_chord_error_mm": 0.001999013322677101,
+      "vertices": 233
+    },
+    {
+      "ring": 2,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 8.859832634551808e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 3,
+      "primitives": 24,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.7290913694760504e-10,
+      "max_chord_error_mm": 0.0019873027331502053,
+      "vertices": 503
+    },
+    {
+      "ring": 4,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 5,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.18407788675572e-13,
+      "max_chord_error_mm": 0.00199753418865517,
+      "vertices": 234
+    },
+    {
+      "ring": 6,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 7,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.484468978848651e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 8,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.999321267910558e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 9,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 10,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.430570874569142e-13,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 235
+    },
+    {
+      "ring": 11,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 12,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.943661560984948e-13,
+      "max_chord_error_mm": 0.0019990925857515385,
+      "vertices": 234
+    },
+    {
+      "ring": 13,
+      "primitives": 6,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 7.883799916677692e-13,
+      "max_chord_error_mm": 0.0019975213376862144,
+      "vertices": 234
+    },
+    {
+      "ring": 14,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 15,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.0694112773401793e-10,
+      "max_chord_error_mm": 0.001991511607414564,
+      "vertices": 714
+    },
+    {
+      "ring": 16,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 17,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.391576865101682e-10,
+      "max_chord_error_mm": 0.001989668925213867,
+      "vertices": 622
+    },
+    {
+      "ring": 18,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.823471949300437e-10,
+      "max_chord_error_mm": 0.0019939028786848316,
+      "vertices": 714
+    },
+    {
+      "ring": 19,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 4.0251756072752883e-10,
+      "max_chord_error_mm": 0.0019428371141775932,
+      "vertices": 624
+    },
+    {
+      "ring": 20,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 21,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.528321555792354e-10,
+      "max_chord_error_mm": 0.0019887816849598304,
+      "vertices": 713
+    },
+    {
+      "ring": 22,
+      "primitives": 8,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 0.0,
+      "max_chord_error_mm": 0.0018068156922413925,
+      "vertices": 68
+    },
+    {
+      "ring": 23,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.7378590130150694e-10,
+      "max_chord_error_mm": 0.001989248720449897,
+      "vertices": 623
+    },
+    {
+      "ring": 24,
+      "primitives": 16,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 5.812215729852755e-10,
+      "max_chord_error_mm": 0.0019962717639574077,
+      "vertices": 622
+    },
+    {
+      "ring": 25,
+      "primitives": 18,
+      "max_join_gap_mm": 0.0,
+      "max_tangent_discontinuity_degrees": 2.9488896682972594e-10,
+      "max_chord_error_mm": 0.0019941929257511555,
+      "vertices": 713
+    }
+  ],
+  "plates": [
+    {
+      "plate": 1,
+      "perimeter_arcs_checked": 101,
+      "samples": 634,
+      "max_radial_error_mm": 0.37286289185400534,
+      "over_0_06_mm": [
+        {
+          "gcode_line": 356840,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.1924970072209078,
+          "samples": 5,
+          "radial_range_mm": 0.06265357438712726
+        },
+        {
+          "gcode_line": 356843,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.18857429262922665,
+          "samples": 5,
+          "radial_range_mm": 0.11541631173497535
+        },
+        {
+          "gcode_line": 356844,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.1611932284891111,
+          "samples": 5,
+          "radial_range_mm": 0.017830566840103756
+        },
+        {
+          "gcode_line": 356849,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.08913060624036007,
+          "samples": 7,
+          "radial_range_mm": 0.06523062688796699
+        },
+        {
+          "gcode_line": 356850,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.1611904835116036,
+          "samples": 5,
+          "radial_range_mm": 0.10290727975655045
+        },
+        {
+          "gcode_line": 356851,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.21334664376439605,
+          "samples": 9,
+          "radial_range_mm": 0.0902952705945097
+        },
+        {
+          "gcode_line": 356852,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.12305137316988635,
+          "samples": 3,
+          "radial_range_mm": 0.13455828035728246
+        },
+        {
+          "gcode_line": 356879,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.2116194358307837,
+          "samples": 5,
+          "radial_range_mm": 0.1845467817684323
+        },
+        {
+          "gcode_line": 356880,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.2116194358307837,
+          "samples": 5,
+          "radial_range_mm": 0.0501823988859087
+        },
+        {
+          "gcode_line": 356881,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.161437036944875,
+          "samples": 5,
+          "radial_range_mm": 0.1031810432145619
+        },
+        {
+          "gcode_line": 356882,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.0891897543247353,
+          "samples": 7,
+          "radial_range_mm": 0.06548164131737622
+        },
+        {
+          "gcode_line": 356887,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.16103206743341048,
+          "samples": 5,
+          "radial_range_mm": 0.017499904713162096
+        },
+        {
+          "gcode_line": 356888,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.18844876582468828,
+          "samples": 5,
+          "radial_range_mm": 0.11587143704772984
+        },
+        {
+          "gcode_line": 356891,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.19221574907305694,
+          "samples": 5,
+          "radial_range_mm": 0.062086865074149955
+        },
+        {
+          "gcode_line": 356952,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 39,
+          "max_radial_error_mm": 0.37286289185400534,
+          "samples": 7,
+          "radial_range_mm": 0.015281881863991487
+        },
+        {
+          "gcode_line": 356954,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 39,
+          "max_radial_error_mm": 0.2881425401719966,
+          "samples": 8,
+          "radial_range_mm": 0.12358894931630005
+        },
+        {
+          "gcode_line": 356955,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 39,
+          "max_radial_error_mm": 0.16455359085569654,
+          "samples": 10,
+          "radial_range_mm": 0.1286250491878178
+        },
+        {
+          "gcode_line": 356958,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 39,
+          "max_radial_error_mm": 0.13716706284492375,
+          "samples": 9,
+          "radial_range_mm": 0.0723719446934794
+        },
+        {
+          "gcode_line": 356966,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 39,
+          "max_radial_error_mm": 0.09423025802244922,
+          "samples": 8,
+          "radial_range_mm": 0.029385165606520047
+        },
+        {
+          "gcode_line": 356979,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 41,
+          "max_radial_error_mm": 0.23547577774289152,
+          "samples": 5,
+          "radial_range_mm": 0.20444737615790132
+        },
+        {
+          "gcode_line": 356991,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 41,
+          "max_radial_error_mm": 0.1143090672379401,
+          "samples": 7,
+          "radial_range_mm": 0.07524188753339445
+        },
+        {
+          "gcode_line": 356992,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 41,
+          "max_radial_error_mm": 0.11122967568960007,
+          "samples": 12,
+          "radial_range_mm": 0.11425594364860103
+        },
+        {
+          "gcode_line": 356996,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 41,
+          "max_radial_error_mm": 0.07127324266289747,
+          "samples": 6,
+          "radial_range_mm": 0.09730079759953014
+        },
+        {
+          "gcode_line": 357016,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.18108856380547422,
+          "samples": 4,
+          "radial_range_mm": 0.16091851379948707
+        },
+        {
+          "gcode_line": 357017,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.21031367711952953,
+          "samples": 8,
+          "radial_range_mm": 0.07355276338222438
+        },
+        {
+          "gcode_line": 357018,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.13676091373730515,
+          "samples": 5,
+          "radial_range_mm": 0.07832929000778677
+        },
+        {
+          "gcode_line": 357019,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.08914903574384425,
+          "samples": 7,
+          "radial_range_mm": 0.06506388480281089
+        },
+        {
+          "gcode_line": 357024,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.16140786598626278,
+          "samples": 5,
+          "radial_range_mm": 0.01801346668329984
+        },
+        {
+          "gcode_line": 357025,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.1876584256887952,
+          "samples": 5,
+          "radial_range_mm": 0.11462786320197438
+        },
+        {
+          "gcode_line": 357028,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.19221010860519527,
+          "samples": 5,
+          "radial_range_mm": 0.06447512598461458
+        },
+        {
+          "gcode_line": 361323,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 11,
+          "max_radial_error_mm": 0.14459558778821702,
+          "samples": 6,
+          "radial_range_mm": 0.12375906873762688
+        },
+        {
+          "gcode_line": 361336,
+          "filament": 1,
+          "ring": 10,
+          "primitive": 4,
+          "max_radial_error_mm": 0.06534132194391873,
+          "samples": 5,
+          "radial_range_mm": 0.12408381262227408
+        },
+        {
+          "gcode_line": 361337,
+          "filament": 1,
+          "ring": 10,
+          "primitive": 4,
+          "max_radial_error_mm": 0.07990310713923066,
+          "samples": 7,
+          "radial_range_mm": 0.05055065042037654
+        },
+        {
+          "gcode_line": 361392,
+          "filament": 1,
+          "ring": 25,
+          "primitive": 11,
+          "max_radial_error_mm": 0.06157026332405735,
+          "samples": 6,
+          "radial_range_mm": 0.01998340043772373
+        },
+        {
+          "gcode_line": 364899,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.19220822589150544,
+          "samples": 5,
+          "radial_range_mm": 0.06408047318811327
+        },
+        {
+          "gcode_line": 364902,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.18804710438888605,
+          "samples": 5,
+          "radial_range_mm": 0.11501234818902617
+        },
+        {
+          "gcode_line": 364903,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.16111216030049036,
+          "samples": 5,
+          "radial_range_mm": 0.018092112668057325
+        },
+        {
+          "gcode_line": 364908,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.08891175531553586,
+          "samples": 7,
+          "radial_range_mm": 0.06516429114464017
+        },
+        {
+          "gcode_line": 364909,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.21065193862241927,
+          "samples": 6,
+          "radial_range_mm": 0.1516316750878559
+        },
+        {
+          "gcode_line": 364910,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.21164314599991485,
+          "samples": 5,
+          "radial_range_mm": 0.05842535325146514
+        },
+        {
+          "gcode_line": 364911,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.1532177927484497,
+          "samples": 3,
+          "radial_range_mm": 0.16455995523782008
+        },
+        {
+          "gcode_line": 364939,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.2080397471376898,
+          "samples": 5,
+          "radial_range_mm": 0.1917768359658396
+        },
+        {
+          "gcode_line": 364940,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.21225455138119287,
+          "samples": 5,
+          "radial_range_mm": 0.05182442782660246
+        },
+        {
+          "gcode_line": 364941,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.1604301235545904,
+          "samples": 5,
+          "radial_range_mm": 0.10249965687705753
+        },
+        {
+          "gcode_line": 364942,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.08936720945837351,
+          "samples": 7,
+          "radial_range_mm": 0.06501964618939837
+        },
+        {
+          "gcode_line": 364947,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.16165149232543286,
+          "samples": 5,
+          "radial_range_mm": 0.017915650891950463
+        },
+        {
+          "gcode_line": 364948,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.18818374290268025,
+          "samples": 5,
+          "radial_range_mm": 0.11510071600747551
+        },
+        {
+          "gcode_line": 364951,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 15,
+          "max_radial_error_mm": 0.19206629136158426,
+          "samples": 5,
+          "radial_range_mm": 0.06262049542613113
+        },
+        {
+          "gcode_line": 368461,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 11,
+          "max_radial_error_mm": 0.1438599170230077,
+          "samples": 6,
+          "radial_range_mm": 0.12329853198428964
+        },
+        {
+          "gcode_line": 368467,
+          "filament": 4,
+          "ring": 25,
+          "primitive": 11,
+          "max_radial_error_mm": 0.06093159333556741,
+          "samples": 6,
+          "radial_range_mm": 0.01983768604634406
+        }
+      ]
+    },
+    {
+      "plate": 2,
+      "perimeter_arcs_checked": 178,
+      "samples": 1347,
+      "max_radial_error_mm": 0.2305676340605487,
+      "over_0_06_mm": [
+        {
+          "gcode_line": 363083,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.2305676340605487,
+          "samples": 3,
+          "radial_range_mm": 0.004932871572862041
+        },
+        {
+          "gcode_line": 363085,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.20109029701822578,
+          "samples": 5,
+          "radial_range_mm": 0.08408725354263424
+        },
+        {
+          "gcode_line": 363090,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.11811153707461841,
+          "samples": 20,
+          "radial_range_mm": 0.16005456161157383
+        },
+        {
+          "gcode_line": 363091,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.13250270352931537,
+          "samples": 10,
+          "radial_range_mm": 0.06148563120536821
+        },
+        {
+          "gcode_line": 363099,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.1307769110583017,
+          "samples": 11,
+          "radial_range_mm": 0.0405627118004972
+        },
+        {
+          "gcode_line": 363100,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.0902141992578045,
+          "samples": 22,
+          "radial_range_mm": 0.14170539729803622
+        },
+        {
+          "gcode_line": 363105,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.2012107284799356,
+          "samples": 5,
+          "radial_range_mm": 0.08439597966489032
+        },
+        {
+          "gcode_line": 363107,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.2301527091339608,
+          "samples": 5,
+          "radial_range_mm": 0.031949562652101804
+        },
+        {
+          "gcode_line": 363111,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.21780817588438595,
+          "samples": 5,
+          "radial_range_mm": 0.0874291594438148
+        },
+        {
+          "gcode_line": 363114,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.1147557898048035,
+          "samples": 6,
+          "radial_range_mm": 0.06409382075096914
+        },
+        {
+          "gcode_line": 363120,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.10101239928800965,
+          "samples": 6,
+          "radial_range_mm": 0.07206648113083247
+        },
+        {
+          "gcode_line": 363121,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.14913391821878008,
+          "samples": 4,
+          "radial_range_mm": 0.05006174167388622
+        },
+        {
+          "gcode_line": 363122,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.09907217654489386,
+          "samples": 8,
+          "radial_range_mm": 0.10819864105178567
+        },
+        {
+          "gcode_line": 363124,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.08555728021201503,
+          "samples": 5,
+          "radial_range_mm": 0.06434766424919758
+        },
+        {
+          "gcode_line": 363141,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.06707452328532781,
+          "samples": 6,
+          "radial_range_mm": 0.029947243773676746
+        },
+        {
+          "gcode_line": 363147,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.06662043089255576,
+          "samples": 6,
+          "radial_range_mm": 0.029432777448022307
+        },
+        {
+          "gcode_line": 363163,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.0856414503141707,
+          "samples": 5,
+          "radial_range_mm": 0.06388288470611769
+        },
+        {
+          "gcode_line": 363165,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.11306592826514361,
+          "samples": 9,
+          "radial_range_mm": 0.12199230956755969
+        },
+        {
+          "gcode_line": 363166,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.15143558091688192,
+          "samples": 3,
+          "radial_range_mm": 0.07167072751141745
+        },
+        {
+          "gcode_line": 363167,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.07976485340546446,
+          "samples": 8,
+          "radial_range_mm": 0.12941888739962337
+        },
+        {
+          "gcode_line": 363171,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.11492057003891887,
+          "samples": 6,
+          "radial_range_mm": 0.06482183124597896
+        },
+        {
+          "gcode_line": 363174,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.21795570317425472,
+          "samples": 5,
+          "radial_range_mm": 0.0874042975007967
+        },
+        {
+          "gcode_line": 363178,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.22612299741720676,
+          "samples": 3,
+          "radial_range_mm": 0.028515615874084688
+        },
+        {
+          "gcode_line": 363214,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 31,
+          "max_radial_error_mm": 0.06827302819064585,
+          "samples": 5,
+          "radial_range_mm": 0.10089436100872717
+        },
+        {
+          "gcode_line": 363218,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 31,
+          "max_radial_error_mm": 0.0635249186319129,
+          "samples": 7,
+          "radial_range_mm": 0.06219846793618444
+        },
+        {
+          "gcode_line": 363232,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 31,
+          "max_radial_error_mm": 0.061172966794089234,
+          "samples": 7,
+          "radial_range_mm": 0.07239427500070406
+        },
+        {
+          "gcode_line": 363243,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 33,
+          "max_radial_error_mm": 0.06805151842570467,
+          "samples": 4,
+          "radial_range_mm": 0.06812395105629321
+        },
+        {
+          "gcode_line": 363245,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 33,
+          "max_radial_error_mm": 0.12184818433485844,
+          "samples": 8,
+          "radial_range_mm": 0.15576514755426274
+        },
+        {
+          "gcode_line": 363246,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 33,
+          "max_radial_error_mm": 0.14187207232782129,
+          "samples": 10,
+          "radial_range_mm": 0.13569752886449749
+        },
+        {
+          "gcode_line": 363247,
+          "filament": 1,
+          "ring": 0,
+          "primitive": 33,
+          "max_radial_error_mm": 0.09009209375867755,
+          "samples": 7,
+          "radial_range_mm": 0.09626663722200135
+        },
+        {
+          "gcode_line": 363266,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.1350620481601723,
+          "samples": 8,
+          "radial_range_mm": 0.06824361844545734
+        },
+        {
+          "gcode_line": 363267,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.1350620481601723,
+          "samples": 11,
+          "radial_range_mm": 0.1360052920560122
+        },
+        {
+          "gcode_line": 363273,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.2004436333089643,
+          "samples": 6,
+          "radial_range_mm": 0.08554450434775163
+        },
+        {
+          "gcode_line": 363275,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.23013020645939264,
+          "samples": 5,
+          "radial_range_mm": 0.033510935731186464
+        },
+        {
+          "gcode_line": 363279,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.217961594657055,
+          "samples": 5,
+          "radial_range_mm": 0.08709310464723785
+        },
+        {
+          "gcode_line": 363282,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.11476398708262536,
+          "samples": 6,
+          "radial_range_mm": 0.06447662112955754
+        },
+        {
+          "gcode_line": 363287,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.16231037543067828,
+          "samples": 8,
+          "radial_range_mm": 0.13341179590261731
+        },
+        {
+          "gcode_line": 363288,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.16231037543067828,
+          "samples": 6,
+          "radial_range_mm": 0.09313173663898056
+        },
+        {
+          "gcode_line": 363289,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.06917863879169772,
+          "samples": 6,
+          "radial_range_mm": 0.07834738395817453
+        },
+        {
+          "gcode_line": 363291,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.08596683465594879,
+          "samples": 5,
+          "radial_range_mm": 0.06312286358041774
+        },
+        {
+          "gcode_line": 363308,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.06705350298253165,
+          "samples": 6,
+          "radial_range_mm": 0.030061715478410633
+        },
+        {
+          "gcode_line": 365638,
+          "filament": 1,
+          "ring": 5,
+          "primitive": 4,
+          "max_radial_error_mm": 0.20355931798708582,
+          "samples": 4,
+          "radial_range_mm": 0.09666366524636771
+        },
+        {
+          "gcode_line": 365642,
+          "filament": 1,
+          "ring": 5,
+          "primitive": 4,
+          "max_radial_error_mm": 0.1069837556609059,
+          "samples": 5,
+          "radial_range_mm": 0.17582181792653273
+        },
+        {
+          "gcode_line": 365667,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.18069754033061258,
+          "samples": 10,
+          "radial_range_mm": 0.1343633036196934
+        },
+        {
+          "gcode_line": 365668,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.18069754033061258,
+          "samples": 3,
+          "radial_range_mm": 0.1361495752283588
+        },
+        {
+          "gcode_line": 365669,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06642893390664995,
+          "samples": 13,
+          "radial_range_mm": 0.11097689900890373
+        },
+        {
+          "gcode_line": 365677,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.11945127274032075,
+          "samples": 8,
+          "radial_range_mm": 0.07668667999902823
+        },
+        {
+          "gcode_line": 365679,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.0649466010304991,
+          "samples": 9,
+          "radial_range_mm": 0.046559962162319835
+        },
+        {
+          "gcode_line": 365685,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06377966289045389,
+          "samples": 5,
+          "radial_range_mm": 0.02659532975349066
+        },
+        {
+          "gcode_line": 365687,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.0637695643184486,
+          "samples": 9,
+          "radial_range_mm": 0.11265925999785509
+        },
+        {
+          "gcode_line": 365710,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.063138873882707,
+          "samples": 9,
+          "radial_range_mm": 0.11549368157628237
+        },
+        {
+          "gcode_line": 365712,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06447743849369658,
+          "samples": 5,
+          "radial_range_mm": 0.027498944310082152
+        },
+        {
+          "gcode_line": 365719,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.0628729906719343,
+          "samples": 6,
+          "radial_range_mm": 0.044617840956163946
+        },
+        {
+          "gcode_line": 365722,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.12596695285597548,
+          "samples": 6,
+          "radial_range_mm": 0.02110805653100556
+        },
+        {
+          "gcode_line": 365729,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06114872607591337,
+          "samples": 16,
+          "radial_range_mm": 0.10694904262936689
+        },
+        {
+          "gcode_line": 365730,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.1810352961832109,
+          "samples": 3,
+          "radial_range_mm": 0.1352349796297574
+        },
+        {
+          "gcode_line": 365731,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.1810352961832109,
+          "samples": 10,
+          "radial_range_mm": 0.13364716366356788
+        },
+        {
+          "gcode_line": 365737,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.1808782169071037,
+          "samples": 10,
+          "radial_range_mm": 0.13513771445147427
+        },
+        {
+          "gcode_line": 365738,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.1808782169071037,
+          "samples": 3,
+          "radial_range_mm": 0.10942557979899448
+        },
+        {
+          "gcode_line": 365739,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.07145263710810923,
+          "samples": 14,
+          "radial_range_mm": 0.13887790721852866
+        },
+        {
+          "gcode_line": 365747,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.11939625611617544,
+          "samples": 8,
+          "radial_range_mm": 0.07715761322106118
+        },
+        {
+          "gcode_line": 365749,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06306023695950103,
+          "samples": 6,
+          "radial_range_mm": 0.044641515197668014
+        },
+        {
+          "gcode_line": 365756,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06544515477753521,
+          "samples": 6,
+          "radial_range_mm": 0.028538269450052667
+        },
+        {
+          "gcode_line": 365758,
+          "filament": 1,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06433187951839159,
+          "samples": 9,
+          "radial_range_mm": 0.11719398341651299
+        },
+        {
+          "gcode_line": 367794,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.22639878715364148,
+          "samples": 3,
+          "radial_range_mm": 0.02825339390082604
+        },
+        {
+          "gcode_line": 367798,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.21784466135932234,
+          "samples": 5,
+          "radial_range_mm": 0.08724890271835761
+        },
+        {
+          "gcode_line": 367801,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.1145592589427622,
+          "samples": 6,
+          "radial_range_mm": 0.06443105217402945
+        },
+        {
+          "gcode_line": 367806,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.16119940222148443,
+          "samples": 8,
+          "radial_range_mm": 0.13226167486615736
+        },
+        {
+          "gcode_line": 367807,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.16119940222148443,
+          "samples": 5,
+          "radial_range_mm": 0.0864517301118326
+        },
+        {
+          "gcode_line": 367808,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.07474767210965183,
+          "samples": 7,
+          "radial_range_mm": 0.08420341967376999
+        },
+        {
+          "gcode_line": 367810,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.08618359271537201,
+          "samples": 5,
+          "radial_range_mm": 0.06439744115346002
+        },
+        {
+          "gcode_line": 367827,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.06669198608858551,
+          "samples": 6,
+          "radial_range_mm": 0.02943688450622517
+        },
+        {
+          "gcode_line": 367833,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.06698205263762702,
+          "samples": 6,
+          "radial_range_mm": 0.03008310763755162
+        },
+        {
+          "gcode_line": 367849,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.08602555932225187,
+          "samples": 5,
+          "radial_range_mm": 0.06320591248288565
+        },
+        {
+          "gcode_line": 367851,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.10407111498193444,
+          "samples": 9,
+          "radial_range_mm": 0.1132498128498014
+        },
+        {
+          "gcode_line": 367852,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.1549660309193257,
+          "samples": 4,
+          "radial_range_mm": 0.053304264733895934
+        },
+        {
+          "gcode_line": 367853,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.10166176618542977,
+          "samples": 9,
+          "radial_range_mm": 0.1521801727433285
+        },
+        {
+          "gcode_line": 367857,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.11434430420126773,
+          "samples": 6,
+          "radial_range_mm": 0.06408668641140025
+        },
+        {
+          "gcode_line": 367860,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.2180721402039012,
+          "samples": 5,
+          "radial_range_mm": 0.08742555853831391
+        },
+        {
+          "gcode_line": 367864,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.22981351319731402,
+          "samples": 5,
+          "radial_range_mm": 0.03286378562179948
+        },
+        {
+          "gcode_line": 367866,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.20003990010278017,
+          "samples": 6,
+          "radial_range_mm": 0.08451528909569106
+        },
+        {
+          "gcode_line": 367871,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.1177330619785053,
+          "samples": 21,
+          "radial_range_mm": 0.1603396397126815
+        },
+        {
+          "gcode_line": 367872,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.13318589475430542,
+          "samples": 10,
+          "radial_range_mm": 0.060499318308878
+        },
+        {
+          "gcode_line": 367881,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.13197939817723991,
+          "samples": 12,
+          "radial_range_mm": 0.060672401599227044
+        },
+        {
+          "gcode_line": 367882,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 11,
+          "max_radial_error_mm": 0.08938800690235382,
+          "samples": 22,
+          "radial_range_mm": 0.14155191837960146
+        },
+        {
+          "gcode_line": 367887,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 13,
+          "max_radial_error_mm": 0.20015800027283603,
+          "samples": 5,
+          "radial_range_mm": 0.08378563756014046
+        },
+        {
+          "gcode_line": 369637,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06340706437191557,
+          "samples": 9,
+          "radial_range_mm": 0.11314841743120496
+        },
+        {
+          "gcode_line": 369639,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06408644425198418,
+          "samples": 5,
+          "radial_range_mm": 0.02700022302011007
+        },
+        {
+          "gcode_line": 369646,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06294084615765883,
+          "samples": 6,
+          "radial_range_mm": 0.04500350653290752
+        },
+        {
+          "gcode_line": 369649,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.12576742440938915,
+          "samples": 6,
+          "radial_range_mm": 0.020917207884707523
+        },
+        {
+          "gcode_line": 369656,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.061131811769200795,
+          "samples": 16,
+          "radial_range_mm": 0.10657295837833658
+        },
+        {
+          "gcode_line": 369657,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.18026005225632957,
+          "samples": 3,
+          "radial_range_mm": 0.1348189056471938
+        },
+        {
+          "gcode_line": 369658,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.18026005225632957,
+          "samples": 10,
+          "radial_range_mm": 0.13431410194806404
+        },
+        {
+          "gcode_line": 369664,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.18031607074436806,
+          "samples": 10,
+          "radial_range_mm": 0.13451337351676784
+        },
+        {
+          "gcode_line": 369665,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.18031607074436806,
+          "samples": 3,
+          "radial_range_mm": 0.13421125194540195
+        },
+        {
+          "gcode_line": 369666,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06370144284153412,
+          "samples": 13,
+          "radial_range_mm": 0.10980626164050022
+        },
+        {
+          "gcode_line": 369674,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.11878231286647178,
+          "samples": 8,
+          "radial_range_mm": 0.07615546405830287
+        },
+        {
+          "gcode_line": 369676,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06281348626433214,
+          "samples": 6,
+          "radial_range_mm": 0.044109281652026766
+        },
+        {
+          "gcode_line": 369683,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.06383192313472819,
+          "samples": 5,
+          "radial_range_mm": 0.02731238066147057
+        },
+        {
+          "gcode_line": 369685,
+          "filament": 4,
+          "ring": 23,
+          "primitive": 3,
+          "max_radial_error_mm": 0.0632836441814959,
+          "samples": 9,
+          "radial_range_mm": 0.11433835110531732
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "plates_checked": 2,
+    "canonical_loops_checked": 26,
+    "canonical_large_arcs": 56,
+    "large_arcs_covered": 11,
+    "perimeter_arcs_checked": 279,
+    "max_radial_error_mm": 0.37286289185400534,
+    "passed": false
+  }
+}

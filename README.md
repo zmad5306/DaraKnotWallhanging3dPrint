@@ -5,12 +5,9 @@
 Concept rendering: white ribbon with a fine Azurite blue edge thread, wood-tan
 woven fabric, and a copper manuscript M on a dark blue wall.
 
-**Curve repairs complete: all 12 identified bends are corrected.** The
-[repair review](working/review/curve-repair/README.md) documents the local changes
-on plates 1, 2, 6, 8, 13, 15, and 19. All 31 plates have been re-sliced and pass
-the geometry, bed-boundary, curve, and blue/white toolpath checks. The white
-diamonds in Bambu Preview are seam markers. Print plate 30 to check the actual
-surface finish and blue-to-white color transition before the production plates.
+**Complete edge reconstruction:** the frame now uses tangent lines and circular arcs throughout, including regenerated section clipping and joint endpoints. Both working CAD files, all frame/backer STLs, color modifiers and all 31 Bambu slices are synchronized. The earlier local repair missed gradual waves; the [new complete review](working/review/clean-edges/README.md) measures the saved perimeter paths as well as the CAD and meshes.
+
+Use the current [manufacturing CAD](working/Dara-Photo-Frame-A1-Jointed.scad), [continuous clean artwork](working/Dara-Clean-Artwork.scad) and [SVG](working/Dara-Clean-Artwork.svg). Historical files under `reference/` document the original traced design and are not current production geometry. Plate 30 remains the physical finish/color check.
 
 The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
 records the digital checks. The user has printed the earlier hardware/lap
@@ -21,7 +18,7 @@ physical fit has not yet been checked. The two remaining
 [material tests](working/stl/Dara-Print-Checks/README.md) have separate plates.
 
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
-contains all 70 assembly pieces on plates 1-29, a **68.45 x 24 mm white/wood/blue
+contains all 70 assembly pieces on plates 1-29, a **68.36 x 24.00 mm white/wood/blue
 weave-and-edging sample alone on plate 30**, and the **copper M test alone on plate 31**.
 The already printed hardware and lap coupons have been removed from this project;
 their standalone STL files remain available. The weave has alternating raised
@@ -112,7 +109,7 @@ are preview-only. Photo-retainer thickness, pilot diameter, and clearance-hole
 diameter have independent controls; pilot depth follows thickness to retain
 1 mm tip clearance. Check the printed coupon with the actual screws before
 printing the full frame. Existing rabbets and lap sockets still require local
-support assessment. Artwork, backers, lap joints, and M attachments are preserved.
+support assessment. Lap profiles and M attachments are preserved; artwork and backers use the corrected outlines.
 
 - [Retainer screw cutaway](working/review/photo-retainers/screw-cutaway.png)
 - [Closed tab](working/review/photo-retainers/tab-closed.png) and [open tab](working/review/photo-retainers/tab-open.png)
@@ -123,7 +120,7 @@ support assessment. Artwork, backers, lap joints, and M attachments are preserve
 The earlier, unsegmented feature model is [working/Dara-Photo-Frame.scad](working/Dara-Photo-Frame.scad).
 The following sliding-retainer description applies only to that earlier design;
 use the jointed manufacturing model and complete 3MF above for production.
-The clean reference remains unchanged. The working CAD adds rear photo rabbets
+Both working models now use the reconstructed clean outlines. The historical reference remains archived. The working CAD adds rear photo rabbets
 to the eight outer openings, 1.6 mm removable backers, and four identical printed
 sliding retainers per backer in integral rear T tracks. There are no screw holes.
 The rabbets overlap the openings by 4 mm and allow 0.4 mm for a photo; backers
@@ -133,11 +130,11 @@ pull it outward to remove it. Short tapered ribs provide friction retention.
 
 The weave has a continuous solid CAD backing down to the rear face, allowing
 the slicer to generate infill and solid skins without modeled internal partitions.
-The knot retains its original outline, with no M-shaped platform underneath the
+The knot uses the reconstructed continuous outline, with no M-shaped platform underneath the
 separate letter. The M is a closed, flat-bottomed solid, 10.5 mm thick.
 
 Use `view_mode` to select `assembly`, `frame`, `M`, `exploded`, `backer`, `retainer`,
-or `fit_sample`. `backer_index` selects openings 1–8, clockwise starting at the
+or `fit_sample`. `backer_index` selects openings 1â€“8, clockwise starting at the
 upper opening on the left side in the front view. `retainers_open` shows the sliders withdrawn.
 `frame` excludes the M and removable hardware; `M` isolates the letter with its
 bottom at Z=0. `exploded` lifts the M and separates the rear hardware for inspection.
@@ -146,8 +143,8 @@ fit is provisional until physically checked; `slide_clearance` and `lock_rib`
 adjust it. Hardware dimensions are finished millimetres. This stage supplies
 CAD only, without print segmentation or production exports.
 
-The clean design reference is [reference/Dara-Clean-Reference.scad](reference/Dara-Clean-Reference.scad).
-Use this as the visual baseline for future work. It is a standalone OpenSCAD file
+The historical design reference is [reference/Dara-Clean-Reference.scad](reference/Dara-Clean-Reference.scad).
+It retains the original traced curves for provenance. Use [the reconstructed artwork](working/Dara-Clean-Artwork.scad) as the current visual baseline. It is a standalone OpenSCAD file
 with continuous artwork outlines and editable display/dimension parameters.
 
 ![Clean reference, front view](reference/Dara-Clean-Reference-front.png)
@@ -157,8 +154,8 @@ the original in X, Y and Z. It keeps the manuscript M, open photo areas, and
 decorative fabric. It has no part seams,
 joints, connectors, mounts, photo-retaining features, rear labels, fabric backing,
 support walls, cross-braces, or end ties. The fabric is represented by a thin open
-grid; the knot rails and M have simple solid sections. This is the design target,
-before decisions about print segmentation and construction.
+grid; the knot rails and M have simple solid sections. This records the earlier design target,
+before production segmentation and the complete curve reconstruction.
 
 Open the SCAD in OpenSCAD and press F5. The top parameters toggle the knot, M,
 and fabric. `fabric_style = "plain"` shows the fabric as a simple surface;

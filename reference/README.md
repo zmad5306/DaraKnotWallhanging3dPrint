@@ -1,4 +1,6 @@
-# Dara — clean design reference
+> Historical reference: superseded by the complete clean-edge reconstruction in working/review/clean-edges. The original traced geometry and local repair are retained as history, not current production evidence.
+
+# Dara â€” clean design reference
 
 Open Dara-Clean-Reference.scad in OpenSCAD and press F5.
 This one file is self-contained and can be moved or copied on its own.

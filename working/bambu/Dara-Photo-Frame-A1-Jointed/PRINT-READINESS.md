@@ -1,23 +1,27 @@
-# Print review - 2026-10-13
+# Print review - clean curves - 2026-10-13
 
-**The 12 identified curve defects are repaired, and all 31 plates have been re-sliced.** The [repair review](../../review/curve-repair/README.md) documents the corrections on plates 1, 2, 6, 8, 13, 15, and 19. The final geometry and cosmetic audits pass: no remaining isolated bends above the review threshold, no blue paths outside their masks, and no white paths crossing the blue core on any of the 63 blue-bearing layers checked. Physical surface finish remains to be tested on plate 30.
+Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). All frame edges, native clipping masks, blue boundaries and backers are rebuilt together and every plate has fresh slices. The [complete review](../../review/clean-edges/README.md) replaces the earlier local-bend assessment.
 
-The user has printed the earlier hardware and lap tests and reports that the backer left insufficient photo room, possibly due to support roughness. The preceding clearance revision deepened the rabbet from **2.0 to 2.4 mm**. With the existing 1.6 mm backer, 0.8 mm remains for the photo and surface clearance. Physical fit remains unverified. The flush 1.5 mm Azurite blue edge thread is retained. This curve repair changes only the reviewed outline neighborhoods, with a maximum boundary shift of 0.305 mm; joints, rabbets, and hardware interfaces remain unchanged.
+The complete frame artwork has been rebuilt from tangent straight lines and circular arcs. The earlier repair removed sharp local bends but missed broad waves. All 26 boundary loops are now reconstructed; the 31 lap trimming domains and 20 section masks are regenerated from the same continuous geometry, so the old traced edges cannot clip the cleaned curves. Fabric boundaries, blue offsets, eight photo openings and matching backers follow the same source.
 
-Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). Plate **30** contains only the **68.45 x 24 x 13.5 mm** white/wood/blue sample from F7. Plate **31** contains only **Test-M-Letter**, with the copper Generic PLA Silk profile and 55 C bed. The optional standalone [photo-frame fit coupon](../../stl/Dara-Print-Checks/Test-Photo-Frame.stl) also has the deeper recess; the material test plates remain unchanged in purpose.
+The largest outline movement is 1.461 mm at a formerly irregular small corner. Small artwork corners use 1.5 mm fillets; overall bounds remain 914.4 x 914.4 mm. Every frame STL and all eight backers were regenerated. The six M, four wall-block and one retainer STL files are byte-identical to the preceding revision. Tested lap/key profiles, seam transforms, screw features, mounting interfaces, saved placements and slicer settings are preserved. Rabbets remain 2.4 mm deep, backers 1.6 mm thick, with 0.3 mm edge clearance.
 
-The alternating 0.3 mm weave crossing pads are preserved. The historical [rabbet comparison](../../review/rabbet-clearance/geometry-verification.json) records the preceding recess-depth change. The current [curve geometry comparison](../../review/curve-repair/geometry-verification.json) verifies all 39 production exports: only seven frame sections change, and all 32 other STLs are byte-identical to the preceding revision. Production placements and saved material settings are retained.
+The color-mask calculation also uses direct intersections with the original STL triangles. The previous 3D slicing helper could introduce a false triangular notch at an oblique weave seam. A regression check covers that location, and all wood/blue modifiers are regenerated with the corrected method. Solid-change verification checks every distinct vertex-height interval directly, avoiding the same coplanar Boolean artifact.
+
+Plate **30** is the **68.36 x 24.00 x 13.50 mm** white/wood/blue sample. Inspect the crossing detail, smooth edges, blue opacity and clean white beside the blue. Plate **31** is the copper M sample. The earlier hardware/lap tests were printed; the revised 2.4 mm photo clearance and these surface tests do not yet have recorded physical results.
 
 ## Saved-file checks
 
-- All 39 production STLs and two test meshes are valid solids; the current CAD hash and STL hashes match their manifests.
-- All 70 production pieces were checked in their assembled positions, including lap order and mating interfaces.
-- All 41 normal meshes in the 3MF match their source geometry within 0.0001 mm. The 74 reinforcement modifiers, 21 wood modifiers and 21 blue modifiers were checked. Blue paths were compared with the continuous CAD edge offsets.
-- Wood occupies layers 43-50 on the frame and short test, with eight wood/white color changes. Blue occupies layers 66-68 only, after the wood is complete. Total changes are 11 per frame/test plate, or 12 where taller white M locating pins require a final return to white. Plate 31 uses copper only, with no filament changes and a 55 C bed throughout printing; plate 30 uses a 65 C bed.
-- All 31 saved toolpaths pass the extrusion-bounds audit: 7,347,762 checked moves and 0.673 mm minimum bed-edge clearance. Printer purge/wipe/parking routines are outside that model-path check.
-- Estimated production use: 3,403.00 g and 126 h 57 min. Weave test: 18.44 g and 0 h 59 min. Copper test: 23.28 g and 1 h 10 min.
+- All 39 production STLs and both material test meshes are valid solids with matching source hashes.
+- All 70 assembly pieces pass the interference check; maximum numerical overlap is 0.000236 mm3 (tolerance 0.01 mm3).
+- Every frame, M and backer perimeter was compared with its CAD boundary: 34 parts, maximum boundary error 0.000033 mm.
+- All 26 canonical outline loops and 320 line/arc primitives have tangent joins; maximum chord approximation is 0.001999 mm.
+- Saved white/blue perimeter paths cover all 56 large circular arcs on all 20 frame plates: 348 arcs checked, maximum radial error 0.010984 mm (limit 0.06 mm).
+- All 63 blue-bearing layers pass the blue-mask and white-intrusion checks. The white diamonds in Preview are seam markers, separate from extrusion paths.
+- All 41 normal project meshes match the STLs within 0.0001 mm; 74 reinforcement, 21 wood and 21 blue modifiers pass validation.
+- All 31 plates were re-sliced: 6,911,436 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
 
-The matching report is [final-review.json](final-review.json). Inspect the weave sample for crossing detail, both blue edge lines, clean white beside the blue, and surface finish. Map slot 4 to the Azurite spool. The lines finish flush with the white rails; no assembly of separate thread inserts is needed. The separate copper sample checks the silk finish using the same settings as the M plates. The digital review does not record physical print results for these revised samples.
+Production plates 1-29: **3,402.87 g; 126 h 49 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **23.28 g; 1 h 10 min**. Total: **3,444.57 g; 128 h 59 min**. These are slicer estimates.
 
 ## Assembly supplies and order
 
@@ -47,16 +51,13 @@ Install the backers and four tabs per photo. Verify all four wall faces seat in
 one plane and the photo hardware clears the wall before mounting. A digital
 pass does not establish a safe load rating for the completed hanging.
 
-## Recheck
 
-From the repository root, with numpy, trimesh and manifold3d available:
+## Recheck
 
 ```powershell
 python -m unittest discover -s scripts -p 'test_*.py'
+python scripts/audit_clean_mesh_edges.py
 python scripts/validate_print_project.py
-python scripts/review_curve_artifacts.py --output working/review/curve-repair/after --repaired-findings working/review/curve-artifacts/review.json
+python scripts/review_curve_artifacts.py --output working/review/clean-edges/after --repaired-findings working/review/curve-artifacts/review.json
+python scripts/review_clean_edges.py --project working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf --baseline working/bambu/Dara-Photo-Frame-A1-Jointed/project-validation.json
 ```
-
-This audits the existing saved artifacts and writes `final-review.json`; it does
-not overwrite or re-slice the production 3MF. Re-export and re-slice deliberately
-if physical testing requires changes to the design or process.

@@ -1,18 +1,18 @@
 {
   "plate": 30,
   "pieces": 1,
-  "source_cad_sha256": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d",
-  "project_sha256": "7f1ad1439c0c90b751bd251baa1493716657f975249fb2e3b5e7c8c475f6173e",
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "project_sha256": "56560e6c587f65be8c4c0d9d915d6aeffbd1abb138849a393db517bd1d3f919d",
   "parts": [
     {
       "name": "Test-Weave-Full-Width",
       "file": "Test-Weave-Full-Width.stl",
-      "sha256": "cb89cfee4da29e460fbab485656f59774ef90a1045c98258dc057beaaa6dd9b4",
-      "triangles": 1396,
+      "sha256": "e70e7f84ae721c08c69ee1a9011ee9e1174af03569765598df16d08444769bb4",
+      "triangles": 1394,
       "source": "F7.stl; frame-joint-1 coordinates X=-110..30, Y=-90..-66; both side rails uncut",
-      "source_stl_sha256": "5d1b9acfc0a2376c75ea0b29a36d732faefbb84d9b9925f52b12605130ad3813",
+      "source_stl_sha256": "59b90f5a0b1ddd214d0360bdbfdf32ce263320e4e7c90e5d80cc899b780d9f35",
       "dimensions_mm": [
-        68.44780731201172,
+        68.36221313476562,
         24.0,
         13.5
       ],
@@ -46,19 +46,19 @@
         "name": "Test-Weave-Full-Width",
         "object_id": 198,
         "instance_id": 0,
-        "identify_id": 5591,
+        "identify_id": 8896,
         "xy": [
           128.0,
           128.0
         ],
         "bounds": [
           [
-            93.77609634399414,
+            93.81889343261719,
             116.0,
             0.0
           ],
           [
-            162.22390365600586,
+            162.1811065673828,
             140.0,
             13.5
           ]
@@ -72,14 +72,14 @@
     "parts": {
       "Test-Weave-Full-Width": 1
     },
-    "weight_g": 18.439999999999998,
+    "weight_g": 18.419999999999998,
     "filament_weights_g": [
-      15.64,
-      2.15,
+      15.63,
+      2.14,
       0.0,
       0.65
     ],
-    "estimated_seconds": 3552,
+    "estimated_seconds": 3555,
     "settings_verified": true,
     "filament_slots": [
       1,
@@ -106,23 +106,23 @@
       65.0,
       65.0
     ],
-    "extrusion_moves_checked": 27191,
+    "extrusion_moves_checked": 27202,
     "features": {
       "Prime tower": 3484,
-      "Support": 391,
+      "Support": 384,
       "Brim": 115,
-      "Outer wall": 1325,
-      "Inner wall": 2661,
-      "Gap infill": 1334,
+      "Outer wall": 1328,
+      "Inner wall": 2660,
+      "Gap infill": 1340,
       "Bottom surface": 272,
-      "Internal solid infill": 3486,
-      "Sparse infill": 11928,
-      "Floating vertical shell": 625,
-      "Bridge": 730,
-      "Support transition": 32,
-      "Top surface": 743,
-      "Support interface": 51,
-      "Overhang wall": 14
+      "Internal solid infill": 3489,
+      "Sparse infill": 11939,
+      "Floating vertical shell": 629,
+      "Bridge": 725,
+      "Support transition": 33,
+      "Top surface": 740,
+      "Support interface": 52,
+      "Overhang wall": 12
     },
     "model_extrusion_z_by_filament_mm": {
       "1": [
@@ -213,7 +213,7 @@
     },
     "extruding_xy_bounds_mm": [
       [
-        92.027,
+        92.069,
         114.25
       ],
       [
@@ -223,7 +223,7 @@
     ],
     "bead_xy_bounds_mm": [
       [
-        91.777,
+        91.819,
         114.0
       ],
       [

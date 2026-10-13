@@ -1,0 +1,10 @@
+{
+  "parts": 20,
+  "joints": 31,
+  "continuous_area_mm2": 435060.0858634208,
+  "partition_coverage_error_mm2": 7.169688020364218e-14,
+  "seam_centres_angles_and_keys_unchanged": true,
+  "visible_seam_gap_mm": 0.075,
+  "maximum_mask_overlap_inside_frame_mm2": 0.0,
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f"
+}

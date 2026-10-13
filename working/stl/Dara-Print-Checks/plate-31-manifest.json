@@ -1,8 +1,8 @@
 {
   "plate": 31,
   "pieces": 1,
-  "source_cad_sha256": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d",
-  "project_sha256": "7f1ad1439c0c90b751bd251baa1493716657f975249fb2e3b5e7c8c475f6173e",
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "project_sha256": "56560e6c587f65be8c4c0d9d915d6aeffbd1abb138849a393db517bd1d3f919d",
   "parts": [
     {
       "name": "Test-M-Letter",
@@ -25,7 +25,7 @@
         "name": "Test-M-Letter",
         "object_id": 194,
         "instance_id": 0,
-        "identify_id": 5568,
+        "identify_id": 8873,
         "xy": [
           128.0,
           128.0

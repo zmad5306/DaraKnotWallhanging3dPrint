@@ -32,7 +32,7 @@ def main(work=None, revision_key='blue_ribbon_edge'):
         production_estimated_seconds=sum(p['estimated_seconds'] for p in production),
         production_filament_weights_g=[round(sum(p['filament_weights_g'][i] if i < len(p['filament_weights_g']) else 0
                                                  for p in production), 2) for i in range(len(colors))],
-        validation_note=('Locally repaired source curves; ' if revision_key == 'curve_repair' else 'Flush Azurite ribbon edging; ')+
+        validation_note=({'curve_repair':'Locally repaired source curves; ', 'clean_edges':'Complete tangent line/arc artwork rebuild; '}.get(revision_key,'Flush Azurite ribbon edging; '))+
                         'independent geometry, color-height and toolpath audit passed.',
         plates=audit['plates'])
     base['bambu_studio_round_trip'] = dict(normal_meshes_match_source=True, settings_verified=True,

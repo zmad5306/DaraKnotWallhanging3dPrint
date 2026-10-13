@@ -20,6 +20,7 @@ import numpy as np
 import trimesh
 import manifold3d
 from export_jointed_stls import verify
+from mesh_sections import mesh_cross_section
 
 PACKAGE = ROOT / 'working/bambu/Dara-Photo-Frame-A1-Jointed'
 STLS = ROOT / 'working/stl/Dara-Photo-Frame-A1-Jointed'
@@ -334,12 +335,12 @@ def main():
                         source_solid = manifold3d.Manifold(manifold3d.Mesh64(meshes[name].vertices, meshes[name].faces.astype(np.uint64)))
                         local = (coupon_shape(blue_path, cad) if name == test_plate.get('full_width_weave_test') else
                                  in_print_coordinates(blue_path, array('frame_placements')[int(name[1:]) - 1]))
-                        expected_blue = section(local) ^ source_solid.slice(13.2)
-                        actual_blue = mask_solid.slice(13.2)
+                        expected_blue = section(local) ^ mesh_cross_section(meshes[name],13.2)
+                        actual_blue = mesh_cross_section(mesh,13.2)
                         path_error = abs((actual_blue - expected_blue).area()) + abs((expected_blue - actual_blue).area())
                         assert path_error < .05, (name, path_error)
                         for height in (12.901, 13.2, 13.499):
-                            outside = (mask_solid.slice(height) - source_solid.slice(height).offset(.0001)).area()
+                            outside = (mesh_cross_section(mesh,height) - mesh_cross_section(meshes[name],height).offset(.0001)).area()
                             assert abs(outside) < .02, (name, height, outside)
                         color_modifiers.append({'part': name, 'filament': 4, 'z_mm': mesh.bounds[:, 2].tolist(),
                                                 'volume_mm3': float(mesh.volume), 'path_error_mm2': path_error, 'flush': True})
@@ -359,7 +360,7 @@ def main():
                             # The weave is piecewise constant across these
                             # three bands; test the cross-sections directly.
                             for height in (8.7, 9.3, 9.75):
-                                outside = (mask_solid.slice(height) - source_solid.slice(height).offset(.0001)).area()
+                                outside = (mesh_cross_section(mesh,height) - mesh_cross_section(meshes[name],height).offset(.0001)).area()
                                 assert abs(outside) < .02, (name, height, outside)
                         color_modifiers.append({'part': name, 'filament': 2, 'z_mm': mesh.bounds[:, 2].tolist()})
                         continue

@@ -1,0 +1,247 @@
+{
+  "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "all_passed": true,
+  "parts_checked": 34,
+  "maximum_boundary_error_mm": 3.323357510409621e-05,
+  "parts": [
+    {
+      "part": "F1",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.1006316113948265e-05,
+      "symmetric_area_error_mm2": 0.013526947829124543,
+      "stl_sha256": "b2ab6911703450e7a964d6c33318dae3f06aacbf2bed0ac06d33bf7b7c24b391"
+    },
+    {
+      "part": "F2",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.077473077388354e-05,
+      "symmetric_area_error_mm2": 0.01665052458944148,
+      "stl_sha256": "b2c653dfd1ce56780628858afeb99141e955f9b1c27eeaa29fc483b46ee3e634"
+    },
+    {
+      "part": "F3",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.090707563991032e-05,
+      "symmetric_area_error_mm2": 0.015593470623230025,
+      "stl_sha256": "6144df51e6f57cc1b108369260d024bd86b3f16cfd0d7566d460df3043a099bc"
+    },
+    {
+      "part": "F4",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.8637013542698057e-05,
+      "symmetric_area_error_mm2": 0.013916235936609246,
+      "stl_sha256": "6c34a07da40f95048ed5ddb930219075fcaf8f3ad4687f025cb05b1e31daa2f5"
+    },
+    {
+      "part": "F5",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.4638516308273452e-05,
+      "symmetric_area_error_mm2": 0.016257528719055746,
+      "stl_sha256": "0b712938a9e82cec097d1a7df87529af3ce57f96d86092262fbc2394e21ddd8d"
+    },
+    {
+      "part": "F6",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.323357510409621e-05,
+      "symmetric_area_error_mm2": 0.02657118806070576,
+      "stl_sha256": "5091b5241f83035355730a195a6585badb5f91f9289b239eb8461d9c16647aea"
+    },
+    {
+      "part": "F7",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.214079486742346e-05,
+      "symmetric_area_error_mm2": 0.015979700661559577,
+      "stl_sha256": "59b90f5a0b1ddd214d0360bdbfdf32ce263320e4e7c90e5d80cc899b780d9f35"
+    },
+    {
+      "part": "F8",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.092911848583299e-05,
+      "symmetric_area_error_mm2": 0.01981170114971407,
+      "stl_sha256": "5715a70ddad52487ac365ee69efc8bb3f6e21a8b9ff3f34ed40e8b6ace5d5021"
+    },
+    {
+      "part": "F9",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.7226227872064967e-05,
+      "symmetric_area_error_mm2": 0.013091389954421143,
+      "stl_sha256": "2fc5f1f31e4f004a97f1edb0cb78d1a28d6a239ef175451caa61c10ebf5c174d"
+    },
+    {
+      "part": "F10",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.8611592369913366e-05,
+      "symmetric_area_error_mm2": 0.0171338822513838,
+      "stl_sha256": "81793bffe2d3361a0e707260ef06bc76791a9654e99591a3348cfa36937b7f2e"
+    },
+    {
+      "part": "F11",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.7556285653743374e-05,
+      "symmetric_area_error_mm2": 0.011940653098405165,
+      "stl_sha256": "db56bbb668a00e4c65d73c83c6d80f97c93ba39d498bb6ea39df901b1ef83dbc"
+    },
+    {
+      "part": "F12",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.8550756510487236e-05,
+      "symmetric_area_error_mm2": 0.018060343848254806,
+      "stl_sha256": "5742b5ea7e2abcaf057980fcc2d28b4daac93c1e8edfbd9cc40da2645353f8dc"
+    },
+    {
+      "part": "F13",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.920160975325323e-05,
+      "symmetric_area_error_mm2": 0.019755906180172828,
+      "stl_sha256": "aa5483b741d11853f78460eb5c06f12603e576662a0c6a00c847816efc357976"
+    },
+    {
+      "part": "F14",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.9518106180147588e-05,
+      "symmetric_area_error_mm2": 0.011587641774792348,
+      "stl_sha256": "4a666e2856c50ea397dfb0985e46ef51b12663146aa7a1852c4466004bfe3d02"
+    },
+    {
+      "part": "F15",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.1180441106490794e-05,
+      "symmetric_area_error_mm2": 0.019175282242677356,
+      "stl_sha256": "8de80c24e007ed07adfebf43d9521b01e44c1a44e7277ae568ad18f4c9b27dbe"
+    },
+    {
+      "part": "F16",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.7037314377982785e-05,
+      "symmetric_area_error_mm2": 0.013628039486537579,
+      "stl_sha256": "655b746017aabaca6a5ff5a737772290781a23adb476449e72d6fcf46242e9af"
+    },
+    {
+      "part": "F17",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.7810950330206204e-05,
+      "symmetric_area_error_mm2": 0.014709702559120442,
+      "stl_sha256": "4f4aa316681b85ede08410570ed26ca097eb8258343eae66ebd37e5c6e18b16a"
+    },
+    {
+      "part": "F18",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 2.843195893451335e-05,
+      "symmetric_area_error_mm2": 0.016284410697470456,
+      "stl_sha256": "849de0edbf29b7f3ae134d12a32ca2bb1b06002ef795d3fa706714b2be9d8cc8"
+    },
+    {
+      "part": "F19",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.095852463899168e-05,
+      "symmetric_area_error_mm2": 0.020938545772224326,
+      "stl_sha256": "535987584957cd49fd4ac8b7af00bef8499749ed63638a5219c9b267e3e09347"
+    },
+    {
+      "part": "F20",
+      "z_mm": 13.4,
+      "max_boundary_error_mm": 3.172762662967923e-05,
+      "symmetric_area_error_mm2": 0.014426159196112932,
+      "stl_sha256": "94305e03ec2021eb2e9a1b3c9d3332608a58a328f54624d661d5d32474330859"
+    },
+    {
+      "part": "M1",
+      "z_mm": 10.4,
+      "max_boundary_error_mm": 1.8289476087192334e-05,
+      "symmetric_area_error_mm2": 0.004814603759707436,
+      "stl_sha256": "a1ac65ecc9efa0f9ff019774c3ad4017ffe037d7d037be126f27a2bc1db85493"
+    },
+    {
+      "part": "M2",
+      "z_mm": 10.4,
+      "max_boundary_error_mm": 1.2737052428266396e-05,
+      "symmetric_area_error_mm2": 0.002930176012627335,
+      "stl_sha256": "7a6e1de622362aca089b59b69cf5547d754e223fa4b2c373c951e81dbda6c873"
+    },
+    {
+      "part": "M3",
+      "z_mm": 10.4,
+      "max_boundary_error_mm": 2.0069630660570818e-05,
+      "symmetric_area_error_mm2": 0.00545526969289496,
+      "stl_sha256": "9fb787a78c2f6db4d92147d595a43cdb9c5698412be67a134be143f4c93611b8"
+    },
+    {
+      "part": "M4",
+      "z_mm": 10.4,
+      "max_boundary_error_mm": 1.5690256915665768e-05,
+      "symmetric_area_error_mm2": 0.004218985983990254,
+      "stl_sha256": "cc59e5104d99da8c236585060a44cc726058251718bad4c04c3b219a8d9e940a"
+    },
+    {
+      "part": "M5",
+      "z_mm": 10.4,
+      "max_boundary_error_mm": 6.904826885415062e-06,
+      "symmetric_area_error_mm2": 0.0022701898635160713,
+      "stl_sha256": "2e0a3fc707a95540663baee8e7a3b5230a8d88326c17dc83b869b07cda1088a3"
+    },
+    {
+      "part": "M6",
+      "z_mm": 10.4,
+      "max_boundary_error_mm": 1.4651645597278793e-05,
+      "symmetric_area_error_mm2": 0.004295684051296045,
+      "stl_sha256": "9a46f1cc005aad46459b600f3cae2a6d537151974b589e24e5660872369a1584"
+    },
+    {
+      "part": "Backer1",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.6768596754503883e-05,
+      "symmetric_area_error_mm2": 0.0025720150973331185,
+      "stl_sha256": "8b4f83047e0a1b2d92d6a0ab2aa27880e9220ac8f1bbbcdff7bb31c2a164ab01"
+    },
+    {
+      "part": "Backer2",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.23709183953304e-05,
+      "symmetric_area_error_mm2": 0.002580335083324241,
+      "stl_sha256": "ca67b4fb566969a8083ec33cf36b581639487162bd758b3dcb444f2dee2de1e9"
+    },
+    {
+      "part": "Backer3",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.6108114326547857e-05,
+      "symmetric_area_error_mm2": 0.002860210836999349,
+      "stl_sha256": "d6bc006258379c0779817551f092944053b3c5c35211664d3295847eb6ff6c74"
+    },
+    {
+      "part": "Backer4",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.5197300544539857e-05,
+      "symmetric_area_error_mm2": 0.00329628431087121,
+      "stl_sha256": "7aa181126be9e5bdc2b96e88d7141daed82051c5477a398c675e3d65b3ea8445"
+    },
+    {
+      "part": "Backer5",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.2349744662666507e-05,
+      "symmetric_area_error_mm2": 0.0026093544484794987,
+      "stl_sha256": "f45092ff0a4c869990a19da32e5ddf709f63db5b98a9eee7c98fe18d3df57e18"
+    },
+    {
+      "part": "Backer6",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.3050176584645958e-05,
+      "symmetric_area_error_mm2": 0.0028006301681157784,
+      "stl_sha256": "586b36724c47c655fc1583c5e4ee3d41c86fd93a9ff2c8cf78c1b6d1b582573f"
+    },
+    {
+      "part": "Backer7",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.5018218903092498e-05,
+      "symmetric_area_error_mm2": 0.0031218215839277853,
+      "stl_sha256": "3eca557bd61aaf60259b3c469cbdfea1473b8c92b5aab89121e84bbf8bda4e13"
+    },
+    {
+      "part": "Backer8",
+      "z_mm": 0.8,
+      "max_boundary_error_mm": 2.4476546934251196e-05,
+      "symmetric_area_error_mm2": 0.0019735518550765877,
+      "stl_sha256": "58f50b9ab9dc5f1b341a5b06836bc91d6c7abcfab442a2dd773ff9e5494fa6b4"
+    }
+  ],
+  "unchanged_hardware": "B1-B4 and Retainer are checked for byte identity, valid solids and assembly fit in the geometry/integrity audits."
+}

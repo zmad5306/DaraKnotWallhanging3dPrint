@@ -2,7 +2,7 @@
 
 [Dara.3mf](Dara.3mf) is the Bambu Studio project with all 31 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
-**Selected copper finish, 2026-10-14:** all copper parts use the chosen bottom-right sample's **104% top-surface flow, original wall layout and no ironing**. The filament flow ratio remains **0.96**. Copper plates 21-26 and 31 have matching fresh slices. The standalone copper comparison projects and their generated test files have been removed. [Selected settings and checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json).
+**Selected copper finish, 2026-10-14:** all copper parts use **coupon C: 100% top-surface flow, 30 mm/s top speed, original wall layout and no ironing**. The filament flow ratio remains **0.96**. Copper plates 21-26 and 31 have matching fresh slices. This supersedes the earlier 104% selection. The separate [diagnostic comparison](Dara-Copper-Diagnostic-Test.3mf) remains available; its inspection pause is not in the production project. [Selected settings and checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json).
 
 ![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 

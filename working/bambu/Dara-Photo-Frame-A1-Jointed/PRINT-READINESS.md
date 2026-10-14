@@ -1,6 +1,6 @@
 # Print review - clean curves - 2026-10-13
 
-**Selected copper finish - 2026-10-14:** the user chose the bottom-right comparison sample: **104% top solid infill flow, original wall layout and no ironing**. This is applied to all copper parts on plates 21-26 and 31, with fresh slices. Filament flow remains 0.96, top speed 30 mm/s, internal solid speed 50 mm/s, eight top layers / 1.6 mm top shell, and 0.6 mm normal vertical lift with sideways pre-lift wiping disabled. Nozzle/bed remain 220/55 C. The preferred coupon retains the copper shine; a full-size print using the selected settings has not yet been reported. Standalone copper comparison files have been removed. [Selected settings and checks](copper-finish-settings.json).
+**Selected copper finish - 2026-10-14:** the user chose **coupon C, middle left: 100% top solid infill flow, 30 mm/s top speed, original wall layout and no ironing**. This supersedes the earlier 104% choice and is applied to all copper parts on plates 21-26 and 31, with fresh slices. Filament flow remains 0.96, internal solid speed 50 mm/s, eight top layers / 1.6 mm top shell, and 0.6 mm normal vertical lift with sideways pre-lift wiping disabled. Nozzle/bed remain 220/55 C. No new full-size print result has been reported. The diagnostic project remains separate; its inspection pause is not in production. [Selected settings and checks](copper-finish-settings.json).
 
 Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). All frame edges, native clipping masks, blue boundaries and backers are rebuilt together and every plate has fresh slices. The [complete review](../../review/clean-edges/README.md) replaces the earlier local-bend assessment.
 
@@ -10,7 +10,7 @@ The largest outline movement is 1.461 mm at a formerly irregular small corner. S
 
 The color-mask calculation also uses direct intersections with the original STL triangles. The previous 3D slicing helper could introduce a false triangular notch at an oblique weave seam. A regression check covers that location, and all wood/blue modifiers are regenerated with the corrected method. Solid-change verification checks every distinct vertex-height interval directly, avoiding the same coplanar Boolean artifact.
 
-Plate **30** is the **68.36 x 24.00 x 13.50 mm** white/wood/blue sample. Inspect the crossing detail, smooth edges, blue opacity and clean white beside the blue. Plate **31** is the copper M sample, now re-sliced with the selected 104% top-fill setting. The earlier hardware/lap tests were printed; the revised 2.4 mm photo clearance and plate 30 surface test do not yet have recorded physical results.
+Plate **30** is the **68.36 x 24.00 x 13.50 mm** white/wood/blue sample. Inspect the crossing detail, smooth edges, blue opacity and clean white beside the blue. Plate **31** is the copper M sample, now re-sliced with coupon C's 100% top-fill setting. The earlier hardware/lap tests were printed; the revised 2.4 mm photo clearance and plate 30 surface test do not yet have recorded physical results.
 
 ## Saved-file checks
 
@@ -21,9 +21,9 @@ Plate **30** is the **68.36 x 24.00 x 13.50 mm** white/wood/blue sample. Inspect
 - Saved white/blue perimeter paths cover all 56 large circular arcs on all 20 frame plates: 348 arcs checked, maximum radial error 0.010984 mm (limit 0.06 mm).
 - All 63 blue-bearing layers pass the blue-mask and white-intrusion checks. The white diamonds in Preview are seam markers, separate from extrusion paths.
 - All 41 normal project meshes match the STLs within 0.0001 mm; 74 reinforcement, 21 wood and 21 blue modifiers pass validation.
-- The seven copper plates were re-sliced for the selected 104% finish. All 31 plates were audited: 6,867,442 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
+- The seven copper plates were re-sliced for coupon C's 100% finish. All 31 plates were audited: 6,867,463 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
 
-Production plates 1-29: **3,443.52 g; 133 h 58 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **24.85 g; 1 h 29 min**. Total: **3,486.79 g; 136 h 26 min**. These are slicer estimates.
+Production plates 1-29: **3,442.69 g; 133 h 58 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **24.81 g; 1 h 29 min**. Total: **3,485.92 g; 136 h 26 min**. These are slicer estimates.
 
 ## Assembly supplies and order
 

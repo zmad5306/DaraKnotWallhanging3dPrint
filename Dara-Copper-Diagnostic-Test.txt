@@ -1,0 +1,59 @@
+COPPER SURFACE COMPARISON
+
+Open Dara-Copper-Diagnostic-Test.3mf in Bambu Studio as a project.
+One sliced plate for the Bambu A1 / 0.4 mm nozzle / textured PEI.
+Use the copper SUNLU Silk 2.0 filament assigned to project filament 3.
+Five identical 50 x 25 x 4.2 mm coupons; approximately 24.3 g and
+1 hour 31 minutes, plus the time spent paused. Use normal 100% printer speed.
+
+Viewed from above, with the FRONT of the printer nearest you:
+
+                         REAR
+                     [ S: solid ]
+
+          [ C: 30 / 100 ]       [ D: 50 / 100 ]
+
+          [ A: 30 / 104 ]       [ B: 50 / 104 ]
+                         FRONT
+
+Numbers are final top surface speed in mm/s / top flow multiplier in %.
+A is the production control from when this comparison was built (104%).
+Coupon C was subsequently selected for production. A-D use 15% gyroid; S uses 100%
+rectilinear infill and the same 30 mm/s / 104% top settings as A.
+Labels are in Bambu's object names, not embossed into the test surfaces.
+Keep the pieces in position until you have marked their undersides.
+
+All coupons retain the selected copper base filament flow ratio of 0.96,
+220 C nozzle, 55 C bed, 0.2 mm layers, eight top shell layers / 1.6 mm,
+50 mm/s internal solid infill, original wall layout, and no ironing.
+The 100% and 104% values change only the TOP multiplier, not base flow.
+
+INSPECTION
+
+The project has one native pause before layer 21 (the final layer).
+At that point all five coupons have completed Z=4.0 mm.
+Photograph their surfaces under angled light, noting which already show
+ridges or crosshatching. Leave them attached and resume promptly.
+The final layer finishes at Z=4.2 mm. Once finished and cool, compare
+surface feel, corner coverage, and gloss. Keep lighting consistent.
+
+WHAT EACH COMPARISON TESTS
+
+If ridges are already present before the final layer:
+Compare A with S at the pause. A rough / S smoother means the fully solid
+interior helped the underlying surface in this coupon. It supports further
+work on roof support/construction; it does not prove a unique cause.
+If both are rough, this test does not justify simply increasing infill.
+The next separate test would be base filament flow-rate calibration.
+
+If the next-to-last surface is smooth and the final layer adds ridges:
+Compare A with B for speed at 104% flow, and C with D for speed at 100%.
+Compare A with C for flow at 30 mm/s, and B with D for flow at 50 mm/s.
+These comparisons show whether either tested change helps, including
+whether it improves ridges at the cost of the corner coverage or gloss.
+They are candidate adjustments, not guaranteed fixes.
+
+The pause cools the surface, so keep it brief. A small flat coupon may not
+reproduce the full part. Confirm a preferred result on the real geometry
+before changing production. Creating this comparison did not change production;
+the user's later selection of C is recorded in copper-finish-settings.json.

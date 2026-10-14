@@ -1,5 +1,5 @@
 {
-  "project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919",
+  "project_sha256": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
   "source_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
   "scope": "Digital checks only. No physical fit, strength or wall-load qualification.",
   "source_meshes": [
@@ -4669,11 +4669,11 @@
       "parts": {
         "M1": 1
       },
-      "weight_g": 64.33,
+      "weight_g": 64.21,
       "filament_weights_g": [
         0.0,
         0.0,
-        64.33
+        64.21
       ],
       "estimated_seconds": 13269,
       "settings_verified": true,
@@ -4801,11 +4801,11 @@
       "parts": {
         "M2": 1
       },
-      "weight_g": 63.14,
+      "weight_g": 63.02,
       "filament_weights_g": [
         0.0,
         0.0,
-        63.14
+        63.02
       ],
       "estimated_seconds": 13242,
       "settings_verified": true,
@@ -4936,11 +4936,11 @@
       "parts": {
         "M3": 1
       },
-      "weight_g": 81.76,
+      "weight_g": 81.61,
       "filament_weights_g": [
         0.0,
         0.0,
-        81.76
+        81.61
       ],
       "estimated_seconds": 16762,
       "settings_verified": true,
@@ -5071,11 +5071,11 @@
       "parts": {
         "M4": 1
       },
-      "weight_g": 106.43,
+      "weight_g": 106.23,
       "filament_weights_g": [
         0.0,
         0.0,
-        106.43
+        106.23
       ],
       "estimated_seconds": 21645,
       "settings_verified": true,
@@ -5206,11 +5206,11 @@
       "parts": {
         "M5": 1
       },
-      "weight_g": 61.61,
+      "weight_g": 61.5,
       "filament_weights_g": [
         0.0,
         0.0,
-        61.61
+        61.5
       ],
       "estimated_seconds": 12780,
       "settings_verified": true,
@@ -5341,11 +5341,11 @@
       "parts": {
         "M6": 1
       },
-      "weight_g": 72.6,
+      "weight_g": 72.47,
       "filament_weights_g": [
         0.0,
         0.0,
-        72.6
+        72.47
       ],
       "estimated_seconds": 14904,
       "settings_verified": true,
@@ -5371,9 +5371,9 @@
           "error_code": "1000C003"
         }
       ],
-      "extrusion_moves_checked": 129824,
+      "extrusion_moves_checked": 129845,
       "features": {
-        "Support": 266,
+        "Support": 287,
         "Brim": 779,
         "Outer wall": 1872,
         "Inner wall": 5274,
@@ -5943,11 +5943,11 @@
       "parts": {
         "Test-M-Letter": 1
       },
-      "weight_g": 24.85,
+      "weight_g": 24.81,
       "filament_weights_g": [
         0.0,
         0.0,
-        24.85
+        24.81
       ],
       "estimated_seconds": 5353,
       "settings_verified": true,
@@ -6106,7 +6106,7 @@
     "date": "2026-10-14",
     "material": "SUNLU Silk 2.0 PLA Copper Red",
     "product_url": "https://www.amazon.com/dp/B0H8SC8RXP",
-    "prior_project_sha256": "5a5ecd6fdde6eed0301e3c03fcd51815e25fcfd57d131e4a5cee0a22b1a3c5d4",
+    "prior_project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919",
     "affected_plates": [
       21,
       22,
@@ -6120,6 +6120,16 @@
     "physical_test_passed": false,
     "status": "user_selected_for_production",
     "selection": {
+      "date": "2026-10-14",
+      "sample": "C - Middle left - 30 mm/s - 100% top flow - 15% gyroid",
+      "comparison_project_sha256": "5a95ea51faaa1e0bb3342be059c3abe85e67db21ae2133a9c419c98ed8ceaec1",
+      "user_instruction": "lets go with C. update the project.",
+      "coupon_finish_accepted": true,
+      "full_geometry_print_with_selected_settings_verified": false,
+      "wall_layout": "Original four walls; one perimeter on top surfaces. No upper-1-mm wall modifier.",
+      "observations": "The user selected coupon C from the five-coupon diagnostic plate. This supersedes the earlier 104% choice; no new full-geometry physical result was reported."
+    },
+    "previous_selection": {
       "date": "2026-10-14",
       "sample": "2 - Front right - 104 flow",
       "comparison_project_sha256": "de5a3ebaac6e43c7d0c0522cc87504629c9d3206067da9e8e549016162b64fd6",
@@ -6136,7 +6146,7 @@
       "top_shell_layers": "8",
       "top_shell_thickness": "1.6",
       "top_surface_pattern": "monotonicline",
-      "top_solid_infill_flow_ratio": "1.04",
+      "top_solid_infill_flow_ratio": "1",
       "ironing_type": "no ironing"
     },
     "filament_slot": 3,
@@ -6166,7 +6176,8 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       },
       {
@@ -6184,7 +6195,8 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       },
       {
@@ -6200,7 +6212,8 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       },
       {
@@ -6216,7 +6229,8 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       },
       {
@@ -6234,7 +6248,8 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       },
       {
@@ -6250,7 +6265,8 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       },
       {
@@ -6266,11 +6282,12 @@
           "top_shell_layers": "8",
           "top_shell_thickness": "1.6",
           "top_surface_pattern": "monotonicline",
-          "ironing_type": "no ironing"
+          "ironing_type": "no ironing",
+          "top_solid_infill_flow_ratio": "1.04"
         }
       }
     ],
-    "note": "104% applies to top solid infill only; filament flow remains 0.96. This is a user-selected finish, not a measured spool calibration. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.",
+    "note": "100% applies to top solid infill only; filament flow remains 0.96. This is a user-selected finish, not a measured spool calibration. The diagnostic pause is not transferred to production. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.",
     "geometry_byte_identical": true,
     "unaffected_plate_gcodes_byte_identical": true
   },
@@ -6850,13 +6867,13 @@
     "production_pieces": 70,
     "test_pieces": 2,
     "minimum_edge_clearance_mm": 0.634,
-    "extrusion_moves_checked": 6867442,
-    "total_weight_g": 3486.79,
+    "extrusion_moves_checked": 6867463,
+    "total_weight_g": 3485.92,
     "total_estimated_seconds": 491218,
     "filament_weights_g": [
       2761.1,
       222.3,
-      474.72,
+      473.85,
       28.67
     ]
   }

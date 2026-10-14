@@ -2,7 +2,7 @@
   "plate": 31,
   "pieces": 1,
   "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
-  "project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919",
+  "project_sha256": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
   "parts": [
     {
       "name": "Test-M-Letter",
@@ -51,11 +51,11 @@
     "parts": {
       "Test-M-Letter": 1
     },
-    "weight_g": 24.85,
+    "weight_g": 24.81,
     "filament_weights_g": [
       0.0,
       0.0,
-      24.85
+      24.81
     ],
     "estimated_seconds": 5353,
     "settings_verified": true,

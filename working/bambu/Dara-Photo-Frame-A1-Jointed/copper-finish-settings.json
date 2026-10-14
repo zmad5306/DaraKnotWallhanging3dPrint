@@ -1,9 +1,9 @@
 {
-  "project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919",
+  "project_sha256": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
   "date": "2026-10-14",
   "material": "SUNLU Silk 2.0 PLA Copper Red",
   "product_url": "https://www.amazon.com/dp/B0H8SC8RXP",
-  "prior_project_sha256": "5a5ecd6fdde6eed0301e3c03fcd51815e25fcfd57d131e4a5cee0a22b1a3c5d4",
+  "prior_project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919",
   "affected_plates": [
     21,
     22,
@@ -17,6 +17,16 @@
   "physical_test_passed": false,
   "status": "user_selected_for_production",
   "selection": {
+    "date": "2026-10-14",
+    "sample": "C - Middle left - 30 mm/s - 100% top flow - 15% gyroid",
+    "comparison_project_sha256": "5a95ea51faaa1e0bb3342be059c3abe85e67db21ae2133a9c419c98ed8ceaec1",
+    "user_instruction": "lets go with C. update the project.",
+    "coupon_finish_accepted": true,
+    "full_geometry_print_with_selected_settings_verified": false,
+    "wall_layout": "Original four walls; one perimeter on top surfaces. No upper-1-mm wall modifier.",
+    "observations": "The user selected coupon C from the five-coupon diagnostic plate. This supersedes the earlier 104% choice; no new full-geometry physical result was reported."
+  },
+  "previous_selection": {
     "date": "2026-10-14",
     "sample": "2 - Front right - 104 flow",
     "comparison_project_sha256": "de5a3ebaac6e43c7d0c0522cc87504629c9d3206067da9e8e549016162b64fd6",
@@ -33,7 +43,7 @@
     "top_shell_layers": "8",
     "top_shell_thickness": "1.6",
     "top_surface_pattern": "monotonicline",
-    "top_solid_infill_flow_ratio": "1.04",
+    "top_solid_infill_flow_ratio": "1",
     "ironing_type": "no ironing"
   },
   "filament_slot": 3,
@@ -63,7 +73,8 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     },
     {
@@ -81,7 +92,8 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     },
     {
@@ -97,7 +109,8 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     },
     {
@@ -113,7 +126,8 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     },
     {
@@ -131,7 +145,8 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     },
     {
@@ -147,7 +162,8 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     },
     {
@@ -163,11 +179,12 @@
         "top_shell_layers": "8",
         "top_shell_thickness": "1.6",
         "top_surface_pattern": "monotonicline",
-        "ironing_type": "no ironing"
+        "ironing_type": "no ironing",
+        "top_solid_infill_flow_ratio": "1.04"
       }
     }
   ],
-  "note": "104% applies to top solid infill only; filament flow remains 0.96. This is a user-selected finish, not a measured spool calibration. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.",
+  "note": "100% applies to top solid infill only; filament flow remains 0.96. This is a user-selected finish, not a measured spool calibration. The diagnostic pause is not transferred to production. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.",
   "geometry_byte_identical": true,
   "unaffected_plate_gcodes_byte_identical": true,
   "toolpath_verification": {
@@ -197,10 +214,11 @@
           "Support interface": 1.0,
           "Floating vertical shell": 1.0,
           "Bridge": 1.0,
-          "Top surface": 1.040001
+          "Top surface": 0.961538
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {},
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -211,7 +229,7 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "12b17fbd0c9a788f2095a9cb7085dd2b0c9be0ef7cb4f2875db4f109fa9f843c"
+        "gcode_sha256": "eb3257f9342349a11f031c930879d234e8a29564f5759a46e3e772c9db499851"
       },
       {
         "plate": 22,
@@ -237,11 +255,12 @@
           "Support interface": 1.0,
           "Floating vertical shell": 1.0,
           "Bridge": 1.0,
-          "Top surface": 1.04,
+          "Top surface": 0.961538,
           "Overhang wall": 1.0
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {},
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -252,7 +271,7 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "92faf1bfeed14e2fd0175324316f52df2b36e93727314b202e5b9221d9d2ce14"
+        "gcode_sha256": "ac7d9d135b39d42f5df41ae87fb1169c05138e983ef3ddde11624a9af25999fe"
       },
       {
         "plate": 23,
@@ -279,10 +298,11 @@
           "Bridge": 1.0,
           "Floating vertical shell": 1.0,
           "Overhang wall": 1.0,
-          "Top surface": 1.04
+          "Top surface": 0.961538
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {},
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -293,7 +313,7 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "fc0e83652c63900f2b27c01f119cca3d50924603283cbc96f70f4e030f11a799"
+        "gcode_sha256": "2fbee216f63b07552ca3b6c5ece5ddd1a7ed6184fedef7406761989c2fe20fec"
       },
       {
         "plate": 24,
@@ -320,10 +340,11 @@
           "Bridge": 1.0,
           "Floating vertical shell": 1.0,
           "Overhang wall": 1.0,
-          "Top surface": 1.04
+          "Top surface": 0.961538
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {},
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -334,7 +355,7 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "69c58788e250c808c9f9f58d3f191495a95f5416a5e13f857aed66e9de3925c3"
+        "gcode_sha256": "67c3df83157b75d570a154b215ec5c793b4a752057a2d7b59da8c28a1e81d486"
       },
       {
         "plate": 25,
@@ -361,10 +382,11 @@
           "Bridge": 1.0,
           "Floating vertical shell": 1.0,
           "Overhang wall": 1.0,
-          "Top surface": 1.04
+          "Top surface": 0.961538
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {},
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -375,7 +397,7 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "0dc83b3385b1d39ccab99ff0139ed57f78a30d2abe4497affa936f4cabe61ba7"
+        "gcode_sha256": "007373bf550e490c7539ded624fa646be54ad551896a6178040a2aaf759fb5d7"
       },
       {
         "plate": 26,
@@ -389,7 +411,7 @@
           "0.6": 835
         },
         "extrusion_ratio_vs_prior_by_feature": {
-          "Support": 0.999987,
+          "Support": 1.000013,
           "Brim": 1.0,
           "Outer wall": 1.0,
           "Inner wall": 1.0,
@@ -401,15 +423,16 @@
           "Support interface": 1.0,
           "Floating vertical shell": 1.0,
           "Bridge": 1.0,
-          "Top surface": 1.04
+          "Top surface": 0.961538
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {
           "Support": {
-            "prior": 287,
-            "current": 266
+            "prior": 266,
+            "current": 287
           }
         },
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -420,7 +443,7 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "19347a2771430c1d286e73a389a6a34c6c662ece9ece4677281d5c5c4f73c736"
+        "gcode_sha256": "3908c5661858b0f95f72ba9106ab070a67fa0db862d008e4807ae0ca1bf9fe49"
       },
       {
         "plate": 31,
@@ -446,10 +469,11 @@
           "Support interface": 1.0,
           "Bridge": 1.0,
           "Floating vertical shell": 1.0,
-          "Top surface": 1.039999
+          "Top surface": 0.96154
         },
         "ironing_moves": 0,
         "feature_move_count_changes": {},
+        "pause_count_unchanged": true,
         "sideways_wipes": 0,
         "solid_layer_heights_near_top": [
           9.2,
@@ -460,10 +484,10 @@
           10.2,
           10.4
         ],
-        "gcode_sha256": "eed1f7315a58bf6a5a0d9fbf4fe04e1ff2d0eef1f6ca176e287fcafd1c7d5cda"
+        "gcode_sha256": "502529c8a48363296a03a888916bc0bf109a1469cc78eedf11adacb100e6f337"
       }
     ],
     "physical_test_passed": false,
-    "project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919"
+    "project_sha256": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94"
   }
 }

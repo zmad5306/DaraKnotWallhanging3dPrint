@@ -284,6 +284,16 @@ def main():
                 assert settings[key] == value, (key, settings[key])
                 expected_settings[key] = value
         report['settings'] = expected_settings
+        silk_trial = baseline.get('silk_finish_trial')
+        if silk_trial:
+            from tune_silk_project import FILAMENT_SETTINGS, OBJECT_SETTINGS
+            assert silk_trial['filament_slot'] == 3
+            assert silk_trial['filament_settings'] == FILAMENT_SETTINGS
+            assert silk_trial['object_settings'] == OBJECT_SETTINGS
+            for key, value in FILAMENT_SETTINGS.items():
+                untouched = '0.98' if key == 'filament_flow_ratio' else 'nil'
+                assert settings[key] == [untouched, untouched, value, untouched], (key, settings[key])
+            report['silk_finish_trial'] = silk_trial
         objects = {o.get('id'): o for o in root.find('m:resources', N)}
         builds = collections.defaultdict(list)
         for item in root.find('m:build', N):
@@ -307,7 +317,10 @@ def main():
             if colored:
                 assert op['extruder'] == expected_slot, (name, op)
                 if expected_slot == '3':
-                    assert op['outer_wall_speed'] == op['top_surface_speed'] == '40'
+                    copper_settings = silk_trial['object_settings'] if silk_trial else {
+                        'outer_wall_speed': '40', 'top_surface_speed': '40'}
+                    for key, value in copper_settings.items():
+                        assert op[key] == value, (name, key, op[key])
             for part in obj.findall('part'):
                 comp = components[part.get('id')]
                 child = ET.fromstring(archive.read(comp.get(P + 'path').lstrip('/')))

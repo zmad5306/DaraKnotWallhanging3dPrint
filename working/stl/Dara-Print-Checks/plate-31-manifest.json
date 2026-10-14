@@ -2,7 +2,7 @@
   "plate": 31,
   "pieces": 1,
   "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
-  "project_sha256": "56560e6c587f65be8c4c0d9d915d6aeffbd1abb138849a393db517bd1d3f919d",
+  "project_sha256": "5a5ecd6fdde6eed0301e3c03fcd51815e25fcfd57d131e4a5cee0a22b1a3c5d4",
   "parts": [
     {
       "name": "Test-M-Letter",
@@ -51,13 +51,13 @@
     "parts": {
       "Test-M-Letter": 1
     },
-    "weight_g": 23.28,
+    "weight_g": 24.81,
     "filament_weights_g": [
       0.0,
       0.0,
-      23.28
+      24.81
     ],
-    "estimated_seconds": 4252,
+    "estimated_seconds": 5353,
     "settings_verified": true,
     "filament_slots": [
       3
@@ -85,7 +85,7 @@
       55.0,
       55.0
     ],
-    "extrusion_moves_checked": 46140,
+    "extrusion_moves_checked": 44573,
     "features": {
       "Support": 221,
       "Brim": 109,
@@ -93,11 +93,11 @@
       "Inner wall": 1893,
       "Gap infill": 210,
       "Bottom surface": 587,
-      "Internal solid infill": 4673,
-      "Sparse infill": 36679,
+      "Internal solid infill": 6447,
+      "Sparse infill": 33244,
       "Support transition": 26,
       "Support interface": 34,
-      "Bridge": 751,
+      "Bridge": 845,
       "Floating vertical shell": 15,
       "Top surface": 330
     },

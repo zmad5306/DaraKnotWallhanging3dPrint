@@ -72,7 +72,31 @@
       "55",
       "65"
     ],
-    "wall_loops": "4"
+    "wall_loops": "4",
+    "filament_flow_ratio": [
+      "0.98",
+      "0.98",
+      "0.96",
+      "0.98"
+    ],
+    "filament_z_hop": [
+      "nil",
+      "nil",
+      "0.6",
+      "nil"
+    ],
+    "filament_z_hop_types": [
+      "nil",
+      "nil",
+      "Normal Lift",
+      "nil"
+    ],
+    "filament_wipe": [
+      "nil",
+      "nil",
+      "0",
+      "nil"
+    ]
   },
   "modifier_policy": "D16 screw seats and D14 pilot zones derived from tested local modifiers; no lap infill overrides. Photo and wall screw zones mapped from native CAD.",
   "parts": [
@@ -2704,7 +2728,7 @@
       ]
     }
   ],
-  "project_sha256": "56560e6c587f65be8c4c0d9d915d6aeffbd1abb138849a393db517bd1d3f919d",
+  "project_sha256": "5a5ecd6fdde6eed0301e3c03fcd51815e25fcfd57d131e4a5cee0a22b1a3c5d4",
   "bambu_studio_version": "02.08.02.61",
   "backer_grouping": {
     "plates": {
@@ -3586,29 +3610,328 @@
     "unchanged_slice_settings": true,
     "perimeter_review": "working/review/clean-edges/perimeter-review.json"
   },
+  "silk_finish_trial": {
+    "date": "2026-10-14",
+    "material": "SUNLU Silk 2.0 PLA Copper Red",
+    "product_url": "https://www.amazon.com/dp/B0H8SC8RXP",
+    "prior_project_sha256": "56560e6c587f65be8c4c0d9d915d6aeffbd1abb138849a393db517bd1d3f919d",
+    "affected_plates": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      31
+    ],
+    "sample_plate": 31,
+    "physical_test_passed": false,
+    "object_settings": {
+      "outer_wall_speed": "40",
+      "top_surface_speed": "30",
+      "internal_solid_infill_speed": "50",
+      "top_shell_layers": "8",
+      "top_shell_thickness": "1.6",
+      "top_surface_pattern": "monotonicline",
+      "ironing_type": "no ironing"
+    },
+    "filament_slot": 3,
+    "filament_settings": {
+      "filament_flow_ratio": "0.96",
+      "filament_z_hop": "0.6",
+      "filament_z_hop_types": "Normal Lift",
+      "filament_wipe": "0"
+    },
+    "prior_filament_settings": {
+      "filament_flow_ratio": "0.98",
+      "filament_z_hop": "nil",
+      "filament_z_hop_types": "nil",
+      "filament_wipe": "nil"
+    },
+    "objects": [
+      {
+        "name": "M1",
+        "prior_overrides": {
+          "name": "M1",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      },
+      {
+        "name": "M3",
+        "prior_overrides": {
+          "name": "M3",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "raft_first_layer_expansion": "0",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      },
+      {
+        "name": "M4",
+        "prior_overrides": {
+          "name": "M4",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      },
+      {
+        "name": "M2",
+        "prior_overrides": {
+          "name": "M2",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      },
+      {
+        "name": "Test-M-Letter",
+        "prior_overrides": {
+          "name": "Test-M-Letter",
+          "brim_type": "outer_only",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "support_on_build_plate_only": "0",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      },
+      {
+        "name": "M5",
+        "prior_overrides": {
+          "name": "M5",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      },
+      {
+        "name": "M6",
+        "prior_overrides": {
+          "name": "M6",
+          "enable_support": "1",
+          "extruder": "3",
+          "outer_wall_speed": "40",
+          "top_surface_speed": "40",
+          "null": null
+        }
+      }
+    ],
+    "note": "Trial flow is not a measured calibration. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.",
+    "geometry_byte_identical": true,
+    "unaffected_plate_gcodes_byte_identical": true,
+    "toolpath_verification": {
+      "passed": true,
+      "checks": [
+        {
+          "plate": 21,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 963
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "eb3257f9342349a11f031c930879d234e8a29564f5759a46e3e772c9db499851"
+        },
+        {
+          "plate": 22,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 633
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "ac7d9d135b39d42f5df41ae87fb1169c05138e983ef3ddde11624a9af25999fe"
+        },
+        {
+          "plate": 23,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 951
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "2fbee216f63b07552ca3b6c5ece5ddd1a7ed6184fedef7406761989c2fe20fec"
+        },
+        {
+          "plate": 24,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 841
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "67c3df83157b75d570a154b215ec5c793b4a752057a2d7b59da8c28a1e81d486"
+        },
+        {
+          "plate": 25,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 539
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "007373bf550e490c7539ded624fa646be54ad551896a6178040a2aaf759fb5d7"
+        },
+        {
+          "plate": 26,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 835
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "3908c5661858b0f95f72ba9106ab070a67fa0db862d008e4807ae0ca1bf9fe49"
+        },
+        {
+          "plate": 31,
+          "top_speed_mm_s": [
+            30.0
+          ],
+          "solid_speed_mm_s": [
+            50.0
+          ],
+          "vertical_hop_counts": {
+            "0.6": 417
+          },
+          "sideways_wipes": 0,
+          "solid_layer_heights_near_top": [
+            9.2,
+            9.4,
+            9.6,
+            9.8,
+            10.0,
+            10.2,
+            10.4
+          ],
+          "gcode_sha256": "502529c8a48363296a03a888916bc0bf109a1469cc78eedf11adacb100e6f337"
+        }
+      ],
+      "physical_test_passed": false,
+      "project_sha256": "5a5ecd6fdde6eed0301e3c03fcd51815e25fcfd57d131e4a5cee0a22b1a3c5d4"
+    },
+    "physical_test_progress": {
+      "date": "2026-10-14",
+      "status": "printing",
+      "user_report": "So far the test print is looking good.",
+      "completed_print_result": "pending"
+    }
+  },
   "bambu_studio_slice": {
     "all_plates_sliced": true,
     "plate_count": 31,
     "all_extrusions_within_bed": true,
-    "total_weight_g": 3444.57,
-    "total_estimated_seconds": 464347,
+    "total_weight_g": 3485.92,
+    "total_estimated_seconds": 491218,
     "minimum_edge_clearance_mm": 0.634,
-    "extrusion_moves_checked": 6911436,
+    "extrusion_moves_checked": 6867463,
     "filament_weights_g": [
       2761.1,
       222.3,
-      432.5,
+      473.85,
       28.67
     ],
-    "production_weight_g": 3402.87,
-    "production_estimated_seconds": 456540,
+    "production_weight_g": 3442.69,
+    "production_estimated_seconds": 482310,
     "production_filament_weights_g": [
       2745.47,
       220.16,
-      409.22,
+      449.04,
       28.02
     ],
-    "validation_note": "Complete tangent line/arc artwork rebuild; independent geometry, color-height and toolpath audit passed.",
+    "validation_note": "Copper plates 21-26 and 31 re-sliced for the SUNLU silk finish trial; other toolpaths and all geometry unchanged. All 31 plates audited.",
     "plates": [
       {
         "plate": 1,
@@ -6975,13 +7298,13 @@
         "parts": {
           "M1": 1
         },
-        "weight_g": 59.15,
+        "weight_g": 64.21,
         "filament_weights_g": [
           0.0,
           0.0,
-          59.15
+          64.21
         ],
-        "estimated_seconds": 9887,
+        "estimated_seconds": 13269,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -7005,20 +7328,20 @@
             "error_code": "1000C003"
           }
         ],
-        "extrusion_moves_checked": 118427,
+        "extrusion_moves_checked": 114744,
         "features": {
-          "Support": 350,
+          "Support": 322,
           "Brim": 1197,
           "Outer wall": 2830,
           "Inner wall": 7998,
           "Bottom surface": 981,
           "Gap infill": 909,
-          "Internal solid infill": 10958,
-          "Sparse infill": 90342,
+          "Internal solid infill": 15792,
+          "Sparse infill": 81958,
           "Support transition": 30,
           "Support interface": 41,
-          "Bridge": 1754,
-          "Floating vertical shell": 76,
+          "Floating vertical shell": 67,
+          "Bridge": 1658,
           "Top surface": 961
         },
         "model_extrusion_z_by_filament_mm": {
@@ -7107,13 +7430,13 @@
         "parts": {
           "M2": 1
         },
-        "weight_g": 57.02,
+        "weight_g": 63.02,
         "filament_weights_g": [
           0.0,
           0.0,
-          57.02
+          63.02
         ],
-        "estimated_seconds": 9446,
+        "estimated_seconds": 13242,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -7137,20 +7460,20 @@
             "error_code": "1000C003"
           }
         ],
-        "extrusion_moves_checked": 117883,
+        "extrusion_moves_checked": 112698,
         "features": {
-          "Support": 1186,
+          "Support": 1214,
           "Brim": 373,
           "Outer wall": 2796,
           "Inner wall": 7725,
           "Gap infill": 471,
           "Bottom surface": 931,
-          "Internal solid infill": 8339,
-          "Sparse infill": 92450,
+          "Internal solid infill": 11975,
+          "Sparse infill": 83484,
           "Support transition": 271,
           "Support interface": 465,
-          "Bridge": 1783,
-          "Floating vertical shell": 66,
+          "Floating vertical shell": 64,
+          "Bridge": 1902,
           "Top surface": 829,
           "Overhang wall": 198
         },
@@ -7242,13 +7565,13 @@
         "parts": {
           "M3": 1
         },
-        "weight_g": 74.97,
+        "weight_g": 81.61,
         "filament_weights_g": [
           0.0,
           0.0,
-          74.97
+          81.61
         ],
-        "estimated_seconds": 12408,
+        "estimated_seconds": 16762,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -7272,20 +7595,20 @@
             "error_code": "1000C003"
           }
         ],
-        "extrusion_moves_checked": 153658,
+        "extrusion_moves_checked": 146426,
         "features": {
-          "Support": 2228,
+          "Support": 2294,
           "Brim": 508,
           "Outer wall": 3109,
           "Inner wall": 9120,
           "Gap infill": 544,
           "Bottom surface": 838,
-          "Internal solid infill": 12150,
-          "Sparse infill": 120927,
+          "Internal solid infill": 15720,
+          "Sparse infill": 109622,
           "Support transition": 384,
           "Support interface": 708,
-          "Bridge": 2098,
-          "Floating vertical shell": 55,
+          "Bridge": 2533,
+          "Floating vertical shell": 57,
           "Overhang wall": 389,
           "Top surface": 600
         },
@@ -7377,13 +7700,13 @@
         "parts": {
           "M4": 1
         },
-        "weight_g": 96.26,
+        "weight_g": 106.23,
         "filament_weights_g": [
           0.0,
           0.0,
-          96.26
+          106.23
         ],
-        "estimated_seconds": 15237,
+        "estimated_seconds": 21645,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -7407,20 +7730,20 @@
             "error_code": "1000C003"
           }
         ],
-        "extrusion_moves_checked": 206340,
+        "extrusion_moves_checked": 194159,
         "features": {
-          "Support": 1470,
+          "Support": 1467,
           "Brim": 646,
           "Outer wall": 2617,
           "Inner wall": 7966,
           "Gap infill": 425,
           "Bottom surface": 1271,
-          "Internal solid infill": 9051,
-          "Sparse infill": 179477,
+          "Internal solid infill": 12608,
+          "Sparse infill": 163206,
           "Support transition": 242,
           "Support interface": 471,
-          "Bridge": 1634,
-          "Floating vertical shell": 52,
+          "Bridge": 2175,
+          "Floating vertical shell": 47,
           "Overhang wall": 207,
           "Top surface": 811
         },
@@ -7512,13 +7835,13 @@
         "parts": {
           "M5": 1
         },
-        "weight_g": 55.89,
+        "weight_g": 61.5,
         "filament_weights_g": [
           0.0,
           0.0,
-          55.89
+          61.5
         ],
-        "estimated_seconds": 9183,
+        "estimated_seconds": 12780,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -7542,20 +7865,20 @@
             "error_code": "1000C003"
           }
         ],
-        "extrusion_moves_checked": 111497,
+        "extrusion_moves_checked": 104444,
         "features": {
-          "Support": 1267,
+          "Support": 1284,
           "Brim": 72,
           "Outer wall": 922,
           "Inner wall": 2743,
           "Gap infill": 425,
           "Bottom surface": 756,
-          "Internal solid infill": 5418,
-          "Sparse infill": 97403,
+          "Internal solid infill": 7512,
+          "Sparse infill": 88292,
           "Support transition": 224,
           "Support interface": 382,
-          "Bridge": 1203,
-          "Floating vertical shell": 17,
+          "Bridge": 1151,
+          "Floating vertical shell": 16,
           "Overhang wall": 189,
           "Top surface": 476
         },
@@ -7647,13 +7970,13 @@
         "parts": {
           "M6": 1
         },
-        "weight_g": 65.93,
+        "weight_g": 72.47,
         "filament_weights_g": [
           0.0,
           0.0,
-          65.93
+          72.47
         ],
-        "estimated_seconds": 10671,
+        "estimated_seconds": 14904,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -7677,20 +8000,20 @@
             "error_code": "1000C003"
           }
         ],
-        "extrusion_moves_checked": 136917,
+        "extrusion_moves_checked": 129845,
         "features": {
-          "Support": 266,
+          "Support": 287,
           "Brim": 779,
           "Outer wall": 1872,
-          "Inner wall": 5275,
+          "Inner wall": 5274,
           "Bottom surface": 1153,
           "Gap infill": 229,
-          "Internal solid infill": 7261,
-          "Sparse infill": 117844,
+          "Internal solid infill": 11099,
+          "Sparse infill": 106834,
           "Support transition": 27,
           "Support interface": 41,
-          "Bridge": 1189,
-          "Floating vertical shell": 38,
+          "Floating vertical shell": 39,
+          "Bridge": 1268,
           "Top surface": 943
         },
         "model_extrusion_z_by_filament_mm": {
@@ -8249,13 +8572,13 @@
         "parts": {
           "Test-M-Letter": 1
         },
-        "weight_g": 23.28,
+        "weight_g": 24.81,
         "filament_weights_g": [
           0.0,
           0.0,
-          23.28
+          24.81
         ],
-        "estimated_seconds": 4252,
+        "estimated_seconds": 5353,
         "settings_verified": true,
         "filament_slots": [
           3
@@ -8283,7 +8606,7 @@
           55.0,
           55.0
         ],
-        "extrusion_moves_checked": 46140,
+        "extrusion_moves_checked": 44573,
         "features": {
           "Support": 221,
           "Brim": 109,
@@ -8291,11 +8614,11 @@
           "Inner wall": 1893,
           "Gap infill": 210,
           "Bottom surface": 587,
-          "Internal solid infill": 4673,
-          "Sparse infill": 36679,
+          "Internal solid infill": 6447,
+          "Sparse infill": 33244,
           "Support transition": 26,
           "Support interface": 34,
-          "Bridge": 751,
+          "Bridge": 845,
           "Floating vertical shell": 15,
           "Top surface": 330
         },

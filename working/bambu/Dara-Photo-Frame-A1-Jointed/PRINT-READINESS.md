@@ -1,5 +1,7 @@
 # Print review - clean curves - 2026-10-13
 
+**Copper finish trial - 2026-10-14:** reopen the current 3MF and print plate **31** first (24.81 g, approximately 1 h 29 min). Copper plates 21-26 and 31 now use 30 mm/s top surfaces, 50 mm/s internal solid infill, eight top layers / 1.6 mm top shell, trial flow 0.96, and 0.6 mm normal vertical lift with sideways pre-lift wiping disabled. Nozzle temperature remains 220 C and the bed remains 55 C. All geometry and other plate toolpaths are unchanged. The digital audit passed. The user reports that the test print is looking good so far; completed-print inspection is pending. [Exact settings and checks](silk-finish-trial.json).
+
 Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). All frame edges, native clipping masks, blue boundaries and backers are rebuilt together and every plate has fresh slices. The [complete review](../../review/clean-edges/README.md) replaces the earlier local-bend assessment.
 
 The complete frame artwork has been rebuilt from tangent straight lines and circular arcs. The earlier repair removed sharp local bends but missed broad waves. All 26 boundary loops are now reconstructed; the 31 lap trimming domains and 20 section masks are regenerated from the same continuous geometry, so the old traced edges cannot clip the cleaned curves. Fabric boundaries, blue offsets, eight photo openings and matching backers follow the same source.
@@ -19,9 +21,9 @@ Plate **30** is the **68.36 x 24.00 x 13.50 mm** white/wood/blue sample. Inspect
 - Saved white/blue perimeter paths cover all 56 large circular arcs on all 20 frame plates: 348 arcs checked, maximum radial error 0.010984 mm (limit 0.06 mm).
 - All 63 blue-bearing layers pass the blue-mask and white-intrusion checks. The white diamonds in Preview are seam markers, separate from extrusion paths.
 - All 41 normal project meshes match the STLs within 0.0001 mm; 74 reinforcement, 21 wood and 21 blue modifiers pass validation.
-- All 31 plates were re-sliced: 6,911,436 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
+- The seven copper plates were re-sliced for the finish trial. All 31 plates were audited: 6,867,463 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
 
-Production plates 1-29: **3,402.87 g; 126 h 49 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **23.28 g; 1 h 10 min**. Total: **3,444.57 g; 128 h 59 min**. These are slicer estimates.
+Production plates 1-29: **3,442.69 g; 133 h 58 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **24.81 g; 1 h 29 min**. Total: **3,485.92 g; 136 h 26 min**. These are slicer estimates.
 
 ## Assembly supplies and order
 

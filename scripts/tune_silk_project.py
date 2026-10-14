@@ -1,10 +1,10 @@
-"""Stage and re-slice the SUNLU Silk 2.0 finish trial without changing geometry.
+"""Apply the selected SUNLU Silk 2.0 copper finish without changing geometry.
 
 Usage: python scripts/tune_silk_project.py stage
        python scripts/tune_silk_project.py slice 31 21 22 23 24 25 26
        python scripts/tune_silk_project.py merge
        python scripts/tune_silk_project.py verify
-       python scripts/validate_print_project.py --project .work/silk-finish/complete.3mf --baseline .work/silk-finish/complete.json --report .work/silk-finish/audit.json
+       python scripts/validate_print_project.py --project .work/copper-production/complete.3mf --baseline .work/copper-production/complete.json --report .work/copper-production/audit.json
        python scripts/tune_silk_project.py publish
 The candidate is independently audited before publication.
 """
@@ -21,13 +21,14 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-WORK = ROOT / '.work/silk-finish'
+WORK = ROOT / '.work/copper-production'
 PACKAGE = ROOT / 'working/bambu/Dara-Photo-Frame-A1-Jointed'
 PLATES = [21, 22, 23, 24, 25, 26, 31]
 OBJECT_SETTINGS = {
     'outer_wall_speed': '40', 'top_surface_speed': '30',
     'internal_solid_infill_speed': '50', 'top_shell_layers': '8',
     'top_shell_thickness': '1.6', 'top_surface_pattern': 'monotonicline',
+    'top_solid_infill_flow_ratio': '1.04',
     'ironing_type': 'no ironing',
 }
 FILAMENT_SETTINGS = {
@@ -70,13 +71,15 @@ def xml(el):
 def stage():
     WORK.mkdir(parents=True, exist_ok=True)
     baseline_path = WORK / 'baseline.3mf'
-    assert not baseline_path.exists(), 'Preserve existing trial evidence; do not overwrite its baseline.'
+    assert not baseline_path.exists(), 'Preserve existing evidence; do not overwrite its baseline.'
     source = PACKAGE / 'Dara-Photo-Frame-A1-Complete.3mf'
     assert sha(source) == sha(ROOT / 'Dara.3mf')
     shutil.copy2(source, baseline_path)
     shutil.copy2(PACKAGE / 'project-validation.json', WORK / 'baseline.json')
     files = read_zip(source)
     settings = json.loads(files['Metadata/project_settings.config'])
+    assert settings['wall_loops'] == '4'
+    assert settings['top_one_wall_type'] == 'all top'
     old_settings = copy.deepcopy(settings)
     for key, value in FILAMENT_SETTINGS.items():
         assert len(settings[key]) == 4
@@ -114,11 +117,22 @@ def stage():
         'product_url': 'https://www.amazon.com/dp/B0H8SC8RXP',
         'prior_project_sha256': sha(source), 'affected_plates': PLATES,
         'sample_plate': 31, 'physical_test_passed': False,
+        'status': 'user_selected_for_production',
+        'selection': {
+            'date': '2026-10-14',
+            'sample': '2 - Front right - 104 flow',
+            'comparison_project_sha256': 'de5a3ebaac6e43c7d0c0522cc87504629c9d3206067da9e8e549016162b64fd6',
+            'user_instruction': 'Go with bottom right; apply it to the project and delete the test files.',
+            'coupon_finish_accepted': True,
+            'full_geometry_print_with_selected_settings_verified': False,
+            'wall_layout': 'Original four walls; one perimeter on top surfaces. No upper-1-mm wall modifier.',
+            'observations': 'The front pair retained the preferred copper gloss. Ironing felt smoother but looked duller. The user selected the 104% front-right sample.',
+        },
         'object_settings': OBJECT_SETTINGS, 'filament_slot': 3,
         'filament_settings': FILAMENT_SETTINGS,
         'prior_filament_settings': {k: old_settings[k][2] for k in FILAMENT_SETTINGS},
         'objects': changed,
-        'note': 'Trial flow is not a measured calibration. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.',
+        'note': '104% applies to top solid infill only; filament flow remains 0.96. This is a user-selected finish, not a measured spool calibration. Wipe is disabled to remove the sideways pre-lift wipe; short unretracted moves and extrusion still occur at layer height.',
     }
     baseline['settings'].update({k: settings[k] for k in FILAMENT_SETTINGS})
     (WORK / 'staged.json').write_text(json.dumps(baseline, indent=2) + '\n')
@@ -208,8 +222,20 @@ def merge():
 def verify_paths():
     candidate = WORK / 'complete.3mf'
     checks = []
-    with zipfile.ZipFile(candidate) as z:
+    with zipfile.ZipFile(candidate) as z, zipfile.ZipFile(WORK / 'baseline.3mf') as old:
+        old_config = ET.fromstring(old.read('Metadata/model_settings.config'))
+        old_settings = json.loads(old.read('Metadata/project_settings.config'))
+        old_objects = {o.get('id'): props(o) for o in old_config.findall('object')}
         for plate in PLATES:
+            old_plate = next(p for p in old_config.findall('plate') if int(props(p)['plater_id']) == plate)
+            instance = old_plate.findall('model_instance')
+            assert len(instance) == 1
+            prior_object = old_objects[props(instance[0])['object_id']]
+            prior_top_value = prior_object.get('top_solid_infill_flow_ratio', old_settings.get('top_solid_infill_flow_ratio', '1'))
+            if isinstance(prior_top_value, list):
+                assert len(prior_top_value) in (1, 4)
+                prior_top_value = prior_top_value[0 if len(prior_top_value) == 1 else int(prior_object['extruder']) - 1]
+            prior_top_flow = float(prior_top_value)
             data = z.read(f'Metadata/plate_{plate}.gcode')
             lines = data.decode().splitlines()
             feature, feed, layer, position_z = '', 0, None, 0
@@ -237,15 +263,59 @@ def verify_paths():
             assert speeds['Top surface'] == {30}, (plate, speeds['Top surface'])
             assert max(speeds['Internal solid infill']) <= 50.001
             assert sum(hops.values()) > 0 and '; WIPE_START' not in lines
+            current_extrusion = feature_extrusion(lines)
+            prior_extrusion = feature_extrusion(old.read(f'Metadata/plate_{plate}.gcode').decode().splitlines())
+            assert 'Ironing' not in current_extrusion
+            assert current_extrusion.keys() == prior_extrusion.keys()
+            feature_ratios = {}
+            move_count_changes = {}
+            for feature, current in current_extrusion.items():
+                prior = prior_extrusion[feature]
+                # Bambu may split/merge support strokes differently on a re-slice.
+                # Keep model stroke counts exact and compare support extrusion too.
+                if current['moves'] != prior['moves']:
+                    assert feature == 'Support', (plate, feature, current, prior)
+                    move_count_changes[feature] = {'prior': prior['moves'], 'current': current['moves']}
+                ratio = current['extrusion_mm'] / prior['extrusion_mm']
+                expected = float(OBJECT_SETTINGS['top_solid_infill_flow_ratio']) / prior_top_flow if feature == 'Top surface' else 1.0
+                assert abs(ratio - expected) < 0.0001, (plate, feature, ratio)
+                feature_ratios[feature] = round(ratio, 6)
             for key, value in FILAMENT_SETTINGS.items():
                 saved = next(l.split(' = ', 1)[1] for l in lines if l.startswith('; ' + key + ' = '))
                 assert saved.split(',')[2] == value, (plate, key, saved)
             checks.append(dict(plate=plate, top_speed_mm_s=sorted(speeds['Top surface']),
                 solid_speed_mm_s=sorted(speeds['Internal solid infill']), vertical_hop_counts=dict(hops),
+                extrusion_ratio_vs_prior_by_feature=feature_ratios, ironing_moves=0,
+                feature_move_count_changes=move_count_changes,
                 sideways_wipes=0, solid_layer_heights_near_top=sorted(solid_z), gcode_sha256=hashlib.sha256(data).hexdigest()))
     report = dict(passed=True, checks=checks, physical_test_passed=False, project_sha256=sha(candidate))
     (WORK / 'toolpath-verification.json').write_text(json.dumps(report, indent=2) + '\n')
-    print('Seven copper toolpaths verified: surface/solid speeds, vertical hops, flow, and no pre-lift wipes.')
+    print('Seven copper toolpaths verified: 104% top extrusion, unchanged other-feature extrusion, speeds, vertical hops, no ironing or pre-lift wipes.')
+
+
+def feature_extrusion(lines):
+    """Measure deposited filament by feature, excluding travel and priming."""
+    feature = 'Custom'
+    relative_e = False
+    totals = {}
+    for line in lines:
+        if line.startswith('; FEATURE:'):
+            feature = line.split(':', 1)[1].strip()
+        code = line.split(';', 1)[0].strip()
+        command = code.split(' ', 1)[0]
+        if command == 'M83':
+            relative_e = True
+        elif command == 'M82':
+            relative_e = False
+        elif command in ('G1', 'G2', 'G3') and feature != 'Custom':
+            values = {k: float(n) for k, n in re.findall(r'([XYZEFIJ])([+-]?(?:\d+(?:\.\d*)?|\.\d+))', code)}
+            if values.get('E', 0) > 0 and any(k in values for k in 'XYIJ'):
+                assert relative_e, 'This comparison requires relative extrusion.'
+                record = totals.setdefault(feature, {'moves': 0, 'extrusion_mm': 0.0})
+                record['moves'] += 1
+                record['extrusion_mm'] += values['E']
+    assert totals.get('Top surface', {}).get('extrusion_mm', 0) > 0
+    return totals
 
 
 def publish():
@@ -271,7 +341,7 @@ def publish():
         production_estimated_seconds=sum(p['estimated_seconds'] for p in production),
         production_filament_weights_g=[round(sum(p['filament_weights_g'][i] if i < len(p['filament_weights_g']) else 0
                                                 for p in production), 2) for i in range(4)],
-        validation_note='Copper plates 21-26 and 31 re-sliced for the SUNLU silk finish trial; other toolpaths and all geometry unchanged. All 31 plates audited.',
+        validation_note='Copper plates 21-26 and 31 re-sliced with the selected 104% top-fill multiplier, original wall layout and no ironing; other toolpaths and all geometry unchanged. All 31 plates audited.',
         plates=audit['plates'])
     baseline['bambu_studio_round_trip'] = dict(normal_meshes_match_source=True, settings_verified=True,
         solid_modifiers_verified=audit['solid_modifiers_verified'], color_modifiers_verified=audit['color_modifiers_verified'],
@@ -292,7 +362,7 @@ def publish():
         (checks / f'plate-{number}-manifest.json').write_text(json.dumps(record, indent=2) + '\n')
     with zipfile.ZipFile(candidate) as z:
         (PACKAGE / 'copper-test-plate.png').write_bytes(z.read('Metadata/plate_31.png'))
-    (PACKAGE / 'silk-finish-trial.json').write_text(json.dumps({
+    (PACKAGE / 'copper-finish-settings.json').write_text(json.dumps({
         'project_sha256': sha(candidate), **baseline['silk_finish_trial']}, indent=2) + '\n')
     print(json.dumps({'project': str(target), 'test': audit['plates'][30], 'summary': summary}, indent=2))
 

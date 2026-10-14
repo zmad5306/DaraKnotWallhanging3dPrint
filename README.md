@@ -2,7 +2,7 @@
 
 [Dara.3mf](Dara.3mf) is the Bambu Studio project with all 31 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
-**2026-10-14 copper silk finish trial:** print plate **31** first (24.81 g, about 1 h 29 min). The copper plates now use 30 mm/s top surfaces, 50 mm/s internal solid infill, a 1.6 mm top shell, trial flow 0.96, and 0.6 mm normal vertical Z-hop with pre-lift wiping disabled. Nozzle temperature remains 220 C. The seven copper plates have fresh slices; geometry and all other plate toolpaths are unchanged. [Settings and verification](working/bambu/Dara-Photo-Frame-A1-Jointed/silk-finish-trial.json). The user reports that the test print is looking good so far; the completed-print result is pending.
+**Selected copper finish, 2026-10-14:** all copper parts use the chosen bottom-right sample's **104% top-surface flow, original wall layout and no ironing**. The filament flow ratio remains **0.96**. Copper plates 21-26 and 31 have matching fresh slices. The standalone copper comparison projects and their generated test files have been removed. [Selected settings and checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json).
 
 ![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 

@@ -5,13 +5,13 @@ Open the [complete Bambu project](../../bambu/Dara-Photo-Frame-A1-Jointed/Dara-P
 | Plate | Piece | Materials and settings | Estimate |
 | --- | --- | --- | --- |
 | 30 | Test-Weave-Full-Width | White/wood/Azurite blue Generic PLA; 65 C bed | 18.42 g; 0 h 59 min |
-| 31 | Test-M-Letter | SUNLU Silk 2.0 Copper Red trial; 55 C bed | 24.81 g; 1 h 29 min |
+| 31 | Test-M-Letter | SUNLU Silk 2.0 Copper Red, selected 104% top fill; 55 C bed | 24.85 g; 1 h 29 min |
 
 Both use the A1, 0.4 mm nozzle, 0.2 mm layers, four walls, and 15% gyroid. Copper retains its local solid screw zone and prints with zero filament changes on its own plate.
 
-The **2026-10-14 copper finish trial** uses 30 mm/s top surfaces, 50 mm/s internal solid infill, 40 mm/s outer walls, eight top layers with 1.6 mm minimum top thickness, and a trial flow ratio of 0.96. Copper-only filament overrides select 0.6 mm Normal Lift and disable sideways wiping before retraction. Nozzle/bed temperatures remain 220/55 C; the top pattern remains Monotonic line with ironing off. These changes are also applied to M1-M6, with new slices on plates 21-26 and 31. All other plate toolpaths and all geometry are unchanged.
+The **2026-10-14 selected copper finish** uses 104% top solid infill flow with filament flow remaining 0.96. It retains the original wall layout and no ironing, matching the user's chosen bottom-right comparison sample. Top surfaces run at 30 mm/s, internal solid infill at 50 mm/s, outer walls at 40 mm/s, with eight top layers / 1.6 mm minimum top thickness. Copper-only filament overrides use 0.6 mm Normal Lift with sideways wiping disabled. Nozzle/bed remain 220/55 C and the top pattern is Monotonic line. These settings are applied to M1-M6 and the existing M sample, with fresh slices on plates 21-26 and 31.
 
-Reopen the current 3MF before printing plate 31. Inspect the top for trenches, raised ridges, gaps between lines, and any additional stringing from disabling wipe. Flow 0.96 is a trial, not a measured spool calibration; the user reports that the test is looking good while printing, with completed-print inspection pending. [Saved settings and toolpath checks](../../bambu/Dara-Photo-Frame-A1-Jointed/silk-finish-trial.json).
+The standalone copper comparison projects and generated test files were removed after selection. The chosen coupon retained the preferred shine; ironing felt smoother but looked duller. A full-size print with the selected settings has not yet been reported. [Selected settings and toolpath checks](../../bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json).
 
 The weave coupon is **68.36 x 24.00 x 13.50 mm**, cropped from the clean reconstructed F7 mesh. Both white side rails remain intact; only the short ends are cut. The recessed backing and raised threads include the alternating **3.3 x 1.5 x 0.3 mm crossing pads**. Wood is assigned at Z=8.4-9.9 mm, layers 43-50, with eight wood/white color changes. A **1.5 mm blue line**, inset **1.25 mm** from the weave, finishes flush on each rail. Blue uses slot 4 and occupies layers 66-68 (three more changes, **11 total**). Inspect the actual texture, blue opacity and clean white boundaries in Preview's Filament view and on the printed sample.
 

@@ -2,7 +2,7 @@
   "plate": 30,
   "pieces": 1,
   "source_cad_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
-  "project_sha256": "5a5ecd6fdde6eed0301e3c03fcd51815e25fcfd57d131e4a5cee0a22b1a3c5d4",
+  "project_sha256": "4909d469a39b024c66cf0f44dc10d7db05159c77dc3651971320bcea3f8dc919",
   "parts": [
     {
       "name": "Test-Weave-Full-Width",

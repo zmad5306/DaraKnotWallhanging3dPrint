@@ -1,6 +1,6 @@
 # Dara knot wall hanging
 
-**Current complete print file, 2026-10-15: [Dara.3mf](Dara.3mf).** Open it as a project in Bambu Studio. Plates **21-26** now contain the six full-size hammered M sections at **55 degrees with tree supports**; plate **31** contains the five separate smooth copper cover bands. All seven use **copper slot 3** and the saved hammered process, including 0.98 filament flow. Frame plates 1-20, backers 27-28, hardware 29 and optional weave sample 30 keep their validated models and slices. The file has **75 assembly pieces plus one optional sample on 31 plates**, all sliced. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md), [integration audit](working/bambu/Dara-Photo-Frame-A1-Jointed/hammered-integration-validation.json).
+**Current complete print file, 2026-10-15: [Dara.3mf](Dara.3mf).** Open it as a project in Bambu Studio. Plates **21-26** contain the six full-size hammered M sections at **55 degrees with tree supports**; plate **31** contains the five separate smooth copper cover bands. All seven use **copper slot 3** and the saved hammered process, including 0.98 filament flow. **New plate 32 contains a full-color F7/F4 knot joint pair for an epoxy mock glue-up**, with native supports and purge tower: **74 x 68 x 13.5 mm assembled, 41.27 g, about 1 h 46 min**. [Sample layout and instructions](working/review/knot-glue-sample/README.md). The preceding 31 plates keep their models and slices. The file has **75 assembly pieces plus three optional test pieces on 32 plates**, all sliced. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md), [current audit](working/bambu/Dara-Photo-Frame-A1-Jointed/knot-glue-sample-validation.json).
 
 The separate [Dara-Hammered-Band-Test.3mf](Dara-Hammered-Band-Test.3mf) contains two real joint halves and their full-size curved band, tilted 55 degrees with sliced tree supports. Estimate: **21.27 g and 1 h 30 min**. Physical band seating and full-size printing remain unverified. [Test instructions](Dara-Hammered-Band-Test.txt), [assembled/exploded geometry](working/review/hammered-bands/band-test.png), and [validation](working/review/hammered-bands/test-validation.json).
 
@@ -8,7 +8,7 @@ The separate [Dara-Hammered-Bands-Candidate.3mf](Dara-Hammered-Bands-Candidate.3
 
 **Earlier full-size tilted candidate, retained for history:** [Dara-Hammered-M-Candidate.3mf](Dara-Hammered-M-Candidate.3mf) contains the six prior M sections at 55 degrees with the attempted tighter seam. Its physical joint test did not establish the desired appearance. [Original instructions and estimates](Dara-Hammered-M-Candidate.txt), [geometry](working/review/hammered-m-production/assembled-M.png), and [validation](working/review/hammered-m-production/validation.json) remain available. The 3MF is unchanged; use the cover-band test above as the next experiment.
 
-[Dara.3mf](Dara.3mf) is the Bambu Studio project with all 31 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
+[Dara.3mf](Dara.3mf) is the Bambu Studio project with all 32 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
 **Earlier flat copper finish, superseded:** coupon C used 100% top-surface flow, 30 mm/s top speed and 0.96 filament flow. Those settings are recorded in the separate [diagnostic comparison](Dara-Copper-Diagnostic-Test.3mf) and [historical checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json); the complete project now uses the tilted hammered process. No inspection pause is in Dara.
 
@@ -34,13 +34,12 @@ records the digital checks. The user has printed the earlier hardware/lap
 test pieces and reported insufficient photo clearance. The jointed model now
 has 2.4 mm deep rabbets, giving the 1.6 mm backer 0.8 mm of photo and surface
 clearance. The extra 0.4 mm addresses the reported fit issue; the revised
-physical fit has not yet been checked. The optional weave sample remains on plate 30; copper experiments are separate projects.
+physical fit has not yet been checked. The optional weave sample remains on plate 30, and a full-color knot joint pair for epoxy practice is on plate 32; copper experiments are separate projects.
 
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
 contains 70 body/backer/hardware pieces on plates 1-29, a **68.36 x 24.00 mm white/wood/blue
-weave-and-edging sample alone on plate 30**, and **five copper cover bands on plate 31**.
-The already printed hardware and lap coupons have been removed from this project;
-their standalone STL files remain available. The weave has alternating raised
+weave-and-edging sample alone on plate 30**, **five copper cover bands on plate 31**, and **two full-color knot joint halves on plate 32**.
+The older hardware and plain lap coupons were removed; their standalone STL files remain available. The new plate 32 pair is for a full-color epoxy mock glue-up. The weave has alternating raised
 crossings restored from the earlier texture, and its color region follows the
 surface relief. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every

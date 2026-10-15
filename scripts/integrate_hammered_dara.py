@@ -366,12 +366,15 @@ def publish():
 
 def audit_current():
     """Check the distributed files against the committed integration evidence."""
-    report=json.loads((PACKAGE/'hammered-integration-validation.json').read_text())
+    current=PACKAGE/'knot-glue-sample-validation.json'
+    if not current.exists():current=PACKAGE/'hammered-integration-validation.json'
+    report=json.loads(current.read_text())
     assert sha(TARGETS[0])==sha(TARGETS[1])==report['project_sha256']
     files=read_zip(TARGETS[0]);cfg=ET.fromstring(files['Metadata/model_settings.config'])
     info=ET.fromstring(files['Metadata/slice_info.config'])
-    assert len(cfg.findall('plate'))==len(info.findall('plate'))==31
+    assert len(cfg.findall('plate'))==len(info.findall('plate'))==report['plates']
     records=report['changed_plates']+report['unchanged_native_plates']
+    assert sorted(r['plate'] for r in records)==list(range(1,report['plates']+1))
     for row in records:
         n=row['plate'];data=files[f'Metadata/plate_{n}.gcode']
         assert digest(data)==row['gcode_sha256']
@@ -387,7 +390,7 @@ def audit_current():
             for c in r.iter(tag('component')):
                 assert c.get('{'+P+'}path').lstrip('/') in files
     assert len(ids)==len(set(ids))
-    print('Both normal Dara files match the audited release; all 31 saved slices and checksums verified.')
+    print(f"Both normal Dara files match the audited release; all {report['plates']} saved slices and checksums verified.")
 
 
 if __name__ == '__main__':

@@ -1,0 +1,640 @@
+{
+  "date": "2026-10-15",
+  "project_sha256": "de54679a301dcf838cb19729796b2d59f6ce6df19a5c6cdb93429170dec72695",
+  "baseline_sha256": "05259ea01f23d30e60e0289722c541f6f4179063542802f22c4545f6b8aa6e5d",
+  "plates": 32,
+  "production_pieces": 75,
+  "optional_test_pieces": 3,
+  "sample": {
+    "baseline_sha256": "05259ea01f23d30e60e0289722c541f6f4179063542802f22c4545f6b8aa6e5d",
+    "plate": 32,
+    "joint": 1,
+    "source_parts": [
+      "F7",
+      "F4"
+    ],
+    "crop_low_mm": [
+      -32.0,
+      -34.0,
+      -1.0
+    ],
+    "crop_high_mm": [
+      42.0,
+      34.0,
+      20.0
+    ],
+    "assembled_bounds_mm": [
+      [
+        -32.0,
+        -34.0,
+        0.0
+      ],
+      [
+        42.0,
+        34.0,
+        13.5
+      ]
+    ],
+    "assembled_size_mm": [
+      74.0,
+      68.0,
+      13.5
+    ],
+    "mating_intersection_mm3": 0.0,
+    "scale": 1.0,
+    "parts": [
+      {
+        "name": "Knot-Joint-A-F7",
+        "source": "F7",
+        "object_id": 32000,
+        "identify_id": "32000",
+        "bounds_assembled_mm": [
+          [
+            -32.0,
+            -34.0,
+            0.0
+          ],
+          [
+            17.999999946895073,
+            34.0,
+            13.5
+          ]
+        ],
+        "bounds_on_plate_mm": [
+          [
+            30.0,
+            55.0,
+            0.0
+          ],
+          [
+            113.65445848291279,
+            137.6591093504569,
+            13.5
+          ]
+        ],
+        "build_transform": [
+          [
+            0.684865113321849,
+            -0.7286698680161345,
+            0.0,
+            76.69045913884774
+          ],
+          [
+            0.7286698680161345,
+            0.684865113321849,
+            0.0,
+            101.60284962945917
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_to_joint": [
+          [
+            0.684865113321849,
+            0.7286698680161346,
+            0.0,
+            -18.556496445618336
+          ],
+          [
+            -0.7286698680161346,
+            0.684865113321849,
+            0.0,
+            154.32921179658283
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "components": [
+          {
+            "name": "F7",
+            "subtype": "normal_part",
+            "volume_mm3": 33329.99760622388,
+            "added_outside_source_mm3": 0.0
+          },
+          {
+            "name": "F7 - Wood weave and backing skin",
+            "subtype": "modifier_part",
+            "volume_mm3": 374.7887471466183,
+            "added_outside_source_mm3": 0.0
+          },
+          {
+            "name": "F7 - Flush Azurite ribbon edging",
+            "subtype": "modifier_part",
+            "volume_mm3": 57.63643875066693,
+            "added_outside_source_mm3": 0.0
+          }
+        ],
+        "watertight": true,
+        "volume_mm3": 33329.99760622388
+      },
+      {
+        "name": "Knot-Joint-B-F4",
+        "source": "F4",
+        "object_id": 32100,
+        "identify_id": "32100",
+        "bounds_assembled_mm": [
+          [
+            0.03750093337157523,
+            -34.0,
+            0.0
+          ],
+          [
+            42.0,
+            34.0,
+            13.5
+          ]
+        ],
+        "bounds_on_plate_mm": [
+          [
+            135.0,
+            54.99999999999999,
+            0.0
+          ],
+          [
+            212.6880504459471,
+            132.32391480560048,
+            13.5
+          ]
+        ],
+        "build_transform": [
+          [
+            0.6999750214173399,
+            -0.7141673259060474,
+            0.0,
+            159.00741046561322
+          ],
+          [
+            0.7141673259060474,
+            0.6999750214173399,
+            0.0,
+            78.52973638935694
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "source_to_joint": [
+          [
+            0.6999750214173399,
+            0.7141673259060475,
+            0.0,
+            -776.6830332515266
+          ],
+          [
+            -0.7141673259060475,
+            0.6999750214173399,
+            0.0,
+            638.5878665702778
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "components": [
+          {
+            "name": "F4",
+            "subtype": "normal_part",
+            "volume_mm3": 27425.672181249163,
+            "added_outside_source_mm3": 0.0
+          },
+          {
+            "name": "F4 - Wood weave and backing skin",
+            "subtype": "modifier_part",
+            "volume_mm3": 1002.7540633374351,
+            "added_outside_source_mm3": 0.0
+          },
+          {
+            "name": "F4 - Flush Azurite ribbon edging",
+            "subtype": "modifier_part",
+            "volume_mm3": 83.26990912785895,
+            "added_outside_source_mm3": 0.0
+          }
+        ],
+        "watertight": true,
+        "volume_mm3": 27425.672181249163
+      }
+    ]
+  },
+  "changed_plates": [
+    {
+      "extrusion_moves_checked": 70576,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1297,
+        "Brim": 227,
+        "Outer wall": 3398,
+        "Inner wall": 6159,
+        "Bottom surface": 558,
+        "Internal solid infill": 5948,
+        "Sparse infill": 44838,
+        "Floating vertical shell": 87,
+        "Bridge": 1801,
+        "Support transition": 173,
+        "Support interface": 313,
+        "Gap infill": 450,
+        "Top surface": 1651,
+        "Overhang wall": 192
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          28.262,
+          52.734
+        ],
+        [
+          214.427,
+          217.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          28.012,
+          52.484
+        ],
+        [
+          214.677,
+          217.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 28.012,
+      "plate": 32,
+      "gcode_sha256": "c59f8c95b0e83e29aa835ca8d6ec20911bc27ef4e74edb1dbb6350f148c122c8",
+      "weight_g": 41.27,
+      "seconds": 6357,
+      "model_z_ranges_by_filament_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      }
+    }
+  ],
+  "unchanged_native_plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "7e5f9d6d5fd6c8bd923e7812d587acede562f0ad3bfc2d25c9453307d57efbc5"
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "9144c529d4ae657bbf31d0f862247060566c887ca4bf8a5c20a5f4f9d30634aa"
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "d49162c5f5d9991d9ef93c89096d577e8c94463239f9df71da9d53fedec15ae4"
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "63af8a6829141527f06780818fdfc1145ca8a275d2a1ba2804c03ed5fd52b173"
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "1f45fb48d43a8f86e9bfa338f232fc93307b865980e980ac107d1e44cee6c550"
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "fae98c09c932c6bad2beb98eeb9b4aea3627a10c928ebc22d0562e3935b32a05"
+    },
+    {
+      "plate": 7,
+      "gcode_sha256": "7dfe1256344037e78dc857a599aed510b3dc75056db93247193e6b5880f6103a"
+    },
+    {
+      "plate": 8,
+      "gcode_sha256": "623162f348c59f5c805a036665511b35cc337aae9a7b63b15f99793ae9819c35"
+    },
+    {
+      "plate": 9,
+      "gcode_sha256": "2338e207cd3b55c8c8363b0a3dc0346f842482095c8bb83d85f6d33cdff0920e"
+    },
+    {
+      "plate": 10,
+      "gcode_sha256": "4b225b648860f32bf4965af0149fcb406b5cc2011b092c750bdbf80838adf8cb"
+    },
+    {
+      "plate": 11,
+      "gcode_sha256": "34a30dd7f017381224dc8a2e0ce37d6a8b5d5029ceb0ce9363d2fe2af2b793e8"
+    },
+    {
+      "plate": 12,
+      "gcode_sha256": "6267b28e958178b09f7fcf9e6c9ac3e69e0ae307759ab418acf6d785486b0573"
+    },
+    {
+      "plate": 13,
+      "gcode_sha256": "4ad66cda3e979bd1eec984dfae555e9955b0631187d04f1e6712492b1cfd578a"
+    },
+    {
+      "plate": 14,
+      "gcode_sha256": "e2640117be50859f9a7f7324e384cf1ad40b38463bd33ef10d8bb53ee20922ea"
+    },
+    {
+      "plate": 15,
+      "gcode_sha256": "7d95833b2ff4c9724a3cd71603b8b220f702649da247e0b202131e120421ffb8"
+    },
+    {
+      "plate": 16,
+      "gcode_sha256": "aa3c66d18ebfe73d8347788edbcd61539f580a2bc081833b8e9f5fe077af4426"
+    },
+    {
+      "plate": 17,
+      "gcode_sha256": "b00e31b3511302e0e7226dbb29323ecc885b4da89dcd0d4cdf167a2cce881d76"
+    },
+    {
+      "plate": 18,
+      "gcode_sha256": "1740fde77188fa620a08ef508aa6e772d796c78dbbc041ac925086d40fe6f156"
+    },
+    {
+      "plate": 19,
+      "gcode_sha256": "d5bab45b153f95bf4e66e7e2747d0d6446cf907b32acfd50d48dec3b743fa666"
+    },
+    {
+      "plate": 20,
+      "gcode_sha256": "24ef8a110d4979df7d2c96053546dff16536cdbfb2b437a9d2c5d7e41c9a952a"
+    },
+    {
+      "plate": 21,
+      "gcode_sha256": "278e11980bd0fe90db60653ffa9f08ab20f95f0e447e0e97524b17725e420ca1"
+    },
+    {
+      "plate": 22,
+      "gcode_sha256": "58168534cd005581395f29933ee586ae39f0c2511765e7cda54cf7e6093a4f28"
+    },
+    {
+      "plate": 23,
+      "gcode_sha256": "d7b479a964265428752d6757a95f6e3d71b3d5c2aacc8c126272f2e712d351cd"
+    },
+    {
+      "plate": 24,
+      "gcode_sha256": "22728ef600961276160e5440b8b82c56b44b0e08ed92026bd7c487ec335cc886"
+    },
+    {
+      "plate": 25,
+      "gcode_sha256": "56cb02643f685a274af4d94906f6854d09b50eac1de9dfeec8319011da82f338"
+    },
+    {
+      "plate": 26,
+      "gcode_sha256": "ecd40c01f57d43535643d9c9add76a1ac35b7f82a61bac652806c64f3d7707d3"
+    },
+    {
+      "plate": 27,
+      "gcode_sha256": "504cfafbe5e7999b5794aa988585e08ed03cbdf42b022522c26661321848f7a4"
+    },
+    {
+      "plate": 28,
+      "gcode_sha256": "b850ce3aecf07a93ec00790f88490d6390a838631f64c7a946adf163649796f3"
+    },
+    {
+      "plate": 29,
+      "gcode_sha256": "b7de62f4b82970ad8af8ae03021e70c103ead65179e0a1256d946657a80dc0d4"
+    },
+    {
+      "plate": 30,
+      "gcode_sha256": "da7bb9bf45845497dac00d8b7f68117bf5d7073ae95221c0e2ec03c3698ca439"
+    },
+    {
+      "plate": 31,
+      "gcode_sha256": "e2f644e10dbc41ffaa9e28a6fc50181cfce59292096fbce2c556f025be2f708b"
+    }
+  ],
+  "mesh_checks": [
+    {
+      "name": "Knot-Joint-A-F7",
+      "part": "Knot-Joint-A-F7",
+      "max_vertex_error_mm": 2.4591515502000386e-06
+    },
+    {
+      "name": "Knot-Joint-A-F7",
+      "part": "F7 - Wood weave and backing skin",
+      "max_vertex_error_mm": 1.546761322580318e-06
+    },
+    {
+      "name": "Knot-Joint-A-F7",
+      "part": "F7 - Flush Azurite ribbon edging",
+      "max_vertex_error_mm": 2.0514079427807066e-06
+    },
+    {
+      "name": "Knot-Joint-B-F4",
+      "part": "Knot-Joint-B-F4",
+      "max_vertex_error_mm": 5.320958244476185e-06
+    },
+    {
+      "name": "Knot-Joint-B-F4",
+      "part": "F4 - Wood weave and backing skin",
+      "max_vertex_error_mm": 5.662503266647076e-06
+    },
+    {
+      "name": "Knot-Joint-B-F4",
+      "part": "F4 - Flush Azurite ribbon edging",
+      "max_vertex_error_mm": 5.6532525734667435e-06
+    }
+  ],
+  "all_plate_estimates": [
+    {
+      "plate": 1,
+      "weight_g": 113.89,
+      "seconds": 15089
+    },
+    {
+      "plate": 2,
+      "weight_g": 123.97,
+      "seconds": 16057
+    },
+    {
+      "plate": 3,
+      "weight_g": 126.47,
+      "seconds": 17130
+    },
+    {
+      "plate": 4,
+      "weight_g": 106.96,
+      "seconds": 15077
+    },
+    {
+      "plate": 5,
+      "weight_g": 143.25,
+      "seconds": 19700
+    },
+    {
+      "plate": 6,
+      "weight_g": 189.13,
+      "seconds": 25025
+    },
+    {
+      "plate": 7,
+      "weight_g": 123.87,
+      "seconds": 17003
+    },
+    {
+      "plate": 8,
+      "weight_g": 145.88,
+      "seconds": 18853
+    },
+    {
+      "plate": 9,
+      "weight_g": 114.99,
+      "seconds": 15456
+    },
+    {
+      "plate": 10,
+      "weight_g": 135.58,
+      "seconds": 18036
+    },
+    {
+      "plate": 11,
+      "weight_g": 121.71,
+      "seconds": 16125
+    },
+    {
+      "plate": 12,
+      "weight_g": 138.38,
+      "seconds": 18815
+    },
+    {
+      "plate": 13,
+      "weight_g": 143.07,
+      "seconds": 19079
+    },
+    {
+      "plate": 14,
+      "weight_g": 126.61,
+      "seconds": 16764
+    },
+    {
+      "plate": 15,
+      "weight_g": 148.86,
+      "seconds": 19369
+    },
+    {
+      "plate": 16,
+      "weight_g": 125.39,
+      "seconds": 17722
+    },
+    {
+      "plate": 17,
+      "weight_g": 106.24,
+      "seconds": 14642
+    },
+    {
+      "plate": 18,
+      "weight_g": 151.03,
+      "seconds": 20726
+    },
+    {
+      "plate": 19,
+      "weight_g": 148.57,
+      "seconds": 19200
+    },
+    {
+      "plate": 20,
+      "weight_g": 110.09,
+      "seconds": 14443
+    },
+    {
+      "plate": 21,
+      "weight_g": 249.92,
+      "seconds": 45952
+    },
+    {
+      "plate": 22,
+      "weight_g": 150.34,
+      "seconds": 27926
+    },
+    {
+      "plate": 23,
+      "weight_g": 250.35,
+      "seconds": 46013
+    },
+    {
+      "plate": 24,
+      "weight_g": 129.18,
+      "seconds": 24087
+    },
+    {
+      "plate": 25,
+      "weight_g": 135.17,
+      "seconds": 24739
+    },
+    {
+      "plate": 26,
+      "weight_g": 105.67,
+      "seconds": 20161
+    },
+    {
+      "plate": 27,
+      "weight_g": 99.39,
+      "seconds": 8322
+    },
+    {
+      "plate": 28,
+      "weight_g": 99.42,
+      "seconds": 8318
+    },
+    {
+      "plate": 29,
+      "weight_g": 150.89,
+      "seconds": 18757
+    },
+    {
+      "plate": 30,
+      "weight_g": 18.42,
+      "seconds": 3555
+    },
+    {
+      "plate": 31,
+      "weight_g": 15.73,
+      "seconds": 4401
+    },
+    {
+      "plate": 32,
+      "weight_g": 41.27,
+      "seconds": 6357
+    }
+  ],
+  "total_weight_g": 4089.69,
+  "total_seconds": 592899,
+  "scope": "Unscaled crop of native F7/F4 joint 1 with its original white/wood/blue modifiers and print orientation. Digital checks passed; epoxy cleanup, clamp method and bond strength require physical trial."
+}

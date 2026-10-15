@@ -1,6 +1,6 @@
 # Printing and assembly - complete hammered Dara - 2026-10-15
 
-Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identical to the root [Dara.3mf](../../../Dara.3mf). Open as a project in Bambu Studio. All 31 plates have saved slices; the seven copper plates were re-sliced in the complete project. No job has been sent to the printer.
+Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identical to the root [Dara.3mf](../../../Dara.3mf). Open as a project in Bambu Studio. All 32 plates have saved slices. The latest addition is the full-color knot joint practice pair on plate 32; the preceding 31 plates are unchanged. No job has been sent to the printer.
 
 ## Plate selection
 
@@ -10,6 +10,7 @@ Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identi
 - **29:** four wall blocks and 32 retainers.
 - **30:** optional white/wood/blue finish sample.
 - **31:** five separate copper cover bands, Band1-Band5. The old copper coupon is removed.
+- **32:** optional full-color F7/F4 knot joint pair for an epoxy mock glue-up, supports and purge tower included. [Layout and instructions](../../review/knot-glue-sample/README.md).
 
 Filament slots: **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**. Map those to the actual spools. A1, 0.4 mm nozzle, textured PEI, 0.2 mm layers. Keep the saved scale, orientations and per-object settings. The copper profile is the tilted hammered setup, with 0.98 filament flow; the earlier flat coupon-C profile is superseded.
 
@@ -17,7 +18,7 @@ Physical band seating and full-size printing remain unverified. The separate [sm
 
 ## Material and time
 
-The assembly pieces require an estimated **4,030.00 g and 161 h 56 min**, including supports and purge. Optional plate 30 adds **18.42 g and 59 min**. Copper alone is **1,036.36 g and 53 h 41 min**. The M therefore exceeds a single 1 kg copper spool before tests or retries. Per-plate estimates are in [the integration report](hammered-integration-validation.json).
+The assembly pieces require an estimated **4,030.00 g and 161 h 56 min**, including supports and purge. Optional plate 30 adds **18.42 g and 59 min**; optional plate 32 adds **41.27 g and 1 h 46 min**. Copper alone is **1,036.36 g and 53 h 41 min**. The M therefore exceeds a single 1 kg copper spool before tests or retries. Per-plate estimates are in [the current report](knot-glue-sample-validation.json).
 
 ## Assembly supplies
 
@@ -55,9 +56,9 @@ After bonding and curing, seat the M on its locating pins and install ten screws
 
 ## Verification scope
 
-The new meshes, placements, supports, copper assignment and local solid screw regions passed native round-trip and toolpath checks. All 22 rear M mounting regions match the original geometry. The other 24 plates' model resources, overrides, placements and saved native toolpaths are unchanged. All 31 G-code checksums and both distributed project hashes pass.
+The hammered meshes, placements, supports, copper assignment and local solid screw regions passed native round-trip and toolpath checks. All 22 rear M mounting regions match the original geometry. The new plate 32 pair is cropped at full scale from the production F7/F4 meshes and color modifiers; its bodies are watertight with zero modeled interference when assembled. Native slicing verifies all three colors and support/interface toolpaths. Adding plate 32 preserves the preceding 31 plates' resources, settings, placements and G-code. All 32 G-code checksums and both distributed project hashes pass.
 
-[Current report](hammered-integration-validation.json). The earlier flat-M reports and PDF map are historical for M cuts and plate 31. The prior [frame edge audit](../../review/clean-edges/README.md) still applies to the preserved frame plates. Digital checks do not establish physical fit or a wall-load rating.
+[Current report](knot-glue-sample-validation.json), [prior hammered integration](hammered-integration-validation.json). The earlier flat-M reports and PDF map are historical for M cuts and plate 31 and do not show the new plate 32. The prior [frame edge audit](../../review/clean-edges/README.md) still applies to the preserved frame plates. Epoxy assembly behavior needs the physical sample; digital checks do not establish physical fit or a wall-load rating.
 
 ```powershell
 python scripts/integrate_hammered_dara.py audit

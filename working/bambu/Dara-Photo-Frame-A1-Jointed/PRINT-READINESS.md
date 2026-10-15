@@ -1,65 +1,73 @@
-# Print review - clean curves - 2026-10-13
+# Printing and assembly - complete hammered Dara - 2026-10-15
 
-**Selected copper finish - 2026-10-14:** the user chose **coupon C, middle left: 100% top solid infill flow, 30 mm/s top speed, original wall layout and no ironing**. This supersedes the earlier 104% choice and is applied to all copper parts on plates 21-26 and 31, with fresh slices. Filament flow remains 0.96, internal solid speed 50 mm/s, eight top layers / 1.6 mm top shell, and 0.6 mm normal vertical lift with sideways pre-lift wiping disabled. Nozzle/bed remain 220/55 C. No new full-size print result has been reported. The diagnostic project remains separate; its inspection pause is not in production. [Selected settings and checks](copper-finish-settings.json).
+Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identical to the root [Dara.3mf](../../../Dara.3mf). Open as a project in Bambu Studio. All 32 plates have saved slices. The copper has been realigned for Y bed motion, and all 32 plates have been re-sliced with gentle motion limits. The full-color knot joint practice pair remains on plate 32. No job has been sent to the printer.
 
-Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf). All frame edges, native clipping masks, blue boundaries and backers are rebuilt together and every plate has fresh slices. The [complete review](../../review/clean-edges/README.md) replaces the earlier local-bend assessment.
+**Cover crown and bevel repairs applied:** Plate **31** contains all five repaired covers and a fresh native slice. A smooth show-face field replaces the nearest-edge crown crease; the mating undersides, footprint, glue allowance and M seats are preserved. Saved orientations and process settings remain in place. The other 31 slices are unchanged. Physical surface finish remains unverified. [Current release checks](cover-crown-validation.json).
 
-The complete frame artwork has been rebuilt from tangent straight lines and circular arcs. The earlier repair removed sharp local bends but missed broad waves. All 26 boundary loops are now reconstructed; the 31 lap trimming domains and 20 section masks are regenerated from the same continuous geometry, so the old traced edges cannot clip the cleaned curves. Fabric boundaries, blue offsets, eight photo openings and matching backers follow the same source.
+**Open issue, deferred on 2026-10-15:** earlier cover prints showed a surface scar, and the test preview still showed an aligned line of small notches. A cause and cure have not been established. This checkpoint retains the existing production cover geometry and settings. Production uses Classic walls, 0.012 mm resolution and arc fitting on; the latest standalone test used Classic, 0.001 mm and arc fitting off. The test's B1 mesh matches production within export rounding, but that does not establish an identical preview defect in the saved production slice. Resume from plate 31 when investigating further.
 
-The largest outline movement is 1.461 mm at a formerly irregular small corner. Small artwork corners use 1.5 mm fillets; overall bounds remain 914.4 x 914.4 mm. Every frame STL and all eight backers were regenerated. The six M, four wall-block and one retainer STL files are byte-identical to the preceding revision. Tested lap/key profiles, seam transforms, screw features, mounting interfaces, saved placements and slicer settings are preserved. Rabbets remain 2.4 mm deep, backers 1.6 mm thick, with 0.3 mm edge clearance.
+## Plate selection
 
-The color-mask calculation also uses direct intersections with the original STL triangles. The previous 3D slicing helper could introduce a false triangular notch at an oblique weave seam. A regression check covers that location, and all wood/blue modifiers are regenerated with the corrected method. Solid-change verification checks every distinct vertex-height interval directly, avoiding the same coplanar Boolean artifact.
+- **1-20:** F1-F20 frame sections.
+- **21-26:** M1-M6 hammered sections at 55 degrees, face planes along Y, regenerated tree supports.
+- **27-28:** eight backers.
+- **29:** four wall blocks and 32 retainers.
+- **30:** optional white/wood/blue finish sample.
+- **31:** five separate copper cover bands, Band1-Band5. The old copper coupon is removed.
+- **32:** optional full-color F7/F4 knot joint pair for an epoxy mock glue-up, supports and purge tower included. Its two unscaled F7/F4 halves assemble to 74 × 68 × 13.5 mm; the tongue is on the left, socket on the right. Use them to practice epoxy application, masking, clamping and squeeze-out cleanup. [Joint layout](../../review/knot-glue-sample/joint-sample.png).
 
-Plate **30** is the **68.36 x 24.00 x 13.50 mm** white/wood/blue sample. Inspect the crossing detail, smooth edges, blue opacity and clean white beside the blue. Plate **31** is the copper M sample, now re-sliced with coupon C's 100% top-fill setting. The earlier hardware/lap tests were printed; the revised 2.4 mm photo clearance and plate 30 surface test do not yet have recorded physical results.
+Filament slots: **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**. Map those to the actual spools. A1, 0.4 mm nozzle, textured PEI, 0.2 mm layers. Keep the saved scale, orientations and per-object settings. The copper profile is the tilted hammered setup, with 0.98 filament flow; the earlier flat coupon-C profile is superseded.
 
-## Saved-file checks
+Physical band seating and full-size printing remain unverified. Tall M sections are a larger physical print than the successful joint coupon. The saved project includes orientations and support painting.
 
-- All 39 production STLs and both material test meshes are valid solids with matching source hashes.
-- All 70 assembly pieces pass the interference check; maximum numerical overlap is 0.000236 mm3 (tolerance 0.01 mm3).
-- Every frame, M and backer perimeter was compared with its CAD boundary: 34 parts, maximum boundary error 0.000033 mm.
-- All 26 canonical outline loops and 320 line/arc primitives have tangent joins; maximum chord approximation is 0.001999 mm.
-- Saved white/blue perimeter paths cover all 56 large circular arcs on all 20 frame plates: 348 arcs checked, maximum radial error 0.010984 mm (limit 0.06 mm).
-- All 63 blue-bearing layers pass the blue-mask and white-intrusion checks. The white diamonds in Preview are seam markers, separate from extrusion paths.
-- All 41 normal project meshes match the STLs within 0.0001 mm; 74 reinforcement, 21 wood and 21 blue modifiers pass validation.
-- The seven copper plates were re-sliced for coupon C's 100% finish. All 31 plates were audited: 6,867,463 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
+The broad copper face planes now run along the A1 bed's Y travel, with the 55-degree lean across X. Each part is rotated within that plane to fit at its original scale. M1 and M3 reach approximately 238 and 241 mm; the other four are 63-102 mm tall. Tree supports are regenerated with 3 mm branch diameter and two walls. A 6 mm outer object brim is requested; where the tilted part has no first-layer area, the generated tree base supplies the anchoring.
 
-Production plates 1-29: **3,442.69 g; 133 h 58 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **24.81 g; 1 h 29 min**. Total: **3,485.92 g; 136 h 26 min**. These are slicer estimates.
+Project-wide X/Y limits are 1,000 mm/s² acceleration and 150 mm/s speed. Process travel and default print acceleration are 1,000 mm/s²; outer walls, top surfaces and the first layer use 500 mm/s². Major process speeds are capped at 150 mm/s. All 32 plates were re-sliced, including the frame and optional samples. These conservative settings increase print time; they do not prove physical adhesion or eliminate sway.
 
-## Assembly supplies and order
+## Material and time
+
+All 32 plates: **4,101.62 g / 262 h 34 min**. Assembly excluding optional plates 30 and 32: **4,041.93 g / 258 h 39 min**. Copper plates 21–26 and 31: **1,048.29 g / 94 h 06 min**. Cover plate 31: **16.96 g / 1 h 57 min**. Estimates include supports and purge. Optional plate 30 uses **18.42 g / 1 h 21 min**; plate 32 uses **41.27 g / 2 h 33 min**. Per-plate details are in [the release report](cover-crown-validation.json).
+
+## Assembly supplies
 
 | Purchased item | Quantity | Use |
 | --- | --- | --- |
 | Selected #6-19 x 1/2-inch pan-head plastic thread-forming screws | 50 | 32 tabs + 8 wall-block screws + 10 M screws |
 | 10 mm OD x 4 mm ID x 1 mm washers | 10 | M screws only |
-| Wall fasteners/anchors or strips appropriate to the actual wall and load | Chosen for installation | Separate from the 50 assembly screws |
-| Adhesive proven on the chosen PLA and lap sample | As required | Keyed laps require a bonded assembly |
+| Wall fasteners/anchors or strips appropriate to the wall and load | As required | Wall installation |
+| Adhesive proven on the chosen PLA and lap sample | As required | Structural laps and copper cover bands |
 
-The M screw stack provides 7.7 mm engagement, 1 mm nominal tip clearance, and
-1.8 mm front cover. Photo and block screws provide 9.7 mm engagement, 1 mm tip
-clearance, and 2.8 mm front cover. Different screw or washer dimensions change
-these clearances.
+The original rear screw and locator geometry is preserved. Different screws or washers change the tested clearances.
 
-Label parts as they leave the plate. All map positions use the front view.
-Dry-fit first on a flat surface, then bond following the CAD's tongue-before-socket
-order; lower each socket onto the earlier tongues:
+## Assembly order
 
-- **Frame:** F1, F2, F8, F15, F19, F20, F3, F14, F18, F11, F17, F9, F16,
-  F12, F6, F7, F13, F10, F5, F4.
-- **M:** M1, M6, M2, M4, M3, M5.
+Label parts as they leave each plate. Remove support residue from the rear, lap and band underside without reshaping mating shoulders. Dry-fit on a flat surface first. Lower sockets onto previously placed tongues:
 
-After the bonded assemblies have cured, seat M on the locating pins and install
-its ten screws/washers from the rear. B1/B2/B3/B4 fit F3/F5/F16/F18 respectively.
-Install the backers and four tabs per photo. Verify all four wall faces seat in
-one plane and the photo hardware clears the wall before mounting. A digital
-pass does not establish a safe load rating for the completed hanging.
+- **Frame:** F1, F2, F8, F15, F19, F20, F3, F14, F18, F11, F17, F9, F16, F12, F6, F7, F13, F10, F5, F4.
+- **New M:** M2, M4, M6, M1, M3, M5. M1 lowers onto M2 and M4; M3 onto M2 and M6; M5 onto M2.
 
+Do not mix the new M with old flat or earlier hammered sections: the cuts moved. Bond structural laps with the backs aligned, check the frame locators, then fit and bond the decorative bands into their seats. A band bridges the visible seam; it should not be used to force a misaligned joint flat.
 
-## Recheck
+Viewed from the front:
+
+| Cover | Position | Joint |
+| --- | --- | --- |
+| Band1 | Upper right crown | M2/M3 |
+| Band2 | Upper left crown | M2/M1 |
+| Band3 | Lower left arm | M4/M1 |
+| Band4 | Lower right arm | M6/M3 |
+| Band5 | Center stem | M2/M5 |
+
+Band ends follow the artwork and are not interchangeable. Nominal band width is 12 mm, thickness 1.2 mm before the bevel and less than 0.033 mm of crown smoothing, seated in a 13.2 mm recess with 0.15 mm modeled adhesive allowance. Actual dry-fit height depends on the adhesive layer. [Assembled geometry](../../review/hammered-bands/assembled-bands.png).
+
+After bonding and curing, seat the M on its locating pins and install ten screws/washers from the rear. The white wall blocks **B1/B2/B3/B4** fit **F3/F5/F16/F18** respectively; these are different pieces from copper Band1-Band5. Install the backers and four retainers per photo. Check that the four wall faces share a plane and photo hardware clears the wall before mounting.
+
+## Verification scope
+
+The hammered meshes, placements, supports, copper assignment and local solid screw regions passed native round-trip and toolpath checks. All 22 rear M mounting regions match the original geometry. The new plate 32 pair is cropped at full scale from the production F7/F4 meshes and color modifiers; its bodies are watertight with zero modeled interference when assembled. Native slicing verifies all three colors and support/interface toolpaths. The Y correction preserves geometry and non-copper placements, repaints support eligibility for the rotated copper, and regenerates all 32 slices. Motion-limit commands, bed clearance and decorative-face support clearance are checked in the new report. All 32 G-code checksums and both distributed project hashes pass.
+
+[Current release report](cover-crown-validation.json) records all plate hashes and the latest cover checks. Historical flat-M reports, STL exports and the PDF part map are superseded for M cuts and plate 31. The [frame edge audit](../../review/clean-edges/README.md) documents the retained frame geometry. Digital checks do not establish physical fit, cosmetic finish or wall-load capacity.
 
 ```powershell
-python -m unittest discover -s scripts -p 'test_*.py'
-python scripts/audit_clean_mesh_edges.py
-python scripts/validate_print_project.py
-python scripts/review_curve_artifacts.py --output working/review/clean-edges/after --repaired-findings working/review/curve-artifacts/review.json
-python scripts/review_clean_edges.py --project working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf --baseline working/bambu/Dara-Photo-Frame-A1-Jointed/project-validation.json
+python scripts/audit_dara_release.py
 ```

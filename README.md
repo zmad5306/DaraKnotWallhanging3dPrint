@@ -1,35 +1,39 @@
 # Dara knot wall hanging
 
-[Dara.3mf](Dara.3mf) is the Bambu Studio project with all 31 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
+**Current production project: [Dara.3mf](Dara.3mf)** — open as a project in Bambu Studio. It contains **32 sliced plates, 75 assembly pieces and three optional sample pieces**. Plates **21–26** are the full-size hammered M, **31** contains its five copper covers, and **32** contains the requested full-color epoxy glue-up sample. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
-**Selected copper finish, 2026-10-14:** all copper parts use **coupon C: 100% top-surface flow, 30 mm/s top speed, original wall layout and no ironing**. The filament flow ratio remains **0.96**. Copper plates 21-26 and 31 have matching fresh slices. This supersedes the earlier 104% selection. The separate [diagnostic comparison](Dara-Copper-Diagnostic-Test.3mf) remains available; its inspection pause is not in the production project. [Selected settings and checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json).
+The copper face planes run along the A1 bed's **Y travel**, with a 55-degree lean across X, saved tree supports and conservative motion limits. Keep the saved scale, orientations and per-object overrides. Filament slots are **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**.
+
+**Production checkpoint, 2026-10-15:** the complete project retains the cover crown and bevel corrections, original mating surfaces, and saved production slices. **The cover surface scar remains unresolved; its investigation is deferred.** The repairs are not a confirmed cure for the printed scar. Full-height M prints also still need physical confirmation. [Release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
+
+All 32 plates: **4,101.62 g / 262 h 34 min**. Assembly excluding optional plates 30 and 32: **4,041.93 g / 258 h 39 min**. Copper plates 21–26 and 31: **1,048.29 g / 94 h 06 min**. Cover plate 31: **16.96 g / 1 h 57 min**. Estimates include supports and purge.
+
+The final editable meshes, filament assignments, support painting and native slices are stored in the 3MF. Standalone experiments and the generation/migration history remain on [codex/hammered-m-production](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production). This release does not depend on those test files to open, print or audit. After cloning, run `git lfs pull`, then `python scripts/audit_dara_release.py`.
 
 ![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 
 Concept rendering: white ribbon with a fine Azurite blue edge thread, wood-tan
 woven fabric, and a copper manuscript M on a dark blue wall.
 
-**Complete edge reconstruction:** the frame now uses tangent lines and circular arcs throughout, including regenerated section clipping and joint endpoints. Both working CAD files, all frame/backer STLs, color modifiers and all 31 Bambu slices are synchronized. The earlier local repair missed gradual waves; the [new complete review](working/review/clean-edges/README.md) measures the saved perimeter paths as well as the CAD and meshes.
+**Complete edge reconstruction:** the frame uses tangent lines and circular arcs throughout, including regenerated section clipping and joint endpoints. Frame/backer STLs, color modifiers and their saved slices remain synchronized. The [frame edge review](working/review/clean-edges/README.md) measures the saved perimeter paths and geometry. The editable production M and cover meshes are embedded in Dara.3mf. Their generation history is preserved on the [hammered development branch](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production); the older flat M STLs are historical.
 
-Use the current [manufacturing CAD](working/Dara-Photo-Frame-A1-Jointed.scad), [continuous clean artwork](working/Dara-Clean-Artwork.scad) and [SVG](working/Dara-Clean-Artwork.svg). Historical files under `reference/` document the original traced design and are not current production geometry. Plate 30 remains the physical finish/color check.
+The [manufacturing CAD](working/Dara-Photo-Frame-A1-Jointed.scad), [continuous clean artwork](working/Dara-Clean-Artwork.scad) and [SVG](working/Dara-Clean-Artwork.svg) retain the frame and artwork sources. The final hammered M and cover meshes are embedded in **Dara.3mf**; the older flat M in the SCAD is superseded. Historical files under `reference/` document the original traced design. Plate 30 remains the physical finish/color check.
 
 The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
 records the digital checks. The user has printed the earlier hardware/lap
 test pieces and reported insufficient photo clearance. The jointed model now
 has 2.4 mm deep rabbets, giving the 1.6 mm backer 0.8 mm of photo and surface
 clearance. The extra 0.4 mm addresses the reported fit issue; the revised
-physical fit has not yet been checked. The two remaining
-[material tests](working/stl/Dara-Print-Checks/README.md) have separate plates.
+physical fit has not yet been checked. The optional weave sample remains on plate 30, and the requested full-color knot joint pair for epoxy practice is on plate 32.
 
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
-contains all 70 assembly pieces on plates 1-29, a **68.36 x 24.00 mm white/wood/blue
-weave-and-edging sample alone on plate 30**, and the **copper M test alone on plate 31**.
-The already printed hardware and lap coupons have been removed from this project;
-their standalone STL files remain available. The weave has alternating raised
+contains 70 body/backer/hardware pieces on plates 1-29, a **68.36 x 24.00 mm white/wood/blue
+weave-and-edging sample alone on plate 30**, **five copper cover bands on plate 31**, and **two full-color knot joint halves on plate 32**.
+The older hardware and plain lap coupons were removed; their standalone STL files remain available. The new plate 32 pair is for a full-color epoxy mock glue-up. The weave has alternating raised
 crossings restored from the earlier texture, and its color region follows the
 surface relief. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
-part in the assembly and shows the shared backer and hardware plates. The project
+original frame/backer/hardware part. Its M cuts and plate 31 are superseded; use the current printing guide for the hammered M and bands. The project
 uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
 The saved AMS palette is **1 white / Generic PLA, 2 wood tan / Generic PLA,
 3 copper / Generic PLA Silk, 4 Azurite blue / Generic PLA**. Frame sections
@@ -45,10 +49,7 @@ See the [project notes and verification](working/bambu/Dara-Photo-Frame-A1-Joint
 Run `git lfs pull` after cloning to retrieve the 3MF and STL files.
 
 The jointed model's [individual STL exports](working/stl/Dara-Photo-Frame-A1-Jointed/README.md)
-contain all 39 distinct printable parts, stored with Git LFS. Print one of each
-frame section, letter section, backer, and wall block, plus 32 copies of the
-universal retainer. The export folder includes mesh checks and regeneration
-instructions.
+contain the earlier 39-part export set, stored with Git LFS. The frame, backers and hardware remain relevant, but the flat M exports do not match the hammered production M. Use Dara.3mf for the current M and five covers.
 
 The jointed manufacturing model is
 [working/Dara-Photo-Frame-A1-Jointed.scad](working/Dara-Photo-Frame-A1-Jointed.scad).

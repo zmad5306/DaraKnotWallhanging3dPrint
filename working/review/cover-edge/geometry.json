@@ -1,0 +1,97 @@
+[
+  {
+    "name": "B1",
+    "original": {
+      "sample_count": 63136,
+      "max_mm": 0.1316304466503837,
+      "p99_mm": 0.08636114554107621
+    },
+    "corrected": {
+      "sample_count": 197228,
+      "max_mm": 0.0009998204532042365,
+      "p99_mm": 0.0006786838090214968
+    },
+    "underside": {
+      "sample_count": 48296,
+      "max_distance_mm": 0.00011413671270565357
+    },
+    "triangles": 67934,
+    "volume_mm3": 549.5704208135784
+  },
+  {
+    "name": "B2",
+    "original": {
+      "sample_count": 71552,
+      "max_mm": 0.17476546135238102,
+      "p99_mm": 0.07247856528703935
+    },
+    "corrected": {
+      "sample_count": 267036,
+      "max_mm": 0.0009999966578551067,
+      "p99_mm": 0.0006815881065120885
+    },
+    "underside": {
+      "sample_count": 54306,
+      "max_distance_mm": 6.823633852129086e-05
+    },
+    "triangles": 87226,
+    "volume_mm3": 634.2003668250732
+  },
+  {
+    "name": "B3",
+    "original": {
+      "sample_count": 132396,
+      "max_mm": 0.14947724770969373,
+      "p99_mm": 0.031197426351357575
+    },
+    "corrected": {
+      "sample_count": 281108,
+      "max_mm": 0.0009986331457518816,
+      "p99_mm": 0.0006079239294827232
+    },
+    "underside": {
+      "sample_count": 99252,
+      "max_distance_mm": 4.3778022517560286e-09
+    },
+    "triangles": 105394,
+    "volume_mm3": 1233.155397822535
+  },
+  {
+    "name": "B4",
+    "original": {
+      "sample_count": 119544,
+      "max_mm": 0.11621935267383599,
+      "p99_mm": 0.01758493825192547
+    },
+    "corrected": {
+      "sample_count": 234396,
+      "max_mm": 0.0009999373361626596,
+      "p99_mm": 0.0005986803613737379
+    },
+    "underside": {
+      "sample_count": 89688,
+      "max_distance_mm": 4.157948181074522e-09
+    },
+    "triangles": 89754,
+    "volume_mm3": 1113.6200062416992
+  },
+  {
+    "name": "B5",
+    "original": {
+      "sample_count": 105792,
+      "max_mm": 0.10867528667985127,
+      "p99_mm": 0.018022319065731693
+    },
+    "corrected": {
+      "sample_count": 200312,
+      "max_mm": 0.0009965764528097054,
+      "p99_mm": 0.0006081885345355074
+    },
+    "underside": {
+      "sample_count": 79386,
+      "max_distance_mm": 3.888824602463365e-09
+    },
+    "triangles": 78076,
+    "volume_mm3": 987.6345837264307
+  }
+]

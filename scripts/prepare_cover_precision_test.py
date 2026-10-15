@@ -1,8 +1,9 @@
 """Isolate B1 and compare native toolpaths without changing its geometry.
 
-The physical cause of the reported cover scar is not confirmed. This test
-removes circular-arc joins and reduces simplification of the same surface.
-It deliberately does not promote experimental settings to the complete Dara.
+Historical experiment; NOT the recommended remedy for the physical scar.
+Subsequent renderer inspection reproduced preview notches from segment joins
+without extrusion gaps. See working/review/cover-edge/README.md. This script
+remains available to reproduce the unchanged earlier precision experiment.
 """
 import argparse
 import copy
@@ -263,13 +264,12 @@ def verify_publish():
         if label == 'precise':
             files['Metadata/slice_info.config'] = b.xml(info)
             b.write_zip(TARGET, files)
-    assert results['precise']['tangent_audit']['max_tangent_change_deg'] < 1.
-    assert results['no-arcs']['tangent_audit']['max_tangent_change_deg'] > results['precise']['tangent_audit']['max_tangent_change_deg']
+    # Tangent statistics describe the paths; no angle threshold proves finish.
     for path, digest in stageinfo['preserved'].items():
         assert b.sha(b.ROOT/path) == digest
     report = dict(project_sha256=b.sha(TARGET), source=stageinfo, variants=results,
-                  conclusion='No broken mesh found. Arc junctions form visible tracks in the native paths. '
-                             'The test removes arcs and refines simplification; the physical scar cause and cure remain unconfirmed.',
+                  conclusion='Historical precision comparison. Preview notches can be renderer segment-join artifacts; '
+                             'arc-join angles do not establish the physical scar cause or cure. See cover-edge investigation.',
                   physical_print_pending=True, complete_project_changed=False)
     (REVIEW/'validation.json').write_text(json.dumps(report, indent=2)+'\n')
     render(plotdata, results)

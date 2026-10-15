@@ -91,6 +91,69 @@ def envelope(evaluate,bounds,res=.5,bottom=6.6):
 def prism(shape,height,z=0):return as_mesh(section(shape).extrude(height).translate([0,0,z]))
 
 
+def band_envelope(region,evaluate,res=.25,bottom=6.6,bevel=.25,tolerance=.001):
+    """Sample the cover AFTER cutting its footprint and bevel boundary.
+
+    Sampling the narrow bevel on the regular grid before clipping can create
+    scallops almost half a layer high. Constrain both bevel edges first, then
+    refine triangles at corners where distance-to-boundary changes direction.
+    The underside is still cut with the original seating envelope.
+    """
+    region=shapely.set_precision(region,1e-9)
+    core=shapely.set_precision(region.buffer(-bevel),1e-9)
+    lo=np.floor(np.array(region.bounds[:2])/res)*res
+    hi=np.ceil(np.array(region.bounds[2:])/res)*res
+    xs,ys=[np.arange(a,c+res/2,res) for a,c in zip(lo,hi)]
+    xx,yy=np.meshgrid(xs,ys);xy=np.column_stack([xx.ravel(),yy.ravel()]);nx=len(xs)
+    a=(np.arange(len(ys)-1)[:,None]*nx+np.arange(nx-1)[None,:]).ravel()
+    f=np.concatenate([np.column_stack([a,a+1,a+nx+1]),np.column_stack([a,a+nx+1,a+nx])])
+    grid=shapely.set_precision(shapely.polygons(xy[f]),1e-9)
+    polygons=np.concatenate([shapely.get_parts(shapely.intersection(grid,part))
+                             for part in [core,region.difference(core)]])
+    polygons=polygons[shapely.get_type_id(polygons)==3]
+    triangles=shapely.get_parts(shapely.constrained_delaunay_triangles(polygons))
+    coords=shapely.get_coordinates(triangles).reshape(-1,4,2)[:,:3,:]
+    xy,inv=np.unique(np.round(coords.reshape(-1,2),9),axis=0,return_inverse=True)
+    f=inv.reshape(-1,3)
+    u,v=xy[f[:,1]]-xy[f[:,0]],xy[f[:,2]]-xy[f[:,0]]
+    f[u[:,0]*v[:,1]-u[:,1]*v[:,0]<0]=f[u[:,0]*v[:,1]-u[:,1]*v[:,0]<0][:,::-1]
+    for iteration in range(12):
+        z=evaluate(xy)
+        # Midpoints catch an unrepresented crease even if the centroid does not.
+        edgepairs=f[:,[[0,1],[1,2],[2,0]]]
+        probes=np.concatenate([xy[f].mean(axis=1)[:,None,:],xy[edgepairs].mean(axis=2)],axis=1)
+        linear=np.column_stack([z[f].mean(axis=1),z[edgepairs].mean(axis=2)])
+        errors=np.abs(evaluate(probes.reshape(-1,2)).reshape(-1,4)-linear)
+        bad=errors.max(axis=1)>tolerance
+        if not bad.any():break
+        edges,indices=np.unique(np.sort(edgepairs.reshape(-1,2),axis=1),axis=0,return_inverse=True)
+        indices=indices.reshape(-1,3);marked=np.unique(indices[bad])
+        midpoint=np.full(len(edges),-1,dtype=int)
+        midpoint[marked]=np.arange(len(xy),len(xy)+len(marked))
+        additions=[xy[edges[marked]].mean(axis=1)]
+        nextid=len(xy)+len(marked);faces=[]
+        for face,edgeids in zip(f,indices):
+            mids=midpoint[edgeids]
+            if (mids<0).all():faces.append(face);continue
+            ring=[]
+            for vertex,mid in zip(face,mids):
+                ring.append(vertex)
+                if mid>=0:ring.append(mid)
+            center=nextid;nextid+=1;additions.append(xy[face].mean(axis=0)[None,:])
+            faces.extend([[ring[i],ring[(i+1)%len(ring)],center] for i in range(len(ring))])
+        xy=np.concatenate([xy,*additions]);f=np.asarray(faces)
+    else:raise AssertionError('Cover bevel did not converge to the height tolerance.')
+    n=len(xy);vertices=np.concatenate([np.column_stack([xy,z]),np.column_stack([xy,np.full(n,bottom)])])
+    edges=np.concatenate([f[:,[0,1]],f[:,[1,2]],f[:,[2,0]]])
+    _,ei,ec=np.unique(np.sort(edges,axis=1),axis=0,return_index=True,return_counts=True)
+    boundary=edges[ei[ec==1]]
+    side=np.concatenate([np.column_stack([boundary[:,0],boundary[:,0]+n,boundary[:,1]+n]),
+                         np.column_stack([boundary[:,0],boundary[:,1]+n,boundary[:,1]])])
+    result=trimesh.Trimesh(vertices,np.concatenate([f,(f+n)[:,::-1],side]),process=True)
+    assert result.is_volume and result.is_watertight and result.body_count==1
+    return result
+
+
 def save_mesh(name,mesh):
     if mesh.body_count!=1:
         components=mesh.split(only_watertight=False)
@@ -200,7 +263,7 @@ def geometry():
         def top(xy):
             edge=shapely.distance(shapely.points(xy),region.boundary)
             return bottom(xy)+THICKNESS-.25*(1-np.clip(edge/.25,0,1))
-        upper=boolean([envelope(top,region.bounds,.25),prism(region,8,6.6)],'intersection')
+        upper=band_envelope(region,top)
         band=boolean([upper,envelope(bottom,region.bounds,.25)],'difference')
         band=save_mesh(f'B{idx}',band);bands.append(band)
         t,extent,yaw=best_transform(band)

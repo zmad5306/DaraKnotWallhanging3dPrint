@@ -1,5 +1,12 @@
 B1 COVER ONLY - PRECISION TEST - 2026-10-15
 
+HISTORICAL EXPERIMENT: the arc-join theory was not established. Similar
+Preview notches can arise from segment rendering without extrusion gaps.
+A separate modeled bevel defect is repaired in Dara-Cover-Edge-Test.3mf.
+The physical transverse scar is still unexplained. See the current report:
+working/review/cover-edge/README.md. The instructions below describe the
+preserved earlier experiment, not a recommended cure.
+
 Open Dara-Cover-Only-Test.3mf AS A PROJECT in Bambu Studio.
 One plate, one full-size B1 cover. Use the existing hammered joint pieces.
 Map filament 1 to copper silk. A1 / 0.4 mm nozzle / textured PEI.

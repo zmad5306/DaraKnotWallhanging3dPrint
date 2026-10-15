@@ -1,0 +1,29 @@
+B1 COVER - BEVEL GEOMETRY REPAIR - 2026-10-15
+
+Open Dara-Cover-Edge-Test.3mf AS A PROJECT in Bambu Studio.
+One full-size B1 cover; reuse the existing hammered joint pieces.
+Copper silk is filament slot 1. A1 / 0.4 mm nozzle / textured PEI.
+Keep the saved 55-degree tilt, face plane along Y, and generated trees.
+Estimate: 2.11 g including supports, 23 minutes 54 seconds.
+
+WHAT CHANGED
+The old mesh sampled its 0.25 mm bevel on a 0.25 mm grid, leaving scallops
+at the edge. The rebuilt mesh explicitly follows the bevel boundaries.
+The nominal crown, outline, band thickness and underside fit are retained.
+The support paint and supports are regenerated for the repaired mesh.
+Other slicing settings match Dara-Cover-Only-Test, including arc fitting
+off and 0.001 mm resolution. X/Y motion limits are retained.
+
+WHAT IS STILL UNKNOWN
+This fixes a measured MODEL defect at the rim. It is not a verified cure
+for the separate scar across the printed face. Similar small Preview
+dashes can be produced by rendering segment joins, without extrusion gaps.
+That does not establish the cause of the physical scar.
+
+If you print this optional test, compare the edge and middle separately.
+No full set of covers should be reprinted based only on this change.
+The complete Dara.3mf and all previous test files are unchanged.
+No print has been started automatically.
+
+Evidence: working/review/cover-edge/README.md
+Checks: working/review/cover-edge/geometry.json and validation.json

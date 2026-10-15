@@ -1,0 +1,110 @@
+{
+  "project_sha256": "6e4a8e6957b90f2af0164cf453e02973690db43b64cdf3b67f6cb49ea0d677d4",
+  "source": {
+    "orientation": {
+      "name": "B1",
+      "support_enforced_facets": 15778,
+      "support_blocked_facets": 52156,
+      "build_transform": [
+        [
+          -0.3123921168015918,
+          -0.4810416756346442,
+          0.8191520442889918,
+          194.23967292195604
+        ],
+        [
+          0.838670567945424,
+          -0.5446390350150271,
+          -5.015859645267624e-17,
+          176.31903714734318
+        ],
+        [
+          0.4461421789321432,
+          0.6869987102175039,
+          0.573576436351046,
+          -109.11040481667843
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reinforcement_count": 0
+    },
+    "baseline_sha256": "6062780517d330cf43294e77680566ca45d93aec25f0a00e17d408478ee43ad7",
+    "preserved": {
+      "Dara.3mf": "3e03dd2e57cd08f2e3c0678bc96d25a729ee4887434beb3a6c117c897c176eab",
+      "working\\bambu\\Dara-Photo-Frame-A1-Jointed\\Dara-Photo-Frame-A1-Complete.3mf": "3e03dd2e57cd08f2e3c0678bc96d25a729ee4887434beb3a6c117c897c176eab",
+      "Dara-Hammered-Bands-Candidate.3mf": "a5c408816a5fa8475f53de2db0a72a97ede24430b41161245968f9d72c4f2ea4",
+      "Dara-Hammered-Band-Test.3mf": "2f7234eee083cb8fa1ef1ecc47b12349763f1901fb089de30960d9c1ab274330",
+      "Dara-Cover-Only-Test.3mf": "6062780517d330cf43294e77680566ca45d93aec25f0a00e17d408478ee43ad7"
+    }
+  },
+  "mesh_roundtrip_error_mm": 1.532015755831512e-05,
+  "weight_g": 2.11,
+  "seconds": 1434,
+  "gcode_sha256": "88c5b23449672f4ac7063ceebc1827c533eb0623d681d2d577944c91df3dd4df",
+  "support_base_segments": 586,
+  "max_interface_above_underside_mm": -0.27222388131902875,
+  "motion": {
+    "commanded_maxima": {
+      "extrusion_acceleration": 5000.0,
+      "extrusion_speed": 150.0,
+      "travel_acceleration": 5000.0,
+      "travel_speed": 150.0
+    },
+    "y_axis_upper_bounds": {
+      "extrusion_acceleration": 1000.0,
+      "extrusion_speed": 150.0,
+      "travel_acceleration": 1000.0,
+      "travel_speed": 150.0
+    },
+    "checked_y_moves": {
+      "extrusion": 45161,
+      "travel": 2552
+    },
+    "axis_limit_commands": [
+      "M201 X1000 Y1000 Z1500 E5000",
+      "M203 X150 Y150 Z30 E30"
+    ],
+    "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+    "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+  },
+  "path_audit": {
+    "extrusion_moves_checked": 45205,
+    "features": {
+      "Support interface": 7929,
+      "Support": 23459,
+      "Brim": 342,
+      "Outer wall": 7322,
+      "Gap infill": 770,
+      "Inner wall": 5383
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        119.94,
+        101.691
+      ],
+      [
+        136.015,
+        154.292
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        119.69,
+        101.441
+      ],
+      [
+        136.265,
+        154.542
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 101.441
+  },
+  "physical_print_pending": true,
+  "complete_project_changed": false,
+  "conclusion": "Bevel sampling defect repaired. Separate physical transverse scar remains unexplained; no claim of a cure."
+}

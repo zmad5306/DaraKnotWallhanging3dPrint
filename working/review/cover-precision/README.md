@@ -1,8 +1,10 @@
 # B1 cover precision investigation — 2026-10-15
 
+**Historical experiment — superseded assessment:** The arc-join measurements below did not establish the cause or cure of the physical scar. Subsequent inspection reproduced similar Preview dashes through segment rendering without extrusion gaps, and found a separate modeled bevel defect. See the [current investigation and optional bevel-repair file](../cover-edge/README.md). Do not treat the former "next experiment" recommendation below as current guidance.
+
 Zach reported the same transverse scar on a cover printed in two orientations, plus a visible line in Bambu Preview. The show-face appearance remains unapproved. The repeated scar is evidence against treating this only as an A1 bed-motion problem; it does not establish a broken mesh.
 
-The next experiment is [Dara-Cover-Only-Test.3mf](../../../Dara-Cover-Only-Test.3mf): **one existing full-size B1, 2.11 g and 24 min 29 sec**. [Instructions](../../../Dara-Cover-Only-Test.txt). The complete project has not been changed by this investigation.
+The earlier experiment is preserved as [Dara-Cover-Only-Test.3mf](../../../Dara-Cover-Only-Test.3mf): **one existing full-size B1, 2.11 g and 24 min 29 sec**. [Instructions](../../../Dara-Cover-Only-Test.txt). The complete project has not been changed by this investigation.
 
 ## Evidence and limits
 
@@ -19,6 +21,6 @@ The plotted 0.75-degree marker threshold is a visualization choice, not a pass/f
 
 Only `enable_arc_fitting` (1 → 0) and `resolution` (0.012 → 0.001 mm) change the slicing process. The cover is isolated and centered; its shape, seating dimensions, 55-degree tilt, face plane along Y, support painting, filament settings, layer height and motion caps are retained. The mesh survives native export within 0.0002 mm, and support-paint counts match. Native G-code verifies zero model-extrusion arcs, supports and interfaces, a bed-contacting tree base, support interfaces below the glue face, positive print heights, in-bed bounds, copper slot 1, and no inspection pause. Startup/travel arcs may remain.
 
-The 32-plate normal project, its duplicate, seven-plate copper candidate and previous three-piece test retain their original hashes. Their cover settings have **not** been promoted from this experiment. Print only the small cover, compare the transverse scar, and dry-fit it on the existing hammered joint. An unchanged scar would reject this as a sufficient fix.
+The 32-plate normal project, its duplicate, seven-plate copper candidate and previous three-piece test retain their original hashes. Their cover settings have **not** been promoted from this experiment. This file is retained for comparison, not recommended as the likely remedy.
 
 [Full measurements, preserved hashes and toolpath checks](validation.json). Reproduce with `scripts/prepare_cover_precision_test.py stage`, then `slice`, then `verify`. Slicing uses the installed Bambu Studio CLI; `verify` publishes only the standalone test and this investigation's reports.

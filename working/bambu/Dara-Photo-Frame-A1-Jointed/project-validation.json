@@ -9591,5 +9591,10 @@
       "level": "3",
       "error_code": "1000C003"
     }
-  ]
+  ],
+  "historical_scope": {
+    "superseded_for_complete_project": "2026-10-15",
+    "current_report": "hammered-integration-validation.json",
+    "note": "This report describes the preceding flat-M project. Frame/backer/hardware plate evidence is preserved; M geometry, plate 31 and whole-project totals are superseded."
+  }
 }

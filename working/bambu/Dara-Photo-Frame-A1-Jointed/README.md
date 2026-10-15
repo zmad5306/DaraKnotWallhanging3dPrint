@@ -1,69 +1,47 @@
-# Complete A1 print project - clean curves
+# Complete A1 print project - hammered M and copper bands
 
-## Selected copper finish
-
-On 2026-10-14 the user selected **coupon C, middle left on the five-coupon diagnostic plate**, for production. All copper objects, M1-M6 on plates 21-26 and the existing M sample on plate 31, use **1.00 top solid infill flow at 30 mm/s**, the original wall layout, and **no ironing**. The copper filament flow ratio remains 0.96. Four walls remain below top surfaces, with one final perimeter; the experimental upper-1-mm wall modifier is not used.
-
-Coupon C supersedes the earlier 104% choice. The user selected it for production; no new full-size copper print result has been reported. The earlier ironed alternative felt smoother but looked duller. Fine surface texture and an edge band may remain. [Selected settings, physical choice and toolpath checks](copper-finish-settings.json).
-
-The later five-coupon diagnostic project remains available at the repository root. Its inspection pause is not transferred to production. All seven copper plates were re-sliced; other plate toolpaths and all model geometry are preserved.
-
-## Complete production project
-
-[Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) contains the corrected native models and fresh saved slices for **72 pieces on 31 plates**. This supersedes the earlier local curve repair. Use Git LFS after cloning to retrieve the binary files.
-
-The complete frame artwork has been rebuilt from tangent straight lines and circular arcs. The earlier repair removed sharp local bends but missed broad waves. All 26 boundary loops are now reconstructed; the 31 lap trimming domains and 20 section masks are regenerated from the same continuous geometry, so the old traced edges cannot clip the cleaned curves. Fabric boundaries, blue offsets, eight photo openings and matching backers follow the same source.
-
-The largest outline movement is 1.461 mm at a formerly irregular small corner. Small artwork corners use 1.5 mm fillets; overall bounds remain 914.4 x 914.4 mm. Every frame STL and all eight backers were regenerated. The six M, four wall-block and one retainer STL files are byte-identical to the preceding revision. Tested lap/key profiles, seam transforms, screw features, mounting interfaces, saved placements and slicer settings are preserved. Rabbets remain 2.4 mm deep, backers 1.6 mm thick, with 0.3 mm edge clearance.
-
-The color-mask calculation also uses direct intersections with the original STL triangles. The previous 3D slicing helper could introduce a false triangular notch at an oblique weave seam. A regression check covers that location, and all wood/blue modifiers are regenerated with the corrected method. Solid-change verification checks every distinct vertex-height interval directly, avoiding the same coplanar Boolean artifact.
+Open [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) **as a project** in Bambu Studio. It is identical to [Dara.3mf](../../../Dara.3mf) at the repository root. Both contain **75 assembly pieces and one optional sample on 31 plates**, with saved native slices. Updated 2026-10-15.
 
 | Plates | Contents |
 | --- | --- |
-| 01-20 | F1-F20, one frame section per plate |
-| 21-26 | M1-M6, one copper section per plate |
+| 01-20 | F1-F20 frame sections, original white/wood/blue geometry and slices |
+| 21-26 | M1-M6 full-size hammered sections, tilted 55 degrees, tree supports included |
 | 27 | Backer1, Backer3, Backer5, Backer7 |
 | 28 | Backer2, Backer4, Backer6, Backer8 |
-| 29 | B1-B4 and 32 retainers |
-| 30 | White/wood/blue weave and edge sample |
-| 31 | Copper M sample |
+| 29 | Wall blocks B1-B4 and 32 retainers |
+| 30 | Optional white/wood/blue weave and edge sample |
+| 31 | Five separate smooth copper covers, named Band1-Band5 |
 
-[Part and plate map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf). [Assembly guide](PRINT-READINESS.md). [Full edge review](../../review/clean-edges/README.md).
+Slot order remains **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**. Match the project slots to the loaded spools before printing. Keep the saved orientation, scale, object overrides and support painting. No print job was sent.
 
-## Saved geometry and settings
+## Copper M
 
-The 3MF retains all colors and modifiers. STL files contain geometry only. Slot order: **1 white Generic PLA / 2 wood tan Generic PLA / 3 copper Generic PLA Silk / 4 Azurite blue Generic PLA**. Match these to the loaded AMS Lite spools.
+The original 599.88 x 358.74 mm outline and all 22 rear mounting features are retained. The new balanced cuts carry keyed laps and recessed seats for five separate smooth bands. These M sections replace the old flat M entirely; do not mix revisions. Band1-Band5 are decorative copper pieces, distinct from wall blocks B1-B4.
 
-A1, 0.4 mm nozzle, textured plate, 0.2 mm layers, four walls, 15% gyroid, with 74 local solid screw/mounting zones. Nozzle 220 C; white/wood/blue plates use a 65 C bed, copper plates 55 C. Copper uses 40 mm/s outer walls, 30 mm/s top surfaces, 50 mm/s internal solid infill, eight top layers and 1.6 mm minimum top thickness. Its selected top solid infill flow multiplier is 1.00; filament flow remains 0.96, with 0.6 mm Normal Lift and sideways pre-lift wipe disabled. Monotonic line and no ironing are retained. Copper/blue maximum volumetric flow remains 7.5 mm3/s. Rear-down placements and scale are retained. Backers use no brim/support; tight frame/M plates retain the 1 mm brim. Flushing into models is disabled.
+The 55-degree orientations, hammered texture, native tree supports and ten local solid screw regions come from the validated banded candidate. Copper slot 3 now uses **0.98 filament flow**, 220 C nozzle, 55 C textured bed and a 7.5 mm3/s volumetric limit. The M and bands have their own saved support, brim and shell overrides: four walls, 15% gyroid in the bodies, five top layers, three bottom layers and no ironing. Thin bands slice solid. This supersedes the earlier flat coupon-C settings.
 
-The weave has 3.3 x 1.5 mm crossing pads, raised 0.3 mm above the 0.6 mm grid. Wood modifiers follow the actual relief at Z=8.4-9.9 mm, layers 43-50. The flush blue line is 1.5 mm wide with a 1.25 mm white land from the weave; its modifier is Z=12.9-13.5 mm, sliced on layers 66-68 at heights 13.2/13.4/13.6 mm. Wood and blue do not share a layer. Blue-to-white flush remains 650 mm3.
+The small tilted hammered joint was printed successfully. The newer cover-band seating and full-size parts have not yet been physically verified. The separate [small band test](../../../Dara-Hammered-Band-Test.3mf) remains available: 21.27 g and about 1 h 30 min. [Actual assembled geometry](../../review/hammered-bands/assembled-bands.png).
 
-There are 11 filament changes per ordinary frame/test plate, or 12 on sections with taller white locating pins. Plate 31 is copper only. The color modifiers have been rebuilt from the clean continuous outline before section clipping; they do not follow manufacturing seams.
+## Frame, backers and hardware
 
-## Saved-file checks
+The other 24 plates retain their prior models, object settings, placements, native G-code and preview assets. The frame keeps its reconstructed tangent curves, wood relief and flush blue edging. Rabbets remain 2.4 mm deep for 1.6 mm backers. Frame/backer dimensions and mounting hardware are unchanged.
 
-- All 39 production STLs and both material test meshes are valid solids with matching source hashes.
-- All 70 assembly pieces pass the interference check; maximum numerical overlap is 0.000236 mm3 (tolerance 0.01 mm3).
-- Every frame, M and backer perimeter was compared with its CAD boundary: 34 parts, maximum boundary error 0.000033 mm.
-- All 26 canonical outline loops and 320 line/arc primitives have tangent joins; maximum chord approximation is 0.001999 mm.
-- Saved white/blue perimeter paths cover all 56 large circular arcs on all 20 frame plates: 348 arcs checked, maximum radial error 0.010984 mm (limit 0.06 mm).
-- All 63 blue-bearing layers pass the blue-mask and white-intrusion checks. The white diamonds in Preview are seam markers, separate from extrusion paths.
-- All 41 normal project meshes match the STLs within 0.0001 mm; 74 reinforcement, 21 wood and 21 blue modifiers pass validation.
-- Seven copper plates were re-sliced for coupon C's 100% finish; the other 24 plates retain their prior slices. All 31 plates were audited: 6,867,463 extrusion moves checked, minimum bed-edge clearance 0.634 mm, including bead widths, brim/support and towers. Custom printer purge/wipe/parking routines are excluded.
+## Estimates and checks
 
-| Material | All 31 plates, including support/purge |
-| --- | ---: |
-| White | 2,761.10 g |
-| Wood tan | 222.30 g |
-| Copper silk | 473.85 g |
-| Azurite blue | 28.67 g |
+All 31 plates, including the optional sample: **4,048.42 g and 162 h 56 min**. Assembly pieces without plate 30: **4,030.00 g and 161 h 56 min**. Copper plates 21-26 and 31: **1,036.36 g and 53 h 41 min**, including supports. These are Studio estimates; allow additional material for the test and retries.
 
-Production plates 1-29: **3,442.69 g; 133 h 58 min**. Plate 30: **18.42 g; 0 h 59 min**. Plate 31: **24.81 g; 1 h 29 min**. Total: **3,485.92 g; 136 h 26 min**. These are slicer estimates.
+[Current integration validation](hammered-integration-validation.json) records every plate's estimate and G-code hash. Native Studio import and slicing passed for all seven replacement plates. Geometry, support painting and ten screw modifiers match the source candidate. Copper uses filament 3 throughout the model and support toolpaths. All 31 saved G-code checksums pass, and the two distributed project copies match.
 
-[project-validation.json](project-validation.json) records settings, placement and slice provenance. [final-review.json](final-review.json) is the independent audit. Plate 30 (68.36 x 24.00 x 13.50 mm) is the physical finish/purge test. The digital pass is not a physical print result. If Bambu asks to regenerate Preview, use Slice all with the saved settings.
+[Printing and assembly](PRINT-READINESS.md) contains the current order and band locations. The older `project-validation.json`, `final-review.json`, copper-finish reports and PDF part map describe the preceding flat-M project; their frame evidence remains relevant, but their M geometry, plate 31 and totals are superseded. The current M source is `scripts/prepare_hammered_bands.py`, not the old M STL exports.
 
-## Rebuilding
+## Recheck and regeneration
 
-See the [complete edge rebuild sequence](../../review/clean-edges/README.md#rebuilding). Historical weave/rabbet/local-repair scripts describe earlier revisions.
+After `git lfs pull`, run:
 
-To reapply the selected copper finish, run `python scripts/tune_silk_project.py stage`, then `slice`, `merge`, and `verify`. Independently audit `.work/copper-production-c/complete.3mf` with `scripts/validate_print_project.py`, using the adjacent `complete.json` baseline and `audit.json` report, before running `publish`. The diagnostic project and its report identify coupon C. Existing staging evidence is never overwritten.
+```powershell
+python scripts/integrate_hammered_dara.py audit
+```
+
+The integration script preserves an immutable baseline in `.work/integrated-hammered-dara`, imports the committed banded candidate, re-slices plates 21-26 and 31, verifies, then publishes both normal project paths. Its actions are `stage`, `slice`, `verify`, `publish` and `audit`. Staging expects the preceding flat-M Dara file (available in Git revision `d03621c`); it refuses to silently replace a different baseline. Native slicing requires the installed Bambu Studio CLI. Geometry dependencies are the same as the hammered generator.
+
+Do not run the historical flat-copper tuning/publishing scripts against this release.

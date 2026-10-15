@@ -1,0 +1,876 @@
+{
+  "date": "2026-10-15",
+  "project_sha256": "05259ea01f23d30e60e0289722c541f6f4179063542802f22c4545f6b8aa6e5d",
+  "baseline_sha256": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+  "hammered_candidate_sha256": "41f4b364735180f9ded1e57a810e8a8fdcbc00ddd18990f474e2c0266c9afe95",
+  "plates": 31,
+  "production_pieces": 75,
+  "optional_test_pieces": 1,
+  "copper_slot": 3,
+  "changed_plates": [
+    {
+      "extrusion_moves_checked": 1009010,
+      "features": {
+        "Support": 343516,
+        "Support interface": 180348,
+        "Brim": 29,
+        "Outer wall": 55586,
+        "Overhang wall": 144,
+        "Gap infill": 4207,
+        "Inner wall": 106209,
+        "Internal solid infill": 3307,
+        "Sparse infill": 189731,
+        "Floating vertical shell": 125251,
+        "Bridge": 682
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.381,
+          12.371
+        ],
+        [
+          242.904,
+          242.013
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.171,
+          12.161
+        ],
+        [
+          243.154,
+          242.223
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 12.161,
+      "model_z_range_mm": [
+        0.2,
+        206.6
+      ],
+      "plate": 21,
+      "gcode_sha256": "278e11980bd0fe90db60653ffa9f08ab20f95f0e447e0e97524b17725e420ca1",
+      "weight_g": 249.92,
+      "seconds": 45952,
+      "support_face_checks": [
+        {
+          "name": "M1",
+          "interior_interface_points": 156601,
+          "max_interface_above_band_underside_mm": -5.547095346989439
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support": 80147.48722763435,
+        "Support interface": 18383.379885613023,
+        "Brim": 1.7429875110120057,
+        "Outer wall": 14709.165435475838,
+        "Overhang wall": 17.881538940683548,
+        "Gap infill": 115.53942263519522,
+        "Inner wall": 45151.91675309088,
+        "Internal solid infill": 2626.960662630626,
+        "Sparse infill": 27284.57311256005,
+        "Floating vertical shell": 12948.432019368893,
+        "Bridge": 105.67644404100497
+      }
+    },
+    {
+      "extrusion_moves_checked": 608363,
+      "features": {
+        "Support": 201906,
+        "Support interface": 123170,
+        "Brim": 5,
+        "Outer wall": 30087,
+        "Gap infill": 1075,
+        "Inner wall": 62296,
+        "Internal solid infill": 1591,
+        "Sparse infill": 117359,
+        "Floating vertical shell": 70622,
+        "Overhang wall": 22,
+        "Bridge": 230
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          66.763,
+          64.40514918945989
+        ],
+        [
+          192.62042361352758,
+          189.361
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          66.55300000000001,
+          64.15514918945989
+        ],
+        [
+          192.87042361352758,
+          189.571
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 63.12957638647242,
+      "model_z_range_mm": [
+        0.2,
+        147.2
+      ],
+      "plate": 22,
+      "gcode_sha256": "58168534cd005581395f29933ee586ae39f0c2511765e7cda54cf7e6093a4f28",
+      "weight_g": 150.34,
+      "seconds": 27926,
+      "support_face_checks": [
+        {
+          "name": "M2",
+          "interior_interface_points": 88609,
+          "max_interface_above_band_underside_mm": -10.1733377317404
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support": 41188.105619519956,
+        "Support interface": 12498.118225420218,
+        "Brim": 0.20240446981530427,
+        "Outer wall": 9912.413438568808,
+        "Gap infill": 51.38035662300089,
+        "Inner wall": 30521.794460293662,
+        "Internal solid infill": 2825.319376173038,
+        "Sparse infill": 16702.50329498882,
+        "Floating vertical shell": 7451.250130409326,
+        "Overhang wall": 0.7689926683856317,
+        "Bridge": 35.71292775426492
+      }
+    },
+    {
+      "extrusion_moves_checked": 1008864,
+      "features": {
+        "Support": 349553,
+        "Support interface": 176728,
+        "Brim": 30,
+        "Outer wall": 55182,
+        "Overhang wall": 357,
+        "Gap infill": 4129,
+        "Inner wall": 106195,
+        "Internal solid infill": 3030,
+        "Sparse infill": 188294,
+        "Floating vertical shell": 124704,
+        "Bridge": 662
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.3,
+          9.961
+        ],
+        [
+          244.5276761717593,
+          245.62554536678047
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.09,
+          9.751
+        ],
+        [
+          244.73767617175932,
+          245.87554536678047
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 9.09,
+      "model_z_range_mm": [
+        0.2,
+        201.2
+      ],
+      "plate": 23,
+      "gcode_sha256": "d7b479a964265428752d6757a95f6e3d71b3d5c2aacc8c126272f2e712d351cd",
+      "weight_g": 250.35,
+      "seconds": 46013,
+      "support_face_checks": [
+        {
+          "name": "M3",
+          "interior_interface_points": 153067,
+          "max_interface_above_band_underside_mm": -5.532823988414249
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support": 80113.68094276905,
+        "Support interface": 18352.97685813179,
+        "Brim": 2.071188222910975,
+        "Outer wall": 14707.444456294614,
+        "Overhang wall": 17.581119234445563,
+        "Gap infill": 110.25667799942543,
+        "Inner wall": 45187.78118954896,
+        "Internal solid infill": 2500.7836163204565,
+        "Sparse infill": 27589.213583379853,
+        "Floating vertical shell": 13154.683088117223,
+        "Bridge": 103.69564631097175
+      }
+    },
+    {
+      "extrusion_moves_checked": 533944,
+      "features": {
+        "Support interface": 110938,
+        "Support": 168402,
+        "Outer wall": 23877,
+        "Gap infill": 2407,
+        "Inner wall": 52500,
+        "Internal solid infill": 1223,
+        "Sparse infill": 108913,
+        "Floating vertical shell": 64524,
+        "Bridge": 843,
+        "Overhang wall": 8,
+        "Top surface": 309
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          51.09949197926378,
+          53.891
+        ],
+        [
+          201.67070431849768,
+          202.1899222405474
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          50.84949197926378,
+          53.681
+        ],
+        [
+          201.8807043184977,
+          202.4399222405474
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 50.84949197926378,
+      "model_z_range_mm": [
+        0.2,
+        111.2
+      ],
+      "plate": 24,
+      "gcode_sha256": "22728ef600961276160e5440b8b82c56b44b0e08ed92026bd7c487ec335cc886",
+      "weight_g": 129.18,
+      "seconds": 24087,
+      "support_face_checks": [
+        {
+          "name": "M4",
+          "interior_interface_points": 82019,
+          "max_interface_above_band_underside_mm": -10.480505578542044
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support interface": 11612.596384951645,
+        "Support": 30788.878378860725,
+        "Outer wall": 8828.992630144296,
+        "Gap infill": 120.66681011463322,
+        "Inner wall": 27143.224053286493,
+        "Internal solid infill": 903.3221289786701,
+        "Sparse infill": 15747.366968695627,
+        "Floating vertical shell": 8664.609701680085,
+        "Bridge": 236.15105558360705,
+        "Overhang wall": 0.23403392647687588,
+        "Top surface": 81.86494721751744
+      }
+    },
+    {
+      "extrusion_moves_checked": 555554,
+      "features": {
+        "Support interface": 112706,
+        "Support": 170342,
+        "Outer wall": 28610,
+        "Gap infill": 1346,
+        "Inner wall": 64386,
+        "Internal solid infill": 1401,
+        "Sparse infill": 117022,
+        "Floating vertical shell": 59562,
+        "Overhang wall": 16,
+        "Bridge": 163
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          72.761,
+          88.0143295095649
+        ],
+        [
+          183.08802770236656,
+          171.2022060911122
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          72.551,
+          87.80432950956491
+        ],
+        [
+          183.33802770236656,
+          171.4522060911122
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 72.551,
+      "model_z_range_mm": [
+        0.2,
+        154.8
+      ],
+      "plate": 25,
+      "gcode_sha256": "56cb02643f685a274af4d94906f6854d09b50eac1de9dfeec8319011da82f338",
+      "weight_g": 135.17,
+      "seconds": 24739,
+      "support_face_checks": [
+        {
+          "name": "M5",
+          "interior_interface_points": 101742,
+          "max_interface_above_band_underside_mm": -5.564122125190584
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support interface": 11238.331157752475,
+        "Support": 34233.18542815338,
+        "Outer wall": 9197.284676553836,
+        "Gap infill": 51.68457667460214,
+        "Inner wall": 28379.107501833827,
+        "Internal solid infill": 2808.0244133233,
+        "Sparse infill": 16744.046361428613,
+        "Floating vertical shell": 6282.07298948509,
+        "Overhang wall": 0.5332990974147268,
+        "Bridge": 17.849163846640597
+      }
+    },
+    {
+      "extrusion_moves_checked": 439336,
+      "features": {
+        "Support": 139406,
+        "Support interface": 93644,
+        "Outer wall": 21685,
+        "Gap infill": 2635,
+        "Inner wall": 43629,
+        "Internal solid infill": 887,
+        "Sparse infill": 84813,
+        "Floating vertical shell": 51771,
+        "Bridge": 580,
+        "Overhang wall": 4,
+        "Top surface": 282
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          56.055,
+          54.62340652174346
+        ],
+        [
+          198.77521290599816,
+          201.47910634064638
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          55.845,
+          54.37340652174346
+        ],
+        [
+          199.02521290599816,
+          201.6891063406464
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 54.31089365935361,
+      "model_z_range_mm": [
+        0.2,
+        114.8
+      ],
+      "plate": 26,
+      "gcode_sha256": "ecd40c01f57d43535643d9c9add76a1ac35b7f82a61bac652806c64f3d7707d3",
+      "weight_g": 105.67,
+      "seconds": 20161,
+      "support_face_checks": [
+        {
+          "name": "M6",
+          "interior_interface_points": 64063,
+          "max_interface_above_band_underside_mm": -10.489789443883664
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support": 26381.065223661495,
+        "Support interface": 9515.569229075576,
+        "Outer wall": 7211.378560767855,
+        "Gap infill": 96.41526697204078,
+        "Inner wall": 21959.961683460322,
+        "Internal solid infill": 948.5858537925174,
+        "Sparse infill": 12121.738394647316,
+        "Floating vertical shell": 6671.694041294418,
+        "Bridge": 181.29357537588373,
+        "Overhang wall": 0.2621757244191107,
+        "Top surface": 76.13503662829089
+      }
+    },
+    {
+      "extrusion_moves_checked": 80781,
+      "features": {
+        "Support interface": 30853,
+        "Support": 34166,
+        "Brim": 6,
+        "Outer wall": 10419,
+        "Gap infill": 2699,
+        "Inner wall": 2634,
+        "Overhang wall": 4
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          26.10431095673589,
+          25.349932051466563
+        ],
+        [
+          212.50064399361318,
+          235.387
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          25.85431095673589,
+          25.099932051466563
+        ],
+        [
+          212.75064399361318,
+          235.597
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 20.40299999999999,
+      "model_z_range_mm": [
+        0.2,
+        28.6
+      ],
+      "plate": 31,
+      "gcode_sha256": "e2f644e10dbc41ffaa9e28a6fc50181cfce59292096fbce2c556f025be2f708b",
+      "weight_g": 15.73,
+      "seconds": 4401,
+      "support_face_checks": [
+        {
+          "name": "Band1",
+          "interior_interface_points": 2993,
+          "max_interface_above_band_underside_mm": -0.24011253689967127
+        },
+        {
+          "name": "Band2",
+          "interior_interface_points": 3522,
+          "max_interface_above_band_underside_mm": -0.26189481333969056
+        },
+        {
+          "name": "Band3",
+          "interior_interface_points": 6057,
+          "max_interface_above_band_underside_mm": -0.25694738362805225
+        },
+        {
+          "name": "Band4",
+          "interior_interface_points": 5688,
+          "max_interface_above_band_underside_mm": -0.2725340723355423
+        },
+        {
+          "name": "Band5",
+          "interior_interface_points": 4836,
+          "max_interface_above_band_underside_mm": -0.23503193198525452
+        }
+      ],
+      "extrusion_volumes_mm3": {
+        "Support interface": 3468.574804039438,
+        "Support": 4631.238080852673,
+        "Brim": 0.1581713361266121,
+        "Outer wall": 2382.145012041617,
+        "Gap infill": 459.5888494978497,
+        "Inner wall": 1692.374992522096,
+        "Overhang wall": 0.022272910166247387
+      }
+    }
+  ],
+  "unchanged_native_plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "7e5f9d6d5fd6c8bd923e7812d587acede562f0ad3bfc2d25c9453307d57efbc5"
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "9144c529d4ae657bbf31d0f862247060566c887ca4bf8a5c20a5f4f9d30634aa"
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "d49162c5f5d9991d9ef93c89096d577e8c94463239f9df71da9d53fedec15ae4"
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "63af8a6829141527f06780818fdfc1145ca8a275d2a1ba2804c03ed5fd52b173"
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "1f45fb48d43a8f86e9bfa338f232fc93307b865980e980ac107d1e44cee6c550"
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "fae98c09c932c6bad2beb98eeb9b4aea3627a10c928ebc22d0562e3935b32a05"
+    },
+    {
+      "plate": 7,
+      "gcode_sha256": "7dfe1256344037e78dc857a599aed510b3dc75056db93247193e6b5880f6103a"
+    },
+    {
+      "plate": 8,
+      "gcode_sha256": "623162f348c59f5c805a036665511b35cc337aae9a7b63b15f99793ae9819c35"
+    },
+    {
+      "plate": 9,
+      "gcode_sha256": "2338e207cd3b55c8c8363b0a3dc0346f842482095c8bb83d85f6d33cdff0920e"
+    },
+    {
+      "plate": 10,
+      "gcode_sha256": "4b225b648860f32bf4965af0149fcb406b5cc2011b092c750bdbf80838adf8cb"
+    },
+    {
+      "plate": 11,
+      "gcode_sha256": "34a30dd7f017381224dc8a2e0ce37d6a8b5d5029ceb0ce9363d2fe2af2b793e8"
+    },
+    {
+      "plate": 12,
+      "gcode_sha256": "6267b28e958178b09f7fcf9e6c9ac3e69e0ae307759ab418acf6d785486b0573"
+    },
+    {
+      "plate": 13,
+      "gcode_sha256": "4ad66cda3e979bd1eec984dfae555e9955b0631187d04f1e6712492b1cfd578a"
+    },
+    {
+      "plate": 14,
+      "gcode_sha256": "e2640117be50859f9a7f7324e384cf1ad40b38463bd33ef10d8bb53ee20922ea"
+    },
+    {
+      "plate": 15,
+      "gcode_sha256": "7d95833b2ff4c9724a3cd71603b8b220f702649da247e0b202131e120421ffb8"
+    },
+    {
+      "plate": 16,
+      "gcode_sha256": "aa3c66d18ebfe73d8347788edbcd61539f580a2bc081833b8e9f5fe077af4426"
+    },
+    {
+      "plate": 17,
+      "gcode_sha256": "b00e31b3511302e0e7226dbb29323ecc885b4da89dcd0d4cdf167a2cce881d76"
+    },
+    {
+      "plate": 18,
+      "gcode_sha256": "1740fde77188fa620a08ef508aa6e772d796c78dbbc041ac925086d40fe6f156"
+    },
+    {
+      "plate": 19,
+      "gcode_sha256": "d5bab45b153f95bf4e66e7e2747d0d6446cf907b32acfd50d48dec3b743fa666"
+    },
+    {
+      "plate": 20,
+      "gcode_sha256": "24ef8a110d4979df7d2c96053546dff16536cdbfb2b437a9d2c5d7e41c9a952a"
+    },
+    {
+      "plate": 27,
+      "gcode_sha256": "504cfafbe5e7999b5794aa988585e08ed03cbdf42b022522c26661321848f7a4"
+    },
+    {
+      "plate": 28,
+      "gcode_sha256": "b850ce3aecf07a93ec00790f88490d6390a838631f64c7a946adf163649796f3"
+    },
+    {
+      "plate": 29,
+      "gcode_sha256": "b7de62f4b82970ad8af8ae03021e70c103ead65179e0a1256d946657a80dc0d4"
+    },
+    {
+      "plate": 30,
+      "gcode_sha256": "da7bb9bf45845497dac00d8b7f68117bf5d7073ae95221c0e2ec03c3698ca439"
+    }
+  ],
+  "mesh_checks": [
+    {
+      "name": "M1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 8.22075502143491e-06
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.999999418942025e-07
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.999999418942025e-07
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.999999418942025e-07
+    },
+    {
+      "name": "M2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 3.00665939210581e-06
+    },
+    {
+      "name": "M2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.0066591576733924e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 9.739401997318233e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.0223748381960986e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.0223748381960986e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.0223748381960986e-06
+    },
+    {
+      "name": "M4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 4.191674765778404e-06
+    },
+    {
+      "name": "M4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 7.000003279244993e-07
+    },
+    {
+      "name": "M5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 5.638482602464258e-06
+    },
+    {
+      "name": "M5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.999999989900971e-06
+    },
+    {
+      "name": "M6",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 5.656854224242524e-06
+    },
+    {
+      "name": "M6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.5421149729252077e-13
+    },
+    {
+      "name": "Band1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 1.6027570635377896e-06
+    },
+    {
+      "name": "Band2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 6.339166262127829e-07
+    },
+    {
+      "name": "Band3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.2737367544323206e-13
+    },
+    {
+      "name": "Band4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 4.1457591173725e-06
+    },
+    {
+      "name": "Band5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.737437183267626e-06
+    }
+  ],
+  "process_overrides": {
+    "bottom_shell_layers": "3",
+    "bridge_speed": "50",
+    "brim_object_gap": "0.1",
+    "brim_type": "auto_brim",
+    "brim_width": "5",
+    "flush_into_support": "1",
+    "support_critical_regions_only": "1",
+    "support_object_xy_distance": "0.35",
+    "support_remove_small_overhang": "0",
+    "support_style": "default",
+    "support_threshold_angle": "80",
+    "support_type": "tree(auto)",
+    "top_shell_layers": "5"
+  },
+  "filament_changes": {
+    "filament_flow_ratio": [
+      "0.96",
+      "0.98"
+    ],
+    "filament_wipe": [
+      "0",
+      "nil"
+    ],
+    "filament_z_hop": [
+      "0.6",
+      "nil"
+    ],
+    "filament_z_hop_types": [
+      "Normal Lift",
+      "nil"
+    ]
+  },
+  "all_plate_estimates": [
+    {
+      "plate": 1,
+      "weight_g": 113.89,
+      "seconds": 15089
+    },
+    {
+      "plate": 2,
+      "weight_g": 123.97,
+      "seconds": 16057
+    },
+    {
+      "plate": 3,
+      "weight_g": 126.47,
+      "seconds": 17130
+    },
+    {
+      "plate": 4,
+      "weight_g": 106.96,
+      "seconds": 15077
+    },
+    {
+      "plate": 5,
+      "weight_g": 143.25,
+      "seconds": 19700
+    },
+    {
+      "plate": 6,
+      "weight_g": 189.13,
+      "seconds": 25025
+    },
+    {
+      "plate": 7,
+      "weight_g": 123.87,
+      "seconds": 17003
+    },
+    {
+      "plate": 8,
+      "weight_g": 145.88,
+      "seconds": 18853
+    },
+    {
+      "plate": 9,
+      "weight_g": 114.99,
+      "seconds": 15456
+    },
+    {
+      "plate": 10,
+      "weight_g": 135.58,
+      "seconds": 18036
+    },
+    {
+      "plate": 11,
+      "weight_g": 121.71,
+      "seconds": 16125
+    },
+    {
+      "plate": 12,
+      "weight_g": 138.38,
+      "seconds": 18815
+    },
+    {
+      "plate": 13,
+      "weight_g": 143.07,
+      "seconds": 19079
+    },
+    {
+      "plate": 14,
+      "weight_g": 126.61,
+      "seconds": 16764
+    },
+    {
+      "plate": 15,
+      "weight_g": 148.86,
+      "seconds": 19369
+    },
+    {
+      "plate": 16,
+      "weight_g": 125.39,
+      "seconds": 17722
+    },
+    {
+      "plate": 17,
+      "weight_g": 106.24,
+      "seconds": 14642
+    },
+    {
+      "plate": 18,
+      "weight_g": 151.03,
+      "seconds": 20726
+    },
+    {
+      "plate": 19,
+      "weight_g": 148.57,
+      "seconds": 19200
+    },
+    {
+      "plate": 20,
+      "weight_g": 110.09,
+      "seconds": 14443
+    },
+    {
+      "plate": 21,
+      "weight_g": 249.92,
+      "seconds": 45952
+    },
+    {
+      "plate": 22,
+      "weight_g": 150.34,
+      "seconds": 27926
+    },
+    {
+      "plate": 23,
+      "weight_g": 250.35,
+      "seconds": 46013
+    },
+    {
+      "plate": 24,
+      "weight_g": 129.18,
+      "seconds": 24087
+    },
+    {
+      "plate": 25,
+      "weight_g": 135.17,
+      "seconds": 24739
+    },
+    {
+      "plate": 26,
+      "weight_g": 105.67,
+      "seconds": 20161
+    },
+    {
+      "plate": 27,
+      "weight_g": 99.39,
+      "seconds": 8322
+    },
+    {
+      "plate": 28,
+      "weight_g": 99.42,
+      "seconds": 8318
+    },
+    {
+      "plate": 29,
+      "weight_g": 150.89,
+      "seconds": 18757
+    },
+    {
+      "plate": 30,
+      "weight_g": 18.42,
+      "seconds": 3555
+    },
+    {
+      "plate": 31,
+      "weight_g": 15.73,
+      "seconds": 4401
+    }
+  ],
+  "total_weight_g": 4048.42,
+  "total_seconds": 586542,
+  "physical_band_fit_pending": true,
+  "scope": "Digital integration and native slicing; physical band fit and full-size printing remain unverified."
+}

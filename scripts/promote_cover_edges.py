@@ -23,6 +23,7 @@ WORK=b.ROOT/'.work/cover-edge-production'
 REVIEW=b.ROOT/'working/review/cover-edge-production'
 NAMES={f'Band{i}' for i in range(1,6)}
 META=('3D/3dmodel.model','Metadata/model_settings.config','Metadata/slice_info.config','Metadata/filament_sequence.json')
+SMOOTH_CROWN=False
 
 
 def plate_asset(path):
@@ -32,14 +33,14 @@ def plate_asset(path):
 
 def stage():
     WORK.mkdir(parents=True,exist_ok=True);REVIEW.mkdir(parents=True,exist_ok=True)
-    prior=json.loads((PACKAGE/'y-stability-validation.json').read_text())
-    assert b.sha(TARGETS[0])==b.sha(TARGETS[1])==prior['project_sha256'],'This migration expects the Y-stable release.'
+    prior=json.loads((PACKAGE/('cover-edge-validation.json' if SMOOTH_CROWN else 'y-stability-validation.json')).read_text())
+    assert b.sha(TARGETS[0])==b.sha(TARGETS[1])==prior['project_sha256'],'Production must match the audited baseline.'
     shutil.copy2(TARGETS[0],WORK/'baseline.3mf')
     files=b.read_zip(TARGETS[0]);root=ET.fromstring(files[META[0]]);cfg=ET.fromstring(files[META[1]])
     entries=selected_entries(files,NAMES);assert set(entries)==NAMES
     resources=root.find(b.tag('resources'));build=root.find(b.tag('build'))
     configs={b.props(o)['name'].split(' - ')[0]:o for o in cfg.findall('object')}
-    orientation={o['name']:o for o in prior['orientation']};rows=[]
+    orientation={o['name']:o for o in prior['geometry_checks' if SMOOTH_CROWN else 'orientation']};rows=[]
     for i in range(1,6):
         name=f'Band{i}';co=configs[name];oid=co.get('id')
         assert len(entries[name])==1
@@ -53,7 +54,11 @@ def stage():
         # Native rounding can flip normals on tiny, nearly degenerate facets.
         # First match the current solid to its original mesh, then compare the
         # repaired seat against that unrounded original surface.
-        original=b.boolean([b.boolean([b.envelope(top,region.bounds,.25),b.prism(region,8,6.6)],'intersection'),b.envelope(floor,region.bounds,.25)],'difference')
+        if SMOOTH_CROWN:
+            a=b.np.load(b.ROOT/f'.work/cover-edge/B{i}.npz')
+            original=b.trimesh.Trimesh(a['vertices'],a['faces'],process=False)
+        else:
+            original=b.boolean([b.boolean([b.envelope(top,region.bounds,.25),b.prism(region,8,6.6)],'intersection'),b.envelope(floor,region.bounds,.25)],'difference')
         source_error=max(b.cKDTree(original.vertices).query(old.vertices)[0].max(),b.cKDTree(old.vertices).query(original.vertices)[0].max())
         assert source_error<.0002,(name,source_error)
         underside=edge.underside_distance(original,body)
@@ -191,7 +196,7 @@ def verify():
                 unchanged_native_plates=unchanged,geometry_checks=manifest['objects'],mesh_checks=mesh_checks,
                 settings_changed=False,precision_settings={k:es[k] for k in ['enable_arc_fitting','resolution']},
                 total_weight_g=sum(r['weight_g'] for r in totals),total_seconds=sum(r['seconds'] for r in totals),all_plate_estimates=totals,
-                physical_test_pending=True,scope='User-authorized promotion of all five repaired bevel meshes. Middle scar remains unconfirmed; existing production process retained.')
+                physical_test_pending=True,scope=('Smooth cover crowns remove the nearest-edge medial crease; preserved seats and existing production process. Physical finish pending.' if SMOOTH_CROWN else 'User-authorized promotion of all five repaired bevel meshes. Middle scar remains unconfirmed; existing production process retained.'))
     (REVIEW/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
     print('Verified',stats['weight'],'g,',stats['prediction'],'seconds; all 31 other plates preserved.',flush=True)
 
@@ -201,11 +206,16 @@ def publish():
     assert b.sha(source)==report['project_sha256']
     for target in TARGETS:assert b.sha(target) in [report['baseline_sha256'],report['project_sha256']]
     for target in TARGETS:shutil.copy2(source,target)
-    shutil.copy2(REVIEW/'validation.json',PACKAGE/'cover-edge-validation.json')
+    shutil.copy2(REVIEW/'validation.json',PACKAGE/('cover-crown-validation.json' if SMOOTH_CROWN else 'cover-edge-validation.json'))
     assert b.sha(TARGETS[0])==b.sha(TARGETS[1])==report['project_sha256']
     print('Published both normal Dara project files.',flush=True)
 
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('action',choices=['stage','slice','verify','publish'])
-    {'stage':stage,'slice':slice_native,'verify':verify,'publish':publish}[parser.parse_args().action]()
+    parser.add_argument('--smooth-crown',action='store_true');args=parser.parse_args()
+    if args.smooth_crown:
+        import prepare_cover_crown_test as edge
+        SMOOTH_CROWN=True
+        WORK=b.ROOT/'.work/cover-crown-production';REVIEW=b.ROOT/'working/review/cover-crown-production'
+    {'stage':stage,'slice':slice_native,'verify':verify,'publish':publish}[args.action]()

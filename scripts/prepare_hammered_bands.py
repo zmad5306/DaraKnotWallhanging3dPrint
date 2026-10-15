@@ -24,6 +24,8 @@ from shapely.ops import split
 from shapely import affinity, union_all
 import shapely
 from scipy.spatial import cKDTree
+from scipy.ndimage import gaussian_filter
+from scipy.interpolate import RectBivariateSpline
 from y_axis_orientation import choose,TRAVEL,COPPER,BAND_CENTERS,TEST_CENTERS
 
 WORK=ROOT/'.work/hammered-bands'
@@ -68,6 +70,29 @@ def layout():
 def crown(outline,xy):
     t=np.clip(shapely.distance(shapely.points(xy),outline.boundary)/17.5,0,1)
     return 2.2*(2*t-t*t)
+
+
+def smooth_cover_crown(outline,region,sigma=1.5,res=.125):
+    """A C2 show-face field without the nearest-edge crown's medial creases.
+
+    Keep crown() for the existing M seats and cover undersides. Only the cover
+    show face uses this filtered field. Signed distance outside the artwork
+    extends the slope through the edge instead of creating an artificial lip.
+    Five-sigma padding keeps the filtering boundary outside the actual cover.
+    """
+    pad=5*sigma+4*res
+    lo=np.floor((np.array(region.bounds[:2])-pad)/res)*res
+    hi=np.ceil((np.array(region.bounds[2:])+pad)/res)*res
+    xs,ys=[np.arange(a,z+res/2,res) for a,z in zip(lo,hi)]
+    x,y=np.meshgrid(xs,ys,indexing='ij')
+    xy=np.column_stack([x.ravel(),y.ravel()]);points=shapely.points(xy)
+    d=shapely.distance(points,outline.boundary)
+    d=np.where(shapely.contains(outline,points),d,-d)
+    t=np.minimum(d/17.5,1.)
+    z=gaussian_filter((2.2*(2*t-t*t)).reshape(x.shape),sigma/res,
+                      mode='nearest',truncate=5.)
+    spline=RectBivariateSpline(xs,ys,z,kx=3,ky=3,s=0)
+    return lambda xy:spline.ev(xy[:,0],xy[:,1])
 
 
 def envelope(evaluate,bounds,res=.5,bottom=6.6):
@@ -260,9 +285,10 @@ def geometry():
     for idx,(j,seat) in enumerate(zip(joints,seats),1):
         region=locate(rect(-WIDTH/2,-j[4],WIDTH/2,j[4]),j[2],j[3]).intersection(outline.buffer(-.15))
         def bottom(xy):return 10.5+crown(outline,xy)-SEAT_DEPTH+GLUE_GAP
+        show_crown=smooth_cover_crown(outline,region)
         def top(xy):
             edge=shapely.distance(shapely.points(xy),region.boundary)
-            return bottom(xy)+THICKNESS-.25*(1-np.clip(edge/.25,0,1))
+            return 10.5+show_crown(xy)-SEAT_DEPTH+GLUE_GAP+THICKNESS-.25*(1-np.clip(edge/.25,0,1))
         upper=band_envelope(region,top)
         band=boolean([upper,envelope(bottom,region.bounds,.25)],'difference')
         band=save_mesh(f'B{idx}',band);bands.append(band)

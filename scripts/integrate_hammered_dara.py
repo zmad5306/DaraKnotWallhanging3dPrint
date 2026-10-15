@@ -366,7 +366,8 @@ def publish():
 
 def audit_current():
     """Check the distributed files against the committed integration evidence."""
-    current=PACKAGE/'cover-edge-validation.json'
+    current=PACKAGE/'cover-crown-validation.json'
+    if not current.exists():current=PACKAGE/'cover-edge-validation.json'
     if not current.exists():current=PACKAGE/'y-stability-validation.json'
     if not current.exists():current=PACKAGE/'knot-glue-sample-validation.json'
     if not current.exists():current=PACKAGE/'hammered-integration-validation.json'

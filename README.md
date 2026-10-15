@@ -1,37 +1,21 @@
 # Dara knot wall hanging
 
-**Current complete print file, 2026-10-15: [Dara.3mf](Dara.3mf).** Open as a project in Bambu Studio. All **32 plates** are sliced, with **75 assembly pieces and three optional test pieces**. Plates **21-26** contain the full-size hammered M; **31** has its five copper cover bands; **32** has the full-color F7/F4 epoxy mock glue-up pair. Copper is **slot 3**. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
+**Current production project: [Dara.3mf](Dara.3mf)** — open as a project in Bambu Studio. It contains **32 sliced plates, 75 assembly pieces and three optional sample pieces**. Plates **21–26** are the full-size hammered M, **31** contains its five copper covers, and **32** contains the requested full-color epoxy glue-up sample. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
-**Cover bevel repair promoted:** Plate **31** now contains all five repaired cover meshes with regenerated supports, at Zach's request while the small test prints. The main project's copper settings and Y-aligned 55-degree orientations are retained; all other plates keep their existing saved slices. [Promotion and validation](working/review/cover-edge-production/README.md). The separate middle scar remains unconfirmed. [Geometry evidence and the isolated test](working/review/cover-edge/README.md).
+The copper face planes run along the A1 bed's **Y travel**, with a 55-degree lean across X, saved tree supports and conservative motion limits. Keep the saved scale, orientations and per-object overrides. Filament slots are **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**.
 
-**Y-bed correction:** The broad copper face planes now run along the A1 bed's Y travel, with the 55-degree lean across X. Each part is rotated within that plane to fit at its original scale. M1 and M3 reach approximately 238 and 241 mm; the other four are 63-102 mm tall. Tree supports are regenerated with 3 mm branch diameter and two walls. A 6 mm outer object brim is requested; where the tilted part has no first-layer area, the generated tree base supplies the anchoring. Project-wide X/Y limits are 1,000 mm/s² acceleration and 150 mm/s speed. Process travel and default print acceleration are 1,000 mm/s²; outer walls, top surfaces and the first layer use 500 mm/s². Major process speeds are capped at 150 mm/s. All 32 plates were re-sliced, including the frame and optional samples. These conservative settings increase print time; they do not prove physical adhesion or eliminate sway. [Orientation, support previews and current validation](working/review/y-stable-dara/README.md).
+**Cover update, 2026-10-15:** the crown's nearest-edge calculation created a small ridge where its controlling edge switched. The five cover show faces now use a smooth field; their seating surfaces and M recesses are preserved. The earlier bevel correction is retained. Plate 31 was re-sliced and all 31 other slices are unchanged. This corrects measured geometry; **physical cover finish and full-height M prints still need confirmation**. [Release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
 
-The corrected [Dara-Hammered-Band-Test.3mf](Dara-Hammered-Band-Test.3mf) contains the real joint crops in their production parents' new orientations, plus the full-size curved band. Estimate: **25.11 g and 3 h 01 min**. [Test instructions](Dara-Hammered-Band-Test.txt). Full-height adhesion and physical band seating remain unverified; reopen this saved project rather than printing an older cached slice.
+All 32 plates: **4,101.62 g / 262 h 34 min**. Assembly excluding optional plates 30 and 32: **4,041.93 g / 258 h 39 min**. Copper plates 21–26 and 31: **1,048.29 g / 94 h 06 min**. Cover plate 31: **16.96 g / 1 h 57 min**. Estimates include supports and purge.
 
-The separate [Dara-Hammered-Bands-Candidate.3mf](Dara-Hammered-Bands-Candidate.3mf) contains the same Y-aligned copper geometry on seven plates, using copper **slot 1**. The original 599.88 x 358.74 mm M outline, all 22 mounting features, joint clearances, bands and texture are retained. [Assembled geometry](working/review/hammered-bands/assembled-bands.png). Do not mix these sections with earlier M revisions.
-
-All 32 plates: **4,101.66 g and 262 h 33 min**. Assembly without optional plates 30 and 32: **4,041.97 g and 258 h 38 min**. Copper plates 21-26 and 31: **1,048.33 g and 94 h 05 min**. Optional plate 30: **18.42 g and 1 h 21 min**; plate 32: **41.27 g and 2 h 33 min**. Estimates include supports and purge. Copper exceeds one 1 kg spool before retries.
-
-**Earlier full-size tilted candidate, retained for history:** [Dara-Hammered-M-Candidate.3mf](Dara-Hammered-M-Candidate.3mf) contains the six prior M sections at 55 degrees with the attempted tighter seam. Its physical joint test did not establish the desired appearance. [Original instructions and estimates](Dara-Hammered-M-Candidate.txt), [geometry](working/review/hammered-m-production/assembled-M.png), and [validation](working/review/hammered-m-production/validation.json) remain available. The 3MF is unchanged; use the cover-band test above as the next experiment.
-
-[Dara.3mf](Dara.3mf) is the Bambu Studio project with all 32 plates. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
-
-**Earlier flat copper finish, superseded:** coupon C used 100% top-surface flow, 30 mm/s top speed and 0.96 filament flow. Those settings are recorded in the separate [diagnostic comparison](Dara-Copper-Diagnostic-Test.3mf) and [historical checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-finish-settings.json); the complete project now uses the tilted hammered process. No inspection pause is in Dara.
-
-The separate [copper thickness test](Dara-Copper-Thickness-Test.3mf) contains four small 25 x 25 mm coupons: 1/2/4 mm solid and a 4 mm production-style gyroid comparison. [Layout and measurement instructions](Dara-Copper-Thickness-Test.txt), [blank measurement sheet](Dara-Copper-Thickness-Measurements.csv), and [toolpath checks](working/bambu/Dara-Photo-Frame-A1-Jointed/copper-thickness-test.json). It does not change the production settings.
-
-**Successful tilted hammered finish, 2026-10-14:** Zach printed a separate 70 x 35 mm hammered coupon at 55 degrees and approved its finish. The [saved successful setup](reference/hammered-success/hammered_coupon_clean.3mf) and [supplied generator](reference/hammered-success/user-generator.py.txt) are preserved. The [hammered joint test](Dara-Hammered-Joint-Test.3mf) applies that texture formula at its original physical scale to a 42 x 30 mm crop of the real M2/M3 keyed lap, including a locator hole. Zach added support painting in Studio, printed the pair, and approved the finish. It stops firmly with a face gap that accepts approximately 0.004-inch paper. The original generated [toolpaths](working/review/tilted-hammered/joint-toolpaths.png) and [validation](working/review/tilted-hammered/joint-test-validation.json) predate that user support edit and describe the initial export, not the current saved file. That earlier test did not modify production; the later banded geometry is now integrated into Dara.
-
-The [close-seam joint test](Dara-Hammered-Close-Seam-Test.3mf) reduces the modeled face gap from 0.075 to 0.025 mm and shortens the free ends of the lower shelf and both keys by 0.003 inches (0.0762 mm), keeping the mating shoulder unchanged. It preserves the user's support painting on the retained faces and is sliced with tree supports and interfaces. Estimate: 16.24 g and 1 hour 6 minutes 35 seconds. [Instructions](Dara-Hammered-Close-Seam-Test.txt), [support preview](working/review/hammered-close-seam/supports.png), and [validation](working/review/hammered-close-seam/validation.json). Zach reported that it did not tighten the joint much; the hard-stop cause remains unconfirmed. It is superseded by the separate cover-band approach.
-
-The earlier [flat-printed domed sample](Dara-Copper-Hammered-Test.3mf) is retained as an abandoned experiment. It is superseded by the successful tilted approach, as is the unfinished SVG recess experiment. Neither is the recommended next print.
+The final editable meshes, filament assignments, support painting and native slices are stored in the 3MF. Standalone experiments and the generation/migration history remain on [codex/hammered-m-production](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production). This release does not depend on those test files to open, print or audit. After cloning, run `git lfs pull`, then `python scripts/audit_dara_release.py`.
 
 ![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 
 Concept rendering: white ribbon with a fine Azurite blue edge thread, wood-tan
 woven fabric, and a copper manuscript M on a dark blue wall.
 
-**Complete edge reconstruction:** the frame uses tangent lines and circular arcs throughout, including regenerated section clipping and joint endpoints. Frame/backer STLs, color modifiers and their saved slices remain synchronized. The [frame edge review](working/review/clean-edges/README.md) measures the saved perimeter paths and geometry. The current M geometry is generated separately by [prepare_hammered_bands.py](scripts/prepare_hammered_bands.py); the older flat M STLs are historical.
+**Complete edge reconstruction:** the frame uses tangent lines and circular arcs throughout, including regenerated section clipping and joint endpoints. Frame/backer STLs, color modifiers and their saved slices remain synchronized. The [frame edge review](working/review/clean-edges/README.md) measures the saved perimeter paths and geometry. The editable production M and cover meshes are embedded in Dara.3mf. Their generation history is preserved on the [hammered development branch](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production); the older flat M STLs are historical.
 
 Use the current [manufacturing CAD](working/Dara-Photo-Frame-A1-Jointed.scad), [continuous clean artwork](working/Dara-Clean-Artwork.scad) and [SVG](working/Dara-Clean-Artwork.svg). Historical files under `reference/` document the original traced design and are not current production geometry. Plate 30 remains the physical finish/color check.
 
@@ -40,7 +24,7 @@ records the digital checks. The user has printed the earlier hardware/lap
 test pieces and reported insufficient photo clearance. The jointed model now
 has 2.4 mm deep rabbets, giving the 1.6 mm backer 0.8 mm of photo and surface
 clearance. The extra 0.4 mm addresses the reported fit issue; the revised
-physical fit has not yet been checked. The optional weave sample remains on plate 30, and a full-color knot joint pair for epoxy practice is on plate 32; copper experiments are separate projects.
+physical fit has not yet been checked. The optional weave sample remains on plate 30, and the requested full-color knot joint pair for epoxy practice is on plate 32.
 
 The [complete Bambu Studio project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf)
 contains 70 body/backer/hardware pieces on plates 1-29, a **68.36 x 24.00 mm white/wood/blue
@@ -49,7 +33,7 @@ The older hardware and plain lap coupons were removed; their standalone STL file
 crossings restored from the earlier texture, and its color region follows the
 surface relief. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
-part in the assembly and shows the shared backer and hardware plates. The project
+original frame/backer/hardware part. Its M cuts and plate 31 are superseded; use the current printing guide for the hammered M and bands. The project
 uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
 The saved AMS palette is **1 white / Generic PLA, 2 wood tan / Generic PLA,
 3 copper / Generic PLA Silk, 4 Azurite blue / Generic PLA**. Frame sections
@@ -65,10 +49,7 @@ See the [project notes and verification](working/bambu/Dara-Photo-Frame-A1-Joint
 Run `git lfs pull` after cloning to retrieve the 3MF and STL files.
 
 The jointed model's [individual STL exports](working/stl/Dara-Photo-Frame-A1-Jointed/README.md)
-contain all 39 distinct printable parts, stored with Git LFS. Print one of each
-frame section, letter section, backer, and wall block, plus 32 copies of the
-universal retainer. The export folder includes mesh checks and regeneration
-instructions.
+contain the earlier 39-part export set, stored with Git LFS. The frame, backers and hardware remain relevant, but the flat M exports do not match the hammered production M. Use Dara.3mf for the current M and five covers.
 
 The jointed manufacturing model is
 [working/Dara-Photo-Frame-A1-Jointed.scad](working/Dara-Photo-Frame-A1-Jointed.scad).

@@ -4,8 +4,8 @@ Open [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) **as a
 
 | Plates | Contents |
 | --- | --- |
-| 01-20 | F1-F20 frame sections, original white/wood/blue geometry and slices |
-| 21-26 | M1-M6 full-size hammered sections, tilted 55 degrees, tree supports included |
+| 01-20 | F1-F20 frame sections, original white/wood/blue geometry, re-sliced with gentle motion |
+| 21-26 | M1-M6 full-size hammered sections, 55 degrees, face planes along Y, regenerated trees |
 | 27 | Backer1, Backer3, Backer5, Backer7 |
 | 28 | Backer2, Backer4, Backer6, Backer8 |
 | 29 | Wall blocks B1-B4 and 32 retainers |
@@ -19,21 +19,23 @@ Slot order remains **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**. Ma
 
 The original 599.88 x 358.74 mm outline and all 22 rear mounting features are retained. The new balanced cuts carry keyed laps and recessed seats for five separate smooth bands. These M sections replace the old flat M entirely; do not mix revisions. Band1-Band5 are decorative copper pieces, distinct from wall blocks B1-B4.
 
-The 55-degree orientations, hammered texture, native tree supports and ten local solid screw regions come from the validated banded candidate. Copper slot 3 now uses **0.98 filament flow**, 220 C nozzle, 55 C textured bed and a 7.5 mm3/s volumetric limit. The M and bands have their own saved support, brim and shell overrides: four walls, 15% gyroid in the bodies, five top layers, three bottom layers and no ironing. Thin bands slice solid. This supersedes the earlier flat coupon-C settings.
+The broad copper face planes now run along the A1 bed's Y travel, with the 55-degree lean across X. Each part is rotated within that plane to fit at its original scale. M1 and M3 reach approximately 238 and 241 mm; the other four are 63-102 mm tall. Tree supports are regenerated with 3 mm branch diameter and two walls. A 6 mm outer object brim is requested; where the tilted part has no first-layer area, the generated tree base supplies the anchoring. The hammered texture and ten local solid screw regions are retained. Copper slot 3 now uses **0.98 filament flow**, 220 C nozzle, 55 C textured bed and a 7.5 mm3/s volumetric limit. The M and bands have their own saved support, brim and shell overrides: four walls, 15% gyroid in the bodies, five top layers, three bottom layers and no ironing. Thin bands slice solid. This supersedes the earlier flat coupon-C settings.
 
-The small tilted hammered joint was printed successfully. The newer cover-band seating and full-size parts have not yet been physically verified. The separate [small band test](../../../Dara-Hammered-Band-Test.3mf) remains available: 21.27 g and about 1 h 30 min. [Actual assembled geometry](../../review/hammered-bands/assembled-bands.png).
+The small tilted hammered joint was printed successfully. The newer cover-band seating and full-size parts have not yet been physically verified. The separate [small band test](../../../Dara-Hammered-Band-Test.3mf) remains available: 25.11 g and 3 h 01 min. [Actual assembled geometry](../../review/hammered-bands/assembled-bands.png).
 
 ## Frame, backers and hardware
 
-The frame, backer, hardware and weave-sample plates retain their prior models, object settings, placements, native G-code and preview assets. The frame keeps its reconstructed tangent curves, wood relief and flush blue edging. Rabbets remain 2.4 mm deep for 1.6 mm backers. Frame/backer dimensions and mounting hardware are unchanged.
+The frame, backer, hardware and weave-sample plates retain their models, object settings and placements. Their slices and previews were regenerated for the project-wide motion limits. The frame keeps its reconstructed tangent curves, wood relief and flush blue edging. Rabbets remain 2.4 mm deep for 1.6 mm backers. Frame/backer dimensions and mounting hardware are unchanged.
 
 Plate **32** adds two unscaled crops of the actual F7/F4 keyed lap, preserving its white/wood/blue surfaces and each parent's print orientation. The pair measures **74 x 68 x 13.5 mm assembled** and has room to trial epoxy squeeze-out, masking and clamps. Supports and a purge tower are sliced. [Sample layout and instructions](../../review/knot-glue-sample/README.md).
 
 ## Estimates and checks
 
-All 32 plates, including both optional tests: **4,089.69 g and 164 h 42 min**. Assembly pieces without plates 30 and 32: **4,030.00 g and 161 h 56 min**. Plate 32 adds **41.27 g and 1 h 46 min**, including support and purge. Copper plates 21-26 and 31: **1,036.36 g and 53 h 41 min**, including supports. These are Studio estimates; allow additional material for retries.
+All 32 plates: **4,101.64 g and 262 h 32 min**. Assembly without optional plates 30 and 32: **4,041.95 g and 258 h 36 min**. Copper plates 21-26 and 31: **1,048.31 g and 94 h 03 min**. Optional plate 30: **18.42 g and 1 h 21 min**; plate 32: **41.27 g and 2 h 33 min**. Estimates include supports and purge. Copper exceeds one 1 kg spool before retries.
 
-[Current validation](knot-glue-sample-validation.json) records every plate's estimate and G-code hash. Plate 32 passed native Studio slicing and round-trip geometry checks; white, wood and blue are present in the actual toolpaths, along with supports, interfaces, gyroid and purge. All preceding 31 plates are unchanged. All 32 saved G-code checksums pass, and the two distributed project copies match. The [prior hammered integration report](hammered-integration-validation.json) retains the detailed source/geometry/support checks for the seven copper plates; its project hash describes the preceding 31-plate release.
+Project-wide X/Y limits are 1,000 mm/s² acceleration and 150 mm/s speed. Process travel and default print acceleration are 1,000 mm/s²; outer walls, top surfaces and the first layer use 500 mm/s². Major process speeds are capped at 150 mm/s. All 32 plates were re-sliced, including the frame and optional samples. These conservative settings increase print time; they do not prove physical adhesion or eliminate sway.
+
+[Current validation](y-stability-validation.json) records every plate estimate and G-code hash, native geometry round trips, support contacts, motion commands and unchanged instances. All 32 checksums pass and both normal project copies match. The [earlier knot report](knot-glue-sample-validation.json) records the source crop and full-color sample checks; the [earlier hammered report](hammered-integration-validation.json) records original mounting-region checks. Their hashes and estimates describe prior releases.
 
 [Printing and assembly](PRINT-READINESS.md) contains the current order and band locations. The older `project-validation.json`, `final-review.json`, copper-finish reports and PDF part map describe the preceding flat-M project; their frame evidence remains relevant, but their M geometry, plate 31 and totals are superseded. The current M source is `scripts/prepare_hammered_bands.py`, not the old M STL exports.
 
@@ -50,3 +52,5 @@ The integration script preserves an immutable baseline in `.work/integrated-hamm
 `scripts/add_knot_glue_sample.py` adds plate 32 to the 31-plate release from commit `c109cbc`, with `stage`, `slice`, `verify`, and `publish` actions. It preserves all earlier plate resources and settings. The audit command above checks the latest published report.
 
 Do not run the historical flat-copper tuning/publishing scripts against this release.
+
+The Y correction is applied by `scripts/prepare_y_stable_dara.py` using `stage`, `slice`, `verify`, `render` and `publish`. It expects the files from commit `85d0690` and refuses to reinterpret later placements. The updated `scripts/prepare_hammered_bands.py` also uses the Y-aligned placement rule for future generation. [Details](../../review/y-stable-dara/README.md).

@@ -4,9 +4,12 @@ Open Dara-Hammered-Band-Test.3mf AS A PROJECT in Bambu Studio.
 Printer: Bambu Lab A1, 0.4 mm nozzle, textured PEI plate.
 Map filament 1 to the copper silk spool used for the successful hammered test.
 Keep the saved orientations and support painting. The three parts are tilted
-55 degrees and already sliced with tree supports. No print job was sent.
+55 degrees with their broad face planes along Y and the lean across X.
+T2 and T3 use their full-size parents' rotations, with regenerated trees.
+The saved process and X/Y motion limits are conservative: 1000 mm/s2
+acceleration, 150 mm/s speed, with 500 mm/s2 outer walls and top surfaces. No print job was sent.
 
-Studio estimate: 21.27 g and 1 hour 30 minutes 14 seconds, supports included.
+Studio estimate: 25.11 g and 3 h 01 min, supports included.
 
 PARTS
 T2: male half cropped from the redesigned full-size M2.
@@ -51,7 +54,11 @@ Its six body sections have new cut locations; do not mix them with the
 previous M parts. B1 here is a copper cover band, unrelated to the wall
 mounting blocks labeled B1-B4 in the original Dara.3mf project.
 
-Checks: working/review/hammered-bands/test-validation.json
+Checks: working/review/y-stable-dara/test-validation.json
 Geometry preview: working/review/hammered-bands/band-test.png
-Native toolpaths: working/review/hammered-bands/test-supports.png
+Native toolpaths: working/review/y-stable-dara/test-supports.png
 Generator: scripts/prepare_hammered_bands.py
+
+The 6 mm outer object brim applies where Studio can generate one. The
+tilted pieces are also anchored by tree support bases. This small sample
+checks finish and fit; it does not establish adhesion or sway at full height.

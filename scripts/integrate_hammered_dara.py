@@ -366,7 +366,8 @@ def publish():
 
 def audit_current():
     """Check the distributed files against the committed integration evidence."""
-    current=PACKAGE/'knot-glue-sample-validation.json'
+    current=PACKAGE/'y-stability-validation.json'
+    if not current.exists():current=PACKAGE/'knot-glue-sample-validation.json'
     if not current.exists():current=PACKAGE/'hammered-integration-validation.json'
     report=json.loads(current.read_text())
     assert sha(TARGETS[0])==sha(TARGETS[1])==report['project_sha256']

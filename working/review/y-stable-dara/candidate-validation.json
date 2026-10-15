@@ -1,0 +1,2015 @@
+{
+  "project_sha256": "a5c408816a5fa8475f53de2db0a72a97ede24430b41161245968f9d72c4f2ea4",
+  "baseline_sha256": "41f4b364735180f9ded1e57a810e8a8fdcbc00ddd18990f474e2c0266c9afe95",
+  "plates": 7,
+  "objects": 11,
+  "instances": 11,
+  "changed_plates": [
+    {
+      "extrusion_moves_checked": 1050926,
+      "features": {
+        "Support": 349049,
+        "Support interface": 204163,
+        "Outer wall": 65340,
+        "Overhang wall": 577,
+        "Inner wall": 116035,
+        "Gap infill": 3685,
+        "Internal solid infill": 3986,
+        "Sparse infill": 186016,
+        "Floating vertical shell": 121834,
+        "Bridge": 241
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          35.41743826831006,
+          6.75623653896791
+        ],
+        [
+          215.90582586303165,
+          249.02450491597278
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          35.16743826831006,
+          6.54623653896791
+        ],
+        [
+          216.15582586303165,
+          249.2345049159728
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.54623653896791,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          238.0
+        ]
+      },
+      "tree_base_segment_count": 1071,
+      "tree_base_xy_bounds_mm": [
+        [
+          36.077,
+          20.036
+        ],
+        [
+          215.352,
+          193.172
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 1,
+      "gcode_sha256": "c53b9fe389145dfcac7a9d38cd0891c10b580591475c0fa3c32ffef4111ce3bd",
+      "weight_g": 259.91,
+      "seconds": 84819,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 1047141,
+          "travel": 156908
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M1",
+          "interface_points": 204163,
+          "interior_interface_points": 180354,
+          "max_interface_above_band_underside_mm": -5.546411369304154
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 656482,
+      "features": {
+        "Support": 225479,
+        "Support interface": 135428,
+        "Outer wall": 32246,
+        "Inner wall": 63162,
+        "Gap infill": 4912,
+        "Internal solid infill": 1679,
+        "Sparse infill": 115982,
+        "Floating vertical shell": 77386,
+        "Overhang wall": 27,
+        "Bridge": 181
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          88.31366939053738,
+          31.821425824178377
+        ],
+        [
+          170.0621176962722,
+          223.29965813392266
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          88.10366939053739,
+          31.611425824178376
+        ],
+        [
+          170.3121176962722,
+          223.50965813392267
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 31.611425824178376,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          101.8
+        ]
+      },
+      "tree_base_segment_count": 1129,
+      "tree_base_xy_bounds_mm": [
+        [
+          102.607,
+          36.721
+        ],
+        [
+          169.645,
+          218.719
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 2,
+      "gcode_sha256": "6f68eea0ffdb2e32006da4c55c0d7dfe1080570b835e9df5b98f81c7748b5029",
+      "weight_g": 150.61,
+      "seconds": 48416,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 653065,
+          "travel": 84621
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M2",
+          "interface_points": 135428,
+          "interior_interface_points": 95988,
+          "max_interface_above_band_underside_mm": -10.284398004236627
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 1036585,
+      "features": {
+        "Support": 343002,
+        "Support interface": 206724,
+        "Outer wall": 62167,
+        "Overhang wall": 602,
+        "Inner wall": 106878,
+        "Gap infill": 3608,
+        "Internal solid infill": 3463,
+        "Sparse infill": 186656,
+        "Floating vertical shell": 123197,
+        "Bridge": 288
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          33.62116585630437,
+          7.23
+        ],
+        [
+          216.66638903636306,
+          249.50683851086535
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          33.37116585630437,
+          7.0200000000000005
+        ],
+        [
+          216.91638903636306,
+          249.71683851086536
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.283161489134642,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          240.8
+        ]
+      },
+      "tree_base_segment_count": 1041,
+      "tree_base_xy_bounds_mm": [
+        [
+          34.046,
+          54.169
+        ],
+        [
+          216.21,
+          244.897
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 3,
+      "gcode_sha256": "a56cd7d983dceabdf3d5d8c84e73bb464c4947ca82264673c2cab9dd3e64a29b",
+      "weight_g": 260.43,
+      "seconds": 85013,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 1033412,
+          "travel": 160361
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M3",
+          "interface_points": 206724,
+          "interior_interface_points": 181159,
+          "max_interface_above_band_underside_mm": -5.535899895834495
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 588443,
+      "features": {
+        "Support": 190403,
+        "Support interface": 122210,
+        "Outer wall": 27454,
+        "Gap infill": 3487,
+        "Inner wall": 61216,
+        "Internal solid infill": 1786,
+        "Sparse infill": 107656,
+        "Floating vertical shell": 74096,
+        "Overhang wall": 8,
+        "Bridge": 127
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          94.13148716428587,
+          18.527861254117184
+        ],
+        [
+          160.89274747444676,
+          236.56034717697753
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          93.92148716428588,
+          18.317861254117183
+        ],
+        [
+          161.14274747444676,
+          236.77034717697754
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 18.317861254117183,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          81.2
+        ]
+      },
+      "tree_base_segment_count": 850,
+      "tree_base_xy_bounds_mm": [
+        [
+          112.345,
+          22.855
+        ],
+        [
+          160.322,
+          213.646
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 4,
+      "gcode_sha256": "4234393f33738c7cca2cc8c9f8712897b52b8e9115adc92cb7cac9fb2a8d0591",
+      "weight_g": 135.67,
+      "seconds": 42016,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 585002,
+          "travel": 59721
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M4",
+          "interface_points": 122208,
+          "interior_interface_points": 89709,
+          "max_interface_above_band_underside_mm": -10.489553399944045
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 489849,
+      "features": {
+        "Support": 94984,
+        "Support interface": 128983,
+        "Outer wall": 30093,
+        "Gap infill": 1769,
+        "Inner wall": 57876,
+        "Internal solid infill": 1749,
+        "Sparse infill": 116244,
+        "Floating vertical shell": 57997,
+        "Overhang wall": 19,
+        "Bridge": 135
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          97.32697919550174,
+          33.954283057242776
+        ],
+        [
+          153.68125519881187,
+          222.21056380378897
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          97.07697919550174,
+          33.704283057242776
+        ],
+        [
+          153.93125519881187,
+          222.46056380378897
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 33.53943619621103,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          62.6
+        ]
+      },
+      "tree_base_segment_count": 758,
+      "tree_base_xy_bounds_mm": [
+        [
+          98.036,
+          33.96
+        ],
+        [
+          153.043,
+          221.79
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 5,
+      "gcode_sha256": "eeb29c55cd13ef00cd537e7d406557ace0e45c86d5b79576be7af84314258f58",
+      "weight_g": 113.43,
+      "seconds": 37660,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 481634,
+          "travel": 75064
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M5",
+          "interface_points": 128983,
+          "interior_interface_points": 119556,
+          "max_interface_above_band_underside_mm": -5.558032256570357
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 456005,
+      "features": {
+        "Support": 144272,
+        "Support interface": 95741,
+        "Outer wall": 21287,
+        "Gap infill": 3618,
+        "Inner wall": 44744,
+        "Internal solid infill": 1933,
+        "Sparse infill": 83380,
+        "Floating vertical shell": 60874,
+        "Bridge": 147,
+        "Overhang wall": 9
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          98.78746869815686,
+          18.042726982613953
+        ],
+        [
+          156.1615002549365,
+          237.88
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          98.57746869815686,
+          17.832726982613952
+        ],
+        [
+          156.4115002549365,
+          238.09
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 17.832726982613952,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          67.6
+        ]
+      },
+      "tree_base_segment_count": 818,
+      "tree_base_xy_bounds_mm": [
+        [
+          111.748,
+          37.896
+        ],
+        [
+          155.582,
+          235.598
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 6,
+      "gcode_sha256": "e93de34b2d1563d5e1f9dba80a961127f4fb33754716a04256fa3102c9f3413b",
+      "weight_g": 106.17,
+      "seconds": 33081,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 453376,
+          "travel": 47390
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M6",
+          "interface_points": 95741,
+          "interior_interface_points": 67155,
+          "max_interface_above_band_underside_mm": -10.444135096872788
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 84447,
+      "features": {
+        "Support interface": 34318,
+        "Support": 36904,
+        "Brim": 301,
+        "Outer wall": 7552,
+        "Gap infill": 2947,
+        "Inner wall": 2425
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          41.66521965718797,
+          22.748166507945026
+        ],
+        [
+          193.063,
+          208.84
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          41.41521965718797,
+          22.498166507945026
+        ],
+        [
+          193.313,
+          209.09
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 22.498166507945026,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          11.6
+        ]
+      },
+      "tree_base_segment_count": 1551,
+      "tree_base_xy_bounds_mm": [
+        [
+          42.382,
+          22.75
+        ],
+        [
+          193.063,
+          208.84
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 7,
+      "gcode_sha256": "92d969dd248d7b7e1692a68464ac5224b3242040323323530b33f02e3a047c96",
+      "weight_g": 17.0,
+      "seconds": 6941,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 84036,
+          "travel": 11872
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "B4",
+          "interface_points": 8451,
+          "interior_interface_points": 6879,
+          "max_interface_above_band_underside_mm": -0.2542659096339488
+        },
+        {
+          "name": "B1",
+          "interface_points": 4089,
+          "interior_interface_points": 3179,
+          "max_interface_above_band_underside_mm": -0.2793989853873029
+        },
+        {
+          "name": "B2",
+          "interface_points": 5447,
+          "interior_interface_points": 4195,
+          "max_interface_above_band_underside_mm": -0.2689472973684275
+        },
+        {
+          "name": "B5",
+          "interface_points": 7414,
+          "interior_interface_points": 6118,
+          "max_interface_above_band_underside_mm": -0.1416461958927222
+        },
+        {
+          "name": "B3",
+          "interface_points": 8917,
+          "interior_interface_points": 7410,
+          "max_interface_above_band_underside_mm": -0.24178621367275355
+        }
+      ]
+    }
+  ],
+  "unchanged_native_plates": [],
+  "mesh_checks": [
+    {
+      "name": "M1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 8.220599126387258e-06
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.0115392398384704e-07
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.5290024411254635e-07
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.81481460967916e-07
+    },
+    {
+      "name": "M2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.845097133909837e-07
+    },
+    {
+      "name": "M2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.2368598669631186e-07
+    },
+    {
+      "name": "M3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 8.107253763888226e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.8428822604037306e-07
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.358368358604915e-07
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.430369173588818e-07
+    },
+    {
+      "name": "M4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 4.148859713478836e-06
+    },
+    {
+      "name": "M4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 5.350414418025603e-07
+    },
+    {
+      "name": "M5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 4.136036329929217e-06
+    },
+    {
+      "name": "M5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.905689183881557e-07
+    },
+    {
+      "name": "M6",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 5.7646191494910756e-06
+    },
+    {
+      "name": "M6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 1.6774150100432745e-07
+    },
+    {
+      "name": "B4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.442574366913761e-07
+    },
+    {
+      "name": "B1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 1.81354059603712e-07
+    },
+    {
+      "name": "B2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 4.5436786662994645e-07
+    },
+    {
+      "name": "B5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 6.491867550160423e-08
+    },
+    {
+      "name": "B3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.3344001899492948e-08
+    }
+  ],
+  "orientation": [
+    {
+      "name": "M1",
+      "canonical": "M1",
+      "plate": 1,
+      "build_transform": [
+        [
+          -0.15328163540720713,
+          -0.5527157213107454,
+          0.8191520442889918,
+          125.4930233814093
+        ],
+        [
+          0.963630453208623,
+          -0.2672383760782568,
+          -5.015859645267624e-17,
+          304.46848726398593
+        ],
+        [
+          0.2189088620769745,
+          0.7893598556849711,
+          0.573576436351046,
+          112.22380672401823
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.4163516051875332,
+          0.9089507923240355,
+          0.02144290071964156,
+          -234.51287061836783
+        ],
+        [
+          -0.5142785122994159,
+          -0.25488691240535966,
+          0.8188713413421927,
+          69.3291477104333
+        ],
+        [
+          0.749779269281876,
+          0.3299107743284091,
+          0.573576436351046,
+          -188.42950230434283
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 3.4224270219716276e-13,
+      "enforced_facets": 1696,
+      "blocked_facets": 164207
+    },
+    {
+      "name": "M2",
+      "canonical": "M2",
+      "plate": 2,
+      "build_transform": [
+        [
+          0.5644225565803567,
+          -0.10206422468455655,
+          0.8191520442889918,
+          140.99242352746532
+        ],
+        [
+          0.17794354547384197,
+          0.9840406976462908,
+          -5.015859645267624e-17,
+          60.18902763507337
+        ],
+        [
+          -0.8060789491405248,
+          0.14576281904292884,
+          0.573576436351046,
+          26.51240478008106
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.9617087940689865,
+          0.27323322898048713,
+          0.02144290071964156,
+          -470.3052629887408
+        ],
+        [
+          -0.17368662500772528,
+          0.5470673474279595,
+          0.8188713413421927,
+          16.902383430239574
+        ],
+        [
+          0.21201214989665462,
+          -0.7912401152362238,
+          0.573576436351046,
+          -33.63793771727437
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 4.756923091041485e-13,
+      "enforced_facets": 950,
+      "blocked_facets": 93708
+    },
+    {
+      "name": "M3",
+      "canonical": "M3",
+      "plate": 3,
+      "build_transform": [
+        [
+          0.17486297820714644,
+          -0.5462717887550964,
+          0.8191520442889918,
+          121.48526631664384
+        ],
+        [
+          0.9523957996432783,
+          0.3048642990280113,
+          -5.015859645267624e-17,
+          -51.186268795163016
+        ],
+        [
+          -0.24973021377952592,
+          0.7801569662500404,
+          0.573576436351046,
+          119.10206433836531
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.9013271184122518,
+          0.4326079375409035,
+          0.021442900719641556,
+          779.8077692654688
+        ],
+        [
+          -0.23241420070590024,
+          -0.5248174593500825,
+          0.8188713413421926,
+          214.2267786811712
+        ],
+        [
+          0.36550385076617753,
+          0.7330873118107626,
+          0.5735764363510459,
+          -414.4789959182366
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 5.951723287254232e-13,
+      "enforced_facets": 1883,
+      "blocked_facets": 165573
+    },
+    {
+      "name": "M4",
+      "canonical": "M4",
+      "plate": 4,
+      "build_transform": [
+        [
+          -0.4595803064960271,
+          -0.34318489217648174,
+          0.8191520442889918,
+          -16.72458974079447
+        ],
+        [
+          0.5983246005706591,
+          -0.8012538126910607,
+          -5.015859645267624e-17,
+          160.8641672798371
+        ],
+        [
+          0.6563486986602313,
+          0.49011881970584986,
+          0.573576436351046,
+          239.94130337041318
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.9309085567695061,
+          0.3646223538704707,
+          0.02144290071964156,
+          -23.193103519889377
+        ],
+        [
+          -0.19288167513308796,
+          -0.5405981739945963,
+          0.8188713413421927,
+          -232.57445662754412
+        ],
+        [
+          0.3101707889714457,
+          0.7581583959382533,
+          0.573576436351046,
+          68.32704798371613
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 5.727256544613122e-13,
+      "enforced_facets": 542,
+      "blocked_facets": 88413
+    },
+    {
+      "name": "M5",
+      "canonical": "M5",
+      "plate": 5,
+      "build_transform": [
+        [
+          -0.573576436351046,
+          -9.635376729955036e-17,
+          0.8191520442889918,
+          120.51756296103224
+        ],
+        [
+          9.635376729955036e-17,
+          -1.0,
+          -5.015859645267624e-17,
+          38.29737500101328
+        ],
+        [
+          0.8191520442889918,
+          5.015859645267624e-17,
+          0.573576436351046,
+          32.87154608334641
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.0019280843041244746,
+          0.9997682153877686,
+          0.02144290071964156,
+          172.82098553810732
+        ],
+        [
+          -0.5736734088524897,
+          -0.018669394848307933,
+          0.8188713413421927,
+          92.16244881605948
+        ],
+        [
+          0.8190818655461004,
+          -0.010722368971183041,
+          0.573576436351046,
+          -395.6134635016241
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 4.4487012026191134e-13,
+      "enforced_facets": 584,
+      "blocked_facets": 102313
+    },
+    {
+      "name": "M6",
+      "canonical": "M6",
+      "plate": 6,
+      "build_transform": [
+        [
+          0.44888559766666813,
+          -0.35705972685897197,
+          0.8191520442889918,
+          -11.35567639468968
+        ],
+        [
+          0.6225146366376193,
+          0.782608156852414,
+          -5.015859645267624e-17,
+          90.60885319980545
+        ],
+        [
+          -0.6410750715628949,
+          0.5099341372015248,
+          0.573576436351046,
+          225.451443509222
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.34784574445868954,
+          0.9373065347423475,
+          0.02144290071964156,
+          626.6024658204361
+        ],
+        [
+          -0.5317536258322088,
+          -0.21607361648923565,
+          0.8188713413421927,
+          194.60614060686305
+        ],
+        [
+          0.7721667044597813,
+          0.27343857113903125,
+          0.573576436351046,
+          -553.1213013497968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 5.124289183442782e-13,
+      "enforced_facets": 624,
+      "blocked_facets": 68285
+    },
+    {
+      "name": "B1",
+      "canonical": "B1",
+      "plate": 7,
+      "build_transform": [
+        [
+          -0.3123921168015918,
+          -0.4810416756346442,
+          0.8191520442889918,
+          116.19966521719705
+        ],
+        [
+          0.838670567945424,
+          -0.5446390350150271,
+          -5.015859645267624e-17,
+          98.3190386793618
+        ],
+        [
+          0.4461421789321432,
+          0.6869987102175039,
+          0.573576436351046,
+          -109.11040605228719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.837149473155307,
+          0.5465537133754738,
+          0.02144290071964156,
+          380.1634978251153
+        ],
+        [
+          -0.2989282895797341,
+          -0.48999143259588995,
+          0.8188713413421927,
+          -139.81644728141413
+        ],
+        [
+          0.45806401002995917,
+          0.6791078223508457,
+          0.573576436351046,
+          369.5553794485711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 3.639754730461873e-13,
+      "enforced_facets": 15743,
+      "blocked_facets": 17824
+    },
+    {
+      "name": "B2",
+      "canonical": "B2",
+      "plate": 7,
+      "build_transform": [
+        [
+          -0.312392116801592,
+          0.48104167563464406,
+          0.8191520442889918,
+          24.61803099651624
+        ],
+        [
+          -0.8386705679454239,
+          -0.5446390350150273,
+          -5.015859645267624e-17,
+          90.70071022758842
+        ],
+        [
+          0.4461421789321434,
+          -0.6869987102175038,
+          0.573576436351046,
+          107.41251322051448
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.851435114202668,
+          0.5240214197066921,
+          0.02144290071964156,
+          145.2971584853693
+        ],
+        [
+          -0.3156618086329844,
+          0.479382257597203,
+          0.8188713413421927,
+          435.5756880081914
+        ],
+        [
+          0.4188267766908446,
+          -0.7039845188564815,
+          0.573576436351046,
+          -454.86484274844383
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 4.300985082870044e-13,
+      "enforced_facets": 17793,
+      "blocked_facets": 19564
+    },
+    {
+      "name": "B3",
+      "canonical": "B3",
+      "plate": 7,
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          3.1488528936416884
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          409.3183823153376
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.373857874506314
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.6772275742607475,
+          0.7354610898406734,
+          0.02144290071964156,
+          70.79303585125177
+        ],
+        [
+          -0.43393409632676466,
+          0.37570058074683893,
+          0.8188713413421927,
+          144.30234956361193
+        ],
+        [
+          0.594191898889557,
+          -0.5638670578752201,
+          0.573576436351046,
+          -310.8138967195611
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 4.059432074281432e-13,
+      "enforced_facets": 32901,
+      "blocked_facets": 34391
+    },
+    {
+      "name": "B4",
+      "canonical": "B4",
+      "plate": 7,
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          63.14885430381405
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          -87.57191697880614
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.373849012957486
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.7446005744536979,
+          0.6671657863919211,
+          0.02144290071964156,
+          445.120241017722
+        ],
+        [
+          -0.39592704494159275,
+          0.41556166980636694,
+          0.8188713413421927,
+          206.53497854557037
+        ],
+        [
+          0.5374120947718249,
+          -0.6182218954839706,
+          0.573576436351046,
+          -395.0483240891554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 3.06111178766429e-13,
+      "enforced_facets": 29727,
+      "blocked_facets": 31047
+    },
+    {
+      "name": "B5",
+      "canonical": "B5",
+      "plate": 7,
+      "build_transform": [
+        [
+          -1.3147519464173307e-16,
+          0.573576436351046,
+          0.8191520442889918,
+          175.43130714401556
+        ],
+        [
+          -1.0,
+          -1.5758610725691803e-16,
+          -5.015859645267624e-17,
+          154.4861304275692
+        ],
+        [
+          1.0031719290535247e-16,
+          -0.8191520442889918,
+          0.573576436351046,
+          -0.8710327055925905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.7055795232293183,
+          0.7083062462016099,
+          0.02144290071964156,
+          192.61215577453885
+        ],
+        [
+          -0.4188496132838861,
+          0.39244710188811055,
+          0.8188713413421927,
+          208.63755395844302
+        ],
+        [
+          0.5715964816646679,
+          -0.5867602012844833,
+          0.573576436351046,
+          -305.03694288221453
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 2.980894033072876e-13,
+      "enforced_facets": 26308,
+      "blocked_facets": 27508
+    }
+  ],
+  "choices": {
+    "M1": {
+      "in_plane_rotation_deg": 15.5,
+      "build_extent_mm": [
+        172.93241525972357,
+        237.81422735694144,
+        238.18109879412484
+      ],
+      "build_transform": [
+        [
+          -0.15328163540720713,
+          -0.5527157213107454,
+          0.8191520442889918,
+          125.49302338140932
+        ],
+        [
+          0.963630453208623,
+          -0.2672383760782568,
+          -5.015859645267624e-17,
+          304.46848726398605
+        ],
+        [
+          0.2189088620769745,
+          0.7893598556849711,
+          0.573576436351046,
+          112.22380672401823
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 113.75,
+      "old_build_extent_mm": [
+        228.03256138192563,
+        227.5160455575047,
+        206.67574698320013
+      ]
+    },
+    "M2": {
+      "in_plane_rotation_deg": 280.25,
+      "build_extent_mm": [
+        76.10232824569682,
+        185.1787358136512,
+        102.00483261918636
+      ],
+      "build_transform": [
+        [
+          0.5644225565803567,
+          -0.10206422468455655,
+          0.8191520442889918,
+          140.9924235274652
+        ],
+        [
+          0.17794354547384197,
+          0.9840406976462908,
+          -5.015859645267624e-17,
+          60.18902763507336
+        ],
+        [
+          -0.8060789491405248,
+          0.14576281904292884,
+          0.573576436351046,
+          26.512404780081116
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 15.0,
+      "old_build_extent_mm": [
+        119.55663602433523,
+        119.48592544972595,
+        147.3187190839435
+      ]
+    },
+    "M3": {
+      "in_plane_rotation_deg": 342.25,
+      "build_extent_mm": [
+        175.3206335374233,
+        237.92263919091775,
+        241.0355208705938
+      ],
+      "build_transform": [
+        [
+          0.17486297820714644,
+          -0.5462717887550964,
+          0.8191520442889918,
+          121.48526631664393
+        ],
+        [
+          0.9523957996432783,
+          0.3048642990280113,
+          -5.015859645267624e-17,
+          -51.186268795163016
+        ],
+        [
+          -0.24973021377952592,
+          0.7801569662500404,
+          0.573576436351046,
+          119.10206433836532
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 153.5,
+      "old_build_extent_mm": [
+        233.6941771502071,
+        233.26573602674756,
+        201.31418349815203
+      ]
+    },
+    "M4": {
+      "in_plane_rotation_deg": 53.25,
+      "build_extent_mm": [
+        63.81557295054937,
+        213.51847273464244,
+        81.45694865927695
+      ],
+      "build_transform": [
+        [
+          -0.4595803064960271,
+          -0.34318489217648174,
+          0.8191520442889918,
+          -16.724589740794556
+        ],
+        [
+          0.5983246005706591,
+          -0.8012538126910607,
+          -5.015859645267624e-17,
+          160.86416727983712
+        ],
+        [
+          0.6563486986602313,
+          0.49011881970584986,
+          0.573576436351046,
+          239.9413033704133
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 157.75,
+      "old_build_extent_mm": [
+        144.81997368859183,
+        145.00012515036101,
+        111.27546156571178
+      ]
+    },
+    "M5": {
+      "in_plane_rotation_deg": 90.0,
+      "build_extent_mm": [
+        48.35169188310911,
+        179.33025356820733,
+        62.759304061440204
+      ],
+      "build_transform": [
+        [
+          -0.573576436351046,
+          -9.635376729955036e-17,
+          0.8191520442889918,
+          120.51756296103225
+        ],
+        [
+          9.635376729955036e-17,
+          -1.0,
+          -5.015859645267624e-17,
+          38.29737500101329
+        ],
+        [
+          0.8191520442889918,
+          5.015859645267624e-17,
+          0.573576436351046,
+          32.87154608334653
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 89.25,
+      "old_build_extent_mm": [
+        107.31383964693218,
+        72.67043801978144,
+        154.92572063515127
+      ]
+    },
+    "M6": {
+      "in_plane_rotation_deg": 308.5,
+      "build_extent_mm": [
+        54.24082041442641,
+        215.29121665898492,
+        67.79739786264886
+      ],
+      "build_transform": [
+        [
+          0.44888559766666813,
+          -0.35705972685897197,
+          0.8191520442889918,
+          -11.35567639468951
+        ],
+        [
+          0.6225146366376193,
+          0.782608156852414,
+          -5.015859645267624e-17,
+          90.60885319980548
+        ],
+        [
+          -0.6410750715628949,
+          0.5099341372015248,
+          0.573576436351046,
+          225.45144350922203
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 109.5,
+      "old_build_extent_mm": [
+        140.90229005293577,
+        140.97909871662122,
+        114.7587919530493
+      ]
+    },
+    "B1": {
+      "in_plane_rotation_deg": 33.0,
+      "build_extent_mm": [
+        9.58695641650953,
+        41.9133838217062,
+        11.72856742062767
+      ],
+      "build_transform": [
+        [
+          -0.3123921168015918,
+          -0.4810416756346442,
+          0.8191520442889918,
+          194.19966521719692
+        ],
+        [
+          0.838670567945424,
+          -0.5446390350150271,
+          -5.015859645267624e-17,
+          176.31903867936182
+        ],
+        [
+          0.4461421789321432,
+          0.6869987102175039,
+          0.573576436351046,
+          -109.11040605228716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 146.0,
+      "old_build_extent_mm": [
+        31.003741242845855,
+        31.07021165039001,
+        24.397347115403548
+      ]
+    },
+    "B2": {
+      "in_plane_rotation_deg": 147.0,
+      "build_extent_mm": [
+        9.533960135466799,
+        47.26005823720877,
+        11.698667915005956
+      ],
+      "build_transform": [
+        [
+          -0.312392116801592,
+          0.48104167563464406,
+          0.8191520442889918,
+          42.6180309965162
+        ],
+        [
+          -0.8386705679454239,
+          -0.5446390350150273,
+          -5.015859645267624e-17,
+          168.7007102275884
+        ],
+        [
+          0.4461421789321434,
+          -0.6869987102175038,
+          0.573576436351046,
+          107.4125132205146
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 30.75,
+      "old_build_extent_mm": [
+        33.88025845698487,
+        33.83222344063158,
+        28.66572964262464
+      ]
+    },
+    "B3": {
+      "in_plane_rotation_deg": 0.0,
+      "build_extent_mm": [
+        9.493961090454022,
+        89.17181398988771,
+        11.615096062608053
+      ],
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          81.14885289364179
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          377.3183823153376
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.37385787450632
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 46.5,
+      "old_build_extent_mm": [
+        66.17254897589572,
+        66.11087734430339,
+        13.038454026409816
+      ]
+    },
+    "B4": {
+      "in_plane_rotation_deg": 0.0,
+      "build_extent_mm": [
+        9.49396421111512,
+        81.6052398524912,
+        11.615087310534058
+      ],
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          81.148854303814
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          -119.57191697880614
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.373849012957486
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 41.0,
+      "old_build_extent_mm": [
+        60.2614342108063,
+        60.029327185812306,
+        12.99887494446159
+      ]
+    },
+    "B5": {
+      "in_plane_rotation_deg": 180.0,
+      "build_extent_mm": [
+        9.493932963904353,
+        68.9384459794004,
+        11.615088403632939
+      ],
+      "build_transform": [
+        [
+          -1.3147519464173307e-16,
+          0.573576436351046,
+          0.8191520442889918,
+          118.4313071440156
+        ],
+        [
+          -1.0,
+          -1.5758610725691803e-16,
+          -5.015859645267624e-17,
+          122.48613042756921
+        ],
+        [
+          1.0031719290535247e-16,
+          -0.8191520442889918,
+          0.573576436351046,
+          -0.8710327055925349
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 44.25,
+      "old_build_extent_mm": [
+        54.23149071549527,
+        54.10773905667615,
+        12.745705646464334
+      ]
+    }
+  },
+  "process_limits": {
+    "travel_speed": [
+      "150"
+    ],
+    "travel_acceleration": [
+      "1000"
+    ],
+    "initial_layer_travel_acceleration": [
+      "500"
+    ],
+    "default_acceleration": [
+      "1000"
+    ],
+    "outer_wall_acceleration": [
+      "500"
+    ],
+    "inner_wall_acceleration": [
+      "1000"
+    ],
+    "sparse_infill_acceleration": [
+      "1000"
+    ],
+    "top_surface_acceleration": [
+      "500"
+    ],
+    "initial_layer_acceleration": [
+      "500"
+    ],
+    "gap_infill_speed": [
+      "150"
+    ],
+    "inner_wall_speed": [
+      "150"
+    ],
+    "internal_solid_infill_speed": [
+      "150"
+    ],
+    "sparse_infill_speed": [
+      "150"
+    ],
+    "outer_wall_speed": [
+      "150"
+    ],
+    "top_surface_speed": [
+      "150"
+    ],
+    "machine_max_acceleration_x": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_acceleration_y": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_acceleration_extruding": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_acceleration_travel": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_speed_x": [
+      "150",
+      "150"
+    ],
+    "machine_max_speed_y": [
+      "150",
+      "150"
+    ]
+  },
+  "copper_overrides": {
+    "default_acceleration": "1000",
+    "outer_wall_acceleration": "500",
+    "inner_wall_acceleration": "1000",
+    "sparse_infill_acceleration": "1000",
+    "top_surface_acceleration": "500",
+    "initial_layer_acceleration": "500",
+    "brim_type": "outer_only",
+    "brim_width": "6",
+    "brim_object_gap": "0.1",
+    "support_speed": "60",
+    "support_interface_speed": "40",
+    "tree_support_branch_diameter": "3",
+    "tree_support_wall_count": "2"
+  },
+  "total_weight_g": 1043.22,
+  "total_seconds": 337946,
+  "scope": "Native slicing, unchanged geometry and digital support/motion checks. Full-height adhesion and sway still require a physical print."
+}

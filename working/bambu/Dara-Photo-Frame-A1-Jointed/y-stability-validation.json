@@ -1,0 +1,4823 @@
+{
+  "project_sha256": "3e03dd2e57cd08f2e3c0678bc96d25a729ee4887434beb3a6c117c897c176eab",
+  "baseline_sha256": "de54679a301dcf838cb19729796b2d59f6ce6df19a5c6cdb93429170dec72695",
+  "plates": 32,
+  "objects": 47,
+  "instances": 78,
+  "changed_plates": [
+    {
+      "extrusion_moves_checked": 244565,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1368,
+        "Brim": 520,
+        "Outer wall": 7902,
+        "Inner wall": 9541,
+        "Gap infill": 9060,
+        "Bottom surface": 1035,
+        "Internal solid infill": 14799,
+        "Sparse infill": 182504,
+        "Support transition": 295,
+        "Support interface": 617,
+        "Overhang wall": 22,
+        "Bridge": 6006,
+        "Floating vertical shell": 493,
+        "Top surface": 6919
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          17.153,
+          16.903
+        ],
+        [
+          238.965,
+          241.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          16.903,
+          16.653
+        ],
+        [
+          239.215,
+          241.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 14.461396355345613,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 14.461396355345613,
+      "plate": 1,
+      "gcode_sha256": "fccd8f06ef813e1945fd2c01d7440fab97ebf76e2d952e7599a21396af4686bb",
+      "weight_g": 113.89,
+      "seconds": 22960,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 243700,
+          "travel": 24112
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 259774,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1813,
+        "Brim": 627,
+        "Outer wall": 8521,
+        "Inner wall": 10384,
+        "Gap infill": 2098,
+        "Bottom surface": 934,
+        "Internal solid infill": 15947,
+        "Sparse infill": 200667,
+        "Support transition": 453,
+        "Support interface": 692,
+        "Overhang wall": 20,
+        "Bridge": 5327,
+        "Floating vertical shell": 462,
+        "Top surface": 8345
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          11.813430541116865,
+          11.86
+        ],
+        [
+          244.123,
+          244.146
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          11.563430541116865,
+          11.61
+        ],
+        [
+          244.373,
+          244.396
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 11.563430541116865,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 11.563430541116865,
+      "plate": 2,
+      "gcode_sha256": "af9880100b3ac8d3ae028a994fbed686ccfe21f030bf8dda2647fcfbd29a743a",
+      "weight_g": 123.97,
+      "seconds": 24420,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 258825,
+          "travel": 22799
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 271478,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 3644,
+        "Brim": 214,
+        "Outer wall": 9224,
+        "Inner wall": 14438,
+        "Gap infill": 9413,
+        "Bottom surface": 1259,
+        "Internal solid infill": 20257,
+        "Sparse infill": 191377,
+        "Support transition": 665,
+        "Support interface": 1187,
+        "Overhang wall": 219,
+        "Bridge": 7599,
+        "Floating vertical shell": 839,
+        "Top surface": 7659
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.982,
+          1.867
+        ],
+        [
+          254.142,
+          254.152
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.7720000000000002,
+          1.617
+        ],
+        [
+          254.392,
+          254.402
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.5980000000000132,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 1.5980000000000132,
+      "plate": 3,
+      "gcode_sha256": "a2129658f5e15fe7038e9224d17ecaa9daa388d501b39d5300ede4da7b5dba34",
+      "weight_g": 126.47,
+      "seconds": 26460,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 269859,
+          "travel": 30694
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 212291,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 5997,
+        "Brim": 50,
+        "Outer wall": 8451,
+        "Inner wall": 12426,
+        "Gap infill": 1309,
+        "Bottom surface": 957,
+        "Internal solid infill": 16227,
+        "Sparse infill": 147049,
+        "Support transition": 783,
+        "Support interface": 1411,
+        "Overhang wall": 780,
+        "Bridge": 7412,
+        "Floating vertical shell": 324,
+        "Top surface": 5552
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          13.483,
+          13.445
+        ],
+        [
+          242.211,
+          242.219
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          13.233,
+          13.195
+        ],
+        [
+          242.461,
+          242.469
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 13.195,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 13.195,
+      "plate": 4,
+      "gcode_sha256": "e2568d48698d3e66e9e430b6087ae521b750fe2fdbbff9260060b51606f32af7",
+      "weight_g": 106.96,
+      "seconds": 22288,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 209660,
+          "travel": 18499
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 310124,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 6047,
+        "Brim": 146,
+        "Outer wall": 11142,
+        "Inner wall": 18956,
+        "Gap infill": 2508,
+        "Bottom surface": 1620,
+        "Internal solid infill": 27049,
+        "Sparse infill": 214016,
+        "Support transition": 1373,
+        "Support interface": 2402,
+        "Overhang wall": 622,
+        "Bridge": 9441,
+        "Floating vertical shell": 1649,
+        "Top surface": 9669
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          11.813430541116869,
+          19.759
+        ],
+        [
+          242.226,
+          236.334
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          11.563430541116869,
+          19.509
+        ],
+        [
+          242.476,
+          236.584
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 11.563430541116869,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 11.563430541116869,
+      "plate": 5,
+      "gcode_sha256": "74c3ea8a0d924a6fe2352d4d6f967a3288183518c57d7e100f4c52ea61365508",
+      "weight_g": 143.25,
+      "seconds": 30541,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 307393,
+          "travel": 32876
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 397727,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 7933,
+        "Brim": 295,
+        "Outer wall": 13780,
+        "Inner wall": 17660,
+        "Gap infill": 2665,
+        "Bottom surface": 1320,
+        "Internal solid infill": 28540,
+        "Sparse infill": 293782,
+        "Support transition": 1629,
+        "Support interface": 2511,
+        "Overhang wall": 429,
+        "Bridge": 9119,
+        "Floating vertical shell": 861,
+        "Top surface": 13719
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.004,
+          0.884
+        ],
+        [
+          253.599,
+          253.994
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.754,
+          0.634
+        ],
+        [
+          253.849,
+          254.204
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.634,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 0.634,
+      "plate": 6,
+      "gcode_sha256": "73f3c7b17559f755a7032edafe34a241a40e6fde6b1924ef998d745b3d7243ac",
+      "weight_g": 189.13,
+      "seconds": 38311,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 394551,
+          "travel": 38632
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 250098,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 5581,
+        "Brim": 287,
+        "Outer wall": 9654,
+        "Inner wall": 13960,
+        "Gap infill": 3336,
+        "Bottom surface": 1323,
+        "Internal solid infill": 18635,
+        "Sparse infill": 177449,
+        "Support transition": 717,
+        "Support interface": 1353,
+        "Overhang wall": 635,
+        "Bridge": 5747,
+        "Floating vertical shell": 1795,
+        "Top surface": 6063
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.035,
+          3.057
+        ],
+        [
+          252.818,
+          252.821
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.7850000000000001,
+          2.807
+        ],
+        [
+          253.068,
+          253.071
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.7850000000000001,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 1.7850000000000001,
+      "plate": 7,
+      "gcode_sha256": "b74b4d34c1cd9da28ad98bcb4cd016a7b3144645042e01d82acd3abf3ba23c6a",
+      "weight_g": 123.87,
+      "seconds": 25618,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 247717,
+          "travel": 23767
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 314918,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1906,
+        "Brim": 348,
+        "Outer wall": 10088,
+        "Inner wall": 12203,
+        "Gap infill": 4258,
+        "Bottom surface": 1508,
+        "Internal solid infill": 19577,
+        "Sparse infill": 243174,
+        "Support transition": 449,
+        "Support interface": 885,
+        "Overhang wall": 21,
+        "Bridge": 6990,
+        "Floating vertical shell": 607,
+        "Top surface": 9420
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.17,
+          1.18
+        ],
+        [
+          254.834,
+          254.871
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.9199999999999999,
+          0.9299999999999999
+        ],
+        [
+          255.084,
+          255.121
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8789999999999907,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 0.8789999999999907,
+      "plate": 8,
+      "gcode_sha256": "72faff551f2b4b9cb54b37646d14310fc578a6c770c280e48e810388bf6bf49e",
+      "weight_g": 145.88,
+      "seconds": 29060,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 314074,
+          "travel": 29138
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 231815,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 2533,
+        "Brim": 245,
+        "Outer wall": 7408,
+        "Inner wall": 9954,
+        "Bottom surface": 910,
+        "Internal solid infill": 17892,
+        "Sparse infill": 166522,
+        "Support transition": 424,
+        "Support interface": 601,
+        "Overhang wall": 236,
+        "Bridge": 6042,
+        "Floating vertical shell": 1084,
+        "Gap infill": 6911,
+        "Top surface": 7490
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          4.186,
+          4.147
+        ],
+        [
+          251.774,
+          251.819
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          3.936,
+          3.8970000000000002
+        ],
+        [
+          252.024,
+          252.069
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.8970000000000002,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 3.8970000000000002,
+      "plate": 9,
+      "gcode_sha256": "56fb574b754ff46efe7150a15764517c578fdf88d282827a911443643fbddeaa",
+      "weight_g": 114.99,
+      "seconds": 23145,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 230538,
+          "travel": 23045
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 283123,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 3500,
+        "Brim": 226,
+        "Outer wall": 9958,
+        "Inner wall": 13108,
+        "Gap infill": 6583,
+        "Bottom surface": 799,
+        "Internal solid infill": 18537,
+        "Sparse infill": 208691,
+        "Support transition": 534,
+        "Support interface": 906,
+        "Overhang wall": 410,
+        "Bridge": 5277,
+        "Floating vertical shell": 1107,
+        "Top surface": 9924
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.256,
+          1.225
+        ],
+        [
+          253.57,
+          253.639
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.006,
+          0.9750000000000001
+        ],
+        [
+          253.78,
+          253.84900000000002
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.9750000000000001,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 0.9750000000000001,
+      "plate": 10,
+      "gcode_sha256": "9b3adcce74719f9a9edd282f6edf9b5e748dfb94b13e9be3081362d35e5fa18a",
+      "weight_g": 135.58,
+      "seconds": 27260,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 281462,
+          "travel": 27380
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 253807,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 2850,
+        "Brim": 317,
+        "Outer wall": 8709,
+        "Inner wall": 12340,
+        "Gap infill": 2906,
+        "Bottom surface": 1228,
+        "Internal solid infill": 20481,
+        "Sparse infill": 184254,
+        "Support transition": 463,
+        "Support interface": 839,
+        "Overhang wall": 251,
+        "Bridge": 5959,
+        "Floating vertical shell": 1253,
+        "Top surface": 8473
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.324,
+          37.295
+        ],
+        [
+          246.488,
+          241.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.074,
+          37.045
+        ],
+        [
+          246.738,
+          241.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 9.074,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 9.074,
+      "plate": 11,
+      "gcode_sha256": "2ec3f87a26670b298823ae503760cb46b021fce455c55c1b0af19af4e0a4d8c0",
+      "weight_g": 121.71,
+      "seconds": 24696,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 252018,
+          "travel": 24078
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 300309,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 4250,
+        "Brim": 217,
+        "Outer wall": 10408,
+        "Inner wall": 14600,
+        "Bottom surface": 836,
+        "Internal solid infill": 20418,
+        "Sparse infill": 212444,
+        "Support transition": 738,
+        "Support interface": 1187,
+        "Floating vertical shell": 1050,
+        "Overhang wall": 606,
+        "Bridge": 7181,
+        "Gap infill": 13083,
+        "Top surface": 9728
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.36,
+          2.53
+        ],
+        [
+          253.442,
+          254.634
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.11,
+          2.32
+        ],
+        [
+          253.65200000000002,
+          254.884
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.11,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 1.11,
+      "plate": 12,
+      "gcode_sha256": "4a357bf3b725f681dc4750881822b1cac7a8b0784ab8aefa45016225de1e25d4",
+      "weight_g": 138.38,
+      "seconds": 28440,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 298310,
+          "travel": 31087
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 317421,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 4237,
+        "Brim": 501,
+        "Outer wall": 10222,
+        "Inner wall": 12435,
+        "Gap infill": 11725,
+        "Bottom surface": 1260,
+        "Internal solid infill": 19752,
+        "Sparse infill": 233262,
+        "Support transition": 815,
+        "Support interface": 1486,
+        "Overhang wall": 404,
+        "Bridge": 8457,
+        "Floating vertical shell": 441,
+        "Top surface": 8940
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          5.727,
+          5.819
+        ],
+        [
+          250.554,
+          250.664
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.477,
+          5.569
+        ],
+        [
+          250.804,
+          250.914
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.086000000000013,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 5.086000000000013,
+      "plate": 13,
+      "gcode_sha256": "c38dae566b16928c281ef7fef2a9c96ba339ab57a79d45e7c61807b2985f32ea",
+      "weight_g": 143.07,
+      "seconds": 28972,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 315598,
+          "travel": 29898
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 263337,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 2055,
+        "Brim": 264,
+        "Outer wall": 9193,
+        "Inner wall": 12341,
+        "Gap infill": 7766,
+        "Bottom surface": 1227,
+        "Internal solid infill": 17600,
+        "Sparse infill": 192830,
+        "Floating vertical shell": 1170,
+        "Support transition": 374,
+        "Support interface": 515,
+        "Overhang wall": 220,
+        "Bridge": 6386,
+        "Top surface": 7833
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.189,
+          2.342
+        ],
+        [
+          254.78,
+          254.755
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.9390000000000001,
+          2.132
+        ],
+        [
+          255.03,
+          255.005
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.9390000000000001,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 0.9390000000000001,
+      "plate": 14,
+      "gcode_sha256": "17ecde88f1abb79e949e76a65c13eee61878b08331a51eaa60ea7de375653f1a",
+      "weight_g": 126.61,
+      "seconds": 25304,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 262165,
+          "travel": 25057
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 328367,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 2208,
+        "Brim": 654,
+        "Outer wall": 10160,
+        "Inner wall": 12475,
+        "Gap infill": 11713,
+        "Bottom surface": 1440,
+        "Internal solid infill": 19610,
+        "Sparse infill": 248493,
+        "Support transition": 475,
+        "Support interface": 892,
+        "Overhang wall": 23,
+        "Bridge": 6637,
+        "Floating vertical shell": 621,
+        "Top surface": 9482
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.881,
+          2.323
+        ],
+        [
+          253.618,
+          253.204
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.631,
+          2.073
+        ],
+        [
+          253.868,
+          253.454
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 2.073,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 2.073,
+      "plate": 15,
+      "gcode_sha256": "0176936146ed37bcac4acbdbda63afe3262b2f8a70a5a895d96be86586e475ad",
+      "weight_g": 148.86,
+      "seconds": 29816,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 327144,
+          "travel": 31978
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 273735,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 5623,
+        "Brim": 168,
+        "Outer wall": 10330,
+        "Inner wall": 18108,
+        "Gap infill": 2166,
+        "Bottom surface": 1263,
+        "Internal solid infill": 23506,
+        "Sparse infill": 186999,
+        "Support transition": 1212,
+        "Support interface": 2118,
+        "Overhang wall": 608,
+        "Bridge": 7307,
+        "Floating vertical shell": 1520,
+        "Top surface": 9244
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          23.263,
+          35.366
+        ],
+        [
+          232.11,
+          241.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          23.013,
+          35.116
+        ],
+        [
+          232.36,
+          241.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 14.461396355345613,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 14.461396355345613,
+      "plate": 16,
+      "gcode_sha256": "d6cb2df70f0155a3ebd30e93006f19c0ea1d3106a1cfc6e5914efba984652d66",
+      "weight_g": 125.39,
+      "seconds": 27535,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 271169,
+          "travel": 32713
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 215135,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 5556,
+        "Brim": 87,
+        "Outer wall": 7961,
+        "Inner wall": 11692,
+        "Gap infill": 1634,
+        "Bottom surface": 1023,
+        "Internal solid infill": 15512,
+        "Sparse infill": 153860,
+        "Support transition": 596,
+        "Support interface": 1306,
+        "Overhang wall": 620,
+        "Bridge": 6634,
+        "Floating vertical shell": 461,
+        "Top surface": 4709
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          13.637,
+          12.923
+        ],
+        [
+          242.794,
+          242.433
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          13.387,
+          12.673
+        ],
+        [
+          243.044,
+          242.683
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 12.673,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 12.673,
+      "plate": 17,
+      "gcode_sha256": "263e5ff416d82d513df71385585ac83bd33092a5a0246e6810a7c442e10f1d88",
+      "weight_g": 106.24,
+      "seconds": 21866,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 212826,
+          "travel": 16911
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 330557,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 5436,
+        "Brim": 245,
+        "Outer wall": 11772,
+        "Inner wall": 19301,
+        "Gap infill": 3263,
+        "Bottom surface": 1690,
+        "Internal solid infill": 26785,
+        "Sparse infill": 233074,
+        "Support transition": 1208,
+        "Support interface": 2126,
+        "Overhang wall": 439,
+        "Bridge": 8246,
+        "Floating vertical shell": 1853,
+        "Top surface": 11556
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          8.532,
+          14.759
+        ],
+        [
+          247.161,
+          240.94
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          8.282,
+          14.509
+        ],
+        [
+          247.411,
+          241.19
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 8.282,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 8.282,
+      "plate": 18,
+      "gcode_sha256": "90ab503c6d4618ebf9721f5ca12a4a1437a48562ee9ae77510e92f30ec0a984d",
+      "weight_g": 151.03,
+      "seconds": 32423,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 327993,
+          "travel": 38903
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 327799,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 2053,
+        "Brim": 600,
+        "Outer wall": 10200,
+        "Inner wall": 12189,
+        "Gap infill": 10945,
+        "Bottom surface": 1256,
+        "Internal solid infill": 19243,
+        "Sparse infill": 248542,
+        "Support transition": 506,
+        "Support interface": 889,
+        "Overhang wall": 24,
+        "Bridge": 7565,
+        "Floating vertical shell": 650,
+        "Top surface": 9653
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          2.268,
+          2.335
+        ],
+        [
+          253.123,
+          253.47
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.018,
+          2.085
+        ],
+        [
+          253.373,
+          253.72
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 2.018,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 2.018,
+      "plate": 19,
+      "gcode_sha256": "ee9279444ca4db02aaf1e38a9c4910e1dd710692b3be5a4a8e72f79fb9bfcd88",
+      "weight_g": 148.57,
+      "seconds": 29551,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 326891,
+          "travel": 31788
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 232389,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1406,
+        "Brim": 603,
+        "Outer wall": 7594,
+        "Inner wall": 8815,
+        "Gap infill": 7628,
+        "Bottom surface": 799,
+        "Internal solid infill": 13988,
+        "Sparse infill": 174990,
+        "Support transition": 365,
+        "Support interface": 572,
+        "Overhang wall": 21,
+        "Bridge": 4483,
+        "Floating vertical shell": 381,
+        "Top surface": 7260
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          11.813430541116865,
+          17.385
+        ],
+        [
+          238.542,
+          241.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          11.563430541116865,
+          17.135
+        ],
+        [
+          238.792,
+          241.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 11.563430541116865,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 11.563430541116865,
+      "plate": 20,
+      "gcode_sha256": "453c53fa4f0e4b38663d1057ba9803b1eb10fb998839d4ed23db8672f7042636",
+      "weight_g": 110.09,
+      "seconds": 21687,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 231437,
+          "travel": 20935
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 1051514,
+      "features": {
+        "Support": 350224,
+        "Support interface": 203615,
+        "Brim": 7,
+        "Outer wall": 65340,
+        "Overhang wall": 577,
+        "Inner wall": 116035,
+        "Gap infill": 3685,
+        "Internal solid infill": 3986,
+        "Sparse infill": 186016,
+        "Floating vertical shell": 121788,
+        "Bridge": 241
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          32.567403555921935,
+          6.854084736778867
+        ],
+        [
+          215.91534348974608,
+          248.90148481915392
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          32.317403555921935,
+          6.644084736778867
+        ],
+        [
+          216.16534348974608,
+          249.11148481915393
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.644084736778867,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          238.0
+        ]
+      },
+      "tree_base_segment_count": 1180,
+      "tree_base_xy_bounds_mm": [
+        [
+          33.03,
+          12.451
+        ],
+        [
+          215.352,
+          209.158
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 21,
+      "gcode_sha256": "c82341f187686e05f4812a3e32a50116f0663539845f81349b9f990a148cdf7a",
+      "weight_g": 262.2,
+      "seconds": 85323,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 1047589,
+          "travel": 155605
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M1",
+          "interface_points": 203615,
+          "interior_interface_points": 179942,
+          "max_interface_above_band_underside_mm": -5.444532623036007
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 659080,
+      "features": {
+        "Support": 228781,
+        "Support interface": 134714,
+        "Outer wall": 32246,
+        "Inner wall": 63162,
+        "Gap infill": 4912,
+        "Internal solid infill": 1679,
+        "Sparse infill": 115982,
+        "Floating vertical shell": 77396,
+        "Overhang wall": 27,
+        "Bridge": 181
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          88.32774846461389,
+          31.843460435003294
+        ],
+        [
+          171.00235985606233,
+          223.42393293683796
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          88.1177484646139,
+          31.633460435003293
+        ],
+        [
+          171.25235985606233,
+          223.63393293683797
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 31.633460435003293,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          101.8
+        ]
+      },
+      "tree_base_segment_count": 1133,
+      "tree_base_xy_bounds_mm": [
+        [
+          105.654,
+          35.789
+        ],
+        [
+          170.152,
+          219.602
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 22,
+      "gcode_sha256": "9f1f10af9f76d50da39f3fb1bf7ead0a517067a70d0f20fc6d1976c1d6542dc8",
+      "weight_g": 151.45,
+      "seconds": 48561,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 654842,
+          "travel": 82236
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M2",
+          "interface_points": 134714,
+          "interior_interface_points": 95615,
+          "max_interface_above_band_underside_mm": -10.210929827019378
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 1047798,
+      "features": {
+        "Support": 355236,
+        "Support interface": 205706,
+        "Outer wall": 62167,
+        "Overhang wall": 602,
+        "Inner wall": 106878,
+        "Gap infill": 3608,
+        "Internal solid infill": 3463,
+        "Sparse infill": 186656,
+        "Floating vertical shell": 123194,
+        "Bridge": 288
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          37.31248435153777,
+          6.9220231237811625
+        ],
+        [
+          216.33418039142637,
+          249.55870277905797
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          37.06248435153777,
+          6.7120231237811625
+        ],
+        [
+          216.58418039142637,
+          249.76870277905797
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.231297220942025,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          240.8
+        ]
+      },
+      "tree_base_segment_count": 1153,
+      "tree_base_xy_bounds_mm": [
+        [
+          38.109,
+          98.836
+        ],
+        [
+          216.238,
+          247.625
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 23,
+      "gcode_sha256": "57f8e1fbad43b2be04c89a0865d96b731218bff3551ffcd65d5b136688b65362",
+      "weight_g": 266.18,
+      "seconds": 86061,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 1044945,
+          "travel": 162231
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M3",
+          "interface_points": 205706,
+          "interior_interface_points": 180116,
+          "max_interface_above_band_underside_mm": -5.503806325325881
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 593836,
+      "features": {
+        "Support": 196011,
+        "Support interface": 122020,
+        "Outer wall": 27454,
+        "Gap infill": 3487,
+        "Inner wall": 61216,
+        "Internal solid infill": 1786,
+        "Sparse infill": 107656,
+        "Floating vertical shell": 74071,
+        "Overhang wall": 8,
+        "Bridge": 127
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          94.18172397705976,
+          18.399270679992725
+        ],
+        [
+          161.01433948366193,
+          236.44014904486815
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          93.97172397705977,
+          18.189270679992724
+        ],
+        [
+          161.26433948366193,
+          236.65014904486816
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 18.189270679992724,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          81.2
+        ]
+      },
+      "tree_base_segment_count": 938,
+      "tree_base_xy_bounds_mm": [
+        [
+          104.131,
+          22.648
+        ],
+        [
+          160.503,
+          220.949
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 24,
+      "gcode_sha256": "a262261bfa950476c22b06776a8a63a560b592eb1f051dff978f3742b9523c7b",
+      "weight_g": 136.28,
+      "seconds": 42592,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 589598,
+          "travel": 64044
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M4",
+          "interface_points": 122018,
+          "interior_interface_points": 89743,
+          "max_interface_above_band_underside_mm": -10.394041814063957
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 475178,
+      "features": {
+        "Support interface": 129323,
+        "Support": 80002,
+        "Outer wall": 30093,
+        "Gap infill": 1769,
+        "Inner wall": 57876,
+        "Internal solid infill": 1749,
+        "Sparse infill": 116244,
+        "Floating vertical shell": 57968,
+        "Overhang wall": 19,
+        "Bridge": 135
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          101.5741241371661,
+          34.31054400146622
+        ],
+        [
+          153.60501830982284,
+          223.42898627982947
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          101.3241241371661,
+          34.06054400146622
+        ],
+        [
+          153.85501830982284,
+          223.67898627982947
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 32.32101372017053,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          62.6
+        ]
+      },
+      "tree_base_segment_count": 652,
+      "tree_base_xy_bounds_mm": [
+        [
+          102.099,
+          34.338
+        ],
+        [
+          152.885,
+          223.367
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 25,
+      "gcode_sha256": "99c5ae4120a394471e0708776766d36331123b5a4bcb140c8e5c0a7243f33739",
+      "weight_g": 109.05,
+      "seconds": 36101,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 466919,
+          "travel": 68091
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M5",
+          "interface_points": 129323,
+          "interior_interface_points": 119953,
+          "max_interface_above_band_underside_mm": -5.558032256570403
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 453761,
+      "features": {
+        "Support interface": 95717,
+        "Support": 142149,
+        "Outer wall": 21287,
+        "Gap infill": 3618,
+        "Inner wall": 44744,
+        "Internal solid infill": 1933,
+        "Sparse infill": 83380,
+        "Floating vertical shell": 60777,
+        "Bridge": 147,
+        "Overhang wall": 9
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          99.02151177029701,
+          18.057603519620407
+        ],
+        [
+          156.0985233919003,
+          238.74781388876582
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          98.81151177029702,
+          17.847603519620407
+        ],
+        [
+          156.3485233919003,
+          238.99781388876582
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 17.00218611123418,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          67.6
+        ]
+      },
+      "tree_base_segment_count": 891,
+      "tree_base_xy_bounds_mm": [
+        [
+          106.162,
+          28.121
+        ],
+        [
+          155.426,
+          238.342
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 26,
+      "gcode_sha256": "374df96523a390bc09d084ed9d313ba9c35a766817316b26db87929839a8a90e",
+      "weight_g": 106.17,
+      "seconds": 33077,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 451723,
+          "travel": 47394
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "M6",
+          "interface_points": 95717,
+          "interior_interface_points": 67061,
+          "max_interface_above_band_underside_mm": -10.439543868983696
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 24013,
+      "features": {
+        "Inner wall": 642,
+        "Outer wall": 272,
+        "Bottom surface": 2550,
+        "Internal solid infill": 18640,
+        "Top surface": 1576,
+        "Gap infill": 333
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.742,
+          1.712
+        ],
+        [
+          254.26,
+          254.242
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.532,
+          1.502
+        ],
+        [
+          254.47,
+          254.452
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.502,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          1.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 1.502,
+      "plate": 27,
+      "gcode_sha256": "7dd3397d549d003e4e17e6dad1f9481607a815eaa925e7f2ce516e6bee45de54",
+      "weight_g": 99.39,
+      "seconds": 10262,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 21013,
+          "travel": 1787
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 24014,
+      "features": {
+        "Inner wall": 648,
+        "Outer wall": 257,
+        "Bottom surface": 2549,
+        "Internal solid infill": 18643,
+        "Top surface": 1576,
+        "Gap infill": 341
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.752,
+          1.748
+        ],
+        [
+          254.263,
+          254.268
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.542,
+          1.538
+        ],
+        [
+          254.473,
+          254.478
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.5219999999999914,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          1.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 1.5219999999999914,
+      "plate": 28,
+      "gcode_sha256": "4c8e799c498744ec51822eecaa61010e9223ca0bc14ad0022ea26970b5ed8823",
+      "weight_g": 99.42,
+      "seconds": 10247,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 21014,
+          "travel": 1690
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 326506,
+      "features": {
+        "Inner wall": 26766,
+        "Outer wall": 10390,
+        "Gap infill": 11430,
+        "Bottom surface": 4229,
+        "Support": 3095,
+        "Brim": 664,
+        "Internal solid infill": 37459,
+        "Sparse infill": 214059,
+        "Floating vertical shell": 5726,
+        "Bridge": 6604,
+        "Top surface": 4446,
+        "Support interface": 1158,
+        "Support transition": 366,
+        "Overhang wall": 114
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.25,
+          34.25
+        ],
+        [
+          240.7891136729727,
+          219.75
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.0,
+          34.0
+        ],
+        [
+          240.9991136729727,
+          220.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 12.0,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.0
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 12.0,
+      "plate": 29,
+      "gcode_sha256": "71807ae7164ee0e29bdc6ef7b993c4a91cefe0063fa89e556e059e9cab5784a1",
+      "weight_g": 150.89,
+      "seconds": 31533,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 294443,
+          "travel": 47071
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 27202,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 384,
+        "Brim": 115,
+        "Outer wall": 1328,
+        "Inner wall": 2660,
+        "Gap infill": 1340,
+        "Bottom surface": 272,
+        "Internal solid infill": 3489,
+        "Sparse infill": 11939,
+        "Floating vertical shell": 629,
+        "Bridge": 725,
+        "Support transition": 33,
+        "Top surface": 740,
+        "Support interface": 52,
+        "Overhang wall": 12
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          92.069,
+          114.25
+        ],
+        [
+          207.73456945888316,
+          207.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          91.819,
+          114.0
+        ],
+        [
+          207.98456945888316,
+          207.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 48.01543054111684,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 48.01543054111684,
+      "plate": 30,
+      "gcode_sha256": "d292cd661d3aa9664c54c70d2449afad881692731b7952849410ce677b7b91a5",
+      "weight_g": 18.42,
+      "seconds": 4896,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 24226,
+          "travel": 4207
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    },
+    {
+      "extrusion_moves_checked": 84195,
+      "features": {
+        "Support interface": 34479,
+        "Support": 36338,
+        "Brim": 454,
+        "Outer wall": 7552,
+        "Gap infill": 2947,
+        "Inner wall": 2425
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          41.1032709070948,
+          22.659
+        ],
+        [
+          193.05252987005488,
+          209.931
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          40.8532709070948,
+          22.409
+        ],
+        [
+          193.30252987005488,
+          210.181
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 22.409,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          11.6
+        ]
+      },
+      "tree_base_segment_count": 1615,
+      "tree_base_xy_bounds_mm": [
+        [
+          41.874,
+          22.659
+        ],
+        [
+          193.026,
+          207.397
+        ]
+      ],
+      "brim_note": "6 mm outer object brim requested. Some tilted bodies have no printable first-layer area; their anchoring is the generated tree base, classified as Support instead of Brim.",
+      "plate": 31,
+      "gcode_sha256": "994a9876d727cd644ea8f614d966ee4a2f33cfa0af8045449c86379f42963f00",
+      "weight_g": 16.98,
+      "seconds": 6909,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 83837,
+          "travel": 11656
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": [
+        {
+          "name": "Band4",
+          "interface_points": 8463,
+          "interior_interface_points": 6908,
+          "max_interface_above_band_underside_mm": -0.27685779228856866
+        },
+        {
+          "name": "Band3",
+          "interface_points": 8981,
+          "interior_interface_points": 7533,
+          "max_interface_above_band_underside_mm": -0.2593801112246066
+        },
+        {
+          "name": "Band1",
+          "interface_points": 4154,
+          "interior_interface_points": 3224,
+          "max_interface_above_band_underside_mm": -0.2572212127734925
+        },
+        {
+          "name": "Band5",
+          "interface_points": 7497,
+          "interior_interface_points": 6197,
+          "max_interface_above_band_underside_mm": -0.27371560268503003
+        },
+        {
+          "name": "Band2",
+          "interface_points": 5384,
+          "interior_interface_points": 4151,
+          "max_interface_above_band_underside_mm": -0.2634112553717607
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 70577,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1297,
+        "Brim": 227,
+        "Outer wall": 3399,
+        "Inner wall": 6159,
+        "Bottom surface": 558,
+        "Internal solid infill": 5948,
+        "Sparse infill": 44838,
+        "Floating vertical shell": 87,
+        "Bridge": 1801,
+        "Support transition": 173,
+        "Support interface": 313,
+        "Gap infill": 450,
+        "Top surface": 1651,
+        "Overhang wall": 192
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          28.262,
+          52.734
+        ],
+        [
+          214.427,
+          217.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          28.012,
+          52.484
+        ],
+        [
+          214.677,
+          217.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 28.012,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "previous_bed_edge_clearance_mm": 28.012,
+      "plate": 32,
+      "gcode_sha256": "e011bfd70170e4d390fef192993d7e629b539b7112d2e636e104a0f01820184a",
+      "weight_g": 41.27,
+      "seconds": 9209,
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 9000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 69645,
+          "travel": 6227
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_face_checks": []
+    }
+  ],
+  "unchanged_native_plates": [],
+  "mesh_checks": [
+    {
+      "name": "F1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F7",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F7",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F7",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F7",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F7",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F8",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F8",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F8",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F8",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F8",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F8",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F9",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F9",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F9",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F9",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F10",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F10",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F10",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F10",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F11",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F11",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F11",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F11",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F11",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F12",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F12",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F12",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F12",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F13",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F13",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F13",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F13",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F13",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F14",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F14",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F14",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F14",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F15",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F15",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F15",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F15",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F15",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F15",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F16",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F17",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F17",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F17",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F17",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F18",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F19",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F19",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F19",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F19",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F19",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F19",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F20",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F20",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F20",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "F20",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "M1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 8.22059917489572e-06
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.011540305009211e-07
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.529002571722139e-07
+    },
+    {
+      "name": "M1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.814814884527264e-07
+    },
+    {
+      "name": "M2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 3.840455070431053e-06
+    },
+    {
+      "name": "M2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.8016695523896483e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 1.0108671921300904e-05
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.989927918508782e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.917306032200771e-06
+    },
+    {
+      "name": "M3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 4.8963571340400985e-06
+    },
+    {
+      "name": "M4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 4.217837855164195e-06
+    },
+    {
+      "name": "M4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 1.6269812040515467e-06
+    },
+    {
+      "name": "M5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 6.134482234869043e-06
+    },
+    {
+      "name": "M5",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.2288158382032877e-06
+    },
+    {
+      "name": "M6",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 8.540343425746665e-06
+    },
+    {
+      "name": "M6",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 3.0797311463019173e-06
+    },
+    {
+      "name": "Backer1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer7",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer8",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Backer6",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B1",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Retainer",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Retainer",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B2",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "B3",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Test-Weave-Full-Width",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Test-Weave-Full-Width",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Test-Weave-Full-Width",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "Band4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.439837181686244e-07
+    },
+    {
+      "name": "Band3",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.3343988871535248e-08
+    },
+    {
+      "name": "Band1",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.892326807152382e-06
+    },
+    {
+      "name": "Band5",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 6.474881094761769e-08
+    },
+    {
+      "name": "Band2",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 3.3867175518728437e-06
+    },
+    {
+      "name": "Knot-Joint-A-F7",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 2.4591515502000386e-06
+    },
+    {
+      "name": "Knot-Joint-A-F7",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 1.546761322580318e-06
+    },
+    {
+      "name": "Knot-Joint-A-F7",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 2.0514079427807066e-06
+    },
+    {
+      "name": "Knot-Joint-B-F4",
+      "subtype": "normal_part",
+      "max_vertex_error_mm": 5.320958244476185e-06
+    },
+    {
+      "name": "Knot-Joint-B-F4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 5.662503266647076e-06
+    },
+    {
+      "name": "Knot-Joint-B-F4",
+      "subtype": "modifier_part",
+      "max_vertex_error_mm": 5.6532525734667435e-06
+    }
+  ],
+  "orientation": [
+    {
+      "name": "M1",
+      "canonical": "M1",
+      "plate": 21,
+      "build_transform": [
+        [
+          -0.15328163540720713,
+          -0.5527157213107454,
+          0.8191520442889918,
+          125.49302338140932
+        ],
+        [
+          0.963630453208623,
+          -0.2672383760782568,
+          -5.015859645267624e-17,
+          304.46848726398605
+        ],
+        [
+          0.2189088620769745,
+          0.7893598556849711,
+          0.573576436351046,
+          112.22380672401823
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.4163516051875332,
+          0.9089507923240355,
+          0.02144290071964156,
+          858.9826058146837
+        ],
+        [
+          -0.5142785122994159,
+          -0.25488691240535966,
+          0.8188713413421927,
+          150.39808719441498
+        ],
+        [
+          0.749779269281876,
+          0.3299107743284091,
+          0.573576436351046,
+          -345.04811573006566
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 1696,
+      "blocked_facets": 164207
+    },
+    {
+      "name": "M2",
+      "canonical": "M2",
+      "plate": 22,
+      "build_transform": [
+        [
+          0.5644225565803567,
+          -0.10206422468455655,
+          0.8191520442889918,
+          140.99242352746515
+        ],
+        [
+          0.17794354547384197,
+          0.9840406976462908,
+          -5.015859645267624e-17,
+          60.189027635073344
+        ],
+        [
+          -0.8060789491405248,
+          0.14576281904292884,
+          0.573576436351046,
+          26.51240478008121
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.9617087940689865,
+          0.27323322898048713,
+          0.02144290071964156,
+          -809.3674022363089
+        ],
+        [
+          -0.17368662500772528,
+          0.5470673474279595,
+          0.8188713413421927,
+          627.7927132245934
+        ],
+        [
+          0.21201214989665462,
+          -0.7912401152362238,
+          0.573576436351046,
+          -893.1050928154829
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 1.1368683772161603e-13,
+      "enforced_facets": 951,
+      "blocked_facets": 93708
+    },
+    {
+      "name": "M3",
+      "canonical": "M3",
+      "plate": 23,
+      "build_transform": [
+        [
+          0.17486297820714644,
+          -0.5462717887550964,
+          0.8191520442889918,
+          121.48526631664393
+        ],
+        [
+          0.9523957996432783,
+          0.3048642990280113,
+          -5.015859645267624e-17,
+          -51.186268795163016
+        ],
+        [
+          -0.24973021377952592,
+          0.7801569662500404,
+          0.573576436351046,
+          119.10206433836532
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.9013271184122518,
+          0.4326079375409035,
+          0.021442900719641556,
+          1732.2746260556528
+        ],
+        [
+          -0.23241420070590024,
+          -0.5248174593500825,
+          0.8188713413421926,
+          -126.64970694215972
+        ],
+        [
+          0.36550385076617753,
+          0.7330873118107626,
+          0.5735764363510459,
+          36.5687047358226
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 1883,
+      "blocked_facets": 165573
+    },
+    {
+      "name": "M4",
+      "canonical": "M4",
+      "plate": 24,
+      "build_transform": [
+        [
+          -0.4595803064960271,
+          -0.34318489217648174,
+          0.8191520442889918,
+          -16.724589740794585
+        ],
+        [
+          0.5983246005706591,
+          -0.8012538126910607,
+          -5.015859645267624e-17,
+          160.86416727983712
+        ],
+        [
+          0.6563486986602313,
+          0.49011881970584986,
+          0.573576436351046,
+          239.9413033704133
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.9309085567695061,
+          0.3646223538704707,
+          0.02144290071964156,
+          1630.706413896089
+        ],
+        [
+          -0.19288167513308796,
+          -0.5405981739945963,
+          0.8188713413421927,
+          -268.45172172540106
+        ],
+        [
+          0.3101707889714457,
+          0.7581583959382533,
+          0.573576436351046,
+          57.71723458803844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 7.105427357601002e-15,
+      "enforced_facets": 542,
+      "blocked_facets": 88413
+    },
+    {
+      "name": "M5",
+      "canonical": "M5",
+      "plate": 25,
+      "build_transform": [
+        [
+          -0.573576436351046,
+          -9.635376729955036e-17,
+          0.8191520442889918,
+          120.51756296103225
+        ],
+        [
+          9.635376729955036e-17,
+          -1.0,
+          -5.015859645267624e-17,
+          38.29737500101329
+        ],
+        [
+          0.8191520442889918,
+          5.015859645267624e-17,
+          0.573576436351046,
+          32.87154608334653
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.0019280843041244746,
+          0.9997682153877686,
+          0.02144290071964156,
+          1093.6150653412476
+        ],
+        [
+          -0.5736734088524897,
+          -0.018669394848307933,
+          0.8188713413421927,
+          -101.27573667562592
+        ],
+        [
+          0.8190818655461004,
+          -0.010722368971183041,
+          0.573576436351046,
+          -153.8732496497044
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 584,
+      "blocked_facets": 102313
+    },
+    {
+      "name": "M6",
+      "canonical": "M6",
+      "plate": 26,
+      "build_transform": [
+        [
+          0.44888559766666813,
+          -0.35705972685897197,
+          0.8191520442889918,
+          -11.35567639468951
+        ],
+        [
+          0.6225146366376193,
+          0.782608156852414,
+          -5.015859645267624e-17,
+          90.60885319980548
+        ],
+        [
+          -0.6410750715628949,
+          0.5099341372015248,
+          0.573576436351046,
+          225.45144350922203
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.34784574445868954,
+          0.9373065347423475,
+          0.02144290071964156,
+          1383.565955541274
+        ],
+        [
+          -0.5317536258322088,
+          -0.21607361648923565,
+          0.8188713413421927,
+          -167.8820182052711
+        ],
+        [
+          0.7721667044597813,
+          0.27343857113903125,
+          0.573576436351046,
+          -63.910702578020846
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 7.105427357601002e-15,
+      "enforced_facets": 624,
+      "blocked_facets": 68285
+    },
+    {
+      "name": "Band1",
+      "canonical": "B1",
+      "plate": 31,
+      "build_transform": [
+        [
+          -0.3123921168015918,
+          -0.4810416756346442,
+          0.8191520442889918,
+          116.19966521719691
+        ],
+        [
+          0.838670567945424,
+          -0.5446390350150271,
+          -5.015859645267624e-17,
+          98.31903867936182
+        ],
+        [
+          0.4461421789321432,
+          0.6869987102175039,
+          0.573576436351046,
+          -109.11040605228716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          -0.837149473155307,
+          0.5465537133754738,
+          0.02144290071964156,
+          883.8674000719519
+        ],
+        [
+          -0.2989282895797341,
+          -0.48999143259588995,
+          0.8188713413421927,
+          -591.3925515617864
+        ],
+        [
+          0.45806401002995917,
+          0.6791078223508457,
+          0.573576436351046,
+          995.4211485271105
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 15743,
+      "blocked_facets": 17824
+    },
+    {
+      "name": "Band2",
+      "canonical": "B2",
+      "plate": 31,
+      "build_transform": [
+        [
+          -0.312392116801592,
+          0.48104167563464406,
+          0.8191520442889918,
+          24.618030996516197
+        ],
+        [
+          -0.8386705679454239,
+          -0.5446390350150273,
+          -5.015859645267624e-17,
+          90.7007102275884
+        ],
+        [
+          0.4461421789321434,
+          -0.6869987102175038,
+          0.573576436351046,
+          107.4125132205146
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.851435114202668,
+          0.5240214197066921,
+          0.02144290071964156,
+          628.2352988870567
+        ],
+        [
+          -0.3156618086329844,
+          0.479382257597203,
+          0.8188713413421927,
+          877.3743766097737
+        ],
+        [
+          0.4188267766908446,
+          -0.7039845188564815,
+          0.573576436351046,
+          -1103.6569753265771
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 17793,
+      "blocked_facets": 19564
+    },
+    {
+      "name": "Band3",
+      "canonical": "B3",
+      "plate": 31,
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          3.148852893641795
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          409.3183823153376
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.37385787450632
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.6772275742607475,
+          0.7354610898406734,
+          0.02144290071964156,
+          748.5939762484163
+        ],
+        [
+          -0.43393409632676466,
+          0.37570058074683893,
+          0.8188713413421927,
+          490.54800477989875
+        ],
+        [
+          0.594191898889557,
+          -0.5638670578752201,
+          0.573576436351046,
+          -830.473777257364
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 32901,
+      "blocked_facets": 34391
+    },
+    {
+      "name": "Band4",
+      "canonical": "B4",
+      "plate": 31,
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          63.14885430381391
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          -87.57191697880614
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.37384901295742
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.7446005744536979,
+          0.6671657863919211,
+          0.02144290071964156,
+          1059.9802297565166
+        ],
+        [
+          -0.39592704494159275,
+          0.41556166980636694,
+          0.8188713413421927,
+          589.5166134391181
+        ],
+        [
+          0.5374120947718249,
+          -0.6182218954839706,
+          0.573576436351046,
+          -964.8016229671825
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 1.1368683772161603e-13,
+      "enforced_facets": 29727,
+      "blocked_facets": 31047
+    },
+    {
+      "name": "Band5",
+      "canonical": "B5",
+      "plate": 31,
+      "build_transform": [
+        [
+          -1.3147519464173307e-16,
+          0.573576436351046,
+          0.8191520442889918,
+          175.4313071440156
+        ],
+        [
+          -1.0,
+          -1.5758610725691803e-16,
+          -5.015859645267624e-17,
+          154.4861304275692
+        ],
+        [
+          1.0031719290535247e-16,
+          -0.8191520442889918,
+          0.573576436351046,
+          -0.8710327055925349
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "undo_original_world": [
+        [
+          0.7055795232293183,
+          0.7083062462016099,
+          0.02144290071964156,
+          845.3871922739424
+        ],
+        [
+          -0.4188496132838861,
+          0.39244710188811055,
+          0.8188713413421927,
+          570.3168030585257
+        ],
+        [
+          0.5715964816646679,
+          -0.5867602012844833,
+          0.573576436351046,
+          -845.7951443859943
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "show_face_normal": [
+        0.8191520442889918,
+        -5.015859645267624e-17,
+        0.573576436351046
+      ],
+      "source_error_mm": 0.0,
+      "enforced_facets": 26308,
+      "blocked_facets": 27508
+    }
+  ],
+  "choices": {
+    "M1": {
+      "in_plane_rotation_deg": 15.5,
+      "build_extent_mm": [
+        172.93241525972357,
+        237.81422735694144,
+        238.18109879412484
+      ],
+      "build_transform": [
+        [
+          -0.15328163540720713,
+          -0.5527157213107454,
+          0.8191520442889918,
+          125.49302338140932
+        ],
+        [
+          0.963630453208623,
+          -0.2672383760782568,
+          -5.015859645267624e-17,
+          304.46848726398605
+        ],
+        [
+          0.2189088620769745,
+          0.7893598556849711,
+          0.573576436351046,
+          112.22380672401823
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 113.75,
+      "old_build_extent_mm": [
+        228.03256138192563,
+        227.5160455575047,
+        206.67574698320013
+      ]
+    },
+    "M2": {
+      "in_plane_rotation_deg": 280.25,
+      "build_extent_mm": [
+        76.10232824569682,
+        185.1787358136512,
+        102.00483261918636
+      ],
+      "build_transform": [
+        [
+          0.5644225565803567,
+          -0.10206422468455655,
+          0.8191520442889918,
+          140.9924235274652
+        ],
+        [
+          0.17794354547384197,
+          0.9840406976462908,
+          -5.015859645267624e-17,
+          60.18902763507336
+        ],
+        [
+          -0.8060789491405248,
+          0.14576281904292884,
+          0.573576436351046,
+          26.512404780081116
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 15.0,
+      "old_build_extent_mm": [
+        119.55663602433523,
+        119.48592544972595,
+        147.3187190839435
+      ]
+    },
+    "M3": {
+      "in_plane_rotation_deg": 342.25,
+      "build_extent_mm": [
+        175.3206335374233,
+        237.92263919091775,
+        241.0355208705938
+      ],
+      "build_transform": [
+        [
+          0.17486297820714644,
+          -0.5462717887550964,
+          0.8191520442889918,
+          121.48526631664393
+        ],
+        [
+          0.9523957996432783,
+          0.3048642990280113,
+          -5.015859645267624e-17,
+          -51.186268795163016
+        ],
+        [
+          -0.24973021377952592,
+          0.7801569662500404,
+          0.573576436351046,
+          119.10206433836532
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 153.5,
+      "old_build_extent_mm": [
+        233.6941771502071,
+        233.26573602674756,
+        201.31418349815203
+      ]
+    },
+    "M4": {
+      "in_plane_rotation_deg": 53.25,
+      "build_extent_mm": [
+        63.81557295054937,
+        213.51847273464244,
+        81.45694865927695
+      ],
+      "build_transform": [
+        [
+          -0.4595803064960271,
+          -0.34318489217648174,
+          0.8191520442889918,
+          -16.724589740794556
+        ],
+        [
+          0.5983246005706591,
+          -0.8012538126910607,
+          -5.015859645267624e-17,
+          160.86416727983712
+        ],
+        [
+          0.6563486986602313,
+          0.49011881970584986,
+          0.573576436351046,
+          239.9413033704133
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 157.75,
+      "old_build_extent_mm": [
+        144.81997368859183,
+        145.00012515036101,
+        111.27546156571178
+      ]
+    },
+    "M5": {
+      "in_plane_rotation_deg": 90.0,
+      "build_extent_mm": [
+        48.35169188310911,
+        179.33025356820733,
+        62.759304061440204
+      ],
+      "build_transform": [
+        [
+          -0.573576436351046,
+          -9.635376729955036e-17,
+          0.8191520442889918,
+          120.51756296103225
+        ],
+        [
+          9.635376729955036e-17,
+          -1.0,
+          -5.015859645267624e-17,
+          38.29737500101329
+        ],
+        [
+          0.8191520442889918,
+          5.015859645267624e-17,
+          0.573576436351046,
+          32.87154608334653
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 89.25,
+      "old_build_extent_mm": [
+        107.31383964693218,
+        72.67043801978144,
+        154.92572063515127
+      ]
+    },
+    "M6": {
+      "in_plane_rotation_deg": 308.5,
+      "build_extent_mm": [
+        54.24082041442641,
+        215.29121665898492,
+        67.79739786264886
+      ],
+      "build_transform": [
+        [
+          0.44888559766666813,
+          -0.35705972685897197,
+          0.8191520442889918,
+          -11.35567639468951
+        ],
+        [
+          0.6225146366376193,
+          0.782608156852414,
+          -5.015859645267624e-17,
+          90.60885319980548
+        ],
+        [
+          -0.6410750715628949,
+          0.5099341372015248,
+          0.573576436351046,
+          225.45144350922203
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 109.5,
+      "old_build_extent_mm": [
+        140.90229005293577,
+        140.97909871662122,
+        114.7587919530493
+      ]
+    },
+    "B1": {
+      "in_plane_rotation_deg": 33.0,
+      "build_extent_mm": [
+        9.58695641650953,
+        41.9133838217062,
+        11.72856742062767
+      ],
+      "build_transform": [
+        [
+          -0.3123921168015918,
+          -0.4810416756346442,
+          0.8191520442889918,
+          194.19966521719692
+        ],
+        [
+          0.838670567945424,
+          -0.5446390350150271,
+          -5.015859645267624e-17,
+          176.31903867936182
+        ],
+        [
+          0.4461421789321432,
+          0.6869987102175039,
+          0.573576436351046,
+          -109.11040605228716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 146.0,
+      "old_build_extent_mm": [
+        31.003741242845855,
+        31.07021165039001,
+        24.397347115403548
+      ]
+    },
+    "B2": {
+      "in_plane_rotation_deg": 147.0,
+      "build_extent_mm": [
+        9.533960135466799,
+        47.26005823720877,
+        11.698667915005956
+      ],
+      "build_transform": [
+        [
+          -0.312392116801592,
+          0.48104167563464406,
+          0.8191520442889918,
+          42.6180309965162
+        ],
+        [
+          -0.8386705679454239,
+          -0.5446390350150273,
+          -5.015859645267624e-17,
+          168.7007102275884
+        ],
+        [
+          0.4461421789321434,
+          -0.6869987102175038,
+          0.573576436351046,
+          107.4125132205146
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 30.75,
+      "old_build_extent_mm": [
+        33.88025845698487,
+        33.83222344063158,
+        28.66572964262464
+      ]
+    },
+    "B3": {
+      "in_plane_rotation_deg": 0.0,
+      "build_extent_mm": [
+        9.493961090454022,
+        89.17181398988771,
+        11.615096062608053
+      ],
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          81.14885289364179
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          377.3183823153376
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.37385787450632
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 46.5,
+      "old_build_extent_mm": [
+        66.17254897589572,
+        66.11087734430339,
+        13.038454026409816
+      ]
+    },
+    "B4": {
+      "in_plane_rotation_deg": 0.0,
+      "build_extent_mm": [
+        9.49396421111512,
+        81.6052398524912,
+        11.615087310534058
+      ],
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          81.148854303814
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          -119.57191697880614
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.373849012957486
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 41.0,
+      "old_build_extent_mm": [
+        60.2614342108063,
+        60.029327185812306,
+        12.99887494446159
+      ]
+    },
+    "B5": {
+      "in_plane_rotation_deg": 180.0,
+      "build_extent_mm": [
+        9.493932963904353,
+        68.9384459794004,
+        11.615088403632939
+      ],
+      "build_transform": [
+        [
+          -1.3147519464173307e-16,
+          0.573576436351046,
+          0.8191520442889918,
+          118.4313071440156
+        ],
+        [
+          -1.0,
+          -1.5758610725691803e-16,
+          -5.015859645267624e-17,
+          122.48613042756921
+        ],
+        [
+          1.0031719290535247e-16,
+          -0.8191520442889918,
+          0.573576436351046,
+          -0.8710327055925349
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "old_yaw_deg": 44.25,
+      "old_build_extent_mm": [
+        54.23149071549527,
+        54.10773905667615,
+        12.745705646464334
+      ]
+    }
+  },
+  "process_limits": {
+    "travel_speed": [
+      "150"
+    ],
+    "travel_acceleration": [
+      "1000"
+    ],
+    "initial_layer_travel_acceleration": [
+      "500"
+    ],
+    "default_acceleration": [
+      "1000"
+    ],
+    "outer_wall_acceleration": [
+      "500"
+    ],
+    "inner_wall_acceleration": [
+      "1000"
+    ],
+    "sparse_infill_acceleration": [
+      "1000"
+    ],
+    "top_surface_acceleration": [
+      "500"
+    ],
+    "initial_layer_acceleration": [
+      "500"
+    ],
+    "gap_infill_speed": [
+      "150"
+    ],
+    "inner_wall_speed": [
+      "150"
+    ],
+    "internal_solid_infill_speed": [
+      "150"
+    ],
+    "sparse_infill_speed": [
+      "150"
+    ],
+    "outer_wall_speed": [
+      "150"
+    ],
+    "top_surface_speed": [
+      "150"
+    ],
+    "machine_max_acceleration_x": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_acceleration_y": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_acceleration_extruding": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_acceleration_travel": [
+      "1000",
+      "1000"
+    ],
+    "machine_max_speed_x": [
+      "150",
+      "150"
+    ],
+    "machine_max_speed_y": [
+      "150",
+      "150"
+    ]
+  },
+  "copper_overrides": {
+    "default_acceleration": "1000",
+    "outer_wall_acceleration": "500",
+    "inner_wall_acceleration": "1000",
+    "sparse_infill_acceleration": "1000",
+    "top_surface_acceleration": "500",
+    "initial_layer_acceleration": "500",
+    "brim_type": "outer_only",
+    "brim_width": "6",
+    "brim_object_gap": "0.1",
+    "support_speed": "60",
+    "support_interface_speed": "40",
+    "tree_support_branch_diameter": "3",
+    "tree_support_wall_count": "2"
+  },
+  "total_weight_g": 4101.64,
+  "total_seconds": 945124,
+  "scope": "Native slicing, unchanged geometry and digital support/motion checks. Full-height adhesion and sway still require a physical print."
+}

@@ -24,6 +24,7 @@ from shapely.ops import split
 from shapely import affinity, union_all
 import shapely
 from scipy.spatial import cKDTree
+from y_axis_orientation import choose,TRAVEL,COPPER,BAND_CENTERS,TEST_CENTERS
 
 WORK=ROOT/'.work/hammered-bands'
 REVIEW=ROOT/'working/review/hammered-bands'
@@ -156,17 +157,10 @@ def shoulder(cad,j,socket,outline):
 
 
 def best_transform(mesh):
-    points=mesh.convex_hull.vertices@COMMON[:3,:3].T
-    candidates=[]
-    for yaw in np.arange(0,180,.25):
-        xy=points@rotation(float(yaw))[:3,:3].T
-        ext=xy.max(axis=0)-xy.min(axis=0)
-        candidates.append((max(ext[:2]),float(yaw),ext.tolist()))
-    _,yaw,extent=min(candidates)
-    t=rotation(yaw)@COMMON;placed=mesh.copy();placed.apply_transform(t)
-    t[:2,3]=128-placed.bounds.mean(axis=0)[:2];t[2,3]=-placed.bounds[0,2]
-    assert max(extent[:2])<240 and extent[2]<240,extent
-    return t,extent,yaw
+    # Always put the face plane along the A1 bed's Y motion. Fit the part by
+    # rolling within that plane, never by yawing its weak direction into Y.
+    t,extent,in_plane=choose(mesh)
+    return t,extent,90.
 
 
 def geometry():
@@ -274,6 +268,7 @@ def add_object(files,resources,build,config,relations,name,body,t,oid,holes,mods
     obj=ET.SubElement(resources,tag('object'),id=str(oid),type='model',attrib={'{'+P+'}UUID':uid()})
     comps=ET.SubElement(obj,tag('components'));cfg=ET.SubElement(config,'object',id=str(oid))
     meta(cfg,'name',name+' - covered joint candidate');meta(cfg,'extruder',1)
+    for key,value in COPPER.items():meta(cfg,key,value)
     for k,(label,m) in enumerate([(name,body)]+mods,1):
         if k>1:mesh_object(cr,oid+k,m)
         ET.SubElement(comps,tag('component'),objectid=str(oid+k),transform=IDENTITY,attrib={'{'+P+'}path':'/'+path,'{'+P+'}UUID':uid()})
@@ -299,6 +294,7 @@ def stage(test=False):
     report=json.loads((WORK/'manifest.json').read_text());cad,outline,joints,regions=layout()
     source=read_zip(SOURCE);settings=json.loads(source['Metadata/project_settings.config'])
     settings.update(print_settings_id=TITLE,print_sequence='by layer',enable_prime_tower='0')
+    settings.update(TRAVEL)
     assert settings['enable_support']=='1' and settings['support_type']=='tree(auto)'
     files={k:source[k] for k in ['[Content_Types].xml','_rels/.rels']}
     root=model();del root.attrib['xmlns:p']
@@ -314,19 +310,20 @@ def stage(test=False):
             body=boolean([load_mesh(f'M{n}'),crop],'intersection')
             bodies[f'T{n}']=save_mesh(f'T{n}',body)
         bodies['B1']=load_mesh('B1')
-        centers=[(78,110),(144,110),(191,170)]
+        centers=TEST_CENTERS
         records=[]
         for name,xy in zip(['T2','T3','B1'],centers):
-            t=centered(bodies[name],COMMON,xy);records.append((name,bodies[name],t))
+            parent=name.replace('T','M')
+            t=centered(bodies[name],best_transform(load_mesh(parent))[0],xy);records.append((name,bodies[name],t))
         plates.append(('B1 band and actual joint crop',records))
     else:
         for n in range(1,7):
             name=f'M{n}';body=load_mesh(name);bodies[name]=body
-            plates.append((name+' - hammered with band seats',[(name,body,np.array(rows[name]['build_transform']))]))
+            plates.append((name+' - hammered with band seats',[(name,body,best_transform(body)[0])]))
         records=[]
-        for i,xy in enumerate([(45,45),(135,45),(65,119),(178,119),(128,207)],1):
+        for i,xy in enumerate(BAND_CENTERS,1):
             name=f'B{i}';body=load_mesh(name);bodies[name]=body
-            records.append((name,body,centered(body,np.array(rows[name]['build_transform']),xy)))
+            records.append((name,body,centered(body,best_transform(body)[0],xy)))
         plates.append(('B1-B5 smooth copper bands',records))
     objectrows=[];oid=1000
     for n,(title,objects) in enumerate(plates,1):
@@ -486,7 +483,7 @@ def render_paths(paths,audits,suffix):
         if count==1:
             ax.set(xlim=(30,220),ylim=(70,200),zlim=(0,65));ax.set_box_aspect((190,130,65))
         else:
-            ax.set(xlim=(0,256),ylim=(0,256),zlim=(0,220));ax.set_box_aspect((256,256,220))
+            ax.set(xlim=(0,256),ylim=(0,256),zlim=(0,256));ax.set_box_aspect((256,256,256))
         ax.view_init(25,-60);ax.set_xlabel('X');ax.set_ylabel('Y');ax.set_zlabel('Z');ax.tick_params(labelsize=7)
         label='Small band test' if count==1 else f'Plate {n}: '+(f'M{n}' if n<=6 else 'bands B1-B5')
         ax.set_title(label+f' | {float(audit["metadata"]["weight"]):.1f} g',fontsize=11)

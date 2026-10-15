@@ -1,6 +1,6 @@
 {
   "source": "working/Dara-Photo-Frame-A1-Jointed.scad",
-  "source_sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f",
+  "source_sha256": "88f187317f08aea5b37040d3bf9d0f3f382d070815178ce54de2255c4f4e86bf",
   "openscad_version": "OpenSCAD version 2021.01",
   "format": "binary STL",
   "units": "mm",
@@ -26,28 +26,28 @@
         "part_family": "frame",
         "section_index": 1
       },
-      "sha256": "b2ab6911703450e7a964d6c33318dae3f06aacbf2bed0ac06d33bf7b7c24b391",
-      "bytes": 588884,
-      "triangles": 11776,
+      "sha256": "b434cb757c41f2bdf63f77006cdf5308efbd62456dfc42d526e9467b17b63c9f",
+      "bytes": 693684,
+      "triangles": 13872,
       "bounds_mm": [
         [
-          -109.10052490234375,
-          -109.35385131835938,
+          -114.49689483642578,
+          -114.49691772460938,
           0.0
         ],
         [
-          109.21922302246094,
-          109.38041687011719,
+          114.4969253540039,
+          114.49691009521484,
           13.5
         ]
       ],
       "size_mm": [
-        218.3197479248047,
-        218.73426818847656,
+        228.9938201904297,
+        228.99382781982422,
         13.5
       ],
-      "volume_mm3": 226316.59949685805,
-      "minimum_bed_edge_clearance_mm": 18.619583129882812,
+      "volume_mm3": 250547.0571244102,
+      "minimum_bed_edge_clearance_mm": 13.503074645996094,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -64,28 +64,28 @@
         "part_family": "frame",
         "section_index": 2
       },
-      "sha256": "b2c653dfd1ce56780628858afeb99141e955f9b1c27eeaa29fc483b46ee3e634",
+      "sha256": "a3452053109a4f9fd82b3fb4d24161ca1204db0142c0b9a107bded4fbc059886",
       "bytes": 692484,
       "triangles": 13848,
       "bounds_mm": [
         [
-          -114.18729400634766,
-          -114.40516662597656,
+          -114.36254119873047,
+          -114.36256408691406,
           0.0
         ],
         [
-          114.38968658447266,
-          114.39617919921875,
+          114.36254119873047,
+          114.36253356933594,
           13.5
         ]
       ],
       "size_mm": [
-        228.5769805908203,
-        228.8013458251953,
+        228.72508239746094,
+        228.72509765625,
         13.5
       ],
-      "volume_mm3": 250004.07643397176,
-      "minimum_bed_edge_clearance_mm": 13.594833374023438,
+      "volume_mm3": 250004.07537616766,
+      "minimum_bed_edge_clearance_mm": 13.637435913085938,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -102,28 +102,28 @@
         "part_family": "frame",
         "section_index": 3
       },
-      "sha256": "6144df51e6f57cc1b108369260d024bd86b3f16cfd0d7566d460df3043a099bc",
-      "bytes": 633984,
-      "triangles": 12678,
+      "sha256": "c05a109d50bfff61de973be9cbf27b459793c9551709ba5e084c99e68d0f64c2",
+      "bytes": 699184,
+      "triangles": 13982,
       "bounds_mm": [
         [
-          -125.28036499023438,
-          -125.30245971679688,
+          -107.52745819091797,
+          -112.52122497558594,
           0.0
         ],
         [
-          125.31888580322266,
-          125.32872009277344,
+          107.52969360351562,
+          112.55970764160156,
           13.5
         ]
       ],
       "size_mm": [
-        250.59925079345703,
-        250.6311798095703,
+        215.0571517944336,
+        225.0809326171875,
         13.5
       ],
-      "volume_mm3": 230662.42699159414,
-      "minimum_bed_edge_clearance_mm": 2.6712799072265625,
+      "volume_mm3": 259061.16543104418,
+      "minimum_bed_edge_clearance_mm": 15.440292358398438,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -140,28 +140,28 @@
         "part_family": "frame",
         "section_index": 4
       },
-      "sha256": "6c34a07da40f95048ed5ddb930219075fcaf8f3ad4687f025cb05b1e31daa2f5",
-      "bytes": 516884,
-      "triangles": 10336,
+      "sha256": "8b3673f8a3142e6128a9511a01a00b1423aaa234fee56fcae08b07afb23b56ff",
+      "bytes": 515884,
+      "triangles": 10316,
       "bounds_mm": [
         [
-          -112.08196258544922,
-          -112.11337280273438,
+          -112.7975845336914,
+          -112.79766082763672,
           0.0
         ],
         [
-          112.0823745727539,
-          112.08438873291016,
+          112.79756927490234,
+          112.79763793945312,
           16.5
         ]
       ],
       "size_mm": [
-        224.16433715820312,
-        224.19776153564453,
+        225.59515380859375,
+        225.59529876708984,
         16.5
       ],
-      "volume_mm3": 188336.4474557857,
-      "minimum_bed_edge_clearance_mm": 15.886627197265625,
+      "volume_mm3": 188316.22690621996,
+      "minimum_bed_edge_clearance_mm": 15.202339172363281,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -178,28 +178,28 @@
         "part_family": "frame",
         "section_index": 5
       },
-      "sha256": "0b712938a9e82cec097d1a7df87529af3ce57f96d86092262fbc2394e21ddd8d",
-      "bytes": 716984,
-      "triangles": 14338,
+      "sha256": "71ed12a684346a4f4ea147c4797888d8db4a14e440f7740b6d0dfd2b5e8e70a2",
+      "bytes": 719984,
+      "triangles": 14398,
       "bounds_mm": [
         [
-          -112.55220031738281,
-          -106.53010559082031,
+          -112.55292510986328,
+          -107.5287857055664,
           0.0
         ],
         [
-          112.51887512207031,
-          106.52722930908203,
+          112.51444244384766,
+          107.52655792236328,
           13.5
         ]
       ],
       "size_mm": [
-        225.07107543945312,
-        213.05733489990234,
+        225.06736755371094,
+        215.0553436279297,
         13.5
       ],
-      "volume_mm3": 256475.50503362363,
-      "minimum_bed_edge_clearance_mm": 15.447799682617188,
+      "volume_mm3": 257983.4184370586,
+      "minimum_bed_edge_clearance_mm": 15.447074890136719,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -216,28 +216,28 @@
         "part_family": "frame",
         "section_index": 6
       },
-      "sha256": "5091b5241f83035355730a195a6585badb5f91f9289b239eb8461d9c16647aea",
-      "bytes": 1043984,
-      "triangles": 20878,
+      "sha256": "600ccbbcd7b2d0c869e4d4d89331cb49eec63860668ce9ef0fe7d5ceaf4aef13",
+      "bytes": 820084,
+      "triangles": 16400,
       "bounds_mm": [
         [
-          -126.16516876220703,
-          -126.28807067871094,
+          -125.96509552001953,
+          -126.05706024169922,
           0.0
         ],
         [
-          126.13719177246094,
-          126.21762084960938,
+          126.05709075927734,
+          126.01618194580078,
           13.5
         ]
       ],
       "size_mm": [
-        252.30236053466797,
-        252.5056915283203,
+        252.02218627929688,
+        252.0732421875,
         13.5
       ],
-      "volume_mm3": 361824.23657304264,
-      "minimum_bed_edge_clearance_mm": 1.7119293212890625,
+      "volume_mm3": 296822.48821624805,
+      "minimum_bed_edge_clearance_mm": 1.9429092407226562,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -254,28 +254,28 @@
         "part_family": "frame",
         "section_index": 7
       },
-      "sha256": "59b90f5a0b1ddd214d0360bdbfdf32ce263320e4e7c90e5d80cc899b780d9f35",
-      "bytes": 659384,
-      "triangles": 13186,
+      "sha256": "53f0249dd320c2fe2a457f91dd97f5280910a5a09e4293bab3e27ace2dcdfe08",
+      "bytes": 526684,
+      "triangles": 10532,
       "bounds_mm": [
         [
-          -123.0388412475586,
-          -123.09536743164062,
+          -113.01437377929688,
+          -113.0143051147461,
           0.0
         ],
         [
-          123.07308959960938,
-          123.0831298828125,
+          113.0143814086914,
+          113.01432800292969,
           16.5
         ]
       ],
       "size_mm": [
-        246.11193084716797,
-        246.17849731445312,
+        226.02875518798828,
+        226.02863311767578,
         16.5
       ],
-      "volume_mm3": 227029.64890892722,
-      "minimum_bed_edge_clearance_mm": 4.904632568359375,
+      "volume_mm3": 200762.1326192708,
+      "minimum_bed_edge_clearance_mm": 14.985618591308594,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -292,28 +292,28 @@
         "part_family": "frame",
         "section_index": 8
       },
-      "sha256": "5715a70ddad52487ac365ee69efc8bb3f6e21a8b9ff3f34ed40e8b6ace5d5021",
-      "bytes": 818584,
-      "triangles": 16370,
+      "sha256": "52afae1b9869784b34b0498e51adb04debf2bc972c56af9074c4dd24c73e622f",
+      "bytes": 818684,
+      "triangles": 16372,
       "bounds_mm": [
         [
-          -126.00448608398438,
-          -125.99552917480469,
+          -126.010009765625,
+          -126.05091094970703,
           0.0
         ],
         [
-          125.99886322021484,
-          126.04546356201172,
+          126.05089569091797,
+          125.95893859863281,
           13.5
         ]
       ],
       "size_mm": [
-        252.00334930419922,
-        252.0409927368164,
+        252.06090545654297,
+        252.00984954833984,
         13.5
       ],
-      "volume_mm3": 296788.5956795586,
-      "minimum_bed_edge_clearance_mm": 1.9545364379882812,
+      "volume_mm3": 296788.68919952534,
+      "minimum_bed_edge_clearance_mm": 1.9490890502929688,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -330,28 +330,28 @@
         "part_family": "frame",
         "section_index": 9
       },
-      "sha256": "2fc5f1f31e4f004a97f1edb0cb78d1a28d6a239ef175451caa61c10ebf5c174d",
-      "bytes": 491784,
-      "triangles": 9834,
+      "sha256": "e373e5d1980f6452b1d467f4ccb0d70e1a3dd96ae359cb3b26dd4e9cbdd1ef89",
+      "bytes": 697684,
+      "triangles": 13952,
       "bounds_mm": [
         [
-          -122.0691146850586,
-          -122.11323547363281,
+          -125.2742919921875,
+          -125.2509994506836,
           0.0
         ],
         [
-          122.02738952636719,
-          122.0725326538086,
+          125.2743148803711,
+          125.27429962158203,
           16.5
         ]
       ],
       "size_mm": [
-        244.09650421142578,
-        244.1857681274414,
+        250.5486068725586,
+        250.52529907226562,
         16.5
       ],
-      "volume_mm3": 216341.753215484,
-      "minimum_bed_edge_clearance_mm": 5.8867645263671875,
+      "volume_mm3": 263277.1504256981,
+      "minimum_bed_edge_clearance_mm": 2.7256851196289062,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -368,28 +368,28 @@
         "part_family": "frame",
         "section_index": 10
       },
-      "sha256": "81793bffe2d3361a0e707260ef06bc76791a9654e99591a3348cfa36937b7f2e",
-      "bytes": 645684,
-      "triangles": 12912,
+      "sha256": "ba459ccbd84834144afde28595af4e2c29fa7809291c8391df7ba9d22d9c1af6",
+      "bytes": 634384,
+      "triangles": 12686,
       "bounds_mm": [
         [
-          -125.93081665039062,
-          -125.94486236572266,
+          -125.26097106933594,
+          -125.26097106933594,
           0.0
         ],
         [
-          125.8791732788086,
-          125.9186782836914,
+          125.23762512207031,
+          125.26095581054688,
           16.5
         ]
       ],
       "size_mm": [
-        251.80998992919922,
-        251.86354064941406,
+        250.49859619140625,
+        250.5219268798828,
         16.5
       ],
-      "volume_mm3": 268936.0839684338,
-      "minimum_bed_edge_clearance_mm": 2.0551376342773438,
+      "volume_mm3": 264167.9199439157,
+      "minimum_bed_edge_clearance_mm": 2.7390289306640625,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -406,28 +406,28 @@
         "part_family": "frame",
         "section_index": 11
       },
-      "sha256": "db56bbb668a00e4c65d73c83c6d80f97c93ba39d498bb6ea39df901b1ef83dbc",
-      "bytes": 521284,
-      "triangles": 10424,
+      "sha256": "2546cf00098609b27886a2ca6dd7346c84ce73560a1ec5d6e7c7516b066e7962",
+      "bytes": 680384,
+      "triangles": 13606,
       "bounds_mm": [
         [
-          -116.93592834472656,
-          -88.8802261352539,
+          -125.70221710205078,
+          -125.70215606689453,
           0.0
         ],
         [
-          116.89842224121094,
-          88.88005828857422,
-          13.5
+          125.7021713256836,
+          125.70218658447266,
+          16.5
         ]
       ],
       "size_mm": [
-        233.8343505859375,
-        177.76028442382812,
-        13.5
+        251.40438842773438,
+        251.4043426513672,
+        16.5
       ],
-      "volume_mm3": 233963.74260414546,
-      "minimum_bed_edge_clearance_mm": 11.064071655273438,
+      "volume_mm3": 275353.28879701806,
+      "minimum_bed_edge_clearance_mm": 2.2977828979492188,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -444,28 +444,28 @@
         "part_family": "frame",
         "section_index": 12
       },
-      "sha256": "5742b5ea7e2abcaf057980fcc2d28b4daac93c1e8edfbd9cc40da2645353f8dc",
-      "bytes": 668484,
-      "triangles": 13368,
+      "sha256": "b4155a4f2e120f5874dd48b8fbd673bc909d28b2ebc0b2fa95ecfbe0aef8fe89",
+      "bytes": 629484,
+      "triangles": 12588,
       "bounds_mm": [
         [
-          -125.81204986572266,
-          -125.75919342041016,
+          -125.70632934570312,
+          -125.70632934570312,
           0.0
         ],
         [
-          125.73664093017578,
-          125.81767272949219,
+          125.70631408691406,
+          125.70640563964844,
           16.5
         ]
       ],
       "size_mm": [
-        251.54869079589844,
-        251.57686614990234,
+        251.4126434326172,
+        251.41273498535156,
         16.5
       ],
-      "volume_mm3": 271930.82778191706,
-      "minimum_bed_edge_clearance_mm": 2.1823272705078125,
+      "volume_mm3": 276640.7077674784,
+      "minimum_bed_edge_clearance_mm": 2.2935943603515625,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -482,28 +482,28 @@
         "part_family": "frame",
         "section_index": 13
       },
-      "sha256": "aa5483b741d11853f78460eb5c06f12603e576662a0c6a00c847816efc357976",
-      "bytes": 814784,
-      "triangles": 16294,
+      "sha256": "e1548708c97c3efcd9eb512717eea5362aa8663079e85a6e3e0f1b32f911e373",
+      "bytes": 819684,
+      "triangles": 16392,
       "bounds_mm": [
         [
-          -120.52568817138672,
-          -120.43132019042969,
+          -126.08255767822266,
+          -125.9906234741211,
           0.0
         ],
         [
-          120.43134307861328,
-          120.33792114257812,
+          126.04165649414062,
+          126.08258056640625,
           13.5
         ]
       ],
       "size_mm": [
-        240.95703125,
-        240.7692413330078,
+        252.12421417236328,
+        252.07320404052734,
         13.5
       ],
-      "volume_mm3": 286738.94692592433,
-      "minimum_bed_edge_clearance_mm": 7.474311828613281,
+      "volume_mm3": 296902.60187062674,
+      "minimum_bed_edge_clearance_mm": 1.91741943359375,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -520,28 +520,28 @@
         "part_family": "frame",
         "section_index": 14
       },
-      "sha256": "4a666e2856c50ea397dfb0985e46ef51b12663146aa7a1852c4466004bfe3d02",
-      "bytes": 605784,
-      "triangles": 12114,
+      "sha256": "36f5e269e1ac5fc3fed3946f5f11faec7a2029c99b3ee3e4311e19afab33233a",
+      "bytes": 500784,
+      "triangles": 10014,
       "bounds_mm": [
         [
-          -125.98649597167969,
-          -125.9536361694336,
+          -113.01167297363281,
+          -113.01174926757812,
           0.0
         ],
         [
-          125.95709228515625,
-          125.92084503173828,
+          113.01170349121094,
+          113.01175689697266,
           16.5
         ]
       ],
       "size_mm": [
-        251.94358825683594,
-        251.87448120117188,
+        226.02337646484375,
+        226.02350616455078,
         16.5
       ],
-      "volume_mm3": 249782.80616183183,
-      "minimum_bed_edge_clearance_mm": 2.0135040283203125,
+      "volume_mm3": 201850.58359759874,
+      "minimum_bed_edge_clearance_mm": 14.988243103027344,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -558,28 +558,28 @@
         "part_family": "frame",
         "section_index": 15
       },
-      "sha256": "8de80c24e007ed07adfebf43d9521b01e44c1a44e7277ae568ad18f4c9b27dbe",
-      "bytes": 818584,
-      "triangles": 16370,
+      "sha256": "4d471779f247e83adbd9ee7df482f9021c71582bc2ca6d644abc07aa19b84346",
+      "bytes": 821484,
+      "triangles": 16428,
       "bounds_mm": [
         [
-          -123.38168334960938,
-          -123.94190216064453,
+          -126.07186889648438,
+          -126.03095245361328,
           0.0
         ],
         [
-          123.87154388427734,
-          123.45880126953125,
+          125.97998046875,
+          126.07183837890625,
           13.5
         ]
       ],
       "size_mm": [
-        247.25322723388672,
-        247.40070343017578,
+        252.05184936523438,
+        252.10279083251953,
         13.5
       ],
-      "volume_mm3": 303081.2330786572,
-      "minimum_bed_edge_clearance_mm": 4.058097839355469,
+      "volume_mm3": 296712.6569321103,
+      "minimum_bed_edge_clearance_mm": 1.928131103515625,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -596,28 +596,28 @@
         "part_family": "frame",
         "section_index": 16
       },
-      "sha256": "655b746017aabaca6a5ff5a737772290781a23adb476449e72d6fcf46242e9af",
-      "bytes": 666184,
-      "triangles": 13322,
+      "sha256": "2298eb2a914cc4dfbc077b08f044e7979a67132b2cff2e72f509db73bccbedc3",
+      "bytes": 725184,
+      "triangles": 14502,
       "bounds_mm": [
         [
-          -102.67912292480469,
-          -90.78689575195312,
+          -112.52253723144531,
+          -107.52635955810547,
           0.0
         ],
         [
-          102.63887023925781,
-          90.7640609741211,
+          112.56100463867188,
+          107.52857971191406,
           16.5
         ]
       ],
       "size_mm": [
-        205.3179931640625,
-        181.55095672607422,
+        225.0835418701172,
+        215.05493927001953,
         16.5
       ],
-      "volume_mm3": 217733.98233109983,
-      "minimum_bed_edge_clearance_mm": 25.320877075195312,
+      "volume_mm3": 258052.89701829272,
+      "minimum_bed_edge_clearance_mm": 15.438995361328125,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -634,28 +634,28 @@
         "part_family": "frame",
         "section_index": 17
       },
-      "sha256": "4f4aa316681b85ede08410570ed26ca097eb8258343eae66ebd37e5c6e18b16a",
-      "bytes": 468084,
-      "triangles": 9360,
+      "sha256": "96aa78eba248c7a7bc4f2651cb7c34f2dbdfa4459ca0ded274ea9b29428b5eb2",
+      "bytes": 486584,
+      "triangles": 9730,
       "bounds_mm": [
         [
-          -112.62539672851562,
-          -112.67449188232422,
+          -112.92213439941406,
+          -112.92198944091797,
           0.0
         ],
         [
-          112.63658142089844,
-          112.6950454711914,
+          112.92211151123047,
+          112.92196655273438,
           13.5
         ]
       ],
       "size_mm": [
-        225.26197814941406,
-        225.36953735351562,
+        225.84424591064453,
+        225.84395599365234,
         13.5
       ],
-      "volume_mm3": 195999.67755750575,
-      "minimum_bed_edge_clearance_mm": 15.304954528808594,
+      "volume_mm3": 189056.91638364558,
+      "minimum_bed_edge_clearance_mm": 15.077865600585938,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -672,28 +672,28 @@
         "part_family": "frame",
         "section_index": 18
       },
-      "sha256": "849de0edbf29b7f3ae134d12a32ca2bb1b06002ef795d3fa706714b2be9d8cc8",
-      "bytes": 782884,
-      "triangles": 15656,
+      "sha256": "e4c84385eb4bd810ea1fcf3505a224e3eae1955413dad6dd4bd215c006d6f059",
+      "bytes": 753184,
+      "triangles": 15062,
       "bounds_mm": [
         [
-          -117.72755432128906,
-          -111.38243865966797,
+          -107.53276062011719,
+          -112.55327606201172,
           0.0
         ],
         [
-          117.68997955322266,
-          111.34261322021484,
+          107.53053283691406,
+          112.51480102539062,
           16.5
         ]
       ],
       "size_mm": [
-        235.41753387451172,
-        222.7250518798828,
+        215.06329345703125,
+        225.06807708740234,
         16.5
       ],
-      "volume_mm3": 274109.94247102266,
-      "minimum_bed_edge_clearance_mm": 10.272445678710938,
+      "volume_mm3": 257783.35285441365,
+      "minimum_bed_edge_clearance_mm": 15.446723937988281,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -710,28 +710,28 @@
         "part_family": "frame",
         "section_index": 19
       },
-      "sha256": "535987584957cd49fd4ac8b7af00bef8499749ed63638a5219c9b267e3e09347",
-      "bytes": 811084,
-      "triangles": 16220,
+      "sha256": "e2384f16630455371e3b676fbc4469bc9a746c68a2aca8019fae8f844135f762",
+      "bytes": 692884,
+      "triangles": 13856,
       "bounds_mm": [
         [
-          -123.9958267211914,
-          -123.91485595703125,
+          -114.48016357421875,
+          -114.48015594482422,
           0.0
         ],
         [
-          123.3738784790039,
-          123.73663330078125,
+          114.48016357421875,
+          114.48018646240234,
           13.5
         ]
       ],
       "size_mm": [
-        247.3697052001953,
-        247.6514892578125,
+        228.9603271484375,
+        228.96034240722656,
         13.5
       ],
-      "volume_mm3": 302805.0810002813,
-      "minimum_bed_edge_clearance_mm": 4.004173278808594,
+      "volume_mm3": 250538.7315840576,
+      "minimum_bed_edge_clearance_mm": 13.519813537597656,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -748,28 +748,28 @@
         "part_family": "frame",
         "section_index": 20
       },
-      "sha256": "94305e03ec2021eb2e9a1b3c9d3332608a58a328f54624d661d5d32474330859",
-      "bytes": 608084,
-      "triangles": 12160,
+      "sha256": "8921ecc25ee1016c33770fa6340119d20743afd1915e57f5de30e96d57ec1fa2",
+      "bytes": 679984,
+      "triangles": 13598,
       "bounds_mm": [
         [
-          -108.82225036621094,
-          -108.86751556396484,
+          -114.35037994384766,
+          -114.3503646850586,
           0.0
         ],
         [
-          108.79830169677734,
-          108.77828216552734,
+          114.3503646850586,
+          114.3503646850586,
           13.5
         ]
       ],
       "size_mm": [
-        217.62055206298828,
-        217.6457977294922,
+        228.70074462890625,
+        228.7007293701172,
         13.5
       ],
-      "volume_mm3": 221405.45983559033,
-      "minimum_bed_edge_clearance_mm": 19.132484436035156,
+      "volume_mm3": 249881.01526173574,
+      "minimum_bed_edge_clearance_mm": 13.649620056152344,
       "connected_solids": 1,
       "watertight": true,
       "consistent_winding": true,
@@ -786,7 +786,7 @@
         "part_family": "M",
         "section_index": 1
       },
-      "sha256": "a1ac65ecc9efa0f9ff019774c3ad4017ffe037d7d037be126f27a2bc1db85493",
+      "sha256": "d4ff1b6589f972561780ea79318af23d533aabb5d8b138ebad9db3064d4674b3",
       "bytes": 154484,
       "triangles": 3088,
       "bounds_mm": [
@@ -824,7 +824,7 @@
         "part_family": "M",
         "section_index": 2
       },
-      "sha256": "7a6e1de622362aca089b59b69cf5547d754e223fa4b2c373c951e81dbda6c873",
+      "sha256": "e7c590a9adcab8518082fae46f5145bc075a61c942395c93a2ff6891dbd34c2b",
       "bytes": 123484,
       "triangles": 2468,
       "bounds_mm": [
@@ -844,7 +844,7 @@
         158.2783432006836,
         10.5
       ],
-      "volume_mm3": 117425.91675249586,
+      "volume_mm3": 117425.91675249588,
       "minimum_bed_edge_clearance_mm": 48.70599365234375,
       "connected_solids": 1,
       "watertight": true,
@@ -862,7 +862,7 @@
         "part_family": "M",
         "section_index": 3
       },
-      "sha256": "9fb787a78c2f6db4d92147d595a43cdb9c5698412be67a134be143f4c93611b8",
+      "sha256": "6e752889d5c36018f10848f98ad6a7da66fa76758a5ce307f49e16e4908cbfa0",
       "bytes": 164884,
       "triangles": 3296,
       "bounds_mm": [
@@ -882,7 +882,7 @@
         250.65533447265625,
         10.5
       ],
-      "volume_mm3": 147660.93676689474,
+      "volume_mm3": 147660.93674337078,
       "minimum_bed_edge_clearance_mm": 2.6314926147460938,
       "connected_solids": 1,
       "watertight": true,
@@ -900,7 +900,7 @@
         "part_family": "M",
         "section_index": 4
       },
-      "sha256": "cc59e5104d99da8c236585060a44cc726058251718bad4c04c3b219a8d9e940a",
+      "sha256": "906f2a3adc9572cafa822457686871e0ca0bbafb64f1cf100f2ffce988084d49",
       "bytes": 125284,
       "triangles": 2504,
       "bounds_mm": [
@@ -920,7 +920,7 @@
         238.61920928955078,
         10.5
       ],
-      "volume_mm3": 215579.46464738602,
+      "volume_mm3": 215579.46464158478,
       "minimum_bed_edge_clearance_mm": 8.671470642089844,
       "connected_solids": 1,
       "watertight": true,
@@ -938,7 +938,7 @@
         "part_family": "M",
         "section_index": 5
       },
-      "sha256": "2e0a3fc707a95540663baee8e7a3b5230a8d88326c17dc83b869b07cda1088a3",
+      "sha256": "4146ebcbb0fc15442e2c768ac05d2d7d23c34e2143ed9269c83e8f9373faed34",
       "bytes": 82484,
       "triangles": 1648,
       "bounds_mm": [
@@ -958,7 +958,7 @@
         172.32640838623047,
         10.5
       ],
-      "volume_mm3": 120483.46613056566,
+      "volume_mm3": 120483.46613056568,
       "minimum_bed_edge_clearance_mm": 41.82392883300781,
       "connected_solids": 1,
       "watertight": true,
@@ -976,7 +976,7 @@
         "part_family": "M",
         "section_index": 6
       },
-      "sha256": "9a46f1cc005aad46459b600f3cae2a6d537151974b589e24e5660872369a1584",
+      "sha256": "54df16a3f4a02897ce9c6dd52f53c39f98edb85a53e6680d068181bdfd70fe2a",
       "bytes": 123484,
       "triangles": 2468,
       "bounds_mm": [
@@ -996,7 +996,7 @@
         207.01126861572266,
         10.5
       ],
-      "volume_mm3": 140970.77439366182,
+      "volume_mm3": 140970.7743867632,
       "minimum_bed_edge_clearance_mm": 24.485206604003906,
       "connected_solids": 1,
       "watertight": true,
@@ -1484,5 +1484,6 @@
       "on_bed": true,
       "fits_256_mm_bed_with_1_5_mm_edge_allowance": true
     }
-  ]
+  ],
+  "revision": "Mirrored short seams; historical flat M has revised rear attachments. Production hammered M is in Dara.3mf."
 }

@@ -23,7 +23,9 @@ def sha(path):
 
 
 def audit():
-    report=json.loads((PACKAGE/'cover-crown-validation.json').read_text())
+    report=json.loads((PACKAGE/'mirrored-joints-validation.json').read_text())
+    covers=json.loads((PACKAGE/'cover-crown-validation.json').read_text())
+    assert covers['project_sha256']==report['baseline_sha256']
     targets=[ROOT/'Dara.3mf',PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf']
     for path in targets:
         assert sha(path)==report['project_sha256'],f'{path.name}: release hash mismatch; retrieve LFS files or review local edits.'
@@ -58,15 +60,24 @@ def audit():
                 for component in model.iter('{'+C+'}component'):
                     assert component.get('{'+P+'}path').lstrip('/') in names
         assert len(ids)==len(set(ids)),'Duplicate resource IDs'
-        for row in report['mesh_checks']:
+        for row in covers['mesh_checks']:
             assert row['underside_max_distance_mm']<.0002
             assert row['footprint_max_distance_mm']<.0001
             assert row['sampled_top_error_mm']<.00101
-        assert sum(r['after']['interior_joins'] for r in report['surface_path_checks'])==3
-        assert all(r['middle_half_span_joins']==0 for r in report['surface_path_checks'])
+        assert sum(r['after']['interior_joins'] for r in covers['surface_path_checks'])==3
+        assert all(r['middle_half_span_joins']==0 for r in covers['surface_path_checks'])
+        assert next(r for r in report['unchanged_native_plates'] if r['plate']==31)['gcode_sha256']==covers['changed_plates'][0]['gcode_sha256']
+        assert report['seam_count']==32 and report['geometry_checks']['joint_tool_unchanged']
+        assert all(r['front_geometry_error_mm']<.00002 for r in report['mesh_checks'])
+        assert max(r['max_vertex_error_mm'] for r in report['native_roundtrip_checks'])<.0002
+        assert report['perimeter_review']['passed']
+    manifest=json.loads((ROOT/'working/stl/Dara-Photo-Frame-A1-Jointed/manifest.json').read_text())
+    assert sha(ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad')==manifest['source_sha256']==report['source_cad_sha256']
+    for part in manifest['parts']:
+        assert sha(ROOT/'working/stl/Dara-Photo-Frame-A1-Jointed'/part['file'])==part['sha256'],part['file']
     print('Both production 3MFs match the release. All 32 native slices, checksums and package references pass.')
-    print('Five rebuilt cover crowns: repeated middle-face junction tracks removed; three isolated end transitions remain.')
-    print('Resolution is now 0.05 mm globally; the other 31 saved slices are preserved. Physical print validation remains pending.')
+    print('20 frame sections, 32 mirrored seams (67.3-75.1 mm); matching M attachments, CAD and STL hashes pass.')
+    print('23 plates regenerated; nine saved slices and the continuous cover crowns preserved. Physical fit validation remains pending.')
 
 
 if __name__=='__main__':audit()

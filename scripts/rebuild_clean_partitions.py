@@ -44,7 +44,7 @@ def partition_shapes(cad):
         for b in domains[i+1:]:assert a.intersection(b).area<.001
     overlap=max(a.intersection(b).intersection(whole).area for i,a in enumerate(masks) for b in masks[i+1:])
     assert overlap<1e-7,overlap
-    return masks,domains,dict(parts=20,joints=31,continuous_area_mm2=whole.area,
+    return masks,domains,dict(parts=len(parts),joints=len(joints),continuous_area_mm2=whole.area,
         partition_coverage_error_mm2=union_all(parts).symmetric_difference(whole).area,
         seam_centres_angles_and_keys_unchanged=True,visible_seam_gap_mm=.075,
         maximum_mask_overlap_inside_frame_mm2=overlap)

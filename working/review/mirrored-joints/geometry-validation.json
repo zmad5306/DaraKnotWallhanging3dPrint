@@ -1,0 +1,617 @@
+{
+  "source_sha256": "88f187317f08aea5b37040d3bf9d0f3f382d070815178ce54de2255c4f4e86bf",
+  "frame_pairs": [
+    {
+      "a": "F1",
+      "b": "F3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F1",
+      "b": "F7",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F2",
+      "b": "F4",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F2",
+      "b": "F5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F2",
+      "b": "F7",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F3",
+      "b": "F6",
+      "intersection_mm3": 5.4420954710584886e-08
+    },
+    {
+      "a": "F3",
+      "b": "F7",
+      "intersection_mm3": 1.7911984459211833e-06
+    },
+    {
+      "a": "F3",
+      "b": "F9",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F4",
+      "b": "F5",
+      "intersection_mm3": 7.378266229374179e-06
+    },
+    {
+      "a": "F4",
+      "b": "F7",
+      "intersection_mm3": 4.1767703847065045e-09
+    },
+    {
+      "a": "F4",
+      "b": "F10",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F5",
+      "b": "F8",
+      "intersection_mm3": 1.24312796407119e-05
+    },
+    {
+      "a": "F5",
+      "b": "F10",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F6",
+      "b": "F9",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F7",
+      "b": "F9",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F7",
+      "b": "F10",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F8",
+      "b": "F10",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F9",
+      "b": "F11",
+      "intersection_mm3": 1.962511161875501e-06
+    },
+    {
+      "a": "F10",
+      "b": "F12",
+      "intersection_mm3": 3.494644092904067e-07
+    },
+    {
+      "a": "F11",
+      "b": "F13",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F11",
+      "b": "F14",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F11",
+      "b": "F16",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F12",
+      "b": "F14",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F12",
+      "b": "F15",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F12",
+      "b": "F17",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F12",
+      "b": "F18",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F13",
+      "b": "F16",
+      "intersection_mm3": 6.405505434947765e-05
+    },
+    {
+      "a": "F14",
+      "b": "F16",
+      "intersection_mm3": 0.0001440225240233472
+    },
+    {
+      "a": "F14",
+      "b": "F17",
+      "intersection_mm3": 4.368377494781456e-06
+    },
+    {
+      "a": "F14",
+      "b": "F19",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F14",
+      "b": "F20",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F15",
+      "b": "F18",
+      "intersection_mm3": 5.963945088843427e-05
+    },
+    {
+      "a": "F16",
+      "b": "F19",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F17",
+      "b": "F18",
+      "intersection_mm3": 6.619263190679639e-05
+    },
+    {
+      "a": "F17",
+      "b": "F20",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "F18",
+      "b": "F20",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "frame_M_pairs": [
+    {
+      "M": "M5",
+      "frame": "F11",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M5",
+      "frame": "F12",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M5",
+      "frame": "F14",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M5",
+      "frame": "F17",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M2",
+      "frame": "F4",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M2",
+      "frame": "F7",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M2",
+      "frame": "F9",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M2",
+      "frame": "F10",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M2",
+      "frame": "F11",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M2",
+      "frame": "F12",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F4",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F7",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F8",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F10",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F12",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M3",
+      "frame": "F15",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M1",
+      "frame": "F3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M1",
+      "frame": "F6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M1",
+      "frame": "F7",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M1",
+      "frame": "F9",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M1",
+      "frame": "F11",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M1",
+      "frame": "F13",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M4",
+      "frame": "F11",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M4",
+      "frame": "F13",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M4",
+      "frame": "F16",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M6",
+      "frame": "F12",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M6",
+      "frame": "F15",
+      "intersection_mm3": 0.0
+    },
+    {
+      "M": "M6",
+      "frame": "F18",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "mount_alignment": [
+    {
+      "kind": "screw",
+      "index": 1,
+      "frame": "F7",
+      "M": "M1",
+      "xy": [
+        -76.0,
+        162.0
+      ],
+      "minimum_hole_radius_mm": 1.5855776195391884
+    },
+    {
+      "kind": "screw",
+      "index": 2,
+      "frame": "F9",
+      "M": "M1",
+      "xy": [
+        -262.0,
+        71.0
+      ],
+      "minimum_hole_radius_mm": 1.585573324125948
+    },
+    {
+      "kind": "screw",
+      "index": 3,
+      "frame": "F9",
+      "M": "M2",
+      "xy": [
+        -28.0,
+        76.0
+      ],
+      "minimum_hole_radius_mm": 1.5855843819861373
+    },
+    {
+      "kind": "screw",
+      "index": 4,
+      "frame": "F5",
+      "M": "M3",
+      "xy": [
+        213.0,
+        148.0
+      ],
+      "minimum_hole_radius_mm": 1.5855753801877683
+    },
+    {
+      "kind": "screw",
+      "index": 5,
+      "frame": "F10",
+      "M": "M3",
+      "xy": [
+        282.0,
+        29.5
+      ],
+      "minimum_hole_radius_mm": 1.5855736714466224
+    },
+    {
+      "kind": "screw",
+      "index": 6,
+      "frame": "F11",
+      "M": "M1",
+      "xy": [
+        -261.0,
+        -11.0
+      ],
+      "minimum_hole_radius_mm": 1.585574577259396
+    },
+    {
+      "kind": "screw",
+      "index": 7,
+      "frame": "F16",
+      "M": "M4",
+      "xy": [
+        -213.0,
+        -170.0
+      ],
+      "minimum_hole_radius_mm": 1.585575051150882
+    },
+    {
+      "kind": "screw",
+      "index": 8,
+      "frame": "F11",
+      "M": "M5",
+      "xy": [
+        -29.0,
+        -62.0
+      ],
+      "minimum_hole_radius_mm": 1.5855851768020202
+    },
+    {
+      "kind": "screw",
+      "index": 9,
+      "frame": "F12",
+      "M": "M3",
+      "xy": [
+        261.0,
+        -25.0
+      ],
+      "minimum_hole_radius_mm": 1.5855745505258223
+    },
+    {
+      "kind": "screw",
+      "index": 10,
+      "frame": "F18",
+      "M": "M6",
+      "xy": [
+        213.0,
+        -148.0
+      ],
+      "minimum_hole_radius_mm": 1.5855778207862778
+    },
+    {
+      "kind": "locator",
+      "index": 1,
+      "frame": "F7",
+      "M": "M2",
+      "xy": [
+        -23.0,
+        141.0
+      ],
+      "minimum_hole_radius_mm": 2.0974625835982277
+    },
+    {
+      "kind": "locator",
+      "index": 2,
+      "frame": "F9",
+      "M": "M1",
+      "xy": [
+        -219.0,
+        74.0
+      ],
+      "minimum_hole_radius_mm": 2.0999957985771918
+    },
+    {
+      "kind": "locator",
+      "index": 3,
+      "frame": "F4",
+      "M": "M2",
+      "xy": [
+        33.0,
+        127.0
+      ],
+      "minimum_hole_radius_mm": 2.097465106047859
+    },
+    {
+      "kind": "locator",
+      "index": 4,
+      "frame": "F9",
+      "M": "M2",
+      "xy": [
+        -34.0,
+        41.0
+      ],
+      "minimum_hole_radius_mm": 2.0999960293082687
+    },
+    {
+      "kind": "locator",
+      "index": 5,
+      "frame": "F4",
+      "M": "M3",
+      "xy": [
+        71.0,
+        165.0
+      ],
+      "minimum_hole_radius_mm": 2.0974570135786963
+    },
+    {
+      "kind": "locator",
+      "index": 6,
+      "frame": "F10",
+      "M": "M3",
+      "xy": [
+        267.0,
+        25.0
+      ],
+      "minimum_hole_radius_mm": 2.099995745343389
+    },
+    {
+      "kind": "locator",
+      "index": 7,
+      "frame": "F9",
+      "M": "M1",
+      "xy": [
+        -219.0,
+        39.0
+      ],
+      "minimum_hole_radius_mm": 2.097460070419975
+    },
+    {
+      "kind": "locator",
+      "index": 8,
+      "frame": "F16",
+      "M": "M4",
+      "xy": [
+        -219.0,
+        -157.0
+      ],
+      "minimum_hole_radius_mm": 2.0999923265838345
+    },
+    {
+      "kind": "locator",
+      "index": 9,
+      "frame": "F11",
+      "M": "M5",
+      "xy": [
+        -35.0,
+        -40.0
+      ],
+      "minimum_hole_radius_mm": 2.097465601126354
+    },
+    {
+      "kind": "locator",
+      "index": 10,
+      "frame": "F14",
+      "M": "M5",
+      "xy": [
+        -23.0,
+        -174.0
+      ],
+      "minimum_hole_radius_mm": 2.0999981537001315
+    },
+    {
+      "kind": "locator",
+      "index": 11,
+      "frame": "F12",
+      "M": "M3",
+      "xy": [
+        266.0,
+        -40.0
+      ],
+      "minimum_hole_radius_mm": 2.0974579366515163
+    },
+    {
+      "kind": "locator",
+      "index": 12,
+      "frame": "F18",
+      "M": "M6",
+      "xy": [
+        209.0,
+        -134.5
+      ],
+      "minimum_hole_radius_mm": 2.09999247399043
+    }
+  ],
+  "mirrored_seam_axis_error_mm": [
+    9.701635545917738e-14,
+    2.5659887502530867e-14
+  ],
+  "clipped_endpoint_reflection_error_mm": [
+    0.5177134588848911,
+    0.5130092813677788
+  ],
+  "original_artwork_unchanged": true,
+  "joint_tool_unchanged": true,
+  "visible_ribbon_missing_outside_seams_mm2": 0.0,
+  "visible_ribbon_excess_outside_seams_mm2": 0.0,
+  "frame_assembly_order": [
+    1,
+    2,
+    6,
+    8,
+    13,
+    15,
+    19,
+    20,
+    11,
+    12,
+    9,
+    16,
+    10,
+    18,
+    3,
+    14,
+    5,
+    7,
+    17,
+    4
+  ],
+  "joint_count": 32,
+  "seam_length_range_mm": [
+    67.29931571026324,
+    75.0546874844838
+  ],
+  "minimum_seam_spacing_mm": 34.77806259202944,
+  "physical_fit_test_pending": true
+}

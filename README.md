@@ -4,11 +4,13 @@
 
 The copper face planes run along the A1 bed's **Y travel**, with a 55-degree lean across X, saved tree supports and conservative motion limits. Keep the saved scale, orientations and per-object overrides. Filament slots are **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**.
 
-**Cover rebuild, 2026-10-15:** Plate 31 now has one continuous circular-section crown per cover. Native slicing removes the repeated junction tracks across all five faces: interior command junctions fall from 556 to three isolated end transitions. The mating surfaces and footprints are preserved within 0.0002 mm; the faces are fuller by up to 1.38 mm. Physical printing of this revision remains pending. [Before/after paths](working/review/continuous-covers/before-after-paths.png) · [Release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
+**Mirrored seam layout, 2026-10-15:** The frame now has **32 short seams across the same 20 sections**, arranged in a repeated, mirrored pattern. Every seam is **67.3-75.1 mm** long; the two troublesome 129/181 mm cuts are gone. The tested 18 mm keyed laps, original artwork and overall size are retained. Two M screws, one locator and five photo-tab screws move clear of the new laps, with matching holes in the production hammered M. Use this revision's F1-F20 and M1/M3/M6 together. [Seam comparison](working/review/mirrored-joints/seam-comparison.png) · [Current release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/mirrored-joints-validation.json) · [Updated printable map](output/pdf/Dara-Part-and-Plate-Map.pdf).
 
-All 32 plates: **4,103.18 g / 262 h 42 min**. Assembly excluding optional plates 30 and 32: **4,043.49 g / 258 h 47 min**. Copper plates 21–26 and 31: **1,049.85 g / 94 h 14 min**. Cover plate 31: **18.52 g / 2 h 05 min**. Estimates include supports and purge.
+**Retained cover rebuild:** Plate 31 has one continuous circular-section crown per cover. Native slicing removes the repeated junction tracks across all five faces: interior command junctions fall from 556 to three isolated end transitions. The mating surfaces and footprints are preserved within 0.0002 mm; the faces are fuller by up to 1.38 mm. These covers and their saved slice are unchanged by the seam revision. [Before/after paths](working/review/continuous-covers/before-after-paths.png) · [Earlier cover validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
 
-Classic walls and arc fitting remain enabled. Resolution is now **0.05 mm** so the shallow circular faces remain continuous arcs in the native slice. This is a global Bambu setting. The other 31 saved slices and all other meshes are unchanged; re-slicing those plates uses the new resolution.
+All 32 plates: **4,090.55 g / 261 h 34 min**. Assembly excluding optional plates 30 and 32: **4,030.86 g / 257 h 39 min**. Copper plates 21–26 and 31: **1,049.74 g / 94 h 15 min**. Cover plate 31: **18.52 g / 2 h 05 min**. Estimates include supports and purge.
+
+Classic walls and arc fitting remain enabled at **0.05 mm** resolution. Plates 1-20, 21, 23 and 26 have fresh native slices. The other nine saved slices and their meshes are preserved. Native geometry, assembly interference, matching mounts, material layers, bed clearance and decorative-face support clearance pass; physical fit and finish still need a print.
 
 The final editable meshes, filament assignments, support painting and native slices are stored in the 3MF. Standalone experiments and the generation/migration history remain on [codex/hammered-m-production](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production). This release does not depend on those test files to open, print or audit. After cloning, run `git lfs pull`, then `python scripts/audit_dara_release.py`.
 
@@ -35,7 +37,7 @@ The older hardware and plain lap coupons were removed; their standalone STL file
 crossings restored from the earlier texture, and its color region follows the
 surface relief. The
 [printable part and plate map](output/pdf/Dara-Part-and-Plate-Map.pdf) identifies every
-original frame/backer/hardware part. Its M cuts and plate 31 are superseded; use the current printing guide for the hammered M and bands. The project
+current frame/backer/hardware part and the actual hammered M cuts, and lists the five covers on plate 31. The project
 uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
 The saved AMS palette is **1 white / Generic PLA, 2 wood tan / Generic PLA,
 3 copper / Generic PLA Silk, 4 Azurite blue / Generic PLA**. Frame sections

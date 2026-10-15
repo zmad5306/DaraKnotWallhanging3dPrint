@@ -1,0 +1,3270 @@
+{
+  "project_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "baseline_sha256": "c6f524688e1e02a7aed4e508eceadbfc61697b85582a188f645f75d0af2c1f86",
+  "source_cad_sha256": "88f187317f08aea5b37040d3bf9d0f3f382d070815178ce54de2255c4f4e86bf",
+  "plates": 32,
+  "objects": 47,
+  "instances": 78,
+  "changed_plates": [
+    {
+      "extrusion_moves_checked": 261404,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1751,
+        "Brim": 332,
+        "Outer wall": 8135,
+        "Inner wall": 9600,
+        "Gap infill": 1893,
+        "Bottom surface": 926,
+        "Internal solid infill": 15714,
+        "Sparse infill": 204253,
+        "Support transition": 434,
+        "Support interface": 687,
+        "Overhang wall": 20,
+        "Bridge": 5550,
+        "Floating vertical shell": 297,
+        "Top surface": 8328
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.672,
+          6.7929323069578205
+        ],
+        [
+          243.323,
+          243.332
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.422,
+          6.5429323069578205
+        ],
+        [
+          243.573,
+          243.582
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.5429323069578205,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 1,
+      "gcode_sha256": "8d01a19aefba3ba88bb4c0c82d710c8921e4d3386d5e018700c4d1a52d5969a4",
+      "weight_g": 123.88,
+      "seconds": 24470
+    },
+    {
+      "extrusion_moves_checked": 257664,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1743,
+        "Brim": 317,
+        "Outer wall": 8138,
+        "Inner wall": 9794,
+        "Gap infill": 1838,
+        "Bottom surface": 935,
+        "Internal solid infill": 15703,
+        "Sparse infill": 200912,
+        "Support transition": 450,
+        "Support interface": 693,
+        "Overhang wall": 20,
+        "Bridge": 5019,
+        "Floating vertical shell": 292,
+        "Top surface": 8326
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.809,
+          6.7929323069578205
+        ],
+        [
+          243.186,
+          243.198
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.559,
+          6.5429323069578205
+        ],
+        [
+          243.436,
+          243.448
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.5429323069578205,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 2,
+      "gcode_sha256": "650dc0e02a2145df3b5d74a9379d9badca4e195bdb9300550fe943da7fd79fd2",
+      "weight_g": 123.73,
+      "seconds": 24408
+    },
+    {
+      "extrusion_moves_checked": 305466,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 5896,
+        "Brim": 89,
+        "Outer wall": 10482,
+        "Inner wall": 15714,
+        "Gap infill": 1469,
+        "Bottom surface": 1588,
+        "Internal solid infill": 26116,
+        "Sparse infill": 218710,
+        "Support transition": 1369,
+        "Support interface": 2396,
+        "Overhang wall": 327,
+        "Bridge": 7587,
+        "Floating vertical shell": 525,
+        "Top surface": 9714
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          20.725,
+          15.718
+        ],
+        [
+          237.73456945888316,
+          241.395
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          20.515,
+          15.508
+        ],
+        [
+          237.98456945888316,
+          241.645
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 14.35499999999999,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 3,
+      "gcode_sha256": "3ea8587fe536be5324383c9ed23440dae8e6a31222c03eec32fb16e9ecc83d79",
+      "weight_g": 143.33,
+      "seconds": 30638
+    },
+    {
+      "extrusion_moves_checked": 209590,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 5880,
+        "Brim": 58,
+        "Outer wall": 7549,
+        "Inner wall": 10630,
+        "Gap infill": 1223,
+        "Bottom surface": 965,
+        "Internal solid infill": 15776,
+        "Sparse infill": 148389,
+        "Support transition": 788,
+        "Support interface": 1429,
+        "Overhang wall": 386,
+        "Bridge": 7230,
+        "Floating vertical shell": 190,
+        "Top surface": 5534
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          15.518,
+          15.519
+        ],
+        [
+          240.518,
+          240.518
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          15.308,
+          15.309
+        ],
+        [
+          240.728,
+          240.728
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 15.271999999999991,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 4,
+      "gcode_sha256": "26b790e37809b44b1a41c3f0d2eb761a06ad11848283b3b0e6dfa4e13223c277",
+      "weight_g": 106.64,
+      "seconds": 22310
+    },
+    {
+      "extrusion_moves_checked": 308009,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 5958,
+        "Brim": 86,
+        "Outer wall": 10279,
+        "Inner wall": 15688,
+        "Gap infill": 2397,
+        "Bottom surface": 1615,
+        "Internal solid infill": 26275,
+        "Sparse infill": 218985,
+        "Support transition": 1380,
+        "Support interface": 2424,
+        "Overhang wall": 333,
+        "Bridge": 8738,
+        "Floating vertical shell": 642,
+        "Top surface": 9725
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          14.611,
+          6.7929323069578205
+        ],
+        [
+          240.275,
+          235.274
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          14.361,
+          6.5429323069578205
+        ],
+        [
+          240.485,
+          235.484
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.5429323069578205,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 5,
+      "gcode_sha256": "8c07be471f0ef69a57ebf1acbdb6374d56efe5992e5f2658125ab87b396396a5",
+      "weight_g": 143.36,
+      "seconds": 30580
+    },
+    {
+      "extrusion_moves_checked": 315231,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 2254,
+        "Brim": 372,
+        "Outer wall": 9649,
+        "Inner wall": 11593,
+        "Gap infill": 3774,
+        "Bottom surface": 1513,
+        "Internal solid infill": 19238,
+        "Sparse infill": 245606,
+        "Support transition": 445,
+        "Support interface": 893,
+        "Overhang wall": 20,
+        "Bridge": 6593,
+        "Floating vertical shell": 357,
+        "Top surface": 9440
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.212,
+          1.108
+        ],
+        [
+          254.88,
+          254.84
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.962,
+          0.8580000000000001
+        ],
+        [
+          255.13,
+          255.09
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8580000000000001,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 6,
+      "gcode_sha256": "0969e38b4b3b9c9afc8b1f3cbb9565710fff3ba3ccdc689ffa1cac2cfba6fb64",
+      "weight_g": 145.99,
+      "seconds": 29074
+    },
+    {
+      "extrusion_moves_checked": 212615,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 5062,
+        "Brim": 126,
+        "Outer wall": 7589,
+        "Inner wall": 10123,
+        "Gap infill": 1674,
+        "Bottom surface": 989,
+        "Internal solid infill": 15374,
+        "Sparse infill": 156574,
+        "Support transition": 642,
+        "Support interface": 1137,
+        "Overhang wall": 306,
+        "Bridge": 4450,
+        "Floating vertical shell": 249,
+        "Top surface": 4757
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.813430541116866,
+          6.79293230695782
+        ],
+        [
+          240.698,
+          240.698
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          6.563430541116866,
+          6.54293230695782
+        ],
+        [
+          240.90800000000002,
+          240.90800000000002
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.54293230695782,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 7,
+      "gcode_sha256": "d5dd4a872dd8b40c4544d6f0d6e2773b7f97038f7b1d1e2a1f1fe49c2f3de44d",
+      "weight_g": 110.08,
+      "seconds": 22222
+    },
+    {
+      "extrusion_moves_checked": 313003,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1957,
+        "Brim": 349,
+        "Outer wall": 9764,
+        "Inner wall": 11891,
+        "Gap infill": 3849,
+        "Bottom surface": 1511,
+        "Internal solid infill": 19101,
+        "Sparse infill": 243471,
+        "Support transition": 457,
+        "Support interface": 890,
+        "Overhang wall": 20,
+        "Bridge": 6484,
+        "Floating vertical shell": 372,
+        "Top surface": 9403
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.164,
+          1.124
+        ],
+        [
+          254.886,
+          254.784
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.9139999999999999,
+          0.8740000000000001
+        ],
+        [
+          255.136,
+          255.034
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8640000000000043,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 8,
+      "gcode_sha256": "759964a5b0bb480864d476decdcca326a6a92f25421444d42da0528e6317bdb3",
+      "weight_g": 145.88,
+      "seconds": 28962
+    },
+    {
+      "extrusion_moves_checked": 286838,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 3938,
+        "Brim": 211,
+        "Outer wall": 9721,
+        "Inner wall": 13449,
+        "Bottom surface": 847,
+        "Internal solid infill": 18306,
+        "Gap infill": 6953,
+        "Sparse infill": 211960,
+        "Floating vertical shell": 507,
+        "Support transition": 555,
+        "Support interface": 957,
+        "Overhang wall": 240,
+        "Bridge": 6628,
+        "Top surface": 9003
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          3.006,
+          3.058
+        ],
+        [
+          254.11,
+          254.096
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          2.796,
+          2.848
+        ],
+        [
+          254.36,
+          254.346
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.6399999999999864,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 9,
+      "gcode_sha256": "6bded996f922f529d5c6f2c02ad0e0487ad4682ae6b9619a3288a9a345e47ed8",
+      "weight_g": 135.19,
+      "seconds": 27889
+    },
+    {
+      "extrusion_moves_checked": 281472,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 3482,
+        "Brim": 208,
+        "Outer wall": 9355,
+        "Inner wall": 12222,
+        "Bottom surface": 773,
+        "Internal solid infill": 17788,
+        "Gap infill": 6341,
+        "Sparse infill": 210343,
+        "Support transition": 546,
+        "Support interface": 895,
+        "Overhang wall": 224,
+        "Bridge": 5616,
+        "Floating vertical shell": 392,
+        "Top surface": 9724
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.926,
+          1.908
+        ],
+        [
+          252.928,
+          252.981
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.676,
+          1.658
+        ],
+        [
+          253.138,
+          253.191
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.658,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 10,
+      "gcode_sha256": "3e0e41ca5549ea120075195366ec2f91cb786ed31850167237d9f29edaff1923",
+      "weight_g": 133.6,
+      "seconds": 26955
+    },
+    {
+      "extrusion_moves_checked": 301764,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 2615,
+        "Brim": 263,
+        "Outer wall": 10044,
+        "Inner wall": 13987,
+        "Gap infill": 7393,
+        "Bottom surface": 990,
+        "Internal solid infill": 18172,
+        "Sparse infill": 227019,
+        "Support transition": 366,
+        "Support interface": 662,
+        "Overhang wall": 140,
+        "Bridge": 5869,
+        "Floating vertical shell": 587,
+        "Top surface": 10094
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.471,
+          2.577
+        ],
+        [
+          254.515,
+          254.538
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.221,
+          2.367
+        ],
+        [
+          254.765,
+          254.788
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.211999999999989,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 11,
+      "gcode_sha256": "ee3aec659eecad6409efc14478a9b1d578cb0a39c16bbfcbef1db5d61529a4bb",
+      "weight_g": 140.21,
+      "seconds": 28818
+    },
+    {
+      "extrusion_moves_checked": 288438,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 2280,
+        "Brim": 269,
+        "Outer wall": 9476,
+        "Inner wall": 12470,
+        "Gap infill": 7989,
+        "Bottom surface": 939,
+        "Internal solid infill": 17521,
+        "Sparse infill": 216987,
+        "Support transition": 317,
+        "Support interface": 609,
+        "Overhang wall": 119,
+        "Bridge": 6403,
+        "Floating vertical shell": 291,
+        "Top surface": 9205
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.458,
+          1.473
+        ],
+        [
+          253.427,
+          254.537
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.208,
+          1.223
+        ],
+        [
+          253.637,
+          254.787
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.208,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 12,
+      "gcode_sha256": "6110f7122a6c8e4deb467d68c6e8370cebaa8375cc2f8a35b2206e00143aeb92",
+      "weight_g": 137.26,
+      "seconds": 27358
+    },
+    {
+      "extrusion_moves_checked": 309738,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 2176,
+        "Brim": 355,
+        "Outer wall": 9552,
+        "Inner wall": 11523,
+        "Gap infill": 3873,
+        "Bottom surface": 1511,
+        "Internal solid infill": 19008,
+        "Sparse infill": 241620,
+        "Support transition": 449,
+        "Support interface": 896,
+        "Overhang wall": 20,
+        "Bridge": 5416,
+        "Floating vertical shell": 406,
+        "Top surface": 9449
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.082,
+          1.187
+        ],
+        [
+          254.867,
+          254.907
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.8320000000000001,
+          0.937
+        ],
+        [
+          255.117,
+          255.157
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8320000000000001,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 13,
+      "gcode_sha256": "b2d182dbd7b5abc8a79383b779def7181c46fd5ac7a750d1877faa856ff41a2f",
+      "weight_g": 145.81,
+      "seconds": 29002
+    },
+    {
+      "extrusion_moves_checked": 213100,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 4695,
+        "Brim": 129,
+        "Outer wall": 7540,
+        "Inner wall": 10042,
+        "Gap infill": 1196,
+        "Bottom surface": 969,
+        "Internal solid infill": 15440,
+        "Sparse infill": 156242,
+        "Support transition": 608,
+        "Support interface": 1088,
+        "Overhang wall": 296,
+        "Bridge": 5411,
+        "Floating vertical shell": 192,
+        "Top surface": 5689
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.813430541116866,
+          6.79293230695782
+        ],
+        [
+          240.696,
+          240.695
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          6.563430541116866,
+          6.54293230695782
+        ],
+        [
+          240.906,
+          240.905
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.54293230695782,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 14,
+      "gcode_sha256": "7e5184f11788d946f7df86a6c2d662f4ae0230bd869aad2959772a81edde0aa0",
+      "weight_g": 110.39,
+      "seconds": 22425
+    },
+    {
+      "extrusion_moves_checked": 313404,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 2026,
+        "Brim": 358,
+        "Outer wall": 9838,
+        "Inner wall": 12064,
+        "Gap infill": 3729,
+        "Bottom surface": 1509,
+        "Internal solid infill": 19087,
+        "Sparse infill": 244297,
+        "Support transition": 446,
+        "Support interface": 885,
+        "Overhang wall": 20,
+        "Bridge": 5840,
+        "Floating vertical shell": 382,
+        "Top surface": 9439
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.105,
+          1.146
+        ],
+        [
+          254.803,
+          254.902
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.855,
+          0.8959999999999999
+        ],
+        [
+          255.053,
+          255.152
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8480000000000132,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 15,
+      "gcode_sha256": "8720bba3956f30788606a3de66409df8006471ecd6306e65ffcca99ec554edc4",
+      "weight_g": 145.99,
+      "seconds": 29058
+    },
+    {
+      "extrusion_moves_checked": 300736,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 6044,
+        "Brim": 86,
+        "Outer wall": 10293,
+        "Inner wall": 15406,
+        "Gap infill": 2430,
+        "Bottom surface": 1596,
+        "Internal solid infill": 25860,
+        "Sparse infill": 212033,
+        "Support transition": 1387,
+        "Support interface": 2420,
+        "Overhang wall": 350,
+        "Bridge": 7616,
+        "Floating vertical shell": 544,
+        "Top surface": 11108
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          15.717,
+          20.726
+        ],
+        [
+          241.397,
+          237.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          15.507,
+          20.516
+        ],
+        [
+          241.647,
+          237.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 14.353000000000009,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 16,
+      "gcode_sha256": "92a7d6b76a8eb3cf1489cbdf59945f4f85b98c6369cde6b2c4a95225538e6c34",
+      "weight_g": 142.14,
+      "seconds": 30133
+    },
+    {
+      "extrusion_moves_checked": 207413,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 6092,
+        "Brim": 61,
+        "Outer wall": 7465,
+        "Inner wall": 10619,
+        "Gap infill": 1179,
+        "Bottom surface": 963,
+        "Internal solid infill": 15491,
+        "Sparse infill": 147709,
+        "Support transition": 784,
+        "Support interface": 1396,
+        "Overhang wall": 390,
+        "Bridge": 7144,
+        "Floating vertical shell": 192,
+        "Top surface": 4444
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          15.395,
+          15.394
+        ],
+        [
+          240.642,
+          240.643
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          15.184999999999999,
+          15.184
+        ],
+        [
+          240.852,
+          240.853
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 15.146999999999991,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 17,
+      "gcode_sha256": "b32c9429c8f88fb4c0ab302dfb8f8f3babad71e2ff049209c1e43d58f18184b1",
+      "weight_g": 105.88,
+      "seconds": 21921
+    },
+    {
+      "extrusion_moves_checked": 318129,
+      "features": {
+        "Prime tower": 3563,
+        "Support": 6501,
+        "Brim": 87,
+        "Outer wall": 10816,
+        "Inner wall": 16788,
+        "Gap infill": 2386,
+        "Bottom surface": 1622,
+        "Internal solid infill": 26516,
+        "Sparse infill": 225119,
+        "Floating vertical shell": 853,
+        "Support transition": 1402,
+        "Support interface": 2430,
+        "Overhang wall": 333,
+        "Bridge": 8512,
+        "Top surface": 11201
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.813430541116865,
+          14.611
+        ],
+        [
+          235.278,
+          240.276
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          6.563430541116865,
+          14.361
+        ],
+        [
+          235.488,
+          240.48600000000002
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.563430541116865,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          16.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 18,
+      "gcode_sha256": "4c5a2e37ef9ee73e6582dd867ca5e5f37361b6a32153f053fda556408bce6299",
+      "weight_g": 145.77,
+      "seconds": 31667
+    },
+    {
+      "extrusion_moves_checked": 260363,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1724,
+        "Brim": 315,
+        "Outer wall": 8125,
+        "Inner wall": 9699,
+        "Gap infill": 1914,
+        "Bottom surface": 939,
+        "Internal solid infill": 15805,
+        "Sparse infill": 202742,
+        "Support transition": 439,
+        "Support interface": 689,
+        "Overhang wall": 20,
+        "Bridge": 5854,
+        "Floating vertical shell": 301,
+        "Top surface": 8313
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.813430541116865,
+          12.685
+        ],
+        [
+          243.316,
+          243.304
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          6.563430541116865,
+          12.435
+        ],
+        [
+          243.566,
+          243.554
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.563430541116865,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 19,
+      "gcode_sha256": "b47dd7d7490ca3b47a67e58fe05ce4750ae60bc3706348aae2ab7de90ab30803",
+      "weight_g": 124.07,
+      "seconds": 24449
+    },
+    {
+      "extrusion_moves_checked": 253691,
+      "features": {
+        "Prime tower": 3484,
+        "Support": 1575,
+        "Brim": 344,
+        "Outer wall": 7974,
+        "Inner wall": 9042,
+        "Gap infill": 1921,
+        "Bottom surface": 922,
+        "Internal solid infill": 15624,
+        "Sparse infill": 197563,
+        "Support transition": 432,
+        "Support interface": 685,
+        "Overhang wall": 20,
+        "Bridge": 5564,
+        "Floating vertical shell": 255,
+        "Top surface": 8286
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.813430541116865,
+          12.821
+        ],
+        [
+          243.186,
+          243.169
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          6.563430541116865,
+          12.571
+        ],
+        [
+          243.436,
+          243.419
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.563430541116865,
+      "model_z_ranges_mm": {
+        "1": [
+          0.2,
+          13.6
+        ],
+        "2": [
+          8.6,
+          10.0
+        ],
+        "4": [
+          13.2,
+          13.6
+        ]
+      },
+      "plate": 20,
+      "gcode_sha256": "237d99f9b15f605157f4bdccd8a531cb09e29574a9eda905fdf38859486e58a6",
+      "weight_g": 122.22,
+      "seconds": 23826
+    },
+    {
+      "extrusion_moves_checked": 990976,
+      "features": {
+        "Support": 367348,
+        "Support interface": 203731,
+        "Brim": 4,
+        "Outer wall": 46418,
+        "Overhang wall": 571,
+        "Inner wall": 68522,
+        "Gap infill": 3428,
+        "Internal solid infill": 2998,
+        "Sparse infill": 185248,
+        "Floating vertical shell": 112479,
+        "Bridge": 229
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          34.74972286969805,
+          6.700698415608511
+        ],
+        [
+          215.95349184747286,
+          248.91746806700493
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          34.49972286969805,
+          6.490698415608511
+        ],
+        [
+          216.20349184747286,
+          249.12746806700494
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.490698415608511,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          238.0
+        ]
+      },
+      "support_interface_check": {
+        "samples": 790754,
+        "interior_samples": 693548,
+        "maximum_interior_assembly_z_mm": 5.927124854322301,
+        "visible_surface_starts_at_mm": 9.9
+      },
+      "plate": 21,
+      "gcode_sha256": "fe606481335612dc769fb7df808cab9c8fea97ec121a2a6fc1d3f3d8abc81e73",
+      "weight_g": 264.97,
+      "seconds": 85478
+    },
+    {
+      "extrusion_moves_checked": 983542,
+      "features": {
+        "Support": 354197,
+        "Support interface": 207839,
+        "Outer wall": 46095,
+        "Overhang wall": 469,
+        "Inner wall": 68359,
+        "Gap infill": 3322,
+        "Internal solid infill": 2898,
+        "Sparse infill": 186023,
+        "Floating vertical shell": 114076,
+        "Bridge": 264
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          30.31986680937135,
+          7.297150522267604
+        ],
+        [
+          216.122,
+          249.49259127231988
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          30.06986680937135,
+          7.087150522267604
+        ],
+        [
+          216.372,
+          249.7025912723199
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.297408727680107,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          240.8
+        ]
+      },
+      "support_interface_check": {
+        "samples": 807561,
+        "interior_samples": 700789,
+        "maximum_interior_assembly_z_mm": 6.028871352219994,
+        "visible_surface_starts_at_mm": 9.9
+      },
+      "plate": 23,
+      "gcode_sha256": "18b80ef97233fd4a58d7285d4e662a8152d034f58adc642fd48ebef18372aeef",
+      "weight_g": 263.45,
+      "seconds": 85954
+    },
+    {
+      "extrusion_moves_checked": 431352,
+      "features": {
+        "Support interface": 95679,
+        "Support": 147040,
+        "Outer wall": 15795,
+        "Gap infill": 3448,
+        "Inner wall": 30242,
+        "Internal solid infill": 1226,
+        "Sparse infill": 83236,
+        "Floating vertical shell": 54541,
+        "Bridge": 138,
+        "Overhang wall": 7
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          98.94733621990667,
+          18.352
+        ],
+        [
+          156.1442442974097,
+          237.66600360359192
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          98.73733621990668,
+          18.142
+        ],
+        [
+          156.3942442974097,
+          237.87600360359193
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 18.123996396408074,
+      "model_z_ranges_mm": {
+        "3": [
+          0.2,
+          67.6
+        ]
+      },
+      "support_interface_check": {
+        "samples": 368360,
+        "interior_samples": 257869,
+        "maximum_interior_assembly_z_mm": 0.905107458003954,
+        "visible_surface_starts_at_mm": 9.9
+      },
+      "plate": 26,
+      "gcode_sha256": "b9f982e575f7dd1d7fac2e1ea49452c9af21a24c2b86166c19a78abfa6cd15a9",
+      "weight_g": 106.02,
+      "seconds": 33152
+    }
+  ],
+  "unchanged_native_plates": [
+    {
+      "plate": 22,
+      "gcode_sha256": "9f1f10af9f76d50da39f3fb1bf7ead0a517067a70d0f20fc6d1976c1d6542dc8"
+    },
+    {
+      "plate": 24,
+      "gcode_sha256": "a262261bfa950476c22b06776a8a63a560b592eb1f051dff978f3742b9523c7b"
+    },
+    {
+      "plate": 25,
+      "gcode_sha256": "99c5ae4120a394471e0708776766d36331123b5a4bcb140c8e5c0a7243f33739"
+    },
+    {
+      "plate": 27,
+      "gcode_sha256": "7dd3397d549d003e4e17e6dad1f9481607a815eaa925e7f2ce516e6bee45de54"
+    },
+    {
+      "plate": 28,
+      "gcode_sha256": "4c8e799c498744ec51822eecaa61010e9223ca0bc14ad0022ea26970b5ed8823"
+    },
+    {
+      "plate": 29,
+      "gcode_sha256": "71807ae7164ee0e29bdc6ef7b993c4a91cefe0063fa89e556e059e9cab5784a1"
+    },
+    {
+      "plate": 30,
+      "gcode_sha256": "d292cd661d3aa9664c54c70d2449afad881692731b7952849410ce677b7b91a5"
+    },
+    {
+      "plate": 31,
+      "gcode_sha256": "83398103438bdf62deda1e3ef2142f841843d5733f6255a08fc47f918c8f8c2d"
+    },
+    {
+      "plate": 32,
+      "gcode_sha256": "e011bfd70170e4d390fef192993d7e629b539b7112d2e636e104a0f01820184a"
+    }
+  ],
+  "mesh_checks": [
+    {
+      "name": "M3",
+      "object_id": "186",
+      "path": "3D/Objects/object_50.model",
+      "moves": [
+        {
+          "kind": "screw",
+          "index": 5,
+          "old_xy": [
+            282.0,
+            28.0
+          ],
+          "new_xy": [
+            282.0,
+            29.5
+          ],
+          "distance_mm": 1.5
+        }
+      ],
+      "faces": 168224,
+      "volume_before_mm3": 223938.1003997594,
+      "volume_after_mm3": 223938.10039970718,
+      "method": "Existing rear bore vertices moved; flat rear retriangulated where necessary; all front triangles retained.",
+      "front_geometry_error_mm": 0.0,
+      "support_paint": {
+        "blocked_faces": 165573,
+        "enforced_faces": 1883,
+        "front_faces_blocked": 163843
+      }
+    },
+    {
+      "name": "M1",
+      "object_id": "178",
+      "path": "3D/Objects/object_48.model",
+      "moves": [
+        {
+          "kind": "screw",
+          "index": 6,
+          "old_xy": [
+            -261.0,
+            -5.0
+          ],
+          "new_xy": [
+            -261.0,
+            -11.0
+          ],
+          "distance_mm": 6.0
+        }
+      ],
+      "faces": 166632,
+      "volume_before_mm3": 222476.33878183176,
+      "volume_after_mm3": 222476.33878383684,
+      "method": "Existing rear bore vertices moved; flat rear retriangulated where necessary; all front triangles retained.",
+      "front_geometry_error_mm": 0.0,
+      "support_paint": {
+        "blocked_faces": 164205,
+        "enforced_faces": 1692,
+        "front_faces_blocked": 162861
+      }
+    },
+    {
+      "name": "M6",
+      "object_id": "195",
+      "path": "3D/Objects/object_53.model",
+      "moves": [
+        {
+          "kind": "locator",
+          "index": 12,
+          "old_xy": [
+            209.0,
+            -133.0
+          ],
+          "new_xy": [
+            209.0,
+            -134.5
+          ],
+          "distance_mm": 1.5
+        }
+      ],
+      "faces": 69272,
+      "volume_before_mm3": 103769.78086073708,
+      "volume_after_mm3": 103769.78086110036,
+      "method": "Existing rear bore vertices moved; flat rear retriangulated where necessary; all front triangles retained.",
+      "front_geometry_error_mm": 0.0,
+      "support_paint": {
+        "blocked_faces": 68285,
+        "enforced_faces": 620,
+        "front_faces_blocked": 67703
+      }
+    }
+  ],
+  "native_roundtrip_checks": [
+    {
+      "name": "F1",
+      "part": "F1",
+      "max_vertex_error_mm": 4.329590176607898e-06
+    },
+    {
+      "name": "F1",
+      "part": "100% photo screw 5 - D14",
+      "max_vertex_error_mm": 1.9298186646056723e-06
+    },
+    {
+      "name": "F1",
+      "part": "100% photo screw 8 - D14",
+      "max_vertex_error_mm": 1.7779201266703098e-06
+    },
+    {
+      "name": "F1",
+      "part": "F1 - Wood weave",
+      "max_vertex_error_mm": 8.952585597101092e-06
+    },
+    {
+      "name": "F1",
+      "part": "F1 - Blue ribbon",
+      "max_vertex_error_mm": 8.195491500810205e-06
+    },
+    {
+      "name": "F2",
+      "part": "F2",
+      "max_vertex_error_mm": 5.955468305330438e-07
+    },
+    {
+      "name": "F2",
+      "part": "100% photo screw 11 - D14",
+      "max_vertex_error_mm": 2.0402205899657052e-06
+    },
+    {
+      "name": "F2",
+      "part": "100% photo screw 12 - D14",
+      "max_vertex_error_mm": 2.3120553892353105e-06
+    },
+    {
+      "name": "F2",
+      "part": "F2 - Wood weave",
+      "max_vertex_error_mm": 8.42918672308425e-06
+    },
+    {
+      "name": "F2",
+      "part": "F2 - Blue ribbon",
+      "max_vertex_error_mm": 8.16093628111702e-06
+    },
+    {
+      "name": "F3",
+      "part": "F3",
+      "max_vertex_error_mm": 4.3064593712077775e-06
+    },
+    {
+      "name": "F3",
+      "part": "100% photo screw 3 - D14",
+      "max_vertex_error_mm": 4.864863837801133e-06
+    },
+    {
+      "name": "F3",
+      "part": "100% photo screw 6 - D14",
+      "max_vertex_error_mm": 4.0908801374639415e-06
+    },
+    {
+      "name": "F3",
+      "part": "100% photo screw 7 - D14",
+      "max_vertex_error_mm": 3.68278424661221e-06
+    },
+    {
+      "name": "F3",
+      "part": "100% B1 screw 1 pilot - D14",
+      "max_vertex_error_mm": 6.323804134486124e-07
+    },
+    {
+      "name": "F3",
+      "part": "100% B1 screw 2 pilot - D14",
+      "max_vertex_error_mm": 9.750389732528398e-07
+    },
+    {
+      "name": "F3",
+      "part": "F3 - Wood weave",
+      "max_vertex_error_mm": 7.956849838973238e-06
+    },
+    {
+      "name": "F3",
+      "part": "F3 - Blue ribbon",
+      "max_vertex_error_mm": 7.944217681289947e-06
+    },
+    {
+      "name": "F4",
+      "part": "F4",
+      "max_vertex_error_mm": 4.2560924111836845e-06
+    },
+    {
+      "name": "F4",
+      "part": "100% photo screw 10 - D14",
+      "max_vertex_error_mm": 3.903857075566352e-06
+    },
+    {
+      "name": "F4",
+      "part": "F4 - Wood weave",
+      "max_vertex_error_mm": 8.982487988658166e-06
+    },
+    {
+      "name": "F4",
+      "part": "F4 - Blue ribbon",
+      "max_vertex_error_mm": 7.90793153596802e-06
+    },
+    {
+      "name": "F5",
+      "part": "F5",
+      "max_vertex_error_mm": 9.937443977360673e-07
+    },
+    {
+      "name": "F5",
+      "part": "100% M screw 4 seat - D16",
+      "max_vertex_error_mm": 5.3053274756947e-06
+    },
+    {
+      "name": "F5",
+      "part": "100% photo screw 9 - D14",
+      "max_vertex_error_mm": 2.0172506514888727e-06
+    },
+    {
+      "name": "F5",
+      "part": "100% photo screw 16 - D14",
+      "max_vertex_error_mm": 5.575598638195288e-06
+    },
+    {
+      "name": "F5",
+      "part": "100% B2 screw 1 pilot - D14",
+      "max_vertex_error_mm": 1.0961209765698165e-06
+    },
+    {
+      "name": "F5",
+      "part": "100% B2 screw 2 pilot - D14",
+      "max_vertex_error_mm": 6.850665615584205e-07
+    },
+    {
+      "name": "F5",
+      "part": "F5 - Wood weave",
+      "max_vertex_error_mm": 8.079942987165047e-06
+    },
+    {
+      "name": "F5",
+      "part": "F5 - Blue ribbon",
+      "max_vertex_error_mm": 4.961472561989215e-06
+    },
+    {
+      "name": "F6",
+      "part": "F6",
+      "max_vertex_error_mm": 6.596875424473756e-07
+    },
+    {
+      "name": "F6",
+      "part": "100% photo screw 1 - D14",
+      "max_vertex_error_mm": 2.202907257909681e-06
+    },
+    {
+      "name": "F6",
+      "part": "100% photo screw 2 - D14",
+      "max_vertex_error_mm": 4.033856749810807e-06
+    },
+    {
+      "name": "F6",
+      "part": "100% photo screw 4 - D14",
+      "max_vertex_error_mm": 3.5128308514489074e-06
+    },
+    {
+      "name": "F6",
+      "part": "F6 - Wood weave",
+      "max_vertex_error_mm": 8.179443760147285e-06
+    },
+    {
+      "name": "F6",
+      "part": "F6 - Blue ribbon",
+      "max_vertex_error_mm": 9.731771594858789e-06
+    },
+    {
+      "name": "F7",
+      "part": "F7",
+      "max_vertex_error_mm": 5.80110597443516e-06
+    },
+    {
+      "name": "F7",
+      "part": "100% M screw 1 seat - D16",
+      "max_vertex_error_mm": 4.726954604907408e-06
+    },
+    {
+      "name": "F7",
+      "part": "F7 - Wood weave",
+      "max_vertex_error_mm": 9.625533172526844e-06
+    },
+    {
+      "name": "F7",
+      "part": "F7 - Blue ribbon",
+      "max_vertex_error_mm": 7.034748100322285e-06
+    },
+    {
+      "name": "F8",
+      "part": "F8",
+      "max_vertex_error_mm": 6.054491598875265e-06
+    },
+    {
+      "name": "F8",
+      "part": "100% photo screw 13 - D14",
+      "max_vertex_error_mm": 4.2530224476135225e-06
+    },
+    {
+      "name": "F8",
+      "part": "100% photo screw 14 - D14",
+      "max_vertex_error_mm": 1.7500438979948786e-06
+    },
+    {
+      "name": "F8",
+      "part": "100% photo screw 15 - D14",
+      "max_vertex_error_mm": 3.6716481338472834e-06
+    },
+    {
+      "name": "F8",
+      "part": "F8 - Wood weave",
+      "max_vertex_error_mm": 8.104393155861747e-06
+    },
+    {
+      "name": "F8",
+      "part": "F8 - Blue ribbon",
+      "max_vertex_error_mm": 8.403396964985364e-06
+    },
+    {
+      "name": "F9",
+      "part": "F9",
+      "max_vertex_error_mm": 4.372924614112615e-06
+    },
+    {
+      "name": "F9",
+      "part": "100% M screw 2 seat - D16",
+      "max_vertex_error_mm": 3.9225629598816736e-06
+    },
+    {
+      "name": "F9",
+      "part": "100% M screw 3 seat - D16",
+      "max_vertex_error_mm": 4.612027726012145e-06
+    },
+    {
+      "name": "F9",
+      "part": "F9 - Wood weave",
+      "max_vertex_error_mm": 5.179303929576896e-06
+    },
+    {
+      "name": "F9",
+      "part": "F9 - Blue ribbon",
+      "max_vertex_error_mm": 9.749983663646143e-06
+    },
+    {
+      "name": "F10",
+      "part": "F10",
+      "max_vertex_error_mm": 6.793273179628273e-07
+    },
+    {
+      "name": "F10",
+      "part": "100% M screw 5 seat - D16",
+      "max_vertex_error_mm": 4.986882814110552e-06
+    },
+    {
+      "name": "F10",
+      "part": "F10 - Wood weave",
+      "max_vertex_error_mm": 5.7273631634270426e-06
+    },
+    {
+      "name": "F10",
+      "part": "F10 - Blue ribbon",
+      "max_vertex_error_mm": 5.910336819042602e-06
+    },
+    {
+      "name": "F11",
+      "part": "F11",
+      "max_vertex_error_mm": 5.956282988829173e-07
+    },
+    {
+      "name": "F11",
+      "part": "100% M screw 6 seat - D16",
+      "max_vertex_error_mm": 4.0678741439873376e-06
+    },
+    {
+      "name": "F11",
+      "part": "100% M screw 8 seat - D16",
+      "max_vertex_error_mm": 4.897397334330957e-06
+    },
+    {
+      "name": "F11",
+      "part": "100% photo screw 30 - D14",
+      "max_vertex_error_mm": 3.7046592360104687e-06
+    },
+    {
+      "name": "F11",
+      "part": "F11 - Wood weave",
+      "max_vertex_error_mm": 6.001440577755294e-06
+    },
+    {
+      "name": "F11",
+      "part": "F11 - Blue ribbon",
+      "max_vertex_error_mm": 5.835116239605723e-06
+    },
+    {
+      "name": "F12",
+      "part": "F12",
+      "max_vertex_error_mm": 5.806349958183834e-07
+    },
+    {
+      "name": "F12",
+      "part": "100% M screw 9 seat - D16",
+      "max_vertex_error_mm": 4.049733442497141e-06
+    },
+    {
+      "name": "F12",
+      "part": "F12 - Wood weave",
+      "max_vertex_error_mm": 6.08801188363036e-06
+    },
+    {
+      "name": "F12",
+      "part": "F12 - Blue ribbon",
+      "max_vertex_error_mm": 1.0030861461107925e-05
+    },
+    {
+      "name": "F13",
+      "part": "F13",
+      "max_vertex_error_mm": 6.0374363472596976e-06
+    },
+    {
+      "name": "F13",
+      "part": "100% photo screw 29 - D14",
+      "max_vertex_error_mm": 2.204177848731134e-06
+    },
+    {
+      "name": "F13",
+      "part": "100% photo screw 31 - D14",
+      "max_vertex_error_mm": 4.81814278925903e-06
+    },
+    {
+      "name": "F13",
+      "part": "100% photo screw 32 - D14",
+      "max_vertex_error_mm": 1.8213181889103312e-06
+    },
+    {
+      "name": "F13",
+      "part": "F13 - Wood weave",
+      "max_vertex_error_mm": 8.01449311179982e-06
+    },
+    {
+      "name": "F13",
+      "part": "F13 - Blue ribbon",
+      "max_vertex_error_mm": 6.215221731945066e-06
+    },
+    {
+      "name": "F14",
+      "part": "F14",
+      "max_vertex_error_mm": 4.314750442694054e-06
+    },
+    {
+      "name": "F14",
+      "part": "100% photo screw 26 - D14",
+      "max_vertex_error_mm": 3.890758393047934e-06
+    },
+    {
+      "name": "F14",
+      "part": "F14 - Wood weave",
+      "max_vertex_error_mm": 8.916725212152077e-06
+    },
+    {
+      "name": "F14",
+      "part": "F14 - Blue ribbon",
+      "max_vertex_error_mm": 4.707715032627299e-06
+    },
+    {
+      "name": "F15",
+      "part": "F15",
+      "max_vertex_error_mm": 4.348744775485619e-06
+    },
+    {
+      "name": "F15",
+      "part": "100% photo screw 18 - D14",
+      "max_vertex_error_mm": 5.204078818792335e-06
+    },
+    {
+      "name": "F15",
+      "part": "100% photo screw 19 - D14",
+      "max_vertex_error_mm": 1.8873145697925562e-06
+    },
+    {
+      "name": "F15",
+      "part": "100% photo screw 20 - D14",
+      "max_vertex_error_mm": 3.799223615314e-06
+    },
+    {
+      "name": "F15",
+      "part": "F15 - Wood weave",
+      "max_vertex_error_mm": 1.0266118590593496e-05
+    },
+    {
+      "name": "F15",
+      "part": "F15 - Blue ribbon",
+      "max_vertex_error_mm": 9.966487904302076e-06
+    },
+    {
+      "name": "F16",
+      "part": "F16",
+      "max_vertex_error_mm": 4.32323106292421e-06
+    },
+    {
+      "name": "F16",
+      "part": "100% M screw 7 seat - D16",
+      "max_vertex_error_mm": 2.4374166631461154e-06
+    },
+    {
+      "name": "F16",
+      "part": "100% photo screw 25 - D14",
+      "max_vertex_error_mm": 2.0048940568407006e-06
+    },
+    {
+      "name": "F16",
+      "part": "100% B3 screw 1 pilot - D14",
+      "max_vertex_error_mm": 7.448519016314226e-07
+    },
+    {
+      "name": "F16",
+      "part": "100% B3 screw 2 pilot - D14",
+      "max_vertex_error_mm": 1.410156241528353e-06
+    },
+    {
+      "name": "F16",
+      "part": "F16 - Wood weave",
+      "max_vertex_error_mm": 7.672171015224148e-06
+    },
+    {
+      "name": "F16",
+      "part": "F16 - Blue ribbon",
+      "max_vertex_error_mm": 4.875479695052799e-06
+    },
+    {
+      "name": "F17",
+      "part": "F17",
+      "max_vertex_error_mm": 5.813980015703676e-06
+    },
+    {
+      "name": "F17",
+      "part": "100% photo screw 24 - D14",
+      "max_vertex_error_mm": 3.984971587799804e-06
+    },
+    {
+      "name": "F17",
+      "part": "F17 - Wood weave",
+      "max_vertex_error_mm": 1.0115359179025929e-05
+    },
+    {
+      "name": "F17",
+      "part": "F17 - Blue ribbon",
+      "max_vertex_error_mm": 6.4382203503286996e-06
+    },
+    {
+      "name": "F18",
+      "part": "F18",
+      "max_vertex_error_mm": 4.3183544833948505e-06
+    },
+    {
+      "name": "F18",
+      "part": "100% M screw 10 seat - D16",
+      "max_vertex_error_mm": 5.107165974725359e-06
+    },
+    {
+      "name": "F18",
+      "part": "100% photo screw 17 - D14",
+      "max_vertex_error_mm": 5.713492752048437e-06
+    },
+    {
+      "name": "F18",
+      "part": "100% photo screw 21 - D14",
+      "max_vertex_error_mm": 2.5035175823486183e-06
+    },
+    {
+      "name": "F18",
+      "part": "100% photo screw 22 - D14",
+      "max_vertex_error_mm": 3.740654999656889e-06
+    },
+    {
+      "name": "F18",
+      "part": "100% B4 screw 1 pilot - D14",
+      "max_vertex_error_mm": 1.2683552030353617e-06
+    },
+    {
+      "name": "F18",
+      "part": "100% B4 screw 2 pilot - D14",
+      "max_vertex_error_mm": 2.7228222407797826e-06
+    },
+    {
+      "name": "F18",
+      "part": "F18 - Wood weave",
+      "max_vertex_error_mm": 8.278095188731301e-06
+    },
+    {
+      "name": "F18",
+      "part": "F18 - Blue ribbon",
+      "max_vertex_error_mm": 9.158012719576375e-06
+    },
+    {
+      "name": "F19",
+      "part": "F19",
+      "max_vertex_error_mm": 5.955469338474297e-07
+    },
+    {
+      "name": "F19",
+      "part": "100% photo screw 27 - D14",
+      "max_vertex_error_mm": 1.7402942156967104e-06
+    },
+    {
+      "name": "F19",
+      "part": "100% photo screw 28 - D14",
+      "max_vertex_error_mm": 2.4459149661259263e-06
+    },
+    {
+      "name": "F19",
+      "part": "F19 - Wood weave",
+      "max_vertex_error_mm": 8.885718872218828e-06
+    },
+    {
+      "name": "F19",
+      "part": "F19 - Blue ribbon",
+      "max_vertex_error_mm": 8.23984101099727e-06
+    },
+    {
+      "name": "F20",
+      "part": "F20",
+      "max_vertex_error_mm": 6.176394068277216e-07
+    },
+    {
+      "name": "F20",
+      "part": "100% photo screw 23 - D14",
+      "max_vertex_error_mm": 2.5679759214435133e-06
+    },
+    {
+      "name": "F20",
+      "part": "F20 - Wood weave",
+      "max_vertex_error_mm": 8.286440066130551e-06
+    },
+    {
+      "name": "F20",
+      "part": "F20 - Blue ribbon",
+      "max_vertex_error_mm": 7.944172873808041e-06
+    },
+    {
+      "name": "M1",
+      "part": "M1",
+      "max_vertex_error_mm": 3.800000183754899e-06
+    },
+    {
+      "name": "M1",
+      "part": "Screw reinforcement 1",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "M1",
+      "part": "Screw reinforcement 2",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "M1",
+      "part": "Screw reinforcement 6",
+      "max_vertex_error_mm": 4.7600206892681123e-07
+    },
+    {
+      "name": "M3",
+      "part": "M3",
+      "max_vertex_error_mm": 1.000062883828941e-09
+    },
+    {
+      "name": "M3",
+      "part": "Screw reinforcement 4",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "M3",
+      "part": "Screw reinforcement 5",
+      "max_vertex_error_mm": 1.0051032821808142e-09
+    },
+    {
+      "name": "M3",
+      "part": "Screw reinforcement 9",
+      "max_vertex_error_mm": 0.0
+    },
+    {
+      "name": "M6",
+      "part": "M6",
+      "max_vertex_error_mm": 1.0346499039208928e-06
+    },
+    {
+      "name": "M6",
+      "part": "Screw reinforcement 10",
+      "max_vertex_error_mm": 0.0
+    }
+  ],
+  "geometry_checks": {
+    "source_sha256": "88f187317f08aea5b37040d3bf9d0f3f382d070815178ce54de2255c4f4e86bf",
+    "frame_pairs": [
+      {
+        "a": "F1",
+        "b": "F3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F1",
+        "b": "F7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F2",
+        "b": "F4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F2",
+        "b": "F5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F2",
+        "b": "F7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F3",
+        "b": "F6",
+        "intersection_mm3": 5.4420954710584886e-08
+      },
+      {
+        "a": "F3",
+        "b": "F7",
+        "intersection_mm3": 1.7911984459211833e-06
+      },
+      {
+        "a": "F3",
+        "b": "F9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F4",
+        "b": "F5",
+        "intersection_mm3": 7.378266229374179e-06
+      },
+      {
+        "a": "F4",
+        "b": "F7",
+        "intersection_mm3": 4.1767703847065045e-09
+      },
+      {
+        "a": "F4",
+        "b": "F10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F5",
+        "b": "F8",
+        "intersection_mm3": 1.24312796407119e-05
+      },
+      {
+        "a": "F5",
+        "b": "F10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F6",
+        "b": "F9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F7",
+        "b": "F9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F7",
+        "b": "F10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F8",
+        "b": "F10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F9",
+        "b": "F11",
+        "intersection_mm3": 1.962511161875501e-06
+      },
+      {
+        "a": "F10",
+        "b": "F12",
+        "intersection_mm3": 3.494644092904067e-07
+      },
+      {
+        "a": "F11",
+        "b": "F13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F11",
+        "b": "F14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F11",
+        "b": "F16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F12",
+        "b": "F14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F12",
+        "b": "F15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F12",
+        "b": "F17",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F12",
+        "b": "F18",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F13",
+        "b": "F16",
+        "intersection_mm3": 6.405505434947765e-05
+      },
+      {
+        "a": "F14",
+        "b": "F16",
+        "intersection_mm3": 0.0001440225240233472
+      },
+      {
+        "a": "F14",
+        "b": "F17",
+        "intersection_mm3": 4.368377494781456e-06
+      },
+      {
+        "a": "F14",
+        "b": "F19",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F14",
+        "b": "F20",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F15",
+        "b": "F18",
+        "intersection_mm3": 5.963945088843427e-05
+      },
+      {
+        "a": "F16",
+        "b": "F19",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F17",
+        "b": "F18",
+        "intersection_mm3": 6.619263190679639e-05
+      },
+      {
+        "a": "F17",
+        "b": "F20",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "F18",
+        "b": "F20",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "frame_M_pairs": [
+      {
+        "M": "M5",
+        "frame": "F11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M5",
+        "frame": "F12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M5",
+        "frame": "F14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M5",
+        "frame": "F17",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M2",
+        "frame": "F4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M2",
+        "frame": "F7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M2",
+        "frame": "F9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M2",
+        "frame": "F10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M2",
+        "frame": "F11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M2",
+        "frame": "F12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M3",
+        "frame": "F15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M1",
+        "frame": "F3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M1",
+        "frame": "F6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M1",
+        "frame": "F7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M1",
+        "frame": "F9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M1",
+        "frame": "F11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M1",
+        "frame": "F13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M4",
+        "frame": "F11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M4",
+        "frame": "F13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M4",
+        "frame": "F16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M6",
+        "frame": "F12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M6",
+        "frame": "F15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "M": "M6",
+        "frame": "F18",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "mount_alignment": [
+      {
+        "kind": "screw",
+        "index": 1,
+        "frame": "F7",
+        "M": "M1",
+        "xy": [
+          -76.0,
+          162.0
+        ],
+        "minimum_hole_radius_mm": 1.5855776195391884
+      },
+      {
+        "kind": "screw",
+        "index": 2,
+        "frame": "F9",
+        "M": "M1",
+        "xy": [
+          -262.0,
+          71.0
+        ],
+        "minimum_hole_radius_mm": 1.585573324125948
+      },
+      {
+        "kind": "screw",
+        "index": 3,
+        "frame": "F9",
+        "M": "M2",
+        "xy": [
+          -28.0,
+          76.0
+        ],
+        "minimum_hole_radius_mm": 1.5855843819861373
+      },
+      {
+        "kind": "screw",
+        "index": 4,
+        "frame": "F5",
+        "M": "M3",
+        "xy": [
+          213.0,
+          148.0
+        ],
+        "minimum_hole_radius_mm": 1.5855753801877683
+      },
+      {
+        "kind": "screw",
+        "index": 5,
+        "frame": "F10",
+        "M": "M3",
+        "xy": [
+          282.0,
+          29.5
+        ],
+        "minimum_hole_radius_mm": 1.5855736714466224
+      },
+      {
+        "kind": "screw",
+        "index": 6,
+        "frame": "F11",
+        "M": "M1",
+        "xy": [
+          -261.0,
+          -11.0
+        ],
+        "minimum_hole_radius_mm": 1.585574577259396
+      },
+      {
+        "kind": "screw",
+        "index": 7,
+        "frame": "F16",
+        "M": "M4",
+        "xy": [
+          -213.0,
+          -170.0
+        ],
+        "minimum_hole_radius_mm": 1.585575051150882
+      },
+      {
+        "kind": "screw",
+        "index": 8,
+        "frame": "F11",
+        "M": "M5",
+        "xy": [
+          -29.0,
+          -62.0
+        ],
+        "minimum_hole_radius_mm": 1.5855851768020202
+      },
+      {
+        "kind": "screw",
+        "index": 9,
+        "frame": "F12",
+        "M": "M3",
+        "xy": [
+          261.0,
+          -25.0
+        ],
+        "minimum_hole_radius_mm": 1.5855745505258223
+      },
+      {
+        "kind": "screw",
+        "index": 10,
+        "frame": "F18",
+        "M": "M6",
+        "xy": [
+          213.0,
+          -148.0
+        ],
+        "minimum_hole_radius_mm": 1.5855778207862778
+      },
+      {
+        "kind": "locator",
+        "index": 1,
+        "frame": "F7",
+        "M": "M2",
+        "xy": [
+          -23.0,
+          141.0
+        ],
+        "minimum_hole_radius_mm": 2.0974625835982277
+      },
+      {
+        "kind": "locator",
+        "index": 2,
+        "frame": "F9",
+        "M": "M1",
+        "xy": [
+          -219.0,
+          74.0
+        ],
+        "minimum_hole_radius_mm": 2.0999957985771918
+      },
+      {
+        "kind": "locator",
+        "index": 3,
+        "frame": "F4",
+        "M": "M2",
+        "xy": [
+          33.0,
+          127.0
+        ],
+        "minimum_hole_radius_mm": 2.097465106047859
+      },
+      {
+        "kind": "locator",
+        "index": 4,
+        "frame": "F9",
+        "M": "M2",
+        "xy": [
+          -34.0,
+          41.0
+        ],
+        "minimum_hole_radius_mm": 2.0999960293082687
+      },
+      {
+        "kind": "locator",
+        "index": 5,
+        "frame": "F4",
+        "M": "M3",
+        "xy": [
+          71.0,
+          165.0
+        ],
+        "minimum_hole_radius_mm": 2.0974570135786963
+      },
+      {
+        "kind": "locator",
+        "index": 6,
+        "frame": "F10",
+        "M": "M3",
+        "xy": [
+          267.0,
+          25.0
+        ],
+        "minimum_hole_radius_mm": 2.099995745343389
+      },
+      {
+        "kind": "locator",
+        "index": 7,
+        "frame": "F9",
+        "M": "M1",
+        "xy": [
+          -219.0,
+          39.0
+        ],
+        "minimum_hole_radius_mm": 2.097460070419975
+      },
+      {
+        "kind": "locator",
+        "index": 8,
+        "frame": "F16",
+        "M": "M4",
+        "xy": [
+          -219.0,
+          -157.0
+        ],
+        "minimum_hole_radius_mm": 2.0999923265838345
+      },
+      {
+        "kind": "locator",
+        "index": 9,
+        "frame": "F11",
+        "M": "M5",
+        "xy": [
+          -35.0,
+          -40.0
+        ],
+        "minimum_hole_radius_mm": 2.097465601126354
+      },
+      {
+        "kind": "locator",
+        "index": 10,
+        "frame": "F14",
+        "M": "M5",
+        "xy": [
+          -23.0,
+          -174.0
+        ],
+        "minimum_hole_radius_mm": 2.0999981537001315
+      },
+      {
+        "kind": "locator",
+        "index": 11,
+        "frame": "F12",
+        "M": "M3",
+        "xy": [
+          266.0,
+          -40.0
+        ],
+        "minimum_hole_radius_mm": 2.0974579366515163
+      },
+      {
+        "kind": "locator",
+        "index": 12,
+        "frame": "F18",
+        "M": "M6",
+        "xy": [
+          209.0,
+          -134.5
+        ],
+        "minimum_hole_radius_mm": 2.09999247399043
+      }
+    ],
+    "mirrored_seam_axis_error_mm": [
+      9.701635545917738e-14,
+      2.5659887502530867e-14
+    ],
+    "clipped_endpoint_reflection_error_mm": [
+      0.5177134588848911,
+      0.5130092813677788
+    ],
+    "original_artwork_unchanged": true,
+    "joint_tool_unchanged": true,
+    "visible_ribbon_missing_outside_seams_mm2": 0.0,
+    "visible_ribbon_excess_outside_seams_mm2": 0.0,
+    "frame_assembly_order": [
+      1,
+      2,
+      6,
+      8,
+      13,
+      15,
+      19,
+      20,
+      11,
+      12,
+      9,
+      16,
+      10,
+      18,
+      3,
+      14,
+      5,
+      7,
+      17,
+      4
+    ],
+    "joint_count": 32,
+    "seam_length_range_mm": [
+      67.29931571026324,
+      75.0546874844838
+    ],
+    "minimum_seam_spacing_mm": 34.77806259202944,
+    "physical_fit_test_pending": true
+  },
+  "tower_placements": [
+    {
+      "plate": 13,
+      "xy": [
+        210,
+        130
+      ],
+      "reserved_bounds_mm": [
+        205,
+        125,
+        250,
+        170
+      ],
+      "minimum_reserved_gap_mm": 41.22355651855469
+    },
+    {
+      "plate": 8,
+      "xy": [
+        10,
+        90
+      ],
+      "reserved_bounds_mm": [
+        5,
+        85,
+        50,
+        130
+      ],
+      "minimum_reserved_gap_mm": 42.12696135194694
+    },
+    {
+      "plate": 20,
+      "xy": [
+        10,
+        210
+      ],
+      "reserved_bounds_mm": [
+        5,
+        205,
+        50,
+        250
+      ],
+      "minimum_reserved_gap_mm": 57.9943728730155
+    },
+    {
+      "plate": 17,
+      "xy": [
+        210,
+        210
+      ],
+      "reserved_bounds_mm": [
+        205,
+        205,
+        250,
+        250
+      ],
+      "minimum_reserved_gap_mm": 68.69999574638398
+    },
+    {
+      "plate": 16,
+      "xy": [
+        160,
+        210
+      ],
+      "reserved_bounds_mm": [
+        155,
+        205,
+        200,
+        250
+      ],
+      "minimum_reserved_gap_mm": 48.49322077111969
+    },
+    {
+      "plate": 18,
+      "xy": [
+        10,
+        60
+      ],
+      "reserved_bounds_mm": [
+        5,
+        55,
+        50,
+        100
+      ],
+      "minimum_reserved_gap_mm": 48.88514561459909
+    },
+    {
+      "plate": 19,
+      "xy": [
+        10,
+        210
+      ],
+      "reserved_bounds_mm": [
+        5,
+        205,
+        50,
+        250
+      ],
+      "minimum_reserved_gap_mm": 58.86365206540852
+    },
+    {
+      "plate": 12,
+      "xy": [
+        210,
+        10
+      ],
+      "reserved_bounds_mm": [
+        205,
+        5,
+        250,
+        50
+      ],
+      "minimum_reserved_gap_mm": 47.952106746920194
+    },
+    {
+      "plate": 14,
+      "xy": [
+        10,
+        10
+      ],
+      "reserved_bounds_mm": [
+        5,
+        5,
+        50,
+        50
+      ],
+      "minimum_reserved_gap_mm": 70.01521422619018
+    },
+    {
+      "plate": 11,
+      "xy": [
+        210,
+        10
+      ],
+      "reserved_bounds_mm": [
+        205,
+        5,
+        250,
+        50
+      ],
+      "minimum_reserved_gap_mm": 47.21908280935977
+    },
+    {
+      "plate": 15,
+      "xy": [
+        90,
+        10
+      ],
+      "reserved_bounds_mm": [
+        85,
+        5,
+        130,
+        50
+      ],
+      "minimum_reserved_gap_mm": 42.07646003957911
+    },
+    {
+      "plate": 10,
+      "xy": [
+        210,
+        10
+      ],
+      "reserved_bounds_mm": [
+        205,
+        5,
+        250,
+        50
+      ],
+      "minimum_reserved_gap_mm": 63.812388445099046
+    },
+    {
+      "plate": 4,
+      "xy": [
+        210,
+        210
+      ],
+      "reserved_bounds_mm": [
+        205,
+        205,
+        250,
+        250
+      ],
+      "minimum_reserved_gap_mm": 68.85238673176544
+    },
+    {
+      "plate": 9,
+      "xy": [
+        210,
+        10
+      ],
+      "reserved_bounds_mm": [
+        205,
+        5,
+        250,
+        50
+      ],
+      "minimum_reserved_gap_mm": 63.85723242220924
+    },
+    {
+      "plate": 2,
+      "xy": [
+        210,
+        10
+      ],
+      "reserved_bounds_mm": [
+        205,
+        5,
+        250,
+        50
+      ],
+      "minimum_reserved_gap_mm": 57.96123518505895
+    },
+    {
+      "plate": 3,
+      "xy": [
+        210,
+        160
+      ],
+      "reserved_bounds_mm": [
+        205,
+        155,
+        250,
+        200
+      ],
+      "minimum_reserved_gap_mm": 48.47688560524412
+    },
+    {
+      "plate": 1,
+      "xy": [
+        210,
+        10
+      ],
+      "reserved_bounds_mm": [
+        205,
+        5,
+        250,
+        50
+      ],
+      "minimum_reserved_gap_mm": 58.864060845983346
+    },
+    {
+      "plate": 5,
+      "xy": [
+        60,
+        10
+      ],
+      "reserved_bounds_mm": [
+        55,
+        5,
+        100,
+        50
+      ],
+      "minimum_reserved_gap_mm": 48.94276822576076
+    },
+    {
+      "plate": 6,
+      "xy": [
+        130,
+        210
+      ],
+      "reserved_bounds_mm": [
+        125,
+        205,
+        170,
+        250
+      ],
+      "minimum_reserved_gap_mm": 41.21828079223633
+    },
+    {
+      "plate": 7,
+      "xy": [
+        10,
+        10
+      ],
+      "reserved_bounds_mm": [
+        5,
+        5,
+        50,
+        50
+      ],
+      "minimum_reserved_gap_mm": 70.01147162478608
+    }
+  ],
+  "precision_settings": {
+    "enable_arc_fitting": "1",
+    "resolution": "0.05"
+  },
+  "total_weight_g": 4090.55,
+  "total_seconds": 941670,
+  "all_plate_estimates": [
+    {
+      "plate": 1,
+      "weight_g": 123.88,
+      "seconds": 24470
+    },
+    {
+      "plate": 2,
+      "weight_g": 123.73,
+      "seconds": 24408
+    },
+    {
+      "plate": 3,
+      "weight_g": 143.33,
+      "seconds": 30638
+    },
+    {
+      "plate": 4,
+      "weight_g": 106.64,
+      "seconds": 22310
+    },
+    {
+      "plate": 5,
+      "weight_g": 143.36,
+      "seconds": 30580
+    },
+    {
+      "plate": 6,
+      "weight_g": 145.99,
+      "seconds": 29074
+    },
+    {
+      "plate": 7,
+      "weight_g": 110.08,
+      "seconds": 22222
+    },
+    {
+      "plate": 8,
+      "weight_g": 145.88,
+      "seconds": 28962
+    },
+    {
+      "plate": 9,
+      "weight_g": 135.19,
+      "seconds": 27889
+    },
+    {
+      "plate": 10,
+      "weight_g": 133.6,
+      "seconds": 26955
+    },
+    {
+      "plate": 11,
+      "weight_g": 140.21,
+      "seconds": 28818
+    },
+    {
+      "plate": 12,
+      "weight_g": 137.26,
+      "seconds": 27358
+    },
+    {
+      "plate": 13,
+      "weight_g": 145.81,
+      "seconds": 29002
+    },
+    {
+      "plate": 14,
+      "weight_g": 110.39,
+      "seconds": 22425
+    },
+    {
+      "plate": 15,
+      "weight_g": 145.99,
+      "seconds": 29058
+    },
+    {
+      "plate": 16,
+      "weight_g": 142.14,
+      "seconds": 30133
+    },
+    {
+      "plate": 17,
+      "weight_g": 105.88,
+      "seconds": 21921
+    },
+    {
+      "plate": 18,
+      "weight_g": 145.77,
+      "seconds": 31667
+    },
+    {
+      "plate": 19,
+      "weight_g": 124.07,
+      "seconds": 24449
+    },
+    {
+      "plate": 20,
+      "weight_g": 122.22,
+      "seconds": 23826
+    },
+    {
+      "plate": 21,
+      "weight_g": 264.97,
+      "seconds": 85478
+    },
+    {
+      "plate": 22,
+      "weight_g": 151.45,
+      "seconds": 48561
+    },
+    {
+      "plate": 23,
+      "weight_g": 263.45,
+      "seconds": 85954
+    },
+    {
+      "plate": 24,
+      "weight_g": 136.28,
+      "seconds": 42592
+    },
+    {
+      "plate": 25,
+      "weight_g": 109.05,
+      "seconds": 36101
+    },
+    {
+      "plate": 26,
+      "weight_g": 106.02,
+      "seconds": 33152
+    },
+    {
+      "plate": 27,
+      "weight_g": 99.39,
+      "seconds": 10262
+    },
+    {
+      "plate": 28,
+      "weight_g": 99.42,
+      "seconds": 10247
+    },
+    {
+      "plate": 29,
+      "weight_g": 150.89,
+      "seconds": 31533
+    },
+    {
+      "plate": 30,
+      "weight_g": 18.42,
+      "seconds": 4896
+    },
+    {
+      "plate": 31,
+      "weight_g": 18.52,
+      "seconds": 7520
+    },
+    {
+      "plate": 32,
+      "weight_g": 41.27,
+      "seconds": 9209
+    }
+  ],
+  "physical_test_pending": true,
+  "scope": "20 mirrored frame sections and three matching hammered M rear attachments. Nine other saved slices and all other meshes unchanged.",
+  "preserved_cover_report": "cover-crown-validation.json",
+  "seam_count": 32,
+  "hardware_moves": [
+    {
+      "kind": "screw",
+      "index": 5,
+      "old_xy": [
+        282.0,
+        28.0
+      ],
+      "new_xy": [
+        282.0,
+        29.5
+      ],
+      "distance_mm": 1.5
+    },
+    {
+      "kind": "screw",
+      "index": 6,
+      "old_xy": [
+        -261.0,
+        -5.0
+      ],
+      "new_xy": [
+        -261.0,
+        -11.0
+      ],
+      "distance_mm": 6.0
+    },
+    {
+      "kind": "locator",
+      "index": 12,
+      "old_xy": [
+        209.0,
+        -133.0
+      ],
+      "new_xy": [
+        209.0,
+        -134.5
+      ],
+      "distance_mm": 1.5
+    },
+    {
+      "kind": "photo_tab",
+      "index": 3,
+      "old_xy": [
+        -261.62133652907005,
+        133.0494260537082
+      ],
+      "new_xy": [
+        -261.61525,
+        142.05521582302453
+      ],
+      "distance_mm": 9.005791826094953
+    },
+    {
+      "kind": "photo_tab",
+      "index": 22,
+      "old_xy": [
+        207.41362156747294,
+        -312.194837293935
+      ],
+      "new_xy": [
+        211.41190605737626,
+        -295.87860928003795
+      ],
+      "distance_mm": 16.798975428986143
+    },
+    {
+      "kind": "photo_tab",
+      "index": 24,
+      "old_xy": [
+        76.10262320844643,
+        -326.548893643376
+      ],
+      "new_xy": [
+        76.099375,
+        -312.55688408328047
+      ],
+      "distance_mm": 13.992009937127085
+    },
+    {
+      "kind": "photo_tab",
+      "index": 30,
+      "old_xy": [
+        -261.53542607053276,
+        -113.95147770509551
+      ],
+      "new_xy": [
+        -261.551875,
+        -108.94631727485978
+      ],
+      "distance_mm": 5.005187458994735
+    },
+    {
+      "kind": "photo_tab",
+      "index": 31,
+      "old_xy": [
+        -288.3747141894306,
+        -212.19416548462289
+      ],
+      "new_xy": [
+        -300.72675572159955,
+        -210.34206331528065
+      ],
+      "distance_mm": 12.490124597381255
+    }
+  ],
+  "perimeter_review": {
+    "plates_checked": 20,
+    "canonical_loops_checked": 26,
+    "canonical_large_arcs": 56,
+    "large_arcs_covered": 56,
+    "perimeter_arcs_checked": 318,
+    "max_radial_error_mm": 0.036463080927084945,
+    "passed": true
+  },
+  "complete_package_native_open": {
+    "input_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+    "exit_code": 0,
+    "roundtrip_sha256": "dc72faf3cde0efb62d74a345535d038fda1d1d6e2c285250e6bc15d63ca237cb"
+  }
+}

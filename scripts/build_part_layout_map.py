@@ -22,6 +22,8 @@ OUTPUT = ROOT / 'output/pdf/Dara-Part-and-Plate-Map.pdf'
 
 
 def prepare():
+    if (ROOT/'working/geometry/mirrored-frame-layout.json').exists():
+        return prepare_mirrored()
     sys.path.insert(0, str(ROOT / '.work/python-libs'))
     import numpy as np
     import shapely
@@ -113,13 +115,65 @@ def prepare():
     print(f'Prepared {len(parts)} part footprints and {len(tabs)} installed tabs.')
 
 
+def prepare_mirrored():
+    from build_mirrored_project import read_zip,props,read_mesh,affine,mesh_slice,WORK,tag
+    from colorize_print_project import projection
+    from build_jointed_bambu_project import read_array
+    import numpy as np
+    import trimesh
+    from shapely import affinity,union_all
+    from shapely.geometry import Point,shape
+    from shapely.ops import polylabel
+    SCRATCH.mkdir(parents=True,exist_ok=True)
+    source=WORK/'staged.3mf'
+    release=PACKAGE/'mirrored-joints-validation.json'
+    if release.exists():
+        production=ROOT/'Dara.3mf'
+        if hashlib.sha256(production.read_bytes()).hexdigest()==json.loads(release.read_text())['project_sha256']:source=production
+    files=read_zip(source);cfg=ET.fromstring(files['Metadata/model_settings.config'])
+    names={o.get('id'):props(o)['name'].split(' - ')[0] for o in cfg.findall('object')};actual={}
+    for plate in cfg.findall('plate'):
+        number=int(props(plate)['plater_id'])
+        for inst in plate.findall('model_instance'):
+            name=names[props(inst)['object_id']];row=actual.setdefault(name,dict(plate=number,quantity=0));row['quantity']+=1
+    assert len(actual)==47 and sum(r['quantity'] for r in actual.values())==78
+    d=json.loads((ROOT/'working/geometry/mirrored-frame-layout.json').read_text());cad=(ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad').read_text()
+    poses=json.loads((ROOT/'working/geometry/hammered-M-assembly-poses.json').read_text());parts={};silhouettes={}
+    photos=read_array(cad,'photo_centres');walls=d['wall_mounts']
+    def rings(g):
+        ps=[g] if g.geom_type=='Polygon' else g.geoms
+        return [dict(outer=list(p.exterior.coords),holes=[list(r.coords) for r in p.interiors]) for p in ps if p.area>.01]
+    for name in [*[f'F{i}' for i in range(1,21)],*[f'M{i}' for i in range(1,7)],*[f'Backer{i}' for i in range(1,9)],*[f'B{i}' for i in range(1,5)],'Retainer']:
+        if name.startswith('M'):
+            p=poses[name];obj=ET.fromstring(files[p['path']]).find(tag('resources')).find(f"{tag('object')}[@id='{p['part_id']}']")
+            mesh=affine(read_mesh(obj),np.array(p['assembly_from_mesh']));g=union_all([mesh_slice(mesh,.1),mesh_slice(mesh,9)])
+            assembled=g
+        else:
+            mesh=trimesh.load_mesh(STLS/(name+'.stl'));g=projection(mesh)
+            if name.startswith('F'):assembled=shape(d['parts'][int(name[1:])-1])
+            elif name.startswith('Backer'):assembled=affinity.translate(g,*(np.array(photos[int(name[6:])-1])*.75))
+            elif name.startswith('B'):assembled=affinity.translate(g,*walls[int(name[1:])-1][1])
+            else:assembled=g
+        silhouettes[name]=g
+        poly=assembled if assembled.geom_type=='Polygon' else max(assembled.geoms,key=lambda p:p.area)
+        anchor=Point(walls[int(name[1:])-1][1]) if re.fullmatch(r'B\d',name) else polylabel(poly,tolerance=1)
+        parts[name]=dict(**actual[name],print_outline=rings(g),assembly_outline=rings(assembled),label_xy=list(anchor.coords)[0])
+    tabs=[]
+    for anchor,normal in zip(np.array(d['photo_anchors']).reshape(-1,2),np.array(d['photo_normals']).reshape(-1,2)):
+        g=affinity.translate(silhouettes['Retainer'],4.5,0);g=affinity.rotate(g,math.degrees(math.atan2(normal[1],normal[0])),origin=(0,0));tabs.append(rings(affinity.translate(g,*(anchor*.75))))
+    # These shared plates and all their meshes are unchanged by this revision.
+    legacy=json.loads((PACKAGE/'project-validation.json').read_text())
+    data=dict(project='Dara-Photo-Frame-A1-Complete.3mf',source_path=str(source),project_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),parts=parts,tabs=tabs,plate_layout=legacy['plate_layout'],mirrored=True,frame_assembly_order=d['frame_assembly_order'])
+    DATA.write_text(json.dumps(data),encoding='utf-8');print('Prepared current mirrored frame and actual hammered M map.')
+
+
 def render():
     from reportlab.pdfgen import canvas
     from reportlab.lib.colors import HexColor, Color
     from reportlab.lib.pagesizes import landscape, letter
 
     data = json.loads(DATA.read_text())
-    assert hashlib.sha256((PACKAGE / data['project']).read_bytes()).hexdigest() == data['project_sha256']
+    assert hashlib.sha256(Path(data.get('source_path',PACKAGE/data['project'])).read_bytes()).hexdigest()==data['project_sha256']
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUTPUT), pagesize=landscape(letter), pageCompression=1)
     c.setTitle('Dara Part and Plate Map')
@@ -144,7 +198,7 @@ def render():
     def page(title, subtitle, number):
         text(32, H - 39, title, 22, 'Helvetica-Bold')
         text(32, H - 59, subtitle, 10, color=muted)
-        text(32, 23, 'Dara photo frame  |  29 production plates  |  70 assembly pieces  |  100% scale', 8.5, color=muted)
+        text(32, 23, 'Dara  |  Mirrored seams - 2026-10-15  |  32 plates  |  75 assembly pieces + 3 optional samples', 8.5, color=muted)
         c.setFont('Helvetica', 8.5)
         c.drawRightString(W - 32, 23, f'{number} / 4')
 
@@ -200,9 +254,9 @@ def render():
     for i in range(1, 21):
         label(f'F{i}')
     table([f'F{i}' for i in range(1, 21)])
-    text(520, 116, 'Read the two-line labels as', 10, 'Helvetica-Bold')
-    text(520, 99, 'part number followed by print plate.', 10)
-    text(520, 78, 'Frame width is 914.4 mm when assembled.', 9)
+    text(520, 116, '32 seams, each 67.3-75.1 mm long.', 10, 'Helvetica-Bold')
+    text(520, 99, '20 frame sections. Width: 914.4 mm.', 10)
+    text(520, 78, 'Part F number matches its plate number.', 9)
     centered(257, 62, 'TOP remains at the top of all assembly maps. Not a full-size template.', 8.5, color=muted)
     c.showPage()
 
@@ -214,9 +268,7 @@ def render():
         label(f'M{i}')
     table([f'M{i}' for i in range(1, 7)], row_height=23)
     text(520, 306, 'How to use the map', 12, 'Helvetica-Bold')
-    for i, line in enumerate(['Find the section in the assembled M,', 'then use its plate number to locate the',
-                              'matching part in Bambu Studio.', '', 'The grey outline is the frame beneath',
-                              'the M. Frame plates are on page 1.']):
+    for i, line in enumerate(['Use the current hammered M meshes.', 'M1/M3/M6 have revised rear holes.', 'Assembly: M2, M4, M6, M1, M3, M5.', '', 'Five copper covers print on plate 31:', 'Band1 upper right; Band2 upper left;', 'Band3 lower left; Band4 lower right;', 'Band5 center stem.']):
         text(520, 284 - i * 16, line, 10)
     centered(257, 62, 'Same front-view orientation as page 1.', 8.5, color=muted)
     c.showPage()
@@ -272,9 +324,11 @@ def render():
     text(32, 187, 'Project settings', 12, 'Helvetica-Bold')
     text(32, 167, 'Bambu Lab A1   |   0.4 mm nozzle   |   PLA   |   0.2 mm layers', 10)
     text(32, 149, '4 wall loops   |   15% gyroid infill   |   Local 100% infill at screw and mounting points', 10)
-    text(32, 115, 'Backers use no brim and print by layer. All parts retain their original scale.', 10)
-    text(32, 97, 'Plates 01-20 each contain the matching F section. Plates 21-26 each contain one M section.', 10)
-    text(32, 68, 'Project file: ' + data['project'], 9, color=muted)
+    text(32, 120, 'Frame assembly order - lower sockets onto previously placed tongues:', 10, 'Helvetica-Bold')
+    order=data.get('frame_assembly_order',[])
+    text(32, 103, ', '.join('F'+str(i) for i in order[:10]), 10)
+    text(32, 87, ', '.join('F'+str(i) for i in order[10:]), 10)
+    text(32, 62, 'Plate 30: finish sample. Plate 31: five copper covers. Plate 32: unchanged lap-profile glue practice pair.', 9)
     c.save()
     print(str(OUTPUT))
 

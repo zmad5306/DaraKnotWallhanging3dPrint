@@ -1,0 +1,644 @@
+{
+  "project_sha256": "07a672e8cf8f26b10dd648b2ef4accfd0f93dfa91c528986b4f69d654409dce5",
+  "baseline_sha256": "3e03dd2e57cd08f2e3c0678bc96d25a729ee4887434beb3a6c117c897c176eab",
+  "plates": 32,
+  "objects": 47,
+  "instances": 78,
+  "changed_plates": [
+    {
+      "plate": 31,
+      "gcode_sha256": "81d5ddf9733d439acef47773e021fc079e4818199f774948312a16ebccdb71f0",
+      "weight_g": 17.0,
+      "seconds": 7009,
+      "path_audit": {
+        "extrusion_moves_checked": 83297,
+        "features": {
+          "Support interface": 34258,
+          "Support": 36966,
+          "Brim": 809,
+          "Outer wall": 6485,
+          "Gap infill": 2479,
+          "Inner wall": 2300
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            40.75120631741515,
+            22.9418730188237
+          ],
+          [
+            193.057,
+            209.931
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            40.50120631741515,
+            22.6918730188237
+          ],
+          [
+            193.307,
+            210.181
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 22.6918730188237
+      },
+      "motion": {
+        "commanded_maxima": {
+          "extrusion_acceleration": 5000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 5000.0,
+          "travel_speed": 150.0
+        },
+        "y_axis_upper_bounds": {
+          "extrusion_acceleration": 1000.0,
+          "extrusion_speed": 150.0,
+          "travel_acceleration": 1000.0,
+          "travel_speed": 150.0
+        },
+        "checked_y_moves": {
+          "extrusion": 82788,
+          "travel": 12478
+        },
+        "axis_limit_commands": [
+          "M201 X1000 Y1000 Z1500 E5000",
+          "M203 X150 Y150 Z30 E30"
+        ],
+        "conditional_routine_note": "A conditional inspection can leave M204 S5000 active until a role change. M201 X1000 Y1000 supplies an independent per-axis cap; this is commanded configuration, not measured motion.",
+        "excludes": "Startup, shutdown, conditional firmware inspection/timelapse and custom filament routines. Axis caps are checked separately."
+      },
+      "support_checks": [
+        {
+          "name": "Band1",
+          "interior_interface_points": 3291,
+          "max_interface_above_underside_mm": -0.2848464328511735,
+          "nearby_base_segments": 250
+        },
+        {
+          "name": "Band2",
+          "interior_interface_points": 4183,
+          "max_interface_above_underside_mm": -0.23551749834511782,
+          "nearby_base_segments": 300
+        },
+        {
+          "name": "Band3",
+          "interior_interface_points": 7453,
+          "max_interface_above_underside_mm": -0.2110887124907066,
+          "nearby_base_segments": 357
+        },
+        {
+          "name": "Band4",
+          "interior_interface_points": 6856,
+          "max_interface_above_underside_mm": -0.2628405842599193,
+          "nearby_base_segments": 351
+        },
+        {
+          "name": "Band5",
+          "interior_interface_points": 6013,
+          "max_interface_above_underside_mm": -0.2787326151759544,
+          "nearby_base_segments": 294
+        }
+      ]
+    }
+  ],
+  "unchanged_native_plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "fccd8f06ef813e1945fd2c01d7440fab97ebf76e2d952e7599a21396af4686bb"
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "af9880100b3ac8d3ae028a994fbed686ccfe21f030bf8dda2647fcfbd29a743a"
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "a2129658f5e15fe7038e9224d17ecaa9daa388d501b39d5300ede4da7b5dba34"
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "e2568d48698d3e66e9e430b6087ae521b750fe2fdbbff9260060b51606f32af7"
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "74c3ea8a0d924a6fe2352d4d6f967a3288183518c57d7e100f4c52ea61365508"
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "73f3c7b17559f755a7032edafe34a241a40e6fde6b1924ef998d745b3d7243ac"
+    },
+    {
+      "plate": 7,
+      "gcode_sha256": "b74b4d34c1cd9da28ad98bcb4cd016a7b3144645042e01d82acd3abf3ba23c6a"
+    },
+    {
+      "plate": 8,
+      "gcode_sha256": "72faff551f2b4b9cb54b37646d14310fc578a6c770c280e48e810388bf6bf49e"
+    },
+    {
+      "plate": 9,
+      "gcode_sha256": "56fb574b754ff46efe7150a15764517c578fdf88d282827a911443643fbddeaa"
+    },
+    {
+      "plate": 10,
+      "gcode_sha256": "9b3adcce74719f9a9edd282f6edf9b5e748dfb94b13e9be3081362d35e5fa18a"
+    },
+    {
+      "plate": 11,
+      "gcode_sha256": "2ec3f87a26670b298823ae503760cb46b021fce455c55c1b0af19af4e0a4d8c0"
+    },
+    {
+      "plate": 12,
+      "gcode_sha256": "4a357bf3b725f681dc4750881822b1cac7a8b0784ab8aefa45016225de1e25d4"
+    },
+    {
+      "plate": 13,
+      "gcode_sha256": "c38dae566b16928c281ef7fef2a9c96ba339ab57a79d45e7c61807b2985f32ea"
+    },
+    {
+      "plate": 14,
+      "gcode_sha256": "17ecde88f1abb79e949e76a65c13eee61878b08331a51eaa60ea7de375653f1a"
+    },
+    {
+      "plate": 15,
+      "gcode_sha256": "0176936146ed37bcac4acbdbda63afe3262b2f8a70a5a895d96be86586e475ad"
+    },
+    {
+      "plate": 16,
+      "gcode_sha256": "d6cb2df70f0155a3ebd30e93006f19c0ea1d3106a1cfc6e5914efba984652d66"
+    },
+    {
+      "plate": 17,
+      "gcode_sha256": "263e5ff416d82d513df71385585ac83bd33092a5a0246e6810a7c442e10f1d88"
+    },
+    {
+      "plate": 18,
+      "gcode_sha256": "90ab503c6d4618ebf9721f5ca12a4a1437a48562ee9ae77510e92f30ec0a984d"
+    },
+    {
+      "plate": 19,
+      "gcode_sha256": "ee9279444ca4db02aaf1e38a9c4910e1dd710692b3be5a4a8e72f79fb9bfcd88"
+    },
+    {
+      "plate": 20,
+      "gcode_sha256": "453c53fa4f0e4b38663d1057ba9803b1eb10fb998839d4ed23db8672f7042636"
+    },
+    {
+      "plate": 21,
+      "gcode_sha256": "c82341f187686e05f4812a3e32a50116f0663539845f81349b9f990a148cdf7a"
+    },
+    {
+      "plate": 22,
+      "gcode_sha256": "9f1f10af9f76d50da39f3fb1bf7ead0a517067a70d0f20fc6d1976c1d6542dc8"
+    },
+    {
+      "plate": 23,
+      "gcode_sha256": "57f8e1fbad43b2be04c89a0865d96b731218bff3551ffcd65d5b136688b65362"
+    },
+    {
+      "plate": 24,
+      "gcode_sha256": "a262261bfa950476c22b06776a8a63a560b592eb1f051dff978f3742b9523c7b"
+    },
+    {
+      "plate": 25,
+      "gcode_sha256": "99c5ae4120a394471e0708776766d36331123b5a4bcb140c8e5c0a7243f33739"
+    },
+    {
+      "plate": 26,
+      "gcode_sha256": "374df96523a390bc09d084ed9d313ba9c35a766817316b26db87929839a8a90e"
+    },
+    {
+      "plate": 27,
+      "gcode_sha256": "7dd3397d549d003e4e17e6dad1f9481607a815eaa925e7f2ce516e6bee45de54"
+    },
+    {
+      "plate": 28,
+      "gcode_sha256": "4c8e799c498744ec51822eecaa61010e9223ca0bc14ad0022ea26970b5ed8823"
+    },
+    {
+      "plate": 29,
+      "gcode_sha256": "71807ae7164ee0e29bdc6ef7b993c4a91cefe0063fa89e556e059e9cab5784a1"
+    },
+    {
+      "plate": 30,
+      "gcode_sha256": "d292cd661d3aa9664c54c70d2449afad881692731b7952849410ce677b7b91a5"
+    },
+    {
+      "plate": 32,
+      "gcode_sha256": "e011bfd70170e4d390fef192993d7e629b539b7112d2e636e104a0f01820184a"
+    }
+  ],
+  "geometry_checks": [
+    {
+      "name": "Band1",
+      "object_id": "197",
+      "mesh_path": "3D/Objects/object_54.model",
+      "build_transform": [
+        [
+          -0.3123921168015918,
+          -0.4810416756346442,
+          0.8191520442889918,
+          116.23967287750702
+        ],
+        [
+          0.838670567945424,
+          -0.5446390350150271,
+          -5.015859645267624e-17,
+          98.31903427885099
+        ],
+        [
+          0.4461421789321432,
+          0.6869987102175039,
+          0.573576436351046,
+          -109.11040481667843
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "triangles": 67934,
+      "surface_error": {
+        "sample_count": 197228,
+        "max_mm": 0.0009998204532042365,
+        "p99_mm": 0.0006786838090214968
+      },
+      "underside": {
+        "sample_count": 48296,
+        "max_distance_mm": 0.00011413671270565357
+      },
+      "source_roundtrip_error_mm": 1.284610036037091e-05,
+      "enforced_facets": 15778,
+      "blocked_facets": 52156
+    },
+    {
+      "name": "Band2",
+      "object_id": "199",
+      "mesh_path": "3D/Objects/object_55.model",
+      "build_transform": [
+        [
+          -0.312392116801592,
+          0.48104167563464406,
+          0.8191520442889918,
+          24.629528997268324
+        ],
+        [
+          -0.8386705679454239,
+          -0.5446390350150273,
+          -5.015859645267624e-17,
+          90.70070582647087
+        ],
+        [
+          0.4461421789321434,
+          -0.6869987102175038,
+          0.573576436351046,
+          107.41251443293508
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "triangles": 87226,
+      "surface_error": {
+        "sample_count": 267036,
+        "max_mm": 0.0009999966578551067,
+        "p99_mm": 0.0006815881065120885
+      },
+      "underside": {
+        "sample_count": 54306,
+        "max_distance_mm": 6.823633852129086e-05
+      },
+      "source_roundtrip_error_mm": 9.360506153932738e-06,
+      "enforced_facets": 17860,
+      "blocked_facets": 69366
+    },
+    {
+      "name": "Band3",
+      "object_id": "201",
+      "mesh_path": "3D/Objects/object_56.model",
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          3.148852832719328
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          409.3183823130287
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.37385771838093
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "triangles": 105394,
+      "surface_error": {
+        "sample_count": 281108,
+        "max_mm": 0.0009986331457518816,
+        "p99_mm": 0.0006079239294827232
+      },
+      "underside": {
+        "sample_count": 99252,
+        "max_distance_mm": 4.3778022517560286e-09
+      },
+      "source_roundtrip_error_mm": 2.2825533569770658e-05,
+      "enforced_facets": 32901,
+      "blocked_facets": 72493
+    },
+    {
+      "name": "Band4",
+      "object_id": "203",
+      "mesh_path": "3D/Objects/object_57.model",
+      "build_transform": [
+        [
+          6.123233995736766e-17,
+          -0.573576436351046,
+          0.8191520442889918,
+          63.14885398446384
+        ],
+        [
+          1.0,
+          3.5121427342182706e-17,
+          -5.015859645267624e-17,
+          -87.57191698157004
+        ],
+        [
+          0.0,
+          0.8191520442889918,
+          0.573576436351046,
+          52.37384932213238
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "triangles": 89754,
+      "surface_error": {
+        "sample_count": 234396,
+        "max_mm": 0.0009999373361626596,
+        "p99_mm": 0.0005986803613737379
+      },
+      "underside": {
+        "sample_count": 89688,
+        "max_distance_mm": 4.157948181074522e-09
+      },
+      "source_roundtrip_error_mm": 2.024723280532427e-05,
+      "enforced_facets": 29729,
+      "blocked_facets": 60025
+    },
+    {
+      "name": "Band5",
+      "object_id": "205",
+      "mesh_path": "3D/Objects/object_58.model",
+      "build_transform": [
+        [
+          -1.3147519464173307e-16,
+          0.573576436351046,
+          0.8191520442889918,
+          175.43130708970352
+        ],
+        [
+          -1.0,
+          -1.5758610725691803e-16,
+          -5.015859645267624e-17,
+          154.4861304273763
+        ],
+        [
+          1.0031719290535247e-16,
+          -0.8191520442889918,
+          0.573576436351046,
+          -0.8710324588846562
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "triangles": 78076,
+      "surface_error": {
+        "sample_count": 200312,
+        "max_mm": 0.0009965764528097054,
+        "p99_mm": 0.0006081885345355074
+      },
+      "underside": {
+        "sample_count": 79386,
+        "max_distance_mm": 3.888824602463365e-09
+      },
+      "source_roundtrip_error_mm": 3.4151378353703053e-06,
+      "enforced_facets": 26308,
+      "blocked_facets": 51768
+    }
+  ],
+  "mesh_checks": [
+    {
+      "name": "Band1",
+      "roundtrip_error_mm": 1.4996446965446964e-05
+    },
+    {
+      "name": "Band2",
+      "roundtrip_error_mm": 8.533662142050853e-06
+    },
+    {
+      "name": "Band3",
+      "roundtrip_error_mm": 1.793883012458159e-05
+    },
+    {
+      "name": "Band4",
+      "roundtrip_error_mm": 1.8467628523642076e-05
+    },
+    {
+      "name": "Band5",
+      "roundtrip_error_mm": 3.6967469447775705e-06
+    }
+  ],
+  "settings_changed": false,
+  "precision_settings": {
+    "enable_arc_fitting": "1",
+    "resolution": "0.012"
+  },
+  "total_weight_g": 4101.66,
+  "total_seconds": 945224,
+  "all_plate_estimates": [
+    {
+      "plate": 1,
+      "weight_g": 113.89,
+      "seconds": 22960
+    },
+    {
+      "plate": 2,
+      "weight_g": 123.97,
+      "seconds": 24420
+    },
+    {
+      "plate": 3,
+      "weight_g": 126.47,
+      "seconds": 26460
+    },
+    {
+      "plate": 4,
+      "weight_g": 106.96,
+      "seconds": 22288
+    },
+    {
+      "plate": 5,
+      "weight_g": 143.25,
+      "seconds": 30541
+    },
+    {
+      "plate": 6,
+      "weight_g": 189.13,
+      "seconds": 38311
+    },
+    {
+      "plate": 7,
+      "weight_g": 123.87,
+      "seconds": 25618
+    },
+    {
+      "plate": 8,
+      "weight_g": 145.88,
+      "seconds": 29060
+    },
+    {
+      "plate": 9,
+      "weight_g": 114.99,
+      "seconds": 23145
+    },
+    {
+      "plate": 10,
+      "weight_g": 135.58,
+      "seconds": 27260
+    },
+    {
+      "plate": 11,
+      "weight_g": 121.71,
+      "seconds": 24696
+    },
+    {
+      "plate": 12,
+      "weight_g": 138.38,
+      "seconds": 28440
+    },
+    {
+      "plate": 13,
+      "weight_g": 143.07,
+      "seconds": 28972
+    },
+    {
+      "plate": 14,
+      "weight_g": 126.61,
+      "seconds": 25304
+    },
+    {
+      "plate": 15,
+      "weight_g": 148.86,
+      "seconds": 29816
+    },
+    {
+      "plate": 16,
+      "weight_g": 125.39,
+      "seconds": 27535
+    },
+    {
+      "plate": 17,
+      "weight_g": 106.24,
+      "seconds": 21866
+    },
+    {
+      "plate": 18,
+      "weight_g": 151.03,
+      "seconds": 32423
+    },
+    {
+      "plate": 19,
+      "weight_g": 148.57,
+      "seconds": 29551
+    },
+    {
+      "plate": 20,
+      "weight_g": 110.09,
+      "seconds": 21687
+    },
+    {
+      "plate": 21,
+      "weight_g": 262.2,
+      "seconds": 85323
+    },
+    {
+      "plate": 22,
+      "weight_g": 151.45,
+      "seconds": 48561
+    },
+    {
+      "plate": 23,
+      "weight_g": 266.18,
+      "seconds": 86061
+    },
+    {
+      "plate": 24,
+      "weight_g": 136.28,
+      "seconds": 42592
+    },
+    {
+      "plate": 25,
+      "weight_g": 109.05,
+      "seconds": 36101
+    },
+    {
+      "plate": 26,
+      "weight_g": 106.17,
+      "seconds": 33077
+    },
+    {
+      "plate": 27,
+      "weight_g": 99.39,
+      "seconds": 10262
+    },
+    {
+      "plate": 28,
+      "weight_g": 99.42,
+      "seconds": 10247
+    },
+    {
+      "plate": 29,
+      "weight_g": 150.89,
+      "seconds": 31533
+    },
+    {
+      "plate": 30,
+      "weight_g": 18.42,
+      "seconds": 4896
+    },
+    {
+      "plate": 31,
+      "weight_g": 17.0,
+      "seconds": 7009
+    },
+    {
+      "plate": 32,
+      "weight_g": 41.27,
+      "seconds": 9209
+    }
+  ],
+  "physical_test_pending": true,
+  "scope": "User-authorized promotion of all five repaired bevel meshes. Middle scar remains unconfirmed; existing production process retained."
+}

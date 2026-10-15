@@ -2,7 +2,7 @@
 
 **A real rim defect is repaired in the model. The separate scar across the physical cover is still unexplained.** Zach confirmed that the supports touched the opposite face, ruling out direct support contact on the scarred face. Rotating the earlier cover did not eliminate the physical scar.
 
-The corrected B1 is [Dara-Cover-Edge-Test.3mf](../../../Dara-Cover-Edge-Test.3mf), one full-size cover, **2.11 g / 23 min 54 sec**, with a saved native Bambu slice. This is an optional test of the edge repair, **not a confirmed cure for the transverse scar**. The complete Dara project and previous tests are unchanged. No print was started and Bambu's interactive window was not opened for this repair.
+The corrected B1 is [Dara-Cover-Edge-Test.3mf](../../../Dara-Cover-Edge-Test.3mf), one full-size cover, **2.11 g / 23 min 54 sec**, with a saved native Bambu slice. This is an optional test of the edge repair, **not a confirmed cure for the transverse scar**. No print was started and Bambu's interactive window was not opened for this repair. **Subsequent update:** Zach requested promotion while printing this test; all five repaired cover meshes are now in the [main project's plate 31](../cover-edge-production/README.md), using the main project's existing process settings.
 
 ## What was wrong with the mesh
 
@@ -14,7 +14,7 @@ The generator now includes both edges of the bevel in the triangulation before e
 
 Measured at triangle centers and edge midpoints, B1's maximum deviation from the intended top formula fell from **0.13163 mm to 0.00100 mm**. All five regenerated bands pass the same sampled 0.001 mm limit and are single watertight solids. This limit is a sampling check, not a mathematical bound at every possible point. Bidirectional underside vertex/face-center checks against the original underside triangles differ by at most **0.000115 mm**; this is numerical tessellation variation, not a changed glue allowance. [Geometry measurements](geometry.json).
 
-Only B1 has been packaged as a new print file. The generator correction also covers B2–B5, but the existing full-project binaries have not been replaced while the cover finish remains unresolved.
+The isolated file contains B1. The generator correction covers B2–B5 as well; the subsequent user-authorized promotion put all five into the full-project binaries while retaining the pending physical-finish status.
 
 ## What the dark Preview dashes do and do not establish
 
@@ -38,7 +38,7 @@ The earlier arc-join angle comparison did **not** establish a cause or cure. The
 
 Compared with the earlier cover-only precision test, the new file changes the bevel mesh, regenerates its support paint and support paths, and recenters the revised solid. It retains the slicing settings, object overrides, 55-degree tilt and face plane along Y. Arc fitting remains off and resolution remains 0.001 mm to avoid changing another variable in this comparison.
 
-Native slicing verifies one B1, copper slot 1, A1 / 0.4 mm nozzle / textured PEI, supports and interfaces under the glue face, a bed-contacting tree base, in-bed paths, no inspection pause, and the existing X/Y motion limits. Mesh round-trip deviation is under 0.000016 mm. The full Dara, its duplicate, the copper candidate, the three-piece band test and the earlier precision test retain their recorded hashes. [Slice validation](validation.json).
+Native slicing verifies one B1, copper slot 1, A1 / 0.4 mm nozzle / textured PEI, supports and interfaces under the glue face, a bed-contacting tree base, in-bed paths, no inspection pause, and the existing X/Y motion limits. Mesh round-trip deviation is under 0.000016 mm. The [test's slice validation](validation.json) records the full-project hashes preserved at test creation; the later full-project promotion has its [own current validation](../cover-edge-production/validation.json). Earlier standalone candidate and test files remain unchanged.
 
 If this optional cover is printed, assess the rim and middle scar separately. A cleaner edge would validate the geometric repair; it would not prove the middle scar was caused by the bevel. An unchanged middle scar leaves that issue unresolved. No full-set cover reprint is recommended from the current evidence.
 

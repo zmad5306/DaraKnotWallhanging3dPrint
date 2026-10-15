@@ -22,7 +22,10 @@ That does not establish the cause of the physical scar.
 
 If you print this optional test, compare the edge and middle separately.
 No full set of covers should be reprinted based only on this change.
-The complete Dara.3mf and all previous test files are unchanged.
+UPDATE: the five repaired meshes are now in Dara.3mf plate 31 at your request.
+That project retains its existing production process settings; this isolated
+test retains the experimental precision settings listed above. Earlier test
+files are unchanged. Physical results are still pending.
 No print has been started automatically.
 
 Evidence: working/review/cover-edge/README.md

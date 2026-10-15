@@ -2,7 +2,7 @@
 
 Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identical to the root [Dara.3mf](../../../Dara.3mf). Open as a project in Bambu Studio. All 32 plates have saved slices. The copper has been realigned for Y bed motion, and all 32 plates have been re-sliced with gentle motion limits. The full-color knot joint practice pair remains on plate 32. No job has been sent to the printer.
 
-**Cover finish pending:** B1 printed with the same transverse scar after rotation. A separate [bevel-repair B1](../../../Dara-Cover-Edge-Test.3mf), **2.11 g / 23 min 54 sec**, corrects a measured scalloping defect in the modeled rim. The middle scar remains unexplained; this is not a verified cure for it. The earlier arc-setting test is historical, not the recommended remedy. The complete project's plate 31 retains the previous cover meshes and settings. Do not reprint all five covers from this evidence alone. [Investigation](../../review/cover-edge/README.md).
+**Cover bevel repair applied:** At Zach's request, plate **31** now contains all five repaired cover meshes and a fresh native slice with regenerated supports. The saved 55-degree Y-aligned orientations and production copper/support settings remain in place. The other 31 native slices are unchanged. The small B1 test is still awaiting its physical result; the separate middle scar remains unconfirmed. [Promotion checks](../../review/cover-edge-production/README.md) and [investigation](../../review/cover-edge/README.md).
 
 ## Plate selection
 
@@ -24,7 +24,7 @@ Project-wide X/Y limits are 1,000 mm/s² acceleration and 150 mm/s speed. Proces
 
 ## Material and time
 
-All 32 plates: **4,101.64 g and 262 h 32 min**. Assembly without optional plates 30 and 32: **4,041.95 g and 258 h 36 min**. Copper plates 21-26 and 31: **1,048.31 g and 94 h 03 min**. Optional plate 30: **18.42 g and 1 h 21 min**; plate 32: **41.27 g and 2 h 33 min**. Estimates include supports and purge. Copper exceeds one 1 kg spool before retries. Per-plate details are in [the current report](y-stability-validation.json).
+All 32 plates: **4,101.66 g and 262 h 33 min**. Assembly without optional plates 30 and 32: **4,041.97 g and 258 h 38 min**. Copper plates 21-26 and 31: **1,048.33 g and 94 h 05 min**. Cover plate 31: **17.00 g and 1 h 56 min 49 sec**. Optional plate 30: **18.42 g and 1 h 21 min**; plate 32: **41.27 g and 2 h 33 min**. Estimates include supports and purge. Copper exceeds one 1 kg spool before retries. Per-plate details are in [the current report](cover-edge-validation.json).
 
 ## Assembly supplies
 

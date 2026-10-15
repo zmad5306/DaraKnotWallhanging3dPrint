@@ -1,0 +1,112 @@
+FULL-SIZE HAMMERED M - SIX SLICED BAMBU PLATES
+
+Open Dara-Hammered-M-Candidate.3mf AS A PROJECT in Bambu Studio.
+This is the full-size M, not the small joint coupon.
+Printer: Bambu Lab A1, 0.4 mm nozzle, textured PEI plate.
+Map project filament 1 to the copper silk spool used for the successful test.
+All six plates already include native sliced tree supports and interfaces.
+Print one copy of each plate after the current close-seam joint test passes.
+No print job has been sent to the printer.
+
+PLATES AND STUDIO ESTIMATES (SUPPORTS INCLUDED)
+Plate  Part   Time       Filament
+1      M1     8h 22m      154.16 g
+2      M2     7h 32m      143.52 g
+3      M3    10h 51m      206.74 g
+4      M4    12h 07m      243.38 g
+5      M5     6h 38m      129.50 g
+6      M6     8h 53m      170.42 g
+Total        54h 22m    1,047.72 g
+Times are estimates rounded to minutes; total uses unrounded times.
+The complete M needs more than a fresh 1 kg spool including its supports.
+
+SIZE, TEXTURE AND ORIENTATION
+Assembled outline: 599.88 x 358.74 mm; original mounting locations retained.
+Structural body: 10.5 mm. Highest hammered point: 12.7 mm from the back.
+The surface uses the successful sample's 9 mm dimple pitch, 0.55 mm depth,
+seed 73, and 0.5 mm mesh grid, extended in one coordinate system across the M.
+The crown follows distance from the actual outline and rises no more than
+2.2 mm. It blends over 17.5 mm from an edge. Narrow strokes are more rounded;
+wide strokes have flatter centers with the same hammered dimples. This
+avoids an ever-larger bulge as the M gets wider. It is not a fixed-radius
+spherical dome. No decorative recess cuts below the original 10.5 mm face.
+
+All parts tilt 55 degrees from the bed, with one common direction relative
+to the assembled M. Each part is then turned on the bed to fit. Their layer
+directions therefore agree in the assembly; exact layer phases can differ.
+Keep the saved orientations, scale and support painting when re-slicing.
+Do not lay the pieces flat or run auto-orient before printing.
+
+The six original sections are retained. Combining sections into five while
+keeping a common layer direction approached 250 mm height before allowing
+additional setup margin. The chosen six-part layout stays below 209 mm
+model height and gives the actual supports room on the 256 mm bed.
+
+JOINT REVISION CARRIED THROUGH ALL FIVE JOINTS
+Nominal visible face gap: 0.025 mm instead of 0.075 mm.
+Each edge extends 0.025 mm toward the mate, tapering to zero at body Z=6.7.
+The lower shelf's free end is shortened 0.003 inches (0.0762 mm):
+local X=18 becomes X=17.9238.
+Both key tips on that same end are shortened by the same amount:
+local X=15.75 becomes X=15.6738.
+The mating shoulder and its root curve, socket, key widths/heights and
+opposite ends are retained. Texture is continuous across the section cuts.
+The nominal gap is a CAD target, not a guaranteed physical seam width.
+
+MOUNTS AND PRINT SETTINGS
+All 10 rear screw pilots and 12 rear locator features retain their original
+geometry. Ten D14 modifier cylinders keep the screw regions at 100% cubic
+infill. The remainder uses four walls and 15% gyroid, with 0.2 mm layers.
+The copper settings come from the successful tilted test: 220 C nozzle,
+55 C bed, 0.98 filament flow, 7.5 mm3/s volumetric limit, no ironing.
+These differ from the older flat-top copper settings in Dara.3mf.
+
+Supports are explicitly painted onto downward-facing back, edge and joint
+surfaces. The hammered face and hole interiors have blocker paint.
+The actual sliced interfaces stay below the decorative interior. Supports
+still contact side edges, and the native paths extend roughly 0.45-1.02 mm
+into mounting-hole entrances. Clear those mouths and the lap contact faces
+when removing supports; do not enlarge the holes or remove the shoulder.
+There are no interfaces deep in the blind mounting holes in the path check.
+
+CHECKS AND LIMITS
+All six meshes are single watertight solids. Assembly checks cover all five
+joints and potential part collisions. The original body is preserved apart
+from the specified free-end trims and upper seam extensions. Hidden sections,
+mount geometry and screw reinforcement were checked.
+Bambu Studio 02.08.02.61 sliced every plate. The saved native project was
+compared with the input geometry, modifiers, support paint and settings.
+Extrusion bounds include bead widths and arc extrema. Sparse infill,
+supports and support interfaces exist on every plate; only copper slot 1
+extrudes; no ironing or inspection pause was added.
+The only native slice-info warnings concern traditional timelapse.
+The support image samples real exported toolpaths for legibility.
+
+Physical fit of the revised joint is still pending the small test. Successful
+slicing does not establish full-size print stability or finished fit. Once
+the coupon passes, M2 is a useful first full-size part because it contains
+three joint interfaces and a mounting region. Inspect its finish and support
+removal before committing the rest of the spool. A tall, full-size part is
+a larger physical test than the coupon, even with the same surface formula.
+
+The existing Dara.3mf and 31-plate production copy remain unchanged. Continue
+using them for the frame and other non-M components. Use this candidate
+instead of the old flat M production plates 21-26. Plate 31 in the old
+project is an earlier finish test, not an extra production M part.
+Original M assembly order: M1, M6, M2, M4, M3, M5; print order is independent.
+
+REPRODUCING THE CANDIDATE
+Generator: scripts/prepare_hammered_m_project.py
+Requires Python with numpy, trimesh, scipy, shapely, manifold3d, matplotlib.
+Uses the committed original M STLs, CAD and close-seam test profile.
+From the repository root:
+  python scripts/prepare_hammered_m_project.py geometry
+  python scripts/prepare_hammered_m_project.py stage
+  python scripts/prepare_hammered_m_project.py assembly
+  python scripts/prepare_hammered_m_project.py combine
+  python scripts/prepare_hammered_m_project.py slice --parts 0
+  python scripts/prepare_hammered_m_project.py publish
+Native slicing requires the installed Windows Bambu Studio executable.
+Scratch intermediates are in .work/hammered-m-production and are not versioned.
+Audits and previews are in working/review/hammered-m-production.
+Use git lfs pull after cloning to retrieve the saved 3MF/STL binaries.

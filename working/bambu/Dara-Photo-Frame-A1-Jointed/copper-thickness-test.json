@@ -1,0 +1,376 @@
+{
+  "project": "Dara-Copper-Thickness-Test.3mf",
+  "preserved_hashes": {
+    "Dara.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "working\\bambu\\Dara-Photo-Frame-A1-Jointed\\Dara-Photo-Frame-A1-Complete.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "Dara-Copper-Diagnostic-Test.3mf": "5a95ea51faaa1e0bb3342be059c3abe85e67db21ae2133a9c419c98ed8ceaec1"
+  },
+  "filament_slot": 3,
+  "base_filament_flow_ratio": 0.96,
+  "top_flow_multiplier": 1,
+  "layer_height_mm": 0.2,
+  "initial_layer_height_mm": 0.2,
+  "ironing": false,
+  "pauses": 0,
+  "samples": [
+    {
+      "label": "S1",
+      "position": "front left",
+      "xy": [
+        100,
+        100
+      ],
+      "height": 1.0,
+      "layers": 5,
+      "solid": true,
+      "dimensions_mm": [
+        25,
+        25,
+        1.0
+      ],
+      "model_layer_z_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "features": {
+        "Inner wall": 48,
+        "Outer wall": 20,
+        "Bottom surface": 125,
+        "Internal solid infill": 480,
+        "Top surface": 90
+      },
+      "verified_top_speed_mm_s": 30,
+      "verified_internal_solid_speed_mm_s": 50,
+      "top_long_line_median_e_per_mm": 0.030099409306946864,
+      "internal_long_line_median_e_per_mm": 0.03011831897370034
+    },
+    {
+      "label": "S2",
+      "position": "front right",
+      "xy": [
+        155,
+        100
+      ],
+      "height": 2.0,
+      "layers": 10,
+      "solid": true,
+      "dimensions_mm": [
+        25,
+        25,
+        2.0
+      ],
+      "model_layer_z_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0
+      ],
+      "features": {
+        "Inner wall": 108,
+        "Outer wall": 40,
+        "Bottom surface": 125,
+        "Internal solid infill": 1280,
+        "Top surface": 90
+      },
+      "verified_top_speed_mm_s": 30,
+      "verified_internal_solid_speed_mm_s": 50,
+      "top_long_line_median_e_per_mm": 0.030099409306946864,
+      "internal_long_line_median_e_per_mm": 0.030118313529594987
+    },
+    {
+      "label": "S4",
+      "position": "rear left",
+      "xy": [
+        100,
+        155
+      ],
+      "height": 4.0,
+      "layers": 20,
+      "solid": true,
+      "dimensions_mm": [
+        25,
+        25,
+        4.0
+      ],
+      "model_layer_z_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0
+      ],
+      "features": {
+        "Inner wall": 228,
+        "Outer wall": 80,
+        "Bottom surface": 125,
+        "Internal solid infill": 2880,
+        "Top surface": 90
+      },
+      "verified_top_speed_mm_s": 30,
+      "verified_internal_solid_speed_mm_s": 50,
+      "top_long_line_median_e_per_mm": 0.030099409306946864,
+      "internal_long_line_median_e_per_mm": 0.03011831897370037
+    },
+    {
+      "label": "G4",
+      "position": "rear right",
+      "xy": [
+        155,
+        155
+      ],
+      "height": 4.0,
+      "layers": 20,
+      "solid": false,
+      "dimensions_mm": [
+        25,
+        25,
+        4.0
+      ],
+      "model_layer_z_mm": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0
+      ],
+      "features": {
+        "Inner wall": 228,
+        "Outer wall": 80,
+        "Bottom surface": 125,
+        "Internal solid infill": 1440,
+        "Sparse infill": 874,
+        "Floating vertical shell": 12,
+        "Bridge": 125,
+        "Top surface": 90
+      },
+      "verified_top_speed_mm_s": 30,
+      "verified_internal_solid_speed_mm_s": 50,
+      "top_long_line_median_e_per_mm": 0.030099435948935334,
+      "internal_long_line_median_e_per_mm": 0.030118313529594987
+    }
+  ],
+  "toolpath_audit": {
+    "extrusion_moves_checked": 8783,
+    "features": {
+      "Inner wall": 612,
+      "Outer wall": 220,
+      "Bottom surface": 500,
+      "Internal solid infill": 6080,
+      "Sparse infill": 874,
+      "Top surface": 360,
+      "Floating vertical shell": 12,
+      "Bridge": 125
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "3": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0
+      ]
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        87.71,
+        87.71
+      ],
+      [
+        167.29,
+        167.29
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        87.5,
+        87.5
+      ],
+      [
+        167.5,
+        167.5
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 87.5
+  },
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 2657,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 1,
+    "prepare_time": 9,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 85.20794677734375,
+          "Bridge": 42.492862701416016,
+          "Custom": 373.5399169921875,
+          "Flush": 25.0,
+          "Inner wall": 172.61598205566406,
+          "Internal solid infill": 1002.32421875,
+          "Outer wall": 139.4244384765625,
+          "Sparse infill": 19.170948028564453,
+          "Top surface": 209.14691162109375,
+          "Travel": 92.10881805419922,
+          "Undefined": 75.29974365234375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 7.548010349273682,
+            "total_used_g": 7.548010349273682
+          }
+        ],
+        "generate_support_material_time": 0,
+        "id": 1,
+        "infill_time": 13,
+        "layer_filament_change": 0,
+        "main_predication": 1737.4053955078125,
+        "make_perimeters_time": 2,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 25.0,
+              "height": 1.0,
+              "width": 25.0,
+              "x": 87.5,
+              "y": 87.5,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "S1 - front left - 1.0mm - solid",
+            "triangle_count": 12
+          },
+          {
+            "bbox": {
+              "depth": 25.0,
+              "height": 2.0,
+              "width": 25.0,
+              "x": 142.5,
+              "y": 87.5,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "S2 - front right - 2.0mm - solid",
+            "triangle_count": 12
+          },
+          {
+            "bbox": {
+              "depth": 25.0,
+              "height": 4.0,
+              "width": 25.0,
+              "x": 87.5,
+              "y": 142.5,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "S4 - rear left - 4.0mm - solid",
+            "triangle_count": 12
+          },
+          {
+            "bbox": {
+              "depth": 25.0,
+              "height": 4.0,
+              "width": 25.0,
+              "x": 142.5,
+              "y": 142.5,
+              "z": 0.0
+            },
+            "id": 17,
+            "name": "G4 - rear right - 4.0mm - 15% gyroid",
+            "triangle_count": 12
+          }
+        ],
+        "sliced_time": 74,
+        "sliced_time_with_cache": 51,
+        "total_predication": 2144.13623046875,
+        "triangle_count": 48,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "slice_metadata_repairs": [
+    {
+      "key": "first_layer_time",
+      "invalid_value": "18397084839606834192506665973491695616.000000",
+      "action": "omit"
+    }
+  ],
+  "limitations": [
+    "Calipers measure surface peaks, including the textured underside; they do not measure nozzle clearance.",
+    "A height trend does not distinguish Z motion, material buildup, shrinkage or surface texture by itself.",
+    "No physical replicate at each height, to conserve filament; take repeated readings at multiple locations.",
+    "G4 compares production-style sparse interior/bridge/roof construction with fully solid shells, not infill density alone.",
+    "Different heights finish on different layers and at different times; layer cooling and surface direction can differ.",
+    "A small coupon may not reproduce the full part."
+  ],
+  "project_sha256": "6ea364a791d0a6e648540793fbc381b248d53c9ec9555d25adbc3dcd959d96d6"
+}

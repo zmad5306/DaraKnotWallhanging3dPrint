@@ -1,0 +1,40 @@
+HAMMERED JOINT - SMALLER FACE GAP AND END RELIEF
+
+Open Dara-Hammered-Close-Seam-Test.3mf as a project in Bambu Studio.
+Already sliced for the Bambu A1, 0.4 mm nozzle, and textured PEI plate.
+Map project filament 1 to the same copper silk used in the previous test.
+Estimated total: 1 hour 6 minutes 35 seconds and 16.24 g.
+
+CHANGES FROM YOUR SAVED, SUPPORTED JOINT TEST
+1. The nominal visible face gap is reduced from 0.075 mm to 0.025 mm.
+   Each visible edge extends 0.025 mm toward the other. This extension
+   tapers to zero at body Z=6.7 mm, above the hidden joint features.
+2. The free end of the bottom shelf is shortened by 0.003 inches
+   (0.0762 mm). Its nominal local end changes from X=18 to X=17.9238.
+3. Both keys are shortened by the same 0.003 inches on that same end.
+   Their nominal local ends change from X=15.75 to X=15.6738.
+
+The mating shoulder and its inside curve are unchanged. The socket,
+key widths/heights/opposite ends, rear locator hole, and back faces are
+unchanged. The physical test is still a 42 x 30 mm crop at full M scale.
+The hammered texture and 55-degree orientation are retained.
+
+Your saved support painting is retained on all remaining original faces.
+The removed tip fragments necessarily remove their painted surface area.
+New vertical cut faces need no added support painting. The plate has been
+re-sliced with tree supports and support interfaces, not just checked for
+an enabled support setting. The saved process and filament settings are
+retained: four walls, 15% gyroid, 0.2 mm layers, 220 C nozzle, 55 C bed,
+0.98 filament flow, 7.5 mm3/s volumetric limit, and no ironing.
+
+COMPARE WITH THE PREVIOUS PAIR
+After cooling and support removal, dry-fit without forcing or gluing.
+Compare seating, face gap, and back alignment with the previous pair.
+The end relief is intended to prevent those tips from stopping assembly
+early. We have not established which surface stopped the previous pair;
+this test does not promise that the inside corner is or is not involved.
+The 0.025 mm gap is a CAD target, not a guaranteed printed clearance.
+
+The previous user-saved test and production Dara project are preserved.
+Validation: working/review/hammered-close-seam/validation.json
+Support preview: working/review/hammered-close-seam/supports.png

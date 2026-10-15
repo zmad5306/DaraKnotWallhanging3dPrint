@@ -1,0 +1,159 @@
+import numpy as np
+import struct
+import zipfile
+
+# ==============================================================================
+# Model & Texture Parameters
+# ==============================================================================
+coupon_w = 70.0        # Coupon width along X (mm)
+coupon_d = 35.0        # Coupon depth along Y (mm)
+base_h = 3.0           # Base slab thickness (mm)
+dome_h = 2.2           # Peak elevation of the convex crown (mm)
+
+cell_pitch = 9.0       # Average distance between hammer strike centers (mm)
+depth_factor = 0.55    # Depth of each hammer dimple depression (mm)
+seed = 73              # Random seed for reproducible organic jitter
+res = 0.5              # Surface grid step resolution (mm per vertex)
+
+# ==============================================================================
+# 1. Heightmap & Voronoi Distance Field Calculation
+# ==============================================================================
+nx = int(coupon_w / res)
+ny = int(coupon_d / res)
+
+xs = np.linspace(-coupon_w / 2.0, coupon_w / 2.0, nx + 1)
+ys = np.linspace(-coupon_d / 2.0, coupon_d / 2.0, ny + 1)
+X, Y = np.meshgrid(xs, ys)
+
+# Staggered hexagonal grid for strike centers with jitter
+rng = np.random.RandomState(seed)
+cols = int(np.ceil(coupon_w / cell_pitch)) + 3
+rows = int(np.ceil(coupon_d / (cell_pitch * 0.866))) + 3
+centers = []
+
+for r in range(-2, rows + 2):
+    for c in range(-2, cols + 2):
+        bx = (c - 0.5) * cell_pitch + ((r % 2) * (cell_pitch / 2.0)) - coupon_w / 2.0
+        by = (r - 0.5) * cell_pitch * 0.866 - coupon_d / 2.0
+        jx = rng.uniform(-cell_pitch * 0.28, cell_pitch * 0.28)
+        jy = rng.uniform(-cell_pitch * 0.28, cell_pitch * 0.28)
+        centers.append([bx + jx, by + jy])
+
+centers = np.array(centers)
+
+# Compute nearest strike center for every grid vertex
+pts = np.stack([X.ravel(), Y.ravel()], axis=1)
+dists = np.min(np.sum((pts[:, None, :] - centers[None, :, :]) ** 2, axis=2), axis=1)
+min_d = np.sqrt(dists).reshape(X.shape)
+
+# Convex crown profile + subtractive parabolic dimple facets
+crown = base_h + dome_h * (1.0 - (2.0 * Y / coupon_d) ** 2)
+dimple = depth_factor * np.minimum(1.0, (min_d / (cell_pitch * 0.55)) ** 2)
+Z_top = crown - (depth_factor - dimple)
+
+# ==============================================================================
+# 2. Build Watertight Manifold Topology
+# ==============================================================================
+top_v = np.stack([X.ravel(), Y.ravel(), Z_top.ravel()], axis=1)
+bot_v = np.stack([X.ravel(), Y.ravel(), np.zeros_like(Z_top).ravel()], axis=1)
+verts = np.vstack([bot_v, top_v])
+
+N = (nx + 1) * (ny + 1)
+def t_idx(i, j): return N + j * (nx + 1) + i
+def b_idx(i, j): return j * (nx + 1) + i
+
+tris = []
+
+# Top and Bottom Surface Triangulation
+for j in range(ny):
+    for i in range(nx):
+        # Top Surface (Outward Normal pointing +Z)
+        tris.append([t_idx(i, j), t_idx(i + 1, j), t_idx(i, j + 1)])
+        tris.append([t_idx(i + 1, j), t_idx(i + 1, j + 1), t_idx(i, j + 1)])
+        # Bottom Surface (Outward Normal pointing -Z)
+        tris.append([b_idx(i, j), b_idx(i, j + 1), b_idx(i + 1, j)])
+        tris.append([b_idx(i + 1, j), b_idx(i, j + 1), b_idx(i + 1, j + 1)])
+
+# Four Perimeter Side Walls (Quad Strips)
+for i in range(nx):
+    # Front Wall (-Y)
+    tris.extend([[b_idx(i, 0), b_idx(i + 1, 0), t_idx(i, 0)],
+                 [t_idx(i, 0), b_idx(i + 1, 0), t_idx(i + 1, 0)]])
+    # Back Wall (+Y)
+    tris.extend([[b_idx(i + 1, ny), b_idx(i, ny), t_idx(i + 1, ny)],
+                 [t_idx(i + 1, ny), b_idx(i, ny), t_idx(i, ny)]])
+
+for j in range(ny):
+    # Left Wall (-X)
+    tris.extend([[b_idx(0, j + 1), b_idx(0, j), t_idx(0, j + 1)],
+                 [t_idx(0, j + 1), b_idx(0, j), t_idx(0, j)]])
+    # Right Wall (+X)
+    tris.extend([[b_idx(nx, j), b_idx(nx, j + 1), t_idx(nx, j)],
+                 [t_idx(nx, j), b_idx(nx, j + 1), t_idx(nx, j + 1)]])
+
+tris = np.array(tris, dtype=np.int32)
+
+# Compute outward-facing facet normal vectors
+v0, v1, v2 = verts[tris[:, 0]], verts[tris[:, 1]], verts[tris[:, 2]]
+normals = np.cross(v1 - v0, v2 - v0)
+norm_lens = np.linalg.norm(normals, axis=1, keepdims=True)
+normals /= np.where(norm_lens == 0, 1.0, norm_lens)
+
+# ==============================================================================
+# 3. Export Watertight Binary STL
+# ==============================================================================
+stl_filename = "hammered_coupon_clean.stl"
+with open(stl_filename, "wb") as f:
+    f.write(b"Watertight Hammered Coupon".ljust(80, b"\0"))
+    f.write(struct.pack("<I", len(tris)))
+    for i in range(len(tris)):
+        f.write(struct.pack("<3f3f3f3fH", *normals[i], *v0[i], *v1[i], *v2[i], 0))
+
+print(f"Exported: {stl_filename} ({len(tris)} triangles)")
+
+# ==============================================================================
+# 4. Generate Bambu Studio .3mf Project Archive
+# ==============================================================================
+model_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<model unit="millimeter" xml:lang="en-US" xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02">
+  <metadata name="Application">BambuStudio</metadata>
+  <resources>
+    <object id="1" type="model">
+      <mesh>
+        <vertices>
+"""
+v_lines = [f'          <vertex x="{v[0]:.4f}" y="{v[1]:.4f}" z="{v[2]:.4f}" />' for v in verts]
+model_xml += "\n".join(v_lines) + "\n        </vertices>\n        <triangles>\n"
+
+t_lines = [f'          <triangle v1="{t[0]}" v2="{t[1]}" v3="{t[2]}" />' for t in tris]
+model_xml += "\n".join(t_lines) + """
+        </triangles>
+      </mesh>
+    </object>
+  </resources>
+  <build>
+    <item objectid="1" transform="1 0 0 0 1 0 0 0 1 128 128 0" />
+  </build>
+</model>
+"""
+
+content_types = """<?xml version="1.0" encoding="UTF-8"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+  <Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/>
+</Types>
+"""
+
+rels = """<?xml version="1.0" encoding="UTF-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/>
+</Relationships>
+"""
+
+project_3mf = "hammered_coupon_test.3mf"
+with zipfile.ZipFile(project_3mf, "w", zipfile.ZIP_DEFLATED) as zf:
+    zf.writestr("[Content_Types].xml", content_types)
+    zf.writestr("_rels/.rels", rels)
+    zf.writestr("3D/3dmodel.model", model_xml)
+
+print(f"Exported: {project_3mf}")

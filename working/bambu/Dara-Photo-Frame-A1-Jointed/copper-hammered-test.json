@@ -1,0 +1,642 @@
+{
+  "project": "Dara-Copper-Hammered-Test.3mf",
+  "project_sha256": "f711200b048bc4b1a48afc21bfdc128b2fb6c9d936d68de1acfe706d9fa41be3",
+  "preserved_hashes": {
+    "Dara.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "Dara-Copper-Diagnostic-Test.3mf": "5a95ea51faaa1e0bb3342be059c3abe85e67db21ae2133a9c419c98ed8ceaec1",
+    "Dara-Copper-Thickness-Test.3mf": "6ea364a791d0a6e648540793fbc381b248d53c9ec9555d25adbc3dcd959d96d6"
+  },
+  "geometry": {
+    "dimensions_mm": [
+      25,
+      25,
+      5.943392833719136
+    ],
+    "border_width_mm": 0.5,
+    "minimum_thickness_mm": 4.0,
+    "border_height_mm": 4.0,
+    "untextured_crown_rise_mm": 2.0,
+    "actual_maximum_rise_above_walls_mm": 1.9433928337191357,
+    "maximum_dimple_depth_mm": 0.6,
+    "concave_dimple_center_checks": [
+      {
+        "center": [
+          5.699999999999999,
+          -0.5
+        ],
+        "x_curvature": 0.14598720359748626,
+        "y_curvature": 0.13986430551953252
+      },
+      {
+        "center": [
+          1.9000000000000004,
+          -1.8999999999999986
+        ],
+        "x_curvature": 0.13867416409500952,
+        "y_curvature": 0.12789757346551853
+      },
+      {
+        "center": [
+          1.3000000000000007,
+          4.699999999999999
+        ],
+        "x_curvature": 0.1144847946125793,
+        "y_curvature": 0.1422572095154173
+      },
+      {
+        "center": [
+          -2.6999999999999993,
+          6.100000000000001
+        ],
+        "x_curvature": 0.09076302657575751,
+        "y_curvature": 0.14093160774049093
+      },
+      {
+        "center": [
+          2.9000000000000004,
+          -5.8999999999999995
+        ],
+        "x_curvature": 0.10090578809360816,
+        "y_curvature": 0.10166001500586662
+      },
+      {
+        "center": [
+          -5.8999999999999995,
+          4.900000000000002
+        ],
+        "x_curvature": 0.10389015640850373,
+        "y_curvature": 0.11521692301903472
+      },
+      {
+        "center": [
+          -6.3,
+          -0.6999999999999993
+        ],
+        "x_curvature": 0.10346669487935055,
+        "y_curvature": 0.09057981161977312
+      },
+      {
+        "center": [
+          -3.299999999999999,
+          -4.8999999999999995
+        ],
+        "x_curvature": 0.09413288534017016,
+        "y_curvature": 0.09391964801541695
+      },
+      {
+        "center": [
+          -3.9000000000000004,
+          2.3000000000000007
+        ],
+        "x_curvature": 0.10722257004993627,
+        "y_curvature": 0.0777258558897209
+      },
+      {
+        "center": [
+          -0.6999999999999993,
+          -0.09999999999999964
+        ],
+        "x_curvature": 0.11735618695956071,
+        "y_curvature": 0.10934275744411967
+      },
+      {
+        "center": [
+          3.900000000000002,
+          3.1000000000000014
+        ],
+        "x_curvature": 0.1291836926978762,
+        "y_curvature": 0.08597580314448904
+      },
+      {
+        "center": [
+          -0.29999999999999893,
+          -4.699999999999999
+        ],
+        "x_curvature": 0.10615405214042804,
+        "y_curvature": 0.07515293204058969
+      }
+    ],
+    "maximum_protrusion_above_crown_mm": 0.0,
+    "cells": [
+      {
+        "center": [
+          5.699999999999999,
+          -0.5
+        ],
+        "depth_mm": 0.6,
+        "radius_mm": 2.6813470910796324,
+        "stretch": 1.0446907632351163,
+        "angle_rad": 2.1382104006842004
+      },
+      {
+        "center": [
+          -7.699999999999999,
+          7.5
+        ],
+        "depth_mm": 0.4957906192410227,
+        "radius_mm": 3.1372725151040144,
+        "stretch": 1.0336442549877825,
+        "angle_rad": 1.3744067723611553
+      },
+      {
+        "center": [
+          1.9000000000000004,
+          -1.8999999999999986
+        ],
+        "depth_mm": 0.5762237043009338,
+        "radius_mm": 2.68153993338499,
+        "stretch": 1.0175605294577026,
+        "angle_rad": 4.844207766375021
+      },
+      {
+        "center": [
+          1.3000000000000007,
+          4.699999999999999
+        ],
+        "depth_mm": 0.5621359043083024,
+        "radius_mm": 2.7198981582301354,
+        "stretch": 0.9243963176588459,
+        "angle_rad": 1.1463173318885154
+      },
+      {
+        "center": [
+          -0.09999999999999964,
+          9.900000000000002
+        ],
+        "depth_mm": 0.5833255952273965,
+        "radius_mm": 2.9524683110050596,
+        "stretch": 0.8894216792544801,
+        "angle_rad": 1.3228167909697153
+      },
+      {
+        "center": [
+          -2.6999999999999993,
+          6.100000000000001
+        ],
+        "depth_mm": 0.5315165949064479,
+        "radius_mm": 2.791039538035142,
+        "stretch": 1.107791295734006,
+        "angle_rad": 3.1956787941191154
+      },
+      {
+        "center": [
+          2.9000000000000004,
+          -5.8999999999999995
+        ],
+        "depth_mm": 0.5469904372667651,
+        "radius_mm": 2.9682864442465213,
+        "stretch": 0.9473419298586386,
+        "angle_rad": 2.2467229179300605
+      },
+      {
+        "center": [
+          7.700000000000003,
+          4.5
+        ],
+        "depth_mm": 0.5268041149887586,
+        "radius_mm": 3.0572076673495894,
+        "stretch": 0.8831096883244849,
+        "angle_rad": 0.21048934359599353
+      },
+      {
+        "center": [
+          7.5,
+          9.5
+        ],
+        "depth_mm": 0.4905602340800999,
+        "radius_mm": 2.9431304348944987,
+        "stretch": 0.9928963605419874,
+        "angle_rad": 2.531967550905021
+      },
+      {
+        "center": [
+          -5.8999999999999995,
+          4.900000000000002
+        ],
+        "depth_mm": 0.5776984050592933,
+        "radius_mm": 2.9759160150252657,
+        "stretch": 1.0699420616665647,
+        "angle_rad": 0.6532617644964381
+      },
+      {
+        "center": [
+          -6.3,
+          -0.6999999999999993
+        ],
+        "depth_mm": 0.5830467062868057,
+        "radius_mm": 3.1274721752092263,
+        "stretch": 0.9189758430140381,
+        "angle_rad": 0.520661633540433
+      },
+      {
+        "center": [
+          -3.299999999999999,
+          -4.8999999999999995
+        ],
+        "depth_mm": 0.4875917419679063,
+        "radius_mm": 2.9032703969449383,
+        "stretch": 1.1148054159698215,
+        "angle_rad": 2.379062591058831
+      },
+      {
+        "center": [
+          -1.5,
+          -9.3
+        ],
+        "depth_mm": 0.5729724924358366,
+        "radius_mm": 2.7423423644790113,
+        "stretch": 0.9304764689379194,
+        "angle_rad": 6.129108730520156
+      },
+      {
+        "center": [
+          -3.9000000000000004,
+          2.3000000000000007
+        ],
+        "depth_mm": 0.5834529817045593,
+        "radius_mm": 3.156434866639071,
+        "stretch": 1.0725756208705763,
+        "angle_rad": 4.559826215145559
+      },
+      {
+        "center": [
+          8.100000000000001,
+          -9.5
+        ],
+        "depth_mm": 0.5518233954345771,
+        "radius_mm": 2.9021719917078888,
+        "stretch": 1.115760995449256,
+        "angle_rad": 5.802273404688984
+      },
+      {
+        "center": [
+          1.700000000000001,
+          -9.1
+        ],
+        "depth_mm": 0.49568649338288373,
+        "radius_mm": 2.626502066338811,
+        "stretch": 1.1087870236658808,
+        "angle_rad": 1.9572407116315835
+      },
+      {
+        "center": [
+          5.100000000000001,
+          -8.1
+        ],
+        "depth_mm": 0.5599332349161525,
+        "radius_mm": 2.93733903360734,
+        "stretch": 0.9850918638185937,
+        "angle_rad": 5.526614210701058
+      },
+      {
+        "center": [
+          3.6999999999999993,
+          8.900000000000002
+        ],
+        "depth_mm": 0.4945628628145143,
+        "radius_mm": 2.961086465110194,
+        "stretch": 1.0462095779713807,
+        "angle_rad": 2.716637215676448
+      },
+      {
+        "center": [
+          -0.6999999999999993,
+          -0.09999999999999964
+        ],
+        "depth_mm": 0.48782886974294815,
+        "radius_mm": 2.630500535790608,
+        "stretch": 0.9834540062176558,
+        "angle_rad": 2.8750692689416937
+      },
+      {
+        "center": [
+          -8.9,
+          -4.8999999999999995
+        ],
+        "depth_mm": 0.5623990182888572,
+        "radius_mm": 3.0485343250010963,
+        "stretch": 1.0273255804271608,
+        "angle_rad": 5.357961025103653
+      },
+      {
+        "center": [
+          -9.9,
+          -1.8999999999999986
+        ],
+        "depth_mm": 0.5454084226641419,
+        "radius_mm": 2.813468808905109,
+        "stretch": 0.9279744529013928,
+        "angle_rad": 4.959769785494844
+      },
+      {
+        "center": [
+          -7.3,
+          -8.5
+        ],
+        "depth_mm": 0.5649089466256723,
+        "radius_mm": 2.672320188093956,
+        "stretch": 0.9895142031306237,
+        "angle_rad": 1.6308986552362392
+      },
+      {
+        "center": [
+          7.900000000000002,
+          -5.1
+        ],
+        "depth_mm": 0.5637918794282348,
+        "radius_mm": 2.953849783297605,
+        "stretch": 1.1159108018350072,
+        "angle_rad": 4.881138757308296
+      },
+      {
+        "center": [
+          3.900000000000002,
+          3.1000000000000014
+        ],
+        "depth_mm": 0.5393337277693272,
+        "radius_mm": 2.8728971495453446,
+        "stretch": 1.0975710120703552,
+        "angle_rad": 1.3507873529892092
+      },
+      {
+        "center": [
+          9.100000000000001,
+          0.9000000000000004
+        ],
+        "depth_mm": 0.5731275574495021,
+        "radius_mm": 2.915465654366815,
+        "stretch": 1.063295633333059,
+        "angle_rad": 1.676438105491186
+      },
+      {
+        "center": [
+          -9.1,
+          2.5
+        ],
+        "depth_mm": 0.575300862120936,
+        "radius_mm": 2.9673002760811804,
+        "stretch": 1.0333418662637839,
+        "angle_rad": 2.465655693208421
+      },
+      {
+        "center": [
+          -5.3,
+          9.3
+        ],
+        "depth_mm": 0.5637377829248975,
+        "radius_mm": 3.1539914200184773,
+        "stretch": 0.9345211095258443,
+        "angle_rad": 1.4097969401070471
+      },
+      {
+        "center": [
+          9.5,
+          6.900000000000002
+        ],
+        "depth_mm": 0.5258310387477652,
+        "radius_mm": 3.0850791445770875,
+        "stretch": 1.1094761129342414,
+        "angle_rad": 2.3280925311427656
+      },
+      {
+        "center": [
+          -0.29999999999999893,
+          -4.699999999999999
+        ],
+        "depth_mm": 0.5536045746897293,
+        "radius_mm": 3.1051667303069843,
+        "stretch": 1.0829294410312607,
+        "angle_rad": 1.9484198143917153
+      },
+      {
+        "center": [
+          9.700000000000003,
+          -2.6999999999999993
+        ],
+        "depth_mm": 0.5164806611921983,
+        "radius_mm": 2.980722912281193,
+        "stretch": 0.9287500477525215,
+        "angle_rad": 4.50296934233559
+      }
+    ],
+    "grid_spacing_mm": 0.2,
+    "maximum_face_slope_degrees": 31.797917728014994,
+    "cross_section_area_mm2": {
+      "3.9": 625.0000000000057,
+      "4.1": 521.5543788780188,
+      "4.5": 280.8113745812113,
+      "4.9": 182.3192463537036,
+      "5.3": 70.61387660263955
+    },
+    "vertices": 16377,
+    "triangles": 32750,
+    "volume_mm3": 2872.048399128631,
+    "watertight": true,
+    "bodies": 1,
+    "undercuts": false,
+    "seed": 20261014,
+    "construction": "One broad domed face above 4 mm walls, with 30 overlapping concave parabolic dimples cut into its envelope"
+  },
+  "filament_slot": 3,
+  "base_filament_flow_ratio": 0.96,
+  "top_flow_multiplier": 1,
+  "layer_height_mm": 0.2,
+  "top_surface_layers_mm": [
+    4.0,
+    4.2,
+    4.4,
+    4.6,
+    4.8,
+    5.0,
+    5.2,
+    5.4,
+    5.6,
+    5.8
+  ],
+  "interior_wall_moves_at_final_layer": 4,
+  "infill": {
+    "pattern": "gyroid",
+    "density_percent": 15,
+    "sparse_layers_mm": [
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2.0,
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2,
+      3.6
+    ],
+    "central_sparse_layers_mm": [
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2.0,
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2,
+      3.6
+    ],
+    "total_sparse_path_length_mm": 1589.0028977189759
+  },
+  "toolpath_audit": {
+    "extrusion_moves_checked": 7564,
+    "features": {
+      "Inner wall": 968,
+      "Outer wall": 477,
+      "Bottom surface": 125,
+      "Internal solid infill": 2514,
+      "Sparse infill": 1036,
+      "Floating vertical shell": 625,
+      "Bridge": 481,
+      "Top surface": 780,
+      "Gap infill": 558
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "3": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5.0,
+        5.2,
+        5.4,
+        5.6,
+        5.8,
+        6.0
+      ]
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        115.71,
+        115.71
+      ],
+      [
+        140.29,
+        140.29
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        115.5,
+        115.5
+      ],
+      [
+        140.5,
+        140.5
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 115.5
+  },
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 2845,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 1,
+    "prepare_time": 38,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 21.226957321166992,
+          "Bridge": 58.769283294677734,
+          "Custom": 373.2467041015625,
+          "Flush": 25.0,
+          "Gap infill": 10.974247932434082,
+          "Inner wall": 79.28885650634766,
+          "Internal solid infill": 254.50408935546875,
+          "Outer wall": 65.1631088256836,
+          "Sparse infill": 23.109519958496094,
+          "Top surface": 89.36663818359375,
+          "Travel": 136.16055297851562,
+          "Undefined": 119.58818054199219
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 2.6732332706451416,
+            "total_used_g": 2.6732332706451416
+          }
+        ],
+        "generate_support_material_time": 7,
+        "id": 1,
+        "infill_time": 45,
+        "layer_filament_change": 0,
+        "main_predication": 713.5673217773438,
+        "make_perimeters_time": 17,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 25.0,
+              "height": 5.943392753601074,
+              "width": 25.0,
+              "x": 115.5,
+              "y": 115.5,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "H - one domed face with concave dimples - 25 x 25 mm",
+            "triangle_count": 32750
+          }
+        ],
+        "sliced_time": 165,
+        "sliced_time_with_cache": 82,
+        "total_predication": 1120.2415771484375,
+        "triangle_count": 32750,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "slice_metadata_repairs": [],
+  "limitations": [
+    "Appearance sample only; the actual silk sheen and layer stepping require a physical print.",
+    "The AI concept is a style reference, not an exact prediction of this mesh or its printed surface.",
+    "The crown and dimples are approximated by 0.2 mm layers. Contour steps remain visible.",
+    "This sample contains a verified sparse gyroid core; its short paths and cooling still differ from the full M."
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "source_sha256": "1f29db6ef0322c2b7af1993b85766ecf0132f5967909d512a553c7a3ca9b77c7",
+  "preserved": {
+    "Dara.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94"
+  },
+  "source_rotation": [
+    [
+      8.67361738e-18,
+      -0.573576436,
+      0.819152044,
+      0.0
+    ],
+    [
+      1.0,
+      5.20417043e-18,
+      -6.9388939e-18,
+      0.0
+    ],
+    [
+      0.0,
+      0.819152044,
+      0.573576436,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "face_angle_degrees": 55,
+  "joint": [
+    1,
+    2,
+    [
+      32.336138117987566,
+      136.58266699147163
+    ],
+    57.06125907870988,
+    38.67716598571674,
+    [
+      -12.83858299285837,
+      7.16141700714163
+    ]
+  ],
+  "crop_mm": [
+    [
+      -12,
+      -17
+    ],
+    [
+      30,
+      13
+    ]
+  ],
+  "texture": {
+    "pitch_mm": 9.0,
+    "depth_mm": 0.55,
+    "crown_maximum_rise_mm": 2.2,
+    "mesh_spacing_mm": 0.5,
+    "seed": 73
+  },
+  "geometry_checks": [
+    {
+      "part": "M2",
+      "watertight": true,
+      "components": 1,
+      "removed_original_material_mm3": 0.0,
+      "section_difference_mm2": {
+        "0.1": 0.0,
+        "1.0": 0.0,
+        "3.25": 0.0,
+        "4.8": 1.1181592616535296e-10,
+        "4.95": 2.1330373081613957e-21,
+        "6.05": 0.0,
+        "8.7": 0.0,
+        "10.49": 5.089927046667158e-11
+      },
+      "numerical_added_volume_below_face_mm3": 5.745880210892886e-08,
+      "bounds_in_joint_coordinates_mm": [
+        [
+          -12.0,
+          -17.0,
+          0.0
+        ],
+        [
+          17.999998070567226,
+          13.0,
+          12.7
+        ]
+      ],
+      "volume_mm3": 6944.455567764496,
+      "build_transform": [
+        [
+          8.67361738e-18,
+          -0.573576436,
+          0.819152044,
+          92.18664360106777
+        ],
+        [
+          1.0,
+          5.20417043e-18,
+          -6.9388939e-18,
+          125.00000096471639
+        ],
+        [
+          0.0,
+          0.819152044,
+          0.573576436,
+          13.925584747999999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "part": "M3",
+      "watertight": true,
+      "components": 1,
+      "removed_original_material_mm3": 1.8947806286936004e-14,
+      "section_difference_mm2": {
+        "0.1": 1.7310136133054096e-11,
+        "1.0": 1.7307200006871197e-09,
+        "3.25": 9.773744661641329e-12,
+        "4.8": 2.1328193217578596e-11,
+        "4.95": 3.0499826497543387e-07,
+        "6.05": 3.500416249208415e-09,
+        "8.7": 1.0219270357820099e-08,
+        "10.49": 1.1544925461400379e-08
+      },
+      "numerical_added_volume_below_face_mm3": 4.561323638385915e-09,
+      "bounds_in_joint_coordinates_mm": [
+        [
+          0.03749287719651826,
+          -17.0,
+          0.0
+        ],
+        [
+          30.0,
+          13.0,
+          12.689436893257389
+        ]
+      ],
+      "volume_mm3": 6601.880856431305,
+      "build_transform": [
+        [
+          8.67361738e-18,
+          -0.573576436,
+          0.819152044,
+          151.2568453228787
+        ],
+        [
+          1.0,
+          5.20417043e-18,
+          -6.9388939e-18,
+          112.98125356140174
+        ],
+        [
+          0.0,
+          0.819152044,
+          0.573576436,
+          13.925584747999999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "assembled_intersection_mm3": 0.0,
+  "limitations": [
+    "Joint fit, locator fit and support removal require physical inspection.",
+    "Pattern uses the successful formula at the same physical scale, extended continuously over the M.",
+    "Crown follows the actual M outline, with relief clamped at zero to preserve the original body.",
+    "This fit sample retains the successful saved process except four structural walls and 15% gyroid."
+  ],
+  "project": "Dara-Hammered-Joint-Test.3mf",
+  "project_sha256": "0fcfbc9c753cf05fb9c31ed49643685aeb65f1fd8195bc7596950fc5afb64839",
+  "toolpath_audit": {
+    "extrusion_moves_checked": 45628,
+    "features": {
+      "Support": 793,
+      "Brim": 3339,
+      "Outer wall": 9704,
+      "Gap infill": 629,
+      "Inner wall": 13539,
+      "Internal solid infill": 721,
+      "Sparse infill": 8707,
+      "Floating vertical shell": 7795,
+      "Bridge": 344,
+      "Top surface": 49,
+      "Overhang wall": 8
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "1": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5.0,
+        5.2,
+        5.4,
+        5.6,
+        5.8,
+        6.0,
+        6.2,
+        6.4,
+        6.6,
+        6.8,
+        7.0,
+        7.2,
+        7.4,
+        7.6,
+        7.8,
+        8.0,
+        8.2,
+        8.4,
+        8.6,
+        8.8,
+        9.0,
+        9.2,
+        9.4,
+        9.6,
+        9.8,
+        10.0,
+        10.2,
+        10.4,
+        10.6,
+        10.8,
+        11.0,
+        11.2,
+        11.4,
+        11.6,
+        11.8,
+        12.0,
+        12.2,
+        12.4,
+        12.6,
+        12.8,
+        13.0,
+        13.2,
+        13.4,
+        13.6,
+        13.8,
+        14.0,
+        14.2,
+        14.4,
+        14.6,
+        14.8,
+        15.0,
+        15.2,
+        15.4,
+        15.6,
+        15.8,
+        16.0,
+        16.2,
+        16.4,
+        16.6,
+        16.8,
+        17.0,
+        17.2,
+        17.4,
+        17.6,
+        17.8,
+        18.0,
+        18.2,
+        18.4,
+        18.6,
+        18.8,
+        19.0,
+        19.2,
+        19.4,
+        19.6,
+        19.8,
+        20.0,
+        20.2,
+        20.4,
+        20.6,
+        20.8,
+        21.0,
+        21.2,
+        21.4,
+        21.6,
+        21.8,
+        22.0,
+        22.2,
+        22.4,
+        22.6,
+        22.8,
+        23.0,
+        23.2,
+        23.4,
+        23.6,
+        23.8,
+        24.0,
+        24.2,
+        24.4,
+        24.6,
+        24.8,
+        25.0,
+        25.2,
+        25.4,
+        25.6,
+        25.8,
+        26.0,
+        26.2,
+        26.4,
+        26.6,
+        26.8,
+        27.0,
+        27.2,
+        27.4,
+        27.6,
+        27.8,
+        28.0,
+        28.2,
+        28.4,
+        28.6,
+        28.8,
+        29.0,
+        29.2,
+        29.4,
+        29.6,
+        29.8,
+        30.0,
+        30.2,
+        30.4,
+        30.6,
+        30.8,
+        31.0,
+        31.2
+      ]
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        84.487,
+        95.764
+      ],
+      [
+        172.277,
+        160.236
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        84.237,
+        95.514
+      ],
+      [
+        172.527,
+        160.486
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 83.47300000000001
+  },
+  "support_face_check": {
+    "support_maximum_local_depth_axis_mm": 7.855173973988684,
+    "decorative_face_starts_at_local_z_mm": 10.5
+  },
+  "slice_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "N2S",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "2776",
+    "weight": "11.89",
+    "pause_count": "0",
+    "first_layer_time": "0.000000",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "true",
+    "support_material_on_wipe_tower": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1 1 1 1",
+    "limit_filament_maps": "0 0 0 0"
+  },
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 2782,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 1,
+    "prepare_time": 21,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bridge": 12.214804649353027,
+          "Brim": 114.78184509277344,
+          "Custom": 372.8539733886719,
+          "Flush": 25.0,
+          "Gap infill": 16.234323501586914,
+          "Inner wall": 749.8593139648438,
+          "Internal solid infill": 235.2968292236328,
+          "Outer wall": 433.8806457519531,
+          "Overhang wall": 0.21083244681358337,
+          "Sparse infill": 231.56517028808594,
+          "Support": 42.331783294677734,
+          "Top surface": 2.950782537460327,
+          "Travel": 556.0635986328125,
+          "Undefined": 539.5086059570312
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 11.89421558380127,
+            "total_used_g": 11.89421558380127
+          }
+        ],
+        "generate_support_material_time": 50,
+        "id": 1,
+        "infill_time": 75,
+        "layer_filament_change": 0,
+        "main_predication": 2370.372314453125,
+        "make_perimeters_time": 41,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 30.0,
+              "height": 31.85898208618164,
+              "width": 27.610525131225586,
+              "x": 84.73014831542969,
+              "y": 113.0,
+              "z": 2.000000165480742e-09
+            },
+            "id": 5,
+            "name": "M2 - actual joint crop",
+            "triangle_count": 4106
+          },
+          {
+            "bbox": {
+              "depth": 29.962509155273438,
+              "height": 31.852922439575195,
+              "width": 27.601869583129883,
+              "x": 143.80035400390625,
+              "y": 113.01874542236328,
+              "z": 2.000000165480742e-09
+            },
+            "id": 9,
+            "name": "M3 - actual joint crop",
+            "triangle_count": 7954
+          }
+        ],
+        "sliced_time": 816,
+        "sliced_time_with_cache": 613,
+        "total_predication": 2776.671142578125,
+        "triangle_count": 12060,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  }
+}

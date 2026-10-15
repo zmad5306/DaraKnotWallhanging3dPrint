@@ -1,0 +1,336 @@
+{
+  "overall_bounds_mm": [
+    [
+      -299.93999648918344,
+      -179.3677510471274,
+      0.0
+    ],
+    [
+      299.9400028759659,
+      179.36775037646294,
+      12.7
+    ]
+  ],
+  "unchanged_mount_regions": [
+    {
+      "part": "M1",
+      "type": "screw",
+      "xy_mm": [
+        -76.0,
+        162.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M1",
+      "type": "screw",
+      "xy_mm": [
+        -262.0,
+        71.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M1",
+      "type": "locator",
+      "xy_mm": [
+        -23.0,
+        141.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M1",
+      "type": "locator",
+      "xy_mm": [
+        -219.0,
+        74.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M2",
+      "type": "screw",
+      "xy_mm": [
+        -28.0,
+        76.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M2",
+      "type": "locator",
+      "xy_mm": [
+        33.0,
+        127.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M2",
+      "type": "locator",
+      "xy_mm": [
+        -34.0,
+        41.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M3",
+      "type": "screw",
+      "xy_mm": [
+        213.0,
+        148.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M3",
+      "type": "screw",
+      "xy_mm": [
+        282.0,
+        28.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M3",
+      "type": "locator",
+      "xy_mm": [
+        71.0,
+        165.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M3",
+      "type": "locator",
+      "xy_mm": [
+        267.0,
+        25.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M4",
+      "type": "screw",
+      "xy_mm": [
+        -261.0,
+        -5.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M4",
+      "type": "screw",
+      "xy_mm": [
+        -213.0,
+        -170.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M4",
+      "type": "locator",
+      "xy_mm": [
+        -219.0,
+        39.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M4",
+      "type": "locator",
+      "xy_mm": [
+        -219.0,
+        -157.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M5",
+      "type": "screw",
+      "xy_mm": [
+        -29.0,
+        -62.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M5",
+      "type": "locator",
+      "xy_mm": [
+        -35.0,
+        -40.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M5",
+      "type": "locator",
+      "xy_mm": [
+        -23.0,
+        -174.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M6",
+      "type": "screw",
+      "xy_mm": [
+        261.0,
+        -25.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M6",
+      "type": "screw",
+      "xy_mm": [
+        213.0,
+        -148.0
+      ],
+      "region_diameter_mm": 5,
+      "region_height_mm": 8.8,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M6",
+      "type": "locator",
+      "xy_mm": [
+        266.0,
+        -40.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    },
+    {
+      "part": "M6",
+      "type": "locator",
+      "xy_mm": [
+        209.0,
+        -133.0
+      ],
+      "region_diameter_mm": 7,
+      "region_height_mm": 3.5,
+      "geometry_difference_mm3": 0.0
+    }
+  ],
+  "joints": [
+    {
+      "joint": 1,
+      "male": "M2",
+      "female": "M3",
+      "overlap_volume_mm3": 0.0,
+      "samples": 31,
+      "face_gap_min_mm": 0.025013163854425445,
+      "face_gap_max_mm": 0.0250131638544527,
+      "lower_shelf_end_mm": 17.9238,
+      "key_end_mm": 15.6738,
+      "tip_shortening_mm": 0.0762
+    },
+    {
+      "joint": 2,
+      "male": "M6",
+      "female": "M3",
+      "overlap_volume_mm3": 0.0,
+      "samples": 31,
+      "face_gap_min_mm": 0.025013163854424647,
+      "face_gap_max_mm": 0.025013163854452965,
+      "lower_shelf_end_mm": 17.9238,
+      "key_end_mm": 15.6738,
+      "tip_shortening_mm": 0.0762
+    },
+    {
+      "joint": 3,
+      "male": "M1",
+      "female": "M4",
+      "overlap_volume_mm3": 0.0,
+      "samples": 31,
+      "face_gap_min_mm": 0.025013163854419915,
+      "face_gap_max_mm": 0.025013163854439174,
+      "lower_shelf_end_mm": 17.9238,
+      "key_end_mm": 15.6738,
+      "tip_shortening_mm": 0.0762
+    },
+    {
+      "joint": 4,
+      "male": "M1",
+      "female": "M2",
+      "overlap_volume_mm3": 7.221616290300197e-08,
+      "samples": 31,
+      "face_gap_min_mm": 0.025013163854424647,
+      "face_gap_max_mm": 0.025013163854468543,
+      "lower_shelf_end_mm": 17.9238,
+      "key_end_mm": 15.6738,
+      "tip_shortening_mm": 0.0762
+    },
+    {
+      "joint": 5,
+      "male": "M2",
+      "female": "M5",
+      "overlap_volume_mm3": 0.0,
+      "samples": 31,
+      "face_gap_min_mm": 0.02501316385442643,
+      "face_gap_max_mm": 0.0250131638544275,
+      "lower_shelf_end_mm": 17.9238,
+      "key_end_mm": 15.6738,
+      "tip_shortening_mm": 0.0762
+    }
+  ],
+  "texture": {
+    "pitch_mm": 9,
+    "depth_mm": 0.55,
+    "maximum_added_crown_mm": 2.2,
+    "edge_blend_distance_mm": 17.5,
+    "grid_spacing_mm": 0.5,
+    "seed": 73
+  },
+  "common_tilt_deg": 55,
+  "common_assembled_in_plane_rotation_deg": 1.5,
+  "physical_joint_fit_pending": true,
+  "preserved_projects": {
+    "Dara.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94"
+  },
+  "reference_close_seam_test_sha256": "503d44a3a5195aab371e100598bc1fe879584f68cb717c6f78581e3e2acb13ee"
+}

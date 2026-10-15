@@ -1,0 +1,264 @@
+{
+  "method": "Convex-hull dimensional search with fixed 55 degree face tilt; independent in-plane and bed yaw angles; differential_evolution seed 73, popsize 12, tolerance 1e-7.",
+  "target_envelope_mm": [
+    244,
+    244,
+    246
+  ],
+  "source": "working/stl/Dara-Photo-Frame-A1-Jointed/M1..M6.stl",
+  "source_hashes": {
+    "M1": "a1ac65ecc9efa0f9ff019774c3ad4017ffe037d7d037be126f27a2bc1db85493",
+    "M2": "7a6e1de622362aca089b59b69cf5547d754e223fa4b2c373c951e81dbda6c873",
+    "M3": "9fb787a78c2f6db4d92147d595a43cdb9c5698412be67a134be143f4c93611b8",
+    "M4": "cc59e5104d99da8c236585060a44cc726058251718bad4c04c3b219a8d9e940a",
+    "M5": "2e0a3fc707a95540663baee8e7a3b5230a8d88326c17dc83b869b07cda1088a3",
+    "M6": "9a46f1cc005aad46459b600f3cae2a6d537151974b589e24e5660872369a1584"
+  },
+  "relief_allowance_mm": 2.2,
+  "candidates": [
+    {
+      "parts": [
+        1
+      ],
+      "angles": [
+        209.6604,
+        17.251
+      ],
+      "dimensions": [
+        201.015,
+        201.015,
+        202.663
+      ],
+      "fit_ratio": 0.8238324353223366
+    },
+    {
+      "parts": [
+        2
+      ],
+      "angles": [
+        336.9755,
+        22.2445
+      ],
+      "dimensions": [
+        120.847,
+        130.526,
+        136.823
+      ],
+      "fit_ratio": 0.5561894846321106
+    },
+    {
+      "parts": [
+        3
+      ],
+      "angles": [
+        166.5347,
+        70.7845
+      ],
+      "dimensions": [
+        211.806,
+        211.806,
+        213.543
+      ],
+      "fit_ratio": 0.8680592746361964
+    },
+    {
+      "parts": [
+        4
+      ],
+      "angles": [
+        201.29,
+        65.1638
+      ],
+      "dimensions": [
+        194.895,
+        194.895,
+        196.492
+      ],
+      "fit_ratio": 0.7987497148678673
+    },
+    {
+      "parts": [
+        5
+      ],
+      "angles": [
+        53.3264,
+        56.0301
+      ],
+      "dimensions": [
+        138.93,
+        138.93,
+        140.069
+      ],
+      "fit_ratio": 0.5693862503698437
+    },
+    {
+      "parts": [
+        6
+      ],
+      "angles": [
+        80.5107,
+        65.8881
+      ],
+      "dimensions": [
+        173.652,
+        173.652,
+        175.076
+      ],
+      "fit_ratio": 0.7116903135395244
+    },
+    {
+      "parts": [
+        1,
+        4
+      ],
+      "angles": [
+        254.0128,
+        55.3939
+      ],
+      "dimensions": [
+        293.089,
+        293.089,
+        295.491
+      ],
+      "fit_ratio": 1.2011847433597225
+    },
+    {
+      "parts": [
+        2,
+        5
+      ],
+      "angles": [
+        137.2578,
+        24.6613
+      ],
+      "dimensions": [
+        227.487,
+        227.487,
+        229.351
+      ],
+      "fit_ratio": 0.9323223568650413
+    },
+    {
+      "parts": [
+        3,
+        6
+      ],
+      "angles": [
+        215.9583,
+        54.3008
+      ],
+      "dimensions": [
+        279.23,
+        279.23,
+        281.519
+      ],
+      "fit_ratio": 1.1443872356219993
+    },
+    {
+      "parts": [
+        1,
+        2
+      ],
+      "angles": [
+        135.1402,
+        62.6926
+      ],
+      "dimensions": [
+        245.171,
+        245.171,
+        247.18
+      ],
+      "fit_ratio": 1.0047983761591501
+    },
+    {
+      "parts": [
+        2,
+        3
+      ],
+      "angles": [
+        225.4622,
+        31.3344
+      ],
+      "dimensions": [
+        261.891,
+        261.891,
+        264.038
+      ],
+      "fit_ratio": 1.073324248693809
+    },
+    {
+      "parts": [
+        1,
+        2,
+        4
+      ],
+      "angles": [
+        3.6656,
+        27.5303
+      ],
+      "dimensions": [
+        303.801,
+        303.801,
+        306.291
+      ],
+      "fit_ratio": 1.2450846023038755
+    },
+    {
+      "parts": [
+        2,
+        3,
+        6
+      ],
+      "angles": [
+        170.5817,
+        53.8882
+      ],
+      "dimensions": [
+        300.406,
+        300.406,
+        302.869
+      ],
+      "fit_ratio": 1.2311727819729914
+    },
+    {
+      "parts": [
+        1,
+        2,
+        5
+      ],
+      "angles": [
+        101.8988,
+        30.9132
+      ],
+      "dimensions": [
+        301.739,
+        301.739,
+        304.212
+      ],
+      "fit_ratio": 1.2366357573575422
+    },
+    {
+      "parts": [
+        2,
+        3,
+        5
+      ],
+      "angles": [
+        264.642,
+        64.2258
+      ],
+      "dimensions": [
+        297.427,
+        297.427,
+        299.865
+      ],
+      "fit_ratio": 1.2189627450447291
+    }
+  ],
+  "limitations": [
+    "Dimensional search only; does not model supports or prove a global optimum.",
+    "Merged parts must be rebuilt with internal seams/laps removed, retaining external joints and mounts.",
+    "Independent orientations can change the apparent sheen across seams; a common layer direction needs a separate packing check.",
+    "Actual support footprint, stability and printer clearance remain unverified for merged full parts."
+  ]
+}

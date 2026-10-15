@@ -124,8 +124,9 @@ def slice_project():
     result.check_returncode()
 
 
-def inspect_moves(gcode):
-    records = {s['label']: [] for s in SAMPLES}
+def inspect_moves(gcode, samples=None, half_extents=(25, 12.5)):
+    samples = SAMPLES if samples is None else samples
+    records = {s['label']: [] for s in samples}
     x = y = z = e = speed = 0.
     feature = 'Custom'
     width = .5
@@ -159,7 +160,8 @@ def inspect_moves(gcode):
             length = math.hypot(nx - x, ny - y)
             if de > 0 and feature != 'Custom' and length > .001:
                 mx, my = (x + nx) / 2, (y + ny) / 2
-                matched = [s for s in SAMPLES if abs(mx - s['xy'][0]) <= 25.01 and abs(my - s['xy'][1]) <= 12.51]
+                matched = [s for s in samples if abs(mx - s['xy'][0]) <= half_extents[0] + .01
+                           and abs(my - s['xy'][1]) <= half_extents[1] + .01]
                 assert len(matched) == 1, (index, raw, matched)
                 records[matched[0]['label']].append(dict(line=index, z=round(nz, 4), feature=feature,
                     speed=round(speed / 60, 4), length=length, e_per_mm=de / length, command=command,

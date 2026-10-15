@@ -1,0 +1,54 @@
+TILTED HAMMERED COPPER - REAL JOINT TEST
+
+Open Dara-Hammered-Joint-Test.3mf as a project in Bambu Studio.
+The plate is already sliced for Bambu A1 / 0.4 mm nozzle / textured PEI.
+Map PROJECT FILAMENT 1 to the copper silk used for the successful sample.
+Use normal 100% printer speed. No inspection pause is included.
+Estimated total: 46 min 16 sec, 11.89 g (printer purging can add material).
+
+WHAT THIS TESTS
+Two pieces cropped from the actual M2-to-M3 keyed lap. Together they cover
+42 x 30 mm of the real assembly, retaining its full 10.5 mm structural body.
+M2 is the left object on the plate and has the protruding tongue plus a rear
+locator hole. M3 is the right object and has the mating recess.
+This is a joint/support/appearance check, not another flow calibration.
+
+The hammered face uses the supplied generator's 9 mm strike spacing,
+0.55 mm maximum dimple depth, 0.5 mm mesh sampling, and seed 73.
+One continuous random field covers the assembled M before section clipping.
+The original coupon's crown is adapted to the M's actual outline, rising
+up to 2.2 mm above the original face. The crown does not restart at a seam.
+Relief is clamped to zero at the outside edge so no original body material
+is removed. Back faces, lap profiles, keys, locator and mounting dimensions
+are not scaled or deliberately altered. Numerical geometry checks verify this.
+
+PRINT SETTINGS
+The exact saved 55-degree rotation and filament/process profile come from
+hammered_coupon_clean.3mf supplied by Zach, not the earlier flat-top C profile.
+0.2 mm layers; 220 C nozzle; 55 C textured bed; 0.98 filament flow;
+7.5 mm3/s volumetric limit; no ironing. Four structural walls and 15% gyroid
+replace the sample's two walls and grid infill. Tree auto supports retain
+the successful saved threshold/critical-region/build-plate-only settings.
+The generated supports are near the foot of this small crop, away from the
+decorative face. A larger part requires its own support and stability review.
+
+AFTER PRINTING
+Let the plate cool, remove the brim/supports, and inspect the contact areas.
+Dry-fit the tongue into its mating recess without forcing or gluing it.
+Check that the halves seat fully, their backs align, and the hammered face
+continues across the seam without a height step. Check the locator hole
+against the existing mating dowel if available. Note any cleanup needed on
+the lap, keys or rear bearing face; those observations decide whether this
+orientation is suitable for the complete parts.
+
+LARGER PARTS
+A geometric search at 55 degrees found M2 + M5 together at approximately
+227.5 x 227.5 x 229.4 mm, with a conservative 2.2 mm face allowance.
+That is a candidate for reducing six M sections to five, not yet a verified
+supported print. Rebuild a merged section without its internal lap/seam;
+do not scale up this coupon or simply glue/union overlapping old lap meshes.
+All remaining mounting locations and external joints must stay unchanged.
+Support footprint, bed adhesion, height clearance, and consistent layer
+direction across the assembled M still need checking on the full layout.
+
+The production Dara.3mf and complete 31-plate project are unchanged.

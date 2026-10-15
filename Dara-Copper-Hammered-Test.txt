@@ -1,0 +1,37 @@
+HAMMERED COPPER SAMPLE - ONE DOMED FACE WITH CONCAVE DIMPLES
+
+Open Dara-Copper-Hammered-Test.3mf as a project in Bambu Studio.
+One sliced plate for Bambu A1 / 0.4 mm nozzle / textured PEI.
+Map project filament 3 to copper SUNLU Silk 2.0. Use normal 100% printer speed.
+
+Single 25 x 25 mm coupon, 4.0 mm walls, 5.94 mm maximum mesh height.
+The WHOLE FACE forms one gentle dome above the side walls. Thirty shallow,
+overlapping concave hammer marks are cut DOWN into that curved face.
+Dimples are approximately 4-6 mm across after overlap, up to 0.6 mm deep;
+their depth fades near the edge so the face stays above the walls.
+The nominal crown rises 2 mm before dimpling; the finished mesh rises
+1.94 mm above the 0.5 mm smooth edge. Sliced height: 6.0 mm.
+This replaces the incorrect individual-bump sample.
+This is actual mesh relief, not fuzzy skin or an image pasted onto a flat face.
+No supports, brim, inspection pause, or ironing.
+Estimated 2.67 g and 18 min 40 sec;
+printer preparation/purge can add material.
+
+Uses the selected copper C settings: 0.2 mm layers including the first,
+0.96 base filament flow, 100% top multiplier, 30 mm/s top surface,
+40 mm/s outer wall, 50 mm/s internal solid fill, eight top shell layers /
+1.6 mm, 15% gyroid, 220 C nozzle and 55 C textured PEI bed.
+The 15% gyroid was verified in the generated toolpaths, including the
+center of the coupon on 13 layers, Z=1.0
+through 3.6 mm. Four bottom layers / 0.8 mm and
+eight top layers / 1.6 mm leave a sparse core inside the 4 mm base.
+In Preview, lower the upper layer slider to about Z=2.0 mm to inspect it.
+The crown and dimples use 0.2 mm layers. Rounded geometry will still
+print with visible contour steps; this sample tests whether you like that finish.
+
+Let it cool, then view it upright as the M will hang. Tilt it under the
+same room lighting and compare the textured face with the smooth sides.
+Judge whether the intentional texture masks the unwanted fine crosshatch,
+whether the copper highlights remain attractive, and whether the scale is right.
+The concept rendering is not a guarantee of the printed finish.
+This separate sample does not change the M or any existing test project.

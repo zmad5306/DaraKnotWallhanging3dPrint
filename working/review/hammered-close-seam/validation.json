@@ -1,0 +1,474 @@
+{
+  "source_sha256": "56dd809b1b7d11f41e86c088d9818e48f139d0ed61455194ef7d84eb0db905be",
+  "source": "Dara-Hammered-Joint-Test.3mf",
+  "extension_per_edge_mm": 0.025,
+  "target_face_gap_mm": 0.025,
+  "lower_shelf_shortening_mm": 0.0762,
+  "lower_shelf_shortening_inches": 0.003,
+  "keys_same_end_shortening_mm": 0.0762,
+  "full_extension_above_z_mm": 10.5,
+  "settings_preserved_exactly": true,
+  "geometry": [
+    {
+      "name": "M2 - actual joint crop",
+      "triangles": 5032,
+      "painted_triangles": 554,
+      "original_painted_area_mm2": 1088.440605664991,
+      "retained_painted_area_after_tip_trim_mm2": 1086.0798303671465,
+      "preserved_painted_area_before_extension_mm2": 1086.0798303671468,
+      "tip_material_removed_mm3": 9.266779273704014,
+      "lower_removed_mm3": 0.0,
+      "lower_added_mm3": 0.0,
+      "lower_section_differences_mm2": {
+        "0.1": 0.0,
+        "1": 0.0,
+        "3.25": 0.0,
+        "4.8": 0.0,
+        "4.95": 0.0,
+        "5.6": 0.0,
+        "6.05": 0.0,
+        "6.5": 0.0,
+        "6.69": 2.0104399355052875e-17
+      },
+      "max_vertex_displacement_mm": 0.025,
+      "build_transform": [
+        [
+          8.67361738e-18,
+          -0.573576436,
+          0.819152044,
+          98.5354119
+        ],
+        [
+          1.0,
+          5.20417043e-18,
+          -6.9388939e-18,
+          128.0
+        ],
+        [
+          0.0,
+          0.819152044,
+          0.573576436,
+          15.929491
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "M3 - actual joint crop",
+      "triangles": 9776,
+      "painted_triangles": 522,
+      "original_painted_area_mm2": 1068.2444142099841,
+      "retained_painted_area_after_tip_trim_mm2": 1068.2444142099841,
+      "preserved_painted_area_before_extension_mm2": 1068.2444142099846,
+      "tip_material_removed_mm3": 0.0,
+      "lower_removed_mm3": 6.31069270914016e-14,
+      "lower_added_mm3": 2.146431180941969e-15,
+      "lower_section_differences_mm2": {
+        "0.1": 5.924098915295469e-15,
+        "1": 4.2983749132981955e-15,
+        "3.25": 1.1249024695192576e-14,
+        "4.8": 6.497198955227971e-15,
+        "4.95": 1.2762576814280665e-10,
+        "5.6": 1.3728032696841825e-14,
+        "6.05": 8.413253100892437e-15,
+        "6.5": 0.0,
+        "6.69": 1.2380134422989752e-14
+      },
+      "max_vertex_displacement_mm": 0.025,
+      "build_transform": [
+        [
+          8.67361738e-18,
+          -0.573576436,
+          0.819152044,
+          162.845098
+        ],
+        [
+          1.0,
+          5.20417043e-18,
+          -6.9388939e-18,
+          129.819064
+        ],
+        [
+          0.0,
+          0.819152044,
+          0.573576436,
+          15.9264617
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "preserved": {
+    "Dara-Hammered-Joint-Test.3mf": "56dd809b1b7d11f41e86c088d9818e48f139d0ed61455194ef7d84eb0db905be",
+    "Dara.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94"
+  },
+  "face_gap_range_mm": [
+    0.024991743576400653,
+    0.025030668854963342
+  ],
+  "face_gap_checks": 20,
+  "assembled_intersection_mm3": 0.0,
+  "slicer_added_bookkeeping": {
+    "inherits_group": [
+      null,
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "different_settings_to_system": [
+      null,
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "filament_map_2": [
+      null,
+      [
+        "1"
+      ]
+    ]
+  },
+  "project": "Dara-Hammered-Close-Seam-Test.3mf",
+  "project_sha256": "503d44a3a5195aab371e100598bc1fe879584f68cb717c6f78581e3e2acb13ee",
+  "audit": {
+    "extrusion_moves_checked": 77475,
+    "features": {
+      "Support": 16271,
+      "Support interface": 19198,
+      "Brim": 376,
+      "Outer wall": 9722,
+      "Gap infill": 636,
+      "Inner wall": 13584,
+      "Internal solid infill": 785,
+      "Sparse infill": 8723,
+      "Floating vertical shell": 7741,
+      "Bridge": 382,
+      "Top surface": 49,
+      "Overhang wall": 8
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "1": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5.0,
+        5.2,
+        5.4,
+        5.6,
+        5.8,
+        6.0,
+        6.2,
+        6.4,
+        6.6,
+        6.8,
+        7.0,
+        7.2,
+        7.4,
+        7.6,
+        7.8,
+        8.0,
+        8.2,
+        8.4,
+        8.6,
+        8.8,
+        9.0,
+        9.2,
+        9.4,
+        9.6,
+        9.8,
+        10.0,
+        10.2,
+        10.4,
+        10.6,
+        10.8,
+        11.0,
+        11.2,
+        11.4,
+        11.6,
+        11.8,
+        12.0,
+        12.2,
+        12.4,
+        12.6,
+        12.8,
+        13.0,
+        13.2,
+        13.4,
+        13.6,
+        13.8,
+        14.0,
+        14.2,
+        14.4,
+        14.6,
+        14.8,
+        15.0,
+        15.2,
+        15.4,
+        15.6,
+        15.8,
+        16.0,
+        16.2,
+        16.4,
+        16.6,
+        16.8,
+        17.0,
+        17.2,
+        17.4,
+        17.6,
+        17.8,
+        18.0,
+        18.2,
+        18.4,
+        18.6,
+        18.8,
+        19.0,
+        19.2,
+        19.4,
+        19.6,
+        19.8,
+        20.0,
+        20.2,
+        20.4,
+        20.6,
+        20.8,
+        21.0,
+        21.2,
+        21.4,
+        21.6,
+        21.8,
+        22.0,
+        22.2,
+        22.4,
+        22.6,
+        22.8,
+        23.0,
+        23.2,
+        23.4,
+        23.6,
+        23.8,
+        24.0,
+        24.2,
+        24.4,
+        24.6,
+        24.8,
+        25.0,
+        25.2,
+        25.4,
+        25.6,
+        25.8,
+        26.0,
+        26.2,
+        26.4,
+        26.6,
+        26.8,
+        27.0,
+        27.2,
+        27.4,
+        27.6,
+        27.8,
+        28.0,
+        28.2,
+        28.4,
+        28.6,
+        28.8,
+        29.0,
+        29.2,
+        29.4,
+        29.6,
+        29.8,
+        30.0,
+        30.2,
+        30.4,
+        30.6,
+        30.8,
+        31.0,
+        31.2
+      ]
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        83.469,
+        106.58201116035305
+      ],
+      [
+        179.61449538727908,
+        155.641
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        83.259,
+        106.33201116035305
+      ],
+      [
+        179.86449538727908,
+        155.891
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 76.13550461272092
+  },
+  "slice_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "N2S",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "3995",
+    "weight": "16.24",
+    "pause_count": "0",
+    "first_layer_time": "0.046201",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "true",
+    "support_material_on_wipe_tower": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1 1 1 1",
+    "limit_filament_maps": "0 0 0 0"
+  },
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 2522,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 1,
+    "prepare_time": 22,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bridge": 11.922015190124512,
+          "Brim": 7.3213114738464355,
+          "Custom": 372.8539123535156,
+          "Flush": 25.0,
+          "Gap infill": 15.5797700881958,
+          "Inner wall": 752.3634033203125,
+          "Internal solid infill": 228.2539520263672,
+          "Outer wall": 424.3424987792969,
+          "Overhang wall": 0.21083059906959534,
+          "Sparse infill": 224.7735137939453,
+          "Support": 611.06640625,
+          "Support interface": 504.61041259765625,
+          "Top surface": 2.8664779663085938,
+          "Travel": 831.4873046875,
+          "Undefined": 814.9323120117188
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 16.24174690246582,
+            "total_used_g": 16.24174690246582
+          }
+        ],
+        "generate_support_material_time": 750,
+        "id": 1,
+        "infill_time": 70,
+        "layer_filament_change": 0,
+        "main_predication": 3589.59619140625,
+        "make_perimeters_time": 38,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 29.92380142211914,
+              "height": 31.85898208618164,
+              "width": 27.610525131225586,
+              "x": 84.73014831542969,
+              "y": 113.0,
+              "z": 2.610051197393659e-08
+            },
+            "id": 5,
+            "name": "M2 - actual joint crop - close seam",
+            "triangle_count": 5032
+          },
+          {
+            "bbox": {
+              "depth": 29.987504959106445,
+              "height": 31.852922439575195,
+              "width": 27.60187530517578,
+              "x": 149.04415893554688,
+              "y": 114.81281280517578,
+              "z": 4.043020140898079e-08
+            },
+            "id": 9,
+            "name": "M3 - actual joint crop - close seam",
+            "triangle_count": 9776
+          }
+        ],
+        "sliced_time": 1706,
+        "sliced_time_with_cache": 789,
+        "total_predication": 3995.89501953125,
+        "triangle_count": 14808,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "support_toolpath_ranges": {
+    "Support": {
+      "min_z_mm": 0.2,
+      "max_z_mm": 27.4,
+      "extrusion_moves": 16268
+    },
+    "Support interface": {
+      "min_z_mm": 0.2,
+      "max_z_mm": 27.0,
+      "extrusion_moves": 19198
+    }
+  },
+  "cosmetic_extension_unchanged_below_z_mm": 6.7
+}

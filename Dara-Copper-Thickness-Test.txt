@@ -1,0 +1,56 @@
+COPPER THICKNESS TEST
+
+Open Dara-Copper-Thickness-Test.3mf as a project in Bambu Studio.
+One already sliced plate: Bambu A1, 0.4 mm nozzle, textured PEI.
+Map project filament 3 to the copper SUNLU Silk 2.0 spool.
+Use normal 100% printer speed. No inspection pause and no ironing.
+Slicer estimate: 7.55 g, 35 min 44 sec (printer preparation/purge may add material).
+
+Four coupons, each 25 x 25 mm: half the previous 50 mm width.
+Viewed from above with the FRONT of the printer nearest you:
+
+                       REAR
+        [ S4: 4 mm solid ]   [ G4: 4 mm gyroid ]
+        [ S1: 1 mm solid ]   [ S2: 2 mm solid  ]
+                       FRONT
+
+Expected finished thickness / layer count:
+S1 = 1.00 mm / 5 layers
+S2 = 2.00 mm / 10 layers
+S4 = 4.00 mm / 20 layers
+G4 = 4.00 mm / 20 layers
+
+Every layer, including the first, is 0.20 mm. All use the selected C
+finish: 30 mm/s top, 100% top multiplier, 0.96 base filament flow,
+50 mm/s internal solid infill, 220 C nozzle, 55 C textured PEI bed.
+S1/S2/S4 use enough solid shell layers to fill their entire thickness;
+G4 retains production 15% gyroid and eight top shell layers / 1.6 mm.
+All retain four walls and one perimeter on the final top face.
+Labels are object names only: the measurement surfaces have no lettering.
+
+MEASUREMENT
+Let the plate and all pieces cool completely. Before mixing them up,
+mark each label on a SIDE, leaving the top and bottom faces untouched.
+Zero clean calipers. Use light, consistent jaw pressure; do not flex S1.
+Measure near the center and at four other interior locations. Keep both
+jaws inside the perimeter so a raised border does not dominate the reading.
+Re-seat and repeat each reading to see how repeatable it is. Keep min/max,
+not just the average. The CSV has five locations, two readings per location.
+Also note whether the top is rough and whether the roughness varies by area.
+
+INTERPRETATION
+Compare measured thickness minus expected thickness for S1, S2 and S4.
+A similar absolute offset is not evidence of error accumulating per layer.
+A repeatable error that grows with height supports investigating a height
+trend, but cannot by itself identify Z motion versus extrusion or shrinkage.
+Correct overall thickness does not rule out local ridges or valleys.
+Compare S4 with G4 to see whether the interior construction changes the
+thickness or roughness at the same nominal height. This is not an isolated
+infill-density test: bridge and solid-shell construction also differ.
+
+Calipers touch the highest points, including the textured underside.
+Only treat differences larger than the reading variation as meaningful.
+There are no duplicate pieces at each height, to conserve material.
+Different heights finish at different times; cooling and top-line direction
+can differ. This small test cannot prove a unique cause of the full part's
+finish. Existing production and prior diagnostic projects are unchanged.

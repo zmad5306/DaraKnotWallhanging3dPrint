@@ -1,0 +1,1515 @@
+{
+  "project": "Dara-Hammered-M-Candidate.3mf",
+  "sha256": "71e3e3256206e1354b811bbaedb06e017d84589276f9214ee6847744a0e489ee",
+  "parts": [
+    {
+      "part": "M1",
+      "watertight": true,
+      "components": 1,
+      "triangles": 83494,
+      "volume_mm3": 122990.9217157268,
+      "bounds_assembled_mm": [
+        [
+          -295.6167688117488,
+          37.61280921069735,
+          0.0
+        ],
+        [
+          17.692310213113007,
+          179.36775037646294,
+          12.7
+        ]
+      ],
+      "build_transform": [
+        [
+          0.815339485633372,
+          -0.3463390522143276,
+          0.46397282687501185,
+          270.70051206418486
+        ],
+        [
+          0.5785859704277627,
+          0.4577105933225921,
+          -0.6750846521618195,
+          170.26798121841307
+        ],
+        [
+          0.02144290071964156,
+          0.8188713413421927,
+          0.573576436351046,
+          -24.461170645147252
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_extents_mm": [
+        229.3871221307521,
+        229.23848625609816,
+        125.8788698945463
+      ],
+      "removed_tip_volume_mm3": 53.043618503791244,
+      "unauthorized_removal_mm3": 3.765507017305936e-09,
+      "added_below_6_7_mm3": 4.8004624484320785e-18,
+      "hidden_sections_unchanged_mm2": {
+        "0.1": 5.652955069820462e-09,
+        "3.25": 0.0,
+        "4.7": 0.0,
+        "4.95": 0.0,
+        "6.05": 0.0,
+        "6.65": 0.0
+      },
+      "minimum_decorative_face_up_normal": 0.21279404689113965,
+      "source_stl_sha256": "a1ac65ecc9efa0f9ff019774c3ad4017ffe037d7d037be126f27a2bc1db85493",
+      "support_enforced_area_mm2": 16289.350476420344,
+      "support_blocked_hole_facets": 1167,
+      "support_blocked_decorative_area_mm2": 9558.349346044182,
+      "reinforcement_modifiers": [
+        "100% screw pilot 1 - D14",
+        "100% screw pilot 2 - D14"
+      ],
+      "native_round_trip_error_mm": [
+        2.1792976574988293e-05,
+        7.314978507247823e-06,
+        1.4924840082818026e-05
+      ]
+    },
+    {
+      "part": "M2",
+      "watertight": true,
+      "components": 1,
+      "triangles": 94326,
+      "volume_mm3": 134652.6813356825,
+      "bounds_assembled_mm": [
+        [
+          -55.327431048610016,
+          -26.30587757267778,
+          0.0
+        ],
+        [
+          58.39742431388151,
+          156.8504394958109,
+          12.7
+        ]
+      ],
+      "build_transform": [
+        [
+          0.9985243629224682,
+          -0.046171671460085155,
+          0.0285879940685106,
+          132.27415277222428
+        ],
+        [
+          0.04989287182561086,
+          0.572117036176183,
+          -0.8186530389963584,
+          92.6775458614995
+        ],
+        [
+          0.02144290071964156,
+          0.8188713413421927,
+          0.573576436351046,
+          22.401605360971292
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_extents_mm": [
+        112.40214337983278,
+        112.22312975516431,
+        154.18255149930582
+      ],
+      "removed_tip_volume_mm3": 33.765722092187694,
+      "unauthorized_removal_mm3": 7.70315945146649e-05,
+      "added_below_6_7_mm3": -7.608488138780937e-07,
+      "hidden_sections_unchanged_mm2": {
+        "0.1": 6.8131168564515286e-09,
+        "3.25": 6.126262527567243e-11,
+        "4.7": 0.0,
+        "4.95": 1.281377130375272e-07,
+        "6.05": 1.442801389591399e-07,
+        "6.65": 8.394807380893248e-07
+      },
+      "minimum_decorative_face_up_normal": 0.3190874356596625,
+      "source_stl_sha256": "7a6e1de622362aca089b59b69cf5547d754e223fa4b2c373c951e81dbda6c873",
+      "support_enforced_area_mm2": 14961.390001373047,
+      "support_blocked_hole_facets": 964,
+      "support_blocked_decorative_area_mm2": 11064.792500566404,
+      "reinforcement_modifiers": [
+        "100% screw pilot 3 - D14"
+      ],
+      "native_round_trip_error_mm": [
+        7.690324695882942e-06,
+        3.5447494340215105e-06
+      ]
+    },
+    {
+      "part": "M3",
+      "watertight": true,
+      "components": 1,
+      "triangles": 133518,
+      "volume_mm3": 168537.81292555202,
+      "bounds_assembled_mm": [
+        [
+          16.118096539179223,
+          -33.813975174351796,
+          0.0
+        ],
+        [
+          299.9400028759659,
+          179.3677457869053,
+          12.7
+        ]
+      ],
+      "build_transform": [
+        [
+          0.4638002672709317,
+          -0.5163866161027897,
+          0.7198848343931982,
+          79.57933126310823
+        ],
+        [
+          0.8856802549950743,
+          0.2505884854464548,
+          -0.3908655739170592,
+          -33.06659157408993
+        ],
+        [
+          0.02144290071964156,
+          0.8188713413421927,
+          0.573576436351046,
+          18.189412707695197
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_extents_mm": [
+        227.17990591287247,
+        228.07635886120437,
+        173.91371673448154
+      ],
+      "removed_tip_volume_mm3": -7.566995918750763e-10,
+      "unauthorized_removal_mm3": -7.566995918750763e-10,
+      "added_below_6_7_mm3": 1.5823804157359216e-06,
+      "hidden_sections_unchanged_mm2": {
+        "0.1": 8.874952328889242e-08,
+        "3.25": 0.0,
+        "4.7": 3.525548378451908e-11,
+        "4.95": 1.1223125194544544e-06,
+        "6.05": 2.052445224129759e-11,
+        "6.65": 6.399794889880765e-13
+      },
+      "minimum_decorative_face_up_normal": 0.21400110961436866,
+      "source_stl_sha256": "9fb787a78c2f6db4d92147d595a43cdb9c5698412be67a134be143f4c93611b8",
+      "support_enforced_area_mm2": 19338.669951392465,
+      "support_blocked_hole_facets": 1168,
+      "support_blocked_decorative_area_mm2": 15435.55948351814,
+      "reinforcement_modifiers": [
+        "100% screw pilot 4 - D14",
+        "100% screw pilot 5 - D14"
+      ],
+      "native_round_trip_error_mm": [
+        1.866861802765554e-05,
+        7.73069376402829e-06,
+        1.5250609988559443e-05
+      ]
+    },
+    {
+      "part": "M4",
+      "watertight": true,
+      "components": 1,
+      "triangles": 176030,
+      "volume_mm3": 248728.99013926,
+      "bounds_assembled_mm": [
+        [
+          -299.93999648918344,
+          -179.3677510471274,
+          0.0
+        ],
+        [
+          -116.69924920015434,
+          66.50517373110233,
+          12.7
+        ]
+      ],
+      "build_transform": [
+        [
+          0.1674100160716386,
+          -0.5685489567697958,
+          0.8054352675881971,
+          120.76083386242648
+        ],
+        [
+          0.9856541424493793,
+          0.07875157194885016,
+          -0.14927860324897127,
+          341.7875223070457
+        ],
+        [
+          0.02144290071964156,
+          0.8188713413421927,
+          0.573576436351046,
+          151.75509764897848
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_extents_mm": [
+        167.32125332213792,
+        169.27386369205118,
+        207.69984470268656
+      ],
+      "removed_tip_volume_mm3": 4.400499165058136e-08,
+      "unauthorized_removal_mm3": 4.400499165058136e-08,
+      "added_below_6_7_mm3": 1.7963901276137524e-06,
+      "hidden_sections_unchanged_mm2": {
+        "0.1": 2.640560873263593e-09,
+        "3.25": 0.0,
+        "4.7": 0.0,
+        "4.95": 9.049667611238028e-07,
+        "6.05": 2.834046902009718e-07,
+        "6.65": 0.0
+      },
+      "minimum_decorative_face_up_normal": 0.20027463854461575,
+      "source_stl_sha256": "cc59e5104d99da8c236585060a44cc726058251718bad4c04c3b219a8d9e940a",
+      "support_enforced_area_mm2": 24159.239174796498,
+      "support_blocked_hole_facets": 1155,
+      "support_blocked_decorative_area_mm2": 21527.60994783085,
+      "reinforcement_modifiers": [
+        "100% screw pilot 6 - D14",
+        "100% screw pilot 7 - D14"
+      ],
+      "native_round_trip_error_mm": [
+        1.601759494550509e-05,
+        1.5174783164204897e-05,
+        7.780365006917686e-06
+      ]
+    },
+    {
+      "part": "M5",
+      "watertight": true,
+      "components": 1,
+      "triangles": 99016,
+      "volume_mm3": 138751.65559759762,
+      "bounds_assembled_mm": [
+        [
+          -40.12874999642372,
+          -179.36774980276823,
+          0.0
+        ],
+        [
+          29.10498529194416,
+          -0.9080391485051841,
+          12.7
+        ]
+      ],
+      "build_transform": [
+        [
+          0.05910990138455582,
+          -0.573743131594454,
+          0.8168995277918192,
+          68.1061536752174
+        ],
+        [
+          0.9980211528655271,
+          0.016387351116853244,
+          -0.06070612124273208,
+          135.44809526425124
+        ],
+        [
+          0.02144290071964156,
+          0.8188713413421927,
+          0.573576436351046,
+          147.7395865301057
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_extents_mm": [
+        106.62888841180991,
+        72.36144271264214,
+        153.68890749564216
+      ],
+      "removed_tip_volume_mm3": 1.9402553637822468e-11,
+      "unauthorized_removal_mm3": 1.9402553637822468e-11,
+      "added_below_6_7_mm3": 8.066365353442961e-10,
+      "hidden_sections_unchanged_mm2": {
+        "0.1": 0.0,
+        "3.25": 0.0,
+        "4.7": 6.72381457879707e-13,
+        "4.95": 4.3764716214777197e-07,
+        "6.05": 0.0,
+        "6.65": 4.563559653394551e-13
+      },
+      "minimum_decorative_face_up_normal": 0.21483169661719287,
+      "source_stl_sha256": "2e0a3fc707a95540663baee8e7a3b5230a8d88326c17dc83b869b07cda1088a3",
+      "support_enforced_area_mm2": 12768.225056066629,
+      "support_blocked_hole_facets": 975,
+      "support_blocked_decorative_area_mm2": 12254.8619589814,
+      "reinforcement_modifiers": [
+        "100% screw pilot 8 - D14"
+      ],
+      "native_round_trip_error_mm": [
+        9.295735937763905e-06,
+        3.734982368110419e-06
+      ]
+    },
+    {
+      "part": "M6",
+      "watertight": true,
+      "components": 1,
+      "triangles": 106892,
+      "volume_mm3": 159525.5234002595,
+      "bounds_assembled_mm": [
+        [
+          112.6402500346303,
+          -179.3677466990639,
+          0.0
+        ],
+        [
+          298.493613282597,
+          38.76196325892712,
+          12.7
+        ]
+      ],
+      "build_transform": [
+        [
+          0.9685316525954876,
+          -0.1593065532647084,
+          0.19122724703235242,
+          -87.56590469504596
+        ],
+        [
+          0.24796499738749683,
+          0.551426466915904,
+          -0.796518808098881,
+          130.16777711561636
+        ],
+        [
+          0.02144290071964156,
+          0.8188713413421927,
+          0.573576436351046,
+          144.46377363439498
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_extents_mm": [
+        155.7915993675442,
+        154.34590780805328,
+        183.41875663168696
+      ],
+      "removed_tip_volume_mm3": 33.171151886393396,
+      "unauthorized_removal_mm3": -8.094927276639889e-08,
+      "added_below_6_7_mm3": -4.374361613675622e-10,
+      "hidden_sections_unchanged_mm2": {
+        "0.1": 2.0823516142900698e-08,
+        "3.25": 0.0,
+        "4.7": 0.0,
+        "4.95": 0.0,
+        "6.05": 0.0,
+        "6.65": 0.0
+      },
+      "minimum_decorative_face_up_normal": 0.20408435475219777,
+      "source_stl_sha256": "9a46f1cc005aad46459b600f3cae2a6d537151974b589e24e5660872369a1584",
+      "support_enforced_area_mm2": 17138.835303021726,
+      "support_blocked_hole_facets": 1155,
+      "support_blocked_decorative_area_mm2": 12817.70329502547,
+      "reinforcement_modifiers": [
+        "100% screw pilot 9 - D14",
+        "100% screw pilot 10 - D14"
+      ],
+      "native_round_trip_error_mm": [
+        1.984790201550112e-05,
+        1.530846859438282e-05,
+        7.91054014085558e-06
+      ]
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 645960,
+      "features": {
+        "Support": 249301,
+        "Support interface": 125389,
+        "Outer wall": 38365,
+        "Gap infill": 5057,
+        "Inner wall": 61984,
+        "Internal solid infill": 1075,
+        "Sparse infill": 98572,
+        "Floating vertical shell": 66046,
+        "Overhang wall": 20,
+        "Bridge": 151
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          10.67556295695736,
+          10.443093734167043
+        ],
+        [
+          243.95465910825547,
+          244.282
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          10.42556295695736,
+          10.193093734167043
+        ],
+        [
+          244.16465910825548,
+          244.49200000000002
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 10.193093734167043,
+      "model_z_range_mm": [
+        0.2,
+        125.8
+      ],
+      "support_interface_interior_max_assembled_z_mm": 0.9085723316722216,
+      "support_interface_face_interior_margin_mm": 0.5,
+      "support_interface_checks_use_segment_midpoints": true,
+      "hole_entrance_support_check": [
+        {
+          "type": "screw",
+          "xy_mm": [
+            -76.0,
+            162.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.44806238356931116
+        },
+        {
+          "type": "screw",
+          "xy_mm": [
+            -262.0,
+            71.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.7046421349754706
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -23.0,
+            141.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.9085723316722216
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -219.0,
+            74.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.8909042991727638
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support": 47686.228651802856,
+        "Support interface": 13394.214093898501,
+        "Outer wall": 9544.661618468182,
+        "Gap infill": 87.46013796890264,
+        "Inner wall": 28880.137794611157,
+        "Internal solid infill": 477.56270315691154,
+        "Sparse infill": 14397.537115698087,
+        "Floating vertical shell": 9783.44152687784,
+        "Overhang wall": 0.5202384168312794,
+        "Bridge": 16.26148538632347
+      },
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "30103",
+        "weight": "154.16",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 619124,
+      "features": {
+        "Support interface": 125203,
+        "Support": 211499,
+        "Outer wall": 33338,
+        "Gap infill": 2096,
+        "Inner wall": 65587,
+        "Internal solid infill": 1459,
+        "Sparse infill": 108769,
+        "Floating vertical shell": 70950,
+        "Overhang wall": 11,
+        "Bridge": 212
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          70.283,
+          67.40319996654773
+        ],
+        [
+          185.5968246214096,
+          185.47
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          70.07300000000001,
+          67.15319996654773
+        ],
+        [
+          185.80682462140962,
+          185.68
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 67.15319996654773,
+      "model_z_range_mm": [
+        0.2,
+        154.0
+      ],
+      "support_interface_interior_max_assembled_z_mm": 5.987111002228495,
+      "support_interface_face_interior_margin_mm": 0.5,
+      "support_interface_checks_use_segment_midpoints": true,
+      "hole_entrance_support_check": [
+        {
+          "type": "screw",
+          "xy_mm": [
+            -28.0,
+            76.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.6268748006698104
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            33.0,
+            127.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.8548932726874128
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -34.0,
+            41.0
+          ],
+          "interface_center_max_z_from_back_mm": 1.019971928215746
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support interface": 12087.76227282597,
+        "Support": 40018.98276580794,
+        "Outer wall": 9398.726384192734,
+        "Gap infill": 44.75127951029192,
+        "Inner wall": 28982.190657453255,
+        "Internal solid infill": 2127.5707480389806,
+        "Sparse infill": 15513.430359923492,
+        "Floating vertical shell": 7477.556361541105,
+        "Overhang wall": 0.5438101792102453,
+        "Bridge": 34.33388344382038
+      },
+      "slice_metadata": {
+        "index": "2",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "27141",
+        "weight": "143.52",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 867108,
+      "features": {
+        "Support": 324701,
+        "Support interface": 155711,
+        "Outer wall": 53165,
+        "Overhang wall": 842,
+        "Inner wall": 89743,
+        "Gap infill": 3294,
+        "Internal solid infill": 3101,
+        "Sparse infill": 139364,
+        "Floating vertical shell": 96984,
+        "Bridge": 203
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.94753973505187,
+          12.838
+        ],
+        [
+          247.24955562829095,
+          243.843
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.73753973505187,
+          12.627999999999998
+        ],
+        [
+          247.49955562829095,
+          244.053
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 8.500444371709051,
+      "model_z_range_mm": [
+        0.2,
+        173.8
+      ],
+      "support_interface_interior_max_assembled_z_mm": 6.048168233738181,
+      "support_interface_face_interior_margin_mm": 0.5,
+      "support_interface_checks_use_segment_midpoints": true,
+      "hole_entrance_support_check": [
+        {
+          "type": "screw",
+          "xy_mm": [
+            213.0,
+            148.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.7113422940870464
+        },
+        {
+          "type": "screw",
+          "xy_mm": [
+            282.0,
+            28.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.5468039978716632
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            71.0,
+            165.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.8341120299535163
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            267.0,
+            25.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.9526855036133526
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support": 70423.90265555168,
+        "Support interface": 16230.729912886452,
+        "Outer wall": 11630.643984557688,
+        "Overhang wall": 5.384439953462184,
+        "Inner wall": 35521.74584862419,
+        "Gap infill": 55.06253048760175,
+        "Internal solid infill": 1073.6824474842638,
+        "Sparse infill": 20223.517765843084,
+        "Floating vertical shell": 11487.112564935709,
+        "Bridge": 24.46611833869765
+      },
+      "slice_metadata": {
+        "index": "3",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "39050",
+        "weight": "206.74",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 997096,
+      "features": {
+        "Support": 317055,
+        "Support interface": 204337,
+        "Outer wall": 47345,
+        "Gap infill": 2609,
+        "Inner wall": 106167,
+        "Internal solid infill": 1544,
+        "Sparse infill": 209635,
+        "Floating vertical shell": 108191,
+        "Bridge": 193,
+        "Overhang wall": 20
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          43.324,
+          36.94465591453082
+        ],
+        [
+          215.2104413466453,
+          217.87512164558268
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          43.114,
+          36.69465591453082
+        ],
+        [
+          215.4604413466453,
+          218.12512164558268
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 36.69465591453082,
+      "model_z_range_mm": [
+        0.2,
+        207.4
+      ],
+      "support_interface_interior_max_assembled_z_mm": 6.002263237709769,
+      "support_interface_face_interior_margin_mm": 0.5,
+      "support_interface_checks_use_segment_midpoints": true,
+      "hole_entrance_support_check": [
+        {
+          "type": "screw",
+          "xy_mm": [
+            -261.0,
+            -5.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.5363479569828087
+        },
+        {
+          "type": "screw",
+          "xy_mm": [
+            -213.0,
+            -170.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.6002771985678521
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -219.0,
+            39.0
+          ],
+          "interface_center_max_z_from_back_mm": 1.0170980276400314
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -219.0,
+            -157.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.9044933812678551
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support": 67603.23516668387,
+        "Support interface": 20153.08454610811,
+        "Outer wall": 15248.60516941308,
+        "Gap infill": 69.04669499429178,
+        "Inner wall": 47462.313241060125,
+        "Internal solid infill": 2640.022882594473,
+        "Sparse infill": 29537.67617110266,
+        "Floating vertical shell": 13487.80317871945,
+        "Bridge": 21.016054175073442,
+        "Overhang wall": 0.4562579189455148
+      },
+      "slice_metadata": {
+        "index": "4",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "43614",
+        "weight": "243.38",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 537273,
+      "features": {
+        "Support": 155752,
+        "Support interface": 110159,
+        "Brim": 5,
+        "Outer wall": 28775,
+        "Gap infill": 1809,
+        "Inner wall": 64772,
+        "Internal solid infill": 1304,
+        "Sparse infill": 114410,
+        "Floating vertical shell": 60076,
+        "Overhang wall": 16,
+        "Bridge": 195
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          73.034,
+          85.88502936137867
+        ],
+        [
+          186.05255923188804,
+          168.40287988717034
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          72.82400000000001,
+          85.63502936137867
+        ],
+        [
+          186.30255923188804,
+          168.61287988717035
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 69.69744076811196,
+      "model_z_range_mm": [
+        0.2,
+        153.6
+      ],
+      "support_interface_interior_max_assembled_z_mm": 6.0025151110292825,
+      "support_interface_face_interior_margin_mm": 0.5,
+      "support_interface_checks_use_segment_midpoints": true,
+      "hole_entrance_support_check": [
+        {
+          "type": "screw",
+          "xy_mm": [
+            -29.0,
+            -62.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.7965103254190637
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -35.0,
+            -40.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.8525355421498375
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            -23.0,
+            -174.0
+          ],
+          "interface_center_max_z_from_back_mm": 1.0067978583481931
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support": 31552.748999488267,
+        "Support interface": 10923.86802085671,
+        "Brim": 0.19328845150752053,
+        "Outer wall": 8986.593409356965,
+        "Gap infill": 47.600263733252426,
+        "Inner wall": 27727.807536577377,
+        "Internal solid infill": 2564.1081216803404,
+        "Sparse infill": 16264.239626492854,
+        "Floating vertical shell": 6298.0028586592525,
+        "Overhang wall": 0.5260832517885127,
+        "Bridge": 18.41296191823547
+      },
+      "slice_metadata": {
+        "index": "5",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "23866",
+        "weight": "129.50",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 715727,
+      "features": {
+        "Support interface": 144266,
+        "Support": 241118,
+        "Brim": 16,
+        "Outer wall": 35015,
+        "Gap infill": 1559,
+        "Inner wall": 73285,
+        "Internal solid infill": 1165,
+        "Sparse infill": 133378,
+        "Floating vertical shell": 85753,
+        "Bridge": 160,
+        "Overhang wall": 12
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          46.12996254832042,
+          46.87169237239245
+        ],
+        [
+          209.3106392503905,
+          206.75
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          45.87996254832042,
+          46.62169237239245
+        ],
+        [
+          209.5206392503905,
+          206.96
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 45.87996254832042,
+      "model_z_range_mm": [
+        0.2,
+        183.2
+      ],
+      "support_interface_interior_max_assembled_z_mm": 1.00227042193751,
+      "support_interface_face_interior_margin_mm": 0.5,
+      "support_interface_checks_use_segment_midpoints": true,
+      "hole_entrance_support_check": [
+        {
+          "type": "screw",
+          "xy_mm": [
+            261.0,
+            -25.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.7231870522590569
+        },
+        {
+          "type": "screw",
+          "xy_mm": [
+            213.0,
+            -148.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.6434627235975228
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            266.0,
+            -40.0
+          ],
+          "interface_center_max_z_from_back_mm": 0.9118603382946802
+        },
+        {
+          "type": "locator",
+          "xy_mm": [
+            209.0,
+            -133.0
+          ],
+          "interface_center_max_z_from_back_mm": 1.00227042193751
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support interface": 14411.595170454573,
+        "Support": 48869.61396113023,
+        "Brim": 0.565722297095182,
+        "Outer wall": 10698.238726521971,
+        "Gap infill": 30.93026527321025,
+        "Inner wall": 32904.51950605983,
+        "Internal solid infill": 1439.3094656286175,
+        "Sparse infill": 19203.22473477411,
+        "Floating vertical shell": 9805.611442873795,
+        "Bridge": 17.222106861722587,
+        "Overhang wall": 0.4891862278198049
+      },
+      "slice_metadata": {
+        "index": "6",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "31969",
+        "weight": "170.42",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ]
+    }
+  ],
+  "total_weight_g": 1047.72,
+  "total_time_s": 195743,
+  "all_native_round_trips_passed": true,
+  "profile_unchanged_from_staged": true,
+  "source_profile_sha256": "503d44a3a5195aab371e100598bc1fe879584f68cb717c6f78581e3e2acb13ee",
+  "physical_joint_fit_pending": true,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 5459,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 498,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bridge": 5.043555736541748,
+          "Custom": 372.830810546875,
+          "Flush": 25.0,
+          "Gap infill": 56.878997802734375,
+          "Inner wall": 4267.9755859375,
+          "Internal solid infill": 1649.0689697265625,
+          "Outer wall": 2412.4287109375,
+          "Overhang wall": 0.5139880180358887,
+          "Sparse infill": 2617.344970703125,
+          "Support": 9716.4814453125,
+          "Support interface": 3410.40087890625,
+          "Travel": 5575.8671875,
+          "Undefined": 5559.3974609375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 154.15721130371094,
+            "total_used_g": 154.15721130371094
+          }
+        ],
+        "generate_support_material_time": 31917,
+        "id": 1,
+        "infill_time": 617,
+        "layer_filament_change": 0,
+        "main_predication": 29696.990234375,
+        "make_perimeters_time": 196,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 254.7325439453125,
+              "height": 130.0817413330078,
+              "width": 310.44097900390625,
+              "x": -32.44956588745117,
+              "y": 7.870473384857178,
+              "z": -8.840472673909971e-07
+            },
+            "id": 5,
+            "name": "M1 - full size hammered",
+            "triangle_count": 83494
+          }
+        ],
+        "sliced_time": 37736,
+        "sliced_time_with_cache": 4591,
+        "total_predication": 30103.3515625,
+        "triangle_count": 83494,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bridge": 8.1716890335083,
+          "Custom": 372.809326171875,
+          "Flush": 25.0,
+          "Gap infill": 33.21092224121094,
+          "Inner wall": 4351.7724609375,
+          "Internal solid infill": 1562.561767578125,
+          "Outer wall": 2152.059814453125,
+          "Overhang wall": 0.4370977282524109,
+          "Sparse infill": 2754.706298828125,
+          "Support": 8073.06884765625,
+          "Support interface": 3216.98583984375,
+          "Travel": 4591.0927734375,
+          "Undefined": 4574.53759765625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 143.5153045654297,
+            "total_used_g": 143.5153045654297
+          }
+        ],
+        "generate_support_material_time": 50828,
+        "id": 2,
+        "infill_time": 744,
+        "layer_filament_change": 0,
+        "main_predication": 26735.296875,
+        "make_perimeters_time": 292,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 120.85779571533203,
+              "height": 159.7044677734375,
+              "width": 122.37672424316406,
+              "x": 376.986328125,
+              "y": 64.47016906738281,
+              "z": -0.32590457797050476
+            },
+            "id": 9,
+            "name": "M2 - full size hammered",
+            "triangle_count": 94326
+          }
+        ],
+        "sliced_time": 57239,
+        "sliced_time_with_cache": 4999,
+        "total_predication": 27141.55078125,
+        "triangle_count": 94326,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bridge": 7.410165786743164,
+          "Custom": 370.8203125,
+          "Flush": 25.0,
+          "Gap infill": 40.752872467041016,
+          "Inner wall": 5324.40283203125,
+          "Internal solid infill": 2093.966064453125,
+          "Outer wall": 2716.47412109375,
+          "Overhang wall": 6.935819149017334,
+          "Sparse infill": 3611.802490234375,
+          "Support": 13489.7158203125,
+          "Support interface": 4152.4267578125,
+          "Travel": 7220.1982421875,
+          "Undefined": 7205.7119140625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 206.74339294433594,
+            "total_used_g": 206.74339294433594
+          }
+        ],
+        "generate_support_material_time": 41300,
+        "id": 3,
+        "infill_time": 809,
+        "layer_filament_change": 0,
+        "main_predication": 38644.26953125,
+        "make_perimeters_time": 351,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 309.7603454589844,
+              "height": 187.9387969970703,
+              "width": 250.86341857910156,
+              "x": 608.831787109375,
+              "y": -32.22849655151367,
+              "z": -9.154266357421875
+            },
+            "id": 13,
+            "name": "M3 - full size hammered",
+            "triangle_count": 133518
+          }
+        ],
+        "sliced_time": 48636,
+        "sliced_time_with_cache": 5561,
+        "total_predication": 39050.6015625,
+        "triangle_count": 133518,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bridge": 6.421163558959961,
+          "Custom": 367.5293884277344,
+          "Flush": 25.0,
+          "Gap infill": 32.600868225097656,
+          "Inner wall": 7005.3671875,
+          "Internal solid infill": 2568.656005859375,
+          "Outer wall": 3398.04931640625,
+          "Overhang wall": 0.4272690415382385,
+          "Sparse infill": 5215.14599609375,
+          "Support": 13068.7734375,
+          "Support interface": 5285.41259765625,
+          "Travel": 6647.5517578125,
+          "Undefined": 6636.33984375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 243.38169860839844,
+            "total_used_g": 243.38169860839844
+          }
+        ],
+        "generate_support_material_time": 57265,
+        "id": 4,
+        "infill_time": 1020,
+        "layer_filament_change": 0,
+        "main_predication": 43208.30078125,
+        "make_perimeters_time": 486,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 201.8707275390625,
+              "height": 212.5519256591797,
+              "width": 180.6961669921875,
+              "x": 32.736427307128906,
+              "y": -277.0709228515625,
+              "z": -1.5555977821350098
+            },
+            "id": 17,
+            "name": "M4 - full size hammered",
+            "triangle_count": 176030
+          }
+        ],
+        "sliced_time": 65209,
+        "sliced_time_with_cache": 5661,
+        "total_predication": 43614.6171875,
+        "triangle_count": 176030,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bridge": 5.771029949188232,
+          "Brim": 0.33722206950187683,
+          "Custom": 372.89404296875,
+          "Flush": 25.0,
+          "Gap infill": 23.069719314575195,
+          "Inner wall": 4127.94775390625,
+          "Internal solid infill": 1425.1226806640625,
+          "Outer wall": 1993.6629638671875,
+          "Overhang wall": 0.45161303877830505,
+          "Sparse infill": 2865.168212890625,
+          "Support": 6290.50732421875,
+          "Support interface": 2876.99169921875,
+          "Travel": 3867.4794921875,
+          "Undefined": 3850.923828125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 129.50112915039062,
+            "total_used_g": 129.50112915039062
+          }
+        ],
+        "generate_support_material_time": 19574,
+        "id": 5,
+        "infill_time": 657,
+        "layer_filament_change": 0,
+        "main_predication": 23459.84765625,
+        "make_perimeters_time": 366,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 72.79219055175781,
+              "height": 154.904541015625,
+              "width": 116.85704803466797,
+              "x": 373.45513916015625,
+              "y": -215.51158142089844,
+              "z": -3.570122089513461e-06
+            },
+            "id": 21,
+            "name": "M5 - full size hammered",
+            "triangle_count": 99016
+          }
+        ],
+        "sliced_time": 23731,
+        "sliced_time_with_cache": 2714,
+        "total_predication": 23866.1875,
+        "triangle_count": 99016,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bridge": 5.229618072509766,
+          "Brim": 0.5610653758049011,
+          "Custom": 369.94091796875,
+          "Flush": 25.0,
+          "Gap infill": 22.461692810058594,
+          "Inner wall": 4950.16455078125,
+          "Internal solid infill": 1844.40771484375,
+          "Outer wall": 2463.017333984375,
+          "Overhang wall": 0.414857417345047,
+          "Sparse infill": 3445.771728515625,
+          "Support": 9619.5595703125,
+          "Support interface": 3769.06298828125,
+          "Travel": 5454.89453125,
+          "Undefined": 5441.2626953125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 170.41769409179688,
+            "total_used_g": 170.41769409179688
+          }
+        ],
+        "generate_support_material_time": 54167,
+        "id": 6,
+        "infill_time": 915,
+        "layer_filament_change": 0,
+        "main_predication": 31563.55859375,
+        "make_perimeters_time": 525,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 176.48342895507812,
+              "height": 189.88983154296875,
+              "width": 217.18295288085938,
+              "x": 629.7546997070312,
+              "y": -258.12530517578125,
+              "z": -4.4604648792301305e-06
+            },
+            "id": 25,
+            "name": "M6 - full size hammered",
+            "triangle_count": 106892
+          }
+        ],
+        "sliced_time": 61923,
+        "sliced_time_with_cache": 5838,
+        "total_predication": 31969.8671875,
+        "triangle_count": 106892,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  }
+}

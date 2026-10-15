@@ -2,9 +2,11 @@
 
 Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identical to the root [Dara.3mf](../../../Dara.3mf). Open as a project in Bambu Studio. All 32 plates have saved slices. The copper has been realigned for Y bed motion, and all 32 plates have been re-sliced with gentle motion limits. The full-color knot joint practice pair remains on plate 32. No job has been sent to the printer.
 
-**Cover crown and bevel repairs applied:** Plate **31** contains all five repaired covers and a fresh native slice. A smooth show-face field replaces the nearest-edge crown crease; the mating undersides, footprint, glue allowance and M seats are preserved. Saved orientations and process settings remain in place. The other 31 slices are unchanged. Physical surface finish remains unverified. [Current release checks](cover-crown-validation.json).
+**Continuous cover crowns:** Plate **31** contains five rebuilt covers and a fresh native slice. Each visible face follows one circular-section crown, swept linearly across its width. The underside and footprint are preserved within 0.0002 mm; M seats and the modeled adhesive allowance are unchanged. The new faces are fuller by up to 1.38 mm. All five meshes are watertight single solids, their bevel errors stay below 0.00101 mm, and support paths clear the broad visible faces. [Current release checks](cover-crown-validation.json).
 
-**Open issue, deferred on 2026-10-15:** earlier cover prints showed a surface scar, and the test preview still showed an aligned line of small notches. A cause and cure have not been established. This checkpoint retains the existing production cover geometry and settings. Production uses Classic walls, 0.012 mm resolution and arc fitting on; the latest standalone test used Classic, 0.001 mm and arc fitting off. The test's B1 mesh matches production within export rounding, but that does not establish an identical preview defect in the saved production slice. Resume from plate 31 when investigating further.
+**Surface-path check:** the repeated junction tracks across the broad faces are removed. Interior command junction counts change from **67/90/133/133/133** to **2/1/0/0/0** for Bands 1–5. The three remaining transitions are isolated near the ends of Bands 1 and 2; they are included in the [before/after comparison](../../review/continuous-covers/before-after-paths.png). This revision has not been physically printed.
+
+Classic walls and arc fitting remain enabled. **Resolution is now 0.05 mm**, allowing the shallow circular faces to stay continuous in Bambu's native arc fit. Resolution is global in Bambu Studio: all other saved slices retain their previous 0.012 mm paths, while re-slicing those plates uses the new resolution. Saved orientations, support settings, motion limits and filament assignments are retained. Other meshes and the other 31 saved slices are unchanged.
 
 ## Plate selection
 
@@ -26,7 +28,7 @@ Project-wide X/Y limits are 1,000 mm/s² acceleration and 150 mm/s speed. Proces
 
 ## Material and time
 
-All 32 plates: **4,101.62 g / 262 h 34 min**. Assembly excluding optional plates 30 and 32: **4,041.93 g / 258 h 39 min**. Copper plates 21–26 and 31: **1,048.29 g / 94 h 06 min**. Cover plate 31: **16.96 g / 1 h 57 min**. Estimates include supports and purge. Optional plate 30 uses **18.42 g / 1 h 21 min**; plate 32 uses **41.27 g / 2 h 33 min**. Per-plate details are in [the release report](cover-crown-validation.json).
+All 32 plates: **4,103.18 g / 262 h 42 min**. Assembly excluding optional plates 30 and 32: **4,043.49 g / 258 h 47 min**. Copper plates 21–26 and 31: **1,049.85 g / 94 h 14 min**. Cover plate 31: **18.52 g / 2 h 05 min**. Estimates include supports and purge. Optional plate 30 uses **18.42 g / 1 h 21 min**; plate 32 uses **41.27 g / 2 h 33 min**. Per-plate details are in [the release report](cover-crown-validation.json).
 
 ## Assembly supplies
 
@@ -58,7 +60,7 @@ Viewed from the front:
 | Band4 | Lower right arm | M6/M3 |
 | Band5 | Center stem | M2/M5 |
 
-Band ends follow the artwork and are not interchangeable. Nominal band width is 12 mm, thickness 1.2 mm before the bevel and less than 0.033 mm of crown smoothing, seated in a 13.2 mm recess with 0.15 mm modeled adhesive allowance. Actual dry-fit height depends on the adhesive layer. [Assembled geometry](../../review/hammered-bands/assembled-bands.png).
+Band ends follow the artwork and are not interchangeable. Nominal band width is 12 mm, seated in a 13.2 mm recess with 0.15 mm modeled adhesive allowance. The rebuilt circular crowns have at least 1.2 mm nominal broad-face skin, approximately 0.955 mm at the bevel, and up to 2.514 mm thickness where needed to keep the crown continuous above the original seat. Actual dry-fit height depends on the adhesive layer. The [earlier assembled view](../../review/hammered-bands/assembled-bands.png) identifies the cover positions; it predates these fuller crowns.
 
 After bonding and curing, seat the M on its locating pins and install ten screws/washers from the rear. The white wall blocks **B1/B2/B3/B4** fit **F3/F5/F16/F18** respectively; these are different pieces from copper Band1-Band5. Install the backers and four retainers per photo. Check that the four wall faces share a plane and photo hardware clears the wall before mounting.
 

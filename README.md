@@ -4,9 +4,11 @@
 
 The copper face planes run along the A1 bed's **Y travel**, with a 55-degree lean across X, saved tree supports and conservative motion limits. Keep the saved scale, orientations and per-object overrides. Filament slots are **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**.
 
-**Production checkpoint, 2026-10-15:** the complete project retains the cover crown and bevel corrections, original mating surfaces, and saved production slices. **The cover surface scar remains unresolved; its investigation is deferred.** The repairs are not a confirmed cure for the printed scar. Full-height M prints also still need physical confirmation. [Release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
+**Cover rebuild, 2026-10-15:** Plate 31 now has one continuous circular-section crown per cover. Native slicing removes the repeated junction tracks across all five faces: interior command junctions fall from 556 to three isolated end transitions. The mating surfaces and footprints are preserved within 0.0002 mm; the faces are fuller by up to 1.38 mm. Physical printing of this revision remains pending. [Before/after paths](working/review/continuous-covers/before-after-paths.png) · [Release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
 
-All 32 plates: **4,101.62 g / 262 h 34 min**. Assembly excluding optional plates 30 and 32: **4,041.93 g / 258 h 39 min**. Copper plates 21–26 and 31: **1,048.29 g / 94 h 06 min**. Cover plate 31: **16.96 g / 1 h 57 min**. Estimates include supports and purge.
+All 32 plates: **4,103.18 g / 262 h 42 min**. Assembly excluding optional plates 30 and 32: **4,043.49 g / 258 h 47 min**. Copper plates 21–26 and 31: **1,049.85 g / 94 h 14 min**. Cover plate 31: **18.52 g / 2 h 05 min**. Estimates include supports and purge.
+
+Classic walls and arc fitting remain enabled. Resolution is now **0.05 mm** so the shallow circular faces remain continuous arcs in the native slice. This is a global Bambu setting. The other 31 saved slices and all other meshes are unchanged; re-slicing those plates uses the new resolution.
 
 The final editable meshes, filament assignments, support painting and native slices are stored in the 3MF. Standalone experiments and the generation/migration history remain on [codex/hammered-m-production](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production). This release does not depend on those test files to open, print or audit. After cloning, run `git lfs pull`, then `python scripts/audit_dara_release.py`.
 

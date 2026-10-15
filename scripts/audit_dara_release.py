@@ -58,8 +58,15 @@ def audit():
                 for component in model.iter('{'+C+'}component'):
                     assert component.get('{'+P+'}path').lstrip('/') in names
         assert len(ids)==len(set(ids)),'Duplicate resource IDs'
+        for row in report['mesh_checks']:
+            assert row['underside_max_distance_mm']<.0002
+            assert row['footprint_max_distance_mm']<.0001
+            assert row['sampled_top_error_mm']<.00101
+        assert sum(r['after']['interior_joins'] for r in report['surface_path_checks'])==3
+        assert all(r['middle_half_span_joins']==0 for r in report['surface_path_checks'])
     print('Both production 3MFs match the release. All 32 native slices, checksums and package references pass.')
-    print('Cover-finish investigation is deferred; physical finish and full-size print validation remain pending.')
+    print('Five rebuilt cover crowns: repeated middle-face junction tracks removed; three isolated end transitions remain.')
+    print('Resolution is now 0.05 mm globally; the other 31 saved slices are preserved. Physical print validation remains pending.')
 
 
 if __name__=='__main__':audit()

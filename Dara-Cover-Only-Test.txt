@@ -1,0 +1,39 @@
+B1 COVER ONLY - PRECISION TEST - 2026-10-15
+
+Open Dara-Cover-Only-Test.3mf AS A PROJECT in Bambu Studio.
+One plate, one full-size B1 cover. Use the existing hammered joint pieces.
+Map filament 1 to copper silk. A1 / 0.4 mm nozzle / textured PEI.
+Keep the saved orientation and generated tree supports.
+Estimate: 2.11 g including supports, 24 minutes 29 seconds.
+
+The geometry is identical to B1 in the current Dara-Hammered-Band-Test.
+Its 55-degree tilt, Y-aligned face plane, support painting, material settings,
+layer height and conservative bed-motion settings are retained. The part is
+centered on the plate. No printing has been started automatically.
+
+Two precision settings differ from the current complete project:
+  Quality > Precision > Arc fitting: OFF
+  Quality > Precision > Resolution: 0.001 mm (previously 0.012 mm)
+Resolution is the toolpath simplification tolerance, not layer height.
+The saved native slice has no model-extrusion G2/G3 arcs. Startup and travel
+routines can still contain arc commands.
+
+WHY THIS TEST
+The returned cover had a transverse scar in both physical orientations, with
+a visible line in Preview. Inspection found a single watertight cover mesh,
+and the existing G-code has rows of direction changes where fitted arcs meet.
+That is a specific suspect, not a confirmed diagnosis of the physical scar.
+Disabling arcs at the old tolerance produced coarser segments, so this test
+also refines the tolerance. Digital checks confirm the intended changes;
+they do not establish the printed finish or the cause of the rough edge.
+
+COMPARE
+Check the broad convex show face for the same transverse scar, then dry-fit
+the band on the existing joint. The support-contact underside is the glue
+face. Compare the exposed face and the edges separately. If the scar remains,
+these precision changes have not resolved it; do not promote them as a fix.
+
+Dara.3mf, its complete-project duplicate, the seven-plate copper candidate,
+and the previous three-piece test are unchanged. Plate 31 still has the
+previous cover settings; physical approval of this test is pending.
+Evidence: working/review/cover-precision/validation.json

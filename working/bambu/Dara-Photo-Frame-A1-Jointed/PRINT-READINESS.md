@@ -2,6 +2,8 @@
 
 Use [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf), identical to the root [Dara.3mf](../../../Dara.3mf). Open as a project in Bambu Studio. All 32 plates have saved slices. The copper has been realigned for Y bed motion, and all 32 plates have been re-sliced with gentle motion limits. The full-color knot joint practice pair remains on plate 32. No job has been sent to the printer.
 
+**Cover finish pending:** B1 printed with the same transverse scar after rotation. Use the separate [cover-only precision test](../../../Dara-Cover-Only-Test.3mf) before committing material to all five covers. It uses the existing geometry with arc fitting off and 0.001 mm resolution, estimated at 2.11 g / 24 min 29 sec. This proposed remedy is physically unverified; the complete project's plate 31 retains the previous settings. [Investigation](../../review/cover-precision/README.md).
+
 ## Plate selection
 
 - **1-20:** F1-F20 frame sections.

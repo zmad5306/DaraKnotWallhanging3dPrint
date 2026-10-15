@@ -1,0 +1,120 @@
+FULL-SIZE HAMMERED M WITH FIVE SMOOTH COPPER COVER BANDS
+
+Open Dara-Hammered-Bands-Candidate.3mf AS A PROJECT in Bambu Studio.
+This is a separate candidate with new cuts, pending the small band test.
+Print Dara-Hammered-Band-Test.3mf first to assess the finish and seating.
+No print job has been sent to the printer.
+
+SEVEN PLATES
+1: M1, upper left arm.
+2: M2, crown center and upper center stem.
+3: M3, upper right arm.
+4: M4, lower left arm.
+5: M5, lower center stem.
+6: M6, lower right arm.
+7: Five separate cover bands B1-B5, one of each.
+
+STUDIO ESTIMATES, INCLUDING SUPPORTS
+Plate 1, M1:       252.10 g    12 h 52 min
+Plate 2, M2:       150.34 g     7 h 45 min
+Plate 3, M3:       252.24 g    12 h 51 min
+Plate 4, M4:       128.07 g     6 h 38 min
+Plate 5, M5:       133.40 g     6 h 46 min
+Plate 6, M6:       105.75 g     5 h 35 min
+Plate 7, bands:     15.71 g     1 h 13 min
+Total:           1037.61 g    53 h 41 min
+The full set exceeds one 1 kg spool, before the small test or any retries.
+Times are estimates rounded to the nearest minute, excluding handling.
+Minimum checked clearance to a bed edge, including extrusion width and
+support paths, is 9.09 mm. Maximum model extrusion height is 206.6 mm.
+
+BAND LOCATIONS, VIEWED FROM THE FRONT
+B1: upper right crown, M2/M3.
+B2: upper left crown, M2/M1.
+B3: lower left arm, M4/M1.
+B4: lower right arm, M6/M3.
+B5: center stem, M2/M5.
+The B labels in this separate project refer to copper bands. They are not
+the wall mounting blocks B1-B4 in the original Dara.3mf project.
+
+The crown pair has mirrored cut positions. The outer pair shares the same
+height, moved to assembled Y=-65 mm to clear existing screws and locating
+holes. The center cut is at Y=0. The letter's original outline is asymmetric,
+so paired bands have different lengths and individually fitted curvature.
+
+The M remains 599.88 x 358.74 mm. Its original body is 10.5 mm thick, with
+the successful 9 mm-pitch hammered texture and up to 2.2 mm crown height.
+The nominal fitted band top reaches at most Z=13.45 mm from the rear.
+All 10 screw pilots and 12 locator features remain at their original global
+positions with their original geometry. Their ownership by individual M
+sections can change because the cuts moved. No changes to the knot-side
+mounting geometry are required by this CAD. Ten D14 screw regions retain
+solid modifiers.
+
+BAND DESIGN AND ASSEMBLY
+Each band is a separate smooth curved strip, 12 mm wide and 1.2 mm thick,
+with a small edge chamfer. Its underside follows a recessed smooth seat.
+Seat width is 13.2 mm; recess is 0.6 mm below the untextured crown.
+The modeled assembly has 0.15 mm adhesive allowance below the band; actual
+height depends on the adhesive layer. Ends sit 0.15 mm inside the outline.
+The bands sit entirely on the front, leaving the rear mounting plane clear.
+
+The bands cover the seam; the keyed laps underneath align the body sections.
+The reference lap shoulder, key and socket profiles are carried to the new
+cuts. Key spacing is fitted across each local stroke. Free shelf/key ends
+retain the 0.003-inch shortening. The hidden nominal face gap is 0.075 mm.
+This design does not rely on the unsuccessful attempt to close the visible
+gap by reducing its nominal CAD clearance to 0.025 mm.
+
+After the small test is accepted, dry-assemble the full M on a flat surface.
+An order compatible with the new lap directions is M2, M4, M6, M1, M3, M5.
+M1 lowers over the tongues of M2 and M4. M3 lowers over M2 and M6.
+M5 lowers over M2. Bond the structural laps with the backs aligned, then
+fit and bond the cover bands. Check the actual frame locators before the
+adhesive cures. Do not use a band to pull a misaligned structural joint flat.
+
+PRINTING
+Printer: Bambu Lab A1, 0.4 mm nozzle, textured PEI plate.
+Map filament 1 to the copper silk spool used for the successful tests.
+All pieces retain a 55-degree face tilt and a common assembled layer direction.
+Each body has its own in-plane rotation for bed clearance. Keep orientations,
+scale, support painting and the saved process when re-slicing.
+Four walls, 15% gyroid body infill, 0.2 mm layers, 220 C nozzle, 55 C bed,
+0.98 filament flow, 7.5 mm3/s volumetric limit and no ironing.
+The thin bands slice solid. Supports contact their undersides; support removal
+and the quality of those contact surfaces are part of the small test.
+
+The full project contains native slices with tree supports and interfaces.
+The decorative faces and seat edges are support-blocked. Downward backs,
+lap surfaces and band undersides have support enforcers. Clear support
+residue from mounting entrances and laps without enlarging the features.
+
+DIGITAL CHECKS AND PHYSICAL LIMITS
+Six body meshes and five bands are each one watertight solid. Pairwise
+intersection checks found no meaningful interferences in the assembled CAD.
+All 22 mounting regions were compared with the original meshes. Native
+sliced geometry, modifiers, support painting and process settings were
+compared with the staged project. Actual extrusion bounds include bead
+width and arc extrema. These checks establish a printable digital candidate,
+not the physical fit, bonding performance or stability of a full-size print.
+The small band test is pending. Tall body sections remain a larger physical
+test than the coupon. Print one full-size part before committing all six.
+
+The previous Dara.3mf and Dara-Hammered-M-Candidate.3mf are preserved.
+Continue using Dara.3mf for the frame, backers and hardware. If this banded
+candidate is accepted, its six M sections replace all previous M sections.
+Do not mix M parts across projects; their cut locations differ.
+
+REGENERATION
+Requires Python with numpy, trimesh, scipy, shapely, manifold3d and matplotlib,
+the committed original CAD/STLs, the close-seam test's filament/process setup,
+and the installed Bambu Studio CLI. From the repository root:
+  python scripts/prepare_hammered_bands.py geometry
+  python scripts/prepare_hammered_bands.py stage --test
+  python scripts/prepare_hammered_bands.py slice --test
+  python scripts/prepare_hammered_bands.py publish --test
+  python scripts/prepare_hammered_bands.py stage
+  python scripts/prepare_hammered_bands.py slice
+  python scripts/prepare_hammered_bands.py publish
+Scratch meshes and stages are in .work/hammered-bands; review records and
+previews are in working/review/hammered-bands. Run git lfs pull after cloning.

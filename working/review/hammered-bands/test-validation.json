@@ -1,0 +1,235 @@
+{
+  "project": "Dara-Hammered-Band-Test.3mf",
+  "sha256": "4a2d1e83ddc92748ae1dbaf53ec09c77ebb486ae0f472d63354b08605e28ea6d",
+  "roundtrip": [
+    {
+      "name": "T2",
+      "subtype": "normal_part",
+      "maximum_vertex_error_mm": 1.5037537973360482e-05
+    },
+    {
+      "name": "T3",
+      "subtype": "normal_part",
+      "maximum_vertex_error_mm": 1.1726541168185804e-05
+    },
+    {
+      "name": "B1",
+      "subtype": "normal_part",
+      "maximum_vertex_error_mm": 1.536319733053425e-05
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 117970,
+      "features": {
+        "Support": 32326,
+        "Support interface": 27649,
+        "Outer wall": 13737,
+        "Overhang wall": 229,
+        "Gap infill": 804,
+        "Inner wall": 14435,
+        "Internal solid infill": 909,
+        "Sparse infill": 8716,
+        "Floating vertical shell": 19035,
+        "Bridge": 130
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          50.432,
+          93.32580315776389
+        ],
+        [
+          214.7324101440999,
+          179.827
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          50.222,
+          93.07580315776389
+        ],
+        [
+          214.9824101440999,
+          180.037
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 41.0175898559001,
+      "model_z_range_mm": [
+        0.2,
+        35.0
+      ],
+      "plate": 1,
+      "metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "N2S",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "5414",
+        "weight": "21.27",
+        "pause_count": "0",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "true",
+        "support_material_on_wipe_tower": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1 1 1 1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "warnings": [
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "2",
+          "error_code": "10018003"
+        },
+        {
+          "msg": "not_support_traditional_timelapse",
+          "level": "3",
+          "error_code": "1000C003"
+        }
+      ],
+      "support_face_checks": [
+        {
+          "name": "T2",
+          "interior_interface_points": 2994,
+          "maximum_interface_z_minus_band_underside_mm": -10.50957332298908
+        },
+        {
+          "name": "T3",
+          "interior_interface_points": 7625,
+          "maximum_interface_z_minus_band_underside_mm": -5.548416156453648
+        },
+        {
+          "name": "B1",
+          "interior_interface_points": 3391,
+          "maximum_interface_z_minus_band_underside_mm": -0.24829794022256912
+        }
+      ],
+      "feature_extrusion_volume_mm3": {
+        "Support": 4204.679452022125,
+        "Support interface": 2634.506873722282,
+        "Outer wall": 2064.5589533757516,
+        "Overhang wall": 1.4669092573530607,
+        "Gap infill": 86.46863267422329,
+        "Inner wall": 5176.756322881103,
+        "Internal solid infill": 152.39935715738483,
+        "Sparse infill": 1134.7514719239466,
+        "Floating vertical shell": 1620.802005921277,
+        "Bridge": 26.405184428192634
+      }
+    }
+  ],
+  "total_weight_g": 21.27,
+  "total_time_s": 5414,
+  "physical_band_test_pending": true,
+  "preserved": {
+    "Dara.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94",
+    "Dara-Hammered-M-Candidate.3mf": "71e3e3256206e1354b811bbaedb06e017d84589276f9214ee6847744a0e489ee",
+    "Dara-Hammered-Close-Seam-Test.3mf": "503d44a3a5195aab371e100598bc1fe879584f68cb717c6f78581e3e2acb13ee",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "f0a0fe7ee2d3c2b64e8d5819b2c471785f8dbce4d115c9093cffcec646a7de94"
+  },
+  "settings_equal_to_staged": true,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 2590,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 72,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bridge": 5.7096028327941895,
+          "Custom": 372.9705810546875,
+          "Flush": 25.0,
+          "Gap infill": 32.3317756652832,
+          "Inner wall": 874.333740234375,
+          "Internal solid infill": 364.96942138671875,
+          "Outer wall": 531.2496337890625,
+          "Overhang wall": 1.7739485502243042,
+          "Sparse infill": 226.985595703125,
+          "Support": 1090.956298828125,
+          "Support interface": 715.5386962890625,
+          "Travel": 1189.1141357421875,
+          "Undefined": 1172.5592041015625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 21.272314071655273,
+            "total_used_g": 21.272314071655273
+          }
+        ],
+        "generate_support_material_time": 1452,
+        "id": 1,
+        "infill_time": 96,
+        "layer_filament_change": 0,
+        "main_predication": 5007.595703125,
+        "make_perimeters_time": 59,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 34.06731033325195,
+              "height": 41.08022689819336,
+              "width": 52.6370849609375,
+              "x": 51.792625427246094,
+              "y": 91.98722076416016,
+              "z": -0.8038934469223022
+            },
+            "id": 5,
+            "name": "T2 - covered joint candidate",
+            "triangle_count": 6182
+          },
+          {
+            "bbox": {
+              "depth": 31.265737533569336,
+              "height": 37.137325286865234,
+              "width": 49.432796478271484,
+              "x": 119.38137817382812,
+              "y": 93.18002319335938,
+              "z": -3.8169219493865967
+            },
+            "id": 9,
+            "name": "T3 - covered joint candidate",
+            "triangle_count": 9058
+          },
+          {
+            "bbox": {
+              "depth": 20.374454498291016,
+              "height": 27.092575073242188,
+              "width": 41.56094741821289,
+              "x": 170.26905822753906,
+              "y": 158.82435607910156,
+              "z": -0.755717933177948
+            },
+            "id": 13,
+            "name": "B1 - covered joint candidate",
+            "triangle_count": 33570
+          }
+        ],
+        "sliced_time": 3539,
+        "sliced_time_with_cache": 1830,
+        "total_predication": 5414.01123046875,
+        "triangle_count": 48810,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  }
+}

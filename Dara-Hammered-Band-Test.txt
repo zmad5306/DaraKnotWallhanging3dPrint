@@ -1,0 +1,57 @@
+SMOOTH COPPER COVER BAND - ONE JOINT TEST
+
+Open Dara-Hammered-Band-Test.3mf AS A PROJECT in Bambu Studio.
+Printer: Bambu Lab A1, 0.4 mm nozzle, textured PEI plate.
+Map filament 1 to the copper silk spool used for the successful hammered test.
+Keep the saved orientations and support painting. The three parts are tilted
+55 degrees and already sliced with tree supports. No print job was sent.
+
+Studio estimate: 21.27 g and 1 hour 30 minutes 14 seconds, supports included.
+
+PARTS
+T2: male half cropped from the redesigned full-size M2.
+T3: female half cropped from the redesigned full-size M3.
+B1: the complete, full-size band for that crown joint.
+The body sample is 37 mm long along the joint normal, with the real stroke
+width, edge curve, 10.5 mm body and hammered dome retained. This is one
+joint pair, not a flow-calibration array. The body pieces use 15% gyroid.
+The small band is solid in the slice because its thickness is only 1.2 mm.
+
+WHAT CHANGED
+The separate band bridges the central seam. It follows the smooth crown
+and rests in a 13.2 mm-wide recessed seat. Its nominal width is 12 mm,
+thickness 1.2 mm and edge chamfer 0.25 mm. The seat is 0.6 mm below the
+smooth crown. The modeled assembly includes 0.15 mm for an adhesive layer;
+the dry band can sit lower without that layer. The band ends sit 0.15 mm
+inside the artwork outline. There are no clips, pins or rear projections.
+
+The underlying lap uses the reference shoulder and key profiles, with
+0.003 inch removed from the free shelf/key tips. The nominal face gap is
+0.075 mm. This test does not depend on closing that hairline completely.
+The previous close-seam test did not materially improve the physical fit.
+
+CHECK AFTER PRINTING
+1. Remove supports from the backs, lap and band underside. Clear loose
+   support residue without reshaping the shoulder or sanding the show face.
+2. Fit T2 and T3 together at their natural stop, with the backs on a flat
+   surface. Leave them unglued while assessing the result.
+3. Place B1 in the two seats. Match its shaped ends to the real outline;
+   the two ends are not interchangeable. It should bridge the seam without
+   needing to force the joint closed.
+4. Check the front appearance, whether the band rocks, the match at both
+   ends, the border around it and the quality of its supported underside.
+   Judge the silk sheen in the lighting where the finished frame will hang.
+
+The test decides whether this band finish and seating arrangement are worth
+carrying to the full assembly. Do not print the full M yet if the band rocks,
+leaves an objectionable border or loses the finish you want.
+
+The separate full-size project is Dara-Hammered-Bands-Candidate.3mf.
+Its six body sections have new cut locations; do not mix them with the
+previous M parts. B1 here is a copper cover band, unrelated to the wall
+mounting blocks labeled B1-B4 in the original Dara.3mf project.
+
+Checks: working/review/hammered-bands/test-validation.json
+Geometry preview: working/review/hammered-bands/band-test.png
+Native toolpaths: working/review/hammered-bands/test-supports.png
+Generator: scripts/prepare_hammered_bands.py

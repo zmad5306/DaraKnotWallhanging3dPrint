@@ -1,0 +1,339 @@
+{
+  "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "staged_sha256": "40a166e30c2f14f43cba4932d3b10fa931cfcdc93930ec3b1b5a20fb353da4e8",
+  "native_project_sha256": "a7137e082385f9570f4a556997d551cf3be6ab2fdc54d50b081c2f95433fdfa1",
+  "native_return_code": 0,
+  "plate_count": 6,
+  "native_roundtrip_geometry": [
+    {
+      "name": "M1 - hammered with band seats",
+      "max_native_vertex_or_pose_error_mm": 4.1029621445197795e-06
+    },
+    {
+      "name": "M2 - hammered with band seats",
+      "max_native_vertex_or_pose_error_mm": 5.35537438944163e-07
+    },
+    {
+      "name": "M3 - hammered with band seats",
+      "max_native_vertex_or_pose_error_mm": 5.058540120738123e-07
+    },
+    {
+      "name": "M4 - hammered with band seats",
+      "max_native_vertex_or_pose_error_mm": 1.70251271506156e-07
+    },
+    {
+      "name": "M5 - hammered with band seats",
+      "max_native_vertex_or_pose_error_mm": 3.927440069314785e-07
+    },
+    {
+      "name": "M6 - hammered with band seats",
+      "max_native_vertex_or_pose_error_mm": 1.2025416582136827e-06
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 920693,
+      "features": {
+        "Support": 315669,
+        "Support interface": 189919,
+        "Outer wall": 42825,
+        "Gap infill": 4739,
+        "Inner wall": 71986,
+        "Internal solid infill": 1725,
+        "Sparse infill": 185053,
+        "Floating vertical shell": 108470,
+        "Bridge": 297,
+        "Overhang wall": 10
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          43.31387269970677,
+          3.885276452211869
+        ],
+        [
+          211.71382456339927,
+          254.7652180333597
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          43.10387269970677,
+          3.675276452211869
+        ],
+        [
+          211.96382456339927,
+          255.0152180333597
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.9847819666402984,
+      "plate": 1,
+      "gcode_sha256": "647b0a17033c5b5df46a141b0d8a1c256e3f365d496cc2b3e945e2d244d7bd83",
+      "header": [
+        "; model printing time: 20h 30m 14s; total estimated time: 20h 36m 50s",
+        "; total layer number: 1187",
+        "; total filament length [mm] : 78994.04",
+        "; total filament volume [cm^3] : 190002.93",
+        "; total filament weight [g] : 235.60",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 238.00",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 619479,
+      "features": {
+        "Support": 242857,
+        "Support interface": 126414,
+        "Outer wall": 22856,
+        "Inner wall": 41892,
+        "Internal solid infill": 1374,
+        "Sparse infill": 115813,
+        "Floating vertical shell": 64929,
+        "Gap infill": 2940,
+        "Overhang wall": 18,
+        "Bridge": 340,
+        "Top surface": 46
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          88.65872843976794,
+          38.096933623097364
+        ],
+        [
+          169.94468912617407,
+          220.462
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          88.44872843976795,
+          37.88693362309736
+        ],
+        [
+          170.19468912617407,
+          220.672
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 35.328,
+      "plate": 2,
+      "gcode_sha256": "dc925c9ee76aac2be6505a901f297959fc5008c29ccaaf70b5bbcfc90394e432",
+      "header": [
+        "; model printing time: 13h 25m 14s; total estimated time: 13h 31m 50s",
+        "; total layer number: 533",
+        "; total filament length [mm] : 51856.16",
+        "; total filament volume [cm^3] : 124728.68",
+        "; total filament weight [g] : 154.66",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 106.80",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 1006744,
+      "features": {
+        "Support": 392543,
+        "Support interface": 191223,
+        "Outer wall": 44426,
+        "Gap infill": 4628,
+        "Inner wall": 71554,
+        "Internal solid infill": 1507,
+        "Sparse infill": 187328,
+        "Floating vertical shell": 113264,
+        "Overhang wall": 22,
+        "Bridge": 249
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          40.602955351289125,
+          3.845665753755121
+        ],
+        [
+          214.687,
+          253.50423398913227
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          40.392955351289125,
+          3.635665753755121
+        ],
+        [
+          214.937,
+          253.71423398913228
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 2.285766010867718,
+      "plate": 3,
+      "gcode_sha256": "4c0f58bbd8059ce01bcb9349eb4fc320c05066acf2befbaa2005f43cae7f6e04",
+      "header": [
+        "; model printing time: 23h 40m 0s; total estimated time: 23h 46m 37s",
+        "; total layer number: 1188",
+        "; total filament length [mm] : 92264.49",
+        "; total filament volume [cm^3] : 221922.10",
+        "; total filament weight [g] : 275.18",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 237.80",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 560776,
+      "features": {
+        "Support": 207104,
+        "Support interface": 116771,
+        "Outer wall": 20795,
+        "Gap infill": 1953,
+        "Inner wall": 38830,
+        "Internal solid infill": 609,
+        "Sparse infill": 108993,
+        "Floating vertical shell": 65395,
+        "Bridge": 273,
+        "Top surface": 47,
+        "Overhang wall": 6
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          72.08990655701868,
+          55.49735764175823
+        ],
+        [
+          186.5153562069927,
+          201.4335725687642
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          71.87990655701869,
+          55.24735764175823
+        ],
+        [
+          186.7253562069927,
+          201.6435725687642
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 54.3564274312358,
+      "plate": 4,
+      "gcode_sha256": "26f9c0dea3e8516776406dcf87295f1460c81646c7fe06d04daa236dc671c9e3",
+      "header": [
+        "; model printing time: 12h 23m 16s; total estimated time: 12h 29m 53s",
+        "; total layer number: 775",
+        "; total filament length [mm] : 48586.17",
+        "; total filament volume [cm^3] : 116863.43",
+        "; total filament weight [g] : 144.91",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 155.60",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 427178,
+      "features": {
+        "Support interface": 130351,
+        "Support": 67849,
+        "Outer wall": 18410,
+        "Gap infill": 1655,
+        "Inner wall": 35438,
+        "Internal solid infill": 1412,
+        "Sparse infill": 116139,
+        "Floating vertical shell": 55795,
+        "Overhang wall": 13,
+        "Bridge": 116
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          101.96741270801117,
+          33.78533985705837
+        ],
+        [
+          153.72046009385144,
+          223.62250318721283
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          101.75741270801117,
+          33.53533985705837
+        ],
+        [
+          153.97046009385144,
+          223.87250318721283
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 32.12749681278717,
+      "plate": 5,
+      "gcode_sha256": "ebc0a1077749c7596830ff1433f54ac4d5499757e76241ee0dafd76d94368e16",
+      "header": [
+        "; model printing time: 9h 5m 22s; total estimated time: 9h 12m 0s",
+        "; total layer number: 325",
+        "; total filament length [mm] : 35176.60",
+        "; total filament volume [cm^3] : 84609.63",
+        "; total filament weight [g] : 104.92",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 65.20",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 468504,
+      "features": {
+        "Support": 189255,
+        "Support interface": 90889,
+        "Outer wall": 19566,
+        "Gap infill": 1547,
+        "Inner wall": 33880,
+        "Internal solid infill": 599,
+        "Sparse infill": 83511,
+        "Floating vertical shell": 48977,
+        "Overhang wall": 6,
+        "Bridge": 226,
+        "Top surface": 48
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          70.54327146994171,
+          58.093420608531346
+        ],
+        [
+          183.930866346299,
+          201.17333460443345
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          70.33327146994172,
+          57.883420608531345
+        ],
+        [
+          184.180866346299,
+          201.42333460443345
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 54.57666539556655,
+      "plate": 6,
+      "gcode_sha256": "7ca9e65f03ad52b481281de67d754d95fe1e452c4860861520eb8035bc7cd760",
+      "header": [
+        "; model printing time: 10h 53m 57s; total estimated time: 11h 0m 34s",
+        "; total layer number: 760",
+        "; total filament length [mm] : 40943.63",
+        "; total filament volume [cm^3] : 98480.98",
+        "; total filament weight [g] : 122.12",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 152.20",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    }
+  ],
+  "physical_fit_finish_and_support_anchor_test_pending": true
+}

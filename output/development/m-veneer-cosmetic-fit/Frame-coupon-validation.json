@@ -1,0 +1,110 @@
+{
+  "variants": [
+    {
+      "label": "A reference",
+      "reference": true,
+      "show_gap_mm": 0.075
+    },
+    {
+      "label": "B refined 0.075",
+      "show_gap_mm": 0.075,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          4.0,
+          1.0
+        ],
+        [
+          14.0,
+          -29.0
+        ],
+        [
+          14.0,
+          28.0
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -8.083811398051921e-16
+    },
+    {
+      "label": "C refined 0.05",
+      "show_gap_mm": 0.05,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          4.0,
+          1.0
+        ],
+        [
+          14.0,
+          -29.0
+        ],
+        [
+          14.0,
+          28.0
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -8.083811398051921e-16
+    },
+    {
+      "label": "D refined 0.10",
+      "show_gap_mm": 0.1,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          4.0,
+          1.0
+        ],
+        [
+          14.0,
+          -29.0
+        ],
+        [
+          14.0,
+          28.0
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -8.083811398051921e-16
+    }
+  ],
+  "jig_white_contact_xy": [
+    [
+      -24,
+      -30
+    ],
+    [
+      -24,
+      30
+    ],
+    [
+      30,
+      -30
+    ],
+    [
+      30,
+      30
+    ]
+  ],
+  "jig_reference_height_mm": 6,
+  "jig_open_clearance_mm": 4,
+  "projecting_pin_clearance_mm": 1,
+  "physical_confirmation_pending": true,
+  "compare": [
+    "Dry seating gap under light pressure",
+    "White face step in grazing light",
+    "Wood and blue continuity",
+    "Seam after controlled epoxy cure",
+    "Same assembly grain despite different bed rotations"
+  ]
+}

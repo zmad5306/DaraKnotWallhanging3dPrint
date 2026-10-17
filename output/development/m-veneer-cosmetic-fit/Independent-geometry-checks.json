@@ -1,0 +1,108 @@
+{
+  "source_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "source_hammer_grid_vertices_checked": 304330,
+  "maximum_hammer_field_error_mm": 7.625287294033001e-06,
+  "frame_checks": [
+    {
+      "part": "F1",
+      "visible_volume_difference_above_Z8_mm3": 3.715752639915895e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F2",
+      "visible_volume_difference_above_Z8_mm3": 3.757665106132507e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F3",
+      "visible_volume_difference_above_Z8_mm3": 1.0705820884504273e-06,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F4",
+      "visible_volume_difference_above_Z8_mm3": 2.989690493715422e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F5",
+      "visible_volume_difference_above_Z8_mm3": 9.073520187530244e-06,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F6",
+      "visible_volume_difference_above_Z8_mm3": 4.451490357533086e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F7",
+      "visible_volume_difference_above_Z8_mm3": 2.3838490711527203e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F8",
+      "visible_volume_difference_above_Z8_mm3": 4.4427476234195785e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F9",
+      "visible_volume_difference_above_Z8_mm3": 4.0581919316120864e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F10",
+      "visible_volume_difference_above_Z8_mm3": 3.6514950623593766e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F11",
+      "visible_volume_difference_above_Z8_mm3": 3.0103652249073972e-06,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F12",
+      "visible_volume_difference_above_Z8_mm3": 4.464141319416421e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F13",
+      "visible_volume_difference_above_Z8_mm3": 4.178487611267272e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F14",
+      "visible_volume_difference_above_Z8_mm3": 4.566980709348102e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F15",
+      "visible_volume_difference_above_Z8_mm3": 4.4152190873525963e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F16",
+      "visible_volume_difference_above_Z8_mm3": 1.2487887733752954e-06,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F17",
+      "visible_volume_difference_above_Z8_mm3": 7.630226617597307e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F18",
+      "visible_volume_difference_above_Z8_mm3": 2.7682605207753013e-06,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F19",
+      "visible_volume_difference_above_Z8_mm3": 3.936970299327012e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    },
+    {
+      "part": "F20",
+      "visible_volume_difference_above_Z8_mm3": 3.637927535423859e-07,
+      "color_modifier_geometry_and_assignments_preserved": true
+    }
+  ],
+  "scope": "Digital geometry only; native toolpaths and physical samples are separate checks."
+}

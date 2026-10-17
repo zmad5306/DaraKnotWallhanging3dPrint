@@ -7,6 +7,8 @@ __pycache__/
 *.[sS][tT][lL]
 *.[gG][cC][oO][dD][eE]
 !/Dara.3mf
+!/output/christmas-crate-stencils/*.3mf
+!/output/christmas-crate-stencils/*.stl
 !/working/stl/Dara-Photo-Frame-A1-Jointed/*.stl
 !/working/stl/Dara-Print-Checks/*.stl
 !/working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf

@@ -1,5 +1,7 @@
 # Dara knot wall hanging
 
+**Christmas crate spray stencils:** [Bambu A1 project](output/christmas-crate-stencils/Christmas-Crate-Stencils.3mf) · [assembly instructions and previews](output/christmas-crate-stencils/README.md). Two 720 mm-wide negative masks, six thin tiles total: THIS END UP with an arrow, and FRAGILE for diagonal placement.
+
 **Current production project: [Dara.3mf](Dara.3mf)** — open as a project in Bambu Studio. It contains **32 sliced plates, 75 assembly pieces and three optional sample pieces**. Plates **21–26** are the full-size hammered M, **31** contains its five copper covers, and **32** contains the requested full-color epoxy glue-up sample. [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md).
 
 The copper face planes run along the A1 bed's **Y travel**, with a 55-degree lean across X, saved tree supports and conservative motion limits. Keep the saved scale, orientations and per-object overrides. Filament slots are **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**.

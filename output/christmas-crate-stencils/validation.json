@@ -1,0 +1,74 @@
+[
+  {
+    "plate": 1,
+    "name": "01-THIS-END-UP-1-of-3",
+    "size_mm": [
+      240.0,
+      160.0,
+      0.800000011920929
+    ],
+    "watertight": true,
+    "connected_components": 1,
+    "volume_mm3": 22535.18044653155
+  },
+  {
+    "plate": 2,
+    "name": "02-THIS-END-UP-2-of-3",
+    "size_mm": [
+      240.0,
+      160.0,
+      0.800000011920929
+    ],
+    "watertight": true,
+    "connected_components": 1,
+    "volume_mm3": 23946.882379035847
+  },
+  {
+    "plate": 3,
+    "name": "03-THIS-END-UP-3-of-3",
+    "size_mm": [
+      240.0,
+      160.0,
+      0.800000011920929
+    ],
+    "watertight": true,
+    "connected_components": 1,
+    "volume_mm3": 24071.99592056028
+  },
+  {
+    "plate": 4,
+    "name": "04-FRAGILE-1-of-3",
+    "size_mm": [
+      240.0,
+      160.0,
+      0.800000011920929
+    ],
+    "watertight": true,
+    "connected_components": 1,
+    "volume_mm3": 20863.655619702662
+  },
+  {
+    "plate": 5,
+    "name": "05-FRAGILE-2-of-3",
+    "size_mm": [
+      240.0,
+      160.0,
+      0.800000011920929
+    ],
+    "watertight": true,
+    "connected_components": 1,
+    "volume_mm3": 20390.580077603245
+  },
+  {
+    "plate": 6,
+    "name": "06-FRAGILE-3-of-3",
+    "size_mm": [
+      240.0,
+      160.0,
+      0.800000011920929
+    ],
+    "watertight": true,
+    "connected_components": 1,
+    "volume_mm3": 21550.53040769208
+  }
+]

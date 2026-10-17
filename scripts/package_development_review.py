@@ -38,10 +38,10 @@ def main():
         finish='Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.',
         frame='20 sections / 32 existing seam centerlines. Tested 18 mm lap envelope; three hidden seating stops, .20 mm adhesive relief, internal reservoirs, .80 mm secondary-pocket relief and hidden tongue-tip lead-in.',
         grain='Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.',
-        jig='White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include matching negative face cauls.'),
+        jig='White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include smooth crown cauls, without hammer dimples, for use with a soft liner and release film.'),
       test_order=[
-        dict(file='M-Veneer-Seam-Coupon-A1-Sliced.3mf',plates=['1: flat core','2: upper veneer with fused carrier','3: lower veneer with fused carrier','4: matched face caul'],purpose='Test exposed seam closure and reflection without bands; assess support cleanup and clamping.'),
-        dict(file='M-Veneer-Glue-Coupon-A1-Sliced.3mf',plates=['1: two keyed core halves','2: continuous veneer with fused carrier','3: matched face caul'],purpose='Test structural core fit and whether the veneer seats flat over its joint.'),
+        dict(file='M-Veneer-Seam-Coupon-A1-Sliced.3mf',plates=['1: flat core','2: upper veneer with fused carrier','3: lower veneer with fused carrier','4: smooth white crown caul (clamp fixture)'],purpose='Test exposed seam closure and reflection without bands; assess support cleanup and clamping.'),
+        dict(file='M-Veneer-Glue-Coupon-A1-Sliced.3mf',plates=['1: two keyed core halves','2: continuous veneer with fused carrier','3: smooth white crown caul (clamp fixture)'],purpose='Test structural core fit and whether the veneer seats flat over its joint.'),
         dict(file='Frame-Cosmetic-Comparison-A1-Sliced.3mf',plates=['1: existing .075 mm lap reference','2: refined .075 mm','3: refined .05 mm','4: refined .10 mm','5: show-face jig'],purpose='Compare face step, dry closure, surface direction and cured adhesive seam before choosing a production tolerance.')],
       assembly_instructions=[
         'Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.',
@@ -50,7 +50,7 @@ def main():
         'Trim the necks inside their recessed rear pockets, leaving no material above the surrounding underside seating plane. Keep the three seating pads and locating features clean.',
         'Assemble the structural core on a flat reference surface. Dry-fit the veneer and check all three seating contacts with gentle clamping before adding adhesive.',
         'Apply a controlled amount of the selected epoxy in the relief regions. Keep the hard stops and cosmetic closing edge free of adhesive.',
-        'Use release film on the matching face caul or frame jig. Clamp only enough to seat the veneer; inspect the hammered face after cure.',
+        'The white M caul is a removable clamp pad, not part of the artwork. Add a soft liner and release film to its smooth crown face. Use release film on the frame jig. Clamp only enough to seat the veneer; inspect the hammered face after cure.',
         'For the new full M, plates 1–6 are C1–C6 cores; 7–12 are V1–V6 veneers/carriers. The five original cover bands are omitted.',
         'Use the full candidate files after the coupons confirm fit, cleanup, reflection and cupping correction. These digital checks do not establish cured bond strength or invisible seams.'
       ],

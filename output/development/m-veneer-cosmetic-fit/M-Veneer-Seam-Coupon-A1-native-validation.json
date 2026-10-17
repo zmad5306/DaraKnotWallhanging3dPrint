@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "ca47bb3f56284a301d68d8d1a996f47f348f7c8810b97c3fd4ee12ab07526217",
-  "native_project_sha256": "a6302331391406763681f083d62d90d943a0e5ada48acfd8a48286c24f04e204",
+  "staged_sha256": "51f1d5f1a3fae83f9438e52609c6baa7e2dfcf98107305562d3d540d65bb79e4",
+  "native_project_sha256": "37bdff8109f87f08cfa0607ab89f2a5199913881b1646cb6aba7e8d3a58f0539",
   "native_return_code": 0,
   "plate_count": 4,
   "native_roundtrip_geometry": [
@@ -18,7 +18,7 @@
       "max_native_vertex_or_pose_error_mm": 1.2444973175530456e-05
     },
     {
-      "name": "Matched face caul - use release film",
+      "name": "Smooth crown caul - soft liner and release film",
       "max_native_vertex_or_pose_error_mm": 1.5199349423199405e-05
     }
   ],
@@ -173,17 +173,17 @@
       ]
     },
     {
-      "extrusion_moves_checked": 17570,
+      "extrusion_moves_checked": 6260,
       "features": {
-        "Inner wall": 2039,
-        "Outer wall": 769,
+        "Inner wall": 275,
+        "Outer wall": 109,
         "Bottom surface": 330,
-        "Internal solid infill": 7382,
-        "Sparse infill": 872,
-        "Bridge": 644,
-        "Floating vertical shell": 104,
-        "Gap infill": 2480,
-        "Top surface": 2950
+        "Internal solid infill": 3921,
+        "Sparse infill": 238,
+        "Bridge": 188,
+        "Floating vertical shell": 2,
+        "Gap infill": 346,
+        "Top surface": 851
       },
       "extruding_xy_bounds_mm": [
         [
@@ -191,7 +191,7 @@
           103.21
         ],
         [
-          162.811,
+          162.79,
           152.79
         ]
       ],
@@ -201,19 +201,19 @@
           103.0
         ],
         [
-          163.000256,
+          163.0,
           153.0
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 92.99974399999999,
+      "conservative_bed_edge_clearance_mm": 93.0,
       "plate": 4,
-      "gcode_sha256": "d9b1a4852274e3f15088a0348624684e61a66b67e4c3b9e6000e0e2b3e1292cb",
+      "gcode_sha256": "0b917043a6cb1d6eefbbf8289fb7ec2f67017ec2feda14c4468d658d689ef3b0",
       "header": [
-        "; model printing time: 38m 40s; total estimated time: 45m 14s",
-        "; total layer number: 21",
-        "; total filament length [mm] : 3271.35",
-        "; total filament volume [cm^3] : 7868.52",
-        "; total filament weight [g] : 9.76",
+        "; model printing time: 22m 16s; total estimated time: 28m 49s",
+        "; total layer number: 20",
+        "; total filament length [mm] : 2982.12",
+        "; total filament volume [cm^3] : 7172.84",
+        "; total filament weight [g] : 8.89",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 4.20",

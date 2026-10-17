@@ -25,7 +25,7 @@ from shapely.geometry import Point, LineString, Polygon, box, mapping
 from shapely.ops import split
 import trimesh
 
-from development_3mf import ROOT, OUT, WORK, source, save_json, solid, mesh, centered, z_rotation, common_m_rotation, write_project, sha
+from development_3mf import ROOT, OUT, WORK, source, save_json, solid, mesh, centered, z_rotation, common_m_rotation, write_project, sha, mesh_xml
 from add_blue_ribbon_edge import artwork, section
 from build_jointed_bambu_project import read_array, tag, P
 from validate_print_project import transform, props
@@ -264,11 +264,63 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
         m=mesh(c);xy=(128,110) if len(samples)==1 else (75+n*103,120)
         objs.append(dict(name=f'Flat core coupon C{i+1}',parts=[dict(mesh=m)],transform=centered(m,xy=xy),settings=core_settings))
     plates=[objs]+[[obj] for obj in skin_objects]
-    caul,_=height_mesh(sample,lambda xy:roof(xy)+.15,14.8)
+    # The caul follows the broad crown, not the individual hammer dimples. Its
+    # flat-printed contact face is used with a soft liner and release film.
+    caul,_=height_mesh(sample,lambda xy:10.5+crown(outline,xy)+.15,14.8)
     flip=np.diag([1,-1,-1])
-    plates.append([dict(name='Matched face caul - use release film',parts=[dict(mesh=caul)],transform=centered(caul,flip),settings=dict(core_settings,extruder='1',brim_width='0',enable_support='0'))])
+    plates.append([dict(name='Smooth crown caul - soft liner and release film',parts=[dict(mesh=caul)],transform=centered(caul,flip),settings=dict(core_settings,extruder='1',brim_width='0',enable_support='0'))])
     write_project(OUT/filename,plates,'DEVELOPMENT - '+filename.removesuffix('.3mf'))
-    save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(glue_gap_mm=.2,caul_release_clearance_mm=.15,panels=seats,core_parts=[i+1 for i,_ in samples],physical_confirmation_pending=True))
+    save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(glue_gap_mm=.2,caul_release_clearance_mm=.15,caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,panels=seats,core_parts=[i+1 for i,_ in samples],physical_confirmation_pending=True))
+
+
+def refresh_cauls():
+    """Replace only the two white sample cauls, retaining every printable part."""
+    from build_jointed_bambu_project import model,xml
+    cad=CAD.read_text();outline=artwork(cad,'letter_outline')
+    title='Smooth crown caul - soft liner and release film'
+    for name,window in [('M-Veneer-Glue-Coupon-A1',(-290,40,-212,94)),('M-Veneer-Seam-Coupon-A1',(-290,-90,-220,-40))]:
+        path=OUT/(name+'.3mf')
+        with zipfile.ZipFile(path) as z:files={n:z.read(n) for n in z.namelist()}
+        cfg=ET.fromstring(files['Metadata/model_settings.config']);root=ET.fromstring(files['3D/3dmodel.model'])
+        obj=next(o for o in cfg.findall('object') if 'caul' in props(o).get('name','').lower());oid=obj.get('id')
+        normal=obj.find("part[@subtype='normal_part']");pid=normal.get('id')
+        resource=root.find(tag('resources')).find(f"{tag('object')}[@id='{oid}']")
+        co=resource.find(tag('components')).find(f"{tag('component')}[@objectid='{pid}']")
+        child_path=co.get('{'+P+'}path').lstrip('/')
+        sample=box(*window).intersection(outline)
+        caul,_=height_mesh(sample,lambda xy:10.5+crown(outline,xy)+.15,14.8)
+        curved=caul.vertices[caul.vertices[:,2]<14.8-1e-8]
+        error=float(np.abs(curved[:,2]-(10.5+crown(outline,curved[:,:2])+.15)).max())
+        assert error<1e-7,error
+        child=model();mesh_xml(ET.SubElement(child,tag('resources')),pid,caul)
+        preserved={n:sha_bytes(v) for n,v in files.items() if n.startswith('3D/Objects/') and n!=child_path}
+        files[child_path]=xml(child)
+        for element in [obj,normal]:
+            for md in element.findall('metadata'):
+                if md.get('key')=='name':md.set('value',title)
+        normal.find('mesh_stat').set('face_count',str(len(caul.faces)))
+        plate=cfg.findall('plate')[-1]
+        for md in plate.findall('metadata'):
+            if md.get('key')=='plater_name':md.set('value',f'{len(cfg.findall("plate"))} - {title}')
+        files['Metadata/model_settings.config']=xml(cfg)
+        with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED) as z:
+            for n,v in files.items():z.writestr(n,v)
+        assert all(sha_bytes(files[n])==h for n,h in preserved.items())
+        staging=OUT/(name+'.json');report=json.loads(staging.read_text())
+        row=report['records'][-1];row['name']=title
+        t=np.array(row['assembly_to_printer']);v=caul.vertices@t[:3,:3].T+t[:3,3]
+        row['body_bounds_mm']=[v.min(axis=0).tolist(),v.max(axis=0).tolist()]
+        save_json(staging,report)
+        seating=OUT/(name+'-seating.json');report=json.loads(seating.read_text())
+        report.update(caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,
+                      caul_surface_error_mm=error,other_object_meshes_byte_identical=True)
+        save_json(seating,report)
+        print(name+': smooth white caul; cores and veneers unchanged',flush=True)
+
+
+def sha_bytes(value):
+    import hashlib
+    return hashlib.sha256(value).hexdigest()
 
 
 def build():
@@ -478,5 +530,5 @@ def orient():
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient']);args=ap.parse_args()
-    {'build':build,'orient':orient}[args.action]()
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls']);args=ap.parse_args()
+    {'build':build,'orient':orient,'cauls':refresh_cauls}[args.action]()

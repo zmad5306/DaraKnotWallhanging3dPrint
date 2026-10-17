@@ -13,7 +13,7 @@
       "plate_count": 4,
       "native_validation": "M-Veneer-Seam-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 83.964,
-      "native_sha256": "a6302331391406763681f083d62d90d943a0e5ada48acfd8a48286c24f04e204"
+      "native_sha256": "37bdff8109f87f08cfa0607ab89f2a5199913881b1646cb6aba7e8d3a58f0539"
     },
     {
       "project": "M-Veneer-Glue-Coupon-A1-Sliced.3mf",
@@ -21,7 +21,7 @@
       "plate_count": 3,
       "native_validation": "M-Veneer-Glue-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 34.964,
-      "native_sha256": "3071340d1607664e39c51fdb5b6f1e704ce920ff5ec199ab047093ca496231d5"
+      "native_sha256": "fad45761dc181f3d87513fec653b6977b9916a60c5cd7f28517eededee671013"
     },
     {
       "project": "Frame-Cosmetic-Comparison-A1-Sliced.3mf",
@@ -63,7 +63,7 @@
     "finish": "Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.",
     "frame": "20 sections / 32 existing seam centerlines. Tested 18 mm lap envelope; three hidden seating stops, .20 mm adhesive relief, internal reservoirs, .80 mm secondary-pocket relief and hidden tongue-tip lead-in.",
     "grain": "Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.",
-    "jig": "White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include matching negative face cauls."
+    "jig": "White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include smooth crown cauls, without hammer dimples, for use with a soft liner and release film."
   },
   "test_order": [
     {
@@ -72,7 +72,7 @@
         "1: flat core",
         "2: upper veneer with fused carrier",
         "3: lower veneer with fused carrier",
-        "4: matched face caul"
+        "4: smooth white crown caul (clamp fixture)"
       ],
       "purpose": "Test exposed seam closure and reflection without bands; assess support cleanup and clamping."
     },
@@ -81,7 +81,7 @@
       "plates": [
         "1: two keyed core halves",
         "2: continuous veneer with fused carrier",
-        "3: matched face caul"
+        "3: smooth white crown caul (clamp fixture)"
       ],
       "purpose": "Test structural core fit and whether the veneer seats flat over its joint."
     },
@@ -104,7 +104,7 @@
     "Trim the necks inside their recessed rear pockets, leaving no material above the surrounding underside seating plane. Keep the three seating pads and locating features clean.",
     "Assemble the structural core on a flat reference surface. Dry-fit the veneer and check all three seating contacts with gentle clamping before adding adhesive.",
     "Apply a controlled amount of the selected epoxy in the relief regions. Keep the hard stops and cosmetic closing edge free of adhesive.",
-    "Use release film on the matching face caul or frame jig. Clamp only enough to seat the veneer; inspect the hammered face after cure.",
+    "The white M caul is a removable clamp pad, not part of the artwork. Add a soft liner and release film to its smooth crown face. Use release film on the frame jig. Clamp only enough to seat the veneer; inspect the hammered face after cure.",
     "For the new full M, plates 1\u20136 are C1\u2013C6 cores; 7\u201312 are V1\u2013V6 veneers/carriers. The five original cover bands are omitted.",
     "Use the full candidate files after the coupons confirm fit, cleanup, reflection and cupping correction. These digital checks do not establish cured bond strength or invisible seams."
   ],

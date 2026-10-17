@@ -57,5 +57,9 @@
     1,
     4
   ],
-  "physical_confirmation_pending": true
+  "physical_confirmation_pending": true,
+  "caul_surface": "Smooth broad crown; no hammer dimples",
+  "caul_liner_required": true,
+  "caul_surface_error_mm": 0.0,
+  "other_object_meshes_byte_identical": true
 }

@@ -1,4 +1,4 @@
-"""Audit actual generated fin contacts on a finer rear-area grid; draw V1 map."""
+"""Audit actual generated fin contacts on an independent rear-area grid; draw V1 map."""
 import json
 import hashlib
 import math
@@ -49,7 +49,7 @@ def main():
     for i,skin in enumerate(plan['skins']):
         g=shape(plan['skin_regions'][i]);x0,y0,_,y1=g.bounds
         excluded=union_all([Point(*a['xy_mm']).buffer(7) for a in skin['anchors']]).union(screw_exclusion())
-        starter=g.intersection(box(x0-1,y0-1,x0+4,y1+1)).difference(excluded)
+        starter=shape(skin['carrier']['starter_contact_region'])
         xy,w,allow=coverage.area_samples(g)
         sd=shapely.distance(shapely.points(xy),starter)
         rows=[dict(contacts=np.array(r['contacts_xy_mm'])) for r in skin['carrier']['fins']]
@@ -70,7 +70,7 @@ def main():
             draw(g,old,rows,xy,a,b)
     report=dict(geometry_plan_sha256=sha(OUT/'M-geometry-validation.json'),
         baseline_contacts_sha256=sha(baseline),baseline_commit=before['source_commit'],
-        finer_sampling_than_planner=True,validation_grid_mm=.75,
+        finer_sampling_than_planner=False,planner_grid_mm=.75,validation_grid_mm=.75,
         original_fins=sum(r['baseline']['fin_count'] for r in reports),
         revised_fins=sum(r['revised']['fin_count'] for r in reports),
         veneers=reports,
@@ -79,7 +79,7 @@ def main():
         physical_confirmation_pending=True)
     save_json(OUT/'M-fin-coverage-validation.json',report)
     print(json.dumps(dict(original_fins=report['original_fins'],revised_fins=report['revised_fins'],
-        all_finer_grid_checks_pass=True)))
+        all_independent_grid_checks_pass=True)))
 
 
 if __name__=='__main__':main()

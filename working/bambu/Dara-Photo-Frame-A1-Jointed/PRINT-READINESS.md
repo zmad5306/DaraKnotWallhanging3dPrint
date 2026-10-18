@@ -1,6 +1,6 @@
 # Printing and assembly with the veneer M
 
-Updated October 18, 2026. Open the root [Dara.3mf](../../../Dara.3mf), or its identical [complete-project copy](Dara-Photo-Frame-A1-Complete.3mf), **as a project**. It contains all 36 native slices. See the [plate guide](../../../docs/M-PRINT-GUIDE.md), [printable map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf) and [release validation](m-veneer-release-validation.json).
+Updated October 18, 2026. Open the [complete A1 project](Dara-Photo-Frame-A1-Complete.3mf) **as a project**. It contains all 36 native slices; the root project is the separate A2L design. See the [plate guide](../../../docs/M-PRINT-GUIDE.md), [printable map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf) and [release validation](m-veneer-release-validation.json).
 
 ## Plate selection and materials
 
@@ -19,14 +19,14 @@ Filament slots remain **1 white / 2 wood tan / 3 copper silk / 4 blue**. All new
 
 Every veneer shares the **same complete assembly-to-bed rotation**, including the direction within its face plane. The broad faces run along Y travel; the common 55-degree lean is across X. Keep the saved orientations. Matching only the lean is insufficient for consistent reflection. XY translation is acceptable if supports/brims still fit; independent rotation or auto-orientation changes finish direction.
 
-Solid fins, repeated bonded tabs, diagonal ties and grounded starter shoes restrain the silk veneers. These are model geometry intended for deliberate cutting. Native trees are additional overhang support, not the sole bed attachment. The tallest panels use per-object tree-foot settings to fit without changing the main project's usable bed. All twelve M slices have verified bead-inclusive bounds and model extrusion at the intended bonded contacts.
+Solid fins, separate grounded ribs, 1.2 mm cut necks and diagonal ties restrain the silk veneers. The continuous starter shoes have been removed. Fin bodies leave 3 mm of rear access; connections enter 0.4 mm trim recesses. Tall starter ribs are also diagonally restrained. Native trees are additional overhang support. The tallest panels use per-object tree-foot settings to fit without changing the usable bed. All twelve M slices have verified bead-inclusive bounds and model extrusion at the intended bonded contacts.
 
 Main core planes are flat at 8.4 mm. Veneer backs are flat at Z8.6, keeping 0.20 mm for glue. All crown and hammer texture are in the veneer. Nominal veneer thickness is 1.9–4.1 mm before hidden pockets. The five visible seam boundaries have zero nominal gap; physical closure still needs checking in the actual material.
 
 ## Cleanup and fitting
 
 1. Label C1–C6 and V1–V6 as they leave the plates. Use new cores and veneers together; old solid M parts and cover bands are incompatible.
-2. Cradle the hammered face in a matching soft-lined caul. Cut fin cross-ties and stock progressively to access the rear tabs and starter shoe. Do not snap them off against an unsupported thin skin.
+2. Remove ordinary trees and cradle the hammered face in a matching soft-lined caul. Cut the narrow necks individually through their rear pockets, flush with the rear lands; remove fin stock, separate starter ribs and cross-ties progressively. Do not snap them off against an unsupported thin skin. No carrier flange belongs in the finished piece.
 3. Trim remnants into recessed rear pockets. Sand the broad rear lands flat on the granite reference, preserving stops, locators, screw-tip pockets and cosmetic seam edges. Leave the hammered front untouched.
 4. Dry-assemble all six cores on a flat reference, then fit every veneer. Check the complete M against the knot's existing locators and screws before adhesive. Shallow hidden veneer pockets clear the original screw tips beyond the flat core.
 5. Check seam closure, face level and reflection under ordinary and grazing light. A representative full-size veneer/core is the useful next check before committing all copper prints.

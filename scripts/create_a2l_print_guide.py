@@ -50,7 +50,7 @@ def main():
  text(32,116,'Cores: constant 8.4 mm main body. Veneer backs: Z8.6. Hidden glue space: 0.20 mm.',9)
  text(32,97,'Two veneer seams total about 24 mm in front projection; their actual front edges match at zero nominal gap.',9)
  text(32,78,'All three veneers share the complete 55-degree lean and in-plane direction. Show planes run along bed Y.',9,True)
- text(32,58,'Do not rotate individual veneers. Clip bonded fins, tabs, starter shoes and perimeter guards; sand hidden backs flat.',8.5);c.showPage()
+ text(32,58,'Keep veneer rotations. Cut recessed necks; remove separate ribs, fins and guards. Sand hidden backs flat.',8.5);c.showPage()
  page('Production checklist: A2L + A1','A2L: plates 1-17, including ALL M cores and veneers. A1 companion: plates 1-3. Skip A2L 18-20.',3)
  rows=[(i,f'C{i-10} flat core') for i in range(11,15)]+[(i,f'V{i-14} veneer + carrier') for i in range(15,18)]+[(18,'Backers 1, 3, 5, 7'),(19,'Backers 2, 4, 6, 8'),(20,'4 wall blocks + 32 retainers')]
  table(rows,32,505,350)

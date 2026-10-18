@@ -237,7 +237,7 @@ def build_M():
         oldsample=planner.SAMPLE;planner.SAMPLE=.75
         xy,weights,allowance=planner.area_samples(rg)
         rows=[dict(contacts=np.array(r['contacts_xy_mm'])) for r in evidence['fins']]
-        starter=rg.intersection(box(rg.bounds[0]-1,rg.bounds[1]-1,rg.bounds[0]+4,rg.bounds[3]+1)).difference(ex)
+        starter=shape(evidence['starter_contact_region'])
         fine=planner.coverage(rows,xy,weights,allowance,shapely.distance(shapely.points(xy),starter));planner.SAMPLE=oldsample
         limits=evidence['area_coverage']['trial_geometric_limits']
         assert fine['area_outside_distance_limit_mm2']<1e-6

@@ -1,0 +1,158 @@
+{
+  "baseline_sha256": "7cd103259df6dbbc1770a33c56c093ad8748673ec220d2145253ee4d975b7709",
+  "project_sha256": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d",
+  "baseline_commit": "d69f7db34716b504b86c206bf7b63ae126ae5711",
+  "all_30_non_veneer_plates_unchanged": true,
+  "plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "8d01a19aefba3ba88bb4c0c82d710c8921e4d3386d5e018700c4d1a52d5969a4",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "650dc0e02a2145df3b5d74a9379d9badca4e195bdb9300550fe943da7fd79fd2",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "3ea8587fe536be5324383c9ed23440dae8e6a31222c03eec32fb16e9ecc83d79",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "26b790e37809b44b1a41c3f0d2eb761a06ad11848283b3b0e6dfa4e13223c277",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "8c07be471f0ef69a57ebf1acbdb6374d56efe5992e5f2658125ab87b396396a5",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "0969e38b4b3b9c9afc8b1f3cbb9565710fff3ba3ccdc689ffa1cac2cfba6fb64",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 7,
+      "gcode_sha256": "d5dd4a872dd8b40c4544d6f0d6e2773b7f97038f7b1d1e2a1f1fe49c2f3de44d",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 8,
+      "gcode_sha256": "759964a5b0bb480864d476decdcca326a6a92f25421444d42da0528e6317bdb3",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 9,
+      "gcode_sha256": "6bded996f922f529d5c6f2c02ad0e0487ad4682ae6b9619a3288a9a345e47ed8",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 10,
+      "gcode_sha256": "3e0e41ca5549ea120075195366ec2f91cb786ed31850167237d9f29edaff1923",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 11,
+      "gcode_sha256": "ee3aec659eecad6409efc14478a9b1d578cb0a39c16bbfcbef1db5d61529a4bb",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 12,
+      "gcode_sha256": "6110f7122a6c8e4deb467d68c6e8370cebaa8375cc2f8a35b2206e00143aeb92",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 13,
+      "gcode_sha256": "b2d182dbd7b5abc8a79383b779def7181c46fd5ac7a750d1877faa856ff41a2f",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 14,
+      "gcode_sha256": "7e5184f11788d946f7df86a6c2d662f4ae0230bd869aad2959772a81edde0aa0",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 15,
+      "gcode_sha256": "8720bba3956f30788606a3de66409df8006471ecd6306e65ffcca99ec554edc4",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 16,
+      "gcode_sha256": "92a7d6b76a8eb3cf1489cbdf59945f4f85b98c6369cde6b2c4a95225538e6c34",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 17,
+      "gcode_sha256": "b32c9429c8f88fb4c0ab302dfb8f8f3babad71e2ff049209c1e43d58f18184b1",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 18,
+      "gcode_sha256": "4c5a2e37ef9ee73e6582dd867ca5e5f37361b6a32153f053fda556408bce6299",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 19,
+      "gcode_sha256": "b47dd7d7490ca3b47a67e58fe05ce4750ae60bc3706348aae2ab7de90ab30803",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 20,
+      "gcode_sha256": "237d99f9b15f605157f4bdccd8a531cb09e29574a9eda905fdf38859486e58a6",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 21,
+      "gcode_sha256": "f2b3047cf57cb63df6fa7b4ec8eb8c82100216db5fc0de0fc1d183d3e06f44f8",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 22,
+      "gcode_sha256": "adb3c1441bdb3c0f40c6bbbbd52ac84d8540b77764a0a85696670ffe6d9ac402",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 23,
+      "gcode_sha256": "f125f82655a9540fa78de8d0575a2e934480710fe5d1749b6610a5571487a97c",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 24,
+      "gcode_sha256": "5e6b4db7b7674b0dc4b7274f1bf1249dcc02b1bf5b6fc8395171e57b74637e63",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 25,
+      "gcode_sha256": "4c50fc7a8c9a96a9c1ee5c2fbbe93abbadb8985b4ae6807163a38b8bd78cab20",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 26,
+      "gcode_sha256": "75d6f8381ea236f59a3dd33fcc7336430315e596be8bb29dac23b869e9b89057",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 27,
+      "gcode_sha256": "7dd3397d549d003e4e17e6dad1f9481607a815eaa925e7f2ce516e6bee45de54",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 28,
+      "gcode_sha256": "4c8e799c498744ec51822eecaa61010e9223ca0bc14ad0022ea26970b5ed8823",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 29,
+      "gcode_sha256": "71807ae7164ee0e29bdc6ef7b993c4a91cefe0063fa89e556e059e9cab5784a1",
+      "geometry_process_and_pose_preserved": true
+    },
+    {
+      "plate": 30,
+      "gcode_sha256": "d292cd661d3aa9664c54c70d2449afad881692731b7952849410ce677b7b91a5",
+      "geometry_process_and_pose_preserved": true
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # Complete A1 project with flat M cores and veneers
 
-Open [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) as a project in Bambu Studio. It is byte-identical to the root [Dara.3mf](../../../Dara.3mf). Both contain **36 saved native slices, 76 assembly pieces and one optional finish sample**.
+Open [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) as a project in Bambu Studio. This alternate A1 design contains **36 saved native slices, 76 assembly pieces and one optional finish sample**. The repository-root project is the separate A2L design; their M sections and hardware are not interchangeable.
+
+All six veneer carriers on plates 31–36 have the removable-carrier correction: separate grounded ribs, accessible 1.2 mm necks, 0.4 mm rear recesses and 3 mm rear cutting clearance. The continuous shoe and its L-shaped lip are removed. All other 30 plates retain their saved toolpaths. See the [audit of every saved veneer](../../../output/development/m-veneer-cosmetic-fit/All-veneer-production-audit.json).
 
 The M has six flat structural cores and six matching hammered veneers with zero nominal cosmetic seam gap. All veneers share the complete saved M5 rotation: a 55-degree lean across X, with their broad face planes parallel to bed Y travel. Do not rotate veneers independently. Flat backs retain 0.20 mm glue clearance above the cores. The five cover bands are removed.
 
@@ -17,7 +19,7 @@ The obsolete glue-practice sample formerly on plate 32 is retained in the [archi
 
 Use [PRINT-READINESS.md](PRINT-READINESS.md), the [current plate guide](../../../docs/M-PRINT-GUIDE.md) and [printable map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf). The current release report is [m-veneer-release-validation.json](m-veneer-release-validation.json). The mirrored-joint and cover-crown reports describe the archived solid-M release; their hashes are not the current main-project hash.
 
-After fetching this branch and downloading Git LFS assets, audit both copies with standard Python:
+After fetching this branch and downloading Git LFS assets, audit the A2L and alternate A1 production files with standard Python:
 
 ```sh
 python scripts/audit_dara_release.py

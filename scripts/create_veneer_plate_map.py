@@ -20,7 +20,7 @@ for name,file in [('Vera','Vera.ttf'),('VeraBold','VeraBd.ttf')]:pdfmetrics.regi
 
 def main():
     report=json.loads((PACKAGE/'m-veneer-release-validation.json').read_text())
-    assert hashlib.sha256((ROOT/'Dara.3mf').read_bytes()).hexdigest()==report['project_sha256']
+    assert hashlib.sha256((PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf').read_bytes()).hexdigest()==report['project_sha256']
     plan=json.loads((ROOT/'output/development/m-veneer-cosmetic-fit/M-geometry-validation.json').read_text())
     frame=json.loads((ROOT/'working/geometry/mirrored-frame-layout.json').read_text())
     rows={r['plate']:r for r in report['plate_estimates']}
@@ -63,7 +63,7 @@ def main():
     table([(i,f'F{i}') for i in range(1,21)],515,510,245)
     text(515,105,'White / wood tan / blue remain in their saved slots.',8.5)
     text(515,89,'Knot zero-gap refinements remain a separate test.',8.5)
-    text(32,53,'Keep saved scale and rotations. Open Dara.3mf as a project, with its embedded settings and slices.',9)
+    text(32,53,'Keep saved scale and rotations. Open the named A1 Complete project with its saved settings and slices.',9)
     c.showPage()
     page('Flat M core and veneer map','Use the six new cores and six matching veneers together. The original M parts and cover bands are superseded.',2)
     text(87,499,'Flat structural cores',13,True);text(485,499,'Hammered veneers',13,True)
@@ -82,7 +82,7 @@ def main():
     notes=[
         'Cores: 15% gyroid, 4 walls, 5 top/bottom layers.',
         'Veneers and bonded fin carriers: 100% infill.',
-        'Fins and starter shoes are intentionally bonded.',
+        'Cut recessed necks; remove separate ribs and fins.',
         'V1/V3: remove the sacrificial perimeter guards too.',
         'Trees supplement the carriers; trim deliberately.',
         'Cradle the hammered face while cutting supports.',

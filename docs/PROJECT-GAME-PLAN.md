@@ -4,7 +4,7 @@ Updated October 18, 2026. Branch `codex/m-veneer-cosmetic-fit`.
 
 The A2L is now the chosen printer. The user approved replacing existing full-size prints for the cleanest result, the fresh 14-joint knot, four flat M cores and three veneers, the standard 0.4 mm nozzle, 0.20 mm layers and **8% gyroid structural infill**. Veneers and their bonded carriers remain solid. The earlier 15% full-size target is superseded.
 
-The production project is [Dara.3mf](../Dara.3mf), with its [A2L guide and validation](../working/bambu/Dara-Photo-Frame-A2L/README.md). The retained [A1 project](../working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) and all A1 sample projects remain separate and unchanged.
+The production project is [Dara.3mf](../Dara.3mf), with its [A2L guide and validation](../working/bambu/Dara-Photo-Frame-A2L/README.md). The alternate [A1 project](../working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) has the same carrier correction on all six veneers. All A1 sample projects remain separate and unchanged by this production update.
 
 ## Chosen layout
 
@@ -32,7 +32,7 @@ The [A1 companion](../working/bambu/Dara-A1-Companion/README.md) contains three 
 
 1. Print one demanding full knot pair. Dry-fit the zero-gap cosmetic wall, check all three visible colors in grazing light, assess 8% stiffness and verify pad seating under light clamping.
 2. Print one full M core and veneer. Confirm that the silk stays restrained through the tall print, then assess the actual cupping and fin-removal access. Digital rear-area allocation and bracing checks do not measure material stiffness or bond strength.
-3. Trim the bonded fin tabs and grounded starter shoe progressively while cradling the face. Sand the hidden flat back on the granite plate without rounding seam edges or removing seating features.
+3. Cut the narrow necks through their rear recesses and remove the separate grounded ribs and fins progressively while cradling the face. Sand the hidden flat back on the granite plate without rounding seam edges or removing seating features.
 4. Dry-fit all four cores flat, then all three veneers. Check the two crown seams and consistent reflection before adhesive. Use the successful sample adhesive process, keep glue inside hidden relief and keep stops/closing lands clean.
 5. Dry-assemble the knot in the documented tongue-first order. Verify the M pin/screw fit and rear access, photo/backer/retainer clearances and wall blocks.
 6. Record the representative print results on the [printable guide/checklist](../output/pdf/Dara-A2L-Print-Guide.pdf), then print the remaining plates. Adjust only when a physical result justifies it; regenerate matching geometry and reslice affected plates after any rotation or fit change.

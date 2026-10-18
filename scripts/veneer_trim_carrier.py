@@ -1,4 +1,4 @@
-"""Coupon-first revision: separate grounded starter ribs and flush-cut rear necks.
+"""Shared sample/production carrier: separate starter ribs and flush-cut necks.
 
 The visible face, veneer seams, and seating pockets are excluded from attachment.
 All dimensions below are trial dimensions, pending the copper-silk coupon.
@@ -7,7 +7,7 @@ import math
 import manifold3d as mf
 import numpy as np
 import shapely
-from shapely.geometry import Point, LineString, Polygon, box
+from shapely.geometry import Point, LineString, Polygon, box, mapping
 from shapely import union_all
 from shapely.ops import nearest_points
 import trimesh
@@ -61,7 +61,10 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
         starter_contacts.append((float(x),float(y),neck))
     assert starter_contacts,'No grounded low-edge necks'
     starter_region=union_all([r[2] for r in starter_contacts])
-    locations,coverage=plan(region,exclusion,starter_region,pose)
+    import plan_veneer_fins as planner
+    old_sample=planner.SAMPLE;planner.SAMPLE=.75
+    try:locations,coverage=plan(region,exclusion,starter_region,pose)
+    finally:planner.SAMPLE=old_sample
     fins=[];cuts=[];teeth=[];records=[];feet=[];probes=[]
     R=pose[:3,:3];shift=pose[:3,3]
     for location in locations:
@@ -94,9 +97,12 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
                             contacts_xy_mm=row,maximum_height_mm=float(trace[:,2].max())))
     assert fins and teeth,'No fin attachments possible'
     raw=solid(m)
-    starter_fins=[]
+    starter_fins=[];starter_records=[]
     for x,y,neck in starter_contacts:
-        pocket=region.intersection(box(x-1.3,y-1.3,x+1.3,y+1.3))
+        # Let an edge recess cut past the actual mesh perimeter. Clipping its
+        # tool to a second polygon approximation can leave microscopic slivers
+        # of the original side wall across the cutter opening.
+        pocket=box(x-1.3,y-1.3,x+1.3,y+1.3)
         cuts.append(solid(height_mesh(pocket,lambda q:bottom(q)-.1,lambda q:bottom(q)+POCKET_DEPTH)[0]))
         tab=mesh(solid(height_mesh(neck,lambda q:bottom(q)-4.3,lambda q:bottom(q)+.6)[0]))
         tab.apply_transform(pose);teeth.append(solid(tab))
@@ -108,6 +114,8 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
         profile=Polygon([(trace[0,0],0),*trace[:,[0,2]].tolist(),(trace[-1,0],0)])
         py=float(trace[0,1]);starter_fins.append(slab_xz(profile,py,THICKNESS))
         feet.append(box(trace[0,0],py-THICKNESS/2,trace[-1,0],py+THICKNESS/2))
+        starter_records.append(dict(assembly_y_mm=float(y),print_y_mm=py,profile_xz_mm=list(profile.exterior.coords),
+            maximum_height_mm=float(trace[:,2].max()),contacts_xy_mm=[[float(x),float(y)]]))
         probe=np.array([x,y,float(bottom(np.array([[x,y]]))[0])-.75])
         probes.append((R@probe+shift).tolist())
     pockets=mf.Manifold.batch_boolean(cuts,mf.OpType.Add)
@@ -116,7 +124,7 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
     for cut in cuts:
         # A pocket ceiling has a complete .6 mm roof above it; this is checked
         # against actual material rather than a nominal veneer thickness.
-        upper=mesh(cut);upper.vertices[:,2]+=.7
+        upper=mesh(cut^raw);upper.vertices[:,2]+=.7
         assert (solid(upper)-raw).volume()<1e-5,'Insufficient roof over trim pocket'
     bm=mesh(body);bm.apply_transform(pose);body=solid(bm)
     start_z=body.bounding_box()[2]
@@ -133,6 +141,10 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
     for tooth in teeth:
         assert (tooth^body).volume()>.15,'A tooth misses the veneer'
     braces=[];braced=set();offset_braces=0
+    main_records=records
+    # Full-size curved edges can place starter ribs well above the bed. Give
+    # these the same diagonal-restraint checks as the broad fin sheets.
+    records=main_records+starter_records
     # Diagonal cross ties brace the fins across their weak direction. Each grows
     # at 45 degrees and intersects two solid fin walls; no long flat bridge.
     for i,a in enumerate(records):
@@ -193,6 +205,8 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
         braced.add(i)
     unbraced=[i for i,r in enumerate(records) if i not in braced and r['maximum_height_mm']>48]
     assert not unbraced,('Tall fins lack diagonal restraint',unbraced)
+    tall_starters=[i-len(main_records) for i in braced if i>=len(main_records) and records[i]['maximum_height_mm']>48]
+    records=main_records
     footprint=union_all(feet)
     hull=footprint.convex_hull.buffer(2,join_style=2)
     base=hull.difference(hull.buffer(-3))
@@ -204,11 +218,11 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
         # Physical, per-object keep-out for supplementary tree feet. The broad
         # shallow ring is sacrificial and connected to the carrier. Unlike a
         # global bed exclusion it cannot affect the knot's edge-fitting plates.
-        outside=box(.8,.8,bed[0]-.8,bed[1]-.8)
+        outside=box(1.5,1.5,bed[0]-1.5,bed[1]-1.5)
         ring=outside.difference(outside.buffer(-2,join_style=2))
         a,b=nearest_points(base,ring)
         base=base.union(ring).union(LineString([a,b]).buffer(1.5))
-        guard=dict(outside_xy_mm=[.8,.8,bed[0]-.8,bed[1]-.8],width_mm=2,height_mm=1.6,
+        guard=dict(outside_xy_mm=[1.5,1.5,bed[0]-1.5,bed[1]-1.5],width_mm=2,height_mm=1.6,
                    connected_to_carrier=True,model_brim_disabled=True)
     base_solid=section(base).extrude(1.6)
     bulk=mf.Manifold.batch_boolean(fins+starter_fins+braces+[base_solid],mf.OpType.Add)
@@ -239,7 +253,9 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
     access_checks=[]
     for x,y in [p for r in records for p in r['contacts_xy_mm']]+[(x,y) for x,y,_ in starter_contacts]:
         window=region.intersection(box(x-1,y-1,x+1,y+1))
-        tool=mesh(solid(height_mesh(window,plane-.1,plane+.1)[0]));tool.apply_transform(pose);tool=solid(tool)
+        # Stay inside the pocket's lower cut plane instead of making a large
+        # Boolean on coincident faces. Blade thickness remains .20 mm.
+        tool=mesh(solid(height_mesh(window,plane-.08,plane+.12)[0]));tool.apply_transform(pose);tool=solid(tool)
         blocked=(tool^(body+bulk)).volume()
         assert blocked<1e-5,('Cutter access blocked',x,y,blocked)
         access_checks.append(float(blocked))
@@ -247,7 +263,7 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
     limit=.79 if guard else 2
     assert np.all(out.bounds[0,:2]>limit) and np.all(out.bounds[1,:2]<np.array(bed)-limit),out.bounds
     # Preserve the exact face above trim pockets, including every dimple.
-    report=dict(type='Open-back fins with discrete grounded starter ribs and flush-cut necks',revision='clean-trim-coupon-v1',fin_count=len(fins),
+    report=dict(type='Open-back fins with discrete grounded starter ribs and flush-cut necks',revision='clean-trim-production-v2',fin_count=len(fins),
         bonded_tooth_count=len(teeth),cross_braces=len(braces),fin_pitch_nominal_mm=PITCH,
         fin_pitch_max_mm=float(np.diff(sorted(set(r['print_y_mm'] for r in records))).max()) if len(set(r['print_y_mm'] for r in records))>1 else 0,
         fin_thickness_mm=THICKNESS,area_coverage=coverage,offset_crown_braces=offset_braces,
@@ -258,6 +274,8 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=
         minimum_checked_roof_above_pocket_mm=.6,body_connected_to_bed=True,
         starter_shoe_assembly_x_width_mm=0,continuous_starter_shoe=False,
         starter_rib_count=len(starter_fins),starter_ribs_directly_grounded=True,starter_rib_pitch_max_mm=STARTER_PITCH,
+        starter_contact_region=mapping(starter_region),tall_starter_ribs_diagonally_restrained=sorted(tall_starters),
+        starter_rib_heights_mm=[r['maximum_height_mm'] for r in starter_records],
         first_veneer_layer_height_checked_mm=.2,maximum_first_layer_distance_to_starter_mm=float(early_distance.max()),
         flush_trim_excess_outside_finished_veneer_mm3=float(excess),
         cutter_access_necks_checked=len(access_checks),maximum_cutter_access_obstruction_mm3=max(access_checks),

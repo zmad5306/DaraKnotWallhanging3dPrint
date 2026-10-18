@@ -1,14 +1,14 @@
 {
   "project_sha256": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
-  "editable_sha256": "281a3079bf3eae71675e09a2cb2f9f630e7f2086a1413a5ddddd1055cde29b86",
-  "source_A2L_complete_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "editable_sha256": "0f8c99e4e6635803e93de08a264d16367ddc69ce2f0e7aa2a107239f579a5b21",
+  "source_A2L_complete_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
   "pieces": 44,
   "plates": 3,
   "native_reopen_return_code": 0,
   "evidence_sha256": {
-    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "281a3079bf3eae71675e09a2cb2f9f630e7f2086a1413a5ddddd1055cde29b86",
-    "working/bambu/Dara-A1-Companion/companion-plan.json": "fccb50b362e4b7e1a34186efab3e777a88baf96ef269172b366331ebf9398dcf",
-    "working/bambu/Dara-A1-Companion/native-validation.json": "59ca38d894e1c7eb6072d7444f93e75945e6be32e906144fdfbf5bf361639090",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "0f8c99e4e6635803e93de08a264d16367ddc69ce2f0e7aa2a107239f579a5b21",
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "3373f99d1e980cda743e8f5a46d9ee73e506eee33cb219f6be2e909785de25ad",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "40ff66a5e9ef9d0805bdc8ac3614b238213616ea47084c4ca9ac2f83eb7b4b8c",
     "scripts/build_a1_companion.py": "73775ce99d9b8346fb34fa589db2ec7eace2ec36529bc6d1da8bec905d36d6ce",
     "scripts/audit_a1_companion.py": "b96d9bfab4967b509c59e2405e0e81bf4011905d14d47c5bb59f262d574ffbdd"
   },

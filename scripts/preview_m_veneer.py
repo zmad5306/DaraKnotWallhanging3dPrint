@@ -75,10 +75,10 @@ def draw_carrier(m,t,c,title,path):
         color=np.array([181,117,74] if is_skin[i] else [96,117,129])*(.60+.42*lum[i])
         d.polygon([tuple(p) for p in pixels[m.faces[i]]],fill=tuple(color.astype(int)))
     d.text((600,26),title,font=font(29,True),anchor='mt',fill='#263d4c')
-    starter=f"{c['starter_rib_count']} separate starter ribs; no shoe" if c.get('revision')=='clean-trim-coupon-v1' else 'bonded starter shoe'
+    starter=f"{c['starter_rib_count']} separate starter ribs; no shoe" if c.get('continuous_starter_shoe') is False else 'bonded starter shoe'
     d.text((600,904),f"{c['fin_count']} fins; {c['bonded_tooth_count']} cut necks; {starter}.",font=font(23),anchor='mm',fill='#334b58')
     d.text((600,948),'Carrier shaded gray for clarity; the complete part prints in copper silk.',font=font(22),anchor='mm',fill='#526572')
-    caption='3 mm rear access. Cut necks flush with the flat back through their pockets; trial print required.' if c.get('revision')=='clean-trim-coupon-v1' else 'Cut the tabs individually. Trim inside rear pockets; trees remain additional support.'
+    caption='3 mm rear access. Cut necks flush with the flat back through their pockets; trial print required.' if c.get('continuous_starter_shoe') is False else 'Cut the tabs individually. Trim inside rear pockets; trees remain additional support.'
     d.text((600,988),caption,font=font(21),anchor='mm',fill='#526572')
     im.save(path)
 

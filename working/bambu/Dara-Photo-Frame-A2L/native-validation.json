@@ -61,8 +61,8 @@
       "maximum_difference_deg": 0.0
     }
   ],
-  "editable_sha256": "45a46dbba31ae22cdf9391579748bd7731e500ee7aebf89378adf09551129c54",
-  "native_project_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "editable_sha256": "68a25a57d7128f6ae666b31f8b36a244ed7ab66b1d620a875fe93f11948257cb",
+  "native_project_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
   "production_plan_sha256": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
   "native_return_code": 0,
   "native_roundtrip": [
@@ -124,15 +124,15 @@
     },
     {
       "name": "V1 A2L hammered veneer and sacrificial fins",
-      "maximum_vertex_and_pose_error_mm": 2.9047547513487495e-05
+      "maximum_vertex_and_pose_error_mm": 1.7996000059973895e-05
     },
     {
       "name": "V2 A2L hammered veneer and sacrificial fins",
-      "maximum_vertex_and_pose_error_mm": 2.8369505475424533e-05
+      "maximum_vertex_and_pose_error_mm": 2.1380629355044793e-05
     },
     {
       "name": "V3 A2L hammered veneer and sacrificial fins",
-      "maximum_vertex_and_pose_error_mm": 2.6149264178985338e-05
+      "maximum_vertex_and_pose_error_mm": 1.815732948946846e-05
     },
     {
       "name": "Backer3",
@@ -4677,38 +4677,38 @@
       "maximum_model_extrusion_z_mm": 9.0
     },
     {
-      "extrusion_moves_checked": 1264516,
+      "extrusion_moves_checked": 1477598,
       "features": {
-        "Inner wall": 508534,
-        "Outer wall": 337009,
-        "Gap infill": 86799,
-        "Bottom surface": 121,
-        "Internal solid infill": 327568,
-        "Top surface": 4149,
-        "Overhang wall": 150,
-        "Floating vertical shell": 186
+        "Support": 129227,
+        "Inner wall": 532848,
+        "Outer wall": 394645,
+        "Gap infill": 93173,
+        "Bottom surface": 230,
+        "Internal solid infill": 323101,
+        "Top surface": 4190,
+        "Overhang wall": 184
       },
       "extruding_xy_bounds_mm": [
         [
-          1.01,
-          1.01
+          1.71,
+          1.71
         ],
         [
-          328.99,
-          318.99
+          328.29,
+          318.29
         ]
       ],
       "bead_xy_bounds_mm": [
         [
-          0.8,
-          0.8
+          1.5,
+          1.5
         ],
         [
-          329.2,
-          319.2
+          328.5,
+          318.5
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 0.8,
+      "conservative_bed_edge_clearance_mm": 1.5,
       "startup_prime_tower_check": {
         "plate": 15,
         "filament_count": 1,
@@ -4718,51 +4718,52 @@
         "reason": "Conventional tower: no single-color tower or smooth timelapse"
       },
       "bonded_fin_toolpaths": {
-        "bond_probes_checked": 222,
-        "maximum_distance_to_model_extrusion_centerline_mm": 0.13207245649156163,
+        "bond_probes_checked": 237,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.16105032328654031,
         "slicer_support_extrusion_excluded": true,
         "physical_bond_strength_pending": true
       },
       "plate": 15,
-      "gcode_sha256": "e499f6b6edd3faae64874ae4e1e7635fae7a7399e98174e9beea72eaa6c33f41",
-      "weight_g": 432.7970886230469,
-      "seconds": 98877.5,
+      "gcode_sha256": "b662363725dabfaa9f39646044673c2bfdc5fb64eba8b8be126b3115abb68870",
+      "weight_g": 421.7601623535156,
+      "seconds": 99367.21875,
       "maximum_model_extrusion_z_mm": 297.2
     },
     {
-      "extrusion_moves_checked": 1046535,
+      "extrusion_moves_checked": 1295449,
       "features": {
-        "Inner wall": 420691,
-        "Outer wall": 231169,
-        "Bottom surface": 118,
-        "Gap infill": 81716,
-        "Internal solid infill": 304212,
-        "Sparse infill": 1909,
-        "Floating vertical shell": 2506,
-        "Top surface": 4053,
-        "Overhang wall": 161
+        "Support": 179796,
+        "Inner wall": 445497,
+        "Outer wall": 272633,
+        "Gap infill": 87573,
+        "Bottom surface": 188,
+        "Internal solid infill": 303799,
+        "Top surface": 4956,
+        "Overhang wall": 181,
+        "Sparse infill": 263,
+        "Floating vertical shell": 563
       },
       "extruding_xy_bounds_mm": [
         [
-          1.01,
-          1.01
+          1.71,
+          1.71
         ],
         [
-          328.99,
-          318.99
+          328.29,
+          318.29
         ]
       ],
       "bead_xy_bounds_mm": [
         [
-          0.8,
-          0.8
+          1.5,
+          1.5
         ],
         [
-          329.2,
-          319.2
+          328.5,
+          318.5
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 0.8,
+      "conservative_bed_edge_clearance_mm": 1.5,
       "startup_prime_tower_check": {
         "plate": 16,
         "filament_count": 1,
@@ -4772,51 +4773,50 @@
         "reason": "Conventional tower: no single-color tower or smooth timelapse"
       },
       "bonded_fin_toolpaths": {
-        "bond_probes_checked": 206,
-        "maximum_distance_to_model_extrusion_centerline_mm": 0.1445929553013014,
+        "bond_probes_checked": 244,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09930999100360566,
         "slicer_support_extrusion_excluded": true,
         "physical_bond_strength_pending": true
       },
       "plate": 16,
-      "gcode_sha256": "5ee66e68c74bc907db86f638901f799b1cb11689bc7605a72182debd3583e1a9",
-      "weight_g": 368.1423645019531,
-      "seconds": 79742.6328125,
+      "gcode_sha256": "723b1f8c98ddbce2d004cff571b22fdafd0e8148a5aec85c7bfd81189790940a",
+      "weight_g": 374.213134765625,
+      "seconds": 83636.078125,
       "maximum_model_extrusion_z_mm": 297.2
     },
     {
-      "extrusion_moves_checked": 1184839,
+      "extrusion_moves_checked": 1425217,
       "features": {
-        "Inner wall": 478851,
-        "Outer wall": 323739,
-        "Gap infill": 86777,
-        "Bottom surface": 76,
-        "Internal solid infill": 288332,
-        "Sparse infill": 1723,
-        "Floating vertical shell": 986,
-        "Top surface": 4224,
-        "Overhang wall": 131
+        "Support": 169780,
+        "Inner wall": 499431,
+        "Outer wall": 371534,
+        "Gap infill": 90964,
+        "Bottom surface": 163,
+        "Internal solid infill": 289155,
+        "Top surface": 4015,
+        "Overhang wall": 175
       },
       "extruding_xy_bounds_mm": [
         [
-          1.01,
-          1.01
+          1.71,
+          1.71
         ],
         [
-          328.99,
-          318.99
+          328.29,
+          318.29
         ]
       ],
       "bead_xy_bounds_mm": [
         [
-          0.8,
-          0.8
+          1.5,
+          1.5
         ],
         [
-          329.2,
-          319.2
+          328.5,
+          318.5
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 0.8,
+      "conservative_bed_edge_clearance_mm": 1.5,
       "startup_prime_tower_check": {
         "plate": 17,
         "filament_count": 1,
@@ -4826,15 +4826,15 @@
         "reason": "Conventional tower: no single-color tower or smooth timelapse"
       },
       "bonded_fin_toolpaths": {
-        "bond_probes_checked": 203,
-        "maximum_distance_to_model_extrusion_centerline_mm": 0.14218918360914598,
+        "bond_probes_checked": 239,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.1257354702991135,
         "slicer_support_extrusion_excluded": true,
         "physical_bond_strength_pending": true
       },
       "plate": 17,
-      "gcode_sha256": "5e4a5c8c0f57dbd265e465d0557e8b09010b90fb2ba26464ecacac89664faa5d",
-      "weight_g": 386.0084228515625,
-      "seconds": 89409.40625,
+      "gcode_sha256": "3515cba2fcb62587270493b6a8c41672ee791ac3fa2dbdfd239725e532916f86",
+      "weight_g": 398.0038757324219,
+      "seconds": 94339.7734375,
       "maximum_model_extrusion_z_mm": 297.2
     },
     {
@@ -4982,10 +4982,10 @@
   ],
   "slicer_result": {
     "error_string": "Success.",
-    "export_time": 7759,
+    "export_time": 6785,
     "layer_height": 0.20000000298023224,
     "plate_index": 0,
-    "prepare_time": 1335,
+    "prepare_time": 1272,
     "return_code": 0,
     "sliced_plates": [
       {
@@ -5892,157 +5892,159 @@
       },
       {
         "feature_type_times": {
-          "Bottom surface": 8.883111000061035,
-          "Custom": 402.6328125,
+          "Bottom surface": 11.869148254394531,
+          "Custom": 402.6635437011719,
           "Flush": 11.0,
-          "Gap infill": 1471.5662841796875,
-          "Inner wall": 32074.8203125,
-          "Internal solid infill": 3933.773681640625,
-          "Outer wall": 50258.07421875,
-          "Overhang wall": 0.6365945339202881,
-          "Top surface": 247.9701690673828,
-          "Travel": 10388.5625,
-          "Undefined": 10388.5625
+          "Gap infill": 1651.6932373046875,
+          "Inner wall": 31099.552734375,
+          "Internal solid infill": 3855.90185546875,
+          "Outer wall": 48999.9296875,
+          "Overhang wall": 2.43369722366333,
+          "Support": 1301.46337890625,
+          "Top surface": 256.28662109375,
+          "Travel": 11700.873046875,
+          "Undefined": 11700.873046875
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL96",
             "id": 3,
-            "main_used_g": 432.7970886230469,
-            "total_used_g": 432.7970886230469
+            "main_used_g": 421.7601623535156,
+            "total_used_g": 421.7601623535156
           }
         ],
-        "generate_support_material_time": 785,
+        "generate_support_material_time": 3281,
         "id": 15,
-        "infill_time": 773,
+        "infill_time": 1139,
         "layer_filament_change": 0,
-        "main_predication": 98452.8671875,
-        "make_perimeters_time": 1220,
+        "main_predication": 98942.5546875,
+        "make_perimeters_time": 2511,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 318.4000244140625,
+              "depth": 317.0,
               "height": 297.3385009765625,
-              "width": 328.39996337890625,
-              "x": 1584.800048828125,
-              "y": -767.2000122070312,
+              "width": 327.0,
+              "x": 1585.5,
+              "y": -766.5,
               "z": 0.0
             },
             "id": 61,
             "name": "V1 A2L hammered veneer and sacrificial fins",
-            "triangle_count": 493874
+            "triangle_count": 510004
           }
         ],
-        "sliced_time": 6968,
-        "sliced_time_with_cache": 3797,
-        "total_predication": 98877.5,
-        "triangle_count": 493874,
+        "sliced_time": 15292,
+        "sliced_time_with_cache": 7656,
+        "total_predication": 99367.21875,
+        "triangle_count": 510004,
         "warning_message": ""
       },
       {
         "feature_type_times": {
-          "Bottom surface": 9.410680770874023,
-          "Custom": 402.7698059082031,
+          "Bottom surface": 18.323558807373047,
+          "Custom": 402.8058166503906,
           "Flush": 11.0,
-          "Gap infill": 1185.6982421875,
-          "Inner wall": 26865.181640625,
-          "Internal solid infill": 3810.09130859375,
-          "Outer wall": 40545.55859375,
-          "Overhang wall": 0.9296795725822449,
-          "Sparse infill": 24.073532104492188,
-          "Top surface": 236.7599334716797,
-          "Travel": 6660.28271484375,
-          "Undefined": 6660.28271484375
+          "Gap infill": 1390.5155029296875,
+          "Inner wall": 27144.203125,
+          "Internal solid infill": 3775.145263671875,
+          "Outer wall": 41043.08203125,
+          "Overhang wall": 3.61431884765625,
+          "Sparse infill": 4.152894973754883,
+          "Support": 1709.808837890625,
+          "Top surface": 327.1094055175781,
+          "Travel": 7794.03369140625,
+          "Undefined": 7794.03369140625
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL96",
             "id": 3,
-            "main_used_g": 368.1423645019531,
-            "total_used_g": 368.1423645019531
+            "main_used_g": 374.213134765625,
+            "total_used_g": 374.213134765625
           }
         ],
-        "generate_support_material_time": 551,
+        "generate_support_material_time": 3045,
         "id": 16,
-        "infill_time": 693,
+        "infill_time": 1468,
         "layer_filament_change": 0,
-        "main_predication": 79317.859375,
-        "make_perimeters_time": 883,
+        "main_predication": 83211.2734375,
+        "make_perimeters_time": 1767,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 318.39996337890625,
+              "depth": 317.0,
               "height": 297.3487243652344,
-              "width": 328.4000244140625,
-              "x": 0.8000091314315796,
-              "y": -1151.199951171875,
+              "width": 327.0,
+              "x": 1.5,
+              "y": -1150.5,
               "z": 0.0
             },
             "id": 65,
             "name": "V2 A2L hammered veneer and sacrificial fins",
-            "triangle_count": 484826
+            "triangle_count": 504464
           }
         ],
-        "sliced_time": 5717,
-        "sliced_time_with_cache": 3263,
-        "total_predication": 79742.6328125,
-        "triangle_count": 484826,
+        "sliced_time": 12884,
+        "sliced_time_with_cache": 6196,
+        "total_predication": 83636.078125,
+        "triangle_count": 504464,
         "warning_message": ""
       },
       {
         "feature_type_times": {
-          "Bottom surface": 6.063477516174316,
-          "Custom": 402.6369934082031,
+          "Bottom surface": 15.725364685058594,
+          "Custom": 402.71246337890625,
           "Flush": 11.0,
-          "Gap infill": 1432.1510009765625,
-          "Inner wall": 28888.138671875,
-          "Internal solid infill": 3462.100830078125,
-          "Outer wall": 44971.69140625,
-          "Overhang wall": 0.5849078893661499,
-          "Sparse infill": 17.598360061645508,
-          "Top surface": 249.85218811035156,
-          "Travel": 9940.9091796875,
-          "Undefined": 9940.9091796875
+          "Gap infill": 1568.300048828125,
+          "Inner wall": 29231.494140625,
+          "Internal solid infill": 3479.218017578125,
+          "Outer wall": 46153.4453125,
+          "Overhang wall": 2.0462260246276855,
+          "Support": 1736.1951904296875,
+          "Top surface": 249.18423461914062,
+          "Travel": 11425.234375,
+          "Undefined": 11425.234375
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL96",
             "id": 3,
-            "main_used_g": 386.0084228515625,
-            "total_used_g": 386.0084228515625
+            "main_used_g": 398.0038757324219,
+            "total_used_g": 398.0038757324219
           }
         ],
-        "generate_support_material_time": 789,
+        "generate_support_material_time": 5091,
         "id": 17,
-        "infill_time": 1016,
+        "infill_time": 1068,
         "layer_filament_change": 0,
-        "main_predication": 88984.765625,
-        "make_perimeters_time": 1372,
+        "main_predication": 93915.0625,
+        "make_perimeters_time": 1980,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 318.39996337890625,
+              "depth": 317.0,
               "height": 297.3487243652344,
-              "width": 328.3999938964844,
-              "x": 396.8000183105469,
-              "y": -1151.199951171875,
+              "width": 327.0,
+              "x": 397.5,
+              "y": -1150.5,
               "z": 0.0
             },
             "id": 69,
             "name": "V3 A2L hammered veneer and sacrificial fins",
-            "triangle_count": 460996
+            "triangle_count": 477770
           }
         ],
-        "sliced_time": 7723,
-        "sliced_time_with_cache": 4180,
-        "total_predication": 89409.40625,
-        "triangle_count": 460996,
+        "sliced_time": 14940,
+        "sliced_time_with_cache": 6068,
+        "total_predication": 94339.7734375,
+        "triangle_count": 477770,
         "warning_message": ""
       },
       {
@@ -6741,7 +6743,7 @@
     ],
     "wall_loops": 4
   },
-  "geometry_validation_sha256": "77980bc03e652dbeed7e914dffb3ae7b3fa87e266c71c9e7bfe0aa726d07ad9f",
+  "geometry_validation_sha256": "d09802b0d2082c88ecd14dbf3bd7f577c9a5f341bc467b9f2464c56e2236743d",
   "printer": "Bambu Lab A2L 0.4 nozzle",
   "structural_infill": "8% gyroid",
   "veneer_infill": "100%",

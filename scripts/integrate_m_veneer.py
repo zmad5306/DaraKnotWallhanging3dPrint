@@ -56,6 +56,13 @@ def prepare():
     assert validation['native_project_sha256']==sha(OUT/'M-Core-and-Veneer-A1-Sliced.3mf')
     plan=json.loads((OUT/'M-geometry-validation.json').read_text())
     assert plan['cosmetic_gap_mm']==0 and plan['core_crown_mm']==0
+    assert len(plan['skins'])==6
+    for skin in plan['skins']:
+        carrier=skin['carrier']
+        assert carrier['continuous_starter_shoe'] is False
+        assert carrier['cutter_access_necks_checked']==carrier['bonded_tooth_count']
+        assert carrier['maximum_cutter_access_obstruction_mm3']<1e-5
+        assert carrier['flush_trim_excess_outside_finished_veneer_mm3']<1e-5
     root=ET.fromstring(base['3D/3dmodel.model']);cfg=ET.fromstring(base['Metadata/model_settings.config'])
     mr=ET.fromstring(m['3D/3dmodel.model']);mc=ET.fromstring(m['Metadata/model_settings.config'])
     resources=root.find(tag('resources'));build=root.find(tag('build'))
@@ -264,10 +271,12 @@ def publish():
     assert (BUILD/'result.json').stat().st_mtime>=target.stat().st_mtime,'Reopen the prepared candidate before publishing'
     report['native_project_reopen_return_code']=0
     report['native_reopen_input_sha256']=report['project_sha256']
-    for output in [ROOT/'Dara.3mf',PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf']:
+    # The repository root is now the A2L production project. Refresh the A1
+    # production copy without replacing that separate printer's root project.
+    for output in [PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf']:
         shutil.copyfile(target,output);assert sha(output)==report['project_sha256']
     save_json(REPORT,report)
-    print('Published both main project copies, with 24 original native plates preserved.')
+    print('Published the A1 production copy, with 24 original native plates preserved.')
 
 
 if __name__=='__main__':

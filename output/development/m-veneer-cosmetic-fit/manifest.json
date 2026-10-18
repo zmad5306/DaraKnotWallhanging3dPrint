@@ -4,8 +4,8 @@
   "original_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
   "original_release_unchanged": true,
   "original_release_file": "reference/production/Dara-Solid-M-Baseline.3mf",
-  "main_project": "Dara.3mf",
-  "main_project_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "main_project": "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf",
+  "main_project_sha256": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d",
   "printer": "Bambu Lab A1, 256 x 256 x 256 mm",
   "native_slicer": "BambuStudio 02.08.02.61",
   "total_verified_plates": 50,
@@ -47,8 +47,8 @@
       "editable_source": "M-Core-and-Veneer-A1.3mf",
       "plate_count": 12,
       "native_validation": "M-Core-and-Veneer-A1-native-validation.json",
-      "minimum_bead_edge_clearance_mm": 0.799999999999983,
-      "native_sha256": "32ad1c7250e7889edea0968888e98d551d2b19c9d65eab7dac56706333276ebc"
+      "minimum_bead_edge_clearance_mm": 0.6092063428371235,
+      "native_sha256": "9362a62239a61ea9c5f2b3a79e58b923cca5e69f686417e9c61e292a82de4d1e"
     },
     {
       "project": "Frame-Cosmetic-Candidate-A1-Sliced.3mf",
@@ -70,7 +70,7 @@
   "changes": {
     "M": "Six constant-thickness 8.4 mm cores with planar front and back faces, support-free keys, and local seating/registration features. Six flat-backed band-free veneers contain the entire convex profile and hammer texture. Original mounting coordinates and finished front profile retained.",
     "veneer": "1.90-4.10 mm nominal thickness before hidden pockets; flat back at Z8.6, .20 mm planar glue space; three seating pads, one round locator and one axially relieved locator per face panel.",
-    "anchors": "Full M carriers retain their old starter shoes and are on hold after failed removal. Revised A1 samples use area-allocated fins, separate grounded starter ribs, 1.2 mm cut necks, .40 mm rear recesses and 3 mm cutter access. Trees supplement the bonded tooling.",
+    "anchors": "All nine full-size carriers and A1 samples use area-allocated fins, separate grounded starter ribs, 1.2 mm cut necks, .40 mm rear recesses and 3 mm cutter access. Trees supplement the bonded tooling.",
     "finish": "Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.",
     "frame": "Full A1 frame remains unchanged. Revised coupon retains the 18 mm lap and locating fit, restores straight 68 mm outer sides, and seats bed-printed feet/skirts on upward-printed floors. Rough supported bulk is relieved behind the outside walls.",
     "grain": "Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.",
@@ -142,7 +142,7 @@
     "coupon_revision": "clean-trim-coupon-v1",
     "coupon_geometry_and_access": "M-clean-trim-carrier-validation.json",
     "regression_and_negative_control": "M-clean-trim-regression-validation.json",
-    "production_hold": "Full-size A1 carriers and A2L veneer plates 15-17 retain the failed continuous shoe. Confirm revised sample removal before production tooling is updated.",
+    "production_update": "All six A1 and three A2L production veneers now use separate grounded ribs and accessible recessed cut necks. No continuous shoe remains. Saved poses and finished fronts are retained.",
     "full_size_area_revision": "M-fin-coverage-validation.json; fins are placed by rear-area coverage rather than removing alternate rows. Counts are allowed above the half-population target where coverage requires it.",
     "trial_dimensions": true,
     "physical_confirmation_pending": true,
@@ -153,7 +153,7 @@
     "Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.",
     "Use filament slots 1 white, 2 wood tan, 3 copper silk, 4 blue. Full M parts and their fused carriers use copper; sample cauls/jig use white.",
     "Mark tongue/socket on the ribbon backs before cleanup. Clean supported bulk and key roofs; preserve the socket foot/skirt bearing bottoms and clean tongue pocket floors. Dry-seat all contacts before gluing in the existing show-face jig.",
-    "Cradle the M face in the lined caul. Cut each narrow neck flush with rear lands through its pocket; remove fins and separate starter ribs progressively. The revised veneer coupons have no continuous starter shoe.",
+    "Cradle the M face in the lined caul. Cut each narrow neck flush with rear lands through its pocket; remove fins and separate starter ribs progressively. All current veneer carriers have no continuous starter shoe.",
     "Scrape or sand the hidden tab remnants inside their .40 mm recessed rear pockets, leaving no material above the surrounding underside seating plane. Preserve the hammered face, cosmetic seam edges, seating pads and locating features.",
     "Assemble the structural core on a flat reference surface. Dry-fit the veneer and check all three seating contacts with gentle clamping before adding adhesive.",
     "Apply a controlled amount of the selected epoxy in the relief regions. Keep the hard stops and cosmetic closing edge free of adhesive.",

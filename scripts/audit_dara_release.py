@@ -92,7 +92,7 @@ def audit_legacy(targets=None,check_exports=True):
         print('23 plates regenerated; nine saved slices and the continuous cover crowns preserved. Physical fit validation remains pending.')
 
 
-def audit_veneer():
+def audit_veneer(targets=None):
     report=json.loads((PACKAGE/'m-veneer-release-validation.json').read_text())
     baseline=ROOT/report['baseline_file'];assert sha(baseline)==report['baseline_sha256']
     assert report['source_cad_sha256'] in text_hashes(ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad')
@@ -100,12 +100,13 @@ def audit_veneer():
     # embeds its authoritative meshes; hash those below, rather than treating
     # unrelated old export files as inputs to the archived source package.
     audit_legacy([baseline],check_exports=False)
-    for path in [ROOT/'Dara.3mf',PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf']:
+    targets=targets or [ROOT/'Dara.3mf',PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf']
+    for path in targets:
         assert sha(path)==report['project_sha256'],f'{path}: release hash mismatch'
     records=report['changed_m_plates']+report['preserved_plates']
     assert sorted(r['plate'] for r in records)==list(range(1,37))
     assert len(report['changed_m_plates'])==12 and len(report['preserved_plates'])==24
-    with zipfile.ZipFile(ROOT/'Dara.3mf') as z:
+    with zipfile.ZipFile(targets[0]) as z:
         assert z.testzip() is None
         cfg=ET.fromstring(z.read('Metadata/model_settings.config'));root=ET.fromstring(z.read('3D/3dmodel.model'))
         info=ET.fromstring(z.read('Metadata/slice_info.config'))
@@ -139,6 +140,12 @@ def audit_veneer():
         for p in cfg.findall('plate'):
             for m in p.findall('metadata'):
                 if m.get('key','').endswith('_file') and m.get('value'):assert m.get('value') in names
+    plan=json.loads((ROOT/'output/development/m-veneer-cosmetic-fit/M-geometry-validation.json').read_text())
+    for skin in plan['skins']:
+        carrier=skin['carrier'];assert carrier['continuous_starter_shoe'] is False
+        assert carrier['cutter_access_necks_checked']==carrier['bonded_tooth_count']
+        assert carrier['maximum_cutter_access_obstruction_mm3']<1e-5
+        assert carrier['flush_trim_excess_outside_finished_veneer_mm3']<1e-5
     orientation=report['orientation'];assert orientation['all_full_rotations_equal'] and orientation['broad_show_planes_parallel_to_bed_y']
     assert len(orientation['veneers'])==6 and report['cosmetic_gap_mm']==0
     assert len(report['zero_gap_seams'])==5 and max(s['maximum_front_edge_mismatch_mm'] for s in report['zero_gap_seams'])<.0002
@@ -153,8 +160,8 @@ def audit_veneer():
         assert all(r['trial_geometric_checks_pass'] for r in proof['veneers'])
         assert sha(ROOT/'output/development/m-veneer-cosmetic-fit/M-fin-face-preservation.json')==fin['face_preservation_sha256']
         assert fin['tall_fins_diagonally_restrained']
-        print(f"Full M support coverage: {fin['baseline_fin_count']} to {fin['revised_fin_count']} fins; finer rear-area audit and diagonal-restraint checks pass.")
-    print('Both main projects: 36 sliced plates, six flat cores and six consistently Y-oriented veneers pass.')
+        print(f"Full M support coverage: {fin['baseline_fin_count']} to {fin['revised_fin_count']} fins; independent rear-area audit and diagonal-restraint checks pass.")
+    print('A1 production: 36 sliced plates, six flat cores and six consistently Y-oriented veneers pass.')
     print('24 original plate slices preserved; zero nominal M seams, solid veneers and mounting clearances verified. Physical confirmation pending.')
 
 
@@ -162,7 +169,8 @@ def audit():
     with zipfile.ZipFile(ROOT/'Dara.3mf') as z:settings=json.loads(z.read('Metadata/project_settings.config'))
     if settings.get('printer_model')=='Bambu Lab A2L':
         from audit_a2l_release import audit as audit_a2l
-        audit_a2l();return
+        audit_a2l()
+        audit_veneer([PACKAGE/'Dara-Photo-Frame-A1-Complete.3mf']);return
     if (PACKAGE/'m-veneer-release-validation.json').exists():audit_veneer()
     else:audit_legacy()
 

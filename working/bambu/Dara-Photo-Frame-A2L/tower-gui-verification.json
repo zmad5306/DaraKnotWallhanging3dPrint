@@ -7,5 +7,9 @@
   "Studio_version": "02.08.02.61",
   "GUI_tested_file_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
   "printer_commands_sent": false,
-  "forced_Y160_layout_in_GUI": true
+  "forced_Y160_layout_in_GUI": true,
+  "current_project_fresh_GUI_review_pending": true,
+  "current_fresh_GUI_review_blocker": "Mac locked; computer-use tool cannot inspect Studio. Prior observed GUI result refers only to GUI_tested_file_sha256.",
+  "current_native_project_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
+  "unchanged_plate_proof_sha256": "5c7c47468b93d474a07948e8f84a56ff0ac8de5effde528811894be7351560fd"
 }

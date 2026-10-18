@@ -1,8 +1,8 @@
 {
-  "source_A2L_complete_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
-  "source_A2L_editable_sha256": "f698853b869b94a853fdbd249978bf08efa8949be1e2d8e84f434a2ee55da254",
-  "editable_sha256": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
-  "native_sha256": "3ed05cc063b409737c11c294d00ac4845ce589f16821b02898247ec79d09d270",
+  "source_A2L_complete_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "source_A2L_editable_sha256": "45a46dbba31ae22cdf9391579748bd7731e500ee7aebf89378adf09551129c54",
+  "editable_sha256": "281a3079bf3eae71675e09a2cb2f9f630e7f2086a1413a5ddddd1055cde29b86",
+  "native_sha256": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
   "native_return_code": 0,
   "plates": [
     {
@@ -49,7 +49,7 @@
       ],
       "conservative_bed_edge_clearance_mm": 1.5,
       "plate": 1,
-      "gcode_sha256": "92bb24514e1f1e233d568ae307acfd5cda7dacb9446b255f385af30b3a86239e",
+      "gcode_sha256": "dc3d721d660fa2b842b0a987f0480aba8ed1f85e8798bfa7a093fc3bf06c3574",
       "seconds": 8328.3955078125,
       "weight_g": 99.39376068115234
     },
@@ -97,7 +97,7 @@
       ],
       "conservative_bed_edge_clearance_mm": 1.5,
       "plate": 2,
-      "gcode_sha256": "47dab893c46b8dc26b7f01b4b2c2ee73f56dd606cac4030ed90d594b6565ace7",
+      "gcode_sha256": "e22e512cba58511b70018dadf1f4376e3f68b085c69053345c6669c2d98a9f39",
       "seconds": 8326.328125,
       "weight_g": 99.41592407226562
     },
@@ -209,187 +209,9 @@
       ],
       "conservative_bed_edge_clearance_mm": 12.964,
       "plate": 3,
-      "gcode_sha256": "605cc1fbec03ffa4f55e4603055ce4706901c899c30bf4125c2b15130e463315",
-      "seconds": 18014.353515625,
+      "gcode_sha256": "034efca09a27432d96bf8c19caeed74c39a00dacdcfdef6c6fe7a4bb7e80e776",
+      "seconds": 18011.78125,
       "weight_g": 144.87635803222656
-    },
-    {
-      "extrusion_moves_checked": 255591,
-      "features": {
-        "Brim": 852,
-        "Outer wall": 21082,
-        "Inner wall": 61313,
-        "Gap infill": 731,
-        "Bottom surface": 1698,
-        "Internal solid infill": 13492,
-        "Sparse infill": 152749,
-        "Bridge": 1545,
-        "Floating vertical shell": 1198,
-        "Top surface": 931
-      },
-      "model_extrusion_z_by_filament_mm": {
-        "3": [
-          0.2,
-          0.4,
-          0.6,
-          0.8,
-          1.0,
-          1.2,
-          1.4,
-          1.6,
-          1.8,
-          2.0,
-          2.2,
-          2.4,
-          2.6,
-          2.8,
-          3.0,
-          3.2,
-          3.4,
-          3.6,
-          3.8,
-          4.0,
-          4.2,
-          4.4,
-          4.6,
-          4.8,
-          5.0,
-          5.2,
-          5.4,
-          5.6,
-          5.8,
-          6.0,
-          6.2,
-          6.4,
-          6.6,
-          6.8,
-          7.0,
-          7.2,
-          7.4,
-          7.6,
-          7.8,
-          8.0,
-          8.2,
-          8.4,
-          8.6,
-          8.8,
-          9.0
-        ]
-      },
-      "extruding_xy_bounds_mm": [
-        [
-          3.06,
-          3.061
-        ],
-        [
-          252.935,
-          252.939
-        ]
-      ],
-      "bead_xy_bounds_mm": [
-        [
-          2.81,
-          2.811
-        ],
-        [
-          253.185,
-          253.189
-        ]
-      ],
-      "conservative_bed_edge_clearance_mm": 2.81,
-      "plate": 4,
-      "gcode_sha256": "0c333c0d67e303900eda40ec4e3cd47378db3d46dd3cb87cdb1a9c194f3617a9",
-      "seconds": 8967.8701171875,
-      "weight_g": 63.1407585144043
-    },
-    {
-      "extrusion_moves_checked": 208122,
-      "features": {
-        "Brim": 579,
-        "Outer wall": 14536,
-        "Inner wall": 42085,
-        "Bottom surface": 1383,
-        "Gap infill": 433,
-        "Internal solid infill": 9731,
-        "Sparse infill": 136950,
-        "Bridge": 858,
-        "Floating vertical shell": 999,
-        "Top surface": 568
-      },
-      "model_extrusion_z_by_filament_mm": {
-        "3": [
-          0.2,
-          0.4,
-          0.6,
-          0.8,
-          1.0,
-          1.2,
-          1.4,
-          1.6,
-          1.8,
-          2.0,
-          2.2,
-          2.4,
-          2.6,
-          2.8,
-          3.0,
-          3.2,
-          3.4,
-          3.6,
-          3.8,
-          4.0,
-          4.2,
-          4.4,
-          4.6,
-          4.8,
-          5.0,
-          5.2,
-          5.4,
-          5.6,
-          5.8,
-          6.0,
-          6.2,
-          6.4,
-          6.6,
-          6.8,
-          7.0,
-          7.2,
-          7.4,
-          7.6,
-          7.8,
-          8.0,
-          8.2,
-          8.4,
-          8.6,
-          8.8,
-          9.0
-        ]
-      },
-      "extruding_xy_bounds_mm": [
-        [
-          34.176,
-          37.034
-        ],
-        [
-          221.824,
-          218.971
-        ]
-      ],
-      "bead_xy_bounds_mm": [
-        [
-          33.926,
-          36.784
-        ],
-        [
-          222.074,
-          219.221
-        ]
-      ],
-      "conservative_bed_edge_clearance_mm": 33.92599999999999,
-      "plate": 5,
-      "gcode_sha256": "664e3db14606c887761b55cd5f678e95355f430f1c479c97c68853f6ee8c6435",
-      "seconds": 7396.5078125,
-      "weight_g": 51.302616119384766
     }
   ],
   "source_geometry_preservation": [
@@ -612,16 +434,6 @@
       "name": "R32 photo retainer",
       "max_source_geometry_error_mm": 0.0,
       "all_model_and_modifier_meshes_checked": true
-    },
-    {
-      "name": "C3 A1 companion flat M core",
-      "max_source_geometry_error_mm": 0.0,
-      "all_model_and_modifier_meshes_checked": true
-    },
-    {
-      "name": "C4 A1 companion flat M core",
-      "max_source_geometry_error_mm": 0.0,
-      "all_model_and_modifier_meshes_checked": true
     }
   ],
   "native_roundtrip": [
@@ -800,14 +612,6 @@
     {
       "name": "R32 photo retainer",
       "max_native_geometry_or_pose_error_mm": 0.0
-    },
-    {
-      "name": "C3 A1 companion flat M core",
-      "max_native_geometry_or_pose_error_mm": 2.182785085917276e-05
-    },
-    {
-      "name": "C4 A1 companion flat M core",
-      "max_native_geometry_or_pose_error_mm": 2.15336301484061e-05
     }
   ],
   "printer_command_profiles_verified": [
@@ -819,10 +623,10 @@
   ],
   "slicer_result": {
     "error_string": "Success.",
-    "export_time": 1097,
+    "export_time": 970,
     "layer_height": 0.20000000298023224,
     "plate_index": 0,
-    "prepare_time": 104,
+    "prepare_time": 90,
     "return_code": 0,
     "sliced_plates": [
       {
@@ -847,12 +651,12 @@
             "total_used_g": 99.39376068115234
           }
         ],
-        "generate_support_material_time": 3,
+        "generate_support_material_time": 2,
         "id": 1,
-        "infill_time": 77,
+        "infill_time": 72,
         "layer_filament_change": 0,
         "main_predication": 7926.6474609375,
-        "make_perimeters_time": 16,
+        "make_perimeters_time": 15,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -908,8 +712,8 @@
             "triangle_count": 936
           }
         ],
-        "sliced_time": 208,
-        "sliced_time_with_cache": 75,
+        "sliced_time": 193,
+        "sliced_time_with_cache": 70,
         "total_predication": 8328.3955078125,
         "triangle_count": 3728,
         "warning_message": ""
@@ -938,7 +742,7 @@
         ],
         "generate_support_material_time": 2,
         "id": 2,
-        "infill_time": 87,
+        "infill_time": 79,
         "layer_filament_change": 0,
         "main_predication": 7924.49462890625,
         "make_perimeters_time": 15,
@@ -997,30 +801,30 @@
             "triangle_count": 932
           }
         ],
-        "sliced_time": 213,
-        "sliced_time_with_cache": 72,
+        "sliced_time": 198,
+        "sliced_time_with_cache": 67,
         "total_predication": 8326.328125,
         "triangle_count": 3740,
         "warning_message": ""
       },
       {
         "feature_type_times": {
-          "Bottom surface": 775.5695190429688,
-          "Bridge": 868.3526000976562,
-          "Brim": 58.67573165893555,
-          "Custom": 368.58477783203125,
+          "Bottom surface": 775.5684204101562,
+          "Bridge": 868.3488159179688,
+          "Brim": 58.67529296875,
+          "Custom": 368.7320556640625,
           "Flush": 25.0,
-          "Gap infill": 216.51280212402344,
-          "Inner wall": 3159.0048828125,
-          "Internal solid infill": 3389.45751953125,
-          "Outer wall": 1180.7373046875,
-          "Overhang wall": 58.447261810302734,
-          "Sparse infill": 5185.9892578125,
-          "Support": 470.0411376953125,
-          "Support interface": 34.18958282470703,
-          "Top surface": 722.4450073242188,
-          "Travel": 1509.9666748046875,
-          "Undefined": 1493.045654296875
+          "Gap infill": 216.51364135742188,
+          "Inner wall": 3159.000244140625,
+          "Internal solid infill": 3389.752685546875,
+          "Outer wall": 1179.9317626953125,
+          "Overhang wall": 58.44732666015625,
+          "Sparse infill": 5186.009765625,
+          "Support": 470.0461730957031,
+          "Support interface": 34.18689727783203,
+          "Top surface": 722.44384765625,
+          "Travel": 1507.7955322265625,
+          "Undefined": 1491.0103759765625
         },
         "filament_change_times": 0,
         "filaments": [
@@ -1031,21 +835,21 @@
             "total_used_g": 144.87635803222656
           }
         ],
-        "generate_support_material_time": 315,
+        "generate_support_material_time": 251,
         "id": 3,
-        "infill_time": 593,
+        "infill_time": 489,
         "layer_filament_change": 0,
-        "main_predication": 17612.689453125,
-        "make_perimeters_time": 404,
+        "main_predication": 17609.833984375,
+        "make_perimeters_time": 342,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 38.0,
+              "depth": 38.0000114440918,
               "height": 13.0,
-              "width": 139.99996948242188,
-              "x": 628.4000244140625,
-              "y": 36.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -271.20001220703125,
               "z": 0.0
             },
             "id": 37,
@@ -1054,11 +858,11 @@
           },
           {
             "bbox": {
-              "depth": 38.0,
+              "depth": 37.999996185302734,
               "height": 13.0,
-              "width": 139.99996948242188,
-              "x": 628.4000244140625,
-              "y": 84.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -223.1999969482422,
               "z": 0.0
             },
             "id": 41,
@@ -1067,11 +871,11 @@
           },
           {
             "bbox": {
-              "depth": 38.0,
+              "depth": 37.999996185302734,
               "height": 13.0,
-              "width": 139.99996948242188,
-              "x": 628.4000244140625,
-              "y": 132.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -175.1999969482422,
               "z": 0.0
             },
             "id": 45,
@@ -1080,11 +884,11 @@
           },
           {
             "bbox": {
-              "depth": 38.0,
+              "depth": 37.999996185302734,
               "height": 13.0,
-              "width": 139.99996948242188,
-              "x": 628.4000244140625,
-              "y": 180.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -127.19999694824219,
               "z": 0.0
             },
             "id": 49,
@@ -1093,11 +897,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 10.000012397766113,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 43.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -264.20001220703125,
               "z": 0.0
             },
             "id": 53,
@@ -1106,11 +910,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 10.000012397766113,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 43.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -264.20001220703125,
               "z": 0.0
             },
             "id": 57,
@@ -1119,11 +923,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 10.000012397766113,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 43.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -264.20001220703125,
               "z": 0.0
             },
             "id": 61,
@@ -1132,11 +936,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 59.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -248.1999969482422,
               "z": 0.0
             },
             "id": 65,
@@ -1145,11 +949,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 59.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -248.1999969482422,
               "z": 0.0
             },
             "id": 69,
@@ -1158,11 +962,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 59.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -248.1999969482422,
               "z": 0.0
             },
             "id": 73,
@@ -1171,11 +975,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 75.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -232.1999969482422,
               "z": 0.0
             },
             "id": 77,
@@ -1184,11 +988,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 75.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -232.1999969482422,
               "z": 0.0
             },
             "id": 81,
@@ -1197,11 +1001,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 75.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -232.1999969482422,
               "z": 0.0
             },
             "id": 85,
@@ -1210,11 +1014,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 91.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -216.1999969482422,
               "z": 0.0
             },
             "id": 89,
@@ -1223,11 +1027,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 91.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -216.1999969482422,
               "z": 0.0
             },
             "id": 93,
@@ -1236,11 +1040,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 91.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -216.1999969482422,
               "z": 0.0
             },
             "id": 97,
@@ -1249,11 +1053,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 107.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -200.1999969482422,
               "z": 0.0
             },
             "id": 101,
@@ -1262,11 +1066,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 107.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -200.1999969482422,
               "z": 0.0
             },
             "id": 105,
@@ -1275,11 +1079,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 107.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -200.1999969482422,
               "z": 0.0
             },
             "id": 109,
@@ -1288,11 +1092,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 123.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -184.1999969482422,
               "z": 0.0
             },
             "id": 113,
@@ -1301,11 +1105,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 123.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -184.1999969482422,
               "z": 0.0
             },
             "id": 117,
@@ -1314,11 +1118,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 123.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -184.1999969482422,
               "z": 0.0
             },
             "id": 121,
@@ -1327,11 +1131,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 139.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -168.1999969482422,
               "z": 0.0
             },
             "id": 125,
@@ -1340,11 +1144,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 139.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -168.1999969482422,
               "z": 0.0
             },
             "id": 129,
@@ -1353,11 +1157,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 139.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -168.1999969482422,
               "z": 0.0
             },
             "id": 133,
@@ -1366,11 +1170,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 155.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -152.1999969482422,
               "z": 0.0
             },
             "id": 137,
@@ -1379,11 +1183,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 155.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -152.1999969482422,
               "z": 0.0
             },
             "id": 141,
@@ -1392,11 +1196,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 155.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -152.1999969482422,
               "z": 0.0
             },
             "id": 145,
@@ -1405,11 +1209,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 171.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -136.1999969482422,
               "z": 0.0
             },
             "id": 149,
@@ -1418,11 +1222,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 171.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -136.1999969482422,
               "z": 0.0
             },
             "id": 153,
@@ -1431,11 +1235,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 171.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -136.1999969482422,
               "z": 0.0
             },
             "id": 157,
@@ -1444,11 +1248,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 187.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -120.19999694824219,
               "z": 0.0
             },
             "id": 161,
@@ -1457,11 +1261,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 187.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -120.19999694824219,
               "z": 0.0
             },
             "id": 165,
@@ -1470,11 +1274,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 835.4000244140625,
-              "y": 187.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -120.19999694824219,
               "z": 0.0
             },
             "id": 169,
@@ -1483,11 +1287,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 783.4000244140625,
-              "y": 203.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -104.19999694824219,
               "z": 0.0
             },
             "id": 173,
@@ -1496,11 +1300,11 @@
           },
           {
             "bbox": {
-              "depth": 10.0,
+              "depth": 9.99999713897705,
               "height": 3.0,
-              "width": 19.999975204467773,
-              "x": 809.4000244140625,
-              "y": 203.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -104.19999694824219,
               "z": 0.0
             },
             "id": 177,
@@ -1508,116 +1312,10 @@
             "triangle_count": 520
           }
         ],
-        "sliced_time": 3040,
-        "sliced_time_with_cache": 1584,
-        "total_predication": 18014.353515625,
+        "sliced_time": 2572,
+        "sliced_time_with_cache": 1379,
+        "total_predication": 18011.78125,
         "triangle_count": 25248,
-        "warning_message": ""
-      },
-      {
-        "feature_type_times": {
-          "Bottom surface": 498.8270263671875,
-          "Bridge": 623.565673828125,
-          "Brim": 40.825721740722656,
-          "Custom": 373.51226806640625,
-          "Flush": 25.0,
-          "Gap infill": 10.270232200622559,
-          "Inner wall": 1462.0653076171875,
-          "Internal solid infill": 2794.9794921875,
-          "Outer wall": 489.93756103515625,
-          "Sparse infill": 1887.26318359375,
-          "Top surface": 448.3309631347656,
-          "Travel": 329.96075439453125,
-          "Undefined": 313.02899169921875
-        },
-        "filament_change_times": 0,
-        "filaments": [
-          {
-            "filament_id": "GFL96",
-            "id": 3,
-            "main_used_g": 63.1407585144043,
-            "total_used_g": 63.1407585144043
-          }
-        ],
-        "generate_support_material_time": 14,
-        "id": 4,
-        "infill_time": 150,
-        "layer_filament_change": 0,
-        "main_predication": 8561.2900390625,
-        "make_perimeters_time": 67,
-        "obj_cached_cnt": 0,
-        "objects": [
-          {
-            "bbox": {
-              "depth": 288.18243408203125,
-              "height": 9.0,
-              "width": 347.5603332519531,
-              "x": -42.63816452026367,
-              "y": -334.2376708984375,
-              "z": 0.0
-            },
-            "id": 181,
-            "name": "C3 A1 companion flat M core",
-            "triangle_count": 3844
-          }
-        ],
-        "sliced_time": 584,
-        "sliced_time_with_cache": 343,
-        "total_predication": 8967.8701171875,
-        "triangle_count": 3844,
-        "warning_message": ""
-      },
-      {
-        "feature_type_times": {
-          "Bottom surface": 422.11895751953125,
-          "Bridge": 529.8919677734375,
-          "Brim": 27.80971336364746,
-          "Custom": 373.646484375,
-          "Flush": 25.0,
-          "Gap infill": 8.124053955078125,
-          "Inner wall": 1015.7210693359375,
-          "Internal solid infill": 2369.013916015625,
-          "Outer wall": 349.09613037109375,
-          "Sparse infill": 1661.3221435546875,
-          "Top surface": 368.34234619140625,
-          "Travel": 263.0039367675781,
-          "Undefined": 245.88548278808594
-        },
-        "filament_change_times": 0,
-        "filaments": [
-          {
-            "filament_id": "GFL96",
-            "id": 3,
-            "main_used_g": 51.302616119384766,
-            "total_used_g": 51.302616119384766
-          }
-        ],
-        "generate_support_material_time": 12,
-        "id": 5,
-        "infill_time": 108,
-        "layer_filament_change": 0,
-        "main_predication": 6989.97998046875,
-        "make_perimeters_time": 49,
-        "obj_cached_cnt": 0,
-        "objects": [
-          {
-            "bbox": {
-              "depth": 193.4738311767578,
-              "height": 9.0,
-              "width": 186.0796356201172,
-              "x": 342.1601867675781,
-              "y": -275.9369201660156,
-              "z": 0.0
-            },
-            "id": 185,
-            "name": "C4 A1 companion flat M core",
-            "triangle_count": 3284
-          }
-        ],
-        "sliced_time": 441,
-        "sliced_time_with_cache": 264,
-        "total_predication": 7396.5078125,
-        "triangle_count": 3284,
         "warning_message": ""
       }
     ],

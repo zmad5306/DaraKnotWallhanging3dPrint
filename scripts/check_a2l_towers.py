@@ -51,3 +51,37 @@ def check_tower(text,model_hulls,reserved):
         tower_extrusion_segments=len(tower),other_extrusion_segments=len(others),
         support_and_brim_extrusions_included=True,reserved_envelope_contains_actual_tower=True,
         actual_tower_convex_envelope=mapping(envelope))
+
+
+def check_startup_tower(settings, model_hulls, filament_count, max_height, plate):
+    """Match 2.8.2.61's unsliced estimate, including single-color plates.
+
+    Print::wipe_tower_data sets non-rib tower depth to zero when only one
+    filament is used and smooth timelapse is off. Rib towers instead retain
+    a height-dependent square even though no tower is emitted on that plate.
+    Use all project slots for a conservative multicolor estimate.
+    """
+    # N9 forces Y=160 and clamps X to [15, 330-width-15] on load.
+    x=float(settings['wipe_tower_x'][plate-1]);y=float(settings['wipe_tower_y'][plate-1])
+    assert y==160 and 15<=x<=330-float(settings['prime_tower_width'])-15,('Studio would reset tower position',plate,x,y)
+    assert settings['prime_tower_rib_wall']=='0'
+    assert settings['timelapse_type']=='0'
+    assert len(settings['nozzle_diameter'])==1
+    if filament_count==1:
+        return dict(plate=plate,filament_count=1,estimated_depth_mm=0,
+            estimated_footprint_area_mm2=0,intersects_model=False,
+            reason='Conventional tower: no single-color tower or smooth timelapse')
+    count=max(filament_count,len(settings['filament_diameter']))
+    volume=15. if settings['prime_volume_mode']=='Saving' else max(map(float,settings['filament_prime_volume']))
+    width=float(settings['prime_tower_width']);layer=float(settings['layer_height'])
+    depth=volume*(count-1)/(layer*width)*float(settings['prime_tower_infill_gap'].rstrip('%'))/100
+    minimum=float(np.interp(max_height,[5,100,250,350],[5,20,40,60]))
+    depth=max(depth,minimum)
+    x=float(settings['wipe_tower_x'][plate-1]);y=float(settings['wipe_tower_y'][plate-1]);brim=float(settings['prime_tower_brim_width'])
+    footprint=box(x-brim,y-brim,x+width+brim,y+depth+brim)
+    gap=min(g.distance(footprint) for g in model_hulls)
+    assert gap>8,('Unsliced tower overlaps model hull',plate,gap)
+    assert box(.5,.5,329.5,319.5).covers(footprint)
+    return dict(plate=plate,filament_count=filament_count,conservative_estimated_filament_count=count,
+        estimated_depth_mm=depth,estimated_footprint_area_mm2=footprint.area,
+        conservative_model_convex_hull_clearance_mm=gap,intersects_model=False)

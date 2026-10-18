@@ -19,7 +19,7 @@ SOURCE=ROOT/'working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf'
 A2L=ROOT/'working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf'
 EDIT=OUT/'Dara-A1-Companion-Editable.3mf'
 FINAL=OUT/'Dara-A1-Companion.3mf'
-SOURCE_PLATES=[18,19,20,13,14]
+SOURCE_PLATES=[18,19,20]
 
 
 def files(path):
@@ -42,7 +42,7 @@ def a1_settings():
         layer_height='0.2',wall_loops='4',top_shell_layers='5',bottom_shell_layers='5',sparse_infill_density='8%',
         sparse_infill_pattern='gyroid',print_sequence='by layer',enable_prime_tower='0',enable_arc_fitting='0',
         curr_bed_type='Textured PEI Plate',support_type='tree(auto)',support_style='default',enable_support='0',
-        raft_first_layer_expansion='0',wipe_tower_x=['10']*5,wipe_tower_y=['10']*5)
+        raft_first_layer_expansion='0',wipe_tower_x=['10']*3,wipe_tower_y=['10']*3)
     s['textured_plate_temp']=['65','65','55','65'];s['textured_plate_temp_initial_layer']=s['textured_plate_temp']
     s['filament_max_volumetric_speed']=['12','12','7.5','7.5']
     assert s['printable_area']==['0x0','256x0','256x256','0x256'] and s['printable_height']=='256'
@@ -70,10 +70,6 @@ def build():
     for k in range(1,33):
         j=k-1;e=entry(f'R{k} photo retainer',(179+26*(j%3),48+16*(j//3)));e['settings'].update(brim_width='0',enable_support='0');hardware.append(e)
     plates.append(hardware)
-    # C3's small XY adjustment increases A1 brim room; C4 retains its A2L yaw.
-    # These are hidden flat cores. The common veneer pose remains on the A2L.
-    for k,yaw in [(3,159.752),(4,92.09308762068422)]:
-        e=entry(f'C{k} A2L flat M core',(128,128),yaw);e['settings'].update(brim_width='1',enable_support='0');plates.append([e])
     for pi,objects in enumerate(plates):
         footprints=[]
         for e in objects:
@@ -87,13 +83,13 @@ def build():
         gap=1.5 if pi<2 else 4
         for i,g in enumerate(footprints):
             for q in footprints[:i]:assert g.distance(q)>=gap-.01,(pi+1,g.distance(q))
-    records=write_project(EDIT,plates,'Dara A1 companion - A2L matching backers hardware and C3 C4',settings_update=a1_settings())
-    assert len(records)==46 and len(plates)==5
+    records=write_project(EDIT,plates,'Dara A1 companion - A2L matching backers and hardware',settings_update=a1_settings())
+    assert len(records)==44 and len(plates)==3
     save_json(OUT/'companion-plan.json',dict(source_A2L_editable_sha256=sha(SOURCE),source_A2L_complete_sha256=sha(A2L),editable_sha256=sha(EDIT),
-        plates=5,pieces=46,source_A2L_plates=SOURCE_PLATES,records=records,mapping=mapping,
-        printing_assignment=dict(A1='All five companion plates',A2L='Original complete project plates 1-12 and 15-17',skip_A2L_plates=SOURCE_PLATES),
+        plates=3,pieces=44,source_A2L_plates=SOURCE_PLATES,records=records,mapping=mapping,
+        printing_assignment=dict(A1='All three companion plates',A2L='Original complete project plates 1-17, including every M core and veneer',skip_A2L_plates=SOURCE_PLATES),
         layer_height_mm=.2,body_infill='8% gyroid',filament_slots=dict(white=1,copper_silk=3),prime_tower_disabled=True))
-    print('Built five A1 plates / 46 matching A2L-design parts',flush=True)
+    print('Built three A1 plates / 44 matching A2L-design parts',flush=True)
 
 
 def geometry(path):
@@ -110,7 +106,7 @@ def validate(native):
     result=json.loads((native/'result.json').read_text());assert result['return_code']==0,result
     plan=json.loads((OUT/'companion-plan.json').read_text());assert sha(EDIT)==plan['editable_sha256'] and sha(A2L)==plan['source_A2L_complete_sha256']
     sf,src=geometry(EDIT);nf,dst=geometry(native/'sliced.3mf');source=files(SOURCE);roundtrip=[];preserved=[]
-    assert src.keys()==dst.keys() and len(src)==46
+    assert src.keys()==dst.keys() and len(src)==44
     for row in plan['mapping']:
         name=row['name'];parts,st=read_object(source,row['source_object_id']);actual=src[name]['parts'];assert len(parts)==len(actual)
         errors=[]
@@ -129,7 +125,7 @@ def validate(native):
     machine=resolved_profile('machine','Bambu Lab A1 0.4 nozzle')
     command_keys=['machine_start_gcode','machine_end_gcode','change_filament_gcode','layer_change_gcode','time_lapse_gcode']
     for key in command_keys:assert settings[key]==machine[key],key
-    gcodes=sorted(native.glob('plate_*.gcode'),key=lambda p:int(p.stem.split('_')[-1]));assert len(gcodes)==5;rows=[]
+    gcodes=sorted(native.glob('plate_*.gcode'),key=lambda p:int(p.stem.split('_')[-1]));assert len(gcodes)==3;rows=[]
     for pi,file in enumerate(gcodes,1):
         text=file.read_text();r=scan_gcode(text);assert r['conservative_bed_edge_clearance_mm']>.5,(pi,r['bead_xy_bounds_mm'])
         assert '; EXECUTABLE_BLOCK_END' in text and '; printer_model = Bambu Lab A1' in text
@@ -150,7 +146,7 @@ def publish(native,reopen):
     assert (reopen/'result.json').stat().st_mtime>=(native/'sliced.3mf').stat().st_mtime
     shutil.copyfile(native/'sliced.3mf',FINAL)
     evidence=[EDIT,OUT/'companion-plan.json',OUT/'native-validation.json',ROOT/'scripts/build_a1_companion.py',ROOT/'scripts/audit_a1_companion.py']
-    save_json(OUT/'release-validation.json',dict(project_sha256=sha(FINAL),editable_sha256=sha(EDIT),source_A2L_complete_sha256=sha(A2L),pieces=46,plates=5,
+    save_json(OUT/'release-validation.json',dict(project_sha256=sha(FINAL),editable_sha256=sha(EDIT),source_A2L_complete_sha256=sha(A2L),pieces=44,plates=3,
         native_reopen_return_code=0,evidence_sha256={str(p.relative_to(ROOT)):sha(p) for p in evidence},
         plate_estimates=[dict(plate=p['plate'],seconds=p['seconds'],weight_g=p['weight_g']) for p in r['plates']],physical_confirmation_pending=True))
     print(FINAL,flush=True)

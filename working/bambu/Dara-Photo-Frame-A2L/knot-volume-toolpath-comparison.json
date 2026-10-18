@@ -1,0 +1,78 @@
+{
+  "previous_project_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
+  "maximum_absolute_model_extrusion_change_percent": 0.1651799606566362,
+  "maximum_absolute_outer_wall_extrusion_change_percent": 0.005517674501431813,
+  "plates": [
+    {
+      "plate": 1,
+      "before_gcode_sha256": "053e9131e77119ddf1bdcf821a0f3bf48e1ed8661449bce2498a9ab95b4428e3",
+      "after_gcode_sha256": "0a38c397d9b267cf818fdada61b9247ef13aa6c54e2794dec53cd0a4d1612257",
+      "model_extrusion_change_percent": -0.021972627330602013,
+      "outer_wall_extrusion_change_percent": -1.6831501858938225e-05
+    },
+    {
+      "plate": 2,
+      "before_gcode_sha256": "01572df55ed1acfdc511b1b3a27347311ad258fa8fc22df00067bfa4f6dd13ac",
+      "after_gcode_sha256": "ed27f2a9334619bd8a6972bcd8d18c5c88b5dfabc257b298c3d1d77c48d27914",
+      "model_extrusion_change_percent": -0.009850672371192193,
+      "outer_wall_extrusion_change_percent": 2.301167336682397e-05
+    },
+    {
+      "plate": 3,
+      "before_gcode_sha256": "4cfb5bc6d8702984a705ecefb47d206e2bdf4c8af4e9e46515bae7c25bac35d5",
+      "after_gcode_sha256": "ae78ab74d1d40af1c84a33a00bf59ec9d08d09eb132a2fc89b6bdd13e8bd0eeb",
+      "model_extrusion_change_percent": 0.008698281052077483,
+      "outer_wall_extrusion_change_percent": 0.005517674501431813
+    },
+    {
+      "plate": 4,
+      "before_gcode_sha256": "3e89652ab7d7100c06070d3a2f18333714536027472c7a432294e4adde66971d",
+      "after_gcode_sha256": "f9c0e3df316aab2aa0bc89813a5c8f5fa6f58392e572e89af22bdb568ffdefc8",
+      "model_extrusion_change_percent": 0.030588544533061146,
+      "outer_wall_extrusion_change_percent": 2.5200314812678926e-05
+    },
+    {
+      "plate": 5,
+      "before_gcode_sha256": "4ba94045984fe9eab17f21876f261083997f022bcbce3f9a218d9810c5343a5f",
+      "after_gcode_sha256": "c9ee77ec60c7cd78f0d8b38a0d84b34ebf91e6d3b351e1394d76e653467d080b",
+      "model_extrusion_change_percent": 0.029562734470678365,
+      "outer_wall_extrusion_change_percent": 6.580361544550328e-05
+    },
+    {
+      "plate": 6,
+      "before_gcode_sha256": "b1ee5b39523ed55813ef55f1eb1bbd8f3217811c292124f8afc04e16a3b6fe36",
+      "after_gcode_sha256": "3373e6a96d873674ad45b46318c5718b7cce845d2049c3d75c24804e7de308dc",
+      "model_extrusion_change_percent": 0.01791848299668164,
+      "outer_wall_extrusion_change_percent": -9.332648549520428e-05
+    },
+    {
+      "plate": 7,
+      "before_gcode_sha256": "17dfe1e857872a133972b0fb3f529fe864d9ee11ece21821ad4f6a9955367541",
+      "after_gcode_sha256": "c759f53cace58d0ea20339c504a11a1115ede5f90923414c04d882ff7a4518de",
+      "model_extrusion_change_percent": -0.010707397179332556,
+      "outer_wall_extrusion_change_percent": -2.0293916769276166e-05
+    },
+    {
+      "plate": 8,
+      "before_gcode_sha256": "2732557dc7fefc747e9366c7db1c54c777465b4914230bdda154667e42c947dd",
+      "after_gcode_sha256": "a35834e8a894421b6ff8a5713e056b7b4f2deb04c932f00af8feb669df85d51c",
+      "model_extrusion_change_percent": 0.1651799606566362,
+      "outer_wall_extrusion_change_percent": -1.1830003587842697e-05
+    },
+    {
+      "plate": 9,
+      "before_gcode_sha256": "9a4638426d13ab64d4f02e522017557098002fe6e81790322153425dada5a4b8",
+      "after_gcode_sha256": "f5dfae433232ccb44e62b0c1eccbdddacdea8a29db6341ab504c0d7141599ea4",
+      "model_extrusion_change_percent": 0.020086928827689476,
+      "outer_wall_extrusion_change_percent": 0.00016913021341213863
+    },
+    {
+      "plate": 10,
+      "before_gcode_sha256": "d3b3006512bed0b66651f9c6864728a95e68763d4907fca420870d037c1f6258",
+      "after_gcode_sha256": "edf4ac0c864561c10a4182becb65f54fc5ef73a98cb7f62b6cb1ae4e4ae05014",
+      "model_extrusion_change_percent": 0.005071925572441849,
+      "outer_wall_extrusion_change_percent": -3.931154602954123e-05
+    }
+  ],
+  "limitation": "Compares extrusion amount; combined with exact solid-union and cosmetic-edge geometry checks. Physical seam tests remain required."
+}

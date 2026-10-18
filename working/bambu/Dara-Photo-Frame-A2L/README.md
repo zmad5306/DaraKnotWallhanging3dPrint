@@ -17,7 +17,7 @@ The artwork remains 914.4 mm across. Fresh cuts in the continuous artwork produc
 
 ## Optional A1 companion
 
-Use [Dara-A1-Companion.3mf](../Dara-A1-Companion/Dara-A1-Companion.3mf) to print the eight backers, four wall blocks, 32 retainers and flat M cores C3/C4 on the A1. It uses the exact matching A2L-design meshes and an actual A1 profile. Its [five-plate guide](../Dara-A1-Companion/README.md) maps the parts. Skip **13, 14, 18, 19, 20** in this complete A2L project when printing those on the A1; print A2L plates **1–12 and 15–17**. Keep all veneers on the A2L. The complete file here remains unchanged.
+Use [Dara-A1-Companion.3mf](../Dara-A1-Companion/Dara-A1-Companion.3mf) to print the eight backers, four wall blocks and 32 retainers on the A1. It uses the exact matching A2L-design accessory meshes and an actual A1 profile. Its [three-plate guide](../Dara-A1-Companion/README.md) maps the parts. Skip **18, 19, 20** in this complete A2L project when printing those on the A1; print **A2L plates 1–17**. All four M cores and all three veneers stay on the A2L.
 
 ## Fit and finish
 
@@ -39,7 +39,7 @@ Knot tongue-first glue order: **F9 → F8 → F10 → F7 → F2 → F5 → F4 �
 
 ## Prime tower and warm-up notices
 
-The knot's towers are placed in bed corners outside each model's convex XY outline. Native toolpath checks also measure tower/brim clearance to every other printed feature, including model brims and tree supports. Moving a tower into a knot opening can trigger Studio's proximity warning even when it appears to have open space; retain the saved tower positions. See the [clearance correction](../../../docs/A2L-PRIME-TOWER-CLEARANCE.md).
+The towers use the A2L's forced **Y160** line and saved legal X positions. Studio had been overriding the previous corner positions when loading the project; the corrected project now opens without the collision banner. Adjoining same-material model volumes let Studio check actual empty knot openings while preserving each section as one physical piece. The knot still has ten pieces and fourteen assembly joints. Actual tower-to-other-extrusion clearance is at least **11.96 mm**, including supports and brims. Keep the saved positions. See the [clearance correction](../../../docs/A2L-PRIME-TOWER-CLEARANCE.md).
 
 The A2L thermal-preconditioning notice explains its warm-up duration and bed-zone guides. It is informational; its preference and the feature remain enabled as before.
 

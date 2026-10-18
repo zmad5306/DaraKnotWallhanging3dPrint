@@ -276,7 +276,7 @@ def settings():
     s.update(printer_settings_id='Bambu Lab A2L 0.4 nozzle',printer_model='Bambu Lab A2L',printer_variant='0.4',
         print_settings_id='Dara A2L - 8% gyroid - cosmetic zero-gap',print_compatible_printers=['Bambu Lab A2L 0.4 nozzle'],filament_settings_id=['Generic PLA @BBL A2L','Generic PLA @BBL A2L','Generic PLA Silk @BBL A2L','Generic PLA @BBL A2L'],
         filament_colour=['#FFFFFF','#C2AB84','#B87333','#295D8A'],layer_height='0.2',wall_loops='4',top_shell_layers='5',bottom_shell_layers='5',
-        sparse_infill_density='8%',sparse_infill_pattern='gyroid',print_sequence='by layer',enable_prime_tower='1',prime_tower_width='30',
+        sparse_infill_density='8%',sparse_infill_pattern='gyroid',print_sequence='by layer',enable_prime_tower='1',prime_tower_width='30',prime_tower_rib_wall='0',
         curr_bed_type='Textured PEI Plate',brim_width='1',brim_type='outer_only',enable_arc_fitting='0',bed_exclude_area=[],
         enable_support='0',support_type='tree(auto)',support_style='default',support_on_build_plate_only='1',support_top_z_distance='0.2',raft_first_layer_expansion='0')
     # Preserve established conservative appearance/flow settings on these colors.
@@ -285,12 +285,46 @@ def settings():
     return s
 
 def reinforcement(xy,r=7,height=17):return dict(mesh=mesh(cylinder(xy,r,0,height)),subtype='modifier_part',settings=dict(sparse_infill_density='100%',name='Local solid screw reinforcement'))
+def n9_knot_volumes(m,T):
+    """Honor Studio's forced N9 tower Y without introducing physical seams.
+
+    Partition only the model representation around the empty tower envelope.
+    Same-material volumes in the same object are unioned by the slicer.
+    The boolean union is required to equal the original printable solid.
+    """
+    body=solid(m).transform(T[:3,:]);rings=body.project().to_polygons()
+    projection=shapely.build_area(union_all([LineString(np.vstack([r,r[0]])) for r in rings]))
+    choices=[]
+    for x in range(15,286):
+        rect=box(x-3,157,x+33,197);choices.append((projection.distance(rect),x,rect))
+    gap,x,rect=max(choices,key=lambda r:r[0]);assert gap>8.5,('No fixed-Y tower clearance',gap)
+    x0,y0,x1,y1=rect.buffer(8.5,join_style=2).bounds
+    regions=[(-2000,-2000,x0,2000),(x1,-2000,2000,2000),(x0,-2000,x1,y0),(x0,y1,x1,2000)]
+    pieces=[];world=[]
+    for a,b,c,d in regions:
+        piece=body ^ mf.Manifold.cube([c-a,d-b,100]).translate([a,b,-1])
+        if piece.volume()<1e-7:continue
+        for connected in piece.decompose():
+            if connected.volume()<1e-7:continue
+            world.append(connected);pieces.append(dict(mesh=mesh(connected.transform(np.linalg.inv(T)[:3,:])),settings=dict(name='Continuous knot volume')))
+    combined=mf.Manifold.batch_boolean(world,mf.OpType.Add)
+    removed=(body-combined).volume();added=(combined-body).volume()
+    assert abs(removed)<1e-5 and abs(added)<1e-5,(removed,added)
+    hulls=[Polygon(mesh(piece).vertices[:,:2]).convex_hull for piece in world]
+    assert min(g.distance(rect) for g in hulls)>8
+    return pieces,dict(anchor_xy_mm=[x,160],reserved_envelope_mm=list(rect.bounds),
+        physical_projection_gap_mm=gap,model_volume_convex_hull_gap_mm=min(g.distance(rect) for g in hulls),
+        model_convex_hulls=[mapping(g) for g in hulls],model_volume_count=len(pieces),
+        original_volume_mm3=body.volume(),removed_volume_mm3=removed,added_volume_mm3=added,
+        same_material_volumes_in_one_object=True,no_new_physical_joints=True)
+
 def package():
-    p=load_plan();mp=json.loads((OUT/'M-geometry-validation.json').read_text());plates=[]
+    p=load_plan();mp=json.loads((OUT/'M-geometry-validation.json').read_text());plates=[];tower_rows=[]
     anchors=(np.array(p['photo_anchors_mm'])+np.array(p['photo_normals'])*9.5).reshape(-1,2)
     for i in range(10):
         m=cached(f'F{i+1}');yaw=p['frame_fits'][i]['rotation_deg'] if 'rotation_deg' in p['frame_fits'][i] else p['frame_fits'][i]['angle_deg']
-        parts=[dict(mesh=m),dict(mesh=cached(f'F{i+1}-wood'),subtype='modifier_part',settings=dict(extruder='2')),dict(mesh=cached(f'F{i+1}-blue'),subtype='modifier_part',settings=dict(extruder='4'))]
+        T=centered(m,z_rotation(yaw),xy=(165,160));volumes,tower=n9_knot_volumes(m,T);tower_rows.append(dict(plate=i+1,**tower))
+        parts=volumes+[dict(mesh=cached(f'F{i+1}-wood'),subtype='modifier_part',settings=dict(extruder='2')),dict(mesh=cached(f'F{i+1}-blue'),subtype='modifier_part',settings=dict(extruder='4'))]
         for ci,fi,xy in p['screw_mounts']:
             if fi==i:parts.append(reinforcement(xy,8))
         for xy in anchors:
@@ -298,7 +332,7 @@ def package():
         for w in p['wall_mounts']:
             if w[0]==i:
                 for x in w[5]:parts.append(reinforcement(np.array(w[1])+[x,w[4]]))
-        plates.append([dict(name=f'F{i+1} A2L knot',parts=parts,transform=centered(m,z_rotation(yaw),xy=(165,160)),
+        plates.append([dict(name=f'F{i+1} A2L knot',parts=parts,transform=T,
             settings=dict(extruder='1',enable_support='1',infill_direction=str((45+yaw)%180),brim_width='1'))])
     for i in range(4):
         m=cached(f'C{i+1}');f=p['core_fits'][i];yaw=f.get('rotation_deg',f.get('angle_deg'));parts=[dict(mesh=m)]
@@ -329,29 +363,14 @@ def package():
     for k in range(32):
         parts,st=read_object(files,ret);objects.append(dict(name=f'R{k+1} photo retainer',parts=parts,transform=centered(parts[0]['mesh'],xy=(205+(k%4)*26,40+(k//4)*22)),settings=dict(extruder='1',enable_support='0',brim_width='0')))
     plates.append(objects)
-    ss=settings();tower_x=[];tower_y=[];tower_rows=[]
-    for i in range(10):
-        # Studio validates each model volume's convex projection, not the
-        # concave artwork footprint. An opening inside that hull is NOT a
-        # legal tower location even if the actual extruded paths do not meet.
-        T=plates[i][0]['transform'];v=plates[i][0]['parts'][0]['mesh'].vertices
-        rg=Polygon((v@T[:3,:3].T+T[:3,3])[:,:2]).convex_hull;choices=[]
-        # Native ribbed towers at these unchanged settings occupy less than
-        # 30 x 30 mm including the 2 mm brim. Reserve 38 x 38 mm, then check
-        # the actual emitted tower/brim footprint after slicing as well.
-        for x in range(8,289,4):
-            for y in range(8,281,4):
-                rect=box(x-4,y-4,x+34,y+34);gap=rg.distance(rect)
-                if gap>8:choices.append((gap,x,y))
-        assert choices,('No prime tower clearance outside model hull',i+1)
-        gap,x,y=max(choices);tower_x.append(str(x));tower_y.append(str(y))
-        tower_rows.append(dict(plate=i+1,anchor_xy_mm=[x,y],reserved_envelope_mm=[x-4,y-4,x+34,y+34],
-            model_convex_hull_gap_mm=gap,model_convex_hull=mapping(rg)))
-    ss.update(wipe_tower_x=tower_x+['10']*10,wipe_tower_y=tower_y+['10']*10,prime_tower_brim_width='2')
-    save(OUT/'tower-placement.json',dict(method='Outside each printed model convex hull, including a reserved brim envelope',
+    ss=settings()
+    ss.update(wipe_tower_x=[str(r['anchor_xy_mm'][0]) for r in tower_rows]+['15']*10,
+        wipe_tower_y=['160']*20,prime_tower_brim_width='2')
+    save(OUT/'tower-placement.json',dict(method='A2L N9 forced Y160; exact union of adjoining same-material model volumes',
         minimum_reserved_gap_mm=8,plates=tower_rows,
-        rule_source='https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Print.cpp',
-        rule_function='layered_print_cleareance_valid',actual_native_footprint_check_required=True))
+        rule_source='https://github.com/bambulab/BambuStudio/blob/v02.08.02.61/src/slic3r/GUI/PartPlate.cpp',
+        rule_function='PartPlateList::set_default_wipe_tower_pos_for_plate',
+        actual_native_footprint_check_required=True,GUI_overrides_previous_corner_positions=True))
     records=write_project(EDIT,plates,'Dara A2L complete - 14 knot joints - flat core M',settings_update=ss)
     save(OUT/'plate-plan.json',dict(plates=len(plates),records=records,production_plan_sha256=sha(PLAN),editable_sha256=sha(EDIT)))
     print(f'Packaged {len(plates)} A2L plates',flush=True)

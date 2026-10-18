@@ -18,10 +18,11 @@ def audit():
         assert z.testzip() is None;s=json.loads(z.read('Metadata/project_settings.config'))
         assert s['printer_model']=='Bambu Lab A1' and s['sparse_infill_density']=='8%' and s['sparse_infill_pattern']=='gyroid'
         assert s['enable_prime_tower']=='0'
-        cfg=ET.fromstring(z.read('Metadata/model_settings.config'));assert len(cfg.findall('plate'))==5 and len(cfg.findall('object'))==46
+        cfg=ET.fromstring(z.read('Metadata/model_settings.config'));assert len(cfg.findall('plate'))==3 and len(cfg.findall('object'))==44
+        assert not any(' M core' in props(co).get('name','') or 'veneer' in props(co).get('name','') for co in cfg.findall('object'))
         for row in n['plates']:
             data=z.read(f'Metadata/plate_{row["plate"]}.gcode');assert hashlib.sha256(data).hexdigest()==row['gcode_sha256']
             assert b'; EXECUTABLE_BLOCK_END' in data and row['conservative_bed_edge_clearance_mm']>.5
         for co in cfg.findall('object'):assert props(co).get('sparse_infill_density',s['sparse_infill_density'])=='8%'
-    print('A1 companion PASS: 5 plates / 46 A2L-matching parts; A1 native slices, 8% gyroid, preserved geometry and local solid zones.')
+    print('A1 companion PASS: 3 plates / 44 A2L-matching parts; A1 native slices, 8% gyroid, preserved geometry and local solid zones.')
 if __name__=='__main__':audit()

@@ -20,11 +20,19 @@ def audit():
   tower=plate['prime_tower_clearance']
   assert tower['studio_model_convex_hull_clearance_mm']>8
   assert tower['actual_tower_to_other_extrusion_clearance_mm']>3
+ assert all(p['startup_prime_tower_check']['intersects_model'] is False for p in n['plates'])
+ assert all(p['startup_prime_tower_check']['estimated_footprint_area_mm2']==0 for p in n['plates'][10:])
  assert n['native_project_sha256']==r['project_sha256']
  assert r['native_reopen_return_code']==0
+ gui=json.loads((OUT/'tower-gui-verification.json').read_text())
+ assert gui['prime_tower_collision_warning_absent_after_fresh_GUI_open']
+ assert gui['GUI_tested_file_sha256']==r['project_sha256']
  with zipfile.ZipFile(ROOT/'Dara.3mf') as z:
   assert z.testzip() is None
   settings=json.loads(z.read('Metadata/project_settings.config'));assert settings['printer_model']=='Bambu Lab A2L'
+  assert settings['wipe_tower_y']==['160']*20
+  assert all(15<=float(x)<=285 for x in settings['wipe_tower_x'])
+  assert settings['prime_tower_rib_wall']=='0'
   assert settings['sparse_infill_density']=='8%' and settings['sparse_infill_pattern']=='gyroid'
   cfg=ET.fromstring(z.read('Metadata/model_settings.config'));assert len(cfg.findall('plate'))==20
   for co in cfg.findall('object'):

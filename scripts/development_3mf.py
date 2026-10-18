@@ -176,7 +176,7 @@ def write_project(path, plates, title, settings_update=None):
             ET.SubElement(build, tag('item'), objectid=str(oid), printable='1', transform=' '.join(format(float(x), '.12g') for x in t[:3].T.reshape(-1)), attrib={'{' + P + '}UUID': uid()})
             inst = ET.SubElement(plate, 'model_instance')
             for k, v in [('object_id', oid), ('instance_id', 0), ('identify_id', oid)]: meta(inst, k, v)
-            v = entry['parts'][0]['mesh'].vertices @ local[:3, :3].T + local[:3, 3]
+            v = np.concatenate([p['mesh'].vertices for p in entry['parts'] if p.get('subtype','normal_part')=='normal_part']) @ local[:3, :3].T + local[:3, 3]
             records.append(dict(name=entry['name'], plate=pi + 1, object_id=oid, assembly_to_printer=local.tolist(), body_bounds_mm=[v.min(axis=0).tolist(), v.max(axis=0).tolist()]))
     files.update({'3D/3dmodel.model': xml(root), '3D/_rels/3dmodel.model.rels': xml(rels), 'Metadata/model_settings.config': xml(cfg)})
     path.parent.mkdir(parents=True, exist_ok=True)

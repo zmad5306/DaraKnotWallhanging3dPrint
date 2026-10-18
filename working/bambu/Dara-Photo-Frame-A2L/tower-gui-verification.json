@@ -1,10 +1,11 @@
 {
-  "original_distributed_project_warning_reproduced_in_Studio_GUI": true,
-  "corrected_project_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
-  "corrected_GUI_reload_status": "Local Studio window stopped responding while opening corrected editable project; AX and screenshot requests timed out. Banner-clear confirmation unavailable.",
-  "original_warning_rule_identified_in_official_source": true,
-  "numerical_Studio_convex_hull_rule_passed_on_all_10_multicolor_plates": true,
-  "minimum_actual_tower_to_other_extrusion_clearance_mm": 41.89904095016878,
-  "native_slice_and_reopen_passed": true,
-  "printer_commands_sent": false
+  "previous_corrected_project_warning_reproduced_in_Studio_GUI": true,
+  "corrected_project_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "corrected_GUI_reload_status": "PASS: loaded byte-identical native project as Dara-A2L-Verified.3mf through Studio Open Project; A2L profile retained. Collision banner absent; thermal-preconditioning notice remains.",
+  "prime_tower_collision_warning_absent_after_fresh_GUI_open": true,
+  "thermal_preconditioning_notice_still_present": true,
+  "Studio_version": "02.08.02.61",
+  "GUI_tested_file_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "printer_commands_sent": false,
+  "forced_Y160_layout_in_GUI": true
 }

@@ -1,15 +1,13 @@
 {
-  "source_A2L_editable_sha256": "f698853b869b94a853fdbd249978bf08efa8949be1e2d8e84f434a2ee55da254",
-  "source_A2L_complete_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
-  "editable_sha256": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
-  "plates": 5,
-  "pieces": 46,
+  "source_A2L_editable_sha256": "45a46dbba31ae22cdf9391579748bd7731e500ee7aebf89378adf09551129c54",
+  "source_A2L_complete_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "editable_sha256": "281a3079bf3eae71675e09a2cb2f9f630e7f2086a1413a5ddddd1055cde29b86",
+  "plates": 3,
+  "pieces": 44,
   "source_A2L_plates": [
     18,
     19,
-    20,
-    13,
-    14
+    20
   ],
   "records": [
     {
@@ -1903,92 +1901,6 @@
           3.0
         ]
       ]
-    },
-    {
-      "name": "C3 A1 companion flat M core",
-      "plate": 4,
-      "object_id": 5400,
-      "assembly_to_printer": [
-        [
-          -0.9382034171153895,
-          -0.346084307810982,
-          0.0,
-          300.842935725132
-        ],
-        [
-          0.346084307810982,
-          -0.9382034171153895,
-          0.0,
-          140.4525849178001
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          3.8451600803986707,
-          3.8461210771290837,
-          0.0
-        ],
-        [
-          252.15483991960133,
-          252.15387892287094,
-          9.0
-        ]
-      ]
-    },
-    {
-      "name": "C4 A1 companion flat M core",
-      "plate": 5,
-      "object_id": 5500,
-      "assembly_to_printer": [
-        [
-          -0.03652314568708039,
-          -0.9993328073415384,
-          0.0,
-          45.905720072335086
-        ],
-        [
-          0.9993328073415384,
-          -0.03652314568708039,
-          0.0,
-          -81.30200910675137
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          34.960179038496626,
-          37.81416260707107,
-          0.0
-        ],
-        [
-          221.03982096150338,
-          218.18583739292893,
-          9.0
-        ]
-      ]
     }
   ],
   "mapping": [
@@ -2343,33 +2255,15 @@
       "source_name": "R32 photo retainer",
       "source_object_id": "7000",
       "source_part_count": 2
-    },
-    {
-      "name": "C3 A1 companion flat M core",
-      "A1_plate": 4,
-      "A2L_plate": 13,
-      "source_name": "C3 A2L flat M core",
-      "source_object_id": "2200",
-      "source_part_count": 3
-    },
-    {
-      "name": "C4 A1 companion flat M core",
-      "A1_plate": 5,
-      "A2L_plate": 14,
-      "source_name": "C4 A2L flat M core",
-      "source_object_id": "2300",
-      "source_part_count": 3
     }
   ],
   "printing_assignment": {
-    "A1": "All five companion plates",
-    "A2L": "Original complete project plates 1-12 and 15-17",
+    "A1": "All three companion plates",
+    "A2L": "Original complete project plates 1-17, including every M core and veneer",
     "skip_A2L_plates": [
       18,
       19,
-      20,
-      13,
-      14
+      20
     ]
   },
   "layer_height_mm": 0.2,

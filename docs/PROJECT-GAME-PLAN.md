@@ -26,7 +26,7 @@ The matching attachment layout moves conflicting screws/pilots away from the new
 
 ## Split printing between A1 and A2L
 
-The [A1 companion](../working/bambu/Dara-A1-Companion/README.md) contains five plates with 46 current-design pieces: eight backers, four wall blocks, 32 retainers and flat cores C3/C4. Print its full set once; skip plates **13, 14, 18–20** of the complete A2L file. The A2L prints plates **1–12 and 15–17** for the other 15 pieces. The part geometry is shared, with actual printer-specific profiles and native slices. All veneers retain the same A2L finish orientation.
+The [A1 companion](../working/bambu/Dara-A1-Companion/README.md) contains three plates with 44 current-design accessories: eight backers, four wall blocks and 32 retainers. Print its full set once; skip plates **18–20** of the complete A2L file. The A2L prints **1–17**, including **every M core and veneer**. The accessory geometry is shared, with actual printer-specific profiles and native slices. All veneers retain the same A2L finish orientation.
 
 ## Physical confirmation still required
 

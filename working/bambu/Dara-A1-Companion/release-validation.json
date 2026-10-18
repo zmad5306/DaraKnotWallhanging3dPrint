@@ -1,16 +1,16 @@
 {
-  "project_sha256": "3ed05cc063b409737c11c294d00ac4845ce589f16821b02898247ec79d09d270",
-  "editable_sha256": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
-  "source_A2L_complete_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
-  "pieces": 46,
-  "plates": 5,
+  "project_sha256": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+  "editable_sha256": "281a3079bf3eae71675e09a2cb2f9f630e7f2086a1413a5ddddd1055cde29b86",
+  "source_A2L_complete_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
+  "pieces": 44,
+  "plates": 3,
   "native_reopen_return_code": 0,
   "evidence_sha256": {
-    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
-    "working/bambu/Dara-A1-Companion/companion-plan.json": "0d1d8d5acca7d1d2845a1aa71235c0bc86b1acb06eff8bd4afc7e09a131e4fbf",
-    "working/bambu/Dara-A1-Companion/native-validation.json": "f2f06bc6c599ea63492d7f793d33ce6ad73b534f5b81eca0d49f95f54265cf54",
-    "scripts/build_a1_companion.py": "b036126225a804ebef349f0e0f2f454501968486c6b640e5346994952c28f050",
-    "scripts/audit_a1_companion.py": "ace542bcdb31d92986bf6c33032faacdb9e7c7f1567f6b9043dd105edc11ddc1"
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "281a3079bf3eae71675e09a2cb2f9f630e7f2086a1413a5ddddd1055cde29b86",
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "fccb50b362e4b7e1a34186efab3e777a88baf96ef269172b366331ebf9398dcf",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "59ca38d894e1c7eb6072d7444f93e75945e6be32e906144fdfbf5bf361639090",
+    "scripts/build_a1_companion.py": "73775ce99d9b8346fb34fa589db2ec7eace2ec36529bc6d1da8bec905d36d6ce",
+    "scripts/audit_a1_companion.py": "b96d9bfab4967b509c59e2405e0e81bf4011905d14d47c5bb59f262d574ffbdd"
   },
   "plate_estimates": [
     {
@@ -25,18 +25,8 @@
     },
     {
       "plate": 3,
-      "seconds": 18014.353515625,
+      "seconds": 18011.78125,
       "weight_g": 144.87635803222656
-    },
-    {
-      "plate": 4,
-      "seconds": 8967.8701171875,
-      "weight_g": 63.1407585144043
-    },
-    {
-      "plate": 5,
-      "seconds": 7396.5078125,
-      "weight_g": 51.302616119384766
     }
   ],
   "physical_confirmation_pending": true

@@ -1,4 +1,4 @@
-"""Printable maps and production checklist for the 20-plate A2L release."""
+"""Printable maps and production checklist for the A2L / A1 split."""
 import json,math
 from pathlib import Path
 from reportlab.pdfgen import canvas
@@ -14,6 +14,7 @@ for name,file in [('Vera','Vera.ttf'),('VeraBold','VeraBd.ttf')]:pdfmetrics.regi
 
 def main():
  p=json.loads((OUT/'production-plan.json').read_text());proof=json.loads((OUT/'native-validation.json').read_text());release=json.loads((OUT/'release-validation.json').read_text());est={r['plate']:r for r in release['plate_estimates']}
+ a1=json.loads((ROOT/'working/bambu/Dara-A1-Companion/native-validation.json').read_text());est.update({r['plate']+17:r for r in a1['plates']})
  target=ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf';c=canvas.Canvas(str(target),pagesize=landscape(letter));W,H=landscape(letter);ink='#263842';colors=['#c6dce7','#d7e8d2','#efdec0','#dad3e8','#edd0cc','#d3d1bd']
  def text(x,y,s,size=10,bold=False):c.setFont('VeraBold' if bold else 'Vera',size);c.setFillColor(HexColor(ink));c.drawString(x,y,s)
  def page(title,sub,num):
@@ -32,7 +33,7 @@ def main():
  def table(rows,x,y,width):
   for xx,v in [(x,'Plate / contents'),(x+width-90,'Hours'),(x+width-42,'g')]:text(xx,y,v,9,True)
   for i,(pi,name) in enumerate(rows):
-   yy=y-21*(i+1);r=est[pi];text(x,yy,f'{pi:02}  {name}',9);text(x+width-90,yy,f'{r["seconds"]/3600:.1f}',9);text(x+width-42,yy,f'{r["weight_g"]:.0f}',9)
+   yy=y-21*(i+1);r=est[pi];text(x,yy,f'{str(pi).zfill(2) if pi<=17 else "A1-"+str(pi-17)}  {name}',9);text(x+width-90,yy,f'{r["seconds"]/3600:.1f}',9);text(x+width-42,yy,f'{r["weight_g"]:.0f}',9)
  page('A2L knot: part and joint map','10 freshly partitioned knot sections. 14 joints: six fully hidden, two partly covered, six fully exposed.',1)
  for i,g in enumerate(p['parts']):geo(g,255,307,.45,colors[i%6])
  for i,row in enumerate(p['band_free_M_visibility']):
@@ -50,16 +51,19 @@ def main():
  text(32,97,'Two veneer seams total about 24 mm in front projection; their actual front edges match at zero nominal gap.',9)
  text(32,78,'All three veneers share the complete 55-degree lean and in-plane direction. Show planes run along bed Y.',9,True)
  text(32,58,'Do not rotate individual veneers. Clip bonded fins, tabs, starter shoes and perimeter guards; sand hidden backs flat.',8.5);c.showPage()
- page('Production checklist','Print one demanding knot joint and one core / veneer first. Physical fit, silk restraint and finish need confirmation.',3)
+ page('Production checklist: A2L + A1','A2L: plates 1-17, including ALL M cores and veneers. A1 companion: plates 1-3. Skip A2L 18-20.',3)
  rows=[(i,f'C{i-10} flat core') for i in range(11,15)]+[(i,f'V{i-14} veneer + carrier') for i in range(15,18)]+[(18,'Backers 1, 3, 5, 7'),(19,'Backers 2, 4, 6, 8'),(20,'4 wall blocks + 32 retainers')]
  table(rows,32,505,350)
- checks=['Open the 3MF as a project; verify the A2L profile.','Verify slots: white / tan / copper silk / blue.','Inspect plate preview before each first print.','Print a full joint pair; check fit and 8% stiffness.','Print one full veneer; inspect restraint / cupping.','Trim fins progressively; cradle the hammered face.','Sand rear lands flat; preserve locators and edges.','Dry-fit the four cores on a flat reference.','Dry-fit veneers; inspect both seams in grazing light.','Check matching M pins, screws and screw tips.','Glue in hidden relief; keep stops and edges dry.','Confirm photos, backers, retainers and wall blocks.']
+ checks=['Open each 3MF as a project; verify its printer.','Verify slots: white / tan / copper silk / blue.','Inspect plate preview before each first print.','Print a full joint pair; check fit and 8% stiffness.','Print one full veneer; inspect restraint / cupping.','Trim fins progressively; cradle the hammered face.','Sand rear lands flat; preserve locators and edges.','Dry-fit the four cores on a flat reference.','Dry-fit veneers; inspect both seams in grazing light.','Check matching M pins, screws and screw tips.','Glue in hidden relief; keep stops and edges dry.','Confirm photos, backers, retainers and wall blocks.']
  for i,s in enumerate(checks):
   y=493-i*27;c.setStrokeColor(HexColor(ink));c.rect(416,y-2,8,8,stroke=1,fill=0);text(434,y,s,8.2)
- text(32,245,'Print tracking: mark each plate when complete',11,True)
- for pi in range(1,21):
+ text(32,245,'Print tracking: A2L plates 1-17',11,True)
+ for pi in range(1,18):
   col=(pi-1)%10;row=(pi-1)//10;x=37+col*34;y=213-row*28;c.rect(x,y,10,10,stroke=1,fill=0);text(x+13,y+1,str(pi),8)
- text(32,120,f'All 20 plates: {sum(r["seconds"] for r in est.values())/3600:.1f} hours / {sum(r["weight_g"] for r in est.values()):.0f} g including support and purge.',9,True)
+ text(32,157,'A1 companion:',9,True)
+ for pi in range(1,4):
+  x=140+(pi-1)*70;c.rect(x,155,10,10,stroke=1,fill=0);text(x+14,156,str(pi),8)
+ text(32,120,f'Split plan: {sum(r["seconds"] for r in est.values())/3600:.1f} hours / {sum(r["weight_g"] for r in est.values()):.0f} g including support and purge.',9,True)
  text(32,96,'Filament lot / adhesive: _______________________________________________________________',9)
  text(32,70,'Fit, reflection, cleanup notes: __________________________________________________________',9)
  text(32,45,'___________________________________________________________________________________',9);c.save();print(target)

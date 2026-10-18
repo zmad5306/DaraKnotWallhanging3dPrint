@@ -1,15 +1,27 @@
 # A2L prime-tower clearance correction
 
-The first A2L release completed native slicing without a toolpath conflict but displayed **“Prime Tower is too close to others”** in Studio's Prepare view. That release check was incomplete: it allowed towers in concave artwork openings.
+Studio 02.08.02.61 **overrides the saved A2L tower Y position with 160 mm** when opening a project. It also clamps tower X to the machine's margins. The previous corner positions were valid in the native CLI slice but were moved into the knot when the GUI loaded them. A GUI-saved diagnostic project confirmed this: every tower Y changed to 160. `tower-GUI-position-reset.json` records the input and GUI-effective values.
 
-Studio's `layered_print_cleareance_valid` checks the tower against the convex XY projection of each actual model volume. A concave opening can lie inside that projection. The source is [Bambu Studio Print.cpp](https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Print.cpp). The warning was reproduced by opening the distributed `Dara.3mf` in the local Studio GUI.
+The installed source identifies the cause in `PartPlateList::set_default_wipe_tower_pos_for_plate`: for printer type N9 (A2L), it unconditionally assigns `N9_WIPE_TOWER_DEFAULT_Y_POS`. Changing only the saved corner coordinates cannot fix that load behavior.
 
-The correction moves towers on all ten multicolor knot plates into bed corners outside the actual model convex hull. The planner reserves a 38 × 38 mm rectangle for each current ribbed tower and its 2 mm brim and requires more than 8 mm additional distance to the model hull. It maximizes that distance over legal bed positions. No part mesh, part rotation, joint, filament or infill change is needed.
+## Current layout
 
-The final native gate uses the **emitted tower extrusion**, rather than only an assumed rectangle. It checks that the complete bead envelope fits inside the reserved rectangle, remains outside all model hulls, stays on the A2L bed and is more than 3 mm from all other extrusion, including supports and brims. Future changes to purge/tower settings that enlarge its real footprint must pass this gate again. `tower-placement.json` and each knot plate's `prime_tower_clearance` entry in `native-validation.json` record the results. The portable release audit checks these results and their evidence hashes.
+All towers now use **Y160**, with legal X positions chosen from the actual knot projection. Studio therefore keeps these positions on load. Prime and purge volumes are unchanged. Conventional rectangular towers avoid unnecessary ribbed placeholders on single-color plates; smooth timelapse stays off.
 
-The second notice, about **thermal preconditioning**, explains warm-up timing and the white bed-zone guides. It is informational. This correction does not disable preconditioning, change its preference or hide warnings.
+Studio also checks the convex hull of each model volume, which fills in concave artwork openings. To permit a tower in a genuinely empty opening, each knot's model is represented by adjoining volumes around its reserved tower envelope, all in **one object with the same material**. Their exact boolean union equals the original printable solid. These are slicer volumes, **not additional pieces or assembly joints**: the knot still has ten pieces and 14 joints. Colors, reinforcement, object settings, all 61 saved part poses, and the complete M geometry remain unchanged. All 51 M/accessory model assets are byte-identical.
 
-Use the refreshed complete project, not the previously opened in-memory copy. Open `Dara.3mf` **as a project** after pulling the branch and Git LFS files. Retain its saved model and tower positions; don't auto-arrange them independently.
+The planner reserves a 36 x 40 mm envelope including brim, requires more than 8 mm model-volume hull clearance and preserves the original part positions. The native gate checks the actual emitted tower, supports, brims, bed bounds, and all 20 startup estimates. The tower locations also pass the installed GUI's Y160/X-margin reset rules.
 
-The corrected native checks pass on all ten multicolor plates, with a minimum **41.9 mm** bead-to-bead distance to other printed material. Native slicing and reopen both pass. The local Studio GUI stopped responding while opening the corrected editable project, so visual confirmation that its banner cleared is pending; this is recorded explicitly in `tower-gui-verification.json`. No printer commands were sent.
+The build requires negligible added/removed boolean volume. A comparison against the previous distributed release checks model extrusion and outer-wall extrusion on all ten knot plates; this would catch the addition of substantial internal partition walls. Results and G-code hashes are in `knot-volume-toolpath-comparison.json`. Normal geometry, zero-gap cosmetic edges, modifier round trips, material directions and fin bonds are checked independently.
+
+The byte-identical final native project was opened through Studio's Open Project dialog with the A2L profile retained. **The prime-tower collision banner is absent.** `tower-gui-verification.json` records that GUI pass and the tested SHA. The **thermal preconditioning** notice remains visible because it is informational. Across all ten knot plates, outer-wall extrusion changes by less than 0.006% and total model extrusion by less than 0.166% relative to the previous distributed release.
+
+Open the refreshed `Dara.3mf` **as a project** from disk after pulling the branch and Git LFS files. An already-open project retains its old settings. Keep saved part rotations and tower positions.
+
+Official installed-version source:
+
+- [PartPlate.cpp](https://github.com/bambulab/BambuStudio/blob/v02.08.02.61/src/slic3r/GUI/PartPlate.cpp): `PartPlateList::set_default_wipe_tower_pos_for_plate` and N9 Y160.
+- [Print.cpp](https://github.com/bambulab/BambuStudio/blob/v02.08.02.61/src/libslic3r/Print.cpp): `layered_print_cleareance_valid`, `has_wipe_tower`, `wipe_tower_data`.
+- [WipeTower.cpp](https://github.com/bambulab/BambuStudio/blob/v02.08.02.61/src/libslic3r/GCode/WipeTower.cpp): tower height/depth limits.
+
+No printer commands were sent. Physical joint, silk-finish and load tests remain pending.

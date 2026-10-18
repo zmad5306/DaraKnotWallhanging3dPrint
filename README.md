@@ -18,7 +18,7 @@ For another computer, pull branch `codex/m-veneer-cosmetic-fit`, run `git lfs pu
 
 ## Printing the matching small parts on the A1
 
-The [A1 companion project](working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf) has **five plates / 46 matching pieces**: all eight backers, four wall blocks, 32 photo retainers and flat M cores C3/C4. Use its [plate mapping and instructions](working/bambu/Dara-A1-Companion/README.md). With that file, skip **A2L plates 13, 14, 18–20** and print A2L plates **1–12 and 15–17** for the remaining parts. Every veneer stays on the A2L in its saved common orientation. The complete A2L file remains available as the all-on-one-printer option.
+The [A1 companion project](working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf) has **three plates / 44 matching pieces**: all eight backers, four wall blocks and 32 photo retainers. Use its [plate mapping and instructions](working/bambu/Dara-A1-Companion/README.md). With that file, skip **A2L plates 18–20** and print **A2L plates 1–17**. All four M cores and all three veneers stay on the A2L. The complete A2L file remains available as the all-on-one-printer option.
 
 ## Preserved A1 projects and tests
 

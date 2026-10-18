@@ -4,22 +4,22 @@ Open **Dara-A2L-Complete.3mf as a project** in Bambu Studio. The repository-root
 
 **Veneer plates 15–17 corrected:** all three saved production veneers now have separate grounded ribs and accessible cut necks. The continuous welded shoe that caused the L-shaped lip has been removed. Cutter windows, post-trim perimeter, supported-area coverage, tall-rib bracing, preserved front geometry and native bond extrusion are checked on every panel. Print a representative veneer first to confirm physical cleanup. See the [saved-project audit](../../../output/development/m-veneer-cosmetic-fit/All-veneer-production-audit.json).
 
-The artwork remains 914.4 mm across. Fresh cuts in the continuous artwork produce ten knot sections with fourteen joints: six fully hidden behind the band-free M, two partly covered and six fully exposed. Counts exclude the M. The M has four flat cores with three hidden keyed joints and three veneers with two short visible seams, approximately 24.3 mm total in front projection. The two outer sweeps are continuous veneers.
+The artwork remains 914.4 mm across. Fresh cuts in the continuous artwork produce ten knot sections with fourteen joints: six fully hidden behind the band-free M, two partly covered and six fully exposed. Counts exclude the M. The M has five flat cores with four hidden keyed joints and three veneers with two visible fork seams, 105.6 mm total in front projection, crossing the broad fork. The two outer sweeps and their narrow arch crowns are continuous veneers. C4/C5 share core plate 14.
 
 | Plates | Contents | Construction |
 | --- | --- | --- |
 | 1–10 | F1–F10 knot | 8% gyroid, 4 walls, 5 top/bottom layers; local solid screw zones |
-| 11–14 | C1–C4 flat M cores | 8% gyroid; 8.4 mm flat main body, planar mushroom keys |
+| 11–14 | C1–C5 flat M cores | 8% gyroid; 8.4 mm flat main body, planar mushroom keys |
 | 15–17 | V1–V3 copper silk veneers and bonded fin carriers | 100% infill; all convex crown and hammer texture in veneer |
 | 18 | Backers 1, 3, 5, 7 | Flat, no brim/support |
 | 19 | Backers 2, 4, 6, 8 | Flat, no brim/support |
 | 20 | Four wall blocks and 32 photo retainers | Matching coordinated rear hardware |
 
-61 assembly pieces on 20 plates. Filament slots: **1 white, 2 wood tan, 3 copper silk, 4 blue**. All plates use 0.20 mm layers. Supports, carriers and purge add consumable material beyond the assembled artwork.
+62 assembly pieces on 20 plates. Filament slots: **1 white, 2 wood tan, 3 copper silk, 4 blue**. All plates use 0.20 mm layers. Supports, carriers and purge add consumable material beyond the assembled artwork.
 
 ## Optional A1 companion
 
-Use [Dara-A1-Companion.3mf](../Dara-A1-Companion/Dara-A1-Companion.3mf) to print the eight backers, four wall blocks and 32 retainers on the A1. It uses the exact matching A2L-design accessory meshes and an actual A1 profile. Its [three-plate guide](../Dara-A1-Companion/README.md) maps the parts. Skip **18, 19, 20** in this complete A2L project when printing those on the A1; print **A2L plates 1–17**. All four M cores and all three veneers stay on the A2L.
+Use [Dara-A1-Companion.3mf](../Dara-A1-Companion/Dara-A1-Companion.3mf) to print the eight backers, four wall blocks and 32 retainers on the A1. It uses the exact matching A2L-design accessory meshes and an actual A1 profile. Its [three-plate guide](../Dara-A1-Companion/README.md) maps the parts. Skip **18, 19, 20** in this complete A2L project when printing those on the A1; print **A2L plates 1–17**. All five M cores and all three veneers stay on the A2L.
 
 ## Fit and finish
 
@@ -29,13 +29,13 @@ The M has flat front/back structural bodies and flat veneer backs, with a 0.20 m
 
 All three veneers share **the entire same rotation**: a 55-degree lean, with all artwork turned 90 degrees together within that plane. Their show planes contain bed Y, and assembly Y rises in printer Z. This permits whole sweeps within the A2L's height. **Do not auto-orient or rotate individual veneers.** Knot top-fill directions are compensated for each saved XY rotation to match the assembled 135-degree direction.
 
-Each veneer has separate grounded starter ribs, sacrificial solid fins, 1.2 mm cut necks in 0.4 mm rear recesses, diagonal bracing, a connected bed frame and a perimeter guard. Native trees supplement these. Fin bodies leave 3 mm of rear cutting access. Allocation uses a 0.75 mm rear-area grid, maximum distance to actual bonds, area per bond and tributary width. There are **12 / 9 / 13 broad fins** on V1/V2/V3, plus the separate starter ribs; tall ribs are included in the bracing checks. Population reduction never overrides coverage. These are geometric screening criteria, not measured silk-PLA strength limits.
+Each veneer has separate grounded starter ribs, sacrificial solid fins, 1.2 mm cut necks in 0.4 mm rear recesses, diagonal bracing, a connected bed frame and a perimeter guard. Native trees supplement these. Fin bodies leave 3 mm of rear cutting access. Allocation uses a 0.75 mm rear-area grid, maximum distance to actual bonds, area per bond and tributary width. There are **16 / 16 / 5 broad fins** on V1/V2/V3, plus the separate starter ribs; tall ribs are included in the bracing checks. Population reduction never overrides coverage. These are geometric screening criteria, not measured silk-PLA strength limits.
 
-Remove ordinary trees, cradle the hammered face, and cut the 1.2 mm necks individually through their rear recesses. Remove fin stock, starter ribs, braces and the perimeter guard progressively. Cut flush with the surrounding rear lands, then sand the bonding back flat on the granite plate; preserve stops, pockets, seam edges and front texture. No carrier flange belongs in the finished piece. Dry-fit all four cores and all three veneers before adhesive.
+Remove ordinary trees, cradle the hammered face, and cut the 1.2 mm necks individually through their rear recesses. Remove fin stock, starter ribs, braces and the perimeter guard progressively. Cut flush with the surrounding rear lands, then sand the bonding back flat on the granite plate; preserve stops, pockets, seam edges and front texture. No carrier flange belongs in the finished piece. Dry-fit all five cores and all three veneers before adhesive.
 
 ## Mounting and assembly
 
-Use this release's knot and M together: attachment sites have been coordinated with the new lap and core-key locations. There are ten M screws and **two locating pins per new core** (eight total), with matching round/axially relieved holes. Each moved wall block retains its matching key pattern, but its center on the artwork has moved. Photo pilots are kept out of lap regions. Backers and universal retainers retain their existing geometry.
+Use this release's knot and M together: attachment sites have been coordinated with the new lap and core-key locations. The ten M screws and eight frame pins retain their positions. Round datum and relieved bore roles are assigned within each new core; keyed joints and the continuous veneer also locate the two small lower cores. Each moved wall block retains its matching key pattern, but its center on the artwork has moved. Photo pilots are kept out of lap regions. Backers and universal retainers retain their existing geometry.
 
 Knot tongue-first glue order: **F9 → F8 → F10 → F7 → F2 → F5 → F4 → F3 → F1 → F6**. Lower sockets onto earlier tongues; dry-fit the whole sequence before glue. Bond the core keys on a flat reference, fit the veneers, then mount the assembled M on its pins and rear screws. Check screwdriver access and photo hardware before final bonding. Use the previously tested adhesive process and light clamping with soft cauls and release film.
 

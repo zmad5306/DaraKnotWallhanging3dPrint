@@ -7,7 +7,8 @@ def publish(native,reopen):
  m=json.loads((OUT/'modifier-validation.json').read_text())
  n=json.loads((OUT/'native-validation.json').read_text());g=json.loads((OUT/'geometry-validation.json').read_text());r=json.loads((reopen/'result.json').read_text())
  assert n['native_return_code']==r['return_code']==0
- from audit_a2l_release import verify_gui_evidence
+ from audit_a2l_release import verify_gui_evidence,verify_M_layout
+ verify_M_layout()
  gui_status=verify_gui_evidence(sha(native/'sliced.3mf'),n)
  assert all(p['prime_tower_clearance']['actual_tower_to_other_extrusion_clearance_mm']>3 for p in n['plates'][:10])
  assert sha(EDIT)==n['editable_sha256']==g['editable_sha256']
@@ -33,7 +34,7 @@ def publish(native,reopen):
  evidence=[OUT/x for x in ['production-plan.json','plate-plan.json','frame-geometry-validation.json','M-geometry-validation.json','geometry-validation.json','native-validation.json','profile-provenance.json','modifier-validation.json','tower-placement.json','tower-fix-preservation.json','tower-gui-verification.json','tower-GUI-position-reset.json','knot-volume-toolpath-comparison.json']]
  evidence += [ROOT/'scripts'/x for x in ['build_a2l_project.py','validate_a2l_project.py','publish_a2l_project.py','development_3mf.py','develop_m_veneer.py','develop_cosmetic_joints.py','veneer_fin_carrier.py','plan_veneer_fins.py','check_fin_toolpaths.py','audit_a2l_release.py','create_a2l_print_guide.py','audit_dara_release.py','check_a2l_towers.py','check_knot_volume_partitions.py']]
  evidence += [ROOT/'scripts'/x for x in ['veneer_trim_carrier.py','refresh_production_veneers.py','audit_all_veneers.py']]
- evidence += [OUT/'veneer-carrier-update.json',OUT/'veneer-unchanged-plates.json']
+ evidence += [OUT/'tower-baseline-carrier-preservation.json',OUT/'veneer-carrier-update.json',OUT/'veneer-unchanged-plates.json',OUT/'M-joint-layout-validation.json',ROOT/'working/review/a2l-m-joints/staggered-layout.json',ROOT/'scripts/repartition_a2l_M.py',ROOT/'scripts/preview_a2l_M_layout.py',ROOT/'working/review/a2l-m-joints/M-staggered-seam-layout.png']
  inventory=ROOT/'output/development/m-veneer-cosmetic-fit/All-veneer-production-audit.json'
  if inventory.exists():
   audit=json.loads(inventory.read_text());assert audit['all_saved_projects_match_corrected_geometry']
@@ -42,7 +43,7 @@ def publish(native,reopen):
  evidence += [ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad',ROOT/'working/review/a2l-hidden-joints/lean-candidate.json',ROOT/'working/review/a2l-m-joints/evaluation.json',EDIT]
  if (ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf').exists():evidence.append(ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf')
  report=dict(project_sha256=sha(FINAL),editable_sha256=sha(EDIT),native_reopen_return_code=r['return_code'],native_reopen_result=r,
-    GUI_verification=gui_status,plates=20,assembly_pieces=61,printer='Bambu Lab A2L 0.4 nozzle',structural_infill='8% gyroid',veneer_infill='100%',
+    GUI_verification=gui_status,plates=20,assembly_pieces=len(n['native_roundtrip']),printer='Bambu Lab A2L 0.4 nozzle',structural_infill='8% gyroid',veneer_infill='100%',
     plate_estimates=[dict(plate=p['plate'],seconds=p['seconds'],weight_g=p['weight_g']) for p in n['plates']],
     evidence_sha256={str(p.relative_to(ROOT)):sha(p) for p in evidence},physical_confirmation_pending=True,
     retained_A1_complete_sha256=sha(ROOT/'working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf'),

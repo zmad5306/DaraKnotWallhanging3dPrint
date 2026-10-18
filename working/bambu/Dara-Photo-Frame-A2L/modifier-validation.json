@@ -1,6 +1,6 @@
 {
-  "editable_sha256": "68a25a57d7128f6ae666b31f8b36a244ed7ab66b1d620a875fe93f11948257cb",
-  "native_project_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
+  "editable_sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
+  "native_project_sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
   "objects": [
     {
       "name": "F1 A2L knot",
@@ -54,23 +54,28 @@
     },
     {
       "name": "C1 A2L flat M core",
-      "modifier_vertices_checked": 384,
-      "max_native_modifier_error_mm": 3.920666881659329e-06
+      "modifier_vertices_checked": 512,
+      "max_native_modifier_error_mm": 1.5216354592673703e-05
     },
     {
       "name": "C2 A2L flat M core",
       "modifier_vertices_checked": 384,
-      "max_native_modifier_error_mm": 1.52686644466595e-05
+      "max_native_modifier_error_mm": 2.2176275610303164e-05
     },
     {
       "name": "C3 A2L flat M core",
-      "modifier_vertices_checked": 256,
-      "max_native_modifier_error_mm": 1.962339502125488e-05
+      "modifier_vertices_checked": 128,
+      "max_native_modifier_error_mm": 3.796611014754852e-06
     },
     {
       "name": "C4 A2L flat M core",
-      "modifier_vertices_checked": 256,
-      "max_native_modifier_error_mm": 2.1533797938193302e-05
+      "modifier_vertices_checked": 128,
+      "max_native_modifier_error_mm": 7.698169494615024e-06
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "modifier_vertices_checked": 128,
+      "max_native_modifier_error_mm": 7.770483459131966e-06
     },
     {
       "name": "B1 A2L wall block",

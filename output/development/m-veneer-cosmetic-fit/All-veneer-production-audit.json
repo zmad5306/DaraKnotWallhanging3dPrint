@@ -5,26 +5,26 @@
     {
       "family": "A2L",
       "veneer": 1,
-      "cut_necks": 237,
+      "cut_necks": 279,
       "no_continuous_shoe": true,
       "maximum_cutter_obstruction_mm3": 0.0,
-      "flush_trim_excess_mm3": 3.027856773483217e-09
+      "flush_trim_excess_mm3": 4.426652986841114e-09
     },
     {
       "family": "A2L",
       "veneer": 2,
-      "cut_necks": 244,
+      "cut_necks": 274,
       "no_continuous_shoe": true,
       "maximum_cutter_obstruction_mm3": 0.0,
-      "flush_trim_excess_mm3": 1.2522062072797084e-09
+      "flush_trim_excess_mm3": 2.9043864490108966e-09
     },
     {
       "family": "A2L",
       "veneer": 3,
-      "cut_necks": 239,
+      "cut_necks": 168,
       "no_continuous_shoe": true,
       "maximum_cutter_obstruction_mm3": 0.0,
-      "flush_trim_excess_mm3": 2.4735533208918756e-09
+      "flush_trim_excess_mm3": 3.943066309230913e-09
     },
     {
       "family": "A1",
@@ -79,49 +79,49 @@
   "projects": [
     {
       "project": "Dara.3mf",
-      "sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
+      "sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
       "veneers": [
         {
           "name": "V1 A2L hammered veneer and sacrificial fins",
           "plate": 15,
-          "corrected_geometry_maximum_error_mm": 1.7996000059973895e-05
+          "corrected_geometry_maximum_error_mm": 2.162975291328974e-05
         },
         {
           "name": "V2 A2L hammered veneer and sacrificial fins",
           "plate": 16,
-          "corrected_geometry_maximum_error_mm": 2.1380629355044793e-05
+          "corrected_geometry_maximum_error_mm": 2.126959383226628e-05
         },
         {
           "name": "V3 A2L hammered veneer and sacrificial fins",
           "plate": 17,
-          "corrected_geometry_maximum_error_mm": 1.815732948946846e-05
+          "corrected_geometry_maximum_error_mm": 1.6133671264401035e-05
         }
       ]
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf",
-      "sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
+      "sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
       "veneers": [
         {
           "name": "V1 A2L hammered veneer and sacrificial fins",
           "plate": 15,
-          "corrected_geometry_maximum_error_mm": 1.7996000059973895e-05
+          "corrected_geometry_maximum_error_mm": 2.162975291328974e-05
         },
         {
           "name": "V2 A2L hammered veneer and sacrificial fins",
           "plate": 16,
-          "corrected_geometry_maximum_error_mm": 2.1380629355044793e-05
+          "corrected_geometry_maximum_error_mm": 2.126959383226628e-05
         },
         {
           "name": "V3 A2L hammered veneer and sacrificial fins",
           "plate": 17,
-          "corrected_geometry_maximum_error_mm": 1.815732948946846e-05
+          "corrected_geometry_maximum_error_mm": 1.6133671264401035e-05
         }
       ]
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf",
-      "sha256": "68a25a57d7128f6ae666b31f8b36a244ed7ab66b1d620a875fe93f11948257cb",
+      "sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
       "veneers": [
         {
           "name": "V1 A2L hammered veneer and sacrificial fins",

@@ -52,7 +52,7 @@ def line(center, angle, half=140):
     return LineString([c-half*t, c+half*t])
 
 
-def keyed_cores(parts, outline):
+def keyed_cores(parts, outline, minimum_head_wall=3, hardware_exclusion=None):
     """Retain 18 mm mushroom geometry, .15 socket relief and >=3 mm head wall.
 
     Check both tongue directions, including real key extents in the bed fit.
@@ -73,7 +73,9 @@ def keyed_cores(parts, outline):
                 neck = affinity.translate(affinity.rotate(box(-.5,-3.5,12,3.5),
                     math.degrees(math.atan2(nn[1],nn[0])),origin=(0,0)),*q)
                 key = head.union(neck)
-                if not outline.buffer(-3).covers(head) or not outline.covers(key):
+                if not outline.buffer(-minimum_head_wall).covers(head) or not outline.covers(key):
+                    continue
+                if hardware_exclusion is not None and key.buffer(.2).intersects(hardware_exclusion):
                     continue
                 available.append((f, q, key))
             if not available:
@@ -91,7 +93,7 @@ def keyed_cores(parts, outline):
             keys = union_all([q[2] for q in selected])
             choices.append(dict(donor=donor, receiver=receiver, keys=keys,
                 centers=[q[1].tolist() for q in selected], length=seam.length))
-        assert choices, ('No complete key with a 3 mm outer wall',i,j)
+        assert choices, ('No complete key with the required outer wall',i,j,minimum_head_wall)
         options.append(choices)
     results = []
     for choices in itertools.product(*options):
@@ -199,10 +201,18 @@ def main():
     vp=partition(outline,[line([-125,150],90,100),line([125,150],90,100)],3)
     vfits=[veneer_allowance(g,rotation) for g in vp]
     assert all(f['utilization'] <= 1 for f in vfits)
+    approved=ROOT/'working/bambu/Dara-Photo-Frame-A2L/production-plan.json'
+    current=json.loads(approved.read_text()) if approved.exists() else {}
+    if current.get('M_layout_revision')=='staggered-wide-fork-v1':
+        spec=OUT/'staggered-layout.json'
+        assert current['M_layout_specification_sha256']==hashlib.sha256(spec.read_bytes()).hexdigest()
+        cp=[shape(g) for g in current['core_regions']];envelopes=[shape(g) for g in current['core_footprints']]
+        cfits=current['core_fits'];keys=current['core_keys'];vp=[shape(g) for g in current['skin_regions']]
+        vfits=[veneer_allowance(g,rotation) for g in vp]
     csummary=summary(cp,cfits)
     for row,g in zip(csummary['parts'],envelopes):row['keyed_footprint']=mapping(g)
     csummary['keys']=[{k:v for k,v in item.items() if k!='keys'} for item in keys]
-    csummary['key_dimensions_mm']=dict(depth=18,head_radius=6,neck_width=7,socket_relief=.15,minimum_head_outer_wall=3)
+    csummary['key_dimensions_mm']=dict(depth=18,head_radius=6,neck_width=7,socket_relief=.15,minimum_head_outer_wall=10 if current.get('M_layout_revision') else 3)
     # Flag, rather than silently relocate, the original mounting hardware.
     cseams=union_all([l for i,j,l in planar.shared_seams(cp)])
     vseams=union_all([l for i,j,l in planar.shared_seams(vp)])
@@ -219,7 +229,7 @@ def main():
         data=json.loads(path.read_text())
         profiles[machine]=dict(path=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
             printable_area=data.get('printable_area','inherited'),printable_height=data['printable_height'],bed_exclude_area=data['bed_exclude_area'])
-    result=dict(status='GEOMETRY STUDY — not a production print project',
+    result=dict(M_layout_revision=current.get('M_layout_revision'),status='GEOMETRY STUDY — not a production print project',
         seam_length_basis='Front-view XY projection, not textured 3D surface arc length',
         cad_sha256=hashlib.sha256(CAD.read_bytes()).hexdigest(),
         baseline_geometry_sha256=hashlib.sha256(PLAN.read_bytes()).hexdigest(),
@@ -237,7 +247,7 @@ def main():
         search_scope='Fresh straight cross-stroke cuts in the continuous outline; candidate counts, not a proof of global optimality.')
     assert np.allclose(rotation[:,2],common_m_rotation()[:,2])
     assert abs(rotation[1,2])<1e-12  # Face plane still contains bed Y.
-    assert result['a2l']['core']['joints']==3 and result['a2l']['veneer']['joints']==2
+    assert result['a2l']['core']['joints']==(4 if current.get('M_layout_revision') else 3) and result['a2l']['veneer']['joints']==2
     (OUT/'evaluation.json').write_text(json.dumps(result,indent=2)+'\n')
     draw(result)
     print(json.dumps(dict(core_fits=cfits,veneer_fits=vfits,

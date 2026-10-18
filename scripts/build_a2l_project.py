@@ -124,7 +124,9 @@ def plan():
         core_seams=ms['a2l']['core']['seams'],core_keys=ms['a2l']['core']['keys'],skin_regions=[mapping(p) for p in vp],skin_seams=ms['a2l']['veneer']['seams'],
         veneer_rotation=ms['a2l_veneer_rotation'],screw_mounts=screws,dowel_mounts=pins,wall_mounts=walls,
         photo_anchors_mm=anchors.tolist(),photo_normals=normals.tolist(),hardware_moves=moves,band_free_M_visibility=visibility,
-        counts=dict(knot_sections=10,knot_joints=14,fully_hidden_knot_joints=6,partly_covered_knot_joints=2,fully_exposed_knot_joints=6,M_cores=4,M_core_joints=3,M_veneers=3,visible_M_seams=2))
+        core_plate_groups=([[1],[2],[3],[4,5]] if len(cr)==5 else [[i+1] for i in range(len(cr))]),
+        M_layout_revision=ms.get('M_layout_revision'),
+        counts=dict(knot_sections=10,knot_joints=14,fully_hidden_knot_joints=6,partly_covered_knot_joints=2,fully_exposed_knot_joints=6,M_cores=len(cr),M_core_joints=len(ms['a2l']['core']['seams']),M_veneers=3,visible_M_seams=2))
     save(PLAN,result);print('A2L plan: coordinated mounts; 10 frame, 4 core, 3 veneer parts',flush=True)
 
 def prism(g,bottom,top):
@@ -233,7 +235,7 @@ def build_M():
         rg=affinity.rotate(region,90,origin=(0,0));ex=union_all([Point(a['xy_mm']).buffer(7) for a in records[i]['anchors']]).union(hardware)
         ex=affinity.rotate(ex,90,origin=(0,0));toolpose=pose.copy();toolpose[:3,:3]=rot
         carried,evidence=fin_carrier(local,rg,skin_bottom,toolpose,ex,height_mesh,bed=(330,320),height=325,force_guard=True)
-        # Independent finer sampling of the actual generated contact allocation.
+        # Independent audit of the actual generated contact allocation.
         oldsample=planner.SAMPLE;planner.SAMPLE=.75
         xy,weights,allowance=planner.area_samples(rg)
         rows=[dict(contacts=np.array(r['contacts_xy_mm'])) for r in evidence['fins']]
@@ -319,6 +321,9 @@ def n9_knot_volumes(m,T):
         same_material_volumes_in_one_object=True,no_new_physical_joints=True)
 
 def package():
+    if load_plan().get('M_layout_revision') and EDIT.exists():
+        from repartition_a2l_M import package_M
+        return package_M()
     p=load_plan();mp=json.loads((OUT/'M-geometry-validation.json').read_text());plates=[];tower_rows=[]
     anchors=(np.array(p['photo_anchors_mm'])+np.array(p['photo_normals'])*9.5).reshape(-1,2)
     for i in range(10):
@@ -334,11 +339,8 @@ def package():
                 for x in w[5]:parts.append(reinforcement(np.array(w[1])+[x,w[4]]))
         plates.append([dict(name=f'F{i+1} A2L knot',parts=parts,transform=T,
             settings=dict(extruder='1',enable_support='1',infill_direction=str((45+yaw)%180),brim_width='1'))])
-    for i in range(4):
-        m=cached(f'C{i+1}');f=p['core_fits'][i];yaw=f.get('rotation_deg',f.get('angle_deg'));parts=[dict(mesh=m)]
-        for ci,fi,xy in p['screw_mounts']:
-            if ci==i:parts.append(reinforcement(xy))
-        plates.append([dict(name=f'C{i+1} A2L flat M core',parts=parts,transform=centered(m,z_rotation(yaw),xy=(165,160)),settings=dict(extruder='3',enable_support='0',brim_width='1'))])
+    from repartition_a2l_M import core_plates
+    plates.extend(core_plates(p))
     for i in range(3):
         plates.append([dict(name=f'V{i+1} A2L hammered veneer and sacrificial fins',parts=[dict(mesh=cached(f'V{i+1}'))],transform=np.eye(4),block_front=True,front_normal=np.array(p['veneer_rotation'])[:,2],
             settings=dict(extruder='3',enable_support='1',sparse_infill_density='100%',brim_width='0',tree_support_branch_angle='30',support_critical_regions_only='0',

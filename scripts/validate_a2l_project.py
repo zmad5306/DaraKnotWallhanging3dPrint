@@ -27,7 +27,7 @@ def embedded(path):
 
 
 def geometry():
-    p=load_plan();frames=[solid(cached(f'F{i}')) for i in range(1,11)];cores=[solid(cached(f'C{i}')) for i in range(1,5)]
+    p=load_plan();frames=[solid(cached(f'F{i}')) for i in range(1,11)];cores=[solid(cached(f'C{i}')) for i in range(1,len(p['core_regions'])+1)]
     veneers=[solid(cached(f'V{i}-raw')) for i in range(1,4)]
     pairs=[]
     for label,objects in [('frame',frames),('core',cores),('veneer',veneers)]:

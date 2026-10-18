@@ -1,15 +1,18 @@
 {
   "revision": "clean-trim-production-v2",
-  "changed_child_assets": [
-    "3D/Objects/2400.model",
-    "3D/Objects/2500.model",
-    "3D/Objects/2600.model"
-  ],
-  "only_veneer_children_and_face_counts_changed": true,
-  "saved_poses_materials_and_other_geometry_preserved": true,
-  "editable_sha256": "68a25a57d7128f6ae666b31f8b36a244ed7ab66b1d620a875fe93f11948257cb",
+  "M_layout_revision": "staggered-wide-fork-v1",
+  "editable_sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
   "all_veneers_checked": 3,
-  "physical_confirmation_pending": true,
-  "support_guard_inset_mm": 1.5,
-  "all_other_zip_entries_byte_identical_to_previous_editable": true
+  "frame_and_accessory_inputs_preserved": true,
+  "common_veneer_rotation_preserved": true,
+  "changed_plates": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "physical_confirmation_pending": true
 }

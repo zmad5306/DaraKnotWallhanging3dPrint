@@ -9,7 +9,17 @@
   "printer_commands_sent": false,
   "forced_Y160_layout_in_GUI": true,
   "current_project_fresh_GUI_review_pending": true,
-  "current_fresh_GUI_review_blocker": "Mac locked; computer-use tool cannot inspect Studio. Prior observed GUI result refers only to GUI_tested_file_sha256.",
-  "current_native_project_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
-  "unchanged_plate_proof_sha256": "5c7c47468b93d474a07948e8f84a56ff0ac8de5effde528811894be7351560fd"
+  "current_fresh_GUI_review_blocker": "Mac locked during M-layout revision; fresh Studio inspection unavailable. Native reopen and tower geometry/startup checks are verified separately.",
+  "current_native_project_sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
+  "unchanged_plate_proof_sha256": "58c19eae353bea2cd2f17ea64dcc0530e5674bbc1e592de90d158f3d1499f5f8",
+  "inherited_unchanged_plate_proofs": [
+    {
+      "path": "veneer-unchanged-plates.json",
+      "sha256": "58c19eae353bea2cd2f17ea64dcc0530e5674bbc1e592de90d158f3d1499f5f8"
+    },
+    {
+      "path": "tower-baseline-carrier-preservation.json",
+      "sha256": "5c7c47468b93d474a07948e8f84a56ff0ac8de5effde528811894be7351560fd"
+    }
+  ]
 }

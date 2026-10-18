@@ -1,6 +1,6 @@
 {
-  "editable_sha256": "68a25a57d7128f6ae666b31f8b36a244ed7ab66b1d620a875fe93f11948257cb",
-  "production_plan_sha256": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
+  "editable_sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
+  "production_plan_sha256": "cc037ece963d1f531e9f9f2d4b69d3ef5bd70d7183950097442e725dfad02001",
   "part_overlaps": [
     {
       "family": "frame",
@@ -368,7 +368,7 @@
         1,
         2
       ],
-      "overlap_mm3": 3.8657358779282385e-06
+      "overlap_mm3": 1.1989951698198953e-05
     },
     {
       "family": "core",
@@ -376,7 +376,7 @@
         1,
         3
       ],
-      "overlap_mm3": 2.2903574037306797e-06
+      "overlap_mm3": 0.0
     },
     {
       "family": "core",
@@ -411,6 +411,38 @@
       "overlap_mm3": 0.0
     },
     {
+      "family": "core",
+      "parts": [
+        1,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        2,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        3,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        4,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
       "family": "veneer",
       "parts": [
         1,
@@ -424,7 +456,7 @@
         1,
         3
       ],
-      "overlap_mm3": 0.0
+      "overlap_mm3": 4.6629367034256575e-15
     },
     {
       "family": "veneer",
@@ -432,7 +464,7 @@
         2,
         3
       ],
-      "overlap_mm3": 0.0
+      "overlap_mm3": 8.104628079763643e-15
     }
   ],
   "actual_knot_cosmetic_closure": [
@@ -936,7 +968,7 @@
     },
     {
       "screw": 2,
-      "core": 2,
+      "core": 1,
       "knot": 2,
       "pilot_annulus_missing_mm3": 0.0
     },
@@ -948,43 +980,43 @@
     },
     {
       "screw": 4,
-      "core": 3,
+      "core": 2,
       "knot": 5,
       "pilot_annulus_missing_mm3": 0.0
     },
     {
       "screw": 5,
-      "core": 3,
+      "core": 2,
       "knot": 6,
       "pilot_annulus_missing_mm3": 0.0
     },
     {
       "screw": 6,
-      "core": 2,
-      "knot": 1,
-      "pilot_annulus_missing_mm3": 0.0
-    },
-    {
-      "screw": 7,
-      "core": 2,
-      "knot": 10,
-      "pilot_annulus_missing_mm3": 0.0
-    },
-    {
-      "screw": 8,
       "core": 1,
       "knot": 1,
       "pilot_annulus_missing_mm3": 0.0
     },
     {
-      "screw": 9,
+      "screw": 7,
       "core": 4,
+      "knot": 10,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 8,
+      "core": 3,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 9,
+      "core": 2,
       "knot": 6,
       "pilot_annulus_missing_mm3": 0.0
     },
     {
       "screw": 10,
-      "core": 4,
+      "core": 5,
       "knot": 7,
       "pilot_annulus_missing_mm3": 0.0
     }
@@ -992,18 +1024,18 @@
   "hammered_front_preservation": [
     {
       "veneer": 1,
-      "front_vertices_checked": 114567,
-      "max_front_error_mm": 8.526512829121202e-14
+      "front_vertices_checked": 127934,
+      "max_front_error_mm": 8.180889878182607e-14
     },
     {
       "veneer": 2,
-      "front_vertices_checked": 113632,
-      "max_front_error_mm": 9.237055564881302e-14
+      "front_vertices_checked": 119311,
+      "max_front_error_mm": 9.106319693313691e-14
     },
     {
       "veneer": 3,
-      "front_vertices_checked": 106757,
-      "max_front_error_mm": 1.0150134689838562e-13
+      "front_vertices_checked": 88239,
+      "max_front_error_mm": 7.553172887309252e-14
     }
   ],
   "print_bounds": [
@@ -1172,13 +1204,13 @@
       "plate": 11,
       "bounds_mm": [
         [
-          2.360100063934482,
-          2.3490602629945556,
+          13.141536197255903,
+          12.7997718509842,
           0.0
         ],
         [
-          327.6398999369138,
-          317.65093973577905,
+          316.8584638031752,
+          307.20022814817185,
           9.0
         ]
       ]
@@ -1188,13 +1220,13 @@
       "plate": 12,
       "bounds_mm": [
         [
-          11.91196336524564,
-          11.607915537329234,
+          28.193450780377134,
+          27.389970033372293,
           0.0
         ],
         [
-          318.0880366345724,
-          308.3920844621653,
+          301.8065492183812,
+          292.61002996595835,
           9.0
         ]
       ]
@@ -1204,13 +1236,13 @@
       "plate": 13,
       "bounds_mm": [
         [
-          39.001481024845305,
-          37.866468976684615,
+          64.93903375571347,
+          63.00838790266533,
           0.0
         ],
         [
-          290.99851898334657,
-          282.1335310240138,
+          265.06096624332747,
+          256.99161209844726,
           9.0
         ]
       ]
@@ -1220,13 +1252,29 @@
       "plate": 14,
       "bounds_mm": [
         [
-          71.96017903615558,
-          69.81416260687796,
+          12.632250000000095,
+          69.59690919899998,
           0.0
         ],
         [
-          258.0398209592488,
-          250.18583739281866,
+          169.9999999960001,
+          250.40309080099996,
+          8.6
+        ]
+      ]
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "plate": 14,
+      "bounds_mm": [
+        [
+          178.0,
+          69.32951429799996,
+          0.0
+        ],
+        [
+          317.367749996,
+          250.67048570099996,
           9.0
         ]
       ]
@@ -1243,7 +1291,7 @@
         [
           328.5,
           318.5,
-          297.338513889
+          297.348713413
         ]
       ]
     },
@@ -1275,7 +1323,7 @@
         [
           328.5,
           318.5,
-          297.348713413
+          258.991509363
         ]
       ]
     },

@@ -39,32 +39,34 @@ def preserve(baseline,target,plates,native_dir=None,baseline_result=None,baselin
         op,np_=oc.findall('plate')[number-1],nc.findall('plate')[number-1]
         assert props(op)['plater_name']==props(np_)['plater_name']
         oi,ni=op.findall('model_instance'),np_.findall('model_instance')
-        assert [props(i) for i in oi]==[props(i) for i in ni]
-        names=[]
-        for instance in oi:
-            oid=props(instance)['object_id']
-            old_parts,old_obj=read_object(old,oid);new_parts,new_obj=read_object(new,oid)
+        assert [{k:v for k,v in props(i).items() if k!='object_id'} for i in oi]==[{k:v for k,v in props(i).items() if k!='object_id'} for i in ni]
+        names=[];id_map={}
+        for instance,new_instance in zip(oi,ni):
+            oid=props(instance)['object_id'];new_oid=props(new_instance)['object_id'];id_map[oid]=new_oid
+            old_parts,old_obj=read_object(old,oid);new_parts,new_obj=read_object(new,new_oid)
             assert old_obj==new_obj,(oid,'Object settings changed')
             assert len(old_parts)==len(new_parts)
             for a,b in zip(old_parts,new_parts):
-                assert a['subtype']==b['subtype'] and a['settings']==b['settings'],(oid,'Part settings changed')
+                # Source object indices are provenance IDs, renumbered when
+                # Studio flattens the additional core. They are not settings.
+                clean=lambda values:{k:v for k,v in values.items() if k!='source_object_id'}
+                assert a['subtype']==b['subtype'] and clean(a['settings'])==clean(b['settings']),(oid,'Part settings changed')
                 assert np.array_equal(a['mesh'].faces,b['mesh'].faces),(oid,'Mesh topology changed')
                 assert np.allclose(a['mesh'].vertices,b['mesh'].vertices,atol=1e-9,rtol=0),(oid,'Mesh changed')
-            old_top=ore.find(f"{tag('object')}[@id='{oid}']");new_top=nre.find(f"{tag('object')}[@id='{oid}']")
-            old_item=ob.find(f"{tag('item')}[@objectid='{oid}']");new_item=nb.find(f"{tag('item')}[@objectid='{oid}']")
+            old_item=ob.find(f"{tag('item')}[@objectid='{oid}']");new_item=nb.find(f"{tag('item')}[@objectid='{new_oid}']")
             assert np.allclose(transform(old_item.get('transform')),transform(new_item.get('transform')),atol=1e-9,rtol=0),(oid,'Pose changed')
-            old_paths={c.get('{'+P+'}path') for c in old_top.find(tag('components'))}
-            new_paths={c.get('{'+P+'}path') for c in new_top.find(tag('components'))}
-            assert old_paths==new_paths,(oid,'Child resource paths changed')
-            for path in old_paths:new[path.lstrip('/')]=old[path.lstrip('/')]
-            replace(nre,new_top,old_top);replace(nb,new_item,old_item)
-            replace(nc,nc.find(f"object[@id='{oid}']"),oc.find(f"object[@id='{oid}']"))
+            # Studio renumbers native resource IDs after adding an object.
+            # Retain its current, internally consistent mesh graph after the
+            # exact mesh/process checks above; remap only saved plate references.
             names.append(old_obj['name'])
-        replace(nc,np_,op)
+        retained_plate=copy.deepcopy(op)
+        for instance in retained_plate.findall('model_instance'):
+            md=instance.find("metadata[@key='object_id']");md.set('value',id_map[md.get('value')])
+        replace(nc,np_,retained_plate)
         asset_pattern=rf'Metadata/(?:(?:plate_{number}(?:_small)?\.(?:png|json|gcode(?:\.md5)?))|(?:plate_no_light|top|pick)_{number}\.png)'
         assets={name:data for name,data in old.items() if re.fullmatch(asset_pattern,name)}
         new.update(assets)
-        row=dict(plate=number,objects=names,geometry_settings_and_poses_unchanged=True,
+        row=dict(plate=number,objects=names,geometry_settings_and_poses_unchanged=True,native_resource_id_mapping=id_map,
                  preserved_assets_sha256={name:hashlib.sha256(data).hexdigest() for name,data in assets.items()})
         if native_dir is not None:
             gcode=f'Metadata/plate_{number}.gcode';assert gcode in assets

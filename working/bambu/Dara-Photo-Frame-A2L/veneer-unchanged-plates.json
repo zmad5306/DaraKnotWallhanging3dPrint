@@ -1,7 +1,7 @@
 {
-  "baseline_project_sha256": "fc18ae3a9a95adacd967583e0105d0612105b4bea3db45ef3aba493674815455",
-  "retained_from_commit": "d69f7db34716b504b86c206bf7b63ae126ae5711",
-  "project_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
+  "baseline_project_sha256": "bf413892cda60a9578e86cc9f194c8fba787a92f6125a8379a2e9f6ce64956d5",
+  "retained_from_commit": "9d9eda7689387d5bed0a909ee6b9f4fe9959a80d",
+  "project_sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
   "plates": [
     {
       "plate": 1,
@@ -9,6 +9,9 @@
         "F1 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "10": "10"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_1.png": "0a8a329929a9fcadcc1bc3f0443c1228c7550135ac7823a691169c3ab9b2b37f",
         "Metadata/plate_1_small.png": "49cb4aeddd6f0f6424539f5d524cad9d78df200c1fa0643f4c447f5e3fdad2e0",
@@ -27,6 +30,9 @@
         "F2 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "22": "22"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_2.png": "c6762e2f38e328d12cd9dc872113eb50d221db7f69351140b4c962eaede64bf4",
         "Metadata/plate_2_small.png": "8f8cbc961cc0804c0c95f7a2a366fcfa90e09fdecb13b743e76caa39ad17255b",
@@ -45,6 +51,9 @@
         "F3 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "35": "35"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_3.png": "e8c5aa755dc0256943db026e310d3fba7605c5632e5e66e83c6aff9e9a2e3b63",
         "Metadata/plate_3_small.png": "d1fe85d9ce390a9a8387836eac58e810f665b40714be086ef05c4b31d80b78ce",
@@ -63,6 +72,9 @@
         "F4 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "48": "48"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_4.png": "0f68a8da12ddbcad453b2808d20cb82704db005196baf5e314a3636da16c67a4",
         "Metadata/plate_4_small.png": "34966b629799103a9940295a8617ade9c0d82bd624146d4f92135da61b90af0e",
@@ -81,6 +93,9 @@
         "F5 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "60": "60"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_5.png": "abb92a95e411fd61b714f8173378f7d54aadb533ae2f95c725f283c5584eb01c",
         "Metadata/plate_5_small.png": "ef3c539c50376101a24aa2631081aeae1f6c1c663fc0838d70aa640225b6405c",
@@ -99,6 +114,9 @@
         "F6 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "68": "68"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_6.png": "81c33c1231ff2c5f98bee981cbc995f557fcb929113ec922e6b2e77789424e90",
         "Metadata/plate_6_small.png": "42e6654b3a6151260913a4c38182757997a5c67b35040776aee3cb02d2b8ab87",
@@ -117,6 +135,9 @@
         "F7 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "80": "80"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_7.png": "2ab52022bf41eaa56f529eb2163826c5c1ed9fcae780f65513986f73d1097299",
         "Metadata/plate_7_small.png": "1f253519e897b98286f6d505862623b467b9e9315e1f2637c3ed3a0e3b69db36",
@@ -135,6 +156,9 @@
         "F8 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "93": "93"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_8.png": "583ee35931d3e944ef3a5db05fd816d1ee324e06f79dbb493b4b13e37a367742",
         "Metadata/plate_8_small.png": "d124b83c2a5ec5a0dc17050e83e4f584abe131612ce68258fc127249caf22dcc",
@@ -153,6 +177,9 @@
         "F9 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "107": "107"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_9.png": "dadaa3176d3792dd913a8cfe63a013d6d949b917f939802b6fc8b111c004f67c",
         "Metadata/plate_9_small.png": "e15d9a2459eca5a78a0e1ca4ef7785b9b9583273bcceae79c8a1ae911fb2a5e1",
@@ -171,6 +198,9 @@
         "F10 A2L knot"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "119": "119"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_10.png": "e3acc4a0cb328ffe6abd3ebcf2604336128891001a4723eff5ceede33dfca387",
         "Metadata/plate_10_small.png": "c6283b915e7a223d9d042eb685f6b0fc80ac45b5710176a1b475bdaae02d5e0a",
@@ -184,78 +214,6 @@
       "gcode_byte_identical": true
     },
     {
-      "plate": 11,
-      "objects": [
-        "C1 A2L flat M core"
-      ],
-      "geometry_settings_and_poses_unchanged": true,
-      "preserved_assets_sha256": {
-        "Metadata/plate_11.png": "04848a10d5b0ed6447f8056b2e8ef00fa7842b3ebdf01ef9f58acabbe7cd8bd8",
-        "Metadata/plate_11_small.png": "58de49e27a664eb41c6dccfeb05e1354801936dfc6f1032e4d52786c2412989d",
-        "Metadata/plate_no_light_11.png": "669676fc888f4a131ec2bd74c266bd3b46902873940aa2d833c2cc4683b26c21",
-        "Metadata/top_11.png": "25f60ef156e88ca0ee3f1d8569b1186ac23d2227d8257abc8e9c2e6dcc349c46",
-        "Metadata/pick_11.png": "773c84c0f8bda2cc462e34442f0793589860e03a5d05fa5bf5b5e74dcbeaf2f4",
-        "Metadata/plate_11.json": "4a25271a1f300374fcf564953a47568e7cbaa8c21e8fb4e10b30052a40021990",
-        "Metadata/plate_11.gcode.md5": "c899705f92a5ae29e6310dd4bb72af1b9ea26ebadf4dd66ee79193244e0b944a",
-        "Metadata/plate_11.gcode": "47d8921305dcc9882f8175afd58355087ed80b68b2498193407b58c158ae20bd"
-      },
-      "gcode_byte_identical": true
-    },
-    {
-      "plate": 12,
-      "objects": [
-        "C2 A2L flat M core"
-      ],
-      "geometry_settings_and_poses_unchanged": true,
-      "preserved_assets_sha256": {
-        "Metadata/plate_12.png": "a5386e4687c19ff4a286bdf44037f0cf248cdc0666608674c2fe6b93440b9abe",
-        "Metadata/plate_12_small.png": "9c25434804033879023ffd66a3b28f32bb1605d2fd1b4dd227475c9aef70cd31",
-        "Metadata/plate_no_light_12.png": "3dc3b1a6af377b11b8664aac9ec4e52433c6ccbd952dd249013cabcee74ba478",
-        "Metadata/top_12.png": "fe8b9794115c9f2c34fa12f1fb9e71ebd88a84b789cea6badd2aa8078d733ef6",
-        "Metadata/pick_12.png": "1c965e585d5d8b2729f73c6a212a7124a986f781b3598124bb20305992e8bde9",
-        "Metadata/plate_12.json": "2c152780bb9a948fb772ed1e3ee334d5ef6d6e57a54b6e45a689ebaa56abff52",
-        "Metadata/plate_12.gcode.md5": "fe6946c17ca784fd0a0d1dd13afb947d07b091bf0753bd6b77942b771e594594",
-        "Metadata/plate_12.gcode": "17d4255b1a7fc152356b8f9b8f52301b22dfced6d633fcb780d4359c37aadeab"
-      },
-      "gcode_byte_identical": true
-    },
-    {
-      "plate": 13,
-      "objects": [
-        "C3 A2L flat M core"
-      ],
-      "geometry_settings_and_poses_unchanged": true,
-      "preserved_assets_sha256": {
-        "Metadata/plate_13.png": "6c084d8fc0bd16e732667cfdc7618e8c32aae9eee7dc8395ff71318871efd9e1",
-        "Metadata/plate_13_small.png": "518347d93f63a86a00f9b00818957960489646d6e0cd2a6fb2c7a46f4bb4dffd",
-        "Metadata/plate_no_light_13.png": "9ea771cd4adbb76e439d120dcd9406941502a8fcd0538e03f52438df3a8e668d",
-        "Metadata/top_13.png": "811c2f9c39297497f08b80aadb0f3dc9e68d54372a18ea39760a912e027bf99d",
-        "Metadata/pick_13.png": "e506d61fdc98f793f3516d9b5ed63b4114fcd014d71a2a44b0eecafba399fc7a",
-        "Metadata/plate_13.json": "7086724b2200752ba7c1e9eae6d230bc4628989c5c488553a05ba2476c639470",
-        "Metadata/plate_13.gcode.md5": "1d673cc51bd6953071fb788cd7e9d139bca5d08de2fc898eb464cc3db6369fea",
-        "Metadata/plate_13.gcode": "2623aebaa93a3caa9c578ed31d18510c5c1bbfb0333c98a1fc472100786f45c6"
-      },
-      "gcode_byte_identical": true
-    },
-    {
-      "plate": 14,
-      "objects": [
-        "C4 A2L flat M core"
-      ],
-      "geometry_settings_and_poses_unchanged": true,
-      "preserved_assets_sha256": {
-        "Metadata/plate_14.png": "ddb15be33c13602e8ba36e7b36550545f394771693835ca284a6688082d97104",
-        "Metadata/plate_14_small.png": "e653bee894713f986a965442dad1968c0e76a8d3e261663ac378d49b21595fe2",
-        "Metadata/plate_no_light_14.png": "d9e597c0cc7354289c0e02d461a5b68eeedc326dd2a20e77a1f4bf661a77ea4b",
-        "Metadata/top_14.png": "56f56b5ac34b042b9f914e9c28e0ba135d2cc41834bb9ec15e67f7426d35ba23",
-        "Metadata/pick_14.png": "a64b45e2c9db0ae0827f7ab2c06ba643fd357391e1f568a8e6bf231bd2853298",
-        "Metadata/plate_14.json": "3d9587d925ed6ed8ac9b9643f19907245d2adbb25b5115239f2410e8f75aff9e",
-        "Metadata/plate_14.gcode.md5": "3be964e6460a78ec7fa7867f56ea5654b73583d258c69048c3e8fb1285b0ef00",
-        "Metadata/plate_14.gcode": "63b15abbb1ce8625f2231cfdf1ffbe2c24bc0b70c68d2b052798fdfe276ddb1a"
-      },
-      "gcode_byte_identical": true
-    },
-    {
       "plate": 18,
       "objects": [
         "Backer3",
@@ -264,6 +222,12 @@
         "Backer7"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "145": "121",
+        "147": "123",
+        "149": "125",
+        "151": "127"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_18.png": "c9b8430032510e1e25afe4b87268a969d8e0dbdc33323c4a6c537657e25b6b61",
         "Metadata/plate_18_small.png": "aa941619fdb68a00fb8e9e8de7e9aefd5cec7351339f73e79f198520e954de4d",
@@ -285,6 +249,12 @@
         "Backer8"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "153": "129",
+        "155": "131",
+        "157": "133",
+        "159": "135"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_19.png": "be005062a7c4f60fc9e9245998dbef17d312fb40d738ef60cebd76e9d0c5ff52",
         "Metadata/plate_19_small.png": "40661faa95c4d800f2f4267e635c626831b1b141030658b7374681a4781b0490",
@@ -338,6 +308,44 @@
         "R32 photo retainer"
       ],
       "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "164": "140",
+        "169": "145",
+        "174": "150",
+        "179": "155",
+        "182": "158",
+        "185": "161",
+        "188": "164",
+        "191": "167",
+        "194": "170",
+        "197": "173",
+        "200": "176",
+        "203": "179",
+        "206": "182",
+        "209": "185",
+        "212": "188",
+        "215": "191",
+        "218": "194",
+        "221": "197",
+        "224": "200",
+        "227": "203",
+        "230": "206",
+        "233": "209",
+        "236": "212",
+        "239": "215",
+        "242": "218",
+        "245": "221",
+        "248": "224",
+        "251": "227",
+        "254": "230",
+        "257": "233",
+        "260": "236",
+        "263": "239",
+        "266": "242",
+        "269": "245",
+        "272": "248",
+        "275": "251"
+      },
       "preserved_assets_sha256": {
         "Metadata/plate_20.png": "52074353c480da30ffa75b81b80daf5fe5136845d70cfcc5ff8a901d3f0861c7",
         "Metadata/plate_20_small.png": "395db25852bb6d700e39bffd2a4a81f03110657789c6caabcfb52a09060db1a1",

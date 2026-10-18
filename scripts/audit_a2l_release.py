@@ -17,18 +17,34 @@ def verify_gui_evidence(project_sha,native):
  # only when all tower-bearing inputs and saved slices are proven unchanged.
  assert gui.get('current_project_fresh_GUI_review_pending') is True
  assert gui['current_native_project_sha256']==project_sha
- path=OUT/'veneer-unchanged-plates.json';kept=json.loads(path.read_text())
- assert sha(path)==gui['unchanged_plate_proof_sha256']
- assert kept['baseline_project_sha256']==gui['GUI_tested_file_sha256']
- assert kept['project_sha256']==project_sha
- assert set(range(1,11))<=set(p['plate'] for p in kept['plates'])
- assert all(p['geometry_settings_and_poses_unchanged'] and p['gcode_byte_identical'] for p in kept['plates'])
+ proofs=gui.get('inherited_unchanged_plate_proofs',[dict(path='veneer-unchanged-plates.json',sha256=gui['unchanged_plate_proof_sha256'])])
+ expected=project_sha
+ for proof in proofs:
+  path=OUT/proof['path'];kept=json.loads(path.read_text());assert valid_hash(path,proof['sha256'])
+  assert kept['project_sha256']==expected
+  assert set(range(1,11))<=set(p['plate'] for p in kept['plates'])
+  assert all(p['geometry_settings_and_poses_unchanged'] and p['gcode_byte_identical'] for p in kept['plates'])
+  expected=kept['baseline_project_sha256']
+ assert expected==gui['GUI_tested_file_sha256']
  update=json.loads((OUT/'veneer-carrier-update.json').read_text())
- assert update['all_other_zip_entries_byte_identical_to_previous_editable']
- assert update['saved_poses_materials_and_other_geometry_preserved']
+ assert update.get('frame_and_accessory_inputs_preserved') or (update['all_other_zip_entries_byte_identical_to_previous_editable'] and update['saved_poses_materials_and_other_geometry_preserved'])
  assert all(not p['startup_prime_tower_check']['intersects_model'] for p in native['plates'])
  assert all(p['startup_prime_tower_check']['estimated_footprint_area_mm2']==0 for p in native['plates'][10:])
  return 'Prior GUI tower result retained: tower plates unchanged; fresh visual review pending (Mac locked)'
+
+
+def verify_M_layout():
+ plan=json.loads((OUT/'production-plan.json').read_text())
+ if not plan.get('M_layout_revision'):return
+ proof=json.loads((OUT/'M-joint-layout-validation.json').read_text())
+ assert proof['revision']==plan['M_layout_revision']=='staggered-wide-fork-v1'
+ assert valid_hash(OUT/'production-plan.json',proof['production_plan_sha256'])
+ assert valid_hash(ROOT/'working/review/a2l-m-joints/staggered-layout.json',plan['M_layout_specification_sha256'])
+ assert valid_hash(ROOT/'working/review/a2l-m-joints/evaluation.json',plan['M_study_sha256'])
+ assert len(plan['core_regions'])==5 and plan['core_plate_groups']==[[1],[2],[3],[4,5]]
+ assert proof['narrow_arches_have_no_seams'] and proof['minimum_key_head_wall_mm']>=10
+ assert proof['key_heads_clear_of_veneer_seams_mm']>=8 and proof['minimum_core_joint_separation_mm']>=18
+ assert all(c['aligned_length_mm']<1e-6 and (c['distance_mm']>=20 or c['angle_deg']>=40) for c in proof['cross_layer_seam_checks'])
 
 
 def audit():
@@ -59,6 +75,7 @@ def audit():
  assert n['native_project_sha256']==r['project_sha256']
  assert r['native_reopen_return_code']==0
  verify_gui_evidence(r['project_sha256'],n)
+ verify_M_layout()
  with zipfile.ZipFile(ROOT/'Dara.3mf') as z:
   assert z.testzip() is None
   settings=json.loads(z.read('Metadata/project_settings.config'));assert settings['printer_model']=='Bambu Lab A2L'

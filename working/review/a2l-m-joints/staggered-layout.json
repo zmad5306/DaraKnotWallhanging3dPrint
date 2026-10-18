@@ -1,0 +1,97 @@
+{
+  "revision": "staggered-wide-fork-v1",
+  "core_cuts": [
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -335.0,
+          -40.0
+        ],
+        [
+          -165.0,
+          -40.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          165.0,
+          -40.0
+        ],
+        [
+          335.0,
+          -40.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -80.0,
+          30.0
+        ],
+        [
+          80.0,
+          30.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          55.881904510252085,
+          -26.592582628906825
+        ],
+        [
+          4.118095489747915,
+          166.59258262890683
+        ]
+      ]
+    }
+  ],
+  "veneer_cuts": [
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -5.52225,
+          135.54225
+        ],
+        [
+          -5.52225,
+          132.54225
+        ],
+        [
+          -160.0,
+          45.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -5.52225,
+          135.54225
+        ],
+        [
+          -5.52225,
+          132.54225
+        ],
+        [
+          150.0,
+          45.0
+        ]
+      ]
+    }
+  ],
+  "minimum_key_head_wall_mm": 10,
+  "minimum_key_head_clearance_to_veneer_seam_mm": 8,
+  "minimum_nearby_cross_layer_seam_angle_deg": 40,
+  "minimum_core_joint_separation_mm": 18
+}

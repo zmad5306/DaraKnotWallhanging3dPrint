@@ -43,18 +43,18 @@ def main():
  text(515,245,'Green: concealed behind the band-free M.',8.5);text(515,226,'Red: seam has a visible portion.',8.5)
  text(32,73,'Glue order: '+' > '.join('F'+str(i) for i in p['frame_assembly_order']),10,True)
  text(32,53,'Keep saved part rotations and prime-tower positions.',9,True);text(32,38,'Surface directions are compensated; cosmetic edges have zero nominal gap.',8.5);c.showPage()
- page('A2L M: four flat cores, three veneers','All convex crown and hammer texture is in the flat-backed veneer. No seam-cover bands.',2)
- text(87,493,'Flat cores / plates 11-14',13,True);text(483,493,'Veneers / plates 15-17',13,True)
- for i,g in enumerate(p['core_regions']):geo(g,210,320,.43,colors[i]);label(g,210,320,.43,f'C{i+1}',i+11)
+ page('A2L M: five flat cores, three veneers','All convex crown and hammer texture is in the flat-backed veneer. No seam-cover bands.',2)
+ text(87,493,'Five flat cores / plates 11-14',13,True);text(483,493,'Veneers / plates 15-17',13,True)
+ for i,g in enumerate(p['core_regions']):geo(g,210,320,.43,colors[i]);label(g,210,320,.43,f'C{i+1}',11+i if i<3 else 14)
  for i,g in enumerate(p['skin_regions']):geo(g,582,320,.43,colors[i]);label(g,582,320,.43,f'V{i+1}',i+15)
  text(32,116,'Cores: constant 8.4 mm main body. Veneer backs: Z8.6. Hidden glue space: 0.20 mm.',9)
- text(32,97,'Two veneer seams total about 24 mm in front projection; their actual front edges match at zero nominal gap.',9)
+ text(32,97,'Two face seams in the broad fork total 105.6 mm. Narrow arches stay continuous; core seams are staggered.',9)
  text(32,78,'All three veneers share the complete 55-degree lean and in-plane direction. Show planes run along bed Y.',9,True)
  text(32,58,'Keep veneer rotations. Cut recessed necks; remove separate ribs, fins and guards. Sand hidden backs flat.',8.5);c.showPage()
  page('Production checklist: A2L + A1','A2L: plates 1-17, including ALL M cores and veneers. A1 companion: plates 1-3. Skip A2L 18-20.',3)
- rows=[(i,f'C{i-10} flat core') for i in range(11,15)]+[(i,f'V{i-14} veneer + carrier') for i in range(15,18)]+[(18,'Backers 1, 3, 5, 7'),(19,'Backers 2, 4, 6, 8'),(20,'4 wall blocks + 32 retainers')]
+ rows=[(11,'C1 upper left'),(12,'C2 upper right'),(13,'C3 stem'),(14,'C4 + C5 lower cores')]+[(i,f'V{i-14} veneer + carrier') for i in range(15,18)]+[(18,'Backers 1, 3, 5, 7'),(19,'Backers 2, 4, 6, 8'),(20,'4 wall blocks + 32 retainers')]
  table(rows,32,505,350)
- checks=['Open each 3MF as a project; verify its printer.','Verify slots: white / tan / copper silk / blue.','Inspect plate preview before each first print.','Print a full joint pair; check fit and 8% stiffness.','Print one full veneer; inspect restraint / cupping.','Trim fins progressively; cradle the hammered face.','Sand rear lands flat; preserve locators and edges.','Dry-fit the four cores on a flat reference.','Dry-fit veneers; inspect both seams in grazing light.','Check matching M pins, screws and screw tips.','Glue in hidden relief; keep stops and edges dry.','Confirm photos, backers, retainers and wall blocks.']
+ checks=['Open each 3MF as a project; verify its printer.','Verify slots: white / tan / copper silk / blue.','Inspect plate preview before each first print.','Print a full joint pair; check fit and 8% stiffness.','Print one full veneer; inspect restraint / cupping.','Trim fins progressively; cradle the hammered face.','Sand rear lands flat; preserve locators and edges.','Dry-fit all five cores on a flat reference.','Dry-fit veneers; inspect both seams in grazing light.','Check matching M pins, screws and screw tips.','Glue in hidden relief; keep stops and edges dry.','Confirm photos, backers, retainers and wall blocks.']
  for i,s in enumerate(checks):
   y=493-i*27;c.setStrokeColor(HexColor(ink));c.rect(416,y-2,8,8,stroke=1,fill=0);text(434,y,s,8.2)
  text(32,245,'Print tracking: A2L plates 1-17',11,True)

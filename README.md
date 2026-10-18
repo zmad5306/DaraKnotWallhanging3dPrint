@@ -2,9 +2,11 @@
 
 **Current project: [Dara.3mf](Dara.3mf)** — open **as a project** in Bambu Studio. The full artwork is optimized for the **Bambu Lab A2L, 0.4 mm nozzle, 0.20 mm layers**, with **8% gyroid structural bodies**, four walls, five top/bottom layers, local solid screw reinforcement and solid veneers.
 
-The fresh A2L layout has **10 knot sections / 14 knot joints**, including **six fully hidden behind the M**, two partly covered and six fully exposed. The M has **four flat cores and three flat-backed hammered veneers**, leaving just **two short visible M seams** totaling approximately 24 mm in front projection. All convex crown and hammer texture is in the veneers. Visible cosmetic edges have zero nominal gap, with fitting/glue clearance underneath; cover bands are omitted.
+The fresh A2L layout has **10 knot sections / 14 knot joints**, including **six fully hidden behind the M**, two partly covered and six fully exposed. The M has **five flat cores and three flat-backed hammered veneers**, leaving just **two visible M seams in the broad fork** totaling 105.6 mm in front projection. All convex crown and hammer texture is in the veneers. Visible cosmetic edges have zero nominal gap, with fitting/glue clearance underneath; cover bands are omitted.
 
-The complete project contains **20 natively sliced plates and 61 assembly pieces**. Every veneer uses the same complete rotation and has its face plane along bed Y. Bonded sacrificial fins, separate grounded starter ribs and diagonal bracing restrain the silk; trees supplement them. Keep all saved rotations and use the coordinated A2L knot, M and mounting hardware together.
+The complete project contains **20 natively sliced plates and 62 assembly pieces**. Every veneer uses the same complete rotation and has its face plane along bed Y. Bonded sacrificial fins, separate grounded starter ribs and diagonal bracing restrain the silk; trees supplement them. Keep all saved rotations and use the coordinated A2L knot, M and mounting hardware together.
+
+**M joint revision, October 18:** narrow arch crowns are continuous in both layers. The two face seams now cross the broad fork; five cores use four plates, with C4/C5 together on plate 14. Core seams have no aligned runs under face seams; one isolated crossing is about 46 degrees. The longer face seams total 105.6 mm. [See the seam overlay](working/review/a2l-m-joints/M-staggered-seam-layout.png).
 
 **Production veneer correction, October 18:** all **three A2L veneers** and **six full-size A1 veneers** now use the shared removable carrier. Continuous starter shoes are removed from the production models and saved slices. Each connection has an accessible narrow neck and rear trim pocket; simulated flush trimming leaves no lip outside the finished cap. Tall starter ribs are diagonally restrained. The other production plates retain their saved toolpaths. See the [audit of every saved veneer copy](output/development/m-veneer-cosmetic-fit/All-veneer-production-audit.json). Confirm physical cleanup on a representative veneer before printing the remaining set.
 
@@ -20,7 +22,7 @@ For another computer, pull branch `codex/m-veneer-cosmetic-fit`, run `git lfs pu
 
 ## Printing the matching small parts on the A1
 
-The [A1 companion project](working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf) has **three plates / 44 matching pieces**: all eight backers, four wall blocks and 32 photo retainers. Use its [plate mapping and instructions](working/bambu/Dara-A1-Companion/README.md). With that file, skip **A2L plates 18–20** and print **A2L plates 1–17**. All four M cores and all three veneers stay on the A2L. The complete A2L file remains available as the all-on-one-printer option.
+The [A1 companion project](working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf) has **three plates / 44 matching pieces**: all eight backers, four wall blocks and 32 photo retainers. Use its [plate mapping and instructions](working/bambu/Dara-A1-Companion/README.md). With that file, skip **A2L plates 18–20** and print **A2L plates 1–17**. All five M cores and all three veneers stay on the A2L. The complete A2L file remains available as the all-on-one-printer option.
 
 ## Alternate A1 project and tests
 

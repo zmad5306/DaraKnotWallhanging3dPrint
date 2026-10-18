@@ -1,0 +1,155 @@
+{
+  "project_sha256": "3f44b15e50b703f2d7bb0641d9871b0d97859eb6ebd87aff93317d517b126ea6",
+  "editable_sha256": "9217c51722cf64b3e056b27b86c617534b36498cc2526e25d6f63398003648bc",
+  "native_reopen_return_code": 0,
+  "native_reopen_result": {
+    "error_string": "Success.",
+    "export_time": 0,
+    "layer_height": 0.0,
+    "plate_index": 0,
+    "prepare_time": 3167,
+    "return_code": 0,
+    "sparse_infill_density": 0.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 0
+  },
+  "plates": 20,
+  "assembly_pieces": 61,
+  "printer": "Bambu Lab A2L 0.4 nozzle",
+  "structural_infill": "8% gyroid",
+  "veneer_infill": "100%",
+  "plate_estimates": [
+    {
+      "plate": 1,
+      "seconds": 28975.587890625,
+      "weight_g": 223.72783279418945
+    },
+    {
+      "plate": 2,
+      "seconds": 25816.541015625,
+      "weight_g": 208.18710851669312
+    },
+    {
+      "plate": 3,
+      "seconds": 32375.7265625,
+      "weight_g": 248.1179678440094
+    },
+    {
+      "plate": 4,
+      "seconds": 32432.404296875,
+      "weight_g": 250.9314477443695
+    },
+    {
+      "plate": 5,
+      "seconds": 26049.1953125,
+      "weight_g": 207.85987329483032
+    },
+    {
+      "plate": 6,
+      "seconds": 28008.888671875,
+      "weight_g": 221.16840147972107
+    },
+    {
+      "plate": 7,
+      "seconds": 26554.453125,
+      "weight_g": 204.5926685333252
+    },
+    {
+      "plate": 8,
+      "seconds": 31769.900390625,
+      "weight_g": 248.16790318489075
+    },
+    {
+      "plate": 9,
+      "seconds": 31241.384765625,
+      "weight_g": 250.32518911361694
+    },
+    {
+      "plate": 10,
+      "seconds": 26588.712890625,
+      "weight_g": 205.0187439918518
+    },
+    {
+      "plate": 11,
+      "seconds": 13328.1396484375,
+      "weight_g": 97.83858489990234
+    },
+    {
+      "plate": 12,
+      "seconds": 13553.423828125,
+      "weight_g": 100.02229309082031
+    },
+    {
+      "plate": 13,
+      "seconds": 8954.6494140625,
+      "weight_g": 63.11293411254883
+    },
+    {
+      "plate": 14,
+      "seconds": 7368.7861328125,
+      "weight_g": 51.22517013549805
+    },
+    {
+      "plate": 15,
+      "seconds": 98877.5,
+      "weight_g": 432.7970886230469
+    },
+    {
+      "plate": 16,
+      "seconds": 79742.6328125,
+      "weight_g": 368.1423645019531
+    },
+    {
+      "plate": 17,
+      "seconds": 89409.40625,
+      "weight_g": 386.0084228515625
+    },
+    {
+      "plate": 18,
+      "seconds": 8337.8349609375,
+      "weight_g": 99.29679870605469
+    },
+    {
+      "plate": 19,
+      "seconds": 8340.568359375,
+      "weight_g": 99.31890869140625
+    },
+    {
+      "plate": 20,
+      "seconds": 18035.884765625,
+      "weight_g": 144.74404907226562
+    }
+  ],
+  "evidence_sha256": {
+    "working/bambu/Dara-Photo-Frame-A2L/production-plan.json": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
+    "working/bambu/Dara-Photo-Frame-A2L/plate-plan.json": "891c638e3a6d4acc1ec641751c4325f0219ab0ad066c15cf99ad195e0405d882",
+    "working/bambu/Dara-Photo-Frame-A2L/frame-geometry-validation.json": "8b05083c3861a486c8afc934607c9e4a7e38aa37803e8846d3a4506b368a4aea",
+    "working/bambu/Dara-Photo-Frame-A2L/M-geometry-validation.json": "9fe93ab8d682bf58636e01414d62e2694c9543effa4a795939783f606d5c89b0",
+    "working/bambu/Dara-Photo-Frame-A2L/geometry-validation.json": "3415d7bb8a377fbf21b20e83d75fc492bd0a8808ca762d5398b6edd1eb921e49",
+    "working/bambu/Dara-Photo-Frame-A2L/native-validation.json": "7ffd46f84845083ebb702082d0d70e60019cd93c59079406ea16442c932ac47f",
+    "working/bambu/Dara-Photo-Frame-A2L/profile-provenance.json": "dcb5bf12ec2524de478053209adef1c0d8d339ad6019c1d6f93b8999242c1f60",
+    "working/bambu/Dara-Photo-Frame-A2L/modifier-validation.json": "82f1c132102b107724266ae067954c0e7940dfc438827f5d3be24249ebbef52e",
+    "scripts/build_a2l_project.py": "5f8349010da4dd5ca3bb9dac6ca171261c1d3b882f3f80266d31f4de54e5782f",
+    "scripts/validate_a2l_project.py": "e27865d116382a79cc9f8bf89626361766f45e67c289775b881585c116edab68",
+    "scripts/publish_a2l_project.py": "f89e41c94cf065cb8fa0794ec6335658cd95a3b6be9b46c82bc758128c6a5a60",
+    "scripts/development_3mf.py": "e9a3eb330e52edfa65aa2be6f7359cf27b782ad0f66af7935e63d18143aeb04d",
+    "scripts/develop_m_veneer.py": "9dc1158b148f623fef6b2a94d51a841a2af9bd4c901719cd5aab9d4533441eeb",
+    "scripts/develop_cosmetic_joints.py": "76aba4fcc7baecf44dcb7f5de24b9991610db0cc7ba03a606fae96bca0f8efec",
+    "scripts/veneer_fin_carrier.py": "a8c02c16272f0276a0cb6b703fa483930aff21822360013d82abd6c56d620267",
+    "scripts/plan_veneer_fins.py": "8e074850eefb74a8a380a407c3d236dd0c0e5672c7814aadbc54a9c0749c3da1",
+    "scripts/check_fin_toolpaths.py": "e34f744eca02d13cd7de5df2e9ebe7bce83367f9f3b97929f13f11bb1d995f45",
+    "scripts/audit_a2l_release.py": "74c1cb6bc3cd7e356bbfc0b66afa7b84bd64a63acb2a9f6db9be6b855da4f246",
+    "scripts/create_a2l_print_guide.py": "d8e2faf57ea0d392a580e15c9122668d206250dd9a2d58fbfc7b130c01b58913",
+    "scripts/audit_dara_release.py": "6fb15bd5925a4c46f1a148f66d36e41a9b3c3e16f33de8444528e017371240d3",
+    "working/Dara-Photo-Frame-A1-Jointed.scad": "eb62f56258712faf945a0a49984c031631df356112b8b2f85ac23ec3d28e538c",
+    "working/review/a2l-hidden-joints/lean-candidate.json": "bd7cfc2e2620bade1d5bebe692e4e8adf9c5868a45079f8d84a0757a85d3fd3d",
+    "working/review/a2l-m-joints/evaluation.json": "2d6584c1101388778be181ffd07cebc20a67a01d3e137946f573dd9114e250ab",
+    "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf": "9217c51722cf64b3e056b27b86c617534b36498cc2526e25d6f63398003648bc",
+    "output/pdf/Dara-A2L-Print-Guide.pdf": "3930fab149b0a9e231c79af71e3802a71d53baf5c61f102d02b266524101cae7"
+  },
+  "physical_confirmation_pending": true,
+  "retained_A1_complete_sha256": "7cd103259df6dbbc1770a33c56c093ad8748673ec220d2145253ee4d975b7709",
+  "sample_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734"
+}

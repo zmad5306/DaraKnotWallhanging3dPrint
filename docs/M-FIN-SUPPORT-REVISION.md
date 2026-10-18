@@ -1,3 +1,5 @@
+> Historical A1 release guide. The current main project is A2L; use [the A2L guide](../working/bambu/Dara-Photo-Frame-A2L/README.md) and its part numbers/settings. This A1 record is retained for the unchanged archived A1 project.
+
 # M fin allocation from supported area
 
 The revised full-size A1 veneers use **61 fins instead of 91**. The population was reduced by 33%, rather than forcing a 50% cut where the area and span checks require more support. Existing sample projects, including their printing plates, are unchanged.

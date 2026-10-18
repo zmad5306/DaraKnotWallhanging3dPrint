@@ -159,6 +159,10 @@ def audit_veneer():
 
 
 def audit():
+    with zipfile.ZipFile(ROOT/'Dara.3mf') as z:settings=json.loads(z.read('Metadata/project_settings.config'))
+    if settings.get('printer_model')=='Bambu Lab A2L':
+        from audit_a2l_release import audit as audit_a2l
+        audit_a2l();return
     if (PACKAGE/'m-veneer-release-validation.json').exists():audit_veneer()
     else:audit_legacy()
 

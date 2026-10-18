@@ -1,3 +1,5 @@
+> Historical A1 release guide. The current main project is A2L; use [the A2L guide](../working/bambu/Dara-Photo-Frame-A2L/README.md) and its part numbers/settings. This A1 record is retained for the unchanged archived A1 project.
+
 # Printing the flat core and veneer M
 
 The current [main project](../Dara.3mf) contains 36 saved plates. Its M uses six flat cores and six matching veneers, with zero nominal cosmetic seam gaps and no cover bands.

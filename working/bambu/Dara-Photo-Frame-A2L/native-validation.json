@@ -1,0 +1,3559 @@
+{
+  "material_direction_comparison": [
+    {
+      "filament_slot": 1,
+      "z_mm": 13.6,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 16.6,
+      "plates_compared": 6,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 2,
+      "z_mm": 9.0,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 2,
+      "z_mm": 9.6,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 2,
+      "z_mm": 10.0,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 4,
+      "z_mm": 13.6,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 4.6,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 4.8,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 5.0,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 6.0,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    }
+  ],
+  "editable_sha256": "9217c51722cf64b3e056b27b86c617534b36498cc2526e25d6f63398003648bc",
+  "native_project_sha256": "3f44b15e50b703f2d7bb0641d9871b0d97859eb6ebd87aff93317d517b126ea6",
+  "production_plan_sha256": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
+  "native_return_code": 0,
+  "native_roundtrip": [
+    {
+      "name": "F1 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 1.6576914741861906e-05
+    },
+    {
+      "name": "F2 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.7392375049300056e-05
+    },
+    {
+      "name": "F3 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.327596517809995e-05
+    },
+    {
+      "name": "F4 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.4651207659409418e-05
+    },
+    {
+      "name": "F5 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.090258912768173e-05
+    },
+    {
+      "name": "F6 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.1207664771530885e-05
+    },
+    {
+      "name": "F7 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.1350561729572793e-05
+    },
+    {
+      "name": "F8 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.014091454023779e-05
+    },
+    {
+      "name": "F9 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.4519373917094756e-05
+    },
+    {
+      "name": "F10 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.656048849604858e-05
+    },
+    {
+      "name": "C1 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.257773323663261e-05
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.6858187691384055e-05
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.6820631511937478e-05
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.9273383484599344e-05
+    },
+    {
+      "name": "V1 A2L hammered veneer and sacrificial fins",
+      "maximum_vertex_and_pose_error_mm": 2.9047547513487495e-05
+    },
+    {
+      "name": "V2 A2L hammered veneer and sacrificial fins",
+      "maximum_vertex_and_pose_error_mm": 2.8369505475424533e-05
+    },
+    {
+      "name": "V3 A2L hammered veneer and sacrificial fins",
+      "maximum_vertex_and_pose_error_mm": 2.6149264178985338e-05
+    },
+    {
+      "name": "Backer3",
+      "maximum_vertex_and_pose_error_mm": 2.0099751236743847e-06
+    },
+    {
+      "name": "Backer1",
+      "maximum_vertex_and_pose_error_mm": 4.401136117736727e-06
+    },
+    {
+      "name": "Backer5",
+      "maximum_vertex_and_pose_error_mm": 4.123105311903638e-07
+    },
+    {
+      "name": "Backer7",
+      "maximum_vertex_and_pose_error_mm": 4.4721364521317763e-07
+    },
+    {
+      "name": "Backer4",
+      "maximum_vertex_and_pose_error_mm": 4.743416442325659e-06
+    },
+    {
+      "name": "Backer2",
+      "maximum_vertex_and_pose_error_mm": 4.964876547968243e-06
+    },
+    {
+      "name": "Backer6",
+      "maximum_vertex_and_pose_error_mm": 1.0770330980410189e-06
+    },
+    {
+      "name": "Backer8",
+      "maximum_vertex_and_pose_error_mm": 1.2083045397378021e-06
+    },
+    {
+      "name": "B1 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "B2 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "B3 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "B4 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "R1 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R2 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R3 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R4 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R5 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R6 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R7 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R8 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R9 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R10 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R11 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R12 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R13 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R14 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R15 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R16 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R17 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R18 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R19 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R20 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R21 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R22 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R23 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R24 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R25 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R26 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R27 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R28 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R29 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R30 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R31 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    },
+    {
+      "name": "R32 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 948132,
+      "features": {
+        "Prime tower": 4736,
+        "Support": 248259,
+        "Brim": 644,
+        "Outer wall": 50499,
+        "Inner wall": 110858,
+        "Gap infill": 4465,
+        "Bottom surface": 2197,
+        "Internal solid infill": 45853,
+        "Sparse infill": 428371,
+        "Support interface": 8853,
+        "Floating vertical shell": 9219,
+        "Overhang wall": 1561,
+        "Bridge": 12482,
+        "Top surface": 20135
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          5.345,
+          6.528
+        ],
+        [
+          323.939,
+          314.918
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.108,
+          6.291
+        ],
+        [
+          324.176,
+          315.155
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.845000000000027,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          57491.44982737093
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 59460.65352511649
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 23.10078133359088
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 44711.93918086598
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8937.785521792097
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1741.5489382138453
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2410.7183878805795
+        }
+      ],
+      "plate": 1,
+      "gcode_sha256": "2e7c40ad65edff1b2b873e68aa9b9aaaa2b14d4b91f59fd884354073243ae42e",
+      "weight_g": 223.72783279418945,
+      "seconds": 28975.587890625,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 889494,
+      "features": {
+        "Prime tower": 4634,
+        "Support": 51014,
+        "Brim": 404,
+        "Outer wall": 53320,
+        "Inner wall": 117916,
+        "Gap infill": 3845,
+        "Bottom surface": 1945,
+        "Internal solid infill": 34993,
+        "Sparse infill": 582328,
+        "Support interface": 3711,
+        "Overhang wall": 510,
+        "Bridge": 10388,
+        "Floating vertical shell": 6874,
+        "Top surface": 17612
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.211,
+          6.176
+        ],
+        [
+          307.303,
+          297.705
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.961,
+          5.926
+        ],
+        [
+          307.553,
+          297.955
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.926,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          49720.1400966809
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 8615.641002320966
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 3294.112440869828
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 55.41266527938917
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 293.8899172992512
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 49873.99563430736
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40370.3825666687
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8167.197771906455
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1606.1469753840827
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2122.1861008108926
+        }
+      ],
+      "plate": 2,
+      "gcode_sha256": "4d224fe91e75e6c21482c081d20741ae91ee386a619dc920ac4060febf4eebd8",
+      "weight_g": 208.18710851669312,
+      "seconds": 25816.541015625,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 1198120,
+      "features": {
+        "Prime tower": 4634,
+        "Support": 166538,
+        "Brim": 512,
+        "Outer wall": 59118,
+        "Inner wall": 128368,
+        "Gap infill": 4602,
+        "Bottom surface": 2508,
+        "Internal solid infill": 45949,
+        "Sparse infill": 735654,
+        "Support interface": 10497,
+        "Overhang wall": 941,
+        "Bridge": 13426,
+        "Floating vertical shell": 4817,
+        "Top surface": 20556
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          10.236,
+          10.123
+        ],
+        [
+          319.756,
+          310.055
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.986,
+          9.873
+        ],
+        [
+          320.006,
+          310.305
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 9.694999999999993,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          61964.24419102607
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 2739.567826143797
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1165.3797372104684
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 26.325263965390633
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 143.66893900453022
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 62162.9072250258
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 49654.230726253365
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9982.508914867121
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1958.7581234000074
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2677.9049049602318
+        }
+      ],
+      "plate": 3,
+      "gcode_sha256": "266819b527af840d1836e2b3644c60ba84881ed74d066a5299bb5431825611d4",
+      "weight_g": 248.1179678440094,
+      "seconds": 32375.7265625,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 1172645,
+      "features": {
+        "Prime tower": 4736,
+        "Support": 124412,
+        "Brim": 603,
+        "Outer wall": 61176,
+        "Inner wall": 132641,
+        "Gap infill": 6409,
+        "Bottom surface": 2681,
+        "Internal solid infill": 46541,
+        "Sparse infill": 744917,
+        "Support interface": 6659,
+        "Overhang wall": 663,
+        "Bridge": 13822,
+        "Floating vertical shell": 4744,
+        "Top surface": 22641
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.218,
+          6.176
+        ],
+        [
+          320.606,
+          310.862
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          8.968,
+          5.926
+        ],
+        [
+          320.856,
+          311.112
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.926,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          62322.774749442106
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 5375.234684479056
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2250.4758934539523
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 52.68844074653762
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 288.46617136243526
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 64157.70224093672
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 13.066353303988194
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 49517.67327078624
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9977.26835819339
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1954.6674877352953
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2649.07051949209
+        }
+      ],
+      "plate": 4,
+      "gcode_sha256": "4c62fd394844be23c6bfe0fae3cd06942a071dc2b0a38d2554db4509d735bd7f",
+      "weight_g": 250.9314477443695,
+      "seconds": 32432.404296875,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 890504,
+      "features": {
+        "Prime tower": 4736,
+        "Support": 46277,
+        "Brim": 365,
+        "Outer wall": 54201,
+        "Inner wall": 119536,
+        "Gap infill": 5969,
+        "Bottom surface": 2275,
+        "Internal solid infill": 35249,
+        "Sparse infill": 580089,
+        "Support interface": 4071,
+        "Overhang wall": 534,
+        "Bridge": 11652,
+        "Floating vertical shell": 7290,
+        "Top surface": 18260
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.211,
+          22.293
+        ],
+        [
+          307.294,
+          297.962
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.961,
+          22.043
+        ],
+        [
+          307.544,
+          298.212
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.961,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          49817.409830494464
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 8802.94441825879
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 3356.420657439508
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 55.49185381625849
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 269.3590885675338
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 51170.69237514327
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 12.97917395662654
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40138.2094111245
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8116.808678497386
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1582.8132532599145
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2088.790999005132
+        }
+      ],
+      "plate": 5,
+      "gcode_sha256": "3add9fbe4786651e82d9bf40c412182766c1d5a442aee2b45125937f2084beb7",
+      "weight_g": 207.85987329483032,
+      "seconds": 26049.1953125,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 879702,
+      "features": {
+        "Prime tower": 4634,
+        "Support": 242984,
+        "Brim": 658,
+        "Outer wall": 42052,
+        "Inner wall": 86780,
+        "Gap infill": 4646,
+        "Bottom surface": 1975,
+        "Internal solid infill": 43983,
+        "Sparse infill": 407270,
+        "Support interface": 9913,
+        "Floating vertical shell": 4754,
+        "Overhang wall": 1269,
+        "Bridge": 11256,
+        "Top surface": 17528
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          5.276,
+          4.238
+        ],
+        [
+          325.991,
+          314.852
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.039,
+          4.002
+        ],
+        [
+          326.228,
+          315.089
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.7719999999999914,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          57843.80043290335
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 57880.86866592176
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 44902.93723713269
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8966.567973590125
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1740.4791951214424
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2447.068288165977
+        }
+      ],
+      "plate": 6,
+      "gcode_sha256": "12158734b374cf10317620e5001d5435e22ac2498afcd92b8e223c485c0acc13",
+      "weight_g": 221.16840147972107,
+      "seconds": 28008.888671875,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 950096,
+      "features": {
+        "Prime tower": 4736,
+        "Support": 118801,
+        "Brim": 425,
+        "Outer wall": 54191,
+        "Inner wall": 120584,
+        "Gap infill": 4451,
+        "Bottom surface": 1790,
+        "Internal solid infill": 35665,
+        "Sparse infill": 564646,
+        "Support interface": 6994,
+        "Overhang wall": 859,
+        "Bridge": 10272,
+        "Floating vertical shell": 7193,
+        "Top surface": 19489
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.211,
+          32.279
+        ],
+        [
+          298.015,
+          289.581
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.961,
+          32.029
+        ],
+        [
+          298.252,
+          289.817
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.961,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          49508.68332060865
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 4634.431209400417
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1272.8919641806733
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 27.605721188656783
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 126.55075948489225
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 51402.82865410062
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 24.60547812993214
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40416.950422050264
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8176.557814890358
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1608.1296794788393
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2127.273443533911
+        }
+      ],
+      "plate": 7,
+      "gcode_sha256": "4722b18e5204d2d8980fdc58195c3be9533664ff004ee40223ffd6ef3c0034b1",
+      "weight_g": 204.5926685333252,
+      "seconds": 26554.453125,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 1135396,
+      "features": {
+        "Prime tower": 4736,
+        "Support": 95273,
+        "Brim": 497,
+        "Outer wall": 60002,
+        "Inner wall": 130991,
+        "Gap infill": 4076,
+        "Bottom surface": 2582,
+        "Internal solid infill": 44943,
+        "Sparse infill": 743020,
+        "Support interface": 5944,
+        "Overhang wall": 682,
+        "Bridge": 14028,
+        "Floating vertical shell": 5100,
+        "Top surface": 23522
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.501,
+          7.754
+        ],
+        [
+          320.678,
+          311.88
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.251,
+          7.518
+        ],
+        [
+          320.928,
+          312.13
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 7.518,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          60804.13735133576
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 6493.842409586491
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 3158.385348588107
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 51.60998950135438
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 282.66690132747425
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 62923.91039517796
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 11.549048525212854
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 48863.52057246744
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9836.29872114829
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1909.6446715890834
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2634.6143411279263
+        }
+      ],
+      "plate": 8,
+      "gcode_sha256": "b6c06ea34a81d66abbe458b7aa24ff6bc0f64771715466a8b6c88d37b61fad72",
+      "weight_g": 248.16790318489075,
+      "seconds": 31769.900390625,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 1102805,
+      "features": {
+        "Prime tower": 4634,
+        "Support": 54612,
+        "Brim": 478,
+        "Outer wall": 60511,
+        "Inner wall": 130172,
+        "Gap infill": 5353,
+        "Bottom surface": 2850,
+        "Internal solid infill": 45564,
+        "Sparse infill": 753131,
+        "Support interface": 4408,
+        "Overhang wall": 383,
+        "Bridge": 15229,
+        "Floating vertical shell": 5034,
+        "Top surface": 20446
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          4.704,
+          4.67
+        ],
+        [
+          325.259,
+          315.591
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          4.454,
+          4.42
+        ],
+        [
+          325.509,
+          315.841
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.158999999999992,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          61423.074559323446
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 9076.947628830867
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 4229.386496413488
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 81.72343914986358
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 414.5128879501349
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 61247.58056337519
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 48685.08732011757
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9815.994652477935
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1905.5582302456737
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2610.325363785067
+        }
+      ],
+      "plate": 9,
+      "gcode_sha256": "4f1f634cf9ff73c98d71fb5a5311d2da16cff2ce9c57f229bc231ecf7897deb0",
+      "weight_g": 250.32518911361694,
+      "seconds": 31241.384765625,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 947553,
+      "features": {
+        "Prime tower": 4736,
+        "Support": 119032,
+        "Brim": 416,
+        "Outer wall": 52255,
+        "Inner wall": 116472,
+        "Gap infill": 6130,
+        "Bottom surface": 2124,
+        "Internal solid infill": 35913,
+        "Sparse infill": 565736,
+        "Support interface": 7259,
+        "Overhang wall": 790,
+        "Bridge": 12292,
+        "Floating vertical shell": 6788,
+        "Top surface": 17610
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          6.211,
+          6.176
+        ],
+        [
+          298.52,
+          287.728
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.961,
+          5.926
+        ],
+        [
+          298.753,
+          287.978
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 5.926,
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          50080.81620621168
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 4748.28142464036
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1337.2945532550746
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 5.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 26.494611397464702
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 138.5851018716902
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 51455.147056092435
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 13.06004962576282
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40386.00953349374
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8177.314723118484
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1587.7702872716832
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2102.5836449235644
+        }
+      ],
+      "plate": 10,
+      "gcode_sha256": "466d88d10b364ea1c28a5e8cf54f049937926b58a1a3590e8f7df1e024eb7e43",
+      "weight_g": 205.0187439918518,
+      "seconds": 26588.712890625,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 338004,
+      "features": {
+        "Brim": 664,
+        "Outer wall": 17784,
+        "Inner wall": 51433,
+        "Bottom surface": 1639,
+        "Gap infill": 513,
+        "Internal solid infill": 15567,
+        "Sparse infill": 245416,
+        "Bridge": 2219,
+        "Floating vertical shell": 1434,
+        "Top surface": 1335
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.575,
+          1.565
+        ],
+        [
+          328.419,
+          318.43
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.325,
+          1.315
+        ],
+        [
+          328.669,
+          318.68
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.315,
+      "plate": 11,
+      "gcode_sha256": "d32a39f2c2c3c03f06c33d6d090889c895ca3615c6daa021d69d9b0e3ef8b97d",
+      "weight_g": 97.83858489990234,
+      "seconds": 13328.1396484375,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 344773,
+      "features": {
+        "Brim": 631,
+        "Outer wall": 17686,
+        "Inner wall": 51196,
+        "Gap infill": 1463,
+        "Bottom surface": 1755,
+        "Internal solid infill": 13006,
+        "Sparse infill": 255459,
+        "Bridge": 1327,
+        "Floating vertical shell": 1471,
+        "Top surface": 779
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          11.126,
+          10.822
+        ],
+        [
+          318.867,
+          309.168
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          10.876,
+          10.572
+        ],
+        [
+          319.117,
+          309.418
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 10.572,
+      "plate": 12,
+      "gcode_sha256": "5c680c6a16e31e2ee959641cfbc851089c6350f2c350adfb3773c799239ee986",
+      "weight_g": 100.02229309082031,
+      "seconds": 13553.423828125,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 256042,
+      "features": {
+        "Brim": 853,
+        "Outer wall": 21071,
+        "Inner wall": 61303,
+        "Gap infill": 800,
+        "Bottom surface": 1720,
+        "Internal solid infill": 13484,
+        "Sparse infill": 153174,
+        "Bridge": 1530,
+        "Floating vertical shell": 1210,
+        "Top surface": 897
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          38.216,
+          37.081
+        ],
+        [
+          291.781,
+          282.917
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          37.966,
+          36.831
+        ],
+        [
+          292.031,
+          283.167
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 36.831,
+      "plate": 13,
+      "gcode_sha256": "393dab673302a01b643de64ed9ba49c33d0ea3971c33a449ea8aebe3a9686733",
+      "weight_g": 63.11293411254883,
+      "seconds": 8954.6494140625,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 208313,
+      "features": {
+        "Brim": 579,
+        "Outer wall": 14589,
+        "Inner wall": 42230,
+        "Bottom surface": 1378,
+        "Gap infill": 431,
+        "Internal solid infill": 9731,
+        "Sparse infill": 136950,
+        "Bridge": 858,
+        "Floating vertical shell": 999,
+        "Top surface": 568
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          71.176,
+          69.034
+        ],
+        [
+          258.824,
+          250.971
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          70.926,
+          68.784
+        ],
+        [
+          259.074,
+          251.221
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 68.779,
+      "plate": 14,
+      "gcode_sha256": "1a163eda6b93c613f6f254454f85401fa7cdf28251dbf7a8a3845cf58e6f1919",
+      "weight_g": 51.22517013549805,
+      "seconds": 7368.7861328125,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 1264516,
+      "features": {
+        "Inner wall": 508534,
+        "Outer wall": 337009,
+        "Gap infill": 86799,
+        "Bottom surface": 121,
+        "Internal solid infill": 327568,
+        "Top surface": 4149,
+        "Overhang wall": 150,
+        "Floating vertical shell": 186
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.01,
+          1.01
+        ],
+        [
+          328.99,
+          318.99
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.8,
+          0.8
+        ],
+        [
+          329.2,
+          319.2
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8,
+      "bonded_fin_toolpaths": {
+        "bond_probes_checked": 222,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.13207245649156163,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "plate": 15,
+      "gcode_sha256": "7e8ab615f41c2450c6d310251ce86f3a8dbf0a8448cf1f28d427e29d8d811855",
+      "weight_g": 432.7970886230469,
+      "seconds": 98877.5,
+      "maximum_model_extrusion_z_mm": 297.2
+    },
+    {
+      "extrusion_moves_checked": 1046535,
+      "features": {
+        "Inner wall": 420691,
+        "Outer wall": 231169,
+        "Bottom surface": 118,
+        "Gap infill": 81716,
+        "Internal solid infill": 304212,
+        "Sparse infill": 1909,
+        "Floating vertical shell": 2506,
+        "Top surface": 4053,
+        "Overhang wall": 161
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.01,
+          1.01
+        ],
+        [
+          328.99,
+          318.99
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.8,
+          0.8
+        ],
+        [
+          329.2,
+          319.2
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8,
+      "bonded_fin_toolpaths": {
+        "bond_probes_checked": 206,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.1445929553013014,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "plate": 16,
+      "gcode_sha256": "a16d2c2191ac9574c4ef1e131293f0fde83562684e6e730852fa32efaaecc99f",
+      "weight_g": 368.1423645019531,
+      "seconds": 79742.6328125,
+      "maximum_model_extrusion_z_mm": 297.2
+    },
+    {
+      "extrusion_moves_checked": 1184839,
+      "features": {
+        "Inner wall": 478851,
+        "Outer wall": 323739,
+        "Gap infill": 86777,
+        "Bottom surface": 76,
+        "Internal solid infill": 288332,
+        "Sparse infill": 1723,
+        "Floating vertical shell": 986,
+        "Top surface": 4224,
+        "Overhang wall": 131
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.01,
+          1.01
+        ],
+        [
+          328.99,
+          318.99
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          0.8,
+          0.8
+        ],
+        [
+          329.2,
+          319.2
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 0.8,
+      "bonded_fin_toolpaths": {
+        "bond_probes_checked": 203,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.14218918360914598,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "plate": 17,
+      "gcode_sha256": "b411cf177c3e6c5cae155a6358118869e7b5d97681687333b468ea671461d0c5",
+      "weight_g": 386.0084228515625,
+      "seconds": 89409.40625,
+      "maximum_model_extrusion_z_mm": 297.2
+    },
+    {
+      "extrusion_moves_checked": 37544,
+      "features": {
+        "Inner wall": 10256,
+        "Outer wall": 3931,
+        "Bottom surface": 2606,
+        "Internal solid infill": 18834,
+        "Top surface": 1576,
+        "Gap infill": 341
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          3.21,
+          3.21
+        ],
+        [
+          326.79,
+          316.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          3.0,
+          3.0
+        ],
+        [
+          327.0,
+          317.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.0,
+      "plate": 18,
+      "gcode_sha256": "5ca31dd964b99fb77840422e58a5f07b95114b5a15718beb00b0be78c7c57ae9",
+      "weight_g": 99.29679870605469,
+      "seconds": 8337.8349609375,
+      "maximum_model_extrusion_z_mm": 1.6
+    },
+    {
+      "extrusion_moves_checked": 37621,
+      "features": {
+        "Inner wall": 10288,
+        "Outer wall": 3936,
+        "Bottom surface": 2601,
+        "Internal solid infill": 18870,
+        "Top surface": 1576,
+        "Gap infill": 350
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          3.21,
+          3.21
+        ],
+        [
+          326.79,
+          316.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          3.0,
+          3.0
+        ],
+        [
+          327.0,
+          317.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.0,
+      "plate": 19,
+      "gcode_sha256": "0e00f94244a8e624e9d0fe0c2b3206ba96697eeeb8a9d6ba346aa8bcda551036",
+      "weight_g": 99.31890869140625,
+      "seconds": 8340.568359375,
+      "maximum_model_extrusion_z_mm": 1.6
+    },
+    {
+      "extrusion_moves_checked": 693185,
+      "features": {
+        "Inner wall": 228614,
+        "Outer wall": 90663,
+        "Gap infill": 12606,
+        "Bottom surface": 4575,
+        "Support": 49970,
+        "Brim": 320,
+        "Internal solid infill": 45552,
+        "Sparse infill": 232565,
+        "Floating vertical shell": 15174,
+        "Bridge": 6486,
+        "Top surface": 4430,
+        "Support interface": 1206,
+        "Overhang wall": 1024
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          19.214,
+          28.214
+        ],
+        [
+          292.79,
+          232.786
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          18.964,
+          27.964
+        ],
+        [
+          293.0,
+          233.036
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 18.964,
+      "plate": 20,
+      "gcode_sha256": "fdc22a27fdea29539a5e13613ad9586235f02232228ce90b7354b7f4e03abd3a",
+      "weight_g": 144.74404907226562,
+      "seconds": 18035.884765625,
+      "maximum_model_extrusion_z_mm": 13.0
+    }
+  ],
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 6186,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 1265,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 932.2325439453125,
+          "Bridge": 2442.56640625,
+          "Brim": 60.73657989501953,
+          "Custom": 407.0509338378906,
+          "Flush": 1175.7548828125,
+          "Gap infill": 118.23393249511719,
+          "Inner wall": 3518.620361328125,
+          "Internal solid infill": 5450.177734375,
+          "Outer wall": 1858.09716796875,
+          "Overhang wall": 360.4029235839844,
+          "Prime tower": 356.9409484863281,
+          "Sparse infill": 5475.9833984375,
+          "Support": 2552.39111328125,
+          "Support interface": 332.5142517089844,
+          "Top surface": 1579.3502197265625,
+          "Travel": 2364.14208984375,
+          "Undefined": 2360.451416015625
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 195.29942321777344,
+            "total_used_g": 200.75624084472656
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 19.318511962890625,
+            "total_used_g": 20.732666015625
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.5318480730056763,
+            "total_used_g": 2.2389259338378906
+          }
+        ],
+        "generate_support_material_time": 4589,
+        "id": 1,
+        "infill_time": 5721,
+        "layer_filament_change": 0,
+        "main_predication": 27028.53125,
+        "make_perimeters_time": 528,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.02197265625,
+              "height": 16.5,
+              "width": 369.97821044921875,
+              "x": -6.115959644317627,
+              "y": -23.02007484436035,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "F1 A2L knot",
+            "triangle_count": 39678
+          }
+        ],
+        "sliced_time": 12482,
+        "sliced_time_with_cache": 1459,
+        "total_predication": 28975.587890625,
+        "triangle_count": 39678,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 990.8209228515625,
+          "Bridge": 2172.754638671875,
+          "Brim": 37.69880676269531,
+          "Custom": 404.6952819824219,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 110.80935668945312,
+          "Inner wall": 3050.6171875,
+          "Internal solid infill": 5179.66455078125,
+          "Outer wall": 1601.9356689453125,
+          "Overhang wall": 182.41339111328125,
+          "Prime tower": 344.6819763183594,
+          "Sparse infill": 6945.17333984375,
+          "Support": 525.1367797851562,
+          "Support interface": 100.13800811767578,
+          "Top surface": 1507.497314453125,
+          "Travel": 1624.9404296875,
+          "Undefined": 1623.6807861328125
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 182.66314697265625,
+            "total_used_g": 187.4117431640625
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.426998138427734,
+            "total_used_g": 18.841154098510742
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.341213345527649,
+            "total_used_g": 1.934211254119873
+          }
+        ],
+        "generate_support_material_time": 959,
+        "id": 2,
+        "infill_time": 5495,
+        "layer_filament_change": 0,
+        "main_predication": 24016.90234375,
+        "make_perimeters_time": 582,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 289.8399658203125,
+              "height": 13.5,
+              "width": 290.73150634765625,
+              "x": 415.83349609375,
+              "y": 14.784361839294434,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "F2 A2L knot",
+            "triangle_count": 40450
+          }
+        ],
+        "sliced_time": 8389,
+        "sliced_time_with_cache": 1204,
+        "total_predication": 25816.541015625,
+        "triangle_count": 40450,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1093.021240234375,
+          "Bridge": 2671.9833984375,
+          "Brim": 45.42302322387695,
+          "Custom": 406.2917175292969,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 132.82225036621094,
+          "Inner wall": 3627.443115234375,
+          "Internal solid infill": 6054.74267578125,
+          "Outer wall": 1968.8690185546875,
+          "Overhang wall": 326.011474609375,
+          "Prime tower": 344.66192626953125,
+          "Sparse infill": 8782.8388671875,
+          "Support": 1715.2821044921875,
+          "Support interface": 287.9772033691406,
+          "Top surface": 1719.068115234375,
+          "Travel": 2171.71044921875,
+          "Undefined": 2168.876953125
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 218.17388916015625,
+            "total_used_g": 222.92251586914062
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 21.50725746154785,
+            "total_used_g": 22.921415328979492
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.681038737297058,
+            "total_used_g": 2.2740366458892822
+          }
+        ],
+        "generate_support_material_time": 2637,
+        "id": 3,
+        "infill_time": 7969,
+        "layer_filament_change": 0,
+        "main_predication": 30576.083984375,
+        "make_perimeters_time": 758,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 421.6116638183594,
+              "height": 13.5,
+              "width": 387.0082092285156,
+              "x": 744.324951171875,
+              "y": -88.5670166015625,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "F3 A2L knot",
+            "triangle_count": 47032
+          }
+        ],
+        "sliced_time": 13064,
+        "sliced_time_with_cache": 1524,
+        "total_predication": 32375.7265625,
+        "triangle_count": 47032,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1158.4671630859375,
+          "Bridge": 2673.036865234375,
+          "Brim": 48.18187713623047,
+          "Custom": 403.6958312988281,
+          "Flush": 1175.7548828125,
+          "Gap infill": 158.9767608642578,
+          "Inner wall": 3683.696533203125,
+          "Internal solid infill": 6149.51611328125,
+          "Outer wall": 1965.716064453125,
+          "Overhang wall": 259.2340087890625,
+          "Prime tower": 356.94525146484375,
+          "Sparse infill": 8869.5322265625,
+          "Support": 1295.7864990234375,
+          "Support interface": 212.61679077148438,
+          "Top surface": 1829.073974609375,
+          "Travel": 2200.639404296875,
+          "Undefined": 2200.444580078125
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 220.31956481933594,
+            "total_used_g": 225.7763671875
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 21.345272064208984,
+            "total_used_g": 22.759429931640625
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.688572883605957,
+            "total_used_g": 2.395650625228882
+          }
+        ],
+        "generate_support_material_time": 2025,
+        "id": 4,
+        "infill_time": 7646,
+        "layer_filament_change": 0,
+        "main_predication": 30485.203125,
+        "make_perimeters_time": 735,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 430.6781311035156,
+              "height": 16.5,
+              "width": 403.2935791015625,
+              "x": 1139.8902587890625,
+              "y": -20.856077194213867,
+              "z": 0.0
+            },
+            "id": 17,
+            "name": "F4 A2L knot",
+            "triangle_count": 48728
+          }
+        ],
+        "sliced_time": 12025,
+        "sliced_time_with_cache": 1433,
+        "total_predication": 32432.404296875,
+        "triangle_count": 48728,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1028.6593017578125,
+          "Bridge": 2173.40478515625,
+          "Brim": 37.38010787963867,
+          "Custom": 406.094482421875,
+          "Flush": 1175.7548828125,
+          "Gap infill": 150.80001831054688,
+          "Inner wall": 3047.259765625,
+          "Internal solid infill": 5139.9794921875,
+          "Outer wall": 1597.47705078125,
+          "Overhang wall": 182.5723876953125,
+          "Prime tower": 356.940673828125,
+          "Sparse infill": 6914.38720703125,
+          "Support": 485.21893310546875,
+          "Support interface": 100.70293426513672,
+          "Top surface": 1534.255615234375,
+          "Travel": 1721.8477783203125,
+          "Undefined": 1719.1368408203125
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 181.63629150390625,
+            "total_used_g": 187.09307861328125
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.31342124938965,
+            "total_used_g": 18.727577209472656
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.332139492034912,
+            "total_used_g": 2.039217472076416
+          }
+        ],
+        "generate_support_material_time": 785,
+        "id": 5,
+        "infill_time": 5383,
+        "layer_filament_change": 0,
+        "main_predication": 24102.1171875,
+        "make_perimeters_time": 544,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 289.6799621582031,
+              "height": 16.5,
+              "width": 288.7350158691406,
+              "x": 1603.8599853515625,
+              "y": 15.492844581604004,
+              "z": 0.0
+            },
+            "id": 21,
+            "name": "F5 A2L knot",
+            "triangle_count": 40334
+          }
+        ],
+        "sliced_time": 7981,
+        "sliced_time_with_cache": 1124,
+        "total_predication": 26049.1953125,
+        "triangle_count": 40334,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 927.650390625,
+          "Bridge": 2450.197265625,
+          "Brim": 61.480247497558594,
+          "Custom": 403.70660400390625,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 134.71238708496094,
+          "Inner wall": 3358.797607421875,
+          "Internal solid infill": 5452.7216796875,
+          "Outer wall": 1790.9681396484375,
+          "Overhang wall": 348.3771057128906,
+          "Prime tower": 344.696533203125,
+          "Sparse infill": 5239.9892578125,
+          "Support": 2517.810302734375,
+          "Support interface": 335.8682556152344,
+          "Top surface": 1494.7474365234375,
+          "Travel": 2109.229248046875,
+          "Undefined": 2108.90576171875
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 193.53770446777344,
+            "total_used_g": 198.28631591796875
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 19.32936668395996,
+            "total_used_g": 20.74352264404297
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.5455652475357056,
+            "total_used_g": 2.1385629177093506
+          }
+        ],
+        "generate_support_material_time": 3733,
+        "id": 6,
+        "infill_time": 5496,
+        "layer_filament_change": 0,
+        "main_predication": 26209.287109375,
+        "make_perimeters_time": 409,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.3185119628906,
+              "height": 13.5,
+              "width": 371.5860595703125,
+              "x": -7.071381568908691,
+              "y": -378.16851806640625,
+              "z": 0.0
+            },
+            "id": 25,
+            "name": "F6 A2L knot",
+            "triangle_count": 38008
+          }
+        ],
+        "sliced_time": 10930,
+        "sliced_time_with_cache": 1153,
+        "total_predication": 28008.888671875,
+        "triangle_count": 38008,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 893.97265625,
+          "Bridge": 2154.451904296875,
+          "Brim": 35.98727798461914,
+          "Custom": 407.05718994140625,
+          "Flush": 1175.7548828125,
+          "Gap infill": 112.61514282226562,
+          "Inner wall": 3020.395263671875,
+          "Internal solid infill": 4948.466796875,
+          "Outer wall": 1603.8782958984375,
+          "Overhang wall": 266.2046813964844,
+          "Prime tower": 356.9283447265625,
+          "Sparse infill": 6750.10595703125,
+          "Support": 1223.727783203125,
+          "Support interface": 201.4380340576172,
+          "Top surface": 1507.4429931640625,
+          "Travel": 1905.211669921875,
+          "Undefined": 1901.5386962890625
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 178.22665405273438,
+            "total_used_g": 183.68345642089844
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.448959350585938,
+            "total_used_g": 18.863113403320312
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.339020848274231,
+            "total_used_g": 2.0460987091064453
+          }
+        ],
+        "generate_support_material_time": 1202,
+        "id": 7,
+        "infill_time": 5153,
+        "layer_filament_change": 0,
+        "main_predication": 24607.38671875,
+        "make_perimeters_time": 497,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 270.4083557128906,
+              "height": 16.5,
+              "width": 270.1850891113281,
+              "x": 426.6947326660156,
+              "y": -355.4783020019531,
+              "z": 0.0
+            },
+            "id": 29,
+            "name": "F7 A2L knot",
+            "triangle_count": 40642
+          }
+        ],
+        "sliced_time": 8089,
+        "sliced_time_with_cache": 1103,
+        "total_predication": 26554.453125,
+        "triangle_count": 40642,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1163.128173828125,
+          "Bridge": 2625.9873046875,
+          "Brim": 46.32117462158203,
+          "Custom": 407.6604919433594,
+          "Flush": 1175.7548828125,
+          "Gap infill": 135.05349731445312,
+          "Inner wall": 3631.93115234375,
+          "Internal solid infill": 6157.50146484375,
+          "Outer wall": 1930.67236328125,
+          "Overhang wall": 242.02822875976562,
+          "Prime tower": 356.93707275390625,
+          "Sparse infill": 8805.068359375,
+          "Support": 987.5632934570312,
+          "Support interface": 173.85443115234375,
+          "Top surface": 1840.5980224609375,
+          "Travel": 2099.005859375,
+          "Undefined": 2094.46630859375
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 217.89967346191406,
+            "total_used_g": 223.35647583007812
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 21.0350399017334,
+            "total_used_g": 22.449195861816406
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.6551536321640015,
+            "total_used_g": 2.362231492996216
+          }
+        ],
+        "generate_support_material_time": 1308,
+        "id": 8,
+        "infill_time": 6909,
+        "layer_filament_change": 0,
+        "main_predication": 29823.0859375,
+        "make_perimeters_time": 665,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 370.0790100097656,
+              "height": 16.5,
+              "width": 383.5836181640625,
+              "x": 745.0933227539062,
+              "y": -392.0413818359375,
+              "z": 0.0
+            },
+            "id": 33,
+            "name": "F8 A2L knot",
+            "triangle_count": 48540
+          }
+        ],
+        "sliced_time": 10381,
+        "sliced_time_with_cache": 1333,
+        "total_predication": 31769.900390625,
+        "triangle_count": 48540,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1240.7811279296875,
+          "Bridge": 2688.30615234375,
+          "Brim": 47.54619598388672,
+          "Custom": 406.1399841308594,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 168.83187866210938,
+          "Inner wall": 3653.294921875,
+          "Internal solid infill": 6303.27001953125,
+          "Outer wall": 1937.601806640625,
+          "Overhang wall": 175.2515411376953,
+          "Prime tower": 344.6725158691406,
+          "Sparse infill": 8915.369140625,
+          "Support": 566.190673828125,
+          "Support interface": 117.69915008544922,
+          "Top surface": 1782.34912109375,
+          "Travel": 1869.744873046875,
+          "Undefined": 1866.988525390625
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 220.9259033203125,
+            "total_used_g": 225.67449951171875
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 20.988265991210938,
+            "total_used_g": 22.402421951293945
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.655269980430603,
+            "total_used_g": 2.248267650604248
+          }
+        ],
+        "generate_support_material_time": 1095,
+        "id": 9,
+        "infill_time": 6909,
+        "layer_filament_change": 0,
+        "main_predication": 29441.80859375,
+        "make_perimeters_time": 563,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 397.507568359375,
+              "height": 13.5,
+              "width": 396.5368957519531,
+              "x": 1174.6455078125,
+              "y": -441.9563293457031,
+              "z": 0.0
+            },
+            "id": 37,
+            "name": "F9 A2L knot",
+            "triangle_count": 48808
+          }
+        ],
+        "sliced_time": 9968,
+        "sliced_time_with_cache": 1251,
+        "total_predication": 31241.384765625,
+        "triangle_count": 48808,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 935.0252075195312,
+          "Bridge": 2222.104736328125,
+          "Brim": 35.12150955200195,
+          "Custom": 405.8460693359375,
+          "Flush": 1175.7548828125,
+          "Gap infill": 142.77207946777344,
+          "Inner wall": 3009.639404296875,
+          "Internal solid infill": 4957.56982421875,
+          "Outer wall": 1593.95458984375,
+          "Overhang wall": 266.30255126953125,
+          "Prime tower": 356.93011474609375,
+          "Sparse infill": 6750.005859375,
+          "Support": 1227.8109130859375,
+          "Support interface": 202.5941619873047,
+          "Top surface": 1458.3492431640625,
+          "Travel": 1861.1910400390625,
+          "Undefined": 1858.7779541015625
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 178.67068481445312,
+            "total_used_g": 184.12750244140625
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.425920486450195,
+            "total_used_g": 18.84007453918457
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.344089150428772,
+            "total_used_g": 2.0511670112609863
+          }
+        ],
+        "generate_support_material_time": 1410,
+        "id": 10,
+        "infill_time": 5130,
+        "layer_filament_change": 0,
+        "main_predication": 24641.59375,
+        "make_perimeters_time": 460,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 270.5224914550781,
+              "height": 16.5,
+              "width": 270.280029296875,
+              "x": 1614.6591796875,
+              "y": -362.99969482421875,
+              "z": 0.0
+            },
+            "id": 41,
+            "name": "F10 A2L knot",
+            "triangle_count": 40246
+          }
+        ],
+        "sliced_time": 8346,
+        "sliced_time_with_cache": 1212,
+        "total_predication": 26588.712890625,
+        "triangle_count": 40246,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 745.7281494140625,
+          "Bridge": 1060.8975830078125,
+          "Brim": 47.488956451416016,
+          "Custom": 403.9076232910156,
+          "Flush": 11.0,
+          "Gap infill": 10.48670768737793,
+          "Inner wall": 1713.5709228515625,
+          "Internal solid infill": 4659.126953125,
+          "Outer wall": 574.2421875,
+          "Sparse infill": 3020.2158203125,
+          "Top surface": 735.7543334960938,
+          "Travel": 345.714111328125,
+          "Undefined": 344.5424499511719
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 97.83858489990234,
+            "total_used_g": 97.83858489990234
+          }
+        ],
+        "generate_support_material_time": 10,
+        "id": 11,
+        "infill_time": 222,
+        "layer_filament_change": 0,
+        "main_predication": 12903.4033203125,
+        "make_perimeters_time": 54,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 334.47021484375,
+              "height": 9.0,
+              "width": 413.59857177734375,
+              "x": -39.29228973388672,
+              "y": -772.1278686523438,
+              "z": 0.0
+            },
+            "id": 45,
+            "name": "C1 A2L flat M core",
+            "triangle_count": 4312
+          }
+        ],
+        "sliced_time": 652,
+        "sliced_time_with_cache": 357,
+        "total_predication": 13328.1396484375,
+        "triangle_count": 4312,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 811.6306762695312,
+          "Bridge": 1128.5130615234375,
+          "Brim": 40.01901626586914,
+          "Custom": 406.73443603515625,
+          "Flush": 11.0,
+          "Gap infill": 19.875572204589844,
+          "Inner wall": 1470.643798828125,
+          "Internal solid infill": 4935.1484375,
+          "Outer wall": 494.485107421875,
+          "Sparse infill": 3132.44140625,
+          "Top surface": 750.4116821289062,
+          "Travel": 355.8495178222656,
+          "Undefined": 351.95904541015625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 100.02229309082031,
+            "total_used_g": 100.02229309082031
+          }
+        ],
+        "generate_support_material_time": 15,
+        "id": 12,
+        "infill_time": 165,
+        "layer_filament_change": 0,
+        "main_predication": 13128.580078125,
+        "make_perimeters_time": 51,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 382.10186767578125,
+              "height": 9.0,
+              "width": 376.1802062988281,
+              "x": 337.9078369140625,
+              "y": -806.3773803710938,
+              "z": 0.0
+            },
+            "id": 49,
+            "name": "C2 A2L flat M core",
+            "triangle_count": 4296
+          }
+        ],
+        "sliced_time": 633,
+        "sliced_time_with_cache": 387,
+        "total_predication": 13553.423828125,
+        "triangle_count": 4296,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 496.8928527832031,
+          "Bridge": 622.5533447265625,
+          "Brim": 40.818565368652344,
+          "Custom": 403.279052734375,
+          "Flush": 11.0,
+          "Gap infill": 10.52270793914795,
+          "Inner wall": 1461.908447265625,
+          "Internal solid infill": 2796.164306640625,
+          "Outer wall": 492.1263122558594,
+          "Sparse infill": 1893.464599609375,
+          "Top surface": 447.89697265625,
+          "Travel": 278.59228515625,
+          "Undefined": 278.0812072753906
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 63.11293411254883,
+            "total_used_g": 63.11293411254883
+          }
+        ],
+        "generate_support_material_time": 15,
+        "id": 13,
+        "infill_time": 155,
+        "layer_filament_change": 0,
+        "main_predication": 8529.8818359375,
+        "make_perimeters_time": 57,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 282.0906066894531,
+              "height": 9.0,
+              "width": 345.09326171875,
+              "x": 787.2510986328125,
+              "y": -759.6246337890625,
+              "z": 0.0
+            },
+            "id": 53,
+            "name": "C3 A2L flat M core",
+            "triangle_count": 3844
+          }
+        ],
+        "sliced_time": 557,
+        "sliced_time_with_cache": 320,
+        "total_predication": 8954.6494140625,
+        "triangle_count": 3844,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 420.4230041503906,
+          "Bridge": 529.891845703125,
+          "Brim": 27.809717178344727,
+          "Custom": 405.2557373046875,
+          "Flush": 11.0,
+          "Gap infill": 8.19157600402832,
+          "Inner wall": 1015.8209228515625,
+          "Internal solid infill": 2369.0146484375,
+          "Outer wall": 351.28094482421875,
+          "Sparse infill": 1661.321533203125,
+          "Top surface": 368.34234619140625,
+          "Travel": 202.45433044433594,
+          "Undefined": 199.91139221191406
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 51.22517013549805,
+            "total_used_g": 51.22517013549805
+          }
+        ],
+        "generate_support_material_time": 10,
+        "id": 14,
+        "infill_time": 120,
+        "layer_filament_change": 0,
+        "main_predication": 6944.0732421875,
+        "make_perimeters_time": 43,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 193.47386169433594,
+              "height": 9.0,
+              "width": 186.07962036132812,
+              "x": 1259.960205078125,
+              "y": -704.7369384765625,
+              "z": 0.0
+            },
+            "id": 57,
+            "name": "C4 A2L flat M core",
+            "triangle_count": 3284
+          }
+        ],
+        "sliced_time": 416,
+        "sliced_time_with_cache": 236,
+        "total_predication": 7368.7861328125,
+        "triangle_count": 3284,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 8.883111000061035,
+          "Custom": 402.6328125,
+          "Flush": 11.0,
+          "Gap infill": 1471.5662841796875,
+          "Inner wall": 32074.8203125,
+          "Internal solid infill": 3933.773681640625,
+          "Outer wall": 50258.07421875,
+          "Overhang wall": 0.6365945339202881,
+          "Top surface": 247.9701690673828,
+          "Travel": 10388.5625,
+          "Undefined": 10388.5625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 432.7970886230469,
+            "total_used_g": 432.7970886230469
+          }
+        ],
+        "generate_support_material_time": 715,
+        "id": 15,
+        "infill_time": 669,
+        "layer_filament_change": 0,
+        "main_predication": 98452.8671875,
+        "make_perimeters_time": 1098,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 318.4000244140625,
+              "height": 297.3385009765625,
+              "width": 328.39996337890625,
+              "x": 1584.800048828125,
+              "y": -767.2000122070312,
+              "z": 0.0
+            },
+            "id": 61,
+            "name": "V1 A2L hammered veneer and sacrificial fins",
+            "triangle_count": 493874
+          }
+        ],
+        "sliced_time": 6156,
+        "sliced_time_with_cache": 3321,
+        "total_predication": 98877.5,
+        "triangle_count": 493874,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 9.410680770874023,
+          "Custom": 402.7698059082031,
+          "Flush": 11.0,
+          "Gap infill": 1185.6982421875,
+          "Inner wall": 26865.181640625,
+          "Internal solid infill": 3810.09130859375,
+          "Outer wall": 40545.55859375,
+          "Overhang wall": 0.9296795725822449,
+          "Sparse infill": 24.073532104492188,
+          "Top surface": 236.7599334716797,
+          "Travel": 6660.28271484375,
+          "Undefined": 6660.28271484375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 368.1423645019531,
+            "total_used_g": 368.1423645019531
+          }
+        ],
+        "generate_support_material_time": 509,
+        "id": 16,
+        "infill_time": 604,
+        "layer_filament_change": 0,
+        "main_predication": 79317.859375,
+        "make_perimeters_time": 785,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 318.39996337890625,
+              "height": 297.3487243652344,
+              "width": 328.4000244140625,
+              "x": 0.8000091314315796,
+              "y": -1151.199951171875,
+              "z": 0.0
+            },
+            "id": 65,
+            "name": "V2 A2L hammered veneer and sacrificial fins",
+            "triangle_count": 484826
+          }
+        ],
+        "sliced_time": 5094,
+        "sliced_time_with_cache": 2889,
+        "total_predication": 79742.6328125,
+        "triangle_count": 484826,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 6.063477516174316,
+          "Custom": 402.6369934082031,
+          "Flush": 11.0,
+          "Gap infill": 1432.1510009765625,
+          "Inner wall": 28888.138671875,
+          "Internal solid infill": 3462.100830078125,
+          "Outer wall": 44971.69140625,
+          "Overhang wall": 0.5849078893661499,
+          "Sparse infill": 17.598360061645508,
+          "Top surface": 249.85218811035156,
+          "Travel": 9940.9091796875,
+          "Undefined": 9940.9091796875
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 386.0084228515625,
+            "total_used_g": 386.0084228515625
+          }
+        ],
+        "generate_support_material_time": 701,
+        "id": 17,
+        "infill_time": 639,
+        "layer_filament_change": 0,
+        "main_predication": 88984.765625,
+        "make_perimeters_time": 1010,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 318.39996337890625,
+              "height": 297.3487243652344,
+              "width": 328.3999938964844,
+              "x": 396.8000183105469,
+              "y": -1151.199951171875,
+              "z": 0.0
+            },
+            "id": 69,
+            "name": "V3 A2L hammered veneer and sacrificial fins",
+            "triangle_count": 460996
+          }
+        ],
+        "sliced_time": 6139,
+        "sliced_time_with_cache": 3476,
+        "total_predication": 89409.40625,
+        "triangle_count": 460996,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1263.2843017578125,
+          "Custom": 404.33941650390625,
+          "Flush": 11.0,
+          "Gap infill": 7.210040092468262,
+          "Inner wall": 326.9736633300781,
+          "Internal solid infill": 5169.4140625,
+          "Outer wall": 118.29437255859375,
+          "Top surface": 957.2412719726562,
+          "Travel": 81.80377197265625,
+          "Undefined": 80.311767578125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 99.29679870605469,
+            "total_used_g": 99.29679870605469
+          }
+        ],
+        "generate_support_material_time": 2,
+        "id": 18,
+        "infill_time": 76,
+        "layer_filament_change": 0,
+        "main_predication": 7912.9873046875,
+        "make_perimeters_time": 13,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 125.78178405761719,
+              "height": 1.600000023841858,
+              "width": 125.50641632080078,
+              "x": 795.0,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 73,
+            "name": "Backer3",
+            "triangle_count": 932
+          },
+          {
+            "bbox": {
+              "depth": 125.40355682373047,
+              "height": 1.600000023841858,
+              "width": 125.68798828125,
+              "x": 993.31201171875,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 77,
+            "name": "Backer1",
+            "triangle_count": 932
+          },
+          {
+            "bbox": {
+              "depth": 125.51068115234375,
+              "height": 1.600000023841858,
+              "width": 125.50924682617188,
+              "x": 795.0,
+              "y": -960.5106811523438,
+              "z": 7.907108301452581e-11
+            },
+            "id": 81,
+            "name": "Backer5",
+            "triangle_count": 928
+          },
+          {
+            "bbox": {
+              "depth": 125.77947998046875,
+              "height": 1.600000023841858,
+              "width": 125.51861572265625,
+              "x": 993.4813842773438,
+              "y": -960.7794799804688,
+              "z": 7.907108301452581e-11
+            },
+            "id": 85,
+            "name": "Backer7",
+            "triangle_count": 936
+          }
+        ],
+        "sliced_time": 190,
+        "sliced_time_with_cache": 66,
+        "total_predication": 8337.8349609375,
+        "triangle_count": 3728,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1263.530029296875,
+          "Custom": 403.5845947265625,
+          "Flush": 11.0,
+          "Gap infill": 7.116733551025391,
+          "Inner wall": 326.8785095214844,
+          "Internal solid infill": 5170.6806640625,
+          "Outer wall": 118.27226257324219,
+          "Top surface": 952.3704223632812,
+          "Travel": 88.07958984375,
+          "Undefined": 87.34232330322266
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 99.31890869140625,
+            "total_used_g": 99.31890869140625
+          }
+        ],
+        "generate_support_material_time": 2,
+        "id": 19,
+        "infill_time": 81,
+        "layer_filament_change": 0,
+        "main_predication": 7915.72119140625,
+        "make_perimeters_time": 14,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 125.60616302490234,
+              "height": 1.600000023841858,
+              "width": 125.61196899414062,
+              "x": 1191.0,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 89,
+            "name": "Backer4",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.77442932128906,
+              "height": 1.600000023841858,
+              "width": 125.4974365234375,
+              "x": 1389.5025634765625,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 93,
+            "name": "Backer2",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.77874755859375,
+              "height": 1.600000023841858,
+              "width": 125.5069580078125,
+              "x": 1191.0,
+              "y": -960.7787475585938,
+              "z": 7.907108301452581e-11
+            },
+            "id": 97,
+            "name": "Backer6",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.4163818359375,
+              "height": 1.600000023841858,
+              "width": 125.7607421875,
+              "x": 1389.2392578125,
+              "y": -960.4163818359375,
+              "z": 7.907108301452581e-11
+            },
+            "id": 101,
+            "name": "Backer8",
+            "triangle_count": 932
+          }
+        ],
+        "sliced_time": 196,
+        "sliced_time_with_cache": 69,
+        "total_predication": 8340.568359375,
+        "triangle_count": 3740,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 768.9625854492188,
+          "Bridge": 868.0770263671875,
+          "Brim": 58.67571258544922,
+          "Custom": 403.8429870605469,
+          "Flush": 11.0,
+          "Gap infill": 202.64483642578125,
+          "Inner wall": 3159.5,
+          "Internal solid infill": 3388.93408203125,
+          "Outer wall": 1186.523681640625,
+          "Overhang wall": 58.49751663208008,
+          "Sparse infill": 5184.708984375,
+          "Support": 470.0489807128906,
+          "Support interface": 34.18785858154297,
+          "Top surface": 722.44384765625,
+          "Travel": 1511.3172607421875,
+          "Undefined": 1510.1494140625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 144.74403381347656,
+            "total_used_g": 144.74404907226562
+          }
+        ],
+        "generate_support_material_time": 239,
+        "id": 20,
+        "infill_time": 499,
+        "layer_filament_change": 0,
+        "main_predication": 17611.208984375,
+        "make_perimeters_time": 313,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -1123.0,
+              "z": 0.0
+            },
+            "id": 105,
+            "name": "B1 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -1068.0,
+              "z": 0.0
+            },
+            "id": 109,
+            "name": "B2 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -1013.0,
+              "z": 0.0
+            },
+            "id": 113,
+            "name": "B3 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -958.0,
+              "z": 0.0
+            },
+            "id": 117,
+            "name": "B4 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 121,
+            "name": "R1 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 125,
+            "name": "R2 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 129,
+            "name": "R3 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 133,
+            "name": "R4 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 137,
+            "name": "R5 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 141,
+            "name": "R6 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 145,
+            "name": "R7 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 149,
+            "name": "R8 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 153,
+            "name": "R9 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 157,
+            "name": "R10 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 161,
+            "name": "R11 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 165,
+            "name": "R12 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 169,
+            "name": "R13 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 173,
+            "name": "R14 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 177,
+            "name": "R15 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 181,
+            "name": "R16 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 185,
+            "name": "R17 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 189,
+            "name": "R18 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 193,
+            "name": "R19 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 197,
+            "name": "R20 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 201,
+            "name": "R21 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 205,
+            "name": "R22 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 209,
+            "name": "R23 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 213,
+            "name": "R24 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 217,
+            "name": "R25 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 221,
+            "name": "R26 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 225,
+            "name": "R27 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 229,
+            "name": "R28 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 233,
+            "name": "R29 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 237,
+            "name": "R30 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 241,
+            "name": "R31 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 245,
+            "name": "R32 photo retainer",
+            "triangle_count": 520
+          }
+        ],
+        "sliced_time": 2577,
+        "sliced_time_with_cache": 1420,
+        "total_predication": 18035.884765625,
+        "triangle_count": 25248,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "geometry_validation_sha256": "3415d7bb8a377fbf21b20e83d75fc492bd0a8808ca762d5398b6edd1eb921e49",
+  "printer": "Bambu Lab A2L 0.4 nozzle",
+  "structural_infill": "8% gyroid",
+  "veneer_infill": "100%",
+  "physical_confirmation_pending": true
+}

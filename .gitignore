@@ -15,3 +15,6 @@ __pycache__/
 
 # Requested development branch: editable and natively sliced review projects.
 !/output/development/m-veneer-cosmetic-fit/*.3mf
+
+# Complete A2L release and editable production source.
+!/working/bambu/Dara-Photo-Frame-A2L/*.3mf

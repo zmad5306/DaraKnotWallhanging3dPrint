@@ -1,246 +1,29 @@
 # Dara knot wall hanging
 
-**Current main project: [Dara.3mf](Dara.3mf)** — open as a project in Bambu Studio. It contains **36 sliced plates: six flat M cores on plates 21–26 and six consistently oriented hammered veneers on plates 31–36**, with zero nominal cosmetic gaps and no cover bands. Every veneer shares the complete 55-degree orientation, with its broad face plane parallel to bed Y travel. The existing knot, backers, hardware and finish-test slices are retained. [Plate guide and estimates](docs/M-PRINT-GUIDE.md) · [Printing and assembly](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md) · [Current printable map](output/pdf/Dara-Part-and-Plate-Map.pdf) · [Validation](working/bambu/Dara-Photo-Frame-A1-Jointed/m-veneer-release-validation.json).
+**Current project: [Dara.3mf](Dara.3mf)** — open **as a project** in Bambu Studio. The full artwork is optimized for the **Bambu Lab A2L, 0.4 mm nozzle, 0.20 mm layers**, with **8% gyroid structural bodies**, four walls, five top/bottom layers, local solid screw reinforcement and solid veneers.
 
-The original solid-M project is preserved at [Dara-Solid-M-Baseline.3mf](reference/production/Dara-Solid-M-Baseline.3mf). The obsolete glue-practice plate is retained there; use the separate current sample project for zero-gap joint tests.
+The fresh A2L layout has **10 knot sections / 14 knot joints**, including **six fully hidden behind the M**, two partly covered and six fully exposed. The M has **four flat cores and three flat-backed hammered veneers**, leaving just **two short visible M seams** totaling approximately 24 mm in front projection. All convex crown and hammer texture is in the veneers. Visible cosmetic edges have zero nominal gap, with fitting/glue clearance underneath; cover bands are omitted.
 
-**Development branch `codex/m-veneer-cosmetic-fit`, October 18:** [Projects, test order and validation](output/development/m-veneer-cosmetic-fit/manifest.json). The M uses constant-thickness **8.4 mm cores with flat front and back faces**, apart from local seating and locating features. The six band-free veneers have **flat backs and contain all convex shaping and hammer texture**, measuring 1.9-4.1 mm before hidden recesses. The planar glue space is 0.2 mm. [Actual mesh cross-section](output/development/m-veneer-cosmetic-fit/M-flat-core-section.png). Solid sacrificial fins, repeated bonded rear tabs, diagonal ties and a grounded starter shoe restrain the veneers; native trees provide additional overhang support. These carriers prioritize restraint for a one-off art piece and require deliberate cutting, scraping and sanding on the hidden back. Core joints use full-thickness planar keys so the mating walls print without support. The frame candidate retains the tested 18 mm lap envelope and adds three seating pads, glue relief, secondary-pocket relief and consistent surface grain. These are development candidates awaiting physical coupons; the original solid-M release is archived for reference; the M redesign is now integrated into the main project.
+The complete project contains **20 natively sliced plates and 61 assembly pieces**. Every veneer uses the same complete rotation and has its face plane along bed Y. Bonded sacrificial fins, diagonal bracing and grounded starter shoes restrain the silk; trees supplement them. Keep all saved rotations and use the coordinated A2L knot, M and mounting hardware together.
 
-**Next steps:** [Project completion plan and A2L fourteen-joint layout](docs/PROJECT-GAME-PLAN.md) covers the sample decisions, full M and knot updates, surface orientation, release checks, and the optional A2L route with six fully hidden, two partly covered and six exposed knot joints. It includes the saved layout previews, per-joint coverage, bed-fit assumptions and hardware changes still needed for production.
+- [A2L printing, cleanup and assembly guide](working/bambu/Dara-Photo-Frame-A2L/README.md)
+- [Printable maps and production checklist](output/pdf/Dara-A2L-Print-Guide.pdf)
+- [Completion plan and physical checks](docs/PROJECT-GAME-PLAN.md)
+- [Native and geometry validation](working/bambu/Dara-Photo-Frame-A2L/release-validation.json)
+- [Named complete A2L project](working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf) and [editable source project](working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf)
 
-The flat-core revision supersedes the earlier crowned-core M candidates and samples. Use the corrected cores and veneers together. The finished hammered front profile, M mounting positions and existing screw-tip envelope are retained; shallow hidden cap pockets provide clearance for the tips beyond the flat core.
+Filament slots: **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**. The artwork remains 36 inches / 914.4 mm across. Print a representative full knot joint and one full M core/veneer first to confirm 8% stiffness, actual seam closure, reflection and tall silk restraint before the remaining plates. Physical fit, adhesion and wall-mount load performance still need confirmation.
 
-For an orientation-corrected reprint of the **original solid M**, use [the six-plate M project](output/development/m-veneer-cosmetic-fit/M-Solid-Common-Orientation-A1-Sliced.3mf). Its six parts share M5's saved rotation. Their original meshes, rear attachments and support painting are retained. A common lean alone did not align their layer planes after assembly.
+For another computer, pull branch `codex/m-veneer-cosmetic-fit`, run `git lfs pull`, then `python scripts/audit_dara_release.py`. The production 3MF contains the editable meshes, material assignments, native A2L machine commands and stored slices.
 
-![Band-free M and independent core/veneer seams](output/development/m-veneer-cosmetic-fit/M-band-free-layout.png)
+## Preserved A1 projects and tests
 
-**Print the current tests from [one combined Bambu project](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf): 11 parts on three A1 plates.** Plate 1 contains both white cauls and the ribbon jig; plate 2 contains all six copper M test parts; plate 3 contains **one refined zero-gap ribbon tongue/socket pair** and its purge tower. Plates 1 and 3 retain their exact previous toolpaths; only copper M test plate 2 changes. Fixtures already printing remain valid. [Plate map](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-plates.png) · [Guide](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1.json) · [Unchanged-plate verification](output/development/m-veneer-cosmetic-fit/Zero-gap-plate-preservation.json). Mark tongue/socket on the ribbon backs before lifting them. Saved rotations, surface directions, support painting, colors and per-object process settings are retained.
+The [previous complete A1 veneer project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) remains unchanged: 36 plates, six flat cores and six veneers. Its F/C/V identifiers and mounts differ from the A2L release. Use its [A1 guide](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md) only with that file.
 
-The ribbon pair supersedes the former A-D visible-gap comparisons. Its cosmetic edges meet at **zero nominal gap** from Z8 upward, below the lowest decorative surface at Z9. The tested 18 mm lap, three seating pads, secondary-pocket relief and squeeze-out reservoir are retained. A 0.20 mm additional hidden recess provides **0.40 mm nominal total glue clearance** in the relief regions; the seating stops control face alignment independently. The full-size frame candidate retains its earlier 0.075 mm seam pending this physical test.
+The [combined A1 sample project](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf) and [printable sample checklist](output/pdf/Dara-Sample-Production-Checklist.pdf) also remain unchanged, including plate 1 fixtures. Those coupons establish local fit/adhesive behavior; the full A2L veneer carriers are regenerated for their larger panels and common in-plane orientation.
 
-The M veneer seam test on plate 2 now also has **zero nominal cosmetic gap**, with its **0.20 mm veneer-to-core glue space retained underneath**. Both seam veneers and the matching core seating are regenerated. Their actual hammered front edges match without overlap; see the [M seam validation](output/development/m-veneer-cosmetic-fit/M-zero-gap-seam-validation.json). Plate 1's white cauls and jig are unchanged. Full-size M veneers now also use zero nominal cosmetic gap in the main project; physical fit confirmation remains pending. Rebuild this standalone sample with `scripts/develop_m_veneer.py seam-coupon` when cached full-size cores are available.
+The [original solid-M baseline](reference/production/Dara-Solid-M-Baseline.3mf), [14-joint knot study](working/review/a2l-hidden-joints/lean-candidate.json) and [M layout study](working/review/a2l-m-joints/README.md) are retained as historical design sources.
 
-The current **M structural coupons and ribbon comparison parts use 8% gyroid infill** to evaluate weight and rigidity. Four walls and existing solid skins are retained. Veneers/carriers remain 100%, and white fixtures retain their prior settings. Full-size structural parts remain at 15% pending the sample results. To apply this settings-only trial to existing editable standalone samples, run `scripts/set_sample_infill.py` before combining, slicing and validating them; clean sample builds include the same overrides.
+![Dara knot wall hanging concept: white, wood tan, blue edge and copper M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
 
-[Printable sample checklist](output/pdf/Dara-Sample-Production-Checklist.pdf): two US Letter pages covering every part, plate start/finish times, cleanup, reprints, veneer fit, zero-gap ribbon closure and adhesive/cure notes. Print at 100%. Regenerate with `scripts/create_sample_checklist.py` using the bundled PDF dependencies or Python with ReportLab.
-
-The white M cauls are removable clamp pads with smooth crown faces and no hammered dimples; use a soft liner and release film. Cradle the face while cutting the fins and starter shoe, then trim remnants into the .40 mm rear recesses. Assess dry closure, grazing-light reflection, trim removal, cupping correction and cured glue-up before printing the full candidates. Keep the saved orientations and use release film on the show-face jig.
-
-On another computer with Git LFS installed, fetch and switch to this branch, then download the embedded 3MF assets:
-
-```sh
-git fetch origin
-git switch codex/m-veneer-cosmetic-fit
-git pull --ff-only
-git lfs pull
-```
-
-Open `output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf` **as a project** in Bambu Studio. Meshes, presets, material assignments and native slices are embedded; Python and this Mac's temporary files are not needed to print. The earlier [A2L hidden-joint studies](working/review/a2l-hidden-joints/verification.json), [printer-bed comparisons](working/review/a2l-optimization/verification.json), [M orientation analysis](working/review/M-reflection/orientation-analysis.json) and [cosmetic-fit proposal](working/review/cosmetic-joints/design-proposal.json) are also retained on this branch.
-
-Reproduce with Python dependencies in `scripts/requirements-m-veneer.txt`: run `scripts/develop_m_veneer.py build`, `scripts/develop_m_veneer.py orient`, `scripts/develop_cosmetic_joints.py coupons`, and `scripts/develop_cosmetic_joints.py frame`. `scripts/check_veneer_geometry.py` independently checks the existing hammer field and frame show surfaces. `scripts/combine_development_tests.py` packs the current tests into three plates. Slice staged projects using Bambu Studio 02.08.02.61 with `--slice 0 --arrange 0 --orient 0 --export-3mf sliced.3mf --outputdir <existing-directory> <project>`, then use `scripts/validate_development_candidates.py <staged-filename> <native-output-directory>`. `scripts/check_combined_tests.py` additionally checks the consolidated project against all 11 source parts, bonded connections, per-pair surface directions and the purge tower reservation. `scripts/preview_m_veneer.py` renders the generated geometry. To retain existing slices when updating only copper plate 2, snapshot the prior combined project, use `scripts/preserve_unchanged_plates.py <prior-editable> <new-editable> --plates 1 3` after packing, then preserve the prior native project with the same plate numbers plus `--native-dir <native-output-directory> --baseline-result <prior-result.json> --baseline-commit <prior-commit>` after slicing and before running the combined audit. The preservation tool rejects changed geometry, settings or poses and records asset/toolpath hashes.
-
-The copper face planes run along the A1 bed's **Y travel**, with a 55-degree lean across X, saved tree supports and conservative motion limits. Keep the saved scale, orientations and per-object overrides. Filament slots are **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**.
-
-## Historical solid M release notes
-
-The notes below describe the archived solid-M release and its earlier plate numbers. Use the current guide above for the 36-plate veneer build.
-
-**Mirrored seam layout, 2026-10-15:** The frame now has **32 short seams across the same 20 sections**, arranged in a repeated, mirrored pattern. Every seam is **67.3-75.1 mm** long; the two troublesome 129/181 mm cuts are gone. The tested 18 mm keyed laps, original artwork and overall size are retained. Two M screws, one locator and five photo-tab screws move clear of the new laps, with matching holes in the production hammered M. Use this revision's F1-F20 and M1/M3/M6 together. [Seam comparison](working/review/mirrored-joints/seam-comparison.png) · [Current release validation](working/bambu/Dara-Photo-Frame-A1-Jointed/mirrored-joints-validation.json) · [Updated printable map](reference/production/Dara-Part-and-Plate-Map-Solid-M.pdf).
-
-**Retained cover rebuild:** Plate 31 has one continuous circular-section crown per cover. Native slicing removes the repeated junction tracks across all five faces: interior command junctions fall from 556 to three isolated end transitions. The mating surfaces and footprints are preserved within 0.0002 mm; the faces are fuller by up to 1.38 mm. These covers and their saved slice are unchanged by the seam revision. [Before/after paths](working/review/continuous-covers/before-after-paths.png) · [Earlier cover validation](working/bambu/Dara-Photo-Frame-A1-Jointed/cover-crown-validation.json).
-
-All 32 plates: **4,090.55 g / 261 h 34 min**. Assembly excluding optional plates 30 and 32: **4,030.86 g / 257 h 39 min**. Copper plates 21–26 and 31: **1,049.74 g / 94 h 15 min**. Cover plate 31: **18.52 g / 2 h 05 min**. Estimates include supports and purge.
-
-Classic walls and arc fitting remain enabled at **0.05 mm** resolution. Plates 1-20, 21, 23 and 26 have fresh native slices. The other nine saved slices and their meshes are preserved. Native geometry, assembly interference, matching mounts, material layers, bed clearance and decorative-face support clearance pass; physical fit and finish still need a print.
-
-The final editable meshes, filament assignments, support painting and native slices are stored in the 3MF. Standalone experiments and the generation/migration history remain on [codex/hammered-m-production](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production). This release does not depend on those test files to open, print or audit. After cloning, run `git lfs pull`, then `python scripts/audit_dara_release.py`.
-
-![Dara knot wall hanging on a dark blue wall, with white ribbon, blue edge thread, wood-tan woven fabric, and a copper manuscript M](output/renderings/Dara-Navy-Wall-White-Wood-Copper-Blue-Ribbon-Edge.png)
-
-Concept rendering: white ribbon with a fine Azurite blue edge thread, wood-tan
-woven fabric, and a copper manuscript M on a dark blue wall.
-
-**Complete edge reconstruction:** the frame uses tangent lines and circular arcs throughout, including regenerated section clipping and joint endpoints. Frame/backer STLs, color modifiers and their saved slices remain synchronized. The [frame edge review](working/review/clean-edges/README.md) measures the saved perimeter paths and geometry. The editable production M and cover meshes are embedded in Dara.3mf. Their generation history is preserved on the [hammered development branch](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production); the older flat M STLs are historical.
-
-The [manufacturing CAD](working/Dara-Photo-Frame-A1-Jointed.scad), [continuous clean artwork](working/Dara-Clean-Artwork.scad) and [SVG](working/Dara-Clean-Artwork.svg) retain the frame and artwork sources. The final hammered M and cover meshes are embedded in **Dara.3mf**; the older flat M in the SCAD is superseded. Historical files under `reference/` document the original traced design. Plate 30 remains the physical finish/color check.
-
-The [final print review and first-print sequence](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md)
-records the digital checks. The user has printed the earlier hardware/lap
-test pieces and reported insufficient photo clearance. The jointed model now
-has 2.4 mm deep rabbets, giving the 1.6 mm backer 0.8 mm of photo and surface
-clearance. The extra 0.4 mm addresses the reported fit issue; the revised
-physical fit has not yet been checked. The optional weave sample remains on plate 30, and the requested full-color knot joint pair for epoxy practice is on plate 32.
-
-The [complete Bambu Studio project](reference/production/Dara-Solid-M-Baseline.3mf)
-contains 70 body/backer/hardware pieces on plates 1-29, a **68.36 x 24.00 mm white/wood/blue
-weave-and-edging sample alone on plate 30**, **five copper cover bands on plate 31**, and **two full-color knot joint halves on plate 32**.
-The older hardware and plain lap coupons were removed; their standalone STL files remain available. The new plate 32 pair is for a full-color epoxy mock glue-up. The weave has alternating raised
-crossings restored from the earlier texture, and its color region follows the
-surface relief. The
-[printable part and plate map](reference/production/Dara-Part-and-Plate-Map-Solid-M.pdf) identifies every
-current frame/backer/hardware part and the actual hammered M cuts, and lists the five covers on plate 31. The project
-uses four wall loops, 15% gyroid infill, and local 100% screw and mounting zones.
-The saved AMS palette is **1 white / Generic PLA, 2 wood tan / Generic PLA,
-3 copper / Generic PLA Silk, 4 Azurite blue / Generic PLA**. Frame sections
-print their shallow weave in wood and a **flush 1.5 mm blue line** on each
-fabric-facing white rail. A 1.25 mm white gap separates the line from the weave.
-The blue modifier is 0.6 mm deep; it prints in the final three rail layers,
-after the wood is complete. The M sections print entirely in copper. Match these project colors to your
-loaded AMS Lite spools in the print dialog. No painting or separate weave inserts
-are needed. Use the 3MF to retain these assignments; STL files contain geometry only.
-The [actual CAD color map](working/review/blue-ribbon-edge/assembly-color-map.png)
-shows the continuous edge path used by the section modifiers.
-See the [project notes and verification](working/bambu/Dara-Photo-Frame-A1-Jointed/README.md).
-Run `git lfs pull` after cloning to retrieve the 3MF and STL files.
-
-The jointed model's [individual STL exports](working/stl/Dara-Photo-Frame-A1-Jointed/README.md)
-contain the earlier 39-part export set, stored with Git LFS. The frame, backers and hardware remain relevant, but the flat M exports do not match the hammered production M. Use Dara.3mf for the current M and five covers.
-
-The jointed manufacturing model is
-[working/Dara-Photo-Frame-A1-Jointed.scad](working/Dara-Photo-Frame-A1-Jointed.scad).
-It now includes four separate keyed wall-mounting blocks. Each block is
-140 x 38 mm with a 10 mm stand-off and two 20 x 10 x 3 mm locating keys.
-The matching blind slots are in F3, F5, F16, and F18. Each block fastens
-to the knot with two of the same #6-19 x 1/2-inch pan-head screws used for
-the photo tabs. The keys locate the block; the screws secure it.
-The four wall-facing surfaces share one plane and leave
-4.5 mm behind the default photo tabs and modeled screw heads, before adding
-any strip thickness.
-
-Each block has two 9 mm counterbores with 3 mm seats and 4 mm through holes.
-The knot pilots are 3.175 mm diameter and 10.7 mm deep: screw engagement is
-9.7 mm, with 1 mm tip clearance and 2.8 mm of material remaining at the front.
-No washers are needed. The modeled 7 x 2.5 mm heads sit 4.5 mm below the
-block's wall-facing surface at the default stand-off.
-
-Each block has a flat, uninterrupted 95 x 20 mm strip area along the opposite
-edge from its two counterbores, also clear of the keyhole. Apply the strip
-after installing the block screws. The separate keyhole has a 9 mm head entry, 4.5 mm
-shaft slot, 4 mm deep hidden head channel, and 3 mm retaining lip. Insert
-the screw head through the lower round opening, then lower the frame 11 mm
-to seat it. Starting screw dimensions are a 4 mm shaft and 8 mm head;
-choose the screw projection to fit the lip and channel. Strip dimensions
-are a generic allowance, not a verified Command product or weight rating.
-
-Use `wall_blocks` to arrange all four blocks rear-down within 140 x 182 mm,
-or `wall_block` and `wall_mount_index` to select one. B1/B2 are upper
-left/right and B3/B4 lower left/right **when viewed from the front**;
-their key patterns differ. `wall_mount_detail` shows the selected block
-and actual knot slots; set `wall_mount_explode=0` to inspect the seated fit.
-`wall_keyhole_detail` sections the head channel, and `wall_fit_sample`
-provides the selected block plus a separate slot coupon. `show_wall_blocks`
-only changes assembly visibility: frame slots remain in previews and exports.
-`wall_standoff`, key clearances, and screw dimensions are adjustable.
-Check the coupon with the actual hardware before
-printing the affected frame sections. The enclosed keyhole channel needs
-a local bridging/support check; the CAD has not been physically load-tested.
-
-- [Rear assembly with the four blocks](working/review/wall-blocks/assembly-rear.png)
-- [Exploded mounting detail](working/review/wall-blocks/mount-exploded.png)
-- [Four keyed blocks](working/review/wall-blocks/blocks-keys.png) and [keyhole section](working/review/wall-blocks/keyhole-cutaway.png)
-- [Wall-mount geometry verification](working/review/wall-blocks/verification.json)
-
-Its photo retainers are separate 20 x 10 x 3 mm rotating tabs, four per photo,
-installed after printing with the selected
-[#6-19 x 1/2-inch pan-head screws](https://www.amazon.com/dp/B00GDYBX9O).
-The knot sections print rear-down at Z=0 without projecting retainer tracks.
-Tabs have 4 mm clearance holes; the frame has 3.175 mm blind pilots, 10.7 mm
-deep at the default tab thickness. This leaves 1 mm beyond the screw tip and
-2.8 mm of front cover. No photo-retainer washers or countersinks are needed.
-Loosen each screw slightly, turn the tab 90 degrees to release the backer,
-and snug it again after closing. The assembled tabs and screw heads project
-behind the knot; they are not present during frame printing.
-
-In this jointed file, `retainer` shows one tab flat for printing, `fit_sample`
-lays out a full-depth frame coupon, backer strip, and tab separately, and
-`retainer_detail` shows the assembled screw stack. `retainer_cutaway` toggles
-the detail section; `retainers_open` rotates the installed tabs. Metal screws
-are preview-only. Photo-retainer thickness, pilot diameter, and clearance-hole
-diameter have independent controls; pilot depth follows thickness to retain
-1 mm tip clearance. Check the printed coupon with the actual screws before
-printing the full frame. Existing rabbets and lap sockets still require local
-support assessment. Lap profiles and M attachments are preserved; artwork and backers use the corrected outlines.
-
-- [Retainer screw cutaway](working/review/photo-retainers/screw-cutaway.png)
-- [Closed tab](working/review/photo-retainers/tab-closed.png) and [open tab](working/review/photo-retainers/tab-open.png)
-- [Fit sample](working/review/photo-retainers/fit-sample.png)
-- [Rear assembly](working/review/photo-retainers/assembly-rear.png)
-- [Geometry verification](working/review/photo-retainers/verification.json)
-
-The earlier, unsegmented feature model is [working/Dara-Photo-Frame.scad](working/Dara-Photo-Frame.scad).
-The following sliding-retainer description applies only to that earlier design;
-use the jointed manufacturing model and complete 3MF above for production.
-Both working models now use the reconstructed clean outlines. The historical reference remains archived. The working CAD adds rear photo rabbets
-to the eight outer openings, 1.6 mm removable backers, and four identical printed
-sliding retainers per backer in integral rear T tracks. There are no screw holes.
-The rabbets overlap the openings by 4 mm and allow 0.4 mm for a photo; backers
-have 0.3 mm edge clearance. Tracks project 3.2 mm behind the original rear face,
-and the slider grips project 4.5 mm. Push each slider inward to retain the backer;
-pull it outward to remove it. Short tapered ribs provide friction retention.
-
-The weave has a continuous solid CAD backing down to the rear face, allowing
-the slicer to generate infill and solid skins without modeled internal partitions.
-The knot uses the reconstructed continuous outline, with no M-shaped platform underneath the
-separate letter. The M is a closed, flat-bottomed solid, 10.5 mm thick.
-
-Use `view_mode` to select `assembly`, `frame`, `M`, `exploded`, `backer`, `retainer`,
-or `fit_sample`. `backer_index` selects openings 1â€“8, clockwise starting at the
-upper opening on the left side in the front view. `retainers_open` shows the sliders withdrawn.
-`frame` excludes the M and removable hardware; `M` isolates the letter with its
-bottom at Z=0. `exploded` lifts the M and separates the rear hardware for inspection.
-The fit sample is a CAD detail of the track, keeper, and backer edge. PLA sliding
-fit is provisional until physically checked; `slide_clearance` and `lock_rib`
-adjust it. Hardware dimensions are finished millimetres. This stage supplies
-CAD only, without print segmentation or production exports.
-
-The historical design reference is [reference/Dara-Clean-Reference.scad](reference/Dara-Clean-Reference.scad).
-It retains the original traced curves for provenance. Use [the reconstructed artwork](working/Dara-Clean-Artwork.scad) as the current visual baseline. It is a standalone OpenSCAD file
-with continuous artwork outlines and editable display/dimension parameters.
-
-![Clean reference, front view](reference/Dara-Clean-Reference-front.png)
-
-The reference is 914.4 x 914.4 mm (36 x 36 inches), uniformly scaled to 75% of
-the original in X, Y and Z. It keeps the manuscript M, open photo areas, and
-decorative fabric. It has no part seams,
-joints, connectors, mounts, photo-retaining features, rear labels, fabric backing,
-support walls, cross-braces, or end ties. The fabric is represented by a thin open
-grid; the knot rails and M have simple solid sections. This records the earlier design target,
-before production segmentation and the complete curve reconstruction.
-
-Open the SCAD in OpenSCAD and press F5. The top parameters toggle the knot, M,
-and fabric. `fabric_style = "plain"` shows the fabric as a simple surface;
-`view_mode = "drawing"` produces a flat front drawing for SVG/DXF export.
-The default model has 13.5 mm knot depth, fabric at Z=9 to 9.6 mm, and the
-M at Z=13.5 to 24 mm. The M follows the existing visible outline, approximately
-600 x 359 mm. Fabric threads are 1.5 mm wide at 6 mm pitch and 0.6 mm thick.
-`overall_width` controls uniform scaling of every part, including thicknesses
-and offsets. The other dimension parameters describe the original 48-inch
-master before scaling. Colours distinguish the components for review.
-
-- [Angled view](reference/Dara-Clean-Reference-angle.png)
-- [Rear view](reference/Dara-Clean-Reference-back.png)
-- [Full-size vector drawing](reference/Dara-Clean-Reference-drawing.svg)
-- [Source and outline processing record](reference/provenance.json)
-- [Geometry verification](reference/verification.json)
-
-The SCAD embeds native polygon outlines and needs no STL files, external fonts,
-or Python installation. Keep this reference separate from future production
-models. A matching review copy is saved in the existing Nextcloud package under
-`CAD/Clean-Reference/`.
-
-The optional `scripts/build_reference.py --source-package PATH` command
-reconstructs the initial reference from the archived package (requires numpy,
-shapely and trimesh). It uses the approved knot master and visible M face
-contours, closes the M seams, and applies the channel-end and local curve
-cleanup recorded in `provenance.json`. Running it overwrites the SCAD and resets
-its parameters; make future design edits deliberately and regenerate previews
-after changes.
-
-## Physically tested joint reference
-
-The [tested keyed lap joints](reference/tested-lap-joints/README.md) preserve the
-75% straight and curved samples reported as rock solid on 2026-10-12. The folder
-includes self-contained OpenSCAD reference CAD, print settings and verification
-records. The exact test project is stored with Git LFS; test STL exports remain in Nextcloud. This is a separate joint
-baseline used by the current jointed manufacturing model. Its six-wall, 30%
-infill test preset differs from the production project's four walls and 15% infill.
+Concept rendering; actual print seams, texture, material finish and mounting follow the production project.

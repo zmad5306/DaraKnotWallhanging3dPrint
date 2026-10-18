@@ -110,7 +110,7 @@ def read_object(files, oid):
     return result, props(config)
 
 
-def mesh_xml(resources, pid, m, block_front=False):
+def mesh_xml(resources, pid, m, block_front=False, front_normal=None):
     obj = ET.SubElement(resources, tag('object'), id=str(pid), type='model')
     body = ET.SubElement(obj, tag('mesh'))
     vs = ET.SubElement(body, tag('vertices'))
@@ -120,7 +120,7 @@ def mesh_xml(resources, pid, m, block_front=False):
     normals = m.face_normals if block_front else None
     for i, f in enumerate(m.faces):
         attrs = dict(zip(('v1', 'v2', 'v3'), map(str, f)))
-        if block_front and normals[i, 2] > .01:
+        if block_front and (normals[i, 2] if front_normal is None else normals[i] @ front_normal) > .01:
             attrs['paint_supports'] = '8'  # native support blocker, decorative face
         ET.SubElement(fs, tag('triangle'), **attrs)
 
@@ -142,6 +142,8 @@ def write_project(path, plates, title, settings_update=None):
     build = ET.SubElement(root, tag('build'), attrib={'{' + P + '}UUID': uid()})
     cfg = ET.Element('config'); rels = ET.Element('Relationships', xmlns=R)
     records = []; next_id = 1000; columns=math.ceil(math.sqrt(len(plates)))
+    area=np.array([[float(v) for v in p.split('x')] for p in settings['printable_area']])
+    pitch=np.ptp(area,axis=0)*1.2
     for pi, objects in enumerate(plates):
         plate = ET.SubElement(cfg, 'plate')
         for k, v in [('plater_id', pi + 1), ('plater_name', f'{pi + 1} - {objects[0]["name"]}'),
@@ -159,7 +161,7 @@ def write_project(path, plates, title, settings_update=None):
             child_path = f'3D/Objects/{oid}.model'
             for j, part in enumerate(entry['parts'], 1):
                 pid = oid + j
-                mesh_xml(child_res, pid, part['mesh'], entry.get('block_front', False) and part.get('subtype', 'normal_part') == 'normal_part')
+                mesh_xml(child_res, pid, part['mesh'], entry.get('block_front', False) and part.get('subtype', 'normal_part') == 'normal_part', entry.get('front_normal'))
                 ET.SubElement(comps, tag('component'), objectid=str(pid), transform=IDENTITY,
                               attrib={'{' + P + '}path': '/' + child_path, '{' + P + '}UUID': uid()})
                 pc = ET.SubElement(co, 'part', id=str(pid), subtype=part.get('subtype', 'normal_part'))
@@ -170,7 +172,7 @@ def write_project(path, plates, title, settings_update=None):
             files[child_path] = xml(child)
             ET.SubElement(rels, 'Relationship', Target='/' + child_path, Id=f'rel-{oid}', Type='http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel')
             local = np.asarray(entry['transform']); t = local.copy()
-            t[:2, 3] += [pi % columns * 307.2, -(pi // columns) * 307.2]
+            t[:2, 3] += [pi % columns * pitch[0], -(pi // columns) * pitch[1]]
             ET.SubElement(build, tag('item'), objectid=str(oid), printable='1', transform=' '.join(format(float(x), '.12g') for x in t[:3].T.reshape(-1)), attrib={'{' + P + '}UUID': uid()})
             inst = ET.SubElement(plate, 'model_instance')
             for k, v in [('object_id', oid), ('instance_id', 0), ('identify_id', oid)]: meta(inst, k, v)

@@ -1,0 +1,372 @@
+{
+  "joints": [
+    {
+      "joint": 1,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -245.97530780639036,
+          61.987551040176335
+        ],
+        [
+          -206.3797806902275,
+          102.98991965947945
+        ],
+        [
+          -265.87358625090474,
+          26.986715122378968
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": 3.993753190529983e-14
+    },
+    {
+      "joint": 2,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -51.81831490012573,
+          143.88891886348
+        ],
+        [
+          -82.41538210082972,
+          156.2509364462051
+        ],
+        [
+          -27.748865197281226,
+          123.37888251533474
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -1.5047103238971862e-14
+    },
+    {
+      "joint": 3,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -235.72965841654943,
+          241.38651266604185
+        ],
+        [
+          -196.83878545128934,
+          216.6377753245127
+        ],
+        [
+          -258.35707541451893,
+          278.15606528774236
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -7.251144129583054e-16
+    },
+    {
+      "joint": 4,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -3.9999999999999853,
+          235.969
+        ],
+        [
+          -13.999999999999982,
+          265.969
+        ],
+        [
+          -13.99999999999999,
+          208.969
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": 4.418861110355721e-14
+    },
+    {
+      "joint": 5,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          233.7018310079042,
+          239.3586852573965
+        ],
+        [
+          258.45056834943335,
+          278.2495582226566
+        ],
+        [
+          196.93227838620373,
+          216.731268259427
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -8.534839501805891e-16
+    },
+    {
+      "joint": 6,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          53.79563984652465,
+          144.17369236627238
+        ],
+        [
+          28.51914778654292,
+          120.71950405924115
+        ],
+        [
+          74.35764414780044,
+          143.0764325454841
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": 8.45521367726135e-14
+    },
+    {
+      "joint": 7,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          247.92778498985723,
+          62.844814808963555
+        ],
+        [
+          206.2482827623174,
+          106.00520282928264
+        ],
+        [
+          267.8260634343716,
+          27.843978891166184
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -6.847701394580938e-13
+    },
+    {
+      "joint": 8,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          247.20538544495537,
+          -61.0931711523794
+        ],
+        [
+          287.51047197258856,
+          -20.788084624746197
+        ],
+        [
+          259.22620072512666,
+          -34.93022024847714
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": 6.826275655846814e-13
+    },
+    {
+      "joint": 9,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          50.485375000000005,
+          -156.0
+        ],
+        [
+          80.485375,
+          -146.0
+        ],
+        [
+          23.485375000000005,
+          -146.0
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": 1.5436610323327216e-13
+    },
+    {
+      "joint": 10,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          239.38498662726013,
+          -233.72813237776782
+        ],
+        [
+          278.27585959252025,
+          -258.476869719297
+        ],
+        [
+          216.75756962929063,
+          -196.95857975606737
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -7.023040786104748e-13
+    },
+    {
+      "joint": 11,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -52.39904525,
+          -156.0
+        ],
+        [
+          -22.39904525,
+          -146.0
+        ],
+        [
+          -79.39904525,
+          -146.0
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -2.779790286844275e-13
+    },
+    {
+      "joint": 12,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          3.9999999999999853,
+          -235.969
+        ],
+        [
+          13.999999999999984,
+          -265.969
+        ],
+        [
+          13.999999999999988,
+          -208.969
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -1.4514431323497945e-14
+    },
+    {
+      "joint": 13,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -246.7588886523794,
+          -61.53966794495535
+        ],
+        [
+          -287.0639751800126,
+          -21.23458141732214
+        ],
+        [
+          -263.02234461967,
+          -31.13407635393381
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": 5.56174979118515e-13
+    },
+    {
+      "joint": 14,
+      "show_gap_mm": 0,
+      "seating_pad_top_mm": 5.0,
+      "seating_pads_xy": [
+        [
+          -241.4058159545094,
+          -235.74896170501697
+        ],
+        [
+          -216.65707861298023,
+          -196.85808873975685
+        ],
+        [
+          -278.17536857620985,
+          -258.3763787029865
+        ]
+      ],
+      "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
+      "secondary_axial_relief_mm": 0.8,
+      "lap_length_mm": 18,
+      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
+      "assembled_interference_mm3": -8.534839501805891e-16
+    }
+  ],
+  "zero_cosmetic_gap_above_z_mm": 8,
+  "assembly_order": [
+    9,
+    8,
+    10,
+    7,
+    2,
+    5,
+    4,
+    3,
+    1,
+    6
+  ],
+  "continuous_artwork": true,
+  "weave_pitch_mm": 6,
+  "source_cad_sha256": "eb62f56258712faf945a0a49984c031631df356112b8b2f85ac23ec3d28e538c",
+  "production_plan_sha256": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
+  "physical_confirmation_pending": true
+}

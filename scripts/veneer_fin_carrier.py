@@ -43,7 +43,7 @@ def line_parts(region,y):
     return [p for p in shapely.get_parts(cut) if p.geom_type=='LineString' and p.length>6]
 
 
-def fin_carrier(m,region,bottom,pose,exclusion,height_mesh):
+def fin_carrier(m,region,bottom,pose,exclusion,height_mesh,bed=(256,256),height=260,force_guard=False):
     # Keep knife/sanding scars on the hidden rear, with their remnants below the
     # seating surface. Positive-area embedding makes real bonds, not tangencies.
     from plan_veneer_fins import plan
@@ -90,7 +90,7 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh):
     starter=mesh(solid(height_mesh(starter_region,lambda q:bottom(q)-20,
                                   lambda q:bottom(q)+.9)[0]))
     starter.apply_transform(pose)
-    bed_clip=section(box(-1000,-1000,1000,1000)).extrude(260)
+    bed_clip=section(box(-1000,-1000,1000,1000)).extrude(height)
     starter=solid(starter)^bed_clip
     assert all(abs(c.bounding_box()[2])<1e-6 for c in starter.decompose())
     for patch in shapely.get_parts(starter_region):
@@ -126,8 +126,8 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh):
             # Connect neighboring sheets at this X. Dense cross-ties between
             # every possible pair would undo the material savings.
             middle=[c for c in records if min(a['print_y_mm'],b['print_y_mm'])<c['print_y_mm']<max(a['print_y_mm'],b['print_y_mm'])]
-            if any(Polygon(c['profile_xz_mm']).intersection(LineString([(x,0),(x,260)])).length>2 for c in middle):continue
-            vertical=common.intersection(LineString([(x,0),(x,260)]))
+            if any(Polygon(c['profile_xz_mm']).intersection(LineString([(x,0),(x,height)])).length>2 for c in middle):continue
+            vertical=common.intersection(LineString([(x,0),(x,height)]))
             if vertical.is_empty:continue
             ceiling=vertical.bounds[3]
             for z in np.arange(2,ceiling-abs(dy)-2,24):
@@ -166,15 +166,15 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh):
         mid=p.representative_point();edge=nearest_points(mid,hull.boundary)[1]
         base=base.union(LineString([mid,edge]).buffer(1.5))
     guard=None
-    if np.ptp(m.vertices@R.T,axis=0)[1]>240:
+    if force_guard or np.ptp(m.vertices@R.T,axis=0)[1]>bed[1]-16:
         # Physical, per-object keep-out for supplementary tree feet. The broad
         # shallow ring is sacrificial and connected to the carrier. Unlike a
         # global bed exclusion it cannot affect the knot's edge-fitting plates.
-        outside=box(.8,.8,255.2,255.2)
+        outside=box(.8,.8,bed[0]-.8,bed[1]-.8)
         ring=outside.difference(outside.buffer(-2,join_style=2))
         a,b=nearest_points(base,ring)
         base=base.union(ring).union(LineString([a,b]).buffer(1.5))
-        guard=dict(outside_xy_mm=[.8,.8,255.2,255.2],width_mm=2,height_mm=1.6,
+        guard=dict(outside_xy_mm=[.8,.8,bed[0]-.8,bed[1]-.8],width_mm=2,height_mm=1.6,
                    connected_to_carrier=True,model_brim_disabled=True)
     base_solid=section(base).extrude(1.6)
     support=mf.Manifold.batch_boolean(fins+teeth+braces+[base_solid,starter],mf.OpType.Add)
@@ -191,7 +191,7 @@ def fin_carrier(m,region,bottom,pose,exclusion,height_mesh):
     assert ((support-contacts)^body).volume()<1e-5,'Fin body touches veneer outside its teeth'
     out=mesh(result)
     limit=.79 if guard else 2
-    assert np.all(out.bounds[0,:2]>limit) and np.all(out.bounds[1,:2]<256-limit),out.bounds
+    assert np.all(out.bounds[0,:2]>limit) and np.all(out.bounds[1,:2]<np.array(bed)-limit),out.bounds
     # Preserve the exact face above trim pockets, including every dimple.
     report=dict(type='Solid sacrificial fins with repeated bonded cut-away teeth',fin_count=len(fins),
         bonded_tooth_count=len(teeth),cross_braces=len(braces),fin_pitch_nominal_mm=PITCH,

@@ -1,0 +1,1988 @@
+{
+  "editable_sha256": "9217c51722cf64b3e056b27b86c617534b36498cc2526e25d6f63398003648bc",
+  "production_plan_sha256": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
+  "part_overlaps": [
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        2
+      ],
+      "overlap_mm3": 3.374682873512044e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        3
+      ],
+      "overlap_mm3": 1.6712437775909597e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        4
+      ],
+      "overlap_mm3": 4.418861110355721e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        5
+      ],
+      "overlap_mm3": 1.0200174038743626e-15
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        6
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        6
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        6
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        6
+      ],
+      "overlap_mm3": 8.57124725030946e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        6
+      ],
+      "overlap_mm3": 9.936503553831978e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        7
+      ],
+      "overlap_mm3": 6.826275655846814e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        8
+      ],
+      "overlap_mm3": 1.540330363258846e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        7,
+        8
+      ],
+      "overlap_mm3": 6.644165987213785e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        9
+      ],
+      "overlap_mm3": 5.056302598838158e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        7,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        8,
+        9
+      ],
+      "overlap_mm3": 1.5083420623618338e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        10
+      ],
+      "overlap_mm3": 5.135007816094855e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        7,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        8,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        9,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        2
+      ],
+      "overlap_mm3": 3.8657358779282385e-06
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        3
+      ],
+      "overlap_mm3": 2.2903574037306797e-06
+    },
+    {
+      "family": "core",
+      "parts": [
+        2,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        2,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        3,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "veneer",
+      "parts": [
+        1,
+        2
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "veneer",
+      "parts": [
+        1,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "veneer",
+      "parts": [
+        2,
+        3
+      ],
+      "overlap_mm3": 0.0
+    }
+  ],
+  "actual_knot_cosmetic_closure": [
+    {
+      "joint": 1,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 260,
+          "maximum_gap_mm": 2.7364003057559168e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 211,
+          "maximum_gap_mm": 2.842155733305641e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 211,
+          "maximum_gap_mm": 2.575808312267863e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 179,
+          "maximum_gap_mm": 2.812593080842577e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 173,
+          "maximum_gap_mm": 1.477187037969115e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 173,
+          "maximum_gap_mm": 1.47567349104617e-08
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 146,
+          "maximum_gap_mm": 3.060591321203331e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 111,
+          "maximum_gap_mm": 3.421928381218803e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 111,
+          "maximum_gap_mm": 3.399164891714519e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 95,
+          "maximum_gap_mm": 3.0590206617691436e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 88,
+          "maximum_gap_mm": 3.0591426133201e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 88,
+          "maximum_gap_mm": 3.2006754266580496e-08
+        }
+      ]
+    },
+    {
+      "joint": 3,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 7.342767842216085e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 136,
+          "maximum_gap_mm": 6.788014985080852e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 136,
+          "maximum_gap_mm": 6.791724977912484e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 133,
+          "maximum_gap_mm": 6.784714869383139e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 117,
+          "maximum_gap_mm": 6.780482464632514e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 117,
+          "maximum_gap_mm": 6.776867464773894e-08
+        }
+      ]
+    },
+    {
+      "joint": 4,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 100,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.859140898211094e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        }
+      ]
+    },
+    {
+      "joint": 5,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 8.117041587773056e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.0786687240308e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.096986526594837e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.07606332292544e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 118,
+          "maximum_gap_mm": 8.096186547799044e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 118,
+          "maximum_gap_mm": 8.078342253578639e-14
+        }
+      ]
+    },
+    {
+      "joint": 6,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 150,
+          "maximum_gap_mm": 3.801808699923883e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 117,
+          "maximum_gap_mm": 3.8833189982503015e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 117,
+          "maximum_gap_mm": 3.46682782198955e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 95,
+          "maximum_gap_mm": 3.8110982892755306e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 90,
+          "maximum_gap_mm": 3.760792329706252e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 90,
+          "maximum_gap_mm": 3.4029972171567224e-08
+        }
+      ]
+    },
+    {
+      "joint": 7,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 268,
+          "maximum_gap_mm": 1.732981696602786e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 213,
+          "maximum_gap_mm": 2.9631405805077462e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 213,
+          "maximum_gap_mm": 3.007508777995735e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 180,
+          "maximum_gap_mm": 2.5308360184125712e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 171,
+          "maximum_gap_mm": 1.4265162219041388e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 171,
+          "maximum_gap_mm": 2.0268846796682872e-08
+        }
+      ]
+    },
+    {
+      "joint": 8,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 261,
+          "maximum_gap_mm": 3.752812041769507e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.753474287427635e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.7761984724731944e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 178,
+          "maximum_gap_mm": 3.7761984948177614e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.7683227317020434e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.7690912055760465e-08
+        }
+      ]
+    },
+    {
+      "joint": 9,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 136,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        }
+      ]
+    },
+    {
+      "joint": 10,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 8.045797046648645e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 133,
+          "maximum_gap_mm": 8.063680572045212e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 133,
+          "maximum_gap_mm": 8.053344705816504e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 133,
+          "maximum_gap_mm": 8.110592415660523e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.129556113483559e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.111638270574086e-14
+        }
+      ]
+    },
+    {
+      "joint": 11,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 136,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        }
+      ]
+    },
+    {
+      "joint": 12,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 100,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.6561449755929278e-14
+        }
+      ]
+    },
+    {
+      "joint": 13,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 261,
+          "maximum_gap_mm": 3.776198472807732e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.7761984884927526e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.776198473096451e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 176,
+          "maximum_gap_mm": 3.776198546076668e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.77619848731045e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.7761985836584177e-08
+        }
+      ]
+    },
+    {
+      "joint": 14,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 6.833398022210354e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 137,
+          "maximum_gap_mm": 8.237836488040925e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 137,
+          "maximum_gap_mm": 8.143412245795191e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.086688022168329e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.105595843824435e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.08773081019366e-14
+        }
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "screw": 1,
+      "core": 1,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 2,
+      "core": 2,
+      "knot": 2,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 3,
+      "core": 1,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 4,
+      "core": 3,
+      "knot": 5,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 5,
+      "core": 3,
+      "knot": 6,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 6,
+      "core": 2,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 7,
+      "core": 2,
+      "knot": 10,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 8,
+      "core": 1,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 9,
+      "core": 4,
+      "knot": 6,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 10,
+      "core": 4,
+      "knot": 7,
+      "pilot_annulus_missing_mm3": 0.0
+    }
+  ],
+  "hammered_front_preservation": [
+    {
+      "veneer": 1,
+      "front_vertices_checked": 114567,
+      "max_front_error_mm": 8.526512829121202e-14
+    },
+    {
+      "veneer": 2,
+      "front_vertices_checked": 113632,
+      "max_front_error_mm": 9.237055564881302e-14
+    },
+    {
+      "veneer": 3,
+      "front_vertices_checked": 106757,
+      "max_front_error_mm": 1.0150134689838562e-13
+    }
+  ],
+  "print_bounds": [
+    {
+      "name": "F1 A2L knot",
+      "plate": 1,
+      "bounds_mm": [
+        [
+          7.171556754597816,
+          6.9981146115067645,
+          0.0
+        ],
+        [
+          322.8284432449254,
+          313.0018853882605,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F2 A2L knot",
+      "plate": 2,
+      "bounds_mm": [
+        [
+          23.482995915558718,
+          22.81073222889944,
+          0.0
+        ],
+        [
+          306.5170040852689,
+          297.1892677728358,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F3 A2L knot",
+      "plate": 3,
+      "bounds_mm": [
+        [
+          11.021820246338393,
+          10.730637823510634,
+          0.0
+        ],
+        [
+          318.97817974389545,
+          309.2693621765833,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F4 A2L knot",
+      "plate": 4,
+      "bounds_mm": [
+        [
+          10.002332751875883,
+          9.742328312109805,
+          0.0
+        ],
+        [
+          319.99766724299116,
+          310.2576716889449,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F5 A2L knot",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          23.491986733214162,
+          22.819449692401435,
+          0.0
+        ],
+        [
+          306.50801326627095,
+          297.1805503074303,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F6 A2L knot",
+      "plate": 6,
+      "bounds_mm": [
+        [
+          5.968140796435989,
+          5.831502584452652,
+          0.0
+        ],
+        [
+          324.03185920437613,
+          314.16849741421936,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F7 A2L knot",
+      "plate": 7,
+      "bounds_mm": [
+        [
+          33.89631479482318,
+          32.90560043301456,
+          0.0
+        ],
+        [
+          296.1036852045215,
+          287.0943995669934,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F8 A2L knot",
+      "plate": 8,
+      "bounds_mm": [
+        [
+          10.106256940184878,
+          8.686023841153876,
+          0.0
+        ],
+        [
+          319.8937430608744,
+          311.31397615971986,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F9 A2L knot",
+      "plate": 9,
+      "bounds_mm": [
+        [
+          5.310767823678226,
+          5.194232090967205,
+          0.0
+        ],
+        [
+          324.6892321767131,
+          314.8057679082033,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F10 A2L knot",
+      "plate": 10,
+      "bounds_mm": [
+        [
+          33.88475544099265,
+          32.894395899962035,
+          0.0
+        ],
+        [
+          296.1152445650411,
+          287.10560409988733,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "C1 A2L flat M core",
+      "plate": 11,
+      "bounds_mm": [
+        [
+          2.360100063934482,
+          2.3490602629945556,
+          0.0
+        ],
+        [
+          327.6398999369138,
+          317.65093973577905,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "plate": 12,
+      "bounds_mm": [
+        [
+          11.91196336524564,
+          11.607915537329234,
+          0.0
+        ],
+        [
+          318.0880366345724,
+          308.3920844621653,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "plate": 13,
+      "bounds_mm": [
+        [
+          39.001481024845305,
+          37.866468976684615,
+          0.0
+        ],
+        [
+          290.99851898334657,
+          282.1335310240138,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "plate": 14,
+      "bounds_mm": [
+        [
+          71.96017903615558,
+          69.81416260687796,
+          0.0
+        ],
+        [
+          258.0398209592488,
+          250.18583739281866,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "V1 A2L hammered veneer and sacrificial fins",
+      "plate": 15,
+      "bounds_mm": [
+        [
+          0.79999999702,
+          0.79999999702,
+          0.0
+        ],
+        [
+          329.200000003,
+          319.200000003,
+          297.338513889
+        ]
+      ]
+    },
+    {
+      "name": "V2 A2L hammered veneer and sacrificial fins",
+      "plate": 16,
+      "bounds_mm": [
+        [
+          0.79999999702,
+          0.79999999702,
+          0.0
+        ],
+        [
+          329.200000003,
+          319.200000003,
+          297.348713413
+        ]
+      ]
+    },
+    {
+      "name": "V3 A2L hammered veneer and sacrificial fins",
+      "plate": 17,
+      "bounds_mm": [
+        [
+          0.79999999702,
+          0.79999999702,
+          0.0
+        ],
+        [
+          329.200000003,
+          319.200000003,
+          297.348713413
+        ]
+      ]
+    },
+    {
+      "name": "Backer3",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          3.000000000000014,
+          2.9999999999998934,
+          0.0
+        ],
+        [
+          128.50641640000003,
+          128.7817839999999,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer1",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          201.31201180000008,
+          2.9999999999999645,
+          0.0
+        ],
+        [
+          327.0000000000001,
+          128.40355679999996,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer5",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          3.000000000000014,
+          191.48933420000003,
+          0.0
+        ],
+        [
+          128.50924680000003,
+          317.0,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer7",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          201.48139959999992,
+          191.22053520000003,
+          0.0
+        ],
+        [
+          326.9999999999999,
+          317.00000000000006,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer4",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          3.0000000000000213,
+          2.9999999999999645,
+          0.0
+        ],
+        [
+          128.61196900000002,
+          128.60616299999995,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer2",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          201.50261679999997,
+          2.9999999999999574,
+          0.0
+        ],
+        [
+          327.0,
+          128.77442939999997,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer6",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          2.9999999999999716,
+          191.22123719999996,
+          0.0
+        ],
+        [
+          128.50695799999997,
+          316.99999999999994,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer8",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          201.23925779999996,
+          191.583603,
+          0.0
+        ],
+        [
+          326.99999999999994,
+          317.0,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "B1 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          29.0,
+          0.0
+        ],
+        [
+          160.0,
+          67.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B2 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          84.0,
+          0.0
+        ],
+        [
+          160.0,
+          122.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B3 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          139.0,
+          0.0
+        ],
+        [
+          160.0,
+          177.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B4 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          194.0,
+          0.0
+        ],
+        [
+          160.0,
+          232.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "R1 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          35.0,
+          0.0
+        ],
+        [
+          215.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R2 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          35.0,
+          0.0
+        ],
+        [
+          241.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R3 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          35.0,
+          0.0
+        ],
+        [
+          267.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R4 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          35.0,
+          0.0
+        ],
+        [
+          293.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R5 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          57.0,
+          0.0
+        ],
+        [
+          215.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R6 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          57.0,
+          0.0
+        ],
+        [
+          241.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R7 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          57.0,
+          0.0
+        ],
+        [
+          267.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R8 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          57.0,
+          0.0
+        ],
+        [
+          293.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R9 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          79.0,
+          0.0
+        ],
+        [
+          215.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R10 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          79.0,
+          0.0
+        ],
+        [
+          241.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R11 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          79.0,
+          0.0
+        ],
+        [
+          267.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R12 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          79.0,
+          0.0
+        ],
+        [
+          293.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R13 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          101.0,
+          0.0
+        ],
+        [
+          215.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R14 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          101.0,
+          0.0
+        ],
+        [
+          241.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R15 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          101.0,
+          0.0
+        ],
+        [
+          267.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R16 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          101.0,
+          0.0
+        ],
+        [
+          293.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R17 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          123.0,
+          0.0
+        ],
+        [
+          215.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R18 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          123.0,
+          0.0
+        ],
+        [
+          241.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R19 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          123.0,
+          0.0
+        ],
+        [
+          267.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R20 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          123.0,
+          0.0
+        ],
+        [
+          293.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R21 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          145.0,
+          0.0
+        ],
+        [
+          215.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R22 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          145.0,
+          0.0
+        ],
+        [
+          241.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R23 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          145.0,
+          0.0
+        ],
+        [
+          267.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R24 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          145.0,
+          0.0
+        ],
+        [
+          293.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R25 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          167.0,
+          0.0
+        ],
+        [
+          215.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R26 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          167.0,
+          0.0
+        ],
+        [
+          241.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R27 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          167.0,
+          0.0
+        ],
+        [
+          267.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R28 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          167.0,
+          0.0
+        ],
+        [
+          293.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R29 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          189.0,
+          0.0
+        ],
+        [
+          215.0,
+          199.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R30 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          189.0,
+          0.0
+        ],
+        [
+          241.0,
+          199.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R31 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          189.0,
+          0.0
+        ],
+        [
+          267.0,
+          199.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R32 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          189.0,
+          0.0
+        ],
+        [
+          293.0,
+          199.0,
+          3.0
+        ]
+      ]
+    }
+  ],
+  "physical_confirmation_pending": true
+}

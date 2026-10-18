@@ -1,4 +1,4 @@
-"""Pack the current 17 test parts onto three A1 plates without reorienting them.
+"""Pack the current 11 test parts onto three A1 plates without reorienting them.
 
 Retain mesh XML exactly, including color modifiers and support paint. Renumber
 resource IDs uniquely for Bambu, and change names, XY placement and plate/tower XY.
@@ -21,10 +21,7 @@ LAYOUT=[
  ('White fixtures',[(0,1300,'Glue-test smooth caul',(62,64)),(1,1300,'Seam-test smooth caul',(62,164)),(2,1800,'Ribbon show-face jig',(180,118))]),
  ('Copper M tests',[(0,1000,'M glue core C1',(56,48)),(0,1100,'M glue core C4',(56,128)),(1,1000,'M seam core C4',(56,208)),
                     (0,1200,'M glue veneer - fins and shoe',(184,55)),(1,1100,'M seam upper veneer - fins and shoe',(184,135)),(1,1200,'M seam lower veneer - fins and shoe',(184,215))]),
- ('Ribbon comparisons A-D',[(2,1000,'A reference tongue',(44,45)),(2,1100,'A reference socket',(121.5,45)),
-                            (2,1200,'B refined 0.075 tongue',(204.5,45)),(2,1300,'B refined 0.075 socket',(204.5,128)),
-                            (2,1400,'C refined 0.05 tongue',(44,128)),(2,1500,'C refined 0.05 socket',(121.5,128)),
-                            (2,1600,'D refined 0.10 tongue',(44,211)),(2,1700,'D refined 0.10 socket',(121.5,211))])]
+ ('Zero-gap ribbon test',[(2,1000,'Zero-gap refined tongue',(44,45)),(2,1100,'Zero-gap refined socket',(121.5,45))])]
 
 
 def main():
@@ -45,7 +42,7 @@ def main():
     root=model();del root.attrib['xmlns:p']
     resources=ET.SubElement(root,tag('resources'));build=ET.SubElement(root,tag('build'),attrib={'{'+P+'}UUID':uid()})
     for k,v in [('Application','BambuStudio-02.08.02.61'),('BambuStudio:3mfVersion','1'),('Title','All development tests - 3 A1 plates'),
-                ('Description','17 parts: white fixtures, copper M tests, full-color ribbon comparisons. Saved finish orientations retained.')]:
+                ('Description','11 parts: white fixtures, copper M tests, one zero-gap ribbon pair. Saved finish orientations retained.')]:
         ET.SubElement(root,tag('metadata'),name=k).text=v
     cfg=ET.Element('config');rels=ET.Element('Relationships',xmlns=R)
     records=[];seen=set();columns=2
@@ -87,33 +84,35 @@ def main():
                 source_name=old_record['name'],source_plate=old_record['plate'],assembly_to_printer=local.tolist(),body_bounds_mm=bounds.tolist(),
                 xy_translation_from_source_mm=delta.tolist(),rotation_and_z_unchanged=True,
                 mesh_blocks_byte_identical=child_hashes,part_id_mapping=part_ids))
-    assert len(records)==17
-    expected=sum(len(i['staging']['records']) for i in inputs);assert len(seen)==expected==17
+    assert len(records)==11
+    expected=sum(len(i['staging']['records']) for i in inputs);assert len(seen)==expected==11
     out.update({'3D/3dmodel.model':xml(root),'3D/_rels/3dmodel.model.rels':xml(rels),'Metadata/model_settings.config':xml(cfg)})
     path=OUT/(NAME+'.3mf')
     with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED) as z:
         for n,v in out.items():z.writestr(n,v)
-    guide=dict(title='All current development tests',plate_count=3,part_count=17,previous_plate_count=12,
+    guide=dict(title='All current development tests',plate_count=3,part_count=11,previous_plate_count=12,
         sources=[dict(file=i['name']+'.3mf',sha256=i['sha256']) for i in inputs],records=records,
         plates=[dict(plate=i+1,name=title,parts=len(items)) for i,(title,items) in enumerate(LAYOUT)],
         filament_slots={'1':'white','2':'wood tan','3':'copper silk','4':'Azurite blue'},
         ribbon_tower_reserved_rectangle_mm=[165,174,250,252],
+        ribbon_test=dict(visible_edge_gap_mm=0,pairs=1,additional_adhesive_recess_mm=.2,
+            nominal_hidden_glue_clearance_mm=.4,detail='Refined seating pads, secondary-pocket relief, hidden glue reservoir and zero-gap show edge above Z8'),
         instructions=['Keep saved orientations, scale and filament assignments; open as a project.',
             'Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.',
             'Plate 2: all six copper test parts, including fin carriers and starter shoes.',
-            'Plate 3: all four ribbon comparison pairs. Mark A/B/C/D and tongue/socket on the backs before removing them, using the plate map.',
+            'Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.',
             'Use the cauls to cradle the veneers during cutting and trimming. Clean rear recesses and seating features before dry fitting.',
             'Physical fit, silk bonding and finish still require these prints.'],
         source_release_sha256=sha(ROOT/'Dara.3mf'),native_slice_validated=False)
     save_json(path.with_suffix('.json'),guide)
     preview(guide,inputs)
-    print(f'{path}: 17 parts on 3 plates; original mesh/color/support XML preserved',flush=True)
+    print(f'{path}: 11 parts on 3 plates; source mesh/color/support XML preserved',flush=True)
 
 
 def preview(guide,inputs):
     im=Image.new('RGB',(1600,650),'#f5f2ec');d=ImageDraw.Draw(im)
     ft='/System/Library/Fonts/Supplemental/Arial.ttf';font=lambda n:ImageFont.truetype(ft,n)
-    d.text((800,20),'All development tests — 17 parts, 3 A1 plates',font=font(28),anchor='mt',fill='#243c4b')
+    d.text((800,20),'All development tests — 11 parts, 3 A1 plates',font=font(28),anchor='mt',fill='#243c4b')
     palette={1:'#c8c5ba',2:'#b77542',3:'#6a9bad'}
     for pi,p in enumerate(guide['plates']):
         ox=40+pi*530;oy=110;scale=1.72
@@ -125,7 +124,7 @@ def preview(guide,inputs):
             x0,y0=ox+low[0]*scale,oy+(256-high[1])*scale;x1,y1=ox+high[0]*scale,oy+(256-low[1])*scale
             d.rounded_rectangle((x0,y0,x1,y1),radius=4,fill=palette[pi+1],outline='#34444a')
             label=row['name'].replace(' - fins and shoe','').replace('smooth caul','caul').replace('Ribbon show-face jig','Ribbon jig')
-            if pi==2:label=row['name'][0]+' '+('T' if 'tongue' in row['name'] else 'S')
+            if pi==2:label='Zero gap '+('T' if 'tongue' in row['name'] else 'S')
             elif pi==1:label=label.replace('M glue','Glue').replace('M seam','Seam').replace('veneer','skin')
             words=label.split();lines=[];line=''
             for word in words:
@@ -140,7 +139,7 @@ def preview(guide,inputs):
             d.rectangle(rect,outline='#815b37',width=2)
             d.text(((rect[0]+rect[2])/2,(rect[1]+rect[3])/2),'Purge tower',font=font(17),anchor='mm',fill='#815b37')
     d.text((800,590),'Plate map shows part bounding boxes; orientations and finish directions are retained.',font=font(20),anchor='mm',fill='#435d69')
-    d.text((800,625),'Ribbon plate: mark A–D on the backs before lifting. T = tongue, S = socket.',font=font(20),anchor='mm',fill='#435d69')
+    d.text((800,625),'Ribbon plate: one zero-gap pair. T = tongue, S = socket; glue clearance is underneath.',font=font(20),anchor='mm',fill='#435d69')
     im.save(OUT/(NAME+'-plates.png'))
 
 

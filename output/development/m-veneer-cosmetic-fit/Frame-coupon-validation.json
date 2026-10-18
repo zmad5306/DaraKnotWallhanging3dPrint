@@ -1,13 +1,8 @@
 {
   "variants": [
     {
-      "label": "A reference",
-      "reference": true,
-      "show_gap_mm": 0.075
-    },
-    {
-      "label": "B refined 0.075",
-      "show_gap_mm": 0.075,
+      "label": "Zero-gap refined",
+      "show_gap_mm": 0,
       "seating_pad_top_mm": 5.0,
       "seating_pads_xy": [
         [
@@ -24,58 +19,38 @@
         ]
       ],
       "adhesive_recess_mm": 0.2,
+      "nominal_glue_clearance_mm": 0.4,
       "secondary_axial_relief_mm": 0.8,
       "lap_length_mm": 18,
       "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
-      "assembled_interference_mm3": -8.083811398051921e-16
-    },
-    {
-      "label": "C refined 0.05",
-      "show_gap_mm": 0.05,
-      "seating_pad_top_mm": 5.0,
-      "seating_pads_xy": [
-        [
-          4.0,
-          1.0
+      "assembled_interference_mm3": -7.528699885739343e-16,
+      "geometry_checks": {
+        "show_edge_sections": [
+          {
+            "z_mm": 8.99,
+            "zero_gap_contact_probes": 121
+          },
+          {
+            "z_mm": 9.01,
+            "zero_gap_contact_probes": 79
+          },
+          {
+            "z_mm": 10.51,
+            "zero_gap_contact_probes": 67
+          },
+          {
+            "z_mm": 12.01,
+            "zero_gap_contact_probes": 67
+          },
+          {
+            "z_mm": 13.49,
+            "zero_gap_contact_probes": 67
+          }
         ],
-        [
-          14.0,
-          -29.0
-        ],
-        [
-          14.0,
-          28.0
-        ]
-      ],
-      "adhesive_recess_mm": 0.2,
-      "secondary_axial_relief_mm": 0.8,
-      "lap_length_mm": 18,
-      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
-      "assembled_interference_mm3": -8.083811398051921e-16
-    },
-    {
-      "label": "D refined 0.10",
-      "show_gap_mm": 0.1,
-      "seating_pad_top_mm": 5.0,
-      "seating_pads_xy": [
-        [
-          4.0,
-          1.0
-        ],
-        [
-          14.0,
-          -29.0
-        ],
-        [
-          14.0,
-          28.0
-        ]
-      ],
-      "adhesive_recess_mm": 0.2,
-      "secondary_axial_relief_mm": 0.8,
-      "lap_length_mm": 18,
-      "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
-      "assembled_interference_mm3": -8.083811398051921e-16
+        "hidden_glue_floor_z_mm": 4.6,
+        "socket_underside_z_mm": 5,
+        "assembled_interference_mm3": -7.528699885739343e-16
+      }
     }
   ],
   "jig_white_contact_xy": [

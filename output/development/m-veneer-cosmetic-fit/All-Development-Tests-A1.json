@@ -1,7 +1,7 @@
 {
   "title": "All current development tests",
   "plate_count": 3,
-  "part_count": 17,
+  "part_count": 11,
   "previous_plate_count": 12,
   "sources": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "file": "Frame-Cosmetic-Comparison-A1.3mf",
-      "sha256": "ab6c04f40da9d40bd4fdd80d5f1afd85dbc970b71fb56a39638d4c817ae3afe9"
+      "sha256": "a42c45be0f75da0e1ee8e1f3ae26584320e21c50f1fb2d6ac5df5cc908f27fc0"
     }
   ],
   "records": [
@@ -141,7 +141,7 @@
       "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
       "source_object_id": 1800,
       "source_name": "Show-face glue jig - use release film",
-      "source_plate": 5,
+      "source_plate": 2,
       "assembly_to_printer": [
         [
           1.0,
@@ -541,12 +541,12 @@
       }
     },
     {
-      "name": "A reference tongue",
+      "name": "Zero-gap refined tongue",
       "plate": 3,
       "object_id": 10900,
       "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
       "source_object_id": 1000,
-      "source_name": "A reference tongue",
+      "source_name": "Zero-gap refined tongue",
       "source_plate": 1,
       "assembly_to_printer": [
         [
@@ -592,9 +592,9 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10901": "574b6d87e5e6cee3eb67f999731e4cca6394e73138333361b1bedbcd72213ad7",
-        "10902": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
-        "10903": "1d56275caec313fed043a44737204daf3b3cee4fe84206cf0f758ad5eb0a1af7"
+        "10901": "849ebaf0f551f4bdab38314639e8d75b9b7229c39c41e2b42f3d8d821fbff26f",
+        "10902": "a3785ef2881295bb68bbf9878f292120a2ec6b0e40c34a0a92d99cdea294b656",
+        "10903": "926a6208fec06583310dc0ad0b9686457f2984f8fff035bc8666a440497d5165"
       },
       "part_id_mapping": {
         "1001": "10901",
@@ -603,25 +603,25 @@
       }
     },
     {
-      "name": "A reference socket",
+      "name": "Zero-gap refined socket",
       "plate": 3,
       "object_id": 11000,
       "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
       "source_object_id": 1100,
-      "source_name": "A reference socket",
+      "source_name": "Zero-gap refined socket",
       "source_plate": 1,
       "assembly_to_printer": [
         [
           0.3907311284892737,
           -0.9205048534524404,
           0.0,
-          113.12747528847908
+          113.13480180972317
         ],
         [
           0.9205048534524404,
           0.3907311284892737,
           0.0,
-          25.58441738148764
+          25.601680253357827
         ],
         [
           0.0,
@@ -638,13 +638,13 @@
       ],
       "body_bounds_mm": [
         [
-          82.16465253202713,
-          12.469520957177494,
+          82.15732601078307,
+          12.452258085307292,
           0.0
         ],
         [
-          160.83534746797287,
-          77.53047904282252,
+          160.84267398921696,
+          77.54774191469272,
           13.5
         ]
       ],
@@ -654,386 +654,14 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "11001": "63616ecf7d4929526009e63c696abd8312cddf695c1b3b6e0557d96daed45ea1",
-        "11002": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
-        "11003": "8a3b18e58cfb2d138328cf862c77e372de5df398c8fbb0cad7ce1fa2cdc2b648"
+        "11001": "f5746c794431f7648a7cd4f5f0f8b0d0f34e22f0ae6c17966e6170569c9fd5c0",
+        "11002": "11ac7b9dea1f75cbd4f4e13c40fa3ffcaef279d7007dc639e87fee838cd246f4",
+        "11003": "9449cd14208c993bf15d3d6473199ae752129b8f8bf7d0574039331a8ebaeb92"
       },
       "part_id_mapping": {
         "1101": "11001",
         "1102": "11002",
         "1103": "11003"
-      }
-    },
-    {
-      "name": "B refined 0.075 tongue",
-      "plate": 3,
-      "object_id": 11100,
-      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
-      "source_object_id": 1200,
-      "source_name": "B refined 0.075 tongue",
-      "source_plate": 2,
-      "assembly_to_printer": [
-        [
-          0.9563047559630354,
-          -0.29237170472273677,
-          0.0,
-          211.22189014469123
-        ],
-        [
-          0.29237170472273677,
-          0.9563047559630354,
-          0.0,
-          47.287618846921674
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          170.67949999330105,
-          5.417362593050896,
-          0.0
-        ],
-        [
-          238.32050000669898,
-          84.58263740694912,
-          13.5
-        ]
-      ],
-      "xy_translation_from_source_mm": [
-        130.5,
-        -80.0
-      ],
-      "rotation_and_z_unchanged": true,
-      "mesh_blocks_byte_identical": {
-        "11101": "fa830519b97c10aed8c20517c1c3d902b2a21e38f017c74b0226189736cd56ff",
-        "11102": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
-        "11103": "1d56275caec313fed043a44737204daf3b3cee4fe84206cf0f758ad5eb0a1af7"
-      },
-      "part_id_mapping": {
-        "1201": "11101",
-        "1202": "11102",
-        "1203": "11103"
-      }
-    },
-    {
-      "name": "B refined 0.075 socket",
-      "plate": 3,
-      "object_id": 11200,
-      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
-      "source_object_id": 1300,
-      "source_name": "B refined 0.075 socket",
-      "source_plate": 2,
-      "assembly_to_printer": [
-        [
-          0.3907311284892737,
-          -0.9205048534524404,
-          0.0,
-          196.12747528847908
-        ],
-        [
-          0.9205048534524404,
-          0.3907311284892737,
-          0.0,
-          108.58441738148764
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          165.16465253202713,
-          95.4695209571775,
-          0.0
-        ],
-        [
-          243.83534746797287,
-          160.53047904282252,
-          13.5
-        ]
-      ],
-      "xy_translation_from_source_mm": [
-        27.5,
-        3.0
-      ],
-      "rotation_and_z_unchanged": true,
-      "mesh_blocks_byte_identical": {
-        "11201": "aff2c3392514595dde22324f27183df72e5e86b479434297444c26a999e85dae",
-        "11202": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
-        "11203": "8a3b18e58cfb2d138328cf862c77e372de5df398c8fbb0cad7ce1fa2cdc2b648"
-      },
-      "part_id_mapping": {
-        "1301": "11201",
-        "1302": "11202",
-        "1303": "11203"
-      }
-    },
-    {
-      "name": "C refined 0.05 tongue",
-      "plate": 3,
-      "object_id": 11300,
-      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
-      "source_object_id": 1400,
-      "source_name": "C refined 0.05 tongue",
-      "source_plate": 3,
-      "assembly_to_printer": [
-        [
-          0.9563047559630354,
-          -0.29237170472273677,
-          0.0,
-          50.72189014469123
-        ],
-        [
-          0.29237170472273677,
-          0.9563047559630354,
-          0.0,
-          130.28761884692167
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          10.179499993301043,
-          88.4173625930509,
-          0.0
-        ],
-        [
-          77.82050000669896,
-          167.58263740694912,
-          13.5
-        ]
-      ],
-      "xy_translation_from_source_mm": [
-        -30.0,
-        3.0
-      ],
-      "rotation_and_z_unchanged": true,
-      "mesh_blocks_byte_identical": {
-        "11301": "9aba9286417a21cbb8c5e5e8f751902db7b811b5c1a30cb004cd76f7db5337fc",
-        "11302": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
-        "11303": "52d753de63f1cb4d163dd2701fcf5c44433410d948e8e7d97a9e4a89833acae0"
-      },
-      "part_id_mapping": {
-        "1401": "11301",
-        "1402": "11302",
-        "1403": "11303"
-      }
-    },
-    {
-      "name": "C refined 0.05 socket",
-      "plate": 3,
-      "object_id": 11400,
-      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
-      "source_object_id": 1500,
-      "source_name": "C refined 0.05 socket",
-      "source_plate": 3,
-      "assembly_to_printer": [
-        [
-          0.3907311284892737,
-          -0.9205048534524404,
-          0.0,
-          113.12991735803215
-        ],
-        [
-          0.9205048534524404,
-          0.3907311284892737,
-          0.0,
-          108.59017053682172
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          82.16221046247409,
-          95.4637678018434,
-          0.0
-        ],
-        [
-          160.83778953752594,
-          160.5362321981566,
-          13.5
-        ]
-      ],
-      "xy_translation_from_source_mm": [
-        -55.5,
-        3.0
-      ],
-      "rotation_and_z_unchanged": true,
-      "mesh_blocks_byte_identical": {
-        "11401": "08de988601d89d881639257a454ab558f788c526fa095adb993777e4548c2233",
-        "11402": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
-        "11403": "2227fa50f1390f6c203d94cffbee13ed39c582f4a589d5301d147b4eb8149f12"
-      },
-      "part_id_mapping": {
-        "1501": "11401",
-        "1502": "11402",
-        "1503": "11403"
-      }
-    },
-    {
-      "name": "D refined 0.10 tongue",
-      "plate": 3,
-      "object_id": 11500,
-      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
-      "source_object_id": 1600,
-      "source_name": "D refined 0.10 tongue",
-      "source_plate": 4,
-      "assembly_to_printer": [
-        [
-          0.9563047559630354,
-          -0.29237170472273677,
-          0.0,
-          50.72189014469123
-        ],
-        [
-          0.29237170472273677,
-          0.9563047559630354,
-          0.0,
-          213.28761884692167
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          10.179499993301043,
-          171.41736259305088,
-          0.0
-        ],
-        [
-          77.82050000669896,
-          250.58263740694912,
-          13.5
-        ]
-      ],
-      "xy_translation_from_source_mm": [
-        -30.0,
-        86.0
-      ],
-      "rotation_and_z_unchanged": true,
-      "mesh_blocks_byte_identical": {
-        "11501": "de8184520180685266c22c2284b6ca1097a774cbeb5ddca0c491100609273f6a",
-        "11502": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
-        "11503": "b86f31dba94dcd90a8ca0861da4bb9e580573c12c788bcb3a90f28de29ee5052"
-      },
-      "part_id_mapping": {
-        "1601": "11501",
-        "1602": "11502",
-        "1603": "11503"
-      }
-    },
-    {
-      "name": "D refined 0.10 socket",
-      "plate": 3,
-      "object_id": 11600,
-      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
-      "source_object_id": 1700,
-      "source_name": "D refined 0.10 socket",
-      "source_plate": 4,
-      "assembly_to_printer": [
-        [
-          0.3907311284892737,
-          -0.9205048534524404,
-          0.0,
-          113.12747528847908
-        ],
-        [
-          0.9205048534524404,
-          0.3907311284892737,
-          0.0,
-          191.58441738148764
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "body_bounds_mm": [
-        [
-          82.16465253202713,
-          178.4695209571775,
-          0.0
-        ],
-        [
-          160.83534746797287,
-          243.53047904282252,
-          13.5
-        ]
-      ],
-      "xy_translation_from_source_mm": [
-        -55.5,
-        86.0
-      ],
-      "rotation_and_z_unchanged": true,
-      "mesh_blocks_byte_identical": {
-        "11601": "854efdc965bc8e5bad9a54dee2d92c0580a3e63ac1779ea74bd28beab418e5a4",
-        "11602": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
-        "11603": "fdc479bbe49d23ac538361cb04f0daf3f0564aa7b0bd688334f0c448d7a92a8e"
-      },
-      "part_id_mapping": {
-        "1701": "11601",
-        "1702": "11602",
-        "1703": "11603"
       }
     }
   ],
@@ -1050,8 +678,8 @@
     },
     {
       "plate": 3,
-      "name": "Ribbon comparisons A-D",
-      "parts": 8
+      "name": "Zero-gap ribbon test",
+      "parts": 2
     }
   ],
   "filament_slots": {
@@ -1066,11 +694,18 @@
     250,
     252
   ],
+  "ribbon_test": {
+    "visible_edge_gap_mm": 0,
+    "pairs": 1,
+    "additional_adhesive_recess_mm": 0.2,
+    "nominal_hidden_glue_clearance_mm": 0.4,
+    "detail": "Refined seating pads, secondary-pocket relief, hidden glue reservoir and zero-gap show edge above Z8"
+  },
   "instructions": [
     "Keep saved orientations, scale and filament assignments; open as a project.",
     "Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.",
     "Plate 2: all six copper test parts, including fin carriers and starter shoes.",
-    "Plate 3: all four ribbon comparison pairs. Mark A/B/C/D and tongue/socket on the backs before removing them, using the plate map.",
+    "Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.",
     "Use the cauls to cradle the veneers during cutting and trimming. Clean rear recesses and seating features before dry fitting.",
     "Physical fit, silk bonding and finish still require these prints."
   ],

@@ -112,7 +112,7 @@ def coupon_material_angles(text):
 def validate(name, native):
     staged=OUT/name;export=native/'sliced.3mf'
     from set_sample_infill import TARGETS,verify_sample_infill
-    trial_count=11 if name=='All-Development-Tests-A1.3mf' else TARGETS.get(staged.stem)
+    trial_count=5 if name=='All-Development-Tests-A1.3mf' else TARGETS.get(staged.stem)
     infill_trial=None
     if trial_count is not None:
         infill_trial=dict(editable=verify_sample_infill(staged,trial_count),native=verify_sample_infill(export,trial_count))
@@ -136,7 +136,7 @@ def validate(name, native):
         assert '; EXECUTABLE_BLOCK_END' in text,p
         r.pop('model_extrusion_z_by_filament_mm',None)
         r.update(plate=int(p.stem.split('_')[-1]),gcode_sha256=sha(p),header=text.split('; HEADER_BLOCK_END')[0].splitlines()[2:13])
-        if name=='Frame-Cosmetic-Comparison-A1.3mf' and r['plate']<=4:
+        if name=='Frame-Cosmetic-Comparison-A1.3mf' and r['plate']==1:
             r['top_white_direction_evidence_in_assembly_deg']=angle_evidence(text)
             r['matching_surface_directions_by_color_and_height']=coupon_material_angles(text)
             dominant=[a[0][0] for a in r['top_white_direction_evidence_in_assembly_deg']]

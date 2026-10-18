@@ -97,30 +97,32 @@ def test_panel(c,x,top,width,title,items):
 
 def main():
     guide=json.loads((SOURCE/(PROJECT+'.json')).read_text());report=json.loads((SOURCE/(PROJECT+'-native-validation.json')).read_text())
-    assert guide['part_count']==17 and guide['plate_count']==3 and guide['native_slice_validated']
+    assert guide['part_count']==11 and guide['plate_count']==3 and guide['native_slice_validated']
     estimates=[estimate(r) for r in report['plates']]
     labels=[['Glue-test smooth caul','Seam-test smooth caul','Ribbon show-face jig'],
             ['Glue test: flat core C1','Glue test: flat core C4','Seam test: flat core C4',
              'Glue test: continuous veneer + fin carrier','Seam test: upper veneer + fin carrier','Seam test: lower veneer + fin carrier'],
-            ['A - existing 0.075 mm: tongue','A - existing 0.075 mm: socket','B - refined 0.075 mm: tongue','B - refined 0.075 mm: socket',
-             'C - refined 0.050 mm: tongue','C - refined 0.050 mm: socket','D - refined 0.100 mm: tongue','D - refined 0.100 mm: socket']]
-    assert sum(map(len,labels))==17
+            ['Zero-gap refined tongue','Zero-gap refined socket']]
+    assert sum(map(len,labels))==11
     TARGET.parent.mkdir(parents=True,exist_ok=True)
     c=canvas.Canvas(str(TARGET),pagesize=letter,pageCompression=1)
     c.setTitle('Dara Sample Production Checklist');c.setAuthor('Dara knot project')
-    c.setSubject('17 test parts on 3 A1 plates; production, cleanup, fit and finish tracking')
+    c.setSubject('11 test parts on 3 A1 plates; zero-gap ribbon, production, cleanup, fit and finish tracking')
     total=round(sum(duration_seconds(r) for r in report['plates'])/60)
     weight=sum(w for _,w in estimates)
-    header(c,'Dara knot / development samples','Sample production checklist',f'3 A1 plates | 17 parts | About {total//60}h {total%60:02d}m and {weight:.0f} g total')
+    header(c,'Dara knot / development samples','Sample production checklist',f'3 A1 plates | 11 parts | About {total//60}h {total%60:02d}m and {weight:.0f} g total')
     blank(c,L,684,'Name / initials:',267);blank(c,285,684,'Run / date:',R)
-    text(c,L,666,'Project: '+PROJECT+'-Sliced.3mf | 8% body infill trial',9)
+    text(c,L,666,'Project: '+PROJECT+'-Sliced.3mf | Zero-gap ribbon',9)
     text(c,L,649,'Filament slots: 1 white / 2 wood tan / 3 copper silk / 4 Azurite blue',9.5)
     check(c,L,631,'Opened as a project; saved scale, rotations and settings retained.',9)
     text(c,L,615,'Ready = cleaned and usable. Mark Redo when a replacement is needed.',9,color=GRAY)
     y=593
-    for i,(title,items) in enumerate(zip(['PLATE 1 - WHITE FIXTURES (3 parts)','PLATE 2 - COPPER M TESTS (6 parts)','PLATE 3 - RIBBON COMPARISONS (8 parts)'],labels)):
+    for i,(title,items) in enumerate(zip(['PLATE 1 - WHITE FIXTURES (UNCHANGED)','PLATE 2 - COPPER M TESTS (6 parts)','PLATE 3 - ZERO-GAP RIBBON TEST (2 parts)'],labels)):
         y=production_table(c,y,title,*estimates[i],items)
-    text(c,L,76,'Before lifting ribbon parts: mark A-D and tongue/socket on their backs.',9,True)
+    text(c,L,y,'Plate 1 fixtures already printing remain valid. No fixture reprint is needed.',9,True)
+    text(c,L,y-18,'One ribbon pair replaces A-D: zero visible gap; glue clearance is underneath.',9)
+    text(c,L,y-36,'M bodies and ribbon: 8% gyroid; veneers/carriers: 100%.',9)
+    text(c,L,76,'Before lifting ribbon parts: mark tongue/socket on their backs.',9,True)
     blank(c,L,58,'Reprints / print issues:',R)
     footer(c,1,report['native_project_sha256']);c.showPage()
     header(c,'Dara knot / development samples','Fit, finish & decision log','Flat-core M samples: dry-fit first; use the matching smooth caul for each sample.')
@@ -141,18 +143,21 @@ def main():
     check(c,L,354,'Dry fits complete before glue.',9)
     check(c,290,354,'Cured per adhesive instructions.',9)
     blank(c,L,336,'Clamp / liner notes:',R)
-    text(c,L,312,'RIBBON COMPARISON RESULTS',11,True)
+    text(c,L,312,'RIBBON ZERO-GAP TEST',11,True)
     text(c,L,296,'Write G = good, A = adjust, R = reprint. Recheck finish and closure after cure, if bonded.',9,color=GRAY)
     cols=[L,184,274,364,454,R];top=283;hh=23;rh=27
     c.setFillColor(PALE);c.rect(L,top-hh,R-L,hh,stroke=0,fill=1)
-    for i,s in enumerate(['Variant / nominal gap','Dry closure','Face step','Reflection','After cure']):
+    for i,s in enumerate(['Test / hidden glue space','Dry closure','Face step','Reflection','After cure']):
         c.setFont('DaraSans-Bold',8.5);c.setFillColor(INK);c.drawCentredString((cols[i]+cols[i+1])/2,top-15,s)
     line(c,L,top,R,top)
-    for i,label in enumerate(['A - existing / 0.075 mm','B - refined / 0.075 mm','C - refined / 0.050 mm','D - refined / 0.100 mm']):
+    for i,label in enumerate(['Refined / 0.40 mm hidden']):
         yy=top-hh-i*rh;text(c,L+7,yy-17,label,9.5);line(c,L,yy-rh,R,yy-rh)
-    bottom=top-hh-4*rh
+    bottom=top-hh-rh
     for x in cols:line(c,x,top,x,bottom)
-    blank(c,L,133,'Preferred ribbon variant:',237);blank(c,254,133,'Gap (mm):',R)
+    text(c,L,213,'Visible edge: 0.00 mm nominal. Glue relief stays below the show surface.',9.5)
+    check(c,L,192,'Closes under light pressure; no raised edge or rocking.',9.5)
+    check(c,L,174,'White, wood and blue edges meet; no glue on cosmetic closing lands.',9.5)
+    blank(c,L,133,'Ribbon result:',237);blank(c,254,133,'Measured edge gap (mm):',R)
     text(c,L,113,'M veneer result:',9.5)
     check(c,130,113,'Keep',9);check(c,196,113,'Revise',9);check(c,270,113,'Reprint',9)
     blank(c,359,113,'Parts:',R)

@@ -52,7 +52,7 @@ def frame_grain(text,rows,label_ids):
         assert abs((angles[0]-angles[1]+90)%180-90)<1,(variant,tool,z,angles)
         if tool==1 and z>13.3:assert all(abs(a-135)<1 for a in angles),(variant,angles)
         evidence.append(dict(variant=variant,filament_slot=tool,z_mm=z,assembly_angles_deg=angles))
-    for variant in 'ABCD':
+    for variant in ['Z']:
         assert any(r['variant']==variant and r['filament_slot']==1 and r['z_mm']>13.3 for r in evidence),('No white finish evidence',variant)
         assert any(r['variant']==variant and r['filament_slot']==2 for r in evidence),('No wood finish evidence',variant)
         assert any(r['variant']==variant and r['filament_slot']==4 for r in evidence),('No blue finish evidence',variant)
@@ -62,7 +62,7 @@ def frame_grain(text,rows,label_ids):
 def main():
     guide=json.loads((OUT/(NAME+'.json')).read_text());staged=OUT/(NAME+'.3mf');files=read(staged)
     cfg=ET.fromstring(files['Metadata/model_settings.config']);root=ET.fromstring(files['3D/3dmodel.model'])
-    rows=guide['records'];assert len(rows)==17 and len(cfg.findall('plate'))==3
+    rows=guide['records'];assert len(rows)==11 and len(cfg.findall('plate'))==3
     sources={s['file']:read(OUT/s['file']) for s in guide['sources']}
     for source in guide['sources']:assert sha(OUT/source['file'])==source['sha256']
     checks=[]
@@ -120,11 +120,17 @@ def main():
     rect=guide['ribbon_tower_reserved_rectangle_mm']
     assert np.all(tower[0]>np.array(rect[:2])) and np.all(tower[1]<np.array(rect[2:])),('Tower outside reserved area',tower)
     report['prime_tower_bead_bounds_mm']=tower.tolist()
+    preservation=json.loads((OUT/'Zero-gap-plate-preservation.json').read_text())
+    assert preservation['project_sha256']==sha(native/'sliced.3mf')
+    for row in preservation['plates']:
+        assert row['gcode_byte_identical']
+        assert sha(native/f"plate_{row['plate']}.gcode")==row['preserved_assets_sha256'][f"Metadata/plate_{row['plate']}.gcode"]
+    report['preserved_plates']=preservation
     for p in report['plates'][:2]:assert not p['features'].get('Prime tower',0),('Unexpected tower on single-material plate',p['plate'])
     save_json(report_path,report)
     guide['native_slice_validated']=True;guide['native_project']=NAME+'-Sliced.3mf';guide['native_validation']=report_path.name
     save_json(OUT/(NAME+'.json'),guide)
-    print('Verified all 17 original parts, three packed plates, bonded fins, ribbon grain, and reserved purge tower.',flush=True)
+    print('Verified all 11 source parts, three packed plates, bonded fins, zero-gap ribbon grain, and reserved purge tower.',flush=True)
 
 
 if __name__=='__main__':main()

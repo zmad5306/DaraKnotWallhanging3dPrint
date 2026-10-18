@@ -144,7 +144,7 @@ def write_project(path, plates, title, settings_update=None):
                      ('filament_maps', '1 1 1 1'), ('filament_volume_maps', '0 0 0 0')]:
             meta(plate, k, v)
         for entry in objects:
-            oid = next_id; next_id += 100
+            oid = entry.get('object_id',next_id); next_id = max(next_id,oid)+100
             top = ET.SubElement(resources, tag('object'), id=str(oid), type='model', attrib={'{' + P + '}UUID': uid()})
             comps = ET.SubElement(top, tag('components'))
             co = ET.SubElement(cfg, 'object', id=str(oid))

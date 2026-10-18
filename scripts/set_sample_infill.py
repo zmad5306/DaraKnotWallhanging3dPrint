@@ -12,7 +12,7 @@ from development_3mf import OUT,props
 TARGETS={
     'M-Veneer-Glue-Coupon-A1':2,
     'M-Veneer-Seam-Coupon-A1':1,
-    'Frame-Cosmetic-Comparison-A1':8,
+    'Frame-Cosmetic-Comparison-A1':2,
 }
 
 

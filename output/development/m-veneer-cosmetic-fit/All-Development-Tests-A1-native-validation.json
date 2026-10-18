@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "8be83ef5c1ccaf9cf5d51c62975d00d4aa16113d52d7214be6d62466977fa4a1",
-  "native_project_sha256": "f8434ce893dd454ace61800fd645943401c957b6a404c5e33b3f22c7cf1bbc6d",
+  "staged_sha256": "c277ad924adb39199f9e1e1d91bae1e5d2fb19f002206b1a0ec955f4b6272927",
+  "native_project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -42,36 +42,12 @@
       "max_native_vertex_or_pose_error_mm": 1.2824670717839114e-05
     },
     {
-      "name": "A reference tongue",
-      "max_native_vertex_or_pose_error_mm": 1.6791346059131625e-07
+      "name": "Zero-gap refined tongue",
+      "max_native_vertex_or_pose_error_mm": 1.9574781156327377e-06
     },
     {
-      "name": "A reference socket",
-      "max_native_vertex_or_pose_error_mm": 8.568617258353682e-07
-    },
-    {
-      "name": "B refined 0.075 tongue",
-      "max_native_vertex_or_pose_error_mm": 2.020446657676954e-06
-    },
-    {
-      "name": "B refined 0.075 socket",
-      "max_native_vertex_or_pose_error_mm": 1.5042460440628726e-06
-    },
-    {
-      "name": "C refined 0.05 tongue",
-      "max_native_vertex_or_pose_error_mm": 1.9574780959702887e-06
-    },
-    {
-      "name": "C refined 0.05 socket",
-      "max_native_vertex_or_pose_error_mm": 1.7944167572398116e-06
-    },
-    {
-      "name": "D refined 0.10 tongue",
-      "max_native_vertex_or_pose_error_mm": 1.8035867123305885e-06
-    },
-    {
-      "name": "D refined 0.10 socket",
-      "max_native_vertex_or_pose_error_mm": 1.8651294689008173e-06
+      "name": "Zero-gap refined socket",
+      "max_native_vertex_or_pose_error_mm": 2.185359777170798e-06
     }
   ],
   "plates": [
@@ -180,23 +156,23 @@
       ]
     },
     {
-      "extrusion_moves_checked": 174567,
+      "extrusion_moves_checked": 46725,
       "features": {
         "Prime tower": 3484,
-        "Support": 4807,
-        "Brim": 326,
-        "Outer wall": 13132,
-        "Inner wall": 24321,
-        "Bottom surface": 2364,
-        "Internal solid infill": 34874,
-        "Sparse infill": 68050,
-        "Floating vertical shell": 387,
-        "Bridge": 8531,
-        "Support transition": 956,
-        "Support interface": 1616,
-        "Gap infill": 1612,
-        "Top surface": 9759,
-        "Overhang wall": 348
+        "Support": 1228,
+        "Brim": 82,
+        "Outer wall": 3290,
+        "Inner wall": 6094,
+        "Bottom surface": 591,
+        "Internal solid infill": 8927,
+        "Sparse infill": 16983,
+        "Floating vertical shell": 114,
+        "Bridge": 2224,
+        "Support transition": 237,
+        "Support interface": 409,
+        "Gap infill": 419,
+        "Top surface": 2557,
+        "Overhang wall": 86
       },
       "extruding_xy_bounds_mm": [
         [
@@ -204,8 +180,8 @@
           4.597
         ],
         [
-          244.659,
-          251.352
+          223.73456945888316,
+          219.2886036446544
         ]
       ],
       "bead_xy_bounds_mm": [
@@ -214,21 +190,21 @@
           4.347
         ],
         [
-          244.909,
-          251.602
+          223.98456945888316,
+          219.5386036446544
         ]
       ],
       "conservative_bed_edge_clearance_mm": 4.347,
       "plate": 3,
-      "gcode_sha256": "58b2655c54b5293a966103473f4d115e0be2bc340173216ef620a62661509ff4",
+      "gcode_sha256": "3333248c6c83bb95149a9df006e89a9e89f23e7afee7fbd3033bac5ade85f631",
       "header": [
-        "; model printing time: 7h 8m 17s; total estimated time: 7h 14m 54s",
+        "; model printing time: 2h 14m 28s; total estimated time: 2h 21m 6s",
         "; total layer number: 68",
-        "; total filament length [mm] : 40993.51,2757.35,430.98",
-        "; total filament volume [cm^3] : 98600.94,6632.19,1036.63",
-        "; total filament weight [g] : 122.27,8.22,1.29",
-        "; model label id: 10900,11000,11100,11200,11300,11400,11500,11600",
-        "; object max height: 13.60,13.60,13.60,13.60,13.60,13.60,13.60,13.60",
+        "; total filament length [mm] : 11534.78,1047.09,257.65",
+        "; total filament volume [cm^3] : 27744.40,2518.54,619.71",
+        "; total filament weight [g] : 34.40,3.12,0.77",
+        "; model label id: 10900,11000",
+        "; object max height: 13.60,13.60",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 13.60",
@@ -239,14 +215,14 @@
   "physical_fit_finish_and_support_anchor_test_pending": true,
   "sample_infill_trial": {
     "editable": {
-      "body_count": 11,
+      "body_count": 5,
       "density": "8%",
       "pattern": "gyroid",
       "wall_loops": 4,
       "verified_in_project": "All-Development-Tests-A1.3mf"
     },
     "native": {
-      "body_count": 11,
+      "body_count": 5,
       "density": "8%",
       "pattern": "gyroid",
       "wall_loops": 4,
@@ -310,49 +286,13 @@
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "A reference tongue",
+        "name": "Zero-gap refined tongue",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "A reference socket",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "B refined 0.075 tongue",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "B refined 0.075 socket",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "C refined 0.05 tongue",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "C refined 0.05 socket",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "D refined 0.10 tongue",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "D refined 0.10 socket",
+        "name": "Zero-gap refined socket",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -414,49 +354,13 @@
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "A reference tongue",
+        "name": "Zero-gap refined tongue",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "A reference socket",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "B refined 0.075 tongue",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "B refined 0.075 socket",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "C refined 0.05 tongue",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "C refined 0.05 socket",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "D refined 0.10 tongue",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "D refined 0.10 socket",
+        "name": "Zero-gap refined socket",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -510,42 +414,12 @@
       "rotation_and_z_preserved": true
     },
     {
-      "name": "A reference tongue",
+      "name": "Zero-gap refined tongue",
       "geometry_color_modifiers_support_paint_and_process_preserved": true,
       "rotation_and_z_preserved": true
     },
     {
-      "name": "A reference socket",
-      "geometry_color_modifiers_support_paint_and_process_preserved": true,
-      "rotation_and_z_preserved": true
-    },
-    {
-      "name": "B refined 0.075 tongue",
-      "geometry_color_modifiers_support_paint_and_process_preserved": true,
-      "rotation_and_z_preserved": true
-    },
-    {
-      "name": "B refined 0.075 socket",
-      "geometry_color_modifiers_support_paint_and_process_preserved": true,
-      "rotation_and_z_preserved": true
-    },
-    {
-      "name": "C refined 0.05 tongue",
-      "geometry_color_modifiers_support_paint_and_process_preserved": true,
-      "rotation_and_z_preserved": true
-    },
-    {
-      "name": "C refined 0.05 socket",
-      "geometry_color_modifiers_support_paint_and_process_preserved": true,
-      "rotation_and_z_preserved": true
-    },
-    {
-      "name": "D refined 0.10 tongue",
-      "geometry_color_modifiers_support_paint_and_process_preserved": true,
-      "rotation_and_z_preserved": true
-    },
-    {
-      "name": "D refined 0.10 socket",
+      "name": "Zero-gap refined socket",
       "geometry_color_modifiers_support_paint_and_process_preserved": true,
       "rotation_and_z_preserved": true
     }
@@ -575,7 +449,7 @@
   ],
   "ribbon_surface_directions": [
     {
-      "variant": "A",
+      "variant": "Z",
       "filament_slot": 1,
       "z_mm": 13.6,
       "assembly_angles_deg": [
@@ -584,7 +458,7 @@
       ]
     },
     {
-      "variant": "A",
+      "variant": "Z",
       "filament_slot": 2,
       "z_mm": 9.0,
       "assembly_angles_deg": [
@@ -593,7 +467,7 @@
       ]
     },
     {
-      "variant": "A",
+      "variant": "Z",
       "filament_slot": 2,
       "z_mm": 9.6,
       "assembly_angles_deg": [
@@ -602,7 +476,7 @@
       ]
     },
     {
-      "variant": "A",
+      "variant": "Z",
       "filament_slot": 2,
       "z_mm": 10.0,
       "assembly_angles_deg": [
@@ -611,142 +485,7 @@
       ]
     },
     {
-      "variant": "A",
-      "filament_slot": 4,
-      "z_mm": 13.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "B",
-      "filament_slot": 1,
-      "z_mm": 13.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "B",
-      "filament_slot": 2,
-      "z_mm": 9.0,
-      "assembly_angles_deg": [
-        45.0,
-        45.0
-      ]
-    },
-    {
-      "variant": "B",
-      "filament_slot": 2,
-      "z_mm": 9.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "B",
-      "filament_slot": 2,
-      "z_mm": 10.0,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "B",
-      "filament_slot": 4,
-      "z_mm": 13.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "C",
-      "filament_slot": 1,
-      "z_mm": 13.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "C",
-      "filament_slot": 2,
-      "z_mm": 9.0,
-      "assembly_angles_deg": [
-        45.0,
-        45.0
-      ]
-    },
-    {
-      "variant": "C",
-      "filament_slot": 2,
-      "z_mm": 9.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "C",
-      "filament_slot": 2,
-      "z_mm": 10.0,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "C",
-      "filament_slot": 4,
-      "z_mm": 13.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "D",
-      "filament_slot": 1,
-      "z_mm": 13.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "D",
-      "filament_slot": 2,
-      "z_mm": 9.0,
-      "assembly_angles_deg": [
-        45.0,
-        45.0
-      ]
-    },
-    {
-      "variant": "D",
-      "filament_slot": 2,
-      "z_mm": 9.6,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "D",
-      "filament_slot": 2,
-      "z_mm": 10.0,
-      "assembly_angles_deg": [
-        135.0,
-        135.0
-      ]
-    },
-    {
-      "variant": "D",
+      "variant": "Z",
       "filament_slot": 4,
       "z_mm": 13.6,
       "assembly_angles_deg": [
@@ -764,5 +503,55 @@
       223.98456945888316,
       219.5386036446544
     ]
-  ]
+  ],
+  "preserved_plates": {
+    "baseline_project_sha256": "f8434ce893dd454ace61800fd645943401c957b6a404c5e33b3f22c7cf1bbc6d",
+    "retained_from_commit": "916cea8e14bf603f4b0b3021bfea1a022b6ac9a1",
+    "project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
+    "plates": [
+      {
+        "plate": 1,
+        "objects": [
+          "Glue-test smooth caul",
+          "Seam-test smooth caul",
+          "Ribbon show-face jig"
+        ],
+        "geometry_settings_and_poses_unchanged": true,
+        "preserved_assets_sha256": {
+          "Metadata/plate_1.png": "bd53f4e017223aeed0bd1ecdb546e3bd62307a746ad8f20efe0a0cbab09dd531",
+          "Metadata/plate_1_small.png": "d8344cb9280f191459341541a2fb6c334fd610d1804c3a7bc01cb1c217aa0247",
+          "Metadata/plate_no_light_1.png": "afed4075323ccd71ad85bd6959084845788279415aa65e49fa59673e18c8908c",
+          "Metadata/top_1.png": "447fd6d1c3973e16ad0270e8c8b95481656d55fec138e56ba33fe184e219e373",
+          "Metadata/pick_1.png": "33be4cdcef9cab87c9b548342b0cedc7a988bd5b58cde405c0564174cd9690f9",
+          "Metadata/plate_1.json": "4754c813c14729f3babed1418533f8042b3fb58ec64470bca84ba403ba7ed6d0",
+          "Metadata/plate_1.gcode.md5": "615f19280ace1ab0ce665b34a78fe816f7979f4c9326b163dc823837a1a1dfb3",
+          "Metadata/plate_1.gcode": "a12b40798c38686af3ab1b97f55c9fa2024a2a76f172ac191a20ed2818327b85"
+        },
+        "gcode_byte_identical": true
+      },
+      {
+        "plate": 2,
+        "objects": [
+          "M glue core C1",
+          "M glue core C4",
+          "M seam core C4",
+          "M glue veneer - fins and shoe",
+          "M seam upper veneer - fins and shoe",
+          "M seam lower veneer - fins and shoe"
+        ],
+        "geometry_settings_and_poses_unchanged": true,
+        "preserved_assets_sha256": {
+          "Metadata/plate_2.png": "945df6fb635d32f164bacc61b065f2a0700e7a92bf8038051573a9744497d83c",
+          "Metadata/plate_2_small.png": "9fe260687a8f052f4eaf3ceb24c014c15f09958123fdc0f61f29ac65ea5eb750",
+          "Metadata/plate_no_light_2.png": "1b840c691d7adb58df807f74c3e3010d59e73c2c01730b827755d1ea27aa3d5c",
+          "Metadata/top_2.png": "7371a1dc5f62f06191eccd20710cebab7161a6938992ffeaddc864611aba2974",
+          "Metadata/pick_2.png": "7b2566e1b43d12e7c951e928885c9264f448c0083fc41946ba7e9cb17e835053",
+          "Metadata/plate_2.json": "ab5c1bccc50a029382d7f6b885bf3b701d4e8310daf3438129b16c3d1dd11b99",
+          "Metadata/plate_2.gcode.md5": "e42c9b6fd5e1d2060c2452ed32f9ce4187ec20675534a904e2cc18c4eb2db89d",
+          "Metadata/plate_2.gcode": "d84aa2b00e0421834e32b84d6b42b62b945d696453ab61a2877c39dc8325fd3d"
+        },
+        "gcode_byte_identical": true
+      }
+    ]
+  }
 }

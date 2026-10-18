@@ -16,6 +16,10 @@ Filament slots: **1 white / 2 wood tan / 3 copper silk / 4 Azurite blue**. The a
 
 For another computer, pull branch `codex/m-veneer-cosmetic-fit`, run `git lfs pull`, then `python scripts/audit_dara_release.py`. The production 3MF contains the editable meshes, material assignments, native A2L machine commands and stored slices.
 
+## Printing the matching small parts on the A1
+
+The [A1 companion project](working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf) has **five plates / 46 matching pieces**: all eight backers, four wall blocks, 32 photo retainers and flat M cores C3/C4. Use its [plate mapping and instructions](working/bambu/Dara-A1-Companion/README.md). With that file, skip **A2L plates 13, 14, 18–20** and print A2L plates **1–12 and 15–17** for the remaining parts. Every veneer stays on the A2L in its saved common orientation. The complete A2L file remains available as the all-on-one-printer option.
+
 ## Preserved A1 projects and tests
 
 The [previous complete A1 veneer project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) remains unchanged: 36 plates, six flat cores and six veneers. Its F/C/V identifiers and mounts differ from the A2L release. Use its [A1 guide](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md) only with that file.

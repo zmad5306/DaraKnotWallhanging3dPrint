@@ -24,6 +24,10 @@ The four M cores print flat, with all convex crown and hammer texture in flat-ba
 
 The matching attachment layout moves conflicting screws/pilots away from the new laps, changes the locators to one round datum plus one axial slot per new core, and relocates all four wall-block centers. Use all matching A2L parts together. Exact coordinates and the tongue-first assembly order are in [production-plan.json](../working/bambu/Dara-Photo-Frame-A2L/production-plan.json).
 
+## Split printing between A1 and A2L
+
+The [A1 companion](../working/bambu/Dara-A1-Companion/README.md) contains five plates with 46 current-design pieces: eight backers, four wall blocks, 32 retainers and flat cores C3/C4. Print its full set once; skip plates **13, 14, 18–20** of the complete A2L file. The A2L prints plates **1–12 and 15–17** for the other 15 pieces. The part geometry is shared, with actual printer-specific profiles and native slices. All veneers retain the same A2L finish orientation.
+
 ## Physical confirmation still required
 
 1. Print one demanding full knot pair. Dry-fit the zero-gap cosmetic wall, check all three visible colors in grazing light, assess 8% stiffness and verify pad seating under light clamping.

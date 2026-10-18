@@ -18,3 +18,6 @@ __pycache__/
 
 # Complete A2L release and editable production source.
 !/working/bambu/Dara-Photo-Frame-A2L/*.3mf
+
+# A1 companion with parts from the coordinated A2L design.
+!/working/bambu/Dara-A1-Companion/*.3mf

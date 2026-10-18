@@ -1,0 +1,2382 @@
+{
+  "source_A2L_editable_sha256": "f698853b869b94a853fdbd249978bf08efa8949be1e2d8e84f434a2ee55da254",
+  "source_A2L_complete_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
+  "editable_sha256": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
+  "plates": 5,
+  "pieces": 46,
+  "source_A2L_plates": [
+    18,
+    19,
+    20,
+    13,
+    14
+  ],
+  "records": [
+    {
+      "name": "Backer3",
+      "plate": 1,
+      "object_id": 1000,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.2532082
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.39089200000001
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          1.5,
+          1.500000000000007,
+          0.0
+        ],
+        [
+          127.0064164,
+          127.28178400000002,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer1",
+      "plate": 1,
+      "object_id": 1100,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          191.6560059
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.2017784
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          128.8120118,
+          1.499999999999993,
+          0.0
+        ],
+        [
+          254.5,
+          126.90355679999999,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer5",
+      "plate": 1,
+      "object_id": 1200,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.2546234
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          191.74466710000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          1.5,
+          128.98933420000003,
+          0.0
+        ],
+        [
+          127.0092468,
+          254.5,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer7",
+      "plate": 1,
+      "object_id": 1300,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          191.74069980000002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          191.6102676
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          128.98139960000003,
+          128.72053519999997,
+          0.0
+        ],
+        [
+          254.5,
+          254.5,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer4",
+      "plate": 2,
+      "object_id": 1400,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.3059845
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.30308149999999
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          1.499999999999993,
+          1.499999999999993,
+          0.0
+        ],
+        [
+          127.11196899999999,
+          127.10616299999998,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer2",
+      "plate": 2,
+      "object_id": 1500,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          191.7513084
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.3872147
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          129.0026168,
+          1.5,
+          0.0
+        ],
+        [
+          254.5,
+          127.2744294,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer6",
+      "plate": 2,
+      "object_id": 1600,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          64.253479
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          191.6106186
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          1.5,
+          128.72123720000002,
+          0.0
+        ],
+        [
+          127.006958,
+          254.5,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer8",
+      "plate": 2,
+      "object_id": 1700,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          191.6196289
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          191.7918015
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.800000012
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          128.73925780000002,
+          129.08360299999998,
+          0.0
+        ],
+        [
+          254.5,
+          254.5,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "B1 A1 companion wall block",
+      "plate": 3,
+      "object_id": 1800,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          84.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          55.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          14.0,
+          36.0,
+          0.0
+        ],
+        [
+          154.0,
+          74.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B2 A1 companion wall block",
+      "plate": 3,
+      "object_id": 1900,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          84.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          103.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          14.0,
+          84.0,
+          0.0
+        ],
+        [
+          154.0,
+          122.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B3 A1 companion wall block",
+      "plate": 3,
+      "object_id": 2000,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          84.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          151.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          14.0,
+          132.0,
+          0.0
+        ],
+        [
+          154.0,
+          170.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B4 A1 companion wall block",
+      "plate": 3,
+      "object_id": 2100,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          84.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          199.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          14.0,
+          180.0,
+          0.0
+        ],
+        [
+          154.0,
+          218.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "R1 photo retainer",
+      "plate": 3,
+      "object_id": 2200,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          43.0,
+          0.0
+        ],
+        [
+          189.0,
+          53.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R2 photo retainer",
+      "plate": 3,
+      "object_id": 2300,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          43.0,
+          0.0
+        ],
+        [
+          215.0,
+          53.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R3 photo retainer",
+      "plate": 3,
+      "object_id": 2400,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          48.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          43.0,
+          0.0
+        ],
+        [
+          241.0,
+          53.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R4 photo retainer",
+      "plate": 3,
+      "object_id": 2500,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          59.0,
+          0.0
+        ],
+        [
+          189.0,
+          69.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R5 photo retainer",
+      "plate": 3,
+      "object_id": 2600,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          59.0,
+          0.0
+        ],
+        [
+          215.0,
+          69.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R6 photo retainer",
+      "plate": 3,
+      "object_id": 2700,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          59.0,
+          0.0
+        ],
+        [
+          241.0,
+          69.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R7 photo retainer",
+      "plate": 3,
+      "object_id": 2800,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          75.0,
+          0.0
+        ],
+        [
+          189.0,
+          85.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R8 photo retainer",
+      "plate": 3,
+      "object_id": 2900,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          75.0,
+          0.0
+        ],
+        [
+          215.0,
+          85.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R9 photo retainer",
+      "plate": 3,
+      "object_id": 3000,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          75.0,
+          0.0
+        ],
+        [
+          241.0,
+          85.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R10 photo retainer",
+      "plate": 3,
+      "object_id": 3100,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          96.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          91.0,
+          0.0
+        ],
+        [
+          189.0,
+          101.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R11 photo retainer",
+      "plate": 3,
+      "object_id": 3200,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          96.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          91.0,
+          0.0
+        ],
+        [
+          215.0,
+          101.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R12 photo retainer",
+      "plate": 3,
+      "object_id": 3300,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          96.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          91.0,
+          0.0
+        ],
+        [
+          241.0,
+          101.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R13 photo retainer",
+      "plate": 3,
+      "object_id": 3400,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          112.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          107.0,
+          0.0
+        ],
+        [
+          189.0,
+          117.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R14 photo retainer",
+      "plate": 3,
+      "object_id": 3500,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          112.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          107.0,
+          0.0
+        ],
+        [
+          215.0,
+          117.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R15 photo retainer",
+      "plate": 3,
+      "object_id": 3600,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          112.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          107.0,
+          0.0
+        ],
+        [
+          241.0,
+          117.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R16 photo retainer",
+      "plate": 3,
+      "object_id": 3700,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          123.0,
+          0.0
+        ],
+        [
+          189.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R17 photo retainer",
+      "plate": 3,
+      "object_id": 3800,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          123.0,
+          0.0
+        ],
+        [
+          215.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R18 photo retainer",
+      "plate": 3,
+      "object_id": 3900,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          123.0,
+          0.0
+        ],
+        [
+          241.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R19 photo retainer",
+      "plate": 3,
+      "object_id": 4000,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          139.0,
+          0.0
+        ],
+        [
+          189.0,
+          149.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R20 photo retainer",
+      "plate": 3,
+      "object_id": 4100,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          139.0,
+          0.0
+        ],
+        [
+          215.0,
+          149.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R21 photo retainer",
+      "plate": 3,
+      "object_id": 4200,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          139.0,
+          0.0
+        ],
+        [
+          241.0,
+          149.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R22 photo retainer",
+      "plate": 3,
+      "object_id": 4300,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          160.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          155.0,
+          0.0
+        ],
+        [
+          189.0,
+          165.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R23 photo retainer",
+      "plate": 3,
+      "object_id": 4400,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          160.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          155.0,
+          0.0
+        ],
+        [
+          215.0,
+          165.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R24 photo retainer",
+      "plate": 3,
+      "object_id": 4500,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          160.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          155.0,
+          0.0
+        ],
+        [
+          241.0,
+          165.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R25 photo retainer",
+      "plate": 3,
+      "object_id": 4600,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          176.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          171.0,
+          0.0
+        ],
+        [
+          189.0,
+          181.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R26 photo retainer",
+      "plate": 3,
+      "object_id": 4700,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          176.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          171.0,
+          0.0
+        ],
+        [
+          215.0,
+          181.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R27 photo retainer",
+      "plate": 3,
+      "object_id": 4800,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          176.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          171.0,
+          0.0
+        ],
+        [
+          241.0,
+          181.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R28 photo retainer",
+      "plate": 3,
+      "object_id": 4900,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          192.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          187.0,
+          0.0
+        ],
+        [
+          189.0,
+          197.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R29 photo retainer",
+      "plate": 3,
+      "object_id": 5000,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          192.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          187.0,
+          0.0
+        ],
+        [
+          215.0,
+          197.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R30 photo retainer",
+      "plate": 3,
+      "object_id": 5100,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          231.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          192.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          221.0,
+          187.0,
+          0.0
+        ],
+        [
+          241.0,
+          197.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R31 photo retainer",
+      "plate": 3,
+      "object_id": 5200,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          179.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          208.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          169.0,
+          203.0,
+          0.0
+        ],
+        [
+          189.0,
+          213.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R32 photo retainer",
+      "plate": 3,
+      "object_id": 5300,
+      "assembly_to_printer": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          208.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          195.0,
+          203.0,
+          0.0
+        ],
+        [
+          215.0,
+          213.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "C3 A1 companion flat M core",
+      "plate": 4,
+      "object_id": 5400,
+      "assembly_to_printer": [
+        [
+          -0.9382034171153895,
+          -0.346084307810982,
+          0.0,
+          300.842935725132
+        ],
+        [
+          0.346084307810982,
+          -0.9382034171153895,
+          0.0,
+          140.4525849178001
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          3.8451600803986707,
+          3.8461210771290837,
+          0.0
+        ],
+        [
+          252.15483991960133,
+          252.15387892287094,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C4 A1 companion flat M core",
+      "plate": 5,
+      "object_id": 5500,
+      "assembly_to_printer": [
+        [
+          -0.03652314568708039,
+          -0.9993328073415384,
+          0.0,
+          45.905720072335086
+        ],
+        [
+          0.9993328073415384,
+          -0.03652314568708039,
+          0.0,
+          -81.30200910675137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          34.960179038496626,
+          37.81416260707107,
+          0.0
+        ],
+        [
+          221.03982096150338,
+          218.18583739292893,
+          9.0
+        ]
+      ]
+    }
+  ],
+  "mapping": [
+    {
+      "name": "Backer3",
+      "A1_plate": 1,
+      "A2L_plate": 18,
+      "source_name": "Backer3",
+      "source_object_id": "2700",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer1",
+      "A1_plate": 1,
+      "A2L_plate": 18,
+      "source_name": "Backer1",
+      "source_object_id": "2800",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer5",
+      "A1_plate": 1,
+      "A2L_plate": 18,
+      "source_name": "Backer5",
+      "source_object_id": "2900",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer7",
+      "A1_plate": 1,
+      "A2L_plate": 18,
+      "source_name": "Backer7",
+      "source_object_id": "3000",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer4",
+      "A1_plate": 2,
+      "A2L_plate": 19,
+      "source_name": "Backer4",
+      "source_object_id": "3100",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer2",
+      "A1_plate": 2,
+      "A2L_plate": 19,
+      "source_name": "Backer2",
+      "source_object_id": "3200",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer6",
+      "A1_plate": 2,
+      "A2L_plate": 19,
+      "source_name": "Backer6",
+      "source_object_id": "3300",
+      "source_part_count": 1
+    },
+    {
+      "name": "Backer8",
+      "A1_plate": 2,
+      "A2L_plate": 19,
+      "source_name": "Backer8",
+      "source_object_id": "3400",
+      "source_part_count": 1
+    },
+    {
+      "name": "B1 A1 companion wall block",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "B1 A2L wall block",
+      "source_object_id": "3500",
+      "source_part_count": 4
+    },
+    {
+      "name": "B2 A1 companion wall block",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "B2 A2L wall block",
+      "source_object_id": "3600",
+      "source_part_count": 4
+    },
+    {
+      "name": "B3 A1 companion wall block",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "B3 A2L wall block",
+      "source_object_id": "3700",
+      "source_part_count": 4
+    },
+    {
+      "name": "B4 A1 companion wall block",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "B4 A2L wall block",
+      "source_object_id": "3800",
+      "source_part_count": 4
+    },
+    {
+      "name": "R1 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R1 photo retainer",
+      "source_object_id": "3900",
+      "source_part_count": 2
+    },
+    {
+      "name": "R2 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R2 photo retainer",
+      "source_object_id": "4000",
+      "source_part_count": 2
+    },
+    {
+      "name": "R3 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R3 photo retainer",
+      "source_object_id": "4100",
+      "source_part_count": 2
+    },
+    {
+      "name": "R4 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R4 photo retainer",
+      "source_object_id": "4200",
+      "source_part_count": 2
+    },
+    {
+      "name": "R5 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R5 photo retainer",
+      "source_object_id": "4300",
+      "source_part_count": 2
+    },
+    {
+      "name": "R6 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R6 photo retainer",
+      "source_object_id": "4400",
+      "source_part_count": 2
+    },
+    {
+      "name": "R7 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R7 photo retainer",
+      "source_object_id": "4500",
+      "source_part_count": 2
+    },
+    {
+      "name": "R8 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R8 photo retainer",
+      "source_object_id": "4600",
+      "source_part_count": 2
+    },
+    {
+      "name": "R9 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R9 photo retainer",
+      "source_object_id": "4700",
+      "source_part_count": 2
+    },
+    {
+      "name": "R10 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R10 photo retainer",
+      "source_object_id": "4800",
+      "source_part_count": 2
+    },
+    {
+      "name": "R11 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R11 photo retainer",
+      "source_object_id": "4900",
+      "source_part_count": 2
+    },
+    {
+      "name": "R12 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R12 photo retainer",
+      "source_object_id": "5000",
+      "source_part_count": 2
+    },
+    {
+      "name": "R13 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R13 photo retainer",
+      "source_object_id": "5100",
+      "source_part_count": 2
+    },
+    {
+      "name": "R14 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R14 photo retainer",
+      "source_object_id": "5200",
+      "source_part_count": 2
+    },
+    {
+      "name": "R15 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R15 photo retainer",
+      "source_object_id": "5300",
+      "source_part_count": 2
+    },
+    {
+      "name": "R16 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R16 photo retainer",
+      "source_object_id": "5400",
+      "source_part_count": 2
+    },
+    {
+      "name": "R17 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R17 photo retainer",
+      "source_object_id": "5500",
+      "source_part_count": 2
+    },
+    {
+      "name": "R18 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R18 photo retainer",
+      "source_object_id": "5600",
+      "source_part_count": 2
+    },
+    {
+      "name": "R19 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R19 photo retainer",
+      "source_object_id": "5700",
+      "source_part_count": 2
+    },
+    {
+      "name": "R20 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R20 photo retainer",
+      "source_object_id": "5800",
+      "source_part_count": 2
+    },
+    {
+      "name": "R21 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R21 photo retainer",
+      "source_object_id": "5900",
+      "source_part_count": 2
+    },
+    {
+      "name": "R22 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R22 photo retainer",
+      "source_object_id": "6000",
+      "source_part_count": 2
+    },
+    {
+      "name": "R23 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R23 photo retainer",
+      "source_object_id": "6100",
+      "source_part_count": 2
+    },
+    {
+      "name": "R24 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R24 photo retainer",
+      "source_object_id": "6200",
+      "source_part_count": 2
+    },
+    {
+      "name": "R25 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R25 photo retainer",
+      "source_object_id": "6300",
+      "source_part_count": 2
+    },
+    {
+      "name": "R26 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R26 photo retainer",
+      "source_object_id": "6400",
+      "source_part_count": 2
+    },
+    {
+      "name": "R27 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R27 photo retainer",
+      "source_object_id": "6500",
+      "source_part_count": 2
+    },
+    {
+      "name": "R28 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R28 photo retainer",
+      "source_object_id": "6600",
+      "source_part_count": 2
+    },
+    {
+      "name": "R29 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R29 photo retainer",
+      "source_object_id": "6700",
+      "source_part_count": 2
+    },
+    {
+      "name": "R30 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R30 photo retainer",
+      "source_object_id": "6800",
+      "source_part_count": 2
+    },
+    {
+      "name": "R31 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R31 photo retainer",
+      "source_object_id": "6900",
+      "source_part_count": 2
+    },
+    {
+      "name": "R32 photo retainer",
+      "A1_plate": 3,
+      "A2L_plate": 20,
+      "source_name": "R32 photo retainer",
+      "source_object_id": "7000",
+      "source_part_count": 2
+    },
+    {
+      "name": "C3 A1 companion flat M core",
+      "A1_plate": 4,
+      "A2L_plate": 13,
+      "source_name": "C3 A2L flat M core",
+      "source_object_id": "2200",
+      "source_part_count": 3
+    },
+    {
+      "name": "C4 A1 companion flat M core",
+      "A1_plate": 5,
+      "A2L_plate": 14,
+      "source_name": "C4 A2L flat M core",
+      "source_object_id": "2300",
+      "source_part_count": 3
+    }
+  ],
+  "printing_assignment": {
+    "A1": "All five companion plates",
+    "A2L": "Original complete project plates 1-12 and 15-17",
+    "skip_A2L_plates": [
+      18,
+      19,
+      20,
+      13,
+      14
+    ]
+  },
+  "layer_height_mm": 0.2,
+  "body_infill": "8% gyroid",
+  "filament_slots": {
+    "white": 1,
+    "copper_silk": 3
+  },
+  "prime_tower_disabled": true
+}

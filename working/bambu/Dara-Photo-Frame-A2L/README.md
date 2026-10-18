@@ -15,6 +15,10 @@ The artwork remains 914.4 mm across. Fresh cuts in the continuous artwork produc
 
 61 assembly pieces on 20 plates. Filament slots: **1 white, 2 wood tan, 3 copper silk, 4 blue**. All plates use 0.20 mm layers. Supports, carriers and purge add consumable material beyond the assembled artwork.
 
+## Optional A1 companion
+
+Use [Dara-A1-Companion.3mf](../Dara-A1-Companion/Dara-A1-Companion.3mf) to print the eight backers, four wall blocks, 32 retainers and flat M cores C3/C4 on the A1. It uses the exact matching A2L-design meshes and an actual A1 profile. Its [five-plate guide](../Dara-A1-Companion/README.md) maps the parts. Skip **13, 14, 18, 19, 20** in this complete A2L project when printing those on the A1; print A2L plates **1–12 and 15–17**. Keep all veneers on the A2L. The complete file here remains unchanged.
+
 ## Fit and finish
 
 Every knot cosmetic wall closes at zero nominal gap above Z8; hidden 18 mm laps have three seating pads, a 0.40 mm recessed adhesive region, secondary locator relief and squeeze-out reservoirs. The real upper edge checks cover the white rail, weave and accent heights. Zero nominal gap still requires checking the physical printed fit.

@@ -1,0 +1,43 @@
+{
+  "project_sha256": "3ed05cc063b409737c11c294d00ac4845ce589f16821b02898247ec79d09d270",
+  "editable_sha256": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
+  "source_A2L_complete_sha256": "4b77410a09fb63d0bae32cf67fb16807768c96c1a705a0e673527301c3979f7e",
+  "pieces": 46,
+  "plates": 5,
+  "native_reopen_return_code": 0,
+  "evidence_sha256": {
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "c614635848a2b1c13c2beb39b4ebe108b009fe49e62487072e692ea5f7a63b4f",
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "0d1d8d5acca7d1d2845a1aa71235c0bc86b1acb06eff8bd4afc7e09a131e4fbf",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "f2f06bc6c599ea63492d7f793d33ce6ad73b534f5b81eca0d49f95f54265cf54",
+    "scripts/build_a1_companion.py": "b036126225a804ebef349f0e0f2f454501968486c6b640e5346994952c28f050",
+    "scripts/audit_a1_companion.py": "ace542bcdb31d92986bf6c33032faacdb9e7c7f1567f6b9043dd105edc11ddc1"
+  },
+  "plate_estimates": [
+    {
+      "plate": 1,
+      "seconds": 8328.3955078125,
+      "weight_g": 99.39376068115234
+    },
+    {
+      "plate": 2,
+      "seconds": 8326.328125,
+      "weight_g": 99.41592407226562
+    },
+    {
+      "plate": 3,
+      "seconds": 18014.353515625,
+      "weight_g": 144.87635803222656
+    },
+    {
+      "plate": 4,
+      "seconds": 8967.8701171875,
+      "weight_g": 63.1407585144043
+    },
+    {
+      "plate": 5,
+      "seconds": 7396.5078125,
+      "weight_g": 51.302616119384766
+    }
+  ],
+  "physical_confirmation_pending": true
+}

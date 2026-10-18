@@ -151,7 +151,7 @@ The fourteen-joint result is a geometry study, **not a ready-to-print A2L projec
 7. Native-slice every section and inspect bead-inclusive bed bounds, supports, purge tower, material assignment and seams. Update any tight packing before claiming the study's bed fit is printable. Fewer joints does not itself establish greater strength or lower total weight/time.
 8. Print one demanding full section and matching joint before committing to the whole A2L set. The A1 coupons establish the local joint approach; larger spans still need a fit, flatness and stiffness check.
 
-Keep the current six-part M core/veneer arrangement initially. The fourteen-joint count does not include an A2L repartition of the M. A later attempt to reduce copper seams is a separate geometry, finish and support decision.
+The fourteen-joint knot count excludes the M. A [separate fresh M study](../working/review/a2l-m-joints/README.md) now supports a candidate with four flat cores (three hidden joints) and three veneers (two visible seams), compared with six cores and six veneers on the current A1. Rotating all veneers together 90 degrees within the same 55-degree tilted plane keeps their show planes parallel to bed Y, while the A2L height permits full sweeps. Visible M seam length decreases from approximately 317 to 24 mm. An alternative retaining the exact current rotation has five veneers and four visible seams, totaling about 220 mm. The M candidate still needs regenerated 3D carriers, mounting checks, native slicing and physical confirmation; the current A1 main project remains unchanged by this study.
 
 ## Validate and release the chosen build
 

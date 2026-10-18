@@ -1,5 +1,5 @@
 {
-  "title": "DEVELOPMENT - flat M cores and common-orientation band-free veneers",
+  "title": "DEVELOPMENT - flat M cores and fin-supported band-free veneers",
   "source_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
   "records": [
     {
@@ -39,9 +39,9 @@
           0.0
         ],
         [
-          237.9300547252916,
-          237.91381789694293,
-          10.600000000000001
+          237.9300547254161,
+          237.91381789702078,
+          10.6
         ]
       ]
     },
@@ -77,13 +77,13 @@
       ],
       "body_bounds_mm": [
         [
-          44.37595514741841,
-          46.43813909951195,
+          44.37595514712032,
+          46.438139099523355,
           0.0
         ],
         [
-          211.62404485258156,
-          209.56186090048806,
+          211.62404485259867,
+          209.56186090026205,
           11.2
         ]
       ]
@@ -120,12 +120,12 @@
       ],
       "body_bounds_mm": [
         [
-          5.931090293044804,
-          6.013219537494642,
+          5.9310902927782365,
+          6.013219537512839,
           0.0
         ],
         [
-          250.0689097069552,
+          250.06890970700252,
           249.98678046250535,
           11.2
         ]
@@ -163,13 +163,13 @@
       ],
       "body_bounds_mm": [
         [
-          8.794714203934745,
-          8.650389397796488,
+          8.7947142043256,
+          8.65038939833397,
           0.0
         ],
         [
-          247.2052857960653,
-          247.3496106022035,
+          247.20528579624033,
+          247.34961060211674,
           11.2
         ]
       ]
@@ -206,13 +206,13 @@
       ],
       "body_bounds_mm": [
         [
-          46.11546358102474,
-          46.133393346352406,
+          46.115463581025935,
+          46.13339334639876,
           0.0
         ],
         [
-          209.88453641897524,
-          209.86660665364758,
+          209.88453641862975,
+          209.8666066532783,
           11.2
         ]
       ]
@@ -249,19 +249,19 @@
       ],
       "body_bounds_mm": [
         [
-          30.346940512497447,
-          30.3929063297646,
+          30.346940512453983,
+          30.392906330182726,
           0.0
         ],
         [
           225.65305948750256,
-          225.60709367023537,
+          225.6070936706272,
           11.2
         ]
       ]
     },
     {
-      "name": "V1 band-free veneer with fused trim-away carrier",
+      "name": "V1 band-free veneer with sacrificial fins",
       "plate": 7,
       "object_id": 1600,
       "assembly_to_printer": [
@@ -275,7 +275,7 @@
           0.0,
           1.0,
           0.0,
-          2.0
+          0.0
         ],
         [
           0.0,
@@ -304,7 +304,7 @@
       ]
     },
     {
-      "name": "V2 band-free veneer with fused trim-away carrier",
+      "name": "V2 band-free veneer with sacrificial fins",
       "plate": 8,
       "object_id": 1700,
       "assembly_to_printer": [
@@ -335,7 +335,7 @@
       ],
       "body_bounds_mm": [
         [
-          96.06025040149689,
+          96.86996483057737,
           54.48058237949999,
           0.0
         ],
@@ -347,7 +347,7 @@
       ]
     },
     {
-      "name": "V3 band-free veneer with fused trim-away carrier",
+      "name": "V3 band-free veneer with sacrificial fins",
       "plate": 9,
       "object_id": 1800,
       "assembly_to_printer": [
@@ -361,7 +361,7 @@
           0.0,
           1.0,
           0.0,
-          -2.0
+          0.0
         ],
         [
           0.0,
@@ -378,7 +378,7 @@
       ],
       "body_bounds_mm": [
         [
-          45.83185924645832,
+          42.66503033787012,
           3.834875000000011,
           0.0
         ],
@@ -390,7 +390,7 @@
       ]
     },
     {
-      "name": "V4 band-free veneer with fused trim-away carrier",
+      "name": "V4 band-free veneer with sacrificial fins",
       "plate": 10,
       "object_id": 1900,
       "assembly_to_printer": [
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "name": "V5 band-free veneer with fused trim-away carrier",
+      "name": "V5 band-free veneer with sacrificial fins",
       "plate": 11,
       "object_id": 2000,
       "assembly_to_printer": [
@@ -464,8 +464,8 @@
       ],
       "body_bounds_mm": [
         [
-          105.65421775728464,
-          34.870611287653446,
+          105.67312201857567,
+          38.334875000000004,
           0.0
         ],
         [
@@ -476,7 +476,7 @@
       ]
     },
     {
-      "name": "V6 band-free veneer with fused trim-away carrier",
+      "name": "V6 band-free veneer with sacrificial fins",
       "plate": 12,
       "object_id": 2100,
       "assembly_to_printer": [

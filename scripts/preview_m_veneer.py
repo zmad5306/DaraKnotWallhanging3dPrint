@@ -1,11 +1,12 @@
 """Engineering previews drawn from generated meshes, not illustrative mockups."""
 import json
 import math
+import zipfile
 import numpy as np
 import trimesh
 from PIL import Image, ImageDraw, ImageFont
 from shapely.geometry import shape
-from development_3mf import ROOT, OUT, WORK
+from development_3mf import ROOT, OUT, WORK, read_object
 from develop_m_veneer import axes, crown
 from add_blue_ribbon_edge import artwork
 
@@ -55,16 +56,15 @@ def layout():
     im.save(OUT/'M-band-free-layout.png')
 
 
-def carrier():
-    m=trimesh.load_mesh(WORK/'V1-with-carrier.stl',process=False)
-    # Read an angle from the rear so the fused posts and skin roots are visible.
+def draw_carrier(m,t,c,title,path):
+    # Read an angle from the rear so fins and repeated teeth are visible.
     view=np.array([-1,-1,.65]);view/=np.linalg.norm(view)
     u=np.array([1,-1,0.])/math.sqrt(2);v=np.cross(view,u)
     points=m.vertices@np.column_stack([u,v]);low=points.min(axis=0);high=points.max(axis=0)
     scale=min(980/(high-low)[0],740/(high-low)[1]);center=(low+high)/2
     pixels=(points-center)*[scale,-scale]+[600,495]
     depth=m.triangles_center@view;order=np.argsort(depth)
-    t=np.array(plan['skins'][0]['assembly_to_printer']);R=t[:3,:3]
+    t=np.array(t);R=t[:3,:3]
     ac=(m.triangles_center-t[:3,3])@R
     floor=8.4+crown(outline,ac[:,:2])+.2
     is_skin=ac[:,2]>floor-.12
@@ -74,12 +74,24 @@ def carrier():
     for i in order:
         color=np.array([181,117,74] if is_skin[i] else [96,117,129])*(.60+.42*lum[i])
         d.polygon([tuple(p) for p in pixels[m.faces[i]]],fill=tuple(color.astype(int)))
-    d.text((600,26),'V1 veneer with fused bed carrier — rear view',font=font(29,True),anchor='mt',fill='#263d4c')
-    c=plan['skins'][0]['carrier']
-    d.text((600,904),f"{c['fused_anchor_count']} fused rear anchors; {c['cross_braces']} braces; one connected bed frame.",font=font(23),anchor='mm',fill='#334b58')
+    d.text((600,26),title,font=font(29,True),anchor='mt',fill='#263d4c')
+    d.text((600,904),f"{c['fin_count']} solid fins; {c['bonded_tooth_count']} tabs; {c['cross_braces']} cross ties; bonded starter shoe.",font=font(23),anchor='mm',fill='#334b58')
     d.text((600,948),'Carrier shaded gray for clarity; the complete part prints in copper silk.',font=font(22),anchor='mm',fill='#526572')
-    d.text((600,988),'Trees are additional support in the native slice. Trim necks inside the rear pockets.',font=font(21),anchor='mm',fill='#526572')
-    im.save(OUT/'M-veneer-carrier.png')
+    d.text((600,988),'Cut the tabs individually. Trim inside rear pockets; trees remain additional support.',font=font(21),anchor='mm',fill='#526572')
+    im.save(path)
 
 
-if __name__=='__main__':layout();carrier()
+def carrier():
+    m=trimesh.load_mesh(WORK/'V1-with-carrier.stl',process=False)
+    row=plan['skins'][0]
+    draw_carrier(m,row['assembly_to_printer'],row['carrier'],'V1 veneer with sacrificial fins — rear view',OUT/'M-veneer-carrier.png')
+
+
+def coupon_carrier():
+    with zipfile.ZipFile(OUT/'M-Veneer-Glue-Coupon-A1.3mf') as z:files={n:z.read(n) for n in z.namelist()}
+    m=read_object(files,'1200')[0][0]['mesh']
+    c=json.loads((OUT/'M-Veneer-Glue-Coupon-A1-seating.json').read_text())['panels'][0]['carrier']
+    draw_carrier(m,c['assembly_to_printer'],c,'Glue-test veneer with sacrificial fins — rear view',OUT/'M-veneer-fin-test.png')
+
+
+if __name__=='__main__':layout();carrier();coupon_carrier()

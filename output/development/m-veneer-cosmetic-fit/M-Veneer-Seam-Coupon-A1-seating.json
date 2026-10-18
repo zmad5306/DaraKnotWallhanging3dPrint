@@ -1,6 +1,8 @@
 {
   "glue_gap_mm": 0.2,
   "caul_release_clearance_mm": 0.15,
+  "caul_surface": "Smooth broad crown; no hammer dimples",
+  "caul_liner_required": true,
   "panels": [
     {
       "panel": 1,
@@ -19,37 +21,148 @@
         ]
       ],
       "carrier": {
-        "fused_anchor_count": 4,
-        "cross_braces": 4,
-        "neck_diameter_mm": 1.3,
+        "type": "Solid sacrificial fins with repeated bonded cut-away teeth",
+        "fin_count": 1,
+        "bonded_tooth_count": 8,
+        "cross_braces": 0,
+        "fin_pitch_max_mm": 12.0,
+        "fin_thickness_mm": 1.6,
+        "rear_fin_clearance_mm": 1.5,
+        "tooth_width_mm": 1.2,
+        "tooth_length_along_assembly_x_mm": 1.5,
+        "tooth_pitch_max_along_assembly_x_mm": 8.0,
         "trim_pocket_depth_mm": 0.4,
-        "trim_pocket_radius_mm": 2,
-        "bed_frame_height_mm": 1.2,
-        "post_diameter_mm": 3.6,
-        "anchor_assembly_xyz": [
+        "minimum_checked_roof_above_pocket_mm": 0.6,
+        "body_connected_to_bed": true,
+        "starter_shoe_assembly_x_width_mm": 4,
+        "starter_shoe_contact_patches": 1,
+        "starter_shoe_directly_grounded": true,
+        "first_veneer_layer_height_checked_mm": 0.2,
+        "unanchored_first_veneer_layer_mm3": 2.4256109816024607e-15,
+        "zero_volume_boolean_shells_removed": 5,
+        "unplanned_fin_to_skin_contact_mm3": 1.8372365443016905e-14,
+        "tree_supports_still_required": true,
+        "physical_confirmation_pending": true,
+        "assembly_to_printer": [
           [
-            -278.0,
-            -52.962500000000006,
-            11.147951864282051
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918,
+            -27.295880103400236
           ],
           [
-            -230.0,
-            -52.962500000000006,
-            11.15
+            0.0,
+            -1.0,
+            0.0,
+            75.51875
           ],
           [
-            -254.0,
-            -52.962500000000006,
-            11.15
+            0.8191520442889918,
+            0.0,
+            0.573576436351046,
+            234.676335935302
           ],
           [
-            -266.0,
-            -52.962500000000006,
-            11.15
+            0.0,
+            0.0,
+            0.0,
+            1.0
           ]
         ],
-        "body_connected_to_bed": true,
-        "tree_supports_still_required": true
+        "bond_probes_print_xyz_mm": [
+          [
+            141.52860984858165,
+            128.0,
+            11.01737493249206
+          ],
+          [
+            137.45923435038955,
+            128.0,
+            16.90328792354518
+          ],
+          [
+            133.3549762947221,
+            128.0,
+            22.764775884901923
+          ],
+          [
+            129.2507182390546,
+            128.0,
+            28.626263846258723
+          ],
+          [
+            125.14646018338712,
+            128.0,
+            34.487751807615524
+          ],
+          [
+            121.04220212771963,
+            128.0,
+            40.349239768972296
+          ],
+          [
+            116.93794407205215,
+            128.0,
+            46.21072773032907
+          ],
+          [
+            112.83368601638469,
+            128.0,
+            52.07221569168584
+          ],
+          [
+            145.51068565602975,
+            128.0,
+            4.093714368887447
+          ]
+        ],
+        "fins": [
+          {
+            "assembly_y_mm": -52.48125,
+            "print_y_mm": 128.0,
+            "contacts_xy_mm": [
+              [
+                -280.0444444444444,
+                -52.48125
+              ],
+              [
+                -272.88888888888886,
+                -52.48125
+              ],
+              [
+                -265.73333333333335,
+                -52.48125
+              ],
+              [
+                -258.5777777777778,
+                -52.48125
+              ],
+              [
+                -251.42222222222222,
+                -52.48125
+              ],
+              [
+                -244.26666666666665,
+                -52.48125
+              ],
+              [
+                -237.11111111111111,
+                -52.48125
+              ],
+              [
+                -229.95555555555558,
+                -52.48125
+              ]
+            ],
+            "maximum_height_mm": 58.05503827392329,
+            "fin_xz_bounds_mm": [
+              107.5079543211798,
+              0.0,
+              144.896321622813,
+              58.05503827392329
+            ]
+          }
+        ]
       }
     },
     {
@@ -69,46 +182,154 @@
         ]
       ],
       "carrier": {
-        "fused_anchor_count": 4,
-        "cross_braces": 4,
-        "neck_diameter_mm": 1.3,
+        "type": "Solid sacrificial fins with repeated bonded cut-away teeth",
+        "fin_count": 1,
+        "bonded_tooth_count": 7,
+        "cross_braces": 0,
+        "fin_pitch_max_mm": 12.0,
+        "fin_thickness_mm": 1.6,
+        "rear_fin_clearance_mm": 1.5,
+        "tooth_width_mm": 1.2,
+        "tooth_length_along_assembly_x_mm": 1.5,
+        "tooth_pitch_max_along_assembly_x_mm": 8.0,
         "trim_pocket_depth_mm": 0.4,
-        "trim_pocket_radius_mm": 2,
-        "bed_frame_height_mm": 1.2,
-        "post_diameter_mm": 3.6,
-        "anchor_assembly_xyz": [
+        "minimum_checked_roof_above_pocket_mm": 0.6,
+        "body_connected_to_bed": true,
+        "starter_shoe_assembly_x_width_mm": 4,
+        "starter_shoe_contact_patches": 1,
+        "starter_shoe_directly_grounded": true,
+        "first_veneer_layer_height_checked_mm": 0.2,
+        "unanchored_first_veneer_layer_mm3": 3.7730235602495554e-16,
+        "zero_volume_boolean_shells_removed": 7,
+        "unplanned_fin_to_skin_contact_mm3": 6.558164283171092e-14,
+        "tree_supports_still_required": true,
+        "physical_confirmation_pending": true,
+        "assembly_to_printer": [
           [
-            -278.0,
-            -78.0,
-            10.8058825043001
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918,
+            -27.06903266880613
           ],
           [
-            -230.0,
-            -78.0,
-            11.15
+            0.0,
+            -1.0,
+            0.0,
+            50.48125
           ],
           [
-            -254.0,
-            -78.0,
-            11.15
+            0.8191520442889918,
+            0.0,
+            0.573576436351046,
+            235.0213354911836
           ],
           [
-            -266.0,
-            -78.0,
-            11.15
+            0.0,
+            0.0,
+            0.0,
+            1.0
           ]
         ],
-        "body_connected_to_bed": true,
-        "tree_supports_still_required": true
+        "bond_probes_print_xyz_mm": [
+          [
+            140.54170751444104,
+            128.0,
+            12.529232273939186
+          ],
+          [
+            136.2875689701141,
+            128.0,
+            19.245570768386017
+          ],
+          [
+            131.73235337431365,
+            128.0,
+            25.751092841809054
+          ],
+          [
+            127.17713777851318,
+            128.0,
+            32.25661491523209
+          ],
+          [
+            122.62192218271272,
+            128.0,
+            38.7621369886551
+          ],
+          [
+            118.06670658691223,
+            128.0,
+            45.26765906207817
+          ],
+          [
+            113.51149099111177,
+            128.0,
+            51.773181135501204
+          ],
+          [
+            144.76527430373423,
+            126.80880294906162,
+            4.017421891621893
+          ]
+        ],
+        "fins": [
+          {
+            "assembly_y_mm": -77.51875,
+            "print_y_mm": 128.0,
+            "contacts_xy_mm": [
+              [
+                -278.39243223703113,
+                -77.51875
+              ],
+              [
+                -270.4506562031695,
+                -77.51875
+              ],
+              [
+                -262.50888016930793,
+                -77.51875
+              ],
+              [
+                -254.56710413544636,
+                -77.51875
+              ],
+              [
+                -246.62532810158478,
+                -77.51875
+              ],
+              [
+                -238.68355206772318,
+                -77.51875
+              ],
+              [
+                -230.74177603386158,
+                -77.51875
+              ]
+            ],
+            "maximum_height_mm": 58.50384251709215,
+            "fin_xz_bounds_mm": [
+              107.88305021301372,
+              0.0,
+              143.82874115346834,
+              58.50384251709215
+            ]
+          }
+        ]
       }
     }
   ],
   "core_parts": [
     4
   ],
-  "physical_confirmation_pending": true,
-  "caul_surface": "Smooth broad crown; no hammer dimples",
-  "caul_liner_required": true,
-  "caul_surface_error_mm": 0.0,
-  "other_object_meshes_byte_identical": true
+  "sample_bounds_mm": [
+    -290.0,
+    -90.0,
+    -220.0,
+    -40.0
+  ],
+  "core_connected_components": [
+    1
+  ],
+  "whole_pad_footprints_supported": true,
+  "physical_confirmation_pending": true
 }

@@ -41,9 +41,14 @@ def coupon_connectivity(path):
         parts,settings=read_object(files,obj.get('id'))
         for part in parts:
             if part['subtype']!='normal_part':continue
-            count=len(solid(part['mesh']).decompose())
+            components=solid(part['mesh']).decompose()
+            # Re-reading rounded 3MF vertices can expose coplanar boolean sheets
+            # of effectively zero volume. A real cropped-off chunk must fail.
+            count=sum(abs(c.volume())>=1e-8 for c in components)
             assert count==1,(path.name,settings['name'],'Disconnected printed chunks',count)
-            rows.append(dict(name=settings['name'],connected_components=count))
+            rows.append(dict(name=settings['name'],connected_components=count,
+                             numerical_zero_volume_shells=len(components)-count,
+                             excluded_absolute_volume_mm3=sum(abs(c.volume()) for c in components if abs(c.volume())<1e-8)))
     return rows
 
 
@@ -141,6 +146,15 @@ def validate(name, native):
         elif name=='M-Core-and-Veneer-A1.3mf' and r['plate']<=6:
             assert not any(r['features'].get(k,0) for k in ['Support','Support interface']),r
             r['core_support_material_absent']=True
+        carrier=None
+        if name=='M-Core-and-Veneer-A1.3mf' and r['plate']>6:
+            carrier=json.loads((OUT/'M-geometry-validation.json').read_text())['skins'][r['plate']-7]['carrier']
+        elif name in ['M-Veneer-Glue-Coupon-A1.3mf','M-Veneer-Seam-Coupon-A1.3mf']:
+            seating=json.loads((OUT/(staged.stem+'-seating.json')).read_text())
+            if 2<=r['plate']<=len(seating['panels'])+1:carrier=seating['panels'][r['plate']-2]['carrier']
+        if carrier and 'bond_probes_print_xyz_mm' in carrier:
+            from check_fin_toolpaths import check_fin_bonds
+            r['bonded_fin_tooth_toolpath_check']=check_fin_bonds(text,carrier)
         rows.append(r)
     target=OUT/(staged.stem+'-Sliced.3mf');shutil.copyfile(export,target)
     report=dict(source_release_sha256=sha(ROOT/'Dara.3mf'),staged_sha256=sha(staged),native_project_sha256=sha(target),

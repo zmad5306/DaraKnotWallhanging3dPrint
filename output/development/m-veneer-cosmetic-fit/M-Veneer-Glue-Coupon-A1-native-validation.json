@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "335eb240113f7516a0ff667754efab558fbcfe1376769697cd4039b35757fb6b",
-  "native_project_sha256": "82f290c74b68078fc065adcee86d8d60dd3aa05d32ec8d2746b97340fdca87e0",
+  "staged_sha256": "f6365fe2b5caac8e3501378029d3bd8405734691dd27315ff5a9501593f0f708",
+  "native_project_sha256": "c589ff0b88bbde3a1aa003f414cff9b1be3f314ffc5dd8a9c038bd5402e0859d",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -15,7 +15,7 @@
     },
     {
       "name": "Veneer coupon 1 - fused carrier",
-      "max_native_vertex_or_pose_error_mm": 1.3154095051062212e-05
+      "max_native_vertex_or_pose_error_mm": 1.3662340791473172e-05
     },
     {
       "name": "Smooth crown caul - soft liner and release film",
@@ -75,53 +75,63 @@
       ]
     },
     {
-      "extrusion_moves_checked": 204751,
+      "extrusion_moves_checked": 191345,
       "features": {
-        "Support": 129739,
-        "Brim": 486,
-        "Outer wall": 18528,
-        "Inner wall": 20819,
-        "Bottom surface": 10,
-        "Gap infill": 34661,
-        "Internal solid infill": 136,
-        "Top surface": 369,
-        "Overhang wall": 3
+        "Support": 100821,
+        "Brim": 231,
+        "Outer wall": 25228,
+        "Inner wall": 22523,
+        "Gap infill": 34610,
+        "Bottom surface": 111,
+        "Support interface": 8,
+        "Internal solid infill": 697,
+        "Bridge": 175,
+        "Sparse infill": 5542,
+        "Floating vertical shell": 917,
+        "Top surface": 449,
+        "Overhang wall": 33
       },
       "extruding_xy_bounds_mm": [
         [
-          90.59907353644829,
-          81.65080716914129
+          85.08659706468613,
+          84.15906916778103
         ],
         [
-          157.81654759048996,
-          171.18923186101014
+          156.52256426041927,
+          171.89552795038324
         ]
       ],
       "bead_xy_bounds_mm": [
         [
-          90.34907353644829,
-          81.40080716914129
+          84.83659706468613,
+          83.90906916778103
         ],
         [
-          158.06654759048996,
-          171.43923186101014
+          156.77256426041927,
+          172.14552795038324
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 81.40080716914129,
+      "conservative_bed_edge_clearance_mm": 83.85447204961676,
       "plate": 2,
-      "gcode_sha256": "04db65b555319d46af18fe52ca77134eaca70856ba37a3ca3b1e51d9533a5452",
+      "gcode_sha256": "2c8578756ac6133369e5a36ef974211160ac492d6411e38c3a2e588f43cccb4e",
       "header": [
-        "; model printing time: 4h 6m 53s; total estimated time: 4h 13m 30s",
+        "; model printing time: 4h 44m 47s; total estimated time: 4h 51m 24s",
         "; total layer number: 338",
-        "; total filament length [mm] : 11774.02",
-        "; total filament volume [cm^3] : 28319.83",
-        "; total filament weight [g] : 35.12",
+        "; total filament length [mm] : 15476.85",
+        "; total filament volume [cm^3] : 37226.19",
+        "; total filament weight [g] : 46.16",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 67.80",
         "; filament: 3",
         "; support_material_on_wipe_tower: 0"
-      ]
+      ],
+      "bonded_fin_tooth_toolpath_check": {
+        "bond_probes_checked": 39,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.2740105643104946,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      }
     },
     {
       "extrusion_moves_checked": 11308,
@@ -178,37 +188,53 @@
     "editable_source": [
       {
         "name": "Flat core coupon C1",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Flat core coupon C4",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Veneer coupon 1 - fused carrier",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Smooth crown caul - soft liner and release film",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       }
     ],
     "native_export": [
       {
         "name": "Flat core coupon C1",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Flat core coupon C4",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Veneer coupon 1 - fused carrier",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Smooth crown caul - soft liner and release film",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       }
     ]
   }

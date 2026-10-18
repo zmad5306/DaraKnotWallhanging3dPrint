@@ -21,11 +21,11 @@ import numpy as np
 import shapely
 from scipy.spatial import cKDTree
 from shapely import affinity, union_all
-from shapely.geometry import Point, LineString, Polygon, box, mapping
+from shapely.geometry import Point, LineString, Polygon, box, mapping, shape
 from shapely.ops import split
 import trimesh
 
-from development_3mf import ROOT, OUT, WORK, source, save_json, solid, mesh, centered, z_rotation, common_m_rotation, write_project, sha, mesh_xml
+from development_3mf import ROOT, OUT, WORK, source, save_json, solid, mesh, centered, z_rotation, common_m_rotation, write_project, sha, mesh_xml, read_object
 from add_blue_ribbon_edge import artwork, section
 from build_jointed_bambu_project import read_array, tag, P
 from validate_print_project import transform, props
@@ -143,61 +143,9 @@ def rod(a, b, radius):
 
 
 def carrier(m, region, outline, bottom, pose, exclusion):
-    """Fused rear sprues and a bed frame; trees remain secondary support.
-
-    Neck roots sit in recessed trim pockets. After cutting the carrier away,
-    residual nibs can remain below the seating plane without holding glue-up open.
-    """
-    safe=region.buffer(-5).difference(exclusion)
-    candidates=np.array([(x,y) for x in np.arange(region.bounds[0],region.bounds[2],12)
-                         for y in np.arange(region.bounds[1],region.bounds[3],12)])
-    candidates=candidates[shapely.contains(safe,shapely.points(candidates))]
-    assert len(candidates)>0
-    # Farthest-point coverage provides low/high anchors and restrains panel edges.
-    selected=[candidates[0]]
-    count=min(10,max(4,int(region.area/2500)))
-    while len(selected)<min(count,len(candidates)):
-        dd=np.min(np.linalg.norm(candidates[:,None,:]-np.array(selected)[None,:,:],axis=2),axis=1)
-        selected.append(candidates[np.argmax(dd)])
-    body=solid(m);roots=[];cuts=[];R=pose[:3,:3]
-    for p in selected:
-        floor=float(bottom(p[None,:])[0]);q=np.array([*p,floor+.35])
-        # A shallow, hidden pocket makes trimming tolerant of a small remaining nib.
-        cuts.append(mf.Manifold.cylinder(.50,2.0,circular_segments=24).translate([*p,floor-.10]))
-        roots.append(q)
-    body-=mf.Manifold.batch_boolean(cuts,mf.OpType.Add)
-    body=mesh(body);body.apply_transform(pose);body=solid(body)
-    supports=[];feet=[];tops=[];back=R@np.array([0,0,-1.])
-    for q in roots:
-        root=R@q+pose[:3,3]
-        outer=root+back*5
-        # Skin is embedded .2 mm beyond the pocket ceiling. Neck is cut by hand.
-        supports.append(rod(root-back*.25,outer,.65))
-        foot=outer[:2];feet.append(foot);tops.append(outer[2]+.5)
-        supports.append(mf.Manifold.cylinder(max(outer[2]+.5,1.4),1.8,circular_segments=20).translate([*foot,0]))
-    braces=0
-    for i in range(len(feet)):
-        for j in range(i):
-            span=float(np.linalg.norm(feet[i]-feet[j]));height=min(tops[i],tops[j])
-            if span<8 or span>75:continue
-            for z in np.arange(2,height-span,span):
-                supports.extend([rod([*feet[i],z],[*feet[j],z+span],1.0),rod([*feet[j],z],[*feet[i],z+span],1.0)])
-                braces+=2
-    base=Polygon(np.array(feet)).convex_hull.buffer(3,join_style=2)
-    # A connected perimeter plus runners, not a solid raft beneath the panel.
-    rim=base.difference(base.buffer(-3))
-    for p in feet:
-        nearest=shapely.ops.nearest_points(Point(*p),base.boundary)[1]
-        rim=rim.union(LineString([p,nearest.coords[0]]).buffer(1.6))
-    supports.append(prism(rim,0,1.2))
-    result=body+mf.Manifold.batch_boolean(supports,mf.OpType.Add)
-    result_m=mesh(result)
-    assert len(result.decompose())==1, 'Carrier must be fused to the veneer'
-    assert np.all(result_m.bounds[0,:2]>2) and np.all(result_m.bounds[1,:2]<254),result_m.bounds
-    return result_m,dict(fused_anchor_count=len(roots),cross_braces=braces,neck_diameter_mm=1.3,trim_pocket_depth_mm=.4,
-                         trim_pocket_radius_mm=2,bed_frame_height_mm=1.2,post_diameter_mm=3.6,
-                         anchor_assembly_xyz=[q.tolist() for q in roots],body_connected_to_bed=True,
-                         tree_supports_still_required=True)
+    """Solid fins and repeated rear teeth; ordinary trees are supplementary."""
+    from veneer_fin_carrier import fin_carrier
+    return fin_carrier(m, region, bottom, pose, exclusion, height_mesh)
 
 
 def profile(cad, name):
@@ -303,6 +251,49 @@ def refresh_glue_coupon():
     skin_settings=dict(base,enable_support='1',brim_width='3',sparse_infill_density='100%',support_critical_regions_only='0',top_shell_layers='5')
     sample_project('M-Veneer-Glue-Coupon-A1.3mf',sample,[sample],cores,local_whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
     print('Glue coupon rebuilt with continuous material below both sockets',flush=True)
+
+
+def refresh_fins():
+    """Iterate sacrificial tooling while retaining cached artwork/core geometry."""
+    plan=json.loads((OUT/'M-geometry-validation.json').read_text())
+    cad=CAD.read_text();outline=artwork(cad,'letter_outline')
+    skin_bottom=lambda xy:CORE_BASE+crown(outline,xy)+GLUE
+    path=OUT/'M-Core-and-Veneer-A1.3mf'
+    staging=json.loads(path.with_suffix('.json').read_text())
+    with zipfile.ZipFile(path) as z:files={n:z.read(n) for n in z.namelist()}
+    plates=[]
+    for row in staging['records'][:6]:
+        parts,settings=read_object(files,str(row['object_id']))
+        plates.append([dict(name=row['name'],parts=parts,settings=settings,
+                            transform=np.array(row['assembly_to_printer']))])
+    for i,row in enumerate(plan['skins']):
+        data=np.load(WORK/f'V{i+1}.npz')
+        m=trimesh.Trimesh(data['vertices'],data['faces'],process=False)
+        region=shape(plan['skin_regions'][i]);pose=np.array(row['assembly_to_printer'])
+        excluded=union_all([Point(*a['xy_mm']).buffer(7) for a in row['anchors']])
+        carried,evidence=carrier(m,region,outline,skin_bottom,pose,excluded)
+        row['carrier']=evidence;carried.export(WORK/f'V{i+1}-with-carrier.stl')
+        _,settings=read_object(files,str(staging['records'][i+6]['object_id']))
+        plates.append([dict(name=f'V{i+1} band-free veneer with sacrificial fins',parts=[dict(mesh=carried)],
+                            transform=np.eye(4),settings=settings,block_front=True)])
+        print(f'V{i+1}: {evidence["fin_count"]} fins, {evidence["bonded_tooth_count"]} tabs, grounded starter shoe',flush=True)
+    plan['project_plates']=write_project(path,plates,'DEVELOPMENT - flat M cores and fin-supported band-free veneers',
+        settings_update={'bed_exclude_area':plan['native_support_guard_exclusion']})
+    save_json(OUT/'M-geometry-validation.json',plan)
+    refresh_glue_coupon()
+    sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
+    core_top=lambda xy:CORE_BASE+crown(outline,xy)
+    local_whole=solid(height_mesh(sample,0,core_top)[0])
+    cores=[]
+    for i in range(6):
+        a=np.load(WORK/f'C{i+1}.npz')
+        cores.append(solid(trimesh.Trimesh(a['vertices'],a['faces'],process=False)))
+    panels=[sample.intersection(box(-400,-65+SHOW_GAP/2,0,200)),sample.intersection(box(-400,-200,0,-65-SHOW_GAP/2))]
+    with zipfile.ZipFile(OUT/'M-Veneer-Seam-Coupon-A1.3mf') as z:sample_files={n:z.read(n) for n in z.namelist()}
+    _,core_settings=read_object(sample_files,'1000')
+    _,skin_settings=read_object(sample_files,'1100')
+    sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,panels,cores,local_whole,outline,core_top,skin_bottom,texture(outline),core_settings,skin_settings)
+    print('Both M coupon projects refreshed',flush=True)
 
 
 def refresh_cauls():
@@ -562,5 +553,5 @@ def orient():
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls','glue-coupon']);args=ap.parse_args()
-    {'build':build,'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon}[args.action]()
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls','glue-coupon','fins']);args=ap.parse_args()
+    {'build':build,'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'fins':refresh_fins}[args.action]()

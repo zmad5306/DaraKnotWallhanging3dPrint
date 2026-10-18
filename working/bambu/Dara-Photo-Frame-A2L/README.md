@@ -2,6 +2,8 @@
 
 Open **Dara-A2L-Complete.3mf as a project** in Bambu Studio. The repository-root `Dara.3mf` is an identical copy. `Dara-A2L-Editable.3mf` is the generating source without stored slices. Use the complete file for printing. Both use the actual installed **Bambu Lab A2L 0.4 nozzle** machine/process/material profiles, including A2L startup and shutdown commands; 330 × 320 × 325 mm build volume.
 
+**Hold veneer plates 15–17:** the October 18 physical coupon exposed a broad carrier weld that leaves an L-shaped lip. These production carriers are unchanged and still contain that defect. First print plate 2 of the [revised A1 sample project](../../../output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf) and confirm its separate ribs cut away cleanly. Knot plates, flat M cores and accessories are unaffected. This hold supersedes the full-veneer printing steps below and in the existing PDF.
+
 The artwork remains 914.4 mm across. Fresh cuts in the continuous artwork produce ten knot sections with fourteen joints: six fully hidden behind the band-free M, two partly covered and six fully exposed. Counts exclude the M. The M has four flat cores with three hidden keyed joints and three veneers with two short visible seams, approximately 24.3 mm total in front projection. The two outer sweeps are continuous veneers.
 
 | Plates | Contents | Construction |
@@ -47,6 +49,6 @@ The A2L thermal-preconditioning notice explains its warm-up duration and bed-zon
 
 The generating and verification scripts are `scripts/build_a2l_project.py` and `scripts/validate_a2l_project.py`. `production-plan.json` records all new cuts, mounting coordinates and visibility. Geometry, native round-trip, bead bounds, fin-bond toolpaths, material assignments, surface direction and reopen evidence are in the validation JSON files here. Run `python scripts/audit_dara_release.py` after pulling Git LFS files on another computer.
 
-Print one demanding full joint pair and one full core/veneer first. Confirm the 8% body's stiffness, actual zero-gap closure, finish direction, tall silk restraint and cleanup before printing the remaining set. Digital validation does not establish physical adhesion or a wall-mount load rating. The A1 sample project remains available and unchanged; its parts/plate numbers are separate.
+Print one demanding full joint pair and a flat core first. Confirm the revised A1 carrier cleanup before proceeding to a full veneer after its carrier is updated. Check the 8% body's stiffness, actual zero-gap closure, finish direction and silk restraint. Digital validation does not establish physical adhesion or a wall-mount load rating. Only plate 2 of the A1 sample project changes in the carrier trial; its plates 1 and 3 remain unchanged.
 
 See [printable maps and production checklist](../../../output/pdf/Dara-A2L-Print-Guide.pdf). Keep the archived [A1 complete project](../Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) separate: its section IDs and mounts do not interchange with this A2L build.

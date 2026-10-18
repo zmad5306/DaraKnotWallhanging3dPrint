@@ -278,7 +278,9 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
             row.append(p.tolist())
         excluded=union_all([Point(*p).buffer(6) for p in row]).union(screw_exclusion())
         v=mesh(skin);sample_skins.append(v);pose=centered(v,common_m_rotation(),z=2.4)
-        carried,evidence=carrier(v,region,outline,skin_bottom,pose,excluded)
+        # Prove removable tooling on coupons before promoting it to production.
+        from veneer_trim_carrier import fin_carrier as coupon_carrier
+        carried,evidence=coupon_carrier(v,region,skin_bottom,pose,excluded,height_mesh)
         skin_objects.append(dict(name=f'Veneer coupon {index+1} - fused carrier',parts=[dict(mesh=carried)],transform=np.eye(4),settings=skin_settings,block_front=True))
         seats.append(dict(panel=index+1,pads_xy_mm=row,carrier=evidence))
     objs=[]

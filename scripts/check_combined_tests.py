@@ -1,4 +1,5 @@
 """Verify packed tests against their originals and the native three-plate slice."""
+import argparse
 import collections
 import copy
 import hashlib
@@ -59,7 +60,7 @@ def frame_grain(text,rows,label_ids):
     return evidence
 
 
-def main():
+def main(native=None):
     guide=json.loads((OUT/(NAME+'.json')).read_text());staged=OUT/(NAME+'.3mf');files=read(staged)
     cfg=ET.fromstring(files['Metadata/model_settings.config']);root=ET.fromstring(files['3D/3dmodel.model'])
     rows=guide['records'];assert len(rows)==11 and len(cfg.findall('plate'))==3
@@ -93,7 +94,7 @@ def main():
             aa,bb=np.array(a['body_bounds_mm']),np.array(b['body_bounds_mm'])
             overlap=np.minimum(aa[1,:2],bb[1,:2])-np.maximum(aa[0,:2],bb[0,:2])
             assert not np.all(overlap>0),(a['name'],b['name'],'Bounding boxes overlap')
-    native=WORK/'native-all-tests'
+    native=Path(native) if native is not None else WORK/'native-all-tests'
     validate(NAME+'.3mf',native)
     report_path=OUT/(NAME+'-native-validation.json');report=json.loads(report_path.read_text())
     report['coupon_connected_components']=dict(editable_source=coupon_connectivity(staged),native_export=coupon_connectivity(native/'sliced.3mf'))
@@ -138,4 +139,6 @@ def main():
     print('Verified all 11 source parts, three packed plates, bonded fins, zero-gap ribbon grain, and reserved purge tower.',flush=True)
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--native',type=Path)
+    main(parser.parse_args().native)

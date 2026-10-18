@@ -6,11 +6,11 @@
   "sources": [
     {
       "file": "M-Veneer-Glue-Coupon-A1.3mf",
-      "sha256": "f32fb451ce25534721bfb15a63e5a21cefce365c8ad9dc4a72836faa8eacf977"
+      "sha256": "b3af7a5c57dda1c056f701697c1e87d515307f9aad6c5c49c5906086ee5ca2f2"
     },
     {
       "file": "M-Veneer-Seam-Coupon-A1.3mf",
-      "sha256": "343cec2b4d7e8b100a9f2623b9574447d57b8d4a10942a32df6ede72b03c77e7"
+      "sha256": "57492d12c3eec37c50b895462d75c74d72b12499cbd75b93b8826fa9d8bc7e3e"
     },
     {
       "file": "Frame-Cosmetic-Comparison-A1.3mf",
@@ -367,7 +367,7 @@
       }
     },
     {
-      "name": "M glue veneer - fins and shoe",
+      "name": "M glue veneer - fins and cut tabs",
       "plate": 2,
       "object_id": 10600,
       "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
@@ -379,7 +379,7 @@
           1.0,
           0.0,
           0.0,
-          57.04078759719232
+          58.25152135361532
         ],
         [
           0.0,
@@ -402,30 +402,30 @@
       ],
       "body_bounds_mm": [
         [
-          159.25559677649835,
-          20.5,
+          158.04486302007535,
+          18.350000001490116,
           0.0
         ],
         [
-          208.74440322350165,
-          89.5,
+          209.95513697992465,
+          91.64999999850988,
           67.78940252276834
         ]
       ],
       "xy_translation_from_source_mm": [
-        57.04078759719232,
+        58.25152135361532,
         -73.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10601": "75d996fea15fccecdd0f5aaeb79d9b18ac55bf14ce55aea5215c51b6ba823560"
+        "10601": "d2d030e5a428d8015a1d83450c358581bfbe0ced22233c7117f29479b7b6c026"
       },
       "part_id_mapping": {
         "1201": "10601"
       }
     },
     {
-      "name": "M seam upper veneer - fins and shoe",
+      "name": "M seam upper veneer - fins and cut tabs",
       "plate": 2,
       "object_id": 10700,
       "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
@@ -437,7 +437,7 @@
           1.0,
           0.0,
           0.0,
-          57.0407875957784
+          58.75515162897079
         ],
         [
           0.0,
@@ -460,30 +460,30 @@
       ],
       "body_bounds_mm": [
         [
-          161.55195901867717,
-          122.5,
+          159.83759498548477,
+          120.35000000149012,
           0.0
         ],
         [
-          206.44804098132283,
-          147.5,
+          208.16240501451523,
+          149.64999999850988,
           62.00546410933961
         ]
       ],
       "xy_translation_from_source_mm": [
-        57.0407875957784,
+        58.75515162897079,
         7.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10701": "067af6858ba79f5fc3bc3e3ffa4a2f2752faf4f31eb33fe1a2dded9f475e74e6"
+        "10701": "2862c3509c354595963223fea9ec34588ff15b9548909fae5e6fc0d446607b5c"
       },
       "part_id_mapping": {
         "1101": "10701"
       }
     },
     {
-      "name": "M seam lower veneer - fins and shoe",
+      "name": "M seam lower veneer - fins and cut tabs",
       "plate": 2,
       "object_id": 10800,
       "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
@@ -495,7 +495,7 @@
           1.0,
           0.0,
           0.0,
-          57.04078759584591
+          58.75515162903831
         ],
         [
           0.0,
@@ -518,23 +518,23 @@
       ],
       "body_bounds_mm": [
         [
-          161.9676936376469,
-          202.5,
+          160.2533296044545,
+          200.35000000149012,
           0.0
         ],
         [
-          206.0323063623531,
-          227.5,
+          207.7466703955455,
+          229.64999999850988,
           62.09104902460493
         ]
       ],
       "xy_translation_from_source_mm": [
-        57.04078759584591,
+        58.75515162903831,
         87.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10801": "e4b40b28bfec580ee7a06e0e3c540ac94d0434dd11cd60e8ec4e4a2d18c2daa4"
+        "10801": "731133c0309dd27089391364cb66df33d235e906e85cfea717aba4e3ff8defff"
       },
       "part_id_mapping": {
         "1201": "10801"
@@ -705,18 +705,20 @@
     "visible_edge_gap_mm": 0,
     "veneer_to_core_glue_gap_mm": 0.2,
     "geometry_validation": "M-zero-gap-seam-validation.json",
-    "full_size_veneers": "Remain at .075 mm pending this sample"
+    "full_size_veneers": "Zero nominal gap in the current A2L design; production carriers remain on hold pending revised coupon removal"
   },
   "instructions": [
     "Keep saved orientations, scale and filament assignments; open as a project.",
     "Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.",
-    "Plate 2: all six copper test parts, including fin carriers and starter shoes.",
+    "Plate 2: all six copper test parts. Revised carriers have separate starter ribs, 1.2 mm cut necks and 3 mm rear access; no continuous starter shoe.",
     "Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.",
-    "Use the cauls to cradle the veneers during cutting and trimming. Clean rear recesses and seating features before dry fitting.",
+    "Cradle the veneers in lined cauls. Cut each neck flush with the rear lands through its shallow pocket; remove fins and starter ribs progressively, then sand the back flat. Preserve seam edges and locating pockets.",
+    "This carrier revision is coupon-only. A2L veneer plates 15-17 remain on hold pending successful physical removal.",
     "Physical fit, silk bonding and finish still require these prints."
   ],
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
   "native_slice_validated": true,
   "native_project": "All-Development-Tests-A1-Sliced.3mf",
-  "native_validation": "All-Development-Tests-A1-native-validation.json"
+  "native_validation": "All-Development-Tests-A1-native-validation.json",
+  "carrier_revision": "clean-trim-coupon-v1"
 }

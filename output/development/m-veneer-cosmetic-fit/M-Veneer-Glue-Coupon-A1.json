@@ -120,13 +120,13 @@
       ],
       "body_bounds_mm": [
         [
-          102.21480917930603,
-          93.5,
+          99.79334166646004,
+          91.35000000149012,
           0.0
         ],
         [
           151.70361562630933,
-          162.5,
+          164.64999999850988,
           67.78940252276834
         ]
       ]
@@ -176,5 +176,6 @@
     }
   ],
   "native_slice_validated": false,
-  "physical_confirmation_pending": true
+  "physical_confirmation_pending": true,
+  "carrier_revision": "clean-trim-coupon-v1"
 }

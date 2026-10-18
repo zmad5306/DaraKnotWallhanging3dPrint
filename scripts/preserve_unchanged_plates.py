@@ -24,7 +24,7 @@ def replace(parent,old,new):
     index=list(parent).index(old);parent.remove(old);parent.insert(index,copy.deepcopy(new))
 
 
-def preserve(baseline,target,plates,native_dir=None,baseline_result=None,baseline_commit=None):
+def preserve(baseline,target,plates,native_dir=None,baseline_result=None,baseline_commit=None,report_path=None):
     old,new=read(baseline),read(target)
     old_settings=json.loads(old['Metadata/project_settings.config'])
     new_settings=json.loads(new['Metadata/project_settings.config'])
@@ -99,12 +99,12 @@ def preserve(baseline,target,plates,native_dir=None,baseline_result=None,baselin
         save_json(native_dir/'result.json',result)
         report=dict(baseline_project_sha256=sha(baseline),retained_from_commit=baseline_commit,
                     project_sha256=sha(target),plates=records)
-        save_json(OUT/'Zero-gap-plate-preservation.json',report)
+        save_json(report_path or OUT/'Zero-gap-plate-preservation.json',report)
     print('Preserved unchanged plates',plates,'in',target,flush=True)
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('baseline',type=Path);p.add_argument('target',type=Path)
     p.add_argument('--plates',type=int,nargs='+',required=True);p.add_argument('--native-dir',type=Path)
-    p.add_argument('--baseline-result',type=Path);p.add_argument('--baseline-commit');args=p.parse_args()
-    preserve(args.baseline,args.target,args.plates,args.native_dir,args.baseline_result,args.baseline_commit)
+    p.add_argument('--baseline-result',type=Path);p.add_argument('--baseline-commit');p.add_argument('--report-path',type=Path);args=p.parse_args()
+    preserve(args.baseline,args.target,args.plates,args.native_dir,args.baseline_result,args.baseline_commit,args.report_path)

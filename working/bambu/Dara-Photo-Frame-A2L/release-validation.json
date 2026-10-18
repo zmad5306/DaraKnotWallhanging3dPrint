@@ -140,7 +140,7 @@
     "scripts/validate_a2l_project.py": "004c7fa13fb75a55e1376fcc73c60e06cf28ceb2ccedd9f315545a85211acfad",
     "scripts/publish_a2l_project.py": "5b6d50f2fe262dba8a92e93fdd50ca475791e6c3177f992ef755d57c582f1ba0",
     "scripts/development_3mf.py": "adbd056982ec61371b70124213a21f1d9a6f228d1f90f3a4f9df991c5c3b026d",
-    "scripts/develop_m_veneer.py": "9dc1158b148f623fef6b2a94d51a841a2af9bd4c901719cd5aab9d4533441eeb",
+    "scripts/develop_m_veneer.py": "68b211cf57ee307635c4b4c2bb2d1ff5002fc959f73756c6e55608d6faf90f37",
     "scripts/develop_cosmetic_joints.py": "76aba4fcc7baecf44dcb7f5de24b9991610db0cc7ba03a606fae96bca0f8efec",
     "scripts/veneer_fin_carrier.py": "a8c02c16272f0276a0cb6b703fa483930aff21822360013d82abd6c56d620267",
     "scripts/plan_veneer_fins.py": "8e074850eefb74a8a380a407c3d236dd0c0e5672c7814aadbc54a9c0749c3da1",
@@ -158,5 +158,16 @@
   },
   "physical_confirmation_pending": true,
   "retained_A1_complete_sha256": "7cd103259df6dbbc1770a33c56c093ad8748673ec220d2145253ee4d975b7709",
-  "sample_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734"
+  "sample_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "coupon_carrier_update": {
+    "revision": "clean-trim-coupon-v1",
+    "baseline_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
+    "previous_shared_M_module_sha256": "9dc1158b148f623fef6b2a94d51a841a2af9bd4c901719cd5aab9d4533441eeb",
+    "current_shared_M_module_sha256": "68b211cf57ee307635c4b4c2bb2d1ff5002fc959f73756c6e55608d6faf90f37",
+    "only_sample_project_function_changed": true,
+    "production_functions_and_project_bytes_unchanged": true,
+    "geometry_proof": "output/development/m-veneer-cosmetic-fit/M-clean-trim-carrier-validation.json",
+    "physical_removal_confirmation_pending": true,
+    "A2L_veneer_plates_15_to_17_on_hold": true
+  }
 }

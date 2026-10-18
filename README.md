@@ -6,6 +6,8 @@ The fresh A2L layout has **10 knot sections / 14 knot joints**, including **six 
 
 The complete project contains **20 natively sliced plates and 61 assembly pieces**. Every veneer uses the same complete rotation and has its face plane along bed Y. Bonded sacrificial fins, diagonal bracing and grounded starter shoes restrain the silk; trees supplement them. Keep all saved rotations and use the coordinated A2L knot, M and mounting hardware together.
 
+**Veneer hold, October 18:** the printed A1 coupons exposed an inaccessible starter-shoe weld and unwanted L-shaped lip. **Do not print A2L veneer plates 15–17 yet.** Their geometry is unchanged. First confirm clean removal using the revised A1 test below; the knot, flat cores and accessories are unaffected.
+
 - [A2L printing, cleanup and assembly guide](working/bambu/Dara-Photo-Frame-A2L/README.md)
 - [Printable maps and production checklist](output/pdf/Dara-A2L-Print-Guide.pdf)
 - [Completion plan and physical checks](docs/PROJECT-GAME-PLAN.md)
@@ -24,7 +26,11 @@ The [A1 companion project](working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf
 
 The [previous complete A1 veneer project](working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) remains unchanged: 36 plates, six flat cores and six veneers. Its F/C/V identifiers and mounts differ from the A2L release. Use its [A1 guide](working/bambu/Dara-Photo-Frame-A1-Jointed/PRINT-READINESS.md) only with that file.
 
-The [combined A1 sample project](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf) and [printable sample checklist](output/pdf/Dara-Sample-Production-Checklist.pdf) also remain unchanged, including plate 1 fixtures. Those coupons establish local fit/adhesive behavior; the full A2L veneer carriers are regenerated for their larger panels and common in-plane orientation.
+The [combined A1 sample project](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf) now has revised carriers on **plate 2 only**. Plates **1 and 3 retain their exact saved geometry, placement, settings and G-code**; the three copper cores also retain their geometry, settings and placements. The [printable sample checklist](output/pdf/Dara-Sample-Production-Checklist.pdf) still applies to the same 11 pieces.
+
+The new carriers replace the continuous shoe with **separate grounded starter ribs**, **1.2 mm cut necks**, **0.4 mm rear recesses** and **3 mm clearance behind the veneer**. There is no intended permanent perimeter flange. Use lined cauls to support the hammered face, cut the necks individually flush with the surrounding rear lands, and remove carrier stock progressively. Sand the back on the granite plate, preserving locator pockets and seam edges. Confirm the back lies flat and the seam closes without a lip before gluing. Keep the common saved veneer orientation.
+
+See the [actual mesh preview](output/development/m-veneer-cosmetic-fit/M-veneer-fin-test.png), [geometry/cutter-access checks](output/development/m-veneer-cosmetic-fit/M-clean-trim-carrier-validation.json), and [regression and plate-preservation checks](output/development/m-veneer-cosmetic-fit/M-clean-trim-regression-validation.json). Physical cutting, silk adhesion and finish still need this revised print. This revision has **not** been applied to the full-size A1 or A2L veneers.
 
 The [original solid-M baseline](reference/production/Dara-Solid-M-Baseline.3mf), [14-joint knot study](working/review/a2l-hidden-joints/lean-candidate.json) and [M layout study](working/review/a2l-m-joints/README.md) are retained as historical design sources.
 

@@ -20,7 +20,7 @@ SOURCES=['M-Veneer-Glue-Coupon-A1','M-Veneer-Seam-Coupon-A1','Frame-Cosmetic-Com
 LAYOUT=[
  ('White fixtures',[(0,1300,'Glue-test smooth caul',(62,64)),(1,1300,'Seam-test smooth caul',(62,164)),(2,1800,'Ribbon show-face jig',(180,118))]),
  ('Copper M tests',[(0,1000,'M glue core C1',(56,48)),(0,1100,'M glue core C4',(56,128)),(1,1000,'M seam core C4',(56,208)),
-                    (0,1200,'M glue veneer - fins and shoe',(184,55)),(1,1100,'M seam upper veneer - fins and shoe',(184,135)),(1,1200,'M seam lower veneer - fins and shoe',(184,215))]),
+                    (0,1200,'M glue veneer - fins and cut tabs',(184,55)),(1,1100,'M seam upper veneer - fins and cut tabs',(184,135)),(1,1200,'M seam lower veneer - fins and cut tabs',(184,215))]),
  ('Zero-gap ribbon test',[(2,1000,'Zero-gap refined tongue',(44,45)),(2,1100,'Zero-gap refined socket',(121.5,45))])]
 
 
@@ -98,12 +98,13 @@ def main():
         ribbon_test=dict(visible_edge_gap_mm=0,pairs=1,additional_adhesive_recess_mm=.2,
             nominal_hidden_glue_clearance_mm=.4,detail='Refined seating pads, secondary-pocket relief, hidden glue reservoir and zero-gap show edge above Z8'),
         m_seam_test=dict(visible_edge_gap_mm=0,veneer_to_core_glue_gap_mm=.2,
-            geometry_validation='M-zero-gap-seam-validation.json',full_size_veneers='Remain at .075 mm pending this sample'),
+            geometry_validation='M-zero-gap-seam-validation.json',full_size_veneers='Zero nominal gap in the current A2L design; production carriers remain on hold pending revised coupon removal'),
         instructions=['Keep saved orientations, scale and filament assignments; open as a project.',
             'Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.',
-            'Plate 2: all six copper test parts, including fin carriers and starter shoes.',
+            'Plate 2: all six copper test parts. Revised carriers have separate starter ribs, 1.2 mm cut necks and 3 mm rear access; no continuous starter shoe.',
             'Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.',
-            'Use the cauls to cradle the veneers during cutting and trimming. Clean rear recesses and seating features before dry fitting.',
+            'Cradle the veneers in lined cauls. Cut each neck flush with the rear lands through its shallow pocket; remove fins and starter ribs progressively, then sand the back flat. Preserve seam edges and locating pockets.',
+            'This carrier revision is coupon-only. A2L veneer plates 15-17 remain on hold pending successful physical removal.',
             'Physical fit, silk bonding and finish still require these prints.'],
         source_release_sha256=sha(source_path()),native_slice_validated=False)
     save_json(path.with_suffix('.json'),guide)
@@ -125,7 +126,7 @@ def preview(guide,inputs):
             low,high=np.array(row['body_bounds_mm'])
             x0,y0=ox+low[0]*scale,oy+(256-high[1])*scale;x1,y1=ox+high[0]*scale,oy+(256-low[1])*scale
             d.rounded_rectangle((x0,y0,x1,y1),radius=4,fill=palette[pi+1],outline='#34444a')
-            label=row['name'].replace(' - fins and shoe','').replace('smooth caul','caul').replace('Ribbon show-face jig','Ribbon jig')
+            label=row['name'].replace(' - fins and cut tabs','').replace('smooth caul','caul').replace('Ribbon show-face jig','Ribbon jig')
             if pi==2:label='Zero gap '+('T' if 'tongue' in row['name'] else 'S')
             elif pi==1:label=label.replace('M glue','Glue').replace('M seam','Seam').replace('veneer','skin')
             words=label.split();lines=[];line=''

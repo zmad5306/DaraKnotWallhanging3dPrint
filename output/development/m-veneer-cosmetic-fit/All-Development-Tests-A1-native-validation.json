@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "a7a2bd9de2e5d430729dee91f2090a1d13fd0f5b65b6c62f2ae67702ece5ff32",
-  "native_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
+  "staged_sha256": "89c69db864ba717d28f392c0b25c1e30a19930c76fec7f6662afc6f63aacbd7c",
+  "native_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -30,16 +30,16 @@
       "max_native_vertex_or_pose_error_mm": 1.5443865632901176e-05
     },
     {
-      "name": "M glue veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 1.2891575743808535e-05
+      "name": "M glue veneer - fins and cut tabs",
+      "max_native_vertex_or_pose_error_mm": 1.5605138087436302e-05
     },
     {
-      "name": "M seam upper veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 9.99535289494533e-06
+      "name": "M seam upper veneer - fins and cut tabs",
+      "max_native_vertex_or_pose_error_mm": 1.2954745874730968e-05
     },
     {
-      "name": "M seam lower veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 1.2771296231517901e-05
+      "name": "M seam lower veneer - fins and cut tabs",
+      "max_native_vertex_or_pose_error_mm": 1.5725747607305804e-05
     },
     {
       "name": "Zero-gap refined tongue",
@@ -102,51 +102,50 @@
       ]
     },
     {
-      "extrusion_moves_checked": 414057,
+      "extrusion_moves_checked": 432506,
       "features": {
-        "Support": 184650,
-        "Brim": 1353,
-        "Outer wall": 37804,
-        "Inner wall": 55061,
-        "Gap infill": 9540,
-        "Bottom surface": 1638,
-        "Support interface": 2,
-        "Internal solid infill": 75578,
-        "Sparse infill": 34175,
-        "Floating vertical shell": 11473,
-        "Bridge": 1236,
-        "Top surface": 1512,
-        "Overhang wall": 35
+        "Support": 205770,
+        "Brim": 2051,
+        "Outer wall": 42552,
+        "Inner wall": 58847,
+        "Gap infill": 11479,
+        "Bottom surface": 1199,
+        "Internal solid infill": 70749,
+        "Sparse infill": 23594,
+        "Top surface": 1967,
+        "Overhang wall": 51,
+        "Bridge": 1212,
+        "Floating vertical shell": 13035
       },
       "extruding_xy_bounds_mm": [
         [
           16.214,
-          12.871236215149661
+          6.630659169217042
         ],
         [
-          213.61259803471015,
-          234.92671475433661
+          214.68138932981788,
+          244.71278357832531
         ]
       ],
       "bead_xy_bounds_mm": [
         [
           15.963999999999999,
-          12.621236215149661
+          6.380659169217042
         ],
         [
-          213.86259803471015,
-          235.17671475433661
+          214.93138932981788,
+          244.96278357832531
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 12.621236215149661,
+      "conservative_bed_edge_clearance_mm": 6.380659169217042,
       "plate": 2,
-      "gcode_sha256": "130a71889a048c80ba32a7d33930fb3034f8b49cdd7d95bd875ec94d26524bae",
+      "gcode_sha256": "853418bebaa3b6522b52ece429542f2189184a61e35d46fa692272590965791a",
       "header": [
-        "; model printing time: 10h 10m 2s; total estimated time: 10h 16m 38s",
+        "; model printing time: 10h 19m 48s; total estimated time: 10h 26m 24s",
         "; total layer number: 338",
-        "; total filament length [mm] : 42814.40",
-        "; total filament volume [cm^3] : 102980.71",
-        "; total filament weight [g] : 127.70",
+        "; total filament length [mm] : 41799.38",
+        "; total filament volume [cm^3] : 100539.29",
+        "; total filament weight [g] : 124.67",
         "; model label id: 10300,10400,10500,10600,10700,10800",
         "; object max height: 9.00,9.00,9.00,67.80,62.00,62.00",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -268,19 +267,19 @@
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M glue veneer - fins and shoe",
+        "name": "M glue veneer - fins and cut tabs",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M seam upper veneer - fins and shoe",
+        "name": "M seam upper veneer - fins and cut tabs",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M seam lower veneer - fins and shoe",
+        "name": "M seam lower veneer - fins and cut tabs",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -336,19 +335,19 @@
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M glue veneer - fins and shoe",
+        "name": "M glue veneer - fins and cut tabs",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M seam upper veneer - fins and shoe",
+        "name": "M seam upper veneer - fins and cut tabs",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M seam lower veneer - fins and shoe",
+        "name": "M seam lower veneer - fins and cut tabs",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -399,17 +398,17 @@
       "rotation_and_z_preserved": true
     },
     {
-      "name": "M glue veneer - fins and shoe",
+      "name": "M glue veneer - fins and cut tabs",
       "geometry_color_modifiers_support_paint_and_process_preserved": true,
       "rotation_and_z_preserved": true
     },
     {
-      "name": "M seam upper veneer - fins and shoe",
+      "name": "M seam upper veneer - fins and cut tabs",
       "geometry_color_modifiers_support_paint_and_process_preserved": true,
       "rotation_and_z_preserved": true
     },
     {
-      "name": "M seam lower veneer - fins and shoe",
+      "name": "M seam lower veneer - fins and cut tabs",
       "geometry_color_modifiers_support_paint_and_process_preserved": true,
       "rotation_and_z_preserved": true
     },
@@ -426,23 +425,23 @@
   ],
   "combined_bond_checks": [
     {
-      "name": "M glue veneer - fins and shoe",
-      "bond_probes_checked": 38,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.19619408737626462,
+      "name": "M glue veneer - fins and cut tabs",
+      "bond_probes_checked": 42,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09946504825856668,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     },
     {
-      "name": "M seam upper veneer - fins and shoe",
-      "bond_probes_checked": 9,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.29656513973471477,
+      "name": "M seam upper veneer - fins and cut tabs",
+      "bond_probes_checked": 14,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09438567073912907,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     },
     {
-      "name": "M seam lower veneer - fins and shoe",
-      "bond_probes_checked": 8,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.09847678140008753,
+      "name": "M seam lower veneer - fins and cut tabs",
+      "bond_probes_checked": 14,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09220044272697159,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     }
@@ -516,9 +515,9 @@
     ]
   ],
   "preserved_plates": {
-    "baseline_project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
-    "retained_from_commit": "f22045f65800c86498feeb64ffb654fed35e30d1",
-    "project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
+    "baseline_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
+    "retained_from_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
+    "project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
     "plates": [
       {
         "plate": 1,
@@ -560,5 +559,10 @@
         "gcode_byte_identical": true
       }
     ]
-  }
+  },
+  "native_reopen_return_code": 0,
+  "native_reopen_file_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "carrier_revision": "clean-trim-coupon-v1",
+  "carrier_geometry_validation_sha256": "71caab7ea02c4f6df39525df2f8f812ca5377fd540f0bd81345057d3f79d2c3d",
+  "carrier_regression_validation_sha256": "1fcff4bcf6360e8f3de8849837004711f9dff87843cfc5d843647d308dbce866"
 }

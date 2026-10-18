@@ -1,7 +1,7 @@
 {
-  "baseline_project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
-  "retained_from_commit": "f22045f65800c86498feeb64ffb654fed35e30d1",
-  "project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
+  "baseline_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
+  "retained_from_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
+  "project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
   "plates": [
     {
       "plate": 1,

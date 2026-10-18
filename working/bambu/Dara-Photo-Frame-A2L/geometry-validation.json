@@ -1,6 +1,6 @@
 {
-  "editable_sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
-  "production_plan_sha256": "cc037ece963d1f531e9f9f2d4b69d3ef5bd70d7183950097442e725dfad02001",
+  "editable_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+  "production_plan_sha256": "a541763d31c328921a7735717af5eb141f8dcad4a4c280946d3e8f10e2b65137",
   "part_overlaps": [
     {
       "family": "frame",
@@ -368,7 +368,7 @@
         1,
         2
       ],
-      "overlap_mm3": 1.1989951698198953e-05
+      "overlap_mm3": 9.971032493396733e-06
     },
     {
       "family": "core",
@@ -456,7 +456,7 @@
         1,
         3
       ],
-      "overlap_mm3": 4.6629367034256575e-15
+      "overlap_mm3": 0.0
     },
     {
       "family": "veneer",
@@ -464,7 +464,7 @@
         2,
         3
       ],
-      "overlap_mm3": 8.104628079763643e-15
+      "overlap_mm3": 8.881784197001252e-16
     }
   ],
   "actual_knot_cosmetic_closure": [
@@ -1024,18 +1024,18 @@
   "hammered_front_preservation": [
     {
       "veneer": 1,
-      "front_vertices_checked": 127934,
-      "max_front_error_mm": 8.180889878182607e-14
+      "front_vertices_checked": 114567,
+      "max_front_error_mm": 8.526512829121202e-14
     },
     {
       "veneer": 2,
-      "front_vertices_checked": 119311,
-      "max_front_error_mm": 9.106319693313691e-14
+      "front_vertices_checked": 106757,
+      "max_front_error_mm": 1.0150134689838562e-13
     },
     {
       "veneer": 3,
-      "front_vertices_checked": 88239,
-      "max_front_error_mm": 7.553172887309252e-14
+      "front_vertices_checked": 113632,
+      "max_front_error_mm": 9.237055564881302e-14
     }
   ],
   "print_bounds": [
@@ -1220,13 +1220,13 @@
       "plate": 12,
       "bounds_mm": [
         [
-          28.193450780377134,
-          27.389970033372293,
+          28.00162060951851,
+          27.204024572770464,
           0.0
         ],
         [
-          301.8065492183812,
-          292.61002996595835,
+          301.9983793911092,
+          292.7959754283915,
           9.0
         ]
       ]
@@ -1259,7 +1259,7 @@
         [
           169.9999999960001,
           250.40309080099996,
-          8.6
+          9.0
         ]
       ]
     },
@@ -1291,7 +1291,7 @@
         [
           328.5,
           318.5,
-          297.348713413
+          297.338513889
         ]
       ]
     },
@@ -1323,7 +1323,7 @@
         [
           328.5,
           318.5,
-          258.991509363
+          297.348713413
         ]
       ]
     },

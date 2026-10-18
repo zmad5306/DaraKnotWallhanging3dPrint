@@ -1,7 +1,7 @@
 {
   "revision": "clean-trim-production-v2",
-  "M_layout_revision": "staggered-wide-fork-v1",
-  "editable_sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
+  "M_layout_revision": "short-veneer-staggered-cores-v2",
+  "editable_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
   "all_veneers_checked": 3,
   "frame_and_accessory_inputs_preserved": true,
   "common_veneer_rotation_preserved": true,

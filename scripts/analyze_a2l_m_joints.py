@@ -203,7 +203,7 @@ def main():
     assert all(f['utilization'] <= 1 for f in vfits)
     approved=ROOT/'working/bambu/Dara-Photo-Frame-A2L/production-plan.json'
     current=json.loads(approved.read_text()) if approved.exists() else {}
-    if current.get('M_layout_revision')=='staggered-wide-fork-v1':
+    if current.get('M_layout_revision'):
         spec=OUT/'staggered-layout.json'
         assert current['M_layout_specification_sha256']==hashlib.sha256(spec.read_bytes()).hexdigest()
         cp=[shape(g) for g in current['core_regions']];envelopes=[shape(g) for g in current['core_footprints']]

@@ -37,14 +37,16 @@ def verify_M_layout():
  plan=json.loads((OUT/'production-plan.json').read_text())
  if not plan.get('M_layout_revision'):return
  proof=json.loads((OUT/'M-joint-layout-validation.json').read_text())
- assert proof['revision']==plan['M_layout_revision']=='staggered-wide-fork-v1'
+ assert proof['revision']==plan['M_layout_revision']=='short-veneer-staggered-cores-v2'
  assert valid_hash(OUT/'production-plan.json',proof['production_plan_sha256'])
  assert valid_hash(ROOT/'working/review/a2l-m-joints/staggered-layout.json',plan['M_layout_specification_sha256'])
  assert valid_hash(ROOT/'working/review/a2l-m-joints/evaluation.json',plan['M_study_sha256'])
  assert len(plan['core_regions'])==5 and plan['core_plate_groups']==[[1],[2],[3],[4,5]]
- assert proof['narrow_arches_have_no_seams'] and proof['minimum_key_head_wall_mm']>=10
+ assert proof['narrow_structural_arches_have_no_seams'] and proof['minimum_key_head_wall_mm']>=10
  assert proof['key_heads_clear_of_veneer_seams_mm']>=8 and proof['minimum_core_joint_separation_mm']>=18
- assert all(c['aligned_length_mm']<1e-6 and (c['distance_mm']>=20 or c['angle_deg']>=40) for c in proof['cross_layer_seam_checks'])
+ assert proof['minimum_cross_layer_seam_separation_mm']>=20
+ assert all(c['aligned_length_mm']<1e-6 and c['distance_mm']>=20 for c in proof['cross_layer_seam_checks'])
+ assert sum(s['length_mm'] for s in plan['skin_seams'])<24.3
 
 
 def audit():

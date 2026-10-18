@@ -1,4 +1,4 @@
-"""Move M seams off slender arch crowns; retain all non-M production inputs."""
+"""Keep short cosmetic crown seams and stagger broad structural core joints."""
 import argparse,copy,json,math,zipfile
 import xml.etree.ElementTree as ET
 import numpy as np
@@ -20,11 +20,13 @@ def seam_checks(p):
    v=np.array(vline.coords[-1])-vline.coords[0]
    angle=math.degrees(math.acos(np.clip(abs(u@v)/np.linalg.norm(u)/np.linalg.norm(v),0,1)))
    assert a.intersection(vline).length<1e-6
-   if a.distance(vline)<20:assert angle>=40
+   assert a.distance(vline)>=20
    checks.append(dict(core_joint=i+1,veneer_joint=j+1,aligned_length_mm=a.intersection(vline).length,
       distance_mm=a.distance(vline),angle_deg=angle,isolated_crossing=a.intersects(vline)))
  narrow=study.box(-235,140,-50,220).union(study.box(50,140,235,220))
- assert all(not q.intersects(narrow) for q in lines+vlines)
+ assert all(not q.intersects(narrow) for q in lines)
+ # Each complete cosmetic seam has one continuous structural core behind it.
+ assert all(any(shape(g).buffer(1e-6).covers(v) for g in p['core_footprints']) for v in vlines)
  for i,g in enumerate([shape(g) for g in p['core_footprints']]):
   for other in [shape(g) for g in p['core_footprints']][:i]:assert g.intersection(other).area<1e-6
  return checks,lines
@@ -33,7 +35,7 @@ def apply():
  c=json.loads(CFG.read_text());old=b.load_plan();p=copy.deepcopy(old)
  outline=study.planar.artwork(b.CAD.read_text(),'letter_outline')
  cp=study.partition(outline,[shape(g) for g in c['core_cuts']],5)
- # The two fork cuts share the exterior notch. Discard only numerical sheets.
+ # Veneer cuts cross only the narrow crowns, minimizing visible seam length.
  from shapely.ops import split
  vp=[outline]
  for cut in c['veneer_cuts']:vp=[g for q in vp for g in split(q,shape(cut)).geoms if g.area>1e-6]
@@ -52,7 +54,7 @@ def apply():
  p.update(core_regions=[mapping(g) for g in cp],core_footprints=[mapping(g) for g in env],core_fits=fit,
    core_seams=study.summary(cp,fit)['seams'],core_keys=[{k:v for k,v in q.items() if k!='keys'} for q in keys],
    skin_regions=[mapping(g) for g in vp],skin_seams=study.summary(vp,[study.veneer_allowance(g,np.array(p['veneer_rotation'])) for g in vp])['seams'],
-   M_layout_revision='staggered-wide-fork-v1',M_layout_specification_sha256=sha(CFG),core_plate_groups=[[1],[2],[3],[4,5]])
+   M_layout_revision=c['revision'],M_layout_specification_sha256=sha(CFG),core_plate_groups=[[1],[2],[3],[4,5]])
  for rows in [p['screw_mounts'],p['dowel_mounts']]:
   for row in rows:row[0]=b.owner(cp,row[2])
  # Retain every frame pin at its exact location; choose datums within each new
@@ -81,9 +83,9 @@ def apply():
    frame_geometry_mount_coordinates_and_veneer_rotation_preserved=True,locator_roles=locator_roles,
    minimum_key_head_wall_mm=10,key_heads_clear_of_veneer_seams_mm=8,cross_layer_seam_checks=checks,minimum_core_joint_separation_mm=min(a.distance(q) for i,a in enumerate(lines) for q in lines[:i]),cores=5,core_plates=4,veneers=3,visible_veneer_seams=2,
    old_visible_seam_length_mm=sum(s['length_mm'] for s in old['skin_seams']),visible_seam_length_mm=vs.length,
-   narrow_arches_have_no_seams=True,physical_confirmation_pending=True)
+   narrow_structural_arches_have_no_seams=True,minimum_cross_layer_seam_separation_mm=min(a.distance(v) for a in lines for v in [shape(s['line']) for s in p['skin_seams']]),physical_confirmation_pending=True)
  b.save(b.OUT/'M-joint-layout-validation.json',evidence)
- print('M plan: five cores on four plates, three veneers; all narrow arches uninterrupted',flush=True)
+ print('M plan: five cores on four plates, three veneers; short crown seams staggered from broad core joints',flush=True)
 
 
 def core_plates(p):
@@ -111,7 +113,7 @@ def package_M():
  for i in range(3):plates.append([dict(name=f'V{i+1} A2L hammered veneer and sacrificial fins',object_id=2400+i*100,
    parts=[dict(mesh=b.cached(f'V{i+1}'))],transform=np.eye(4),block_front=True,front_normal=np.array(p['veneer_rotation'])[:,2],
    settings=dict(extruder='3',enable_support='1',sparse_infill_density='100%',brim_width='0',tree_support_branch_angle='30',support_critical_regions_only='0',outer_wall_speed='40',inner_wall_speed='80',default_acceleration='1500',travel_acceleration='2500'))])
- temp=b.WORK/'M-repartitioned.3mf';records=write_project(temp,plates,'Dara A2L M - wide fork seams',settings_update=b.settings())
+ temp=b.WORK/'M-repartitioned.3mf';records=write_project(temp,plates,'Dara A2L M - short veneer seams, staggered cores',settings_update=b.settings())
  with zipfile.ZipFile(b.EDIT) as z:files={n:z.read(n) for n in z.namelist()}
  with zipfile.ZipFile(temp) as z:mf={n:z.read(n) for n in z.namelist()}
  root=ET.fromstring(files['3D/3dmodel.model']);cfg=ET.fromstring(files['Metadata/model_settings.config'])
@@ -148,7 +150,7 @@ def package_M():
 
 def validate():
  p=b.load_plan();checks,lines=seam_checks(p);path=b.OUT/'M-joint-layout-validation.json';r=json.loads(path.read_text());r.update(cross_layer_seam_checks=checks,minimum_core_joint_separation_mm=min(a.distance(q) for i,a in enumerate(lines) for q in lines[:i]));b.save(path,r)
- print('Seam checks: no aligned runs, no narrow-arch cuts, nearby seam angles >=40 degrees, core joints >=18 mm apart',flush=True)
+ print('Seam checks: core joints outside narrow arches, veneer/core seams >=20 mm apart, core joints >=18 mm apart',flush=True)
 
 if __name__=='__main__':
  a=argparse.ArgumentParser();a.add_argument('action',choices=['plan','package','validate']);v=a.parse_args();{'plan':apply,'package':package_M,'validate':validate}[v.action]()

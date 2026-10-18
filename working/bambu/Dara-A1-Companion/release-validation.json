@@ -1,14 +1,14 @@
 {
   "project_sha256": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
   "editable_sha256": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
-  "source_A2L_complete_sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
+  "source_A2L_complete_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
   "pieces": 44,
   "plates": 3,
   "native_reopen_return_code": 0,
   "evidence_sha256": {
     "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
-    "working/bambu/Dara-A1-Companion/companion-plan.json": "3a5588faa7b46b619427f1d770af545aad66041c428a7f4271fe805885fb0930",
-    "working/bambu/Dara-A1-Companion/native-validation.json": "614adb4d91485a84191836b47350329613dd9fdcf3731367bcd914c5795c28a9",
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "f54dc6d4834e2bb6950c9f0d75d50b6cbefbbb064dd1852fc1439090571c676a",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "df4592140ca170a3e80c391927d81b2fbf9cdec8dd86f733e38ae37d2dfe5ac7",
     "scripts/build_a1_companion.py": "73775ce99d9b8346fb34fa589db2ec7eace2ec36529bc6d1da8bec905d36d6ce",
     "scripts/audit_a1_companion.py": "b96d9bfab4967b509c59e2405e0e81bf4011905d14d47c5bb59f262d574ffbdd"
   },

@@ -1,7 +1,7 @@
 {
-  "revision": "staggered-wide-fork-v1",
-  "previous_plan_sha256": "213c5dfb0d732f5a788fdd9dfa7d6504e65d5e4a395c6e3c47c09a76a03282c0",
-  "production_plan_sha256": "cc037ece963d1f531e9f9f2d4b69d3ef5bd70d7183950097442e725dfad02001",
+  "revision": "short-veneer-staggered-cores-v2",
+  "previous_plan_sha256": "cc037ece963d1f531e9f9f2d4b69d3ef5bd70d7183950097442e725dfad02001",
+  "production_plan_sha256": "a541763d31c328921a7735717af5eb141f8dcad4a4c280946d3e8f10e2b65137",
   "frame_geometry_mount_coordinates_and_veneer_rotation_preserved": true,
   "locator_roles": [
     {
@@ -71,80 +71,80 @@
   ],
   "minimum_key_head_wall_mm": 10,
   "key_heads_clear_of_veneer_seams_mm": 8,
-  "cores": 5,
-  "core_plates": 4,
-  "veneers": 3,
-  "visible_veneer_seams": 2,
-  "old_visible_seam_length_mm": 24.2640656230285,
-  "visible_seam_length_mm": 105.57827523560837,
-  "narrow_arches_have_no_seams": true,
-  "physical_confirmation_pending": true,
   "cross_layer_seam_checks": [
     {
       "core_joint": 1,
       "veneer_joint": 1,
       "aligned_length_mm": 0.0,
-      "distance_mm": 18.124733259333723,
-      "angle_deg": 75.45985378933666,
+      "distance_mm": 137.36753028500723,
+      "angle_deg": 15.000000000000043,
       "isolated_crossing": false
     },
     {
       "core_joint": 1,
       "veneer_joint": 2,
       "aligned_length_mm": 0.0,
-      "distance_mm": 0.0,
-      "angle_deg": 45.62518225580783,
-      "isolated_crossing": true
+      "distance_mm": 116.92298809890218,
+      "angle_deg": 15.000000000000021,
+      "isolated_crossing": false
     },
     {
       "core_joint": 2,
       "veneer_joint": 1,
       "aligned_length_mm": 0.0,
-      "distance_mm": 77.31382799256288,
-      "angle_deg": 29.540146210663345,
+      "distance_mm": 161.23838925938097,
+      "angle_deg": 90.0,
       "isolated_crossing": false
     },
     {
       "core_joint": 2,
       "veneer_joint": 2,
       "aligned_length_mm": 0.0,
-      "distance_mm": 77.46044773972136,
-      "angle_deg": 29.37481774419218,
+      "distance_mm": 167.2794944191703,
+      "angle_deg": 90.0,
       "isolated_crossing": false
     },
     {
       "core_joint": 3,
       "veneer_joint": 1,
       "aligned_length_mm": 0.0,
-      "distance_mm": 216.99173037389608,
-      "angle_deg": 29.540146210663345,
+      "distance_mm": 224.56255080510292,
+      "angle_deg": 90.0,
       "isolated_crossing": false
     },
     {
       "core_joint": 3,
       "veneer_joint": 2,
       "aligned_length_mm": 0.0,
-      "distance_mm": 268.7119088391056,
-      "angle_deg": 29.37481774419218,
+      "distance_mm": 395.1991646670271,
+      "angle_deg": 90.0,
       "isolated_crossing": false
     },
     {
       "core_joint": 4,
       "veneer_joint": 1,
       "aligned_length_mm": 0.0,
-      "distance_mm": 279.0871117754735,
-      "angle_deg": 29.540146210663345,
+      "distance_mm": 397.18199458587094,
+      "angle_deg": 90.0,
       "isolated_crossing": false
     },
     {
       "core_joint": 4,
       "veneer_joint": 2,
       "aligned_length_mm": 0.0,
-      "distance_mm": 227.0748423234026,
-      "angle_deg": 29.37481774419218,
+      "distance_mm": 225.45176378110276,
+      "angle_deg": 90.0,
       "isolated_crossing": false
     }
   ],
   "minimum_core_joint_separation_mm": 33.95473578146385,
-  "revision_baseline_commit": "9d9eda7689387d5bed0a909ee6b9f4fe9959a80d"
+  "cores": 5,
+  "core_plates": 4,
+  "veneers": 3,
+  "visible_veneer_seams": 2,
+  "old_visible_seam_length_mm": 105.57827523560837,
+  "visible_seam_length_mm": 24.2640656230285,
+  "narrow_structural_arches_have_no_seams": true,
+  "minimum_cross_layer_seam_separation_mm": 116.92298809890218,
+  "physical_confirmation_pending": true
 }

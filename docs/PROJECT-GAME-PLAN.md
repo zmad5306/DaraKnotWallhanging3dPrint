@@ -14,11 +14,13 @@ The production project is [Dara.3mf](../Dara.3mf), with its [A2L guide and valid
 | Knot joints | 32 | 14 |
 | M flat cores / hidden joints | 6 / 5 | 5 / 4 |
 | M veneers / visible seams | 6 / 5 | 3 / 2 |
-| M visible seam length, front projection | 316.9 mm | 105.6 mm |
+| M visible seam length, front projection | 316.9 mm | 24.3 mm |
 
 Six A2L knot joints are completely behind the band-free M with at least the intended 2 mm front-view margin, two are partly covered and six fully exposed. Eight have some visible portion. These counts exclude M seams; oblique viewing angles can reveal more than a front projection.
 
 The knot uses new partitions in the continuous stock rather than joined A1 pieces. Its 18 mm laps preserve hidden fitting clearance while all cosmetic walls butt at zero nominal gap. Hidden seating pads control flushness separately from glue relief, and secondary pockets permit small axial variation. Material boundaries and the global weave remain continuous across the new cuts.
+
+The two visible veneer seams cross the thin crowns to minimize seam length; structural backing remains continuous there. The nearest core seam is 116.9 mm from a veneer seam.
 
 The five M cores print flat, with all convex crown and hammer texture in flat-backed veneers. All three veneers use one complete shared rotation, including the same in-plane direction. The 55-degree face planes run along bed Y; turning all artwork 90 degrees together within that plane allows full sweeps using the A2L height. Never rotate an individual veneer to pack it. Knot fill directions compensate for each saved XY rotation.
 

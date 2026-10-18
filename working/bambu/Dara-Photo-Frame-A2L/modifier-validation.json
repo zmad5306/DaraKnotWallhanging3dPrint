@@ -1,6 +1,6 @@
 {
-  "editable_sha256": "93bf25abb740d91a4c7315405243f1cfc5c111e2d464a6ddf83feb70a3419d27",
-  "native_project_sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
+  "editable_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+  "native_project_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
   "objects": [
     {
       "name": "F1 A2L knot",
@@ -60,7 +60,7 @@
     {
       "name": "C2 A2L flat M core",
       "modifier_vertices_checked": 384,
-      "max_native_modifier_error_mm": 2.2176275610303164e-05
+      "max_native_modifier_error_mm": 2.220121640986786e-05
     },
     {
       "name": "C3 A2L flat M core",

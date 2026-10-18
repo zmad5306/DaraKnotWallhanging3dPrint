@@ -13,13 +13,13 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'working/bambu/Dara-Photo-Fram
 for name,file in [('Vera','Vera.ttf'),('VeraBold','VeraBd.ttf')]:pdfmetrics.registerFont(TTFont(name,str(Path(reportlab.__file__).parent/'fonts'/file)))
 
 def main():
- p=json.loads((OUT/'production-plan.json').read_text());proof=json.loads((OUT/'native-validation.json').read_text());release=json.loads((OUT/'release-validation.json').read_text());est={r['plate']:r for r in release['plate_estimates']}
+ p=json.loads((OUT/'production-plan.json').read_text());proof=json.loads((OUT/'native-validation.json').read_text());est={r['plate']:r for r in proof['plates']}
  a1=json.loads((ROOT/'working/bambu/Dara-A1-Companion/native-validation.json').read_text());est.update({r['plate']+17:r for r in a1['plates']})
  target=ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf';c=canvas.Canvas(str(target),pagesize=landscape(letter));W,H=landscape(letter);ink='#263842';colors=['#c6dce7','#d7e8d2','#efdec0','#dad3e8','#edd0cc','#d3d1bd']
  def text(x,y,s,size=10,bold=False):c.setFont('VeraBold' if bold else 'Vera',size);c.setFillColor(HexColor(ink));c.drawString(x,y,s)
  def page(title,sub,num):
   text(30,H-38,title,21,True);text(30,H-56,sub,9)
-  text(30,20,f'A2L / 0.4 mm / 0.20 mm | 8% gyroid bodies; solid veneers | SHA {release["project_sha256"][:12]}',8);text(W-65,20,f'{num} / 3',8)
+  text(30,20,f'A2L / 0.4 mm / 0.20 mm | 8% gyroid bodies; solid veneers | SHA {proof["native_project_sha256"][:12]}',8);text(W-65,20,f'{num} / 3',8)
  def geo(g,cx,cy,s,color):
   g=shape(g) if isinstance(g,dict) else g;pp=[g] if g.geom_type=='Polygon' else list(g.geoms);path=c.beginPath()
   for q in pp:
@@ -48,7 +48,7 @@ def main():
  for i,g in enumerate(p['core_regions']):geo(g,210,320,.43,colors[i]);label(g,210,320,.43,f'C{i+1}',11+i if i<3 else 14)
  for i,g in enumerate(p['skin_regions']):geo(g,582,320,.43,colors[i]);label(g,582,320,.43,f'V{i+1}',i+15)
  text(32,116,'Cores: constant 8.4 mm main body. Veneer backs: Z8.6. Hidden glue space: 0.20 mm.',9)
- text(32,97,'Two face seams in the broad fork total 105.6 mm. Narrow arches stay continuous; core seams are staggered.',9)
+ text(32,97,'Two short crown seams total 24.3 mm. Structural arches stay continuous; core seams are staggered.',9)
  text(32,78,'All three veneers share the complete 55-degree lean and in-plane direction. Show planes run along bed Y.',9,True)
  text(32,58,'Keep veneer rotations. Cut recessed necks; remove separate ribs, fins and guards. Sand hidden backs flat.',8.5);c.showPage()
  page('Production checklist: A2L + A1','A2L: plates 1-17, including ALL M cores and veneers. A1 companion: plates 1-3. Skip A2L 18-20.',3)

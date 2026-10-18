@@ -367,6 +367,6 @@
   "continuous_artwork": true,
   "weave_pitch_mm": 6,
   "source_cad_sha256": "eb62f56258712faf945a0a49984c031631df356112b8b2f85ac23ec3d28e538c",
-  "production_plan_sha256": "5eda7c6341ddfa7de3f9d63616d74f1eb401d1276bf9d62ca9ae33b54f992d62",
+  "production_plan_sha256": "a541763d31c328921a7735717af5eb141f8dcad4a4c280946d3e8f10e2b65137",
   "physical_confirmation_pending": true
 }

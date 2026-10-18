@@ -6,11 +6,11 @@
   "sources": [
     {
       "file": "M-Veneer-Glue-Coupon-A1.3mf",
-      "sha256": "f6365fe2b5caac8e3501378029d3bd8405734691dd27315ff5a9501593f0f708"
+      "sha256": "647fe0aae49c5696dce70b633084fb0060709773db25fe470322e882bd2aadf3"
     },
     {
       "file": "M-Veneer-Seam-Coupon-A1.3mf",
-      "sha256": "f7e3aebe97ffc7867333b47426918f0bc2490bbaa00c14abe79518f93235bd89"
+      "sha256": "21b1a291d1c49ee10b2e411842e49f0930ea2c84c2b3c41dbcc5cf4bc64acc18"
     },
     {
       "file": "Frame-Cosmetic-Comparison-A1.3mf",
@@ -235,7 +235,7 @@
         [
           95.0,
           74.93510689213872,
-          11.2
+          8.999999999999998
         ]
       ],
       "xy_translation_from_source_mm": [
@@ -244,7 +244,7 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10301": "0d2966a0e5667ad9e73ee7a7e10c6300cc87ef1dade1b6dbea90c3862aa2e2b4"
+        "10301": "5faccab1420562bdcf8b09c45e926df71dde9d8634778ae3707d10dbd748d27f"
       },
       "part_id_mapping": {
         "1001": "10301"
@@ -293,7 +293,7 @@
         [
           95.0,
           148.71320451368126,
-          11.2
+          8.999999999999998
         ]
       ],
       "xy_translation_from_source_mm": [
@@ -302,7 +302,7 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10401": "0d5bfb9cd793dc6384c71a3cd25ba9e066d4620e96cbc4070d63d7d0832c2695"
+        "10401": "41d47da2330fe5a1f80e1c3a6ac666a773ff35d9d857d066b588324d8d5ead12"
       },
       "part_id_mapping": {
         "1101": "10401"
@@ -351,7 +351,7 @@
         [
           91.0,
           233.0,
-          11.2
+          8.999999999999998
         ]
       ],
       "xy_translation_from_source_mm": [
@@ -360,7 +360,7 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10501": "4871f4e7502e3a03ee20037ae39f52ca7b560325f497d25d1fca60c5940a1449"
+        "10501": "2c51f6981e08e567f278b20074bfde2f552748b370c9146c12bd510711faa0df"
       },
       "part_id_mapping": {
         "1001": "10501"
@@ -379,7 +379,7 @@
           1.0,
           0.0,
           0.0,
-          56.77009778936079
+          57.04078759719232
         ],
         [
           0.0,
@@ -402,23 +402,23 @@
       ],
       "body_bounds_mm": [
         [
-          159.5262865843313,
+          159.25559677649835,
           20.5,
           0.0
         ],
         [
-          208.4737134156687,
+          208.74440322350165,
           89.5,
-          67.78940252275936
+          67.78940252276834
         ]
       ],
       "xy_translation_from_source_mm": [
-        56.77009778936079,
+        57.04078759719232,
         -73.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10601": "289d6431c7dd59ce60b5de9b93ab9587d76f1480ac9f03933fbbc58d41c51b78"
+        "10601": "75d996fea15fccecdd0f5aaeb79d9b18ac55bf14ce55aea5215c51b6ba823560"
       },
       "part_id_mapping": {
         "1201": "10601"
@@ -437,7 +437,7 @@
           1.0,
           0.0,
           0.0,
-          56.87094771619712
+          57.0407875957784
         ],
         [
           0.0,
@@ -460,23 +460,23 @@
       ],
       "body_bounds_mm": [
         [
-          162.37890203799878,
+          161.55195901867717,
           122.51875,
           0.0
         ],
         [
-          205.62109796200122,
+          206.44804098132283,
           147.48125,
-          61.66046455345301
+          62.00546410933961
         ]
       ],
       "xy_translation_from_source_mm": [
-        56.87094771619712,
+        57.0407875957784,
         7.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10701": "af92701d6249b47c68e3a1d1b7d7fd7c682fc51831f8aeecf733f389b2e87799"
+        "10701": "b392a6041ed7fcd98d7ee2fb7979cd4fc75cb8b1a077f640ce61eab054170762"
       },
       "part_id_mapping": {
         "1101": "10701"
@@ -495,7 +495,7 @@
           1.0,
           0.0,
           0.0,
-          56.9883791987142
+          57.04078759732826
         ],
         [
           0.0,
@@ -518,23 +518,23 @@
       ],
       "body_bounds_mm": [
         [
-          162.87142940948814,
+          161.97036216142757,
           202.51875,
           0.0
         ],
         [
-          205.12857059051186,
+          206.02963783857243,
           227.48125,
-          62.091049024599926
+          62.09104902460493
         ]
       ],
       "xy_translation_from_source_mm": [
-        56.9883791987142,
+        57.04078759732826,
         87.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10801": "139721e9d2f1a23c8513541c2dbfce60765161f34baaf316b1f9d8d767da3a36"
+        "10801": "a72959726cb4366421eb70c798de9acddf92a24597caad2ba2403bbc9124cefa"
       },
       "part_id_mapping": {
         "1201": "10801"

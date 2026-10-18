@@ -104,5 +104,74 @@
       "color_modifier_geometry_and_assignments_preserved": true
     }
   ],
+  "flat_core_and_veneer_checks": [
+    {
+      "core": "C1",
+      "veneer": "V1",
+      "core_main_top_mm": 8.4,
+      "core_body_flatness_error_mm": 0.0,
+      "veneer_flat_back_mm": 8.6,
+      "veneer_back_plane_error_mm": 0.0,
+      "hammered_front_grid_error_mm": 0.0,
+      "front_grid_vertices_checked": 78595,
+      "screw_tip_clearances_open": true
+    },
+    {
+      "core": "C2",
+      "veneer": "V2",
+      "core_main_top_mm": 8.4,
+      "core_body_flatness_error_mm": 0.0,
+      "veneer_flat_back_mm": 8.6,
+      "veneer_back_plane_error_mm": 0.0,
+      "hammered_front_grid_error_mm": 0.0,
+      "front_grid_vertices_checked": 43918,
+      "screw_tip_clearances_open": true
+    },
+    {
+      "core": "C3",
+      "veneer": "V3",
+      "core_main_top_mm": 8.4,
+      "core_body_flatness_error_mm": 0.0,
+      "veneer_flat_back_mm": 8.6,
+      "veneer_back_plane_error_mm": 0.0,
+      "hammered_front_grid_error_mm": 0.0,
+      "front_grid_vertices_checked": 78729,
+      "screw_tip_clearances_open": true
+    },
+    {
+      "core": "C4",
+      "veneer": "V4",
+      "core_main_top_mm": 8.4,
+      "core_body_flatness_error_mm": 0.0,
+      "veneer_flat_back_mm": 8.6,
+      "veneer_back_plane_error_mm": 0.0,
+      "hammered_front_grid_error_mm": 0.0,
+      "front_grid_vertices_checked": 42327,
+      "screw_tip_clearances_open": true
+    },
+    {
+      "core": "C5",
+      "veneer": "V5",
+      "core_main_top_mm": 8.4,
+      "core_body_flatness_error_mm": 0.0,
+      "veneer_flat_back_mm": 8.6,
+      "veneer_back_plane_error_mm": 0.0,
+      "hammered_front_grid_error_mm": 0.0,
+      "front_grid_vertices_checked": 49762,
+      "screw_tip_clearances_open": true
+    },
+    {
+      "core": "C6",
+      "veneer": "V6",
+      "core_main_top_mm": 8.4,
+      "core_body_flatness_error_mm": 0.0,
+      "veneer_flat_back_mm": 8.6,
+      "veneer_back_plane_error_mm": 0.0,
+      "hammered_front_grid_error_mm": 0.0,
+      "front_grid_vertices_checked": 32600,
+      "screw_tip_clearances_open": true
+    }
+  ],
+  "constant_planar_glue_space_mm": 0.1999999999999993,
   "scope": "Digital geometry only; native toolpaths and physical samples are separate checks."
 }

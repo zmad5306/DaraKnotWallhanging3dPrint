@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "d32414f0bef8474a31ea09c732bbd6d5d0bd6a68193919945df0217a3be61989",
-  "native_project_sha256": "acfe7f30262e71d5c024507dbcac4c357953e7035e33867b69b6dcb624f7dbed",
+  "staged_sha256": "79f6fa19fea982a4188076355acedf613e570fe4a74317d60cdf6c19a3a5c37c",
+  "native_project_sha256": "d4149952c550829b064288aa81a6a6048084b03184a6b9c6132fb3ac9d17a9d5",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -19,11 +19,11 @@
     },
     {
       "name": "M glue core C1",
-      "max_native_vertex_or_pose_error_mm": 1.59068419343522e-05
+      "max_native_vertex_or_pose_error_mm": 1.5448689125450275e-05
     },
     {
       "name": "M glue core C4",
-      "max_native_vertex_or_pose_error_mm": 1.5270900055404855e-05
+      "max_native_vertex_or_pose_error_mm": 1.5211093612554153e-05
     },
     {
       "name": "M seam core C4",
@@ -31,15 +31,15 @@
     },
     {
       "name": "M glue veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 1.3483495734886727e-05
+      "max_native_vertex_or_pose_error_mm": 1.2891575743808535e-05
     },
     {
       "name": "M seam upper veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 1.3077234591042481e-05
+      "max_native_vertex_or_pose_error_mm": 9.723296742624557e-06
     },
     {
       "name": "M seam lower veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 1.2586932090031105e-05
+      "max_native_vertex_or_pose_error_mm": 1.2824670717839114e-05
     },
     {
       "name": "A reference tongue",
@@ -110,9 +110,9 @@
       ],
       "conservative_bed_edge_clearance_mm": 23.0,
       "plate": 1,
-      "gcode_sha256": "a12b40798c38686af3ab1b97f55c9fa2024a2a76f172ac191a20ed2818327b85",
+      "gcode_sha256": "575c65d6480ab8bf82eae687fb38dd2be0b63c41fe2aed36367f70022491ce08",
       "header": [
-        "; model printing time: 1h 41m 59s; total estimated time: 1h 48m 33s",
+        "; model printing time: 1h 42m 20s; total estimated time: 1h 48m 54s",
         "; total layer number: 30",
         "; total filament length [mm] : 14151.65",
         "; total filament volume [cm^3] : 34038.71",
@@ -126,53 +126,53 @@
       ]
     },
     {
-      "extrusion_moves_checked": 408048,
+      "extrusion_moves_checked": 441377,
       "features": {
-        "Support": 164641,
-        "Brim": 1299,
-        "Outer wall": 40639,
-        "Inner wall": 42329,
-        "Gap infill": 58790,
-        "Bottom surface": 1625,
-        "Support interface": 8,
-        "Internal solid infill": 12810,
-        "Bridge": 3504,
-        "Sparse infill": 73579,
-        "Floating vertical shell": 4362,
-        "Top surface": 4414,
-        "Overhang wall": 48
+        "Support": 183557,
+        "Brim": 1392,
+        "Outer wall": 37686,
+        "Inner wall": 55006,
+        "Gap infill": 9538,
+        "Bottom surface": 1637,
+        "Support interface": 2,
+        "Internal solid infill": 75616,
+        "Sparse infill": 62756,
+        "Floating vertical shell": 11483,
+        "Bridge": 1156,
+        "Top surface": 1513,
+        "Overhang wall": 35
       },
       "extruding_xy_bounds_mm": [
         [
           16.214,
-          11.159069167781016
+          12.871236215149661
         ],
         [
-          213.29256426041928,
-          235.12343332209647
+          213.61259803471015,
+          234.90587839909003
         ]
       ],
       "bead_xy_bounds_mm": [
         [
           15.963999999999999,
-          10.909069167781016
+          12.621236215149661
         ],
         [
-          213.54256426041928,
-          235.37343332209647
+          213.86259803471015,
+          235.15587839909003
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 10.909069167781016,
+      "conservative_bed_edge_clearance_mm": 12.621236215149661,
       "plate": 2,
-      "gcode_sha256": "48b0003e1d1cdfaf5a6c8165100d95136939ca0963361151c3305a309031d3d6",
+      "gcode_sha256": "0bb4a0dcd245a32b9f9111f6c8ba2280e8317342486863c1da9deaf61869d152",
       "header": [
-        "; model printing time: 10h 6m 31s; total estimated time: 10h 13m 7s",
+        "; model printing time: 10h 28m 13s; total estimated time: 10h 34m 49s",
         "; total layer number: 338",
-        "; total filament length [mm] : 39833.77",
-        "; total filament volume [cm^3] : 95811.46",
-        "; total filament weight [g] : 118.81",
+        "; total filament length [mm] : 43953.85",
+        "; total filament volume [cm^3] : 105721.39",
+        "; total filament weight [g] : 131.09",
         "; model label id: 10300,10400,10500,10600,10700,10800",
-        "; object max height: 11.20,11.20,11.20,67.80,61.60,62.00",
+        "; object max height: 9.00,9.00,9.00,67.80,62.00,62.00",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 67.80",
@@ -284,8 +284,8 @@
       {
         "name": "M seam upper veneer - fins and shoe",
         "connected_components": 1,
-        "numerical_zero_volume_shells": 3,
-        "excluded_absolute_volume_mm3": 6.376076749914361e-12
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "M seam lower veneer - fins and shoe",
@@ -344,7 +344,19 @@
     ],
     "native_export": [
       {
+        "name": "Seam-test smooth caul",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
         "name": "Ribbon show-face jig",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam core C4",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -362,19 +374,7 @@
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "M seam core C4",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
         "name": "Glue-test smooth caul",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "Seam-test smooth caul",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -537,22 +537,22 @@
   "combined_bond_checks": [
     {
       "name": "M glue veneer - fins and shoe",
-      "bond_probes_checked": 39,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.2739268133766879,
+      "bond_probes_checked": 38,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.19619408737626462,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     },
     {
       "name": "M seam upper veneer - fins and shoe",
       "bond_probes_checked": 9,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.3051691835343198,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.29656513973471477,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     },
     {
       "name": "M seam lower veneer - fins and shoe",
       "bond_probes_checked": 8,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.2361635579970139,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09973117131219311,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     }

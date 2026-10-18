@@ -7,7 +7,7 @@ import trimesh
 from PIL import Image, ImageDraw, ImageFont
 from shapely.geometry import shape
 from development_3mf import ROOT, OUT, WORK, read_object
-from develop_m_veneer import axes, crown
+from develop_m_veneer import axes, crown, skin_bottom
 from add_blue_ribbon_edge import artwork
 
 FONT='/System/Library/Fonts/Supplemental/Arial.ttf'
@@ -66,7 +66,7 @@ def draw_carrier(m,t,c,title,path):
     depth=m.triangles_center@view;order=np.argsort(depth)
     t=np.array(t);R=t[:3,:3]
     ac=(m.triangles_center-t[:3,3])@R
-    floor=8.4+crown(outline,ac[:,:2])+.2
+    floor=skin_bottom(ac[:,:2])
     is_skin=ac[:,2]>floor-.12
     light=np.array([-.5,-.5,1.]);light/=np.linalg.norm(light)
     lum=np.clip(np.abs(m.face_normals@light),0,1)

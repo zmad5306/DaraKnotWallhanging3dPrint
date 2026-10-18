@@ -33,6 +33,11 @@ from validate_print_project import transform, props
 CAD = ROOT / 'working/Dara-Photo-Frame-A1-Jointed.scad'
 CORE_BASE = 8.4
 GLUE = .2
+SEAT_Z = CORE_BASE + GLUE
+BOSS_TOP = SEAT_Z + .4
+POCKET_TOP = BOSS_TOP + .1
+SCREW_TIP_Z = 8.7
+SCREW_CLEARANCE_TOP = SCREW_TIP_Z + .4
 SHOW_GAP = .075
 GRID = .5
 GLUE_SAMPLE_WINDOW = (-290, 25, -212, 94)
@@ -67,6 +72,36 @@ def prism(g, bottom, top):
 def crown(outline, xy):
     t = np.clip(shapely.distance(shapely.points(xy), outline.boundary) / 17.5, 0, 1)
     return 2.2 * (2*t - t*t)
+
+
+def core_top(xy):
+    """The structural body has one flat upper plane; only locators rise above."""
+    return np.full(len(xy),CORE_BASE,dtype=float)
+
+
+def skin_bottom(xy):
+    """Flat veneer back: the entire convex profile belongs to its front."""
+    return np.full(len(xy),SEAT_Z,dtype=float)
+
+
+def screw_clearance_tools():
+    # Existing screw tips reach Z8.7. A flat 8.4 mm core provides the threaded
+    # passage; a shallow clearance in the cap accommodates the unchanged tips.
+    screws=read_array(CAD.read_text(),'screw_mounts')
+    return mf.Manifold.batch_boolean([
+        mf.Manifold.cylinder(SCREW_CLEARANCE_TOP-CORE_BASE+.01,2.1,circular_segments=64).translate([*r[2],CORE_BASE-.01])
+        for r in screws],mf.OpType.Add)
+
+
+def screw_exclusion():
+    return union_all([Point(*r[2]).buffer(4.5) for r in read_array(CAD.read_text(),'screw_mounts')])
+
+
+def top_section(body):
+    region=Polygon()
+    for ring in body.slice(CORE_BASE-.01).to_polygons():
+        region=region.symmetric_difference(Polygon(ring))
+    return region
 
 
 def texture(outline):
@@ -189,13 +224,11 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     # entire footprint, not merely have its centre inside an outer contour.
     seat_regions=[]
     for _,q in samples:
-        section_region=Polygon()
-        for ring in q.slice(10.59).to_polygons():
-            section_region=section_region.symmetric_difference(Polygon(ring))
+        section_region=top_section(q)
         seat_regions.append(section_region.buffer(-2.6))
     skin_objects=[];seats=[]
     for index,region in enumerate(panels):
-        v,_=height_mesh(region,skin_bottom,roof);skin=solid(v)
+        v,_=height_mesh(region,skin_bottom,roof);skin=solid(v)-screw_clearance_tools()
         points=np.array([(x,y) for x in np.arange(region.bounds[0]+5,region.bounds[2]-4,3)
                          for y in np.arange(region.bounds[1]+5,region.bounds[3]-4,3)])
         good=shapely.contains(region.buffer(-4),shapely.points(points))&(shapely.distance(shapely.points(points),outline.boundary)>20)
@@ -207,14 +240,14 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
         for k,p in enumerate([p0,p1,p2]):
             # Locate the core using real material beneath the contact, not a box.
             owner=next(item for item,safe in zip(samples,seat_regions) if safe.contains(Point(*p)))
-            owner[1]+=mf.Manifold.cylinder(.25,2.5,circular_segments=32).translate([*p,10.55])
+            owner[1]+=mf.Manifold.cylinder(.25,2.5,circular_segments=32).translate([*p,SEAT_Z-.25])
             if k<2:
-                owner[1]+=mf.Manifold.cylinder(.45,1.2,circular_segments=32).translate([*p,10.75])
+                owner[1]+=mf.Manifold.cylinder(.45,1.2,circular_segments=32).translate([*p,SEAT_Z-.05])
                 pocket=(LineString([(-.4,0),(.4,0)]) if k else Point(0,0)).buffer(1.35,quad_segs=12)
                 pocket=affinity.translate(affinity.rotate(pocket,aa,origin=(0,0)),*p)
-                skin-=prism(pocket,10.70,11.30)
+                skin-=prism(pocket,SEAT_Z-.1,POCKET_TOP)
             row.append(p.tolist())
-        excluded=union_all([Point(*p).buffer(6) for p in row])
+        excluded=union_all([Point(*p).buffer(6) for p in row]).union(screw_exclusion())
         v=mesh(skin);pose=centered(v,common_m_rotation(),z=2.4)
         carried,evidence=carrier(v,region,outline,skin_bottom,pose,excluded)
         skin_objects.append(dict(name=f'Veneer coupon {index+1} - fused carrier',parts=[dict(mesh=carried)],transform=np.eye(4),settings=skin_settings,block_front=True))
@@ -231,14 +264,12 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     flip=np.diag([1,-1,-1])
     plates.append([dict(name='Smooth crown caul - soft liner and release film',parts=[dict(mesh=caul)],transform=centered(caul,flip),settings=dict(core_settings,extruder='1',brim_width='0',enable_support='0'))])
     write_project(OUT/filename,plates,'DEVELOPMENT - '+filename.removesuffix('.3mf'))
-    save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(glue_gap_mm=.2,caul_release_clearance_mm=.15,caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,panels=seats,core_parts=[i+1 for i,_ in samples],sample_bounds_mm=list(sample.bounds),core_connected_components=[len(c.decompose()) for _,c in samples],whole_pad_footprints_supported=True,physical_confirmation_pending=True))
+    save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(core_body_flat_top_mm=CORE_BASE,veneer_flat_back_mm=SEAT_Z,all_convex_profile_in_veneer=True,glue_gap_mm=GLUE,caul_release_clearance_mm=.15,caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,panels=seats,core_parts=[i+1 for i,_ in samples],sample_bounds_mm=list(sample.bounds),core_connected_components=[len(c.decompose()) for _,c in samples],whole_pad_footprints_supported=True,physical_confirmation_pending=True))
 
 
 def refresh_glue_coupon():
     """Rebuild all matched glue-test parts from the cached full-size cores."""
     cad=CAD.read_text();outline=artwork(cad,'letter_outline');roof=texture(outline)
-    core_top=lambda xy:CORE_BASE+crown(outline,xy)
-    skin_bottom=lambda xy:core_top(xy)+GLUE
     sample=box(*GLUE_SAMPLE_WINDOW).intersection(outline)
     local_whole=solid(height_mesh(sample,0,core_top)[0])
     cores=[]
@@ -256,8 +287,8 @@ def refresh_glue_coupon():
 def refresh_fins():
     """Iterate sacrificial tooling while retaining cached artwork/core geometry."""
     plan=json.loads((OUT/'M-geometry-validation.json').read_text())
+    assert plan.get('core_crown_mm')==0,'Rebuild the flat-core geometry before refreshing cached fins'
     cad=CAD.read_text();outline=artwork(cad,'letter_outline')
-    skin_bottom=lambda xy:CORE_BASE+crown(outline,xy)+GLUE
     path=OUT/'M-Core-and-Veneer-A1.3mf'
     staging=json.loads(path.with_suffix('.json').read_text())
     with zipfile.ZipFile(path) as z:files={n:z.read(n) for n in z.namelist()}
@@ -270,7 +301,7 @@ def refresh_fins():
         data=np.load(WORK/f'V{i+1}.npz')
         m=trimesh.Trimesh(data['vertices'],data['faces'],process=False)
         region=shape(plan['skin_regions'][i]);pose=np.array(row['assembly_to_printer'])
-        excluded=union_all([Point(*a['xy_mm']).buffer(7) for a in row['anchors']])
+        excluded=union_all([Point(*a['xy_mm']).buffer(7) for a in row['anchors']]).union(screw_exclusion())
         carried,evidence=carrier(m,region,outline,skin_bottom,pose,excluded)
         row['carrier']=evidence;carried.export(WORK/f'V{i+1}-with-carrier.stl')
         _,settings=read_object(files,str(staging['records'][i+6]['object_id']))
@@ -282,7 +313,6 @@ def refresh_fins():
     save_json(OUT/'M-geometry-validation.json',plan)
     refresh_glue_coupon()
     sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
-    core_top=lambda xy:CORE_BASE+crown(outline,xy)
     local_whole=solid(height_mesh(sample,0,core_top)[0])
     cores=[]
     for i in range(6):
@@ -350,8 +380,6 @@ def build():
     WORK.mkdir(parents=True, exist_ok=True); OUT.mkdir(parents=True, exist_ok=True)
     original_hash = sha(ROOT/'Dara.3mf'); cad = CAD.read_text()
     outline = artwork(cad, 'letter_outline'); roof = texture(outline)
-    core_top = lambda xy: CORE_BASE+crown(outline, xy)
-    skin_bottom = lambda xy: core_top(xy)+GLUE
     core_joints = copy.deepcopy(read_array(cad, 'M_joints'))
     # Move the two otherwise coincident/nearby core joints away from skin seams.
     for index in [0, 4]:
@@ -369,8 +397,7 @@ def build():
     skin_regions = [next(p for p in skin_regions0 if p.contains(Point(*q))) for q in refs]
     cuts = union_all([locate(box(-SHOW_GAP/2,-j[4]/2-30,SHOW_GAP/2,j[4]/2+30), j) for j in SKIN_JOINTS])
     skin_regions = [p.difference(cuts) for p in skin_regions]
-    whole_core, _ = height_mesh(outline, 0, core_top)
-    whole = solid(whole_core); cores = []; skins = []; reports = []
+    whole = prism(outline,0,CORE_BASE); cores = []; skins = []; reports = []
     # Full-thickness planar keys eliminate supported socket roofs in the core.
     # The separate frame refinement retains its frozen 18 mm lap profile.
     planar_tabs=[]
@@ -411,14 +438,16 @@ def build():
         print('Core',i+1,'built',flush=True)
     # Three seating pads per skin, plus a round and a slotted registration pair.
     anchors = []; hole_points = [Point(*r[2]) for r in screws+pins]
+    seat_regions=[top_section(c).buffer(-2.6) for c in cores]
     core_seams = union_all([line(j) for j in core_joints])
     for i, region in enumerate(skin_regions):
-        v, stats = height_mesh(region,skin_bottom,roof); skin = solid(v)
+        v, stats = height_mesh(region,skin_bottom,roof); skin = solid(v)-screw_clearance_tools()
         safe = region.buffer(-5).difference(core_seams.buffer(8))
         for pt in hole_points: safe = safe.difference(pt.buffer(6))
         grid = np.array([(x,y) for x in np.arange(region.bounds[0],region.bounds[2],4)
                          for y in np.arange(region.bounds[1],region.bounds[3],4)])
         good = shapely.contains(safe,shapely.points(grid)) & (shapely.distance(shapely.points(grid),outline.boundary)>20)
+        good &= shapely.contains(union_all(seat_regions),shapely.points(grid))
         candidates = grid[good]; assert len(candidates)>=3,(i,len(candidates))
         p0 = candidates[np.argmin(np.linalg.norm(candidates-np.array(region.centroid.coords[0]),axis=1))]
         p1 = candidates[np.argmax(np.linalg.norm(candidates-p0,axis=1))]
@@ -427,18 +456,18 @@ def build():
         angle = math.degrees(math.atan2(*(p1-p0)[::-1]))
         row = []
         for k, p in enumerate([p0,p1,p2]):
-            owner = next(j for j,r in named.items() if r.contains(Point(*p)))
-            cores[owner] += mf.Manifold.cylinder(.25,2.5,circular_segments=40).translate([*p,10.55])
+            owner = next(j for j,r in enumerate(seat_regions) if r.contains(Point(*p)))
+            cores[owner] += mf.Manifold.cylinder(.25,2.5,circular_segments=40).translate([*p,SEAT_Z-.25])
             if k<2:
-                cores[owner] += mf.Manifold.cylinder(.45,1.2,circular_segments=40).translate([*p,10.75])
+                cores[owner] += mf.Manifold.cylinder(.45,1.2,circular_segments=40).translate([*p,SEAT_Z-.05])
                 pocket = Point(0,0).buffer(1.35,quad_segs=12)
                 if k==1: pocket=LineString([(-.4,0),(.4,0)]).buffer(1.35,quad_segs=12)
                 pocket=affinity.translate(affinity.rotate(pocket,angle,origin=(0,0)),*p)
-                skin -= prism(pocket,10.70,11.30)
+                skin -= prism(pocket,SEAT_Z-.1,POCKET_TOP)
             row.append(dict(xy_mm=p.tolist(),core=owner+1,role=['primary_round','secondary_axial_slot','seat_only'][k]))
         anchors.append(row); skins.append(skin)
-        reports.append(dict(name=f'V{i+1}',**stats,nominal_minimum_thickness_before_pockets_mm=1.35,
-                            minimum_roof_over_locator_pocket_mm=.85,anchors=row))
+        reports.append(dict(name=f'V{i+1}',**stats,nominal_minimum_thickness_before_pockets_mm=1.9,
+                            flat_back_z_mm=SEAT_Z,minimum_roof_over_locator_pocket_mm=1.4,anchors=row))
         print('Veneer',i+1,'built',flush=True)
     # Collision and actual hardware cover checks are geometric, not load ratings.
     core_collision = sum((cores[i]^cores[j]).volume() for i in range(6) for j in range(i))
@@ -447,14 +476,17 @@ def build():
     assert max(core_collision,skin_collision,skin_core_collision)<.001,(core_collision,skin_collision,skin_core_collision)
     cover = []
     for _,_,xy in screws:
-        aa=np.linspace(0,2*np.pi,129);q=np.array(xy)+1.6*np.column_stack([np.cos(aa),np.sin(aa)])
-        cover.append(float(core_top(q).min()-8.7))
+        aa=np.linspace(0,2*np.pi,129);q=np.array(xy)+2.1*np.column_stack([np.cos(aa),np.sin(aa)])
+        cover.append(float(roof(q).min()-SCREW_CLEARANCE_TOP))
     assert min(cover)>1.0,cover
+    tip_clearance=screw_clearance_tools()
+    assert sum((v^tip_clearance).volume() for v in skins)<1e-5,'Veneer blocks the existing screw tips'
     files=source(); cfg=ET.fromstring(files['Metadata/model_settings.config']); base=props(cfg.find("object[@id='192']"));base={k:v for k,v in base.items() if k not in (None,'name')}
     core_settings=dict(base,enable_support='0',brim_width='1',bottom_shell_layers='5',top_shell_layers='5')
     skin_settings=dict(base,enable_support='1',brim_width='3',sparse_infill_density='100%',support_critical_regions_only='0',top_shell_layers='5')
     plates=[];core_records=[]
     for i,c in enumerate(cores):
+        assert len(c.decompose())==1,(i,'Disconnected core seating feature')
         m=mesh(c);a=fit_angle(m);t=centered(m,z_rotation(a));m.export(WORK/f'C{i+1}.stl');np.savez_compressed(WORK/f'C{i+1}.npz',vertices=m.vertices,faces=m.faces)
         mods=[]
         for n,r in enumerate(screws):
@@ -469,7 +501,7 @@ def build():
         y_center=130 if i==0 else (126 if i==2 else 128)
         m=mesh(v);t=centered(m,common_m_rotation(),z=2.4,xy=(128,y_center));m.export(WORK/f'V{i+1}.stl');np.savez_compressed(WORK/f'V{i+1}.npz',vertices=m.vertices,faces=m.faces)
         assert np.all(np.ptp(m.vertices@t[:3,:3].T,axis=0)<[250,250,253.6])
-        excluded=union_all([Point(*a['xy_mm']).buffer(7) for a in anchors[i]])
+        excluded=union_all([Point(*a['xy_mm']).buffer(7) for a in anchors[i]]).union(screw_exclusion())
         carried,carrier_report=carrier(m,skin_regions[i],outline,skin_bottom,t,excluded)
         reports[i]['carrier']=carrier_report;reports[i]['assembly_to_printer']=t.tolist()
         carried.export(WORK/f'V{i+1}-with-carrier.stl')
@@ -490,11 +522,14 @@ def build():
     panels=[sample.intersection(box(-400,-65+SHOW_GAP/2,0,200)),sample.intersection(box(-400,-200,0,-65-SHOW_GAP/2))]
     sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,panels,cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
     report=dict(status='Geometry verified; native slicing and physical confirmation tracked separately',source_sha256=original_hash,
-                core_base_mm=CORE_BASE,core_crown_mm=2.2,glue_gap_mm=GLUE,nominal_skin_thickness_mm=[1.35,1.9],
+                core_base_mm=CORE_BASE,core_crown_mm=0,core_main_top_z_mm=CORE_BASE,veneer_flat_back_z_mm=SEAT_Z,
+                entire_convex_profile_in_veneer=True,veneer_crown_mm=2.2,glue_gap_mm=GLUE,nominal_skin_thickness_mm=[1.9,4.1],
                 hammer=dict(pitch_mm=9,depth_mm=.55,seed=73),maximum_finished_height_mm=12.7,
                 cosmetic_gap_mm=SHOW_GAP,cover_bands=0,core_joint_type='18 mm deep full-thickness planar mushroom keys; support-free mating walls',core_joints=core_joints,skin_joints=SKIN_JOINTS,
                 cores=core_records,skins=reports,skin_regions=[mapping(p) for p in skin_regions],
-                minimum_screw_tip_cover_mm=min(cover),core_overlap_mm3=core_collision,skin_overlap_mm3=skin_collision,
+                minimum_roof_over_screw_clearance_mm=min(cover),existing_screw_tip_z_mm=SCREW_TIP_Z,
+                screw_clearance_top_z_mm=SCREW_CLEARANCE_TOP,rear_mount_positions_preserved=True,
+                core_overlap_mm3=core_collision,skin_overlap_mm3=skin_collision,
                 native_support_guard_exclusion=support_guard,
                 skin_core_interference_mm3=skin_core_collision,project_plates=records,
                 limitations=['Skin closing gap and clamping behaviour require the physical coupon.',

@@ -13,7 +13,7 @@
       "plate_count": 3,
       "native_validation": "All-Development-Tests-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 4.347,
-      "native_sha256": "acfe7f30262e71d5c024507dbcac4c357953e7035e33867b69b6dcb624f7dbed"
+      "native_sha256": "d4149952c550829b064288aa81a6a6048084b03184a6b9c6132fb3ac9d17a9d5"
     },
     {
       "project": "M-Veneer-Seam-Coupon-A1-Sliced.3mf",
@@ -21,7 +21,7 @@
       "plate_count": 4,
       "native_validation": "M-Veneer-Seam-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 83.964,
-      "native_sha256": "603376f338b51099d40f5a61be2be8e4f79ca48d3f25eac88e75c9ee820a6d7a"
+      "native_sha256": "e1dc245e60b0f15c14b19d64764c879784080cc845ee345cfa6856b9de7db378"
     },
     {
       "project": "M-Veneer-Glue-Coupon-A1-Sliced.3mf",
@@ -29,7 +29,7 @@
       "plate_count": 3,
       "native_validation": "M-Veneer-Glue-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 34.964,
-      "native_sha256": "c589ff0b88bbde3a1aa003f414cff9b1be3f314ffc5dd8a9c038bd5402e0859d"
+      "native_sha256": "45ca2ca1056ea3fb9bc26abbd15c879a16846b7bdb2bbdd1ce89747ac3cc6d79"
     },
     {
       "project": "Frame-Cosmetic-Comparison-A1-Sliced.3mf",
@@ -44,8 +44,8 @@
       "editable_source": "M-Core-and-Veneer-A1.3mf",
       "plate_count": 12,
       "native_validation": "M-Core-and-Veneer-A1-native-validation.json",
-      "minimum_bead_edge_clearance_mm": 2.126961604825375,
-      "native_sha256": "8db7c3555cbb30ba775c5714bda86af6cb0559fbdcce7054a9f5e1bd1848380a"
+      "minimum_bead_edge_clearance_mm": 1.9658387309060572,
+      "native_sha256": "d4c50a7eae36c9f9cfcf894fd3db30dfcda7c9644c439cd5522f30790c166dbc"
     },
     {
       "project": "Frame-Cosmetic-Candidate-A1-Sliced.3mf",
@@ -65,8 +65,8 @@
     }
   ],
   "changes": {
-    "M": "Six flat-printed cores with support-free planar keys and six band-free hammered veneers. Veneer seams are independent of core seams. Original rear mounting coordinates and maximum face height retained.",
-    "veneer": "1.35\u20131.90 mm nominal thickness before hidden pockets; .20 mm glue space; three seating pads, one round locator and one axially relieved locator per face panel.",
+    "M": "Six constant-thickness 8.4 mm cores with planar front and back faces, support-free keys, and local seating/registration features. Six flat-backed band-free veneers contain the entire convex profile and hammer texture. Original mounting coordinates and finished front profile retained.",
+    "veneer": "1.90-4.10 mm nominal thickness before hidden pockets; flat back at Z8.6, .20 mm planar glue space; three seating pads, one round locator and one axially relieved locator per face panel.",
     "anchors": "Solid 1.6 mm sacrificial fins at no more than 12 mm spacing, repeated 1.2 mm wide bonded rear tabs, diagonal cross ties, and a directly grounded starter shoe under the lowest edge. Contacts enter .40 mm recessed trim areas. Trees are additional overhang support.",
     "finish": "Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.",
     "frame": "20 sections / 32 existing seam centerlines. Tested 18 mm lap envelope; three hidden seating stops, .20 mm adhesive relief, internal reservoirs, .80 mm secondary-pocket relief and hidden tongue-tip lead-in.",
@@ -86,6 +86,19 @@
   ],
   "combined_test_plate_map": "All-Development-Tests-A1-plates.png",
   "combined_test_guide": "All-Development-Tests-A1.json",
+  "flat_core_revision": {
+    "core_body_thickness_mm": 8.4,
+    "core_crown_mm": 0,
+    "veneer_flat_back_z_mm": 8.6,
+    "all_convex_shaping_in_veneer": true,
+    "nominal_veneer_thickness_mm": [
+      1.9,
+      4.1
+    ],
+    "finished_front_and_mount_positions_preserved": true,
+    "mounting": "Existing screw tips pass through the flat core into shallow hidden clearance pockets in the veneer.",
+    "replace": "Earlier crowned-core M test parts are superseded. Use the corrected cores and veneers together."
+  },
   "glue_coupon_correction": {
     "reason": "The previous crop opened one socket and disconnected a chunk of the smaller core half.",
     "change": "Extended the sample 15 mm below the old crop, retaining continuous material around both sockets; regenerated matching seating features, veneer and caul.",
@@ -114,6 +127,7 @@
   "seam_routing": "Frame seam centerlines are retained in this controlled comparison; no artwork or blue-edge feature is rerouted. Band-free M veneer seams follow the original five face divisions, with the band seats removed.",
   "independent_geometry_check": "Independent-geometry-checks.json",
   "previews": [
+    "M-flat-core-section.png",
     "All-Development-Tests-A1-plates.png",
     "M-band-free-layout.png",
     "M-veneer-carrier.png",

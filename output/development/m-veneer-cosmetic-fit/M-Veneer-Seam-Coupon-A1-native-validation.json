@@ -222,5 +222,43 @@
       ]
     }
   ],
-  "physical_fit_finish_and_support_anchor_test_pending": true
+  "physical_fit_finish_and_support_anchor_test_pending": true,
+  "coupon_connected_components": {
+    "editable_source": [
+      {
+        "name": "Flat core coupon C4",
+        "connected_components": 1
+      },
+      {
+        "name": "Veneer coupon 1 - fused carrier",
+        "connected_components": 1
+      },
+      {
+        "name": "Veneer coupon 2 - fused carrier",
+        "connected_components": 1
+      },
+      {
+        "name": "Smooth crown caul - soft liner and release film",
+        "connected_components": 1
+      }
+    ],
+    "native_export": [
+      {
+        "name": "Flat core coupon C4",
+        "connected_components": 1
+      },
+      {
+        "name": "Veneer coupon 1 - fused carrier",
+        "connected_components": 1
+      },
+      {
+        "name": "Veneer coupon 2 - fused carrier",
+        "connected_components": 1
+      },
+      {
+        "name": "Smooth crown caul - soft liner and release film",
+        "connected_components": 1
+      }
+    ]
+  }
 }

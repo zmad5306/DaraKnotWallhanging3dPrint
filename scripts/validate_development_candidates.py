@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 from scipy.spatial import cKDTree
 
-from development_3mf import ROOT, OUT, source, save_json, sha, tag, P, transform, props, read_object
+from development_3mf import ROOT, OUT, source, save_json, sha, tag, P, transform, props, read_object, solid
 from validate_print_project import scan_gcode, TOKEN
 
 
@@ -31,6 +31,20 @@ def project_geometry(path):
                 if p['subtype']=='normal_part':points.append(p['mesh'].vertices@t[:3,:3].T+t[:3,3])
             result[st['name']]=np.vstack(points)
     return result
+
+
+def coupon_connectivity(path):
+    """A printable coupon must not conceal loose chunks in one object."""
+    with zipfile.ZipFile(path) as z:files={n:z.read(n) for n in z.namelist()}
+    rows=[]
+    for obj in ET.fromstring(files['Metadata/model_settings.config']).findall('object'):
+        parts,settings=read_object(files,obj.get('id'))
+        for part in parts:
+            if part['subtype']!='normal_part':continue
+            count=len(solid(part['mesh']).decompose())
+            assert count==1,(path.name,settings['name'],'Disconnected printed chunks',count)
+            rows.append(dict(name=settings['name'],connected_components=count))
+    return rows
 
 
 def angle_evidence(text,rotation=None):
@@ -93,6 +107,9 @@ def coupon_material_angles(text):
 def validate(name, native):
     staged=OUT/name;export=native/'sliced.3mf'
     result=json.loads((native/'result.json').read_text());assert result['return_code']==0,result
+    connectivity=None
+    if name in ['M-Veneer-Glue-Coupon-A1.3mf','M-Veneer-Seam-Coupon-A1.3mf','Frame-Cosmetic-Comparison-A1.3mf']:
+        connectivity=dict(editable_source=coupon_connectivity(staged),native_export=coupon_connectivity(export))
     before=project_geometry(staged);after=project_geometry(export)
     assert before.keys()==after.keys(),(before.keys(),after.keys())
     geom=[]
@@ -129,6 +146,7 @@ def validate(name, native):
     report=dict(source_release_sha256=sha(ROOT/'Dara.3mf'),staged_sha256=sha(staged),native_project_sha256=sha(target),
                 native_return_code=0,plate_count=len(gcodes),native_roundtrip_geometry=geom,plates=rows,
                 physical_fit_finish_and_support_anchor_test_pending=True)
+    if connectivity is not None:report['coupon_connected_components']=connectivity
     save_json(OUT/(staged.stem+'-native-validation.json'),report)
     print(json.dumps(dict(file=str(target),plates=len(rows),minimum_bed_edge_clearance_mm=min(r['conservative_bed_edge_clearance_mm'] for r in rows),max_native_error_mm=max(g['max_native_vertex_or_pose_error_mm'] for g in geom)),indent=2))
 

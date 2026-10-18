@@ -560,5 +560,83 @@
       ]
     }
   ],
-  "physical_fit_finish_and_support_anchor_test_pending": true
+  "physical_fit_finish_and_support_anchor_test_pending": true,
+  "coupon_connected_components": {
+    "editable_source": [
+      {
+        "name": "A reference tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "A reference socket",
+        "connected_components": 1
+      },
+      {
+        "name": "B refined 0.075 tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "B refined 0.075 socket",
+        "connected_components": 1
+      },
+      {
+        "name": "C refined 0.05 tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "C refined 0.05 socket",
+        "connected_components": 1
+      },
+      {
+        "name": "D refined 0.10 tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "D refined 0.10 socket",
+        "connected_components": 1
+      },
+      {
+        "name": "Show-face glue jig - use release film",
+        "connected_components": 1
+      }
+    ],
+    "native_export": [
+      {
+        "name": "D refined 0.10 tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "D refined 0.10 socket",
+        "connected_components": 1
+      },
+      {
+        "name": "B refined 0.075 socket",
+        "connected_components": 1
+      },
+      {
+        "name": "C refined 0.05 tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "B refined 0.075 tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "C refined 0.05 socket",
+        "connected_components": 1
+      },
+      {
+        "name": "A reference tongue",
+        "connected_components": 1
+      },
+      {
+        "name": "A reference socket",
+        "connected_components": 1
+      },
+      {
+        "name": "Show-face glue jig - use release film",
+        "connected_components": 1
+      }
+    ]
+  }
 }

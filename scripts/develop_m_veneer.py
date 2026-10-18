@@ -35,6 +35,8 @@ CORE_BASE = 8.4
 GLUE = .2
 SHOW_GAP = .075
 GRID = .5
+GLUE_SAMPLE_WINDOW = (-290, 25, -212, 94)
+SEAM_SAMPLE_WINDOW = (-290, -90, -220, -40)
 SKIN_JOINTS = [
     [2, 3, [32.336138117987566, 136.58266699147163], 57.06125907870988, 70, []],
     [2, 1, [-32.336138117987566, 136.58266699147163], 122.93874092129012, 70, []],
@@ -232,21 +234,31 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     for i,c in enumerate(cores):
         # Remove full-size seating bosses; put matched coupon bosses back below.
         q=c^prism(sample,-.01,14)^whole
-        if q.volume()>1:samples.append([i,q])
+        if q.volume()>1:
+            assert len(q.decompose())==1, (filename, i+1, 'Crop disconnects core material')
+            samples.append([i,q])
+    # Preserve holes when testing ownership. A pad must be supported over its
+    # entire footprint, not merely have its centre inside an outer contour.
+    seat_regions=[]
+    for _,q in samples:
+        section_region=Polygon()
+        for ring in q.slice(10.59).to_polygons():
+            section_region=section_region.symmetric_difference(Polygon(ring))
+        seat_regions.append(section_region.buffer(-2.6))
     skin_objects=[];seats=[]
     for index,region in enumerate(panels):
         v,_=height_mesh(region,skin_bottom,roof);skin=solid(v)
         points=np.array([(x,y) for x in np.arange(region.bounds[0]+5,region.bounds[2]-4,3)
                          for y in np.arange(region.bounds[1]+5,region.bounds[3]-4,3)])
         good=shapely.contains(region.buffer(-4),shapely.points(points))&(shapely.distance(shapely.points(points),outline.boundary)>20)
+        good &= shapely.contains(union_all(seat_regions),shapely.points(points))
         points=points[good];assert len(points)>=3,(filename,index,len(points))
         p0=points[0];p1=points[np.argmax(np.linalg.norm(points-p0,axis=1))];d=p1-p0;dd=points-p0
         p2=points[np.argmax(np.abs(d[0]*dd[:,1]-d[1]*dd[:,0]))]
         aa=math.degrees(math.atan2(d[1],d[0]));row=[]
         for k,p in enumerate([p0,p1,p2]):
             # Locate the core using real material beneath the contact, not a box.
-            owner=next(item for item in samples if item[1].slice(10.59).area()>0 and Point(*p).within(
-                union_all([Polygon(r) for r in item[1].slice(10.59).to_polygons() if Polygon(r).is_valid])))
+            owner=next(item for item,safe in zip(samples,seat_regions) if safe.contains(Point(*p)))
             owner[1]+=mf.Manifold.cylinder(.25,2.5,circular_segments=32).translate([*p,10.55])
             if k<2:
                 owner[1]+=mf.Manifold.cylinder(.45,1.2,circular_segments=32).translate([*p,10.75])
@@ -261,6 +273,7 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
         seats.append(dict(panel=index+1,pads_xy_mm=row,carrier=evidence))
     objs=[]
     for n,(i,c) in enumerate(samples):
+        assert len(c.decompose())==1, (filename, i+1, 'Disconnected seating feature')
         m=mesh(c);xy=(128,110) if len(samples)==1 else (75+n*103,120)
         objs.append(dict(name=f'Flat core coupon C{i+1}',parts=[dict(mesh=m)],transform=centered(m,xy=xy),settings=core_settings))
     plates=[objs]+[[obj] for obj in skin_objects]
@@ -270,7 +283,26 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     flip=np.diag([1,-1,-1])
     plates.append([dict(name='Smooth crown caul - soft liner and release film',parts=[dict(mesh=caul)],transform=centered(caul,flip),settings=dict(core_settings,extruder='1',brim_width='0',enable_support='0'))])
     write_project(OUT/filename,plates,'DEVELOPMENT - '+filename.removesuffix('.3mf'))
-    save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(glue_gap_mm=.2,caul_release_clearance_mm=.15,caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,panels=seats,core_parts=[i+1 for i,_ in samples],physical_confirmation_pending=True))
+    save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(glue_gap_mm=.2,caul_release_clearance_mm=.15,caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,panels=seats,core_parts=[i+1 for i,_ in samples],sample_bounds_mm=list(sample.bounds),core_connected_components=[len(c.decompose()) for _,c in samples],whole_pad_footprints_supported=True,physical_confirmation_pending=True))
+
+
+def refresh_glue_coupon():
+    """Rebuild all matched glue-test parts from the cached full-size cores."""
+    cad=CAD.read_text();outline=artwork(cad,'letter_outline');roof=texture(outline)
+    core_top=lambda xy:CORE_BASE+crown(outline,xy)
+    skin_bottom=lambda xy:core_top(xy)+GLUE
+    sample=box(*GLUE_SAMPLE_WINDOW).intersection(outline)
+    local_whole=solid(height_mesh(sample,0,core_top)[0])
+    cores=[]
+    for i in range(6):
+        a=np.load(WORK/f'C{i+1}.npz')
+        cores.append(solid(trimesh.Trimesh(a['vertices'],a['faces'],process=False)))
+    files=source();cfg=ET.fromstring(files['Metadata/model_settings.config'])
+    base={k:v for k,v in props(cfg.find("object[@id='192']")).items() if k not in (None,'name')}
+    core_settings=dict(base,enable_support='0',brim_width='1',bottom_shell_layers='5',top_shell_layers='5')
+    skin_settings=dict(base,enable_support='1',brim_width='3',sparse_infill_density='100%',support_critical_regions_only='0',top_shell_layers='5')
+    sample_project('M-Veneer-Glue-Coupon-A1.3mf',sample,[sample],cores,local_whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
+    print('Glue coupon rebuilt with continuous material below both sockets',flush=True)
 
 
 def refresh_cauls():
@@ -278,7 +310,7 @@ def refresh_cauls():
     from build_jointed_bambu_project import model,xml
     cad=CAD.read_text();outline=artwork(cad,'letter_outline')
     title='Smooth crown caul - soft liner and release film'
-    for name,window in [('M-Veneer-Glue-Coupon-A1',(-290,40,-212,94)),('M-Veneer-Seam-Coupon-A1',(-290,-90,-220,-40))]:
+    for name,window in [('M-Veneer-Glue-Coupon-A1',GLUE_SAMPLE_WINDOW),('M-Veneer-Seam-Coupon-A1',SEAM_SAMPLE_WINDOW)]:
         path=OUT/(name+'.3mf')
         with zipfile.ZipFile(path) as z:files={n:z.read(n) for n in z.namelist()}
         cfg=ET.fromstring(files['Metadata/model_settings.config']);root=ET.fromstring(files['3D/3dmodel.model'])
@@ -461,9 +493,9 @@ def build():
     records=write_project(OUT/'M-Core-and-Veneer-A1.3mf',plates,'DEVELOPMENT - flat M cores and common-orientation band-free veneers',settings_update={'bed_exclude_area':support_guard})
     # Independent tests: straighten a continuous skin over a core joint, then
     # close an exposed skin seam over an uninterrupted core. Both use real pads.
-    sample=box(-290,40,-212,94).intersection(outline)
+    sample=box(*GLUE_SAMPLE_WINDOW).intersection(outline)
     sample_project('M-Veneer-Glue-Coupon-A1.3mf',sample,[sample],cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
-    sample=box(-290,-90,-220,-40).intersection(outline)
+    sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
     panels=[sample.intersection(box(-400,-65+SHOW_GAP/2,0,200)),sample.intersection(box(-400,-200,0,-65-SHOW_GAP/2))]
     sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,panels,cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
     report=dict(status='Geometry verified; native slicing and physical confirmation tracked separately',source_sha256=original_hash,
@@ -530,5 +562,5 @@ def orient():
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls']);args=ap.parse_args()
-    {'build':build,'orient':orient,'cauls':refresh_cauls}[args.action]()
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls','glue-coupon']);args=ap.parse_args()
+    {'build':build,'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon}[args.action]()

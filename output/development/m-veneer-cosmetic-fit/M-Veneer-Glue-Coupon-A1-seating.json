@@ -1,13 +1,15 @@
 {
   "glue_gap_mm": 0.2,
   "caul_release_clearance_mm": 0.15,
+  "caul_surface": "Smooth broad crown; no hammer dimples",
+  "caul_liner_required": true,
   "panels": [
     {
       "panel": 1,
       "pads_xy_mm": [
         [
-          -273.0,
-          45.0
+          -276.0,
+          30.0
         ],
         [
           -231.0,
@@ -15,7 +17,7 @@
         ],
         [
           -234.0,
-          45.0
+          30.0
         ]
       ],
       "carrier": {
@@ -29,23 +31,23 @@
         "anchor_assembly_xyz": [
           [
             -278.0,
-            52.0,
-            11.035287782948094
+            37.0,
+            11.149846219305848
           ],
           [
             -218.0,
-            88.0,
-            10.708190621567665
+            85.0,
+            10.642745154757398
           ],
           [
             -266.0,
-            88.0,
-            10.739029573821739
+            85.0,
+            10.88678549767834
           ],
           [
             -230.0,
-            52.0,
-            11.148795026767209
+            37.0,
+            11.142625791328108
           ]
         ],
         "body_connected_to_bed": true,
@@ -57,9 +59,16 @@
     1,
     4
   ],
-  "physical_confirmation_pending": true,
-  "caul_surface": "Smooth broad crown; no hammer dimples",
-  "caul_liner_required": true,
-  "caul_surface_error_mm": 0.0,
-  "other_object_meshes_byte_identical": true
+  "sample_bounds_mm": [
+    -290.0,
+    25.0,
+    -212.0,
+    94.0
+  ],
+  "core_connected_components": [
+    1,
+    1
+  ],
+  "whole_pad_footprints_supported": true,
+  "physical_confirmation_pending": true
 }

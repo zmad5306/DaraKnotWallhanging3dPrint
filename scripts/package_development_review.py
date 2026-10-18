@@ -43,6 +43,10 @@ def main():
         dict(file='M-Veneer-Seam-Coupon-A1-Sliced.3mf',plates=['1: flat core','2: upper veneer with fused carrier','3: lower veneer with fused carrier','4: smooth white crown caul (clamp fixture)'],purpose='Test exposed seam closure and reflection without bands; assess support cleanup and clamping.'),
         dict(file='M-Veneer-Glue-Coupon-A1-Sliced.3mf',plates=['1: two keyed core halves','2: continuous veneer with fused carrier','3: smooth white crown caul (clamp fixture)'],purpose='Test structural core fit and whether the veneer seats flat over its joint.'),
         dict(file='Frame-Cosmetic-Comparison-A1-Sliced.3mf',plates=['1: existing .075 mm lap reference','2: refined .075 mm','3: refined .05 mm','4: refined .10 mm','5: show-face jig'],purpose='Compare face step, dry closure, surface direction and cured adhesive seam before choosing a production tolerance.')],
+      glue_coupon_correction=dict(reason='The previous crop opened one socket and disconnected a chunk of the smaller core half.',
+        change='Extended the sample 15 mm below the old crop, retaining continuous material around both sockets; regenerated matching seating features, veneer and caul.',
+        replace='Use all three plates from the updated glue-coupon project together. Earlier glue-coupon parts are superseded.',
+        verification='All 17 printed test parts have one connected component in both editable and native exported meshes.'),
       assembly_instructions=[
         'Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.',
         'Use filament slots 1 white, 2 wood tan, 3 copper silk, 4 blue. Full M parts and their fused carriers use copper; sample cauls/jig use white.',
@@ -57,7 +61,7 @@ def main():
       original_solid_M_alternative='The six-plate M-Solid-Common-Orientation-A1-Sliced.3mf retains original solid meshes and support paint. All pieces align with the saved M5 rotation; it does not change the original supported structural construction.',
       seam_routing='Frame seam centerlines are retained in this controlled comparison; no artwork or blue-edge feature is rerouted. Band-free M veneer seams follow the original five face divisions, with the band seats removed.',
       independent_geometry_check='Independent-geometry-checks.json',
-      previews=['M-band-free-layout.png','M-veneer-carrier.png'],
+      previews=['M-band-free-layout.png','M-veneer-carrier.png','M-glue-coupon-correction.png'],
       physical_confirmation_pending=True,
       source_references=['https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Support/TreeSupport.cpp'])
     save_json(OUT/'manifest.json',report)

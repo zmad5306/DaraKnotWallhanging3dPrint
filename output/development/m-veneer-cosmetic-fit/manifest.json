@@ -21,7 +21,7 @@
       "plate_count": 3,
       "native_validation": "M-Veneer-Glue-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 34.964,
-      "native_sha256": "fad45761dc181f3d87513fec653b6977b9916a60c5cd7f28517eededee671013"
+      "native_sha256": "82f290c74b68078fc065adcee86d8d60dd3aa05d32ec8d2746b97340fdca87e0"
     },
     {
       "project": "Frame-Cosmetic-Comparison-A1-Sliced.3mf",
@@ -97,6 +97,12 @@
       "purpose": "Compare face step, dry closure, surface direction and cured adhesive seam before choosing a production tolerance."
     }
   ],
+  "glue_coupon_correction": {
+    "reason": "The previous crop opened one socket and disconnected a chunk of the smaller core half.",
+    "change": "Extended the sample 15 mm below the old crop, retaining continuous material around both sockets; regenerated matching seating features, veneer and caul.",
+    "replace": "Use all three plates from the updated glue-coupon project together. Earlier glue-coupon parts are superseded.",
+    "verification": "All 17 printed test parts have one connected component in both editable and native exported meshes."
+  },
   "assembly_instructions": [
     "Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.",
     "Use filament slots 1 white, 2 wood tan, 3 copper silk, 4 blue. Full M parts and their fused carriers use copper; sample cauls/jig use white.",
@@ -113,7 +119,8 @@
   "independent_geometry_check": "Independent-geometry-checks.json",
   "previews": [
     "M-band-free-layout.png",
-    "M-veneer-carrier.png"
+    "M-veneer-carrier.png",
+    "M-glue-coupon-correction.png"
   ],
   "physical_confirmation_pending": true,
   "source_references": [

@@ -1,6 +1,6 @@
 # Dara knot completion plan and A2L layout
 
-Updated October 17, 2026. Working branch: `codex/m-veneer-cosmetic-fit`.
+Updated October 18, 2026. Working branch: `codex/m-veneer-cosmetic-fit`.
 
 The goal is a clean wall artwork with the printed white, wood, blue and copper finishes exposed. Visible edges should meet without an intentional gap. Glue clearance belongs underneath. Hand fitting, support removal and sanding are acceptable when they improve the finished piece.
 
@@ -13,10 +13,10 @@ Use the [combined test project](../output/development/m-veneer-cosmetic-fit/All-
 | Plate | Contents | What it establishes |
 | --- | --- | --- |
 | 1 | Two white M cauls and the ribbon assembly jig | Usable support and reference surfaces during cleanup and bonding. The fixtures already printing remain valid. |
-| 2 | Three M core coupons and three veneers with bonded fin carriers | Support stability in silk PLA, cleanup access, flat seating, correction of cupping, veneer seam alignment and reflection. |
+| 2 | Three M core coupons and three veneers with bonded fin carriers | Support stability in silk PLA, cleanup access, flat seating, correction of cupping, zero-gap veneer seam alignment and reflection. |
 | 3 | One refined ribbon tongue and socket | Whether a zero nominal cosmetic gap closes flush in the actual materials, then stays aligned through bonding. |
 
-Plates 1 and 2 retain their exact saved G-code from before the ribbon revision. The [preservation record](../output/development/m-veneer-cosmetic-fit/Zero-gap-plate-preservation.json) records the unchanged assets. The former A–D ribbon comparison sets are superseded.
+Plates 1 and 3 retain their exact saved G-code from before the M seam revision; only plate 2 changes. The [preservation record](../output/development/m-veneer-cosmetic-fit/Zero-gap-plate-preservation.json) records the unchanged assets. The former A–D ribbon comparison sets are superseded.
 
 Record these results before committing to full prints:
 
@@ -41,7 +41,7 @@ Retain the current construction:
 - The same complete saved M5 orientation for every veneer: a 55-degree lean **and** matching in-plane direction. Matching the lean alone does not align reflections.
 - Bonded sacrificial fins, repeated rear tabs, diagonal ties, connected bed frame and grounded starter shoe. Native trees supplement those restraints.
 
-**The current M veneer seam still has a 0.075 mm nominal gap.** Passing that coupon confirms the support, seating and finish approach; it does not approve an intentional visible gap. Before releasing the final veneers, change their cosmetic closing edges to zero nominal gap, preserve hidden glue/locator clearance, and check one matching seam sample if the geometry changes. The ribbon's closure code cannot simply be applied to the curved M without adapting it to the M seam geometry.
+**The current M seam test has zero nominal cosmetic gap**, with the 0.20 mm veneer-to-core glue space retained underneath. Its actual front edges match with no geometric overlap; see the [M seam check](../output/development/m-veneer-cosmetic-fit/M-zero-gap-seam-validation.json). The complete six-veneer candidate still has the earlier 0.075 mm cosmetic gap. After this sample passes, propagate zero cosmetic closure into those full veneers while preserving hidden glue/locator clearance. Recheck each seam against its curved geometry rather than applying the ribbon closure code unchanged.
 
 For the full M:
 
@@ -165,7 +165,7 @@ Keep the current six-part M core/veneer arrangement initially. The fourteen-join
 - [ ] Publish a clearly named, self-contained Bambu project, updated part/plate map, assembly order, glue/cleanup notes, checklist and print estimates. Separate A1 and A2L releases so their section numbers and hardware cannot be mixed.
 - [ ] Commit the generating scripts, source geometry, validation reports and final print assets on this branch; push Git LFS assets and verify the remote commit.
 
-Keep [Dara.3mf](../Dara.3mf) as the original release while developing the replacements. The validated test baseline for this plan is commit `834ef21`; local rearrangement in Bambu Studio does not replace that baseline. On another computer, fetch/pull `codex/m-veneer-cosmetic-fit`, run `git lfs pull`, and open the relevant 3MF **as a project**.
+Keep [Dara.3mf](../Dara.3mf) as the original release while developing the replacements. Use the test projects and validation hashes in the current [development manifest](../output/development/m-veneer-cosmetic-fit/manifest.json); local rearrangement in Bambu Studio does not replace that validated baseline. On another computer, fetch/pull `codex/m-veneer-cosmetic-fit`, run `git lfs pull`, and open the relevant 3MF **as a project**.
 
 ## Retained design sources
 

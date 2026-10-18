@@ -10,7 +10,7 @@
     },
     {
       "file": "M-Veneer-Seam-Coupon-A1.3mf",
-      "sha256": "7da9d1c36d3cfa825918be063e22119c7ae34274c05299275e3d08216bdd5ea2"
+      "sha256": "343cec2b4d7e8b100a9f2623b9574447d57b8d4a10942a32df6ede72b03c77e7"
     },
     {
       "file": "Frame-Cosmetic-Comparison-A1.3mf",
@@ -360,7 +360,7 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10501": "2c51f6981e08e567f278b20074bfde2f552748b370c9146c12bd510711faa0df"
+        "10501": "23181201b25a848fd3e2c4cd121e0da21370a5808ec68aa98072485eb708dd99"
       },
       "part_id_mapping": {
         "1001": "10501"
@@ -461,12 +461,12 @@
       "body_bounds_mm": [
         [
           161.55195901867717,
-          122.51875,
+          122.5,
           0.0
         ],
         [
           206.44804098132283,
-          147.48125,
+          147.5,
           62.00546410933961
         ]
       ],
@@ -476,7 +476,7 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10701": "b392a6041ed7fcd98d7ee2fb7979cd4fc75cb8b1a077f640ce61eab054170762"
+        "10701": "067af6858ba79f5fc3bc3e3ffa4a2f2752faf4f31eb33fe1a2dded9f475e74e6"
       },
       "part_id_mapping": {
         "1101": "10701"
@@ -495,7 +495,7 @@
           1.0,
           0.0,
           0.0,
-          57.04078759732826
+          57.04078759584591
         ],
         [
           0.0,
@@ -518,23 +518,23 @@
       ],
       "body_bounds_mm": [
         [
-          161.97036216142757,
-          202.51875,
+          161.9676936376469,
+          202.5,
           0.0
         ],
         [
-          206.02963783857243,
-          227.48125,
+          206.0323063623531,
+          227.5,
           62.09104902460493
         ]
       ],
       "xy_translation_from_source_mm": [
-        57.04078759732826,
+        57.04078759584591,
         87.0
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10801": "a72959726cb4366421eb70c798de9acddf92a24597caad2ba2403bbc9124cefa"
+        "10801": "e4b40b28bfec580ee7a06e0e3c540ac94d0434dd11cd60e8ec4e4a2d18c2daa4"
       },
       "part_id_mapping": {
         "1201": "10801"
@@ -700,6 +700,12 @@
     "additional_adhesive_recess_mm": 0.2,
     "nominal_hidden_glue_clearance_mm": 0.4,
     "detail": "Refined seating pads, secondary-pocket relief, hidden glue reservoir and zero-gap show edge above Z8"
+  },
+  "m_seam_test": {
+    "visible_edge_gap_mm": 0,
+    "veneer_to_core_glue_gap_mm": 0.2,
+    "geometry_validation": "M-zero-gap-seam-validation.json",
+    "full_size_veneers": "Remain at .075 mm pending this sample"
   },
   "instructions": [
     "Keep saved orientations, scale and filament assignments; open as a project.",

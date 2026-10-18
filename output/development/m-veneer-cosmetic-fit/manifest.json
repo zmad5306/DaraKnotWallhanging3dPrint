@@ -13,7 +13,7 @@
       "plate_count": 3,
       "native_validation": "All-Development-Tests-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 4.347,
-      "native_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a"
+      "native_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734"
     },
     {
       "project": "M-Veneer-Seam-Coupon-A1-Sliced.3mf",
@@ -21,7 +21,7 @@
       "plate_count": 4,
       "native_validation": "M-Veneer-Seam-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 83.964,
-      "native_sha256": "447e11c6a2082b9974ce6b28e930a54b76b42f2d357d7286760f838826e8d60a"
+      "native_sha256": "3bdf764f9b36f02d5976fd367fbf81629df7ed6032e66bfd53d6d733c641d539"
     },
     {
       "project": "M-Veneer-Glue-Coupon-A1-Sliced.3mf",
@@ -81,7 +81,7 @@
         "2: all copper cores and fin-supported veneers (6 parts)",
         "3: one refined zero-gap ribbon pair (2 parts)"
       ],
-      "purpose": "All 11 current test parts in one project, three plates. Plates 1 and 2 retain their exact prior toolpaths; only ribbon plate 3 changes."
+      "purpose": "All 11 current test parts in one project, three plates. Plates 1 and 3 retain their exact prior toolpaths; only copper M test plate 2 changes."
     }
   ],
   "combined_test_plate_map": "All-Development-Tests-A1-plates.png",
@@ -102,6 +102,13 @@
     "retained": "18 mm lap, seating stops, secondary-pocket relief, hidden squeeze-out reservoir, 8% gyroid and matched surface direction",
     "supersedes": "Previous A-D visible-gap comparisons. Full-size frame candidate retains its earlier .075 mm seam pending this test.",
     "unchanged_plates_proof": "Zero-gap-plate-preservation.json"
+  },
+  "m_seam_zero_gap_revision": {
+    "visible_edge_gap_mm": 0,
+    "veneer_to_core_glue_gap_mm": 0.2,
+    "geometry_validation": "M-zero-gap-seam-validation.json",
+    "change": "Both seam veneers and their matched core seating are regenerated; smooth caul and plate 1 remain unchanged.",
+    "full_size_veneers": "Retain their earlier .075 mm cosmetic gap pending this sample result."
   },
   "flat_core_revision": {
     "core_body_thickness_mm": 8.4,

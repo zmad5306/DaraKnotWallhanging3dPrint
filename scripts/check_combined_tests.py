@@ -107,6 +107,10 @@ def main():
         carrier['bond_probes_print_xyz_mm']=(np.array(carrier['bond_probes_print_xyz_mm'])+delta).tolist()
         bonds.append(dict(name=row['name'],**check_fin_bonds(copper,carrier)))
     report['combined_bond_checks']=bonds
+    m_seam=json.loads((OUT/'M-zero-gap-seam-validation.json').read_text())
+    assert m_seam['nominal_cosmetic_gap_mm']==0 and m_seam['maximum_front_edge_mismatch_mm']<1e-6
+    assert m_seam['veneer_interference_mm3']<1e-5 and m_seam['core_glue_gap_mm']==.2
+    report['m_zero_gap_seam']=m_seam
     native_files=read(native/'sliced.3mf');ncfg=ET.fromstring(native_files['Metadata/model_settings.config'])
     ids={}
     for plate in ncfg.findall('plate'):
@@ -122,6 +126,7 @@ def main():
     report['prime_tower_bead_bounds_mm']=tower.tolist()
     preservation=json.loads((OUT/'Zero-gap-plate-preservation.json').read_text())
     assert preservation['project_sha256']==sha(native/'sliced.3mf')
+    assert {r['plate'] for r in preservation['plates']}=={1,3}
     for row in preservation['plates']:
         assert row['gcode_byte_identical']
         assert sha(native/f"plate_{row['plate']}.gcode")==row['preserved_assets_sha256'][f"Metadata/plate_{row['plate']}.gcode"]

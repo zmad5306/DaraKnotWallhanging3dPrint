@@ -1,0 +1,11 @@
+{
+  "nominal_cosmetic_gap_mm": 0,
+  "seam_assembly_y_mm": -65,
+  "matching_front_edge_vertices": [
+    141,
+    141
+  ],
+  "maximum_front_edge_mismatch_mm": 0.0,
+  "veneer_interference_mm3": 0.0,
+  "core_glue_gap_mm": 0.2
+}

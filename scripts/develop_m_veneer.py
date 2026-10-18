@@ -39,6 +39,7 @@ POCKET_TOP = BOSS_TOP + .1
 SCREW_TIP_Z = 8.7
 SCREW_CLEARANCE_TOP = SCREW_TIP_Z + .4
 SHOW_GAP = .075
+SEAM_SAMPLE_GAP = 0.0  # Coupon closes visibly; full veneers await its result.
 GRID = .5
 GLUE_SAMPLE_WINDOW = (-290, 25, -212, 94)
 SEAM_SAMPLE_WINDOW = (-290, -90, -220, -40)
@@ -183,6 +184,31 @@ def carrier(m, region, outline, bottom, pose, exclusion):
     return fin_carrier(m, region, bottom, pose, exclusion, height_mesh)
 
 
+def seam_sample_panels(sample):
+    return [sample.intersection(box(-400,-65+SEAM_SAMPLE_GAP/2,0,200)),
+            sample.intersection(box(-400,-200,0,-65-SEAM_SAMPLE_GAP/2))]
+
+
+def check_sample_seam(meshes):
+    """Both actual veneer front edges must meet on Y=-65 with matching texture."""
+    edges=[]
+    for m in meshes:
+        v=m.vertices
+        edge=v[(abs(v[:,1]+65)<1e-7)&(v[:,2]>POCKET_TOP+.01)]
+        edge=np.unique(np.round(edge[:,[0,2]],7),axis=0)
+        assert len(edge)>20,('Missing front seam',len(edge))
+        edges.append(edge)
+    error=max(float(cKDTree(edges[0]).query(edges[1])[0].max()),
+              float(cKDTree(edges[1]).query(edges[0])[0].max()))
+    assert error<1e-6,('Veneer front edges do not match',error)
+    collision=(solid(meshes[0])^solid(meshes[1])).volume()
+    assert abs(collision)<1e-5,collision
+    return dict(nominal_cosmetic_gap_mm=0,seam_assembly_y_mm=-65,
+                matching_front_edge_vertices=[len(e) for e in edges],
+                maximum_front_edge_mismatch_mm=error,veneer_interference_mm3=collision,
+                core_glue_gap_mm=GLUE)
+
+
 def profile(cad, name):
     import ast, re
     body = cad.split('module '+name+'() {', 1)[1].split('\n}', 1)[0]
@@ -226,7 +252,7 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     for _,q in samples:
         section_region=top_section(q)
         seat_regions.append(section_region.buffer(-2.6))
-    skin_objects=[];seats=[]
+    skin_objects=[];seats=[];sample_skins=[]
     for index,region in enumerate(panels):
         v,_=height_mesh(region,skin_bottom,roof);skin=solid(v)-screw_clearance_tools()
         points=np.array([(x,y) for x in np.arange(region.bounds[0]+5,region.bounds[2]-4,3)
@@ -248,7 +274,7 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
                 skin-=prism(pocket,SEAT_Z-.1,POCKET_TOP)
             row.append(p.tolist())
         excluded=union_all([Point(*p).buffer(6) for p in row]).union(screw_exclusion())
-        v=mesh(skin);pose=centered(v,common_m_rotation(),z=2.4)
+        v=mesh(skin);sample_skins.append(v);pose=centered(v,common_m_rotation(),z=2.4)
         carried,evidence=carrier(v,region,outline,skin_bottom,pose,excluded)
         skin_objects.append(dict(name=f'Veneer coupon {index+1} - fused carrier',parts=[dict(mesh=carried)],transform=np.eye(4),settings=skin_settings,block_front=True))
         seats.append(dict(panel=index+1,pads_xy_mm=row,carrier=evidence))
@@ -265,6 +291,26 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     plates.append([dict(name='Smooth crown caul - soft liner and release film',parts=[dict(mesh=caul)],transform=centered(caul,flip),settings=dict(core_settings,extruder='1',brim_width='0',enable_support='0'))])
     write_project(OUT/filename,plates,'DEVELOPMENT - '+filename.removesuffix('.3mf'))
     save_json(OUT/(filename.removesuffix('.3mf')+'-seating.json'),dict(core_body_flat_top_mm=CORE_BASE,veneer_flat_back_mm=SEAT_Z,all_convex_profile_in_veneer=True,glue_gap_mm=GLUE,caul_release_clearance_mm=.15,caul_surface='Smooth broad crown; no hammer dimples',caul_liner_required=True,panels=seats,core_parts=[i+1 for i,_ in samples],sample_bounds_mm=list(sample.bounds),core_connected_components=[len(c.decompose()) for _,c in samples],whole_pad_footprints_supported=True,physical_confirmation_pending=True))
+    if len(sample_skins)==2:
+        save_json(OUT/'M-zero-gap-seam-validation.json',check_sample_seam(sample_skins))
+
+
+def refresh_seam_coupon():
+    """Rebuild only the matched M seam sample, keeping the smooth caul fixed."""
+    assert json.loads((OUT/'M-geometry-validation.json').read_text())['core_crown_mm']==0
+    outline=artwork(CAD.read_text(),'letter_outline')
+    sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
+    whole=solid(height_mesh(sample,0,core_top)[0]);cores=[]
+    for i in range(6):
+        a=np.load(WORK/f'C{i+1}.npz')
+        cores.append(solid(trimesh.Trimesh(a['vertices'],a['faces'],process=False)))
+    cfg=ET.fromstring(source()['Metadata/model_settings.config'])
+    base={k:v for k,v in props(cfg.find("object[@id='192']")).items() if k not in (None,'name')}
+    core_settings=dict(base,enable_support='0',brim_width='1',bottom_shell_layers='5',top_shell_layers='5')
+    skin_settings=dict(base,enable_support='1',brim_width='3',sparse_infill_density='100%',support_critical_regions_only='0',top_shell_layers='5')
+    sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,seam_sample_panels(sample),cores,whole,
+                   outline,core_top,skin_bottom,texture(outline),core_settings,skin_settings)
+    print('M seam sample rebuilt: zero cosmetic gap, .20 mm glue space beneath veneer',flush=True)
 
 
 def refresh_glue_coupon():
@@ -318,7 +364,7 @@ def refresh_fins():
     for i in range(6):
         a=np.load(WORK/f'C{i+1}.npz')
         cores.append(solid(trimesh.Trimesh(a['vertices'],a['faces'],process=False)))
-    panels=[sample.intersection(box(-400,-65+SHOW_GAP/2,0,200)),sample.intersection(box(-400,-200,0,-65-SHOW_GAP/2))]
+    panels=seam_sample_panels(sample)
     with zipfile.ZipFile(OUT/'M-Veneer-Seam-Coupon-A1.3mf') as z:sample_files={n:z.read(n) for n in z.namelist()}
     _,core_settings=read_object(sample_files,'1000')
     _,skin_settings=read_object(sample_files,'1100')
@@ -519,7 +565,7 @@ def build():
     sample=box(*GLUE_SAMPLE_WINDOW).intersection(outline)
     sample_project('M-Veneer-Glue-Coupon-A1.3mf',sample,[sample],cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
     sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
-    panels=[sample.intersection(box(-400,-65+SHOW_GAP/2,0,200)),sample.intersection(box(-400,-200,0,-65-SHOW_GAP/2))]
+    panels=seam_sample_panels(sample)
     sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,panels,cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
     report=dict(status='Geometry verified; native slicing and physical confirmation tracked separately',source_sha256=original_hash,
                 core_base_mm=CORE_BASE,core_crown_mm=0,core_main_top_z_mm=CORE_BASE,veneer_flat_back_z_mm=SEAT_Z,
@@ -588,5 +634,5 @@ def orient():
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls','glue-coupon','fins']);args=ap.parse_args()
-    {'build':build,'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'fins':refresh_fins}[args.action]()
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls','glue-coupon','seam-coupon','fins']);args=ap.parse_args()
+    {'build':build,'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'seam-coupon':refresh_seam_coupon,'fins':refresh_fins}[args.action]()

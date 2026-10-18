@@ -112,7 +112,7 @@ def main():
     weight=sum(w for _,w in estimates)
     header(c,'Dara knot / development samples','Sample production checklist',f'3 A1 plates | 11 parts | About {total//60}h {total%60:02d}m and {weight:.0f} g total')
     blank(c,L,684,'Name / initials:',267);blank(c,285,684,'Run / date:',R)
-    text(c,L,666,'Project: '+PROJECT+'-Sliced.3mf | Zero-gap ribbon',9)
+    text(c,L,666,'Project: '+PROJECT+'-Sliced.3mf | Zero-gap M + ribbon',9)
     text(c,L,649,'Filament slots: 1 white / 2 wood tan / 3 copper silk / 4 Azurite blue',9.5)
     check(c,L,631,'Opened as a project; saved scale, rotations and settings retained.',9)
     text(c,L,615,'Ready = cleaned and usable. Mark Redo when a replacement is needed.',9,color=GRAY)
@@ -120,7 +120,7 @@ def main():
     for i,(title,items) in enumerate(zip(['PLATE 1 - WHITE FIXTURES (UNCHANGED)','PLATE 2 - COPPER M TESTS (6 parts)','PLATE 3 - ZERO-GAP RIBBON TEST (2 parts)'],labels)):
         y=production_table(c,y,title,*estimates[i],items)
     text(c,L,y,'Plate 1 fixtures already printing remain valid. No fixture reprint is needed.',9,True)
-    text(c,L,y-18,'One ribbon pair replaces A-D: zero visible gap; glue clearance is underneath.',9)
+    text(c,L,y-18,'Both M and ribbon seam tests have zero nominal cosmetic gaps.',9)
     text(c,L,y-36,'M bodies and ribbon: 8% gyroid; veneers/carriers: 100%.',9)
     text(c,L,76,'Before lifting ribbon parts: mark tongue/socket on their backs.',9,True)
     blank(c,L,58,'Reprints / print issues:',R)
@@ -136,7 +136,7 @@ def main():
     test_panel(c,L,575,264,'GLUE TEST - CONTINUOUS VENEER',[
         'Core tops flat; joint closes fully.', 'Flat veneer back contacts all 3 stops.','Seats with light pressure; no rocking.'])
     test_panel(c,312,575,264,'SEAM TEST - TWO VENEERS',[
-        'Upper/lower veneers dry-fit on core.','Faces level; seam edges undamaged.','Reflection matches in grazing light.'])
+        'Upper/lower veneers dry-fit on core.','Zero-gap edges close; faces level.','Reflection matches in grazing light.'])
     text(c,L,408,'ADHESIVE / CURE RECORD (if bonded)',11,True)
     blank(c,L,390,'Product:',290);blank(c,308,390,'Mix / batch:',R)
     blank(c,L,372,'Applied:',207);blank(c,224,372,'Full cure due:',398);blank(c,415,372,'Checked:',R)

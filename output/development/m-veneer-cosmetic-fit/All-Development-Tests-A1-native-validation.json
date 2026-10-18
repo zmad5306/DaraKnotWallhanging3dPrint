@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "c277ad924adb39199f9e1e1d91bae1e5d2fb19f002206b1a0ec955f4b6272927",
-  "native_project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
+  "staged_sha256": "a7a2bd9de2e5d430729dee91f2090a1d13fd0f5b65b6c62f2ae67702ece5ff32",
+  "native_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -27,7 +27,7 @@
     },
     {
       "name": "M seam core C4",
-      "max_native_vertex_or_pose_error_mm": 1.5080648472608781e-05
+      "max_native_vertex_or_pose_error_mm": 1.5443865632901176e-05
     },
     {
       "name": "M glue veneer - fins and shoe",
@@ -35,11 +35,11 @@
     },
     {
       "name": "M seam upper veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 9.723296742624557e-06
+      "max_native_vertex_or_pose_error_mm": 9.99535289494533e-06
     },
     {
       "name": "M seam lower veneer - fins and shoe",
-      "max_native_vertex_or_pose_error_mm": 1.2824670717839114e-05
+      "max_native_vertex_or_pose_error_mm": 1.2771296231517901e-05
     },
     {
       "name": "Zero-gap refined tongue",
@@ -102,20 +102,20 @@
       ]
     },
     {
-      "extrusion_moves_checked": 412862,
+      "extrusion_moves_checked": 414057,
       "features": {
-        "Support": 183557,
-        "Brim": 1392,
-        "Outer wall": 37686,
-        "Inner wall": 55006,
-        "Gap infill": 9538,
-        "Bottom surface": 1637,
+        "Support": 184650,
+        "Brim": 1353,
+        "Outer wall": 37804,
+        "Inner wall": 55061,
+        "Gap infill": 9540,
+        "Bottom surface": 1638,
         "Support interface": 2,
-        "Internal solid infill": 75616,
-        "Sparse infill": 34177,
-        "Floating vertical shell": 11467,
+        "Internal solid infill": 75578,
+        "Sparse infill": 34175,
+        "Floating vertical shell": 11473,
         "Bridge": 1236,
-        "Top surface": 1513,
+        "Top surface": 1512,
         "Overhang wall": 35
       },
       "extruding_xy_bounds_mm": [
@@ -125,7 +125,7 @@
         ],
         [
           213.61259803471015,
-          234.90587839909003
+          234.92671475433661
         ]
       ],
       "bead_xy_bounds_mm": [
@@ -135,18 +135,18 @@
         ],
         [
           213.86259803471015,
-          235.15587839909003
+          235.17671475433661
         ]
       ],
       "conservative_bed_edge_clearance_mm": 12.621236215149661,
       "plate": 2,
-      "gcode_sha256": "d84aa2b00e0421834e32b84d6b42b62b945d696453ab61a2877c39dc8325fd3d",
+      "gcode_sha256": "130a71889a048c80ba32a7d33930fb3034f8b49cdd7d95bd875ec94d26524bae",
       "header": [
-        "; model printing time: 10h 8m 41s; total estimated time: 10h 15m 17s",
+        "; model printing time: 10h 10m 2s; total estimated time: 10h 16m 38s",
         "; total layer number: 338",
-        "; total filament length [mm] : 42737.98",
-        "; total filament volume [cm^3] : 102796.89",
-        "; total filament weight [g] : 127.47",
+        "; total filament length [mm] : 42814.40",
+        "; total filament volume [cm^3] : 102980.71",
+        "; total filament weight [g] : 127.70",
         "; model label id: 10300,10400,10500,10600,10700,10800",
         "; object max height: 9.00,9.00,9.00,67.80,62.00,62.00",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -442,11 +442,22 @@
     {
       "name": "M seam lower veneer - fins and shoe",
       "bond_probes_checked": 8,
-      "maximum_distance_to_model_extrusion_centerline_mm": 0.09973117131219311,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09847678140008753,
       "slicer_support_extrusion_excluded": true,
       "physical_bond_strength_pending": true
     }
   ],
+  "m_zero_gap_seam": {
+    "nominal_cosmetic_gap_mm": 0,
+    "seam_assembly_y_mm": -65,
+    "matching_front_edge_vertices": [
+      141,
+      141
+    ],
+    "maximum_front_edge_mismatch_mm": 0.0,
+    "veneer_interference_mm3": 0.0,
+    "core_glue_gap_mm": 0.2
+  },
   "ribbon_surface_directions": [
     {
       "variant": "Z",
@@ -505,9 +516,9 @@
     ]
   ],
   "preserved_plates": {
-    "baseline_project_sha256": "f8434ce893dd454ace61800fd645943401c957b6a404c5e33b3f22c7cf1bbc6d",
-    "retained_from_commit": "916cea8e14bf603f4b0b3021bfea1a022b6ac9a1",
-    "project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
+    "baseline_project_sha256": "ac1c788e87c89f1c56549b84e55372f6c34bd7c2e7044d3bb2cd368d99ad371a",
+    "retained_from_commit": "f22045f65800c86498feeb64ffb654fed35e30d1",
+    "project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
     "plates": [
       {
         "plate": 1,
@@ -530,25 +541,21 @@
         "gcode_byte_identical": true
       },
       {
-        "plate": 2,
+        "plate": 3,
         "objects": [
-          "M glue core C1",
-          "M glue core C4",
-          "M seam core C4",
-          "M glue veneer - fins and shoe",
-          "M seam upper veneer - fins and shoe",
-          "M seam lower veneer - fins and shoe"
+          "Zero-gap refined tongue",
+          "Zero-gap refined socket"
         ],
         "geometry_settings_and_poses_unchanged": true,
         "preserved_assets_sha256": {
-          "Metadata/plate_2.png": "945df6fb635d32f164bacc61b065f2a0700e7a92bf8038051573a9744497d83c",
-          "Metadata/plate_2_small.png": "9fe260687a8f052f4eaf3ceb24c014c15f09958123fdc0f61f29ac65ea5eb750",
-          "Metadata/plate_no_light_2.png": "1b840c691d7adb58df807f74c3e3010d59e73c2c01730b827755d1ea27aa3d5c",
-          "Metadata/top_2.png": "7371a1dc5f62f06191eccd20710cebab7161a6938992ffeaddc864611aba2974",
-          "Metadata/pick_2.png": "7b2566e1b43d12e7c951e928885c9264f448c0083fc41946ba7e9cb17e835053",
-          "Metadata/plate_2.json": "ab5c1bccc50a029382d7f6b885bf3b701d4e8310daf3438129b16c3d1dd11b99",
-          "Metadata/plate_2.gcode.md5": "e42c9b6fd5e1d2060c2452ed32f9ce4187ec20675534a904e2cc18c4eb2db89d",
-          "Metadata/plate_2.gcode": "d84aa2b00e0421834e32b84d6b42b62b945d696453ab61a2877c39dc8325fd3d"
+          "Metadata/plate_3.png": "1dfe95143191b313aece4412aedf534b5f96548de28f03427b54ad21b137d3e2",
+          "Metadata/plate_3_small.png": "d2d755799174e9bb53f657793be19c70b8fd2f686ffb2448be464b53168a1b08",
+          "Metadata/plate_no_light_3.png": "b21e41a26c69f3a1479088ce8d871c655aaa98fa5c040ca1014fd1e7333dc968",
+          "Metadata/top_3.png": "390258ad99c70b345c3db128a9fffac9c5565fea3c4365204fda6d4723f588c2",
+          "Metadata/pick_3.png": "c5a3ad73269fd9d8ee87e4333585a521f5aee246b78a06021fa7e0829cc06633",
+          "Metadata/plate_3.json": "451d7923cf874258ceaf203f61593ba93416950533d475532676873d00f1e405",
+          "Metadata/plate_3.gcode.md5": "9e7444a4f7442262eb03c432671077c963fcede87d550fa948c0fe85af34968f",
+          "Metadata/plate_3.gcode": "3333248c6c83bb95149a9df006e89a9e89f23e7afee7fbd3033bac5ade85f631"
         },
         "gcode_byte_identical": true
       }

@@ -97,6 +97,8 @@ def main():
         ribbon_tower_reserved_rectangle_mm=[165,174,250,252],
         ribbon_test=dict(visible_edge_gap_mm=0,pairs=1,additional_adhesive_recess_mm=.2,
             nominal_hidden_glue_clearance_mm=.4,detail='Refined seating pads, secondary-pocket relief, hidden glue reservoir and zero-gap show edge above Z8'),
+        m_seam_test=dict(visible_edge_gap_mm=0,veneer_to_core_glue_gap_mm=.2,
+            geometry_validation='M-zero-gap-seam-validation.json',full_size_veneers='Remain at .075 mm pending this sample'),
         instructions=['Keep saved orientations, scale and filament assignments; open as a project.',
             'Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.',
             'Plate 2: all six copper test parts, including fin carriers and starter shoes.',

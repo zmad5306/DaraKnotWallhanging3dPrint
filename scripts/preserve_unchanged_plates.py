@@ -1,7 +1,7 @@
 """Retain exact previously sliced plates after verifying unchanged print inputs.
 
-For this ribbon revision, preserve plates 1 and 2 from the prior combined
-project. Geometry, object settings, material presets and poses must match first.
+Select unchanged plates from the prior combined project. Geometry, object
+settings, material presets and poses must match first.
 Copy original plate assets, model records and toolpaths, then audit hashes.
 """
 import argparse
@@ -24,7 +24,7 @@ def replace(parent,old,new):
     index=list(parent).index(old);parent.remove(old);parent.insert(index,copy.deepcopy(new))
 
 
-def preserve(baseline,target,plates,native_dir=None,baseline_result=None):
+def preserve(baseline,target,plates,native_dir=None,baseline_result=None,baseline_commit=None):
     old,new=read(baseline),read(target)
     old_settings=json.loads(old['Metadata/project_settings.config'])
     new_settings=json.loads(new['Metadata/project_settings.config'])
@@ -97,7 +97,7 @@ def preserve(baseline,target,plates,native_dir=None,baseline_result=None):
             index=next(i for i,p in enumerate(result['sliced_plates']) if p['id']==number)
             result['sliced_plates'][index]=next(p for p in prior['sliced_plates'] if p['id']==number)
         save_json(native_dir/'result.json',result)
-        report=dict(baseline_project_sha256=sha(baseline),retained_from_commit='916cea8e14bf603f4b0b3021bfea1a022b6ac9a1',
+        report=dict(baseline_project_sha256=sha(baseline),retained_from_commit=baseline_commit,
                     project_sha256=sha(target),plates=records)
         save_json(OUT/'Zero-gap-plate-preservation.json',report)
     print('Preserved unchanged plates',plates,'in',target,flush=True)
@@ -106,5 +106,5 @@ def preserve(baseline,target,plates,native_dir=None,baseline_result=None):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('baseline',type=Path);p.add_argument('target',type=Path)
     p.add_argument('--plates',type=int,nargs='+',required=True);p.add_argument('--native-dir',type=Path)
-    p.add_argument('--baseline-result',type=Path);args=p.parse_args()
-    preserve(args.baseline,args.target,args.plates,args.native_dir,args.baseline_result)
+    p.add_argument('--baseline-result',type=Path);p.add_argument('--baseline-commit');args=p.parse_args()
+    preserve(args.baseline,args.target,args.plates,args.native_dir,args.baseline_result,args.baseline_commit)

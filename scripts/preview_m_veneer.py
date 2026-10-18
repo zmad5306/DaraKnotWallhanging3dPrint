@@ -51,7 +51,7 @@ def layout():
     for j in plan['skin_joints']:seam(j,1500,'#a53631',3)
     d.text((500,880),'One global hammer field; no cover bands.',font=font(24),anchor='mm',fill='#334b58')
     d.text((1500,875),'Red: veneer seams     Blue dashed: core seams',font=font(23),anchor='mm',fill='#334b58')
-    d.text((1000,952),'Nominal veneer gap: 0.075 mm. Seam lines at right are enlarged for review.',font=font(23),anchor='mm',fill='#526572')
+    d.text((1000,952),f'Nominal veneer gap: {plan["cosmetic_gap_mm"]:.3f} mm. Seam lines at right are enlarged for review.',font=font(23),anchor='mm',fill='#526572')
     d.text((1000,996),'CAD appearance is not proof of optical matching or physical joint closure.',font=font(22),anchor='mm',fill='#526572')
     im.save(OUT/'M-band-free-layout.png')
 

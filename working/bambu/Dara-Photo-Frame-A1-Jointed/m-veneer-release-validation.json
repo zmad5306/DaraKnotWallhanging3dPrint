@@ -1,0 +1,1374 @@
+{
+  "project_sha256": "1ef14fb07f0d668f654c28479e1abe8998462a98d4114dddeb592384dd5b7919",
+  "baseline_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "baseline_file": "reference/production/Dara-Solid-M-Baseline.3mf",
+  "plates": 36,
+  "objects": 46,
+  "instances": 77,
+  "frame_sections": 20,
+  "frame_joints": 32,
+  "core_count": 6,
+  "veneer_count": 6,
+  "cover_bands": 0,
+  "legacy_glue_sample_removed": true,
+  "core_body_mm": 8.4,
+  "veneer_flat_back_z_mm": 8.6,
+  "glue_gap_mm": 0.2,
+  "cosmetic_gap_mm": 0,
+  "full_core_infill": "15% gyroid with 4 walls and 5 top/bottom layers; local solid screw reinforcement",
+  "veneer_infill": "100%",
+  "orientation": {
+    "common_lean_deg": 55,
+    "all_full_rotations_equal": true,
+    "broad_show_planes_parallel_to_bed_y": true,
+    "veneers": [
+      {
+        "veneer": "V1",
+        "rotation": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046
+          ]
+        ],
+        "show_face_normal_in_bed": [
+          0.8191520442889918,
+          0.0,
+          0.573576436351046
+        ],
+        "bed_y_in_show_plane": true
+      },
+      {
+        "veneer": "V2",
+        "rotation": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046
+          ]
+        ],
+        "show_face_normal_in_bed": [
+          0.8191520442889918,
+          0.0,
+          0.573576436351046
+        ],
+        "bed_y_in_show_plane": true
+      },
+      {
+        "veneer": "V3",
+        "rotation": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046
+          ]
+        ],
+        "show_face_normal_in_bed": [
+          0.8191520442889918,
+          0.0,
+          0.573576436351046
+        ],
+        "bed_y_in_show_plane": true
+      },
+      {
+        "veneer": "V4",
+        "rotation": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046
+          ]
+        ],
+        "show_face_normal_in_bed": [
+          0.8191520442889918,
+          0.0,
+          0.573576436351046
+        ],
+        "bed_y_in_show_plane": true
+      },
+      {
+        "veneer": "V5",
+        "rotation": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046
+          ]
+        ],
+        "show_face_normal_in_bed": [
+          0.8191520442889918,
+          0.0,
+          0.573576436351046
+        ],
+        "bed_y_in_show_plane": true
+      },
+      {
+        "veneer": "V6",
+        "rotation": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046
+          ]
+        ],
+        "show_face_normal_in_bed": [
+          0.8191520442889918,
+          0.0,
+          0.573576436351046
+        ],
+        "bed_y_in_show_plane": true
+      }
+    ]
+  },
+  "zero_gap_seams": [
+    {
+      "seam": 1,
+      "veneers": [
+        2,
+        3
+      ],
+      "maximum_front_edge_mismatch_mm": 0.0,
+      "nominal_gap_mm": 0
+    },
+    {
+      "seam": 2,
+      "veneers": [
+        2,
+        1
+      ],
+      "maximum_front_edge_mismatch_mm": 0.0,
+      "nominal_gap_mm": 0
+    },
+    {
+      "seam": 3,
+      "veneers": [
+        4,
+        1
+      ],
+      "maximum_front_edge_mismatch_mm": 0.0,
+      "nominal_gap_mm": 0
+    },
+    {
+      "seam": 4,
+      "veneers": [
+        6,
+        3
+      ],
+      "maximum_front_edge_mismatch_mm": 0.0,
+      "nominal_gap_mm": 0
+    },
+    {
+      "seam": 5,
+      "veneers": [
+        2,
+        5
+      ],
+      "maximum_front_edge_mismatch_mm": 0.0,
+      "nominal_gap_mm": 0
+    }
+  ],
+  "changed_m_plates": [
+    {
+      "plate": 21,
+      "kind": "core",
+      "source_plate": 1,
+      "name": "21 - C1 flat structural core",
+      "gcode_sha256": "e68bf4441468655860e6331f52d4b5600a3bd48b22f1661398c32696676f412f",
+      "native_validation": {
+        "extrusion_moves_checked": 114963,
+        "features": {
+          "Brim": 868,
+          "Outer wall": 1887,
+          "Inner wall": 5521,
+          "Gap infill": 464,
+          "Bottom surface": 1195,
+          "Internal solid infill": 11010,
+          "Sparse infill": 91781,
+          "Bridge": 1271,
+          "Floating vertical shell": 128,
+          "Top surface": 838
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            17.284,
+            17.301
+          ],
+          [
+            238.715,
+            238.699
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            17.034,
+            17.051
+          ],
+          [
+            238.965,
+            238.949
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 17.034,
+        "plate": 1,
+        "gcode_sha256": "e68bf4441468655860e6331f52d4b5600a3bd48b22f1661398c32696676f412f",
+        "header": [
+          "; model printing time: 2h 41m 38s; total estimated time: 2h 48m 14s",
+          "; total layer number: 42",
+          "; total filament length [mm] : 16319.69",
+          "; total filament volume [cm^3] : 39253.46",
+          "; total filament weight [g] : 48.67",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 8.40",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "core_support_material_absent": true
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 22,
+      "kind": "core",
+      "source_plate": 2,
+      "name": "22 - C2 flat structural core",
+      "gcode_sha256": "d41026250738712cffc7b9b246a98330fca6e9f29df6ef1e7d15eb56e89622e3",
+      "native_validation": {
+        "extrusion_moves_checked": 111786,
+        "features": {
+          "Brim": 744,
+          "Outer wall": 2188,
+          "Inner wall": 6715,
+          "Gap infill": 1045,
+          "Bottom surface": 958,
+          "Internal solid infill": 9120,
+          "Sparse infill": 89380,
+          "Bridge": 784,
+          "Floating vertical shell": 90,
+          "Top surface": 762
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            43.591,
+            45.666
+          ],
+          [
+            212.408,
+            210.346
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            43.341,
+            45.416
+          ],
+          [
+            212.658,
+            210.596
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 43.341,
+        "plate": 2,
+        "gcode_sha256": "d41026250738712cffc7b9b246a98330fca6e9f29df6ef1e7d15eb56e89622e3",
+        "header": [
+          "; model printing time: 2h 47m 6s; total estimated time: 2h 53m 43s",
+          "; total layer number: 45",
+          "; total filament length [mm] : 18162.59",
+          "; total filament volume [cm^3] : 43686.14",
+          "; total filament weight [g] : 54.17",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 9.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "core_support_material_absent": true
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 23,
+      "kind": "core",
+      "source_plate": 3,
+      "name": "23 - C3 flat structural core",
+      "gcode_sha256": "9e3af1e40d6689dd2c3166ba954299dea71e16412333cbe8ade78f92209a6a90",
+      "native_validation": {
+        "extrusion_moves_checked": 144104,
+        "features": {
+          "Brim": 921,
+          "Outer wall": 2172,
+          "Inner wall": 6263,
+          "Gap infill": 2054,
+          "Bottom surface": 1529,
+          "Internal solid infill": 11544,
+          "Sparse infill": 117372,
+          "Bridge": 1203,
+          "Floating vertical shell": 141,
+          "Top surface": 905
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            5.146,
+            5.239
+          ],
+          [
+            250.845,
+            250.772
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            4.896,
+            4.989
+          ],
+          [
+            251.095,
+            251.022
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 4.896,
+        "plate": 3,
+        "gcode_sha256": "9e3af1e40d6689dd2c3166ba954299dea71e16412333cbe8ade78f92209a6a90",
+        "header": [
+          "; model printing time: 3h 22m 29s; total estimated time: 3h 29m 6s",
+          "; total layer number: 45",
+          "; total filament length [mm] : 21768.04",
+          "; total filament volume [cm^3] : 52358.28",
+          "; total filament weight [g] : 64.92",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 9.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "core_support_material_absent": true
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 24,
+      "kind": "core",
+      "source_plate": 4,
+      "name": "24 - C4 flat structural core",
+      "gcode_sha256": "da6cc9fd1dafcd99728ff7bf1d248a49bf6a7e823680ab32e71e1655efe03089",
+      "native_validation": {
+        "extrusion_moves_checked": 178431,
+        "features": {
+          "Brim": 565,
+          "Outer wall": 1407,
+          "Inner wall": 4195,
+          "Gap infill": 691,
+          "Bottom surface": 1435,
+          "Internal solid infill": 10778,
+          "Sparse infill": 157221,
+          "Bridge": 1210,
+          "Floating vertical shell": 135,
+          "Top surface": 794
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            8.009,
+            7.875
+          ],
+          [
+            247.982,
+            248.128
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            7.759,
+            7.625
+          ],
+          [
+            248.232,
+            248.378
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 7.622000000000014,
+        "plate": 4,
+        "gcode_sha256": "da6cc9fd1dafcd99728ff7bf1d248a49bf6a7e823680ab32e71e1655efe03089",
+        "header": [
+          "; model printing time: 4h 13m 53s; total estimated time: 4h 20m 30s",
+          "; total layer number: 45",
+          "; total filament length [mm] : 29299.78",
+          "; total filament volume [cm^3] : 70474.22",
+          "; total filament weight [g] : 87.39",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 9.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "core_support_material_absent": true
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 25,
+      "kind": "core",
+      "source_plate": 5,
+      "name": "25 - C5 flat structural core",
+      "gcode_sha256": "89ff8d99c40e1f36d6dd2c81a1c81fc9043e7615ac376b5a8467da67e1a52bb8",
+      "native_validation": {
+        "extrusion_moves_checked": 94905,
+        "features": {
+          "Brim": 262,
+          "Outer wall": 981,
+          "Inner wall": 3041,
+          "Bottom surface": 804,
+          "Gap infill": 869,
+          "Internal solid infill": 7215,
+          "Sparse infill": 80103,
+          "Bridge": 1011,
+          "Floating vertical shell": 58,
+          "Top surface": 561
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            45.339,
+            45.373
+          ],
+          [
+            210.66,
+            210.642
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            45.089,
+            45.123
+          ],
+          [
+            210.91,
+            210.892
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 45.089,
+        "plate": 5,
+        "gcode_sha256": "89ff8d99c40e1f36d6dd2c81a1c81fc9043e7615ac376b5a8467da67e1a52bb8",
+        "header": [
+          "; model printing time: 2h 22m 30s; total estimated time: 2h 29m 7s",
+          "; total layer number: 45",
+          "; total filament length [mm] : 15845.15",
+          "; total filament volume [cm^3] : 38112.05",
+          "; total filament weight [g] : 47.26",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 9.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "core_support_material_absent": true
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 26,
+      "kind": "core",
+      "source_plate": 6,
+      "name": "26 - C6 flat structural core",
+      "gcode_sha256": "9e9cdcf9fee0f78c37b93f43b544ad70e506cb85da1b631bb931990a5feb6f89",
+      "native_validation": {
+        "extrusion_moves_checked": 127777,
+        "features": {
+          "Brim": 534,
+          "Outer wall": 1461,
+          "Inner wall": 4074,
+          "Bottom surface": 741,
+          "Gap infill": 288,
+          "Internal solid infill": 8159,
+          "Sparse infill": 110675,
+          "Bridge": 879,
+          "Floating vertical shell": 74,
+          "Top surface": 892
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            29.563,
+            29.614
+          ],
+          [
+            226.439,
+            226.392
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            29.313,
+            29.364
+          ],
+          [
+            226.689,
+            226.642
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 29.311000000000007,
+        "plate": 6,
+        "gcode_sha256": "9e9cdcf9fee0f78c37b93f43b544ad70e506cb85da1b631bb931990a5feb6f89",
+        "header": [
+          "; model printing time: 2h 55m 1s; total estimated time: 3h 1m 39s",
+          "; total layer number: 45",
+          "; total filament length [mm] : 19069.93",
+          "; total filament volume [cm^3] : 45868.55",
+          "; total filament weight [g] : 56.88",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 9.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "core_support_material_absent": true
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 31,
+      "kind": "veneer",
+      "source_plate": 7,
+      "name": "31 - V1 band-free veneer with fused trim-away carrier",
+      "gcode_sha256": "b1c9699d5c7fde2bfe55e32aadb5d88ab8e028c6ac026b46b03fd6ba7010ec84",
+      "native_validation": {
+        "extrusion_moves_checked": 924570,
+        "features": {
+          "Support": 417896,
+          "Brim": 726,
+          "Outer wall": 140283,
+          "Inner wall": 147279,
+          "Gap infill": 59582,
+          "Bottom surface": 166,
+          "Bridge": 268,
+          "Internal solid infill": 82603,
+          "Sparse infill": 15547,
+          "Floating vertical shell": 58111,
+          "Top surface": 2014,
+          "Overhang wall": 95
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            14.739879608205912,
+            4.503789345265249
+          ],
+          [
+            212.6758066550057,
+            253.80093114781408
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            14.529879608205912,
+            4.293789345265249
+          ],
+          [
+            212.9138487245784,
+            254.03506665591854
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.9649333440814587,
+        "plate": 7,
+        "gcode_sha256": "b1c9699d5c7fde2bfe55e32aadb5d88ab8e028c6ac026b46b03fd6ba7010ec84",
+        "header": [
+          "; model printing time: 1d 2h 56m 37s; total estimated time: 1d 3h 3m 13s",
+          "; total layer number: 1164",
+          "; total filament length [mm] : 101920.72",
+          "; total filament volume [cm^3] : 245148.06",
+          "; total filament weight [g] : 303.98",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 233.20",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "bonded_fin_tooth_toolpath_check": {
+          "bond_probes_checked": 165,
+          "maximum_distance_to_model_extrusion_centerline_mm": 0.318278894877632,
+          "slicer_support_extrusion_excluded": true,
+          "physical_bond_strength_pending": true
+        }
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 32,
+      "kind": "veneer",
+      "source_plate": 8,
+      "name": "32 - V2 band-free veneer with fused trim-away carrier",
+      "gcode_sha256": "2efa0eefb4048adf82593259eaad7a49b6ad0d8560a1f1b43ac3786f94511ce6",
+      "native_validation": {
+        "extrusion_moves_checked": 445516,
+        "features": {
+          "Support": 207988,
+          "Brim": 833,
+          "Outer wall": 56464,
+          "Inner wall": 63194,
+          "Bottom surface": 9,
+          "Gap infill": 19686,
+          "Support interface": 8,
+          "Internal solid infill": 47615,
+          "Top surface": 1007,
+          "Overhang wall": 58,
+          "Sparse infill": 10873,
+          "Floating vertical shell": 37781
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            75.4411047175985,
+            46.22718264943885
+          ],
+          [
+            162.63155143887718,
+            208.57295865375482
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            75.1911047175985,
+            45.97718264943885
+          ],
+          [
+            162.88155143887718,
+            208.82295865375482
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 45.97718264943885,
+        "plate": 8,
+        "gcode_sha256": "2efa0eefb4048adf82593259eaad7a49b6ad0d8560a1f1b43ac3786f94511ce6",
+        "header": [
+          "; model printing time: 11h 18m 37s; total estimated time: 11h 25m 14s",
+          "; total layer number: 448",
+          "; total filament length [mm] : 43474.42",
+          "; total filament volume [cm^3] : 104568.22",
+          "; total filament weight [g] : 129.66",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 90.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "bonded_fin_tooth_toolpath_check": {
+          "bond_probes_checked": 88,
+          "maximum_distance_to_model_extrusion_centerline_mm": 0.3538950903976052,
+          "slicer_support_extrusion_excluded": true,
+          "physical_bond_strength_pending": true
+        }
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 33,
+      "kind": "veneer",
+      "source_plate": 9,
+      "name": "33 - V3 band-free veneer with fused trim-away carrier",
+      "gcode_sha256": "60585bb546487fc2532d54f7e84efdea759e48c099b2c09642cebe3f54efe895",
+      "native_validation": {
+        "extrusion_moves_checked": 1222288,
+        "features": {
+          "Support": 566332,
+          "Brim": 906,
+          "Outer wall": 232136,
+          "Inner wall": 209604,
+          "Gap infill": 64355,
+          "Bottom surface": 7,
+          "Internal solid infill": 70392,
+          "Top surface": 1689,
+          "Overhang wall": 106,
+          "Sparse infill": 13599,
+          "Floating vertical shell": 63162
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            3.785543721501668,
+            2.994624247496393
+          ],
+          [
+            211.9712206925553,
+            254.1218722534359
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            3.575543721501668,
+            2.784624247496393
+          ],
+          [
+            212.2212206925553,
+            254.3318722534359
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 1.668127746564096,
+        "plate": 9,
+        "gcode_sha256": "60585bb546487fc2532d54f7e84efdea759e48c099b2c09642cebe3f54efe895",
+        "header": [
+          "; model printing time: 1d 19h 14m 53s; total estimated time: 1d 19h 21m 31s",
+          "; total layer number: 1179",
+          "; total filament length [mm] : 189229.53",
+          "; total filament volume [cm^3] : 455150.36",
+          "; total filament weight [g] : 564.39",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 236.00",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "bonded_fin_tooth_toolpath_check": {
+          "bond_probes_checked": 164,
+          "maximum_distance_to_model_extrusion_centerline_mm": 0.09930808483641569,
+          "slicer_support_extrusion_excluded": true,
+          "physical_bond_strength_pending": true
+        }
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 34,
+      "kind": "veneer",
+      "source_plate": 10,
+      "name": "34 - V4 band-free veneer with fused trim-away carrier",
+      "gcode_sha256": "4be7bc62231f4eb8ab28486601c1374419c862bfa35844048bb4c46cd52807c8",
+      "native_validation": {
+        "extrusion_moves_checked": 443882,
+        "features": {
+          "Support": 207272,
+          "Brim": 856,
+          "Outer wall": 57114,
+          "Inner wall": 66870,
+          "Gap infill": 25813,
+          "Bottom surface": 56,
+          "Internal solid infill": 64977,
+          "Top surface": 767,
+          "Overhang wall": 50,
+          "Sparse infill": 4720,
+          "Floating vertical shell": 15387
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            75.17229157115914,
+            61.707811088572164
+          ],
+          [
+            184.7710752063743,
+            211.38603465957135
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            74.96229157115914,
+            61.457811088572164
+          ],
+          [
+            185.0210752063743,
+            211.63603465957135
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 44.36396534042865,
+        "plate": 10,
+        "gcode_sha256": "4be7bc62231f4eb8ab28486601c1374419c862bfa35844048bb4c46cd52807c8",
+        "header": [
+          "; model printing time: 12h 22m 20s; total estimated time: 12h 28m 57s",
+          "; total layer number: 735",
+          "; total filament length [mm] : 49467.57",
+          "; total filament volume [cm^3] : 118983.45",
+          "; total filament weight [g] : 147.54",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 147.60",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "bonded_fin_tooth_toolpath_check": {
+          "bond_probes_checked": 89,
+          "maximum_distance_to_model_extrusion_centerline_mm": 0.22830610626493633,
+          "slicer_support_extrusion_excluded": true,
+          "physical_bond_strength_pending": true
+        }
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 35,
+      "kind": "veneer",
+      "source_plate": 11,
+      "name": "35 - V5 band-free veneer with fused trim-away carrier",
+      "gcode_sha256": "b8b10df5aadea315e94bda906dab0e0f8822dacb7819187ae008ae300d7a687b",
+      "native_validation": {
+        "extrusion_moves_checked": 542069,
+        "features": {
+          "Support": 256586,
+          "Brim": 226,
+          "Outer wall": 56413,
+          "Inner wall": 64796,
+          "Gap infill": 23397,
+          "Bottom surface": 555,
+          "Internal solid infill": 46636,
+          "Sparse infill": 44759,
+          "Floating vertical shell": 47583,
+          "Top surface": 1060,
+          "Overhang wall": 58
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            102.51773789692506,
+            28.942746704165906
+          ],
+          [
+            154.02533209504978,
+            226.59498055440986
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            102.30773789692506,
+            28.692746704165906
+          ],
+          [
+            154.27533209504978,
+            226.84498055440986
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 28.692746704165906,
+        "plate": 11,
+        "gcode_sha256": "b8b10df5aadea315e94bda906dab0e0f8822dacb7819187ae008ae300d7a687b",
+        "header": [
+          "; model printing time: 11h 42m 58s; total estimated time: 11h 49m 35s",
+          "; total layer number: 300",
+          "; total filament length [mm] : 43852.84",
+          "; total filament volume [cm^3] : 105478.43",
+          "; total filament weight [g] : 130.79",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 60.20",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "bonded_fin_tooth_toolpath_check": {
+          "bond_probes_checked": 95,
+          "maximum_distance_to_model_extrusion_centerline_mm": 0.20288288032066684,
+          "slicer_support_extrusion_excluded": true,
+          "physical_bond_strength_pending": true
+        }
+      },
+      "native_gcode_reused_without_changes": true
+    },
+    {
+      "plate": 36,
+      "kind": "veneer",
+      "source_plate": 12,
+      "name": "36 - V6 band-free veneer with fused trim-away carrier",
+      "gcode_sha256": "97ecdce287a15a34dca2b7fc074e769d682afbe92ab403a70ec3a8dfd5dc7931",
+      "native_validation": {
+        "extrusion_moves_checked": 414799,
+        "features": {
+          "Support": 203258,
+          "Brim": 1154,
+          "Outer wall": 59306,
+          "Gap infill": 26441,
+          "Inner wall": 62928,
+          "Internal solid infill": 45431,
+          "Top surface": 824,
+          "Overhang wall": 38,
+          "Sparse infill": 5407,
+          "Floating vertical shell": 10012
+        },
+        "extruding_xy_bounds_mm": [
+          [
+            65.143200169148,
+            45.99102430557438
+          ],
+          [
+            184.8062011697562,
+            194.31212945228913
+          ]
+        ],
+        "bead_xy_bounds_mm": [
+          [
+            64.893200169148,
+            45.74102430557438
+          ],
+          [
+            185.0562011697562,
+            194.56212945228913
+          ]
+        ],
+        "conservative_bed_edge_clearance_mm": 45.74102430557438,
+        "plate": 12,
+        "gcode_sha256": "97ecdce287a15a34dca2b7fc074e769d682afbe92ab403a70ec3a8dfd5dc7931",
+        "header": [
+          "; model printing time: 12h 24m 15s; total estimated time: 12h 30m 52s",
+          "; total layer number: 728",
+          "; total filament length [mm] : 48627.11",
+          "; total filament volume [cm^3] : 116961.92",
+          "; total filament weight [g] : 145.03",
+          "; filament_density: 1.24,1.24,1.24,1.24",
+          "; filament_diameter: 1.75,1.75,1.75,1.75",
+          "; max_z_height: 145.80",
+          "; filament: 3",
+          "; support_material_on_wipe_tower: 0"
+        ],
+        "bonded_fin_tooth_toolpath_check": {
+          "bond_probes_checked": 67,
+          "maximum_distance_to_model_extrusion_centerline_mm": 0.0999550601906699,
+          "slicer_support_extrusion_excluded": true,
+          "physical_bond_strength_pending": true
+        }
+      },
+      "native_gcode_reused_without_changes": true
+    }
+  ],
+  "preserved_plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "8d01a19aefba3ba88bb4c0c82d710c8921e4d3386d5e018700c4d1a52d5969a4",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "650dc0e02a2145df3b5d74a9379d9badca4e195bdb9300550fe943da7fd79fd2",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "3ea8587fe536be5324383c9ed23440dae8e6a31222c03eec32fb16e9ecc83d79",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "26b790e37809b44b1a41c3f0d2eb761a06ad11848283b3b0e6dfa4e13223c277",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "8c07be471f0ef69a57ebf1acbdb6374d56efe5992e5f2658125ab87b396396a5",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "0969e38b4b3b9c9afc8b1f3cbb9565710fff3ba3ccdc689ffa1cac2cfba6fb64",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 7,
+      "gcode_sha256": "d5dd4a872dd8b40c4544d6f0d6e2773b7f97038f7b1d1e2a1f1fe49c2f3de44d",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 8,
+      "gcode_sha256": "759964a5b0bb480864d476decdcca326a6a92f25421444d42da0528e6317bdb3",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 9,
+      "gcode_sha256": "6bded996f922f529d5c6f2c02ad0e0487ad4682ae6b9619a3288a9a345e47ed8",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 10,
+      "gcode_sha256": "3e0e41ca5549ea120075195366ec2f91cb786ed31850167237d9f29edaff1923",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 11,
+      "gcode_sha256": "ee3aec659eecad6409efc14478a9b1d578cb0a39c16bbfcbef1db5d61529a4bb",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 12,
+      "gcode_sha256": "6110f7122a6c8e4deb467d68c6e8370cebaa8375cc2f8a35b2206e00143aeb92",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 13,
+      "gcode_sha256": "b2d182dbd7b5abc8a79383b779def7181c46fd5ac7a750d1877faa856ff41a2f",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 14,
+      "gcode_sha256": "7e5184f11788d946f7df86a6c2d662f4ae0230bd869aad2959772a81edde0aa0",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 15,
+      "gcode_sha256": "8720bba3956f30788606a3de66409df8006471ecd6306e65ffcca99ec554edc4",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 16,
+      "gcode_sha256": "92a7d6b76a8eb3cf1489cbdf59945f4f85b98c6369cde6b2c4a95225538e6c34",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 17,
+      "gcode_sha256": "b32c9429c8f88fb4c0ab302dfb8f8f3babad71e2ff049209c1e43d58f18184b1",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 18,
+      "gcode_sha256": "4c5a2e37ef9ee73e6582dd867ca5e5f37361b6a32153f053fda556408bce6299",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 19,
+      "gcode_sha256": "b47dd7d7490ca3b47a67e58fe05ce4750ae60bc3706348aae2ab7de90ab30803",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 20,
+      "gcode_sha256": "237d99f9b15f605157f4bdccd8a531cb09e29574a9eda905fdf38859486e58a6",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 27,
+      "gcode_sha256": "7dd3397d549d003e4e17e6dad1f9481607a815eaa925e7f2ce516e6bee45de54",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 28,
+      "gcode_sha256": "4c8e799c498744ec51822eecaa61010e9223ca0bc14ad0022ea26970b5ed8823",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 29,
+      "gcode_sha256": "71807ae7164ee0e29bdc6ef7b993c4a91cefe0063fa89e556e059e9cab5784a1",
+      "geometry_settings_and_local_poses_unchanged": true
+    },
+    {
+      "plate": 30,
+      "gcode_sha256": "d292cd661d3aa9664c54c70d2449afad881692731b7952849410ce677b7b91a5",
+      "geometry_settings_and_local_poses_unchanged": true
+    }
+  ],
+  "plate_estimates": [
+    {
+      "plate": 1,
+      "name": "01 - F1 mirrored short seams",
+      "weight_g": 123.88,
+      "seconds": 24470
+    },
+    {
+      "plate": 2,
+      "name": "02 - F2 mirrored short seams",
+      "weight_g": 123.73,
+      "seconds": 24408
+    },
+    {
+      "plate": 3,
+      "name": "03 - F3 mirrored short seams",
+      "weight_g": 143.33,
+      "seconds": 30638
+    },
+    {
+      "plate": 4,
+      "name": "04 - F4 mirrored short seams",
+      "weight_g": 106.64,
+      "seconds": 22310
+    },
+    {
+      "plate": 5,
+      "name": "05 - F5 mirrored short seams",
+      "weight_g": 143.36,
+      "seconds": 30580
+    },
+    {
+      "plate": 6,
+      "name": "06 - F6 mirrored short seams",
+      "weight_g": 145.99,
+      "seconds": 29074
+    },
+    {
+      "plate": 7,
+      "name": "07 - F7 mirrored short seams",
+      "weight_g": 110.08,
+      "seconds": 22222
+    },
+    {
+      "plate": 8,
+      "name": "08 - F8 mirrored short seams",
+      "weight_g": 145.88,
+      "seconds": 28962
+    },
+    {
+      "plate": 9,
+      "name": "09 - F9 mirrored short seams",
+      "weight_g": 135.19,
+      "seconds": 27889
+    },
+    {
+      "plate": 10,
+      "name": "10 - F10 mirrored short seams",
+      "weight_g": 133.6,
+      "seconds": 26955
+    },
+    {
+      "plate": 11,
+      "name": "11 - F11 mirrored short seams",
+      "weight_g": 140.21,
+      "seconds": 28818
+    },
+    {
+      "plate": 12,
+      "name": "12 - F12 mirrored short seams",
+      "weight_g": 137.26,
+      "seconds": 27358
+    },
+    {
+      "plate": 13,
+      "name": "13 - F13 mirrored short seams",
+      "weight_g": 145.81,
+      "seconds": 29002
+    },
+    {
+      "plate": 14,
+      "name": "14 - F14 mirrored short seams",
+      "weight_g": 110.39,
+      "seconds": 22425
+    },
+    {
+      "plate": 15,
+      "name": "15 - F15 mirrored short seams",
+      "weight_g": 145.99,
+      "seconds": 29058
+    },
+    {
+      "plate": 16,
+      "name": "16 - F16 mirrored short seams",
+      "weight_g": 142.14,
+      "seconds": 30133
+    },
+    {
+      "plate": 17,
+      "name": "17 - F17 mirrored short seams",
+      "weight_g": 105.88,
+      "seconds": 21921
+    },
+    {
+      "plate": 18,
+      "name": "18 - F18 mirrored short seams",
+      "weight_g": 145.77,
+      "seconds": 31667
+    },
+    {
+      "plate": 19,
+      "name": "19 - F19 mirrored short seams",
+      "weight_g": 124.07,
+      "seconds": 24449
+    },
+    {
+      "plate": 20,
+      "name": "20 - F20 mirrored short seams",
+      "weight_g": 122.22,
+      "seconds": 23826
+    },
+    {
+      "plate": 21,
+      "name": "21 - C1 flat structural core",
+      "weight_g": 48.67,
+      "seconds": 10094
+    },
+    {
+      "plate": 22,
+      "name": "22 - C2 flat structural core",
+      "weight_g": 54.17,
+      "seconds": 10423
+    },
+    {
+      "plate": 23,
+      "name": "23 - C3 flat structural core",
+      "weight_g": 64.92,
+      "seconds": 12546
+    },
+    {
+      "plate": 24,
+      "name": "24 - C4 flat structural core",
+      "weight_g": 87.39,
+      "seconds": 15630
+    },
+    {
+      "plate": 25,
+      "name": "25 - C5 flat structural core",
+      "weight_g": 47.26,
+      "seconds": 8947
+    },
+    {
+      "plate": 26,
+      "name": "26 - C6 flat structural core",
+      "weight_g": 56.88,
+      "seconds": 10899
+    },
+    {
+      "plate": 27,
+      "name": "27 - Backers 1, 3, 5, 7",
+      "weight_g": 99.39,
+      "seconds": 10262
+    },
+    {
+      "plate": 28,
+      "name": "28 - Backers 2, 4, 6, 8",
+      "weight_g": 99.42,
+      "seconds": 10247
+    },
+    {
+      "plate": 29,
+      "name": "29 - B1-B4 and 32 Retainers",
+      "weight_g": 150.89,
+      "seconds": 31533
+    },
+    {
+      "plate": 30,
+      "name": "30 - White wood and blue edge test",
+      "weight_g": 18.42,
+      "seconds": 4896
+    },
+    {
+      "plate": 31,
+      "name": "31 - V1 band-free veneer with fused trim-away carrier",
+      "weight_g": 303.98,
+      "seconds": 97393
+    },
+    {
+      "plate": 32,
+      "name": "32 - V2 band-free veneer with fused trim-away carrier",
+      "weight_g": 129.66,
+      "seconds": 41114
+    },
+    {
+      "plate": 33,
+      "name": "33 - V3 band-free veneer with fused trim-away carrier",
+      "weight_g": 564.39,
+      "seconds": 156091
+    },
+    {
+      "plate": 34,
+      "name": "34 - V4 band-free veneer with fused trim-away carrier",
+      "weight_g": 147.54,
+      "seconds": 44937
+    },
+    {
+      "plate": 35,
+      "name": "35 - V5 band-free veneer with fused trim-away carrier",
+      "weight_g": 130.79,
+      "seconds": 42575
+    },
+    {
+      "plate": 36,
+      "name": "36 - V6 band-free veneer with fused trim-away carrier",
+      "weight_g": 145.03,
+      "seconds": 45052
+    }
+  ],
+  "total_weight_g": 4780.22,
+  "total_seconds": 1088804,
+  "m_weight_g": 1780.68,
+  "m_seconds": 495701,
+  "full_m_native_validation_sha256": "be0382dbec826746af5663b8e05d732124717d81a33a790a201f9e6a61f22a39",
+  "source_child_mesh_sha256": {
+    "3D/Objects/1000.model": "0558882ce8dd413544fa3816b66dbb097485e1bc35b4329389bf582a3ad774b9",
+    "3D/Objects/1100.model": "7c980c9c500483458eac413e6b4dc9221668dc2186dd17497553995b3cf9dc2b",
+    "3D/Objects/1200.model": "a643ef32b03e3a40f473a5a6fe716412c1de7ca76107bca2ca552b39e55adf3d",
+    "3D/Objects/1300.model": "3103cfa5b13025c6a1c5445d6be56c798cf5a53b535ca9df668d8b964ba204b3",
+    "3D/Objects/1400.model": "e6fd6afd69fa878cbbfb0f83590c509dec6cc4f06ba5b4df9a6f77374ee40363",
+    "3D/Objects/1500.model": "e0783d6d293a1f9dbe6f114f8cfcc6c2369a91f96831c8f00b811d23ad6f8846",
+    "3D/Objects/1600.model": "7511dcd60eecf91dd9bb7b72edeafb05227a42152a90ea6e5dc0df6e1a884dfc",
+    "3D/Objects/1700.model": "889567aa65189656cefe99c57b558ad6b6f7bd7582925ec88f196d7ce1fc7b29",
+    "3D/Objects/1800.model": "14e276efff7f4f1598a27827590ce6219ba765ab5395380e884578dc12f87a1e",
+    "3D/Objects/1900.model": "c9f72947925552f800d2bf5d99f3dcfc288810a246f98c7f188ebc602fc3c756",
+    "3D/Objects/2000.model": "2810197d864bc49721c83ea8be95e11fafa245d66949d2ac8b0d74d90c4dd55a",
+    "3D/Objects/2100.model": "5acb03e79cc1764a70375887e14ffeb3ff6df2a0d439f6eacc432b9d42cb3dc5",
+    "3D/Objects/object_1.model": "334cad9082f6a278b7fd8696115e02339fc9293d3d9a33fabe700c2287020479",
+    "3D/Objects/object_10.model": "3578155ff5b96f9b6d1ec7e348ab1f2e116822d3b891e4ca9688c8af6e2d91bd",
+    "3D/Objects/object_11.model": "9ce85c16cd6751d02c5105965153f53d18c17cfb28d465999807a6234126c8a7",
+    "3D/Objects/object_12.model": "f66311abe498c16c6a5de6ed9b17f0f8c38c3db7b3d6842494b97a3264c8f359",
+    "3D/Objects/object_13.model": "7cef5610538d095d9f0bae3f4486295eb41ba07307b2de8cc81e8074a8031d1e",
+    "3D/Objects/object_14.model": "a77454449f69312acf7e25be7bb6aa1806e2f3b70606bdfc9b5727f84358c937",
+    "3D/Objects/object_15.model": "16d973bceda262e8fd231b5d5e27bcce79ae50a9cf122fc3123b8aa9da3240c6",
+    "3D/Objects/object_16.model": "bd8738a0661f12d572a871414cea5e4368913f66262dc54e5f5767eba6dafc27",
+    "3D/Objects/object_17.model": "5fd03abee19293bb1dade8bcd74331096a038096dc6052129ebfa5a42a7a1503",
+    "3D/Objects/object_18.model": "e92c135daecebbcf685c7d22ec4602ed82f008f9cb38d448b844890b23db4910",
+    "3D/Objects/object_19.model": "a7c6578901b6f927509106b4cfacdd73da083635bdffe72c2797e7c837088dd7",
+    "3D/Objects/object_2.model": "94cd4bfd10ae765c5209cf9075c6fae8b177174c406310e6953e925cbf34beca",
+    "3D/Objects/object_20.model": "8d9ce5981d74867ee842ff12811f25e6a68895548361bf6c1599e63905119e58",
+    "3D/Objects/object_27.model": "e53668a3fd116268787a5d39b7f459a49c0ee2afd4af64aa2a91166d2045a732",
+    "3D/Objects/object_28.model": "a1ad9880bde67bb7076d9d587a9e0d4d8624bdc0d890d621163a42bc8af33f9e",
+    "3D/Objects/object_29.model": "c1386c9464d4b9d52aec205be531894976c8a6190e9a8bbc7cb8dd00e76d0196",
+    "3D/Objects/object_3.model": "5b6dda89a0cb3050c81abb563ba5d82159beb1cd04402d438dbf34e46317a713",
+    "3D/Objects/object_30.model": "c67fc167265d7d2b21be4ddd717a6f9bb4b520404c4db6db07a1e65dec83e68e",
+    "3D/Objects/object_31.model": "01de8ccd88cc922545e09628c1fb644bc8aceead2d5d8d8cd57deafa828c07e8",
+    "3D/Objects/object_32.model": "028d8488ee7cadca07a3bde7c7cf375a202340c83acfb292ad0df7cd0634c629",
+    "3D/Objects/object_33.model": "efab5481a4ce0db285cc58d009409d8a2bda0f940fcd432f34f37dd2862444ab",
+    "3D/Objects/object_34.model": "a4dfa7471df892f2efdececfe16cbe6f231ad7a1780d081079a456a2c4ab8329",
+    "3D/Objects/object_35.model": "f9babeaa53f95144c74db568ce65f54fb95d89edf11b446f06017242b0a992af",
+    "3D/Objects/object_36.model": "90416defa9381e585f9ebb085fec508eb55d670cb2f27b8f303b7bab4532f6f4",
+    "3D/Objects/object_37.model": "ddd9f897629a1546f201177f50ee783d8cc203975c6c76c9f88f8fed9305d318",
+    "3D/Objects/object_38.model": "308e8af1b6af0a7d46ca4ce18e21899f53f2d0008ccf1d982f72f06783c55c26",
+    "3D/Objects/object_39.model": "b410987feda36b6ef0c659cc26c503eecdc503c154490296260555b49d5c9175",
+    "3D/Objects/object_4.model": "9de810b3c56425188c5395b0334dd4c7339993db32bdcc28944559fb33485f0c",
+    "3D/Objects/object_47.model": "42019335999cc4038390ae2cf3b43762ffa9ed95e12a0371de66e6ae43b17dc8",
+    "3D/Objects/object_5.model": "9c4ea999de22ff6572df17cdea8c159c79b6dff0f5b4d5e0301dc532930ccc59",
+    "3D/Objects/object_6.model": "6de397b88e20d20b257f6b5b46c303954e95c2e830022d6559ba25a2ec42c10d",
+    "3D/Objects/object_7.model": "712b4409241b347df996165cf49f7be030bcb90cb1572ba54f89f41c1fd68315",
+    "3D/Objects/object_8.model": "793ccc3e62344d0d591f6553bdd9a1ae8bda6b78c2806e023ba9e42539b99953",
+    "3D/Objects/object_9.model": "455b093f11d82ded1f6f4f6cfe1e8e57ca6987dfceb7fb22915ab3d2abe1fa9e"
+  },
+  "physical_confirmation_pending": true,
+  "native_project_reopen_return_code": 0,
+  "source_cad_sha256": "eb62f56258712faf945a0a49984c031631df356112b8b2f85ac23ec3d28e538c",
+  "native_reopen_input_sha256": "1ef14fb07f0d668f654c28479e1abe8998462a98d4114dddeb592384dd5b7919"
+}

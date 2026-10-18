@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 from scipy.spatial import cKDTree
 
-from development_3mf import ROOT, OUT, source, save_json, sha, tag, P, transform, props, read_object, solid
+from development_3mf import ROOT, OUT, source, source_path, save_json, sha, tag, P, transform, props, read_object, solid
 from validate_print_project import scan_gcode, TOKEN
 
 
@@ -162,7 +162,7 @@ def validate(name, native):
             r['bonded_fin_tooth_toolpath_check']=check_fin_bonds(text,carrier)
         rows.append(r)
     target=OUT/(staged.stem+'-Sliced.3mf');shutil.copyfile(export,target)
-    report=dict(source_release_sha256=sha(ROOT/'Dara.3mf'),staged_sha256=sha(staged),native_project_sha256=sha(target),
+    report=dict(source_release_sha256=sha(source_path()),staged_sha256=sha(staged),native_project_sha256=sha(target),
                 native_return_code=0,plate_count=len(gcodes),native_roundtrip_geometry=geom,plates=rows,
                 physical_fit_finish_and_support_anchor_test_pending=True)
     if connectivity is not None:report['coupon_connected_components']=connectivity

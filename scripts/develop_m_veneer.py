@@ -25,7 +25,7 @@ from shapely.geometry import Point, LineString, Polygon, box, mapping, shape
 from shapely.ops import split
 import trimesh
 
-from development_3mf import ROOT, OUT, WORK, source, save_json, solid, mesh, centered, z_rotation, common_m_rotation, write_project, sha, mesh_xml, read_object
+from development_3mf import ROOT, OUT, WORK, source, source_path, save_json, solid, mesh, centered, z_rotation, common_m_rotation, write_project, sha, mesh_xml, read_object
 from add_blue_ribbon_edge import artwork, section
 from build_jointed_bambu_project import read_array, tag, P
 from validate_print_project import transform, props
@@ -38,8 +38,8 @@ BOSS_TOP = SEAT_Z + .4
 POCKET_TOP = BOSS_TOP + .1
 SCREW_TIP_Z = 8.7
 SCREW_CLEARANCE_TOP = SCREW_TIP_Z + .4
-SHOW_GAP = .075
-SEAM_SAMPLE_GAP = 0.0  # Coupon closes visibly; full veneers await its result.
+SHOW_GAP = 0.0
+SEAM_SAMPLE_GAP = 0.0
 GRID = .5
 GLUE_SAMPLE_WINDOW = (-290, 25, -212, 94)
 SEAM_SAMPLE_WINDOW = (-290, -90, -220, -40)
@@ -121,6 +121,9 @@ def texture(outline):
 
 def height_mesh(region, bottom, top, res=GRID):
     """Conforming clipped global grid; independent panels share texture phase."""
+    # Exact-contact seam intersections can otherwise leave coordinates such as
+    # -5e-15 at a grid line, producing collapsed boundary triangles after joining.
+    region=shapely.set_precision(region,1e-8)
     x0, y0, x1, y1 = region.bounds
     xs = np.arange(math.floor(x0/res)*res, x1, res)
     ys = np.arange(math.floor(y0/res)*res, y1, res)
@@ -422,9 +425,9 @@ def sha_bytes(value):
     return hashlib.sha256(value).hexdigest()
 
 
-def build():
+def build(include_samples=True):
     WORK.mkdir(parents=True, exist_ok=True); OUT.mkdir(parents=True, exist_ok=True)
-    original_hash = sha(ROOT/'Dara.3mf'); cad = CAD.read_text()
+    original_hash = sha(source_path()); cad = CAD.read_text()
     outline = artwork(cad, 'letter_outline'); roof = texture(outline)
     core_joints = copy.deepcopy(read_array(cad, 'M_joints'))
     # Move the two otherwise coincident/nearby core joints away from skin seams.
@@ -441,8 +444,9 @@ def build():
     skin_regions0 = partition(outline, SKIN_JOINTS)
     refs = [(-230,110), (0,90), (230,110), (-220,-130), (0,-100), (220,-130)]
     skin_regions = [next(p for p in skin_regions0 if p.contains(Point(*q))) for q in refs]
-    cuts = union_all([locate(box(-SHOW_GAP/2,-j[4]/2-30,SHOW_GAP/2,j[4]/2+30), j) for j in SKIN_JOINTS])
-    skin_regions = [p.difference(cuts) for p in skin_regions]
+    if SHOW_GAP>0:
+        cuts = union_all([locate(box(-SHOW_GAP/2,-j[4]/2-30,SHOW_GAP/2,j[4]/2+30), j) for j in SKIN_JOINTS])
+        skin_regions = [p.difference(cuts) for p in skin_regions]
     whole = prism(outline,0,CORE_BASE); cores = []; skins = []; reports = []
     # Full-thickness planar keys eliminate supported socket roofs in the core.
     # The separate frame refinement retains its frozen 18 mm lap profile.
@@ -553,20 +557,20 @@ def build():
         carried.export(WORK/f'V{i+1}-with-carrier.stl')
         # Bambu's raft_first_layer_expansion also controls tree-foot expansion
         # without a raft. -1 auto-expands tall trees to the physical bed edge.
-        full_settings=dict(skin_settings,brim_width='1',tree_support_branch_angle='30',raft_first_layer_expansion='0.5') if i in [0,2] else skin_settings
+        full_settings=dict(skin_settings,brim_width='1',tree_support_branch_angle='30',raft_first_layer_expansion='0') if i in [0,2] else skin_settings
         plates.append([dict(name=f'V{i+1} band-free veneer with fused trim-away carrier',parts=[dict(mesh=carried)],transform=np.eye(4),settings=full_settings,block_front=True)])
-    # A single U-shaped exclusion makes the native tree generator reserve 2 mm
-    # at both Y edges and the unused left edge. The printer remains 256 x 256;
-    # this avoids changing plate origins or rescaling the artwork.
-    support_guard=['0x0','256x0','256x2','2x2','2x254','256x254','256x256','0x256']
+    # Keep the main project's original usable bed. Control auxiliary tree feet
+    # per object rather than imposing an exclusion on the unrelated knot plates.
+    support_guard=[]
     records=write_project(OUT/'M-Core-and-Veneer-A1.3mf',plates,'DEVELOPMENT - flat M cores and common-orientation band-free veneers',settings_update={'bed_exclude_area':support_guard})
     # Independent tests: straighten a continuous skin over a core joint, then
     # close an exposed skin seam over an uninterrupted core. Both use real pads.
-    sample=box(*GLUE_SAMPLE_WINDOW).intersection(outline)
-    sample_project('M-Veneer-Glue-Coupon-A1.3mf',sample,[sample],cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
-    sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
-    panels=seam_sample_panels(sample)
-    sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,panels,cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
+    if include_samples:
+        sample=box(*GLUE_SAMPLE_WINDOW).intersection(outline)
+        sample_project('M-Veneer-Glue-Coupon-A1.3mf',sample,[sample],cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
+        sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
+        panels=seam_sample_panels(sample)
+        sample_project('M-Veneer-Seam-Coupon-A1.3mf',sample,panels,cores,whole,outline,core_top,skin_bottom,roof,core_settings,skin_settings)
     report=dict(status='Geometry verified; native slicing and physical confirmation tracked separately',source_sha256=original_hash,
                 core_base_mm=CORE_BASE,core_crown_mm=0,core_main_top_z_mm=CORE_BASE,veneer_flat_back_z_mm=SEAT_Z,
                 entire_convex_profile_in_veneer=True,veneer_crown_mm=2.2,glue_gap_mm=GLUE,nominal_skin_thickness_mm=[1.9,4.1],
@@ -584,7 +588,7 @@ def build():
                              'No claim of invisible seams or mechanical load rating.',
                              'Core seam centers are offset; long seam segments can still meet a skin seam locally.'])
     save_json(OUT/'M-geometry-validation.json',report)
-    assert sha(ROOT/'Dara.3mf')==original_hash
+    assert sha(source_path())==original_hash
     print('M core / veneer projects written',flush=True)
 
 
@@ -629,10 +633,10 @@ def orient():
     OUT.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(OUT/'M-Solid-Common-Orientation-A1.3mf','w',zipfile.ZIP_DEFLATED) as z:
         for n,v in keep.items():z.writestr(n,v)
-    save_json(OUT/'M-solid-orientation.json',dict(source_sha256=sha(ROOT/'Dara.3mf'),records=records,native_slice_validated=False,physical_finish_matching_pending=True))
+    save_json(OUT/'M-solid-orientation.json',dict(source_sha256=sha(source_path()),records=records,native_slice_validated=False,physical_finish_matching_pending=True))
     print('Original solid M - all six aligned to M5',flush=True)
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','orient','cauls','glue-coupon','seam-coupon','fins']);args=ap.parse_args()
-    {'build':build,'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'seam-coupon':refresh_seam_coupon,'fins':refresh_fins}[args.action]()
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','full','orient','cauls','glue-coupon','seam-coupon','fins']);args=ap.parse_args()
+    {'build':build,'full':lambda:build(include_samples=False),'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'seam-coupon':refresh_seam_coupon,'fins':refresh_fins}[args.action]()

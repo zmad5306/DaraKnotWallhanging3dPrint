@@ -194,7 +194,7 @@ def full_frame():
         plates.append([dict(name=f'F{i+1} cosmetic development',parts=entries[i],transform=t,settings=st)])
         direction.append(dict(part=f'F{i+1}',bed_rotation_deg=p[0],infill_direction_deg=angle,desired_assembly_direction_deg=ASSEMBLED_GRAIN,native_top_offset_deg=NATIVE_TOP_OFFSET))
     write_project(OUT/'Frame-Cosmetic-Candidate-A1.3mf',plates,'DEVELOPMENT - all 20 frame sections with refined hidden laps and aligned grain')
-    save_json(OUT/'Frame-full-validation.json',dict(joints=reports,directions=direction,source_sha256=sha(ROOT/'Dara.3mf'),
+    save_json(OUT/'Frame-full-validation.json',dict(joints=reports,directions=direction,source_sha256=sha(source_path()),
                 physical_coupon_gate=True,seam_centerlines_unchanged=True,artwork_and_color_assignments_retained=True,
                 native_gcode_surface_direction_validation_pending=True))
 

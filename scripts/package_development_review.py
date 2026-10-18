@@ -1,7 +1,7 @@
 """Index the verified development projects and their physical test sequence."""
 import json
 import zipfile
-from development_3mf import ROOT,OUT,sha,save_json
+from development_3mf import ROOT,OUT,source_path,sha,save_json
 
 NAMES=[
     'All-Development-Tests-A1',
@@ -16,7 +16,7 @@ NAMES=[
 
 def main():
     release='d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b'
-    assert sha(ROOT/'Dara.3mf')==release,'The original release was modified'
+    assert sha(source_path())==release,'The archived source release was modified'
     projects=[]
     for name in NAMES:
         report=json.loads((OUT/(name+'-native-validation.json')).read_text())
@@ -30,7 +30,8 @@ def main():
                              minimum_bead_edge_clearance_mm=min(p['conservative_bed_edge_clearance_mm'] for p in report['plates']),
                              native_sha256=report['native_project_sha256']))
     report=dict(branch='codex/m-veneer-cosmetic-fit',status='Implemented and natively sliced; physical coupon confirmation pending',
-      original_release_sha256=release,original_release_unchanged=True,printer='Bambu Lab A1, 256 x 256 x 256 mm',
+      original_release_sha256=release,original_release_unchanged=True,original_release_file=str(source_path().relative_to(ROOT)),
+      main_project='Dara.3mf',main_project_sha256=sha(ROOT/'Dara.3mf'),printer='Bambu Lab A1, 256 x 256 x 256 mm',
       native_slicer='BambuStudio 02.08.02.61',total_verified_plates=sum(p['plate_count'] for p in projects),projects=projects,
       changes=dict(
         M='Six constant-thickness 8.4 mm cores with planar front and back faces, support-free keys, and local seating/registration features. Six flat-backed band-free veneers contain the entire convex profile and hammer texture. Original mounting coordinates and finished front profile retained.',
@@ -58,7 +59,7 @@ def main():
       m_seam_zero_gap_revision=dict(visible_edge_gap_mm=0,veneer_to_core_glue_gap_mm=.2,
         geometry_validation='M-zero-gap-seam-validation.json',
         change='Both seam veneers and their matched core seating are regenerated; smooth caul and plate 1 remain unchanged.',
-        full_size_veneers='Retain their earlier .075 mm cosmetic gap pending this sample result.'),
+        full_size_veneers='Zero nominal cosmetic gap is now integrated into the main project; physical confirmation remains pending.'),
       flat_core_revision=dict(core_body_thickness_mm=8.4,core_crown_mm=0,veneer_flat_back_z_mm=8.6,
         all_convex_shaping_in_veneer=True,nominal_veneer_thickness_mm=[1.9,4.1],
         finished_front_and_mount_positions_preserved=True,

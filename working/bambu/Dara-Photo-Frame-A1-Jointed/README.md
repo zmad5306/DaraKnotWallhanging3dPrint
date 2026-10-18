@@ -1,15 +1,26 @@
-# Complete A1 print project
+# Complete A1 project with flat M cores and veneers
 
-Open [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) as a project in Bambu Studio. It is byte-identical to [Dara.3mf](../../../Dara.3mf) at the repository root. Both contain 32 saved native slices, 75 assembly pieces and three optional sample pieces.
+Open [Dara-Photo-Frame-A1-Complete.3mf](Dara-Photo-Frame-A1-Complete.3mf) as a project in Bambu Studio. It is byte-identical to the root [Dara.3mf](../../../Dara.3mf). Both contain **36 saved native slices, 76 assembly pieces and one optional finish sample**.
 
-Use [PRINT-READINESS.md](PRINT-READINESS.md) for the current plate map, filament slots, settings, band locations and assembly order. The frame has 20 sections and 32 mirrored seams, each 67.3-75.1 mm long, using the same 18 mm keyed-lap profile. The revised rear attachments match the hammered M. Plates 1-20, 21, 23 and 26 are regenerated; the other nine saved slices and their meshes are unchanged. The M keeps its hammered face and 55-degree orientation along Y. The five continuous copper crowns and their plate 31 slice are preserved. Resolution remains 0.05 mm globally. Physical printing of this revision remains pending.
+The M has six flat structural cores and six matching hammered veneers with zero nominal cosmetic seam gap. All veneers share the complete saved M5 rotation: a 55-degree lean across X, with their broad face planes parallel to bed Y travel. Do not rotate veneers independently. Flat backs retain 0.20 mm glue clearance above the cores. The five cover bands are removed.
 
-[mirrored-joints-validation.json](mirrored-joints-validation.json) is the current release report. [cover-crown-validation.json](cover-crown-validation.json) records the preceding cover revision, which is retained here. Older reports are historical rather than current release checksums. The [updated PDF map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf) covers the current frame and hammered M. The flat M STL exports remain historical. Do not run historical flat-M project publishers against this file.
+| Plates | Contents |
+| --- | --- |
+| 1–20 | Original knot sections F1–F20; saved slices and geometry retained |
+| 21–26 | Flat structural M cores C1–C6 |
+| 27–28 | Eight original backers |
+| 29 | Four original wall blocks and 32 retainers |
+| 30 | Original optional white, wood and blue finish sample |
+| 31–36 | Veneers V1–V6 with bonded fin carriers and supplementary tree supports |
 
-After `git lfs pull`, audit both copies without any experimental dependencies:
+The obsolete glue-practice sample formerly on plate 32 is retained in the [archived solid-M project](../../../reference/production/Dara-Solid-M-Baseline.3mf). Use the [current zero-gap sample project](../../../output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf) for the current joint tests. Removing the old sample keeps the main project within Studio's 36-plate limit without moving the production knot or hardware plates.
 
-```powershell
+Use [PRINT-READINESS.md](PRINT-READINESS.md), the [current plate guide](../../../docs/M-PRINT-GUIDE.md) and [printable map](../../../output/pdf/Dara-Part-and-Plate-Map.pdf). The current release report is [m-veneer-release-validation.json](m-veneer-release-validation.json). The mirrored-joint and cover-crown reports describe the archived solid-M release; their hashes are not the current main-project hash.
+
+After fetching this branch and downloading Git LFS assets, audit both copies with standard Python:
+
+```sh
 python scripts/audit_dara_release.py
 ```
 
-The parametric generator and migration history remain on [codex/hammered-m-production](https://github.com/zmad5306/DaraKnotWallhanging3dPrint/tree/codex/hammered-m-production). The 3MF embeds all meshes, support painting, filament assignments and toolpaths needed for Studio; no standalone candidate or test project is required.
+The projects embed geometry, support painting, filament assignments and native G-code. Scratch files and Python geometry packages are not needed to open or print them. Physical fit, silk support removal and finish confirmation remain part of the sample/full-part checks.

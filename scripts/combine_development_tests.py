@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont
-from development_3mf import ROOT,OUT,save_json,sha,read_object,tag,P,R,transform,props
+from development_3mf import ROOT,OUT,source_path,save_json,sha,read_object,tag,P,R,transform,props
 from build_jointed_bambu_project import model,xml,uid,meta
 
 NAME='All-Development-Tests-A1'
@@ -105,7 +105,7 @@ def main():
             'Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.',
             'Use the cauls to cradle the veneers during cutting and trimming. Clean rear recesses and seating features before dry fitting.',
             'Physical fit, silk bonding and finish still require these prints.'],
-        source_release_sha256=sha(ROOT/'Dara.3mf'),native_slice_validated=False)
+        source_release_sha256=sha(source_path()),native_slice_validated=False)
     save_json(path.with_suffix('.json'),guide)
     preview(guide,inputs)
     print(f'{path}: 11 parts on 3 plates; source mesh/color/support XML preserved',flush=True)

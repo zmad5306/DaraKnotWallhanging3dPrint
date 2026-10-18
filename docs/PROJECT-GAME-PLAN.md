@@ -4,7 +4,7 @@ Updated October 18, 2026. Working branch: `codex/m-veneer-cosmetic-fit`.
 
 The goal is a clean wall artwork with the printed white, wood, blue and copper finishes exposed. Visible edges should meet without an intentional gap. Glue clearance belongs underneath. Hand fitting, support removal and sanding are acceptable when they improve the finished piece.
 
-After the samples pass, carry their successful details into the complete M and knot, validate the complete assembly, and publish a matched set of printable files. Choose the A1 or A2L knot layout **before printing the final knot sections**. The A2L option below reduces the knot from 32 joints to 14, with six fully behind the M, but still needs production modeling and slicing.
+The M redesign is now integrated into the main A1 project: six flat cores on plates 21–26 and six Y-oriented veneers on plates 31–36. Physical sample/full-part confirmation remains pending. After the samples pass, retain their successful details, apply any needed adjustments, complete the knot refinements, and publish a matched final build. Choose the A1 or A2L knot layout **before printing the final knot sections**. The A2L option below reduces the knot from 32 joints to 14, with six fully behind the M, but still needs production modeling and slicing.
 
 ## Current tests and decisions
 
@@ -41,7 +41,7 @@ Retain the current construction:
 - The same complete saved M5 orientation for every veneer: a 55-degree lean **and** matching in-plane direction. Matching the lean alone does not align reflections.
 - Bonded sacrificial fins, repeated rear tabs, diagonal ties, connected bed frame and grounded starter shoe. Native trees supplement those restraints.
 
-**The current M seam test has zero nominal cosmetic gap**, with the 0.20 mm veneer-to-core glue space retained underneath. Its actual front edges match with no geometric overlap; see the [M seam check](../output/development/m-veneer-cosmetic-fit/M-zero-gap-seam-validation.json). The complete six-veneer candidate still has the earlier 0.075 mm cosmetic gap. After this sample passes, propagate zero cosmetic closure into those full veneers while preserving hidden glue/locator clearance. Recheck each seam against its curved geometry rather than applying the ribbon closure code unchanged.
+**The current M seam test has zero nominal cosmetic gap**, with the 0.20 mm veneer-to-core glue space retained underneath. Its actual front edges match with no geometric overlap; see the [M seam check](../output/development/m-veneer-cosmetic-fit/M-zero-gap-seam-validation.json). The complete six-veneer M now also has zero nominal gaps, and all five actual front seam edges match in the geometry checks. The main project retains the hidden glue and locator clearances, with all six veneers in the same complete Y-oriented pose. After the sample passes, keep this geometry or propagate any physical-fit corrections before the remaining copper prints.
 
 For the full M:
 
@@ -165,7 +165,7 @@ Keep the current six-part M core/veneer arrangement initially. The fourteen-join
 - [ ] Publish a clearly named, self-contained Bambu project, updated part/plate map, assembly order, glue/cleanup notes, checklist and print estimates. Separate A1 and A2L releases so their section numbers and hardware cannot be mixed.
 - [ ] Commit the generating scripts, source geometry, validation reports and final print assets on this branch; push Git LFS assets and verify the remote commit.
 
-Keep [Dara.3mf](../Dara.3mf) as the original release while developing the replacements. Use the test projects and validation hashes in the current [development manifest](../output/development/m-veneer-cosmetic-fit/manifest.json); local rearrangement in Bambu Studio does not replace that validated baseline. On another computer, fetch/pull `codex/m-veneer-cosmetic-fit`, run `git lfs pull`, and open the relevant 3MF **as a project**.
+[Dara.3mf](../Dara.3mf) is now the integrated veneer-M main project. Preserve the [original solid-M release](../reference/production/Dara-Solid-M-Baseline.3mf) as the source and historical reference. Use the test projects and validation hashes in the current [development manifest](../output/development/m-veneer-cosmetic-fit/manifest.json); local rearrangement in Bambu Studio does not replace that validated baseline. On another computer, fetch/pull `codex/m-veneer-cosmetic-fit`, run `git lfs pull`, and open the relevant 3MF **as a project**.
 
 ## Retained design sources
 

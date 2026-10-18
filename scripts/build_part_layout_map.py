@@ -22,6 +22,13 @@ OUTPUT = ROOT / 'output/pdf/Dara-Part-and-Plate-Map.pdf'
 
 
 def prepare():
+    veneer_release=PACKAGE/'m-veneer-release-validation.json'
+    if veneer_release.exists():
+        SCRATCH.mkdir(parents=True,exist_ok=True)
+        report=json.loads(veneer_release.read_text())
+        assert hashlib.sha256((ROOT/'Dara.3mf').read_bytes()).hexdigest()==report['project_sha256']
+        DATA.write_text(json.dumps(dict(veneer_release=True,project_sha256=report['project_sha256'])))
+        print('Prepared current 36-plate veneer release map.');return
     if (ROOT/'working/geometry/mirrored-frame-layout.json').exists():
         return prepare_mirrored()
     sys.path.insert(0, str(ROOT / '.work/python-libs'))
@@ -168,6 +175,9 @@ def prepare_mirrored():
 
 
 def render():
+    if json.loads(DATA.read_text()).get('veneer_release'):
+        from create_veneer_plate_map import main
+        return main()
     from reportlab.pdfgen import canvas
     from reportlab.lib.colors import HexColor, Color
     from reportlab.lib.pagesizes import landscape, letter

@@ -25,8 +25,13 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def source_path():
+    baseline=ROOT/'reference/production/Dara-Solid-M-Baseline.3mf'
+    return baseline if baseline.exists() else ROOT/'Dara.3mf'
+
+
 def source():
-    with zipfile.ZipFile(ROOT / 'Dara.3mf') as z:
+    with zipfile.ZipFile(source_path()) as z:
         return {n: z.read(n) for n in z.namelist()}
 
 
@@ -175,5 +180,5 @@ def write_project(path, plates, title, settings_update=None):
     path.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED) as z:
         for n, content in files.items(): z.writestr(n, content)
-    save_json(path.with_suffix('.json'), dict(title=title, source_sha256=sha(ROOT / 'Dara.3mf'), records=records, native_slice_validated=False, physical_confirmation_pending=True))
+    save_json(path.with_suffix('.json'), dict(title=title, source_sha256=sha(source_path()), records=records, native_slice_validated=False, physical_confirmation_pending=True))
     return records

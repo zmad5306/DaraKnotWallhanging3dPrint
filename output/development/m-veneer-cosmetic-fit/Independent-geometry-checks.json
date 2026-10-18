@@ -113,7 +113,7 @@
       "veneer_flat_back_mm": 8.6,
       "veneer_back_plane_error_mm": 0.0,
       "hammered_front_grid_error_mm": 0.0,
-      "front_grid_vertices_checked": 78595,
+      "front_grid_vertices_checked": 78775,
       "screw_tip_clearances_open": true
     },
     {
@@ -124,7 +124,7 @@
       "veneer_flat_back_mm": 8.6,
       "veneer_back_plane_error_mm": 0.0,
       "hammered_front_grid_error_mm": 0.0,
-      "front_grid_vertices_checked": 43918,
+      "front_grid_vertices_checked": 44069,
       "screw_tip_clearances_open": true
     },
     {
@@ -135,7 +135,7 @@
       "veneer_flat_back_mm": 8.6,
       "veneer_back_plane_error_mm": 0.0,
       "hammered_front_grid_error_mm": 0.0,
-      "front_grid_vertices_checked": 78729,
+      "front_grid_vertices_checked": 78890,
       "screw_tip_clearances_open": true
     },
     {
@@ -146,7 +146,7 @@
       "veneer_flat_back_mm": 8.6,
       "veneer_back_plane_error_mm": 0.0,
       "hammered_front_grid_error_mm": 0.0,
-      "front_grid_vertices_checked": 42327,
+      "front_grid_vertices_checked": 42500,
       "screw_tip_clearances_open": true
     },
     {
@@ -157,7 +157,7 @@
       "veneer_flat_back_mm": 8.6,
       "veneer_back_plane_error_mm": 0.0,
       "hammered_front_grid_error_mm": 0.0,
-      "front_grid_vertices_checked": 49762,
+      "front_grid_vertices_checked": 49901,
       "screw_tip_clearances_open": true
     },
     {
@@ -168,7 +168,7 @@
       "veneer_flat_back_mm": 8.6,
       "veneer_back_plane_error_mm": 0.0,
       "hammered_front_grid_error_mm": 0.0,
-      "front_grid_vertices_checked": 32600,
+      "front_grid_vertices_checked": 32756,
       "screw_tip_clearances_open": true
     }
   ],

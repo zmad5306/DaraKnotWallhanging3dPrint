@@ -76,7 +76,7 @@ def check():
             error=float(cKDTree(aa['mesh'].vertices).query(bb['mesh'].vertices)[0].max())
             assert error<.0001,(label,error)
         rows.append(dict(part=label,visible_volume_difference_above_Z8_mm3=float(diff),color_modifier_geometry_and_assignments_preserved=True))
-    save_json(OUT/'Independent-geometry-checks.json',dict(source_sha256=sha(ROOT/'Dara.3mf'),
+    save_json(OUT/'Independent-geometry-checks.json',dict(source_sha256=sha(source_path()),
         source_hammer_grid_vertices_checked=count,maximum_hammer_field_error_mm=max(errors),frame_checks=rows,
         flat_core_and_veneer_checks=flat_checks,constant_planar_glue_space_mm=SEAT_Z-CORE_BASE,
         scope='Digital geometry only; native toolpaths and physical samples are separate checks.'))

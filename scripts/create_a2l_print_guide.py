@@ -41,7 +41,7 @@ def main():
  table([(i,f'F{i} knot') for i in range(1,11)],515,495,240)
  text(515,245,'Green: concealed behind the band-free M.',8.5);text(515,226,'Red: seam has a visible portion.',8.5)
  text(32,73,'Glue order: '+' > '.join('F'+str(i) for i in p['frame_assembly_order']),10,True)
- text(32,53,'Keep saved rotations. Knot fill directions compensate for each bed rotation; cosmetic edges have zero nominal gap.',8.5);c.showPage()
+ text(32,53,'Keep saved part rotations and prime-tower positions.',9,True);text(32,38,'Surface directions are compensated; cosmetic edges have zero nominal gap.',8.5);c.showPage()
  page('A2L M: four flat cores, three veneers','All convex crown and hammer texture is in the flat-backed veneer. No seam-cover bands.',2)
  text(87,493,'Flat cores / plates 11-14',13,True);text(483,493,'Veneers / plates 15-17',13,True)
  for i,g in enumerate(p['core_regions']):geo(g,210,320,.43,colors[i]);label(g,210,320,.43,f'C{i+1}',i+11)

@@ -33,6 +33,12 @@ Use this release's knot and M together: attachment sites have been coordinated w
 
 Knot tongue-first glue order: **F9 → F8 → F10 → F7 → F2 → F5 → F4 → F3 → F1 → F6**. Lower sockets onto earlier tongues; dry-fit the whole sequence before glue. Bond the core keys on a flat reference, fit the veneers, then mount the assembled M on its pins and rear screws. Check screwdriver access and photo hardware before final bonding. Use the previously tested adhesive process and light clamping with soft cauls and release film.
 
+## Prime tower and warm-up notices
+
+The knot's towers are placed in bed corners outside each model's convex XY outline. Native toolpath checks also measure tower/brim clearance to every other printed feature, including model brims and tree supports. Moving a tower into a knot opening can trigger Studio's proximity warning even when it appears to have open space; retain the saved tower positions. See the [clearance correction](../../../docs/A2L-PRIME-TOWER-CLEARANCE.md).
+
+The A2L thermal-preconditioning notice explains its warm-up duration and bed-zone guides. It is informational; its preference and the feature remain enabled as before.
+
 ## Validation and printing
 
 The generating and verification scripts are `scripts/build_a2l_project.py` and `scripts/validate_a2l_project.py`. `production-plan.json` records all new cuts, mounting coordinates and visibility. Geometry, native round-trip, bead bounds, fin-bond toolpaths, material assignments, surface direction and reopen evidence are in the validation JSON files here. Run `python scripts/audit_dara_release.py` after pulling Git LFS files on another computer.

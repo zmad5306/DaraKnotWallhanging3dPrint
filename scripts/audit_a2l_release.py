@@ -16,6 +16,10 @@ def audit():
  assert sha(ROOT/'working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf')==r['retained_A1_complete_sha256']
  assert sha(ROOT/'output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf')==r['sample_project_sha256']
  assert n['native_return_code']==0 and len(n['plates'])==20
+ for plate in n['plates'][:10]:
+  tower=plate['prime_tower_clearance']
+  assert tower['studio_model_convex_hull_clearance_mm']>8
+  assert tower['actual_tower_to_other_extrusion_clearance_mm']>3
  assert n['native_project_sha256']==r['project_sha256']
  assert r['native_reopen_return_code']==0
  with zipfile.ZipFile(ROOT/'Dara.3mf') as z:

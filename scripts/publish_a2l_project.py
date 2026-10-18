@@ -7,6 +7,7 @@ def publish(native,reopen):
  m=json.loads((OUT/'modifier-validation.json').read_text())
  n=json.loads((OUT/'native-validation.json').read_text());g=json.loads((OUT/'geometry-validation.json').read_text());r=json.loads((reopen/'result.json').read_text())
  assert n['native_return_code']==r['return_code']==0
+ assert all(p['prime_tower_clearance']['actual_tower_to_other_extrusion_clearance_mm']>3 for p in n['plates'][:10])
  assert sha(EDIT)==n['editable_sha256']==g['editable_sha256']
  assert m['editable_sha256']==sha(EDIT)
  assert sha(native/'sliced.3mf')==n['native_project_sha256']==m['native_project_sha256']
@@ -21,8 +22,8 @@ def publish(native,reopen):
    profiles[f'{kind}/{p.name}']=sha(p)
  save(OUT/'profile-provenance.json',dict(installed_profile_sha256=profiles,printer='Bambu Lab A2L 0.4 nozzle',
    flattened_settings_embedded_in_editable_and_native_projects=True,A1_machine_commands_replaced=True))
- evidence=[OUT/x for x in ['production-plan.json','plate-plan.json','frame-geometry-validation.json','M-geometry-validation.json','geometry-validation.json','native-validation.json','profile-provenance.json','modifier-validation.json']]
- evidence += [ROOT/'scripts'/x for x in ['build_a2l_project.py','validate_a2l_project.py','publish_a2l_project.py','development_3mf.py','develop_m_veneer.py','develop_cosmetic_joints.py','veneer_fin_carrier.py','plan_veneer_fins.py','check_fin_toolpaths.py','audit_a2l_release.py','create_a2l_print_guide.py','audit_dara_release.py']]
+ evidence=[OUT/x for x in ['production-plan.json','plate-plan.json','frame-geometry-validation.json','M-geometry-validation.json','geometry-validation.json','native-validation.json','profile-provenance.json','modifier-validation.json','tower-placement.json','tower-fix-preservation.json','tower-gui-verification.json']]
+ evidence += [ROOT/'scripts'/x for x in ['build_a2l_project.py','validate_a2l_project.py','publish_a2l_project.py','development_3mf.py','develop_m_veneer.py','develop_cosmetic_joints.py','veneer_fin_carrier.py','plan_veneer_fins.py','check_fin_toolpaths.py','audit_a2l_release.py','create_a2l_print_guide.py','audit_dara_release.py','check_a2l_towers.py']]
  evidence += [ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad',ROOT/'working/review/a2l-hidden-joints/lean-candidate.json',ROOT/'working/review/a2l-m-joints/evaluation.json',EDIT]
  if (ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf').exists():evidence.append(ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf')
  report=dict(project_sha256=sha(FINAL),editable_sha256=sha(EDIT),native_reopen_return_code=r['return_code'],native_reopen_result=r,

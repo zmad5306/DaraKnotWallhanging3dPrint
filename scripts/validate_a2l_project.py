@@ -11,6 +11,7 @@ from validate_print_project import scan_gcode
 from validate_development_candidates import angle_evidence
 from check_fin_toolpaths import check_fin_bonds
 from validate_print_project import TOKEN
+from check_a2l_towers import check_tower
 
 
 def embedded(path):
@@ -126,6 +127,7 @@ def native(path):
         roundtrip.append(dict(name=name,maximum_vertex_and_pose_error_mm=float(error)))
     s=json.loads(after['Metadata/project_settings.config']);assert s['printer_model']=='Bambu Lab A2L';assert s['sparse_infill_density']=='8%'
     mp=json.loads((OUT/'M-geometry-validation.json').read_text());plan=load_plan();rows=[]
+    tower_plan=json.loads((OUT/'tower-placement.json').read_text())
     gcodes=sorted(path.glob('plate_*.gcode'),key=lambda p:int(p.stem.split('_')[-1]));assert len(gcodes)==20
     for file in gcodes:
         pi=int(file.stem.split('_')[-1]);text=file.read_text();r=scan_gcode(text);lo,hi=np.array(r['bead_xy_bounds_mm']);clearance=float(min(*lo,*(np.array([330,320])-hi)))
@@ -133,6 +135,14 @@ def native(path):
         assert '; EXECUTABLE_BLOCK_END' in text
         assert 'printer_model = Bambu Lab A2L' in text or 'printer_model = Bambu Lab A2L' in json.dumps(s)
         if pi<=10:
+            hulls=[]
+            for obj in bb.values():
+                if obj['plate']!=pi:continue
+                T=obj['transform']
+                for entry in obj['parts']:
+                    if entry['subtype']=='normal_part':hulls.append(Polygon((entry['mesh'].vertices@T[:3,:3].T+T[:3,3])[:,:2]).convex_hull)
+            reserved=tower_plan['plates'][pi-1]['reserved_envelope_mm']
+            r['prime_tower_clearance']=check_tower(text,hulls,reserved)
             evidence=angle_evidence(text,rotation=plan['frame_fits'][pi-1]['rotation_deg'])[0]
             assert evidence and abs((evidence[0][0]-135+90)%180-90)<.2,(pi,evidence)
             r['white_top_assembly_direction_deg']=evidence

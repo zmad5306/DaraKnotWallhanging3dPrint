@@ -329,17 +329,29 @@ def package():
     for k in range(32):
         parts,st=read_object(files,ret);objects.append(dict(name=f'R{k+1} photo retainer',parts=parts,transform=centered(parts[0]['mesh'],xy=(205+(k%4)*26,40+(k//4)*22)),settings=dict(extruder='1',enable_support='0',brim_width='0')))
     plates.append(objects)
-    ss=settings();tower_x=[];tower_y=[]
+    ss=settings();tower_x=[];tower_y=[];tower_rows=[]
     for i in range(10):
-        region=shape(p['parts'][i]).union(union_all([shape(p['domains'][k]) for k,j in enumerate(p['frame_joints']) if j[0]==i]))
-        T=plates[i][0]['transform'];yaw=p['frame_fits'][i]['rotation_deg'];rg=affinity.translate(affinity.rotate(region,yaw,origin=(0,0)),*T[:2,3]);choices=[]
-        for x in range(8,287,4):
-            for y in range(8,233,4):
-                rect=box(x-4,y-4,x+34,y+76)
-                if rg.distance(rect)>5:choices.append((rg.distance(rect),x,y))
-        assert choices,('No purge tower clearance',i+1)
-        _,x,y=max(choices);tower_x.append(str(x));tower_y.append(str(y))
+        # Studio validates each model volume's convex projection, not the
+        # concave artwork footprint. An opening inside that hull is NOT a
+        # legal tower location even if the actual extruded paths do not meet.
+        T=plates[i][0]['transform'];v=plates[i][0]['parts'][0]['mesh'].vertices
+        rg=Polygon((v@T[:3,:3].T+T[:3,3])[:,:2]).convex_hull;choices=[]
+        # Native ribbed towers at these unchanged settings occupy less than
+        # 30 x 30 mm including the 2 mm brim. Reserve 38 x 38 mm, then check
+        # the actual emitted tower/brim footprint after slicing as well.
+        for x in range(8,289,4):
+            for y in range(8,281,4):
+                rect=box(x-4,y-4,x+34,y+34);gap=rg.distance(rect)
+                if gap>8:choices.append((gap,x,y))
+        assert choices,('No prime tower clearance outside model hull',i+1)
+        gap,x,y=max(choices);tower_x.append(str(x));tower_y.append(str(y))
+        tower_rows.append(dict(plate=i+1,anchor_xy_mm=[x,y],reserved_envelope_mm=[x-4,y-4,x+34,y+34],
+            model_convex_hull_gap_mm=gap,model_convex_hull=mapping(rg)))
     ss.update(wipe_tower_x=tower_x+['10']*10,wipe_tower_y=tower_y+['10']*10,prime_tower_brim_width='2')
+    save(OUT/'tower-placement.json',dict(method='Outside each printed model convex hull, including a reserved brim envelope',
+        minimum_reserved_gap_mm=8,plates=tower_rows,
+        rule_source='https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Print.cpp',
+        rule_function='layered_print_cleareance_valid',actual_native_footprint_check_required=True))
     records=write_project(EDIT,plates,'Dara A2L complete - 14 knot joints - flat core M',settings_update=ss)
     save(OUT/'plate-plan.json',dict(plates=len(plates),records=records,production_plan_sha256=sha(PLAN),editable_sha256=sha(EDIT)))
     print(f'Packaged {len(plates)} A2L plates',flush=True)

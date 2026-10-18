@@ -141,7 +141,7 @@
     "scripts/publish_a2l_project.py": "5b6d50f2fe262dba8a92e93fdd50ca475791e6c3177f992ef755d57c582f1ba0",
     "scripts/development_3mf.py": "adbd056982ec61371b70124213a21f1d9a6f228d1f90f3a4f9df991c5c3b026d",
     "scripts/develop_m_veneer.py": "68b211cf57ee307635c4b4c2bb2d1ff5002fc959f73756c6e55608d6faf90f37",
-    "scripts/develop_cosmetic_joints.py": "76aba4fcc7baecf44dcb7f5de24b9991610db0cc7ba03a606fae96bca0f8efec",
+    "scripts/develop_cosmetic_joints.py": "de0041cd62ac0ee1826d8152b8cf53af30b0be6c95721bc3fa20810c706b37a3",
     "scripts/veneer_fin_carrier.py": "a8c02c16272f0276a0cb6b703fa483930aff21822360013d82abd6c56d620267",
     "scripts/plan_veneer_fins.py": "8e074850eefb74a8a380a407c3d236dd0c0e5672c7814aadbc54a9c0749c3da1",
     "scripts/check_fin_toolpaths.py": "e34f744eca02d13cd7de5df2e9ebe7bce83367f9f3b97929f13f11bb1d995f45",
@@ -158,7 +158,7 @@
   },
   "physical_confirmation_pending": true,
   "retained_A1_complete_sha256": "7cd103259df6dbbc1770a33c56c093ad8748673ec220d2145253ee4d975b7709",
-  "sample_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "sample_project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
   "coupon_carrier_update": {
     "revision": "clean-trim-coupon-v1",
     "baseline_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
@@ -169,5 +169,16 @@
     "geometry_proof": "output/development/m-veneer-cosmetic-fit/M-clean-trim-carrier-validation.json",
     "physical_removal_confirmation_pending": true,
     "A2L_veneer_plates_15_to_17_on_hold": true
+  },
+  "ribbon_coupon_update": {
+    "revision": "bed-datum-ribbon-v1",
+    "baseline_commit": "0e2943bda0a103360e9d0b7ec71a73cd5e10a41b",
+    "previous_shared_joint_module_sha256": "76aba4fcc7baecf44dcb7f5de24b9991610db0cc7ba03a606fae96bca0f8efec",
+    "current_shared_joint_module_sha256": "de0041cd62ac0ee1826d8152b8cf53af30b0be6c95721bc3fa20810c706b37a3",
+    "only_coupon_generator_and_coupon_checker_changed": true,
+    "production_functions_and_project_bytes_unchanged": true,
+    "native_validation": "output/development/m-veneer-cosmetic-fit/Ribbon-bed-datum-native-validation.json",
+    "physical_flushness_fit_and_strength_confirmation_pending": true,
+    "receiver_hidden_back_recess_mm": 0.8
   }
 }

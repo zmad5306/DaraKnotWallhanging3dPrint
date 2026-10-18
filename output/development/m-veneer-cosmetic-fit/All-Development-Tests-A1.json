@@ -14,7 +14,7 @@
     },
     {
       "file": "Frame-Cosmetic-Comparison-A1.3mf",
-      "sha256": "a42c45be0f75da0e1ee8e1f3ae26584320e21c50f1fb2d6ac5df5cc908f27fc0"
+      "sha256": "9e9ec0fb8d4622c64cf79eb1dd51339848775486396872f306f0f5a5203b7630"
     }
   ],
   "records": [
@@ -553,13 +553,13 @@
           0.9563047559630354,
           -0.29237170472273677,
           0.0,
-          50.72189014469123
+          50.69413505874762
         ],
         [
           0.29237170472273677,
           0.9563047559630354,
           0.0,
-          47.287618846921674
+          47.046601945040024
         ],
         [
           0.0,
@@ -576,14 +576,14 @@
       ],
       "body_bounds_mm": [
         [
-          10.179499993301043,
-          5.417362593050896,
+          10.151744907357433,
+          5.176345691169246,
           0.0
         ],
         [
-          77.82050000669896,
-          84.58263740694912,
-          13.5
+          77.84825509264257,
+          84.82365430883075,
+          13.6
         ]
       ],
       "xy_translation_from_source_mm": [
@@ -592,9 +592,9 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "10901": "849ebaf0f551f4bdab38314639e8d75b9b7229c39c41e2b42f3d8d821fbff26f",
-        "10902": "a3785ef2881295bb68bbf9878f292120a2ec6b0e40c34a0a92d99cdea294b656",
-        "10903": "926a6208fec06583310dc0ad0b9686457f2984f8fff035bc8666a440497d5165"
+        "10901": "bf040c28df3dc84a1f657abdfa6060bfd0d10663bceec9c8ec81189e1d1a5680",
+        "10902": "d6e1fa17a79b3b1f499a9620c15d5ee2472f7b5e4350743590ca520e2b1b635c",
+        "10903": "eddbc8c73ae74a35c3e61aa2aa70f7a50684ce77c6d9f0cd88105a17ed60b9ee"
       },
       "part_id_mapping": {
         "1001": "10901",
@@ -615,19 +615,19 @@
           0.3907311284892737,
           -0.9205048534524404,
           0.0,
-          113.13480180972317
+          113.29464641894458
         ],
         [
           0.9205048534524404,
           0.3907311284892737,
           0.0,
-          25.601680253357827
+          25.66939835365021
         ],
         [
           0.0,
           0.0,
           1.0,
-          0.0
+          -0.8
         ],
         [
           0.0,
@@ -638,14 +638,14 @@
       ],
       "body_bounds_mm": [
         [
-          82.15732601078307,
-          12.452258085307292,
+          81.9974814015616,
+          12.384539985014897,
           0.0
         ],
         [
-          160.84267398921696,
-          77.54774191469272,
-          13.5
+          161.00251859843837,
+          77.6154600149851,
+          12.799999999999999
         ]
       ],
       "xy_translation_from_source_mm": [
@@ -654,9 +654,9 @@
       ],
       "rotation_and_z_unchanged": true,
       "mesh_blocks_byte_identical": {
-        "11001": "f5746c794431f7648a7cd4f5f0f8b0d0f34e22f0ae6c17966e6170569c9fd5c0",
-        "11002": "11ac7b9dea1f75cbd4f4e13c40fa3ffcaef279d7007dc639e87fee838cd246f4",
-        "11003": "9449cd14208c993bf15d3d6473199ae752129b8f8bf7d0574039331a8ebaeb92"
+        "11001": "3a75cf3cfe69d9ddcb92b0029966e22b1c827187ae3fecf24c48f0fef1684e4b",
+        "11002": "febd874a05277a96a17161f6bd9e508bf93cac5a118bb1e2dac94443d04c4101",
+        "11003": "4b03db489d8527a248073f5e082e7b91f63a01609556ec869564843f7e478991"
       },
       "part_id_mapping": {
         "1101": "11001",
@@ -698,8 +698,10 @@
     "visible_edge_gap_mm": 0,
     "pairs": 1,
     "additional_adhesive_recess_mm": 0.2,
-    "nominal_hidden_glue_clearance_mm": 0.4,
-    "detail": "Refined seating pads, secondary-pocket relief, hidden glue reservoir and zero-gap show edge above Z8"
+    "nominal_hidden_glue_clearance_mm": 0.8,
+    "revision": "bed-datum-ribbon-v1",
+    "socket_hidden_back_recess_mm": 0.8,
+    "detail": "Straight 68 mm coupon sides. Three bed-printed socket feet seat on upward-printed tongue pocket floors at assembly Z0.8. Supported bulk clears to Z5.4; zero-gap show edge above Z8."
   },
   "m_seam_test": {
     "visible_edge_gap_mm": 0,
@@ -712,6 +714,7 @@
     "Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.",
     "Plate 2: all six copper test parts. Revised carriers have separate starter ribs, 1.2 mm cut necks and 3 mm rear access; no continuous starter shoe.",
     "Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.",
+    "Plate 3 revision: remove supports from the recessed socket underside, foot sides and key pockets. Keep foot bottoms and tongue pocket floors clean. Dry-seat all three feet; inspect the white surface in grazing light before gluing.",
     "Cradle the veneers in lined cauls. Cut each neck flush with the rear lands through its shallow pocket; remove fins and starter ribs progressively, then sand the back flat. Preserve seam edges and locating pockets.",
     "This carrier revision is coupon-only. A2L veneer plates 15-17 remain on hold pending successful physical removal.",
     "Physical fit, silk bonding and finish still require these prints."
@@ -719,6 +722,5 @@
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
   "native_slice_validated": true,
   "native_project": "All-Development-Tests-A1-Sliced.3mf",
-  "native_validation": "All-Development-Tests-A1-native-validation.json",
-  "carrier_revision": "clean-trim-coupon-v1"
+  "native_validation": "All-Development-Tests-A1-native-validation.json"
 }

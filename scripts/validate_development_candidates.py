@@ -52,7 +52,7 @@ def coupon_connectivity(path):
     return rows
 
 
-def angle_evidence(text,rotation=None):
+def angle_evidence(text,rotation=None,z_offsets=(0,0)):
     feature='Custom';x=y=z=e=0.;rel_e=False;rel_xyz=False;angles=[collections.Counter(),collections.Counter()]
     for raw in text.splitlines():
         if raw.startswith('; FEATURE: '):feature=raw.split(': ',1)[1]
@@ -67,8 +67,11 @@ def angle_evidence(text,rotation=None):
             nx,ny,nz=[o+v.get(k,0) if rel_xyz else v.get(k,o) for k,o in zip('XYZ',(x,y,z))]
             de=v.get('E',0) if rel_e else v.get('E',e)-e
             length=math.hypot(nx-x,ny-y)
-            if feature=='Top surface' and de>0 and length>3 and nz>13.3 and cmd=='G1':
+            if feature=='Top surface' and de>0 and length>3 and cmd=='G1':
                 side=0 if rotation is not None or (x+nx)/2<128 else 1
+                if nz+z_offsets[side]<=13.3:
+                    x,y,z=nx,ny,nz;e=e+v.get('E',0) if rel_e else v.get('E',e)
+                    continue
                 yaw=rotation if rotation is not None else [17,67][side]
                 a=round((math.degrees(math.atan2(ny-y,nx-x))-yaw)%180,1)
                 angles[side][a]+=length
@@ -76,7 +79,7 @@ def angle_evidence(text,rotation=None):
     return [c.most_common(5) for c in angles]
 
 
-def coupon_material_angles(text):
+def coupon_material_angles(text,z_offsets=(0,0)):
     """Compare matching color/height groups, including the three weave levels."""
     feature='Custom';x=y=z=e=0.;relative=False;xyz=False;tool=None;groups=collections.defaultdict(lambda:[collections.Counter(),collections.Counter()])
     for raw in text.splitlines():
@@ -96,7 +99,7 @@ def coupon_material_angles(text):
                 side=0 if (x+nx)/2<128 else 1
                 angle=(math.degrees(math.atan2(ny-y,nx-x))-[17,67][side])%180
                 angle=round(angle*2)/2
-                groups[(tool,round(nz,2))][side][angle]+=length
+                groups[(tool,round(nz+z_offsets[side],2))][side][angle]+=length
             x,y,z=nx,ny,nz;e=e+values.get('E',0) if relative else values.get('E',e)
     records=[]
     for (tool,z),cs in sorted(groups.items()):
@@ -137,8 +140,10 @@ def validate(name, native):
         r.pop('model_extrusion_z_by_filament_mm',None)
         r.update(plate=int(p.stem.split('_')[-1]),gcode_sha256=sha(p),header=text.split('; HEADER_BLOCK_END')[0].splitlines()[2:13])
         if name=='Frame-Cosmetic-Comparison-A1.3mf' and r['plate']==1:
-            r['top_white_direction_evidence_in_assembly_deg']=angle_evidence(text)
-            r['matching_surface_directions_by_color_and_height']=coupon_material_angles(text)
+            staging=json.loads(staged.with_suffix('.json').read_text())
+            offsets=tuple(-row['assembly_to_printer'][2][3] for row in staging['records'][:2])
+            r['top_white_direction_evidence_in_assembly_deg']=angle_evidence(text,z_offsets=offsets)
+            r['matching_surface_directions_by_color_and_height']=coupon_material_angles(text,z_offsets=offsets)
             dominant=[a[0][0] for a in r['top_white_direction_evidence_in_assembly_deg']]
             assert abs((dominant[0]-dominant[1]+90)%180-90)<.2,dominant
             assert all(abs(a-135)<.2 for a in dominant),dominant

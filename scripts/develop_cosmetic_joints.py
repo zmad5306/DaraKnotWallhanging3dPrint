@@ -56,7 +56,7 @@ def close_show_edge(male,female,j,gap=0):
     return parts
 
 
-def check_closed_pair(pair,j,glue_clearance):
+def check_closed_pair(pair,j,glue_clearance,socket_underside=5):
     """Check actual mesh sections, including every visible material height."""
     a,b=[solid(p[0]['mesh']) for p in pair]
     n,t=axes(j);c=np.array(j[2]);sections=[]
@@ -76,11 +76,11 @@ def check_closed_pair(pair,j,glue_clearance):
     male=pair[0][0]['mesh'];female=pair[1][0]['mesh']
     top=male.vertices[male.faces][male.face_normals[:,2]>.99,:,2].mean(axis=1)
     underside=female.vertices[female.faces][female.face_normals[:,2]<-.99,:,2].mean(axis=1)
-    assert np.any(abs(top-(5-glue_clearance))<1e-6),('Missing glue recess floor',glue_clearance)
-    assert np.any(abs(underside-5)<1e-6),'Missing socket underside'
+    assert np.any(abs(top-(socket_underside-glue_clearance))<1e-6),('Missing glue recess floor',glue_clearance)
+    assert np.any(abs(underside-socket_underside)<1e-6),'Missing socket underside'
     collision=(a^b).volume();assert abs(collision)<.001,collision
-    return dict(show_edge_sections=sections,hidden_glue_floor_z_mm=5-glue_clearance,
-                socket_underside_z_mm=5,assembled_interference_mm3=collision)
+    return dict(show_edge_sections=sections,hidden_glue_floor_z_mm=socket_underside-glue_clearance,
+                socket_underside_z_mm=socket_underside,assembled_interference_mm3=collision)
 
 
 def refine_pair(male, female, j, gap=.075, adhesive_recess=.2):
@@ -136,7 +136,9 @@ def coupons():
     for st in [sa,sb]:st.pop('name',None);st.pop(None,None)
     j=[0,1,[0,0],0,68,[-22.6530323,22.3469677]]
     pair,report=refine_pair(a,b,j,gap=0)
-    report['geometry_checks']=check_closed_pair(pair,j,.4)
+    from ribbon_bed_datum import revise,ROOF
+    pair,report=revise(pair,report)
+    report['geometry_checks']=check_closed_pair(pair,j,ROOF-4.6,socket_underside=ROOF)
     objs=[]
     # Intentionally different bed rotations; compensate to one assembly angle.
     for k,(entries,settings,yaw,xy) in enumerate(zip(pair,[sa,sb],[17,67],[(74,125),(177,125)])):

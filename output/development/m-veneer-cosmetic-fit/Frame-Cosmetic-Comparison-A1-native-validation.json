@@ -1,17 +1,17 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "a42c45be0f75da0e1ee8e1f3ae26584320e21c50f1fb2d6ac5df5cc908f27fc0",
-  "native_project_sha256": "5553aac2fa02f82173714f13bef04f4bddc40430ee296c3444625da6d192df2e",
+  "staged_sha256": "9e9ec0fb8d4622c64cf79eb1dd51339848775486396872f306f0f5a5203b7630",
+  "native_project_sha256": "43ebc6952e7cf76dd21d9dff0f9a3e363b0b2d306038e8546d57b5f988eb032e",
   "native_return_code": 0,
   "plate_count": 2,
   "native_roundtrip_geometry": [
     {
       "name": "Zero-gap refined tongue",
-      "max_native_vertex_or_pose_error_mm": 1.95747810467131e-06
+      "max_native_vertex_or_pose_error_mm": 1.8354758069224686e-06
     },
     {
       "name": "Zero-gap refined socket",
-      "max_native_vertex_or_pose_error_mm": 2.1853598001389678e-06
+      "max_native_vertex_or_pose_error_mm": 1.677558591128201e-06
     },
     {
       "name": "Show-face glue jig - use release film",
@@ -20,55 +20,55 @@
   ],
   "plates": [
     {
-      "extrusion_moves_checked": 46725,
+      "extrusion_moves_checked": 49264,
       "features": {
-        "Prime tower": 3484,
-        "Support": 1228,
-        "Brim": 82,
-        "Outer wall": 3290,
-        "Inner wall": 6094,
-        "Bottom surface": 591,
-        "Internal solid infill": 8927,
-        "Sparse infill": 16983,
-        "Floating vertical shell": 114,
-        "Bridge": 2224,
-        "Support transition": 237,
-        "Support interface": 409,
-        "Gap infill": 419,
-        "Top surface": 2557,
-        "Overhang wall": 86
+        "Prime tower": 3836,
+        "Support": 1372,
+        "Brim": 97,
+        "Outer wall": 3882,
+        "Inner wall": 7287,
+        "Bottom surface": 594,
+        "Internal solid infill": 8648,
+        "Gap infill": 1253,
+        "Top surface": 2643,
+        "Sparse infill": 16223,
+        "Floating vertical shell": 151,
+        "Bridge": 2454,
+        "Support transition": 281,
+        "Support interface": 456,
+        "Overhang wall": 87
       },
       "extruding_xy_bounds_mm": [
         [
-          39.359,
+          39.331,
           6.7929323069578205
         ],
         [
           237.73456945888316,
-          165.352
+          165.592
         ]
       ],
       "bead_xy_bounds_mm": [
         [
-          39.109,
+          39.081,
           6.5429323069578205
         ],
         [
           237.98456945888316,
-          165.602
+          165.842
         ]
       ],
       "conservative_bed_edge_clearance_mm": 6.5429323069578205,
       "plate": 1,
-      "gcode_sha256": "69ccf8ee6db66ffccc2c36e4b0e63c07ec6e6b5cd03b84c56b6b2922283ebb21",
+      "gcode_sha256": "3a305dc0381c802fb5bde15eb5c9a3559ed7f91368a4960ca20e07dc8c476bb6",
       "header": [
-        "; model printing time: 2h 13m 58s; total estimated time: 2h 20m 35s",
+        "; model printing time: 2h 36m 15s; total estimated time: 2h 42m 52s",
         "; total layer number: 68",
-        "; total filament length [mm] : 11534.78,1047.09,257.65",
-        "; total filament volume [cm^3] : 27744.40,2518.54,619.71",
-        "; total filament weight [g] : 34.40,3.12,0.77",
+        "; total filament length [mm] : 12390.53,1285.16,507.46",
+        "; total filament volume [cm^3] : 29802.72,3091.18,1220.58",
+        "; total filament weight [g] : 36.96,3.83,1.51",
         "; model label id: 1000,1100",
-        "; object max height: 13.60,13.60",
+        "; object max height: 13.60,12.80",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 13.60",
@@ -78,13 +78,13 @@
         [
           [
             135.0,
-            3866.5799709672606
+            3872.90274718006
           ]
         ],
         [
           [
             135.0,
-            3580.2562217497225
+            3616.194440419373
           ]
         ]
       ],

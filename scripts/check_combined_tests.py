@@ -43,7 +43,8 @@ def frame_grain(text,rows,label_ids):
                 row=by_id[current];r=np.array(row['assembly_to_printer'])
                 yaw=math.degrees(math.atan2(r[1,0],r[0,0]))
                 angle=round(((math.degrees(math.atan2(ny-y,nx-x))-yaw)%180)*2)/2
-                key=(row['name'][0],tool,round(nz,2));side='tongue' if 'tongue' in row['name'] else 'socket'
+                assembly_z=nz-r[2,3]
+                key=(row['name'][0],tool,round(assembly_z,2));side='tongue' if 'tongue' in row['name'] else 'socket'
                 groups[key][side][angle]+=length
             x,y,z=nx,ny,nz;e=e+v.get('E',0) if relative else v.get('E',e)
     evidence=[]
@@ -60,7 +61,7 @@ def frame_grain(text,rows,label_ids):
     return evidence
 
 
-def main(native=None):
+def main(native=None,preserved_plates=(1,3)):
     guide=json.loads((OUT/(NAME+'.json')).read_text());staged=OUT/(NAME+'.3mf');files=read(staged)
     cfg=ET.fromstring(files['Metadata/model_settings.config']);root=ET.fromstring(files['3D/3dmodel.model'])
     rows=guide['records'];assert len(rows)==11 and len(cfg.findall('plate'))==3
@@ -127,7 +128,7 @@ def main(native=None):
     report['prime_tower_bead_bounds_mm']=tower.tolist()
     preservation=json.loads((OUT/'Zero-gap-plate-preservation.json').read_text())
     assert preservation['project_sha256']==sha(native/'sliced.3mf')
-    assert {r['plate'] for r in preservation['plates']}=={1,3}
+    assert {r['plate'] for r in preservation['plates']}==set(preserved_plates)
     for row in preservation['plates']:
         assert row['gcode_byte_identical']
         assert sha(native/f"plate_{row['plate']}.gcode")==row['preserved_assets_sha256'][f"Metadata/plate_{row['plate']}.gcode"]
@@ -141,4 +142,5 @@ def main(native=None):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--native',type=Path)
-    main(parser.parse_args().native)
+    parser.add_argument('--preserved-plates',type=int,nargs='+',default=[1,3])
+    args=parser.parse_args();main(args.native,args.preserved_plates)

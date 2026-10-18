@@ -1,7 +1,7 @@
 {
-  "baseline_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
-  "retained_from_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
-  "project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "baseline_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "retained_from_commit": "0e2943bda0a103360e9d0b7ec71a73cd5e10a41b",
+  "project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
   "plates": [
     {
       "plate": 1,
@@ -24,21 +24,25 @@
       "gcode_byte_identical": true
     },
     {
-      "plate": 3,
+      "plate": 2,
       "objects": [
-        "Zero-gap refined tongue",
-        "Zero-gap refined socket"
+        "M glue core C1",
+        "M glue core C4",
+        "M seam core C4",
+        "M glue veneer - fins and cut tabs",
+        "M seam upper veneer - fins and cut tabs",
+        "M seam lower veneer - fins and cut tabs"
       ],
       "geometry_settings_and_poses_unchanged": true,
       "preserved_assets_sha256": {
-        "Metadata/plate_3.png": "1dfe95143191b313aece4412aedf534b5f96548de28f03427b54ad21b137d3e2",
-        "Metadata/plate_3_small.png": "d2d755799174e9bb53f657793be19c70b8fd2f686ffb2448be464b53168a1b08",
-        "Metadata/plate_no_light_3.png": "b21e41a26c69f3a1479088ce8d871c655aaa98fa5c040ca1014fd1e7333dc968",
-        "Metadata/top_3.png": "390258ad99c70b345c3db128a9fffac9c5565fea3c4365204fda6d4723f588c2",
-        "Metadata/pick_3.png": "c5a3ad73269fd9d8ee87e4333585a521f5aee246b78a06021fa7e0829cc06633",
-        "Metadata/plate_3.json": "451d7923cf874258ceaf203f61593ba93416950533d475532676873d00f1e405",
-        "Metadata/plate_3.gcode.md5": "9e7444a4f7442262eb03c432671077c963fcede87d550fa948c0fe85af34968f",
-        "Metadata/plate_3.gcode": "3333248c6c83bb95149a9df006e89a9e89f23e7afee7fbd3033bac5ade85f631"
+        "Metadata/plate_2.png": "1f14d06d30f56dda38947365a0e1b562fececc7e4ce3f55104db89d627cefc01",
+        "Metadata/plate_2_small.png": "6b9a0bfda7f1a850c7ee16af3e3a94d5f995b808edf7bcf3031fdd3627a6db1d",
+        "Metadata/plate_no_light_2.png": "8b291dfa2fe0c30bde786f23f74d604559ca31d3adb3a0eb17bdea401f1a5522",
+        "Metadata/top_2.png": "86805da70140b73348fbced4fce8e0bd9f6b3902e72de9f03f9a1093769d195b",
+        "Metadata/pick_2.png": "8a817124fa07cf30461a5f7976bc2ebbabf9627224f4be15bdb8850a87d45643",
+        "Metadata/plate_2.json": "6de339eb0a8a9ce5d1b4d519514e43aa5dc6cda4ec4a885ac102afaee0243e5e",
+        "Metadata/plate_2.gcode.md5": "d82f1596cd0395490c334cce7379be9b30cce3873969be6ccda94da5b85cd28f",
+        "Metadata/plate_2.gcode": "853418bebaa3b6522b52ece429542f2189184a61e35d46fa692272590965791a"
       },
       "gcode_byte_identical": true
     }

@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "89c69db864ba717d28f392c0b25c1e30a19930c76fec7f6662afc6f63aacbd7c",
-  "native_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "staged_sha256": "39bddbf13b45c6ae6bf693ef773c2fac7e4bad8f6cad7e9f8472cabdb45a6d1a",
+  "native_project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -43,11 +43,11 @@
     },
     {
       "name": "Zero-gap refined tongue",
-      "max_native_vertex_or_pose_error_mm": 1.9574781156327377e-06
+      "max_native_vertex_or_pose_error_mm": 1.8354757648348994e-06
     },
     {
       "name": "Zero-gap refined socket",
-      "max_native_vertex_or_pose_error_mm": 2.185359777170798e-06
+      "max_native_vertex_or_pose_error_mm": 1.677558622653087e-06
     }
   ],
   "plates": [
@@ -155,28 +155,28 @@
       ]
     },
     {
-      "extrusion_moves_checked": 46725,
+      "extrusion_moves_checked": 49264,
       "features": {
-        "Prime tower": 3484,
-        "Support": 1228,
-        "Brim": 82,
-        "Outer wall": 3290,
-        "Inner wall": 6094,
-        "Bottom surface": 591,
-        "Internal solid infill": 8927,
-        "Sparse infill": 16983,
-        "Floating vertical shell": 114,
-        "Bridge": 2224,
-        "Support transition": 237,
-        "Support interface": 409,
-        "Gap infill": 419,
-        "Top surface": 2557,
-        "Overhang wall": 86
+        "Prime tower": 3836,
+        "Support": 1372,
+        "Brim": 97,
+        "Outer wall": 3882,
+        "Inner wall": 7287,
+        "Bottom surface": 594,
+        "Internal solid infill": 8648,
+        "Gap infill": 1253,
+        "Top surface": 2643,
+        "Sparse infill": 16223,
+        "Floating vertical shell": 151,
+        "Bridge": 2454,
+        "Support transition": 281,
+        "Support interface": 456,
+        "Overhang wall": 87
       },
       "extruding_xy_bounds_mm": [
         [
-          9.359,
-          4.597
+          9.331,
+          4.356
         ],
         [
           223.73456945888316,
@@ -185,25 +185,25 @@
       ],
       "bead_xy_bounds_mm": [
         [
-          9.109,
-          4.347
+          9.081,
+          4.106
         ],
         [
           223.98456945888316,
           219.5386036446544
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 4.347,
+      "conservative_bed_edge_clearance_mm": 4.106,
       "plate": 3,
-      "gcode_sha256": "3333248c6c83bb95149a9df006e89a9e89f23e7afee7fbd3033bac5ade85f631",
+      "gcode_sha256": "1042ca9c7289c97bc65374ec24db6e7b6db1827859befe76647b770319c5b5fe",
       "header": [
-        "; model printing time: 2h 14m 28s; total estimated time: 2h 21m 6s",
+        "; model printing time: 2h 36m 47s; total estimated time: 2h 43m 25s",
         "; total layer number: 68",
-        "; total filament length [mm] : 11534.78,1047.09,257.65",
-        "; total filament volume [cm^3] : 27744.40,2518.54,619.71",
-        "; total filament weight [g] : 34.40,3.12,0.77",
+        "; total filament length [mm] : 12390.53,1285.16,507.46",
+        "; total filament volume [cm^3] : 29802.72,3091.18,1220.58",
+        "; total filament weight [g] : 36.96,3.83,1.51",
         "; model label id: 10900,11000",
-        "; object max height: 13.60,13.60",
+        "; object max height: 13.60,12.80",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 13.60",
@@ -515,9 +515,9 @@
     ]
   ],
   "preserved_plates": {
-    "baseline_project_sha256": "b9b0a60ba40b3d47080ef309b399455eba5876bfb8ff274debf523e8ad8a7734",
-    "retained_from_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
-    "project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+    "baseline_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+    "retained_from_commit": "0e2943bda0a103360e9d0b7ec71a73cd5e10a41b",
+    "project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
     "plates": [
       {
         "plate": 1,
@@ -540,29 +540,31 @@
         "gcode_byte_identical": true
       },
       {
-        "plate": 3,
+        "plate": 2,
         "objects": [
-          "Zero-gap refined tongue",
-          "Zero-gap refined socket"
+          "M glue core C1",
+          "M glue core C4",
+          "M seam core C4",
+          "M glue veneer - fins and cut tabs",
+          "M seam upper veneer - fins and cut tabs",
+          "M seam lower veneer - fins and cut tabs"
         ],
         "geometry_settings_and_poses_unchanged": true,
         "preserved_assets_sha256": {
-          "Metadata/plate_3.png": "1dfe95143191b313aece4412aedf534b5f96548de28f03427b54ad21b137d3e2",
-          "Metadata/plate_3_small.png": "d2d755799174e9bb53f657793be19c70b8fd2f686ffb2448be464b53168a1b08",
-          "Metadata/plate_no_light_3.png": "b21e41a26c69f3a1479088ce8d871c655aaa98fa5c040ca1014fd1e7333dc968",
-          "Metadata/top_3.png": "390258ad99c70b345c3db128a9fffac9c5565fea3c4365204fda6d4723f588c2",
-          "Metadata/pick_3.png": "c5a3ad73269fd9d8ee87e4333585a521f5aee246b78a06021fa7e0829cc06633",
-          "Metadata/plate_3.json": "451d7923cf874258ceaf203f61593ba93416950533d475532676873d00f1e405",
-          "Metadata/plate_3.gcode.md5": "9e7444a4f7442262eb03c432671077c963fcede87d550fa948c0fe85af34968f",
-          "Metadata/plate_3.gcode": "3333248c6c83bb95149a9df006e89a9e89f23e7afee7fbd3033bac5ade85f631"
+          "Metadata/plate_2.png": "1f14d06d30f56dda38947365a0e1b562fececc7e4ce3f55104db89d627cefc01",
+          "Metadata/plate_2_small.png": "6b9a0bfda7f1a850c7ee16af3e3a94d5f995b808edf7bcf3031fdd3627a6db1d",
+          "Metadata/plate_no_light_2.png": "8b291dfa2fe0c30bde786f23f74d604559ca31d3adb3a0eb17bdea401f1a5522",
+          "Metadata/top_2.png": "86805da70140b73348fbced4fce8e0bd9f6b3902e72de9f03f9a1093769d195b",
+          "Metadata/pick_2.png": "8a817124fa07cf30461a5f7976bc2ebbabf9627224f4be15bdb8850a87d45643",
+          "Metadata/plate_2.json": "6de339eb0a8a9ce5d1b4d519514e43aa5dc6cda4ec4a885ac102afaee0243e5e",
+          "Metadata/plate_2.gcode.md5": "d82f1596cd0395490c334cce7379be9b30cce3873969be6ccda94da5b85cd28f",
+          "Metadata/plate_2.gcode": "853418bebaa3b6522b52ece429542f2189184a61e35d46fa692272590965791a"
         },
         "gcode_byte_identical": true
       }
     ]
   },
   "native_reopen_return_code": 0,
-  "native_reopen_file_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
-  "carrier_revision": "clean-trim-coupon-v1",
-  "carrier_geometry_validation_sha256": "71caab7ea02c4f6df39525df2f8f812ca5377fd540f0bd81345057d3f79d2c3d",
-  "carrier_regression_validation_sha256": "1fcff4bcf6360e8f3de8849837004711f9dff87843cfc5d843647d308dbce866"
+  "native_reopen_file_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
+  "ribbon_bed_datum_validation_sha256": "fc9369ea5415bf40d4f5250fa5b2fc5a37cfb13759ac0aa0ea082639b53f756e"
 }

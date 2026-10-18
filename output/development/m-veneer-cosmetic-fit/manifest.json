@@ -15,8 +15,8 @@
       "editable_source": "All-Development-Tests-A1.3mf",
       "plate_count": 3,
       "native_validation": "All-Development-Tests-A1-native-validation.json",
-      "minimum_bead_edge_clearance_mm": 4.347,
-      "native_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f"
+      "minimum_bead_edge_clearance_mm": 4.106,
+      "native_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5"
     },
     {
       "project": "M-Veneer-Seam-Coupon-A1-Sliced.3mf",
@@ -40,7 +40,7 @@
       "plate_count": 2,
       "native_validation": "Frame-Cosmetic-Comparison-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 6.5429323069578205,
-      "native_sha256": "5553aac2fa02f82173714f13bef04f4bddc40430ee296c3444625da6d192df2e"
+      "native_sha256": "43ebc6952e7cf76dd21d9dff0f9a3e363b0b2d306038e8546d57b5f988eb032e"
     },
     {
       "project": "M-Core-and-Veneer-A1-Sliced.3mf",
@@ -72,7 +72,7 @@
     "veneer": "1.90-4.10 mm nominal thickness before hidden pockets; flat back at Z8.6, .20 mm planar glue space; three seating pads, one round locator and one axially relieved locator per face panel.",
     "anchors": "Full M carriers retain their old starter shoes and are on hold after failed removal. Revised A1 samples use area-allocated fins, separate grounded starter ribs, 1.2 mm cut necks, .40 mm rear recesses and 3 mm cutter access. Trees supplement the bonded tooling.",
     "finish": "Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.",
-    "frame": "20 sections / 32 existing seam centerlines. Tested 18 mm lap envelope; three hidden seating stops, .20 mm adhesive relief, internal reservoirs, .80 mm secondary-pocket relief and hidden tongue-tip lead-in.",
+    "frame": "Full A1 frame remains unchanged. Revised coupon retains the 18 mm lap and locating fit, restores straight 68 mm outer sides, and seats bed-printed feet/skirts on upward-printed floors. Rough supported bulk is relieved behind the outside walls.",
     "grain": "Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.",
     "jig": "White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include smooth crown cauls, without hammer dimples, for use with a soft liner and release film."
   },
@@ -84,7 +84,7 @@
         "2: all copper cores and fin-supported veneers (6 parts)",
         "3: one refined zero-gap ribbon pair (2 parts)"
       ],
-      "purpose": "All 11 current test parts in one project, three plates. Plates 1 and 3 retain their exact prior toolpaths; only copper M test plate 2 changes."
+      "purpose": "All 11 current test parts in one project, three plates. Latest revision changes knot plate 3 only; plates 1 and 2 retain their exact prior toolpaths, including the clean-trim veneer carriers."
     }
   ],
   "combined_test_plate_map": "All-Development-Tests-A1-plates.png",
@@ -100,9 +100,14 @@
     "visible_edge_gap_mm": 0,
     "pairs": 1,
     "additional_hidden_adhesive_recess_mm": 0.2,
-    "nominal_hidden_glue_clearance_mm": 0.4,
+    "nominal_hidden_glue_clearance_mm": 0.8,
     "cosmetic_closure_from_z_mm": 8,
-    "retained": "18 mm lap, seating stops, secondary-pocket relief, hidden squeeze-out reservoir, 8% gyroid and matched surface direction",
+    "retained": "18 mm lap, locating-key fit, hidden squeeze-out reservoir, 8% gyroid and matched surface direction",
+    "current_revision": "bed-datum-ribbon-v1",
+    "seating": "Three bed-printed feet and two outer skirts on upward-printed pocket floors at assembly Z0.8; socket hidden back recessed .8 mm",
+    "width_and_side_finish": "68 mm straight sides; zero nominal outside wall gap; bulk support relief hidden behind skirts",
+    "native_validation": "Ribbon-bed-datum-native-validation.json",
+    "layer_heights": "White/blue finish at assembly Z13.6 and wood crests Z10.0; both halves verified against actual model extrusion, including arcs",
     "supersedes": "Previous A-D visible-gap comparisons. Full-size frame candidate retains its earlier .075 mm seam pending this test.",
     "unchanged_plates_proof": "Zero-gap-plate-preservation.json"
   },
@@ -147,7 +152,8 @@
   "assembly_instructions": [
     "Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.",
     "Use filament slots 1 white, 2 wood tan, 3 copper silk, 4 blue. Full M parts and their fused carriers use copper; sample cauls/jig use white.",
-    "Mark tongue/socket on the ribbon backs before cleanup. Cradle the M face in the lined caul. Cut each narrow neck flush with rear lands through its pocket; remove fins and separate starter ribs progressively. The revised coupons have no continuous starter shoe.",
+    "Mark tongue/socket on the ribbon backs before cleanup. Clean supported bulk and key roofs; preserve the socket foot/skirt bearing bottoms and clean tongue pocket floors. Dry-seat all contacts before gluing in the existing show-face jig.",
+    "Cradle the M face in the lined caul. Cut each narrow neck flush with rear lands through its pocket; remove fins and separate starter ribs progressively. The revised veneer coupons have no continuous starter shoe.",
     "Scrape or sand the hidden tab remnants inside their .40 mm recessed rear pockets, leaving no material above the surrounding underside seating plane. Preserve the hammered face, cosmetic seam edges, seating pads and locating features.",
     "Assemble the structural core on a flat reference surface. Dry-fit the veneer and check all three seating contacts with gentle clamping before adding adhesive.",
     "Apply a controlled amount of the selected epoxy in the relief regions. Keep the hard stops and cosmetic closing edge free of adhesive.",
@@ -164,7 +170,8 @@
     "M-band-free-layout.png",
     "M-veneer-carrier.png",
     "M-veneer-fin-test.png",
-    "M-glue-coupon-correction.png"
+    "M-glue-coupon-correction.png",
+    "Ribbon-bed-datum-v1-sections.png"
   ],
   "physical_confirmation_pending": true,
   "source_references": [

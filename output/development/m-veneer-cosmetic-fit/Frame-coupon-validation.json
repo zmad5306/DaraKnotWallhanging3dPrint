@@ -3,7 +3,7 @@
     {
       "label": "Zero-gap refined",
       "show_gap_mm": 0,
-      "seating_pad_top_mm": 5.0,
+      "seating_pad_top_mm": 0.8,
       "seating_pads_xy": [
         [
           4.0,
@@ -19,11 +19,101 @@
         ]
       ],
       "adhesive_recess_mm": 0.2,
-      "nominal_glue_clearance_mm": 0.4,
+      "nominal_glue_clearance_mm": 0.8000000000000007,
       "secondary_axial_relief_mm": 0.8,
       "lap_length_mm": 18,
       "cosmetic_land_above_reservoir_to_weave_mm": 1.2,
       "assembled_interference_mm3": -7.528699885739343e-16,
+      "bed_datum_revision": {
+        "revision": "bed-datum-ribbon-v1",
+        "coupon_width_mm": 68,
+        "former_lap_width_mm": 67.306,
+        "datum_foot_bottom_assembly_z_mm": 0.8,
+        "datum_pocket_floor_assembly_z_mm": 0.8,
+        "foot_diameter_mm": 3.6,
+        "pocket_diameter_mm": 4.3,
+        "datum_feet_xy_mm": [
+          [
+            4.0,
+            1.0
+          ],
+          [
+            14.0,
+            -29.0
+          ],
+          [
+            14.0,
+            28.0
+          ]
+        ],
+        "socket_back_recess_mm": 0.8,
+        "socket_supported_bulk_underside_z_mm": 5.4,
+        "tongue_glue_floor_z_mm": 4.6,
+        "bulk_vertical_clearance_mm": 0.8000000000000007,
+        "nominal_front_step_mm": 0,
+        "cosmetic_gap_mm": 0,
+        "production_geometry_unchanged": true,
+        "side_skirt_width_mm": 0.8,
+        "side_skirt_hidden_lateral_clearance_mm": 0.25,
+        "side_wall_nominal_gap_mm": 0,
+        "white_show_height_mm": 13.6,
+        "wood_crest_height_mm": 10,
+        "half_layer_heights_normalized_to_layer_grid": true,
+        "physical_fit_and_flushness_confirmation_pending": true,
+        "side_width_min_mm": 68.0,
+        "side_width_max_mm": 68.0,
+        "datum_contact_planes": [
+          {
+            "point": [
+              4.0,
+              1.0
+            ],
+            "face": "tongue_floor",
+            "planar_area_mm2": 13.032057106605537
+          },
+          {
+            "point": [
+              4.0,
+              1.0
+            ],
+            "face": "socket_foot",
+            "planar_area_mm2": 10.16241710936884
+          },
+          {
+            "point": [
+              14.0,
+              -29.0
+            ],
+            "face": "tongue_floor",
+            "planar_area_mm2": 13.032057106605539
+          },
+          {
+            "point": [
+              14.0,
+              -29.0
+            ],
+            "face": "socket_foot",
+            "planar_area_mm2": 10.162417109368842
+          },
+          {
+            "point": [
+              14.0,
+              28.0
+            ],
+            "face": "tongue_floor",
+            "planar_area_mm2": 13.032057106605539
+          },
+          {
+            "point": [
+              14.0,
+              28.0
+            ],
+            "face": "socket_foot",
+            "planar_area_mm2": 10.16241710936884
+          }
+        ]
+      },
+      "seating_reference": "Bed-printed feet on upward-printed pocket floors",
       "geometry_checks": {
         "show_edge_sections": [
           {
@@ -48,8 +138,8 @@
           }
         ],
         "hidden_glue_floor_z_mm": 4.6,
-        "socket_underside_z_mm": 5,
-        "assembled_interference_mm3": -7.528699885739343e-16
+        "socket_underside_z_mm": 5.4,
+        "assembled_interference_mm3": -3.109103574401845e-16
       }
     }
   ],

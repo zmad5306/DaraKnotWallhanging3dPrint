@@ -207,6 +207,21 @@ def check_candidate(path,baseline,plan,plate_table,validation):
         normal=r[:,2];assert abs(normal[1])<1e-12
         rotations.append(dict(veneer=skin['name'],rotation=r.tolist(),show_face_normal_in_bed=normal.tolist(),bed_y_in_show_plane=True))
     seams=check_full_seams(plan)
+    fin_coverage=None
+    if all('area_coverage' in s['carrier'] for s in plan['skins']):
+        proof_path=OUT/'M-fin-coverage-validation.json';proof=json.loads(proof_path.read_text())
+        assert proof['baseline_contacts_sha256']==sha(ROOT/'working/review/m-fin-density/baseline-fin-contacts.json')
+        assert proof['geometry_plan_sha256']==sha(OUT/'M-geometry-validation.json')
+        assert all(r['trial_geometric_checks_pass'] for r in proof['veneers'])
+        assert all(not s['carrier']['tall_fins_without_diagonal_restraint'] for s in plan['skins'])
+        face_path=OUT/'M-fin-face-preservation.json';face=json.loads(face_path.read_text())
+        assert face['all_show_faces_preserved']
+        assert face['geometry_plan_sha256']==proof['geometry_plan_sha256']
+        fin_coverage=dict(report=str(proof_path.relative_to(ROOT)),sha256=sha(proof_path),
+            baseline_fin_count=proof['original_fins'],revised_fin_count=proof['revised_fins'],
+            validation_grid_mm=proof['validation_grid_mm'],
+            tall_fins_diagonally_restrained=True,physical_rigidity_confirmation_pending=True,
+            face_preservation_sha256=sha(face_path))
     return dict(project_sha256=sha(path),baseline_sha256=BASE_SHA,baseline_file=str(source_path().relative_to(ROOT)),
         source_cad_sha256=sha(ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad'),
         plates=36,objects=46,instances=77,frame_sections=20,frame_joints=32,core_count=6,veneer_count=6,cover_bands=0,legacy_glue_sample_removed=True,
@@ -219,7 +234,7 @@ def check_candidate(path,baseline,plan,plate_table,validation):
         m_seconds=sum(e['seconds'] for e in estimates if e['plate'] in M_PLATES),
         full_m_native_validation_sha256=sha(OUT/'M-Core-and-Veneer-A1-native-validation.json'),
         source_child_mesh_sha256={p:hashlib.sha256(files[p]).hexdigest() for p in sorted(files) if p.startswith('3D/Objects/')},
-        physical_confirmation_pending=True)
+        fin_coverage=fin_coverage,physical_confirmation_pending=True)
 
 
 def check_full_seams(plan):

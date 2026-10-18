@@ -144,6 +144,16 @@ def audit_veneer():
     assert len(report['zero_gap_seams'])==5 and max(s['maximum_front_edge_mismatch_mm'] for s in report['zero_gap_seams'])<.0002
     assert report['native_project_reopen_return_code']==0
     assert report['native_reopen_input_sha256']==report['project_sha256']
+    if report.get('fin_coverage'):
+        fin=report['fin_coverage'];path=ROOT/fin['report']
+        assert sha(path)==fin['sha256']
+        proof=json.loads(path.read_text())
+        assert proof['baseline_contacts_sha256']==sha(ROOT/'working/review/m-fin-density/baseline-fin-contacts.json')
+        assert proof['geometry_plan_sha256']==sha(ROOT/'output/development/m-veneer-cosmetic-fit/M-geometry-validation.json')
+        assert all(r['trial_geometric_checks_pass'] for r in proof['veneers'])
+        assert sha(ROOT/'output/development/m-veneer-cosmetic-fit/M-fin-face-preservation.json')==fin['face_preservation_sha256']
+        assert fin['tall_fins_diagonally_restrained']
+        print(f"Full M support coverage: {fin['baseline_fin_count']} to {fin['revised_fin_count']} fins; finer rear-area audit and diagonal-restraint checks pass.")
     print('Both main projects: 36 sliced plates, six flat cores and six consistently Y-oriented veneers pass.')
     print('24 original plate slices preserved; zero nominal M seams, solid veneers and mounting clearances verified. Physical confirmation pending.')
 

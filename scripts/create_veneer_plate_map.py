@@ -83,6 +83,7 @@ def main():
         'Cores: 15% gyroid, 4 walls, 5 top/bottom layers.',
         'Veneers and bonded fin carriers: 100% infill.',
         'Fins and starter shoes are intentionally bonded.',
+        'V1/V3: remove the sacrificial perimeter guards too.',
         'Trees supplement the carriers; trim deliberately.',
         'Cradle the hammered face while cutting supports.',
         'Sand hidden rear lands flat on the granite plate.',

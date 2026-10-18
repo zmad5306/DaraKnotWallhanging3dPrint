@@ -8,6 +8,8 @@ All six veneers use the same complete 55-degree rotation, including the directio
 
 Cores print flat at 15% gyroid with four walls, five top/bottom layers and local solid screw reinforcement. Veneers and fused fin carriers print at 100%. The 8% body trial remains in the separate sample project. Filament slots remain 1 white, 2 wood tan, 3 copper silk and 4 blue.
 
+The full-size carriers now use 61 fins instead of 91, placed from rear-area and span checks. The curved crowns have bonded fins and offset diagonal ties. This is a 33% population reduction; a fixed 50% cut was not forced where coverage needs more support. The finer 0.75 mm geometric audit passes, while physical stiffness and silk bonding still need confirmation. See the [support revision and coverage map](M-FIN-SUPPORT-REVISION.md). Existing sample projects remain unchanged.
+
 ## Plates and estimates
 
 | Plate | Part | Hours | Filament g |
@@ -42,14 +44,14 @@ Cores print flat at 15% gyroid with four walls, five top/bottom layers and local
 | 28 | Backers 2, 4, 6, 8 | 2.8 | 99.4 |
 | 29 | B1-B4 and 32 Retainers | 8.8 | 150.9 |
 | 30 | White wood and blue edge test | 1.4 | 18.4 |
-| 31 | V1 veneer and bonded fin carrier | 27.1 | 304.0 |
-| 32 | V2 veneer and bonded fin carrier | 11.4 | 129.7 |
-| 33 | V3 veneer and bonded fin carrier | 43.4 | 564.4 |
-| 34 | V4 veneer and bonded fin carrier | 12.5 | 147.5 |
-| 35 | V5 veneer and bonded fin carrier | 11.8 | 130.8 |
-| 36 | V6 veneer and bonded fin carrier | 12.5 | 145.0 |
+| 31 | V1 veneer and bonded fin carrier | 24.3 | 271.6 |
+| 32 | V2 veneer and bonded fin carrier | 10.6 | 117.1 |
+| 33 | V3 veneer and bonded fin carrier | 37.7 | 470.3 |
+| 34 | V4 veneer and bonded fin carrier | 11.6 | 136.1 |
+| 35 | V5 veneer and bonded fin carrier | 10.4 | 117.5 |
+| 36 | V6 veneer and bonded fin carrier | 10.9 | 123.7 |
 
-The complete M, including its carriers and trees, is estimated at **1781 g and 137.7 hours**. The complete project is estimated at 4780 g and 302.4 hours, including optional finish plate 30. Estimates are slicer predictions.
+The complete M, including its carriers and trees, is estimated at **1596 g and 124.5 hours**. The complete project is estimated at 4595 g and 289.3 hours, including optional finish plate 30. Estimates are slicer predictions.
 
 Plates 1-20 and 27-30 retain their exact previous native slices. Plate 31 is now V1, and plate 32 is V2. The obsolete glue-practice pair was removed to keep the main project within Studio’s 36-plate limit; it remains in the [solid-M archive](../reference/production/Dara-Solid-M-Baseline.3mf). The current zero-gap tests remain in the [combined test project](../output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf).
 
@@ -58,6 +60,8 @@ Plates 1-20 and 27-30 retain their exact previous native slices. Plate 31 is now
 ![Flat cores and independently divided hammered veneers](../output/development/m-veneer-cosmetic-fit/M-band-free-layout.png)
 
 Use C1-C6 and V1-V6 together. Keep the 0.20 mm hidden veneer-to-core glue clearance and the seating/locator features. Remove the bonded fins and starter shoes while cradling the front, then sand the rear lands flat on the granite reference. Leave the hammer texture and cosmetic seam edges intact. Dry-fit the entire M before bonding; confirm a representative full part before printing every copper plate.
+
+V1 and V3 also include a shallow sacrificial perimeter guard around the plate. Remove it with the carrier; it is not part of the finished M.
 
 The knot geometry, backers, wall blocks, retainers and M attachment coordinates are retained. The old cover bands and solid M parts are superseded. Knot zero-gap refinements and the A2L fourteen-joint layout remain separate work.
 

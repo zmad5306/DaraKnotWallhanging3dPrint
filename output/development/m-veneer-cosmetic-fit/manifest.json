@@ -5,7 +5,7 @@
   "original_release_unchanged": true,
   "original_release_file": "reference/production/Dara-Solid-M-Baseline.3mf",
   "main_project": "Dara.3mf",
-  "main_project_sha256": "1ef14fb07f0d668f654c28479e1abe8998462a98d4114dddeb592384dd5b7919",
+  "main_project_sha256": "7cd103259df6dbbc1770a33c56c093ad8748673ec220d2145253ee4d975b7709",
   "printer": "Bambu Lab A1, 256 x 256 x 256 mm",
   "native_slicer": "BambuStudio 02.08.02.61",
   "total_verified_plates": 50,
@@ -47,8 +47,8 @@
       "editable_source": "M-Core-and-Veneer-A1.3mf",
       "plate_count": 12,
       "native_validation": "M-Core-and-Veneer-A1-native-validation.json",
-      "minimum_bead_edge_clearance_mm": 1.668127746564096,
-      "native_sha256": "3b47c3d54bdddd93bad86ac44266837ae6d12ae99c6809208b16dde5f2789588"
+      "minimum_bead_edge_clearance_mm": 0.799999999999983,
+      "native_sha256": "32ad1c7250e7889edea0968888e98d551d2b19c9d65eab7dac56706333276ebc"
     },
     {
       "project": "Frame-Cosmetic-Candidate-A1-Sliced.3mf",
@@ -70,7 +70,7 @@
   "changes": {
     "M": "Six constant-thickness 8.4 mm cores with planar front and back faces, support-free keys, and local seating/registration features. Six flat-backed band-free veneers contain the entire convex profile and hammer texture. Original mounting coordinates and finished front profile retained.",
     "veneer": "1.90-4.10 mm nominal thickness before hidden pockets; flat back at Z8.6, .20 mm planar glue space; three seating pads, one round locator and one axially relieved locator per face panel.",
-    "anchors": "Solid 1.6 mm sacrificial fins at no more than 12 mm spacing, repeated 1.2 mm wide bonded rear tabs, diagonal cross ties, and a directly grounded starter shoe under the lowest edge. Contacts enter .40 mm recessed trim areas. Trees are additional overhang support.",
+    "anchors": "Full M: solid 1.6 mm fins allocated by supported rear area and distance to bonded tabs, with diagonal cross ties and grounded starter shoes. Contacts enter .40 mm recessed trim areas. Existing sample projects retain their earlier 12 mm fin layout. Trees are additional overhang support.",
     "finish": "Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.",
     "frame": "20 sections / 32 existing seam centerlines. Tested 18 mm lap envelope; three hidden seating stops, .20 mm adhesive relief, internal reservoirs, .80 mm secondary-pocket relief and hidden tongue-tip lead-in.",
     "grain": "Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.",
@@ -134,6 +134,7 @@
   },
   "fin_support_revision": {
     "priority": "One-off artwork: restraint and surface quality take priority over material use and removal time.",
+    "full_size_area_revision": "M-fin-coverage-validation.json; fins are placed by rear-area coverage rather than removing alternate rows. Counts are allowed above the half-population target where coverage requires it.",
     "trial_dimensions": true,
     "physical_confirmation_pending": true,
     "verification": "Every bonded tab and starter-shoe patch is checked for nearby model extrusion in native G-code, excluding ordinary slicer supports. CAD checks ensure the first .20 mm of veneer is contained in the grounded starter shoe, preserve roof material above trim areas, and reject unplanned fin-to-veneer welds.",

@@ -333,7 +333,7 @@ def refresh_glue_coupon():
     print('Glue coupon rebuilt with continuous material below both sockets',flush=True)
 
 
-def refresh_fins():
+def refresh_fins(include_samples=True):
     """Iterate sacrificial tooling while retaining cached artwork/core geometry."""
     plan=json.loads((OUT/'M-geometry-validation.json').read_text())
     assert plan.get('core_crown_mm')==0,'Rebuild the flat-core geometry before refreshing cached fins'
@@ -354,12 +354,16 @@ def refresh_fins():
         carried,evidence=carrier(m,region,outline,skin_bottom,pose,excluded)
         row['carrier']=evidence;carried.export(WORK/f'V{i+1}-with-carrier.stl')
         _,settings=read_object(files,str(staging['records'][i+6]['object_id']))
+        if i in [0,2]:settings.update(tree_support_branch_angle='30',raft_first_layer_expansion='0',support_style='default',brim_width='0')
         plates.append([dict(name=f'V{i+1} band-free veneer with sacrificial fins',parts=[dict(mesh=carried)],
                             transform=np.eye(4),settings=settings,block_front=True)])
         print(f'V{i+1}: {evidence["fin_count"]} fins, {evidence["bonded_tooth_count"]} tabs, grounded starter shoe',flush=True)
     plan['project_plates']=write_project(path,plates,'DEVELOPMENT - flat M cores and fin-supported band-free veneers',
         settings_update={'bed_exclude_area':plan['native_support_guard_exclusion']})
     save_json(OUT/'M-geometry-validation.json',plan)
+    if not include_samples:
+        print('Full-size carriers refreshed; sample projects unchanged',flush=True)
+        return
     refresh_glue_coupon()
     sample=box(*SEAM_SAMPLE_WINDOW).intersection(outline)
     local_whole=solid(height_mesh(sample,0,core_top)[0])
@@ -557,7 +561,7 @@ def build(include_samples=True):
         carried.export(WORK/f'V{i+1}-with-carrier.stl')
         # Bambu's raft_first_layer_expansion also controls tree-foot expansion
         # without a raft. -1 auto-expands tall trees to the physical bed edge.
-        full_settings=dict(skin_settings,brim_width='1',tree_support_branch_angle='30',raft_first_layer_expansion='0') if i in [0,2] else skin_settings
+        full_settings=dict(skin_settings,brim_width='0',tree_support_branch_angle='30',raft_first_layer_expansion='0',support_style='default') if i in [0,2] else skin_settings
         plates.append([dict(name=f'V{i+1} band-free veneer with fused trim-away carrier',parts=[dict(mesh=carried)],transform=np.eye(4),settings=full_settings,block_front=True)])
     # Keep the main project's original usable bed. Control auxiliary tree feet
     # per object rather than imposing an exclusion on the unrelated knot plates.
@@ -638,5 +642,5 @@ def orient():
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','full','orient','cauls','glue-coupon','seam-coupon','fins']);args=ap.parse_args()
-    {'build':build,'full':lambda:build(include_samples=False),'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'seam-coupon':refresh_seam_coupon,'fins':refresh_fins}[args.action]()
+    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['build','full','orient','cauls','glue-coupon','seam-coupon','fins','full-fins']);args=ap.parse_args()
+    {'build':build,'full':lambda:build(include_samples=False),'orient':orient,'cauls':refresh_cauls,'glue-coupon':refresh_glue_coupon,'seam-coupon':refresh_seam_coupon,'fins':refresh_fins,'full-fins':lambda:refresh_fins(include_samples=False)}[args.action]()

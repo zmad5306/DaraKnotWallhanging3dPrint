@@ -10,6 +10,8 @@ For an orientation-corrected reprint of the **original solid M**, use [the six-p
 
 **Print the current tests from [one combined Bambu project](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf): 17 parts on three A1 plates, reduced from twelve.** Plate 1 contains both white cauls and the ribbon jig; plate 2 contains all six copper M test parts; plate 3 contains the four full-color ribbon comparison pairs A–D and their purge tower. [Plate map](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-plates.png) · [Guide and source traceability](output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1.json). Mark A–D and tongue/socket on the ribbon backs before lifting them from the bed. The saved rotations, surface directions, support painting, colors and per-object process settings are retained.
 
+[Printable sample checklist](output/pdf/Dara-Sample-Production-Checklist.pdf): two US Letter pages covering every part, plate start/finish times, cleanup, reprints, veneer fit, ribbon comparisons and adhesive/cure notes. Print at 100%. Regenerate with `scripts/create_sample_checklist.py` using the bundled PDF dependencies or Python with ReportLab.
+
 The white M cauls are removable clamp pads with smooth crown faces and no hammered dimples; use a soft liner and release film. Cradle the face while cutting the fins and starter shoe, then trim remnants into the .40 mm rear recesses. Assess dry closure, grazing-light reflection, trim removal, cupping correction and cured glue-up before printing the full candidates. Keep the saved orientations and use release film on the show-face jig.
 
 On another computer with Git LFS installed, fetch and switch to this branch, then download the embedded 3MF assets:

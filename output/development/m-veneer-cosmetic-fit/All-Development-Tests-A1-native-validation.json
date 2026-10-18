@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "79f6fa19fea982a4188076355acedf613e570fe4a74317d60cdf6c19a3a5c37c",
-  "native_project_sha256": "d4149952c550829b064288aa81a6a6048084b03184a6b9c6132fb3ac9d17a9d5",
+  "staged_sha256": "8be83ef5c1ccaf9cf5d51c62975d00d4aa16113d52d7214be6d62466977fa4a1",
+  "native_project_sha256": "f8434ce893dd454ace61800fd645943401c957b6a404c5e33b3f22c7cf1bbc6d",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -110,9 +110,9 @@
       ],
       "conservative_bed_edge_clearance_mm": 23.0,
       "plate": 1,
-      "gcode_sha256": "575c65d6480ab8bf82eae687fb38dd2be0b63c41fe2aed36367f70022491ce08",
+      "gcode_sha256": "a12b40798c38686af3ab1b97f55c9fa2024a2a76f172ac191a20ed2818327b85",
       "header": [
-        "; model printing time: 1h 42m 20s; total estimated time: 1h 48m 54s",
+        "; model printing time: 1h 41m 59s; total estimated time: 1h 48m 33s",
         "; total layer number: 30",
         "; total filament length [mm] : 14151.65",
         "; total filament volume [cm^3] : 34038.71",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "extrusion_moves_checked": 441377,
+      "extrusion_moves_checked": 412862,
       "features": {
         "Support": 183557,
         "Brim": 1392,
@@ -136,9 +136,9 @@
         "Bottom surface": 1637,
         "Support interface": 2,
         "Internal solid infill": 75616,
-        "Sparse infill": 62756,
-        "Floating vertical shell": 11483,
-        "Bridge": 1156,
+        "Sparse infill": 34177,
+        "Floating vertical shell": 11467,
+        "Bridge": 1236,
         "Top surface": 1513,
         "Overhang wall": 35
       },
@@ -164,13 +164,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 12.621236215149661,
       "plate": 2,
-      "gcode_sha256": "0bb4a0dcd245a32b9f9111f6c8ba2280e8317342486863c1da9deaf61869d152",
+      "gcode_sha256": "d84aa2b00e0421834e32b84d6b42b62b945d696453ab61a2877c39dc8325fd3d",
       "header": [
-        "; model printing time: 10h 28m 13s; total estimated time: 10h 34m 49s",
+        "; model printing time: 10h 8m 41s; total estimated time: 10h 15m 17s",
         "; total layer number: 338",
-        "; total filament length [mm] : 43953.85",
-        "; total filament volume [cm^3] : 105721.39",
-        "; total filament weight [g] : 131.09",
+        "; total filament length [mm] : 42737.98",
+        "; total filament volume [cm^3] : 102796.89",
+        "; total filament weight [g] : 127.47",
         "; model label id: 10300,10400,10500,10600,10700,10800",
         "; object max height: 9.00,9.00,9.00,67.80,62.00,62.00",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "extrusion_moves_checked": 277629,
+      "extrusion_moves_checked": 174567,
       "features": {
         "Prime tower": 3484,
         "Support": 4807,
@@ -188,10 +188,10 @@
         "Outer wall": 13132,
         "Inner wall": 24321,
         "Bottom surface": 2364,
-        "Internal solid infill": 34400,
-        "Sparse infill": 170623,
-        "Floating vertical shell": 366,
-        "Bridge": 9515,
+        "Internal solid infill": 34874,
+        "Sparse infill": 68050,
+        "Floating vertical shell": 387,
+        "Bridge": 8531,
         "Support transition": 956,
         "Support interface": 1616,
         "Gap infill": 1612,
@@ -220,13 +220,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 4.347,
       "plate": 3,
-      "gcode_sha256": "dc75e028da095241f290e703a7cfeb753aa006a628642dd4d10331df33e6f9d5",
+      "gcode_sha256": "58b2655c54b5293a966103473f4d115e0be2bc340173216ef620a62661509ff4",
       "header": [
-        "; model printing time: 8h 13m 20s; total estimated time: 8h 19m 57s",
+        "; model printing time: 7h 8m 17s; total estimated time: 7h 14m 54s",
         "; total layer number: 68",
-        "; total filament length [mm] : 45066.37,2757.35,430.98",
-        "; total filament volume [cm^3] : 108397.32,6632.19,1036.63",
-        "; total filament weight [g] : 134.41,8.22,1.29",
+        "; total filament length [mm] : 40993.51,2757.35,430.98",
+        "; total filament volume [cm^3] : 98600.94,6632.19,1036.63",
+        "; total filament weight [g] : 122.27,8.22,1.29",
         "; model label id: 10900,11000,11100,11200,11300,11400,11500,11600",
         "; object max height: 13.60,13.60,13.60,13.60,13.60,13.60,13.60,13.60",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -237,6 +237,22 @@
     }
   ],
   "physical_fit_finish_and_support_anchor_test_pending": true,
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 11,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "All-Development-Tests-A1.3mf"
+    },
+    "native": {
+      "body_count": 11,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
+  },
   "coupon_connected_components": {
     "editable_source": [
       {
@@ -344,6 +360,12 @@
     ],
     "native_export": [
       {
+        "name": "Glue-test smooth caul",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
         "name": "Seam-test smooth caul",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
@@ -351,12 +373,6 @@
       },
       {
         "name": "Ribbon show-face jig",
-        "connected_components": 1,
-        "numerical_zero_volume_shells": 0,
-        "excluded_absolute_volume_mm3": 0
-      },
-      {
-        "name": "M seam core C4",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0
@@ -374,7 +390,7 @@
         "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "Glue-test smooth caul",
+        "name": "M seam core C4",
         "connected_components": 1,
         "numerical_zero_volume_shells": 0,
         "excluded_absolute_volume_mm3": 0

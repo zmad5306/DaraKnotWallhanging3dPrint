@@ -256,7 +256,7 @@ def sample_project(filename, sample, panels, cores, whole, outline, core_top, sk
     for n,(i,c) in enumerate(samples):
         assert len(c.decompose())==1, (filename, i+1, 'Disconnected seating feature')
         m=mesh(c);xy=(128,110) if len(samples)==1 else (75+n*103,120)
-        objs.append(dict(name=f'Flat core coupon C{i+1}',parts=[dict(mesh=m)],transform=centered(m,xy=xy),settings=core_settings))
+        objs.append(dict(name=f'Flat core coupon C{i+1}',parts=[dict(mesh=m)],transform=centered(m,xy=xy),settings=dict(core_settings,sparse_infill_density='8%')))
     plates=[objs]+[[obj] for obj in skin_objects]
     # The caul follows the broad crown, not the individual hammer dimples. Its
     # flat-printed contact face is used with a soft liner and release film.

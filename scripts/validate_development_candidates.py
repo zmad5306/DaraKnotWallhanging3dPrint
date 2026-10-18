@@ -111,6 +111,11 @@ def coupon_material_angles(text):
 
 def validate(name, native):
     staged=OUT/name;export=native/'sliced.3mf'
+    from set_sample_infill import TARGETS,verify_sample_infill
+    trial_count=11 if name=='All-Development-Tests-A1.3mf' else TARGETS.get(staged.stem)
+    infill_trial=None
+    if trial_count is not None:
+        infill_trial=dict(editable=verify_sample_infill(staged,trial_count),native=verify_sample_infill(export,trial_count))
     result=json.loads((native/'result.json').read_text());assert result['return_code']==0,result
     connectivity=None
     if name in ['M-Veneer-Glue-Coupon-A1.3mf','M-Veneer-Seam-Coupon-A1.3mf','Frame-Cosmetic-Comparison-A1.3mf']:
@@ -161,6 +166,7 @@ def validate(name, native):
                 native_return_code=0,plate_count=len(gcodes),native_roundtrip_geometry=geom,plates=rows,
                 physical_fit_finish_and_support_anchor_test_pending=True)
     if connectivity is not None:report['coupon_connected_components']=connectivity
+    if infill_trial is not None:report['sample_infill_trial']=infill_trial
     save_json(OUT/(staged.stem+'-native-validation.json'),report)
     print(json.dumps(dict(file=str(target),plates=len(rows),minimum_bed_edge_clearance_mm=min(r['conservative_bed_edge_clearance_mm'] for r in rows),max_native_error_mm=max(g['max_native_vertex_or_pose_error_mm'] for g in geom)),indent=2))
 

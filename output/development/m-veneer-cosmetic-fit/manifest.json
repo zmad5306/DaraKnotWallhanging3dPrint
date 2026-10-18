@@ -13,7 +13,7 @@
       "plate_count": 3,
       "native_validation": "All-Development-Tests-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 4.347,
-      "native_sha256": "d4149952c550829b064288aa81a6a6048084b03184a6b9c6132fb3ac9d17a9d5"
+      "native_sha256": "f8434ce893dd454ace61800fd645943401c957b6a404c5e33b3f22c7cf1bbc6d"
     },
     {
       "project": "M-Veneer-Seam-Coupon-A1-Sliced.3mf",
@@ -21,7 +21,7 @@
       "plate_count": 4,
       "native_validation": "M-Veneer-Seam-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 83.964,
-      "native_sha256": "e1dc245e60b0f15c14b19d64764c879784080cc845ee345cfa6856b9de7db378"
+      "native_sha256": "447e11c6a2082b9974ce6b28e930a54b76b42f2d357d7286760f838826e8d60a"
     },
     {
       "project": "M-Veneer-Glue-Coupon-A1-Sliced.3mf",
@@ -29,7 +29,7 @@
       "plate_count": 3,
       "native_validation": "M-Veneer-Glue-Coupon-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 34.964,
-      "native_sha256": "45ca2ca1056ea3fb9bc26abbd15c879a16846b7bdb2bbdd1ce89747ac3cc6d79"
+      "native_sha256": "e4ef162744745eb2b2cb279f50cf0c939c5f71caa060b0b18418bea25c28e9fb"
     },
     {
       "project": "Frame-Cosmetic-Comparison-A1-Sliced.3mf",
@@ -37,7 +37,7 @@
       "plate_count": 5,
       "native_validation": "Frame-Cosmetic-Comparison-A1-native-validation.json",
       "minimum_bead_edge_clearance_mm": 6.5429323069578205,
-      "native_sha256": "c75159dd11af8444aae92ab28ccfca1f2cc7dfeaa36eca83c82f67e4e6306766"
+      "native_sha256": "ff14490a74cd161c7ecd67491d568a5b4af97a7e7dbc6c178a84c4ed5030c484"
     },
     {
       "project": "M-Core-and-Veneer-A1-Sliced.3mf",
@@ -86,6 +86,13 @@
   ],
   "combined_test_plate_map": "All-Development-Tests-A1-plates.png",
   "combined_test_guide": "All-Development-Tests-A1.json",
+  "sample_infill_trial": {
+    "body_density": "8%",
+    "pattern": "gyroid",
+    "parts": "Three M structural coupons and all eight ribbon comparison parts",
+    "retained": "Four walls, solid skins, 100% veneers/carriers, prior fixture settings and any local solid modifiers",
+    "full_size_candidates": "Remain at 15% pending physical rigidity and weight comparison"
+  },
   "flat_core_revision": {
     "core_body_thickness_mm": 8.4,
     "core_crown_mm": 0,

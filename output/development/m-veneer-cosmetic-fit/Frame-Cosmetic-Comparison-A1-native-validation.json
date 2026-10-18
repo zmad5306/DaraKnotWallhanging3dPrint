@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "10e1a70f6de63ef778c143b2b9d64e577ccaea963609a954940c531457cfa34f",
-  "native_project_sha256": "c75159dd11af8444aae92ab28ccfca1f2cc7dfeaa36eca83c82f67e4e6306766",
+  "staged_sha256": "ab6c04f40da9d40bd4fdd80d5f1afd85dbc970b71fb56a39638d4c817ae3afe9",
+  "native_project_sha256": "ff14490a74cd161c7ecd67491d568a5b4af97a7e7dbc6c178a84c4ed5030c484",
   "native_return_code": 0,
   "plate_count": 5,
   "native_roundtrip_geometry": [
@@ -44,7 +44,7 @@
   ],
   "plates": [
     {
-      "extrusion_moves_checked": 70695,
+      "extrusion_moves_checked": 44932,
       "features": {
         "Prime tower": 3484,
         "Support": 1192,
@@ -52,10 +52,10 @@
         "Outer wall": 3183,
         "Inner wall": 5933,
         "Bottom surface": 591,
-        "Internal solid infill": 8135,
-        "Sparse infill": 42804,
-        "Floating vertical shell": 55,
-        "Bridge": 2065,
+        "Internal solid infill": 8160,
+        "Sparse infill": 17076,
+        "Floating vertical shell": 59,
+        "Bridge": 2001,
         "Support transition": 240,
         "Support interface": 392,
         "Gap infill": 355,
@@ -84,13 +84,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 6.5429323069578205,
       "plate": 1,
-      "gcode_sha256": "f64053473cea56a6a4717082b621faf27165b42c97d01d78b802645a9ee5097e",
+      "gcode_sha256": "0197257f33c25e4325611fbfe4b491642f6f3c1c3d86dbfcc4b000673134e28e",
       "header": [
-        "; model printing time: 2h 27m 45s; total estimated time: 2h 34m 23s",
+        "; model printing time: 2h 11m 38s; total estimated time: 2h 18m 15s",
         "; total layer number: 68",
-        "; total filament length [mm] : 12480.50,1046.47,257.60",
-        "; total filament volume [cm^3] : 30019.12,2517.05,619.60",
-        "; total filament weight [g] : 37.22,3.12,0.77",
+        "; total filament length [mm] : 11481.98,1046.47,257.60",
+        "; total filament volume [cm^3] : 27617.40,2517.05,619.60",
+        "; total filament weight [g] : 34.25,3.12,0.77",
         "; model label id: 1000,1100",
         "; object max height: 13.60,13.60",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "extrusion_moves_checked": 72527,
+      "extrusion_moves_checked": 46732,
       "features": {
         "Prime tower": 3484,
         "Support": 1204,
@@ -169,10 +169,10 @@
         "Outer wall": 3314,
         "Inner wall": 6131,
         "Bottom surface": 591,
-        "Internal solid infill": 8791,
-        "Sparse infill": 42637,
-        "Floating vertical shell": 103,
-        "Bridge": 2484,
+        "Internal solid infill": 8928,
+        "Sparse infill": 16991,
+        "Floating vertical shell": 109,
+        "Bridge": 2192,
         "Support transition": 237,
         "Support interface": 410,
         "Gap infill": 417,
@@ -201,13 +201,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 6.5429323069578205,
       "plate": 2,
-      "gcode_sha256": "f2703c126ee93e87c9c2c27b140392d54f2615b40773c8c07a9dbc9335062f0e",
+      "gcode_sha256": "315aaee876ff020d260ac682875d0f36485d3b0e2786986286e609610fa43488",
       "header": [
-        "; model printing time: 2h 30m 14s; total estimated time: 2h 36m 51s",
+        "; model printing time: 2h 13m 53s; total estimated time: 2h 20m 30s",
         "; total layer number: 68",
-        "; total filament length [mm] : 12530.03,1046.47,257.60",
-        "; total filament volume [cm^3] : 30138.25,2517.05,619.60",
-        "; total filament weight [g] : 37.37,3.12,0.77",
+        "; total filament length [mm] : 11506.74,1046.47,257.60",
+        "; total filament volume [cm^3] : 27676.95,2517.05,619.60",
+        "; total filament weight [g] : 34.32,3.12,0.77",
         "; model label id: 1200,1300",
         "; object max height: 13.60,13.60",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "extrusion_moves_checked": 72354,
+      "extrusion_moves_checked": 46734,
       "features": {
         "Prime tower": 3484,
         "Support": 1204,
@@ -286,10 +286,10 @@
         "Outer wall": 3314,
         "Inner wall": 6132,
         "Bottom surface": 591,
-        "Internal solid infill": 8686,
-        "Sparse infill": 42555,
-        "Floating vertical shell": 105,
-        "Bridge": 2483,
+        "Internal solid infill": 8926,
+        "Sparse infill": 16993,
+        "Floating vertical shell": 109,
+        "Bridge": 2181,
         "Support transition": 238,
         "Support interface": 409,
         "Gap infill": 430,
@@ -318,13 +318,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 18.015430541116842,
       "plate": 3,
-      "gcode_sha256": "7167683018c9234e8fe8952ae9179d2783fe9a087df00322cfcca512f0e2fc7b",
+      "gcode_sha256": "e2114749841210364ca6c83420e61426f5c0680c56c2bb11ffda7dbaa2fa1957",
       "header": [
-        "; model printing time: 2h 29m 56s; total estimated time: 2h 36m 34s",
+        "; model printing time: 2h 13m 45s; total estimated time: 2h 20m 22s",
         "; total layer number: 68",
-        "; total filament length [mm] : 12532.59,1046.47,257.62",
-        "; total filament volume [cm^3] : 30144.41,2517.06,619.65",
-        "; total filament weight [g] : 37.38,3.12,0.77",
+        "; total filament length [mm] : 11511.74,1046.47,257.62",
+        "; total filament volume [cm^3] : 27688.97,2517.06,619.65",
+        "; total filament weight [g] : 34.33,3.12,0.77",
         "; model label id: 1400,1500",
         "; object max height: 13.60,13.60",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "extrusion_moves_checked": 72507,
+      "extrusion_moves_checked": 46623,
       "features": {
         "Prime tower": 3484,
         "Support": 1207,
@@ -403,10 +403,10 @@
         "Outer wall": 3321,
         "Inner wall": 6125,
         "Bottom surface": 591,
-        "Internal solid infill": 8788,
-        "Sparse infill": 42627,
-        "Floating vertical shell": 103,
-        "Bridge": 2483,
+        "Internal solid infill": 8860,
+        "Sparse infill": 16990,
+        "Floating vertical shell": 110,
+        "Bridge": 2157,
         "Support transition": 241,
         "Support interface": 405,
         "Gap infill": 410,
@@ -435,13 +435,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 18.015430541116842,
       "plate": 4,
-      "gcode_sha256": "124e334e17056e5ab398d3e46f42e2f931fcbf43582b913a659c1814e93c9632",
+      "gcode_sha256": "bf86f454e7aa56e6909ccee5cabb90d38b944a2643d60fae96bd18e861d9a323",
       "header": [
-        "; model printing time: 2h 30m 27s; total estimated time: 2h 37m 5s",
+        "; model printing time: 2h 14m 5s; total estimated time: 2h 20m 43s",
         "; total layer number: 68",
-        "; total filament length [mm] : 12529.94,1046.29,257.59",
-        "; total filament volume [cm^3] : 30138.04,2516.63,619.57",
-        "; total filament weight [g] : 37.37,3.12,0.77",
+        "; total filament length [mm] : 11499.75,1046.29,257.59",
+        "; total filament volume [cm^3] : 27660.13,2516.63,619.57",
+        "; total filament weight [g] : 34.30,3.12,0.77",
         "; model label id: 1600,1700",
         "; object max height: 13.60,13.60",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -565,78 +565,130 @@
     "editable_source": [
       {
         "name": "A reference tongue",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "A reference socket",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "B refined 0.075 tongue",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "B refined 0.075 socket",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "C refined 0.05 tongue",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "C refined 0.05 socket",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "D refined 0.10 tongue",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "D refined 0.10 socket",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Show-face glue jig - use release film",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       }
     ],
     "native_export": [
       {
-        "name": "D refined 0.10 tongue",
-        "connected_components": 1
-      },
-      {
-        "name": "D refined 0.10 socket",
-        "connected_components": 1
-      },
-      {
-        "name": "B refined 0.075 socket",
-        "connected_components": 1
+        "name": "A reference tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "C refined 0.05 tongue",
-        "connected_components": 1
-      },
-      {
-        "name": "B refined 0.075 tongue",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "C refined 0.05 socket",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "A reference tongue",
-        "connected_components": 1
+        "name": "D refined 0.10 tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
-        "name": "A reference socket",
-        "connected_components": 1
+        "name": "D refined 0.10 socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       },
       {
         "name": "Show-face glue jig - use release film",
-        "connected_components": 1
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "A reference socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "B refined 0.075 tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "B refined 0.075 socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
       }
     ]
+  },
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 8,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "Frame-Cosmetic-Comparison-A1.3mf"
+    },
+    "native": {
+      "body_count": 8,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
   }
 }

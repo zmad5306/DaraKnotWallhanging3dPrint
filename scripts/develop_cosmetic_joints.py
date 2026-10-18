@@ -92,7 +92,7 @@ def coupons():
         # Intentionally different bed rotations; compensate to one assembly angle.
         for k,(entries,settings,yaw,xy) in enumerate(zip(pair,[sa,sb],[17,67],[(74,125),(177,125)])):
             t=centered(entries[0]['mesh'],z_rotation(yaw),xy=xy)
-            settings=dict(settings,infill_direction=str((ASSEMBLED_GRAIN+yaw-NATIVE_TOP_OFFSET)%180),brim_width='1')
+            settings=dict(settings,infill_direction=str((ASSEMBLED_GRAIN+yaw-NATIVE_TOP_OFFSET)%180),brim_width='1',sparse_infill_density='8%')
             objs.append(dict(name=f'{label} {"tongue" if k==0 else "socket"}',parts=entries,transform=t,settings=settings))
         plates.append(objs);reports.append(dict(label=label,**report))
     # White-only contact pads hold both show faces at Z6. A 4 mm open clearance

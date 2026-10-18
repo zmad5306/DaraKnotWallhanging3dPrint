@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "647fe0aae49c5696dce70b633084fb0060709773db25fe470322e882bd2aadf3",
-  "native_project_sha256": "45ca2ca1056ea3fb9bc26abbd15c879a16846b7bdb2bbdd1ce89747ac3cc6d79",
+  "staged_sha256": "f32fb451ce25534721bfb15a63e5a21cefce365c8ad9dc4a72836faa8eacf977",
+  "native_project_sha256": "e4ef162744745eb2b2cb279f50cf0c939c5f71caa060b0b18418bea25c28e9fb",
   "native_return_code": 0,
   "plate_count": 3,
   "native_roundtrip_geometry": [
@@ -24,7 +24,7 @@
   ],
   "plates": [
     {
-      "extrusion_moves_checked": 45667,
+      "extrusion_moves_checked": 28670,
       "features": {
         "Brim": 518,
         "Outer wall": 1663,
@@ -32,9 +32,9 @@
         "Gap infill": 348,
         "Bottom surface": 855,
         "Internal solid infill": 7819,
-        "Sparse infill": 28093,
-        "Bridge": 912,
-        "Floating vertical shell": 66,
+        "Sparse infill": 11091,
+        "Bridge": 922,
+        "Floating vertical shell": 61,
         "Top surface": 609
       },
       "extruding_xy_bounds_mm": [
@@ -59,13 +59,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 34.964,
       "plate": 1,
-      "gcode_sha256": "a529c33975ee7f97394e045ee2fc3081282b86ffad4fbf94044977d915b77c80",
+      "gcode_sha256": "a918dd7a83c5bfbf045dff08476a7563a14059e01db5a12cb1c631ab4a955c7e",
       "header": [
-        "; model printing time: 1h 26m 40s; total estimated time: 1h 33m 16s",
+        "; model printing time: 1h 14m 46s; total estimated time: 1h 21m 23s",
         "; total layer number: 45",
-        "; total filament length [mm] : 8594.79",
-        "; total filament volume [cm^3] : 20672.88",
-        "; total filament weight [g] : 25.63",
+        "; total filament length [mm] : 7874.74",
+        "; total filament volume [cm^3] : 18940.97",
+        "; total filament weight [g] : 23.49",
         "; model label id: 1000,1100",
         "; object max height: 9.00,9.00",
         "; filament_density: 1.24,1.24,1.24,1.24",
@@ -168,7 +168,7 @@
       ],
       "conservative_bed_edge_clearance_mm": 89.0,
       "plate": 3,
-      "gcode_sha256": "6017c89fac25a10e661553e3bc3a3d3208db97d7e213067e0627a54ee11ef8ff",
+      "gcode_sha256": "1749dcdb6260c1b99f0a50414f1c989ebac4997f481588c9baeeffd5d5d1321f",
       "header": [
         "; model printing time: 35m 19s; total estimated time: 41m 53s",
         "; total layer number: 20",
@@ -237,5 +237,21 @@
         "excluded_absolute_volume_mm3": 0
       }
     ]
+  },
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 2,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "M-Veneer-Glue-Coupon-A1.3mf"
+    },
+    "native": {
+      "body_count": 2,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
   }
 }

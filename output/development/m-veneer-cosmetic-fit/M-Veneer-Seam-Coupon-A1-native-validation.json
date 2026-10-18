@@ -1,7 +1,7 @@
 {
   "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
-  "staged_sha256": "21b1a291d1c49ee10b2e411842e49f0930ea2c84c2b3c41dbcc5cf4bc64acc18",
-  "native_project_sha256": "e1dc245e60b0f15c14b19d64764c879784080cc845ee345cfa6856b9de7db378",
+  "staged_sha256": "7da9d1c36d3cfa825918be063e22119c7ae34274c05299275e3d08216bdd5ea2",
+  "native_project_sha256": "447e11c6a2082b9974ce6b28e930a54b76b42f2d357d7286760f838826e8d60a",
   "native_return_code": 0,
   "plate_count": 4,
   "native_roundtrip_geometry": [
@@ -24,16 +24,16 @@
   ],
   "plates": [
     {
-      "extrusion_moves_checked": 24054,
+      "extrusion_moves_checked": 12543,
       "features": {
         "Brim": 51,
         "Outer wall": 252,
         "Inner wall": 675,
         "Bottom surface": 344,
         "Internal solid infill": 2902,
-        "Sparse infill": 19171,
-        "Floating vertical shell": 10,
-        "Bridge": 220,
+        "Sparse infill": 7594,
+        "Floating vertical shell": 6,
+        "Bridge": 290,
         "Top surface": 323,
         "Gap infill": 106
       },
@@ -59,13 +59,13 @@
       ],
       "conservative_bed_edge_clearance_mm": 83.964,
       "plate": 1,
-      "gcode_sha256": "aee2bd6366c14b53dc1328f7488180102f86b809a6eb20ebfb92772d9b5a5e27",
+      "gcode_sha256": "531735839b8b04950381560f8c393a6bc38b6b89dbacb8a795dd9fa7ad775886",
       "header": [
-        "; model printing time: 46m 4s; total estimated time: 52m 41s",
+        "; model printing time: 38m 41s; total estimated time: 45m 18s",
         "; total layer number: 45",
-        "; total filament length [mm] : 5150.02",
-        "; total filament volume [cm^3] : 12387.26",
-        "; total filament weight [g] : 15.36",
+        "; total filament length [mm] : 4654.21",
+        "; total filament volume [cm^3] : 11194.68",
+        "; total filament weight [g] : 13.88",
         "; filament_density: 1.24,1.24,1.24,1.24",
         "; filament_diameter: 1.75,1.75,1.75,1.75",
         "; max_z_height: 9.00",
@@ -291,5 +291,21 @@
         "excluded_absolute_volume_mm3": 0
       }
     ]
+  },
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 1,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "M-Veneer-Seam-Coupon-A1.3mf"
+    },
+    "native": {
+      "body_count": 1,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
   }
 }

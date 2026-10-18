@@ -6,15 +6,15 @@
   "sources": [
     {
       "file": "M-Veneer-Glue-Coupon-A1.3mf",
-      "sha256": "647fe0aae49c5696dce70b633084fb0060709773db25fe470322e882bd2aadf3"
+      "sha256": "f32fb451ce25534721bfb15a63e5a21cefce365c8ad9dc4a72836faa8eacf977"
     },
     {
       "file": "M-Veneer-Seam-Coupon-A1.3mf",
-      "sha256": "21b1a291d1c49ee10b2e411842e49f0930ea2c84c2b3c41dbcc5cf4bc64acc18"
+      "sha256": "7da9d1c36d3cfa825918be063e22119c7ae34274c05299275e3d08216bdd5ea2"
     },
     {
       "file": "Frame-Cosmetic-Comparison-A1.3mf",
-      "sha256": "10e1a70f6de63ef778c143b2b9d64e577ccaea963609a954940c531457cfa34f"
+      "sha256": "ab6c04f40da9d40bd4fdd80d5f1afd85dbc970b71fb56a39638d4c817ae3afe9"
     }
   ],
   "records": [

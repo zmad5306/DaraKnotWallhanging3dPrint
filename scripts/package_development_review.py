@@ -4,6 +4,7 @@ import zipfile
 from development_3mf import ROOT,OUT,sha,save_json
 
 NAMES=[
+    'All-Development-Tests-A1',
     'M-Veneer-Seam-Coupon-A1',
     'M-Veneer-Glue-Coupon-A1',
     'Frame-Cosmetic-Comparison-A1',
@@ -40,9 +41,12 @@ def main():
         grain='Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.',
         jig='White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include smooth crown cauls, without hammer dimples, for use with a soft liner and release film.'),
       test_order=[
-        dict(file='M-Veneer-Glue-Coupon-A1-Sliced.3mf',plates=['1: two keyed core halves','2: continuous veneer with fused carrier','3: smooth white crown caul (clamp fixture)'],purpose='Test structural core fit and whether the veneer seats flat over its joint.'),
-        dict(file='M-Veneer-Seam-Coupon-A1-Sliced.3mf',plates=['1: flat core','2: upper veneer with fused carrier','3: lower veneer with fused carrier','4: smooth white crown caul (clamp fixture)'],purpose='Test exposed seam closure and reflection without bands; assess support cleanup and clamping.'),
-        dict(file='Frame-Cosmetic-Comparison-A1-Sliced.3mf',plates=['1: existing .075 mm lap reference','2: refined .075 mm','3: refined .05 mm','4: refined .10 mm','5: show-face jig'],purpose='Compare face step, dry closure, surface direction and cured adhesive seam before choosing a production tolerance.')],
+        dict(file='All-Development-Tests-A1-Sliced.3mf',plates=['1: both white cauls and ribbon jig (3 parts)',
+             '2: all copper cores and fin-supported veneers (6 parts)',
+             '3: all four full-color ribbon comparison pairs A-D (8 parts)'],
+             purpose='All 17 current test parts in one project, reduced from 12 plates to 3. Rotations, support painting, color modifiers and process settings are retained.')],
+      combined_test_plate_map='All-Development-Tests-A1-plates.png',
+      combined_test_guide='All-Development-Tests-A1.json',
       glue_coupon_correction=dict(reason='The previous crop opened one socket and disconnected a chunk of the smaller core half.',
         change='Extended the sample 15 mm below the old crop, retaining continuous material around both sockets; regenerated matching seating features, veneer and caul.',
         replace='Use all three plates from the updated glue-coupon project together. Earlier glue-coupon parts are superseded.',
@@ -50,7 +54,7 @@ def main():
       fin_support_revision=dict(priority='One-off artwork: restraint and surface quality take priority over material use and removal time.',
         trial_dimensions=True,physical_confirmation_pending=True,
         verification='Every bonded tab and starter-shoe patch is checked for nearby model extrusion in native G-code, excluding ordinary slicer supports. CAD checks ensure the first .20 mm of veneer is contained in the grounded starter shoe, preserve roof material above trim areas, and reject unplanned fin-to-veneer welds.',
-        test_first='Print the glue-coupon project first to assess rigidity, silk bonding, and removal. Then print the exposed-seam coupon; full veneers remain candidates pending these results.'),
+        test_first='Use the combined project: white fixtures first, then the copper M tests and ribbon comparisons. Full veneers remain candidates pending rigidity, silk bonding, removal, fit and finish results.'),
       assembly_instructions=[
         'Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.',
         'Use filament slots 1 white, 2 wood tan, 3 copper silk, 4 blue. Full M parts and their fused carriers use copper; sample cauls/jig use white.',
@@ -65,7 +69,7 @@ def main():
       original_solid_M_alternative='The six-plate M-Solid-Common-Orientation-A1-Sliced.3mf retains original solid meshes and support paint. All pieces align with the saved M5 rotation; it does not change the original supported structural construction.',
       seam_routing='Frame seam centerlines are retained in this controlled comparison; no artwork or blue-edge feature is rerouted. Band-free M veneer seams follow the original five face divisions, with the band seats removed.',
       independent_geometry_check='Independent-geometry-checks.json',
-      previews=['M-band-free-layout.png','M-veneer-carrier.png','M-veneer-fin-test.png','M-glue-coupon-correction.png'],
+      previews=['All-Development-Tests-A1-plates.png','M-band-free-layout.png','M-veneer-carrier.png','M-veneer-fin-test.png','M-glue-coupon-correction.png'],
       physical_confirmation_pending=True,
       source_references=['https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Support/TreeSupport.cpp',
                          'https://weblog.masukomi.org/2024/03/11/manual-support-fins-for-3d-printing/',

@@ -1,0 +1,1081 @@
+{
+  "title": "All current development tests",
+  "plate_count": 3,
+  "part_count": 17,
+  "previous_plate_count": 12,
+  "sources": [
+    {
+      "file": "M-Veneer-Glue-Coupon-A1.3mf",
+      "sha256": "f6365fe2b5caac8e3501378029d3bd8405734691dd27315ff5a9501593f0f708"
+    },
+    {
+      "file": "M-Veneer-Seam-Coupon-A1.3mf",
+      "sha256": "f7e3aebe97ffc7867333b47426918f0bc2490bbaa00c14abe79518f93235bd89"
+    },
+    {
+      "file": "Frame-Cosmetic-Comparison-A1.3mf",
+      "sha256": "10e1a70f6de63ef778c143b2b9d64e577ccaea963609a954940c531457cfa34f"
+    }
+  ],
+  "records": [
+    {
+      "name": "Glue-test smooth caul",
+      "plate": 1,
+      "object_id": 10000,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1300,
+      "source_name": "Smooth crown caul - soft liner and release film",
+      "source_plate": 3,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          313.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          123.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          14.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          23.0,
+          29.5,
+          0.0
+        ],
+        [
+          101.0,
+          98.5,
+          4.15
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -66.0,
+        -64.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10001": "8b2e1c9082d4785b14b1cbd831e93fca8c6514486d66170d5590f5e7bcfcbc32"
+      },
+      "part_id_mapping": {
+        "1301": "10001"
+      }
+    },
+    {
+      "name": "Seam-test smooth caul",
+      "plate": 1,
+      "object_id": 10100,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1300,
+      "source_name": "Smooth crown caul - soft liner and release film",
+      "source_plate": 4,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          317.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          99.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          14.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          27.0,
+          139.0,
+          0.0
+        ],
+        [
+          97.0,
+          189.0,
+          4.15
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -66.0,
+        36.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10101": "337ab669ad17df7c0123b62657ec9bddc71c230b3ce2215b20174723583b991f"
+      },
+      "part_id_mapping": {
+        "1301": "10101"
+      }
+    },
+    {
+      "name": "Ribbon show-face jig",
+      "plate": 1,
+      "object_id": 10200,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1800,
+      "source_name": "Show-face glue jig - use release film",
+      "source_plate": 5,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          175.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          133.0,
+          74.0,
+          0.0
+        ],
+        [
+          227.0,
+          162.0,
+          6.0
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        52.0,
+        -10.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10201": "5cd4473a14e29d2195e37229429eb6a7eb1e5313da652ec63312f120deb81212"
+      },
+      "part_id_mapping": {
+        "1801": "10201"
+      }
+    },
+    {
+      "name": "M glue core C1",
+      "plate": 2,
+      "object_id": 10300,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1000,
+      "source_name": "Flat core coupon C1",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          307.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -19.06489310786128
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          17.0,
+          21.06489310786128,
+          0.0
+        ],
+        [
+          95.0,
+          74.93510689213872,
+          11.2
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -19.0,
+        -72.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10301": "0d2966a0e5667ad9e73ee7a7e10c6300cc87ef1dade1b6dbea90c3862aa2e2b4"
+      },
+      "part_id_mapping": {
+        "1001": "10301"
+      }
+    },
+    {
+      "name": "M glue core C4",
+      "plate": 2,
+      "object_id": 10400,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1100,
+      "source_name": "Flat core coupon C4",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          307.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          82.28679548631872
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          17.0,
+          107.28679548631872,
+          0.0
+        ],
+        [
+          95.0,
+          148.71320451368126,
+          11.2
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -122.0,
+        8.000000000000014
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10401": "0d5bfb9cd793dc6384c71a3cd25ba9e066d4620e96cbc4070d63d7d0832c2695"
+      },
+      "part_id_mapping": {
+        "1101": "10401"
+      }
+    },
+    {
+      "name": "M seam core C4",
+      "plate": 2,
+      "object_id": 10500,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1000,
+      "source_name": "Flat core coupon C4",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          311.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          273.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          21.0,
+          183.0,
+          0.0
+        ],
+        [
+          91.0,
+          233.0,
+          11.2
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -72.0,
+        98.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10501": "4871f4e7502e3a03ee20037ae39f52ca7b560325f497d25d1fca60c5940a1449"
+      },
+      "part_id_mapping": {
+        "1001": "10501"
+      }
+    },
+    {
+      "name": "M glue veneer - fins and shoe",
+      "plate": 2,
+      "object_id": 10600,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1200,
+      "source_name": "Veneer coupon 1 - fused carrier",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.77009778936079
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -73.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          159.5262865843313,
+          20.5,
+          0.0
+        ],
+        [
+          208.4737134156687,
+          89.5,
+          67.78940252275936
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        56.77009778936079,
+        -73.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10601": "289d6431c7dd59ce60b5de9b93ab9587d76f1480ac9f03933fbbc58d41c51b78"
+      },
+      "part_id_mapping": {
+        "1201": "10601"
+      }
+    },
+    {
+      "name": "M seam upper veneer - fins and shoe",
+      "plate": 2,
+      "object_id": 10700,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1100,
+      "source_name": "Veneer coupon 1 - fused carrier",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.87094771619712
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          162.37890203799878,
+          122.51875,
+          0.0
+        ],
+        [
+          205.62109796200122,
+          147.48125,
+          61.66046455345301
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        56.87094771619712,
+        7.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10701": "af92701d6249b47c68e3a1d1b7d7fd7c682fc51831f8aeecf733f389b2e87799"
+      },
+      "part_id_mapping": {
+        "1101": "10701"
+      }
+    },
+    {
+      "name": "M seam lower veneer - fins and shoe",
+      "plate": 2,
+      "object_id": 10800,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1200,
+      "source_name": "Veneer coupon 2 - fused carrier",
+      "source_plate": 3,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.9883791987142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          87.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          162.87142940948814,
+          202.51875,
+          0.0
+        ],
+        [
+          205.12857059051186,
+          227.48125,
+          62.091049024599926
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        56.9883791987142,
+        87.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10801": "139721e9d2f1a23c8513541c2dbfce60765161f34baaf316b1f9d8d767da3a36"
+      },
+      "part_id_mapping": {
+        "1201": "10801"
+      }
+    },
+    {
+      "name": "A reference tongue",
+      "plate": 3,
+      "object_id": 10900,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1000,
+      "source_name": "A reference tongue",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          0.9563047559630354,
+          -0.29237170472273677,
+          0.0,
+          50.72189014469123
+        ],
+        [
+          0.29237170472273677,
+          0.9563047559630354,
+          0.0,
+          47.287618846921674
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          10.179499993301043,
+          5.417362593050896,
+          0.0
+        ],
+        [
+          77.82050000669896,
+          84.58263740694912,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -30.0,
+        -80.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10901": "574b6d87e5e6cee3eb67f999731e4cca6394e73138333361b1bedbcd72213ad7",
+        "10902": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
+        "10903": "1d56275caec313fed043a44737204daf3b3cee4fe84206cf0f758ad5eb0a1af7"
+      },
+      "part_id_mapping": {
+        "1001": "10901",
+        "1002": "10902",
+        "1003": "10903"
+      }
+    },
+    {
+      "name": "A reference socket",
+      "plate": 3,
+      "object_id": 11000,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1100,
+      "source_name": "A reference socket",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          0.3907311284892737,
+          -0.9205048534524404,
+          0.0,
+          113.12747528847908
+        ],
+        [
+          0.9205048534524404,
+          0.3907311284892737,
+          0.0,
+          25.58441738148764
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          82.16465253202713,
+          12.469520957177494,
+          0.0
+        ],
+        [
+          160.83534746797287,
+          77.53047904282252,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -55.5,
+        -80.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11001": "63616ecf7d4929526009e63c696abd8312cddf695c1b3b6e0557d96daed45ea1",
+        "11002": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
+        "11003": "8a3b18e58cfb2d138328cf862c77e372de5df398c8fbb0cad7ce1fa2cdc2b648"
+      },
+      "part_id_mapping": {
+        "1101": "11001",
+        "1102": "11002",
+        "1103": "11003"
+      }
+    },
+    {
+      "name": "B refined 0.075 tongue",
+      "plate": 3,
+      "object_id": 11100,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1200,
+      "source_name": "B refined 0.075 tongue",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          0.9563047559630354,
+          -0.29237170472273677,
+          0.0,
+          211.22189014469123
+        ],
+        [
+          0.29237170472273677,
+          0.9563047559630354,
+          0.0,
+          47.287618846921674
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          170.67949999330105,
+          5.417362593050896,
+          0.0
+        ],
+        [
+          238.32050000669898,
+          84.58263740694912,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        130.5,
+        -80.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11101": "fa830519b97c10aed8c20517c1c3d902b2a21e38f017c74b0226189736cd56ff",
+        "11102": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
+        "11103": "1d56275caec313fed043a44737204daf3b3cee4fe84206cf0f758ad5eb0a1af7"
+      },
+      "part_id_mapping": {
+        "1201": "11101",
+        "1202": "11102",
+        "1203": "11103"
+      }
+    },
+    {
+      "name": "B refined 0.075 socket",
+      "plate": 3,
+      "object_id": 11200,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1300,
+      "source_name": "B refined 0.075 socket",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          0.3907311284892737,
+          -0.9205048534524404,
+          0.0,
+          196.12747528847908
+        ],
+        [
+          0.9205048534524404,
+          0.3907311284892737,
+          0.0,
+          108.58441738148764
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          165.16465253202713,
+          95.4695209571775,
+          0.0
+        ],
+        [
+          243.83534746797287,
+          160.53047904282252,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        27.5,
+        3.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11201": "aff2c3392514595dde22324f27183df72e5e86b479434297444c26a999e85dae",
+        "11202": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
+        "11203": "8a3b18e58cfb2d138328cf862c77e372de5df398c8fbb0cad7ce1fa2cdc2b648"
+      },
+      "part_id_mapping": {
+        "1301": "11201",
+        "1302": "11202",
+        "1303": "11203"
+      }
+    },
+    {
+      "name": "C refined 0.05 tongue",
+      "plate": 3,
+      "object_id": 11300,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1400,
+      "source_name": "C refined 0.05 tongue",
+      "source_plate": 3,
+      "assembly_to_printer": [
+        [
+          0.9563047559630354,
+          -0.29237170472273677,
+          0.0,
+          50.72189014469123
+        ],
+        [
+          0.29237170472273677,
+          0.9563047559630354,
+          0.0,
+          130.28761884692167
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          10.179499993301043,
+          88.4173625930509,
+          0.0
+        ],
+        [
+          77.82050000669896,
+          167.58263740694912,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -30.0,
+        3.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11301": "9aba9286417a21cbb8c5e5e8f751902db7b811b5c1a30cb004cd76f7db5337fc",
+        "11302": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
+        "11303": "52d753de63f1cb4d163dd2701fcf5c44433410d948e8e7d97a9e4a89833acae0"
+      },
+      "part_id_mapping": {
+        "1401": "11301",
+        "1402": "11302",
+        "1403": "11303"
+      }
+    },
+    {
+      "name": "C refined 0.05 socket",
+      "plate": 3,
+      "object_id": 11400,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1500,
+      "source_name": "C refined 0.05 socket",
+      "source_plate": 3,
+      "assembly_to_printer": [
+        [
+          0.3907311284892737,
+          -0.9205048534524404,
+          0.0,
+          113.12991735803215
+        ],
+        [
+          0.9205048534524404,
+          0.3907311284892737,
+          0.0,
+          108.59017053682172
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          82.16221046247409,
+          95.4637678018434,
+          0.0
+        ],
+        [
+          160.83778953752594,
+          160.5362321981566,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -55.5,
+        3.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11401": "08de988601d89d881639257a454ab558f788c526fa095adb993777e4548c2233",
+        "11402": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
+        "11403": "2227fa50f1390f6c203d94cffbee13ed39c582f4a589d5301d147b4eb8149f12"
+      },
+      "part_id_mapping": {
+        "1501": "11401",
+        "1502": "11402",
+        "1503": "11403"
+      }
+    },
+    {
+      "name": "D refined 0.10 tongue",
+      "plate": 3,
+      "object_id": 11500,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1600,
+      "source_name": "D refined 0.10 tongue",
+      "source_plate": 4,
+      "assembly_to_printer": [
+        [
+          0.9563047559630354,
+          -0.29237170472273677,
+          0.0,
+          50.72189014469123
+        ],
+        [
+          0.29237170472273677,
+          0.9563047559630354,
+          0.0,
+          213.28761884692167
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          10.179499993301043,
+          171.41736259305088,
+          0.0
+        ],
+        [
+          77.82050000669896,
+          250.58263740694912,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -30.0,
+        86.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11501": "de8184520180685266c22c2284b6ca1097a774cbeb5ddca0c491100609273f6a",
+        "11502": "3c7a57df6cfceef1013787c457bd7fc9bb371e58437463b5b8c86947cc13e021",
+        "11503": "b86f31dba94dcd90a8ca0861da4bb9e580573c12c788bcb3a90f28de29ee5052"
+      },
+      "part_id_mapping": {
+        "1601": "11501",
+        "1602": "11502",
+        "1603": "11503"
+      }
+    },
+    {
+      "name": "D refined 0.10 socket",
+      "plate": 3,
+      "object_id": 11600,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1700,
+      "source_name": "D refined 0.10 socket",
+      "source_plate": 4,
+      "assembly_to_printer": [
+        [
+          0.3907311284892737,
+          -0.9205048534524404,
+          0.0,
+          113.12747528847908
+        ],
+        [
+          0.9205048534524404,
+          0.3907311284892737,
+          0.0,
+          191.58441738148764
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          82.16465253202713,
+          178.4695209571775,
+          0.0
+        ],
+        [
+          160.83534746797287,
+          243.53047904282252,
+          13.5
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -55.5,
+        86.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11601": "854efdc965bc8e5bad9a54dee2d92c0580a3e63ac1779ea74bd28beab418e5a4",
+        "11602": "6ffd3aaa8c8469924327cb354b23abe3ce9f03dff7f9e4319e6e9394dad6d9e4",
+        "11603": "fdc479bbe49d23ac538361cb04f0daf3f0564aa7b0bd688334f0c448d7a92a8e"
+      },
+      "part_id_mapping": {
+        "1701": "11601",
+        "1702": "11602",
+        "1703": "11603"
+      }
+    }
+  ],
+  "plates": [
+    {
+      "plate": 1,
+      "name": "White fixtures",
+      "parts": 3
+    },
+    {
+      "plate": 2,
+      "name": "Copper M tests",
+      "parts": 6
+    },
+    {
+      "plate": 3,
+      "name": "Ribbon comparisons A-D",
+      "parts": 8
+    }
+  ],
+  "filament_slots": {
+    "1": "white",
+    "2": "wood tan",
+    "3": "copper silk",
+    "4": "Azurite blue"
+  },
+  "ribbon_tower_reserved_rectangle_mm": [
+    165,
+    174,
+    250,
+    252
+  ],
+  "instructions": [
+    "Keep saved orientations, scale and filament assignments; open as a project.",
+    "Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.",
+    "Plate 2: all six copper test parts, including fin carriers and starter shoes.",
+    "Plate 3: all four ribbon comparison pairs. Mark A/B/C/D and tongue/socket on the backs before removing them, using the plate map.",
+    "Use the cauls to cradle the veneers during cutting and trimming. Clean rear recesses and seating features before dry fitting.",
+    "Physical fit, silk bonding and finish still require these prints."
+  ],
+  "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "native_slice_validated": true,
+  "native_project": "All-Development-Tests-A1-Sliced.3mf",
+  "native_validation": "All-Development-Tests-A1-native-validation.json"
+}

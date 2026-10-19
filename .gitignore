@@ -21,3 +21,6 @@ __pycache__/
 
 # A1 companion with parts from the coordinated A2L design.
 !/working/bambu/Dara-A1-Companion/*.3mf
+
+# Direct production-joint sample, editable and natively sliced.
+!/working/bambu/Dara-A2L-Production-Joint-Sample/*.3mf

@@ -1,0 +1,292 @@
+{
+  "status": "PASS_ALL_14_PRODUCTION_JOINT_OUTLINES",
+  "source_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "source_cad_sha256": "88f187317f08aea5b37040d3bf9d0f3f382d070815178ce54de2255c4f4e86bf",
+  "plan_sha256": "afcdb48a0671aaf9a2fbb8a38078d91e2997829f53c6558af0255b06b032b020",
+  "checker_sha256": "ebdfb9c0308556fa8dc549500216a3dc2c1a8bfb251459792e7a6d8ef43e6894",
+  "checks": [
+    {
+      "joint": 1,
+      "parts": [
+        2,
+        1
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "parts": [
+        3,
+        1
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 3,
+      "parts": [
+        2,
+        3
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 4,
+      "parts": [
+        4,
+        3
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 5,
+      "parts": [
+        5,
+        4
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 6,
+      "parts": [
+        4,
+        6
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 7,
+      "parts": [
+        5,
+        6
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 8,
+      "parts": [
+        7,
+        6
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 9,
+      "parts": [
+        8,
+        6
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 10,
+      "parts": [
+        8,
+        7
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 11,
+      "parts": [
+        9,
+        1
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 12,
+      "parts": [
+        9,
+        8
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 13,
+      "parts": [
+        10,
+        1
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    },
+    {
+      "joint": 14,
+      "parts": [
+        9,
+        10
+      ],
+      "checks": [
+        {
+          "z_mm": 8.5,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        },
+        {
+          "z_mm": 13.4,
+          "missing_beyond_0_025mm_tolerance_mm2": 0.0,
+          "extra_outside_artwork_tolerance_mm2": 0.0
+        }
+      ]
+    }
+  ],
+  "tolerance_mm": 0.025,
+  "comparison": "Actual saved production cross-sections versus continuous artwork; existing hardware openings excluded.",
+  "finding": "Sample crop intersected rounded adjacent openings in the knot outline. No extra production outline cutouts found.",
+  "scope": "Visible outline at Z8.5 and Z13.4, not hidden lap clearance or physical fit.",
+  "production_and_A1_unchanged": true,
+  "protected_project_sha256": {
+    "Dara.3mf": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Complete.3mf": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Editable.3mf": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+    "working\\bambu\\Dara-A1-Companion\\companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working\\bambu\\Dara-A1-Companion\\native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working\\bambu\\Dara-A1-Companion\\README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working\\bambu\\Dara-A1-Companion\\release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328"
+  }
+}

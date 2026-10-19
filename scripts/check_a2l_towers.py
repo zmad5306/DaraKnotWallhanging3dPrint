@@ -16,7 +16,7 @@ def check_tower(text,model_hulls,reserved):
     tower=[];others=[];tower_width=0.;other_width=0.
     for raw in text.splitlines():
         if raw.startswith('; FEATURE: '):feature=raw.split(': ',1)[1]
-        if raw.startswith('; WIDTH: '):width=float(raw.split(': ',1)[1])
+        if raw.startswith(('; WIDTH: ','; LINE_WIDTH: ')):width=float(raw.split(': ',1)[1])
         code=raw.split(';',1)[0].strip()
         if not code:continue
         cmd=code.split()[0];v={k:float(n) for k,n in TOKEN.findall(code)}

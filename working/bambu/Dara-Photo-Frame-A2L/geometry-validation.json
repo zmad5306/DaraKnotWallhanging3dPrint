@@ -1,5 +1,5 @@
 {
-  "editable_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+  "editable_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
   "production_plan_sha256": "a541763d31c328921a7735717af5eb141f8dcad4a4c280946d3e8f10e2b65137",
   "part_overlaps": [
     {
@@ -2032,5 +2032,422 @@
       ]
     }
   ],
-  "physical_confirmation_pending": true
+  "physical_confirmation_pending": true,
+  "joint_revision": "lower-lap-pads-removed-v1",
+  "baseline_geometry_validation_sha256": "5ca8b94a5b213a0a0e34bf0665b7e0092f4dfba21d20f322f4e57c5ed00f1b8f",
+  "preservation_basis": "Only raised lap pads removed below Z5.001. Visible seams, hardware, M and print poses unchanged; material removal cannot introduce assembly overlap.",
+  "pad_patch": {
+    "revision": "lower-lap-pads-removed-v1",
+    "editable": {
+      "source_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+      "target_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+      "removed_pads": 42,
+      "objects": [
+        {
+          "name": "F2 A2L knot",
+          "joints": [
+            1,
+            3
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1101",
+              "removed_mm3": 4.229048628097563,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1102",
+              "removed_mm3": 2.819365752446324,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1104",
+              "removed_mm3": 1.4096828760557851,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F3 A2L knot",
+          "joints": [
+            2
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1202",
+              "removed_mm3": 4.229048626314482,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F4 A2L knot",
+          "joints": [
+            4,
+            6
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1302",
+              "removed_mm3": 8.458097257507648,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F5 A2L knot",
+          "joints": [
+            5,
+            7
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1401",
+              "removed_mm3": 4.2290486274444286,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1402",
+              "removed_mm3": 2.8193657512639754,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1403",
+              "removed_mm3": 1.4096828759413669,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F7 A2L knot",
+          "joints": [
+            8
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1602",
+              "removed_mm3": 2.8193657514292707,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1603",
+              "removed_mm3": 1.4096828757312385,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F8 A2L knot",
+          "joints": [
+            9,
+            10
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1701",
+              "removed_mm3": 8.458097254847011,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F9 A2L knot",
+          "joints": [
+            11,
+            12,
+            14
+          ],
+          "removed_pads": 9,
+          "volumes": [
+            {
+              "part_id": "1801",
+              "removed_mm3": 8.458097256216249,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1802",
+              "removed_mm3": 4.229048629407515,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F10 A2L knot",
+          "joints": [
+            13
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1902",
+              "removed_mm3": 2.819365752503967,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1904",
+              "removed_mm3": 1.4096828759954412,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        }
+      ],
+      "changed_child_assets": [
+        "3D/Objects/1100.model",
+        "3D/Objects/1200.model",
+        "3D/Objects/1300.model",
+        "3D/Objects/1400.model",
+        "3D/Objects/1600.model",
+        "3D/Objects/1700.model",
+        "3D/Objects/1800.model",
+        "3D/Objects/1900.model"
+      ],
+      "settings_and_transforms_byte_preserved": true,
+      "all_other_zip_entries_byte_preserved": true
+    },
+    "native": {
+      "source_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+      "target_sha256": "3b721568f73b9f80fd5e0e15e1fe0071a97bff3b467ba4b1b0b9ead4b354dc90",
+      "removed_pads": 42,
+      "objects": [
+        {
+          "name": "F2 A2L knot",
+          "joints": [
+            1,
+            3
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "11",
+              "removed_mm3": 4.229051270276767,
+              "added_mm3": 5.2708859954957747e-14,
+              "removed_outside_pad_tools_mm3": 5.27046901168879e-14
+            },
+            {
+              "part_id": "12",
+              "removed_mm3": 2.8193685765495355,
+              "added_mm3": 1.1738581538894113e-07,
+              "removed_outside_pad_tools_mm3": 1.1738581546116964e-07
+            },
+            {
+              "part_id": "14",
+              "removed_mm3": 1.409681746593646,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 9.305781891221561e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F3 A2L knot",
+          "joints": [
+            2
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "24",
+              "removed_mm3": 4.22904996830737,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F4 A2L knot",
+          "joints": [
+            4,
+            6
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "37",
+              "removed_mm3": 8.458098305259888,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 2,
+          "result_components": 2
+        },
+        {
+          "name": "F5 A2L knot",
+          "joints": [
+            5,
+            7
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "49",
+              "removed_mm3": 4.229046509638221,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.137373342260413e-24
+            },
+            {
+              "part_id": "50",
+              "removed_mm3": 2.819361332598297,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0856745539758488e-24
+            },
+            {
+              "part_id": "51",
+              "removed_mm3": 1.4096834670839762,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F7 A2L knot",
+          "joints": [
+            8
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "70",
+              "removed_mm3": 2.8193693872001604,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-23
+            },
+            {
+              "part_id": "71",
+              "removed_mm3": 1.40968447932121,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 5.169878828456423e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F8 A2L knot",
+          "joints": [
+            9,
+            10
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "81",
+              "removed_mm3": 8.458097453513645,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 2.5849394142282115e-24
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F9 A2L knot",
+          "joints": [
+            11,
+            12,
+            14
+          ],
+          "removed_pads": 9,
+          "volumes": [
+            {
+              "part_id": "94",
+              "removed_mm3": 8.458095276337977,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.550963648536927e-25
+            },
+            {
+              "part_id": "95",
+              "removed_mm3": 4.2290445842039075,
+              "added_mm3": 4.319820695899942e-15,
+              "removed_outside_pad_tools_mm3": 4.319820695899942e-15
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F10 A2L knot",
+          "joints": [
+            13
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "109",
+              "removed_mm3": 2.8193665678921818,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 2.0679515313825692e-25
+            },
+            {
+              "part_id": "111",
+              "removed_mm3": 1.4096845339086443,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        }
+      ],
+      "changed_child_assets": [
+        "3D/Objects/object_10.model",
+        "3D/Objects/object_2.model",
+        "3D/Objects/object_3.model",
+        "3D/Objects/object_4.model",
+        "3D/Objects/object_5.model",
+        "3D/Objects/object_7.model",
+        "3D/Objects/object_8.model",
+        "3D/Objects/object_9.model"
+      ],
+      "settings_and_transforms_byte_preserved": true,
+      "all_other_zip_entries_byte_preserved": true
+    },
+    "removed_pad_height_mm": 0.2,
+    "remaining_lap_surface_z_mm": 4.8,
+    "all_14_mortises_unchanged": true,
+    "physical_result": "User trimmed three lower-lap pads; confirmed fit and flush white/brown front surfaces on 2026-10-19.",
+    "physical_printer_context": "User switched the sample to A1 and observed grid; exact locally resliced file was not inspected."
+  }
 }

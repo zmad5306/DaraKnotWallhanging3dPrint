@@ -79,7 +79,7 @@
   "projects": [
     {
       "project": "Dara.3mf",
-      "sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+      "sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
       "veneers": [
         {
           "name": "V1 A2L hammered veneer and sacrificial fins",
@@ -100,7 +100,7 @@
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf",
-      "sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+      "sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
       "veneers": [
         {
           "name": "V1 A2L hammered veneer and sacrificial fins",
@@ -121,7 +121,7 @@
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf",
-      "sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+      "sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
       "veneers": [
         {
           "name": "V1 A2L hammered veneer and sacrificial fins",
@@ -345,5 +345,10 @@
       ]
     }
   ],
-  "physical_cleanup_and_bond_strength_pending": true
+  "physical_cleanup_and_bond_strength_pending": true,
+  "pad_removal_hash_refresh_basis": {
+    "report": "working/bambu/Dara-Photo-Frame-A2L/joint-pad-unchanged-plates.json",
+    "sha256": "3737ae8f6daee65c83bd45fe4b0633a30fdf61444a897a2d9e6313d166540e93",
+    "all_M_meshes_settings_poses_and_stored_slices_byte_preserved": true
+  }
 }

@@ -1,6 +1,6 @@
 # Dara A2L completion plan
 
-Updated October 18, 2026. Branch `codex/m-veneer-cosmetic-fit`.
+Updated October 19, 2026. Branch `codex/m-veneer-cosmetic-fit`.
 
 The A2L is now the chosen printer. The user approved replacing existing full-size prints for the cleanest result, the fresh 14-joint knot, five flat M cores and three veneers, the standard 0.4 mm nozzle, 0.20 mm layers and **8% gyroid structural infill**. Veneers and their bonded carriers remain solid. The earlier 15% full-size target is superseded.
 
@@ -18,7 +18,7 @@ The production project is [Dara.3mf](../Dara.3mf), with its [A2L guide and valid
 
 Six A2L knot joints are completely behind the band-free M with at least the intended 2 mm front-view margin, two are partly covered and six fully exposed. Eight have some visible portion. These counts exclude M seams; oblique viewing angles can reveal more than a front projection.
 
-The knot uses new partitions in the continuous stock rather than joined A1 pieces. Its 18 mm laps preserve hidden fitting clearance while all cosmetic walls butt at zero nominal gap. Hidden seating pads control flushness separately from glue relief, and secondary pockets permit small axial variation. Material boundaries and the global weave remain continuous across the new cuts.
+The knot uses new partitions in the continuous stock rather than joined A1 pieces. Its 18 mm laps preserve hidden fitting clearance while all cosmetic walls butt at zero nominal gap. The three raised lower-lap pads are removed from all 14 joints, following the user's physical result: trimming them gave good seating and flush white/brown faces. Mortises, keys, glue relief and secondary pockets are retained. Material boundaries and the global weave remain continuous. A2L plates 1-10 are resliced; M and A1 parts remain unchanged.
 
 The two visible veneer seams cross the thin crowns to minimize seam length; structural backing remains continuous there. The nearest core seam is 116.9 mm from a veneer seam.
 
@@ -32,7 +32,7 @@ The [A1 companion](../working/bambu/Dara-A1-Companion/README.md) contains three 
 
 ## Physical confirmation still required
 
-1. Print one demanding full knot pair. Dry-fit the zero-gap cosmetic wall, check all three visible colors in grazing light, assess 8% stiffness and verify pad seating under light clamping.
+1. Check the first full-size pad-free A2L joint. Dry-fit the cosmetic seam, check the white/brown faces for flushness, inspect all three visible colors in grazing light and assess 8% stiffness. The successful manually trimmed sample was printed after switching to the A1; the exact local reslice settings were not inspected.
 2. Print one full M core and veneer. Confirm that the silk stays restrained through the tall print, then assess the actual cupping and fin-removal access. Digital rear-area allocation and bracing checks do not measure material stiffness or bond strength.
 3. Cut the narrow necks through their rear recesses and remove the separate grounded ribs and fins progressively while cradling the face. Sand the hidden flat back on the granite plate without rounding seam edges or removing seating features.
 4. Dry-fit all five cores flat, then all three veneers. Check the two crown seams and consistent reflection before adhesive. Use the successful sample adhesive process, keep glue inside hidden relief and keep stops/closing lands clean.

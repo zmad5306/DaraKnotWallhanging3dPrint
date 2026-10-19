@@ -167,7 +167,7 @@ def frame():
             body-=tool
         entries.append([dict(mesh=clean(body,f'F{i+1}'))]);print(f'F{i+1} continuous artwork built',flush=True)
     for k,j in enumerate(joints):
-        pair,r=refine_pair(entries[j[0]],entries[j[1]],j,gap=0)
+        pair,r=refine_pair(entries[j[0]],entries[j[1]],j,gap=0,seating_pads=False)
         entries[j[0]],entries[j[1]]=pair;proof.append(dict(joint=k+1,**r));print(f'J{k+1} seating and adhesive relief built',flush=True)
     for i,es in enumerate(entries):
         b=solid(es[0]['mesh'])

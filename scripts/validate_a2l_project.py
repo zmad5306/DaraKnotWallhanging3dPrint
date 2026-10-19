@@ -14,6 +14,38 @@ from validate_print_project import TOKEN
 from check_a2l_towers import check_tower,check_startup_tower
 
 
+def surface_vertex_distance(points,vertices,faces):
+    """Use triangle surfaces for vertices inserted by a coplanar Boolean cut.
+
+    A nearest-vertex distance can mistake different triangulations for moved
+    geometry. The nearest vertex bounds the triangle search without rtree.
+    """
+    from trimesh.triangles import closest_point
+    distances=cKDTree(vertices).query(points)[0]
+    selected=np.flatnonzero(distances>.0001)
+    if len(selected):
+        triangles=vertices[faces];lo=triangles.min(axis=1);hi=triangles.max(axis=1)
+        for i in selected:
+            p=points[i];bound=distances[i]+1e-9
+            candidates=triangles[np.all(lo<=p+bound,axis=1)&np.all(hi>=p-bound,axis=1)]
+            assert len(candidates)
+            nearest=closest_point(candidates,np.broadcast_to(p,(len(candidates),3)))
+            distances[i]=np.linalg.norm(nearest-p,axis=1).min()
+    return float(distances.max())
+
+
+def mesh_pose_error(row,other):
+    aa=[p for p in row['parts'] if p['subtype']=='normal_part']
+    bb=[p for p in other['parts'] if p['subtype']=='normal_part'];assert len(aa)==len(bb)
+    errors=[]
+    for a,b in zip(aa,bb):
+        ta=row['transform'];tb=other['transform']
+        av=a['mesh'].vertices@ta[:3,:3].T+ta[:3,3]
+        bv=b['mesh'].vertices@tb[:3,:3].T+tb[:3,3]
+        errors.extend([surface_vertex_distance(av,bv,b['mesh'].faces),surface_vertex_distance(bv,av,a['mesh'].faces)])
+    return max(errors)
+
+
 def embedded(path):
     with zipfile.ZipFile(path) as z:f={n:z.read(n) for n in z.namelist()}
     cfg=ET.fromstring(f['Metadata/model_settings.config']);r=ET.fromstring(f['3D/3dmodel.model']);plates=cfg.findall('plate');cols=math.ceil(math.sqrt(len(plates)));items=list(r.find(tag('build')));result={}
@@ -123,8 +155,8 @@ def native(path):
     before,aa=embedded(EDIT);after,bb=embedded(path/'sliced.3mf');assert aa.keys()==bb.keys()
     roundtrip=[]
     for name,row in aa.items():
-        v=row['vertices'];w=bb[name]['vertices'];error=max(cKDTree(v).query(w)[0].max(),cKDTree(w).query(v)[0].max());assert error<.001,(name,error)
-        roundtrip.append(dict(name=name,maximum_vertex_and_pose_error_mm=float(error)))
+        error=mesh_pose_error(row,bb[name]);assert error<.001,(name,error)
+        roundtrip.append(dict(name=name,maximum_vertex_and_pose_error_mm=float(error),distance_metric='bidirectional vertex-to-triangle surface with saved pose'))
     s=json.loads(after['Metadata/project_settings.config']);assert s['printer_model']=='Bambu Lab A2L';assert s['sparse_infill_density']=='8%'
     mp=json.loads((OUT/'M-geometry-validation.json').read_text());plan=load_plan();rows=[]
     tower_plan=json.loads((OUT/'tower-placement.json').read_text())

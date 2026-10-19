@@ -83,7 +83,7 @@ def check_closed_pair(pair,j,glue_clearance,socket_underside=5):
                 socket_underside_z_mm=socket_underside,assembled_interference_mm3=collision)
 
 
-def refine_pair(male, female, j, gap=.075, adhesive_recess=.2):
+def refine_pair(male, female, j, gap=.075, adhesive_recess=.2, seating_pads=True):
     """Parts are in common assembly space, j's positive X is the lap direction.
 
 The original lap has .20 mm under its socket. Recess depth is additional
@@ -108,7 +108,10 @@ Full-frame candidates retain their saved settings pending the coupon result.
     assert abs(np.linalg.det(np.array([p1-p0,p2-p0])))>10,('Collinear pads',j)
     pads=union_all([Point(*p).buffer(1.5,quad_segs=12) for p in [p0,p1,p2]])
     # Pad tops land on an exact .2 mm layer. Local socket roofs clear to Z5.0.
-    a+=prism(pads,4.79,5.0)
+    # A2L production omits only the raised 0.20 mm pads following the user's
+    # successful trimmed fit. Preserve the socket relief and glue-pocket lands.
+    # The default retains historical callers' geometry.
+    if seating_pads:a+=prism(pads,4.79,5.0)
     b-=prism(pads.buffer(.2),4.90,5.0)
     pocket=locate(box(1.75,-j[4]/2+3,16.5,j[4]/2-3),j).intersection(support_region)
     pocket=pocket.difference(pads.buffer(1)).difference(primary_keys.buffer(.7))
@@ -125,7 +128,9 @@ Full-frame candidates retain their saved settings pending the coupon result.
     a-=xz_prism(lead,j)
     parts[0][0]['mesh']=mesh(a);parts[1][0]['mesh']=mesh(b)
     collision=(a^b).volume();assert collision<.001,collision
-    return parts,dict(show_gap_mm=gap,seating_pad_top_mm=5.0,seating_pads_xy=[p.tolist() for p in [p0,p1,p2]],
+    return parts,dict(show_gap_mm=gap,seating_pad_top_mm=5.0 if seating_pads else None,
+                      seating_pads_removed=not seating_pads,lap_surface_after_pad_removal_mm=4.8 if not seating_pads else None,
+                      seating_pads_xy=[p.tolist() for p in [p0,p1,p2]],
                       adhesive_recess_mm=adhesive_recess,nominal_glue_clearance_mm=.2+adhesive_recess,
                       secondary_axial_relief_mm=.8,lap_length_mm=18,
                       cosmetic_land_above_reservoir_to_weave_mm=1.2,assembled_interference_mm3=collision)

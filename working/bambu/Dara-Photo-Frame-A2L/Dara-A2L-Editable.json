@@ -2626,6 +2626,9 @@
       ]
     }
   ],
-  "native_slice_validated": false,
-  "physical_confirmation_pending": true
+  "native_slice_validated": true,
+  "physical_confirmation_pending": true,
+  "editable_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+  "joint_revision": "lower-lap-pads-removed-v1",
+  "native_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8"
 }

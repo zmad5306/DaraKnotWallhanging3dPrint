@@ -14,8 +14,11 @@ from preserve_unchanged_plates import read
 from validate_print_project import TOKEN
 
 
-def segments(text,ids):
-    model=collections.defaultdict(list);feature='Custom';current=None
+def segments(text,ids,single_object=False):
+    # Single-object production plates may omit object labels. The caller must
+    # establish that there is exactly one model before enabling this mode.
+    if single_object:assert len(ids)==1
+    model=collections.defaultdict(list);feature='Custom';current=next(iter(ids)) if single_object else None
     x=y=z=e=0.;relative=False;xyz=False;tool=None
     for line in text.splitlines():
         if line.startswith('; start printing object, unique label id: '):current=int(line.rsplit(': ',1)[1])

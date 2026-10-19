@@ -1,5 +1,7 @@
 # Dara A2L production project
 
+**Joint correction, October 19:** all **42 raised lower-lap pads** are removed across the **14 knot joints**, following the user's physical result: trimming the three pads gave a good fit with flush white and brown faces. Only the raised **0.20 mm** stock is removed, leaving the surrounding lap at **Z4.8**. Plates **1–10** are resliced at the existing **8% gyroid** settings; mortises, keys, adhesive recesses, visible geometry and material assignments are retained. Plates **11–20** and every A1 companion file are preserved. See [geometry and pad toolpaths](joint-pad-removal-validation.json) and [protected-plate hashes](joint-pad-unchanged-plates.json). The sample was switched to the A1; this records that physical result without claiming a full-size A2L print has already passed.
+
 Open **Dara-A2L-Complete.3mf as a project** in Bambu Studio. The repository-root `Dara.3mf` is an identical copy. `Dara-A2L-Editable.3mf` is the generating source without stored slices. Use the complete file for printing. Both use the actual installed **Bambu Lab A2L 0.4 nozzle** machine/process/material profiles, including A2L startup and shutdown commands; 330 × 320 × 325 mm build volume.
 
 **Veneer plates 15–17 corrected:** all three saved production veneers now have separate grounded ribs and accessible cut necks. The continuous welded shoe that caused the L-shaped lip has been removed. Cutter windows, post-trim perimeter, supported-area coverage, tall-rib bracing, preserved front geometry and native bond extrusion are checked on every panel. Print a representative veneer first to confirm physical cleanup. See the [saved-project audit](../../../output/development/m-veneer-cosmetic-fit/All-veneer-production-audit.json).
@@ -23,7 +25,7 @@ Use [Dara-A1-Companion.3mf](../Dara-A1-Companion/Dara-A1-Companion.3mf) to print
 
 ## Fit and finish
 
-Every knot cosmetic wall closes at zero nominal gap above Z8; hidden 18 mm laps have three seating pads, a 0.40 mm recessed adhesive region, secondary locator relief and squeeze-out reservoirs. The real upper edge checks cover the white rail, weave and accent heights. Zero nominal gap still requires checking the physical printed fit.
+Every knot cosmetic wall closes at zero nominal gap above Z8. Hidden 18 mm laps retain their keys, a 0.40 mm recessed adhesive region, secondary locator relief and squeeze-out reservoirs. The three raised seating pads have been removed; the former pad locations now finish at Z4.8. Clean supports and burrs, dry-fit the seam and check the white/wood faces against a flat reference before gluing. The real upper edge checks cover the white rail, weave and accent heights.
 
 The M has flat front/back structural bodies and flat veneer backs, with a 0.20 mm planar glue space. Three seating pads establish each veneer's level, with a round datum and an axial relief pocket. The front retains the global hammered field and maximum local height 12.7 mm. No cover bands are needed. Keep adhesive off the seating pads and cosmetic edge lands.
 
@@ -41,7 +43,7 @@ Knot tongue-first glue order: **F9 → F8 → F10 → F7 → F2 → F5 → F4 �
 
 ## Prime tower and warm-up notices
 
-The towers use the A2L's forced **Y160** line and saved legal X positions. Studio had been overriding the previous corner positions when loading the project. This exact project was opened fresh in Studio with the A2L profile and without the collision banner. The Prepare overview shows the revised M plates; detailed geometry and native toolpath checks also pass. Tower-bearing models, settings and saved toolpaths are unchanged. Adjoining same-material model volumes let Studio check actual empty knot openings while preserving each section as one physical piece. The knot still has ten pieces and fourteen assembly joints. Actual tower-to-other-extrusion clearance is at least **11.96 mm**, including supports and brims. Keep the saved positions. See the [clearance correction](../../../docs/A2L-PRIME-TOWER-CLEARANCE.md).
+The towers use the A2L's forced **Y160** line and saved legal X positions. This exact pad-free project was opened fresh in Studio with the A2L profile and without collision or floating-region banners. The native checks include bead-width-aware tower clearance, supports and brims on every newly sliced knot plate. Adjoining same-material model volumes let Studio check actual empty knot openings while preserving each section as one physical piece. Keep the saved placements. See the [native validation](native-validation.json) and [clearance correction](../../../docs/A2L-PRIME-TOWER-CLEARANCE.md).
 
 The A2L thermal-preconditioning notice explains its warm-up duration and bed-zone guides. It is informational; its preference and the feature remain enabled as before.
 
@@ -49,6 +51,8 @@ The A2L thermal-preconditioning notice explains its warm-up duration and bed-zon
 
 The generating and verification scripts are `scripts/build_a2l_project.py` and `scripts/validate_a2l_project.py`. `production-plan.json` records all new cuts, mounting coordinates and visibility. Geometry, native round-trip, bead bounds, fin-bond toolpaths, material assignments, surface direction and reopen evidence are in the validation JSON files here. Run `python scripts/audit_dara_release.py` after pulling Git LFS files on another computer.
 
-Print one demanding full joint pair and a flat core first. Confirm the revised carrier cleanup on the A1 sample or a representative full veneer before printing the remaining set. Check the 8% body's stiffness, actual zero-gap closure, finish direction and silk restraint. Digital validation does not establish physical adhesion or a wall-mount load rating. The A1 sample has the carrier trial on plate 2 and a revised ribbon joint on plate 3. The latest ribbon revision preserves plates 1 and 2 exactly; production knot joints retain their earlier seating design pending that trial.
+Check the first full-size corrected A2L joint for closure, flushness and 8% body stiffness before repeating the remaining knot plates. The pad-removal correction follows the user's successful manually trimmed sample; older A1 joint variants are historical and do not define this production joint. The M and veneer checks remain separate: confirm carrier cleanup, finish direction and silk restraint. Digital validation does not establish physical adhesion or a wall-mount load rating.
+
+The printable guide's part maps remain applicable; its printed SHA and estimates predate this pad-only correction. Use this project's saved slices and estimates for the current knot plates.
 
 See [printable maps and production checklist](../../../output/pdf/Dara-A2L-Print-Guide.pdf). Keep the archived [A1 complete project](../Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf) separate: its section IDs and mounts do not interchange with this A2L build.

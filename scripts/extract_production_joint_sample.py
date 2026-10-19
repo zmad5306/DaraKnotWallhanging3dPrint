@@ -134,9 +134,12 @@ def build():
             missing=strip.buffer(-.001).difference(actual.buffer(.001)).area
             assert missing<1e-7,(z,sign,missing)
             side_checks.append(dict(z_mm=z,side=sign,missing_side_strip_mm2=missing,tolerance_mm=.002))
-    pads=json.loads((ROOT/'working/bambu/Dara-Photo-Frame-A2L/frame-geometry-validation.json').read_text())['joints'][3]['seating_pads_xy']
+    joint_proof=json.loads((ROOT/'working/bambu/Dara-Photo-Frame-A2L/frame-geometry-validation.json').read_text())['joints'][3]
+    pads=joint_proof['seating_pads_xy']
+    pads_removed=joint_proof.get('seating_pads_removed',False)
     for xy in pads:
-        assert cross_section(bodies[0],4.99).covers(Point(xy))
+        assert cross_section(bodies[0],4.79 if pads_removed else 4.99).covers(Point(xy))
+        if pads_removed:assert not cross_section(bodies[0],4.81).covers(Point(xy))
         assert cross_section(bodies[1],5.01).covers(Point(xy))
         assert not cross_section(bodies[1],4.99).covers(Point(xy))
     title='A2L production J4 joint sample - direct crop'
@@ -153,6 +156,7 @@ def build():
         production_print_rotations_preserved=True,production_infill_directions_preserved=True,
         global_setting_changes=['print_settings_id','wipe_tower_x','wipe_tower_y'],
         source_volume_checks=checks,seating_pad_xy_mm=pads,original_pad_contact_z_mm=5.,
+        seating_pads_removed=pads_removed,lower_lap_top_z_mm=4.8 if pads_removed else 5.,
         records=records,startup_tower=startup,editable_sha256=sha(EDIT),protected_project_sha256=fingerprints))
     side=json.loads(EDIT.with_suffix('.json').read_text());side.update(source_project='Dara.3mf',source_sha256=sha(SOURCE),joint_geometry_modified=False)
     save_json(EDIT.with_suffix('.json'),side)
@@ -210,7 +214,7 @@ def validate():
             t=np.clip(((target-start)*delta).sum(axis=1)/length2,0,1)
             near=np.linalg.norm(start+t[:,None]*delta-target,axis=1)<.7
             z=float(a[near,:,2].max() if k==0 else a[near,:,2].min())
-            assert abs(z-(5. if k==0 else 5.2))<.001,(name,xy,z)
+            assert abs(z-(record.get('lower_lap_top_z_mm',5.) if k==0 else 5.2))<.001,(name,xy,z)
             pad_checks.append(dict(name=name,xy_assembly_mm=xy,model_extrusion_z_mm=z))
     info=ET.fromstring(native.z.read('Metadata/slice_info.config'))
     warnings=[w.attrib for pl in info.findall('plate') for w in pl.findall('warning')]

@@ -1,14 +1,13 @@
 {
-  "previous_corrected_project_warning_reproduced_in_Studio_GUI": true,
-  "corrected_project_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
-  "corrected_GUI_reload_status": "PASS: fresh Open Project of byte-identical Dara-A2L-Short-Veneer-Seams.3mf; A2L 0.4 profile retained. Opening collision banner absent; thermal notice remains. Prepare overview shows five flat cores on four plates and all three short-crown-seam veneers.",
+  "corrected_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "GUI_tested_file_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "current_native_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
   "prime_tower_collision_warning_absent_after_fresh_GUI_open": true,
   "thermal_preconditioning_notice_still_present": true,
+  "current_project_fresh_GUI_review_pending": false,
   "Studio_version": "02.08.02.61",
-  "GUI_tested_file_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
   "printer_commands_sent": false,
   "forced_Y160_layout_in_GUI": true,
-  "current_project_fresh_GUI_review_pending": false,
-  "current_native_project_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
-  "fresh_GUI_review_scope": "Opening warnings, A2L profile and all-M Prepare overview; detailed seam, cutter access and bond checks performed on actual geometry/native toolpaths separately."
+  "fresh_GUI_review_scope": "Fresh separate Studio window opened the exact native candidate. Prepare overview shows all 20 plates, with no collision or floating-region banner; only the thermal-preconditioning notice. Global settings visually show A2L, 0.4 nozzle, 0.20 initial/other layers, 4 walls, 5 top/bottom layers, 8% Gyroid. Existing unsaved user windows retained.",
+  "corrected_GUI_reload_status": "PASS: fresh exact-file open and explicit locked-settings review."
 }

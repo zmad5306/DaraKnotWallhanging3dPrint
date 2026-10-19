@@ -21,7 +21,8 @@ def publish(native,reopen):
   assert c['cutter_access_necks_checked']==c['bonded_tooth_count']
   assert c['maximum_cutter_access_obstruction_mm3']<1e-5 and c['flush_trim_excess_outside_finished_veneer_mm3']<1e-5
  assert (reopen/'result.json').stat().st_mtime>=(native/'sliced.3mf').stat().st_mtime
- for p in [FINAL,ROOT/'Dara.3mf']:shutil.copyfile(native/'sliced.3mf',p)
+ for p in [FINAL,ROOT/'Dara.3mf']:
+  if not p.exists() or sha(p)!=n['native_project_sha256']:shutil.copyfile(native/'sliced.3mf',p)
  profiles={}
  for kind in ['machine','process','filament']:
   for p in (PROFILE/kind).glob('*A2L*.json'):
@@ -41,6 +42,12 @@ def publish(native,reopen):
   assert next(row['sha256'] for row in audit['projects'] if row['project']=='Dara.3mf')==sha(native/'sliced.3mf')
   evidence.append(inventory)
  evidence += [ROOT/'working/Dara-Photo-Frame-A1-Jointed.scad',ROOT/'working/review/a2l-hidden-joints/lean-candidate.json',ROOT/'working/review/a2l-m-joints/evaluation.json',EDIT]
+ pad_path=OUT/'joint-pad-removal-validation.json'
+ if pad_path.exists():
+  pads=json.loads(pad_path.read_text())
+  assert pads['project_sha256']==sha(native/'sliced.3mf') and pads['editable_sha256']==sha(EDIT)
+  assert pads['removed_pads']==42 and len(pads['native_pad_toolpaths'])==42
+  evidence += [pad_path,OUT/'joint-pad-unchanged-plates.json',ROOT/'scripts/remove_a2l_joint_pads.py',ROOT/'scripts/validate_a2l_pad_removal.py',ROOT/'scripts/validate_ribbon_bed_datum.py']
  if (ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf').exists():evidence.append(ROOT/'output/pdf/Dara-A2L-Print-Guide.pdf')
  report=dict(project_sha256=sha(FINAL),editable_sha256=sha(EDIT),native_reopen_return_code=r['return_code'],native_reopen_result=r,
     GUI_verification=gui_status,plates=20,assembly_pieces=len(n['native_roundtrip']),printer='Bambu Lab A2L 0.4 nozzle',structural_infill='8% gyroid',veneer_infill='100%',
@@ -48,6 +55,9 @@ def publish(native,reopen):
     evidence_sha256={str(p.relative_to(ROOT)):sha(p) for p in evidence},physical_confirmation_pending=True,
     retained_A1_complete_sha256=sha(ROOT/'working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf'),
     sample_project_sha256=sha(ROOT/'output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf'))
+ if pad_path.exists():
+  report.update(joint_revision=pads['revision'],physical_joint_result=pads['physical_report'],
+                physical_test_printer_context=pads['physical_printer_context'],physical_A2L_production_print_not_yet_reported=True)
  save(OUT/'release-validation.json',report)
  print('Published root and named A2L project:',report['project_sha256'])
 if __name__=='__main__':

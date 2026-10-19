@@ -1,0 +1,167 @@
+{
+  "baseline_project_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "plates": [
+    {
+      "plate": 11,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_11.png": "edfd151de7abb3501e04f69f79d843fa175b5b3d67f35cf66bcc712859b2d71b",
+        "Metadata/plate_11_small.png": "41c0dcca315e4dbfbeefdbb9f9cb526d4082eeed6ff7daab336c0da7087c8872",
+        "Metadata/plate_no_light_11.png": "abd04a6a6dbe3819e26ff82fc40b7d55af67193c02f0c7ce8207fd806789fb64",
+        "Metadata/top_11.png": "de8ec85b7cff7d6127549558991fbf62676a21a6c5fcf8959ced11adb49da75e",
+        "Metadata/pick_11.png": "6efa1557e79fd4f92821370469139cf147be380c253fff2d021ef72aa8f9ecae",
+        "Metadata/plate_11.json": "3896bb0edea3eba7c64a30f0e91a9dc2ac2f911699ee9c9023bdde45f6f6239c",
+        "Metadata/plate_11.gcode.md5": "b66efb7207fb3bdeaaabae2113a5400b6f9617de471b4ec1ca8d3eee7853a571",
+        "Metadata/plate_11.gcode": "64242df10f46705550c72c7c0c480fe57675d2963d60818b11827b3283511758"
+      }
+    },
+    {
+      "plate": 12,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_12.png": "52ab80c80ad60ca14994fa194c7a7ec58a2a6a4890e39a519ad2fec110c47a66",
+        "Metadata/plate_12_small.png": "3f50054c12a0c1928b7216add04415b0a08955508cd5b52a12a23a9ccf338108",
+        "Metadata/plate_no_light_12.png": "311dee1490a963ea9781794272c53d90bf80a955c93345b1abdd5af285db31d1",
+        "Metadata/top_12.png": "35a002423992d13609dbe93af35c5b9a54975079b94089dc8fe5a7b5cc46c9ea",
+        "Metadata/pick_12.png": "78b3903686cf17ec065bc0f5e64ba4f0c7cead330b52257b91c8f3d3e50c0615",
+        "Metadata/plate_12.json": "a48998577dbc6b691853ac9c09a2c89d50fa0d6477b40d221367c5cf5ebf5273",
+        "Metadata/plate_12.gcode.md5": "e0e60918a484a43c640c9af231f917fedbf43234f6f95c90a112b982e443a4c9",
+        "Metadata/plate_12.gcode": "a069ab983a771f81309f89cb8ee622489d7712aa1b9dd14721f099512219490e"
+      }
+    },
+    {
+      "plate": 13,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_13.png": "b4201a6e58f0e2a639c044d0b56501639b7a6fb35cb457d97db6ebde24d2813b",
+        "Metadata/plate_13_small.png": "aa55e61dbe1751190923066ccfab663da09411dfc5aace15febcd3f75b861b37",
+        "Metadata/plate_no_light_13.png": "f48dd99cfcf41cba22dbaf41d854f8435e1ff573696eb3a3a3d5d4895deb664f",
+        "Metadata/top_13.png": "a91834159799c90b0194a62300bfcf6b1c5ce563da42ecc29e3e5bbe6caeb785",
+        "Metadata/pick_13.png": "ec3c362d85d8137dd7060247784debb7f20715c677f31355b41af3184d45c488",
+        "Metadata/plate_13.json": "1dd8fd32a555fe61d5c6621c2548456785bfd8d9d92d73f6bf4634e21f4708b7",
+        "Metadata/plate_13.gcode.md5": "cf6dfc552b74fea97802b8168b7769d69a2194a1d0fa8d987501d28b250ceb10",
+        "Metadata/plate_13.gcode": "3b0f0507d13f05f78fb38a5704be679c2ca73006caa114bd44870b2920eb8fc0"
+      }
+    },
+    {
+      "plate": 14,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_14.png": "f7ae49ec295527fa9d6aa773bebe0938becf450dc03d11f821cf78e13f9a6a8e",
+        "Metadata/plate_14_small.png": "411e12c63f1a79d31882b9075be15db4277663f7b49b37b90ab8f3fb4fa4a867",
+        "Metadata/plate_no_light_14.png": "e323a413dbdfcd6b223aaaf682ed4f37180bffe24add23510dd24f8457f4d6a3",
+        "Metadata/top_14.png": "ed138daae51529aeb225d5580e0e0c9607bac117ed2496b15b26c793a98c31ea",
+        "Metadata/pick_14.png": "e04f4a0dd540ab06b038cebb33889a2586662fe9ca614c41f35db641835c7d6d",
+        "Metadata/plate_14.json": "22486795c4a49710912c0f617fd05e8784d4891f0aaea7321add8babe4a219c1",
+        "Metadata/plate_14.gcode.md5": "e42768b6ec2b2a50df23aaeddffce9de356d4b834ed6269cafc7863782a4249b",
+        "Metadata/plate_14.gcode": "e703994d84eef9068cf98c153e007fd29f587879df47b30558f1f2bde1ef4bf4"
+      }
+    },
+    {
+      "plate": 15,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_15.png": "2cfc6f948b153623b81138e1ff979d47f7ceeafb93d0cfc37cda35c89de20f97",
+        "Metadata/plate_15_small.png": "45b74accb40a9302f95c0f247f03bc81e223875739c3148d10ca418bb523bbe0",
+        "Metadata/plate_no_light_15.png": "819f534933afdb9ec02101b72e50d8c6bff049a16785873f61a2b2cbdc9260bc",
+        "Metadata/top_15.png": "615948c4186a666d9c647fe1929d2f0236416b5557ed47d3c104760ffec30dd4",
+        "Metadata/pick_15.png": "99f520d59663c4220dd8e13f5ce368f7bd5afcb5d729581928cbcbe0d4a8fbb8",
+        "Metadata/plate_15.json": "8b77df060308701dcaab588254932cf945a682198de946db42ecf77ac4243288",
+        "Metadata/plate_15.gcode.md5": "2d75f7e1d4472c0aa0d6b5464d8f70333da14b2c377b146348ff0b9618395eb3",
+        "Metadata/plate_15.gcode": "92495e5097ddf613c818a2751d5ed1631f7b207533162883dc11126780261f0b"
+      }
+    },
+    {
+      "plate": 16,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_16.png": "fd5280c188c0d712899c907ccede5440b78983cf14267efe927415f8a3f128f9",
+        "Metadata/plate_16_small.png": "f6e01626bfa2a6487fa56d8cf14c5a2207f9dca3d5d923bef4eb1e02c0d3b899",
+        "Metadata/plate_no_light_16.png": "edfed180abd6dd1f8fb46faf58da65286b6e0168020cf5c3b8cc3c327ba2226f",
+        "Metadata/top_16.png": "e7b54364944d6d357bf8db96aebb0361dd2f5dba02e1202710e16f4fd92d7dc0",
+        "Metadata/pick_16.png": "546cdc056041b3e4b398a4194e088320bbd09d883921d1ad43322368b0e4dbfa",
+        "Metadata/plate_16.json": "af45da63e192c5cecced022d374863653a22d0a3a2b3824bd90424eaed646942",
+        "Metadata/plate_16.gcode.md5": "4ddf46b08b2b5a7d34f22eb29e9ec4c81ae5a5b28759894c742df17e35dfe06b",
+        "Metadata/plate_16.gcode": "390a4e08796403d7923b9aee0d9384cec167babd0177aa653a4eec8e9136e215"
+      }
+    },
+    {
+      "plate": 17,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_17.png": "65279ef32bc1bf9d11bc4eeb7586de10bd879aae5648fe67e5235f1e9bdd6cbd",
+        "Metadata/plate_17_small.png": "f973eef2bfc88334005d6b8183e6a21312d5b633eaf6ab6227211e4d896ac568",
+        "Metadata/plate_no_light_17.png": "f99dffc9d7a90b7402ca603e34a3d33dc3e8891b4c87a23532ff00b6716e666c",
+        "Metadata/top_17.png": "81ef50f65e0791ee29824828ffcd20821501d5bd432fe7e574a3d2753137e18b",
+        "Metadata/pick_17.png": "d22df649d1d3cfb7cabffee9b7ce8c04546f6259e38dddbc0a250e144b91e1b9",
+        "Metadata/plate_17.json": "91808af900ec730214f25a890601b1fcbad6ed1707025185a5b2c49155765b1e",
+        "Metadata/plate_17.gcode.md5": "9a7fd3a0e976f2e5dcbc9dd196cf38a34bd139e29b035c91c38dd7e52af63555",
+        "Metadata/plate_17.gcode": "e6aa6f71dd45afe4ecfb86f2d48400e20b43188cd97dbde9fe543d8457a6af1e"
+      }
+    },
+    {
+      "plate": 18,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_18.png": "c9b8430032510e1e25afe4b87268a969d8e0dbdc33323c4a6c537657e25b6b61",
+        "Metadata/plate_18_small.png": "aa941619fdb68a00fb8e9e8de7e9aefd5cec7351339f73e79f198520e954de4d",
+        "Metadata/plate_no_light_18.png": "7d415a725d9f28c1fe73945e149d283bb3d8de3e40ace17709b06796965f038b",
+        "Metadata/top_18.png": "b148628b24126822dff51674ae609bbd46587e1ff30a977ae01ed6174f9c9115",
+        "Metadata/pick_18.png": "512437d1d984b15e0f856994ff4d5074642cda00c5b5172b4e53c8f2db6393bf",
+        "Metadata/plate_18.json": "0d46ec7c3135081a5dc713774d5673d454ff47a8aa784d552acf2761a9604764",
+        "Metadata/plate_18.gcode.md5": "8d5dba51e0e2f92d9d79bf6701ad911a6af057c55692c56a0276845278dbba47",
+        "Metadata/plate_18.gcode": "f1e79ab95a4f00a7dc97a1b5a39dcf0d0622755c786a32ad9c7991261c498815"
+      }
+    },
+    {
+      "plate": 19,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_19.png": "be005062a7c4f60fc9e9245998dbef17d312fb40d738ef60cebd76e9d0c5ff52",
+        "Metadata/plate_19_small.png": "40661faa95c4d800f2f4267e635c626831b1b141030658b7374681a4781b0490",
+        "Metadata/plate_no_light_19.png": "d1b09e5d1da9db87c863f90aad562aeebaf39d1435e4c273cde9570f67237f77",
+        "Metadata/top_19.png": "860e7885ba70409abf8840ebd5ff8a6d3fa7de392d15b6a1bb85b5315e17266f",
+        "Metadata/pick_19.png": "6f85e00f7fb649437a1a69139fbb4f7381089058422619653aa80c04952c0ba5",
+        "Metadata/plate_19.json": "e2032c3f5e5ca96b8d701dc2fae82bf9a7032677b4bd5ec23688e6096ed22e1c",
+        "Metadata/plate_19.gcode.md5": "ab72d7eefe02d15d7fcdb4f9f9cbdee757c669883a74889985ff1b1945f97af5",
+        "Metadata/plate_19.gcode": "c8106c17a8a7d5ca6665505c79cc6f27d3da24eede25111b5918d00ebf295ace"
+      }
+    },
+    {
+      "plate": 20,
+      "geometry_settings_and_poses_unchanged": true,
+      "gcode_byte_identical": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_20.png": "52074353c480da30ffa75b81b80daf5fe5136845d70cfcc5ff8a901d3f0861c7",
+        "Metadata/plate_20_small.png": "395db25852bb6d700e39bffd2a4a81f03110657789c6caabcfb52a09060db1a1",
+        "Metadata/plate_no_light_20.png": "db4e4f2b11fa6f5d1a125fee09701a015d66b9339e58e53e0eded28bcfa7dc5b",
+        "Metadata/top_20.png": "ada602fe3f3ed5573f8a2f8d25d5b2093238ccb256224493834c12d32cacb853",
+        "Metadata/pick_20.png": "0d50654d7592496a38963825c31ccf32c3271f6144f9d94f822b2f40b0ea9967",
+        "Metadata/plate_20.json": "893bba7e54a27b484be636b8f24cc5075b3311889cd11203d6210b35f415561f",
+        "Metadata/plate_20.gcode.md5": "4eddae141a119ce5f086f889fb9b7989af38d6840470d722a35dccd9bb210329",
+        "Metadata/plate_20.gcode": "8be9878c8e0b1ee4c1bcb2b45961218c1264746256d153c9401d57113be707e2"
+      }
+    }
+  ],
+  "protected_external_file_sha256": {
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working/bambu/Dara-A1-Companion/README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working/bambu/Dara-A1-Companion/release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d",
+    "output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5"
+  }
+}

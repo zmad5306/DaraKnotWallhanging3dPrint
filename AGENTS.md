@@ -127,8 +127,26 @@ except for the explicit existing solid regions below.
 - The current direct reference is
   `working/bambu/Dara-A2L-Production-Joint-Sample/Dara-A2L-Production-Joint-Sample.3mf`.
   It is cropped from production J4, with corrected straight crop boundaries.
-  Its outline validation does not qualify joint fit. As of 2026-10-19, a
-  successful physical result for this revision has not been reported.
+  Its outline validation does not qualify joint fit.
+- **Physical update, 2026-10-19:** the user reports, "I trimmed the 3 little
+  nipples off the bottom lap and it fits nice." Record this as a successful
+  fit after physical removal of the three lower-lap pads, not a pass for the
+  original untrimmed design. It points to pad interference; do not assume the
+  mortise needs widening. In the follow-up, the user confirmed that **both the
+  white and brown front surfaces are flush and the previous lip is gone**.
+  The user also reported switching the sample to the A1 and seeing grid infill;
+  the exact locally resliced settings/file have not been inspected. Keep those
+  circumstances with the physical result rather than labeling it an A2L test
+  at the saved 8% gyroid settings. This report alone does not authorize an
+  unrelated redesign or establish final production readiness.
+- **Approved production correction, 2026-10-19:** the user explicitly requested
+  eliminating the three lower-lap pads and propagating that joint to production.
+  Remove only their 0.20 mm raised stock, leaving the surrounding lap at Z4.8,
+  across all 14 knot joints (42 pads). Preserve mortises, keys, glue recesses,
+  visible outlines, colors and process settings; reslice A2L plates 1-10.
+  Keep M/A1 and plates 11-20 unchanged. Do not restore these pads in subsequent
+  production regeneration. The saved reference sample above remains a record
+  of the untrimmed source used for the physical correction, not the new release.
 - Progress in order: establish a consistent reference test; diagnose the
   observed failure; agree any change to locked constants; validate the specific
   correction; obtain a physical result for that revision; then carry the same

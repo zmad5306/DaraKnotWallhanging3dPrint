@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'working/bambu/Dara-Photo-Fram
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def valid_hash(p,expected):
  raw=Path(p).read_bytes()
- if Path(p).suffix in ['.py','.scad','.json']:
+ if Path(p).suffix in ['.py','.scad','.json','.md','.txt']:
   lf=raw.replace(b'\r\n',b'\n');return expected in {hashlib.sha256(b).hexdigest() for b in [raw,lf,lf.replace(b'\n',b'\r\n')]}
  return hashlib.sha256(raw).hexdigest()==expected
 def props(e):return {m.get('key'):m.get('value') for m in e.findall('metadata')}
@@ -78,6 +78,20 @@ def audit():
  assert r['native_reopen_return_code']==0
  verify_gui_evidence(r['project_sha256'],n)
  verify_M_layout()
+ if r.get('joint_revision')=='lower-lap-pads-removed-v1':
+  pad=json.loads((OUT/'joint-pad-removal-validation.json').read_text())
+  kept=json.loads((OUT/'joint-pad-unchanged-plates.json').read_text())
+  assert pad['project_sha256']==kept['project_sha256']==r['project_sha256']
+  assert pad['editable_sha256']==r['editable_sha256']
+  assert pad['removed_pads']==42 and pad['joints']==14
+  assert len(pad['native_pad_toolpaths'])==42
+  assert all(abs(p['maximum_model_extrusion_z_mm']-4.8)<.001 for p in pad['native_pad_toolpaths'])
+  assert {p['plate'] for p in kept['plates']}==set(range(11,21))
+  for path,h in kept['protected_external_file_sha256'].items():assert valid_hash(ROOT/path,h),path
+  with zipfile.ZipFile(ROOT/'Dara.3mf') as protected_archive:
+   for plate in kept['plates']:
+    assert plate['geometry_settings_and_poses_unchanged'] and plate['gcode_byte_identical']
+    for name,h in plate['preserved_assets_sha256'].items():assert hashlib.sha256(protected_archive.read(name)).hexdigest()==h,name
  with zipfile.ZipFile(ROOT/'Dara.3mf') as z:
   assert z.testzip() is None
   settings=json.loads(z.read('Metadata/project_settings.config'));assert settings['printer_model']=='Bambu Lab A2L'

@@ -45,9 +45,10 @@ except for the explicit existing solid regions below.
 - Preserve the saved material boundaries, filament profiles, top-surface finish
   directions, object rotations, supports, brims, cooling, speeds, temperatures,
   and purge settings unless the requested change specifically covers them.
-- Veneer tree supports stay enabled. Preserve the bonded fins and their saved
-  orientation; the fins restrain the veneer and do not prove that unsupported
-  spans will print. A support-enabled flag does not establish local backing.
+- Veneer tree supports stay enabled. Preserve the approved bonded wall carriers,
+  fused necks, bed bands and saved orientation; modeled restraint does not prove
+  that unsupported spans will print. A support-enabled flag does not establish
+  local backing.
 - The saved veneer rotation is shared across all three veneers: 55-degree lean
   and the existing in-plane orientation. Do not auto-orient individual veneers.
 
@@ -124,6 +125,36 @@ except for the explicit existing solid regions below.
 - `working/bambu/Dara-A2L-Flush-Joint-Test/` and the fins-only veneer comparison
   in `working/bambu/Dara-A2L-Veneer-Backing-Trial/` have withdrawal notices. Do not
   recommend or promote them based on older passing reports or stale README text.
+- **Veneer support requirement, 2026-10-21:** the user clarified that the carrier
+  must tie the silk PLA veneer to the bed to restrain warping; merely backing it
+  with detachable supports is insufficient. The material limit is **under
+  1,000 g for all three veneers and their complete support structures combined**.
+  `output/Dara-A2L-Veneer-Wall-Cradle-r1/` is withdrawn after the user's design
+  rejection. It retained necks and feet but removed intervening starter-rib
+  bodies. Whole-model connectivity and extrusion at necks did not establish
+  restraint during growth. This was not a reported physical print failure.
+  The user also rejected r2 because its long narrow bed posts remain fragile;
+  `output/Dara-A2L-Veneer-Wall-Cradle-r2/` is withdrawn. The revised carrier
+  must use continuous braced walls reaching the bed instead of isolated posts.
+  Separate candidates did not replace root `Dara.3mf` until the explicit
+  promotion approval below. Geometry or slice checks do not establish physical
+  anti-warp performance.
+  The user subsequently requested removing the obsolete local base rails,
+  crossbars, center strip and starter feet, while tying the front and rear walls
+  together with a thin band printed on the bed. Keep this base restraint when
+  reducing support material; do not restore the discarded perimeter framework.
+- **Approved wall-carrier promotion, 2026-10-21:** the user explicitly requested
+  replacing the existing veneer plates in the main Dara project, then committing
+  and pushing. A2L plates **15-17** use **wall-cradle-r5**: continuous 1.20 mm
+  inclined backing, 1.00 mm rear wall and two 1.00 mm connecting walls, with two
+  **4.00 mm wide by 0.60 mm high bed bands** per plate. The 35 pointed rear/web
+  openings remain; the outer guard and obsolete local base framework are removed.
+  All three veneers and all supports slice at **901.70 g combined**. Preserve
+  the original veneer and fused-neck geometry, rotations and process settings.
+  Plates **1-14 and 18-20**, M cores, corrected knot joints and all A1 files stay
+  unchanged. The root/named complete projects and editable source are synchronized.
+  This approval authorizes the file promotion before physical qualification;
+  rigidity, adhesion, silk warping resistance and removal remain untested.
 - The current direct reference is
   `working/bambu/Dara-A2L-Production-Joint-Sample/Dara-A2L-Production-Joint-Sample.3mf`.
   It is cropped from production J4, with corrected straight crop boundaries.

@@ -1,6 +1,6 @@
 {
-  "editable_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
-  "native_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
+  "native_project_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
   "objects": [
     {
       "name": "F1 A2L knot",
@@ -257,5 +257,6 @@
       "modifier_vertices_checked": 130,
       "max_native_modifier_error_mm": 0.0
     }
-  ]
+  ],
+  "preservation_basis": "All modifier-bearing meshes, object settings and poses are unchanged; replacement veneer objects have no modifiers."
 }

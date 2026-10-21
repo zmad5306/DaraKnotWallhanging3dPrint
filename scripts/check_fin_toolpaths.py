@@ -5,7 +5,7 @@ import numpy as np
 from validate_print_project import TOKEN
 
 
-def check_fin_bonds(text,carrier):
+def check_fin_bonds(text,carrier,layer_tolerance_mm=.45):
     feature='Custom';x=y=z=e=0.;rel_e=rel_xyz=False
     layers=collections.defaultdict(list)
     for line in text.splitlines():
@@ -27,7 +27,7 @@ def check_fin_bonds(text,carrier):
     errors=[]
     for probe in carrier['bond_probes_print_xyz_mm']:
         p=np.asarray(probe)
-        nearby=[a for z,a in layers.items() if abs(z-p[2])<.45]
+        nearby=[a for z,a in layers.items() if abs(z-p[2])<layer_tolerance_mm]
         assert nearby,('No printed layer at bonded tooth',probe)
         a=np.concatenate(nearby)
         select=np.all(a.min(axis=1)-.45<=p,axis=1)&np.all(a.max(axis=1)+.45>=p,axis=1)

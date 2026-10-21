@@ -1,13 +1,21 @@
 {
   "corrected_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
   "GUI_tested_file_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
-  "current_native_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "current_native_project_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
   "prime_tower_collision_warning_absent_after_fresh_GUI_open": true,
   "thermal_preconditioning_notice_still_present": true,
-  "current_project_fresh_GUI_review_pending": false,
+  "current_project_fresh_GUI_review_pending": true,
   "Studio_version": "02.08.02.61",
   "printer_commands_sent": false,
   "forced_Y160_layout_in_GUI": true,
   "fresh_GUI_review_scope": "Fresh separate Studio window opened the exact native candidate. Prepare overview shows all 20 plates, with no collision or floating-region banner; only the thermal-preconditioning notice. Global settings visually show A2L, 0.4 nozzle, 0.20 initial/other layers, 4 walls, 5 top/bottom layers, 8% Gyroid. Existing unsaved user windows retained.",
-  "corrected_GUI_reload_status": "PASS: fresh exact-file open and explicit locked-settings review."
+  "corrected_GUI_reload_status": "PASS: fresh exact-file open and explicit locked-settings review.",
+  "unchanged_plate_proof_sha256": "f534196888fa027eb2463637c109f485dd820300e49e367028fccb9d18345d52",
+  "inherited_unchanged_plate_proofs": [
+    {
+      "path": "veneer-wall-unchanged-plates.json",
+      "sha256": "f534196888fa027eb2463637c109f485dd820300e49e367028fccb9d18345d52"
+    }
+  ],
+  "current_review_scope": "Prior GUI observation applies to unchanged tower-bearing knot plates. Current veneer plates passed native slicing and the complete file passed native reopen. No new GUI observation or physical print is claimed."
 }

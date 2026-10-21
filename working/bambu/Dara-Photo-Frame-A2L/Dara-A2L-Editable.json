@@ -605,7 +605,7 @@
       ]
     },
     {
-      "name": "V1 A2L hammered veneer and sacrificial fins",
+      "name": "V1 A2L hammered veneer and wall cradle r5",
       "plate": 15,
       "object_id": 2400,
       "assembly_to_printer": [
@@ -636,19 +636,19 @@
       ],
       "body_bounds_mm": [
         [
-          0.7999999970197678,
-          0.7999999970197678,
+          56.191410104,
+          67.9796234048,
           0.0
         ],
         [
-          329.20000000298023,
-          319.20000000298023,
-          297.33851388886853
+          268.655731,
+          252.170370504,
+          297.3385
         ]
       ]
     },
     {
-      "name": "V2 A2L hammered veneer and sacrificial fins",
+      "name": "V2 A2L hammered veneer and wall cradle r5",
       "plate": 16,
       "object_id": 2500,
       "assembly_to_printer": [
@@ -679,19 +679,19 @@
       ],
       "body_bounds_mm": [
         [
-          0.7999999970197678,
-          0.7999999970197678,
+          56.18752571900001,
+          65.9501281977,
           0.0
         ],
         [
-          329.20000000298023,
-          319.20000000298023,
-          297.3487134131006
+          268.659302,
+          254.04987179699998,
+          297.348724
         ]
       ]
     },
     {
-      "name": "V3 A2L hammered veneer and sacrificial fins",
+      "name": "V3 A2L hammered veneer and wall cradle r5",
       "plate": 17,
       "object_id": 2600,
       "assembly_to_printer": [
@@ -722,14 +722,14 @@
       ],
       "body_bounds_mm": [
         [
-          0.7999999970197678,
-          0.7999999970197678,
+          56.187833931,
+          34.449997999000004,
           0.0
         ],
         [
-          329.20000000298023,
-          319.20000000298023,
-          297.34871341310054
+          268.659302,
+          285.549993999,
+          297.348724
         ]
       ]
     },
@@ -2628,7 +2628,8 @@
   ],
   "native_slice_validated": true,
   "physical_confirmation_pending": true,
-  "editable_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
   "joint_revision": "lower-lap-pads-removed-v1",
-  "native_project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8"
+  "native_project_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
+  "veneer_carrier_revision": "wall-cradle-r5"
 }

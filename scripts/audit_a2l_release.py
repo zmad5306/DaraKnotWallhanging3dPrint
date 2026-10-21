@@ -30,7 +30,23 @@ def verify_gui_evidence(project_sha,native):
  assert update.get('frame_and_accessory_inputs_preserved') or (update['all_other_zip_entries_byte_identical_to_previous_editable'] and update['saved_poses_materials_and_other_geometry_preserved'])
  assert all(not p['startup_prime_tower_check']['intersects_model'] for p in native['plates'])
  assert all(p['startup_prime_tower_check']['estimated_footprint_area_mm2']==0 for p in native['plates'][10:])
- return 'Prior GUI tower result retained: tower plates unchanged; fresh visual review pending (Mac locked)'
+ return 'Prior GUI tower result retained: tower plates unchanged; fresh visual review pending'
+
+def verify_carriers(carriers):
+ assert len(carriers)==3
+ for row in carriers:
+  c=row['carrier']
+  if c.get('revision')=='wall-cradle-r5':
+   assert c['front_panel_continuous_to_bed'] and c['isolated_tall_posts']==0
+   assert c['legacy_base_stock_remaining_mm3']<1e-5
+   assert len(c['bed_tie_bands'])==2
+   assert all(b['width_mm']==4 and b['height_mm']==.6 for b in c['bed_tie_bands'])
+   assert c['physical_confirmation_pending']
+  else:
+   assert c['continuous_starter_shoe'] is False and c['starter_shoe_assembly_x_width_mm']==0
+   assert c['cutter_access_necks_checked']==c['bonded_tooth_count']
+   assert c['maximum_cutter_access_obstruction_mm3']<1e-5
+   assert c['flush_trim_excess_outside_finished_veneer_mm3']<1e-5
 
 
 def verify_M_layout():
@@ -61,13 +77,7 @@ def audit():
  assert sha(ROOT/'output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf')==r['sample_project_sha256']
  assert n['native_return_code']==0 and len(n['plates'])==20
  carriers=json.loads((OUT/'M-geometry-validation.json').read_text())['skins']
- assert len(carriers)==3
- for row in carriers:
-  c=row['carrier'];assert c['continuous_starter_shoe'] is False
-  assert c['starter_shoe_assembly_x_width_mm']==0
-  assert c['cutter_access_necks_checked']==c['bonded_tooth_count']
-  assert c['maximum_cutter_access_obstruction_mm3']<1e-5
-  assert c['flush_trim_excess_outside_finished_veneer_mm3']<1e-5
+ verify_carriers(carriers)
  for plate in n['plates'][:10]:
   tower=plate['prime_tower_clearance']
   assert tower['studio_model_convex_hull_clearance_mm']>8
@@ -78,11 +88,27 @@ def audit():
  assert r['native_reopen_return_code']==0
  verify_gui_evidence(r['project_sha256'],n)
  verify_M_layout()
+ wall=None
+ if r.get('veneer_carrier_revision')=='wall-cradle-r5':
+  wall=json.loads((OUT/'veneer-wall-unchanged-plates.json').read_text())
+  proof=json.loads((OUT/'veneer-wall-promotion-validation.json').read_text())
+  assert wall['project_sha256']==proof['project_sha256']==r['project_sha256']
+  assert wall['editable_sha256']==proof['editable_sha256']==r['editable_sha256']
+  assert wall['changed_plates']==[15,16,17]
+  assert {p['plate'] for p in wall['plates']}==set(range(1,21))-{15,16,17}
+  assert sum(p['weight_g'] for p in proof['plates'])==proof['total_veneer_and_support_g']<1000
+  assert sum(p['bond_toolpaths']['bond_probes_checked'] for p in proof['plates'])==721
+  assert all(p['band_toolpaths']['bond_probes_checked']>0 and p['opening_toolpaths']['support_segments_inside_openings']==0 for p in proof['plates'])
+  with zipfile.ZipFile(ROOT/'Dara.3mf') as archive:
+   for plate in wall['plates']:
+    assert plate['geometry_settings_and_poses_unchanged'] and plate['gcode_byte_identical']
+    for name,h in plate['preserved_assets_sha256'].items():assert hashlib.sha256(archive.read(name)).hexdigest()==h,name
+  for path,h in wall['protected_external_file_sha256'].items():assert valid_hash(ROOT/path,h),path
  if r.get('joint_revision')=='lower-lap-pads-removed-v1':
   pad=json.loads((OUT/'joint-pad-removal-validation.json').read_text())
   kept=json.loads((OUT/'joint-pad-unchanged-plates.json').read_text())
-  assert pad['project_sha256']==kept['project_sha256']==r['project_sha256']
-  assert pad['editable_sha256']==r['editable_sha256']
+  assert pad['project_sha256']==kept['project_sha256']==(wall['baseline_project_sha256'] if wall else r['project_sha256'])
+  assert pad['editable_sha256']==(wall['baseline_editable_sha256'] if wall else r['editable_sha256'])
   assert pad['removed_pads']==42 and pad['joints']==14
   assert len(pad['native_pad_toolpaths'])==42
   assert all(abs(p['maximum_model_extrusion_z_mm']-4.8)<.001 for p in pad['native_pad_toolpaths'])
@@ -90,6 +116,7 @@ def audit():
   for path,h in kept['protected_external_file_sha256'].items():assert valid_hash(ROOT/path,h),path
   with zipfile.ZipFile(ROOT/'Dara.3mf') as protected_archive:
    for plate in kept['plates']:
+    if wall and plate['plate'] in wall['changed_plates']:continue
     assert plate['geometry_settings_and_poses_unchanged'] and plate['gcode_byte_identical']
     for name,h in plate['preserved_assets_sha256'].items():assert hashlib.sha256(protected_archive.read(name)).hexdigest()==h,name
  with zipfile.ZipFile(ROOT/'Dara.3mf') as z:

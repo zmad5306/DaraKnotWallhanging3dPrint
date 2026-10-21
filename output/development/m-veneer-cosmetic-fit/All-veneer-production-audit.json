@@ -3,30 +3,6 @@
   "saved_veneer_instances_checked": 39,
   "geometry_and_removal_checks": [
     {
-      "family": "A2L",
-      "veneer": 1,
-      "cut_necks": 237,
-      "no_continuous_shoe": true,
-      "maximum_cutter_obstruction_mm3": 0.0,
-      "flush_trim_excess_mm3": 3.070805416438089e-09
-    },
-    {
-      "family": "A2L",
-      "veneer": 2,
-      "cut_necks": 240,
-      "no_continuous_shoe": true,
-      "maximum_cutter_obstruction_mm3": 0.0,
-      "flush_trim_excess_mm3": 2.485294221643989e-09
-    },
-    {
-      "family": "A2L",
-      "veneer": 3,
-      "cut_necks": 244,
-      "no_continuous_shoe": true,
-      "maximum_cutter_obstruction_mm3": 0.0,
-      "flush_trim_excess_mm3": 1.2544886089695403e-09
-    },
-    {
       "family": "A1",
       "veneer": 1,
       "cut_necks": 184,
@@ -73,72 +49,108 @@
       "no_continuous_shoe": true,
       "maximum_cutter_obstruction_mm3": 8.591965353447135e-10,
       "flush_trim_excess_mm3": 1.980565125023247e-09
+    },
+    {
+      "family": "A2L",
+      "veneer": 1,
+      "revision": "wall-cradle-r5",
+      "cut_necks": 237,
+      "continuous_braced_walls": true,
+      "bed_tie_bands": 2,
+      "legacy_base_removed": true,
+      "physical_cleanup_pending": true
+    },
+    {
+      "family": "A2L",
+      "veneer": 2,
+      "revision": "wall-cradle-r5",
+      "cut_necks": 240,
+      "continuous_braced_walls": true,
+      "bed_tie_bands": 2,
+      "legacy_base_removed": true,
+      "physical_cleanup_pending": true
+    },
+    {
+      "family": "A2L",
+      "veneer": 3,
+      "revision": "wall-cradle-r5",
+      "cut_necks": 244,
+      "continuous_braced_walls": true,
+      "bed_tie_bands": 2,
+      "legacy_base_removed": true,
+      "physical_cleanup_pending": true
     }
   ],
   "all_saved_projects_match_corrected_geometry": true,
   "projects": [
     {
       "project": "Dara.3mf",
-      "sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+      "sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
       "veneers": [
         {
-          "name": "V1 A2L hammered veneer and sacrificial fins",
+          "name": "V1 A2L hammered veneer and wall cradle r5",
           "plate": 15,
-          "corrected_geometry_maximum_error_mm": 1.7705704385218092e-05
+          "corrected_geometry_maximum_error_mm": 1.8448209132924767e-05
         },
         {
-          "name": "V2 A2L hammered veneer and sacrificial fins",
+          "name": "V2 A2L hammered veneer and wall cradle r5",
           "plate": 16,
-          "corrected_geometry_maximum_error_mm": 1.815732948946846e-05
+          "corrected_geometry_maximum_error_mm": 1.9416698908371015e-05
         },
         {
-          "name": "V3 A2L hammered veneer and sacrificial fins",
+          "name": "V3 A2L hammered veneer and wall cradle r5",
           "plate": 17,
-          "corrected_geometry_maximum_error_mm": 2.1380629355044793e-05
+          "corrected_geometry_maximum_error_mm": 2.4072080131142162e-05
         }
-      ]
+      ],
+      "carrier_revision": "wall-cradle-r5",
+      "validation_report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json"
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf",
-      "sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+      "sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
       "veneers": [
         {
-          "name": "V1 A2L hammered veneer and sacrificial fins",
+          "name": "V1 A2L hammered veneer and wall cradle r5",
           "plate": 15,
-          "corrected_geometry_maximum_error_mm": 1.7705704385218092e-05
+          "corrected_geometry_maximum_error_mm": 1.8448209132924767e-05
         },
         {
-          "name": "V2 A2L hammered veneer and sacrificial fins",
+          "name": "V2 A2L hammered veneer and wall cradle r5",
           "plate": 16,
-          "corrected_geometry_maximum_error_mm": 1.815732948946846e-05
+          "corrected_geometry_maximum_error_mm": 1.9416698908371015e-05
         },
         {
-          "name": "V3 A2L hammered veneer and sacrificial fins",
+          "name": "V3 A2L hammered veneer and wall cradle r5",
           "plate": 17,
-          "corrected_geometry_maximum_error_mm": 2.1380629355044793e-05
+          "corrected_geometry_maximum_error_mm": 2.4072080131142162e-05
         }
-      ]
+      ],
+      "carrier_revision": "wall-cradle-r5",
+      "validation_report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json"
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf",
-      "sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+      "sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
       "veneers": [
         {
-          "name": "V1 A2L hammered veneer and sacrificial fins",
+          "name": "V1 A2L hammered veneer and wall cradle r5",
           "plate": 15,
-          "corrected_geometry_maximum_error_mm": 0.0
+          "corrected_geometry_maximum_error_mm": 1.8448209132924767e-05
         },
         {
-          "name": "V2 A2L hammered veneer and sacrificial fins",
+          "name": "V2 A2L hammered veneer and wall cradle r5",
           "plate": 16,
-          "corrected_geometry_maximum_error_mm": 0.0
+          "corrected_geometry_maximum_error_mm": 1.9416698908371015e-05
         },
         {
-          "name": "V3 A2L hammered veneer and sacrificial fins",
+          "name": "V3 A2L hammered veneer and wall cradle r5",
           "plate": 17,
-          "corrected_geometry_maximum_error_mm": 0.0
+          "corrected_geometry_maximum_error_mm": 2.4072080131142162e-05
         }
-      ]
+      ],
+      "carrier_revision": "wall-cradle-r5",
+      "validation_report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json"
     },
     {
       "project": "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf",
@@ -350,5 +362,9 @@
     "report": "working/bambu/Dara-Photo-Frame-A2L/joint-pad-unchanged-plates.json",
     "sha256": "3737ae8f6daee65c83bd45fe4b0633a30fdf61444a897a2d9e6313d166540e93",
     "all_M_meshes_settings_poses_and_stored_slices_byte_preserved": true
+  },
+  "wall_cradle_promotion_basis": {
+    "report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json",
+    "sha256": "51b3077f68140ab1ed6a391201b949534a9f47f3d222e7eacacdefafdfb0c67c"
   }
 }

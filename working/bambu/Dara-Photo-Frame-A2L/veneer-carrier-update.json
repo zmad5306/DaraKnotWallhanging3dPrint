@@ -1,18 +1,13 @@
 {
-  "revision": "clean-trim-production-v2",
-  "M_layout_revision": "short-veneer-staggered-cores-v2",
-  "editable_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
-  "all_veneers_checked": 3,
+  "revision": "wall-cradle-r5",
+  "project_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
+  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
   "frame_and_accessory_inputs_preserved": true,
-  "common_veneer_rotation_preserved": true,
   "changed_plates": [
-    11,
-    12,
-    13,
-    14,
     15,
     16,
     17
   ],
+  "validation": "veneer-wall-promotion-validation.json",
   "physical_confirmation_pending": true
 }

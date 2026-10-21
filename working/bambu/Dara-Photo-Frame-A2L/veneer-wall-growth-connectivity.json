@@ -1,0 +1,409 @@
+{
+  "purpose": "Distinguish modeled bed attachment from detachable slicer support. Connectivity is not stiffness, bond strength or adhesion qualification.",
+  "source_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "revision": "r5",
+  "physical_restraint_qualified": false,
+  "cases": [
+    {
+      "veneer": "V1",
+      "revision": "production",
+      "levels": [
+        {
+          "print_z_mm": 0.2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 5,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 10,
+          "grounded_components": 1,
+          "ungrounded_components": [
+            {
+              "volume_mm3": 0.0017826813739207023,
+              "bounds_mm": [
+                256.52845181449294,
+                138.8583069,
+                9.961837000000003,
+                256.60967531598845,
+                140.0583038,
+                10.0
+              ]
+            }
+          ]
+        },
+        {
+          "print_z_mm": 25,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 50,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 100,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 200,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 297.4,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        }
+      ]
+    },
+    {
+      "veneer": "V1",
+      "revision": "r5",
+      "levels": [
+        {
+          "print_z_mm": 0.2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 5,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 10,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 25,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 50,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 100,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 200,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 297.4,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        }
+      ]
+    },
+    {
+      "veneer": "V2",
+      "revision": "production",
+      "levels": [
+        {
+          "print_z_mm": 0.2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 5,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 10,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 25,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 50,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 100,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 200,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 297.4,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        }
+      ]
+    },
+    {
+      "veneer": "V2",
+      "revision": "r5",
+      "levels": [
+        {
+          "print_z_mm": 0.2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 5,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 10,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 25,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 50,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 100,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 200,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 297.4,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        }
+      ]
+    },
+    {
+      "veneer": "V3",
+      "revision": "production",
+      "levels": [
+        {
+          "print_z_mm": 0.2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 2,
+          "grounded_components": 1,
+          "ungrounded_components": [
+            {
+              "volume_mm3": 0.0005802884398878397,
+              "bounds_mm": [
+                262.1336648909301,
+                254.14285280000001,
+                1.9786829999999895,
+                262.1790347787325,
+                255.3428497,
+                2.0
+              ]
+            }
+          ]
+        },
+        {
+          "print_z_mm": 5,
+          "grounded_components": 1,
+          "ungrounded_components": [
+            {
+              "volume_mm3": 0.0050485006715218165,
+              "bounds_mm": [
+                265.2823713516212,
+                66.5571442,
+                4.8731539999999995,
+                265.5523573579769,
+                67.44168840044067,
+                5.0
+              ]
+            }
+          ]
+        },
+        {
+          "print_z_mm": 10,
+          "grounded_components": 1,
+          "ungrounded_components": [
+            {
+              "volume_mm3": 0.014656856501036103,
+              "bounds_mm": [
+                256.53200918686895,
+                100.1857147,
+                9.892807000000005,
+                256.7601480123761,
+                101.3857117,
+                10.0
+              ]
+            },
+            {
+              "volume_mm3": 0.009691643306285438,
+              "bounds_mm": [
+                256.5320115330312,
+                218.6142883,
+                9.912047999999999,
+                256.7192093709097,
+                219.8142853,
+                10.0
+              ]
+            }
+          ]
+        },
+        {
+          "print_z_mm": 25,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 50,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 100,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 200,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 297.4,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        }
+      ]
+    },
+    {
+      "veneer": "V3",
+      "revision": "r5",
+      "levels": [
+        {
+          "print_z_mm": 0.2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 2,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 5,
+          "grounded_components": 1,
+          "ungrounded_components": [
+            {
+              "volume_mm3": 0.005048500671522261,
+              "bounds_mm": [
+                265.2823713516212,
+                66.5571442,
+                4.8731539999999995,
+                265.5523573579769,
+                67.44168840044067,
+                5.0
+              ]
+            }
+          ]
+        },
+        {
+          "print_z_mm": 10,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 25,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 50,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 100,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 200,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        },
+        {
+          "print_z_mm": 297.4,
+          "grounded_components": 1,
+          "ungrounded_components": []
+        }
+      ]
+    }
+  ],
+  "protected_hashes_unchanged": {
+    "Dara.3mf": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Complete.3mf": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Editable.3mf": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+    "working\\bambu\\Dara-A1-Companion\\companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working\\bambu\\Dara-A1-Companion\\native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working\\bambu\\Dara-A1-Companion\\README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working\\bambu\\Dara-A1-Companion\\release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328"
+  },
+  "limitations": [
+    "Exact solid geometry at selected heights, not a native bead-connectivity simulation.",
+    "A grounded component may remain mechanically flexible or peel off the bed.",
+    "Ungrounded model islands may sit on slicer supports; those are intentionally excluded as bonded bed ties.",
+    "No physical anti-warp performance is inferred."
+  ],
+  "candidate_geometry_sha256": {
+    "V1": "a05f8b120071642fc34def96afffe3872846a79497f7b21e53dc41ffc1e6b1e5",
+    "V2": "287c4dc710e4baadd7fa847b0e8faf070f6881d7e7da23b7817f6494ccf3bd61",
+    "V3": "57989aa979b4487c6331bc6110b646cf09c6adb99091087e60ab065e541d59b1"
+  },
+  "no_additional_ungrounded_islands_at_sampled_heights": true
+}

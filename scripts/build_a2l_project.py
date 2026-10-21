@@ -193,6 +193,7 @@ def frame():
         continuous_artwork=True,weave_pitch_mm=6,source_cad_sha256=sha(CAD),production_plan_sha256=sha(PLAN),physical_confirmation_pending=True))
 
 def build_M():
+    prevent_legacy_carrier_regeneration()
     p=load_plan();outline=artwork(CAD.read_text(),'letter_outline');roof=texture(outline)
     cp=[shape(g) for g in p['core_footprints']];vp=[shape(g) for g in p['skin_regions']];screws=p['screw_mounts'];pins=p['dowel_mounts']
     cores=[];skins=[];records=[]
@@ -320,7 +321,15 @@ def n9_knot_volumes(m,T):
         original_volume_mm3=body.volume(),removed_volume_mm3=removed,added_volume_mm3=added,
         same_material_volumes_in_one_object=True,no_new_physical_joints=True)
 
+def prevent_legacy_carrier_regeneration():
+    """The released editable mesh is authoritative after the wall promotion."""
+    path=OUT/'M-geometry-validation.json'
+    if path.exists() and json.loads(path.read_text()).get('veneer_carrier_revision')=='wall-cradle-r5':
+        raise RuntimeError('Legacy fin regeneration is superseded by wall-cradle-r5. Start from the saved Dara-A2L-Editable.3mf; preserve the approved walls and bed bands.')
+
+
 def package():
+    prevent_legacy_carrier_regeneration()
     if load_plan().get('M_layout_revision') and EDIT.exists():
         from repartition_a2l_M import package_M
         return package_M()

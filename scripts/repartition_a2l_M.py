@@ -109,6 +109,7 @@ def core_plates(p):
 
 
 def package_M():
+ b.prevent_legacy_carrier_regeneration()
  p=b.load_plan();plates=core_plates(p)
  for i in range(3):plates.append([dict(name=f'V{i+1} A2L hammered veneer and sacrificial fins',object_id=2400+i*100,
    parts=[dict(mesh=b.cached(f'V{i+1}'))],transform=np.eye(4),block_front=True,front_normal=np.array(p['veneer_rotation'])[:,2],

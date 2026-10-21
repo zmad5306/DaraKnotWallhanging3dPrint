@@ -1,6 +1,7 @@
 """Install validated wall-cradle plates and synchronize release evidence."""
 import copy,json,shutil
 from promote_veneer_wall_cradle import *
+CORRECTION_GEOMETRY=None
 
 
 def baseline_json(name):return json.loads((BASE/OUT.relative_to(ROOT)/name).read_text())
@@ -19,11 +20,17 @@ def install():
     for name,h in kept['protected_external_file_sha256'].items():assert sha(ROOT/name)==h
     for source,target in [(EDIT,OUT/'Dara-A2L-Editable.3mf'),(NATIVE/'sliced.3mf',OUT/'Dara-A2L-Complete.3mf'),(NATIVE/'sliced.3mf',ROOT/'Dara.3mf')]:
         shutil.copyfile(source,target)
+    if CORRECTION_GEOMETRY is not None:
+        shutil.copyfile(BASE/OUT.relative_to(ROOT)/'veneer-wall-unchanged-plates.json',OUT/'veneer-wall-r5-unchanged-plates.json')
+        shutil.copyfile(BASE/OUT.relative_to(ROOT)/'veneer-wall-promotion-validation.json',OUT/'veneer-wall-r5-promotion-validation.json')
     for name in ['veneer-wall-promotion-validation.json','veneer-wall-unchanged-plates.json','native-validation.json']:
         shutil.copyfile(WORK/name,OUT/name)
-    shutil.copyfile(REVIEW/'validation.json',OUT/'veneer-wall-reviewed-r5.json')
-    shutil.copyfile(REVIEW/'growth-connectivity.json',OUT/'veneer-wall-growth-connectivity.json')
-    shutil.copyfile(REVIEW/'bed-base-before-after.png',OUT/'veneer-wall-base-comparison.png')
+    if CORRECTION_GEOMETRY is None:
+        shutil.copyfile(REVIEW/'validation.json',OUT/'veneer-wall-reviewed-r5.json')
+        shutil.copyfile(REVIEW/'growth-connectivity.json',OUT/'veneer-wall-growth-connectivity.json')
+        shutil.copyfile(REVIEW/'bed-base-before-after.png',OUT/'veneer-wall-base-comparison.png')
+    else:
+        shutil.copyfile(WORK/'end-tie-bed-preview.png',OUT/'veneer-end-tie-bed-preview.png')
     m=baseline_json('M-geometry-validation.json')
     for skin,row in zip(m['skins'],proof['plates']):
         carrier=copy.deepcopy(row['reviewed_geometry'])
@@ -59,9 +66,14 @@ def install():
         if name=='Dara-A2L-Editable.json':data.update(native_slice_validated=True,native_project_sha256=proof['project_sha256'])
         save_json(OUT/name,data)
     gui=baseline_json('tower-gui-verification.json')
+    ancestors=[]
+    if CORRECTION_GEOMETRY is not None:
+        ancestors=copy.deepcopy(gui['inherited_unchanged_plate_proofs'])
+        for ancestor in ancestors:
+            if ancestor['path']=='veneer-wall-unchanged-plates.json':ancestor['path']='veneer-wall-r5-unchanged-plates.json'
     gui.update(current_native_project_sha256=proof['project_sha256'],current_project_fresh_GUI_review_pending=True,
         unchanged_plate_proof_sha256=sha(OUT/'veneer-wall-unchanged-plates.json'),
-        inherited_unchanged_plate_proofs=[dict(path='veneer-wall-unchanged-plates.json',sha256=sha(OUT/'veneer-wall-unchanged-plates.json'))],
+        inherited_unchanged_plate_proofs=[dict(path='veneer-wall-unchanged-plates.json',sha256=sha(OUT/'veneer-wall-unchanged-plates.json'))]+ancestors,
         current_review_scope='Prior GUI observation applies to unchanged tower-bearing knot plates. Current veneer plates passed native slicing and the complete file passed native reopen. No new GUI observation or physical print is claimed.')
     save_json(OUT/'tower-gui-verification.json',gui)
     save_json(OUT/'veneer-carrier-update.json',dict(revision=REVISION,project_sha256=proof['project_sha256'],
@@ -100,6 +112,9 @@ def release():
         'veneer-wall-reviewed-r5.json','veneer-wall-growth-connectivity.json','veneer-wall-base-comparison.png'])
     paths.extend(ROOT/'scripts'/name for name in ['promote_veneer_wall_cradle.py','validate_veneer_wall_promotion.py',
         'install_veneer_wall_cradle.py','check_veneer_wall_openings.py'])
+    if CORRECTION_GEOMETRY is not None:
+        paths.extend(OUT/name for name in ['veneer-wall-r5-unchanged-plates.json','veneer-wall-r5-promotion-validation.json','veneer-end-tie-bed-preview.png'])
+        paths.append(ROOT/'scripts/correct_veneer_end_ties.py')
     data['evidence_sha256']={p.relative_to(ROOT).as_posix():sha(p) for p in paths}
     save_json(OUT/'release-validation.json',data)
     print('Release evidence synchronized:',proof['project_sha256'],flush=True)

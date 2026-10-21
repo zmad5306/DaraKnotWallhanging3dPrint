@@ -145,11 +145,14 @@ except for the explicit existing solid regions below.
   reducing support material; do not restore the discarded perimeter framework.
 - **Approved wall-carrier promotion, 2026-10-21:** the user explicitly requested
   replacing the existing veneer plates in the main Dara project, then committing
-  and pushing. A2L plates **15-17** use **wall-cradle-r5**: continuous 1.20 mm
+  and pushing. A2L plates **15-17** use **wall-cradle-r6-end-ties**: continuous 1.20 mm
   inclined backing, 1.00 mm rear wall and two 1.00 mm connecting walls, with two
-  **4.00 mm wide by 0.60 mm high bed bands** per plate. The 35 pointed rear/web
+  **4.00 mm wide by 0.60 mm high bed bands** per plate. The user clarified that
+  these bands belong at the **two open ends**, flush with the wall ends, to keep
+  them from splaying. They replace the r5 bands beneath the interior webs;
+  do not add extra interior bands. The 35 pointed rear/web
   openings remain; the outer guard and obsolete local base framework are removed.
-  All three veneers and all supports slice at **901.70 g combined**. Preserve
+  All three veneers and all supports slice at **902.59 g combined**. Preserve
   the original veneer and fused-neck geometry, rotations and process settings.
   Plates **1-14 and 18-20**, M cores, corrected knot joints and all A1 files stay
   unchanged. The root/named complete projects and editable source are synchronized.

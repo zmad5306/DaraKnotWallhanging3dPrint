@@ -55,8 +55,8 @@
       "maximum_difference_deg": 0.0
     }
   ],
-  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
-  "native_project_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+  "native_project_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
   "production_plan_sha256": "afcdb48a0671aaf9a2fbb8a38078d91e2997829f53c6558af0255b06b032b020",
   "native_return_code": 0,
   "native_roundtrip": [
@@ -136,19 +136,19 @@
       "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
     },
     {
-      "name": "V1 A2L hammered veneer and wall cradle r5",
-      "maximum_vertex_and_pose_error_mm": 1.8448209132924767e-05,
-      "distance_metric": "bidirectional comparison to approved r5 saved mesh in printer coordinates"
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+      "maximum_vertex_and_pose_error_mm": 1.9089237240237295e-05,
+      "distance_metric": "bidirectional comparison to the saved candidate mesh in printer coordinates"
     },
     {
-      "name": "V2 A2L hammered veneer and wall cradle r5",
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
       "maximum_vertex_and_pose_error_mm": 1.9416698908371015e-05,
-      "distance_metric": "bidirectional comparison to approved r5 saved mesh in printer coordinates"
+      "distance_metric": "bidirectional comparison to the saved candidate mesh in printer coordinates"
     },
     {
-      "name": "V3 A2L hammered veneer and wall cradle r5",
-      "maximum_vertex_and_pose_error_mm": 2.4072080131142162e-05,
-      "distance_metric": "bidirectional comparison to approved r5 saved mesh in printer coordinates"
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+      "maximum_vertex_and_pose_error_mm": 2.4072080066761397e-05,
+      "distance_metric": "bidirectional comparison to the saved candidate mesh in printer coordinates"
     },
     {
       "name": "Backer3",
@@ -4689,14 +4689,14 @@
       "maximum_model_extrusion_z_mm": 9.0
     },
     {
-      "extrusion_moves_checked": 1129863,
+      "extrusion_moves_checked": 1132563,
       "features": {
-        "Support": 68403,
-        "Inner wall": 403583,
-        "Outer wall": 249987,
-        "Gap infill": 84553,
-        "Internal solid infill": 322352,
-        "Top surface": 799,
+        "Support": 69204,
+        "Outer wall": 250484,
+        "Inner wall": 404903,
+        "Gap infill": 84633,
+        "Internal solid infill": 322360,
+        "Top surface": 793,
         "Overhang wall": 186
       },
       "extruding_xy_bounds_mm": [
@@ -4705,7 +4705,7 @@
           68.19
         ],
         [
-          271.06,
+          271.019,
           251.96
         ]
       ],
@@ -4715,15 +4715,15 @@
           67.98
         ],
         [
-          271.279,
+          271.266,
           252.17000000000002
         ]
       ],
       "conservative_bed_edge_clearance_mm": 56.191,
       "plate": 15,
-      "gcode_sha256": "daa868f5501908cbf199ece03d5359ce0cbbe81f64cfb3ba45ecb27ae7a19def",
-      "weight_g": 331.58984375,
-      "seconds": 78272.609375,
+      "gcode_sha256": "e85c9b9fdef8fd8c154b25c1691f52d5a96d4c8ba0f4d8ea934001d0b1a13ea8",
+      "weight_g": 331.90936279296875,
+      "seconds": 78277.15625,
       "bonded_fin_toolpaths": {
         "bond_probes_checked": 237,
         "maximum_distance_to_model_extrusion_centerline_mm": 0.16105032328654031,
@@ -4741,14 +4741,14 @@
       }
     },
     {
-      "extrusion_moves_checked": 1069351,
+      "extrusion_moves_checked": 1071826,
       "features": {
-        "Support": 82439,
-        "Outer wall": 242373,
-        "Inner wall": 375840,
-        "Gap infill": 79815,
-        "Internal solid infill": 287879,
-        "Top surface": 826,
+        "Support": 83211,
+        "Outer wall": 242534,
+        "Inner wall": 377295,
+        "Gap infill": 79900,
+        "Internal solid infill": 287887,
+        "Top surface": 820,
         "Overhang wall": 179
       },
       "extruding_xy_bounds_mm": [
@@ -4757,7 +4757,7 @@
           66.16
         ],
         [
-          270.513,
+          271.381,
           253.84
         ]
       ],
@@ -4767,15 +4767,15 @@
           65.95
         ],
         [
-          270.76,
+          271.62,
           254.05
         ]
       ],
       "conservative_bed_edge_clearance_mm": 56.188,
       "plate": 16,
-      "gcode_sha256": "c68e99b23af95955f1740baa67e7d9a7e53984985dac80c7e2a0690c4602040d",
-      "weight_g": 316.8813781738281,
-      "seconds": 75412.4296875,
+      "gcode_sha256": "84f9d14a5f543d9d1e3a87bc5a4600b5c95f4f8865d7ab31140008885510eb9d",
+      "weight_g": 317.19744873046875,
+      "seconds": 75281.6171875,
       "bonded_fin_toolpaths": {
         "bond_probes_checked": 240,
         "maximum_distance_to_model_extrusion_centerline_mm": 0.1257354702991135,
@@ -4793,14 +4793,14 @@
       }
     },
     {
-      "extrusion_moves_checked": 1181599,
+      "extrusion_moves_checked": 1180089,
       "features": {
-        "Support": 136666,
-        "Outer wall": 251502,
-        "Inner wall": 397641,
-        "Gap infill": 92954,
-        "Internal solid infill": 301003,
-        "Top surface": 799,
+        "Support": 136294,
+        "Outer wall": 251588,
+        "Inner wall": 396337,
+        "Gap infill": 93033,
+        "Internal solid infill": 301011,
+        "Top surface": 792,
         "Overhang wall": 177,
         "Sparse infill": 309,
         "Floating vertical shell": 548
@@ -4811,8 +4811,8 @@
           31.715
         ],
         [
-          271.879,
-          290.341
+          271.882,
+          290.533
         ]
       ],
       "bead_xy_bounds_mm": [
@@ -4821,15 +4821,15 @@
           31.505
         ],
         [
-          272.089,
-          290.551
+          272.092,
+          290.743
         ]
       ],
-      "conservative_bed_edge_clearance_mm": 29.449000000000012,
+      "conservative_bed_edge_clearance_mm": 29.257000000000005,
       "plate": 17,
-      "gcode_sha256": "ae96641e89f99b6d338beacf83132ff765402a87ed989b1a878fc8de4ae5d457",
-      "weight_g": 253.22698974609375,
-      "seconds": 61797.3984375,
+      "gcode_sha256": "f1391dc10ece05798494d4637358440a1c0855714dbbebe3f9156c380f442fe5",
+      "weight_g": 253.48684692382812,
+      "seconds": 62528.95703125,
       "bonded_fin_toolpaths": {
         "bond_probes_checked": 244,
         "maximum_distance_to_model_extrusion_centerline_mm": 0.09930999100360566,
@@ -5914,33 +5914,33 @@
       },
       {
         "feature_type_times": {
-          "Custom": 402.60882568359375,
+          "Custom": 402.6086730957031,
           "Flush": 11.0,
-          "Gap infill": 4390.7998046875,
-          "Inner wall": 17235.861328125,
-          "Internal solid infill": 4006.631103515625,
-          "Outer wall": 43942.82421875,
+          "Gap infill": 4379.005859375,
+          "Inner wall": 17285.74609375,
+          "Internal solid infill": 3993.21630859375,
+          "Outer wall": 43924.703125,
           "Overhang wall": 2.0728700160980225,
-          "Support": 676.3445434570312,
-          "Top surface": 67.79322814941406,
-          "Travel": 7536.7734375,
-          "Undefined": 7536.7734375
+          "Support": 687.913818359375,
+          "Top surface": 67.59762573242188,
+          "Travel": 7524.90966796875,
+          "Undefined": 7524.90966796875
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL96",
             "id": 3,
-            "main_used_g": 331.58984375,
-            "total_used_g": 331.58984375
+            "main_used_g": 331.90936279296875,
+            "total_used_g": 331.90936279296875
           }
         ],
-        "generate_support_material_time": 789,
+        "generate_support_material_time": 800,
         "id": 15,
-        "infill_time": 477,
+        "infill_time": 493,
         "layer_filament_change": 0,
-        "main_predication": 77848.0,
-        "make_perimeters_time": 727,
+        "main_predication": 77852.546875,
+        "make_perimeters_time": 735,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -5953,45 +5953,45 @@
               "z": 0.0
             },
             "id": 241,
-            "name": "V1 A2L hammered veneer and wall cradle r5",
-            "triangle_count": 494222
+            "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 494434
           }
         ],
-        "sliced_time": 7130,
-        "sliced_time_with_cache": 4822,
-        "total_predication": 78272.609375,
-        "triangle_count": 494222,
+        "sliced_time": 7563,
+        "sliced_time_with_cache": 5213,
+        "total_predication": 78277.15625,
+        "triangle_count": 494434,
         "warning_message": ""
       },
       {
         "feature_type_times": {
-          "Custom": 402.660888671875,
+          "Custom": 402.6609191894531,
           "Flush": 11.0,
-          "Gap infill": 4137.8037109375,
-          "Inner wall": 16360.357421875,
-          "Internal solid infill": 3611.677490234375,
-          "Outer wall": 42366.4609375,
+          "Gap infill": 4135.20751953125,
+          "Inner wall": 16394.55078125,
+          "Internal solid infill": 3618.77294921875,
+          "Outer wall": 42355.37109375,
           "Overhang wall": 2.4380576610565186,
-          "Support": 818.4866333007812,
-          "Top surface": 68.82546997070312,
-          "Travel": 7644.9599609375,
-          "Undefined": 7644.9599609375
+          "Support": 826.5091552734375,
+          "Top surface": 68.50696563720703,
+          "Travel": 7477.9306640625,
+          "Undefined": 7477.9306640625
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL96",
             "id": 3,
-            "main_used_g": 316.8813781738281,
-            "total_used_g": 316.8813781738281
+            "main_used_g": 317.19744873046875,
+            "total_used_g": 317.19744873046875
           }
         ],
-        "generate_support_material_time": 876,
+        "generate_support_material_time": 919,
         "id": 16,
-        "infill_time": 442,
+        "infill_time": 475,
         "layer_filament_change": 0,
-        "main_predication": 74987.765625,
-        "make_perimeters_time": 732,
+        "main_predication": 74856.953125,
+        "make_perimeters_time": 785,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -6004,46 +6004,46 @@
               "z": 0.0
             },
             "id": 245,
-            "name": "V2 A2L hammered veneer and wall cradle r5",
-            "triangle_count": 464844
+            "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 465774
           }
         ],
-        "sliced_time": 7161,
-        "sliced_time_with_cache": 4816,
-        "total_predication": 75412.4296875,
-        "triangle_count": 464844,
+        "sliced_time": 7872,
+        "sliced_time_with_cache": 5388,
+        "total_predication": 75281.6171875,
+        "triangle_count": 465774,
         "warning_message": ""
       },
       {
         "feature_type_times": {
-          "Custom": 402.7519836425781,
+          "Custom": 402.8073425292969,
           "Flush": 11.0,
-          "Gap infill": 3784.576904296875,
-          "Inner wall": 13778.876953125,
-          "Internal solid infill": 3823.673828125,
-          "Outer wall": 31703.5390625,
-          "Overhang wall": 2.9234957695007324,
-          "Sparse infill": 4.316428184509277,
-          "Support": 1313.3525390625,
-          "Top surface": 67.90595245361328,
-          "Travel": 6935.21630859375,
-          "Undefined": 6935.21630859375
+          "Gap infill": 3781.501953125,
+          "Inner wall": 13782.9462890625,
+          "Internal solid infill": 3810.501220703125,
+          "Outer wall": 31880.310546875,
+          "Overhang wall": 3.1401758193969727,
+          "Sparse infill": 3.9743118286132812,
+          "Support": 1309.3134765625,
+          "Top surface": 67.4976806640625,
+          "Travel": 7511.0048828125,
+          "Undefined": 7511.0048828125
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFL96",
             "id": 3,
-            "main_used_g": 253.22698974609375,
-            "total_used_g": 253.22698974609375
+            "main_used_g": 253.4868621826172,
+            "total_used_g": 253.48684692382812
           }
         ],
-        "generate_support_material_time": 1273,
+        "generate_support_material_time": 1783,
         "id": 17,
-        "infill_time": 470,
+        "infill_time": 544,
         "layer_filament_change": 0,
-        "main_predication": 61372.64453125,
-        "make_perimeters_time": 804,
+        "main_predication": 62104.1484375,
+        "make_perimeters_time": 962,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -6056,14 +6056,14 @@
               "z": 0.0
             },
             "id": 249,
-            "name": "V3 A2L hammered veneer and wall cradle r5",
-            "triangle_count": 495586
+            "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 495798
           }
         ],
-        "sliced_time": 8240,
-        "sliced_time_with_cache": 5358,
-        "total_predication": 61797.3984375,
-        "triangle_count": 495586,
+        "sliced_time": 9820,
+        "sliced_time_with_cache": 6063,
+        "total_predication": 62528.95703125,
+        "triangle_count": 495798,
         "warning_message": ""
       },
       {
@@ -6762,11 +6762,11 @@
     ],
     "wall_loops": 4
   },
-  "geometry_validation_sha256": "5992dd9a37228d2a0bae2cc074a5597f0d377a890b2df403f6b28786e7692c83",
+  "geometry_validation_sha256": "cc37d3a780cb82da70b6759d38eb4bf914498dfc78ba4d405933b8280b03ab2d",
   "printer": "Bambu Lab A2L 0.4 nozzle",
   "structural_infill": "8% gyroid",
   "veneer_infill": "100%",
   "physical_confirmation_pending": true,
-  "veneer_carrier_revision": "wall-cradle-r5",
+  "veneer_carrier_revision": "wall-cradle-r6-end-ties",
   "preserved_plate_validation_basis": "veneer-wall-unchanged-plates.json"
 }

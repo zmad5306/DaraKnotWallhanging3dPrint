@@ -324,8 +324,8 @@ def n9_knot_volumes(m,T):
 def prevent_legacy_carrier_regeneration():
     """The released editable mesh is authoritative after the wall promotion."""
     path=OUT/'M-geometry-validation.json'
-    if path.exists() and json.loads(path.read_text()).get('veneer_carrier_revision')=='wall-cradle-r5':
-        raise RuntimeError('Legacy fin regeneration is superseded by wall-cradle-r5. Start from the saved Dara-A2L-Editable.3mf; preserve the approved walls and bed bands.')
+    if path.exists() and json.loads(path.read_text()).get('veneer_carrier_revision','').startswith('wall-cradle-'):
+        raise RuntimeError('Legacy fin regeneration is superseded by the wall cradle. Start from the saved Dara-A2L-Editable.3mf; preserve the approved walls and end bands.')
 
 
 def package():

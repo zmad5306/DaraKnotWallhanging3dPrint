@@ -36,12 +36,19 @@ def verify_carriers(carriers):
  assert len(carriers)==3
  for row in carriers:
   c=row['carrier']
-  if c.get('revision')=='wall-cradle-r5':
+  if c.get('revision','').startswith('wall-cradle-'):
    assert c['front_panel_continuous_to_bed'] and c['isolated_tall_posts']==0
    assert c['legacy_base_stock_remaining_mm3']<1e-5
    assert len(c['bed_tie_bands'])==2
    assert all(b['width_mm']==4 and b['height_mm']==.6 for b in c['bed_tie_bands'])
    assert c['physical_confirmation_pending']
+   if c['revision']=='wall-cradle-r6-end-ties':
+    assert c['band_location']=='two open ends, flush outer edges'
+    assert c['difference_above_band_height_mm3']<1e-4
+    assert c['protected_wall_and_neck_removed_mm3']<1e-4
+    assert c['difference_outside_band_masks_mm3']<1e-4
+    assert [b['outer_edge_y_mm'] for b in c['bed_tie_bands']]==c['source_wall_y_extent_mm']
+    assert all(min(b['front_and_rear_overlap_mm3'])>1 for b in c['end_wall_contacts'])
   else:
    assert c['continuous_starter_shoe'] is False and c['starter_shoe_assembly_x_width_mm']==0
    assert c['cutter_access_necks_checked']==c['bonded_tooth_count']
@@ -89,7 +96,7 @@ def audit():
  verify_gui_evidence(r['project_sha256'],n)
  verify_M_layout()
  wall=None
- if r.get('veneer_carrier_revision')=='wall-cradle-r5':
+ if r.get('veneer_carrier_revision','').startswith('wall-cradle-'):
   wall=json.loads((OUT/'veneer-wall-unchanged-plates.json').read_text())
   proof=json.loads((OUT/'veneer-wall-promotion-validation.json').read_text())
   assert wall['project_sha256']==proof['project_sha256']==r['project_sha256']
@@ -107,8 +114,14 @@ def audit():
  if r.get('joint_revision')=='lower-lap-pads-removed-v1':
   pad=json.loads((OUT/'joint-pad-removal-validation.json').read_text())
   kept=json.loads((OUT/'joint-pad-unchanged-plates.json').read_text())
-  assert pad['project_sha256']==kept['project_sha256']==(wall['baseline_project_sha256'] if wall else r['project_sha256'])
-  assert pad['editable_sha256']==(wall['baseline_editable_sha256'] if wall else r['editable_sha256'])
+  predecessor=wall
+  if r.get('veneer_carrier_revision')=='wall-cradle-r6-end-ties':
+   predecessor=json.loads((OUT/'veneer-wall-r5-unchanged-plates.json').read_text())
+   assert predecessor['project_sha256']==wall['baseline_project_sha256']
+   assert predecessor['editable_sha256']==wall['baseline_editable_sha256']
+   assert predecessor['changed_plates']==wall['changed_plates']
+  assert pad['project_sha256']==kept['project_sha256']==(predecessor['baseline_project_sha256'] if predecessor else r['project_sha256'])
+  assert pad['editable_sha256']==(predecessor['baseline_editable_sha256'] if predecessor else r['editable_sha256'])
   assert pad['removed_pads']==42 and pad['joints']==14
   assert len(pad['native_pad_toolpaths'])==42
   assert all(abs(p['maximum_model_extrusion_z_mm']-4.8)<.001 for p in pad['native_pad_toolpaths'])

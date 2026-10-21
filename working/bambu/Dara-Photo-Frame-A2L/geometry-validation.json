@@ -1,5 +1,5 @@
 {
-  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
   "production_plan_sha256": "a541763d31c328921a7735717af5eb141f8dcad4a4c280946d3e8f10e2b65137",
   "part_overlaps": [
     {
@@ -1280,7 +1280,7 @@
       ]
     },
     {
-      "name": "V1 A2L hammered veneer and wall cradle r5",
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
       "plate": 15,
       "bounds_mm": [
         [
@@ -1296,7 +1296,7 @@
       ]
     },
     {
-      "name": "V2 A2L hammered veneer and wall cradle r5",
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
       "plate": 16,
       "bounds_mm": [
         [
@@ -1312,7 +1312,7 @@
       ]
     },
     {
-      "name": "V3 A2L hammered veneer and wall cradle r5",
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
       "plate": 17,
       "bounds_mm": [
         [
@@ -2450,7 +2450,7 @@
     "physical_result": "User trimmed three lower-lap pads; confirmed fit and flush white/brown front surfaces on 2026-10-19.",
     "physical_printer_context": "User switched the sample to A1 and observed grid; exact locally resliced file was not inspected."
   },
-  "veneer_carrier_revision": "wall-cradle-r5",
+  "veneer_carrier_revision": "wall-cradle-r6-end-ties",
   "wall_promotion_preservation_basis": "veneer-wall-unchanged-plates.json",
   "wall_geometry_validation": "veneer-wall-promotion-validation.json"
 }

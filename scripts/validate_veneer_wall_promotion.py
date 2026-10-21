@@ -6,6 +6,7 @@ from check_fin_toolpaths import check_fin_bonds
 from check_veneer_wall_openings import check_openings
 from check_a2l_towers import check_startup_tower
 from shapely.geometry import MultiPoint
+CORRECTION_GEOMETRY=None
 
 
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -25,7 +26,7 @@ def path_signature(text):
 def run():
     original=read(BASE/'Dara.3mf');current=read(NATIVE/'sliced.3mf');editable=read(EDIT)
     patch=json.loads((WORK/'geometry-patch.json').read_text())
-    review=json.loads((REVIEW/'validation.json').read_text())
+    review=json.loads((REVIEW/'validation.json').read_text()) if CORRECTION_GEOMETRY is None else None
     assert sha(EDIT)==patch['editable']['target_sha256']
     assert current['Metadata/project_settings.config']==original['Metadata/project_settings.config']
     settings=json.loads(current['Metadata/project_settings.config'])
@@ -76,27 +77,42 @@ def run():
     native_report=json.loads((BASE/OUT.relative_to(ROOT)/'native-validation.json').read_text())
     result=json.loads((NATIVE/'result.json').read_text());rows=[]
     for number in sorted(CHANGED):
-        i=number-14;review_row=review['plates'][i-1];file_record=review['files'][i-1]
-        approved=REVIEW/Path(file_record['final_file']).name
-        assert sha(approved)==file_record['final_sha256']
-        one=read(approved);actual_native=read(WORK/f'plate-{number}/sliced.3mf')
+        i=number-14
+        actual_native=read(WORK/f'plate-{number}/sliced.3mf')
+        if CORRECTION_GEOMETRY is None:
+            review_row=review['plates'][i-1];file_record=review['files'][i-1]
+            approved=REVIEW/Path(file_record['final_file']).name
+            assert sha(approved)==file_record['final_sha256']
+            one=read(approved)
+            comparison=vertices(selected(one,1)[5])@selected(one,1)[6][:3,:3].T+selected(one,1)[6][:3,3]
+        else:
+            comparison=np.load(CORRECTION_GEOMETRY/f'V{i}-candidate.npz')['vertices']
         poses=[];names=[]
-        for files,plate in [(editable,number),(current,number),(actual_native,number),(one,1)]:
+        for files,plate in [(editable,number),(current,number),(actual_native,number)]:
             _,_,obj,_,_,m,t=selected(files,plate)
             poses.append(vertices(m)@t[:3,:3].T+t[:3,3]);names.append(props(obj)['name'])
-        errors=[max(float(cKDTree(poses[-1]).query(p)[0].max()),float(cKDTree(p).query(poses[-1])[0].max())) for p in poses[:-1]]
+        errors=[max(float(cKDTree(comparison).query(p)[0].max()),float(cKDTree(p).query(comparison)[0].max())) for p in poses]
         assert max(errors)<.001,errors
         # Matching triangles retain the reviewed show-face support painting.
-        actual_mesh=selected(editable,number)[5]
-        review_mesh=selected(read(REVIEW/Path(file_record['editable_file']).name),1)[5]
-        assert [t.attrib for t in actual_mesh.find(tag('triangles'))]==[t.attrib for t in review_mesh.find(tag('triangles'))]
+        if CORRECTION_GEOMETRY is None:
+            actual_mesh=selected(editable,number)[5]
+            review_mesh=selected(read(REVIEW/Path(file_record['editable_file']).name),1)[5]
+            assert [t.attrib for t in actual_mesh.find(tag('triangles'))]==[t.attrib for t in review_mesh.find(tag('triangles'))]
+        else:
+            assert all(x['saved_support_paint_rule_verified'] for x in patch['editable']['support_painting'])
+            assert all(x['saved_support_paint_rule_verified'] for x in patch['native']['support_painting'])
         raw=current[f'Metadata/plate_{number}.gcode'];text=raw.decode()
-        signature=path_signature(text);same_paths=signature==path_signature(one['Metadata/plate_1.gcode'].decode())
+        gcode_settings=dict(re.findall(r'^; ([A-Za-z_0-9]+) = (.*)$',text,re.MULTILINE))
+        locked=dict(sparse_infill_density='8%',sparse_infill_pattern='gyroid',layer_height='0.2',
+            initial_layer_print_height='0.2',wall_loops='4',top_shell_layers='5',bottom_shell_layers='5',
+            curr_bed_type='Textured PEI Plate',nozzle_diameter='0.4')
+        assert all(gcode_settings.get(k)==value for k,value in locked.items())
+        signature=path_signature(text);same_paths=CORRECTION_GEOMETRY is None and signature==path_signature(one['Metadata/plate_1.gcode'].decode())
         scan=scan_gcode(text);low,high=np.array(scan['bead_xy_bounds_mm'])
         clearance=float(min(*low,*(np.array([330,320])-high)));assert clearance>.5
         assert set(scan['model_extrusion_z_by_filament_mm'])=={'3'}
         assert max(scan['model_extrusion_z_by_filament_mm']['3'])<=325
-        expected=review_row['geometry']
+        expected=review_row['geometry'] if CORRECTION_GEOMETRY is None else json.loads((CORRECTION_GEOMETRY/f'V{i}-geometry.json').read_text())
         if same_paths:
             bonds=review_row['bond_toolpath_check'];openings=review_row['opening_toolpath_checks']
             bands=review_row['grounded_wall_toolpath_checks']['bands']
@@ -120,11 +136,12 @@ def run():
         scan.pop('model_extrusion_z_by_filament_mm');native_report['plates'][number-1]=scan
         old_name=native_report['native_roundtrip'][next(k for k,r in enumerate(native_report['native_roundtrip']) if r['name'].startswith(f'V{i} A2L'))]['name']
         for record in native_report['native_roundtrip']:
-            if record['name']==old_name:record.update(name=names[0],maximum_vertex_and_pose_error_mm=max(errors),distance_metric='bidirectional comparison to approved r5 saved mesh in printer coordinates')
+            if record['name']==old_name:record.update(name=names[0],maximum_vertex_and_pose_error_mm=max(errors),distance_metric='bidirectional comparison to the saved candidate mesh in printer coordinates')
         rows.append(dict(plate=number,veneer=f'V{i}',name=names[0],weight_g=weight,seconds=estimate['total_predication'],
             bounds_mm=[poses[1].min(axis=0).tolist(),poses[1].max(axis=0).tolist()],maximum_mesh_error_mm=max(errors),
-            reviewed_native_sha256=sha(approved),reviewed_geometry=expected,reviewed_toolpath_signature_identical=same_paths,
-            executable_and_feature_signature=signature,gcode_sha256=digest(raw),bond_toolpaths=bonds,band_toolpaths=bands,opening_toolpaths=openings,native_warnings=warnings))
+            reviewed_native_sha256=sha(approved) if CORRECTION_GEOMETRY is None else None,reviewed_geometry=expected,reviewed_toolpath_signature_identical=same_paths,
+            executable_and_feature_signature=signature,gcode_sha256=digest(raw),gcode_locked_settings=locked,
+            bond_toolpaths=bonds,band_toolpaths=bands,opening_toolpaths=openings,native_warnings=warnings))
         print(f'Validated plate {number}: {weight:.2f} g; reviewed executable paths identical: {same_paths}',flush=True)
     total=sum(p['weight_g'] for p in rows);assert total<1000
     external=json.loads((WORK/'protected.json').read_text())
@@ -133,7 +150,7 @@ def run():
         editable_sha256=sha(EDIT),baseline_editable_sha256=patch['editable']['source_sha256'],protected_external_file_sha256=external,changed_plates=sorted(CHANGED),
         unchanged_model_graph_and_global_settings=True,all_other_zip_entries_byte_preserved=True)
     proof=dict(revision=REVISION,source_sha256=EXPECTED_SOURCE,project_sha256=sha(NATIVE/'sliced.3mf'),editable_sha256=sha(EDIT),
-        approved_review_validation_sha256=sha(REVIEW/'validation.json'),plates=rows,total_veneer_and_support_g=total,
+        approved_review_validation_sha256=sha(REVIEW/'validation.json') if CORRECTION_GEOMETRY is None else None,plates=rows,total_veneer_and_support_g=total,
         headroom_to_1000g=1000-total,total_seconds=sum(r['seconds'] for r in rows),physical_confirmation_pending=True,
         user_approved_production_promotion=True)
     native_report.update(editable_sha256=sha(EDIT),native_project_sha256=sha(NATIVE/'sliced.3mf'),slicer_result=result,

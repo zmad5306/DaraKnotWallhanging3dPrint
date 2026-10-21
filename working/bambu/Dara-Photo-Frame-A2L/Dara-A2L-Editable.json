@@ -605,7 +605,7 @@
       ]
     },
     {
-      "name": "V1 A2L hammered veneer and wall cradle r5",
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
       "plate": 15,
       "object_id": 2400,
       "assembly_to_printer": [
@@ -648,7 +648,7 @@
       ]
     },
     {
-      "name": "V2 A2L hammered veneer and wall cradle r5",
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
       "plate": 16,
       "object_id": 2500,
       "assembly_to_printer": [
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "name": "V3 A2L hammered veneer and wall cradle r5",
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
       "plate": 17,
       "object_id": 2600,
       "assembly_to_printer": [
@@ -2628,8 +2628,8 @@
   ],
   "native_slice_validated": true,
   "physical_confirmation_pending": true,
-  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
   "joint_revision": "lower-lap-pads-removed-v1",
-  "native_project_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
-  "veneer_carrier_revision": "wall-cradle-r5"
+  "native_project_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+  "veneer_carrier_revision": "wall-cradle-r6-end-ties"
 }

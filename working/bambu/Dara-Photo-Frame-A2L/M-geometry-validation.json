@@ -85,14 +85,14 @@
       "carrier": {
         "number": 1,
         "source_plate": 15,
-        "source_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+        "source_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
         "source_object_id": "273",
-        "source_name": "V1 A2L hammered veneer and sacrificial fins",
-        "source_volume_mm3": 349446.4262653454,
+        "source_name": "V1 A2L hammered veneer and wall cradle r5",
+        "source_volume_mm3": 273100.07176469365,
         "veneer_above_rear_plane_volume_mm3": 95741.43133729337,
-        "candidate_volume_mm3": 273100.07176711253,
-        "modeled_material_g_at_saved_density": 338.6440889912195,
-        "source_modeled_material_g_at_saved_density": 433.31356856902835,
+        "candidate_volume_mm3": 273346.6678867904,
+        "modeled_material_g_at_saved_density": 338.9498681796201,
+        "source_modeled_material_g_at_saved_density": 338.6440889882201,
         "support_panel_thickness_mm": 1.2,
         "rear_wall_thickness_mm": 1.0,
         "web_thickness_mm": 1.0,
@@ -166,18 +166,22 @@
               56.191410104504584,
               264.15259432625925
             ],
-            "center_y_mm": 125.78994784254216,
+            "center_y_mm": 69.9796234048,
             "width_mm": 4.0,
-            "height_mm": 0.6
+            "height_mm": 0.6,
+            "location": "minimum-Y open end",
+            "outer_edge_y_mm": 67.9796234048
           },
           {
             "x_span_mm": [
               56.191410104504584,
               264.15259432625925
             ],
-            "center_y_mm": 183.63198579963284,
+            "center_y_mm": 250.170370504,
             "width_mm": 4.0,
-            "height_mm": 0.6
+            "height_mm": 0.6,
+            "location": "maximum-Y open end",
+            "outer_edge_y_mm": 252.170370504
           }
         ],
         "band_volume_mm3": 998.2136842644229,
@@ -601,13 +605,13 @@
         "backing_panel_top_assembly_z_mm": 4.4,
         "backing_panel_minimum_nominal_rear_gap_mm": 4.199999999999999,
         "minimum_bounds_mm": [
-          56.191410104504584,
-          67.97962340480088,
+          56.191410104,
+          67.9796234048,
           0.0
         ],
         "maximum_bounds_mm": [
           268.655731,
-          252.17037050426006,
+          252.170370504,
           297.3385
         ],
         "preserved_upper_geometry_difference_mm3": 5.764341831807193e-07,
@@ -1829,14 +1833,61 @@
         "geometry_only_not_slice_estimate": true,
         "physical_confirmation_pending": true,
         "type": "continuous_braced_wall_cradle",
-        "revision": "wall-cradle-r5",
+        "revision": "wall-cradle-r6-end-ties",
         "bonded_tooth_count": 237,
         "tree_supports_still_required": true,
         "tooth_width_mm": 1.2,
         "trim_pocket_depth_mm": 0.4,
         "continuous_starter_shoe": false,
         "starter_shoe_assembly_x_width_mm": 0,
-        "cleanup": "Remove sacrificial wall stock and original necks progressively while protecting the veneer; physical cleanup unqualified."
+        "cleanup": "Remove sacrificial wall stock and original necks progressively while protecting the veneer; physical cleanup unqualified.",
+        "previous_bed_tie_bands": [
+          {
+            "x_span_mm": [
+              56.191410104504584,
+              264.15259432625925
+            ],
+            "center_y_mm": 125.78994784254216,
+            "width_mm": 4.0,
+            "height_mm": 0.6
+          },
+          {
+            "x_span_mm": [
+              56.191410104504584,
+              264.15259432625925
+            ],
+            "center_y_mm": 183.63198579963284,
+            "width_mm": 4.0,
+            "height_mm": 0.6
+          }
+        ],
+        "band_location": "two open ends, flush outer edges",
+        "end_wall_contacts": [
+          {
+            "location": "minimum-Y open end",
+            "front_and_rear_overlap_mm3": [
+              3.515815454595283,
+              2.399388917992786
+            ]
+          },
+          {
+            "location": "maximum-Y open end",
+            "front_and_rear_overlap_mm3": [
+              3.515811184123754,
+              2.399996229992256
+            ]
+          }
+        ],
+        "source_wall_y_extent_mm": [
+          67.9796234048,
+          252.170370504
+        ],
+        "removed_interior_band_volume_mm3": 739.7865220901513,
+        "added_end_band_volume_mm3": 986.3826399136346,
+        "difference_outside_band_masks_mm3": 7.960813318280078e-06,
+        "difference_above_band_height_mm3": 6.724097570277235e-06,
+        "protected_wall_and_neck_removed_mm3": 1.2274157454248856e-08,
+        "inherited_wall_geometry_validation": "veneer-wall-r5-promotion-validation.json"
       }
     },
     {
@@ -1898,14 +1949,14 @@
       "carrier": {
         "number": 2,
         "source_plate": 16,
-        "source_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+        "source_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
         "source_object_id": "275",
-        "source_name": "V2 A2L hammered veneer and sacrificial fins",
-        "source_volume_mm3": 328000.64645263454,
+        "source_name": "V2 A2L hammered veneer and wall cradle r5",
+        "source_volume_mm3": 260507.98208648368,
         "veneer_above_rear_plane_volume_mm3": 88213.51064948445,
-        "candidate_volume_mm3": 260507.9820915635,
-        "modeled_material_g_at_saved_density": 323.02989779353874,
-        "source_modeled_material_g_at_saved_density": 406.7208016012668,
+        "candidate_volume_mm3": 260754.58653728574,
+        "modeled_material_g_at_saved_density": 323.3356873062343,
+        "source_modeled_material_g_at_saved_density": 323.02989778723975,
         "support_panel_thickness_mm": 1.2,
         "rear_wall_thickness_mm": 1.0,
         "web_thickness_mm": 1.0,
@@ -1987,18 +2038,22 @@
               56.18752571886782,
               264.15616521813604
             ],
-            "center_y_mm": 138.3207831955091,
+            "center_y_mm": 67.9501281977,
             "width_mm": 4.0,
-            "height_mm": 0.6
+            "height_mm": 0.6,
+            "location": "minimum-Y open end",
+            "outer_edge_y_mm": 65.9501281977
           },
           {
             "x_span_mm": [
               56.18752571886782,
               264.15616521813604
             ],
-            "center_y_mm": 197.59242594462603,
+            "center_y_mm": 252.04987179699998,
             "width_mm": 4.0,
-            "height_mm": 0.6
+            "height_mm": 0.6,
+            "location": "maximum-Y open end",
+            "outer_edge_y_mm": 254.04987179699998
           }
         ],
         "band_volume_mm3": 998.2494695964893,
@@ -2459,12 +2514,12 @@
         "backing_panel_minimum_nominal_rear_gap_mm": 4.199999999999999,
         "minimum_bounds_mm": [
           56.18752571886782,
-          65.95012819766998,
+          65.9501281977,
           0.0
         ],
         "maximum_bounds_mm": [
           268.659302,
-          254.04987179738282,
+          254.04987179699998,
           297.348724
         ],
         "preserved_upper_geometry_difference_mm3": 1.0617532274436173e-13,
@@ -3701,14 +3756,61 @@
         "geometry_only_not_slice_estimate": true,
         "physical_confirmation_pending": true,
         "type": "continuous_braced_wall_cradle",
-        "revision": "wall-cradle-r5",
+        "revision": "wall-cradle-r6-end-ties",
         "bonded_tooth_count": 240,
         "tree_supports_still_required": true,
         "tooth_width_mm": 1.2,
         "trim_pocket_depth_mm": 0.4,
         "continuous_starter_shoe": false,
         "starter_shoe_assembly_x_width_mm": 0,
-        "cleanup": "Remove sacrificial wall stock and original necks progressively while protecting the veneer; physical cleanup unqualified."
+        "cleanup": "Remove sacrificial wall stock and original necks progressively while protecting the veneer; physical cleanup unqualified.",
+        "previous_bed_tie_bands": [
+          {
+            "x_span_mm": [
+              56.18752571886782,
+              264.15616521813604
+            ],
+            "center_y_mm": 138.3207831955091,
+            "width_mm": 4.0,
+            "height_mm": 0.6
+          },
+          {
+            "x_span_mm": [
+              56.18752571886782,
+              264.15616521813604
+            ],
+            "center_y_mm": 197.59242594462603,
+            "width_mm": 4.0,
+            "height_mm": 0.6
+          }
+        ],
+        "band_location": "two open ends, flush outer edges",
+        "end_wall_contacts": [
+          {
+            "location": "minimum-Y open end",
+            "front_and_rear_overlap_mm3": [
+              3.5158156046006717,
+              2.399997638368697
+            ]
+          },
+          {
+            "location": "maximum-Y open end",
+            "front_and_rear_overlap_mm3": [
+              3.515808428952411,
+              2.399993993766049
+            ]
+          }
+        ],
+        "source_wall_y_extent_mm": [
+          65.9501281977,
+          254.04987179699998
+        ],
+        "removed_interior_band_volume_mm3": 739.8133583706463,
+        "added_end_band_volume_mm3": 986.4178079925315,
+        "difference_outside_band_masks_mm3": 1.0305048531654368e-08,
+        "difference_above_band_height_mm3": 1.4812472397779142e-07,
+        "protected_wall_and_neck_removed_mm3": 4.21123159062264e-08,
+        "inherited_wall_geometry_validation": "veneer-wall-r5-promotion-validation.json"
       }
     },
     {
@@ -3770,14 +3872,14 @@
       "carrier": {
         "number": 3,
         "source_plate": 17,
-        "source_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+        "source_sha256": "80bfee7600cf2cf3ba7252bb733bf203486639e94461158c9200c5f9f0f550a7",
         "source_object_id": "277",
-        "source_name": "V3 A2L hammered veneer and sacrificial fins",
-        "source_volume_mm3": 309389.60701224656,
+        "source_name": "V3 A2L hammered veneer and wall cradle r5",
+        "source_volume_mm3": 208153.0110765638,
         "veneer_above_rear_plane_volume_mm3": 93113.76169804674,
-        "candidate_volume_mm3": 208153.0110853436,
-        "modeled_material_g_at_saved_density": 258.1097337458261,
-        "source_modeled_material_g_at_saved_density": 383.6431126951858,
+        "candidate_volume_mm3": 208399.148686034,
+        "modeled_material_g_at_saved_density": 258.4149443706821,
+        "source_modeled_material_g_at_saved_density": 258.1097337349391,
         "support_panel_thickness_mm": 1.2,
         "rear_wall_thickness_mm": 1.0,
         "web_thickness_mm": 1.0,
@@ -3847,18 +3949,22 @@
               56.1878339306097,
               264.156165218136
             ],
-            "center_y_mm": 150.34537670256967,
+            "center_y_mm": 36.449997999000004,
             "width_mm": 4.0,
-            "height_mm": 0.6
+            "height_mm": 0.6,
+            "location": "minimum-Y open end",
+            "outer_edge_y_mm": 34.449997999000004
           },
           {
             "x_span_mm": [
               56.1878339306097,
               264.156165218136
             ],
-            "center_y_mm": 179.78828223756506,
+            "center_y_mm": 283.549993999,
             "width_mm": 4.0,
-            "height_mm": 0.6
+            "height_mm": 0.6,
+            "location": "maximum-Y open end",
+            "outer_edge_y_mm": 285.549993999
           }
         ],
         "band_volume_mm3": 998.2479901801255,
@@ -4319,12 +4425,12 @@
         "backing_panel_minimum_nominal_rear_gap_mm": 4.199999999999999,
         "minimum_bounds_mm": [
           56.1878339306097,
-          34.44999799877404,
+          34.449997999000004,
           0.0
         ],
         "maximum_bounds_mm": [
           268.659302,
-          285.5499939993024,
+          285.549993999,
           297.348724
         ],
         "preserved_upper_geometry_difference_mm3": 2.2726552226284007e-10,
@@ -5581,14 +5687,61 @@
         "geometry_only_not_slice_estimate": true,
         "physical_confirmation_pending": true,
         "type": "continuous_braced_wall_cradle",
-        "revision": "wall-cradle-r5",
+        "revision": "wall-cradle-r6-end-ties",
         "bonded_tooth_count": 244,
         "tree_supports_still_required": true,
         "tooth_width_mm": 1.2,
         "trim_pocket_depth_mm": 0.4,
         "continuous_starter_shoe": false,
         "starter_shoe_assembly_x_width_mm": 0,
-        "cleanup": "Remove sacrificial wall stock and original necks progressively while protecting the veneer; physical cleanup unqualified."
+        "cleanup": "Remove sacrificial wall stock and original necks progressively while protecting the veneer; physical cleanup unqualified.",
+        "previous_bed_tie_bands": [
+          {
+            "x_span_mm": [
+              56.1878339306097,
+              264.156165218136
+            ],
+            "center_y_mm": 150.34537670256967,
+            "width_mm": 4.0,
+            "height_mm": 0.6
+          },
+          {
+            "x_span_mm": [
+              56.1878339306097,
+              264.156165218136
+            ],
+            "center_y_mm": 179.78828223756506,
+            "width_mm": 4.0,
+            "height_mm": 0.6
+          }
+        ],
+        "band_location": "two open ends, flush outer edges",
+        "end_wall_contacts": [
+          {
+            "location": "minimum-Y open end",
+            "front_and_rear_overlap_mm3": [
+              3.5158288804665023,
+              2.3999957694007867
+            ]
+          },
+          {
+            "location": "maximum-Y open end",
+            "front_and_rear_overlap_mm3": [
+              3.515816072006544,
+              2.3999920457886157
+            ]
+          }
+        ],
+        "source_wall_y_extent_mm": [
+          34.449997999000004,
+          285.549993999
+        ],
+        "removed_interior_band_volume_mm3": 739.8122493455603,
+        "added_end_band_volume_mm3": 985.9498561269841,
+        "difference_outside_band_masks_mm3": 6.264351464458635e-07,
+        "difference_above_band_height_mm3": 1.1653129043308493e-07,
+        "protected_wall_and_neck_removed_mm3": 4.8174039694929104e-08,
+        "inherited_wall_geometry_validation": "veneer-wall-r5-promotion-validation.json"
       }
     }
   ],
@@ -5611,7 +5764,7 @@
   ],
   "show_plane_parallel_to_bed_Y": true,
   "physical_confirmation_pending": true,
-  "veneer_carrier_revision": "wall-cradle-r5",
-  "editable_sha256": "f8554fb45e8ccd046b6eef1d6b41907ed91ae6d120711a031bf1fbfd818f06db",
+  "veneer_carrier_revision": "wall-cradle-r6-end-ties",
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
   "source_preservation_basis": "veneer-wall-promotion-validation.json"
 }

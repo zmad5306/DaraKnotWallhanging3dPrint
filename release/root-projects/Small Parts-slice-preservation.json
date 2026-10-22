@@ -1,0 +1,729 @@
+{
+  "objects": 50,
+  "max_vertex_difference_mm": 7.70000001182325e-06,
+  "settings_changes": {},
+  "paint_preserved": true,
+  "bed_poses_preserved": true,
+  "source_bookkeeping_changes": [
+    {
+      "object": "B1 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 6.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B1 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 21 0 1 0 -10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 42 0 1 0 -20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B1 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 37 0 1 0 -10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 74 0 1 0 -20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B1 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 51 0 1 0 0.5 0 0 1 5 0 0 0 1",
+          "1 0 0 102 0 1 0 1 0 0 1 10 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B2 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 6.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B2 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 -34 0 1 0 -10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 -68 0 1 0 -20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B2 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 -6 0 1 0 -10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 -12 0 1 0 -20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B2 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 51 0 1 0 0.5 0 0 1 5 0 0 0 1",
+          "1 0 0 102 0 1 0 1 0 0 1 10 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B3 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 6.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B3 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 4 0 1 0 10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 8 0 1 0 20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B3 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 34 0 1 0 10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 68 0 1 0 20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B3 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 51 0 1 0 0.5 0 0 1 5 0 0 0 1",
+          "1 0 0 102 0 1 0 1 0 0 1 10 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B4 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 6.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B4 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 -24 0 1 0 10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 -48 0 1 0 20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B4 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 24 0 1 0 10 0 0 1 6.5 0 0 0 1",
+          "1 0 0 48 0 1 0 20 0 0 1 13 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "B4 A1 companion wall block",
+      "changes": {
+        "matrix": [
+          "1 0 0 51 0 1 0 0.5 0 0 1 5 0 0 0 1",
+          "1 0 0 102 0 1 0 1 0 0 1 10 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R1 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R1 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R2 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R2 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R3 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R3 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R4 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R4 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R5 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R5 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R6 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R6 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R7 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R7 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R8 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R8 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R9 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R9 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R10 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R10 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R11 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R11 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R12 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R12 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R13 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R13 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R14 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R14 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R15 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R15 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R16 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R16 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R17 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R17 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R18 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R18 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R19 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R19 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R20 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R20 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R21 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R21 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R22 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R22 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R23 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R23 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R24 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R24 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R25 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R25 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R26 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R26 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R27 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R27 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R28 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R28 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R29 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R29 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R30 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R30 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R31 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R31 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R32 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 0 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    },
+    {
+      "object": "R32 photo retainer",
+      "changes": {
+        "matrix": [
+          "1 0 0 5 0 1 0 0 0 0 1 1.5 0 0 0 1",
+          "1 0 0 10 0 1 0 0 0 0 1 3 0 0 0 1"
+        ]
+      }
+    }
+  ]
+}

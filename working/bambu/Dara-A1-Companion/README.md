@@ -1,3 +1,5 @@
+> **Historical record:** the 3MF files in this folder are retired from source control. Use Small Parts.3mf at the repository root. This document records the original revision; retrieve commit `5dab12a` and its LFS objects if the historical projects are needed.
+
 # A1 companion for the current A2L artwork
 
 Open **[Dara-A1-Companion.3mf](Dara-A1-Companion.3mf) as a project** in Bambu Studio. It contains three native A1 plates and 44 accessories taken from the coordinated A2L design. **Every M core and veneer stays on the A2L.** The companion embeds the actual Bambu Lab A1 0.4 mm machine and filament profiles, with 0.20 mm layers, 8% gyroid bodies, four walls, five top/bottom layers and existing local solid screw reinforcement.

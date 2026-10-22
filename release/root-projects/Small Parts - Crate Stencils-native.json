@@ -1,0 +1,321 @@
+{
+    "error_string": "Success.",
+    "export_time": 123,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 34,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 885.5119018554688,
+                "Custom": 369.1516418457031,
+                "Flush": 25.0,
+                "Gap infill": 8.33946704864502,
+                "Inner wall": 85.71829986572266,
+                "Internal solid infill": 1031.1102294921875,
+                "Outer wall": 104.91946411132813,
+                "Top surface": 593.0308227539063,
+                "Travel": 111.36788177490234,
+                "Undefined": 94.04621124267578
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 27.454336166381836,
+                    "total_used_g": 27.454336166381836
+                }
+            ],
+            "generate_support_material_time": 3,
+            "id": 1,
+            "infill_time": 150,
+            "layer_filament_change": 0,
+            "main_predication": 2794.95556640625,
+            "make_perimeters_time": 11,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 160.0,
+                        "height": 0.800000011920929,
+                        "width": 240.0,
+                        "x": 8.0,
+                        "y": 48.0,
+                        "z": 3.9535541507262906e-11
+                    },
+                    "id": 5,
+                    "name": "01-THIS-END-UP-1-of-3",
+                    "triangle_count": 1568
+                }
+            ],
+            "sliced_time": 228,
+            "sliced_time_with_cache": 57,
+            "total_predication": 3196.78564453125,
+            "triangle_count": 1568,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 925.6122436523438,
+                "Custom": 368.3285217285156,
+                "Flush": 25.0,
+                "Gap infill": 10.634722709655762,
+                "Inner wall": 82.51537322998047,
+                "Internal solid infill": 1090.045654296875,
+                "Outer wall": 100.91363525390625,
+                "Top surface": 619.10546875,
+                "Travel": 111.4828109741211,
+                "Undefined": 94.96263885498047
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 29.170425415039063,
+                    "total_used_g": 29.170425415039063
+                }
+            ],
+            "generate_support_material_time": 2,
+            "id": 2,
+            "infill_time": 152,
+            "layer_filament_change": 0,
+            "main_predication": 2915.28955078125,
+            "make_perimeters_time": 8,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 160.0,
+                        "height": 0.800000011920929,
+                        "width": 239.99998474121094,
+                        "x": 315.20001220703125,
+                        "y": 48.0,
+                        "z": 3.9535541507262906e-11
+                    },
+                    "id": 9,
+                    "name": "02-THIS-END-UP-2-of-3",
+                    "triangle_count": 1168
+                }
+            ],
+            "sliced_time": 222,
+            "sliced_time_with_cache": 53,
+            "total_predication": 3317.097900390625,
+            "triangle_count": 1168,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 887.9536743164063,
+                "Custom": 368.9693603515625,
+                "Flush": 25.0,
+                "Gap infill": 5.095475196838379,
+                "Inner wall": 70.95988464355469,
+                "Internal solid infill": 1083.9251708984375,
+                "Outer wall": 86.73889923095703,
+                "Top surface": 613.0139770507813,
+                "Travel": 94.43653106689453,
+                "Undefined": 77.27283477783203
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 29.321805953979492,
+                    "total_used_g": 29.321805953979492
+                }
+            ],
+            "generate_support_material_time": 1,
+            "id": 3,
+            "infill_time": 134,
+            "layer_filament_change": 0,
+            "main_predication": 2817.123046875,
+            "make_perimeters_time": 6,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 160.0,
+                        "height": 0.800000011920929,
+                        "width": 239.99996948242188,
+                        "x": 622.4000244140625,
+                        "y": 48.0,
+                        "z": 3.9535541507262906e-11
+                    },
+                    "id": 13,
+                    "name": "03-THIS-END-UP-3-of-3",
+                    "triangle_count": 828
+                }
+            ],
+            "sliced_time": 194,
+            "sliced_time_with_cache": 47,
+            "total_predication": 3218.9287109375,
+            "triangle_count": 828,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 823.351318359375,
+                "Custom": 369.2526550292969,
+                "Flush": 25.0,
+                "Gap infill": 5.517803192138672,
+                "Inner wall": 75.24070739746094,
+                "Internal solid infill": 953.1158447265625,
+                "Outer wall": 91.78893280029297,
+                "Top surface": 546.7421875,
+                "Travel": 100.41297149658203,
+                "Undefined": 83.08678436279297
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 25.422317504882813,
+                    "total_used_g": 25.422317504882813
+                }
+            ],
+            "generate_support_material_time": 2,
+            "id": 4,
+            "infill_time": 128,
+            "layer_filament_change": 0,
+            "main_predication": 2571.187255859375,
+            "make_perimeters_time": 7,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 160.00001525878906,
+                        "height": 0.800000011920929,
+                        "width": 240.0,
+                        "x": 8.0,
+                        "y": -259.20001220703125,
+                        "z": 3.9535541507262906e-11
+                    },
+                    "id": 17,
+                    "name": "04-FRAGILE-1-of-3",
+                    "triangle_count": 1024
+                }
+            ],
+            "sliced_time": 195,
+            "sliced_time_with_cache": 52,
+            "total_predication": 2973.11376953125,
+            "triangle_count": 1024,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 806.010009765625,
+                "Custom": 368.3817443847656,
+                "Flush": 25.0,
+                "Gap infill": 4.929099082946777,
+                "Inner wall": 74.94833374023438,
+                "Internal solid infill": 933.1338500976563,
+                "Outer wall": 90.89464569091797,
+                "Top surface": 539.5923461914063,
+                "Travel": 94.80437469482422,
+                "Undefined": 78.15379333496094
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 24.84699821472168,
+                    "total_used_g": 24.84699821472168
+                }
+            ],
+            "generate_support_material_time": 2,
+            "id": 5,
+            "infill_time": 134,
+            "layer_filament_change": 0,
+            "main_predication": 2519.330322265625,
+            "make_perimeters_time": 7,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 160.00001525878906,
+                        "height": 0.800000011920929,
+                        "width": 239.99998474121094,
+                        "x": 315.20001220703125,
+                        "y": -259.20001220703125,
+                        "z": 3.9535541507262906e-11
+                    },
+                    "id": 21,
+                    "name": "05-FRAGILE-2-of-3",
+                    "triangle_count": 904
+                }
+            ],
+            "sliced_time": 197,
+            "sliced_time_with_cache": 48,
+            "total_predication": 2921.0615234375,
+            "triangle_count": 904,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 828.6881103515625,
+                "Custom": 368.368408203125,
+                "Flush": 25.0,
+                "Gap infill": 3.5140275955200195,
+                "Inner wall": 72.64027404785156,
+                "Internal solid infill": 980.4085693359375,
+                "Outer wall": 88.24443054199219,
+                "Top surface": 562.6637573242188,
+                "Travel": 97.52352142333984,
+                "Undefined": 80.87493133544922
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 26.25664710998535,
+                    "total_used_g": 26.25664710998535
+                }
+            ],
+            "generate_support_material_time": 1,
+            "id": 6,
+            "infill_time": 121,
+            "layer_filament_change": 0,
+            "main_predication": 2608.7138671875,
+            "make_perimeters_time": 6,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 160.00001525878906,
+                        "height": 0.800000011920929,
+                        "width": 239.99996948242188,
+                        "x": 622.4000244140625,
+                        "y": -259.20001220703125,
+                        "z": 3.9535541507262906e-11
+                    },
+                    "id": 25,
+                    "name": "06-FRAGILE-3-of-3",
+                    "triangle_count": 868
+                }
+            ],
+            "sliced_time": 179,
+            "sliced_time_with_cache": 47,
+            "total_predication": 3010.43359375,
+            "triangle_count": 868,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 0.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 2
+}

@@ -1,0 +1,145 @@
+{
+  "source": "Dara.3mf",
+  "source_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+  "source_plates": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "full_parts_no_crop": true,
+  "child_mesh_assets_sha256": {
+    "3D/Objects/object_1.model": "1ab0a2ee728f95ea6f5661b8b2b6ea853070f8ca378b1049a93d3ad2754b6cf1",
+    "3D/Objects/object_10.model": "c04c59ae68dd52854bab856e6573225d45c642e24519e015ec0d1b0c876395aa",
+    "3D/Objects/object_2.model": "bc6126f36bf94e19a9d0e8c59704a61f00e385e572382ab3d2f8792fd1c472aa",
+    "3D/Objects/object_3.model": "cacfb6ecc2fd6e92978afe20f79e299df5b805a4cccb6c7d4d9b537b45cdb4fb",
+    "3D/Objects/object_4.model": "9c2d3afa43214a472ec2a4a1ef8cc8b1446adbab90055e57882264c8944bdbec",
+    "3D/Objects/object_5.model": "6142039336f6e03bc138cc466a38738a366ef0ce7e843f0457e904a93a5d0f4d",
+    "3D/Objects/object_6.model": "27ddafe5339dc715562de617c35b6e0dad29e4a7f491bee44c48e3a5b73fb664",
+    "3D/Objects/object_7.model": "0f66e023b8e7abdce8bf47f71eb52636410d7d2f7d8c232ae95ffd088089f221",
+    "3D/Objects/object_8.model": "a48161533401344943da2520a7b9ed5784fd7ceb95a50f8f1aa2c5eb21b02253",
+    "3D/Objects/object_9.model": "72cadef83e092ff18459572cc6b75d4b2c717a2a865031f5c2264aa3939e949e"
+  },
+  "geometry_changes": "None",
+  "print_pose_changes": "None",
+  "display_grid_repack": [
+    {
+      "plate": 1,
+      "object_id": "10",
+      "display_grid_offset_xy_mm": [
+        0,
+        0
+      ]
+    },
+    {
+      "plate": 2,
+      "object_id": "22",
+      "display_grid_offset_xy_mm": [
+        0,
+        0
+      ]
+    },
+    {
+      "plate": 3,
+      "object_id": "35",
+      "display_grid_offset_xy_mm": [
+        0,
+        0
+      ]
+    },
+    {
+      "plate": 4,
+      "object_id": "48",
+      "display_grid_offset_xy_mm": [
+        0,
+        0
+      ]
+    },
+    {
+      "plate": 5,
+      "object_id": "60",
+      "display_grid_offset_xy_mm": [
+        -1584,
+        -384
+      ]
+    },
+    {
+      "plate": 6,
+      "object_id": "68",
+      "display_grid_offset_xy_mm": [
+        396,
+        0
+      ]
+    },
+    {
+      "plate": 7,
+      "object_id": "80",
+      "display_grid_offset_xy_mm": [
+        396,
+        0
+      ]
+    },
+    {
+      "plate": 8,
+      "object_id": "93",
+      "display_grid_offset_xy_mm": [
+        396,
+        0
+      ]
+    },
+    {
+      "plate": 9,
+      "object_id": "107",
+      "display_grid_offset_xy_mm": [
+        -1188,
+        -384
+      ]
+    },
+    {
+      "plate": 10,
+      "object_id": "119",
+      "display_grid_offset_xy_mm": [
+        -1188,
+        -384
+      ]
+    }
+  ],
+  "global_process_change": {
+    "is_infill_first": [
+      "0",
+      "1"
+    ]
+  },
+  "object_process_change": {
+    "support_interface_spacing": [
+      "0.5 inherited",
+      "0.2"
+    ]
+  },
+  "packaging_changes": [
+    "Remove plates 11-20 and their unused objects/assets",
+    "20-to-10 plate display-grid offsets",
+    "Trim tower position arrays to the same ten retained plates",
+    "Remove stale slices/previews and their relationships before native slicing"
+  ],
+  "editable_sha256": "6b2c23dcfec6004befd33f5a26379392544bd116ba50736fcf4ed3cd38d2783b",
+  "protected_before": {
+    "Dara.3mf": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+    "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+    "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working/bambu/Dara-A1-Companion/README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working/bambu/Dara-A1-Companion/release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d"
+  }
+}

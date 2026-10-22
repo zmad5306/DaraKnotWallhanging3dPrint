@@ -54,17 +54,48 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
-- The main production project is root **`Dara.3mf`**, for the **A2L**.
-  `working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf` is its named complete
-  copy; `Dara-A2L-Editable.3mf` in that folder is its generating source.
-- A2L plates **1-10** are the knot, **11-14** the M cores, and **15-17** the M
-  veneers. Keep the M parts unchanged unless the user explicitly requests an
-  M change, including their geometry, settings, placements and stored slices.
-- `working/bambu/Dara-A1-Companion/` contains the matching A1 accessories. Keep
-  it unchanged unless explicitly requested. Its plates 1-3 replace A2L plates
-  18-20; all production M parts remain on the A2L.
+- **Approved root organization, 2026-10-22:** the user requested root projects
+  with adjacent CAD and STL, removal of all other Bambu projects from source
+  control, then explicitly allowed separate supporting projects for different
+  A1 settings and requested the sanding block and photo cut aligner.
+- Current root **`Knot.3mf`** is the corrected A2L F1â€“F10 project, ten plates.
+  **`Letter.3mf`** is the A2L M, seven plates: cores on 1â€“4 and veneers on 5â€“7.
+  These map to former Dara plates 11â€“17. Preserve their geometry, settings,
+  bed poses and original stored toolpaths. Infill-first stays off in Letter.
+- Root **`Small Parts.3mf`** is the A1 companion plus glue aligners: original
+  backers on 1â€“2, wall blocks/retainers on 3, center r3 jigs on 4 and side r1
+  jigs on 5. Their common saved process and object overrides are preserved.
+- Separate root A1 projects preserve their different settings:
+  **`Small Parts - Crate Clips PETG.3mf`**, **`Small Parts - Photo Cut Aligner.3mf`**,
+  **`Small Parts - Sanding Block PLA.3mf`** and **`Small Parts - Crate Stencils.3mf`**.
+  The user explicitly chose the exact locally saved **12-clip and single-guide
+  layouts**, not the original eight-piece sets. Keep the latest sanding r4
+  clamp rotation and physically confirmed thread setup. The existing stencil
+  exception is 0% sparse infill, gyroid, two walls and four top/bottom layers.
+- Adjacent SCAD files are exact mesh-based CAD snapshots referencing their STL
+  folders, not parametric feature histories. Keep them synchronized with the
+  3MF geometry and release catalog. The seven root projects are the only
+  tracked 3MF files. Retired projects remain in Git history/local ignored files.
+  Historical references to Dara.3mf and working Bambu paths below identify the
+  sources of past changes; they do not reinstate those paths as current releases.
 - The older complete A1 design is historical and is not the current production
   baseline. Its settings and joints must not silently replace A2L settings.
+- **Separate corrected knot project, 2026-10-22:** use
+  `Knot.3mf` (originally the separate working-folder project)
+  for full-size F1-F10, replacing the knot plates 1-10 in the main project for
+  printing. Plate numbers match. The user reported the r3 full-curve test
+  worked, then explicitly chose a separate knot project to keep M settings
+  unchanged. In this separate project only, `is_infill_first = 1` replaces 0;
+  each knot object's `support_interface_spacing = 0.2` replaces inherited 0.5.
+  Preserve the 0.20 mm support top gap, geometry, all other process settings,
+  modifiers and actual bed poses. Bambu applies infill-first globally;
+  object overrides were verified ineffective. Do not enable it in the shared
+  main project. This correction originally left the combined main and M/A1
+  files unchanged; the later root organization above supersedes file packaging.
+  The successful supplied r3 file SHA-256 is
+  `5fc8fe29ea2993bdceaf690744506bd14bf757982a76b6937e9e7ce4b9192bb0`;
+  the locally printed hash was not independently read. Full-size physical
+  print quality and support cleanup remain unqualified.
 - A joint sample may be prepared for the A1 when the user requests that printer.
   Use an actual A1 machine profile and reslice for the A1. Preserve the locked
   process constants; do not reuse A2L machine commands or stored slices.

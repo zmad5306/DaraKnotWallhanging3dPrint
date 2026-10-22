@@ -166,6 +166,9 @@ def audit_veneer(targets=None):
 
 
 def audit():
+    if (ROOT/'release/root-projects/catalog.json').exists():
+        from audit_root_projects import audit as audit_root
+        audit_root();return
     with zipfile.ZipFile(ROOT/'Dara.3mf') as z:settings=json.loads(z.read('Metadata/project_settings.config'))
     if settings.get('printer_model')=='Bambu Lab A2L':
         from audit_a2l_release import audit as audit_a2l

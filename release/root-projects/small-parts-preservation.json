@@ -1,0 +1,48 @@
+[
+  {
+    "source": "Small Parts",
+    "objects": 44,
+    "source_plate_to_root_plate": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "geometry_and_paint_preserved": true,
+    "bed_poses_preserved": true,
+    "effective_settings_preserved": true,
+    "only_global_metadata_differences": [
+      "wipe_tower_x",
+      "wipe_tower_y"
+    ]
+  },
+  {
+    "source": "Center",
+    "objects": 2,
+    "source_plate_to_root_plate": {
+      "1": 4
+    },
+    "geometry_and_paint_preserved": true,
+    "bed_poses_preserved": true,
+    "effective_settings_preserved": true,
+    "only_global_metadata_differences": [
+      "print_settings_id",
+      "wipe_tower_x",
+      "wipe_tower_y"
+    ]
+  },
+  {
+    "source": "Sides",
+    "objects": 4,
+    "source_plate_to_root_plate": {
+      "1": 5
+    },
+    "geometry_and_paint_preserved": true,
+    "bed_poses_preserved": true,
+    "effective_settings_preserved": true,
+    "only_global_metadata_differences": [
+      "print_settings_id",
+      "wipe_tower_x",
+      "wipe_tower_y"
+    ]
+  }
+]

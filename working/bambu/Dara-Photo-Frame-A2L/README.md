@@ -1,4 +1,8 @@
+> **Historical record:** the 3MF files in this folder are retired from source control. Use Knot.3mf and Letter.3mf at the repository root. This document records the original revision; retrieve commit `5dab12a` and its LFS objects if the historical projects are needed.
+
 # Dara A2L production project
+
+**Knot printing update, October 22:** print F1-F10 from the [separate corrected knot project](../Dara-A2L-Knot-Infill-First/README.md), whose plate numbers match this project's plates 1-10. It carries the successful full-curve test's infill-first setting and 0.20 mm support-interface spacing. The main 3MF files remain unchanged so M and accessory settings retain their existing baseline; continue using this project for plates 11-20 (or the A1 companion for accessories). Do not print both versions of the knot plates.
 
 **Joint correction, October 19:** all **42 raised lower-lap pads** are removed across the **14 knot joints**, following the user's physical result: trimming the three pads gave a good fit with flush white and brown faces. Only the raised **0.20 mm** stock is removed, leaving the surrounding lap at **Z4.8**. Plates **1–10** are resliced at the existing **8% gyroid** settings; mortises, keys, adhesive recesses, visible geometry and material assignments are retained. At that revision, plates **11–20** and every A1 companion file were preserved; the October 21 update below replaces only veneer plates **15–17**. See [geometry and pad toolpaths](joint-pad-removal-validation.json) and [protected-plate hashes](joint-pad-unchanged-plates.json). The sample was switched to the A1; this records that physical result without claiming a full-size A2L print has already passed.
 

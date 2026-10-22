@@ -1,0 +1,38 @@
+{
+  "Knot": {
+    "path": "working\\bambu\\Dara-A2L-Knot-Infill-First\\Dara-A2L-Knot-Infill-First.3mf",
+    "sha256": "2510f6f9bd0139155d7aea0603b0e24c3e5c9ac414f946abf9aadf1464f9c356"
+  },
+  "Letter": {
+    "path": "Dara.3mf",
+    "sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13"
+  },
+  "Small Parts": {
+    "path": "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf",
+    "sha256": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c"
+  },
+  "Center": {
+    "path": "output\\Dara-Center-Veneer-Alignment-Jig-A1\\r3\\Dara-Center-Veneer-Alignment-Jig-A1-r3.3mf",
+    "sha256": "acb384ea9f495041dd7a23b8a3d7d9d8f0c24dace3df28ee2332b96967617073"
+  },
+  "Sides": {
+    "path": "output\\Dara-Side-Veneer-Alignment-Jigs-A1\\r1\\Dara-Side-Veneer-Alignment-Jigs-A1-r1.3mf",
+    "sha256": "5c99ac2f279e2476dca463660fa602d459878e943f21c48d57ac8bd928bcfd20"
+  },
+  "Crate": {
+    "path": "output\\Dara-Crate-Clips-A1-PETG-r2\\Dara-Crate-Clips-A1-PETG-r2.3mf",
+    "sha256": "30020b5e4f3f05058759ee5ab4f8d3c8ab99b310b5a768daf7dfe0f3508095d9"
+  },
+  "Photo": {
+    "path": "output\\Dara-Photo-Tracing-Backers-A1-r1\\Dara-Photo-Tracing-Backers-A1-r1.3mf",
+    "sha256": "83cbb5be7374e80a056204fded7745caf846d5034d43e4ad4f96edcab08b84bd"
+  },
+  "Sanding": {
+    "path": "output\\Sanding-Block-Quarter-Sheet-A1-PLA-r4\\Sanding-Block-Quarter-Sheet-A1-PLA-r4.3mf",
+    "sha256": "b4c389579763b98805c075a3747fdbc8dda9ed05250747c52675435b078a7459"
+  },
+  "Stencils": {
+    "path": ".work\\root-projects\\stencils\\Christmas-Crate-Stencils.3mf",
+    "sha256": "9133a315a68018226ba1d2b7125ef90734b0c280ff6f6367c35d0931587ccb19"
+  }
+}

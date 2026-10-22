@@ -1,0 +1,217 @@
+{
+    "error_string": "Success.",
+    "export_time": 187,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 15,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 237.72189331054688,
+                "Bridge": 188.90232849121094,
+                "Custom": 372.7703857421875,
+                "Flush": 25.0,
+                "Gap infill": 18.70839500427246,
+                "Inner wall": 7327.67626953125,
+                "Internal solid infill": 1285.4410400390625,
+                "Outer wall": 2664.19775390625,
+                "Overhang wall": 10.747614860534668,
+                "Sparse infill": 1487.6124267578125,
+                "Top surface": 256.2679138183594,
+                "Travel": 1257.2396240234375,
+                "Undefined": 1240.46435546875
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG99",
+                    "id": 1,
+                    "main_used_g": 104.22820281982422,
+                    "total_used_g": 104.22820281982422
+                }
+            ],
+            "generate_support_material_time": 6,
+            "id": 1,
+            "infill_time": 64,
+            "layer_filament_change": 0,
+            "main_predication": 14714.6767578125,
+            "make_perimeters_time": 37,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 35.0,
+                        "x": 39.91560363769531,
+                        "y": 54.52097702026367,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "Crate clip 1 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 35.0,
+                        "x": 89.91560363769531,
+                        "y": 54.52097702026367,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "Crate clip 2 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 35.0,
+                        "x": 139.9156036376953,
+                        "y": 54.52097702026367,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "Crate clip 3 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 35.000003814697266,
+                        "x": 189.7616729736328,
+                        "y": 54.52097702026367,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "Crate clip 4 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 35.0,
+                        "x": 39.60775375366211,
+                        "y": 111.43099975585938,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "Crate clip 5 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 34.999996185302734,
+                        "x": 89.60775756835938,
+                        "y": 111.43099975585938,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "Crate clip 6 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 34.999996185302734,
+                        "x": 139.60775756835938,
+                        "y": 111.43099975585938,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "Crate clip 7 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.899999618530273,
+                        "height": 28.0,
+                        "width": 35.000003814697266,
+                        "x": 189.7616729736328,
+                        "y": 111.43099975585938,
+                        "z": 0.0
+                    },
+                    "id": 33,
+                    "name": "Crate clip 8 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.900005340576172,
+                        "height": 28.0,
+                        "width": 35.0,
+                        "x": 39.60775375366211,
+                        "y": 168.23098754882813,
+                        "z": 0.0
+                    },
+                    "id": 37,
+                    "name": "Crate clip 5 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.900005340576172,
+                        "height": 28.0,
+                        "width": 34.999996185302734,
+                        "x": 89.60775756835938,
+                        "y": 168.23098754882813,
+                        "z": 0.0
+                    },
+                    "id": 41,
+                    "name": "Crate clip 6 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.900005340576172,
+                        "height": 28.0,
+                        "width": 35.000003814697266,
+                        "x": 139.7616729736328,
+                        "y": 168.23098754882813,
+                        "z": 0.0
+                    },
+                    "id": 45,
+                    "name": "Crate clip 7 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                },
+                {
+                    "bbox": {
+                        "depth": 27.900005340576172,
+                        "height": 28.0,
+                        "width": 35.000003814697266,
+                        "x": 189.7616729736328,
+                        "y": 168.23098754882813,
+                        "z": 0.0
+                    },
+                    "id": 49,
+                    "name": "Crate clip 8 - 10mm spacer - 1-4in lip",
+                    "triangle_count": 586
+                }
+            ],
+            "sliced_time": 956,
+            "sliced_time_with_cache": 801,
+            "total_predication": 15120.671875,
+            "triangle_count": 7032,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

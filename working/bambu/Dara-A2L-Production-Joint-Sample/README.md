@@ -1,3 +1,5 @@
+> **Historical record:** the 3MF files in this folder are retired from source control. Use the root project guide at the repository root. This document records the original revision; retrieve commit `5dab12a` and its LFS objects if the historical projects are needed.
+
 # Production joint sample — A2L
 
 Open **[Dara-A2L-Production-Joint-Sample.3mf](Dara-A2L-Production-Joint-Sample.3mf)** as a project and print plate 1. It contains the **J4 joint: F4 tongue and F3 socket**, cropped directly from the saved root `Dara.3mf`.

@@ -1,3 +1,5 @@
+> **Historical record:** the 3MF files in this folder are retired from source control. Use Knot.3mf at the repository root. This document records the original revision; retrieve commit `5dab12a` and its LFS objects if the historical projects are needed.
+
 # Dara A2L knot — infill first, r1
 
 **Print F1-F10 from `Dara-A2L-Knot-Infill-First.3mf`, opened as a project in Bambu Studio.** These are the ten full-size knot parts, with plate numbers matching plates 1-10 in the main project. The editable companion contains the same geometry and settings without stored slices.

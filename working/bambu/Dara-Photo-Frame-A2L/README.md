@@ -1,3 +1,5 @@
+> **Historical record:** the 3MF files in this folder are retired from source control. Use Knot.3mf and Letter.3mf at the repository root. This document records the original revision; retrieve commit `5dab12a` and its LFS objects if the historical projects are needed.
+
 # Dara A2L production project
 
 **Knot printing update, October 22:** print F1-F10 from the [separate corrected knot project](../Dara-A2L-Knot-Infill-First/README.md), whose plate numbers match this project's plates 1-10. It carries the successful full-curve test's infill-first setting and 0.20 mm support-interface spacing. The main 3MF files remain unchanged so M and accessory settings retain their existing baseline; continue using this project for plates 11-20 (or the A1 companion for accessories). Do not print both versions of the knot plates.

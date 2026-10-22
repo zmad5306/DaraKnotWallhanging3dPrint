@@ -1,3 +1,8 @@
 *.[sS][tT][lL] filter=lfs diff=lfs merge=lfs -text
 *.[3][mM][fF] filter=lfs diff=lfs merge=lfs -text
 *.[pP][dD][fF] binary
+
+# Release hashes are portable across Windows and LF checkouts.
+/*.scad text eol=lf
+/release/root-projects/*.json text eol=lf
+/release/root-projects/*.md text eol=lf

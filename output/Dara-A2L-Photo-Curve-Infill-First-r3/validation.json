@@ -1,0 +1,473 @@
+{
+  "status": "USER_REPORTED_SUCCESS_PROMOTION_REQUESTED",
+  "revision": "r3",
+  "current_file": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\output\\Dara-A2L-Photo-Curve-Infill-First-r3\\Dara-A2L-Photo-Curve-Infill-First-r3.3mf",
+  "current_sha256": "5fc8fe29ea2993bdceaf690744506bd14bf757982a76b6937e9e7ce4b9192bb0",
+  "editable_sha256": "063953d3d0251ce378b52ab6dff44dbd28da47338765062c5bbb65b6872de02f",
+  "source_production": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\Dara.3mf",
+  "source_production_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+  "source_r2_editable": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\output\\Dara-A2L-Photo-Curve-Support-Test-r2\\Dara-A2L-Photo-Curve-Support-Test-r2-Editable.3mf",
+  "source_r2_editable_sha256": "b025ccb647e3ad08151e8468ecb59e12d3bef645481f7f4478f388577e7cbd0d",
+  "source_r2_print_sha256": "bdbc7653be932169938cc49f7be21257b5b0da00dba2ce528c5c49072ad7f870",
+  "source_object": "RIGHT B - full curve - 0.2 mm interface",
+  "source_crop_definition": {
+    "crop_top_z_mm": 4.0,
+    "outer_cut_offset_from_photo_opening_mm": 14.0,
+    "end_transition_points_source_xy_mm": [
+      [
+        117.8022158369422,
+        204.46009707450867
+      ],
+      [
+        238.17955696582794,
+        94.4320599809289
+      ]
+    ],
+    "end_cut_line_normal_xy": [
+      0.6746648340445853,
+      0.7381242183424089
+    ],
+    "end_cut_line_dot_limit_mm": 238.3939617330498,
+    "straight_end_allowance_normal_to_chord_mm": 8.0,
+    "retained_photo_edge_length_mm": 214.17078533046737,
+    "outline_gap_closing_tolerance_mm": 0.0001
+  },
+  "crop_boundary_sha256": "49b9f460884073093564367903cc7b09b94b640ee5f56f86a69d8c59a267a77a",
+  "source_production_object": "F2 A2L knot / plate 2 / object 22",
+  "source_source_volume_crops": [
+    {
+      "source_volume_index": 0,
+      "subtype": "normal_part",
+      "source_metadata": {
+        "name": "Continuous knot volume",
+        "matrix": "1 0 0 -312.93473052978516 0 1 0 216.94484710693359 0 0 1 6.75 0 0 0 1",
+        "source_file": "Dara-A2L-Editable.3mf",
+        "source_object_id": "1",
+        "source_volume_id": "0",
+        "source_offset_x": "-312.93473052978516",
+        "source_offset_y": "216.94484710693359",
+        "source_offset_z": "6.75"
+      },
+      "volume_mm3": 7174.742843021804,
+      "boolean_roundtrip_difference_mm3": 0.0
+    },
+    {
+      "source_volume_index": 1,
+      "subtype": "normal_part",
+      "source_metadata": {
+        "name": "Continuous knot volume",
+        "matrix": "1 0 0 -330.72752380371094 0 1 0 55.496038913726807 0 0 1 6.75 0 0 0 1",
+        "source_file": "Dara-A2L-Editable.3mf",
+        "source_object_id": "1",
+        "source_volume_id": "1",
+        "source_offset_x": "-330.72752380371094",
+        "source_offset_y": "55.496038913726807",
+        "source_offset_z": "6.75"
+      },
+      "volume_mm3": 1205.3324198520388,
+      "boolean_roundtrip_difference_mm3": 0.0
+    },
+    {
+      "source_volume_index": 2,
+      "subtype": "normal_part",
+      "source_metadata": {
+        "name": "Continuous knot volume",
+        "matrix": "1 0 0 -416.03811645507812 0 1 0 120.04830551147461 0 0 1 6.75 0 0 0 1",
+        "source_file": "Dara-A2L-Editable.3mf",
+        "source_object_id": "1",
+        "source_volume_id": "2",
+        "source_offset_x": "-416.03811645507812",
+        "source_offset_y": "120.04830551147461",
+        "source_offset_z": "6.75"
+      },
+      "volume_mm3": 2505.27489643773,
+      "boolean_roundtrip_difference_mm3": 0.0
+    },
+    {
+      "source_volume_index": 7,
+      "subtype": "modifier_part",
+      "source_metadata": {
+        "name": "Local solid screw reinforcement",
+        "matrix": "1 0 0 -390.37948608398438 0 1 0 134.33027267456055 0 0 1 8.5 0 0 0 1",
+        "sparse_infill_density": "100%"
+      },
+      "volume_mm3": 539.4917725036069,
+      "boolean_roundtrip_difference_mm3": 0.0
+    },
+    {
+      "source_volume_index": 8,
+      "subtype": "modifier_part",
+      "source_metadata": {
+        "name": "Local solid screw reinforcement",
+        "matrix": "1 0 0 -309.01223754882812 0 1 0 208.30381774902344 0 0 1 8.5 0 0 0 1",
+        "sparse_infill_density": "100%"
+      },
+      "volume_mm3": 539.1354808959381,
+      "boolean_roundtrip_difference_mm3": 0.0
+    }
+  ],
+  "retained_source_bounds_mm": [
+    [
+      101.81029230356216,
+      76.62068299949169,
+      0.0
+    ],
+    [
+      252.2605170980096,
+      218.20047169923782,
+      4.0
+    ]
+  ],
+  "coupon_size_mm": [
+    150.45022479444742,
+    141.57978869974613,
+    4.0
+  ],
+  "translation_from_production_plate_mm": [
+    67.96459529921412,
+    7.5894226506352425,
+    0.0
+  ],
+  "design_changes": "None. Exact retained r2 right-hand geometry, settings, rotation and bed placement.",
+  "changed_variable": "Print infill first: is_infill_first 0 -> 1; model fill before walls.",
+  "other_packaging_changes": "Remove the other test object; descriptive test/object names updated.",
+  "global_settings_changes_from_r2": {
+    "is_infill_first": {
+      "before": "0",
+      "after": "1"
+    },
+    "print_settings_id": {
+      "before": "A2L full photo curve - 8% gyroid - support comparison r2",
+      "after": "A2L full photo curve - 8% gyroid - infill first r3"
+    }
+  },
+  "all_effective_volume_object_settings_preserved": true,
+  "max_native_mesh_error_mm": 3.0613199913547433e-05,
+  "locked_settings_checked_in_editable_sliced_and_gcode": true,
+  "gcode_md5_verified": true,
+  "gcode_sha256": "852507f55bff81817c4623ab95851a610764ab8fb2a6bf4bb182b05192976d37",
+  "scan": {
+    "extrusion_moves_checked": 74293,
+    "features": {
+      "Support": 22557,
+      "Brim": 408,
+      "Outer wall": 5946,
+      "Inner wall": 16859,
+      "Gap infill": 368,
+      "Bottom surface": 512,
+      "Internal solid infill": 5900,
+      "Sparse infill": 12960,
+      "Support interface": 2376,
+      "Bridge": 1410,
+      "Overhang wall": 420,
+      "Floating vertical shell": 3943,
+      "Top surface": 634
+    },
+    "model_extrusion_z_by_filament_mm": {
+      "1": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0
+      ]
+    },
+    "extruding_xy_bounds_mm": [
+      [
+        168.99,
+        83.427
+      ],
+      [
+        321.01,
+        226.558
+      ]
+    ],
+    "bead_xy_bounds_mm": [
+      [
+        168.74,
+        83.177
+      ],
+      [
+        321.26,
+        226.808
+      ]
+    ],
+    "conservative_bed_edge_clearance_mm": 8.740000000000009
+  },
+  "z2_6_feature_sequence": [
+    {
+      "line": 63227,
+      "object": null,
+      "feature": "Bridge"
+    },
+    {
+      "line": 63810,
+      "object": null,
+      "feature": "Sparse infill"
+    },
+    {
+      "line": 63942,
+      "object": null,
+      "feature": "Gap infill"
+    },
+    {
+      "line": 63976,
+      "object": null,
+      "feature": "Sparse infill"
+    },
+    {
+      "line": 64181,
+      "object": null,
+      "feature": "Gap infill"
+    },
+    {
+      "line": 64212,
+      "object": null,
+      "feature": "Sparse infill"
+    },
+    {
+      "line": 64321,
+      "object": null,
+      "feature": "Bridge"
+    },
+    {
+      "line": 64340,
+      "object": null,
+      "feature": "Sparse infill"
+    },
+    {
+      "line": 64802,
+      "object": null,
+      "feature": "Bridge"
+    },
+    {
+      "line": 64841,
+      "object": null,
+      "feature": "Sparse infill"
+    },
+    {
+      "line": 65324,
+      "object": null,
+      "feature": "Bridge"
+    },
+    {
+      "line": 65366,
+      "object": null,
+      "feature": "Sparse infill"
+    },
+    {
+      "line": 65387,
+      "object": null,
+      "feature": "Inner wall"
+    },
+    {
+      "line": 65462,
+      "object": null,
+      "feature": "Outer wall"
+    },
+    {
+      "line": 65516,
+      "object": null,
+      "feature": "Overhang wall"
+    },
+    {
+      "line": 65629,
+      "object": null,
+      "feature": "Inner wall"
+    },
+    {
+      "line": 65950,
+      "object": null,
+      "feature": "Outer wall"
+    },
+    {
+      "line": 66004,
+      "object": null,
+      "feature": "Overhang wall"
+    },
+    {
+      "line": 66116,
+      "object": null,
+      "feature": "Inner wall"
+    },
+    {
+      "line": 66296,
+      "object": null,
+      "feature": "Overhang wall"
+    },
+    {
+      "line": 66407,
+      "object": null,
+      "feature": "Inner wall"
+    },
+    {
+      "line": 66594,
+      "object": null,
+      "feature": "Overhang wall"
+    },
+    {
+      "line": 66705,
+      "object": null,
+      "feature": "Outer wall"
+    },
+    {
+      "line": 66887,
+      "object": null,
+      "feature": "Overhang wall"
+    }
+  ],
+  "prior_fill_contact": {
+    "first_curved_wall_chain_length_mm": 220.76089192096453,
+    "fill_segments_already_printed": 593,
+    "median_distance_to_prior_fill_beads_mm": 0.12319175310979039,
+    "max_distance_to_prior_fill_beads_mm": 0.6658763298869778,
+    "wall_centerline_probes_within_0_225mm_of_prior_fill_percent": 85.02127659574468,
+    "caveat": "Geometric bead proximity does not establish physical bonding."
+  },
+  "z2_6_speeds_mm_s": {
+    "Bridge": [
+      50.0
+    ],
+    "Overhang wall": [
+      10.0
+    ]
+  },
+  "roof_top_z_mm": 2.2,
+  "first_model_layer_top_z_mm": 2.6,
+  "vertical_air_gap_mm": 0.2,
+  "estimated_seconds": 2130.44677734375,
+  "estimated_grams": 11.546737670898438,
+  "native_result": {
+    "error_string": "Success.",
+    "export_time": 678,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 1,
+    "prepare_time": 42,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 71.28600311279297,
+          "Bridge": 123.46121978759766,
+          "Brim": 18.714527130126953,
+          "Custom": 405.6650695800781,
+          "Flush": 11.0,
+          "Gap infill": 6.587003231048584,
+          "Inner wall": 250.60009765625,
+          "Internal solid infill": 387.0252990722656,
+          "Outer wall": 91.98014068603516,
+          "Overhang wall": 89.59403991699219,
+          "Sparse infill": 147.6044921875,
+          "Support": 236.10250854492188,
+          "Support interface": 68.34873962402344,
+          "Top surface": 95.0037612915039,
+          "Travel": 130.5572052001953,
+          "Undefined": 127.48018646240234
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 11.546737670898438,
+            "total_used_g": 11.546737670898438
+          }
+        ],
+        "generate_support_material_time": 160,
+        "id": 1,
+        "infill_time": 73,
+        "layer_filament_change": 0,
+        "main_predication": 1705.8587646484375,
+        "make_perimeters_time": 38,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 151.81011962890625,
+              "height": 4.0,
+              "width": 151.66549682617188,
+              "x": 169.15281677246094,
+              "y": 79.2286605834961,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "Full photo curve - 0.2 mm interface - INFILL FIRST r3",
+            "triangle_count": 5414
+          }
+        ],
+        "sliced_time": 673,
+        "sliced_time_with_cache": 388,
+        "total_predication": 2130.44677734375,
+        "triangle_count": 5414,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "slicer_warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "protected_before": {
+    "Dara.3mf": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Complete.3mf": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Editable.3mf": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+    "working\\bambu\\Dara-A1-Companion\\companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working\\bambu\\Dara-A1-Companion\\native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working\\bambu\\Dara-A1-Companion\\README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working\\bambu\\Dara-A1-Companion\\release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328"
+  },
+  "protected_after": {
+    "Dara.3mf": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Complete.3mf": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Editable.3mf": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+    "working\\bambu\\Dara-A1-Companion\\companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working\\bambu\\Dara-A1-Companion\\native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working\\bambu\\Dara-A1-Companion\\README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working\\bambu\\Dara-A1-Companion\\release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328"
+  },
+  "production_and_A1_unchanged": true,
+  "physical_result_pending": false,
+  "printer_job_sent": false,
+  "builder_sha256": "eba80e03da5da596d24aeb5d856618eb4855030ff74a1fab59c92a584e5acfe6",
+  "physical_feedback": {
+    "date": "2026-10-22",
+    "user_report": "That worked, apply to main project, commit push and PR.",
+    "reported_revision": "r3 full-curve infill-first test",
+    "supplied_project_sha256": "5fc8fe29ea2993bdceaf690744506bd14bf757982a76b6937e9e7ce4b9192bb0",
+    "scope": "User-reported success for the supplied r3 test; the locally printed file hash was not independently read. Full production printing remains unqualified."
+  }
+}

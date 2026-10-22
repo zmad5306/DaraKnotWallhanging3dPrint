@@ -65,6 +65,21 @@ except for the explicit existing solid regions below.
   18-20; all production M parts remain on the A2L.
 - The older complete A1 design is historical and is not the current production
   baseline. Its settings and joints must not silently replace A2L settings.
+- **Separate corrected knot project, 2026-10-22:** use
+  `working/bambu/Dara-A2L-Knot-Infill-First/Dara-A2L-Knot-Infill-First.3mf`
+  for full-size F1-F10, replacing the knot plates 1-10 in the main project for
+  printing. Plate numbers match. The user reported the r3 full-curve test
+  worked, then explicitly chose a separate knot project to keep M settings
+  unchanged. In this separate project only, `is_infill_first = 1` replaces 0;
+  each knot object's `support_interface_spacing = 0.2` replaces inherited 0.5.
+  Preserve the 0.20 mm support top gap, geometry, all other process settings,
+  modifiers and actual bed poses. Bambu applies infill-first globally;
+  object overrides were verified ineffective. Do not enable it in the shared
+  main project. Root/named complete/editable main projects and all M/A1 files
+  remain unchanged. The successful supplied r3 file SHA-256 is
+  `5fc8fe29ea2993bdceaf690744506bd14bf757982a76b6937e9e7ce4b9192bb0`;
+  the locally printed hash was not independently read. Full-size physical
+  print quality and support cleanup remain unqualified.
 - A joint sample may be prepared for the A1 when the user requests that printer.
   Use an actual A1 machine profile and reslice for the A1. Preserve the locked
   process constants; do not reuse A2L machine commands or stored slices.

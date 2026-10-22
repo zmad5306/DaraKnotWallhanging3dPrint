@@ -24,3 +24,7 @@ __pycache__/
 
 # Direct production-joint sample, editable and natively sliced.
 !/working/bambu/Dara-A2L-Production-Joint-Sample/*.3mf
+
+# Approved separate infill-first knot project and successful physical reference.
+!/working/bambu/Dara-A2L-Knot-Infill-First/*.3mf
+!/output/Dara-A2L-Photo-Curve-Infill-First-r3/*.3mf

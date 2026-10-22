@@ -1,0 +1,6 @@
+2026-10-22: User reported "That worked, apply to main project, commit push and PR."
+
+Applies to the supplied r3 full-photo-curve infill-first test.
+Supplied A2L file SHA-256: 5fc8fe29ea2993bdceaf690744506bd14bf757982a76b6937e9e7ce4b9192bb0
+The locally printed file hash was not independently read. This is not a
+physical qualification of the full production frame, finish or M parts.

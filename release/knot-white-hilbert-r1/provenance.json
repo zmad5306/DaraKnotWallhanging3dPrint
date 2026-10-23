@@ -1,0 +1,218 @@
+{
+  "source": "Knot.3mf",
+  "source_sha256": "8a76b70a1c1430d74a16ec06c9689827d33f3902afb1d7de90e4436072c251c3",
+  "editable_sha256": "6e36df602820ebf3ed1c911a9a7785bbc603b3c90d6edf796852b4ee144cd8a4",
+  "protected_before": {
+    "Letter.3mf": "d12cfb8b76a3aac2bdc667a0385896fc4ce2e770557d226551de5bd45b09a8f5",
+    "Small Parts - Crate Clips PETG.3mf": "3a1868498aa04317b5e65e9f80cfa2f2d573266116b73646ff662169f7a7f602",
+    "Small Parts - Crate Stencils.3mf": "ea602d2bd5ddc8ef93b352f679846d30adf0bdbdbdb650bd76b3b830cd18de23",
+    "Small Parts - Photo Cut Aligner.3mf": "a6084117e285567bbf9033b7220ed0d9d0fcd257c8d2aa44a3c8fbc473476f8d",
+    "Small Parts - Sanding Block PLA.3mf": "b4c389579763b98805c075a3747fdbc8dda9ed05250747c52675435b078a7459",
+    "Small Parts.3mf": "4836fda4db3178917761f434d5e3b36d970c1cdf94cea82cca49edafa9e0f099",
+    "Knot STL/F1-A2L-knot-volume-1.stl": "bf480655b5313f9848e195c0ca62a429cfe3b0e519dde227b96ed3d9292ffe28",
+    "Knot STL/F1-A2L-knot-volume-2.stl": "71af71f5d1924f4e7587f97e326a21ba08141fe90600bd1b7fda09de1ce14140",
+    "Knot STL/F1-A2L-knot-volume-3.stl": "404030604db2425b0bf18f70e27c570dc018c08486c035cc6c1b8c10ac6d8d5c",
+    "Knot STL/F1-A2L-knot-volume-4.stl": "fc6ed3ba0a26bb93e3aad182f30eb6bf5e9f1ef8617746b9324b6f9b0e35093d",
+    "Knot STL/F1-A2L-knot-volume-5.stl": "540f243635e9a5d7b9ada30fecceaa4b0c7fbe2bdcae16dca1ea23ba928731ea",
+    "Knot STL/F1-A2L-knot-volume-6.stl": "fb7f0fe4b44eb22a0f9c3f28e70623c4cb462d638bb8445cc18eedb68b7776bb",
+    "Knot STL/F1-A2L-knot-volume-7.stl": "ca3de6f213b870e3288744fd68d890875ada9cc21de74c0524f8f7775078eeb1",
+    "Knot STL/F1-A2L-knot-volume-8.stl": "d4b4581b9d55515e75fff1b03dffd2b0d293a83fc78cc49b5fb967b8dbe9a936",
+    "Knot STL/F1-A2L-knot-volume-9.stl": "08748b0c44a9f6df8fc192045aefe392139f2a60b9f56e982d8fe1788220868e",
+    "Knot STL/F10-A2L-knot-volume-1.stl": "d854285caedce6c328b365c5167acf3eb2d2272f78ff4028c54ede58f0ee9afd",
+    "Knot STL/F10-A2L-knot-volume-10.stl": "bd84d8c3ac63a52fa5737e069553dfea28764398149a04c6ed1b67084ed355b8",
+    "Knot STL/F10-A2L-knot-volume-11.stl": "1b503da3b9e97a0621cad2d503a91a1d173c8b4d10304805f1acd713bd1c288f",
+    "Knot STL/F10-A2L-knot-volume-2.stl": "7908099445af13aaaf4495f58b5fa40f0014434227741b35c5afeb4252f0109d",
+    "Knot STL/F10-A2L-knot-volume-3.stl": "ebdd8faa39e51cfde7a094b01fff3cabe842207a65f259ea194187bee2e5daca",
+    "Knot STL/F10-A2L-knot-volume-4.stl": "b036fb1735bf0e0aa4b29726465a94bcccc16bfca5e089c9f35938b3d81a3508",
+    "Knot STL/F10-A2L-knot-volume-5.stl": "c1f11951b9237ef030b353aca745738b611c5b8a9284db35f3e1d694ab00de3c",
+    "Knot STL/F10-A2L-knot-volume-6.stl": "0cafa839d553a7b58613667180ade459333102117427ee83a90fb0dee4b64be2",
+    "Knot STL/F10-A2L-knot-volume-7.stl": "f7e09ce85cd80fd3c1f2329ac22eaf7c6b55df308af5e9d8f3931a002e10c162",
+    "Knot STL/F10-A2L-knot-volume-8.stl": "7cb06cc609ee798fdf81c277d259645d37311b01c4645df20eea83f2d09a2cd7",
+    "Knot STL/F10-A2L-knot-volume-9.stl": "e15e3c9cb2e73e1ee4f5e60b0bf000108f9698cd86611435aaeadf2d03f7f101",
+    "Knot STL/F2-A2L-knot-volume-1.stl": "99caf07053059a059ccb88c8c0f47a5a3651b6da36ef9c0c287be45ef10dd31e",
+    "Knot STL/F2-A2L-knot-volume-10.stl": "896e893495cc28f989d650300f6236801b7ff64b09c1201e3527eb33df6bf063",
+    "Knot STL/F2-A2L-knot-volume-11.stl": "e40a88e7e28141addd65eb062cd165fa2af634c36b8fd05d70229f851b800053",
+    "Knot STL/F2-A2L-knot-volume-2.stl": "e8d8affb5d559920bf5b24431f309641486e2a9af00fddc71b7b0169412400a4",
+    "Knot STL/F2-A2L-knot-volume-3.stl": "7a77ecf48edffcbbe9e0b8949ae20921deb28fe14ceba815f0149ed8a9fb7a01",
+    "Knot STL/F2-A2L-knot-volume-4.stl": "209e53d7527e6c873b5cdb242933c10bf5ec38dcff7e0d30aaef9190934b9828",
+    "Knot STL/F2-A2L-knot-volume-5.stl": "a7f87c579d0915f53f5bda8c6444ed422412635fbcccde97f327308235743a60",
+    "Knot STL/F2-A2L-knot-volume-6.stl": "881ca87618f765228ef0d86d38d09e550879a020f152d7c84b8843f949f68f0d",
+    "Knot STL/F2-A2L-knot-volume-7.stl": "136ac68907c99b5683095e32f5eab6b38641f9a362bc8258da0594ec05d65d03",
+    "Knot STL/F2-A2L-knot-volume-8.stl": "bb60d310791b90a4dd2b21458ce8c0cf7ee08ab492fef9750bebfde226afe6a8",
+    "Knot STL/F2-A2L-knot-volume-9.stl": "28c0c12d871003a7f5df29141de74d1035d4a3d7cc4885b39fc42447e57efc75",
+    "Knot STL/F3-A2L-knot-volume-1.stl": "86f757824196109c267e4608a7fe231a26d7e91cc5ce1248940d24ac9b52044f",
+    "Knot STL/F3-A2L-knot-volume-10.stl": "3fa4c91fd07ebd28551f395dcd97e3e8312b9fd83f3872fa00a59865beaf1834",
+    "Knot STL/F3-A2L-knot-volume-11.stl": "bbd071e17e4c2fc3527ad62743ef09166da60083936123434b85cfabd1f74fd6",
+    "Knot STL/F3-A2L-knot-volume-12.stl": "c14b3aa1fa869dd5cafb3b35f989affe4bae577d11847ca2c93a9ec6c0721d66",
+    "Knot STL/F3-A2L-knot-volume-2.stl": "03d786fbe01b6af7678116345f4684102dc4da36bae37378c0ed92a373b2af1a",
+    "Knot STL/F3-A2L-knot-volume-3.stl": "07369ad01013157337dd3311996d09fdc958d2643fb0ffcc9d6f0e471a28a0d5",
+    "Knot STL/F3-A2L-knot-volume-4.stl": "6b2c355684648b669ed2a6783bfb80da30d2c9a5a05ca792a58c06ce85030c1d",
+    "Knot STL/F3-A2L-knot-volume-5.stl": "b477cdcc6df1073fedd2ae0a31d8b4826b53e805bf0a7ac75184e7091cff33db",
+    "Knot STL/F3-A2L-knot-volume-6.stl": "4916e7cfd78dbf34687b4d40bdb4875a277a7c88a7e83597ac05f4afd06764b3",
+    "Knot STL/F3-A2L-knot-volume-7.stl": "b396844a5ed8302a640acaad3fceeb3274584a71a4c8d0c631bec623835605e4",
+    "Knot STL/F3-A2L-knot-volume-8.stl": "dac84d01a5cd8a1a396af662f668a6b07c5e71f46afa00ffebc001c97dd5fdf6",
+    "Knot STL/F3-A2L-knot-volume-9.stl": "6e1f6b6f500e4503a15dfedacd9df82ba6c179da25dde387dd200bebf277e1bc",
+    "Knot STL/F4-A2L-knot-volume-1.stl": "119de64a9c81ae8b0fce450445aad6f0e9c978ae267f924b3087200cb1fc7b9b",
+    "Knot STL/F4-A2L-knot-volume-10.stl": "f4cacf8a8143de3ce64727ad09157bb219207f2ac8493f0e021750d66a3d1cbb",
+    "Knot STL/F4-A2L-knot-volume-11.stl": "429e9881f2a1a602047a3f1b07c4df77877d809f2c0b4cbf85cd37ea8e683340",
+    "Knot STL/F4-A2L-knot-volume-12.stl": "5cb8f2c26fddd560e726d64837fc39f4bbd36292890773c406d1310928244ff4",
+    "Knot STL/F4-A2L-knot-volume-2.stl": "e1b7a0376a026583f8720ba5f5ddf9b328464a95dd4fc93f2f234e4995b6d23c",
+    "Knot STL/F4-A2L-knot-volume-3.stl": "19d8fe240db33104ace785d3f06674d5f7309c825705280da2f4a5e17fb35f18",
+    "Knot STL/F4-A2L-knot-volume-4.stl": "5ed8e7db080197f77221a5a0818967c6eaade17cd9d62efe07cf11b42d33c593",
+    "Knot STL/F4-A2L-knot-volume-5.stl": "24c9b3d1deec35586e514dad7c36937c5ce2cb91b1e31a2b83b3d3aae7cea974",
+    "Knot STL/F4-A2L-knot-volume-6.stl": "878ea90ef3b5d66f0d51b085d01d79b0260f24aba561f44e44a40faab0f0994b",
+    "Knot STL/F4-A2L-knot-volume-7.stl": "961afc2e4ad7acc6a4ff7001e7fa18349d82248873fe9569d73c576f9427dbaf",
+    "Knot STL/F4-A2L-knot-volume-8.stl": "37201ef9fc82d728a58f82aad90ea34cff1b95b149c6311998bba11ea6f40dde",
+    "Knot STL/F4-A2L-knot-volume-9.stl": "f29f68791718aff882326f378f3ad4e7a4f6680cb49de70d7bb01c69c59475b8",
+    "Knot STL/F5-A2L-knot-volume-1.stl": "c0fb72c15ced3a403ff86a91d2173014f375fa37f25112f240f69c033c4e37e2",
+    "Knot STL/F5-A2L-knot-volume-10.stl": "80f1735c8e54b495d5ac19d9216377e2fde037fdd0d0037e2b2d7843220867a9",
+    "Knot STL/F5-A2L-knot-volume-11.stl": "5cec4d2bc0f0a9fa950a970e19fbcf6113c58f45ab909e1f984eba6307fccb90",
+    "Knot STL/F5-A2L-knot-volume-2.stl": "d1f2752edbc95483fda3b1d3767448208829996aa2cb39ad65d5b7cdcbd74613",
+    "Knot STL/F5-A2L-knot-volume-3.stl": "c1175f56a36bb7a7d50d2e51f00d531fdc26e8133d0defce956446db0d4f055e",
+    "Knot STL/F5-A2L-knot-volume-4.stl": "ca849ce50ed51f6ba996b9143e3c2845706d6affd5f742313808384ff879b3e1",
+    "Knot STL/F5-A2L-knot-volume-5.stl": "11feea17c795a5c92065d0601dc10c53531f65e95ae5abbe5fabd1775ccf293a",
+    "Knot STL/F5-A2L-knot-volume-6.stl": "586be6007073a1cd98f8b1a41a52c4b5cce4d5af45249a4e07948421f7cc5b58",
+    "Knot STL/F5-A2L-knot-volume-7.stl": "3bd913e9db25b3deee3d29c5b295ea71ead6b661b7079668c7e25bd595b01092",
+    "Knot STL/F5-A2L-knot-volume-8.stl": "3a1ffd314d8a2775569fdb878ed488956e9a4274eed1468efd7f7a5c1ebb99b9",
+    "Knot STL/F5-A2L-knot-volume-9.stl": "2a1e2f31965959e8adae9fb213773e1e4e51f8804393a98000edf251461b4e0c",
+    "Knot STL/F6-A2L-knot-volume-1.stl": "43b6e6813005a732b373557cab40c4a4c19ce25da3cea2f729845d237752f4b5",
+    "Knot STL/F6-A2L-knot-volume-2.stl": "13e7be14dc6559e1a58c63ab0689ab0b76501a3362ad6bab296925bc87ffd183",
+    "Knot STL/F6-A2L-knot-volume-3.stl": "21120471e96de745756f196cb319383e583c6d0d69db2e2ac1523aba8e7db971",
+    "Knot STL/F6-A2L-knot-volume-4.stl": "205d334ee2022a69ec7796ba8cd57794d95fcd60b4718201adc509d9c2d1700c",
+    "Knot STL/F6-A2L-knot-volume-5.stl": "fe426bd87ed9b46650d1f8639ab4fb2a90ccd6cbade1a4b23a68f4e2722eb6f5",
+    "Knot STL/F6-A2L-knot-volume-6.stl": "19c3a8b6e7fb94aab3ec1cb74b9121189ec4fd5ae9fe36b4d2e6d6b95afce79c",
+    "Knot STL/F6-A2L-knot-volume-7.stl": "9d9e722a4b256111ea8e72a2fd728348f8fb13c45ac7217e9f8fad59f24839e0",
+    "Knot STL/F7-A2L-knot-volume-1.stl": "7d06471237bb67acd231fa3673c6012f3bb0353c5df749b685797a7a111585a6",
+    "Knot STL/F7-A2L-knot-volume-10.stl": "ab6e4a0bcd744fa617c206b2f45f075c7a5deb350a3a4170db66f2706fc868b6",
+    "Knot STL/F7-A2L-knot-volume-11.stl": "620490b489fea22c4a21106ed317a3afbe130fdb38853937d12df67dd08e924a",
+    "Knot STL/F7-A2L-knot-volume-2.stl": "5c98f9016320f07406d728a2a6aa2627690d00e4ef710116129dca6f54973959",
+    "Knot STL/F7-A2L-knot-volume-3.stl": "425f3b4f92afebcd04a1d8aef506e8dfa1d1f7ff7c0346c2a9999a76d90fad87",
+    "Knot STL/F7-A2L-knot-volume-4.stl": "0241fba0d53d646bfc7cbc2d8614aa17bf30dbf2d1de69bde2683b0b997d70fd",
+    "Knot STL/F7-A2L-knot-volume-5.stl": "5fa40284f5db11f560a8e98bd903880de081dd0971c59aab4415a663065b80f9",
+    "Knot STL/F7-A2L-knot-volume-6.stl": "9c69ee528b7966736f044f65df91fabc39e0c6b025d3eea19222078a48377e84",
+    "Knot STL/F7-A2L-knot-volume-7.stl": "6d03b97c5e4496fd04e92d089f907f7c225006a407dcb74c3f7ffbc3a118440e",
+    "Knot STL/F7-A2L-knot-volume-8.stl": "e3cb88e102d52a16f1fefc0f3610d1e5ca72eecfa3c4aa6838b074d2c7a7d042",
+    "Knot STL/F7-A2L-knot-volume-9.stl": "f9070eb22c25012ce183d95cf0141d1c744097a22845760be6f22d2ad0e2cb4a",
+    "Knot STL/F8-A2L-knot-volume-1.stl": "8133cddb37d66bb9f5ae8d8ec3dea37c326c810cac145aeb17a27a022a8681c5",
+    "Knot STL/F8-A2L-knot-volume-10.stl": "40e240b1774450da0d3a0e1ba68da12bdcc768e54a99a87b52bc6966c3e4c8c5",
+    "Knot STL/F8-A2L-knot-volume-11.stl": "3c09fe1552dbc5e5e1b555e91fd3ef12263753e890a50c75658ef821dc9c0d02",
+    "Knot STL/F8-A2L-knot-volume-12.stl": "caa6693ef268c19534530e77a7742c8b8bd1552ca639e28ab7c033324620642e",
+    "Knot STL/F8-A2L-knot-volume-2.stl": "f80b18c0e1751de21f79fe6d45f24466f6cda2bb40e328225919ee4a137fb86e",
+    "Knot STL/F8-A2L-knot-volume-3.stl": "8d1766e7f7a343c7b23eb6397129592738eb84af68563b44dc805a43b65a1c7c",
+    "Knot STL/F8-A2L-knot-volume-4.stl": "9b11a768809e611bbd89feac4e542d057302748aa614f08d025633069afe3f9f",
+    "Knot STL/F8-A2L-knot-volume-5.stl": "0b7e1705df573ccddaf0393ab42c0ebaf12b4b4465b05819ef9833977c1d5600",
+    "Knot STL/F8-A2L-knot-volume-6.stl": "d4a7c589287fc8c6619ac8dafbeaabeec4da1fa233c789d624ef3f358f3688e4",
+    "Knot STL/F8-A2L-knot-volume-7.stl": "9e5bec3818136509a5e91a3e7fb589965f422225e4aa4ff8e32339d4b0f0fa05",
+    "Knot STL/F8-A2L-knot-volume-8.stl": "d701e2edc14d67b023917e3331b1935be2f1b498e186e3c1231f6129d70bc1b5",
+    "Knot STL/F8-A2L-knot-volume-9.stl": "1898b2f1568d2ea201a551e3d560ca9cebe487a60e4e0027f409b3d074e29a1c",
+    "Knot STL/F9-A2L-knot-volume-1.stl": "936cf5fd69657ec65e5f5001db2e95959fe65bbb80c93059dc04d8ef19eb517b",
+    "Knot STL/F9-A2L-knot-volume-10.stl": "0de122f8c77cb317cc379573d9dfc73e55dc034f32b76b530fefb7c265176839",
+    "Knot STL/F9-A2L-knot-volume-11.stl": "45730a097a17179184ecd1918569c47e3b276e0e6169ee66d04905458daef844",
+    "Knot STL/F9-A2L-knot-volume-12.stl": "99a7faca4597a4b82b6a81ac99292219c7c5e861ca37f2ac503bf501a0d4159a",
+    "Knot STL/F9-A2L-knot-volume-13.stl": "1b8f524cc101ac586f3bdaed66b3e85ecf1ebdc3468fbce39d5c5528ecf1eacf",
+    "Knot STL/F9-A2L-knot-volume-2.stl": "b36e298bc74613a8434380e2aee86033beb0e792b58165f03336e0248924e68d",
+    "Knot STL/F9-A2L-knot-volume-3.stl": "6591bf70ff6c0cd756428237a86646d575eb136542acfe9a4f4bbf9fc9951912",
+    "Knot STL/F9-A2L-knot-volume-4.stl": "2847926aad8be3f4499d4e69c44a5bf543c34636d55d3a6dfc4e7b03db3c3e9a",
+    "Knot STL/F9-A2L-knot-volume-5.stl": "bf984f3198a350f50d380101142738891bcd2aff9ac588685cfeb38920c3e04e",
+    "Knot STL/F9-A2L-knot-volume-6.stl": "d9829db16febbd7da4878475cd62e871c9d45611c8c22b5c387c7663d6e325c3",
+    "Knot STL/F9-A2L-knot-volume-7.stl": "c0544c7c8a5712d38f5f3b57296df1a7de6aea525819ba3e76f9986e4b6c9bfd",
+    "Knot STL/F9-A2L-knot-volume-8.stl": "fa4df8ad4ed825c927e6ebe5504f884895061806eb42406fe29e871aafbc147b",
+    "Knot STL/F9-A2L-knot-volume-9.stl": "a33e1d354974e26ae6fed9c593ada8749e757b4a23819a1bd609662c527ca094",
+    "Knot.scad": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
+    "release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf": "b82b2356c92c14640b4107405c0fde04488d61ced29d34821572c8b84003f0f6"
+  },
+  "show_face_pattern": [
+    "monotonicline",
+    "hilbertcurve"
+  ],
+  "height_range_mm": [
+    13,
+    13.6
+  ],
+  "blue_overrides": [
+    {
+      "object": "F2 A2L knot",
+      "blue_volume_id": "16",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F5 A2L knot",
+      "blue_volume_id": "54",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F10 A2L knot",
+      "blue_volume_id": "113",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "blue_volume_id": "41",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F7 A2L knot",
+      "blue_volume_id": "74",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F6 A2L knot",
+      "blue_volume_id": "65",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F1 A2L knot",
+      "blue_volume_id": "5",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "blue_volume_id": "28",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "blue_volume_id": "100",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "blue_volume_id": "86",
+      "blue_pattern": [
+        "monotonicline inherited",
+        "monotonicline explicit"
+      ]
+    }
+  ],
+  "unchanged_top_line_width_mm": 0.42,
+  "brown_settings_unchanged": true,
+  "geometry_changes": false,
+  "source_documentation": "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Format/bbs_3mf.cpp"
+}

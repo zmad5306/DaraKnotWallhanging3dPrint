@@ -67,9 +67,24 @@ def audit():
             assert {i.get('objectid') for i in model.find(C+'build')}==resources
             for c in model.iter(C+'component'):assert c.get(P+'path').lstrip('/') in names
             if title=='Knot':
-                skin=json.loads((ROOT/'release/knot-reinforcement-skin-r1/validation.json').read_text())
+                skin=json.loads((ROOT/row['validation']).read_text())
                 assert skin['project_sha256']==row['sha256']
-                assert skin['all_five_top_shell_layers_cross_former_modifier_boundary']
+                if skin.get('white_show_face_pattern')=='hilbertcurve':
+                    assert skin['brown_blue_joint_and_pin_toolpath_geometry_preserved']
+                    assert skin['screw_modifiers_preserved_at_z12_4']
+                    ranges=ET.fromstring(z.read('Metadata/layer_config_ranges.xml'))
+                    assert len(ranges.findall('object'))==10
+                    for obj in ranges.findall('object'):
+                        rr=obj.findall('range');assert len(rr)==1
+                        assert (float(rr[0].get('min_z')),float(rr[0].get('max_z')))==(13,13.6)
+                        assert {o.get('opt_key'):o.text for o in rr[0].findall('option')}=={
+                            'layer_height':'0.2','extruder':'0','top_surface_pattern':'hilbertcurve'}
+                    for obj in cfg.findall('object'):
+                        for part in obj.findall('part'):
+                            if props(part).get('extruder')=='4':assert props(part)['top_surface_pattern']=='monotonicline'
+                            if props(part).get('extruder')=='2':assert 'top_surface_pattern' not in props(part)
+                else:
+                    assert skin['all_five_top_shell_layers_cross_former_modifier_boundary']
                 objects={o.get('id'):o for o in model.find(C+'resources')}
                 assets={};count=0
                 for obj in cfg.findall('object'):

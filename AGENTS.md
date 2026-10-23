@@ -54,6 +54,19 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved white knot Hilbert finish, 2026-10-23:** the user requested a
+  Hilbert curve finish on the white knot surfaces and explicitly excluded the
+  already textured brown regions. In `Knot.3mf`, use `hilbertcurve` only in the
+  Z13.0–13.6 height range containing the main white show face. Keep the native
+  range defaults at 0.20 mm layer height and extruder 0 (inherit). All ten blue
+  color modifiers explicitly retain `top_surface_pattern = monotonicline`;
+  brown modifier settings remain unchanged. Keep top line width **0.42 mm**,
+  five solid top layers, the Z12.4 screw modifiers and every other setting.
+  Lower joint surfaces and taller locating-pin tops retain their prior paths.
+  Geometry, CAD/STL and bed poses are unchanged. Current native slices and
+  validation are in `release/knot-white-hilbert-r1/`. Fabric-like appearance,
+  sheen and feel remain physically unqualified.
+
 - **Approved knot screw-skin correction, 2026-10-23:** the user reported visible
   circles over the screw reinforcement and requested correction, commit and
   push. In `Knot.3mf` only, all 50 local solid screw modifiers end at **Z12.4 mm**

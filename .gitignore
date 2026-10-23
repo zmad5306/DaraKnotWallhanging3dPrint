@@ -27,3 +27,45 @@ __pycache__/
 
 # Explicitly requested ERYONE finish sample accompanying the edge correction.
 !/release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf
+
+# Historical local sample outputs and review evidence; retain files on disk.
+# Existing tracked files in these folders remain tracked. Keep scripts visible.
+/output/A2L-Pillar-Fit-Sample-A1-r1/
+/output/A2L-Pillar-Fit-Sample-A1-r2/
+/output/A2L-Pillar-Fit-Sample-A1-r3/
+/output/A2L-Poop-Bucket-Final-A1-r4/
+/output/A2L-Poop-Bucket-Print-on-A1-r1/
+/output/A2L-Poop-Bucket-r1/
+/output/Beaver-A1/
+/output/Dara-A2L-Hammered-Finish-ERYONE-r1/
+/output/Dara-A2L-Hammered-Finish-ERYONE-r2/
+/output/Dara-A2L-Hammered-Finish-ERYONE-r3/
+/output/Dara-A2L-Photo-Curve-Support-Test-r2/
+/output/Dara-A2L-Photo-Lip-Support-Test-r1/
+/output/Dara-A2L-Veneer-Wall-Cradle-r5/
+/output/Dara-A2L-Veneers-Only-No-Supports-r1/
+/output/Dara-B1-Cover-Source.zip
+/output/Dara-B1-Cover-Source/
+/output/Dara-Center-Veneer-Alignment-Jig-A1/
+/output/Dara-Crate-Clips-A1-PETG-r1/
+/output/Dara-Crate-Clips-A1-PETG-r2/
+/output/Dara-Photo-Tracing-Backers-A1-r1/
+/output/Dara-Side-Veneer-Alignment-Jigs-A1/
+/output/photo-fit-test/
+/output/Sanding-Block-Quarter-Sheet-A1-PETG/
+/output/Sanding-Block-Quarter-Sheet-A1-PLA-r2/
+/output/Sanding-Block-Quarter-Sheet-A1-PLA-r3/
+/output/Sanding-Block-Quarter-Sheet-A1-PLA-r4/
+/output/Sanding-Block-Thread-Test-A1-PLA-t1/
+/result.json
+/working/bambu/Dara-A2L-Flush-Joint-Test/
+/working/bambu/Dara-A2L-Simple-Joint-Draft/
+/working/bambu/Dara-A2L-Veneer-Backing-Trial/
+/working/bambu/Dara-A2L-Veneer-Print-Checks/
+/working/review/joint-failure/
+/working/review/plate-31-surface/
+/working/review/production-final/
+/working/review/production-side-notches/
+/working/review/veneer-layer-overlap/
+/working/review/veneer-restraint-audit/
+/working/review/veneer-support-comparison/

@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "e28d0026b64fe154e701240f735d06d6cfc74c83a084eb84ed810af3a073c060",
+    "sha256": "8a76b70a1c1430d74a16ec06c9689827d33f3902afb1d7de90e4436072c251c3",
     "cad": "Knot.scad",
     "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
     "printer": "Bambu Lab A2L",
@@ -160,8 +160,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -313.95180537207034 0 1 0 -5.0882110597851558 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 2972,
             "bounds": [
@@ -452,8 +451,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70198792480471 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 5220,
             "bounds": [
@@ -767,8 +765,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -253.92971800878905 0 1 0 581.27911388476559 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 6040,
             "bounds": [
@@ -1105,8 +1102,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 253.84689365527345 0 1 0 579.18232700585941 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 6024,
             "bounds": [
@@ -1443,8 +1439,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 660.60502575195312 0 1 0 289.54700844250488 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 5228,
             "bounds": [
@@ -1730,8 +1725,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 315.39918086828612 0 1 0 -4.253738401660156 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 2956,
             "bounds": [
@@ -1976,8 +1970,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 660.73797603710932 0 1 0 -289.810810137207 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 5212,
             "bounds": [
@@ -2291,8 +2284,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 253.95899981689453 0 1 0 -599.51237506835935 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 6040,
             "bounds": [
@@ -2657,8 +2649,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -253.87673975097658 0 1 0 -599.46710202539066 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 6012,
             "bounds": [
@@ -2995,8 +2986,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -660.72444113476558 0 1 0 -289.65758847937013 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4",
-              "top_surface_pattern": "monotonicline"
+              "extruder": "4"
             },
             "faces": 5228,
             "bounds": [
@@ -3131,16 +3121,7 @@
       }
     ],
     "unique_stl": 109,
-    "validation": "release/knot-white-hilbert-r1/validation.json",
-    "height_ranges": [
-      {
-        "min_z": 13,
-        "max_z": 13.6,
-        "layer_height": 0.2,
-        "extruder": 0,
-        "top_surface_pattern": "hilbertcurve"
-      }
-    ]
+    "validation": "release/knot-reinforcement-skin-r1/validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",

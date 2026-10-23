@@ -1,4 +1,10 @@
-# White knot Hilbert finish
+# White knot Hilbert finish — withdrawn
+
+**Withdrawn at the user's request on 2026-10-23.** Root `Knot.3mf` now restores
+the original monotonic-line white finish while retaining the screw-skin correction.
+This directory records the superseded Hilbert revision, not the current release.
+See `../knot-white-hilbert-removal-r2/` for the restoration. Do not reapply the
+historical Hilbert builder without a new request.
 
 The user requested Hilbert curve on the white knot surfaces, explicitly
 preserving the already textured brown areas, and asked whether the blue trim
@@ -30,7 +36,7 @@ native reopen are checked separately. CAD and all STL files remain byte-identica
 - `white-blue-before-after.png`: actual plate-3 top-layer paths at Z13.6.
 
 The previous screw-skin evidence remains at `../knot-reinforcement-skin-r1/`.
-It describes the source revision; this directory identifies the current slices.
+It describes the restored current release; this directory identifies the superseded Hilbert slices.
 No printer job was sent. A physical print is still needed to judge appearance,
 sheen and feel; a Hilbert path is not proof of a fabric-like result.
 

@@ -85,6 +85,9 @@ def audit():
                             if props(part).get('extruder')=='2':assert 'top_surface_pattern' not in props(part)
                 else:
                     assert skin['all_five_top_shell_layers_cross_former_modifier_boundary']
+                    assert s['top_surface_pattern']=='monotonicline'
+                    assert 'Metadata/layer_config_ranges.xml' not in names
+                    assert all(m.get('value')!='hilbertcurve' for m in cfg.iter('metadata'))
                 objects={o.get('id'):o for o in model.find(C+'resources')}
                 assets={};count=0
                 for obj in cfg.findall('object'):

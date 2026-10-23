@@ -1,0 +1,731 @@
+{
+  "source": "Knot.3mf",
+  "source_sha256": "2510f6f9bd0139155d7aea0603b0e24c3e5c9ac414f946abf9aadf1464f9c356",
+  "editable_sha256": "3eef9a428324b898961d1e3e10df7268ec5294dfd0612383e13e363656866a8a",
+  "changes": [
+    {
+      "object": "F2 A2L knot",
+      "volume_id": "17",
+      "asset": "3D/Objects/object_2.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F2 A2L knot",
+      "volume_id": "18",
+      "asset": "3D/Objects/object_2.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F2 A2L knot",
+      "volume_id": "19",
+      "asset": "3D/Objects/object_2.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F2 A2L knot",
+      "volume_id": "20",
+      "asset": "3D/Objects/object_2.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F2 A2L knot",
+      "volume_id": "21",
+      "asset": "3D/Objects/object_2.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F5 A2L knot",
+      "volume_id": "55",
+      "asset": "3D/Objects/object_5.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F5 A2L knot",
+      "volume_id": "56",
+      "asset": "3D/Objects/object_5.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F5 A2L knot",
+      "volume_id": "57",
+      "asset": "3D/Objects/object_5.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F5 A2L knot",
+      "volume_id": "58",
+      "asset": "3D/Objects/object_5.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F5 A2L knot",
+      "volume_id": "59",
+      "asset": "3D/Objects/object_5.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F10 A2L knot",
+      "volume_id": "114",
+      "asset": "3D/Objects/object_10.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F10 A2L knot",
+      "volume_id": "115",
+      "asset": "3D/Objects/object_10.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F10 A2L knot",
+      "volume_id": "116",
+      "asset": "3D/Objects/object_10.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F10 A2L knot",
+      "volume_id": "117",
+      "asset": "3D/Objects/object_10.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F10 A2L knot",
+      "volume_id": "118",
+      "asset": "3D/Objects/object_10.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "volume_id": "42",
+      "asset": "3D/Objects/object_4.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "volume_id": "43",
+      "asset": "3D/Objects/object_4.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "volume_id": "44",
+      "asset": "3D/Objects/object_4.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "volume_id": "45",
+      "asset": "3D/Objects/object_4.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "volume_id": "46",
+      "asset": "3D/Objects/object_4.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F4 A2L knot",
+      "volume_id": "47",
+      "asset": "3D/Objects/object_4.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F7 A2L knot",
+      "volume_id": "75",
+      "asset": "3D/Objects/object_7.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F7 A2L knot",
+      "volume_id": "76",
+      "asset": "3D/Objects/object_7.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F7 A2L knot",
+      "volume_id": "77",
+      "asset": "3D/Objects/object_7.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F7 A2L knot",
+      "volume_id": "78",
+      "asset": "3D/Objects/object_7.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F7 A2L knot",
+      "volume_id": "79",
+      "asset": "3D/Objects/object_7.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F6 A2L knot",
+      "volume_id": "66",
+      "asset": "3D/Objects/object_6.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F6 A2L knot",
+      "volume_id": "67",
+      "asset": "3D/Objects/object_6.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F1 A2L knot",
+      "volume_id": "6",
+      "asset": "3D/Objects/object_1.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F1 A2L knot",
+      "volume_id": "7",
+      "asset": "3D/Objects/object_1.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F1 A2L knot",
+      "volume_id": "8",
+      "asset": "3D/Objects/object_1.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F1 A2L knot",
+      "volume_id": "9",
+      "asset": "3D/Objects/object_1.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "volume_id": "29",
+      "asset": "3D/Objects/object_3.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "volume_id": "30",
+      "asset": "3D/Objects/object_3.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "volume_id": "31",
+      "asset": "3D/Objects/object_3.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "volume_id": "32",
+      "asset": "3D/Objects/object_3.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "volume_id": "33",
+      "asset": "3D/Objects/object_3.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F3 A2L knot",
+      "volume_id": "34",
+      "asset": "3D/Objects/object_3.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "volume_id": "101",
+      "asset": "3D/Objects/object_9.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "volume_id": "102",
+      "asset": "3D/Objects/object_9.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "volume_id": "103",
+      "asset": "3D/Objects/object_9.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "volume_id": "104",
+      "asset": "3D/Objects/object_9.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "volume_id": "105",
+      "asset": "3D/Objects/object_9.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F9 A2L knot",
+      "volume_id": "106",
+      "asset": "3D/Objects/object_9.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "volume_id": "87",
+      "asset": "3D/Objects/object_8.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "volume_id": "88",
+      "asset": "3D/Objects/object_8.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "volume_id": "89",
+      "asset": "3D/Objects/object_8.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "volume_id": "90",
+      "asset": "3D/Objects/object_8.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "volume_id": "91",
+      "asset": "3D/Objects/object_8.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    },
+    {
+      "object": "F8 A2L knot",
+      "volume_id": "92",
+      "asset": "3D/Objects/object_8.model",
+      "old_z_mm": [
+        0,
+        17
+      ],
+      "new_z_mm": [
+        0,
+        12.4
+      ]
+    }
+  ],
+  "protected_before": {
+    "Letter.3mf": "d12cfb8b76a3aac2bdc667a0385896fc4ce2e770557d226551de5bd45b09a8f5",
+    "Small Parts - Crate Clips PETG.3mf": "3a1868498aa04317b5e65e9f80cfa2f2d573266116b73646ff662169f7a7f602",
+    "Small Parts - Crate Stencils.3mf": "ea602d2bd5ddc8ef93b352f679846d30adf0bdbdbdb650bd76b3b830cd18de23",
+    "Small Parts - Photo Cut Aligner.3mf": "a6084117e285567bbf9033b7220ed0d9d0fcd257c8d2aa44a3c8fbc473476f8d",
+    "Small Parts - Sanding Block PLA.3mf": "b4c389579763b98805c075a3747fdbc8dda9ed05250747c52675435b078a7459",
+    "Small Parts.3mf": "4836fda4db3178917761f434d5e3b36d970c1cdf94cea82cca49edafa9e0f099",
+    "Letter STL/C1-A2L-flat-M-core-volume-1.stl": "4ff0f536c65431ee2bbf55874bf7784ea21f169347ed3c81fe71c1c455082a96",
+    "Letter STL/C1-A2L-flat-M-core-volume-2.stl": "da9fd1450316a19a1480984ef07ff274d6dabb4905d2d43363c24fe1059fca83",
+    "Letter STL/C1-A2L-flat-M-core-volume-3.stl": "a870228a9ad706c10316c84ee7a0583bd8253a9fc90ffa8ca72f8a5ddfad95d2",
+    "Letter STL/C1-A2L-flat-M-core-volume-4.stl": "759212def6e39ba555a6b6d1fb4f115abaa714ce6a5ef3dff97b388a2309fb1e",
+    "Letter STL/C1-A2L-flat-M-core-volume-5.stl": "377cc31d5a493bd5f58e79f191465611b1e7626fd863d3c79d7fe7984a43a0e8",
+    "Letter STL/C2-A2L-flat-M-core-volume-1.stl": "bd6065bc20770bb5839527ee1707f73fe20b0caf0a8a18ee81ecca5ae8d93583",
+    "Letter STL/C2-A2L-flat-M-core-volume-2.stl": "545e67a8e1a8372b41e4a07ccf2efd31b55b166a5841511af8ed5005934115ac",
+    "Letter STL/C2-A2L-flat-M-core-volume-3.stl": "dc2f3b96815534cae102fe9616475e3ba300f7695805c4ebf3c520b44745daab",
+    "Letter STL/C2-A2L-flat-M-core-volume-4.stl": "ed16132781aceec5f33038ecc300c93294c298fb769740a295452ef87e6c5943",
+    "Letter STL/C3-A2L-flat-M-core-volume-1.stl": "5324a937c88297c091c64002384c72422097ac3407322e0ab2270b10df98b548",
+    "Letter STL/C3-A2L-flat-M-core-volume-2.stl": "8d52cd4eca3eb282e350efb0b6dbf2db5def5a1a2d9b6096a42cf4cfe78ecbac",
+    "Letter STL/C4-A2L-flat-M-core-volume-1.stl": "b5d778a7fcb04374bd320b2dabf4331571cddc230fbaaed95ff1f32b025e3e6a",
+    "Letter STL/C4-A2L-flat-M-core-volume-2.stl": "e16a9e072d1d36d40366aceb1555535ffbf79ecf75d6fe1e136594685bbd4cec",
+    "Letter STL/C5-A2L-flat-M-core-volume-1.stl": "aa117d5cf6ddfc9cfb4e0bfb9f7771cc2a50838da6eb76944e1e9ccafce7e521",
+    "Letter STL/C5-A2L-flat-M-core-volume-2.stl": "de58a9dfac66c3c238c15a8ddd890e097a565eabe61ce378f5627ccfde43daf1",
+    "Letter STL/V1-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl": "3abf46a2a73a8aeae48dfe9986c346390dc5440eed90c14503d6cf0d177171c9",
+    "Letter STL/V2-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl": "def854ea6bbc862e82bdd7023a4216298d773ea37b34bb5dcf48e8bb1f99c998",
+    "Letter STL/V3-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl": "850fb8e8aabe96199f6700917fe53e38f39deb9d7a5bebabcdc3a4ed84150962",
+    "Small Parts - Crate Clips PETG STL/Crate-clip-1---10mm-spacer---1-4in-lip-volume-1.stl": "dee3784b88928e795e0ac45ce5bfef32d2680bb69a42efbf83f4dc79e1bbf870",
+    "Small Parts - Crate Stencils STL/01-THIS-END-UP-1-of-3-volume-1.stl": "5075f2f9e46ab9cd71a0df520baec867fbd3b2ef00bad3f46d2f2d833da49103",
+    "Small Parts - Crate Stencils STL/02-THIS-END-UP-2-of-3-volume-1.stl": "721a9f675def0d3238ebceab0056bad79a2d945739630e3b2f2d13de381ee882",
+    "Small Parts - Crate Stencils STL/03-THIS-END-UP-3-of-3-volume-1.stl": "f0a1451b5eb563d031abae1e9fde3ed8dbb681ffc27aeccb370f690f1713dc86",
+    "Small Parts - Crate Stencils STL/04-FRAGILE-1-of-3-volume-1.stl": "1c714701bdf4589c716194ed6b479472ecf9bd37a9d1a88798a00e6f682e100f",
+    "Small Parts - Crate Stencils STL/05-FRAGILE-2-of-3-volume-1.stl": "80bea35fb7e79349e1d79e370659c357225ee164401a87118f8d66018fb864da",
+    "Small Parts - Crate Stencils STL/06-FRAGILE-3-of-3-volume-1.stl": "1d459fa622fb762197fd641d86fe655a1c14c826344a154a021555f7c5e93475",
+    "Small Parts - Photo Cut Aligner STL/Backer-2---honeycomb-tracing---2mm-volume-1.stl": "33a7eb5e98b8ede0483c04facbb2dbe6733b278067ebc28d15b7cc102a0ce822",
+    "Small Parts - Sanding Block PLA STL/Base---quarter-sheet-volume-1.stl": "d9d93ffa441bb4445f293a3b85bf45dd5c837a1770d6948e0582906fc65bef5e",
+    "Small Parts - Sanding Block PLA STL/Lock---quarter-sheet-volume-1.stl": "35ebf0088601c14f03bd1aa49d66936cc3e2651ed1ee05edf96db2324efba842",
+    "Small Parts - Sanding Block PLA STL/Nut---quarter-sheet-volume-1.stl": "9cf62dd38ceee989f97e8e6cf027f190def2930a6a42fb2e0f3294b400c77466",
+    "Small Parts - Sanding Block PLA STL/Screw---quarter-sheet-volume-1.stl": "0b169aca156049ed87ee9e0b7d09db0e2fa38569e1f391e1361c493c4a9d2421",
+    "Small Parts - Sanding Block PLA STL/Tighteneer---quarter-sheet-volume-1.stl": "0f92a78742fc4212e340012f30c63454cb3a1a4e4e5f48e721842410d2a71709",
+    "Small Parts STL/B---stem-bottom---V3-alignment-shoe-r3-volume-1.stl": "baa9cb8be2b19d599375c7e45060adeb613a872f1e7edcf18b3e08fc14deec06",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-1.stl": "1b9ff06605ceedf6117d6ebbf1d6baac2bb0110dfae6368be18e3ecb294c434a",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-2.stl": "3c47eae6c3a3c84758503c204b2d561529a14b011b0a5d4ea8b99e041df5bf4d",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-3.stl": "b8257786ae75f39e36db1f34f4e282394891ae6e0f390796eeba9606fdaeb6ba",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-4.stl": "a99e5c40ad4af514d653a1c40e5aaaf6f65f0837ef47b1a582d61d398ed55ade",
+    "Small Parts STL/B2-A1-companion-wall-block-volume-1.stl": "354925119bce4969aa130f2986cea36f9239aef073e62b1341d475be947e793a",
+    "Small Parts STL/B2-A1-companion-wall-block-volume-2.stl": "f3dc6706b4c713681602ed8613467223c862d4a2bd94e75e20a37d22965a1179",
+    "Small Parts STL/B2-A1-companion-wall-block-volume-3.stl": "bc90b38094ba5783a106f00a5c4954bfd0bbd59e1970455aeaa7826a9e5457f5",
+    "Small Parts STL/B3-A1-companion-wall-block-volume-1.stl": "3391e23c689f4359741ca65313712fda00c99ee774b70edbfd19b546f1854755",
+    "Small Parts STL/B3-A1-companion-wall-block-volume-2.stl": "8eb430db2d1a75f55cd72e5b5aff142010debe7201fc5e21c4c3b6e1b43b2355",
+    "Small Parts STL/B3-A1-companion-wall-block-volume-3.stl": "f26469c88dd51b5e9edbc2076b91c17ca6025423ce48b76270654ebc29cae722",
+    "Small Parts STL/B4-A1-companion-wall-block-volume-1.stl": "6ee280e12caa2a5479756d08e6495f66c894c735daca6aa004c304f85efc8edc",
+    "Small Parts STL/B4-A1-companion-wall-block-volume-2.stl": "17b0eb8f9f8610bfa25ace1c82edeedee98ecfa4b18ef337ee50baff3412ee7f",
+    "Small Parts STL/B4-A1-companion-wall-block-volume-3.stl": "955afcfefc01968b2504d9a0916076d4200b9a0d27a65f8214b13dac7407b009",
+    "Small Parts STL/Backer1-volume-1.stl": "2c7c17d94e42f54ae42d3a2ccf2a7fd50a730ad41d1bb7d31bc8a9464cf1d27d",
+    "Small Parts STL/Backer2-volume-1.stl": "e92981a0fe979b7f733dade21887d6bd27b80b375268c177a842f5dcb84a81ed",
+    "Small Parts STL/Backer3-volume-1.stl": "817a180570182aa98cdfc19241220c119313be88cc2ae151540a87977012e7c7",
+    "Small Parts STL/Backer4-volume-1.stl": "5f917acd7cb3f714c01906652b9f9304e34cfafe2cbba909f620d769e606d494",
+    "Small Parts STL/Backer5-volume-1.stl": "b0214e34bff5ea156180790462568cf700771b5df75dcccb09a1c4464552a537",
+    "Small Parts STL/Backer6-volume-1.stl": "16258ccd28b45085ca54c7b7c0d793236f1c412c3d82a66601fd6fcafaa02a1c",
+    "Small Parts STL/Backer7-volume-1.stl": "1cf2aa97c6db6635cd597c6c703c6fb5ba0396ee3740cb8b95de731a97f30346",
+    "Small Parts STL/Backer8-volume-1.stl": "ef12c263188f1a6d2763a49e4de2a7c9f225bcf4256fe54ff26893bf2c6f9c7d",
+    "Small Parts STL/L1---left-upper-curve---V1-alignment-r1-volume-1.stl": "9aba46115cdbe1a16dfb4de773d69fd64b4ef60b1b467f9fb5fea3c49b6826de",
+    "Small Parts STL/L2---left-lower-end---V1-alignment-r1-volume-1.stl": "624605defa141ed46413607b91cdc540152b430f3585974bbf097d98d7af6d50",
+    "Small Parts STL/R1---right-upper-curve---V2-alignment-r1-volume-1.stl": "dc6508b5f7c44401be1a7d188c21d7636168c23faabf4c1a1cf3e99785fc6e36",
+    "Small Parts STL/R1-photo-retainer-volume-1.stl": "44f94afa86d38ec8bfc87a23107b261886f612dbb3eaaa1fd145c975cbe50c11",
+    "Small Parts STL/R1-photo-retainer-volume-2.stl": "f042fe39af2e65cadb229fbc0ac569984a960e799a44148b236088968f0b15d1",
+    "Small Parts STL/R2---right-lower-end---V2-alignment-r1-volume-1.stl": "b5e93ebb0b2b16792c3c1b57d7d2223c5708d924999a7ed9b0beca725182c33d",
+    "Small Parts STL/V---crotch-datum---V3-alignment-shoe-r3-volume-1.stl": "9cf3de07d97c9e43c310912af0e7e062a796907e3af65abf4ff8d1bbe59a8132",
+    "release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf": "b82b2356c92c14640b4107405c0fde04488d61ced29d34821572c8b84003f0f6"
+  },
+  "process_changes": {},
+  "normal_geometry_changes": false,
+  "material_boundary_changes": false,
+  "pose_changes": false,
+  "physical_qualification": "Pending physical print/finish confirmation"
+}

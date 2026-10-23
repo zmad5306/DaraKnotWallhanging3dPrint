@@ -66,6 +66,27 @@ def audit():
             resources={o.get('id') for o in model.find(C+'resources')}
             assert {i.get('objectid') for i in model.find(C+'build')}==resources
             for c in model.iter(C+'component'):assert c.get(P+'path').lstrip('/') in names
+            if title=='Knot':
+                skin=json.loads((ROOT/'release/knot-reinforcement-skin-r1/validation.json').read_text())
+                assert skin['project_sha256']==row['sha256']
+                assert skin['all_five_top_shell_layers_cross_former_modifier_boundary']
+                objects={o.get('id'):o for o in model.find(C+'resources')}
+                assets={};count=0
+                for obj in cfg.findall('object'):
+                    components={c.get('objectid'):c for c in objects[obj.get('id')].find(C+'components')}
+                    for part in obj.findall('part'):
+                        if props(part).get('name')!='Local solid screw reinforcement':continue
+                        assert part.get('subtype')=='modifier_part'
+                        assert props(part)['sparse_infill_density']=='100%'
+                        co=components[part.get('id')];asset=co.get(P+'path').lstrip('/')
+                        if asset not in assets:assets[asset]=ET.fromstring(z.read(asset))
+                        mesh=assets[asset].find(C+'resources').find(f"{C}object[@id='{part.get('id')}']").find(C+'mesh')
+                        t=list(map(float,co.get('transform').split()))
+                        assert t[:9]==[1,0,0,0,1,0,0,0,1]
+                        heights=[float(v.get('z'))+t[11] for v in mesh.find(C+'vertices')]
+                        assert abs(min(heights))<1e-6 and abs(max(heights)-12.4)<1e-6
+                        count+=1
+                assert count==skin['modifier_count']==50
             for i,plate in enumerate(cfg.findall('plate'),1):
                 assert props(plate)['plater_id']==str(i)
                 for ins in plate.findall('model_instance'):assert props(ins)['object_id'] in resources
@@ -73,6 +94,9 @@ def audit():
                     if k.endswith('_file') and v:assert v in names,(title,k,v)
                 if not sliced:continue
                 name=f'Metadata/plate_{i}.gcode';data=z.read(name)
+                if title=='Knot':
+                    expected=next(p for p in skin['plates'] if p['plate']==i)
+                    assert hashlib.sha256(data).hexdigest()==expected['gcode_sha256']
                 assert hashlib.md5(data).hexdigest().upper()==z.read(name+'.md5').decode().strip().upper()
                 config=data.decode(errors='replace')
                 for k in ['sparse_infill_density','sparse_infill_pattern','layer_height','wall_loops']:

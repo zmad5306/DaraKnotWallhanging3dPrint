@@ -4,7 +4,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 80h 43m | 2271.96 g |
+| Knot | 10 | 80h 32m | 2271.52 g |
 | Letter | 6 | 72h 17m | 1223.80 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | 4h 12m | 104.23 g |
@@ -24,7 +24,7 @@ Letter retains the user-saved six-plate consolidation, the veneer edge correctio
 - `cad-validation.json`: all seven OpenSCAD entry files parsed successfully. CAD is explicitly mesh-based, using the adjacent STL volumes. Original design development remains available separately; no parametric feature history is claimed for these snapshots.
 - `catalog.json`: current project, CAD and per-volume STL hashes, geometry bounds, settings, material regions, modifiers and placements. `gcode-sha256.json` identifies every stored plate toolpath.
 
-Knot and Sanding Block are byte-identical copies of their selected source projects. Letter now includes fresh slices after the veneer edge correction. Small Parts, Crate Clips, Photo Cut Aligner and Crate Stencils were freshly sliced. The local clip and guide layouts were preserved; the source projects were not overwritten. No printer job was sent.
+Knot now includes the screw-skin correction documented in `../knot-reinforcement-skin-r1/`: all 50 solid reinforcement modifiers stop at Z12.4 below the continuous top skin, with fresh slices on all ten plates. Normal/color meshes, poses and all print settings remain unchanged. Sanding Block is a byte-identical copy of its selected source project. Letter includes fresh slices after the veneer edge correction. Small Parts, Crate Clips, Photo Cut Aligner and Crate Stencils were freshly sliced. The local clip and guide layouts were preserved; the source projects were not overwritten. No printer job was sent.
 
 The quick audit is `python scripts/audit_root_projects.py`. It uses only Python's standard library and validates the tracked/root 3MF inventory, checksums, printer/process constants, plate assignments and G-code checksums. Deep mesh/pose comparisons are recorded against the same hashes. No physical validation is implied by these checks.
 

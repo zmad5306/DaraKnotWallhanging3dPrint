@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "2510f6f9bd0139155d7aea0603b0e24c3e5c9ac414f946abf9aadf1464f9c356",
+    "sha256": "8a76b70a1c1430d74a16ec06c9689827d33f3902afb1d7de90e4436072c251c3",
     "cad": "Knot.scad",
     "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
     "printer": "Bambu Lab A2L",
@@ -178,7 +178,7 @@
           },
           {
             "file": "Knot STL/F1-A2L-knot-volume-6.stl",
-            "sha256": "a93f9c53b5387aad41428f45945d83cd2ecc5bbfceca8b99b91db30cd80813c7",
+            "sha256": "fb7f0fe4b44eb22a0f9c3f28e70623c4cb462d638bb8445cc18eedb68b7776bb",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -195,13 +195,13 @@
               [
                 -22.06428815,
                 116.082413,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F1-A2L-knot-volume-7.stl",
-            "sha256": "4b9d62669677271328bdecbfc7283744b95d569bdc6428d15c19601e47af33cc",
+            "sha256": "ca3de6f213b870e3288744fd68d890875ada9cc21de74c0524f8f7775078eeb1",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -218,13 +218,13 @@
               [
                 -20.0,
                 84.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F1-A2L-knot-volume-8.stl",
-            "sha256": "3405b7d375e76c114c02c67ffa765f67242b331207313ee374b5e04ec2fa6aa7",
+            "sha256": "d4b4581b9d55515e75fff1b03dffd2b0d293a83fc78cc49b5fb967b8dbe9a936",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -241,13 +241,13 @@
               [
                 -253.0,
                 -3.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F1-A2L-knot-volume-9.stl",
-            "sha256": "20091f0dae8fd957eab969895bafb069ea020fc4746f8a626b88b45a57cf5b68",
+            "sha256": "08748b0c44a9f6df8fc192045aefe392139f2a60b9f56e982d8fe1788220868e",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -264,7 +264,7 @@
               [
                 -21.0,
                 -54.0,
-                17.0
+                12.4
               ]
             ]
           }
@@ -469,7 +469,7 @@
           },
           {
             "file": "Knot STL/F2-A2L-knot-volume-7.stl",
-            "sha256": "28ee9800c6370b763a58835948da3e433eb5bfd26f9a7830175a5132c24d0192",
+            "sha256": "136ac68907c99b5683095e32f5eab6b38641f9a362bc8258da0594ec05d65d03",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -486,13 +486,13 @@
               [
                 -254.0,
                 79.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F2-A2L-knot-volume-8.stl",
-            "sha256": "4a1c6a3a89f026dbd7bcf3244fcd653d8251428d850ce8db33d658558c5ae528",
+            "sha256": "bb60d310791b90a4dd2b21458ce8c0cf7ee08ab492fef9750bebfde226afe6a8",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -509,13 +509,13 @@
               [
                 -383.379486,
                 141.33027281,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F2-A2L-knot-volume-9.stl",
-            "sha256": "33ff5534c772d6fa48c63b9962e7384fcd2392af9969cdbe21a15c84c69cd5d8",
+            "sha256": "28c0c12d871003a7f5df29141de74d1035d4a3d7cc4885b39fc42447e57efc75",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -532,13 +532,13 @@
               [
                 -302.012238,
                 215.303818,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F2-A2L-knot-volume-10.stl",
-            "sha256": "6b34ecaf5760f2f6ae74bdd6ae1d9862e5684e9358e7c2fe7bdda1cd8a2675c5",
+            "sha256": "896e893495cc28f989d650300f6236801b7ff64b09c1201e3527eb33df6bf063",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -555,13 +555,13 @@
               [
                 -254.61524137,
                 149.055222,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F2-A2L-knot-volume-11.stl",
-            "sha256": "6ac7b333837835320f8e95cfd08299b75041fba09ba63b7b7405fbf337941ac5",
+            "sha256": "e40a88e7e28141addd65eb062cd165fa2af634c36b8fd05d70229f851b800053",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -578,7 +578,7 @@
               [
                 -322.81427,
                 83.0476532,
-                17.0
+                12.4
               ]
             ]
           }
@@ -783,7 +783,7 @@
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-7.stl",
-            "sha256": "1bd57da75438f5bf2ff68987cbb4be9b6f5255b21d30202dde8c5a15eb31262f",
+            "sha256": "b396844a5ed8302a640acaad3fceeb3274584a71a4c8d0c631bec623835605e4",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -800,13 +800,13 @@
               [
                 -69.082634,
                 356.534576,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-8.stl",
-            "sha256": "3e980e90973454e7c457c7cac7b89795d29d60e2c8b189bcfa23e4f742f4a052",
+            "sha256": "dac84d01a5cd8a1a396af662f668a6b07c5e71f46afa00ffebc001c97dd5fdf6",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -823,13 +823,13 @@
               [
                 -106.406158,
                 268.541656,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-9.stl",
-            "sha256": "00b9c81476f7b649f475405d11d71e7b6418a66a015ed1ae5d1529033b68f50b",
+            "sha256": "6e1f6b6f500e4503a15dfedacd9df82ba6c179da25dde387dd200bebf277e1bc",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -846,13 +846,13 @@
               [
                 -205.403702,
                 294.837097,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-10.stl",
-            "sha256": "8f5fc392dbb3beb4201783f0b7696895accd950eef88eb165769dce3f88fe349",
+            "sha256": "3fa4c91fd07ebd28551f395dcd97e3e8312b9fd83f3872fa00a59865beaf1834",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -869,13 +869,13 @@
               [
                 -146.592194,
                 387.903564,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-11.stl",
-            "sha256": "783f80078856275f3c8ef905d0e920ae122e6f76efc3ce32f3e904fb746b10aa",
+            "sha256": "bbd071e17e4c2fc3527ad62743ef09166da60083936123434b85cfabd1f74fd6",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -892,13 +892,13 @@
               [
                 -144.0,
                 221.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-12.stl",
-            "sha256": "b0cda2c97e0e7c7cfd5850e48d4f3d4e28a34a3fa8ba12d42bc56c9abffde069",
+            "sha256": "c14b3aa1fa869dd5cafb3b35f989affe4bae577d11847ca2c93a9ec6c0721d66",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -915,7 +915,7 @@
               [
                 -128.0,
                 221.0,
-                17.0
+                12.4
               ]
             ]
           }
@@ -1120,7 +1120,7 @@
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-7.stl",
-            "sha256": "91ecc9bfbafcc96c643f1560b15ad59c09105ac72a08554fb216f3a89e1785df",
+            "sha256": "961afc2e4ad7acc6a4ff7001e7fa18349d82248873fe9569d73c576f9427dbaf",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1137,13 +1137,13 @@
               [
                 167.418701,
                 268.503174,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-8.stl",
-            "sha256": "482a2ca9dd34feecd31a7918a61186ad8134c136bdee1c38cffa11001cc7af1b",
+            "sha256": "37201ef9fc82d728a58f82aad90ea34cff1b95b149c6311998bba11ea6f40dde",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1160,13 +1160,13 @@
               [
                 83.109024,
                 309.144775,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-9.stl",
-            "sha256": "4226eff54186d3d83670dead2b6b1b9295e0e457d7d5f6a67b686325900fbd56",
+            "sha256": "f29f68791718aff882326f378f3ad4e7a4f6680cb49de70d7bb01c69c59475b8",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1183,13 +1183,13 @@
               [
                 114.048927,
                 404.567291,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-10.stl",
-            "sha256": "247569b7558b18bfc07daca844a5ed6fadcabcc971d83bf6cea1fadf731e9738",
+            "sha256": "f4cacf8a8143de3ce64727ad09157bb219207f2ac8493f0e021750d66a3d1cbb",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1206,13 +1206,13 @@
               [
                 204.451981,
                 342.557037,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-11.stl",
-            "sha256": "5736af11e54130270dc72c2e91aa4f89478d00b239a7243a3410a63c1ff389e0",
+            "sha256": "429e9881f2a1a602047a3f1b07c4df77877d809f2c0b4cbf85cd37ea8e683340",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1229,13 +1229,13 @@
               [
                 127.0,
                 221.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-12.stl",
-            "sha256": "a5b56d2ede7dd164202ca16d34357c4c86c98228f0900b284e7f56f9b7dc20a0",
+            "sha256": "5cb8f2c26fddd560e726d64837fc39f4bbd36292890773c406d1310928244ff4",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1252,7 +1252,7 @@
               [
                 155.0,
                 221.0,
-                17.0
+                12.4
               ]
             ]
           }
@@ -1457,7 +1457,7 @@
           },
           {
             "file": "Knot STL/F5-A2L-knot-volume-7.stl",
-            "sha256": "2e2a768ce9a5f59a985ad1963274373deb2186552d1551fefc15e15192000b3a",
+            "sha256": "3bd913e9db25b3deee3d29c5b295ea71ead6b661b7079668c7e25bd595b01092",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1474,13 +1474,13 @@
               [
                 221.0,
                 156.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F5-A2L-knot-volume-8.stl",
-            "sha256": "641034ded7842f180e08e66e1b80a78dadbe5ce7cdcf10a468713ec4612932ba",
+            "sha256": "3a1ffd314d8a2775569fdb878ed488956e9a4274eed1468efd7f7a5c1ebb99b9",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1497,13 +1497,13 @@
               [
                 331.347595,
                 209.868179,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F5-A2L-knot-volume-9.stl",
-            "sha256": "117a9a9d263573af8b3a162f517867f8cfd766fce60c52a4bd1c3a2956ee58ea",
+            "sha256": "2a1e2f31965959e8adae9fb213773e1e4e51f8804393a98000edf251461b4e0c",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1520,13 +1520,13 @@
               [
                 402.155518,
                 126.274582,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F5-A2L-knot-volume-10.stl",
-            "sha256": "3eb4f6a2bfa2d75773f89e489a78405ca2a057dd5f8927275d704ff40df5b476",
+            "sha256": "80f1735c8e54b495d5ac19d9216377e2fde037fdd0d0037e2b2d7843220867a9",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1543,13 +1543,13 @@
               [
                 322.444244,
                 82.988266,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F5-A2L-knot-volume-11.stl",
-            "sha256": "9a5defa80e151ca3031238cabd373f23ff01d7aa5e7bfbfd349d5ded0e0a0ec8",
+            "sha256": "5cec4d2bc0f0a9fa950a970e19fbcf6113c58f45ab909e1f984eba6307fccb90",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1566,7 +1566,7 @@
               [
                 268.62755563,
                 155.285843,
-                17.0
+                12.4
               ]
             ]
           }
@@ -1743,7 +1743,7 @@
           },
           {
             "file": "Knot STL/F6-A2L-knot-volume-6.stl",
-            "sha256": "9b225b01aecc5482f0fc2b14f75e785b12026751b047a67eafe483b04bd9aa9d",
+            "sha256": "19c3a8b6e7fb94aab3ec1cb74b9121189ec4fd5ae9fe36b4d2e6d6b95afce79c",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1760,13 +1760,13 @@
               [
                 270.41974637,
                 19.777040200000002,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F6-A2L-knot-volume-7.stl",
-            "sha256": "07f57af1a41e07369a320705e11dfdb12f08e761907232e2befd6f413da2ddb2",
+            "sha256": "9d9e722a4b256111ea8e72a2fd728348f8fb13c45ac7217e9f8fad59f24839e0",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -1783,7 +1783,7 @@
               [
                 267.61663063000003,
                 -5.2558674,
-                17.0
+                12.4
               ]
             ]
           }
@@ -1988,7 +1988,7 @@
           },
           {
             "file": "Knot STL/F7-A2L-knot-volume-7.stl",
-            "sha256": "35090b1bae9b9acca2d574212b1caed5b35b8ff420b76696eca455f50e3f9c67",
+            "sha256": "6d03b97c5e4496fd04e92d089f907f7c225006a407dcb74c3f7ffbc3a118440e",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2005,13 +2005,13 @@
               [
                 221.0,
                 -140.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F7-A2L-knot-volume-8.stl",
-            "sha256": "04758c9adff260374e2a4b7228c0335d037119b2e6416b5a01661ab514bf17d5",
+            "sha256": "e3cb88e102d52a16f1fefc0f3610d1e5ca72eecfa3c4aa6838b074d2c7a7d042",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2028,13 +2028,13 @@
               [
                 268.55455763000003,
                 -139.465546,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F7-A2L-knot-volume-9.stl",
-            "sha256": "cf7a8489afe868d278c095a40cbc85fb4f6c2bea5a781a2b7162d9f4cbf6b330",
+            "sha256": "f9070eb22c25012ce183d95cf0141d1c744097a22845760be6f22d2ad0e2cb4a",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2051,13 +2051,13 @@
               [
                 323.311218,
                 -69.0939789,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F7-A2L-knot-volume-10.stl",
-            "sha256": "9ffc69a8dc0e7fef99edbfe8efcb49dace5349ec5f01778d78c63412266b4190",
+            "sha256": "ab6e4a0bcd744fa617c206b2f45f075c7a5deb350a3a4170db66f2706fc868b6",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2074,13 +2074,13 @@
               [
                 401.641968,
                 -113.759926,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F7-A2L-knot-volume-11.stl",
-            "sha256": "87ffcb7a419785701c48de023ce498eb8e1b4e51bb59a28792899878107dc096",
+            "sha256": "620490b489fea22c4a21106ed317a3afbe130fdb38853937d12df67dd08e924a",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2097,7 +2097,7 @@
               [
                 329.597961,
                 -196.640549,
-                17.0
+                12.4
               ]
             ]
           }
@@ -2302,7 +2302,7 @@
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-7.stl",
-            "sha256": "badfd01b428940156340fbde437f4ab1fcd9decdf0403c1ee8b30c0cea679eb8",
+            "sha256": "9e5bec3818136509a5e91a3e7fb589965f422225e4aa4ff8e32339d4b0f0fa05",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2319,13 +2319,13 @@
               [
                 143.453125,
                 -254.48735863,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-8.stl",
-            "sha256": "1d26ed28b9bd7ff499aedb7b76c580c5241eae985ba3a5eb2cc453b59450c5db",
+            "sha256": "d701e2edc14d67b023917e3331b1935be2f1b498e186e3c1231f6129d70bc1b5",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2342,13 +2342,13 @@
               [
                 218.411911,
                 -288.878601,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-9.stl",
-            "sha256": "0905bc044abab56b8d46519e0b9dc2cb1bd8ac81d67e9923bbe12dc075badb4a",
+            "sha256": "1898b2f1568d2ea201a551e3d560ca9cebe487a60e4e0027f409b3d074e29a1c",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2365,13 +2365,13 @@
               [
                 138.176697,
                 -384.545685,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-10.stl",
-            "sha256": "9b32a209a193941072a48ce59810a900b711bd76b5e676c948ecc0d61245b2bb",
+            "sha256": "40e240b1774450da0d3a0e1ba68da12bdcc768e54a99a87b52bc6966c3e4c8c5",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2388,13 +2388,13 @@
               [
                 83.0993729,
                 -305.556885,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-11.stl",
-            "sha256": "97edeceae0c937fa36b79e6970ce8b30a06f78a47ebc89bb2097ee37536fe08d",
+            "sha256": "3c09fe1552dbc5e5e1b555e91fd3ef12263753e890a50c75658ef821dc9c0d02",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2411,13 +2411,13 @@
               [
                 123.0,
                 -207.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-12.stl",
-            "sha256": "df0ce92c8adda82e321c385d8f71fe5387e6d3e8a1fabb9dfd162fb78e07bed1",
+            "sha256": "caa6693ef268c19534530e77a7742c8b8bd1552ca639e28ab7c033324620642e",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2434,7 +2434,7 @@
               [
                 171.0,
                 -207.0,
-                17.0
+                12.4
               ]
             ]
           }
@@ -2667,7 +2667,7 @@
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-8.stl",
-            "sha256": "c8088e2474ae85b209dc9ed931f926df6a3ea8f312fb5d753f6389b5b0724912",
+            "sha256": "fa4df8ad4ed825c927e6ebe5504f884895061806eb42406fe29e871aafbc147b",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2684,13 +2684,13 @@
               [
                 -153.224152,
                 -254.50334962999997,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-9.stl",
-            "sha256": "49845a8741979fd1ba8559d38eb76526d1205db1f48935e2b67f9192321baf29",
+            "sha256": "a33e1d354974e26ae6fed9c593ada8749e757b4a23819a1bd609662c527ca094",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2707,13 +2707,13 @@
               [
                 -69.1154861,
                 -295.71463,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-10.stl",
-            "sha256": "394ef86ccc057fe151ba48f798352b88cc6a0c9af99526f5a66d85dd859d4e59",
+            "sha256": "0de122f8c77cb317cc379573d9dfc73e55dc034f32b76b530fefb7c265176839",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2730,13 +2730,13 @@
               [
                 -99.433182,
                 -390.634094,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-11.stl",
-            "sha256": "2c288938ad63d25014bf2085d1f2b564783c04f117428375a6af905941a25812",
+            "sha256": "45730a097a17179184ecd1918569c47e3b276e0e6169ee66d04905458daef844",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2753,13 +2753,13 @@
               [
                 -190.283646,
                 -328.804474,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-12.stl",
-            "sha256": "b944cdff2c1f60716ec9bae04bb8a2c9d2ac9a80966394cefa1854e96231f122",
+            "sha256": "99a7faca4597a4b82b6a81ac99292219c7c5e861ca37f2ac503bf501a0d4159a",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2776,13 +2776,13 @@
               [
                 -169.0,
                 -207.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-13.stl",
-            "sha256": "b591529745290539fced6c03f9ae8b0547c783eb9a607e0848de1a7741192cff",
+            "sha256": "1b8f524cc101ac586f3bdaed66b3e85ecf1ebdc3468fbce39d5c5528ecf1eacf",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -2799,7 +2799,7 @@
               [
                 -139.0,
                 -207.0,
-                17.0
+                12.4
               ]
             ]
           }
@@ -3004,7 +3004,7 @@
           },
           {
             "file": "Knot STL/F10-A2L-knot-volume-7.stl",
-            "sha256": "d7139b3bc496d9c0deab9d3451ab89295ac64f4b0d39ddd8d6108f30a5d767fd",
+            "sha256": "f7e09ce85cd80fd3c1f2329ac22eaf7c6b55df308af5e9d8f3931a002e10c162",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -3021,13 +3021,13 @@
               [
                 -205.0,
                 -162.0,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F10-A2L-knot-volume-8.stl",
-            "sha256": "bc5c4f2114af59a8c81cf8c91835564ecb52842a2877596e036ebde62a098165",
+            "sha256": "7cb06cc609ee798fdf81c277d259645d37311b01c4645df20eea83f2d09a2cd7",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -3044,13 +3044,13 @@
               [
                 -342.757996,
                 -69.0216827,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F10-A2L-knot-volume-9.stl",
-            "sha256": "28328af25a4c60a6d406a1529b767c85f460585e55003bab4aa332b6ff43b6ed",
+            "sha256": "e15e3c9cb2e73e1ee4f5e60b0bf000108f9698cd86611435aaeadf2d03f7f101",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -3067,13 +3067,13 @@
               [
                 -254.55187999999998,
                 -101.94632,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F10-A2L-knot-volume-10.stl",
-            "sha256": "f5616f475db2c211950f78fdbabb24eba9e74630f82f2ef17f6d0c552e7d30b2",
+            "sha256": "bd84d8c3ac63a52fa5737e069553dfea28764398149a04c6ed1b67084ed355b8",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -3090,13 +3090,13 @@
               [
                 -293.726746,
                 -203.342056,
-                17.0
+                12.4
               ]
             ]
           },
           {
             "file": "Knot STL/F10-A2L-knot-volume-11.stl",
-            "sha256": "c19b6849c6105f4e85a014ce31fe670643a8aab396fdf3107868914a42a37ce7",
+            "sha256": "1b503da3b9e97a0621cad2d503a91a1d173c8b4d10304805f1acd713bd1c288f",
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
@@ -3113,14 +3113,15 @@
               [
                 -373.959564,
                 -146.435349,
-                17.0
+                12.4
               ]
             ]
           }
         ]
       }
     ],
-    "unique_stl": 109
+    "unique_stl": 109,
+    "validation": "release/knot-reinforcement-skin-r1/validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",

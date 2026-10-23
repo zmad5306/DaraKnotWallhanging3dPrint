@@ -54,6 +54,17 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved knot screw-skin correction, 2026-10-23:** the user reported visible
+  circles over the screw reinforcement and requested correction, commit and
+  push. In `Knot.3mf` only, all 50 local solid screw modifiers end at **Z12.4 mm**
+  instead of Z17.0, below the nominal Z13.5 show face. Keep their XY geometry,
+  lower Z0 extent and **100% infill**. Preserve the five solid top layers,
+  structural 8% gyroid, all actual screw holes, normal/color meshes, support
+  paint, poses and every process/material setting. Do not regenerate the old
+  full-height modifiers. All ten plates have fresh native slices; matching
+  modifier STLs remain referenced by `Knot.scad`. Evidence is in
+  `release/knot-reinforcement-skin-r1/`. Physical surface finish remains pending.
+
 - **Approved wall-nub cleanup, 2026-10-23:** remove only obsolete triangular
   connection bases from the current main project and ERYONE sample, then
   commit/push. `Letter.3mf` V1/V2/V3 have 25/23/34 bases trimmed flush to the

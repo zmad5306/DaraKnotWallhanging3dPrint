@@ -1,9 +1,9 @@
 {
   "error_string": "Success.",
-  "export_time": 3657,
+  "export_time": 3682,
   "layer_height": 0.20000000298023224,
   "plate_index": 0,
-  "prepare_time": 1104,
+  "prepare_time": 1545,
   "return_code": 0,
   "sliced_plates": [
     {
@@ -193,33 +193,33 @@
     },
     {
       "feature_type_times": {
-        "Custom": 402.6077575683594,
+        "Custom": 402.6080627441406,
         "Flush": 11.0,
-        "Gap infill": 4379.01806640625,
-        "Inner wall": 17293.615234375,
-        "Internal solid infill": 4009.196044921875,
-        "Outer wall": 43915.89453125,
+        "Gap infill": 4387.13671875,
+        "Inner wall": 17286.65625,
+        "Internal solid infill": 4002.55078125,
+        "Outer wall": 43904.046875,
         "Overhang wall": 1.3333427906036377,
-        "Support": 745.1156616210938,
+        "Support": 747.0288696289062,
         "Top surface": 67.59745025634766,
-        "Travel": 7422.314453125,
-        "Undefined": 7422.314453125
+        "Travel": 7445.15380859375,
+        "Undefined": 7445.15380859375
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFL96",
           "id": 3,
-          "main_used_g": 332.083740234375,
-          "total_used_g": 332.083740234375
+          "main_used_g": 332.0531311035156,
+          "total_used_g": 332.05316162109375
         }
       ],
-      "generate_support_material_time": 984,
+      "generate_support_material_time": 872,
       "id": 4,
-      "infill_time": 560,
+      "infill_time": 543,
       "layer_filament_change": 0,
-      "main_predication": 77822.3984375,
-      "make_perimeters_time": 846,
+      "main_predication": 77827.640625,
+      "make_perimeters_time": 792,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -233,44 +233,44 @@
           },
           "id": 25,
           "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
-          "triangle_count": 496630
+          "triangle_count": 496796
         }
       ],
-      "sliced_time": 8474,
-      "sliced_time_with_cache": 5706,
-      "total_predication": 78247.0078125,
-      "triangle_count": 496630,
+      "sliced_time": 7928,
+      "sliced_time_with_cache": 5380,
+      "total_predication": 78252.25,
+      "triangle_count": 496796,
       "warning_message": ""
     },
     {
       "feature_type_times": {
-        "Custom": 402.6486511230469,
+        "Custom": 402.6402282714844,
         "Flush": 11.0,
-        "Gap infill": 4143.45947265625,
-        "Inner wall": 16379.6748046875,
-        "Internal solid infill": 3624.61962890625,
-        "Outer wall": 42423.453125,
-        "Overhang wall": 1.2528119087219238,
-        "Support": 843.8310546875,
-        "Top surface": 68.50055694580078,
-        "Travel": 7792.052734375,
-        "Undefined": 7792.052734375
+        "Gap infill": 4150.37841796875,
+        "Inner wall": 16398.95703125,
+        "Internal solid infill": 3622.07373046875,
+        "Outer wall": 42341.38671875,
+        "Overhang wall": 1.6028120517730713,
+        "Support": 851.3060913085938,
+        "Top surface": 68.50505828857422,
+        "Travel": 7537.14990234375,
+        "Undefined": 7537.14990234375
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFL96",
           "id": 3,
-          "main_used_g": 317.2326354980469,
-          "total_used_g": 317.232666015625
+          "main_used_g": 317.2191162109375,
+          "total_used_g": 317.2191467285156
         }
       ],
-      "generate_support_material_time": 948,
+      "generate_support_material_time": 859,
       "id": 5,
-      "infill_time": 473,
+      "infill_time": 460,
       "layer_filament_change": 0,
-      "main_predication": 75254.8515625,
-      "make_perimeters_time": 1043,
+      "main_predication": 74949.4921875,
+      "make_perimeters_time": 947,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -284,45 +284,45 @@
           },
           "id": 29,
           "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
-          "triangle_count": 467542
+          "triangle_count": 467360
         }
       ],
-      "sliced_time": 8414,
-      "sliced_time_with_cache": 5633,
-      "total_predication": 75679.5,
-      "triangle_count": 467542,
+      "sliced_time": 7994,
+      "sliced_time_with_cache": 5432,
+      "total_predication": 75374.1328125,
+      "triangle_count": 467360,
       "warning_message": ""
     },
     {
       "feature_type_times": {
-        "Custom": 402.80596923828125,
+        "Custom": 402.8057861328125,
         "Flush": 11.0,
-        "Gap infill": 3795.415283203125,
-        "Inner wall": 13800.03125,
-        "Internal solid infill": 3822.329833984375,
-        "Outer wall": 31789.626953125,
-        "Overhang wall": 1.6789671182632446,
-        "Sparse infill": 3.966426372528076,
-        "Support": 1694.3450927734375,
-        "Top surface": 67.28956604003906,
-        "Travel": 7108.35302734375,
-        "Undefined": 7108.35302734375
+        "Gap infill": 3805.01513671875,
+        "Inner wall": 13811.33984375,
+        "Internal solid infill": 3823.494140625,
+        "Outer wall": 31790.42578125,
+        "Overhang wall": 1.8956799507141113,
+        "Sparse infill": 4.324313163757324,
+        "Support": 1766.2708740234375,
+        "Top surface": 67.24274444580078,
+        "Travel": 7200.59814453125,
+        "Undefined": 7200.59814453125
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFL96",
           "id": 3,
-          "main_used_g": 254.64382934570312,
-          "total_used_g": 254.64382934570312
+          "main_used_g": 254.84213256835938,
+          "total_used_g": 254.84213256835938
         }
       ],
-      "generate_support_material_time": 1557,
+      "generate_support_material_time": 1598,
       "id": 6,
-      "infill_time": 511,
+      "infill_time": 509,
       "layer_filament_change": 0,
-      "main_predication": 62040.1484375,
-      "make_perimeters_time": 1200,
+      "main_predication": 62228.296875,
+      "make_perimeters_time": 1284,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -336,13 +336,13 @@
           },
           "id": 33,
           "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
-          "triangle_count": 498626
+          "triangle_count": 498664
         }
       ],
-      "sliced_time": 9641,
-      "sliced_time_with_cache": 6056,
-      "total_predication": 62464.953125,
-      "triangle_count": 498626,
+      "sliced_time": 9828,
+      "sliced_time_with_cache": 6090,
+      "total_predication": 62653.1015625,
+      "triangle_count": 498664,
       "warning_message": ""
     }
   ],

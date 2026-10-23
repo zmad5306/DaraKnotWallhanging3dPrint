@@ -1,0 +1,158 @@
+{
+  "main_sha256": "d12cfb8b76a3aac2bdc667a0385896fc4ce2e770557d226551de5bd45b09a8f5",
+  "sample_sha256": "b82b2356c92c14640b4107405c0fde04488d61ced29d34821572c8b84003f0f6",
+  "protected_core_mesh_assets": [
+    "3D/3dmodel.model",
+    "3D/Objects/object_58.model",
+    "3D/Objects/object_57.model",
+    "3D/Objects/object_59.model",
+    "3D/Objects/object_56.model",
+    "3D/Objects/object_55.model"
+  ],
+  "core_plate_artifacts_byte_preserved": true,
+  "native_geometry_and_settings_comparison": {
+    "objects": 8,
+    "max_vertex_difference_mm": 7.832999983747868e-06,
+    "settings_changes": {},
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": [
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -402.44822424780273 0 1 0 209.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -536.59763524780271 0 1 0 278.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -90.192860585668939 0 1 0 324.24723871972657 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -120.25714778566893 0 1 0 432.3296517197266 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -786 0 1 0 213 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -1048 0 1 0 284 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -84 0 1 0 228 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -112 0 1 0 304 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -783 0 1 0 -33 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -1044 0 1 0 -44 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 449.38136780073734 0 1 0 182.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 599.17515980073733 0 1 0 242.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 639 0 1 0 444 0 0 1 25.5 0 0 0 1",
+            "1 0 0 852 0 1 0 592 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 787.25925402832036 0 1 0 35.331120204730226 0 0 1 25.5 0 0 0 1",
+            "1 0 0 1049.6790080283204 0 1 0 47.108160204730225 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 778.84987692480468 0 1 0 -39.767602081231686 0 0 1 25.5 0 0 0 1",
+            "1 0 0 1038.4664999248048 0 1 0 -53.023469481231686 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -16.541115753601076 0 1 0 -224.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -22.054821003601077 0 1 0 -298.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -87 0 1 0 -186 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -116 0 1 0 -248 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -621.30702269824224 0 1 0 -302.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -828.40936369824226 0 1 0 -402.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -639 0 1 0 -510 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -852 0 1 0 -680 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 609.93221560986331 0 1 0 -329.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 813.24295260986332 0 1 0 -438.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 639 0 1 0 -444 0 0 1 25.5 0 0 0 1",
+            "1 0 0 852 0 1 0 -592 0 0 1 34 0 0 0 1"
+          ]
+        }
+      }
+    ]
+  },
+  "physical_validation_pending": true
+}

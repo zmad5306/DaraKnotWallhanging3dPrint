@@ -5,14 +5,14 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
 | Knot | 10 | 80h 43m | 2271.96 g |
-| Letter | 6 | 72h 19m | 1223.65 g |
+| Letter | 6 | 72h 17m | 1223.80 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | 4h 12m | 104.23 g |
 | Small Parts - Photo Cut Aligner | 1 | 0h 33m | 6.66 g |
 | Small Parts - Sanding Block PLA | 1 | 4h 20m | 116.65 g |
 | Small Parts - Crate Stencils | 6 | 5h 10m | 162.47 g |
 
-Letter retains the user-saved six-plate consolidation and now contains fresh slices after the approved veneer edge correction. Current hashes and checks are in `../veneer-edge-r7/`; `letter-consolidation.json` records the earlier unsliced input. The veneers and all supports total 903.96 g. The requested ERYONE r4 finish sample is tracked in `../samples/` and declared in its catalog. All values are slicer estimates, not observed print times.
+Letter retains the user-saved six-plate consolidation, the veneer edge correction and the approved wall-nub cleanup. Current hashes/checks are in `../veneer-nub-cleanup-r8/`; `../veneer-edge-r7/` records the edge correction before cleanup. Original core-plate toolpaths are preserved. The veneers and all supports total 904.11 g. The requested ERYONE r4 finish sample is tracked in `../samples/` and declared in its catalog. All values are slicer estimates, not observed print times.
 
 ## Preservation evidence
 

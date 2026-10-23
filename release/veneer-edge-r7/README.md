@@ -1,5 +1,8 @@
 # Veneer perimeter correction — October 22, 2026
 
+Historical evidence for the pre-cleanup meshes. The subsequent approved wall-nub
+cleanup and current hashes are in `../veneer-nub-cleanup-r8/`.
+
 Current files: root `Letter.3mf` and
 `release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf`.
 The sample corrects the exact supplied Desktop r3 file, preserving its crop,

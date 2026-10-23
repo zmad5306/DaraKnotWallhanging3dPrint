@@ -3124,7 +3124,7 @@
   },
   "Letter": {
     "project": "Letter.3mf",
-    "sha256": "ada67ba6b55a38c00599f74d49a7502ee35155bb085fbfd026d979e49ed407ec",
+    "sha256": "d12cfb8b76a3aac2bdc667a0385896fc4ce2e770557d226551de5bd45b09a8f5",
     "cad": "Letter.scad",
     "cad_sha256": "86022a638a92d4521aaad18b6252f609b05b4ab5468ce43f3c5bb3c0e23f3060",
     "printer": "Bambu Lab A2L",
@@ -3741,7 +3741,7 @@
         "parts": [
           {
             "file": "Letter STL/V1-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
-            "sha256": "2751f1bcaeb1acdb8a978446f6155c75783642729f1e9cecf8d18fbdccc2e3c0",
+            "sha256": "3abf46a2a73a8aeae48dfe9986c346390dc5440eed90c14503d6cf0d177171c9",
             "subtype": "normal_part",
             "settings": {
               "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
@@ -3753,7 +3753,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.66925048828125"
             },
-            "faces": 496630,
+            "faces": 496796,
             "bounds": [
               [
                 -106.232162,
@@ -3815,7 +3815,7 @@
         "parts": [
           {
             "file": "Letter STL/V2-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
-            "sha256": "69c015c5b4c25dc4b37af4e0391625739697b2843c3d11fe243e895e2fc38715",
+            "sha256": "def854ea6bbc862e82bdd7023a4216298d773ea37b34bb5dcf48e8bb1f99c998",
             "subtype": "normal_part",
             "settings": {
               "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
@@ -3827,7 +3827,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.67436218261719"
             },
-            "faces": 467542,
+            "faces": 467360,
             "bounds": [
               [
                 -106.235886,
@@ -3889,7 +3889,7 @@
         "parts": [
           {
             "file": "Letter STL/V3-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
-            "sha256": "85c99971eed23f9a0465ad6d98ed29878a91a1239c638dd2bf7c8e4a903a304c",
+            "sha256": "850fb8e8aabe96199f6700917fe53e38f39deb9d7a5bebabcdc3a4ed84150962",
             "subtype": "normal_part",
             "settings": {
               "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
@@ -3901,7 +3901,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.67436218261719"
             },
-            "faces": 498626,
+            "faces": 498664,
             "bounds": [
               [
                 -106.235733,

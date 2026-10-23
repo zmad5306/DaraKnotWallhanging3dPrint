@@ -54,6 +54,16 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved wall-nub cleanup, 2026-10-23:** remove only obsolete triangular
+  connection bases from the current main project and ERYONE sample, then
+  commit/push. `Letter.3mf` V1/V2/V3 have 25/23/34 bases trimmed flush to the
+  existing inclined wall at assembly Z4.4; the current ERYONE r4 sample has 10.
+  Keep filenames, all active connections, restored veneer edges, wall thickness,
+  end bands, settings and poses unchanged. Preserve core plate 1–3 meshes and
+  stored toolpaths exactly. Current cleanup hashes/evidence are recorded in
+  `release/veneer-nub-cleanup-r8/`; r7 evidence records the pre-cleanup revision.
+  Physical qualification remains pending.
+
 - **Approved veneer edge correction, 2026-10-22:** the user requested correction
   of both the main project and the supplied Desktop ERYONE r3 sample, followed
   by commit/push. Current `Letter.3mf` retains the six-plate consolidation and

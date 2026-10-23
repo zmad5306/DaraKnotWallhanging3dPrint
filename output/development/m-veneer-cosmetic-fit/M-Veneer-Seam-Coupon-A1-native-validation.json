@@ -1,0 +1,307 @@
+{
+  "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "staged_sha256": "57492d12c3eec37c50b895462d75c74d72b12499cbd75b93b8826fa9d8bc7e3e",
+  "native_project_sha256": "d7ad3050d29d8d82687e3be6cdb13ace8ee56c97d693110a518dd03b30159c4f",
+  "native_return_code": 0,
+  "plate_count": 4,
+  "native_roundtrip_geometry": [
+    {
+      "name": "Flat core coupon C4",
+      "max_native_vertex_or_pose_error_mm": 1.544386557684124e-05
+    },
+    {
+      "name": "Veneer coupon 1 - fused carrier",
+      "max_native_vertex_or_pose_error_mm": 1.3140860005057485e-05
+    },
+    {
+      "name": "Veneer coupon 2 - fused carrier",
+      "max_native_vertex_or_pose_error_mm": 1.5458504631888993e-05
+    },
+    {
+      "name": "Smooth crown caul - soft liner and release film",
+      "max_native_vertex_or_pose_error_mm": 1.5199349423199405e-05
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 12547,
+      "features": {
+        "Brim": 51,
+        "Outer wall": 252,
+        "Inner wall": 683,
+        "Bottom surface": 344,
+        "Internal solid infill": 2902,
+        "Sparse infill": 7594,
+        "Floating vertical shell": 6,
+        "Bridge": 290,
+        "Top surface": 322,
+        "Gap infill": 103
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          92.214,
+          84.214
+        ],
+        [
+          163.786,
+          135.786
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          91.964,
+          83.964
+        ],
+        [
+          164.036,
+          136.036
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 83.964,
+      "plate": 1,
+      "gcode_sha256": "a5bdc57ed63974abb59979a4179036cc055ceae0cebb01d65ef5addacfe6e306",
+      "header": [
+        "; model printing time: 38m 40s; total estimated time: 45m 17s",
+        "; total layer number: 45",
+        "; total filament length [mm] : 4654.19",
+        "; total filament volume [cm^3] : 11194.64",
+        "; total filament weight [g] : 13.88",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 9.00",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 84961,
+      "features": {
+        "Support": 43485,
+        "Brim": 465,
+        "Outer wall": 9221,
+        "Inner wall": 13345,
+        "Gap infill": 1365,
+        "Internal solid infill": 16023,
+        "Top surface": 276,
+        "Overhang wall": 6,
+        "Sparse infill": 478,
+        "Floating vertical shell": 297
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          98.472,
+          99.61326501529179
+        ],
+        [
+          154.3110871791916,
+          156.86731462402253
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          98.222,
+          99.36326501529179
+        ],
+        [
+          154.5610871791916,
+          157.11731462402253
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 98.222,
+      "plate": 2,
+      "gcode_sha256": "4a533fd016b76140bf4d5320fec7d8ae9d91a08d5bdd5a6c4001ab6dcb160377",
+      "header": [
+        "; model printing time: 2h 1m 56s; total estimated time: 2h 8m 33s",
+        "; total layer number: 309",
+        "; total filament length [mm] : 6094.93",
+        "; total filament volume [cm^3] : 14660.02",
+        "; total filament weight [g] : 18.18",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 62.00",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ],
+      "bonded_fin_tooth_toolpath_check": {
+        "bond_probes_checked": 14,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09438567073912907,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      }
+    },
+    {
+      "extrusion_moves_checked": 83674,
+      "features": {
+        "Support": 42097,
+        "Brim": 532,
+        "Outer wall": 9459,
+        "Inner wall": 13415,
+        "Gap infill": 2007,
+        "Internal solid infill": 15882,
+        "Top surface": 268,
+        "Overhang wall": 14
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          98.888,
+          98.94014043331615
+        ],
+        [
+          152.9968527426547,
+          157.71278357832531
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          98.638,
+          98.69014043331615
+        ],
+        [
+          153.2468527426547,
+          157.96278357832531
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 98.03721642167469,
+      "plate": 3,
+      "gcode_sha256": "70415ac0878cbbcb464b2d4309c81831630f14e7fb3b8e40108ba1d6c7a74d88",
+      "header": [
+        "; model printing time: 2h 1m 43s; total estimated time: 2h 8m 20s",
+        "; total layer number: 310",
+        "; total filament length [mm] : 5951.67",
+        "; total filament volume [cm^3] : 14315.45",
+        "; total filament weight [g] : 17.75",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 62.00",
+        "; filament: 3",
+        "; support_material_on_wipe_tower: 0"
+      ],
+      "bonded_fin_tooth_toolpath_check": {
+        "bond_probes_checked": 14,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09220044272697159,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      }
+    },
+    {
+      "extrusion_moves_checked": 6260,
+      "features": {
+        "Inner wall": 275,
+        "Outer wall": 109,
+        "Bottom surface": 330,
+        "Internal solid infill": 3921,
+        "Sparse infill": 238,
+        "Bridge": 188,
+        "Floating vertical shell": 2,
+        "Gap infill": 346,
+        "Top surface": 851
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          93.21,
+          103.21
+        ],
+        [
+          162.79,
+          152.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          93.0,
+          103.0
+        ],
+        [
+          163.0,
+          153.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 93.0,
+      "plate": 4,
+      "gcode_sha256": "0b917043a6cb1d6eefbbf8289fb7ec2f67017ec2feda14c4468d658d689ef3b0",
+      "header": [
+        "; model printing time: 22m 16s; total estimated time: 28m 49s",
+        "; total layer number: 20",
+        "; total filament length [mm] : 2982.12",
+        "; total filament volume [cm^3] : 7172.84",
+        "; total filament weight [g] : 8.89",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 4.20",
+        "; filament: 1",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    }
+  ],
+  "physical_fit_finish_and_support_anchor_test_pending": true,
+  "coupon_connected_components": {
+    "editable_source": [
+      {
+        "name": "Flat core coupon C4",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Veneer coupon 1 - fused carrier",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Veneer coupon 2 - fused carrier",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Smooth crown caul - soft liner and release film",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      }
+    ],
+    "native_export": [
+      {
+        "name": "Flat core coupon C4",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Veneer coupon 1 - fused carrier",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Veneer coupon 2 - fused carrier",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Smooth crown caul - soft liner and release film",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      }
+    ]
+  },
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 1,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "M-Veneer-Seam-Coupon-A1.3mf"
+    },
+    "native": {
+      "body_count": 1,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
+  }
+}

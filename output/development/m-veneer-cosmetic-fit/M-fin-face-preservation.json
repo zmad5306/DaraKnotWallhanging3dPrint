@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "veneer": "V1",
+      "maximum_show_face_vertex_error_mm": 1.0645257676897991e-05
+    },
+    {
+      "veneer": "V2",
+      "maximum_show_face_vertex_error_mm": 9.479721729327647e-06
+    },
+    {
+      "veneer": "V3",
+      "maximum_show_face_vertex_error_mm": 1.0975085169279502e-05
+    },
+    {
+      "veneer": "V4",
+      "maximum_show_face_vertex_error_mm": 1.0744257917325905e-05
+    },
+    {
+      "veneer": "V5",
+      "maximum_show_face_vertex_error_mm": 1.0204052794967987e-05
+    },
+    {
+      "veneer": "V6",
+      "maximum_show_face_vertex_error_mm": 1.0768676479134997e-05
+    }
+  ],
+  "all_show_faces_preserved": true,
+  "geometry_plan_sha256": "d964facda9b26e9ae04efb25d2564d40f7c47ef8829665a60159d03da19f0ec6",
+  "guard_patch_preserves_all_material_above_z_mm": 1.7
+}

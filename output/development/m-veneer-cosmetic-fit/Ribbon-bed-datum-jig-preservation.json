@@ -1,0 +1,25 @@
+{
+  "baseline_project_sha256": "5553aac2fa02f82173714f13bef04f4bddc40430ee296c3444625da6d192df2e",
+  "retained_from_commit": "0e2943bda0a103360e9d0b7ec71a73cd5e10a41b",
+  "project_sha256": "43ebc6952e7cf76dd21d9dff0f9a3e363b0b2d306038e8546d57b5f988eb032e",
+  "plates": [
+    {
+      "plate": 2,
+      "objects": [
+        "Show-face glue jig - use release film"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_2.png": "b5685fc53bcb86b961007a6d251747f64a0c83d2c51de645f2edf920e6b3229e",
+        "Metadata/plate_2_small.png": "eb90c510ab660d9ba228e25f3bd78799762bad338306bf2ebbb420cf87bc7c21",
+        "Metadata/plate_no_light_2.png": "7e091ac95a4cc88f6b00e14b00d84bc54ef2ecb85fd76b5cbf80f079f30aa8e3",
+        "Metadata/top_2.png": "c70addfdfe745b12b2ffcb6b59c60bf86d7de8e0166bc5b78f6c9ca6064845d6",
+        "Metadata/pick_2.png": "cfd7cb2b3b9670179fa4feb9a98d69a4c4b01bdc70b3e8b5890da95377b0e560",
+        "Metadata/plate_2.json": "5b24302e8cac471b0191180133366192bf6aba9d702e1fca7da801a45197023d",
+        "Metadata/plate_2.gcode.md5": "de47b46a4b42335cb3647616988ce9c1213ee99f25b760bcb91e04cb2b201dc2",
+        "Metadata/plate_2.gcode": "89275d3ef3bfed984d54b18acc3376e06ddb7d329355a82e89a121d8cb09f32c"
+      },
+      "gcode_byte_identical": true
+    }
+  ]
+}

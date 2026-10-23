@@ -1,0 +1,41 @@
+{
+  "project": "Letter.3mf",
+  "sha256": "f81c8dfba7787ff73e17fdaf88156eea9ea08b373b95c083602b9b49197a62d7",
+  "plates": 6,
+  "stored_gcode_count": 0,
+  "status": "User-saved consolidation; slicing required.",
+  "plate_objects": [
+    {
+      "name": "C1 A2L flat M core",
+      "plate": 1
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "plate": 2
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "plate": 3
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "plate": 3
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "plate": 3
+    },
+    {
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+      "plate": 4
+    },
+    {
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+      "plate": 5
+    },
+    {
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+      "plate": 6
+    }
+  ]
+}

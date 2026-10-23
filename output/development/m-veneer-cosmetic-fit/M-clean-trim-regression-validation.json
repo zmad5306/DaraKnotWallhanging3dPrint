@@ -1,0 +1,46 @@
+{
+  "baseline_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
+  "negative_control_and_front_preservation": [
+    {
+      "project": "M-Veneer-Glue-Coupon-A1",
+      "panel": 1,
+      "show_face_difference_mm3": 1.711803337912961e-08,
+      "old_shoe_cutter_obstruction_mm3": 0.43200000100802627,
+      "new_rib_cutter_obstruction_mm3": 2.6745976210103515e-09
+    },
+    {
+      "project": "M-Veneer-Seam-Coupon-A1",
+      "panel": 1,
+      "show_face_difference_mm3": 5.309124244200695e-09,
+      "old_shoe_cutter_obstruction_mm3": 0.43200000101036884,
+      "new_rib_cutter_obstruction_mm3": 2.0627339473133997e-09
+    },
+    {
+      "project": "M-Veneer-Seam-Coupon-A1",
+      "panel": 2,
+      "show_face_difference_mm3": 3.5428842540937328e-09,
+      "old_shoe_cutter_obstruction_mm3": 0.43200000100182073,
+      "new_rib_cutter_obstruction_mm3": 2.189590451698647e-09
+    }
+  ],
+  "unchanged_structural_coupons": [
+    {
+      "name": "M glue core C1",
+      "geometry_settings_and_pose_exact": true
+    },
+    {
+      "name": "M glue core C4",
+      "geometry_settings_and_pose_exact": true
+    },
+    {
+      "name": "M seam core C4",
+      "geometry_settings_and_pose_exact": true
+    }
+  ],
+  "preserved_complete_plates": [
+    1,
+    3
+  ],
+  "project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+  "physical_cutting_and_finish_confirmation_pending": true
+}

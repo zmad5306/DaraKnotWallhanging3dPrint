@@ -1,0 +1,31 @@
+{
+  "objects": 12,
+  "max_vertex_difference_mm": 0,
+  "settings_changes": {
+    "filament_map_2": [
+      null,
+      [
+        "1"
+      ]
+    ],
+    "different_settings_to_system": [
+      null,
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "inherits_group": [
+      null,
+      [
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "paint_preserved": true,
+  "bed_poses_preserved": true,
+  "source_bookkeeping_changes": []
+}

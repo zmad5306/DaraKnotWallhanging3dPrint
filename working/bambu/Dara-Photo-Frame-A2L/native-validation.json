@@ -1,0 +1,6772 @@
+{
+  "material_direction_comparison": [
+    {
+      "filament_slot": 1,
+      "z_mm": 13.6,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 16.6,
+      "plates_compared": 6,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 2,
+      "z_mm": 9.0,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 2,
+      "z_mm": 9.6,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 2,
+      "z_mm": 10.0,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 4,
+      "z_mm": 13.6,
+      "plates_compared": 10,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 4.6,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 4.8,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    },
+    {
+      "filament_slot": 1,
+      "z_mm": 6.0,
+      "plates_compared": 8,
+      "maximum_difference_deg": 0.0
+    }
+  ],
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+  "native_project_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+  "production_plan_sha256": "afcdb48a0671aaf9a2fbb8a38078d91e2997829f53c6558af0255b06b032b020",
+  "native_return_code": 0,
+  "native_roundtrip": [
+    {
+      "name": "F1 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 1.657697752178873e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F2 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.230940653770178e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F3 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.342975816346155e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F4 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.4949337135881976e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F5 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.4504953230968e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F6 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 2.1219615821200184e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F7 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.128186986087027e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F8 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.326049240417387e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F9 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.319963798465645e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "F10 A2L knot",
+      "maximum_vertex_and_pose_error_mm": 3.357176996901262e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "C1 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.9179019471480022e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 2.2398093338050814e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 7.983774445771514e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.552754982312506e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "maximum_vertex_and_pose_error_mm": 1.9754453673983947e-05,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+      "maximum_vertex_and_pose_error_mm": 1.9089237240237295e-05,
+      "distance_metric": "bidirectional comparison to the saved candidate mesh in printer coordinates"
+    },
+    {
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+      "maximum_vertex_and_pose_error_mm": 1.9416698908371015e-05,
+      "distance_metric": "bidirectional comparison to the saved candidate mesh in printer coordinates"
+    },
+    {
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+      "maximum_vertex_and_pose_error_mm": 2.4072080066761397e-05,
+      "distance_metric": "bidirectional comparison to the saved candidate mesh in printer coordinates"
+    },
+    {
+      "name": "Backer3",
+      "maximum_vertex_and_pose_error_mm": 2.0099751236743847e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer1",
+      "maximum_vertex_and_pose_error_mm": 4.401136117736727e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer5",
+      "maximum_vertex_and_pose_error_mm": 4.123105311903638e-07,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer7",
+      "maximum_vertex_and_pose_error_mm": 4.4721364521317763e-07,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer4",
+      "maximum_vertex_and_pose_error_mm": 4.743416442325659e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer2",
+      "maximum_vertex_and_pose_error_mm": 4.964876547968243e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer6",
+      "maximum_vertex_and_pose_error_mm": 1.0770330980410189e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "Backer8",
+      "maximum_vertex_and_pose_error_mm": 1.2083045397378021e-06,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "B1 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "B2 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "B3 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "B4 A2L wall block",
+      "maximum_vertex_and_pose_error_mm": 1.7763568394002505e-15,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R1 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R2 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R3 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R4 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R5 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R6 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R7 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R8 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R9 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R10 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R11 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R12 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R13 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R14 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R15 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R16 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R17 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R18 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R19 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R20 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R21 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R22 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R23 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R24 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R25 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R26 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R27 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R28 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R29 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R30 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R31 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    },
+    {
+      "name": "R32 photo retainer",
+      "maximum_vertex_and_pose_error_mm": 0.0,
+      "distance_metric": "bidirectional vertex-to-triangle surface with saved pose"
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 944838,
+      "features": {
+        "Prime tower": 1233,
+        "Support": 250232,
+        "Brim": 686,
+        "Outer wall": 50583,
+        "Inner wall": 110947,
+        "Gap infill": 4464,
+        "Bottom surface": 2198,
+        "Internal solid infill": 45730,
+        "Sparse infill": 428066,
+        "Floating vertical shell": 9203,
+        "Support interface": 8775,
+        "Overhang wall": 1559,
+        "Bridge": 11073,
+        "Top surface": 20089
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          5.643,
+          7.108
+        ],
+        [
+          323.625,
+          314.918
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          5.406,
+          6.859
+        ],
+        [
+          323.861,
+          315.155
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.845000000000027,
+      "startup_prime_tower_check": {
+        "plate": 1,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499993438461763,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.421993908424755,
+        "actual_tower_bead_bounds_mm": [
+          [
+            282.922,
+            157.922
+          ],
+          [
+            317.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 17.08777374447653,
+        "actual_tower_bed_clearance_mm": 12.922000000000025,
+        "tower_extrusion_segments": 1233,
+        "other_extrusion_segments": 943584,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                283.172,
+                157.922
+              ],
+              [
+                283.1474957149176,
+                157.92320381833196
+              ],
+              [
+                283.123227419496,
+                157.9268036798992
+              ],
+              [
+                283.0994288306864,
+                157.93276491606696
+              ],
+              [
+                283.07632914190873,
+                157.94103011687218
+              ],
+              [
+                283.05415081579355,
+                157.95151968391292
+              ],
+              [
+                283.03310744174513,
+                157.96413259692437
+              ],
+              [
+                283.0134016789591,
+                157.9787473866593
+              ],
+              [
+                282.9952233047034,
+                157.99522330470336
+              ],
+              [
+                282.97874738665934,
+                158.0134016789591
+              ],
+              [
+                282.9641325969244,
+                158.0331074417451
+              ],
+              [
+                282.9515196839129,
+                158.0541508157935
+              ],
+              [
+                282.9410301168722,
+                158.07632914190873
+              ],
+              [
+                282.93276491606696,
+                158.09942883068638
+              ],
+              [
+                282.9268036798992,
+                158.12322741949598
+              ],
+              [
+                282.92320381833196,
+                158.1474957149176
+              ],
+              [
+                282.922,
+                158.172
+              ],
+              [
+                282.922,
+                175.078
+              ],
+              [
+                282.92320381833196,
+                175.1025042850824
+              ],
+              [
+                282.9268036798992,
+                175.12677258050402
+              ],
+              [
+                282.93276491606696,
+                175.15057116931362
+              ],
+              [
+                282.9410301168722,
+                175.17367085809127
+              ],
+              [
+                282.9515196839129,
+                175.1958491842065
+              ],
+              [
+                282.9641325969244,
+                175.2168925582549
+              ],
+              [
+                282.97874738665934,
+                175.2365983210409
+              ],
+              [
+                282.9952233047034,
+                175.25477669529664
+              ],
+              [
+                283.0134016789591,
+                175.2712526133407
+              ],
+              [
+                283.03310744174513,
+                175.28586740307563
+              ],
+              [
+                283.05415081579355,
+                175.29848031608708
+              ],
+              [
+                283.07632914190873,
+                175.30896988312782
+              ],
+              [
+                283.0994288306864,
+                175.31723508393304
+              ],
+              [
+                283.123227419496,
+                175.3231963201008
+              ],
+              [
+                283.1474957149176,
+                175.32679618166804
+              ],
+              [
+                283.172,
+                175.328
+              ],
+              [
+                316.828,
+                175.328
+              ],
+              [
+                316.8525042850824,
+                175.32679618166804
+              ],
+              [
+                316.876772580504,
+                175.3231963201008
+              ],
+              [
+                316.9005711693136,
+                175.31723508393304
+              ],
+              [
+                316.92367085809127,
+                175.30896988312782
+              ],
+              [
+                316.94584918420645,
+                175.29848031608708
+              ],
+              [
+                316.96689255825487,
+                175.28586740307563
+              ],
+              [
+                316.9865983210409,
+                175.2712526133407
+              ],
+              [
+                317.0047766952966,
+                175.25477669529664
+              ],
+              [
+                317.02125261334066,
+                175.2365983210409
+              ],
+              [
+                317.0358674030756,
+                175.2168925582549
+              ],
+              [
+                317.0484803160871,
+                175.1958491842065
+              ],
+              [
+                317.0589698831278,
+                175.17367085809127
+              ],
+              [
+                317.06723508393304,
+                175.15057116931362
+              ],
+              [
+                317.0731963201008,
+                175.12677258050402
+              ],
+              [
+                317.07679618166804,
+                175.1025042850824
+              ],
+              [
+                317.078,
+                175.078
+              ],
+              [
+                317.078,
+                158.172
+              ],
+              [
+                317.07679618166804,
+                158.1474957149176
+              ],
+              [
+                317.0731963201008,
+                158.12322741949598
+              ],
+              [
+                317.06723508393304,
+                158.09942883068638
+              ],
+              [
+                317.0589698831278,
+                158.07632914190873
+              ],
+              [
+                317.0484803160871,
+                158.0541508157935
+              ],
+              [
+                317.0358674030756,
+                158.0331074417451
+              ],
+              [
+                317.02125261334066,
+                158.0134016789591
+              ],
+              [
+                317.0047766952966,
+                157.99522330470336
+              ],
+              [
+                316.9865983210409,
+                157.9787473866593
+              ],
+              [
+                316.96689255825487,
+                157.96413259692437
+              ],
+              [
+                316.94584918420645,
+                157.95151968391292
+              ],
+              [
+                316.92367085809127,
+                157.94103011687218
+              ],
+              [
+                316.9005711693136,
+                157.93276491606696
+              ],
+              [
+                316.876772580504,
+                157.9268036798992
+              ],
+              [
+                316.8525042850824,
+                157.92320381833196
+              ],
+              [
+                316.828,
+                157.922
+              ],
+              [
+                283.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          57509.04269897352
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 59466.000278235835
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 23.10078133359088
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 44711.89702094655
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8937.768324603132
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1741.5511496640709
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2410.022799119106
+        }
+      ],
+      "plate": 1,
+      "gcode_sha256": "a4a4a99f17a497686c7b9e7b2779e025648818f14ebf473d82d498188bcabd0d",
+      "weight_g": 223.64811158180237,
+      "seconds": 28979.431640625,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 885168,
+      "features": {
+        "Prime tower": 1194,
+        "Support": 50237,
+        "Brim": 408,
+        "Outer wall": 52923,
+        "Inner wall": 117384,
+        "Gap infill": 3840,
+        "Bottom surface": 1940,
+        "Internal solid infill": 35065,
+        "Sparse infill": 582240,
+        "Support interface": 3899,
+        "Overhang wall": 510,
+        "Bridge": 10938,
+        "Floating vertical shell": 7006,
+        "Top surface": 17584
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          22.936,
+          22.025
+        ],
+        [
+          307.303,
+          297.705
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          22.686,
+          21.775
+        ],
+        [
+          307.553,
+          297.955
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 21.775,
+      "startup_prime_tower_check": {
+        "plate": 2,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499985313411534,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.421985315350938,
+        "actual_tower_bead_bounds_mm": [
+          [
+            187.922,
+            157.922
+          ],
+          [
+            222.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 11.886648036880128,
+        "actual_tower_bed_clearance_mm": 107.922,
+        "tower_extrusion_segments": 1194,
+        "other_extrusion_segments": 883967,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                188.172,
+                157.922
+              ],
+              [
+                188.1474957149176,
+                157.92320381833196
+              ],
+              [
+                188.12322741949598,
+                157.9268036798992
+              ],
+              [
+                188.09942883068638,
+                157.93276491606696
+              ],
+              [
+                188.07632914190873,
+                157.94103011687218
+              ],
+              [
+                188.0541508157935,
+                157.95151968391292
+              ],
+              [
+                188.0331074417451,
+                157.96413259692437
+              ],
+              [
+                188.0134016789591,
+                157.9787473866593
+              ],
+              [
+                187.99522330470336,
+                157.99522330470336
+              ],
+              [
+                187.9787473866593,
+                158.0134016789591
+              ],
+              [
+                187.96413259692437,
+                158.0331074417451
+              ],
+              [
+                187.95151968391292,
+                158.0541508157935
+              ],
+              [
+                187.94103011687218,
+                158.07632914190873
+              ],
+              [
+                187.93276491606696,
+                158.09942883068638
+              ],
+              [
+                187.9268036798992,
+                158.12322741949598
+              ],
+              [
+                187.92320381833196,
+                158.1474957149176
+              ],
+              [
+                187.922,
+                158.172
+              ],
+              [
+                187.922,
+                175.078
+              ],
+              [
+                187.92320381833196,
+                175.1025042850824
+              ],
+              [
+                187.9268036798992,
+                175.12677258050402
+              ],
+              [
+                187.93276491606696,
+                175.15057116931362
+              ],
+              [
+                187.94103011687218,
+                175.17367085809127
+              ],
+              [
+                187.95151968391292,
+                175.1958491842065
+              ],
+              [
+                187.96413259692437,
+                175.2168925582549
+              ],
+              [
+                187.9787473866593,
+                175.2365983210409
+              ],
+              [
+                187.99522330470336,
+                175.25477669529664
+              ],
+              [
+                188.0134016789591,
+                175.2712526133407
+              ],
+              [
+                188.0331074417451,
+                175.28586740307563
+              ],
+              [
+                188.0541508157935,
+                175.29848031608708
+              ],
+              [
+                188.07632914190873,
+                175.30896988312782
+              ],
+              [
+                188.09942883068638,
+                175.31723508393304
+              ],
+              [
+                188.12322741949598,
+                175.3231963201008
+              ],
+              [
+                188.1474957149176,
+                175.32679618166804
+              ],
+              [
+                188.172,
+                175.328
+              ],
+              [
+                221.828,
+                175.328
+              ],
+              [
+                221.8525042850824,
+                175.32679618166804
+              ],
+              [
+                221.87677258050402,
+                175.3231963201008
+              ],
+              [
+                221.90057116931362,
+                175.31723508393304
+              ],
+              [
+                221.92367085809127,
+                175.30896988312782
+              ],
+              [
+                221.9458491842065,
+                175.29848031608708
+              ],
+              [
+                221.9668925582549,
+                175.28586740307563
+              ],
+              [
+                221.9865983210409,
+                175.2712526133407
+              ],
+              [
+                222.00477669529664,
+                175.25477669529664
+              ],
+              [
+                222.0212526133407,
+                175.2365983210409
+              ],
+              [
+                222.03586740307563,
+                175.2168925582549
+              ],
+              [
+                222.04848031608708,
+                175.1958491842065
+              ],
+              [
+                222.05896988312782,
+                175.17367085809127
+              ],
+              [
+                222.06723508393304,
+                175.15057116931362
+              ],
+              [
+                222.0731963201008,
+                175.12677258050402
+              ],
+              [
+                222.07679618166804,
+                175.1025042850824
+              ],
+              [
+                222.078,
+                175.078
+              ],
+              [
+                222.078,
+                158.172
+              ],
+              [
+                222.07679618166804,
+                158.1474957149176
+              ],
+              [
+                222.0731963201008,
+                158.12322741949598
+              ],
+              [
+                222.06723508393304,
+                158.09942883068638
+              ],
+              [
+                222.05896988312782,
+                158.07632914190873
+              ],
+              [
+                222.04848031608708,
+                158.0541508157935
+              ],
+              [
+                222.03586740307563,
+                158.0331074417451
+              ],
+              [
+                222.0212526133407,
+                158.0134016789591
+              ],
+              [
+                222.00477669529664,
+                157.99522330470336
+              ],
+              [
+                221.9865983210409,
+                157.9787473866593
+              ],
+              [
+                221.9668925582549,
+                157.96413259692437
+              ],
+              [
+                221.9458491842065,
+                157.95151968391292
+              ],
+              [
+                221.92367085809127,
+                157.94103011687218
+              ],
+              [
+                221.90057116931362,
+                157.93276491606696
+              ],
+              [
+                221.87677258050402,
+                157.9268036798992
+              ],
+              [
+                221.8525042850824,
+                157.92320381833196
+              ],
+              [
+                221.828,
+                157.922
+              ],
+              [
+                188.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          49686.81669209745
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 8615.64298162653
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 3295.7046469032553
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 293.89133040847054
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 49871.05409493593
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40370.49233441071
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8167.694894342568
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1606.1394017496416
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2122.1256782956666
+        }
+      ],
+      "plate": 2,
+      "gcode_sha256": "88dd6037c9b4cb2ca0f7a79f17107d4d5972a7c725e5cfbe6f480b886243f7fa",
+      "weight_g": 208.073051571846,
+      "seconds": 25752.8515625,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 1193952,
+      "features": {
+        "Prime tower": 1194,
+        "Support": 166362,
+        "Brim": 514,
+        "Outer wall": 59279,
+        "Inner wall": 128324,
+        "Gap infill": 4569,
+        "Bottom surface": 2514,
+        "Internal solid infill": 45988,
+        "Sparse infill": 735526,
+        "Support interface": 10330,
+        "Overhang wall": 937,
+        "Bridge": 13053,
+        "Floating vertical shell": 4873,
+        "Top surface": 20489
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          10.236,
+          10.123
+        ],
+        [
+          319.756,
+          310.055
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.986,
+          9.873
+        ],
+        [
+          320.006,
+          310.305
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 9.694999999999993,
+      "startup_prime_tower_check": {
+        "plate": 3,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499987283897772,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.42198728411988,
+        "actual_tower_bead_bounds_mm": [
+          [
+            117.922,
+            157.922
+          ],
+          [
+            152.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 21.902232164604158,
+        "actual_tower_bed_clearance_mm": 117.922,
+        "tower_extrusion_segments": 1194,
+        "other_extrusion_segments": 1192757,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                118.172,
+                157.922
+              ],
+              [
+                118.14749571491761,
+                157.92320381833196
+              ],
+              [
+                118.12322741949596,
+                157.9268036798992
+              ],
+              [
+                118.09942883068638,
+                157.93276491606696
+              ],
+              [
+                118.07632914190873,
+                157.94103011687218
+              ],
+              [
+                118.05415081579349,
+                157.95151968391292
+              ],
+              [
+                118.0331074417451,
+                157.96413259692437
+              ],
+              [
+                118.01340167895908,
+                157.9787473866593
+              ],
+              [
+                117.99522330470336,
+                157.99522330470336
+              ],
+              [
+                117.97874738665931,
+                158.0134016789591
+              ],
+              [
+                117.96413259692436,
+                158.0331074417451
+              ],
+              [
+                117.9515196839129,
+                158.0541508157935
+              ],
+              [
+                117.94103011687217,
+                158.07632914190873
+              ],
+              [
+                117.93276491606694,
+                158.09942883068638
+              ],
+              [
+                117.9268036798992,
+                158.12322741949598
+              ],
+              [
+                117.92320381833194,
+                158.1474957149176
+              ],
+              [
+                117.922,
+                158.172
+              ],
+              [
+                117.922,
+                175.078
+              ],
+              [
+                117.92320381833194,
+                175.1025042850824
+              ],
+              [
+                117.9268036798992,
+                175.12677258050402
+              ],
+              [
+                117.93276491606694,
+                175.15057116931362
+              ],
+              [
+                117.94103011687217,
+                175.17367085809127
+              ],
+              [
+                117.9515196839129,
+                175.1958491842065
+              ],
+              [
+                117.96413259692436,
+                175.2168925582549
+              ],
+              [
+                117.97874738665931,
+                175.2365983210409
+              ],
+              [
+                117.99522330470336,
+                175.25477669529664
+              ],
+              [
+                118.01340167895908,
+                175.2712526133407
+              ],
+              [
+                118.0331074417451,
+                175.28586740307563
+              ],
+              [
+                118.05415081579349,
+                175.29848031608708
+              ],
+              [
+                118.07632914190873,
+                175.30896988312782
+              ],
+              [
+                118.09942883068638,
+                175.31723508393304
+              ],
+              [
+                118.12322741949596,
+                175.3231963201008
+              ],
+              [
+                118.14749571491761,
+                175.32679618166804
+              ],
+              [
+                118.172,
+                175.328
+              ],
+              [
+                151.828,
+                175.328
+              ],
+              [
+                151.8525042850824,
+                175.32679618166804
+              ],
+              [
+                151.87677258050402,
+                175.3231963201008
+              ],
+              [
+                151.90057116931362,
+                175.31723508393304
+              ],
+              [
+                151.92367085809127,
+                175.30896988312782
+              ],
+              [
+                151.9458491842065,
+                175.29848031608708
+              ],
+              [
+                151.9668925582549,
+                175.28586740307563
+              ],
+              [
+                151.9865983210409,
+                175.2712526133407
+              ],
+              [
+                152.00477669529664,
+                175.25477669529664
+              ],
+              [
+                152.0212526133407,
+                175.2365983210409
+              ],
+              [
+                152.03586740307563,
+                175.2168925582549
+              ],
+              [
+                152.04848031608708,
+                175.1958491842065
+              ],
+              [
+                152.05896988312782,
+                175.17367085809127
+              ],
+              [
+                152.06723508393304,
+                175.15057116931362
+              ],
+              [
+                152.0731963201008,
+                175.12677258050402
+              ],
+              [
+                152.07679618166804,
+                175.1025042850824
+              ],
+              [
+                152.078,
+                175.078
+              ],
+              [
+                152.078,
+                158.172
+              ],
+              [
+                152.07679618166804,
+                158.1474957149176
+              ],
+              [
+                152.0731963201008,
+                158.12322741949598
+              ],
+              [
+                152.06723508393304,
+                158.09942883068638
+              ],
+              [
+                152.05896988312782,
+                158.07632914190873
+              ],
+              [
+                152.04848031608708,
+                158.0541508157935
+              ],
+              [
+                152.03586740307563,
+                158.0331074417451
+              ],
+              [
+                152.0212526133407,
+                158.0134016789591
+              ],
+              [
+                152.00477669529664,
+                157.99522330470336
+              ],
+              [
+                151.9865983210409,
+                157.9787473866593
+              ],
+              [
+                151.9668925582549,
+                157.96413259692437
+              ],
+              [
+                151.9458491842065,
+                157.95151968391292
+              ],
+              [
+                151.92367085809127,
+                157.94103011687218
+              ],
+              [
+                151.90057116931362,
+                157.93276491606696
+              ],
+              [
+                151.87677258050402,
+                157.9268036798992
+              ],
+              [
+                151.8525042850824,
+                157.92320381833196
+              ],
+              [
+                151.828,
+                157.922
+              ],
+              [
+                118.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          61982.300291597036
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 2738.093645165386
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1166.2316732654365
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 143.66858169253805
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 62167.420891790265
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 49654.20078264792
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9982.500213350067
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1958.76795991255
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2677.8636411859625
+        }
+      ],
+      "plate": 3,
+      "gcode_sha256": "4a7004615949ad03290a84106c9022f69291e557b0229cfc229c88f5c424ab67",
+      "weight_g": 247.98754477500916,
+      "seconds": 32312.857421875,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 1169850,
+      "features": {
+        "Prime tower": 1233,
+        "Support": 125153,
+        "Brim": 556,
+        "Outer wall": 61145,
+        "Inner wall": 132501,
+        "Gap infill": 6380,
+        "Bottom surface": 2678,
+        "Internal solid infill": 46626,
+        "Sparse infill": 744907,
+        "Support interface": 6614,
+        "Overhang wall": 666,
+        "Bridge": 13915,
+        "Floating vertical shell": 4788,
+        "Top surface": 22688
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.218,
+          8.958
+        ],
+        [
+          320.606,
+          310.862
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          8.968,
+          8.708
+        ],
+        [
+          320.856,
+          311.112
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 8.708,
+      "startup_prime_tower_check": {
+        "plate": 4,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499995976025554,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.42199597941131,
+        "actual_tower_bead_bounds_mm": [
+          [
+            102.922,
+            157.922
+          ],
+          [
+            137.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 18.3471279335744,
+        "actual_tower_bed_clearance_mm": 102.922,
+        "tower_extrusion_segments": 1233,
+        "other_extrusion_segments": 1168616,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.172,
+                157.922
+              ],
+              [
+                103.14749571491761,
+                157.92320381833196
+              ],
+              [
+                103.12322741949596,
+                157.9268036798992
+              ],
+              [
+                103.09942883068638,
+                157.93276491606696
+              ],
+              [
+                103.07632914190873,
+                157.94103011687218
+              ],
+              [
+                103.05415081579349,
+                157.95151968391292
+              ],
+              [
+                103.0331074417451,
+                157.96413259692437
+              ],
+              [
+                103.01340167895908,
+                157.9787473866593
+              ],
+              [
+                102.99522330470336,
+                157.99522330470336
+              ],
+              [
+                102.97874738665931,
+                158.0134016789591
+              ],
+              [
+                102.96413259692436,
+                158.0331074417451
+              ],
+              [
+                102.9515196839129,
+                158.0541508157935
+              ],
+              [
+                102.94103011687217,
+                158.07632914190873
+              ],
+              [
+                102.93276491606694,
+                158.09942883068638
+              ],
+              [
+                102.9268036798992,
+                158.12322741949598
+              ],
+              [
+                102.92320381833194,
+                158.1474957149176
+              ],
+              [
+                102.922,
+                158.172
+              ],
+              [
+                102.922,
+                175.078
+              ],
+              [
+                102.92320381833194,
+                175.1025042850824
+              ],
+              [
+                102.9268036798992,
+                175.12677258050402
+              ],
+              [
+                102.93276491606694,
+                175.15057116931362
+              ],
+              [
+                102.94103011687217,
+                175.17367085809127
+              ],
+              [
+                102.9515196839129,
+                175.1958491842065
+              ],
+              [
+                102.96413259692436,
+                175.2168925582549
+              ],
+              [
+                102.97874738665931,
+                175.2365983210409
+              ],
+              [
+                102.99522330470336,
+                175.25477669529664
+              ],
+              [
+                103.01340167895908,
+                175.2712526133407
+              ],
+              [
+                103.0331074417451,
+                175.28586740307563
+              ],
+              [
+                103.05415081579349,
+                175.29848031608708
+              ],
+              [
+                103.07632914190873,
+                175.30896988312782
+              ],
+              [
+                103.09942883068638,
+                175.31723508393304
+              ],
+              [
+                103.12322741949596,
+                175.3231963201008
+              ],
+              [
+                103.14749571491761,
+                175.32679618166804
+              ],
+              [
+                103.172,
+                175.328
+              ],
+              [
+                136.828,
+                175.328
+              ],
+              [
+                136.8525042850824,
+                175.32679618166804
+              ],
+              [
+                136.87677258050402,
+                175.3231963201008
+              ],
+              [
+                136.90057116931362,
+                175.31723508393304
+              ],
+              [
+                136.92367085809127,
+                175.30896988312782
+              ],
+              [
+                136.9458491842065,
+                175.29848031608708
+              ],
+              [
+                136.9668925582549,
+                175.28586740307563
+              ],
+              [
+                136.9865983210409,
+                175.2712526133407
+              ],
+              [
+                137.00477669529664,
+                175.25477669529664
+              ],
+              [
+                137.0212526133407,
+                175.2365983210409
+              ],
+              [
+                137.03586740307563,
+                175.2168925582549
+              ],
+              [
+                137.04848031608708,
+                175.1958491842065
+              ],
+              [
+                137.05896988312782,
+                175.17367085809127
+              ],
+              [
+                137.06723508393304,
+                175.15057116931362
+              ],
+              [
+                137.0731963201008,
+                175.12677258050402
+              ],
+              [
+                137.07679618166804,
+                175.1025042850824
+              ],
+              [
+                137.078,
+                175.078
+              ],
+              [
+                137.078,
+                158.172
+              ],
+              [
+                137.07679618166804,
+                158.1474957149176
+              ],
+              [
+                137.0731963201008,
+                158.12322741949598
+              ],
+              [
+                137.06723508393304,
+                158.09942883068638
+              ],
+              [
+                137.05896988312782,
+                158.07632914190873
+              ],
+              [
+                137.04848031608708,
+                158.0541508157935
+              ],
+              [
+                137.03586740307563,
+                158.0331074417451
+              ],
+              [
+                137.0212526133407,
+                158.0134016789591
+              ],
+              [
+                137.00477669529664,
+                157.99522330470336
+              ],
+              [
+                136.9865983210409,
+                157.9787473866593
+              ],
+              [
+                136.9668925582549,
+                157.96413259692437
+              ],
+              [
+                136.9458491842065,
+                157.95151968391292
+              ],
+              [
+                136.92367085809127,
+                157.94103011687218
+              ],
+              [
+                136.90057116931362,
+                157.93276491606696
+              ],
+              [
+                136.87677258050402,
+                157.9268036798992
+              ],
+              [
+                136.8525042850824,
+                157.92320381833196
+              ],
+              [
+                136.828,
+                157.922
+              ],
+              [
+                103.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          62294.32977717994
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 5375.230799358589
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2251.4296462465268
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 288.46767087499774
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 64150.77571542511
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 13.067284871758575
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 49517.65125375978
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9976.331683276425
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1954.718905214424
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2648.9784519094014
+        }
+      ],
+      "plate": 4,
+      "gcode_sha256": "ef5856c9b6865b6b0fcff759375016a26bdff4b4cc23da0eb11e3d83a17c8b8f",
+      "weight_g": 250.948716878891,
+      "seconds": 32461.880859375,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 881648,
+      "features": {
+        "Prime tower": 1233,
+        "Support": 45625,
+        "Brim": 367,
+        "Outer wall": 53054,
+        "Inner wall": 116800,
+        "Gap infill": 5920,
+        "Bottom surface": 2279,
+        "Internal solid infill": 35247,
+        "Sparse infill": 579945,
+        "Support interface": 3923,
+        "Overhang wall": 518,
+        "Bridge": 11678,
+        "Floating vertical shell": 6829,
+        "Top surface": 18230
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          22.956,
+          22.293
+        ],
+        [
+          307.294,
+          297.962
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          22.706,
+          22.043
+        ],
+        [
+          307.544,
+          298.212
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 21.78800000000001,
+      "startup_prime_tower_check": {
+        "plate": 5,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499990166248155,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.421990262308011,
+        "actual_tower_bead_bounds_mm": [
+          [
+            181.922,
+            157.922
+          ],
+          [
+            216.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 17.951719500000006,
+        "actual_tower_bed_clearance_mm": 113.922,
+        "tower_extrusion_segments": 1233,
+        "other_extrusion_segments": 880415,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                182.172,
+                157.922
+              ],
+              [
+                182.1474957149176,
+                157.92320381833196
+              ],
+              [
+                182.12322741949598,
+                157.9268036798992
+              ],
+              [
+                182.09942883068638,
+                157.93276491606696
+              ],
+              [
+                182.07632914190873,
+                157.94103011687218
+              ],
+              [
+                182.0541508157935,
+                157.95151968391292
+              ],
+              [
+                182.0331074417451,
+                157.96413259692437
+              ],
+              [
+                182.0134016789591,
+                157.9787473866593
+              ],
+              [
+                181.99522330470336,
+                157.99522330470336
+              ],
+              [
+                181.9787473866593,
+                158.0134016789591
+              ],
+              [
+                181.96413259692437,
+                158.0331074417451
+              ],
+              [
+                181.95151968391292,
+                158.0541508157935
+              ],
+              [
+                181.94103011687218,
+                158.07632914190873
+              ],
+              [
+                181.93276491606696,
+                158.09942883068638
+              ],
+              [
+                181.9268036798992,
+                158.12322741949598
+              ],
+              [
+                181.92320381833196,
+                158.1474957149176
+              ],
+              [
+                181.922,
+                158.172
+              ],
+              [
+                181.922,
+                175.078
+              ],
+              [
+                181.92320381833196,
+                175.1025042850824
+              ],
+              [
+                181.9268036798992,
+                175.12677258050402
+              ],
+              [
+                181.93276491606696,
+                175.15057116931362
+              ],
+              [
+                181.94103011687218,
+                175.17367085809127
+              ],
+              [
+                181.95151968391292,
+                175.1958491842065
+              ],
+              [
+                181.96413259692437,
+                175.2168925582549
+              ],
+              [
+                181.9787473866593,
+                175.2365983210409
+              ],
+              [
+                181.99522330470336,
+                175.25477669529664
+              ],
+              [
+                182.0134016789591,
+                175.2712526133407
+              ],
+              [
+                182.0331074417451,
+                175.28586740307563
+              ],
+              [
+                182.0541508157935,
+                175.29848031608708
+              ],
+              [
+                182.07632914190873,
+                175.30896988312782
+              ],
+              [
+                182.09942883068638,
+                175.31723508393304
+              ],
+              [
+                182.12322741949598,
+                175.3231963201008
+              ],
+              [
+                182.1474957149176,
+                175.32679618166804
+              ],
+              [
+                182.172,
+                175.328
+              ],
+              [
+                215.828,
+                175.328
+              ],
+              [
+                215.8525042850824,
+                175.32679618166804
+              ],
+              [
+                215.87677258050402,
+                175.3231963201008
+              ],
+              [
+                215.90057116931362,
+                175.31723508393304
+              ],
+              [
+                215.92367085809127,
+                175.30896988312782
+              ],
+              [
+                215.9458491842065,
+                175.29848031608708
+              ],
+              [
+                215.9668925582549,
+                175.28586740307563
+              ],
+              [
+                215.9865983210409,
+                175.2712526133407
+              ],
+              [
+                216.00477669529664,
+                175.25477669529664
+              ],
+              [
+                216.0212526133407,
+                175.2365983210409
+              ],
+              [
+                216.03586740307563,
+                175.2168925582549
+              ],
+              [
+                216.04848031608708,
+                175.1958491842065
+              ],
+              [
+                216.05896988312782,
+                175.17367085809127
+              ],
+              [
+                216.06723508393304,
+                175.15057116931362
+              ],
+              [
+                216.0731963201008,
+                175.12677258050402
+              ],
+              [
+                216.07679618166804,
+                175.1025042850824
+              ],
+              [
+                216.078,
+                175.078
+              ],
+              [
+                216.078,
+                158.172
+              ],
+              [
+                216.07679618166804,
+                158.1474957149176
+              ],
+              [
+                216.0731963201008,
+                158.12322741949598
+              ],
+              [
+                216.06723508393304,
+                158.09942883068638
+              ],
+              [
+                216.05896988312782,
+                158.07632914190873
+              ],
+              [
+                216.04848031608708,
+                158.0541508157935
+              ],
+              [
+                216.03586740307563,
+                158.0331074417451
+              ],
+              [
+                216.0212526133407,
+                158.0134016789591
+              ],
+              [
+                216.00477669529664,
+                157.99522330470336
+              ],
+              [
+                215.9865983210409,
+                157.9787473866593
+              ],
+              [
+                215.9668925582549,
+                157.96413259692437
+              ],
+              [
+                215.9458491842065,
+                157.95151968391292
+              ],
+              [
+                215.92367085809127,
+                157.94103011687218
+              ],
+              [
+                215.90057116931362,
+                157.93276491606696
+              ],
+              [
+                215.87677258050402,
+                157.9268036798992
+              ],
+              [
+                215.8525042850824,
+                157.92320381833196
+              ],
+              [
+                215.828,
+                157.922
+              ],
+              [
+                182.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          49815.94039762438
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 8802.938198990023
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 3357.8955189447383
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 269.3583539589119
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 51174.653655351416
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 12.979852560820182
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40138.820656491655
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8117.3664498353755
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1582.823141836556
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2088.717635027037
+        }
+      ],
+      "plate": 5,
+      "gcode_sha256": "1c0e4c631c84a21e23af38ca3d193c0e8bd5e11412d7df38f807bf9fcb4195a5",
+      "weight_g": 207.82287740707397,
+      "seconds": 26001.765625,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 873261,
+      "features": {
+        "Prime tower": 1194,
+        "Support": 240012,
+        "Brim": 662,
+        "Outer wall": 42330,
+        "Inner wall": 86880,
+        "Gap infill": 4627,
+        "Bottom surface": 1975,
+        "Internal solid infill": 43858,
+        "Sparse infill": 407226,
+        "Support interface": 9769,
+        "Floating vertical shell": 4787,
+        "Overhang wall": 1270,
+        "Bridge": 11159,
+        "Top surface": 17512
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          4.334,
+          4.275
+        ],
+        [
+          325.116,
+          314.75
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          4.098,
+          4.038
+        ],
+        [
+          325.353,
+          314.986
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.038,
+      "startup_prime_tower_check": {
+        "plate": 6,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 11.21224651227095,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 11.142550872430135,
+        "actual_tower_bead_bounds_mm": [
+          [
+            27.922,
+            157.922
+          ],
+          [
+            62.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 25.068331657102593,
+        "actual_tower_bed_clearance_mm": 27.922,
+        "tower_extrusion_segments": 1194,
+        "other_extrusion_segments": 872057,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                28.172,
+                157.922
+              ],
+              [
+                28.14749571491761,
+                157.92320381833196
+              ],
+              [
+                28.12322741949597,
+                157.9268036798992
+              ],
+              [
+                28.099428830686385,
+                157.93276491606696
+              ],
+              [
+                28.07632914190873,
+                157.94103011687218
+              ],
+              [
+                28.054150815793502,
+                157.95151968391292
+              ],
+              [
+                28.0331074417451,
+                157.96413259692437
+              ],
+              [
+                28.013401678959088,
+                157.9787473866593
+              ],
+              [
+                27.995223304703362,
+                157.99522330470336
+              ],
+              [
+                27.978747386659315,
+                158.0134016789591
+              ],
+              [
+                27.964132596924365,
+                158.0331074417451
+              ],
+              [
+                27.951519683912913,
+                158.0541508157935
+              ],
+              [
+                27.941030116872177,
+                158.07632914190873
+              ],
+              [
+                27.932764916066947,
+                158.09942883068638
+              ],
+              [
+                27.926803679899194,
+                158.12322741949598
+              ],
+              [
+                27.923203818331952,
+                158.1474957149176
+              ],
+              [
+                27.922,
+                158.172
+              ],
+              [
+                27.922,
+                175.078
+              ],
+              [
+                27.923203818331952,
+                175.1025042850824
+              ],
+              [
+                27.926803679899194,
+                175.12677258050402
+              ],
+              [
+                27.932764916066947,
+                175.15057116931362
+              ],
+              [
+                27.941030116872177,
+                175.17367085809127
+              ],
+              [
+                27.951519683912913,
+                175.1958491842065
+              ],
+              [
+                27.964132596924365,
+                175.2168925582549
+              ],
+              [
+                27.978747386659315,
+                175.2365983210409
+              ],
+              [
+                27.995223304703362,
+                175.25477669529664
+              ],
+              [
+                28.013401678959088,
+                175.2712526133407
+              ],
+              [
+                28.0331074417451,
+                175.28586740307563
+              ],
+              [
+                28.054150815793502,
+                175.29848031608708
+              ],
+              [
+                28.07632914190873,
+                175.30896988312782
+              ],
+              [
+                28.099428830686385,
+                175.31723508393304
+              ],
+              [
+                28.12322741949597,
+                175.3231963201008
+              ],
+              [
+                28.14749571491761,
+                175.32679618166804
+              ],
+              [
+                28.172,
+                175.328
+              ],
+              [
+                61.828,
+                175.328
+              ],
+              [
+                61.8525042850824,
+                175.32679618166804
+              ],
+              [
+                61.87677258050404,
+                175.3231963201008
+              ],
+              [
+                61.90057116931362,
+                175.31723508393304
+              ],
+              [
+                61.92367085809128,
+                175.30896988312782
+              ],
+              [
+                61.9458491842065,
+                175.29848031608708
+              ],
+              [
+                61.966892558254905,
+                175.28586740307563
+              ],
+              [
+                61.986598321040915,
+                175.2712526133407
+              ],
+              [
+                62.00477669529664,
+                175.25477669529664
+              ],
+              [
+                62.021252613340685,
+                175.2365983210409
+              ],
+              [
+                62.03586740307564,
+                175.2168925582549
+              ],
+              [
+                62.048480316087094,
+                175.1958491842065
+              ],
+              [
+                62.05896988312782,
+                175.17367085809127
+              ],
+              [
+                62.067235083933056,
+                175.15057116931362
+              ],
+              [
+                62.07319632010081,
+                175.12677258050402
+              ],
+              [
+                62.07679618166805,
+                175.1025042850824
+              ],
+              [
+                62.078,
+                175.078
+              ],
+              [
+                62.078,
+                158.172
+              ],
+              [
+                62.07679618166805,
+                158.1474957149176
+              ],
+              [
+                62.07319632010081,
+                158.12322741949598
+              ],
+              [
+                62.067235083933056,
+                158.09942883068638
+              ],
+              [
+                62.05896988312782,
+                158.07632914190873
+              ],
+              [
+                62.048480316087094,
+                158.0541508157935
+              ],
+              [
+                62.03586740307564,
+                158.0331074417451
+              ],
+              [
+                62.021252613340685,
+                158.0134016789591
+              ],
+              [
+                62.00477669529664,
+                157.99522330470336
+              ],
+              [
+                61.986598321040915,
+                157.9787473866593
+              ],
+              [
+                61.966892558254905,
+                157.96413259692437
+              ],
+              [
+                61.9458491842065,
+                157.95151968391292
+              ],
+              [
+                61.92367085809128,
+                157.94103011687218
+              ],
+              [
+                61.90057116931362,
+                157.93276491606696
+              ],
+              [
+                61.87677258050404,
+                157.9268036798992
+              ],
+              [
+                61.8525042850824,
+                157.92320381833196
+              ],
+              [
+                61.828,
+                157.922
+              ],
+              [
+                28.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          57835.64486726863
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 57878.39828178285
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 44902.9622383219
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8966.55019833382
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1740.4822420411804
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2445.3986328197975
+        }
+      ],
+      "plate": 6,
+      "gcode_sha256": "7284dea03c0a2b509c07cd151dba6927c1f4a820b77de9bfe5f81966d694a6a2",
+      "weight_g": 221.01821088790894,
+      "seconds": 27916.724609375,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 943983,
+      "features": {
+        "Prime tower": 1233,
+        "Support": 116823,
+        "Brim": 416,
+        "Outer wall": 53875,
+        "Inner wall": 120462,
+        "Gap infill": 4438,
+        "Bottom surface": 1790,
+        "Internal solid infill": 35691,
+        "Sparse infill": 564665,
+        "Support interface": 6879,
+        "Overhang wall": 867,
+        "Bridge": 10131,
+        "Floating vertical shell": 7238,
+        "Top surface": 19475
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          33.113,
+          32.279
+        ],
+        [
+          297.414,
+          290.472
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          32.863,
+          32.029
+        ],
+        [
+          297.651,
+          290.712
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 29.28800000000001,
+      "startup_prime_tower_check": {
+        "plate": 7,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499971372511508,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.421971372555696,
+        "actual_tower_bead_bounds_mm": [
+          [
+            175.922,
+            157.922
+          ],
+          [
+            210.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 12.845824571702645,
+        "actual_tower_bed_clearance_mm": 119.922,
+        "tower_extrusion_segments": 1233,
+        "other_extrusion_segments": 942739,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                176.172,
+                157.922
+              ],
+              [
+                176.1474957149176,
+                157.92320381833196
+              ],
+              [
+                176.12322741949598,
+                157.9268036798992
+              ],
+              [
+                176.09942883068638,
+                157.93276491606696
+              ],
+              [
+                176.07632914190873,
+                157.94103011687218
+              ],
+              [
+                176.0541508157935,
+                157.95151968391292
+              ],
+              [
+                176.0331074417451,
+                157.96413259692437
+              ],
+              [
+                176.0134016789591,
+                157.9787473866593
+              ],
+              [
+                175.99522330470336,
+                157.99522330470336
+              ],
+              [
+                175.9787473866593,
+                158.0134016789591
+              ],
+              [
+                175.96413259692437,
+                158.0331074417451
+              ],
+              [
+                175.95151968391292,
+                158.0541508157935
+              ],
+              [
+                175.94103011687218,
+                158.07632914190873
+              ],
+              [
+                175.93276491606696,
+                158.09942883068638
+              ],
+              [
+                175.9268036798992,
+                158.12322741949598
+              ],
+              [
+                175.92320381833196,
+                158.1474957149176
+              ],
+              [
+                175.922,
+                158.172
+              ],
+              [
+                175.922,
+                175.078
+              ],
+              [
+                175.92320381833196,
+                175.1025042850824
+              ],
+              [
+                175.9268036798992,
+                175.12677258050402
+              ],
+              [
+                175.93276491606696,
+                175.15057116931362
+              ],
+              [
+                175.94103011687218,
+                175.17367085809127
+              ],
+              [
+                175.95151968391292,
+                175.1958491842065
+              ],
+              [
+                175.96413259692437,
+                175.2168925582549
+              ],
+              [
+                175.9787473866593,
+                175.2365983210409
+              ],
+              [
+                175.99522330470336,
+                175.25477669529664
+              ],
+              [
+                176.0134016789591,
+                175.2712526133407
+              ],
+              [
+                176.0331074417451,
+                175.28586740307563
+              ],
+              [
+                176.0541508157935,
+                175.29848031608708
+              ],
+              [
+                176.07632914190873,
+                175.30896988312782
+              ],
+              [
+                176.09942883068638,
+                175.31723508393304
+              ],
+              [
+                176.12322741949598,
+                175.3231963201008
+              ],
+              [
+                176.1474957149176,
+                175.32679618166804
+              ],
+              [
+                176.172,
+                175.328
+              ],
+              [
+                209.828,
+                175.328
+              ],
+              [
+                209.8525042850824,
+                175.32679618166804
+              ],
+              [
+                209.87677258050402,
+                175.3231963201008
+              ],
+              [
+                209.90057116931362,
+                175.31723508393304
+              ],
+              [
+                209.92367085809127,
+                175.30896988312782
+              ],
+              [
+                209.9458491842065,
+                175.29848031608708
+              ],
+              [
+                209.9668925582549,
+                175.28586740307563
+              ],
+              [
+                209.9865983210409,
+                175.2712526133407
+              ],
+              [
+                210.00477669529664,
+                175.25477669529664
+              ],
+              [
+                210.0212526133407,
+                175.2365983210409
+              ],
+              [
+                210.03586740307563,
+                175.2168925582549
+              ],
+              [
+                210.04848031608708,
+                175.1958491842065
+              ],
+              [
+                210.05896988312782,
+                175.17367085809127
+              ],
+              [
+                210.06723508393304,
+                175.15057116931362
+              ],
+              [
+                210.0731963201008,
+                175.12677258050402
+              ],
+              [
+                210.07679618166804,
+                175.1025042850824
+              ],
+              [
+                210.078,
+                175.078
+              ],
+              [
+                210.078,
+                158.172
+              ],
+              [
+                210.07679618166804,
+                158.1474957149176
+              ],
+              [
+                210.0731963201008,
+                158.12322741949598
+              ],
+              [
+                210.06723508393304,
+                158.09942883068638
+              ],
+              [
+                210.05896988312782,
+                158.07632914190873
+              ],
+              [
+                210.04848031608708,
+                158.0541508157935
+              ],
+              [
+                210.03586740307563,
+                158.0331074417451
+              ],
+              [
+                210.0212526133407,
+                158.0134016789591
+              ],
+              [
+                210.00477669529664,
+                157.99522330470336
+              ],
+              [
+                209.9865983210409,
+                157.9787473866593
+              ],
+              [
+                209.9668925582549,
+                157.96413259692437
+              ],
+              [
+                209.9458491842065,
+                157.95151968391292
+              ],
+              [
+                209.92367085809127,
+                157.94103011687218
+              ],
+              [
+                209.90057116931362,
+                157.93276491606696
+              ],
+              [
+                209.87677258050402,
+                157.9268036798992
+              ],
+              [
+                209.8525042850824,
+                157.92320381833196
+              ],
+              [
+                209.828,
+                157.922
+              ],
+              [
+                176.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          49506.70978299563
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 4634.468654036623
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1273.6309955079503
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 126.55075948489225
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 51399.535599451876
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 24.60622902171738
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40416.9457348145
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8176.537725814497
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1608.110372822582
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2127.186698782072
+        }
+      ],
+      "plate": 7,
+      "gcode_sha256": "746bac38f2d7c2b17e03a64fbc7f68554d25c9b328a3c3d602cfd4035aef9ba2",
+      "weight_g": 204.4093885421753,
+      "seconds": 26508.376953125,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 1132523,
+      "features": {
+        "Prime tower": 1233,
+        "Support": 95383,
+        "Brim": 480,
+        "Outer wall": 60240,
+        "Inner wall": 131131,
+        "Gap infill": 3977,
+        "Bottom surface": 2582,
+        "Internal solid infill": 44976,
+        "Sparse infill": 743055,
+        "Support interface": 5797,
+        "Overhang wall": 686,
+        "Bridge": 14415,
+        "Floating vertical shell": 5029,
+        "Top surface": 23539
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.501,
+          7.754
+        ],
+        [
+          320.678,
+          311.88
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.251,
+          7.518
+        ],
+        [
+          320.928,
+          312.13
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 7.518,
+      "startup_prime_tower_check": {
+        "plate": 8,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499987973748668,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.421987976869127,
+        "actual_tower_bead_bounds_mm": [
+          [
+            143.922,
+            157.922
+          ],
+          [
+            178.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 21.325935294046282,
+        "actual_tower_bed_clearance_mm": 143.922,
+        "tower_extrusion_segments": 1233,
+        "other_extrusion_segments": 1131284,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                144.172,
+                157.922
+              ],
+              [
+                144.1474957149176,
+                157.92320381833196
+              ],
+              [
+                144.12322741949598,
+                157.9268036798992
+              ],
+              [
+                144.09942883068638,
+                157.93276491606696
+              ],
+              [
+                144.07632914190873,
+                157.94103011687218
+              ],
+              [
+                144.0541508157935,
+                157.95151968391292
+              ],
+              [
+                144.0331074417451,
+                157.96413259692437
+              ],
+              [
+                144.0134016789591,
+                157.9787473866593
+              ],
+              [
+                143.99522330470336,
+                157.99522330470336
+              ],
+              [
+                143.9787473866593,
+                158.0134016789591
+              ],
+              [
+                143.96413259692437,
+                158.0331074417451
+              ],
+              [
+                143.95151968391292,
+                158.0541508157935
+              ],
+              [
+                143.94103011687218,
+                158.07632914190873
+              ],
+              [
+                143.93276491606696,
+                158.09942883068638
+              ],
+              [
+                143.9268036798992,
+                158.12322741949598
+              ],
+              [
+                143.92320381833196,
+                158.1474957149176
+              ],
+              [
+                143.922,
+                158.172
+              ],
+              [
+                143.922,
+                175.078
+              ],
+              [
+                143.92320381833196,
+                175.1025042850824
+              ],
+              [
+                143.9268036798992,
+                175.12677258050402
+              ],
+              [
+                143.93276491606696,
+                175.15057116931362
+              ],
+              [
+                143.94103011687218,
+                175.17367085809127
+              ],
+              [
+                143.95151968391292,
+                175.1958491842065
+              ],
+              [
+                143.96413259692437,
+                175.2168925582549
+              ],
+              [
+                143.9787473866593,
+                175.2365983210409
+              ],
+              [
+                143.99522330470336,
+                175.25477669529664
+              ],
+              [
+                144.0134016789591,
+                175.2712526133407
+              ],
+              [
+                144.0331074417451,
+                175.28586740307563
+              ],
+              [
+                144.0541508157935,
+                175.29848031608708
+              ],
+              [
+                144.07632914190873,
+                175.30896988312782
+              ],
+              [
+                144.09942883068638,
+                175.31723508393304
+              ],
+              [
+                144.12322741949598,
+                175.3231963201008
+              ],
+              [
+                144.1474957149176,
+                175.32679618166804
+              ],
+              [
+                144.172,
+                175.328
+              ],
+              [
+                177.828,
+                175.328
+              ],
+              [
+                177.8525042850824,
+                175.32679618166804
+              ],
+              [
+                177.87677258050402,
+                175.3231963201008
+              ],
+              [
+                177.90057116931362,
+                175.31723508393304
+              ],
+              [
+                177.92367085809127,
+                175.30896988312782
+              ],
+              [
+                177.9458491842065,
+                175.29848031608708
+              ],
+              [
+                177.9668925582549,
+                175.28586740307563
+              ],
+              [
+                177.9865983210409,
+                175.2712526133407
+              ],
+              [
+                178.00477669529664,
+                175.25477669529664
+              ],
+              [
+                178.0212526133407,
+                175.2365983210409
+              ],
+              [
+                178.03586740307563,
+                175.2168925582549
+              ],
+              [
+                178.04848031608708,
+                175.1958491842065
+              ],
+              [
+                178.05896988312782,
+                175.17367085809127
+              ],
+              [
+                178.06723508393304,
+                175.15057116931362
+              ],
+              [
+                178.0731963201008,
+                175.12677258050402
+              ],
+              [
+                178.07679618166804,
+                175.1025042850824
+              ],
+              [
+                178.078,
+                175.078
+              ],
+              [
+                178.078,
+                158.172
+              ],
+              [
+                178.07679618166804,
+                158.1474957149176
+              ],
+              [
+                178.0731963201008,
+                158.12322741949598
+              ],
+              [
+                178.06723508393304,
+                158.09942883068638
+              ],
+              [
+                178.05896988312782,
+                158.07632914190873
+              ],
+              [
+                178.04848031608708,
+                158.0541508157935
+              ],
+              [
+                178.03586740307563,
+                158.0331074417451
+              ],
+              [
+                178.0212526133407,
+                158.0134016789591
+              ],
+              [
+                178.00477669529664,
+                157.99522330470336
+              ],
+              [
+                177.9865983210409,
+                157.9787473866593
+              ],
+              [
+                177.9668925582549,
+                157.96413259692437
+              ],
+              [
+                177.9458491842065,
+                157.95151968391292
+              ],
+              [
+                177.92367085809127,
+                157.94103011687218
+              ],
+              [
+                177.90057116931362,
+                157.93276491606696
+              ],
+              [
+                177.87677258050402,
+                157.9268036798992
+              ],
+              [
+                177.8525042850824,
+                157.92320381833196
+              ],
+              [
+                177.828,
+                157.922
+              ],
+              [
+                144.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          60769.35085270033
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 6493.837174911928
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 3160.0007057207017
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 282.66913482096874
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 62924.69045677653
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 11.549048525212854
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 48863.51418720088
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9836.55176207325
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1909.6311715321704
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2635.2662791048115
+        }
+      ],
+      "plate": 8,
+      "gcode_sha256": "6873cac49891ef71bc581a743f18bf5ed25ccf2d5296dca5fb135de2cd273a18",
+      "weight_g": 248.0403974056244,
+      "seconds": 31746.58203125,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 1097297,
+      "features": {
+        "Prime tower": 1194,
+        "Support": 53841,
+        "Brim": 480,
+        "Outer wall": 60164,
+        "Inner wall": 129383,
+        "Gap infill": 5294,
+        "Bottom surface": 2851,
+        "Internal solid infill": 45475,
+        "Sparse infill": 752833,
+        "Support interface": 4516,
+        "Overhang wall": 383,
+        "Bridge": 15414,
+        "Floating vertical shell": 5017,
+        "Top surface": 20452
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          4.704,
+          4.67
+        ],
+        [
+          325.259,
+          315.591
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          4.454,
+          4.42
+        ],
+        [
+          325.509,
+          315.841
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.158999999999992,
+      "startup_prime_tower_check": {
+        "plate": 9,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499985563990203,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.42198556575991,
+        "actual_tower_bead_bounds_mm": [
+          [
+            166.922,
+            157.922
+          ],
+          [
+            201.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 23.788207631158446,
+        "actual_tower_bed_clearance_mm": 128.922,
+        "tower_extrusion_segments": 1194,
+        "other_extrusion_segments": 1096100,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                167.172,
+                157.922
+              ],
+              [
+                167.1474957149176,
+                157.92320381833196
+              ],
+              [
+                167.12322741949598,
+                157.9268036798992
+              ],
+              [
+                167.09942883068638,
+                157.93276491606696
+              ],
+              [
+                167.07632914190873,
+                157.94103011687218
+              ],
+              [
+                167.0541508157935,
+                157.95151968391292
+              ],
+              [
+                167.0331074417451,
+                157.96413259692437
+              ],
+              [
+                167.0134016789591,
+                157.9787473866593
+              ],
+              [
+                166.99522330470336,
+                157.99522330470336
+              ],
+              [
+                166.9787473866593,
+                158.0134016789591
+              ],
+              [
+                166.96413259692437,
+                158.0331074417451
+              ],
+              [
+                166.95151968391292,
+                158.0541508157935
+              ],
+              [
+                166.94103011687218,
+                158.07632914190873
+              ],
+              [
+                166.93276491606696,
+                158.09942883068638
+              ],
+              [
+                166.9268036798992,
+                158.12322741949598
+              ],
+              [
+                166.92320381833196,
+                158.1474957149176
+              ],
+              [
+                166.922,
+                158.172
+              ],
+              [
+                166.922,
+                175.078
+              ],
+              [
+                166.92320381833196,
+                175.1025042850824
+              ],
+              [
+                166.9268036798992,
+                175.12677258050402
+              ],
+              [
+                166.93276491606696,
+                175.15057116931362
+              ],
+              [
+                166.94103011687218,
+                175.17367085809127
+              ],
+              [
+                166.95151968391292,
+                175.1958491842065
+              ],
+              [
+                166.96413259692437,
+                175.2168925582549
+              ],
+              [
+                166.9787473866593,
+                175.2365983210409
+              ],
+              [
+                166.99522330470336,
+                175.25477669529664
+              ],
+              [
+                167.0134016789591,
+                175.2712526133407
+              ],
+              [
+                167.0331074417451,
+                175.28586740307563
+              ],
+              [
+                167.0541508157935,
+                175.29848031608708
+              ],
+              [
+                167.07632914190873,
+                175.30896988312782
+              ],
+              [
+                167.09942883068638,
+                175.31723508393304
+              ],
+              [
+                167.12322741949598,
+                175.3231963201008
+              ],
+              [
+                167.1474957149176,
+                175.32679618166804
+              ],
+              [
+                167.172,
+                175.328
+              ],
+              [
+                200.828,
+                175.328
+              ],
+              [
+                200.8525042850824,
+                175.32679618166804
+              ],
+              [
+                200.87677258050402,
+                175.3231963201008
+              ],
+              [
+                200.90057116931362,
+                175.31723508393304
+              ],
+              [
+                200.92367085809127,
+                175.30896988312782
+              ],
+              [
+                200.9458491842065,
+                175.29848031608708
+              ],
+              [
+                200.9668925582549,
+                175.28586740307563
+              ],
+              [
+                200.9865983210409,
+                175.2712526133407
+              ],
+              [
+                201.00477669529664,
+                175.25477669529664
+              ],
+              [
+                201.0212526133407,
+                175.2365983210409
+              ],
+              [
+                201.03586740307563,
+                175.2168925582549
+              ],
+              [
+                201.04848031608708,
+                175.1958491842065
+              ],
+              [
+                201.05896988312782,
+                175.17367085809127
+              ],
+              [
+                201.06723508393304,
+                175.15057116931362
+              ],
+              [
+                201.0731963201008,
+                175.12677258050402
+              ],
+              [
+                201.07679618166804,
+                175.1025042850824
+              ],
+              [
+                201.078,
+                175.078
+              ],
+              [
+                201.078,
+                158.172
+              ],
+              [
+                201.07679618166804,
+                158.1474957149176
+              ],
+              [
+                201.0731963201008,
+                158.12322741949598
+              ],
+              [
+                201.06723508393304,
+                158.09942883068638
+              ],
+              [
+                201.05896988312782,
+                158.07632914190873
+              ],
+              [
+                201.04848031608708,
+                158.0541508157935
+              ],
+              [
+                201.03586740307563,
+                158.0331074417451
+              ],
+              [
+                201.0212526133407,
+                158.0134016789591
+              ],
+              [
+                201.00477669529664,
+                157.99522330470336
+              ],
+              [
+                200.9865983210409,
+                157.9787473866593
+              ],
+              [
+                200.9668925582549,
+                157.96413259692437
+              ],
+              [
+                200.9458491842065,
+                157.95151968391292
+              ],
+              [
+                200.92367085809127,
+                157.94103011687218
+              ],
+              [
+                200.90057116931362,
+                157.93276491606696
+              ],
+              [
+                200.87677258050402,
+                157.9268036798992
+              ],
+              [
+                200.8525042850824,
+                157.92320381833196
+              ],
+              [
+                200.828,
+                157.922
+              ],
+              [
+                167.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          61394.64183647755
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 9076.947605309748
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 4231.5000495933555
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 414.52271735417673
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 61244.01084255512
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 48685.24070704542
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 9815.490237001974
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1905.623942163505
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2610.0359727287873
+        }
+      ],
+      "plate": 9,
+      "gcode_sha256": "61a42a8b74f78bc3cb5418dfef3c60539c17e58a71bad4d69d7f3bb04a8dc37f",
+      "weight_g": 250.29473662376404,
+      "seconds": 31222.384765625,
+      "maximum_model_extrusion_z_mm": 13.6
+    },
+    {
+      "extrusion_moves_checked": 943721,
+      "features": {
+        "Prime tower": 1233,
+        "Support": 118391,
+        "Brim": 416,
+        "Outer wall": 52367,
+        "Inner wall": 116662,
+        "Gap infill": 6160,
+        "Bottom surface": 2123,
+        "Internal solid infill": 35983,
+        "Sparse infill": 565726,
+        "Support interface": 7350,
+        "Overhang wall": 792,
+        "Bridge": 12139,
+        "Floating vertical shell": 6796,
+        "Top surface": 17583
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          33.102,
+          30.455
+        ],
+        [
+          298.521,
+          287.728
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          32.852,
+          30.218
+        ],
+        [
+          298.754,
+          287.978
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 30.218,
+      "startup_prime_tower_check": {
+        "plate": 10,
+        "filament_count": 3,
+        "conservative_estimated_filament_count": 4,
+        "estimated_depth_mm": 33.75,
+        "estimated_footprint_area_mm2": 1283.5,
+        "conservative_model_convex_hull_clearance_mm": 9.499989005379984,
+        "intersects_model": false
+      },
+      "prime_tower_clearance": {
+        "studio_model_convex_hull_clearance_mm": 9.42198914895844,
+        "actual_tower_bead_bounds_mm": [
+          [
+            167.922,
+            157.922
+          ],
+          [
+            202.078,
+            175.328
+          ]
+        ],
+        "actual_tower_to_other_extrusion_clearance_mm": 20.570869752206033,
+        "actual_tower_bed_clearance_mm": 127.922,
+        "tower_extrusion_segments": 1233,
+        "other_extrusion_segments": 942477,
+        "support_and_brim_extrusions_included": true,
+        "reserved_envelope_contains_actual_tower": true,
+        "actual_tower_convex_envelope": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                168.172,
+                157.922
+              ],
+              [
+                168.1474957149176,
+                157.92320381833196
+              ],
+              [
+                168.12322741949598,
+                157.9268036798992
+              ],
+              [
+                168.09942883068638,
+                157.93276491606696
+              ],
+              [
+                168.07632914190873,
+                157.94103011687218
+              ],
+              [
+                168.0541508157935,
+                157.95151968391292
+              ],
+              [
+                168.0331074417451,
+                157.96413259692437
+              ],
+              [
+                168.0134016789591,
+                157.9787473866593
+              ],
+              [
+                167.99522330470336,
+                157.99522330470336
+              ],
+              [
+                167.9787473866593,
+                158.0134016789591
+              ],
+              [
+                167.96413259692437,
+                158.0331074417451
+              ],
+              [
+                167.95151968391292,
+                158.0541508157935
+              ],
+              [
+                167.94103011687218,
+                158.07632914190873
+              ],
+              [
+                167.93276491606696,
+                158.09942883068638
+              ],
+              [
+                167.9268036798992,
+                158.12322741949598
+              ],
+              [
+                167.92320381833196,
+                158.1474957149176
+              ],
+              [
+                167.922,
+                158.172
+              ],
+              [
+                167.922,
+                175.078
+              ],
+              [
+                167.92320381833196,
+                175.1025042850824
+              ],
+              [
+                167.9268036798992,
+                175.12677258050402
+              ],
+              [
+                167.93276491606696,
+                175.15057116931362
+              ],
+              [
+                167.94103011687218,
+                175.17367085809127
+              ],
+              [
+                167.95151968391292,
+                175.1958491842065
+              ],
+              [
+                167.96413259692437,
+                175.2168925582549
+              ],
+              [
+                167.9787473866593,
+                175.2365983210409
+              ],
+              [
+                167.99522330470336,
+                175.25477669529664
+              ],
+              [
+                168.0134016789591,
+                175.2712526133407
+              ],
+              [
+                168.0331074417451,
+                175.28586740307563
+              ],
+              [
+                168.0541508157935,
+                175.29848031608708
+              ],
+              [
+                168.07632914190873,
+                175.30896988312782
+              ],
+              [
+                168.09942883068638,
+                175.31723508393304
+              ],
+              [
+                168.12322741949598,
+                175.3231963201008
+              ],
+              [
+                168.1474957149176,
+                175.32679618166804
+              ],
+              [
+                168.172,
+                175.328
+              ],
+              [
+                201.828,
+                175.328
+              ],
+              [
+                201.8525042850824,
+                175.32679618166804
+              ],
+              [
+                201.87677258050402,
+                175.3231963201008
+              ],
+              [
+                201.90057116931362,
+                175.31723508393304
+              ],
+              [
+                201.92367085809127,
+                175.30896988312782
+              ],
+              [
+                201.9458491842065,
+                175.29848031608708
+              ],
+              [
+                201.9668925582549,
+                175.28586740307563
+              ],
+              [
+                201.9865983210409,
+                175.2712526133407
+              ],
+              [
+                202.00477669529664,
+                175.25477669529664
+              ],
+              [
+                202.0212526133407,
+                175.2365983210409
+              ],
+              [
+                202.03586740307563,
+                175.2168925582549
+              ],
+              [
+                202.04848031608708,
+                175.1958491842065
+              ],
+              [
+                202.05896988312782,
+                175.17367085809127
+              ],
+              [
+                202.06723508393304,
+                175.15057116931362
+              ],
+              [
+                202.0731963201008,
+                175.12677258050402
+              ],
+              [
+                202.07679618166804,
+                175.1025042850824
+              ],
+              [
+                202.078,
+                175.078
+              ],
+              [
+                202.078,
+                158.172
+              ],
+              [
+                202.07679618166804,
+                158.1474957149176
+              ],
+              [
+                202.0731963201008,
+                158.12322741949598
+              ],
+              [
+                202.06723508393304,
+                158.09942883068638
+              ],
+              [
+                202.05896988312782,
+                158.07632914190873
+              ],
+              [
+                202.04848031608708,
+                158.0541508157935
+              ],
+              [
+                202.03586740307563,
+                158.0331074417451
+              ],
+              [
+                202.0212526133407,
+                158.0134016789591
+              ],
+              [
+                202.00477669529664,
+                157.99522330470336
+              ],
+              [
+                201.9865983210409,
+                157.9787473866593
+              ],
+              [
+                201.9668925582549,
+                157.96413259692437
+              ],
+              [
+                201.9458491842065,
+                157.95151968391292
+              ],
+              [
+                201.92367085809127,
+                157.94103011687218
+              ],
+              [
+                201.90057116931362,
+                157.93276491606696
+              ],
+              [
+                201.87677258050402,
+                157.9268036798992
+              ],
+              [
+                201.8525042850824,
+                157.92320381833196
+              ],
+              [
+                201.828,
+                157.922
+              ],
+              [
+                168.172,
+                157.922
+              ]
+            ]
+          ]
+        }
+      },
+      "white_top_assembly_direction_deg": [
+        [
+          135.0,
+          50077.173169208785
+        ]
+      ],
+      "material_surface_angles": [
+        {
+          "filament_slot": 1,
+          "z_mm": 4.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 4748.280673424956
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 4.8,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1337.9994413945751
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 6.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 138.58519307679234
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 51455.73576289001
+        },
+        {
+          "filament_slot": 1,
+          "z_mm": 16.6,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 13.06004962576282
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angle_deg": 45.0,
+          "length_mm": 40386.236797135876
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 8177.253298537636
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 1587.7627547155666
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angle_deg": 135.0,
+          "length_mm": 2102.528986608116
+        }
+      ],
+      "plate": 10,
+      "gcode_sha256": "4fcf9f93edeb6c98e7f65c54a5acad612744c36422ba29c21a0116b8dbca15fb",
+      "weight_g": 204.95263576507568,
+      "seconds": 26539.36328125,
+      "maximum_model_extrusion_z_mm": 16.6
+    },
+    {
+      "extrusion_moves_checked": 418439,
+      "features": {
+        "Brim": 1307,
+        "Outer wall": 31245,
+        "Inner wall": 91033,
+        "Gap infill": 989,
+        "Bottom surface": 2271,
+        "Internal solid infill": 18848,
+        "Sparse infill": 266667,
+        "Bridge": 2441,
+        "Floating vertical shell": 2159,
+        "Top surface": 1479
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          12.356,
+          12.027
+        ],
+        [
+          317.633,
+          307.981
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.106,
+          11.777
+        ],
+        [
+          317.883,
+          308.231
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 11.769000000000005,
+      "startup_prime_tower_check": {
+        "plate": 11,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 11,
+      "gcode_sha256": "64242df10f46705550c72c7c0c480fe57675d2963d60818b11827b3283511758",
+      "weight_g": 98.91593170166016,
+      "seconds": 13882.8271484375,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 333006,
+      "features": {
+        "Brim": 1010,
+        "Outer wall": 25826,
+        "Inner wall": 75055,
+        "Gap infill": 1384,
+        "Bottom surface": 1834,
+        "Internal solid infill": 15967,
+        "Sparse infill": 207078,
+        "Bridge": 1982,
+        "Floating vertical shell": 1671,
+        "Top surface": 1199
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          27.216,
+          26.42
+        ],
+        [
+          302.782,
+          293.582
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          26.966,
+          26.17
+        ],
+        [
+          303.032,
+          293.832
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 26.168000000000006,
+      "startup_prime_tower_check": {
+        "plate": 12,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 12,
+      "gcode_sha256": "a069ab983a771f81309f89cb8ee622489d7712aa1b9dd14721f099512219490e",
+      "weight_g": 79.19810485839844,
+      "seconds": 11146.4482421875,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 150430,
+      "features": {
+        "Brim": 272,
+        "Outer wall": 6178,
+        "Inner wall": 17373,
+        "Bottom surface": 1147,
+        "Gap infill": 296,
+        "Internal solid infill": 7260,
+        "Sparse infill": 116477,
+        "Bridge": 618,
+        "Floating vertical shell": 505,
+        "Top surface": 304
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          64.163,
+          62.232
+        ],
+        [
+          265.837,
+          257.77
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          63.913,
+          61.982
+        ],
+        [
+          266.087,
+          258.02
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 61.98000000000002,
+      "startup_prime_tower_check": {
+        "plate": 13,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 13,
+      "gcode_sha256": "3b0f0507d13f05f78fb38a5704be679c2ca73006caa114bd44870b2920eb8fc0",
+      "weight_g": 53.155426025390625,
+      "seconds": 7297.1279296875,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 311055,
+      "features": {
+        "Brim": 961,
+        "Outer wall": 22626,
+        "Inner wall": 65382,
+        "Bottom surface": 1901,
+        "Gap infill": 529,
+        "Internal solid infill": 16010,
+        "Sparse infill": 199902,
+        "Bridge": 1440,
+        "Floating vertical shell": 1242,
+        "Top surface": 1062
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          11.847,
+          68.548
+        ],
+        [
+          318.153,
+          251.448
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          11.597,
+          68.298
+        ],
+        [
+          318.403,
+          251.698
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 11.59699999999998,
+      "startup_prime_tower_check": {
+        "plate": 14,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 14,
+      "gcode_sha256": "e703994d84eef9068cf98c153e007fd29f587879df47b30558f1f2bde1ef4bf4",
+      "weight_g": 88.6137924194336,
+      "seconds": 12036.7783203125,
+      "maximum_model_extrusion_z_mm": 9.0
+    },
+    {
+      "extrusion_moves_checked": 1132563,
+      "features": {
+        "Support": 69204,
+        "Outer wall": 250484,
+        "Inner wall": 404903,
+        "Gap infill": 84633,
+        "Internal solid infill": 322360,
+        "Top surface": 793,
+        "Overhang wall": 186
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          56.401,
+          68.19
+        ],
+        [
+          271.019,
+          251.96
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          56.191,
+          67.98
+        ],
+        [
+          271.266,
+          252.17000000000002
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 56.191,
+      "plate": 15,
+      "gcode_sha256": "e85c9b9fdef8fd8c154b25c1691f52d5a96d4c8ba0f4d8ea934001d0b1a13ea8",
+      "weight_g": 331.90936279296875,
+      "seconds": 78277.15625,
+      "bonded_fin_toolpaths": {
+        "bond_probes_checked": 237,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.16105032328654031,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "maximum_model_extrusion_z_mm": 297.2,
+      "startup_prime_tower_check": {
+        "plate": 15,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    },
+    {
+      "extrusion_moves_checked": 1071826,
+      "features": {
+        "Support": 83211,
+        "Outer wall": 242534,
+        "Inner wall": 377295,
+        "Gap infill": 79900,
+        "Internal solid infill": 287887,
+        "Top surface": 820,
+        "Overhang wall": 179
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          56.398,
+          66.16
+        ],
+        [
+          271.381,
+          253.84
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          56.188,
+          65.95
+        ],
+        [
+          271.62,
+          254.05
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 56.188,
+      "plate": 16,
+      "gcode_sha256": "84f9d14a5f543d9d1e3a87bc5a4600b5c95f4f8865d7ab31140008885510eb9d",
+      "weight_g": 317.19744873046875,
+      "seconds": 75281.6171875,
+      "bonded_fin_toolpaths": {
+        "bond_probes_checked": 240,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.1257354702991135,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "maximum_model_extrusion_z_mm": 297.2,
+      "startup_prime_tower_check": {
+        "plate": 16,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    },
+    {
+      "extrusion_moves_checked": 1180089,
+      "features": {
+        "Support": 136294,
+        "Outer wall": 251588,
+        "Inner wall": 396337,
+        "Gap infill": 93033,
+        "Internal solid infill": 301011,
+        "Top surface": 792,
+        "Overhang wall": 177,
+        "Sparse infill": 309,
+        "Floating vertical shell": 548
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          56.398,
+          31.715
+        ],
+        [
+          271.882,
+          290.533
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          56.188,
+          31.505
+        ],
+        [
+          272.092,
+          290.743
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 29.257000000000005,
+      "plate": 17,
+      "gcode_sha256": "f1391dc10ece05798494d4637358440a1c0855714dbbebe3f9156c380f442fe5",
+      "weight_g": 253.48684692382812,
+      "seconds": 62528.95703125,
+      "bonded_fin_toolpaths": {
+        "bond_probes_checked": 244,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09930999100360566,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "maximum_model_extrusion_z_mm": 297.2,
+      "startup_prime_tower_check": {
+        "plate": 17,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    },
+    {
+      "extrusion_moves_checked": 37544,
+      "features": {
+        "Inner wall": 10256,
+        "Outer wall": 3931,
+        "Bottom surface": 2606,
+        "Internal solid infill": 18834,
+        "Top surface": 1576,
+        "Gap infill": 341
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          3.21,
+          3.21
+        ],
+        [
+          326.79,
+          316.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          3.0,
+          3.0
+        ],
+        [
+          327.0,
+          317.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.0,
+      "startup_prime_tower_check": {
+        "plate": 18,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 18,
+      "gcode_sha256": "f1e79ab95a4f00a7dc97a1b5a39dcf0d0622755c786a32ad9c7991261c498815",
+      "weight_g": 99.29679870605469,
+      "seconds": 8337.8349609375,
+      "maximum_model_extrusion_z_mm": 1.6
+    },
+    {
+      "extrusion_moves_checked": 37621,
+      "features": {
+        "Inner wall": 10288,
+        "Outer wall": 3936,
+        "Bottom surface": 2601,
+        "Internal solid infill": 18870,
+        "Top surface": 1576,
+        "Gap infill": 350
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          3.21,
+          3.21
+        ],
+        [
+          326.79,
+          316.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          3.0,
+          3.0
+        ],
+        [
+          327.0,
+          317.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 3.0,
+      "startup_prime_tower_check": {
+        "plate": 19,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 19,
+      "gcode_sha256": "c8106c17a8a7d5ca6665505c79cc6f27d3da24eede25111b5918d00ebf295ace",
+      "weight_g": 99.31890869140625,
+      "seconds": 8340.568359375,
+      "maximum_model_extrusion_z_mm": 1.6
+    },
+    {
+      "extrusion_moves_checked": 693185,
+      "features": {
+        "Inner wall": 228614,
+        "Outer wall": 90663,
+        "Gap infill": 12606,
+        "Bottom surface": 4575,
+        "Support": 49970,
+        "Brim": 320,
+        "Internal solid infill": 45552,
+        "Sparse infill": 232565,
+        "Floating vertical shell": 15174,
+        "Bridge": 6486,
+        "Top surface": 4430,
+        "Support interface": 1206,
+        "Overhang wall": 1024
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          19.214,
+          28.214
+        ],
+        [
+          292.79,
+          232.786
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          18.964,
+          27.964
+        ],
+        [
+          293.0,
+          233.036
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 18.964,
+      "startup_prime_tower_check": {
+        "plate": 20,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      },
+      "plate": 20,
+      "gcode_sha256": "8be9878c8e0b1ee4c1bcb2b45961218c1264746256d153c9401d57113be707e2",
+      "weight_g": 144.74404907226562,
+      "seconds": 18035.884765625,
+      "maximum_model_extrusion_z_mm": 13.0
+    }
+  ],
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 6491,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 1342,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 932.2357177734375,
+          "Bridge": 2419.729248046875,
+          "Brim": 64.36006927490234,
+          "Custom": 407.1194152832031,
+          "Flush": 1175.7548828125,
+          "Gap infill": 116.22254943847656,
+          "Inner wall": 3519.63720703125,
+          "Internal solid infill": 5487.2333984375,
+          "Outer wall": 1858.9783935546875,
+          "Overhang wall": 360.40997314453125,
+          "Prime tower": 333.4018249511719,
+          "Sparse infill": 5473.76171875,
+          "Support": 2561.359375,
+          "Support interface": 331.50933837890625,
+          "Top surface": 1577.8968505859375,
+          "Travel": 2370.23095703125,
+          "Undefined": 2366.540283203125
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 195.27789306640625,
+            "total_used_g": 200.6814727783203
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 19.3187198638916,
+            "total_used_g": 20.7293701171875
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.5319428443908691,
+            "total_used_g": 2.2372686862945557
+          }
+        ],
+        "generate_support_material_time": 4738,
+        "id": 1,
+        "infill_time": 7700,
+        "layer_filament_change": 0,
+        "main_predication": 27055.84765625,
+        "make_perimeters_time": 353,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.02197265625,
+              "height": 16.5,
+              "width": 369.97821044921875,
+              "x": -6.115959644317627,
+              "y": -23.02007484436035,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "F1 A2L knot",
+            "triangle_count": 39912
+          }
+        ],
+        "sliced_time": 15679,
+        "sliced_time_with_cache": 2677,
+        "total_predication": 28979.431640625,
+        "triangle_count": 39912,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 990.8252563476562,
+          "Bridge": 2171.623779296875,
+          "Brim": 37.714664459228516,
+          "Custom": 404.4973449707031,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 109.7364501953125,
+          "Inner wall": 3050.927978515625,
+          "Internal solid infill": 5192.7646484375,
+          "Outer wall": 1599.477783203125,
+          "Overhang wall": 182.41375732421875,
+          "Prime tower": 321.21697998046875,
+          "Sparse infill": 6943.5048828125,
+          "Support": 522.468994140625,
+          "Support interface": 101.26453399658203,
+          "Top surface": 1504.8155517578125,
+          "Travel": 1581.6719970703125,
+          "Undefined": 1580.412353515625
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 182.60626220703125,
+            "total_used_g": 187.30294799804688
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.426958084106445,
+            "total_used_g": 18.837608337402344
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.3412493467330933,
+            "total_used_g": 1.9324952363967896
+          }
+        ],
+        "generate_support_material_time": 955,
+        "id": 2,
+        "infill_time": 6752,
+        "layer_filament_change": 0,
+        "main_predication": 23976.875,
+        "make_perimeters_time": 396,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 289.8399353027344,
+              "height": 13.5,
+              "width": 290.7314758300781,
+              "x": 415.8335266113281,
+              "y": 14.784385681152344,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "F2 A2L knot",
+            "triangle_count": 41040
+          }
+        ],
+        "sliced_time": 10624,
+        "sliced_time_with_cache": 2351,
+        "total_predication": 25752.8515625,
+        "triangle_count": 41040,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1092.950439453125,
+          "Bridge": 2667.951416015625,
+          "Brim": 45.22011947631836,
+          "Custom": 405.79315185546875,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 131.76715087890625,
+          "Inner wall": 3629.71435546875,
+          "Internal solid infill": 6061.79296875,
+          "Outer wall": 1968.405029296875,
+          "Overhang wall": 326.0103759765625,
+          "Prime tower": 321.17803955078125,
+          "Sparse infill": 8780.41796875,
+          "Support": 1705.148193359375,
+          "Support interface": 286.0650634765625,
+          "Top surface": 1715.756103515625,
+          "Travel": 2147.90771484375,
+          "Undefined": 2145.21142578125
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 218.1004180908203,
+            "total_used_g": 222.79710388183594
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 21.507532119750977,
+            "total_used_g": 22.918184280395508
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.6810107231140137,
+            "total_used_g": 2.27225661277771
+          }
+        ],
+        "generate_support_material_time": 2852,
+        "id": 3,
+        "infill_time": 10993,
+        "layer_filament_change": 0,
+        "main_predication": 30537.060546875,
+        "make_perimeters_time": 642,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 421.6116638183594,
+              "height": 13.5,
+              "width": 387.0082092285156,
+              "x": 744.324951171875,
+              "y": -88.5670166015625,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "F3 A2L knot",
+            "triangle_count": 47762
+          }
+        ],
+        "sliced_time": 17892,
+        "sliced_time_with_cache": 3177,
+        "total_predication": 32312.857421875,
+        "triangle_count": 47762,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1158.4696044921875,
+          "Bridge": 2685.60498046875,
+          "Brim": 46.58210372924805,
+          "Custom": 403.30218505859375,
+          "Flush": 1175.7548828125,
+          "Gap infill": 162.14804077148438,
+          "Inner wall": 3685.309326171875,
+          "Internal solid infill": 6190.302734375,
+          "Outer wall": 1964.19482421875,
+          "Overhang wall": 259.23492431640625,
+          "Prime tower": 333.38433837890625,
+          "Sparse infill": 8869.6474609375,
+          "Support": 1304.4161376953125,
+          "Support interface": 213.22865295410156,
+          "Top surface": 1833.2314453125,
+          "Travel": 2186.599853515625,
+          "Undefined": 2186.405029296875
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 220.39598083496094,
+            "total_used_g": 225.799560546875
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 21.344667434692383,
+            "total_used_g": 22.75531768798828
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.6885126829147339,
+            "total_used_g": 2.39383864402771
+          }
+        ],
+        "generate_support_material_time": 2318,
+        "id": 4,
+        "infill_time": 10560,
+        "layer_filament_change": 0,
+        "main_predication": 30538.6328125,
+        "make_perimeters_time": 629,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 430.6781311035156,
+              "height": 16.5,
+              "width": 403.2935791015625,
+              "x": 1139.8902587890625,
+              "y": -20.856077194213867,
+              "z": 0.0
+            },
+            "id": 17,
+            "name": "F4 A2L knot",
+            "triangle_count": 49454
+          }
+        ],
+        "sliced_time": 16798,
+        "sliced_time_with_cache": 3069,
+        "total_predication": 32461.880859375,
+        "triangle_count": 49454,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1028.4979248046875,
+          "Bridge": 2177.653564453125,
+          "Brim": 37.41664505004883,
+          "Custom": 405.9372253417969,
+          "Flush": 1175.7548828125,
+          "Gap infill": 147.4442901611328,
+          "Inner wall": 3049.10009765625,
+          "Internal solid infill": 5176.2138671875,
+          "Outer wall": 1597.5660400390625,
+          "Overhang wall": 182.572021484375,
+          "Prime tower": 333.3901062011719,
+          "Sparse infill": 6913.18896484375,
+          "Support": 479.36077880859375,
+          "Support interface": 100.37359619140625,
+          "Top surface": 1531.429443359375,
+          "Travel": 1669.0596923828125,
+          "Undefined": 1666.3487548828125
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 181.65797424316406,
+            "total_used_g": 187.06155395507812
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.31324577331543,
+            "total_used_g": 18.72389793395996
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.3320996761322021,
+            "total_used_g": 2.0374255180358887
+          }
+        ],
+        "generate_support_material_time": 990,
+        "id": 5,
+        "infill_time": 7019,
+        "layer_filament_change": 0,
+        "main_predication": 24078.39453125,
+        "make_perimeters_time": 415,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 289.6799621582031,
+              "height": 16.5,
+              "width": 288.7350158691406,
+              "x": 1603.8599853515625,
+              "y": 15.492859840393066,
+              "z": 0.0
+            },
+            "id": 21,
+            "name": "F5 A2L knot",
+            "triangle_count": 40904
+          }
+        ],
+        "sliced_time": 10917,
+        "sliced_time_with_cache": 2322,
+        "total_predication": 26001.765625,
+        "triangle_count": 40904,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 927.6486206054688,
+          "Bridge": 2448.716552734375,
+          "Brim": 62.650047302246094,
+          "Custom": 403.5823059082031,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 135.4132080078125,
+          "Inner wall": 3359.5751953125,
+          "Internal solid infill": 5468.68994140625,
+          "Outer wall": 1791.5032958984375,
+          "Overhang wall": 348.4085998535156,
+          "Prime tower": 321.2500915527344,
+          "Sparse infill": 5241.8720703125,
+          "Support": 2467.74169921875,
+          "Support interface": 333.9755554199219,
+          "Top surface": 1492.642333984375,
+          "Travel": 2075.907470703125,
+          "Undefined": 2075.583984375
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 193.4447479248047,
+            "total_used_g": 198.14141845703125
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 19.329389572143555,
+            "total_used_g": 20.740041732788086
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.5455046892166138,
+            "total_used_g": 2.1367506980895996
+          }
+        ],
+        "generate_support_material_time": 4433,
+        "id": 6,
+        "infill_time": 8024,
+        "layer_filament_change": 0,
+        "main_predication": 26140.693359375,
+        "make_perimeters_time": 344,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.3185119628906,
+              "height": 13.5,
+              "width": 371.5860290527344,
+              "x": -7.071366786956787,
+              "y": -378.16851806640625,
+              "z": 0.0
+            },
+            "id": 25,
+            "name": "F6 A2L knot",
+            "triangle_count": 38362
+          }
+        ],
+        "sliced_time": 15491,
+        "sliced_time_with_cache": 2489,
+        "total_predication": 27916.724609375,
+        "triangle_count": 38362,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 893.9834594726562,
+          "Bridge": 2155.401123046875,
+          "Brim": 35.614952087402344,
+          "Custom": 406.919677734375,
+          "Flush": 1175.7548828125,
+          "Gap infill": 111.29886627197266,
+          "Inner wall": 3020.630126953125,
+          "Internal solid infill": 4975.142578125,
+          "Outer wall": 1602.128662109375,
+          "Overhang wall": 266.2030334472656,
+          "Prime tower": 333.3736877441406,
+          "Sparse infill": 6750.681640625,
+          "Support": 1201.4444580078125,
+          "Support interface": 200.43145751953125,
+          "Top surface": 1506.4503173828125,
+          "Travel": 1882.3275146484375,
+          "Undefined": 1878.6243896484375
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 178.10182189941406,
+            "total_used_g": 183.5054168701172
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.44896125793457,
+            "total_used_g": 18.85961151123047
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.3390343189239502,
+            "total_used_g": 2.0443601608276367
+          }
+        ],
+        "generate_support_material_time": 1482,
+        "id": 7,
+        "infill_time": 7413,
+        "layer_filament_change": 0,
+        "main_predication": 24585.03125,
+        "make_perimeters_time": 454,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 270.4083557128906,
+              "height": 16.5,
+              "width": 270.18505859375,
+              "x": 426.69476318359375,
+              "y": -355.4783020019531,
+              "z": 0.0
+            },
+            "id": 29,
+            "name": "F7 A2L knot",
+            "triangle_count": 41278
+          }
+        ],
+        "sliced_time": 12071,
+        "sliced_time_with_cache": 2547,
+        "total_predication": 26508.376953125,
+        "triangle_count": 41278,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1163.128662109375,
+          "Bridge": 2620.079833984375,
+          "Brim": 45.57741928100586,
+          "Custom": 407.6961975097656,
+          "Flush": 1175.7548828125,
+          "Gap infill": 132.96107482910156,
+          "Inner wall": 3634.005126953125,
+          "Internal solid infill": 6163.58984375,
+          "Outer wall": 1929.007568359375,
+          "Overhang wall": 242.03097534179688,
+          "Prime tower": 333.3863220214844,
+          "Sparse infill": 8804.1181640625,
+          "Support": 986.7440185546875,
+          "Support interface": 173.22874450683594,
+          "Top surface": 1841.827880859375,
+          "Travel": 2103.01708984375,
+          "Undefined": 2098.472412109375
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 217.8269500732422,
+            "total_used_g": 223.2305145263672
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 21.035045623779297,
+            "total_used_g": 22.445697784423828
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.6588592529296875,
+            "total_used_g": 2.364185094833374
+          }
+        ],
+        "generate_support_material_time": 1671,
+        "id": 8,
+        "infill_time": 10193,
+        "layer_filament_change": 0,
+        "main_predication": 29823.2890625,
+        "make_perimeters_time": 580,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 370.0790100097656,
+              "height": 16.5,
+              "width": 383.5836181640625,
+              "x": 745.0933227539062,
+              "y": -392.0413818359375,
+              "z": 0.0
+            },
+            "id": 33,
+            "name": "F8 A2L knot",
+            "triangle_count": 49300
+          }
+        ],
+        "sliced_time": 15655,
+        "sliced_time_with_cache": 3003,
+        "total_predication": 31746.58203125,
+        "triangle_count": 49300,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1240.77685546875,
+          "Bridge": 2698.552734375,
+          "Brim": 47.55305480957031,
+          "Custom": 405.9532775878906,
+          "Flush": 1040.5223388671875,
+          "Gap infill": 168.44387817382812,
+          "Inner wall": 3663.056884765625,
+          "Internal solid infill": 6303.2724609375,
+          "Outer wall": 1936.857666015625,
+          "Overhang wall": 175.25155639648438,
+          "Prime tower": 321.20770263671875,
+          "Sparse infill": 8913.3154296875,
+          "Support": 559.5640869140625,
+          "Support interface": 118.8036117553711,
+          "Top surface": 1784.357666015625,
+          "Travel": 1861.4791259765625,
+          "Undefined": 1858.7227783203125
+        },
+        "filament_change_times": 11,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 220.94631958007812,
+            "total_used_g": 225.6429901123047
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 20.98817253112793,
+            "total_used_g": 22.39882469177246
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.6616758108139038,
+            "total_used_g": 2.2529218196868896
+          }
+        ],
+        "generate_support_material_time": 1458,
+        "id": 9,
+        "infill_time": 10180,
+        "layer_filament_change": 0,
+        "main_predication": 29446.458984375,
+        "make_perimeters_time": 592,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 397.5075378417969,
+              "height": 13.5,
+              "width": 396.5368957519531,
+              "x": 1174.6455078125,
+              "y": -441.956298828125,
+              "z": 0.0
+            },
+            "id": 37,
+            "name": "F9 A2L knot",
+            "triangle_count": 49524
+          }
+        ],
+        "sliced_time": 15273,
+        "sliced_time_with_cache": 2838,
+        "total_predication": 31222.384765625,
+        "triangle_count": 49524,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 935.0548706054688,
+          "Bridge": 2227.234375,
+          "Brim": 34.86620330810547,
+          "Custom": 405.5850830078125,
+          "Flush": 1175.7548828125,
+          "Gap infill": 141.804931640625,
+          "Inner wall": 3009.27685546875,
+          "Internal solid infill": 4970.88916015625,
+          "Outer wall": 1591.4932861328125,
+          "Overhang wall": 266.30474853515625,
+          "Prime tower": 333.392822265625,
+          "Sparse infill": 6750.38330078125,
+          "Support": 1217.90234375,
+          "Support interface": 203.4966583251953,
+          "Top surface": 1457.2928466796875,
+          "Travel": 1830.9173583984375,
+          "Undefined": 1828.529541015625
+        },
+        "filament_change_times": 12,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 178.663330078125,
+            "total_used_g": 184.06692504882812
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 2,
+            "main_used_g": 17.425674438476562,
+            "total_used_g": 18.836328506469727
+          },
+          {
+            "filament_id": "GFL99",
+            "id": 4,
+            "main_used_g": 1.3440563678741455,
+            "total_used_g": 2.049382209777832
+          }
+        ],
+        "generate_support_material_time": 1491,
+        "id": 10,
+        "infill_time": 7327,
+        "layer_filament_change": 0,
+        "main_predication": 24616.01953125,
+        "make_perimeters_time": 397,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 270.5224914550781,
+              "height": 16.5,
+              "width": 270.280029296875,
+              "x": 1614.6591796875,
+              "y": -362.99969482421875,
+              "z": 0.0
+            },
+            "id": 41,
+            "name": "F10 A2L knot",
+            "triangle_count": 40916
+          }
+        ],
+        "sliced_time": 11945,
+        "sliced_time_with_cache": 2555,
+        "total_predication": 26539.36328125,
+        "triangle_count": 40916,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 758.5079956054688,
+          "Bridge": 992.8172607421875,
+          "Brim": 58.568851470947266,
+          "Custom": 406.7479553222656,
+          "Flush": 11.0,
+          "Gap infill": 17.021129608154297,
+          "Inner wall": 2129.101806640625,
+          "Internal solid infill": 4451.45458984375,
+          "Outer wall": 711.563232421875,
+          "Sparse infill": 3225.584716796875,
+          "Top surface": 713.74072265625,
+          "Travel": 410.8626708984375,
+          "Undefined": 406.8966064453125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 98.91593170166016,
+            "total_used_g": 98.91593170166016
+          }
+        ],
+        "generate_support_material_time": 22,
+        "id": 11,
+        "infill_time": 301,
+        "layer_filament_change": 0,
+        "main_predication": 13458.044921875,
+        "make_perimeters_time": 106,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.8835754394531,
+              "height": 9.0,
+              "width": 392.6263122558594,
+              "x": -44.69321823120117,
+              "y": -756.2073364257812,
+              "z": 0.0
+            },
+            "id": 221,
+            "name": "C1 A2L flat M core",
+            "triangle_count": 5960
+          }
+        ],
+        "sliced_time": 892,
+        "sliced_time_with_cache": 449,
+        "total_predication": 13882.8271484375,
+        "triangle_count": 5960,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 599.4541625976562,
+          "Bridge": 787.87890625,
+          "Brim": 48.87272644042969,
+          "Custom": 403.94683837890625,
+          "Flush": 11.0,
+          "Gap infill": 11.991010665893555,
+          "Inner wall": 1754.9710693359375,
+          "Internal solid infill": 3535.679931640625,
+          "Outer wall": 588.9545288085938,
+          "Sparse infill": 2515.87890625,
+          "Top surface": 566.857421875,
+          "Travel": 322.7455139160156,
+          "Undefined": 321.5049133300781
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 79.19810485839844,
+            "total_used_g": 79.19810485839844
+          }
+        ],
+        "generate_support_material_time": 15,
+        "id": 12,
+        "infill_time": 209,
+        "layer_filament_change": 0,
+        "main_predication": 10721.7421875,
+        "make_perimeters_time": 78,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 357.8824462890625,
+              "height": 9.0,
+              "width": 316.8561706542969,
+              "x": 394.746337890625,
+              "y": -791.2523193359375,
+              "z": 0.0
+            },
+            "id": 225,
+            "name": "C2 A2L flat M core",
+            "triangle_count": 4420
+          }
+        ],
+        "sliced_time": 719,
+        "sliced_time_with_cache": 405,
+        "total_predication": 11146.4482421875,
+        "triangle_count": 4420,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 438.25482177734375,
+          "Bridge": 582.97900390625,
+          "Brim": 26.40592384338379,
+          "Custom": 405.9638366699219,
+          "Flush": 11.0,
+          "Gap infill": 6.975790500640869,
+          "Inner wall": 934.1290893554688,
+          "Internal solid infill": 2557.953857421875,
+          "Outer wall": 312.43896484375,
+          "Sparse infill": 1481.0562744140625,
+          "Top surface": 388.3218688964844,
+          "Travel": 154.62271118164062,
+          "Undefined": 151.29132080078125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 53.155426025390625,
+            "total_used_g": 53.155426025390625
+          }
+        ],
+        "generate_support_material_time": 6,
+        "id": 13,
+        "infill_time": 63,
+        "layer_filament_change": 0,
+        "main_predication": 6872.49560546875,
+        "make_perimeters_time": 21,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 194.13900756835938,
+              "height": 9.0,
+              "width": 200.2723388671875,
+              "x": 856.9390258789062,
+              "y": -705.1473999023438,
+              "z": 0.0
+            },
+            "id": 229,
+            "name": "C3 A2L flat M core",
+            "triangle_count": 2492
+          }
+        ],
+        "sliced_time": 281,
+        "sliced_time_with_cache": 186,
+        "total_predication": 7297.1279296875,
+        "triangle_count": 2492,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 691.8868408203125,
+          "Bridge": 933.326171875,
+          "Brim": 50.065513610839844,
+          "Custom": 404.4970397949219,
+          "Flush": 11.0,
+          "Gap infill": 9.302749633789062,
+          "Inner wall": 1757.0362548828125,
+          "Internal solid infill": 4130.43310546875,
+          "Outer wall": 596.522216796875,
+          "Sparse infill": 2516.341796875,
+          "Top surface": 646.9567260742188,
+          "Travel": 288.876953125,
+          "Undefined": 287.0787658691406
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 88.6137924194336,
+            "total_used_g": 88.6137924194336
+          }
+        ],
+        "generate_support_material_time": 11,
+        "id": 14,
+        "infill_time": 148,
+        "layer_filament_change": 0,
+        "main_predication": 11612.0791015625,
+        "make_perimeters_time": 62,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 180.80616760253906,
+              "height": 9.0,
+              "width": 157.3677978515625,
+              "x": 1200.6322021484375,
+              "y": -698.403076171875,
+              "z": 0.0
+            },
+            "id": 233,
+            "name": "C4 A2L flat M core",
+            "triangle_count": 2064
+          },
+          {
+            "bbox": {
+              "depth": 181.34095764160156,
+              "height": 9.0,
+              "width": 139.3677520751953,
+              "x": 1366.0,
+              "y": -698.6704711914062,
+              "z": 0.0
+            },
+            "id": 237,
+            "name": "C5 A2L flat M core",
+            "triangle_count": 2928
+          }
+        ],
+        "sliced_time": 630,
+        "sliced_time_with_cache": 370,
+        "total_predication": 12036.7783203125,
+        "triangle_count": 4992,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.6086730957031,
+          "Flush": 11.0,
+          "Gap infill": 4379.005859375,
+          "Inner wall": 17285.74609375,
+          "Internal solid infill": 3993.21630859375,
+          "Outer wall": 43924.703125,
+          "Overhang wall": 2.0728700160980225,
+          "Support": 687.913818359375,
+          "Top surface": 67.59762573242188,
+          "Travel": 7524.90966796875,
+          "Undefined": 7524.90966796875
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 331.90936279296875,
+            "total_used_g": 331.90936279296875
+          }
+        ],
+        "generate_support_material_time": 800,
+        "id": 15,
+        "infill_time": 493,
+        "layer_filament_change": 0,
+        "main_predication": 77852.546875,
+        "make_perimeters_time": 735,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 184.1907501220703,
+              "height": 297.3385009765625,
+              "width": 212.46432495117188,
+              "x": 1640.19140625,
+              "y": -700.0203857421875,
+              "z": 0.0
+            },
+            "id": 241,
+            "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 494434
+          }
+        ],
+        "sliced_time": 7563,
+        "sliced_time_with_cache": 5213,
+        "total_predication": 78277.15625,
+        "triangle_count": 494434,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.6609191894531,
+          "Flush": 11.0,
+          "Gap infill": 4135.20751953125,
+          "Inner wall": 16394.55078125,
+          "Internal solid infill": 3618.77294921875,
+          "Outer wall": 42355.37109375,
+          "Overhang wall": 2.4380576610565186,
+          "Support": 826.5091552734375,
+          "Top surface": 68.50696563720703,
+          "Travel": 7477.9306640625,
+          "Undefined": 7477.9306640625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 317.19744873046875,
+            "total_used_g": 317.19744873046875
+          }
+        ],
+        "generate_support_material_time": 919,
+        "id": 16,
+        "infill_time": 475,
+        "layer_filament_change": 0,
+        "main_predication": 74856.953125,
+        "make_perimeters_time": 785,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 188.09979248046875,
+              "height": 297.3487243652344,
+              "width": 212.47177124023438,
+              "x": 56.187530517578125,
+              "y": -1086.0499267578125,
+              "z": 0.0
+            },
+            "id": 245,
+            "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 465774
+          }
+        ],
+        "sliced_time": 7872,
+        "sliced_time_with_cache": 5388,
+        "total_predication": 75281.6171875,
+        "triangle_count": 465774,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.8073425292969,
+          "Flush": 11.0,
+          "Gap infill": 3781.501953125,
+          "Inner wall": 13782.9462890625,
+          "Internal solid infill": 3810.501220703125,
+          "Outer wall": 31880.310546875,
+          "Overhang wall": 3.1401758193969727,
+          "Sparse infill": 3.9743118286132812,
+          "Support": 1309.3134765625,
+          "Top surface": 67.4976806640625,
+          "Travel": 7511.0048828125,
+          "Undefined": 7511.0048828125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 253.4868621826172,
+            "total_used_g": 253.48684692382812
+          }
+        ],
+        "generate_support_material_time": 1783,
+        "id": 17,
+        "infill_time": 544,
+        "layer_filament_change": 0,
+        "main_predication": 62104.1484375,
+        "make_perimeters_time": 962,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 251.10003662109375,
+              "height": 297.3487243652344,
+              "width": 212.47146606445312,
+              "x": 452.1878356933594,
+              "y": -1117.550048828125,
+              "z": 0.0
+            },
+            "id": 249,
+            "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 495798
+          }
+        ],
+        "sliced_time": 9820,
+        "sliced_time_with_cache": 6063,
+        "total_predication": 62528.95703125,
+        "triangle_count": 495798,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1263.2843017578125,
+          "Custom": 404.33941650390625,
+          "Flush": 11.0,
+          "Gap infill": 7.210040092468262,
+          "Inner wall": 326.9736633300781,
+          "Internal solid infill": 5169.4140625,
+          "Outer wall": 118.29437255859375,
+          "Top surface": 957.2412719726562,
+          "Travel": 81.80377197265625,
+          "Undefined": 80.311767578125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 99.29679870605469,
+            "total_used_g": 99.29679870605469
+          }
+        ],
+        "generate_support_material_time": 3,
+        "id": 18,
+        "infill_time": 84,
+        "layer_filament_change": 0,
+        "main_predication": 7912.9873046875,
+        "make_perimeters_time": 17,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 125.78178405761719,
+              "height": 1.600000023841858,
+              "width": 125.50641632080078,
+              "x": 795.0,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 73,
+            "name": "Backer3",
+            "triangle_count": 932
+          },
+          {
+            "bbox": {
+              "depth": 125.40355682373047,
+              "height": 1.600000023841858,
+              "width": 125.68798828125,
+              "x": 993.31201171875,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 77,
+            "name": "Backer1",
+            "triangle_count": 932
+          },
+          {
+            "bbox": {
+              "depth": 125.51068115234375,
+              "height": 1.600000023841858,
+              "width": 125.50924682617188,
+              "x": 795.0,
+              "y": -960.5106811523438,
+              "z": 7.907108301452581e-11
+            },
+            "id": 81,
+            "name": "Backer5",
+            "triangle_count": 928
+          },
+          {
+            "bbox": {
+              "depth": 125.77947998046875,
+              "height": 1.600000023841858,
+              "width": 125.51861572265625,
+              "x": 993.4813842773438,
+              "y": -960.7794799804688,
+              "z": 7.907108301452581e-11
+            },
+            "id": 85,
+            "name": "Backer7",
+            "triangle_count": 936
+          }
+        ],
+        "sliced_time": 310,
+        "sliced_time_with_cache": 77,
+        "total_predication": 8337.8349609375,
+        "triangle_count": 3728,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1263.530029296875,
+          "Custom": 403.5845947265625,
+          "Flush": 11.0,
+          "Gap infill": 7.116733551025391,
+          "Inner wall": 326.8785095214844,
+          "Internal solid infill": 5170.6806640625,
+          "Outer wall": 118.27226257324219,
+          "Top surface": 952.3704223632812,
+          "Travel": 88.07958984375,
+          "Undefined": 87.34232330322266
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 99.31890869140625,
+            "total_used_g": 99.31890869140625
+          }
+        ],
+        "generate_support_material_time": 3,
+        "id": 19,
+        "infill_time": 89,
+        "layer_filament_change": 0,
+        "main_predication": 7915.72119140625,
+        "make_perimeters_time": 16,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 125.60616302490234,
+              "height": 1.600000023841858,
+              "width": 125.61196899414062,
+              "x": 1191.0,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 89,
+            "name": "Backer4",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.77442932128906,
+              "height": 1.600000023841858,
+              "width": 125.4974365234375,
+              "x": 1389.5025634765625,
+              "y": -1149.0,
+              "z": 7.907108301452581e-11
+            },
+            "id": 93,
+            "name": "Backer2",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.77874755859375,
+              "height": 1.600000023841858,
+              "width": 125.5069580078125,
+              "x": 1191.0,
+              "y": -960.7787475585938,
+              "z": 7.907108301452581e-11
+            },
+            "id": 97,
+            "name": "Backer6",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.4163818359375,
+              "height": 1.600000023841858,
+              "width": 125.7607421875,
+              "x": 1389.2392578125,
+              "y": -960.4163818359375,
+              "z": 7.907108301452581e-11
+            },
+            "id": 101,
+            "name": "Backer8",
+            "triangle_count": 932
+          }
+        ],
+        "sliced_time": 222,
+        "sliced_time_with_cache": 76,
+        "total_predication": 8340.568359375,
+        "triangle_count": 3740,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 768.9625854492188,
+          "Bridge": 868.0770263671875,
+          "Brim": 58.67571258544922,
+          "Custom": 403.8429870605469,
+          "Flush": 11.0,
+          "Gap infill": 202.64483642578125,
+          "Inner wall": 3159.5,
+          "Internal solid infill": 3388.93408203125,
+          "Outer wall": 1186.523681640625,
+          "Overhang wall": 58.49751663208008,
+          "Sparse infill": 5184.708984375,
+          "Support": 470.0489807128906,
+          "Support interface": 34.18785858154297,
+          "Top surface": 722.44384765625,
+          "Travel": 1511.3172607421875,
+          "Undefined": 1510.1494140625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 144.74403381347656,
+            "total_used_g": 144.74404907226562
+          }
+        ],
+        "generate_support_material_time": 368,
+        "id": 20,
+        "infill_time": 651,
+        "layer_filament_change": 0,
+        "main_predication": 17611.208984375,
+        "make_perimeters_time": 455,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -1123.0,
+              "z": 0.0
+            },
+            "id": 105,
+            "name": "B1 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -1068.0,
+              "z": 0.0
+            },
+            "id": 109,
+            "name": "B2 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -1013.0,
+              "z": 0.0
+            },
+            "id": 113,
+            "name": "B3 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 1604.0,
+              "y": -958.0,
+              "z": 0.0
+            },
+            "id": 117,
+            "name": "B4 A2L wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 121,
+            "name": "R1 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 125,
+            "name": "R2 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 129,
+            "name": "R3 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1117.0,
+              "z": 0.0
+            },
+            "id": 133,
+            "name": "R4 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 137,
+            "name": "R5 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 141,
+            "name": "R6 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 145,
+            "name": "R7 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1095.0,
+              "z": 0.0
+            },
+            "id": 149,
+            "name": "R8 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 153,
+            "name": "R9 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 157,
+            "name": "R10 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 161,
+            "name": "R11 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1073.0,
+              "z": 0.0
+            },
+            "id": 165,
+            "name": "R12 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 169,
+            "name": "R13 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 173,
+            "name": "R14 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 177,
+            "name": "R15 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1051.0,
+              "z": 0.0
+            },
+            "id": 181,
+            "name": "R16 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 185,
+            "name": "R17 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 189,
+            "name": "R18 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 193,
+            "name": "R19 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1029.0,
+              "z": 0.0
+            },
+            "id": 197,
+            "name": "R20 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 201,
+            "name": "R21 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 205,
+            "name": "R22 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 209,
+            "name": "R23 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -1007.0,
+              "z": 0.0
+            },
+            "id": 213,
+            "name": "R24 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 217,
+            "name": "R25 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 221,
+            "name": "R26 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 225,
+            "name": "R27 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -985.0,
+              "z": 0.0
+            },
+            "id": 229,
+            "name": "R28 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1779.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 233,
+            "name": "R29 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1805.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 237,
+            "name": "R30 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1831.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 241,
+            "name": "R31 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 1857.0,
+              "y": -963.0,
+              "z": 0.0
+            },
+            "id": 245,
+            "name": "R32 photo retainer",
+            "triangle_count": 520
+          }
+        ],
+        "sliced_time": 3406,
+        "sliced_time_with_cache": 1789,
+        "total_predication": 18035.884765625,
+        "triangle_count": 25248,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "geometry_validation_sha256": "cc37d3a780cb82da70b6759d38eb4bf914498dfc78ba4d405933b8280b03ab2d",
+  "printer": "Bambu Lab A2L 0.4 nozzle",
+  "structural_infill": "8% gyroid",
+  "veneer_infill": "100%",
+  "physical_confirmation_pending": true,
+  "veneer_carrier_revision": "wall-cradle-r6-end-ties",
+  "preserved_plate_validation_basis": "veneer-wall-unchanged-plates.json"
+}

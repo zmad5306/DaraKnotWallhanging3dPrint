@@ -1,0 +1,182 @@
+{
+  "branch": "codex/m-veneer-cosmetic-fit",
+  "status": "Implemented and natively sliced; physical coupon confirmation pending",
+  "original_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "original_release_unchanged": true,
+  "original_release_file": "reference/production/Dara-Solid-M-Baseline.3mf",
+  "main_project": "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf",
+  "main_project_sha256": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d",
+  "printer": "Bambu Lab A1, 256 x 256 x 256 mm",
+  "native_slicer": "BambuStudio 02.08.02.61",
+  "total_verified_plates": 50,
+  "projects": [
+    {
+      "project": "All-Development-Tests-A1-Sliced.3mf",
+      "editable_source": "All-Development-Tests-A1.3mf",
+      "plate_count": 3,
+      "native_validation": "All-Development-Tests-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 4.106,
+      "native_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5"
+    },
+    {
+      "project": "M-Veneer-Seam-Coupon-A1-Sliced.3mf",
+      "editable_source": "M-Veneer-Seam-Coupon-A1.3mf",
+      "plate_count": 4,
+      "native_validation": "M-Veneer-Seam-Coupon-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 83.964,
+      "native_sha256": "d7ad3050d29d8d82687e3be6cdb13ace8ee56c97d693110a518dd03b30159c4f"
+    },
+    {
+      "project": "M-Veneer-Glue-Coupon-A1-Sliced.3mf",
+      "editable_source": "M-Veneer-Glue-Coupon-A1.3mf",
+      "plate_count": 3,
+      "native_validation": "M-Veneer-Glue-Coupon-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 34.964,
+      "native_sha256": "a2f53226d7087f3371fc578bc6f04b914fa97beef2776bd5aaa2344837a14938"
+    },
+    {
+      "project": "Frame-Cosmetic-Comparison-A1-Sliced.3mf",
+      "editable_source": "Frame-Cosmetic-Comparison-A1.3mf",
+      "plate_count": 2,
+      "native_validation": "Frame-Cosmetic-Comparison-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 6.5429323069578205,
+      "native_sha256": "43ebc6952e7cf76dd21d9dff0f9a3e363b0b2d306038e8546d57b5f988eb032e"
+    },
+    {
+      "project": "M-Core-and-Veneer-A1-Sliced.3mf",
+      "editable_source": "M-Core-and-Veneer-A1.3mf",
+      "plate_count": 12,
+      "native_validation": "M-Core-and-Veneer-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 0.6092063428371235,
+      "native_sha256": "9362a62239a61ea9c5f2b3a79e58b923cca5e69f686417e9c61e292a82de4d1e"
+    },
+    {
+      "project": "Frame-Cosmetic-Candidate-A1-Sliced.3mf",
+      "editable_source": "Frame-Cosmetic-Candidate-A1.3mf",
+      "plate_count": 20,
+      "native_validation": "Frame-Cosmetic-Candidate-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 0.8520000000000001,
+      "native_sha256": "4742d0df45d55963be24f404f6c1f00e7d3db187c70c1c097116a7db9e6f78fa"
+    },
+    {
+      "project": "M-Solid-Common-Orientation-A1-Sliced.3mf",
+      "editable_source": "M-Solid-Common-Orientation-A1.3mf",
+      "plate_count": 6,
+      "native_validation": "M-Solid-Common-Orientation-A1-native-validation.json",
+      "minimum_bead_edge_clearance_mm": 0.9847819666402984,
+      "native_sha256": "a7137e082385f9570f4a556997d551cf3be6ab2fdc54d50b081c2f95433fdfa1"
+    }
+  ],
+  "changes": {
+    "M": "Six constant-thickness 8.4 mm cores with planar front and back faces, support-free keys, and local seating/registration features. Six flat-backed band-free veneers contain the entire convex profile and hammer texture. Original mounting coordinates and finished front profile retained.",
+    "veneer": "1.90-4.10 mm nominal thickness before hidden pockets; flat back at Z8.6, .20 mm planar glue space; three seating pads, one round locator and one axially relieved locator per face panel.",
+    "anchors": "All nine full-size carriers and A1 samples use area-allocated fins, separate grounded starter ribs, 1.2 mm cut necks, .40 mm rear recesses and 3 mm cutter access. Trees supplement the bonded tooling.",
+    "finish": "Every veneer shares the complete 55-degree/M5 print rotation, including in-plane direction. One continuous hammer field, without band seats or cover bands.",
+    "frame": "Full A1 frame remains unchanged. Revised coupon retains the 18 mm lap and locating fit, restores straight 68 mm outer sides, and seats bed-printed feet/skirts on upward-printed floors. Rough supported bulk is relieved behind the outside walls.",
+    "grain": "Compensated per bed rotation. Native comparison checks white, wood and blue top-fill directions at matching heights; the white rail direction is 135 degrees in assembly.",
+    "jig": "White-face contact pads, 4 mm clearance above the base for texture and 3 mm locating pins. M samples include smooth crown cauls, without hammer dimples, for use with a soft liner and release film."
+  },
+  "test_order": [
+    {
+      "file": "All-Development-Tests-A1-Sliced.3mf",
+      "plates": [
+        "1: both white cauls and ribbon jig (3 parts)",
+        "2: all copper cores and fin-supported veneers (6 parts)",
+        "3: one refined zero-gap ribbon pair (2 parts)"
+      ],
+      "purpose": "All 11 current test parts in one project, three plates. Latest revision changes knot plate 3 only; plates 1 and 2 retain their exact prior toolpaths, including the clean-trim veneer carriers."
+    }
+  ],
+  "combined_test_plate_map": "All-Development-Tests-A1-plates.png",
+  "combined_test_guide": "All-Development-Tests-A1.json",
+  "sample_infill_trial": {
+    "body_density": "8%",
+    "pattern": "gyroid",
+    "parts": "Three M structural coupons and two ribbon test parts",
+    "retained": "Four walls, solid skins, 100% veneers/carriers, prior fixture settings and any local solid modifiers",
+    "full_size_candidates": "Remain at 15% pending physical rigidity and weight comparison"
+  },
+  "ribbon_zero_gap_revision": {
+    "visible_edge_gap_mm": 0,
+    "pairs": 1,
+    "additional_hidden_adhesive_recess_mm": 0.2,
+    "nominal_hidden_glue_clearance_mm": 0.8,
+    "cosmetic_closure_from_z_mm": 8,
+    "retained": "18 mm lap, locating-key fit, hidden squeeze-out reservoir, 8% gyroid and matched surface direction",
+    "current_revision": "bed-datum-ribbon-v1",
+    "seating": "Three bed-printed feet and two outer skirts on upward-printed pocket floors at assembly Z0.8; socket hidden back recessed .8 mm",
+    "width_and_side_finish": "68 mm straight sides; zero nominal outside wall gap; bulk support relief hidden behind skirts",
+    "native_validation": "Ribbon-bed-datum-native-validation.json",
+    "layer_heights": "White/blue finish at assembly Z13.6 and wood crests Z10.0; both halves verified against actual model extrusion, including arcs",
+    "supersedes": "Previous A-D visible-gap comparisons. Full-size frame candidate retains its earlier .075 mm seam pending this test.",
+    "unchanged_plates_proof": "Zero-gap-plate-preservation.json"
+  },
+  "m_seam_zero_gap_revision": {
+    "visible_edge_gap_mm": 0,
+    "veneer_to_core_glue_gap_mm": 0.2,
+    "geometry_validation": "M-zero-gap-seam-validation.json",
+    "change": "Both seam veneers and their matched core seating are regenerated; smooth caul and plate 1 remain unchanged.",
+    "full_size_veneers": "Zero nominal cosmetic gap is now integrated into the main project; physical confirmation remains pending."
+  },
+  "flat_core_revision": {
+    "core_body_thickness_mm": 8.4,
+    "core_crown_mm": 0,
+    "veneer_flat_back_z_mm": 8.6,
+    "all_convex_shaping_in_veneer": true,
+    "nominal_veneer_thickness_mm": [
+      1.9,
+      4.1
+    ],
+    "finished_front_and_mount_positions_preserved": true,
+    "mounting": "Existing screw tips pass through the flat core into shallow hidden clearance pockets in the veneer.",
+    "replace": "Earlier crowned-core M test parts are superseded. Use the corrected cores and veneers together."
+  },
+  "glue_coupon_correction": {
+    "reason": "The previous crop opened one socket and disconnected a chunk of the smaller core half.",
+    "change": "Extended the sample 15 mm below the old crop, retaining continuous material around both sockets; regenerated matching seating features, veneer and caul.",
+    "replace": "Use all three plates from the updated glue-coupon project together. Earlier glue-coupon parts are superseded.",
+    "verification": "All 11 printed test parts have one connected material body in both editable and native exported meshes. Numerical zero-volume boolean sheets are excluded from component counts."
+  },
+  "fin_support_revision": {
+    "priority": "One-off artwork: restraint and surface quality take priority over material use and removal time.",
+    "coupon_revision": "clean-trim-coupon-v1",
+    "coupon_geometry_and_access": "M-clean-trim-carrier-validation.json",
+    "regression_and_negative_control": "M-clean-trim-regression-validation.json",
+    "production_update": "All six A1 and three A2L production veneers now use separate grounded ribs and accessible recessed cut necks. No continuous shoe remains. Saved poses and finished fronts are retained.",
+    "full_size_area_revision": "M-fin-coverage-validation.json; fins are placed by rear-area coverage rather than removing alternate rows. Counts are allowed above the half-population target where coverage requires it.",
+    "trial_dimensions": true,
+    "physical_confirmation_pending": true,
+    "verification": "All 70 revised coupon necks have clear cutter windows and native model extrusion. Simulated flush trimming leaves no material outside the finished cap. Earliest-layer geometry stays within 2.4 mm of grounded starter contacts; show faces and zero-gap seams are retained. The failed shoe is checked as a negative control. Physical removal and silk bond strength remain pending.",
+    "test_first": "Use the combined project: white fixtures first, then the copper M tests and ribbon comparisons. Full veneers remain candidates pending rigidity, silk bonding, removal, fit and finish results."
+  },
+  "assembly_instructions": [
+    "Keep saved scale, orientations and object settings. Do not auto-orient veneer panels independently.",
+    "Use filament slots 1 white, 2 wood tan, 3 copper silk, 4 blue. Full M parts and their fused carriers use copper; sample cauls/jig use white.",
+    "Mark tongue/socket on the ribbon backs before cleanup. Clean supported bulk and key roofs; preserve the socket foot/skirt bearing bottoms and clean tongue pocket floors. Dry-seat all contacts before gluing in the existing show-face jig.",
+    "Cradle the M face in the lined caul. Cut each narrow neck flush with rear lands through its pocket; remove fins and separate starter ribs progressively. All current veneer carriers have no continuous starter shoe.",
+    "Scrape or sand the hidden tab remnants inside their .40 mm recessed rear pockets, leaving no material above the surrounding underside seating plane. Preserve the hammered face, cosmetic seam edges, seating pads and locating features.",
+    "Assemble the structural core on a flat reference surface. Dry-fit the veneer and check all three seating contacts with gentle clamping before adding adhesive.",
+    "Apply a controlled amount of the selected epoxy in the relief regions. Keep the hard stops and cosmetic closing edge free of adhesive.",
+    "The white M caul is a removable clamp pad, not part of the artwork. Add a soft liner and release film to its smooth crown face. Use release film on the frame jig. Clamp only enough to seat the veneer; inspect the hammered face after cure.",
+    "For the new full M, plates 1\u20136 are C1\u2013C6 cores; 7\u201312 are V1\u2013V6 veneers/carriers. The five original cover bands are omitted.",
+    "Use the full candidate files after the coupons confirm fit, cleanup, reflection and cupping correction. These digital checks do not establish cured bond strength or invisible seams."
+  ],
+  "original_solid_M_alternative": "The six-plate M-Solid-Common-Orientation-A1-Sliced.3mf retains original solid meshes and support paint. All pieces align with the saved M5 rotation; it does not change the original supported structural construction.",
+  "seam_routing": "Frame seam centerlines are retained in this controlled comparison; no artwork or blue-edge feature is rerouted. Band-free M veneer seams follow the original five face divisions, with the band seats removed.",
+  "independent_geometry_check": "Independent-geometry-checks.json",
+  "previews": [
+    "M-flat-core-section.png",
+    "All-Development-Tests-A1-plates.png",
+    "M-band-free-layout.png",
+    "M-veneer-carrier.png",
+    "M-veneer-fin-test.png",
+    "M-glue-coupon-correction.png",
+    "Ribbon-bed-datum-v1-sections.png"
+  ],
+  "physical_confirmation_pending": true,
+  "source_references": [
+    "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Support/TreeSupport.cpp",
+    "https://weblog.masukomi.org/2024/03/11/manual-support-fins-for-3d-printing/",
+    "https://github.com/Gluhy/finSTL"
+  ]
+}

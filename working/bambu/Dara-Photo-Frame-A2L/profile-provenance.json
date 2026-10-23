@@ -1,0 +1,17 @@
+{
+  "installed_profile_sha256": {
+    "machine/Bambu Lab A2L 0.4 nozzle template change_filament_gcode.json": "9b32d0b6c242a8181c1f0194bc6e1330ab4908950d46c5197e2b20b0446a8c9b",
+    "machine/Bambu Lab A2L 0.4 nozzle template layer_change_gcode.json": "7608389ae28524047121c4919d32f20653bc29c837cdb97315cd2600ec36fdc7",
+    "machine/Bambu Lab A2L 0.4 nozzle template machine_end_gcode.json": "1836f3d1342f79e4cd6bff69eecc1a588cc3667a557eea56e5f2f8b5bd63820c",
+    "machine/Bambu Lab A2L 0.4 nozzle template machine_start_gcode.json": "d92c0d5a212728223ac4647eac8a219386c46534892cc2e6ad9a82d06aed25b3",
+    "machine/Bambu Lab A2L 0.4 nozzle template time_lapse_gcode.json": "87a07cab2e284b3ed107560b37976bd76f7ce5ec0715f73b1ff1b75caaf1ec73",
+    "machine/Bambu Lab A2L 0.4 nozzle.json": "ff0836c50ef92fe849c5becb37236d7e43be45161d5ffb999069455b30c06388",
+    "machine/Bambu Lab A2L.json": "376151e3ad2bc98e47c1c11dd36cff1e0f9aaca5dc6cf6ef7f187c2e70969dc2",
+    "process/0.20mm Standard @BBL A2L.json": "57650e0bd81e7613b6f7ccc4b9e373bda5958de177ffc26f2e68cc6c51806074",
+    "filament/Generic PLA @BBL A2L.json": "9eb6dbd9df6dad4cce8571a7f912776ba416d1fc453ebcc49869f7740e842292",
+    "filament/Generic PLA Silk @BBL A2L.json": "4b48914f52fe9a20053fc418384a209ba85f72d91713e1e41dd769b2c0a62d14"
+  },
+  "printer": "Bambu Lab A2L 0.4 nozzle",
+  "flattened_settings_embedded_in_editable_and_native_projects": true,
+  "A1_machine_commands_replaced": true
+}

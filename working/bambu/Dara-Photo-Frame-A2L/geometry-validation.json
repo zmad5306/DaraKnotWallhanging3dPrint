@@ -1,0 +1,2456 @@
+{
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+  "production_plan_sha256": "a541763d31c328921a7735717af5eb141f8dcad4a4c280946d3e8f10e2b65137",
+  "part_overlaps": [
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        2
+      ],
+      "overlap_mm3": 3.374682873512044e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        3
+      ],
+      "overlap_mm3": 1.6712437775909597e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        4
+      ],
+      "overlap_mm3": 4.418861110355721e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        5
+      ],
+      "overlap_mm3": 1.0200174038743626e-15
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        6
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        6
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        6
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        6
+      ],
+      "overlap_mm3": 8.57124725030946e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        6
+      ],
+      "overlap_mm3": 9.936503553831978e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        7
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        7
+      ],
+      "overlap_mm3": 6.826275655846814e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        8
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        8
+      ],
+      "overlap_mm3": 1.540330363258846e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        7,
+        8
+      ],
+      "overlap_mm3": 6.644165987213785e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        9
+      ],
+      "overlap_mm3": 5.056302598838158e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        7,
+        9
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        8,
+        9
+      ],
+      "overlap_mm3": 1.5083420623618338e-14
+    },
+    {
+      "family": "frame",
+      "parts": [
+        1,
+        10
+      ],
+      "overlap_mm3": 5.135007816094855e-13
+    },
+    {
+      "family": "frame",
+      "parts": [
+        2,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        3,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        4,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        5,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        6,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        7,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        8,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "frame",
+      "parts": [
+        9,
+        10
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        2
+      ],
+      "overlap_mm3": 9.971032493396733e-06
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        2,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        2,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        3,
+        4
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        1,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        2,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        3,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "core",
+      "parts": [
+        4,
+        5
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "veneer",
+      "parts": [
+        1,
+        2
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "veneer",
+      "parts": [
+        1,
+        3
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "family": "veneer",
+      "parts": [
+        2,
+        3
+      ],
+      "overlap_mm3": 8.881784197001252e-16
+    }
+  ],
+  "actual_knot_cosmetic_closure": [
+    {
+      "joint": 1,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 260,
+          "maximum_gap_mm": 2.7364003057559168e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 211,
+          "maximum_gap_mm": 2.842155733305641e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 211,
+          "maximum_gap_mm": 2.575808312267863e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 179,
+          "maximum_gap_mm": 2.812593080842577e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 173,
+          "maximum_gap_mm": 1.477187037969115e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 173,
+          "maximum_gap_mm": 1.47567349104617e-08
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 146,
+          "maximum_gap_mm": 3.060591321203331e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 111,
+          "maximum_gap_mm": 3.421928381218803e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 111,
+          "maximum_gap_mm": 3.399164891714519e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 95,
+          "maximum_gap_mm": 3.0590206617691436e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 88,
+          "maximum_gap_mm": 3.0591426133201e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 88,
+          "maximum_gap_mm": 3.2006754266580496e-08
+        }
+      ]
+    },
+    {
+      "joint": 3,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 7.342767842216085e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 136,
+          "maximum_gap_mm": 6.788014985080852e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 136,
+          "maximum_gap_mm": 6.791724977912484e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 133,
+          "maximum_gap_mm": 6.784714869383139e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 117,
+          "maximum_gap_mm": 6.780482464632514e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 117,
+          "maximum_gap_mm": 6.776867464773894e-08
+        }
+      ]
+    },
+    {
+      "joint": 4,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 100,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.859140898211094e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.8591408982110936e-14
+        }
+      ]
+    },
+    {
+      "joint": 5,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 8.117041587773056e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.0786687240308e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.096986526594837e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.07606332292544e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 118,
+          "maximum_gap_mm": 8.096186547799044e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 118,
+          "maximum_gap_mm": 8.078342253578639e-14
+        }
+      ]
+    },
+    {
+      "joint": 6,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 150,
+          "maximum_gap_mm": 3.801808699923883e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 117,
+          "maximum_gap_mm": 3.8833189982503015e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 117,
+          "maximum_gap_mm": 3.46682782198955e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 95,
+          "maximum_gap_mm": 3.8110982892755306e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 90,
+          "maximum_gap_mm": 3.760792329706252e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 90,
+          "maximum_gap_mm": 3.4029972171567224e-08
+        }
+      ]
+    },
+    {
+      "joint": 7,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 268,
+          "maximum_gap_mm": 1.732981696602786e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 213,
+          "maximum_gap_mm": 2.9631405805077462e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 213,
+          "maximum_gap_mm": 3.007508777995735e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 180,
+          "maximum_gap_mm": 2.5308360184125712e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 171,
+          "maximum_gap_mm": 1.4265162219041388e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 171,
+          "maximum_gap_mm": 2.0268846796682872e-08
+        }
+      ]
+    },
+    {
+      "joint": 8,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 261,
+          "maximum_gap_mm": 3.752812041769507e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.753474287427635e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.7761984724731944e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 178,
+          "maximum_gap_mm": 3.7761984948177614e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.7683227317020434e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.7690912055760465e-08
+        }
+      ]
+    },
+    {
+      "joint": 9,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 136,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        }
+      ]
+    },
+    {
+      "joint": 10,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 8.045797046648645e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 133,
+          "maximum_gap_mm": 8.063680572045212e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 133,
+          "maximum_gap_mm": 8.053344705816504e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 133,
+          "maximum_gap_mm": 8.110592415660523e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.129556113483559e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.111638270574086e-14
+        }
+      ]
+    },
+    {
+      "joint": 11,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 136,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 95,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 82,
+          "maximum_gap_mm": 0
+        }
+      ]
+    },
+    {
+      "joint": 12,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 134,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 100,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.6561449755929274e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 80,
+          "maximum_gap_mm": 1.6561449755929278e-14
+        }
+      ]
+    },
+    {
+      "joint": 13,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 261,
+          "maximum_gap_mm": 3.776198472807732e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.7761984884927526e-08
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 211,
+          "maximum_gap_mm": 3.776198473096451e-08
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 176,
+          "maximum_gap_mm": 3.776198546076668e-08
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.77619848731045e-08
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 172,
+          "maximum_gap_mm": 3.7761985836584177e-08
+        }
+      ]
+    },
+    {
+      "joint": 14,
+      "sections": [
+        {
+          "z_mm": 8.999,
+          "contact_probes": 194,
+          "maximum_gap_mm": 6.833398022210354e-08
+        },
+        {
+          "z_mm": 9.001,
+          "contact_probes": 137,
+          "maximum_gap_mm": 8.237836488040925e-14
+        },
+        {
+          "z_mm": 9.599,
+          "contact_probes": 137,
+          "maximum_gap_mm": 8.143412245795191e-14
+        },
+        {
+          "z_mm": 9.899,
+          "contact_probes": 134,
+          "maximum_gap_mm": 8.086688022168329e-14
+        },
+        {
+          "z_mm": 12.899,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.105595843824435e-14
+        },
+        {
+          "z_mm": 13.499,
+          "contact_probes": 117,
+          "maximum_gap_mm": 8.08773081019366e-14
+        }
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "screw": 1,
+      "core": 1,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 2,
+      "core": 1,
+      "knot": 2,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 3,
+      "core": 1,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 4,
+      "core": 2,
+      "knot": 5,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 5,
+      "core": 2,
+      "knot": 6,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 6,
+      "core": 1,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 7,
+      "core": 4,
+      "knot": 10,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 8,
+      "core": 3,
+      "knot": 1,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 9,
+      "core": 2,
+      "knot": 6,
+      "pilot_annulus_missing_mm3": 0.0
+    },
+    {
+      "screw": 10,
+      "core": 5,
+      "knot": 7,
+      "pilot_annulus_missing_mm3": 0.0
+    }
+  ],
+  "hammered_front_preservation": [
+    {
+      "veneer": 1,
+      "front_vertices_checked": 114567,
+      "max_front_error_mm": 8.526512829121202e-14
+    },
+    {
+      "veneer": 2,
+      "front_vertices_checked": 106757,
+      "max_front_error_mm": 1.0150134689838562e-13
+    },
+    {
+      "veneer": 3,
+      "front_vertices_checked": 113632,
+      "max_front_error_mm": 9.237055564881302e-14
+    }
+  ],
+  "print_bounds": [
+    {
+      "name": "F1 A2L knot",
+      "plate": 1,
+      "bounds_mm": [
+        [
+          7.171556754597816,
+          6.9981146115067645,
+          0.0
+        ],
+        [
+          322.8284432449254,
+          313.0018853882605,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F2 A2L knot",
+      "plate": 2,
+      "bounds_mm": [
+        [
+          23.482995915558718,
+          22.81073222889944,
+          0.0
+        ],
+        [
+          306.5170040852689,
+          297.1892677728358,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F3 A2L knot",
+      "plate": 3,
+      "bounds_mm": [
+        [
+          11.021820246338393,
+          10.730637823510634,
+          0.0
+        ],
+        [
+          318.97817974389545,
+          309.2693621765833,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F4 A2L knot",
+      "plate": 4,
+      "bounds_mm": [
+        [
+          10.002332751875883,
+          9.742328312109805,
+          0.0
+        ],
+        [
+          319.99766724299116,
+          310.2576716889449,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F5 A2L knot",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          23.491986733214162,
+          22.819449692401435,
+          0.0
+        ],
+        [
+          306.50801326627095,
+          297.1805503074303,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F6 A2L knot",
+      "plate": 6,
+      "bounds_mm": [
+        [
+          5.968140796435989,
+          5.831502584452652,
+          0.0
+        ],
+        [
+          324.03185920437613,
+          314.16849741421936,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F7 A2L knot",
+      "plate": 7,
+      "bounds_mm": [
+        [
+          33.89631479482318,
+          32.90560043301456,
+          0.0
+        ],
+        [
+          296.1036852045215,
+          287.0943995669934,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F8 A2L knot",
+      "plate": 8,
+      "bounds_mm": [
+        [
+          10.106256940184878,
+          8.686023841153876,
+          0.0
+        ],
+        [
+          319.8937430608744,
+          311.31397615971986,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "F9 A2L knot",
+      "plate": 9,
+      "bounds_mm": [
+        [
+          5.310767823678226,
+          5.194232090967205,
+          0.0
+        ],
+        [
+          324.6892321767131,
+          314.8057679082033,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "F10 A2L knot",
+      "plate": 10,
+      "bounds_mm": [
+        [
+          33.88475544099265,
+          32.894395899962035,
+          0.0
+        ],
+        [
+          296.1152445650411,
+          287.10560409988733,
+          16.5
+        ]
+      ]
+    },
+    {
+      "name": "C1 A2L flat M core",
+      "plate": 11,
+      "bounds_mm": [
+        [
+          13.141536197255903,
+          12.7997718509842,
+          0.0
+        ],
+        [
+          316.8584638031752,
+          307.20022814817185,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "plate": 12,
+      "bounds_mm": [
+        [
+          28.00162060951851,
+          27.204024572770464,
+          0.0
+        ],
+        [
+          301.9983793911092,
+          292.7959754283915,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "plate": 13,
+      "bounds_mm": [
+        [
+          64.93903375571347,
+          63.00838790266533,
+          0.0
+        ],
+        [
+          265.06096624332747,
+          256.99161209844726,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "plate": 14,
+      "bounds_mm": [
+        [
+          12.632250000000095,
+          69.59690919899998,
+          0.0
+        ],
+        [
+          169.9999999960001,
+          250.40309080099996,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "plate": 14,
+      "bounds_mm": [
+        [
+          178.0,
+          69.32951429799996,
+          0.0
+        ],
+        [
+          317.367749996,
+          250.67048570099996,
+          9.0
+        ]
+      ]
+    },
+    {
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+      "plate": 15,
+      "bounds_mm": [
+        [
+          56.191410104,
+          67.9796234048,
+          0.0
+        ],
+        [
+          268.655731,
+          252.170370504,
+          297.3385
+        ]
+      ]
+    },
+    {
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+      "plate": 16,
+      "bounds_mm": [
+        [
+          56.18752571900001,
+          65.9501281977,
+          0.0
+        ],
+        [
+          268.659302,
+          254.04987179699998,
+          297.348724
+        ]
+      ]
+    },
+    {
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+      "plate": 17,
+      "bounds_mm": [
+        [
+          56.187833931,
+          34.449997999000004,
+          0.0
+        ],
+        [
+          268.659302,
+          285.549993999,
+          297.348724
+        ]
+      ]
+    },
+    {
+      "name": "Backer3",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          3.000000000000014,
+          2.9999999999998934,
+          0.0
+        ],
+        [
+          128.50641640000003,
+          128.7817839999999,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer1",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          201.31201180000008,
+          2.9999999999999645,
+          0.0
+        ],
+        [
+          327.0000000000001,
+          128.40355679999996,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer5",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          3.000000000000014,
+          191.48933420000003,
+          0.0
+        ],
+        [
+          128.50924680000003,
+          317.0,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer7",
+      "plate": 18,
+      "bounds_mm": [
+        [
+          201.48139959999992,
+          191.22053520000003,
+          0.0
+        ],
+        [
+          326.9999999999999,
+          317.00000000000006,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer4",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          3.0000000000000213,
+          2.9999999999999645,
+          0.0
+        ],
+        [
+          128.61196900000002,
+          128.60616299999995,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer2",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          201.50261679999997,
+          2.9999999999999574,
+          0.0
+        ],
+        [
+          327.0,
+          128.77442939999997,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer6",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          2.9999999999999716,
+          191.22123719999996,
+          0.0
+        ],
+        [
+          128.50695799999997,
+          316.99999999999994,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "Backer8",
+      "plate": 19,
+      "bounds_mm": [
+        [
+          201.23925779999996,
+          191.583603,
+          0.0
+        ],
+        [
+          326.99999999999994,
+          317.0,
+          1.600000024
+        ]
+      ]
+    },
+    {
+      "name": "B1 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          29.0,
+          0.0
+        ],
+        [
+          160.0,
+          67.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B2 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          84.0,
+          0.0
+        ],
+        [
+          160.0,
+          122.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B3 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          139.0,
+          0.0
+        ],
+        [
+          160.0,
+          177.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "B4 A2L wall block",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          20.0,
+          194.0,
+          0.0
+        ],
+        [
+          160.0,
+          232.0,
+          13.0
+        ]
+      ]
+    },
+    {
+      "name": "R1 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          35.0,
+          0.0
+        ],
+        [
+          215.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R2 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          35.0,
+          0.0
+        ],
+        [
+          241.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R3 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          35.0,
+          0.0
+        ],
+        [
+          267.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R4 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          35.0,
+          0.0
+        ],
+        [
+          293.0,
+          45.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R5 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          57.0,
+          0.0
+        ],
+        [
+          215.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R6 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          57.0,
+          0.0
+        ],
+        [
+          241.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R7 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          57.0,
+          0.0
+        ],
+        [
+          267.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R8 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          57.0,
+          0.0
+        ],
+        [
+          293.0,
+          67.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R9 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          79.0,
+          0.0
+        ],
+        [
+          215.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R10 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          79.0,
+          0.0
+        ],
+        [
+          241.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R11 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          79.0,
+          0.0
+        ],
+        [
+          267.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R12 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          79.0,
+          0.0
+        ],
+        [
+          293.0,
+          89.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R13 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          101.0,
+          0.0
+        ],
+        [
+          215.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R14 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          101.0,
+          0.0
+        ],
+        [
+          241.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R15 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          101.0,
+          0.0
+        ],
+        [
+          267.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R16 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          101.0,
+          0.0
+        ],
+        [
+          293.0,
+          111.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R17 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          123.0,
+          0.0
+        ],
+        [
+          215.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R18 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          123.0,
+          0.0
+        ],
+        [
+          241.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R19 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          123.0,
+          0.0
+        ],
+        [
+          267.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R20 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          123.0,
+          0.0
+        ],
+        [
+          293.0,
+          133.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R21 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          145.0,
+          0.0
+        ],
+        [
+          215.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R22 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          145.0,
+          0.0
+        ],
+        [
+          241.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R23 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          145.0,
+          0.0
+        ],
+        [
+          267.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R24 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          145.0,
+          0.0
+        ],
+        [
+          293.0,
+          155.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R25 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          167.0,
+          0.0
+        ],
+        [
+          215.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R26 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          167.0,
+          0.0
+        ],
+        [
+          241.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R27 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          167.0,
+          0.0
+        ],
+        [
+          267.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R28 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          167.0,
+          0.0
+        ],
+        [
+          293.0,
+          177.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R29 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          195.0,
+          189.0,
+          0.0
+        ],
+        [
+          215.0,
+          199.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R30 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          221.0,
+          189.0,
+          0.0
+        ],
+        [
+          241.0,
+          199.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R31 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          247.0,
+          189.0,
+          0.0
+        ],
+        [
+          267.0,
+          199.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "R32 photo retainer",
+      "plate": 20,
+      "bounds_mm": [
+        [
+          273.0,
+          189.0,
+          0.0
+        ],
+        [
+          293.0,
+          199.0,
+          3.0
+        ]
+      ]
+    }
+  ],
+  "physical_confirmation_pending": true,
+  "joint_revision": "lower-lap-pads-removed-v1",
+  "baseline_geometry_validation_sha256": "5ca8b94a5b213a0a0e34bf0665b7e0092f4dfba21d20f322f4e57c5ed00f1b8f",
+  "preservation_basis": "Only raised lap pads removed below Z5.001. Visible seams, hardware, M and print poses unchanged; material removal cannot introduce assembly overlap.",
+  "pad_patch": {
+    "revision": "lower-lap-pads-removed-v1",
+    "editable": {
+      "source_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+      "target_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+      "removed_pads": 42,
+      "objects": [
+        {
+          "name": "F2 A2L knot",
+          "joints": [
+            1,
+            3
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1101",
+              "removed_mm3": 4.229048628097563,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1102",
+              "removed_mm3": 2.819365752446324,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1104",
+              "removed_mm3": 1.4096828760557851,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F3 A2L knot",
+          "joints": [
+            2
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1202",
+              "removed_mm3": 4.229048626314482,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F4 A2L knot",
+          "joints": [
+            4,
+            6
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1302",
+              "removed_mm3": 8.458097257507648,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F5 A2L knot",
+          "joints": [
+            5,
+            7
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1401",
+              "removed_mm3": 4.2290486274444286,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1402",
+              "removed_mm3": 2.8193657512639754,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1403",
+              "removed_mm3": 1.4096828759413669,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F7 A2L knot",
+          "joints": [
+            8
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1602",
+              "removed_mm3": 2.8193657514292707,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1603",
+              "removed_mm3": 1.4096828757312385,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F8 A2L knot",
+          "joints": [
+            9,
+            10
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1701",
+              "removed_mm3": 8.458097254847011,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F9 A2L knot",
+          "joints": [
+            11,
+            12,
+            14
+          ],
+          "removed_pads": 9,
+          "volumes": [
+            {
+              "part_id": "1801",
+              "removed_mm3": 8.458097256216249,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1802",
+              "removed_mm3": 4.229048629407515,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F10 A2L knot",
+          "joints": [
+            13
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1902",
+              "removed_mm3": 2.819365752503967,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1904",
+              "removed_mm3": 1.4096828759954412,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        }
+      ],
+      "changed_child_assets": [
+        "3D/Objects/1100.model",
+        "3D/Objects/1200.model",
+        "3D/Objects/1300.model",
+        "3D/Objects/1400.model",
+        "3D/Objects/1600.model",
+        "3D/Objects/1700.model",
+        "3D/Objects/1800.model",
+        "3D/Objects/1900.model"
+      ],
+      "settings_and_transforms_byte_preserved": true,
+      "all_other_zip_entries_byte_preserved": true
+    },
+    "native": {
+      "source_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+      "target_sha256": "3b721568f73b9f80fd5e0e15e1fe0071a97bff3b467ba4b1b0b9ead4b354dc90",
+      "removed_pads": 42,
+      "objects": [
+        {
+          "name": "F2 A2L knot",
+          "joints": [
+            1,
+            3
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "11",
+              "removed_mm3": 4.229051270276767,
+              "added_mm3": 5.2708859954957747e-14,
+              "removed_outside_pad_tools_mm3": 5.27046901168879e-14
+            },
+            {
+              "part_id": "12",
+              "removed_mm3": 2.8193685765495355,
+              "added_mm3": 1.1738581538894113e-07,
+              "removed_outside_pad_tools_mm3": 1.1738581546116964e-07
+            },
+            {
+              "part_id": "14",
+              "removed_mm3": 1.409681746593646,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 9.305781891221561e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F3 A2L knot",
+          "joints": [
+            2
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "24",
+              "removed_mm3": 4.22904996830737,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F4 A2L knot",
+          "joints": [
+            4,
+            6
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "37",
+              "removed_mm3": 8.458098305259888,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 2,
+          "result_components": 2
+        },
+        {
+          "name": "F5 A2L knot",
+          "joints": [
+            5,
+            7
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "49",
+              "removed_mm3": 4.229046509638221,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.137373342260413e-24
+            },
+            {
+              "part_id": "50",
+              "removed_mm3": 2.819361332598297,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0856745539758488e-24
+            },
+            {
+              "part_id": "51",
+              "removed_mm3": 1.4096834670839762,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F7 A2L knot",
+          "joints": [
+            8
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "70",
+              "removed_mm3": 2.8193693872001604,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-23
+            },
+            {
+              "part_id": "71",
+              "removed_mm3": 1.40968447932121,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 5.169878828456423e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F8 A2L knot",
+          "joints": [
+            9,
+            10
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "81",
+              "removed_mm3": 8.458097453513645,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 2.5849394142282115e-24
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F9 A2L knot",
+          "joints": [
+            11,
+            12,
+            14
+          ],
+          "removed_pads": 9,
+          "volumes": [
+            {
+              "part_id": "94",
+              "removed_mm3": 8.458095276337977,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.550963648536927e-25
+            },
+            {
+              "part_id": "95",
+              "removed_mm3": 4.2290445842039075,
+              "added_mm3": 4.319820695899942e-15,
+              "removed_outside_pad_tools_mm3": 4.319820695899942e-15
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F10 A2L knot",
+          "joints": [
+            13
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "109",
+              "removed_mm3": 2.8193665678921818,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 2.0679515313825692e-25
+            },
+            {
+              "part_id": "111",
+              "removed_mm3": 1.4096845339086443,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        }
+      ],
+      "changed_child_assets": [
+        "3D/Objects/object_10.model",
+        "3D/Objects/object_2.model",
+        "3D/Objects/object_3.model",
+        "3D/Objects/object_4.model",
+        "3D/Objects/object_5.model",
+        "3D/Objects/object_7.model",
+        "3D/Objects/object_8.model",
+        "3D/Objects/object_9.model"
+      ],
+      "settings_and_transforms_byte_preserved": true,
+      "all_other_zip_entries_byte_preserved": true
+    },
+    "removed_pad_height_mm": 0.2,
+    "remaining_lap_surface_z_mm": 4.8,
+    "all_14_mortises_unchanged": true,
+    "physical_result": "User trimmed three lower-lap pads; confirmed fit and flush white/brown front surfaces on 2026-10-19.",
+    "physical_printer_context": "User switched the sample to A1 and observed grid; exact locally resliced file was not inspected."
+  },
+  "veneer_carrier_revision": "wall-cradle-r6-end-ties",
+  "wall_promotion_preservation_basis": "veneer-wall-unchanged-plates.json",
+  "wall_geometry_validation": "veneer-wall-promotion-validation.json"
+}

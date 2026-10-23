@@ -1,0 +1,38 @@
+{
+  "Letter": {
+    "11": 1,
+    "12": 2,
+    "13": 3,
+    "14": 4,
+    "15": 5,
+    "16": 6,
+    "17": 7
+  },
+  "Small_Parts": [
+    {
+      "source": "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf",
+      "source_plate": 1,
+      "plate": 1
+    },
+    {
+      "source": "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf",
+      "source_plate": 2,
+      "plate": 2
+    },
+    {
+      "source": "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf",
+      "source_plate": 3,
+      "plate": 3
+    },
+    {
+      "source": "output\\Dara-Center-Veneer-Alignment-Jig-A1\\r3\\Dara-Center-Veneer-Alignment-Jig-A1-r3.3mf",
+      "source_plate": 1,
+      "plate": 4
+    },
+    {
+      "source": "output\\Dara-Side-Veneer-Alignment-Jigs-A1\\r1\\Dara-Side-Veneer-Alignment-Jigs-A1-r1.3mf",
+      "source_plate": 1,
+      "plate": 5
+    }
+  ]
+}

@@ -1,0 +1,1335 @@
+{
+  "source_A2L_complete_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "source_A2L_editable_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+  "editable_sha256": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+  "native_sha256": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+  "native_return_code": 0,
+  "plates": [
+    {
+      "extrusion_moves_checked": 37545,
+      "features": {
+        "Inner wall": 10259,
+        "Outer wall": 3933,
+        "Bottom surface": 2602,
+        "Internal solid infill": 18834,
+        "Top surface": 1576,
+        "Gap infill": 341
+      },
+      "model_extrusion_z_by_filament_mm": {
+        "1": [
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6
+        ]
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.71,
+          1.71
+        ],
+        [
+          254.29,
+          254.29
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.5,
+          1.5
+        ],
+        [
+          254.5,
+          254.5
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.5,
+      "plate": 1,
+      "gcode_sha256": "dc3d721d660fa2b842b0a987f0480aba8ed1f85e8798bfa7a093fc3bf06c3574",
+      "seconds": 8328.3955078125,
+      "weight_g": 99.39376068115234
+    },
+    {
+      "extrusion_moves_checked": 37616,
+      "features": {
+        "Inner wall": 10287,
+        "Outer wall": 3935,
+        "Bottom surface": 2598,
+        "Internal solid infill": 18870,
+        "Top surface": 1576,
+        "Gap infill": 350
+      },
+      "model_extrusion_z_by_filament_mm": {
+        "1": [
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6
+        ]
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          1.71,
+          1.71
+        ],
+        [
+          254.29,
+          254.29
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          1.5,
+          1.5
+        ],
+        [
+          254.5,
+          254.5
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 1.5,
+      "plate": 2,
+      "gcode_sha256": "e22e512cba58511b70018dadf1f4376e3f68b085c69053345c6669c2d98a9f39",
+      "seconds": 8326.328125,
+      "weight_g": 99.41592407226562
+    },
+    {
+      "extrusion_moves_checked": 693710,
+      "features": {
+        "Inner wall": 228601,
+        "Outer wall": 90653,
+        "Gap infill": 13038,
+        "Bottom surface": 4689,
+        "Support": 49970,
+        "Brim": 320,
+        "Internal solid infill": 45552,
+        "Sparse infill": 232565,
+        "Floating vertical shell": 15174,
+        "Bridge": 6486,
+        "Top surface": 4430,
+        "Support interface": 1206,
+        "Overhang wall": 1026
+      },
+      "model_extrusion_z_by_filament_mm": {
+        "1": [
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2.0,
+          2.2,
+          2.4,
+          2.6,
+          2.8,
+          3.0,
+          3.2,
+          3.4,
+          3.6,
+          3.8,
+          4.0,
+          4.2,
+          4.4,
+          4.6,
+          4.8,
+          5.0,
+          5.2,
+          5.4,
+          5.6,
+          5.8,
+          6.0,
+          6.2,
+          6.4,
+          6.6,
+          6.8,
+          7.0,
+          7.2,
+          7.4,
+          7.6,
+          7.8,
+          8.0,
+          8.2,
+          8.4,
+          8.6,
+          8.8,
+          9.0,
+          9.2,
+          9.4,
+          9.6,
+          9.8,
+          10.0,
+          10.2,
+          10.4,
+          10.6,
+          10.8,
+          11.0,
+          11.2,
+          11.4,
+          11.6,
+          11.8,
+          12.0,
+          12.2,
+          12.4,
+          12.6,
+          12.8,
+          13.0
+        ]
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          13.214,
+          35.214
+        ],
+        [
+          240.79,
+          218.786
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          12.964,
+          34.964
+        ],
+        [
+          241.0,
+          219.036
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 12.964,
+      "plate": 3,
+      "gcode_sha256": "034efca09a27432d96bf8c19caeed74c39a00dacdcfdef6c6fe7a4bb7e80e776",
+      "seconds": 18011.78125,
+      "weight_g": 144.87635803222656
+    }
+  ],
+  "source_geometry_preservation": [
+    {
+      "name": "Backer3",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer1",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer5",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer7",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer4",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer2",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer6",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "Backer8",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "B1 A1 companion wall block",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "B2 A1 companion wall block",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "B3 A1 companion wall block",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "B4 A1 companion wall block",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R1 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R2 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R3 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R4 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R5 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R6 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R7 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R8 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R9 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R10 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R11 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R12 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R13 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R14 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R15 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R16 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R17 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R18 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R19 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R20 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R21 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R22 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R23 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R24 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R25 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R26 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R27 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R28 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R29 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R30 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R31 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    },
+    {
+      "name": "R32 photo retainer",
+      "max_source_geometry_error_mm": 0.0,
+      "all_model_and_modifier_meshes_checked": true
+    }
+  ],
+  "native_roundtrip": [
+    {
+      "name": "Backer3",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "Backer1",
+      "max_native_geometry_or_pose_error_mm": 1.0000002248489182e-07
+    },
+    {
+      "name": "Backer5",
+      "max_native_geometry_or_pose_error_mm": 1.0000002248489182e-07
+    },
+    {
+      "name": "Backer7",
+      "max_native_geometry_or_pose_error_mm": 4.4721364521315233e-07
+    },
+    {
+      "name": "Backer4",
+      "max_native_geometry_or_pose_error_mm": 4.999999987376214e-07
+    },
+    {
+      "name": "Backer2",
+      "max_native_geometry_or_pose_error_mm": 4.000000330961484e-07
+    },
+    {
+      "name": "Backer6",
+      "max_native_geometry_or_pose_error_mm": 4.000000330961484e-07
+    },
+    {
+      "name": "Backer8",
+      "max_native_geometry_or_pose_error_mm": 5.09901954531065e-07
+    },
+    {
+      "name": "B1 A1 companion wall block",
+      "max_native_geometry_or_pose_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "B2 A1 companion wall block",
+      "max_native_geometry_or_pose_error_mm": 7.105427357601002e-15
+    },
+    {
+      "name": "B3 A1 companion wall block",
+      "max_native_geometry_or_pose_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "B4 A1 companion wall block",
+      "max_native_geometry_or_pose_error_mm": 7.105427357601002e-15
+    },
+    {
+      "name": "R1 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R2 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R3 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R4 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R5 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R6 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R7 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R8 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R9 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R10 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R11 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R12 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R13 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R14 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R15 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R16 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R17 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R18 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R19 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R20 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R21 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R22 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R23 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R24 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R25 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R26 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R27 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R28 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R29 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R30 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R31 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    },
+    {
+      "name": "R32 photo retainer",
+      "max_native_geometry_or_pose_error_mm": 0.0
+    }
+  ],
+  "printer_command_profiles_verified": [
+    "machine_start_gcode",
+    "machine_end_gcode",
+    "change_filament_gcode",
+    "layer_change_gcode",
+    "time_lapse_gcode"
+  ],
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 970,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 90,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 1266.6552734375,
+          "Custom": 368.53570556640625,
+          "Flush": 25.0,
+          "Gap infill": 7.309969425201416,
+          "Inner wall": 327.05596923828125,
+          "Internal solid infill": 5169.0556640625,
+          "Outer wall": 118.26128387451172,
+          "Top surface": 952.2418823242188,
+          "Travel": 111.24626922607422,
+          "Undefined": 94.45873260498047
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 99.39376068115234,
+            "total_used_g": 99.39376068115234
+          }
+        ],
+        "generate_support_material_time": 2,
+        "id": 1,
+        "infill_time": 72,
+        "layer_filament_change": 0,
+        "main_predication": 7926.6474609375,
+        "make_perimeters_time": 15,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 125.78178405761719,
+              "height": 1.600000023841858,
+              "width": 125.50641632080078,
+              "x": 1.5,
+              "y": 1.5,
+              "z": 7.907108301452581e-11
+            },
+            "id": 5,
+            "name": "Backer3",
+            "triangle_count": 932
+          },
+          {
+            "bbox": {
+              "depth": 125.40355682373047,
+              "height": 1.600000023841858,
+              "width": 125.68798828125,
+              "x": 128.81201171875,
+              "y": 1.5,
+              "z": 7.907108301452581e-11
+            },
+            "id": 9,
+            "name": "Backer1",
+            "triangle_count": 932
+          },
+          {
+            "bbox": {
+              "depth": 125.51066589355469,
+              "height": 1.600000023841858,
+              "width": 125.50924682617188,
+              "x": 1.5,
+              "y": 128.9893341064453,
+              "z": 7.907108301452581e-11
+            },
+            "id": 13,
+            "name": "Backer5",
+            "triangle_count": 928
+          },
+          {
+            "bbox": {
+              "depth": 125.77946472167969,
+              "height": 1.600000023841858,
+              "width": 125.51860046386719,
+              "x": 128.9813995361328,
+              "y": 128.7205352783203,
+              "z": 7.907108301452581e-11
+            },
+            "id": 17,
+            "name": "Backer7",
+            "triangle_count": 936
+          }
+        ],
+        "sliced_time": 193,
+        "sliced_time_with_cache": 70,
+        "total_predication": 8328.3955078125,
+        "triangle_count": 3728,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1265.98876953125,
+          "Custom": 368.6240234375,
+          "Flush": 25.0,
+          "Gap infill": 7.116384983062744,
+          "Inner wall": 326.8910217285156,
+          "Internal solid infill": 5170.63671875,
+          "Outer wall": 117.95634460449219,
+          "Top surface": 952.3709106445312,
+          "Travel": 108.69818878173828,
+          "Undefined": 91.90763854980469
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 99.41592407226562,
+            "total_used_g": 99.41592407226562
+          }
+        ],
+        "generate_support_material_time": 2,
+        "id": 2,
+        "infill_time": 79,
+        "layer_filament_change": 0,
+        "main_predication": 7924.49462890625,
+        "make_perimeters_time": 15,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 125.60616302490234,
+              "height": 1.600000023841858,
+              "width": 125.61195373535156,
+              "x": 308.70001220703125,
+              "y": 1.5,
+              "z": 7.907108301452581e-11
+            },
+            "id": 21,
+            "name": "Backer4",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.77442932128906,
+              "height": 1.600000023841858,
+              "width": 125.49739074707031,
+              "x": 436.2026062011719,
+              "y": 1.5,
+              "z": 7.907108301452581e-11
+            },
+            "id": 25,
+            "name": "Backer2",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.77876281738281,
+              "height": 1.600000023841858,
+              "width": 125.50694274902344,
+              "x": 308.70001220703125,
+              "y": 128.7212371826172,
+              "z": 7.907108301452581e-11
+            },
+            "id": 29,
+            "name": "Backer6",
+            "triangle_count": 936
+          },
+          {
+            "bbox": {
+              "depth": 125.41639709472656,
+              "height": 1.600000023841858,
+              "width": 125.76072692871094,
+              "x": 435.93927001953125,
+              "y": 129.08360290527344,
+              "z": 7.907108301452581e-11
+            },
+            "id": 33,
+            "name": "Backer8",
+            "triangle_count": 932
+          }
+        ],
+        "sliced_time": 198,
+        "sliced_time_with_cache": 67,
+        "total_predication": 8326.328125,
+        "triangle_count": 3740,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 775.5684204101562,
+          "Bridge": 868.3488159179688,
+          "Brim": 58.67529296875,
+          "Custom": 368.7320556640625,
+          "Flush": 25.0,
+          "Gap infill": 216.51364135742188,
+          "Inner wall": 3159.000244140625,
+          "Internal solid infill": 3389.752685546875,
+          "Outer wall": 1179.9317626953125,
+          "Overhang wall": 58.44732666015625,
+          "Sparse infill": 5186.009765625,
+          "Support": 470.0461730957031,
+          "Support interface": 34.18689727783203,
+          "Top surface": 722.44384765625,
+          "Travel": 1507.7955322265625,
+          "Undefined": 1491.0103759765625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 144.87635803222656,
+            "total_used_g": 144.87635803222656
+          }
+        ],
+        "generate_support_material_time": 251,
+        "id": 3,
+        "infill_time": 489,
+        "layer_filament_change": 0,
+        "main_predication": 17609.833984375,
+        "make_perimeters_time": 342,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 38.0000114440918,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -271.20001220703125,
+              "z": 0.0
+            },
+            "id": 37,
+            "name": "B1 A1 companion wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 37.999996185302734,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -223.1999969482422,
+              "z": 0.0
+            },
+            "id": 41,
+            "name": "B2 A1 companion wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 37.999996185302734,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -175.1999969482422,
+              "z": 0.0
+            },
+            "id": 45,
+            "name": "B3 A1 companion wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 37.999996185302734,
+              "height": 13.0,
+              "width": 140.0,
+              "x": 14.0,
+              "y": -127.19999694824219,
+              "z": 0.0
+            },
+            "id": 49,
+            "name": "B4 A1 companion wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 10.000012397766113,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -264.20001220703125,
+              "z": 0.0
+            },
+            "id": 53,
+            "name": "R1 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.000012397766113,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -264.20001220703125,
+              "z": 0.0
+            },
+            "id": 57,
+            "name": "R2 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.000012397766113,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -264.20001220703125,
+              "z": 0.0
+            },
+            "id": 61,
+            "name": "R3 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -248.1999969482422,
+              "z": 0.0
+            },
+            "id": 65,
+            "name": "R4 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -248.1999969482422,
+              "z": 0.0
+            },
+            "id": 69,
+            "name": "R5 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -248.1999969482422,
+              "z": 0.0
+            },
+            "id": 73,
+            "name": "R6 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -232.1999969482422,
+              "z": 0.0
+            },
+            "id": 77,
+            "name": "R7 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -232.1999969482422,
+              "z": 0.0
+            },
+            "id": 81,
+            "name": "R8 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -232.1999969482422,
+              "z": 0.0
+            },
+            "id": 85,
+            "name": "R9 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -216.1999969482422,
+              "z": 0.0
+            },
+            "id": 89,
+            "name": "R10 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -216.1999969482422,
+              "z": 0.0
+            },
+            "id": 93,
+            "name": "R11 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -216.1999969482422,
+              "z": 0.0
+            },
+            "id": 97,
+            "name": "R12 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -200.1999969482422,
+              "z": 0.0
+            },
+            "id": 101,
+            "name": "R13 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -200.1999969482422,
+              "z": 0.0
+            },
+            "id": 105,
+            "name": "R14 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -200.1999969482422,
+              "z": 0.0
+            },
+            "id": 109,
+            "name": "R15 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -184.1999969482422,
+              "z": 0.0
+            },
+            "id": 113,
+            "name": "R16 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -184.1999969482422,
+              "z": 0.0
+            },
+            "id": 117,
+            "name": "R17 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -184.1999969482422,
+              "z": 0.0
+            },
+            "id": 121,
+            "name": "R18 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -168.1999969482422,
+              "z": 0.0
+            },
+            "id": 125,
+            "name": "R19 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -168.1999969482422,
+              "z": 0.0
+            },
+            "id": 129,
+            "name": "R20 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -168.1999969482422,
+              "z": 0.0
+            },
+            "id": 133,
+            "name": "R21 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -152.1999969482422,
+              "z": 0.0
+            },
+            "id": 137,
+            "name": "R22 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -152.1999969482422,
+              "z": 0.0
+            },
+            "id": 141,
+            "name": "R23 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -152.1999969482422,
+              "z": 0.0
+            },
+            "id": 145,
+            "name": "R24 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -136.1999969482422,
+              "z": 0.0
+            },
+            "id": 149,
+            "name": "R25 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -136.1999969482422,
+              "z": 0.0
+            },
+            "id": 153,
+            "name": "R26 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -136.1999969482422,
+              "z": 0.0
+            },
+            "id": 157,
+            "name": "R27 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -120.19999694824219,
+              "z": 0.0
+            },
+            "id": 161,
+            "name": "R28 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -120.19999694824219,
+              "z": 0.0
+            },
+            "id": 165,
+            "name": "R29 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 221.0,
+              "y": -120.19999694824219,
+              "z": 0.0
+            },
+            "id": 169,
+            "name": "R30 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 169.0,
+              "y": -104.19999694824219,
+              "z": 0.0
+            },
+            "id": 173,
+            "name": "R31 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 9.99999713897705,
+              "height": 3.0,
+              "width": 20.0,
+              "x": 195.0,
+              "y": -104.19999694824219,
+              "z": 0.0
+            },
+            "id": 177,
+            "name": "R32 photo retainer",
+            "triangle_count": 520
+          }
+        ],
+        "sliced_time": 2572,
+        "sliced_time_with_cache": 1379,
+        "total_predication": 18011.78125,
+        "triangle_count": 25248,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "physical_confirmation_pending": true
+}

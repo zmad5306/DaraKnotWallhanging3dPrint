@@ -1,0 +1,195 @@
+{
+  "desired_assembled_direction_deg": 45.0,
+  "formula": "printer fill angle = desired assembled angle + part print rotation, modulo 180 degrees",
+  "sections": [
+    {
+      "section": 1,
+      "print_rotation_deg": 101.24259966932402,
+      "proposed_infill_direction_deg": 146.24259966932402,
+      "assembled_surface_direction_deg": 45.0
+    },
+    {
+      "section": 2,
+      "print_rotation_deg": 92.26959150795327,
+      "proposed_infill_direction_deg": 137.26959150795327,
+      "assembled_surface_direction_deg": 45.0
+    },
+    {
+      "section": 3,
+      "print_rotation_deg": 24.057457353670394,
+      "proposed_infill_direction_deg": 69.0574573536704,
+      "assembled_surface_direction_deg": 45.00000000000001
+    },
+    {
+      "section": 4,
+      "print_rotation_deg": 156.3202643631539,
+      "proposed_infill_direction_deg": 21.32026436315391,
+      "assembled_surface_direction_deg": 45.0
+    },
+    {
+      "section": 5,
+      "print_rotation_deg": 87.74047042356314,
+      "proposed_infill_direction_deg": 132.74047042356312,
+      "assembled_surface_direction_deg": 44.999999999999986
+    },
+    {
+      "section": 6,
+      "print_rotation_deg": 78.95460184882299,
+      "proposed_infill_direction_deg": 123.95460184882299,
+      "assembled_surface_direction_deg": 45.0
+    },
+    {
+      "section": 7,
+      "print_rotation_deg": 176.32560363630088,
+      "proposed_infill_direction_deg": 41.32560363630088,
+      "assembled_surface_direction_deg": 45.0
+    },
+    {
+      "section": 8,
+      "print_rotation_deg": 105.73928191935148,
+      "proposed_infill_direction_deg": 150.73928191935147,
+      "assembled_surface_direction_deg": 44.999999999999986
+    },
+    {
+      "section": 9,
+      "print_rotation_deg": 161.7700295523235,
+      "proposed_infill_direction_deg": 26.770029552323507,
+      "assembled_surface_direction_deg": 45.0
+    },
+    {
+      "section": 10,
+      "print_rotation_deg": 3.7023938879297864,
+      "proposed_infill_direction_deg": 48.70239388792979,
+      "assembled_surface_direction_deg": 45.0
+    }
+  ],
+  "joint_checks": [
+    {
+      "joint": 1,
+      "sections": [
+        2,
+        1
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 8.973008161370757,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 2,
+      "sections": [
+        3,
+        1
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 77.18514231565362,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 3,
+      "sections": [
+        2,
+        3
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 68.21213415428286,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 4,
+      "sections": [
+        4,
+        3
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 47.73719299051649,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 5,
+      "sections": [
+        5,
+        4
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 68.57979393959079,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 6,
+      "sections": [
+        4,
+        6
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 77.36566251433092,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 7,
+      "sections": [
+        5,
+        6
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 8.785868574740135,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 8,
+      "sections": [
+        7,
+        6
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 82.6289982125221,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 9,
+      "sections": [
+        8,
+        6
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 26.784680070528495,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 10,
+      "sections": [
+        8,
+        7
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 70.58632171694939,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 11,
+      "sections": [
+        9,
+        1
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 60.527429882999485,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 12,
+      "sections": [
+        9,
+        8
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 56.03074763297202,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 13,
+      "sections": [
+        10,
+        1
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 82.45979421860577,
+      "proposed_compensated_difference_deg": 0
+    },
+    {
+      "joint": 14,
+      "sections": [
+        9,
+        10
+      ],
+      "default_uncompensated_surface_direction_difference_deg": 21.93236433560628,
+      "proposed_compensated_difference_deg": 0
+    }
+  ],
+  "native_gcode_validation_pending": true
+}

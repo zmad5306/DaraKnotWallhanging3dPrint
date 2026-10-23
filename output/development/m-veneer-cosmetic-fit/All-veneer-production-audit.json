@@ -1,0 +1,370 @@
+{
+  "production_carriers_checked": 9,
+  "saved_veneer_instances_checked": 39,
+  "geometry_and_removal_checks": [
+    {
+      "family": "A1",
+      "veneer": 1,
+      "cut_necks": 184,
+      "no_continuous_shoe": true,
+      "maximum_cutter_obstruction_mm3": 1.0348222522418134e-09,
+      "flush_trim_excess_mm3": 1.9689023222918463e-09
+    },
+    {
+      "family": "A1",
+      "veneer": 2,
+      "cut_necks": 105,
+      "no_continuous_shoe": true,
+      "maximum_cutter_obstruction_mm3": 7.936927982028435e-10,
+      "flush_trim_excess_mm3": 2.5397624718657255e-10
+    },
+    {
+      "family": "A1",
+      "veneer": 3,
+      "cut_necks": 181,
+      "no_continuous_shoe": true,
+      "maximum_cutter_obstruction_mm3": 4.844548596577801e-10,
+      "flush_trim_excess_mm3": 1.8926309622823675e-09
+    },
+    {
+      "family": "A1",
+      "veneer": 4,
+      "cut_necks": 106,
+      "no_continuous_shoe": true,
+      "maximum_cutter_obstruction_mm3": 3.7606458216968417e-10,
+      "flush_trim_excess_mm3": 6.165958653193671e-10
+    },
+    {
+      "family": "A1",
+      "veneer": 5,
+      "cut_necks": 104,
+      "no_continuous_shoe": true,
+      "maximum_cutter_obstruction_mm3": 0.0,
+      "flush_trim_excess_mm3": 3.535127920071806e-12
+    },
+    {
+      "family": "A1",
+      "veneer": 6,
+      "cut_necks": 76,
+      "no_continuous_shoe": true,
+      "maximum_cutter_obstruction_mm3": 8.591965353447135e-10,
+      "flush_trim_excess_mm3": 1.980565125023247e-09
+    },
+    {
+      "family": "A2L",
+      "veneer": 1,
+      "revision": "wall-cradle-r6-end-ties",
+      "cut_necks": 237,
+      "continuous_braced_walls": true,
+      "bed_tie_bands": 2,
+      "legacy_base_removed": true,
+      "physical_cleanup_pending": true
+    },
+    {
+      "family": "A2L",
+      "veneer": 2,
+      "revision": "wall-cradle-r6-end-ties",
+      "cut_necks": 240,
+      "continuous_braced_walls": true,
+      "bed_tie_bands": 2,
+      "legacy_base_removed": true,
+      "physical_cleanup_pending": true
+    },
+    {
+      "family": "A2L",
+      "veneer": 3,
+      "revision": "wall-cradle-r6-end-ties",
+      "cut_necks": 244,
+      "continuous_braced_walls": true,
+      "bed_tie_bands": 2,
+      "legacy_base_removed": true,
+      "physical_cleanup_pending": true
+    }
+  ],
+  "all_saved_projects_match_corrected_geometry": true,
+  "projects": [
+    {
+      "project": "Dara.3mf",
+      "sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+      "veneers": [
+        {
+          "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 15,
+          "corrected_geometry_maximum_error_mm": 1.9089237240237295e-05
+        },
+        {
+          "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 16,
+          "corrected_geometry_maximum_error_mm": 1.9416698908371015e-05
+        },
+        {
+          "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 17,
+          "corrected_geometry_maximum_error_mm": 2.4072080066761397e-05
+        }
+      ],
+      "carrier_revision": "wall-cradle-r6-end-ties",
+      "validation_report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json"
+    },
+    {
+      "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Complete.3mf",
+      "sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+      "veneers": [
+        {
+          "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 15,
+          "corrected_geometry_maximum_error_mm": 1.9089237240237295e-05
+        },
+        {
+          "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 16,
+          "corrected_geometry_maximum_error_mm": 1.9416698908371015e-05
+        },
+        {
+          "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 17,
+          "corrected_geometry_maximum_error_mm": 2.4072080066761397e-05
+        }
+      ],
+      "carrier_revision": "wall-cradle-r6-end-ties",
+      "validation_report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json"
+    },
+    {
+      "project": "working/bambu/Dara-Photo-Frame-A2L/Dara-A2L-Editable.3mf",
+      "sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+      "veneers": [
+        {
+          "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 15,
+          "corrected_geometry_maximum_error_mm": 1.9089237240237295e-05
+        },
+        {
+          "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 16,
+          "corrected_geometry_maximum_error_mm": 1.9416698908371015e-05
+        },
+        {
+          "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+          "plate": 17,
+          "corrected_geometry_maximum_error_mm": 2.4072080066761397e-05
+        }
+      ],
+      "carrier_revision": "wall-cradle-r6-end-ties",
+      "validation_report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json"
+    },
+    {
+      "project": "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf",
+      "sha256": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d",
+      "veneers": [
+        {
+          "name": "V1 band-free veneer with sacrificial fins",
+          "plate": 31,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V2 band-free veneer with sacrificial fins",
+          "plate": 32,
+          "corrected_geometry_maximum_error_mm": 1.1368683772161603e-13
+        },
+        {
+          "name": "V3 band-free veneer with sacrificial fins",
+          "plate": 33,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V4 band-free veneer with sacrificial fins",
+          "plate": 34,
+          "corrected_geometry_maximum_error_mm": 1.1368683772161603e-13
+        },
+        {
+          "name": "V5 band-free veneer with sacrificial fins",
+          "plate": 35,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V6 band-free veneer with sacrificial fins",
+          "plate": 36,
+          "corrected_geometry_maximum_error_mm": 1.1368683772161603e-13
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/M-Core-and-Veneer-A1.3mf",
+      "sha256": "ce200c9de8810fcc78ea3e8b8ba03a6080e0a656d0901100f89bce701d993f68",
+      "veneers": [
+        {
+          "name": "V1 band-free veneer with sacrificial fins",
+          "plate": 7,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V2 band-free veneer with sacrificial fins",
+          "plate": 8,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V3 band-free veneer with sacrificial fins",
+          "plate": 9,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V4 band-free veneer with sacrificial fins",
+          "plate": 10,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V5 band-free veneer with sacrificial fins",
+          "plate": 11,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "V6 band-free veneer with sacrificial fins",
+          "plate": 12,
+          "corrected_geometry_maximum_error_mm": 0.0
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/M-Core-and-Veneer-A1-Sliced.3mf",
+      "sha256": "9362a62239a61ea9c5f2b3a79e58b923cca5e69f686417e9c61e292a82de4d1e",
+      "veneers": [
+        {
+          "name": "V1 band-free veneer with sacrificial fins",
+          "plate": 7,
+          "corrected_geometry_maximum_error_mm": 8.269754602559971e-06
+        },
+        {
+          "name": "V2 band-free veneer with sacrificial fins",
+          "plate": 8,
+          "corrected_geometry_maximum_error_mm": 1.0778580483708904e-05
+        },
+        {
+          "name": "V3 band-free veneer with sacrificial fins",
+          "plate": 9,
+          "corrected_geometry_maximum_error_mm": 6.1661517277952795e-06
+        },
+        {
+          "name": "V4 band-free veneer with sacrificial fins",
+          "plate": 10,
+          "corrected_geometry_maximum_error_mm": 1.874550746973927e-05
+        },
+        {
+          "name": "V5 band-free veneer with sacrificial fins",
+          "plate": 11,
+          "corrected_geometry_maximum_error_mm": 1.2120141292635699e-05
+        },
+        {
+          "name": "V6 band-free veneer with sacrificial fins",
+          "plate": 12,
+          "corrected_geometry_maximum_error_mm": 1.0769696227515054e-05
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/M-Veneer-Glue-Coupon-A1.3mf",
+      "sha256": "b3af7a5c57dda1c056f701697c1e87d515307f9aad6c5c49c5906086ee5ca2f2",
+      "veneers": [
+        {
+          "name": "Veneer coupon 1 - fused carrier",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 0.0
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/M-Veneer-Glue-Coupon-A1-Sliced.3mf",
+      "sha256": "a2f53226d7087f3371fc578bc6f04b914fa97beef2776bd5aaa2344837a14938",
+      "veneers": [
+        {
+          "name": "Veneer coupon 1 - fused carrier",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 1.599785249863322e-05
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/M-Veneer-Seam-Coupon-A1.3mf",
+      "sha256": "57492d12c3eec37c50b895462d75c74d72b12499cbd75b93b8826fa9d8bc7e3e",
+      "veneers": [
+        {
+          "name": "Veneer coupon 1 - fused carrier",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 0.0
+        },
+        {
+          "name": "Veneer coupon 2 - fused carrier",
+          "plate": 3,
+          "corrected_geometry_maximum_error_mm": 0.0
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/M-Veneer-Seam-Coupon-A1-Sliced.3mf",
+      "sha256": "d7ad3050d29d8d82687e3be6cdb13ace8ee56c97d693110a518dd03b30159c4f",
+      "veneers": [
+        {
+          "name": "Veneer coupon 1 - fused carrier",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 1.3140860005057485e-05
+        },
+        {
+          "name": "Veneer coupon 2 - fused carrier",
+          "plate": 3,
+          "corrected_geometry_maximum_error_mm": 1.5458504631888993e-05
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1.3mf",
+      "sha256": "39bddbf13b45c6ae6bf693ef773c2fac7e4bad8f6cad7e9f8472cabdb45a6d1a",
+      "veneers": [
+        {
+          "name": "M glue veneer - fins and cut tabs",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 3.8473046970466385e-10
+        },
+        {
+          "name": "M seam upper veneer - fins and cut tabs",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 2.9231731603437385e-11
+        },
+        {
+          "name": "M seam lower veneer - fins and cut tabs",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 3.831246694772878e-11
+        }
+      ]
+    },
+    {
+      "project": "output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf",
+      "sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
+      "veneers": [
+        {
+          "name": "M glue veneer - fins and cut tabs",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 1.56054118386739e-05
+        },
+        {
+          "name": "M seam upper veneer - fins and cut tabs",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 1.295473153071463e-05
+        },
+        {
+          "name": "M seam lower veneer - fins and cut tabs",
+          "plate": 2,
+          "corrected_geometry_maximum_error_mm": 1.5725719812851857e-05
+        }
+      ]
+    }
+  ],
+  "physical_cleanup_and_bond_strength_pending": true,
+  "pad_removal_hash_refresh_basis": {
+    "report": "working/bambu/Dara-Photo-Frame-A2L/joint-pad-unchanged-plates.json",
+    "sha256": "3737ae8f6daee65c83bd45fe4b0633a30fdf61444a897a2d9e6313d166540e93",
+    "all_M_meshes_settings_poses_and_stored_slices_byte_preserved": true
+  },
+  "wall_cradle_promotion_basis": {
+    "report": "working/bambu/Dara-Photo-Frame-A2L/veneer-wall-promotion-validation.json",
+    "sha256": "714e038e94558ac6a7a7ee5a7b08eda107ccffacc1d45db759e8a71e5d971b60"
+  }
+}

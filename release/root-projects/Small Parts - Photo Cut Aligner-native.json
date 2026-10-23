@@ -1,0 +1,71 @@
+{
+    "error_string": "Success.",
+    "export_time": 103,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 24,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 14.215921401977539,
+                "Custom": 381.44720458984375,
+                "Flush": 25.0,
+                "Gap infill": 305.7374267578125,
+                "Inner wall": 314.7418518066406,
+                "Internal solid infill": 60.506587982177734,
+                "Outer wall": 608.0700073242188,
+                "Top surface": 72.07817077636719,
+                "Travel": 227.40643310546875,
+                "Undefined": 210.3244171142578
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "",
+                    "id": 1,
+                    "main_used_g": 6.664644718170166,
+                    "total_used_g": 6.664644718170166
+                }
+            ],
+            "generate_support_material_time": 6,
+            "id": 1,
+            "infill_time": 47,
+            "layer_filament_change": 0,
+            "main_predication": 1577.781005859375,
+            "make_perimeters_time": 36,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 125.77442932128906,
+                        "height": 2.0,
+                        "width": 125.49738311767578,
+                        "x": 58.21774673461914,
+                        "y": 69.85819244384766,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "Backer 2 - honeycomb tracing - 2mm",
+                    "triangle_count": 4412
+                }
+            ],
+            "sliced_time": 230,
+            "sliced_time_with_cache": 125,
+            "total_predication": 1992.1461181640625,
+            "triangle_count": 4412,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

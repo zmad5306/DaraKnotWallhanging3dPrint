@@ -1,0 +1,577 @@
+{
+  "status": "third geometry partition study; production meshes and G-code not regenerated",
+  "objective": [
+    "minimize joints with any visible portion",
+    "minimize exposed seam length to nearest mm",
+    "minimize total joints",
+    "minimize worst bed utilization"
+  ],
+  "sources": {
+    "cad_sha256": "eb62f56258712faf945a0a49984c031631df356112b8b2f85ac23ec3d28e538c",
+    "project_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+    "catalog": "Exact continuous stock; 1-degree line angle grid, 2 mm offset grid; 60-160 mm seams connecting distinct boundary rings; actual M coverage rechecked with 2 mm margin"
+  },
+  "production_M_projection_check": {
+    "production_parts": 6,
+    "copper_covers": 5,
+    "cached_shadow_error_mm2": 0.0,
+    "nominal_outline_difference_mm2": 0.015497836899562478,
+    "projection": "front view along the wall normal"
+  },
+  "catalog_accepted_cross_sections": 2983,
+  "layouts_evaluated": 554,
+  "full_concealment_margin_mm": 2,
+  "variants": [
+    {
+      "mode": 0,
+      "arch_target_mm": 148,
+      "lower_cut_y_mm": -160,
+      "sections": 10,
+      "total_joints": 14,
+      "fully_hidden": 6,
+      "partly_covered": 2,
+      "fully_exposed": 6,
+      "exposed_joints": 8,
+      "exposed_seam_length_mm": 624.9972901247547,
+      "concealed_seam_length_mm": 708.8181216708438,
+      "minimum_full_concealment_margin_mm": 2.0409273524355047,
+      "bed_mm": [
+        330,
+        320
+      ],
+      "usable_bed_mm": [
+        327,
+        317
+      ],
+      "lap_length_mm": 18,
+      "coverage_error_mm2": 7.521408626129378e-15,
+      "nominal_part_overlap_mm2": 0.0,
+      "maximum_lap_domain_overlap_mm2": 0,
+      "third_part_lap_invasion_mm2": 1.0828198147155854e-14,
+      "assembly_order": [
+        9,
+        8,
+        10,
+        7,
+        2,
+        5,
+        4,
+        3,
+        1,
+        6
+      ],
+      "part_fits": [
+        {
+          "utilization": 0.9653115795845562,
+          "footprint_mm": [
+            315.65688652414985,
+            306.0037707173136
+          ],
+          "rotation_deg": 101.24259966932402,
+          "rotated_center_mm": [
+            15.780932052340702,
+            -138.87286838522368
+          ]
+        },
+        {
+          "utilization": 0.8655474309014235,
+          "footprint_mm": [
+            283.03400825499364,
+            274.37853559575126
+          ],
+          "rotation_deg": 92.26959150795327,
+          "rotated_center_mm": [
+            -143.38086171507445,
+            -323.3413351322696
+          ]
+        },
+        {
+          "utilization": 0.9417625372461091,
+          "footprint_mm": [
+            307.95634953843023,
+            298.5387243070166
+          ],
+          "rotation_deg": 24.057457353670394,
+          "rotated_center_mm": [
+            -221.97133580778313,
+            244.44166094099185
+          ]
+        },
+        {
+          "utilization": 0.947997952608626,
+          "footprint_mm": [
+            309.9953305030207,
+            300.5153429466941
+          ],
+          "rotation_deg": 156.3202643631539,
+          "rotated_center_mm": [
+            -219.5068653343813,
+            -245.07907208650212
+          ]
+        },
+        {
+          "utilization": 0.8654924360236271,
+          "footprint_mm": [
+            283.0160265797261,
+            274.36110061071224
+          ],
+          "rotation_deg": 87.74047042356314,
+          "rotated_center_mm": [
+            -143.44139393243995,
+            323.33550434699225
+          ]
+        },
+        {
+          "utilization": 0.9726719217901546,
+          "footprint_mm": [
+            318.06371842538056,
+            308.3369949052349
+          ],
+          "rotation_deg": 78.95460184882299,
+          "rotated_center_mm": [
+            14.382113951360196,
+            140.57170437707643
+          ]
+        },
+        {
+          "utilization": 0.8018574104159802,
+          "footprint_mm": [
+            262.2073703723745,
+            254.18879910186575
+          ],
+          "rotation_deg": 176.32560363630088,
+          "rotated_center_mm": [
+            -320.84730692910597,
+            161.72316889194676
+          ]
+        },
+        {
+          "utilization": 0.9546623103038149,
+          "footprint_mm": [
+            309.78748611857077,
+            302.62795236630933
+          ],
+          "rotation_deg": 105.73928191935148,
+          "rotated_center_mm": [
+            268.38079736607676,
+            206.5603616832955
+          ]
+        },
+        {
+          "utilization": 0.9766925420452517,
+          "footprint_mm": [
+            319.3784612487973,
+            309.6115358055764
+          ],
+          "rotation_deg": 161.7700295523235,
+          "rotated_center_mm": [
+            205.68005616608764,
+            260.332220150154
+          ]
+        },
+        {
+          "utilization": 0.8019281014941457,
+          "footprint_mm": [
+            262.23048909829987,
+            254.2112081736442
+          ],
+          "rotation_deg": 3.7023938879297864,
+          "rotated_center_mm": [
+            -320.79029276375536,
+            -161.8472853978472
+          ]
+        }
+      ],
+      "minimum_joint_length_mm": 67.30350000000001,
+      "maximum_joint_length_mm": 134.1951598095677,
+      "rear_hardware_conflicts": [
+        {
+          "kind": "M screw",
+          "index": 1,
+          "joints": [
+            2
+          ]
+        },
+        {
+          "kind": "M screw",
+          "index": 5,
+          "joints": [
+            7
+          ]
+        },
+        {
+          "kind": "M screw",
+          "index": 9,
+          "joints": [
+            8
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 1,
+          "joints": [
+            2
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 2,
+          "joints": [
+            1
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 3,
+          "joints": [
+            6
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 6,
+          "joints": [
+            7
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 11,
+          "joints": [
+            8
+          ]
+        }
+      ],
+      "wall_mount_candidates": [
+        {
+          "block": 1,
+          "resolved": true,
+          "original_xy_mm": [
+            -196.0,
+            224.0
+          ],
+          "candidate_xy_mm": [
+            -172.0,
+            224.0
+          ],
+          "distance_mm": 24.0,
+          "section": 3
+        },
+        {
+          "block": 2,
+          "resolved": true,
+          "original_xy_mm": [
+            196.0,
+            224.0
+          ],
+          "candidate_xy_mm": [
+            154.0,
+            224.0
+          ],
+          "distance_mm": 42.0,
+          "section": 4
+        },
+        {
+          "block": 3,
+          "resolved": true,
+          "original_xy_mm": [
+            -196.0,
+            -224.0
+          ],
+          "candidate_xy_mm": [
+            -180.0,
+            -224.0
+          ],
+          "distance_mm": 16.0,
+          "section": 9
+        },
+        {
+          "block": 4,
+          "resolved": true,
+          "original_xy_mm": [
+            196.0,
+            -224.0
+          ],
+          "candidate_xy_mm": [
+            140.0,
+            -224.0
+          ],
+          "distance_mm": 56.0,
+          "section": 8
+        }
+      ]
+    },
+    {
+      "mode": 15,
+      "arch_target_mm": 150,
+      "lower_cut_y_mm": -156,
+      "sections": 10,
+      "total_joints": 18,
+      "fully_hidden": 10,
+      "partly_covered": 2,
+      "fully_exposed": 6,
+      "exposed_joints": 8,
+      "exposed_seam_length_mm": 624.9970775451881,
+      "concealed_seam_length_mm": 745.8363780212126,
+      "minimum_full_concealment_margin_mm": 2.176846939953786,
+      "bed_mm": [
+        330,
+        320
+      ],
+      "usable_bed_mm": [
+        327,
+        317
+      ],
+      "lap_length_mm": 18,
+      "coverage_error_mm2": 7.521408626129378e-15,
+      "nominal_part_overlap_mm2": 0.0,
+      "maximum_lap_domain_overlap_mm2": 0,
+      "third_part_lap_invasion_mm2": 1.0828198147155854e-14,
+      "assembly_order": [
+        9,
+        8,
+        4,
+        3,
+        6,
+        1,
+        10,
+        7,
+        5,
+        2
+      ],
+      "part_fits": [
+        {
+          "utilization": 0.9596671728341707,
+          "footprint_mm": [
+            313.8111655167738,
+            302.24487113996
+          ],
+          "rotation_deg": 96.38654696707346,
+          "rotated_center_mm": [
+            7.642816084023153,
+            -151.0607510074491
+          ]
+        },
+        {
+          "utilization": 0.7933125498096905,
+          "footprint_mm": [
+            259.4132037877688,
+            251.48007630085846
+          ],
+          "rotation_deg": 92.43963718719799,
+          "rotated_center_mm": [
+            -130.35799525550135,
+            -335.02249662600144
+          ]
+        },
+        {
+          "utilization": 0.9584779336264598,
+          "footprint_mm": [
+            313.42228429585236,
+            303.8375040454024
+          ],
+          "rotation_deg": 104.56520190290658,
+          "rotated_center_mm": [
+            -270.01264971319347,
+            -202.20249189873192
+          ]
+        },
+        {
+          "utilization": 0.9781652949675064,
+          "footprint_mm": [
+            319.1642082459468,
+            310.0783985046995
+          ],
+          "rotation_deg": 161.46045684606094,
+          "rotated_center_mm": [
+            -206.63759989231326,
+            -259.1820683661404
+          ]
+        },
+        {
+          "utilization": 0.7958989954041483,
+          "footprint_mm": [
+            260.2589699792629,
+            252.29998154311502
+          ],
+          "rotation_deg": 87.17468759482385,
+          "rotated_center_mm": [
+            -128.02410499303895,
+            335.1288317254826
+          ]
+        },
+        {
+          "utilization": 0.978708992324635,
+          "footprint_mm": [
+            320.03784049015565,
+            298.65264847492153
+          ],
+          "rotation_deg": 85.51337931297869,
+          "rotated_center_mm": [
+            2.1902423101117137,
+            154.44878285192453
+          ]
+        },
+        {
+          "utilization": 0.794238346178236,
+          "footprint_mm": [
+            259.7159392002832,
+            251.77355558886325
+          ],
+          "rotation_deg": 92.54422289575218,
+          "rotated_center_mm": [
+            129.71559543354488,
+            335.0064117318794
+          ]
+        },
+        {
+          "utilization": 0.9585915417016775,
+          "footprint_mm": [
+            313.4594341364485,
+            303.8735183420138
+          ],
+          "rotation_deg": 105.91861114848443,
+          "rotated_center_mm": [
+            265.9915194949432,
+            206.49881172073302
+          ]
+        },
+        {
+          "utilization": 0.9783902319325257,
+          "footprint_mm": [
+            319.04124280208777,
+            310.14970352261065
+          ],
+          "rotation_deg": 161.2111457031626,
+          "rotated_center_mm": [
+            207.432541060391,
+            258.16609684142384
+          ]
+        },
+        {
+          "utilization": 0.7960873172810558,
+          "footprint_mm": [
+            260.32055247789623,
+            252.35967957809467
+          ],
+          "rotation_deg": 87.18142672577817,
+          "rotated_center_mm": [
+            128.03214339716936,
+            -335.0898296998255
+          ]
+        }
+      ],
+      "minimum_joint_length_mm": 67.30350000000001,
+      "maximum_joint_length_mm": 97.19801641027978,
+      "rear_hardware_conflicts": [
+        {
+          "kind": "M screw",
+          "index": 1,
+          "joints": [
+            3
+          ]
+        },
+        {
+          "kind": "M screw",
+          "index": 5,
+          "joints": [
+            9
+          ]
+        },
+        {
+          "kind": "M screw",
+          "index": 10,
+          "joints": [
+            10
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 1,
+          "joints": [
+            3
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 3,
+          "joints": [
+            7
+          ]
+        },
+        {
+          "kind": "M locator",
+          "index": 12,
+          "joints": [
+            10
+          ]
+        }
+      ],
+      "wall_mount_candidates": [
+        {
+          "block": 1,
+          "resolved": true,
+          "original_xy_mm": [
+            -196.0,
+            224.0
+          ],
+          "candidate_xy_mm": [
+            -196.0,
+            224.0
+          ],
+          "distance_mm": 0.0,
+          "section": 3
+        },
+        {
+          "block": 2,
+          "resolved": true,
+          "original_xy_mm": [
+            196.0,
+            224.0
+          ],
+          "candidate_xy_mm": [
+            180.0,
+            224.0
+          ],
+          "distance_mm": 16.0,
+          "section": 4
+        },
+        {
+          "block": 3,
+          "resolved": true,
+          "original_xy_mm": [
+            -196.0,
+            -224.0
+          ],
+          "candidate_xy_mm": [
+            -180.0,
+            -224.0
+          ],
+          "distance_mm": 16.0,
+          "section": 9
+        },
+        {
+          "block": 4,
+          "resolved": true,
+          "original_xy_mm": [
+            196.0,
+            -224.0
+          ],
+          "candidate_xy_mm": [
+            140.0,
+            -224.0
+          ],
+          "distance_mm": 56.0,
+          "section": 8
+        }
+      ]
+    }
+  ],
+  "recommendation": "lean: same eight exposed joints with four fewer concealed assembly joints",
+  "limitations": [
+    "Search result, not a proven global minimum.",
+    "Counts describe frontal coverage; oblique views may reveal seams under the raised M.",
+    "Rear attachments listed as conflicts require relocation and matching M/frame regeneration.",
+    "No production mesh, material modifier, support, purge tower or native G-code validation."
+  ]
+}

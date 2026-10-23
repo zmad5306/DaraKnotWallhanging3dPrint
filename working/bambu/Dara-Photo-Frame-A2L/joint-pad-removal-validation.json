@@ -1,0 +1,887 @@
+{
+  "revision": "lower-lap-pads-removed-v1",
+  "source_project_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "project_sha256": "4aade57d5a92c152c697c25e2ae6f9813e6dac5f28bfe53ef03e7155bfa805e8",
+  "editable_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+  "removed_pads": 42,
+  "joints": 14,
+  "changed_plates": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "raised_pad_height_removed_mm": 0.2,
+  "lap_surface_z_mm": 4.8,
+  "geometry_patch": {
+    "revision": "lower-lap-pads-removed-v1",
+    "editable": {
+      "source_sha256": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+      "target_sha256": "0a4e5db2dfa5a1eece12122af5d9be85a529a373b32442d952b5a230b09a073e",
+      "removed_pads": 42,
+      "objects": [
+        {
+          "name": "F2 A2L knot",
+          "joints": [
+            1,
+            3
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1101",
+              "removed_mm3": 4.229048628097563,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1102",
+              "removed_mm3": 2.819365752446324,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1104",
+              "removed_mm3": 1.4096828760557851,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F3 A2L knot",
+          "joints": [
+            2
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1202",
+              "removed_mm3": 4.229048626314482,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F4 A2L knot",
+          "joints": [
+            4,
+            6
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1302",
+              "removed_mm3": 8.458097257507648,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F5 A2L knot",
+          "joints": [
+            5,
+            7
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1401",
+              "removed_mm3": 4.2290486274444286,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1402",
+              "removed_mm3": 2.8193657512639754,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1403",
+              "removed_mm3": 1.4096828759413669,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F7 A2L knot",
+          "joints": [
+            8
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1602",
+              "removed_mm3": 2.8193657514292707,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1603",
+              "removed_mm3": 1.4096828757312385,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F8 A2L knot",
+          "joints": [
+            9,
+            10
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "1701",
+              "removed_mm3": 8.458097254847011,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F9 A2L knot",
+          "joints": [
+            11,
+            12,
+            14
+          ],
+          "removed_pads": 9,
+          "volumes": [
+            {
+              "part_id": "1801",
+              "removed_mm3": 8.458097256216249,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1802",
+              "removed_mm3": 4.229048629407515,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F10 A2L knot",
+          "joints": [
+            13
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "1902",
+              "removed_mm3": 2.819365752503967,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            },
+            {
+              "part_id": "1904",
+              "removed_mm3": 1.4096828759954412,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        }
+      ],
+      "changed_child_assets": [
+        "3D/Objects/1100.model",
+        "3D/Objects/1200.model",
+        "3D/Objects/1300.model",
+        "3D/Objects/1400.model",
+        "3D/Objects/1600.model",
+        "3D/Objects/1700.model",
+        "3D/Objects/1800.model",
+        "3D/Objects/1900.model"
+      ],
+      "settings_and_transforms_byte_preserved": true,
+      "all_other_zip_entries_byte_preserved": true
+    },
+    "native": {
+      "source_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+      "target_sha256": "3b721568f73b9f80fd5e0e15e1fe0071a97bff3b467ba4b1b0b9ead4b354dc90",
+      "removed_pads": 42,
+      "objects": [
+        {
+          "name": "F2 A2L knot",
+          "joints": [
+            1,
+            3
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "11",
+              "removed_mm3": 4.229051270276767,
+              "added_mm3": 5.2708859954957747e-14,
+              "removed_outside_pad_tools_mm3": 5.27046901168879e-14
+            },
+            {
+              "part_id": "12",
+              "removed_mm3": 2.8193685765495355,
+              "added_mm3": 1.1738581538894113e-07,
+              "removed_outside_pad_tools_mm3": 1.1738581546116964e-07
+            },
+            {
+              "part_id": "14",
+              "removed_mm3": 1.409681746593646,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 9.305781891221561e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F3 A2L knot",
+          "joints": [
+            2
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "24",
+              "removed_mm3": 4.22904996830737,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F4 A2L knot",
+          "joints": [
+            4,
+            6
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "37",
+              "removed_mm3": 8.458098305259888,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 2,
+          "result_components": 2
+        },
+        {
+          "name": "F5 A2L knot",
+          "joints": [
+            5,
+            7
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "49",
+              "removed_mm3": 4.229046509638221,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.137373342260413e-24
+            },
+            {
+              "part_id": "50",
+              "removed_mm3": 2.819361332598297,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0856745539758488e-24
+            },
+            {
+              "part_id": "51",
+              "removed_mm3": 1.4096834670839762,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F7 A2L knot",
+          "joints": [
+            8
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "70",
+              "removed_mm3": 2.8193693872001604,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.0339757656912846e-23
+            },
+            {
+              "part_id": "71",
+              "removed_mm3": 1.40968447932121,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 5.169878828456423e-25
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F8 A2L knot",
+          "joints": [
+            9,
+            10
+          ],
+          "removed_pads": 6,
+          "volumes": [
+            {
+              "part_id": "81",
+              "removed_mm3": 8.458097453513645,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 2.5849394142282115e-24
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F9 A2L knot",
+          "joints": [
+            11,
+            12,
+            14
+          ],
+          "removed_pads": 9,
+          "volumes": [
+            {
+              "part_id": "94",
+              "removed_mm3": 8.458095276337977,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 1.550963648536927e-25
+            },
+            {
+              "part_id": "95",
+              "removed_mm3": 4.2290445842039075,
+              "added_mm3": 4.319820695899942e-15,
+              "removed_outside_pad_tools_mm3": 4.319820695899942e-15
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        },
+        {
+          "name": "F10 A2L knot",
+          "joints": [
+            13
+          ],
+          "removed_pads": 3,
+          "volumes": [
+            {
+              "part_id": "109",
+              "removed_mm3": 2.8193665678921818,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 2.0679515313825692e-25
+            },
+            {
+              "part_id": "111",
+              "removed_mm3": 1.4096845339086443,
+              "added_mm3": 0.0,
+              "removed_outside_pad_tools_mm3": 0.0
+            }
+          ],
+          "source_components": 1,
+          "result_components": 1
+        }
+      ],
+      "changed_child_assets": [
+        "3D/Objects/object_10.model",
+        "3D/Objects/object_2.model",
+        "3D/Objects/object_3.model",
+        "3D/Objects/object_4.model",
+        "3D/Objects/object_5.model",
+        "3D/Objects/object_7.model",
+        "3D/Objects/object_8.model",
+        "3D/Objects/object_9.model"
+      ],
+      "settings_and_transforms_byte_preserved": true,
+      "all_other_zip_entries_byte_preserved": true
+    },
+    "removed_pad_height_mm": 0.2,
+    "remaining_lap_surface_z_mm": 4.8,
+    "all_14_mortises_unchanged": true,
+    "physical_result": "User trimmed three lower-lap pads; confirmed fit and flush white/brown front surfaces on 2026-10-19.",
+    "physical_printer_context": "User switched the sample to A1 and observed grid; exact locally resliced file was not inspected."
+  },
+  "locked_settings_verified": {
+    "sparse_infill_density": "8%",
+    "sparse_infill_pattern": "gyroid",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "4",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "curr_bed_type": "Textured PEI Plate",
+    "printer_model": "Bambu Lab A2L"
+  },
+  "all_other_global_object_and_volume_settings_preserved": true,
+  "native_pad_toolpaths": [
+    {
+      "joint": 1,
+      "tongue_plate": 2,
+      "xy_assembly_mm": [
+        -245.97530780639036,
+        61.987551040176335
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 1,
+      "tongue_plate": 2,
+      "xy_assembly_mm": [
+        -206.3797806902275,
+        102.98991965947945
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 1,
+      "tongue_plate": 2,
+      "xy_assembly_mm": [
+        -265.87358625090474,
+        26.986715122378968
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 3,
+      "tongue_plate": 2,
+      "xy_assembly_mm": [
+        -235.72965841654943,
+        241.38651266604185
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 3,
+      "tongue_plate": 2,
+      "xy_assembly_mm": [
+        -196.83878545128934,
+        216.6377753245127
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 3,
+      "tongue_plate": 2,
+      "xy_assembly_mm": [
+        -258.35707541451893,
+        278.15606528774236
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 2,
+      "tongue_plate": 3,
+      "xy_assembly_mm": [
+        -51.81831490012573,
+        143.88891886348
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 2,
+      "tongue_plate": 3,
+      "xy_assembly_mm": [
+        -82.41538210082972,
+        156.2509364462051
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 2,
+      "tongue_plate": 3,
+      "xy_assembly_mm": [
+        -27.748865197281226,
+        123.37888251533474
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 4,
+      "tongue_plate": 4,
+      "xy_assembly_mm": [
+        -3.9999999999999853,
+        235.969
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 4,
+      "tongue_plate": 4,
+      "xy_assembly_mm": [
+        -13.999999999999982,
+        265.969
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 4,
+      "tongue_plate": 4,
+      "xy_assembly_mm": [
+        -13.99999999999999,
+        208.969
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 6,
+      "tongue_plate": 4,
+      "xy_assembly_mm": [
+        53.79563984652465,
+        144.17369236627238
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 6,
+      "tongue_plate": 4,
+      "xy_assembly_mm": [
+        28.51914778654292,
+        120.71950405924115
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 6,
+      "tongue_plate": 4,
+      "xy_assembly_mm": [
+        74.35764414780044,
+        143.0764325454841
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 5,
+      "tongue_plate": 5,
+      "xy_assembly_mm": [
+        233.7018310079042,
+        239.3586852573965
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 5,
+      "tongue_plate": 5,
+      "xy_assembly_mm": [
+        258.45056834943335,
+        278.2495582226566
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 5,
+      "tongue_plate": 5,
+      "xy_assembly_mm": [
+        196.93227838620373,
+        216.731268259427
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 7,
+      "tongue_plate": 5,
+      "xy_assembly_mm": [
+        247.92778498985723,
+        62.844814808963555
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 7,
+      "tongue_plate": 5,
+      "xy_assembly_mm": [
+        206.2482827623174,
+        106.00520282928264
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 7,
+      "tongue_plate": 5,
+      "xy_assembly_mm": [
+        267.8260634343716,
+        27.843978891166184
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 8,
+      "tongue_plate": 7,
+      "xy_assembly_mm": [
+        247.20538544495537,
+        -61.0931711523794
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 8,
+      "tongue_plate": 7,
+      "xy_assembly_mm": [
+        287.51047197258856,
+        -20.788084624746197
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 8,
+      "tongue_plate": 7,
+      "xy_assembly_mm": [
+        259.22620072512666,
+        -34.93022024847714
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 9,
+      "tongue_plate": 8,
+      "xy_assembly_mm": [
+        50.485375000000005,
+        -156.0
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 9,
+      "tongue_plate": 8,
+      "xy_assembly_mm": [
+        80.485375,
+        -146.0
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 9,
+      "tongue_plate": 8,
+      "xy_assembly_mm": [
+        23.485375000000005,
+        -146.0
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 10,
+      "tongue_plate": 8,
+      "xy_assembly_mm": [
+        239.38498662726013,
+        -233.72813237776782
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 10,
+      "tongue_plate": 8,
+      "xy_assembly_mm": [
+        278.27585959252025,
+        -258.476869719297
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 10,
+      "tongue_plate": 8,
+      "xy_assembly_mm": [
+        216.75756962929063,
+        -196.95857975606737
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 11,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        -52.39904525,
+        -156.0
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 11,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        -22.39904525,
+        -146.0
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 11,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        -79.39904525,
+        -146.0
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 12,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        3.9999999999999853,
+        -235.969
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 12,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        13.999999999999984,
+        -265.969
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 12,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        13.999999999999988,
+        -208.969
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 14,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        -241.4058159545094,
+        -235.74896170501697
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 14,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        -216.65707861298023,
+        -196.85808873975685
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 14,
+      "tongue_plate": 9,
+      "xy_assembly_mm": [
+        -278.17536857620985,
+        -258.3763787029865
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 13,
+      "tongue_plate": 10,
+      "xy_assembly_mm": [
+        -246.7588886523794,
+        -61.53966794495535
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 13,
+      "tongue_plate": 10,
+      "xy_assembly_mm": [
+        -287.0639751800126,
+        -21.23458141732214
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    },
+    {
+      "joint": 13,
+      "tongue_plate": 10,
+      "xy_assembly_mm": [
+        -263.02234461967,
+        -31.13407635393381
+      ],
+      "maximum_model_extrusion_z_mm": 4.8
+    }
+  ],
+  "actual_sliced_model_checks": [
+    {
+      "plate": 1,
+      "max_actual_slice_model_error_mm": 0.0
+    },
+    {
+      "plate": 2,
+      "max_actual_slice_model_error_mm": 1.9000000062164e-07
+    },
+    {
+      "plate": 3,
+      "max_actual_slice_model_error_mm": 1.9000000062163788e-07
+    },
+    {
+      "plate": 4,
+      "max_actual_slice_model_error_mm": 1.9000000062164585e-07
+    },
+    {
+      "plate": 5,
+      "max_actual_slice_model_error_mm": 1.9000000062165064e-07
+    },
+    {
+      "plate": 6,
+      "max_actual_slice_model_error_mm": 0.0
+    },
+    {
+      "plate": 7,
+      "max_actual_slice_model_error_mm": 1.9000000062163947e-07
+    },
+    {
+      "plate": 8,
+      "max_actual_slice_model_error_mm": 1.900000006216467e-07
+    },
+    {
+      "plate": 9,
+      "max_actual_slice_model_error_mm": 1.9000000062164598e-07
+    },
+    {
+      "plate": 10,
+      "max_actual_slice_model_error_mm": 1.9000000062163947e-07
+    }
+  ],
+  "slicer_warnings": [],
+  "physical_report": "User trimmed three lower-lap pads; confirmed fit and flush white/brown front surfaces on 2026-10-19.",
+  "physical_printer_context": "User switched the sample to A1 and observed grid; exact locally resliced file was not inspected.",
+  "physical_A2L_production_print_not_yet_reported": true,
+  "printer_commands_sent": false,
+  "protected_external_file_sha256": {
+    "working/bambu/Dara-A1-Companion/companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working/bambu/Dara-A1-Companion/native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working/bambu/Dara-A1-Companion/README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working/bambu/Dara-A1-Companion/release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328",
+    "working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf": "8103512e5959d767cfcbfb9243c6b3ab14859edb6b3ab44cbb5bbf567413bc3d",
+    "output/development/m-veneer-cosmetic-fit/All-Development-Tests-A1-Sliced.3mf": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5"
+  },
+  "unchanged_plates_report_sha256": "3737ae8f6daee65c83bd45fe4b0633a30fdf61444a897a2d9e6313d166540e93"
+}

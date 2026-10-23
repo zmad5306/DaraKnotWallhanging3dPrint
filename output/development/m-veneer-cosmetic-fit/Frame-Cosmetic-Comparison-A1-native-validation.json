@@ -1,0 +1,247 @@
+{
+  "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "staged_sha256": "9e9ec0fb8d4622c64cf79eb1dd51339848775486396872f306f0f5a5203b7630",
+  "native_project_sha256": "43ebc6952e7cf76dd21d9dff0f9a3e363b0b2d306038e8546d57b5f988eb032e",
+  "native_return_code": 0,
+  "plate_count": 2,
+  "native_roundtrip_geometry": [
+    {
+      "name": "Zero-gap refined tongue",
+      "max_native_vertex_or_pose_error_mm": 1.8354758069224686e-06
+    },
+    {
+      "name": "Zero-gap refined socket",
+      "max_native_vertex_or_pose_error_mm": 1.677558591128201e-06
+    },
+    {
+      "name": "Show-face glue jig - use release film",
+      "max_native_vertex_or_pose_error_mm": 1.013340730109273e-06
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 49264,
+      "features": {
+        "Prime tower": 3836,
+        "Support": 1372,
+        "Brim": 97,
+        "Outer wall": 3882,
+        "Inner wall": 7287,
+        "Bottom surface": 594,
+        "Internal solid infill": 8648,
+        "Gap infill": 1253,
+        "Top surface": 2643,
+        "Sparse infill": 16223,
+        "Floating vertical shell": 151,
+        "Bridge": 2454,
+        "Support transition": 281,
+        "Support interface": 456,
+        "Overhang wall": 87
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          39.331,
+          6.7929323069578205
+        ],
+        [
+          237.73456945888316,
+          165.592
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          39.081,
+          6.5429323069578205
+        ],
+        [
+          237.98456945888316,
+          165.842
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.5429323069578205,
+      "plate": 1,
+      "gcode_sha256": "3a305dc0381c802fb5bde15eb5c9a3559ed7f91368a4960ca20e07dc8c476bb6",
+      "header": [
+        "; model printing time: 2h 36m 15s; total estimated time: 2h 42m 52s",
+        "; total layer number: 68",
+        "; total filament length [mm] : 12390.53,1285.16,507.46",
+        "; total filament volume [cm^3] : 29802.72,3091.18,1220.58",
+        "; total filament weight [g] : 36.96,3.83,1.51",
+        "; model label id: 1000,1100",
+        "; object max height: 13.60,12.80",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 13.60",
+        "; filament: 1,2,4"
+      ],
+      "top_white_direction_evidence_in_assembly_deg": [
+        [
+          [
+            135.0,
+            3872.90274718006
+          ]
+        ],
+        [
+          [
+            135.0,
+            3616.194440419373
+          ]
+        ]
+      ],
+      "matching_surface_directions_by_color_and_height": [
+        {
+          "filament_slot": 1,
+          "z_mm": 13.6,
+          "dominant_assembly_angles_deg": [
+            135.0,
+            135.0
+          ],
+          "difference_deg": 0.0
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.0,
+          "dominant_assembly_angles_deg": [
+            45.0,
+            45.0
+          ],
+          "difference_deg": 0.0
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 9.6,
+          "dominant_assembly_angles_deg": [
+            135.0,
+            135.0
+          ],
+          "difference_deg": 0.0
+        },
+        {
+          "filament_slot": 2,
+          "z_mm": 10.0,
+          "dominant_assembly_angles_deg": [
+            135.0,
+            135.0
+          ],
+          "difference_deg": 0.0
+        },
+        {
+          "filament_slot": 4,
+          "z_mm": 13.6,
+          "dominant_assembly_angles_deg": [
+            135.0,
+            135.0
+          ],
+          "difference_deg": 0.0
+        }
+      ]
+    },
+    {
+      "extrusion_moves_checked": 10316,
+      "features": {
+        "Inner wall": 944,
+        "Outer wall": 424,
+        "Bottom surface": 536,
+        "Internal solid infill": 4082,
+        "Sparse infill": 3394,
+        "Bridge": 520,
+        "Top surface": 380,
+        "Gap infill": 36
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          81.21,
+          84.21
+        ],
+        [
+          174.79,
+          171.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          81.0,
+          84.0
+        ],
+        [
+          175.0,
+          172.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 81.0,
+      "plate": 2,
+      "gcode_sha256": "89275d3ef3bfed984d54b18acc3376e06ddb7d329355a82e89a121d8cb09f32c",
+      "header": [
+        "; model printing time: 46m 51s; total estimated time: 53m 24s",
+        "; total layer number: 30",
+        "; total filament length [mm] : 6593.88",
+        "; total filament volume [cm^3] : 15860.14",
+        "; total filament weight [g] : 19.67",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 6.00",
+        "; filament: 1",
+        "; support_material_on_wipe_tower: 0"
+      ]
+    }
+  ],
+  "physical_fit_finish_and_support_anchor_test_pending": true,
+  "coupon_connected_components": {
+    "editable_source": [
+      {
+        "name": "Zero-gap refined tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Zero-gap refined socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Show-face glue jig - use release film",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      }
+    ],
+    "native_export": [
+      {
+        "name": "Zero-gap refined tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Zero-gap refined socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Show-face glue jig - use release film",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      }
+    ]
+  },
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 2,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "Frame-Cosmetic-Comparison-A1.3mf"
+    },
+    "native": {
+      "body_count": 2,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
+  }
+}

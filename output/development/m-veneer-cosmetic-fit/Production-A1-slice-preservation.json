@@ -1,0 +1,28 @@
+{
+  "project_sha256": "8c24bdae793bf5aa9c9513488c7b872f116f409fa3b48aa7f652c34b694c566f",
+  "baseline_sha256": "b9620ae425326bb178255036796734ede8271af9d85b2fbb3003ebaa124f0807",
+  "single_native_sha256": "cb37ad3b22fbceda98932991084ec5e5c45a0f4bb21bae98ef19b59532b856d2",
+  "replaced_native_plate": 7,
+  "object": "V1 band-free veneer with sacrificial fins",
+  "process_changes": {
+    "tree_support_branch_angle": [
+      "30",
+      "15"
+    ]
+  },
+  "maximum_mesh_and_pose_error_mm": 0.0,
+  "all_mesh_assets_byte_identical": true,
+  "other_native_toolpaths_byte_identical": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

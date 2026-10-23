@@ -1,0 +1,98 @@
+{
+  "title": "A2L production J4 joint sample - direct crop",
+  "source_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "records": [
+    {
+      "name": "J4 F4 production tongue",
+      "plate": 1,
+      "object_id": 1000,
+      "assembly_to_printer": [
+        [
+          -0.915804697,
+          -0.4016239,
+          0.0,
+          196.05969357265258
+        ],
+        [
+          0.4016239,
+          -0.915804697,
+          0.0,
+          326.131380527704
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          65.25275428684526,
+          70.74746738925865,
+          0.0
+        ],
+        [
+          130.7472457131547,
+          149.2525326107413,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "J4 F3 production socket",
+      "plate": 1,
+      "object_id": 1100,
+      "assembly_to_printer": [
+        [
+          0.913137115,
+          -0.40765256,
+          0.0,
+          320.91886390902823
+        ],
+        [
+          0.40765256,
+          0.913137115,
+          0.0,
+          -98.14248072475948
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          172.10589854970033,
+          70.71063885038188,
+          0.0
+        ],
+        [
+          237.89410145029964,
+          149.2893611496181,
+          13.5
+        ]
+      ]
+    }
+  ],
+  "native_slice_validated": true,
+  "physical_confirmation_pending": true,
+  "source_project": "Dara.3mf",
+  "joint_geometry_modified": false,
+  "native_project": "Dara-A2L-Production-Joint-Sample.3mf",
+  "native_sha256": "403de7f2be322ad8b49f715dbb17a3272e6e06a9eb763cea6348f9fe3fb13df4"
+}

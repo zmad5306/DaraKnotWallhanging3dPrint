@@ -1,0 +1,337 @@
+{
+  "status": "PASS_UNALTERED_PRODUCTION_EXTRACTION",
+  "source_project": "Dara.3mf",
+  "source_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "joint": "J4",
+  "source_parts": [
+    "F4 A2L knot",
+    "F3 A2L knot"
+  ],
+  "source_joint_record": [
+    3,
+    2,
+    [
+      1.453149052974761e-14,
+      237.31725
+    ],
+    180.0,
+    67.30350000000001,
+    [
+      -22.434500000000003,
+      22.434500000000003
+    ]
+  ],
+  "crop_joint_local_xy_mm": [
+    [
+      -24,
+      -33.65175000000001
+    ],
+    [
+      42,
+      33.65175000000001
+    ]
+  ],
+  "sample_crop_revision": "straight-ribbon-span-v2",
+  "straight_sample_side_checks": [
+    {
+      "z_mm": 8.5,
+      "side": -1,
+      "missing_side_strip_mm2": 0.0,
+      "tolerance_mm": 0.002
+    },
+    {
+      "z_mm": 8.5,
+      "side": 1,
+      "missing_side_strip_mm2": 0.0,
+      "tolerance_mm": 0.002
+    },
+    {
+      "z_mm": 13.4,
+      "side": -1,
+      "missing_side_strip_mm2": 0.0,
+      "tolerance_mm": 0.002
+    },
+    {
+      "z_mm": 13.4,
+      "side": 1,
+      "missing_side_strip_mm2": 0.0,
+      "tolerance_mm": 0.002
+    }
+  ],
+  "joint_geometry_modified": false,
+  "material_modifiers_preserved": true,
+  "production_print_rotations_preserved": true,
+  "production_infill_directions_preserved": true,
+  "global_setting_changes": [
+    "print_settings_id",
+    "wipe_tower_x",
+    "wipe_tower_y"
+  ],
+  "source_volume_checks": [
+    {
+      "source_name": "F4 A2L knot",
+      "source_plate": 4,
+      "source_rotation": [
+        [
+          -0.915804697,
+          -0.4016239,
+          0.0
+        ],
+        [
+          0.4016239,
+          -0.915804697,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "settings": {
+        "brim_width": "1",
+        "enable_support": "1",
+        "extruder": "1",
+        "infill_direction": "21.3203"
+      },
+      "volumes": [
+        {
+          "source_volume_index": 1,
+          "subtype": "normal_part",
+          "settings": {
+            "name": "Continuous knot volume",
+            "matrix": "1 0 0 76.274185180664062 0 1 0 285.21641540527344 0 0 1 8.25 0 0 0 1",
+            "source_file": "Dara-A2L-Editable.3mf",
+            "source_object_id": "3",
+            "source_volume_id": "1",
+            "source_offset_x": "76.274185180664062",
+            "source_offset_y": "285.21641540527344",
+            "source_offset_z": "8.25"
+          },
+          "crop_volume_mm3": 24834.274535029104,
+          "added_mm3": 0.0,
+          "removed_mm3": 0.0
+        },
+        {
+          "source_volume_index": 4,
+          "subtype": "modifier_part",
+          "settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 125.54844665527344 0 1 0 288.88680267333984 0 0 1 9.1499996185302734 0 0 0 1",
+            "extruder": "2"
+          },
+          "crop_volume_mm3": 581.8165879418558,
+          "added_mm3": 0.0,
+          "removed_mm3": 0.0
+        },
+        {
+          "source_volume_index": 5,
+          "subtype": "modifier_part",
+          "settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 126.92344665527344 0 1 0 289.59117126464844 0 0 1 13.199999809265137 0 0 0 1",
+            "extruder": "4"
+          },
+          "crop_volume_mm3": 43.20002750400001,
+          "added_mm3": 0.0,
+          "removed_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "source_name": "F3 A2L knot",
+      "source_plate": 3,
+      "source_rotation": [
+        [
+          0.913137115,
+          -0.40765256,
+          0.0
+        ],
+        [
+          0.40765256,
+          0.913137115,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "settings": {
+        "brim_width": "1",
+        "enable_support": "1",
+        "extruder": "1",
+        "infill_direction": "69.0575"
+      },
+      "volumes": [
+        {
+          "source_volume_index": 1,
+          "subtype": "normal_part",
+          "settings": {
+            "name": "Continuous knot volume",
+            "matrix": "1 0 0 -77.994857788085938 0 1 0 284.09994125366211 0 0 1 6.75 0 0 0 1",
+            "source_file": "Dara-A2L-Editable.3mf",
+            "source_object_id": "2",
+            "source_volume_id": "1",
+            "source_offset_x": "-77.994857788085938",
+            "source_offset_y": "284.09994125366211",
+            "source_offset_z": "6.75"
+          },
+          "crop_volume_mm3": 28943.685918286592,
+          "added_mm3": 0.0,
+          "removed_mm3": 0.0
+        },
+        {
+          "source_volume_index": 4,
+          "subtype": "modifier_part",
+          "settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 -125.58986663818359 0 1 0 289.82009124755859 0 0 1 9.1499996185302734 0 0 0 1",
+            "extruder": "2"
+          },
+          "crop_volume_mm3": 654.3127930132254,
+          "added_mm3": 0.0,
+          "removed_mm3": 0.0
+        },
+        {
+          "source_volume_index": 5,
+          "subtype": "modifier_part",
+          "settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 -126.96485900878906 0 1 0 290.63955688476562 0 0 1 13.199999809265137 0 0 0 1",
+            "extruder": "4"
+          },
+          "crop_volume_mm3": 122.00398536832286,
+          "added_mm3": 0.0,
+          "removed_mm3": 0.0
+        }
+      ]
+    }
+  ],
+  "seating_pad_xy_mm": [
+    [
+      -3.9999999999999853,
+      235.969
+    ],
+    [
+      -13.999999999999982,
+      265.969
+    ],
+    [
+      -13.99999999999999,
+      208.969
+    ]
+  ],
+  "original_pad_contact_z_mm": 5.0,
+  "records": [
+    {
+      "name": "J4 F4 production tongue",
+      "plate": 1,
+      "object_id": 1000,
+      "assembly_to_printer": [
+        [
+          -0.915804697,
+          -0.4016239,
+          0.0,
+          196.05969357265258
+        ],
+        [
+          0.4016239,
+          -0.915804697,
+          0.0,
+          326.131380527704
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          65.25275428684526,
+          70.74746738925865,
+          0.0
+        ],
+        [
+          130.7472457131547,
+          149.2525326107413,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "J4 F3 production socket",
+      "plate": 1,
+      "object_id": 1100,
+      "assembly_to_printer": [
+        [
+          0.913137115,
+          -0.40765256,
+          0.0,
+          320.91886390902823
+        ],
+        [
+          0.40765256,
+          0.913137115,
+          0.0,
+          -98.14248072475948
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          172.10589854970033,
+          70.71063885038188,
+          0.0
+        ],
+        [
+          237.89410145029964,
+          149.2893611496181,
+          13.5
+        ]
+      ]
+    }
+  ],
+  "startup_tower": {
+    "plate": 1,
+    "filament_count": 3,
+    "conservative_estimated_filament_count": 4,
+    "estimated_depth_mm": 33.75,
+    "estimated_footprint_area_mm2": 1283.5,
+    "conservative_model_convex_hull_clearance_mm": 69.79201598200184,
+    "intersects_model": false
+  },
+  "editable_sha256": "ecea7e030143e264e73ddb98c599416b77379d3f18952973c97ed534d1ac12c9",
+  "protected_project_sha256": {
+    "Dara.3mf": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Complete.3mf": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+    "working\\bambu\\Dara-Photo-Frame-A2L\\Dara-A2L-Editable.3mf": "bfb2268b0bbfc211e370af34d1316c82d5d2746f3e551b634c54f2c15fd39e00",
+    "working\\bambu\\Dara-A1-Companion\\companion-plan.json": "e318bd2284df360464c90d989bfa9527aab6f0d1714671c82bb8720d710241cf",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.3mf": "c1ad005eadb2731328d4db4d4ee92a2c06a5e98a2690950227268de9d1703680",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion-Editable.json": "63fdb398c0bebbc4c1ab96e44053baf9115e0fb42cb363809d3f0f061a9bedd0",
+    "working\\bambu\\Dara-A1-Companion\\Dara-A1-Companion.3mf": "af0afc43b5e6b3454c8dc2bb0d297617cc2bf78c038c6f8a40f9549e410d446c",
+    "working\\bambu\\Dara-A1-Companion\\native-validation.json": "8000508fa8e594055f4480886b91e0b9b7d0c0b736cff361732bac7d73d91c27",
+    "working\\bambu\\Dara-A1-Companion\\README.md": "222fcecc182fc7d2a7e759f4c1bffcafbeec087ac08cdf025eb8becd7bd1591e",
+    "working\\bambu\\Dara-A1-Companion\\release-validation.json": "02a3b937ed9ebbd96e0bd14be752bc155b3f6029eb41193fa312c6accf0c7328"
+  }
+}

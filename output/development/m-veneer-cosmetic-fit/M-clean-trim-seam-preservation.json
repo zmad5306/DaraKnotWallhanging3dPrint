@@ -1,0 +1,43 @@
+{
+  "baseline_project_sha256": "3bdf764f9b36f02d5976fd367fbf81629df7ed6032e66bfd53d6d733c641d539",
+  "retained_from_commit": "1aba43ad66e21ffbb15b598fed86296aeba7ee39",
+  "project_sha256": "d7ad3050d29d8d82687e3be6cdb13ace8ee56c97d693110a518dd03b30159c4f",
+  "plates": [
+    {
+      "plate": 1,
+      "objects": [
+        "Flat core coupon C4"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_1.png": "05b944defbdae93ff07bb0f63fc7cfb608728fcfa6982556d36368f954910b5b",
+        "Metadata/plate_1_small.png": "b44392b9e699f37db1573950bc9f0d9e01cb113da6c310eb5e9ed1e95eb6c4a8",
+        "Metadata/plate_no_light_1.png": "894d444e5209245000b5529861bd65b51726826c6b2d15eb3c2784f89dce7bff",
+        "Metadata/top_1.png": "98373d0024ccaabd06e99d78bde09b6682e71700d047dda7c95e79fce07a239e",
+        "Metadata/pick_1.png": "d5fcdeabf69ecd1416e0b6b994ffb603868d0aee6cd33f2e3ed63543c55ba7a6",
+        "Metadata/plate_1.json": "d826711b83f3b056151d57a6924ce244789a9b51b4ac19563bf09abec89eeef3",
+        "Metadata/plate_1.gcode.md5": "f9d625868c807d91c4ccedb6e9c977aa985e7a94057c18c485e1b62860269c4b",
+        "Metadata/plate_1.gcode": "a5bdc57ed63974abb59979a4179036cc055ceae0cebb01d65ef5addacfe6e306"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 4,
+      "objects": [
+        "Smooth crown caul - soft liner and release film"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_4.png": "2c922c351c2b567a6db65aac4d982dace1829b9ae4ef9622c951c4f502ba26a4",
+        "Metadata/plate_4_small.png": "bc3a8f4d9e1d74752cd4b6d71ccde6e0119e165344e1b1f1c6a38b9d2ddf517f",
+        "Metadata/plate_no_light_4.png": "f1b9737681a10b6b84b4bdf844f460323c8d76468cb2ed749d425d67c0100e3d",
+        "Metadata/top_4.png": "f6ece4dfffb215d01b4b3da578ebddf4c97a90408b3591fc291dda9ed6426ee3",
+        "Metadata/pick_4.png": "0f83f47abd9a7f2cb4893f2141d7882fbb8bbac2720e6d7b52d867ec512b6854",
+        "Metadata/plate_4.json": "7382cf4a65886180088984f6067bd5af133e64f215afe1a6410131879ec0aa74",
+        "Metadata/plate_4.gcode.md5": "113baa73085a482b4cd7707539b8d779cef5d15fee7fe5e66c81387ede0b927c",
+        "Metadata/plate_4.gcode": "0b917043a6cb1d6eefbbf8289fb7ec2f67017ec2feda14c4468d658d689ef3b0"
+      },
+      "gcode_byte_identical": true
+    }
+  ]
+}

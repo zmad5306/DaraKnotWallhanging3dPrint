@@ -1,0 +1,13 @@
+{
+  "revision": "wall-cradle-r6-end-ties",
+  "project_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+  "frame_and_accessory_inputs_preserved": true,
+  "changed_plates": [
+    15,
+    16,
+    17
+  ],
+  "validation": "veneer-wall-promotion-validation.json",
+  "physical_confirmation_pending": true
+}

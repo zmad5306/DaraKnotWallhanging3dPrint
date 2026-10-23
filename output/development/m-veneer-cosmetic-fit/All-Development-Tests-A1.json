@@ -1,0 +1,726 @@
+{
+  "title": "All current development tests",
+  "plate_count": 3,
+  "part_count": 11,
+  "previous_plate_count": 12,
+  "sources": [
+    {
+      "file": "M-Veneer-Glue-Coupon-A1.3mf",
+      "sha256": "b3af7a5c57dda1c056f701697c1e87d515307f9aad6c5c49c5906086ee5ca2f2"
+    },
+    {
+      "file": "M-Veneer-Seam-Coupon-A1.3mf",
+      "sha256": "57492d12c3eec37c50b895462d75c74d72b12499cbd75b93b8826fa9d8bc7e3e"
+    },
+    {
+      "file": "Frame-Cosmetic-Comparison-A1.3mf",
+      "sha256": "9e9ec0fb8d4622c64cf79eb1dd51339848775486396872f306f0f5a5203b7630"
+    }
+  ],
+  "records": [
+    {
+      "name": "Glue-test smooth caul",
+      "plate": 1,
+      "object_id": 10000,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1300,
+      "source_name": "Smooth crown caul - soft liner and release film",
+      "source_plate": 3,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          313.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          123.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          14.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          23.0,
+          29.5,
+          0.0
+        ],
+        [
+          101.0,
+          98.5,
+          4.15
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -66.0,
+        -64.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10001": "8b2e1c9082d4785b14b1cbd831e93fca8c6514486d66170d5590f5e7bcfcbc32"
+      },
+      "part_id_mapping": {
+        "1301": "10001"
+      }
+    },
+    {
+      "name": "Seam-test smooth caul",
+      "plate": 1,
+      "object_id": 10100,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1300,
+      "source_name": "Smooth crown caul - soft liner and release film",
+      "source_plate": 4,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          317.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          99.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          14.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          27.0,
+          139.0,
+          0.0
+        ],
+        [
+          97.0,
+          189.0,
+          4.15
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -66.0,
+        36.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10101": "337ab669ad17df7c0123b62657ec9bddc71c230b3ce2215b20174723583b991f"
+      },
+      "part_id_mapping": {
+        "1301": "10101"
+      }
+    },
+    {
+      "name": "Ribbon show-face jig",
+      "plate": 1,
+      "object_id": 10200,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1800,
+      "source_name": "Show-face glue jig - use release film",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          175.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          118.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          133.0,
+          74.0,
+          0.0
+        ],
+        [
+          227.0,
+          162.0,
+          6.0
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        52.0,
+        -10.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10201": "5cd4473a14e29d2195e37229429eb6a7eb1e5313da652ec63312f120deb81212"
+      },
+      "part_id_mapping": {
+        "1801": "10201"
+      }
+    },
+    {
+      "name": "M glue core C1",
+      "plate": 2,
+      "object_id": 10300,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1000,
+      "source_name": "Flat core coupon C1",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          307.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -19.06489310786128
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          17.0,
+          21.06489310786128,
+          0.0
+        ],
+        [
+          95.0,
+          74.93510689213872,
+          8.999999999999998
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -19.0,
+        -72.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10301": "5faccab1420562bdcf8b09c45e926df71dde9d8634778ae3707d10dbd748d27f"
+      },
+      "part_id_mapping": {
+        "1001": "10301"
+      }
+    },
+    {
+      "name": "M glue core C4",
+      "plate": 2,
+      "object_id": 10400,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1100,
+      "source_name": "Flat core coupon C4",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          307.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          82.28679548631872
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          17.0,
+          107.28679548631872,
+          0.0
+        ],
+        [
+          95.0,
+          148.71320451368126,
+          8.999999999999998
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -122.0,
+        8.000000000000014
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10401": "41d47da2330fe5a1f80e1c3a6ac666a773ff35d9d857d066b588324d8d5ead12"
+      },
+      "part_id_mapping": {
+        "1101": "10401"
+      }
+    },
+    {
+      "name": "M seam core C4",
+      "plate": 2,
+      "object_id": 10500,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1000,
+      "source_name": "Flat core coupon C4",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          311.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          273.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          21.0,
+          183.0,
+          0.0
+        ],
+        [
+          91.0,
+          233.0,
+          8.999999999999998
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -72.0,
+        98.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10501": "23181201b25a848fd3e2c4cd121e0da21370a5808ec68aa98072485eb708dd99"
+      },
+      "part_id_mapping": {
+        "1001": "10501"
+      }
+    },
+    {
+      "name": "M glue veneer - fins and cut tabs",
+      "plate": 2,
+      "object_id": 10600,
+      "source_project": "M-Veneer-Glue-Coupon-A1.3mf",
+      "source_object_id": 1200,
+      "source_name": "Veneer coupon 1 - fused carrier",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          58.25152135361532
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -73.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          158.04486302007535,
+          18.350000001490116,
+          0.0
+        ],
+        [
+          209.95513697992465,
+          91.64999999850988,
+          67.78940252276834
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        58.25152135361532,
+        -73.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10601": "d2d030e5a428d8015a1d83450c358581bfbe0ced22233c7117f29479b7b6c026"
+      },
+      "part_id_mapping": {
+        "1201": "10601"
+      }
+    },
+    {
+      "name": "M seam upper veneer - fins and cut tabs",
+      "plate": 2,
+      "object_id": 10700,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1100,
+      "source_name": "Veneer coupon 1 - fused carrier",
+      "source_plate": 2,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          58.75515162897079
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          159.83759498548477,
+          120.35000000149012,
+          0.0
+        ],
+        [
+          208.16240501451523,
+          149.64999999850988,
+          62.00546410933961
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        58.75515162897079,
+        7.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10701": "2862c3509c354595963223fea9ec34588ff15b9548909fae5e6fc0d446607b5c"
+      },
+      "part_id_mapping": {
+        "1101": "10701"
+      }
+    },
+    {
+      "name": "M seam lower veneer - fins and cut tabs",
+      "plate": 2,
+      "object_id": 10800,
+      "source_project": "M-Veneer-Seam-Coupon-A1.3mf",
+      "source_object_id": 1200,
+      "source_name": "Veneer coupon 2 - fused carrier",
+      "source_plate": 3,
+      "assembly_to_printer": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          58.75515162903831
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          87.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          160.2533296044545,
+          200.35000000149012,
+          0.0
+        ],
+        [
+          207.7466703955455,
+          229.64999999850988,
+          62.09104902460493
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        58.75515162903831,
+        87.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10801": "731133c0309dd27089391364cb66df33d235e906e85cfea717aba4e3ff8defff"
+      },
+      "part_id_mapping": {
+        "1201": "10801"
+      }
+    },
+    {
+      "name": "Zero-gap refined tongue",
+      "plate": 3,
+      "object_id": 10900,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1000,
+      "source_name": "Zero-gap refined tongue",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          0.9563047559630354,
+          -0.29237170472273677,
+          0.0,
+          50.69413505874762
+        ],
+        [
+          0.29237170472273677,
+          0.9563047559630354,
+          0.0,
+          47.046601945040024
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          10.151744907357433,
+          5.176345691169246,
+          0.0
+        ],
+        [
+          77.84825509264257,
+          84.82365430883075,
+          13.6
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -30.0,
+        -80.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "10901": "bf040c28df3dc84a1f657abdfa6060bfd0d10663bceec9c8ec81189e1d1a5680",
+        "10902": "d6e1fa17a79b3b1f499a9620c15d5ee2472f7b5e4350743590ca520e2b1b635c",
+        "10903": "eddbc8c73ae74a35c3e61aa2aa70f7a50684ce77c6d9f0cd88105a17ed60b9ee"
+      },
+      "part_id_mapping": {
+        "1001": "10901",
+        "1002": "10902",
+        "1003": "10903"
+      }
+    },
+    {
+      "name": "Zero-gap refined socket",
+      "plate": 3,
+      "object_id": 11000,
+      "source_project": "Frame-Cosmetic-Comparison-A1.3mf",
+      "source_object_id": 1100,
+      "source_name": "Zero-gap refined socket",
+      "source_plate": 1,
+      "assembly_to_printer": [
+        [
+          0.3907311284892737,
+          -0.9205048534524404,
+          0.0,
+          113.29464641894458
+        ],
+        [
+          0.9205048534524404,
+          0.3907311284892737,
+          0.0,
+          25.66939835365021
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          81.9974814015616,
+          12.384539985014897,
+          0.0
+        ],
+        [
+          161.00251859843837,
+          77.6154600149851,
+          12.799999999999999
+        ]
+      ],
+      "xy_translation_from_source_mm": [
+        -55.5,
+        -80.0
+      ],
+      "rotation_and_z_unchanged": true,
+      "mesh_blocks_byte_identical": {
+        "11001": "3a75cf3cfe69d9ddcb92b0029966e22b1c827187ae3fecf24c48f0fef1684e4b",
+        "11002": "febd874a05277a96a17161f6bd9e508bf93cac5a118bb1e2dac94443d04c4101",
+        "11003": "4b03db489d8527a248073f5e082e7b91f63a01609556ec869564843f7e478991"
+      },
+      "part_id_mapping": {
+        "1101": "11001",
+        "1102": "11002",
+        "1103": "11003"
+      }
+    }
+  ],
+  "plates": [
+    {
+      "plate": 1,
+      "name": "White fixtures",
+      "parts": 3
+    },
+    {
+      "plate": 2,
+      "name": "Copper M tests",
+      "parts": 6
+    },
+    {
+      "plate": 3,
+      "name": "Zero-gap ribbon test",
+      "parts": 2
+    }
+  ],
+  "filament_slots": {
+    "1": "white",
+    "2": "wood tan",
+    "3": "copper silk",
+    "4": "Azurite blue"
+  },
+  "ribbon_tower_reserved_rectangle_mm": [
+    165,
+    174,
+    250,
+    252
+  ],
+  "ribbon_test": {
+    "visible_edge_gap_mm": 0,
+    "pairs": 1,
+    "additional_adhesive_recess_mm": 0.2,
+    "nominal_hidden_glue_clearance_mm": 0.8,
+    "revision": "bed-datum-ribbon-v1",
+    "socket_hidden_back_recess_mm": 0.8,
+    "detail": "Straight 68 mm coupon sides. Three bed-printed socket feet seat on upward-printed tongue pocket floors at assembly Z0.8. Supported bulk clears to Z5.4; zero-gap show edge above Z8."
+  },
+  "m_seam_test": {
+    "visible_edge_gap_mm": 0,
+    "veneer_to_core_glue_gap_mm": 0.2,
+    "geometry_validation": "M-zero-gap-seam-validation.json",
+    "full_size_veneers": "Zero nominal gap in the current A2L design; production carriers remain on hold pending revised coupon removal"
+  },
+  "instructions": [
+    "Keep saved orientations, scale and filament assignments; open as a project.",
+    "Plate 1: white cauls and jig. Use soft liner plus release film on the smooth M cauls.",
+    "Plate 2: all six copper test parts. Revised carriers have separate starter ribs, 1.2 mm cut necks and 3 mm rear access; no continuous starter shoe.",
+    "Plate 3: one refined zero-gap ribbon pair. Mark tongue/socket on the backs before removing them.",
+    "Plate 3 revision: remove supports from the recessed socket underside, foot sides and key pockets. Keep foot bottoms and tongue pocket floors clean. Dry-seat all three feet; inspect the white surface in grazing light before gluing.",
+    "Cradle the veneers in lined cauls. Cut each neck flush with the rear lands through its shallow pocket; remove fins and starter ribs progressively, then sand the back flat. Preserve seam edges and locating pockets.",
+    "This carrier revision is coupon-only. A2L veneer plates 15-17 remain on hold pending successful physical removal.",
+    "Physical fit, silk bonding and finish still require these prints."
+  ],
+  "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "native_slice_validated": true,
+  "native_project": "All-Development-Tests-A1-Sliced.3mf",
+  "native_validation": "All-Development-Tests-A1-native-validation.json"
+}

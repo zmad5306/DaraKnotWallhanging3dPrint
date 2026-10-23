@@ -1,0 +1,543 @@
+{
+  "core_body_flat_top_mm": 8.4,
+  "veneer_flat_back_mm": 8.6,
+  "all_convex_profile_in_veneer": true,
+  "glue_gap_mm": 0.2,
+  "caul_release_clearance_mm": 0.15,
+  "caul_surface": "Smooth broad crown; no hammer dimples",
+  "caul_liner_required": true,
+  "panels": [
+    {
+      "panel": 1,
+      "pads_xy_mm": [
+        [
+          -276.0,
+          -45.0
+        ],
+        [
+          -231.0,
+          -60.0
+        ],
+        [
+          -231.0,
+          -45.0
+        ]
+      ],
+      "carrier": {
+        "type": "Open-back fins with discrete grounded starter ribs and flush-cut necks",
+        "revision": "clean-trim-coupon-v1",
+        "fin_count": 1,
+        "bonded_tooth_count": 14,
+        "cross_braces": 2,
+        "fin_pitch_nominal_mm": 24.0,
+        "fin_pitch_max_mm": 0,
+        "fin_thickness_mm": 1.6,
+        "area_coverage": {
+          "method": "Area-weighted rear coverage and tributary-area constrained fin allocation",
+          "target_fin_count": 2,
+          "baseline": {
+            "veneer_area_mm2": 1750.0,
+            "sample_count": 799,
+            "sample_grid_mm": 1.5,
+            "maximum_distance_to_bond_or_starter_mm": 15.27768080777308,
+            "area_outside_distance_limit_mm2": 0.0,
+            "maximum_area_per_bond_mm2": 325.0,
+            "maximum_tributary_width_mm": 26.4078041315991,
+            "fin_count": 1,
+            "bond_count": 8,
+            "fin_service_areas_mm2": [
+              1534.0
+            ],
+            "fin_tributary_widths_mm": [
+              26.4078041315991
+            ]
+          },
+          "revised": {
+            "veneer_area_mm2": 1750.0,
+            "sample_count": 799,
+            "sample_grid_mm": 1.5,
+            "maximum_distance_to_bond_or_starter_mm": 12.587295182047646,
+            "area_outside_distance_limit_mm2": 0.0,
+            "maximum_area_per_bond_mm2": 225.0,
+            "maximum_tributary_width_mm": 21.584261838440117,
+            "fin_count": 1,
+            "bond_count": 9,
+            "fin_service_areas_mm2": [
+              1549.75
+            ],
+            "fin_tributary_widths_mm": [
+              21.584261838440117
+            ]
+          },
+          "reference": {
+            "average_area_per_bond_mm2": 191.75,
+            "average_effective_tributary_width_mm": 26.4078041315991
+          },
+          "trial_geometric_limits": {
+            "nominal_service_width_mm": 24.0,
+            "maximum_tributary_width_mm": 52.8156082631982,
+            "maximum_rear_area_per_bond_mm2": 383.5,
+            "supported_area_multiplier": 2.0,
+            "interior_distance_to_bond_mm": 16.970562748477143,
+            "boundary_allowance_mm": 3
+          },
+          "physical_stiffness_and_bond_strength_not_established": true,
+          "half_population_is_target_not_constraint": true
+        },
+        "offset_crown_braces": 0,
+        "support_foot_guard": null,
+        "tall_fins_without_diagonal_restraint": [],
+        "rear_fin_clearance_mm": 3.0,
+        "tooth_width_mm": 1.2,
+        "tooth_length_along_assembly_x_mm": 1.2,
+        "tooth_pitch_max_along_assembly_x_mm": 8.0,
+        "trim_pocket_depth_mm": 0.4,
+        "minimum_checked_roof_above_pocket_mm": 0.6,
+        "body_connected_to_bed": true,
+        "starter_shoe_assembly_x_width_mm": 0,
+        "continuous_starter_shoe": false,
+        "starter_rib_count": 5,
+        "starter_ribs_directly_grounded": true,
+        "starter_rib_pitch_max_mm": 6.0,
+        "first_veneer_layer_height_checked_mm": 0.2,
+        "maximum_first_layer_distance_to_starter_mm": 2.325000000000003,
+        "flush_trim_excess_outside_finished_veneer_mm3": 5.112159085402012e-13,
+        "cutter_access_necks_checked": 14,
+        "maximum_cutter_access_obstruction_mm3": 0.0,
+        "cutter_access_window_mm": [
+          2,
+          2,
+          0.2
+        ],
+        "trim_plane_assembly_z_mm": 8.6,
+        "cleanup": "Cradle face in lined caul. Cut 1.2 mm necks individually through rear pockets, flush with rear lands; remove ribs progressively, then sand rear lands on flat plate.",
+        "zero_volume_boolean_shells_removed": 0,
+        "unplanned_fin_to_skin_contact_mm3": 0.0,
+        "tree_supports_still_required": true,
+        "physical_confirmation_pending": true,
+        "assembly_to_printer": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918,
+            -26.638776963659893
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            75.5
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046,
+            235.0213354911886
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bond_probes_print_xyz_mm": [
+          [
+            144.3506461731238,
+            128.0,
+            4.5091890100326
+          ],
+          [
+            139.7763740932242,
+            128.0,
+            11.041926563237325
+          ],
+          [
+            135.20210201332463,
+            128.0,
+            17.574664116442023
+          ],
+          [
+            130.62782993342503,
+            128.0,
+            24.107401669646748
+          ],
+          [
+            126.05355785352546,
+            128.0,
+            30.640139222851417
+          ],
+          [
+            121.47928577362583,
+            128.0,
+            37.17287677605614
+          ],
+          [
+            116.90501369372626,
+            128.0,
+            43.70561432926087
+          ],
+          [
+            112.33074161382666,
+            128.0,
+            50.238351882465565
+          ],
+          [
+            107.75646953392706,
+            128.0,
+            56.77108943567026
+          ],
+          [
+            145.66987197673123,
+            139.85,
+            2.625139308167917
+          ],
+          [
+            145.66987197673123,
+            133.925,
+            2.625139308167917
+          ],
+          [
+            145.66987197673123,
+            128.0,
+            2.625139308167917
+          ],
+          [
+            145.66987197673123,
+            122.07499999999999,
+            2.625139308167917
+          ],
+          [
+            145.66987197673123,
+            116.15,
+            2.625139308167917
+          ]
+        ],
+        "fins": [
+          {
+            "assembly_y_mm": -52.5,
+            "print_y_mm": 128.0,
+            "contacts_xy_mm": [
+              [
+                -286.9,
+                -52.5
+              ],
+              [
+                -278.92499999999995,
+                -52.5
+              ],
+              [
+                -270.95,
+                -52.5
+              ],
+              [
+                -262.97499999999997,
+                -52.5
+              ],
+              [
+                -255.0,
+                -52.5
+              ],
+              [
+                -247.02499999999998,
+                -52.5
+              ],
+              [
+                -239.04999999999998,
+                -52.5
+              ],
+              [
+                -231.075,
+                -52.5
+              ],
+              [
+                -223.1,
+                -52.5
+              ]
+            ],
+            "maximum_height_mm": 56.38160970259827,
+            "fin_xz_bounds_mm": [
+              105.28244335429068,
+              0.0,
+              143.13848815345972,
+              56.38160970259827
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "panel": 2,
+      "pads_xy_mm": [
+        [
+          -270.0,
+          -70.0
+        ],
+        [
+          -225.0,
+          -85.0
+        ],
+        [
+          -228.0,
+          -70.0
+        ]
+      ],
+      "carrier": {
+        "type": "Open-back fins with discrete grounded starter ribs and flush-cut necks",
+        "revision": "clean-trim-coupon-v1",
+        "fin_count": 1,
+        "bonded_tooth_count": 14,
+        "cross_braces": 2,
+        "fin_pitch_nominal_mm": 24.0,
+        "fin_pitch_max_mm": 0,
+        "fin_thickness_mm": 1.6,
+        "area_coverage": {
+          "method": "Area-weighted rear coverage and tributary-area constrained fin allocation",
+          "target_fin_count": 2,
+          "baseline": {
+            "veneer_area_mm2": 1714.3069148183745,
+            "sample_count": 790,
+            "sample_grid_mm": 1.5,
+            "maximum_distance_to_bond_or_starter_mm": 15.776847405343382,
+            "area_outside_distance_limit_mm2": 0.0,
+            "maximum_area_per_bond_mm2": 362.5,
+            "maximum_tributary_width_mm": 26.71366735284531,
+            "fin_count": 1,
+            "bond_count": 7,
+            "fin_service_areas_mm2": [
+              1486.75
+            ],
+            "fin_tributary_widths_mm": [
+              26.71366735284531
+            ]
+          },
+          "revised": {
+            "veneer_area_mm2": 1714.3069148183745,
+            "sample_count": 790,
+            "sample_grid_mm": 1.5,
+            "maximum_distance_to_bond_or_starter_mm": 12.626157100298315,
+            "area_outside_distance_limit_mm2": 0.0,
+            "maximum_area_per_bond_mm2": 225.0,
+            "maximum_tributary_width_mm": 21.32093698855557,
+            "fin_count": 1,
+            "bond_count": 9,
+            "fin_service_areas_mm2": [
+              1511.5
+            ],
+            "fin_tributary_widths_mm": [
+              21.32093698855557
+            ]
+          },
+          "reference": {
+            "average_area_per_bond_mm2": 212.39285714285714,
+            "average_effective_tributary_width_mm": 26.71366735284531
+          },
+          "trial_geometric_limits": {
+            "nominal_service_width_mm": 24.0,
+            "maximum_tributary_width_mm": 53.42733470569062,
+            "maximum_rear_area_per_bond_mm2": 424.7857142857143,
+            "supported_area_multiplier": 2.0,
+            "interior_distance_to_bond_mm": 16.970562748477143,
+            "boundary_allowance_mm": 3
+          },
+          "physical_stiffness_and_bond_strength_not_established": true,
+          "half_population_is_target_not_constraint": true
+        },
+        "offset_crown_braces": 0,
+        "support_foot_guard": null,
+        "tall_fins_without_diagonal_restraint": [],
+        "rear_fin_clearance_mm": 3.0,
+        "tooth_width_mm": 1.2,
+        "tooth_length_along_assembly_x_mm": 1.2,
+        "tooth_pitch_max_along_assembly_x_mm": 8.0,
+        "trim_pocket_depth_mm": 0.4,
+        "minimum_checked_roof_above_pocket_mm": 0.6,
+        "body_connected_to_bed": true,
+        "starter_shoe_assembly_x_width_mm": 0,
+        "continuous_starter_shoe": false,
+        "starter_rib_count": 5,
+        "starter_ribs_directly_grounded": true,
+        "starter_rib_pitch_max_mm": 6.0,
+        "first_veneer_layer_height_checked_mm": 0.2,
+        "maximum_first_layer_distance_to_starter_mm": 2.325000000000003,
+        "flush_trim_excess_outside_finished_veneer_mm3": 2.4172937853589466e-11,
+        "cutter_access_necks_checked": 14,
+        "maximum_cutter_access_obstruction_mm3": 1.6760308408401538e-10,
+        "cutter_access_window_mm": [
+          2,
+          2,
+          0.2
+        ],
+        "trim_plane_assembly_z_mm": 8.6,
+        "cleanup": "Cradle face in lined caul. Cut 1.2 mm necks individually through rear pockets, flush with rear lands; remove ribs progressively, then sand rear lands on flat plate.",
+        "zero_volume_boolean_shells_removed": 0,
+        "unplanned_fin_to_skin_contact_mm3": 4.440892098500626e-16,
+        "tree_supports_still_required": true,
+        "physical_confirmation_pending": true,
+        "assembly_to_printer": [
+          [
+            -0.573576436351046,
+            0.0,
+            0.8191520442889918,
+            -26.223042344622627
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            50.5
+          ],
+          [
+            0.8191520442889918,
+            0.0,
+            0.573576436351046,
+            235.0213354911886
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bond_probes_print_xyz_mm": [
+          [
+            144.2460074523673,
+            128.0,
+            5.252359158020795
+          ],
+          [
+            139.73678203994194,
+            128.0,
+            11.692200442726971
+          ],
+          [
+            135.22755662751658,
+            128.0,
+            18.132041727433148
+          ],
+          [
+            130.7183312150912,
+            128.0,
+            24.571883012139324
+          ],
+          [
+            126.20910580266585,
+            128.0,
+            31.01172429684553
+          ],
+          [
+            121.69988039024048,
+            128.0,
+            37.451565581551705
+          ],
+          [
+            117.19065497781509,
+            128.0,
+            43.89140686625791
+          ],
+          [
+            112.68142956538972,
+            128.0,
+            50.331248150964086
+          ],
+          [
+            108.17220415296433,
+            128.0,
+            56.77108943567026
+          ],
+          [
+            143.41219600211215,
+            139.85,
+            6.44316531870146
+          ],
+          [
+            144.57077405664222,
+            133.925,
+            4.788544379469187
+          ],
+          [
+            145.64394312739705,
+            128.0,
+            3.2559001101733713
+          ],
+          [
+            146.0856065957685,
+            122.075,
+            2.625139308167917
+          ],
+          [
+            146.0856065957685,
+            116.15,
+            2.625139308167917
+          ]
+        ],
+        "fins": [
+          {
+            "assembly_y_mm": -77.5,
+            "print_y_mm": 128.0,
+            "contacts_xy_mm": [
+              [
+                -285.9927567682099,
+                -77.5
+              ],
+              [
+                -278.1311621721837,
+                -77.5
+              ],
+              [
+                -270.26956757615744,
+                -77.5
+              ],
+              [
+                -262.4079729801312,
+                -77.5
+              ],
+              [
+                -254.54637838410497,
+                -77.5
+              ],
+              [
+                -246.68478378807873,
+                -77.5
+              ],
+              [
+                -238.82318919205247,
+                -77.5
+              ],
+              [
+                -230.96159459602623,
+                -77.5
+              ],
+              [
+                -223.1,
+                -77.5
+              ]
+            ],
+            "maximum_height_mm": 56.38160970259827,
+            "fin_xz_bounds_mm": [
+              105.69817797332794,
+              0.0,
+              143.0609711846126,
+              56.38160970259827
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "core_parts": [
+    4
+  ],
+  "sample_bounds_mm": [
+    -290.0,
+    -90.0,
+    -220.0,
+    -40.0
+  ],
+  "core_connected_components": [
+    1
+  ],
+  "whole_pad_footprints_supported": true,
+  "physical_confirmation_pending": true
+}

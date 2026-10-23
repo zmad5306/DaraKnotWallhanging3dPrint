@@ -1,0 +1,89 @@
+{
+  "revision": "short-veneer-staggered-cores-v2",
+  "core_cuts": [
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -335.0,
+          -40.0
+        ],
+        [
+          -165.0,
+          -40.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          165.0,
+          -40.0
+        ],
+        [
+          335.0,
+          -40.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -80.0,
+          30.0
+        ],
+        [
+          80.0,
+          30.0
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          55.881904510252085,
+          -26.592582628906825
+        ],
+        [
+          4.118095489747915,
+          166.59258262890683
+        ]
+      ]
+    }
+  ],
+  "veneer_cuts": [
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -125,
+          50
+        ],
+        [
+          -125,
+          250
+        ]
+      ]
+    },
+    {
+      "type": "LineString",
+      "coordinates": [
+        [
+          125,
+          50
+        ],
+        [
+          125,
+          250
+        ]
+      ]
+    }
+  ],
+  "minimum_key_head_wall_mm": 10,
+  "minimum_key_head_clearance_to_veneer_seam_mm": 8,
+  "minimum_core_joint_separation_mm": 18,
+  "minimum_cross_layer_seam_separation_mm": 20
+}

@@ -6,10 +6,21 @@ __pycache__/
 *.[3][mM][fF]
 *.[sS][tT][lL]
 *.[gG][cC][oO][dD][eE]
-!/Dara.3mf
-!/output/christmas-crate-stencils/*.3mf
-!/output/christmas-crate-stencils/*.stl
 !/working/stl/Dara-Photo-Frame-A1-Jointed/*.stl
 !/working/stl/Dara-Print-Checks/*.stl
-!/working/bambu/Dara-Photo-Frame-A1-Jointed/Dara-Photo-Frame-A1-Complete.3mf
-!/reference/tested-lap-joints/Tested-Joints-One-Plate.3mf
+
+# Current root projects and exact companion mesh exports.
+!/Knot.3mf
+!/Knot STL/*.stl
+!/Letter.3mf
+!/Letter STL/*.stl
+!/Small Parts.3mf
+!/Small Parts STL/*.stl
+!/Small Parts - Crate Clips PETG.3mf
+!/Small Parts - Crate Clips PETG STL/*.stl
+!/Small Parts - Photo Cut Aligner.3mf
+!/Small Parts - Photo Cut Aligner STL/*.stl
+!/Small Parts - Sanding Block PLA.3mf
+!/Small Parts - Sanding Block PLA STL/*.stl
+!/Small Parts - Crate Stencils.3mf
+!/Small Parts - Crate Stencils STL/*.stl

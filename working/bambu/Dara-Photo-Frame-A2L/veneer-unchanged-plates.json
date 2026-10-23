@@ -1,0 +1,362 @@
+{
+  "baseline_project_sha256": "87df5f383ef4b63295030a03973f823a544cc6fc19369ab86789025a07911644",
+  "retained_from_commit": "089bf22f91bbd13508abcf7d62207ac588d61d3e",
+  "project_sha256": "b943790d7deefbaa22413106848dd936ccbe26b294372be4d85ea5dee578425d",
+  "plates": [
+    {
+      "plate": 1,
+      "objects": [
+        "F1 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "10": "10"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_1.png": "0a8a329929a9fcadcc1bc3f0443c1228c7550135ac7823a691169c3ab9b2b37f",
+        "Metadata/plate_1_small.png": "49cb4aeddd6f0f6424539f5d524cad9d78df200c1fa0643f4c447f5e3fdad2e0",
+        "Metadata/plate_no_light_1.png": "c05bec4eda45fe63228cfd4bd7879946505691afa992b29de34bebb62e4a7087",
+        "Metadata/top_1.png": "8529ae432f3db583d38bd756770e93b5124b78a3f79d8320527a7a76d0de0b96",
+        "Metadata/pick_1.png": "3a6bed578786bd8b2c3058e54a0c2aafa3baaf30cb9c4709e5d78e34754d343d",
+        "Metadata/plate_1.json": "d9b9b325305a43e182be9d36552a919ec1c8e89262dd41f652a8d2b7f4715a24",
+        "Metadata/plate_1.gcode.md5": "6fa32a8acf782f4b5cca105dfd824c4820cb9893042da112ec586aaf8fea6d44",
+        "Metadata/plate_1.gcode": "0a38c397d9b267cf818fdada61b9247ef13aa6c54e2794dec53cd0a4d1612257"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 2,
+      "objects": [
+        "F2 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "22": "22"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_2.png": "c6762e2f38e328d12cd9dc872113eb50d221db7f69351140b4c962eaede64bf4",
+        "Metadata/plate_2_small.png": "8f8cbc961cc0804c0c95f7a2a366fcfa90e09fdecb13b743e76caa39ad17255b",
+        "Metadata/plate_no_light_2.png": "e9ee12672910454e390e9f576c31af277b5265be14745a8628a356148215c788",
+        "Metadata/top_2.png": "dd8ef7875774f7dd2243bf50320f270e0b4e06b91656386a75de209c64f37981",
+        "Metadata/pick_2.png": "6a1fc65660f6546a581a9de1565dfc49e043477ee154af30b6d11274c54f6500",
+        "Metadata/plate_2.json": "181182718e23ee29418b1ec6bca530a46915b1a94275eb643140bc2887345212",
+        "Metadata/plate_2.gcode.md5": "6939d0ef9ec4147d03a19df022318818db5703c0aed8cd61183853738d402a71",
+        "Metadata/plate_2.gcode": "ed27f2a9334619bd8a6972bcd8d18c5c88b5dfabc257b298c3d1d77c48d27914"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 3,
+      "objects": [
+        "F3 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "35": "35"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_3.png": "e8c5aa755dc0256943db026e310d3fba7605c5632e5e66e83c6aff9e9a2e3b63",
+        "Metadata/plate_3_small.png": "d1fe85d9ce390a9a8387836eac58e810f665b40714be086ef05c4b31d80b78ce",
+        "Metadata/plate_no_light_3.png": "876def14240e71095b303edf34f346d8fd03c8780a8bc32047754435691429c8",
+        "Metadata/top_3.png": "579611a1ff2e5bb37eb094fb03501ebeac96d5db60eb1ba92adb72daa79307b2",
+        "Metadata/pick_3.png": "4ac8843475919cc2adb270d27f07cf0d48e14285c938f7ca0834f10f906f1589",
+        "Metadata/plate_3.json": "e1d83f84c79b7699f70ce1310f80c658ad9975509d671de0216c8ece091d008c",
+        "Metadata/plate_3.gcode.md5": "f4a2b4a8994b4bc51844feca16a1a9d61770d144ff6c831fa8dd9e695849c969",
+        "Metadata/plate_3.gcode": "ae78ab74d1d40af1c84a33a00bf59ec9d08d09eb132a2fc89b6bdd13e8bd0eeb"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 4,
+      "objects": [
+        "F4 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "48": "48"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_4.png": "0f68a8da12ddbcad453b2808d20cb82704db005196baf5e314a3636da16c67a4",
+        "Metadata/plate_4_small.png": "34966b629799103a9940295a8617ade9c0d82bd624146d4f92135da61b90af0e",
+        "Metadata/plate_no_light_4.png": "ef1d99586852d7c619c8bac448947d17fdedd5ecf9dedfd1954e5ca48ea72cd0",
+        "Metadata/top_4.png": "aed1c62ae32c7474879ce85e612db7d27fad9b7db5745006d3a7cd42bafdfb41",
+        "Metadata/pick_4.png": "bf3f8ca9b97c867721cfbb16e2d97aecdbc721ccb097c1d7ef162dc51dcd9d5b",
+        "Metadata/plate_4.json": "1d5a476ac8a3c5ce5890cf27bbd940a3d49b44e0f9b357c3d728c493e7d79706",
+        "Metadata/plate_4.gcode.md5": "6a61a344e5788b79b40b7e3727970b78a33c0ffecc4068020d6643af26c7afd6",
+        "Metadata/plate_4.gcode": "f9c0e3df316aab2aa0bc89813a5c8f5fa6f58392e572e89af22bdb568ffdefc8"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 5,
+      "objects": [
+        "F5 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "60": "60"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_5.png": "abb92a95e411fd61b714f8173378f7d54aadb533ae2f95c725f283c5584eb01c",
+        "Metadata/plate_5_small.png": "ef3c539c50376101a24aa2631081aeae1f6c1c663fc0838d70aa640225b6405c",
+        "Metadata/plate_no_light_5.png": "fcdb37197b3aec714ae482d67c2cbccafe7ca3ba6f05a8ce63765e87e497dfc2",
+        "Metadata/top_5.png": "f771b95f4d982399c65604161d6795a66b11f4e2999a24da84e3be66ff5d0869",
+        "Metadata/pick_5.png": "d3760542af7950481c873a83933e546696a037a9ce0460977ed53ef43fd53291",
+        "Metadata/plate_5.json": "718fdd5dd13b5fc6bb655631e63dfa04c41853e1be3c6e39be3633d03a640404",
+        "Metadata/plate_5.gcode.md5": "c2a6a9c2c5e684bd794f29fb8c0ed79fa91718f2576c690e52cba7adbdb16f59",
+        "Metadata/plate_5.gcode": "c9ee77ec60c7cd78f0d8b38a0d84b34ebf91e6d3b351e1394d76e653467d080b"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 6,
+      "objects": [
+        "F6 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "68": "68"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_6.png": "81c33c1231ff2c5f98bee981cbc995f557fcb929113ec922e6b2e77789424e90",
+        "Metadata/plate_6_small.png": "42e6654b3a6151260913a4c38182757997a5c67b35040776aee3cb02d2b8ab87",
+        "Metadata/plate_no_light_6.png": "b1bcd1e440d10eaa2e9fbbbfb1a9b682a566a2d8c5907e7b8c4bb6be03690010",
+        "Metadata/top_6.png": "2cf3f7ad14b30bd252c6e287db193a7c9f97e23cd03d25ef65120ede16025bee",
+        "Metadata/pick_6.png": "75b8a92d4bc58ab31fb75321a8bb938a979459ed5e4129983badd54b0be73ec8",
+        "Metadata/plate_6.json": "bab02ec951ce128f16d83b8fdec33588dc034e6fc2ab54d16ae7c69682f00ddb",
+        "Metadata/plate_6.gcode.md5": "f063df704326c059151b12e83118370dd0eabb975a4b6af7aa95ee0c0d417bd6",
+        "Metadata/plate_6.gcode": "3373e6a96d873674ad45b46318c5718b7cce845d2049c3d75c24804e7de308dc"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 7,
+      "objects": [
+        "F7 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "80": "80"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_7.png": "2ab52022bf41eaa56f529eb2163826c5c1ed9fcae780f65513986f73d1097299",
+        "Metadata/plate_7_small.png": "1f253519e897b98286f6d505862623b467b9e9315e1f2637c3ed3a0e3b69db36",
+        "Metadata/plate_no_light_7.png": "787694c722f534866bd3f8ae4534f7f1653a7960daa9df2446463cdd623ec127",
+        "Metadata/top_7.png": "969a0a686c8d730993d50d98e389e0c1f52283f0b9aa09bfeded6c6eb0fdfc17",
+        "Metadata/pick_7.png": "b2e6ea35b478f1ea2ebd6fba4daa90060ef5a2bed45e32edf5468e9ce60f265c",
+        "Metadata/plate_7.json": "54e1a27d17041d4e47faa15e026bc9f7f434a3aa2854d0f6378569443c1febad",
+        "Metadata/plate_7.gcode.md5": "517bc6eb54bcccc72f67ad28fdbfcd69e920dbd8415b7f4a2f4694f2c334bb47",
+        "Metadata/plate_7.gcode": "c759f53cace58d0ea20339c504a11a1115ede5f90923414c04d882ff7a4518de"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 8,
+      "objects": [
+        "F8 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "93": "93"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_8.png": "583ee35931d3e944ef3a5db05fd816d1ee324e06f79dbb493b4b13e37a367742",
+        "Metadata/plate_8_small.png": "d124b83c2a5ec5a0dc17050e83e4f584abe131612ce68258fc127249caf22dcc",
+        "Metadata/plate_no_light_8.png": "7bd8a1724ca34fb990e78b92734e62bbfd8430a970342e5dc023462741e97580",
+        "Metadata/top_8.png": "0b64ab2e007f33ddae292e388bdace3ac9b8b1b4ccf350e303f681cc4f3f7754",
+        "Metadata/pick_8.png": "5f7cb4c4973e9a7ddd3ee2c11b416843a2550370be4ed51359795e0b44daf783",
+        "Metadata/plate_8.json": "ffbc5f4fa0e0eecc7c2d67f0f76200243f19f69c6926bf7d408d874cf9bc81c0",
+        "Metadata/plate_8.gcode.md5": "bfe7334a4367194e9241a8729c91c103c92875a440f286044c76d4227154113a",
+        "Metadata/plate_8.gcode": "a35834e8a894421b6ff8a5713e056b7b4f2deb04c932f00af8feb669df85d51c"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 9,
+      "objects": [
+        "F9 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "107": "107"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_9.png": "dadaa3176d3792dd913a8cfe63a013d6d949b917f939802b6fc8b111c004f67c",
+        "Metadata/plate_9_small.png": "e15d9a2459eca5a78a0e1ca4ef7785b9b9583273bcceae79c8a1ae911fb2a5e1",
+        "Metadata/plate_no_light_9.png": "88cd65b552eed49cb1c806d14b9f80262e57e3cbb770b5aa3f5500257f70384c",
+        "Metadata/top_9.png": "d5e5d2dc6ea981ef3a92b8453456087a51c682e44746b686fa41c99203d440a9",
+        "Metadata/pick_9.png": "2d01854dc60ca7332955a404abb04b2f7dae16be7df7431b92aa0eae1d6b4d6c",
+        "Metadata/plate_9.json": "a671d96fed51ad82c94c982e7b88a9013bbbc81b2f021f3c583e00edfbbde067",
+        "Metadata/plate_9.gcode.md5": "3493068eab75029d26ec0cdf02c0bc1f8c1b3ab67efcfa1515f68c6336377b4a",
+        "Metadata/plate_9.gcode": "f5dfae433232ccb44e62b0c1eccbdddacdea8a29db6341ab504c0d7141599ea4"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 10,
+      "objects": [
+        "F10 A2L knot"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "119": "119"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_10.png": "e3acc4a0cb328ffe6abd3ebcf2604336128891001a4723eff5ceede33dfca387",
+        "Metadata/plate_10_small.png": "c6283b915e7a223d9d042eb685f6b0fc80ac45b5710176a1b475bdaae02d5e0a",
+        "Metadata/plate_no_light_10.png": "707e4707bcde76dee917e940f7b3981581c87fb6552cc97dbcf62e676688c008",
+        "Metadata/top_10.png": "a2625ccee214a75b93065436c32d548239f6b99478367c0eb79d63e726afa30d",
+        "Metadata/pick_10.png": "44b13a2a9b118ace87bb84a773727fa476254f5a2bd1df5871dd07ae2adbd84a",
+        "Metadata/plate_10.json": "d93fbeda46f993bc6e0020cae7dfcb41e764d45117143bdc792cadfbd96537c7",
+        "Metadata/plate_10.gcode.md5": "7ed46a599d1d20f3a70ee5c8a79a90ec6da1c2792f845435b8eba558dc8b13f2",
+        "Metadata/plate_10.gcode": "edf4ac0c864561c10a4182becb65f54fc5ef73a98cb7f62b6cb1ae4e4ae05014"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 18,
+      "objects": [
+        "Backer3",
+        "Backer1",
+        "Backer5",
+        "Backer7"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "121": "121",
+        "123": "123",
+        "125": "125",
+        "127": "127"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_18.png": "c9b8430032510e1e25afe4b87268a969d8e0dbdc33323c4a6c537657e25b6b61",
+        "Metadata/plate_18_small.png": "aa941619fdb68a00fb8e9e8de7e9aefd5cec7351339f73e79f198520e954de4d",
+        "Metadata/plate_no_light_18.png": "7d415a725d9f28c1fe73945e149d283bb3d8de3e40ace17709b06796965f038b",
+        "Metadata/top_18.png": "b148628b24126822dff51674ae609bbd46587e1ff30a977ae01ed6174f9c9115",
+        "Metadata/pick_18.png": "512437d1d984b15e0f856994ff4d5074642cda00c5b5172b4e53c8f2db6393bf",
+        "Metadata/plate_18.json": "0d46ec7c3135081a5dc713774d5673d454ff47a8aa784d552acf2761a9604764",
+        "Metadata/plate_18.gcode.md5": "8d5dba51e0e2f92d9d79bf6701ad911a6af057c55692c56a0276845278dbba47",
+        "Metadata/plate_18.gcode": "f1e79ab95a4f00a7dc97a1b5a39dcf0d0622755c786a32ad9c7991261c498815"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 19,
+      "objects": [
+        "Backer4",
+        "Backer2",
+        "Backer6",
+        "Backer8"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "129": "129",
+        "131": "131",
+        "133": "133",
+        "135": "135"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_19.png": "be005062a7c4f60fc9e9245998dbef17d312fb40d738ef60cebd76e9d0c5ff52",
+        "Metadata/plate_19_small.png": "40661faa95c4d800f2f4267e635c626831b1b141030658b7374681a4781b0490",
+        "Metadata/plate_no_light_19.png": "d1b09e5d1da9db87c863f90aad562aeebaf39d1435e4c273cde9570f67237f77",
+        "Metadata/top_19.png": "860e7885ba70409abf8840ebd5ff8a6d3fa7de392d15b6a1bb85b5315e17266f",
+        "Metadata/pick_19.png": "6f85e00f7fb649437a1a69139fbb4f7381089058422619653aa80c04952c0ba5",
+        "Metadata/plate_19.json": "e2032c3f5e5ca96b8d701dc2fae82bf9a7032677b4bd5ec23688e6096ed22e1c",
+        "Metadata/plate_19.gcode.md5": "ab72d7eefe02d15d7fcdb4f9f9cbdee757c669883a74889985ff1b1945f97af5",
+        "Metadata/plate_19.gcode": "c8106c17a8a7d5ca6665505c79cc6f27d3da24eede25111b5918d00ebf295ace"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 20,
+      "objects": [
+        "B1 A2L wall block",
+        "B2 A2L wall block",
+        "B3 A2L wall block",
+        "B4 A2L wall block",
+        "R1 photo retainer",
+        "R2 photo retainer",
+        "R3 photo retainer",
+        "R4 photo retainer",
+        "R5 photo retainer",
+        "R6 photo retainer",
+        "R7 photo retainer",
+        "R8 photo retainer",
+        "R9 photo retainer",
+        "R10 photo retainer",
+        "R11 photo retainer",
+        "R12 photo retainer",
+        "R13 photo retainer",
+        "R14 photo retainer",
+        "R15 photo retainer",
+        "R16 photo retainer",
+        "R17 photo retainer",
+        "R18 photo retainer",
+        "R19 photo retainer",
+        "R20 photo retainer",
+        "R21 photo retainer",
+        "R22 photo retainer",
+        "R23 photo retainer",
+        "R24 photo retainer",
+        "R25 photo retainer",
+        "R26 photo retainer",
+        "R27 photo retainer",
+        "R28 photo retainer",
+        "R29 photo retainer",
+        "R30 photo retainer",
+        "R31 photo retainer",
+        "R32 photo retainer"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "native_resource_id_mapping": {
+        "140": "140",
+        "145": "145",
+        "150": "150",
+        "155": "155",
+        "158": "158",
+        "161": "161",
+        "164": "164",
+        "167": "167",
+        "170": "170",
+        "173": "173",
+        "176": "176",
+        "179": "179",
+        "182": "182",
+        "185": "185",
+        "188": "188",
+        "191": "191",
+        "194": "194",
+        "197": "197",
+        "200": "200",
+        "203": "203",
+        "206": "206",
+        "209": "209",
+        "212": "212",
+        "215": "215",
+        "218": "218",
+        "221": "221",
+        "224": "224",
+        "227": "227",
+        "230": "230",
+        "233": "233",
+        "236": "236",
+        "239": "239",
+        "242": "242",
+        "245": "245",
+        "248": "248",
+        "251": "251"
+      },
+      "preserved_assets_sha256": {
+        "Metadata/plate_20.png": "52074353c480da30ffa75b81b80daf5fe5136845d70cfcc5ff8a901d3f0861c7",
+        "Metadata/plate_20_small.png": "395db25852bb6d700e39bffd2a4a81f03110657789c6caabcfb52a09060db1a1",
+        "Metadata/plate_no_light_20.png": "db4e4f2b11fa6f5d1a125fee09701a015d66b9339e58e53e0eded28bcfa7dc5b",
+        "Metadata/top_20.png": "ada602fe3f3ed5573f8a2f8d25d5b2093238ccb256224493834c12d32cacb853",
+        "Metadata/pick_20.png": "0d50654d7592496a38963825c31ccf32c3271f6144f9d94f822b2f40b0ea9967",
+        "Metadata/plate_20.json": "893bba7e54a27b484be636b8f24cc5075b3311889cd11203d6210b35f415561f",
+        "Metadata/plate_20.gcode.md5": "4eddae141a119ce5f086f889fb9b7989af38d6840470d722a35dccd9bb210329",
+        "Metadata/plate_20.gcode": "8be9878c8e0b1ee4c1bcb2b45961218c1264746256d153c9401d57113be707e2"
+      },
+      "gcode_byte_identical": true
+    }
+  ]
+}

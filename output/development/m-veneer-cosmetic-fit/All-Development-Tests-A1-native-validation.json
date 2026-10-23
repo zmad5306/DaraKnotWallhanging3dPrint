@@ -1,0 +1,570 @@
+{
+  "source_release_sha256": "d5e57cb2cf359a46a681c052a002d991044ae35f5d5810f134c701953f97d04b",
+  "staged_sha256": "39bddbf13b45c6ae6bf693ef773c2fac7e4bad8f6cad7e9f8472cabdb45a6d1a",
+  "native_project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
+  "native_return_code": 0,
+  "plate_count": 3,
+  "native_roundtrip_geometry": [
+    {
+      "name": "Glue-test smooth caul",
+      "max_native_vertex_or_pose_error_mm": 1.5228303108944984e-05
+    },
+    {
+      "name": "Seam-test smooth caul",
+      "max_native_vertex_or_pose_error_mm": 1.5199349472857716e-05
+    },
+    {
+      "name": "Ribbon show-face jig",
+      "max_native_vertex_or_pose_error_mm": 1.013340730109273e-06
+    },
+    {
+      "name": "M glue core C1",
+      "max_native_vertex_or_pose_error_mm": 1.5448689125450275e-05
+    },
+    {
+      "name": "M glue core C4",
+      "max_native_vertex_or_pose_error_mm": 1.5211093612554153e-05
+    },
+    {
+      "name": "M seam core C4",
+      "max_native_vertex_or_pose_error_mm": 1.5443865632901176e-05
+    },
+    {
+      "name": "M glue veneer - fins and cut tabs",
+      "max_native_vertex_or_pose_error_mm": 1.5605138087436302e-05
+    },
+    {
+      "name": "M seam upper veneer - fins and cut tabs",
+      "max_native_vertex_or_pose_error_mm": 1.2954745874730968e-05
+    },
+    {
+      "name": "M seam lower veneer - fins and cut tabs",
+      "max_native_vertex_or_pose_error_mm": 1.5725747607305804e-05
+    },
+    {
+      "name": "Zero-gap refined tongue",
+      "max_native_vertex_or_pose_error_mm": 1.8354757648348994e-06
+    },
+    {
+      "name": "Zero-gap refined socket",
+      "max_native_vertex_or_pose_error_mm": 1.677558622653087e-06
+    }
+  ],
+  "plates": [
+    {
+      "extrusion_moves_checked": 27884,
+      "features": {
+        "Inner wall": 1717,
+        "Outer wall": 733,
+        "Bottom surface": 1292,
+        "Internal solid infill": 13491,
+        "Sparse infill": 4435,
+        "Bridge": 1445,
+        "Floating vertical shell": 36,
+        "Top surface": 3458,
+        "Gap infill": 1277
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          23.21,
+          29.71
+        ],
+        [
+          226.79,
+          188.79
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          23.0,
+          29.5
+        ],
+        [
+          227.0,
+          189.0
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 23.0,
+      "plate": 1,
+      "gcode_sha256": "a12b40798c38686af3ab1b97f55c9fa2024a2a76f172ac191a20ed2818327b85",
+      "header": [
+        "; model printing time: 1h 41m 59s; total estimated time: 1h 48m 33s",
+        "; total layer number: 30",
+        "; total filament length [mm] : 14151.65",
+        "; total filament volume [cm^3] : 34038.71",
+        "; total filament weight [g] : 42.21",
+        "; model label id: 10000,10100,10200",
+        "; object max height: 4.20,4.20,6.00",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 6.00",
+        "; filament: 1"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 432506,
+      "features": {
+        "Support": 205770,
+        "Brim": 2051,
+        "Outer wall": 42552,
+        "Inner wall": 58847,
+        "Gap infill": 11479,
+        "Bottom surface": 1199,
+        "Internal solid infill": 70749,
+        "Sparse infill": 23594,
+        "Top surface": 1967,
+        "Overhang wall": 51,
+        "Bridge": 1212,
+        "Floating vertical shell": 13035
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          16.214,
+          6.630659169217042
+        ],
+        [
+          214.68138932981788,
+          244.71278357832531
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          15.963999999999999,
+          6.380659169217042
+        ],
+        [
+          214.93138932981788,
+          244.96278357832531
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 6.380659169217042,
+      "plate": 2,
+      "gcode_sha256": "853418bebaa3b6522b52ece429542f2189184a61e35d46fa692272590965791a",
+      "header": [
+        "; model printing time: 10h 19m 48s; total estimated time: 10h 26m 24s",
+        "; total layer number: 338",
+        "; total filament length [mm] : 41799.38",
+        "; total filament volume [cm^3] : 100539.29",
+        "; total filament weight [g] : 124.67",
+        "; model label id: 10300,10400,10500,10600,10700,10800",
+        "; object max height: 9.00,9.00,9.00,67.80,62.00,62.00",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 67.80",
+        "; filament: 3"
+      ]
+    },
+    {
+      "extrusion_moves_checked": 49264,
+      "features": {
+        "Prime tower": 3836,
+        "Support": 1372,
+        "Brim": 97,
+        "Outer wall": 3882,
+        "Inner wall": 7287,
+        "Bottom surface": 594,
+        "Internal solid infill": 8648,
+        "Gap infill": 1253,
+        "Top surface": 2643,
+        "Sparse infill": 16223,
+        "Floating vertical shell": 151,
+        "Bridge": 2454,
+        "Support transition": 281,
+        "Support interface": 456,
+        "Overhang wall": 87
+      },
+      "extruding_xy_bounds_mm": [
+        [
+          9.331,
+          4.356
+        ],
+        [
+          223.73456945888316,
+          219.2886036446544
+        ]
+      ],
+      "bead_xy_bounds_mm": [
+        [
+          9.081,
+          4.106
+        ],
+        [
+          223.98456945888316,
+          219.5386036446544
+        ]
+      ],
+      "conservative_bed_edge_clearance_mm": 4.106,
+      "plate": 3,
+      "gcode_sha256": "1042ca9c7289c97bc65374ec24db6e7b6db1827859befe76647b770319c5b5fe",
+      "header": [
+        "; model printing time: 2h 36m 47s; total estimated time: 2h 43m 25s",
+        "; total layer number: 68",
+        "; total filament length [mm] : 12390.53,1285.16,507.46",
+        "; total filament volume [cm^3] : 29802.72,3091.18,1220.58",
+        "; total filament weight [g] : 36.96,3.83,1.51",
+        "; model label id: 10900,11000",
+        "; object max height: 13.60,12.80",
+        "; filament_density: 1.24,1.24,1.24,1.24",
+        "; filament_diameter: 1.75,1.75,1.75,1.75",
+        "; max_z_height: 13.60",
+        "; filament: 1,2,4"
+      ]
+    }
+  ],
+  "physical_fit_finish_and_support_anchor_test_pending": true,
+  "sample_infill_trial": {
+    "editable": {
+      "body_count": 5,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "All-Development-Tests-A1.3mf"
+    },
+    "native": {
+      "body_count": 5,
+      "density": "8%",
+      "pattern": "gyroid",
+      "wall_loops": 4,
+      "verified_in_project": "sliced.3mf"
+    }
+  },
+  "coupon_connected_components": {
+    "editable_source": [
+      {
+        "name": "Glue-test smooth caul",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Seam-test smooth caul",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Ribbon show-face jig",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M glue core C1",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M glue core C4",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam core C4",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M glue veneer - fins and cut tabs",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam upper veneer - fins and cut tabs",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam lower veneer - fins and cut tabs",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Zero-gap refined tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Zero-gap refined socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      }
+    ],
+    "native_export": [
+      {
+        "name": "Glue-test smooth caul",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Seam-test smooth caul",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Ribbon show-face jig",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M glue core C1",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M glue core C4",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam core C4",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M glue veneer - fins and cut tabs",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam upper veneer - fins and cut tabs",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "M seam lower veneer - fins and cut tabs",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Zero-gap refined tongue",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      },
+      {
+        "name": "Zero-gap refined socket",
+        "connected_components": 1,
+        "numerical_zero_volume_shells": 0,
+        "excluded_absolute_volume_mm3": 0
+      }
+    ]
+  },
+  "source_preservation": [
+    {
+      "name": "Glue-test smooth caul",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "Seam-test smooth caul",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "Ribbon show-face jig",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "M glue core C1",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "M glue core C4",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "M seam core C4",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "M glue veneer - fins and cut tabs",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "M seam upper veneer - fins and cut tabs",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "M seam lower veneer - fins and cut tabs",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "Zero-gap refined tongue",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    },
+    {
+      "name": "Zero-gap refined socket",
+      "geometry_color_modifiers_support_paint_and_process_preserved": true,
+      "rotation_and_z_preserved": true
+    }
+  ],
+  "combined_bond_checks": [
+    {
+      "name": "M glue veneer - fins and cut tabs",
+      "bond_probes_checked": 42,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09946504825856668,
+      "slicer_support_extrusion_excluded": true,
+      "physical_bond_strength_pending": true
+    },
+    {
+      "name": "M seam upper veneer - fins and cut tabs",
+      "bond_probes_checked": 14,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09438567073912907,
+      "slicer_support_extrusion_excluded": true,
+      "physical_bond_strength_pending": true
+    },
+    {
+      "name": "M seam lower veneer - fins and cut tabs",
+      "bond_probes_checked": 14,
+      "maximum_distance_to_model_extrusion_centerline_mm": 0.09220044272697159,
+      "slicer_support_extrusion_excluded": true,
+      "physical_bond_strength_pending": true
+    }
+  ],
+  "m_zero_gap_seam": {
+    "nominal_cosmetic_gap_mm": 0,
+    "seam_assembly_y_mm": -65,
+    "matching_front_edge_vertices": [
+      141,
+      141
+    ],
+    "maximum_front_edge_mismatch_mm": 0.0,
+    "veneer_interference_mm3": 0.0,
+    "core_glue_gap_mm": 0.2
+  },
+  "ribbon_surface_directions": [
+    {
+      "variant": "Z",
+      "filament_slot": 1,
+      "z_mm": 13.6,
+      "assembly_angles_deg": [
+        135.0,
+        135.0
+      ]
+    },
+    {
+      "variant": "Z",
+      "filament_slot": 2,
+      "z_mm": 9.0,
+      "assembly_angles_deg": [
+        45.0,
+        45.0
+      ]
+    },
+    {
+      "variant": "Z",
+      "filament_slot": 2,
+      "z_mm": 9.6,
+      "assembly_angles_deg": [
+        135.0,
+        135.0
+      ]
+    },
+    {
+      "variant": "Z",
+      "filament_slot": 2,
+      "z_mm": 10.0,
+      "assembly_angles_deg": [
+        135.0,
+        135.0
+      ]
+    },
+    {
+      "variant": "Z",
+      "filament_slot": 4,
+      "z_mm": 13.6,
+      "assembly_angles_deg": [
+        135.0,
+        135.0
+      ]
+    }
+  ],
+  "prime_tower_bead_bounds_mm": [
+    [
+      192.56343054111684,
+      188.54293230695782
+    ],
+    [
+      223.98456945888316,
+      219.5386036446544
+    ]
+  ],
+  "preserved_plates": {
+    "baseline_project_sha256": "ccd76dcdebec7bd5e2cd21786c53ea3417aee4c53bb53d2304a9ad4aedb1063f",
+    "retained_from_commit": "0e2943bda0a103360e9d0b7ec71a73cd5e10a41b",
+    "project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
+    "plates": [
+      {
+        "plate": 1,
+        "objects": [
+          "Glue-test smooth caul",
+          "Seam-test smooth caul",
+          "Ribbon show-face jig"
+        ],
+        "geometry_settings_and_poses_unchanged": true,
+        "preserved_assets_sha256": {
+          "Metadata/plate_1.png": "bd53f4e017223aeed0bd1ecdb546e3bd62307a746ad8f20efe0a0cbab09dd531",
+          "Metadata/plate_1_small.png": "d8344cb9280f191459341541a2fb6c334fd610d1804c3a7bc01cb1c217aa0247",
+          "Metadata/plate_no_light_1.png": "afed4075323ccd71ad85bd6959084845788279415aa65e49fa59673e18c8908c",
+          "Metadata/top_1.png": "447fd6d1c3973e16ad0270e8c8b95481656d55fec138e56ba33fe184e219e373",
+          "Metadata/pick_1.png": "33be4cdcef9cab87c9b548342b0cedc7a988bd5b58cde405c0564174cd9690f9",
+          "Metadata/plate_1.json": "4754c813c14729f3babed1418533f8042b3fb58ec64470bca84ba403ba7ed6d0",
+          "Metadata/plate_1.gcode.md5": "615f19280ace1ab0ce665b34a78fe816f7979f4c9326b163dc823837a1a1dfb3",
+          "Metadata/plate_1.gcode": "a12b40798c38686af3ab1b97f55c9fa2024a2a76f172ac191a20ed2818327b85"
+        },
+        "gcode_byte_identical": true
+      },
+      {
+        "plate": 2,
+        "objects": [
+          "M glue core C1",
+          "M glue core C4",
+          "M seam core C4",
+          "M glue veneer - fins and cut tabs",
+          "M seam upper veneer - fins and cut tabs",
+          "M seam lower veneer - fins and cut tabs"
+        ],
+        "geometry_settings_and_poses_unchanged": true,
+        "preserved_assets_sha256": {
+          "Metadata/plate_2.png": "1f14d06d30f56dda38947365a0e1b562fececc7e4ce3f55104db89d627cefc01",
+          "Metadata/plate_2_small.png": "6b9a0bfda7f1a850c7ee16af3e3a94d5f995b808edf7bcf3031fdd3627a6db1d",
+          "Metadata/plate_no_light_2.png": "8b291dfa2fe0c30bde786f23f74d604559ca31d3adb3a0eb17bdea401f1a5522",
+          "Metadata/top_2.png": "86805da70140b73348fbced4fce8e0bd9f6b3902e72de9f03f9a1093769d195b",
+          "Metadata/pick_2.png": "8a817124fa07cf30461a5f7976bc2ebbabf9627224f4be15bdb8850a87d45643",
+          "Metadata/plate_2.json": "6de339eb0a8a9ce5d1b4d519514e43aa5dc6cda4ec4a885ac102afaee0243e5e",
+          "Metadata/plate_2.gcode.md5": "d82f1596cd0395490c334cce7379be9b30cce3873969be6ccda94da5b85cd28f",
+          "Metadata/plate_2.gcode": "853418bebaa3b6522b52ece429542f2189184a61e35d46fa692272590965791a"
+        },
+        "gcode_byte_identical": true
+      }
+    ]
+  },
+  "native_reopen_return_code": 0,
+  "native_reopen_file_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
+  "ribbon_bed_datum_validation_sha256": "fc9369ea5415bf40d4f5250fa5b2fc5a37cfb13759ac0aa0ea082639b53f756e"
+}

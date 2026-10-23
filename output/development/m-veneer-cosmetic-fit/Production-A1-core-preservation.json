@@ -1,0 +1,115 @@
+{
+  "baseline_project_sha256": "32ad1c7250e7889edea0968888e98d551d2b19c9d65eab7dac56706333276ebc",
+  "retained_from_commit": "d69f7db34716b504b86c206bf7b63ae126ae5711",
+  "project_sha256": "b9620ae425326bb178255036796734ede8271af9d85b2fbb3003ebaa124f0807",
+  "plates": [
+    {
+      "plate": 1,
+      "objects": [
+        "C1 flat structural core"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_1.png": "a7d42429f34dfbaa2832f0fc971022477f21c88bb2a3a201ac14612f08917c4a",
+        "Metadata/plate_1_small.png": "165b3f1a3eb82ce601b83372cc038f37ed336d8ec3575af755a402da39a0cbbc",
+        "Metadata/plate_no_light_1.png": "a2cbdadac1a6f6330f97c046a4aa213791f4ff97919b8660f2ef5601b8b88d2b",
+        "Metadata/top_1.png": "00005193cf6af9677b7d644415887708a9fbb7bea0a078f7192285177b415039",
+        "Metadata/pick_1.png": "8dfda48c8076ed25cac71000c227da846ad7e968bf28abaf1acd1e40d56c10e7",
+        "Metadata/plate_1.json": "2cb2912d9c51b7fc369f4fbaa7e29e99b32a482949c9a99e2c017080d9708983",
+        "Metadata/plate_1.gcode.md5": "0cbb03ad3df222b8ffcb4108e84ea7d190d26ce6531521be583456f43c1e18a1",
+        "Metadata/plate_1.gcode": "f2b3047cf57cb63df6fa7b4ec8eb8c82100216db5fc0de0fc1d183d3e06f44f8"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 2,
+      "objects": [
+        "C2 flat structural core"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_2.png": "8b8064f7c2187614461065c9bd2d901756351cbb7f73d7973a16d0a964144641",
+        "Metadata/plate_2_small.png": "1ab41a9756f87883d730f4b04df790310899b5187e74f92a323538b3dad21962",
+        "Metadata/plate_no_light_2.png": "608fb885aa7d05cb54a5f5186ff7123f0ba52221b36dde55abb7f7dbc8c0278e",
+        "Metadata/top_2.png": "c4c7303336b63b01bb7b3fa414e03411c200a421810de409e5112cca8c72ad49",
+        "Metadata/pick_2.png": "91e0a52a0cfa359cda7bdc7666491293958fb9b1222fa19cb56697aec834f68d",
+        "Metadata/plate_2.json": "096af5a9b8cdf72ac0e756cbcb8124d0d8496ff178504cadbea68cc69fafe828",
+        "Metadata/plate_2.gcode.md5": "1393100d1688a4219fc8627ea1f3a322bd4798e4b6abd00002c6c4499bc4737f",
+        "Metadata/plate_2.gcode": "adb3c1441bdb3c0f40c6bbbbd52ac84d8540b77764a0a85696670ffe6d9ac402"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 3,
+      "objects": [
+        "C3 flat structural core"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_3.png": "1ed971a7de405cb8876047de770cafbffb2db69d10265de402cda9d41b4f029b",
+        "Metadata/plate_3_small.png": "2544ef961339b3baf16b27fabd78cf61f7734c5aed2b80d0d9c09a515b9a47c2",
+        "Metadata/plate_no_light_3.png": "346ccf101e34e052721409a9a3e5f104e4e90220ca49b2239be399ebd749a512",
+        "Metadata/top_3.png": "0f7542542605d9993c871de7d407220646a9cb1fb78719771c3f46114630e65d",
+        "Metadata/pick_3.png": "7de2ccb5892406a9f6acd41619e8999cef20552127881d12a9a84abb1005f4d0",
+        "Metadata/plate_3.json": "a5ce2856272ba3fd67cfe292cd324888d3f1d03a5aa29a326d556f6311f9926f",
+        "Metadata/plate_3.gcode.md5": "2ed5c4ca05466704d61fe9bfeba64964740c0abe384309c2b8dff26e694f6a0f",
+        "Metadata/plate_3.gcode": "f125f82655a9540fa78de8d0575a2e934480710fe5d1749b6610a5571487a97c"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 4,
+      "objects": [
+        "C4 flat structural core"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_4.png": "cb9ffd4e226e14a6fff59e17e4ad3959c24aff7f6483809e705e1dc9e80eef74",
+        "Metadata/plate_4_small.png": "2ecaada274774f1dd77d6aaba766be1c156a7b8a820f97dae9f6a626c2c61c47",
+        "Metadata/plate_no_light_4.png": "ad8ec2651cca861d63de8f785b3dba922606668bdfe8ceaf3942d2e3482d4978",
+        "Metadata/top_4.png": "3606dc5c50d2b018ab98ef1eed5b4b3c1f40549d5161c26849d1a27383887b00",
+        "Metadata/pick_4.png": "5cc893d97ab4c4f9ec736fa4142db8eeab8e41a3980dc364d82cd6fabe5eae0b",
+        "Metadata/plate_4.json": "69a473a06badf62268c6e5995b09b35e165957701cbe46f1a3fd7983d7551cd4",
+        "Metadata/plate_4.gcode.md5": "ebe7e45fe08bbccf3d55ed08f2b77c4e5963a58edba587380730b89d49bee92a",
+        "Metadata/plate_4.gcode": "5e6b4db7b7674b0dc4b7274f1bf1249dcc02b1bf5b6fc8395171e57b74637e63"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 5,
+      "objects": [
+        "C5 flat structural core"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_5.png": "6f9b6ae4a749580ce6f3278f7dcb1083be1fc1cffda723e0ac5f00a70a93830d",
+        "Metadata/plate_5_small.png": "16e211fb008e374e713d6aec6f116c00417cdce53ad22e18ce9d88de0be5a8bb",
+        "Metadata/plate_no_light_5.png": "e93c756a4a670f35b4f0d65b8516a195f5e001acbed81721bf5a08cffeff4109",
+        "Metadata/top_5.png": "3a0d51cb2e2a1c41e4eabaee6a6b326f027111dc5575a692e4de1773c07247a7",
+        "Metadata/pick_5.png": "931de0003ae69e93f0fcf92353966af703e62e82d55a5bcde253d230c495f057",
+        "Metadata/plate_5.json": "0a905028ed6baa9936c05eaebfca7f7761f78f13f3ebe9f1b81d70b3c2b97209",
+        "Metadata/plate_5.gcode.md5": "5675c5189cba1c122d67ca40bdf01a24177a2ddc49c6a0e1d91383f0c8b46553",
+        "Metadata/plate_5.gcode": "4c50fc7a8c9a96a9c1ee5c2fbbe93abbadb8985b4ae6807163a38b8bd78cab20"
+      },
+      "gcode_byte_identical": true
+    },
+    {
+      "plate": 6,
+      "objects": [
+        "C6 flat structural core"
+      ],
+      "geometry_settings_and_poses_unchanged": true,
+      "preserved_assets_sha256": {
+        "Metadata/plate_6.png": "a69e0f01a42fd954c2da3a6756a82157f77d1e3889cd873c929f6e1cb47fcd77",
+        "Metadata/plate_6_small.png": "37bb6a1d3a68032213dd46301837e14517b9158a632957105bff2a9d6d451c55",
+        "Metadata/plate_no_light_6.png": "17c4f4d75685467b92303f676d1624b0570a83fae2f393a208ed40d30d3828cc",
+        "Metadata/top_6.png": "e511b5aa750563b29c48b082026a131f0a14b368f16d2b74388b7deed98e12d6",
+        "Metadata/pick_6.png": "4b7ca3e28ead62a2e32837c9c22bb450dc10b0fd09060341e24659289ec8f581",
+        "Metadata/plate_6.json": "5c4d91a83ec95a66b2018445b6240d0f78923f71ee91ed810a19fbb725ad7a08",
+        "Metadata/plate_6.gcode.md5": "4408bfb2ca5150768482a2e5fbea51bd36f9343870e651dde39784d519f59364",
+        "Metadata/plate_6.gcode": "75d6f8381ea236f59a3dd33fcc7336430315e596be8bb29dac23b869e9b89057"
+      },
+      "gcode_byte_identical": true
+    }
+  ]
+}

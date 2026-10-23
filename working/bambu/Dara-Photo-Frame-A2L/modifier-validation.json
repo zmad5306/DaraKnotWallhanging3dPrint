@@ -1,0 +1,262 @@
+{
+  "editable_sha256": "984426ac82d0acbbe4db86141993dfc678d75a8bf06ff04e0bd8f344274c6c56",
+  "native_project_sha256": "64cd3a8d9a07f55028201c68f8c48ef1ad1fdcf32d4391811a3b5ab7eded5f13",
+  "objects": [
+    {
+      "name": "F1 A2L knot",
+      "modifier_vertices_checked": 13792,
+      "max_native_modifier_error_mm": 2.3413425255380285e-05
+    },
+    {
+      "name": "F2 A2L knot",
+      "modifier_vertices_checked": 15009,
+      "max_native_modifier_error_mm": 2.694821197013552e-05
+    },
+    {
+      "name": "F3 A2L knot",
+      "modifier_vertices_checked": 17918,
+      "max_native_modifier_error_mm": 2.4013201775234716e-05
+    },
+    {
+      "name": "F4 A2L knot",
+      "modifier_vertices_checked": 17845,
+      "max_native_modifier_error_mm": 3.109079652899233e-05
+    },
+    {
+      "name": "F5 A2L knot",
+      "modifier_vertices_checked": 14986,
+      "max_native_modifier_error_mm": 3.1356159201335914e-05
+    },
+    {
+      "name": "F6 A2L knot",
+      "modifier_vertices_checked": 13558,
+      "max_native_modifier_error_mm": 2.1768956194897223e-05
+    },
+    {
+      "name": "F7 A2L knot",
+      "modifier_vertices_checked": 15028,
+      "max_native_modifier_error_mm": 2.1084266580919076e-05
+    },
+    {
+      "name": "F8 A2L knot",
+      "modifier_vertices_checked": 17736,
+      "max_native_modifier_error_mm": 3.1556250066735454e-05
+    },
+    {
+      "name": "F9 A2L knot",
+      "modifier_vertices_checked": 17633,
+      "max_native_modifier_error_mm": 2.463227669758144e-05
+    },
+    {
+      "name": "F10 A2L knot",
+      "modifier_vertices_checked": 15051,
+      "max_native_modifier_error_mm": 3.072131024167018e-05
+    },
+    {
+      "name": "C1 A2L flat M core",
+      "modifier_vertices_checked": 512,
+      "max_native_modifier_error_mm": 1.5216354592673703e-05
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "modifier_vertices_checked": 384,
+      "max_native_modifier_error_mm": 2.220121640986786e-05
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "modifier_vertices_checked": 128,
+      "max_native_modifier_error_mm": 3.796611014754852e-06
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "modifier_vertices_checked": 128,
+      "max_native_modifier_error_mm": 7.698169494615024e-06
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "modifier_vertices_checked": 128,
+      "max_native_modifier_error_mm": 7.770483459131966e-06
+    },
+    {
+      "name": "B1 A2L wall block",
+      "modifier_vertices_checked": 268,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "B2 A2L wall block",
+      "modifier_vertices_checked": 268,
+      "max_native_modifier_error_mm": 7.105427357601002e-15
+    },
+    {
+      "name": "B3 A2L wall block",
+      "modifier_vertices_checked": 268,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "B4 A2L wall block",
+      "modifier_vertices_checked": 268,
+      "max_native_modifier_error_mm": 7.105427357601002e-15
+    },
+    {
+      "name": "R1 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R2 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R3 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R4 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R5 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R6 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R7 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R8 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R9 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R10 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R11 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R12 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R13 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R14 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R15 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R16 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R17 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R18 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R19 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R20 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R21 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R22 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R23 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R24 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R25 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R26 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R27 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R28 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R29 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R30 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R31 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    },
+    {
+      "name": "R32 photo retainer",
+      "modifier_vertices_checked": 130,
+      "max_native_modifier_error_mm": 0.0
+    }
+  ],
+  "preservation_basis": "All modifier-bearing meshes, object settings and poses are unchanged; replacement veneer objects have no modifiers."
+}

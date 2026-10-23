@@ -1,0 +1,160 @@
+{
+  "revision": "bed-datum-ribbon-v1",
+  "project_sha256": "073f90008dc68c600c2fa1330dfccb42fcf3cf2aafd0ebbf7bebcbaadc7e6ac5",
+  "geometry_validation_sha256": "66e44e3fa998343c0797d506d45b55e14e322178660ab57cf49b8234b96f1f0d",
+  "datum_and_outer_skirt_native_checks": [
+    {
+      "part": "Zero-gap refined tongue",
+      "xy_assembly_mm": [
+        4.0,
+        1.0
+      ],
+      "print_z_mm": 0.8,
+      "probe_distance_to_model_extrusion_mm": 0.0014568747180295897,
+      "bearing_span_area_mm2": 9.346547779083057,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined tongue",
+      "xy_assembly_mm": [
+        14.0,
+        -29.0
+      ],
+      "print_z_mm": 0.8,
+      "probe_distance_to_model_extrusion_mm": 0.18749797805034682,
+      "bearing_span_area_mm2": 8.816246389466633,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined tongue",
+      "xy_assembly_mm": [
+        14.0,
+        28.0
+      ],
+      "print_z_mm": 0.8,
+      "probe_distance_to_model_extrusion_mm": 0.1461487261819041,
+      "bearing_span_area_mm2": 8.811600868316724,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined tongue",
+      "xy_assembly_mm": [
+        9,
+        -33.6
+      ],
+      "print_z_mm": 0.8,
+      "probe_distance_to_model_extrusion_mm": 0.18988586093544485,
+      "bearing_span_area_mm2": 5.584239674858378,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined tongue",
+      "xy_assembly_mm": [
+        9,
+        33.6
+      ],
+      "print_z_mm": 0.8,
+      "probe_distance_to_model_extrusion_mm": 0.1895969777462724,
+      "bearing_span_area_mm2": 5.589499809415076,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "xy_assembly_mm": [
+        4.0,
+        1.0
+      ],
+      "print_z_mm": 0.2,
+      "probe_distance_to_model_extrusion_mm": 0.5467144971509258,
+      "bearing_span_area_mm2": 8.223308536652079,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "xy_assembly_mm": [
+        14.0,
+        -29.0
+      ],
+      "print_z_mm": 0.2,
+      "probe_distance_to_model_extrusion_mm": 0.5475134682652485,
+      "bearing_span_area_mm2": 8.22104943118883,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "xy_assembly_mm": [
+        14.0,
+        28.0
+      ],
+      "print_z_mm": 0.2,
+      "probe_distance_to_model_extrusion_mm": 0.5475875056335837,
+      "bearing_span_area_mm2": 8.225227014454367,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "xy_assembly_mm": [
+        9,
+        -33.6
+      ],
+      "print_z_mm": 0.2,
+      "probe_distance_to_model_extrusion_mm": 0.13995612882456365,
+      "bearing_span_area_mm2": 2.036515799234166,
+      "support_extrusion_excluded": true
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "xy_assembly_mm": [
+        9,
+        33.6
+      ],
+      "print_z_mm": 0.2,
+      "probe_distance_to_model_extrusion_mm": 0.13956703279683771,
+      "bearing_span_area_mm2": 2.001051773967045,
+      "support_extrusion_excluded": true
+    }
+  ],
+  "actual_surface_heights": [
+    {
+      "part": "Zero-gap refined tongue",
+      "filament": 1,
+      "assembled_maximum_extrusion_z_mm": 13.6
+    },
+    {
+      "part": "Zero-gap refined tongue",
+      "filament": 2,
+      "assembled_maximum_extrusion_z_mm": 10.0
+    },
+    {
+      "part": "Zero-gap refined tongue",
+      "filament": 4,
+      "assembled_maximum_extrusion_z_mm": 13.6
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "filament": 1,
+      "assembled_maximum_extrusion_z_mm": 13.600000000000001
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "filament": 2,
+      "assembled_maximum_extrusion_z_mm": 10.0
+    },
+    {
+      "part": "Zero-gap refined socket",
+      "filament": 4,
+      "assembled_maximum_extrusion_z_mm": 13.600000000000001
+    }
+  ],
+  "preserved_complete_plates": [
+    1,
+    2
+  ],
+  "nominal_visible_side_gap_mm": 0,
+  "locating_key_fit_section_difference_mm2": [
+    0.0,
+    6.60557933380068e-08
+  ],
+  "supported_bulk_is_not_a_seating_reference": true,
+  "physical_fit_flushness_and_strength_pending": true
+}

@@ -54,6 +54,19 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved deeper blue knot trim, 2026-10-23:** the user requested two more
+  blue layers for sanding allowance. In `Knot.3mf`, extend all ten blue color
+  modifiers downward from nominal **Z12.9 to Z12.5 mm**, keeping the top at
+  **Z13.5 mm**. This changes the blue depth from **0.60 to 1.00 mm** and native
+  blue extrusion from **three to five 0.20 mm layers**. Keep the original blue
+  XY outline and upper geometry, flat white/blue surface, monotonic-line finish,
+  brown texture, all 50 Z12.4 screw modifiers and five solid top layers. All
+  other geometry, poses and process/material settings remain unchanged. Update
+  only the ten blue companion STLs and retain their `Knot.scad` references.
+  Current slices and checks are in `release/knot-blue-five-layers-r1/`; this
+  supersedes the exact container hash in the earlier restoration below.
+  Physical sanding allowance and surface finish remain unqualified.
+
 - **Approved removal of white knot Hilbert finish, 2026-10-23:** the user
   requested removing Hilbert while preserving the hidden screw reinforcement.
   Restore the exact screw-skin release from `c8f8f7a`: original monotonic-line
@@ -61,7 +74,7 @@ except for the explicit existing solid regions below.
   modifiers still capped at **Z12.4 mm** beneath five continuous top layers.
   Remove the Hilbert height ranges and redundant blue pattern overrides;
   retain the original brown/blue geometry, settings and toolpaths. The project
-  and ten stored native slices exactly match the validated screw-skin release
+  and ten stored native slices at that revision exactly matched the screw-skin release
   (SHA-256 `8a76b70a1c1430d74a16ec06c9689827d33f3902afb1d7de90e4436072c251c3`).
   CAD/STL, poses and every other print setting remain unchanged. The Hilbert
   revision in `release/knot-white-hilbert-r1/` is withdrawn; restoration evidence

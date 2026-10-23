@@ -1,5 +1,9 @@
 # Knot screw reinforcement: continuous top skin
 
+This records the screw-skin correction before the subsequently requested deeper
+blue trim. Current hashes and fresh slices are in `../knot-blue-five-layers-r1/`;
+the Z12.4 screw-modifier cap and five continuous top layers remain unchanged.
+
 The user reported visible circular boundaries on the finished knot above the
 screw reinforcement. The saved project had 50 cylindrical 100% infill modifiers
 extending from Z0 to Z17, through the nominal Z13.5 show face. Their regions split

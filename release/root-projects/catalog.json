@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "8a76b70a1c1430d74a16ec06c9689827d33f3902afb1d7de90e4436072c251c3",
+    "sha256": "1d5fb586b295c3778cf7f6b487c98e74736eb40a28ac2c6d4ea43e4f1327cedf",
     "cad": "Knot.scad",
     "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
     "printer": "Bambu Lab A2L",
@@ -155,19 +155,19 @@
           },
           {
             "file": "Knot STL/F1-A2L-knot-volume-5.stl",
-            "sha256": "540f243635e9a5d7b9ada30fecceaa4b0c7fbe2bdcae16dca1ea23ba928731ea",
+            "sha256": "f2451c4bffd06bf4f45ead9349fa406c4dfb790bfe9a78e6cf3854d8f8f40f35",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -313.95180537207034 0 1 0 -5.0882110597851558 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 2972,
+            "faces": 4468,
             "bounds": [
               [
                 -278.20002,
                 -160.00000753,
-                12.899999609
+                12.499999609
               ],
               [
                 -35.751794000000004,
@@ -446,19 +446,19 @@
           },
           {
             "file": "Knot STL/F2-A2L-knot-volume-6.stl",
-            "sha256": "881ca87618f765228ef0d86d38d09e550879a020f152d7c84b8843f949f68f0d",
+            "sha256": "65683cd52fec17130e0aaa51663419fc21e2de400402cad5fdb210ccf4fb324b",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70198792480471 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 5220,
+            "faces": 7836,
             "bounds": [
               [
                 -439.476097,
                 35.772270000000006,
-                12.899999609
+                12.499999609
               ],
               [
                 -221.233283,
@@ -760,19 +760,19 @@
           },
           {
             "file": "Knot STL/F3-A2L-knot-volume-6.stl",
-            "sha256": "4916e7cfd78dbf34687b4d40bdb4875a277a7c88a7e83597ac05f4afd06764b3",
+            "sha256": "8dff29b937e4f360e6c9d3ac9dda9f99df2975896c96776c977458c76fc15250",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -253.92971800878905 0 1 0 581.27911388476559 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 6040,
+            "faces": 9066,
             "bounds": [
               [
                 -253.929718,
                 141.71176200000002,
-                12.899999609
+                12.499999609
               ],
               [
                 0.0,
@@ -1097,19 +1097,19 @@
           },
           {
             "file": "Knot STL/F4-A2L-knot-volume-6.stl",
-            "sha256": "878ea90ef3b5d66f0d51b085d01d79b0260f24aba561f44e44a40faab0f0994b",
+            "sha256": "84fec95274e439481784aff3cb61f08a25e24cb43e94f4e10d1da6736e9682e2",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 253.84689365527345 0 1 0 579.18232700585941 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 6024,
+            "faces": 9042,
             "bounds": [
               [
                 0.0,
                 139.81919900000003,
-                12.899999609
+                12.499999609
               ],
               [
                 253.846894,
@@ -1434,19 +1434,19 @@
           },
           {
             "file": "Knot STL/F5-A2L-knot-volume-6.stl",
-            "sha256": "586be6007073a1cd98f8b1a41a52c4b5cce4d5af45249a4e07948421f7cc5b58",
+            "sha256": "2e1ad36f8696671c254a83514810050b96be502b6794ea73b619c95c46895244",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 660.60502575195312 0 1 0 289.54700844250488 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 5228,
+            "faces": 7848,
             "bounds": [
               [
                 221.20973100000003,
                 35.700113000000016,
-                12.899999609
+                12.499999609
               ],
               [
                 439.395309,
@@ -1720,19 +1720,19 @@
           },
           {
             "file": "Knot STL/F6-A2L-knot-volume-5.stl",
-            "sha256": "fe426bd87ed9b46650d1f8639ab4fb2a90ccd6cbade1a4b23a68f4e2722eb6f5",
+            "sha256": "75601456c35fa7a4c934512349a13839aa7581af10fe720cd7a1104b6e4466c2",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 315.39918086828612 0 1 0 -4.253738401660156 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 2956,
+            "faces": 4446,
             "bounds": [
               [
                 35.697427000000005,
                 -160.0000072,
-                12.899999609
+                12.499999609
               ],
               [
                 279.701745,
@@ -1965,19 +1965,19 @@
           },
           {
             "file": "Knot STL/F7-A2L-knot-volume-6.stl",
-            "sha256": "9c69ee528b7966736f044f65df91fabc39e0c6b025d3eea19222078a48377e84",
+            "sha256": "a0329eb5c04ba4c0b75199d35cac798f3d0b8bf2286d155e688d9dc104c3e7e1",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 660.73797603710932 0 1 0 -289.810810137207 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 5212,
+            "faces": 7824,
             "bounds": [
               [
                 221.212646,
                 -253.95899200000002,
-                12.899999609
+                12.499999609
               ],
               [
                 439.52533,
@@ -2279,19 +2279,19 @@
           },
           {
             "file": "Knot STL/F8-A2L-knot-volume-6.stl",
-            "sha256": "d4a7c589287fc8c6619ac8dafbeaabeec4da1fa233c789d624ef3f358f3688e4",
+            "sha256": "bad497e8d3e92605d9b686f2e7ca5d5e81715e5fa836948c6c5f080fba8f5387",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 253.95899981689453 0 1 0 -599.51237506835935 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 6040,
+            "faces": 9066,
             "bounds": [
               [
                 0.0,
                 -439.512375,
-                12.899999609
+                12.499999609
               ],
               [
                 253.959,
@@ -2644,19 +2644,19 @@
           },
           {
             "file": "Knot STL/F9-A2L-knot-volume-7.stl",
-            "sha256": "c0544c7c8a5712d38f5f3b57296df1a7de6aea525819ba3e76f9986e4b6c9bfd",
+            "sha256": "a5ab640ae1f3743af251cd4f6e00cdd84e09e57ac721cce8d44bec3bc69c3b55",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -253.87673975097658 0 1 0 -599.46710202539066 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 6012,
+            "faces": 9024,
             "bounds": [
               [
                 -253.87674,
                 -439.46710199999995,
-                12.899999609
+                12.499999609
               ],
               [
                 0.0,
@@ -2981,19 +2981,19 @@
           },
           {
             "file": "Knot STL/F10-A2L-knot-volume-6.stl",
-            "sha256": "0cafa839d553a7b58613667180ade459333102117427ee83a90fb0dee4b64be2",
+            "sha256": "ab1472d72da9e8d09389c471186b9e908c466d8dcab55c13b9c7d693891257ea",
             "subtype": "modifier_part",
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -660.72444113476558 0 1 0 -289.65758847937013 0 0 1 26.399999609265137 0 0 0 1",
               "extruder": "4"
             },
-            "faces": 5228,
+            "faces": 7848,
             "bounds": [
               [
                 -439.474899,
                 -253.902174,
-                12.899999609
+                12.499999609
               ],
               [
                 -221.249527,
@@ -3121,7 +3121,7 @@
       }
     ],
     "unique_stl": 109,
-    "validation": "release/knot-reinforcement-skin-r1/validation.json"
+    "validation": "release/knot-blue-five-layers-r1/validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",

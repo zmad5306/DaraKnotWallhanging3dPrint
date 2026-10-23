@@ -1,5 +1,9 @@
 # Original white finish restored; screw-skin correction retained
 
+This records the restoration before the subsequently requested two additional
+blue layers. The current release is documented in `../knot-blue-five-layers-r1/`;
+the original straight white finish and screw-skin correction remain in place.
+
 The user requested removal of the Hilbert loops while preserving the hidden
 screw reinforcements. Root `Knot.3mf` is restored byte-for-byte from the validated
 screw-skin release in commit `c8f8f7a`, including all ten stored native slices.

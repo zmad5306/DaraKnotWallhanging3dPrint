@@ -89,22 +89,29 @@ def audit():
                     assert 'Metadata/layer_config_ranges.xml' not in names
                     assert all(m.get('value')!='hilbertcurve' for m in cfg.iter('metadata'))
                 objects={o.get('id'):o for o in model.find(C+'resources')}
-                assets={};count=0
+                assets={};count=0;blue_count=0
                 for obj in cfg.findall('object'):
                     components={c.get('objectid'):c for c in objects[obj.get('id')].find(C+'components')}
                     for part in obj.findall('part'):
-                        if props(part).get('name')!='Local solid screw reinforcement':continue
+                        blue=skin.get('blue_layer_count')==5 and props(part).get('extruder')=='4'
+                        reinforcement=props(part).get('name')=='Local solid screw reinforcement'
+                        if not (blue or reinforcement):continue
                         assert part.get('subtype')=='modifier_part'
-                        assert props(part)['sparse_infill_density']=='100%'
+                        if reinforcement:assert props(part)['sparse_infill_density']=='100%'
                         co=components[part.get('id')];asset=co.get(P+'path').lstrip('/')
                         if asset not in assets:assets[asset]=ET.fromstring(z.read(asset))
                         mesh=assets[asset].find(C+'resources').find(f"{C}object[@id='{part.get('id')}']").find(C+'mesh')
                         t=list(map(float,co.get('transform').split()))
                         assert t[:9]==[1,0,0,0,1,0,0,0,1]
                         heights=[float(v.get('z'))+t[11] for v in mesh.find(C+'vertices')]
-                        assert abs(min(heights))<1e-6 and abs(max(heights)-12.4)<1e-6
-                        count+=1
+                        if blue:
+                            assert abs(min(heights)-12.5)<1e-6 and abs(max(heights)-13.5)<1e-6
+                            blue_count+=1
+                        else:
+                            assert abs(min(heights))<1e-6 and abs(max(heights)-12.4)<1e-6
+                            count+=1
                 assert count==skin['modifier_count']==50
+                if skin.get('blue_layer_count')==5:assert blue_count==skin['blue_modifier_count']==10
             for i,plate in enumerate(cfg.findall('plate'),1):
                 assert props(plate)['plater_id']==str(i)
                 for ins in plate.findall('model_instance'):assert props(ins)['object_id'] in resources
@@ -115,6 +122,8 @@ def audit():
                 if title=='Knot':
                     expected=next(p for p in skin['plates'] if p['plate']==i)
                     assert hashlib.sha256(data).hexdigest()==expected['gcode_sha256']
+                    if skin.get('blue_layer_count')==5:
+                        assert expected['model_z_by_filament_mm']['4']==[12.8,13.0,13.2,13.4,13.6]
                 assert hashlib.md5(data).hexdigest().upper()==z.read(name+'.md5').decode().strip().upper()
                 config=data.decode(errors='replace')
                 for k in ['sparse_infill_density','sparse_infill_pattern','layer_height','wall_loops']:

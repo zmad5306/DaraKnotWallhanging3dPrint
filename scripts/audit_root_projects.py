@@ -30,8 +30,14 @@ def props(node):
 def audit():
     catalog=json.loads((ROOT/'release/root-projects/catalog.json').read_text())
     expected={v['project'] for v in catalog.values()}
+    sample_catalog=ROOT/'release/samples/catalog.json'
+    samples=json.loads(sample_catalog.read_text()) if sample_catalog.exists() else {}
+    expected_tracked=expected|{v['file'] for v in samples.values()}
     tracked=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
-    assert {p for p in tracked if p.lower().endswith('.3mf')}==expected, 'Tracked 3MF inventory differs from the root release.'
+    assert {p for p in tracked if p.lower().endswith('.3mf')}==expected_tracked, 'Tracked 3MF inventory differs from the declared releases/samples.'
+    for sample in samples.values():
+        assert sha(ROOT/sample['file'])==sample['sha256']
+        assert (ROOT/sample['validation']).is_file()
     assert {p.name for p in ROOT.glob('*.3mf')}==expected, 'Unexpected root 3MF.'
     total=0
     for title,row in catalog.items():

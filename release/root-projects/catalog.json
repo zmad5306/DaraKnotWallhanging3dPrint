@@ -3124,7 +3124,7 @@
   },
   "Letter": {
     "project": "Letter.3mf",
-    "sha256": "f81c8dfba7787ff73e17fdaf88156eea9ea08b373b95c083602b9b49197a62d7",
+    "sha256": "ada67ba6b55a38c00599f74d49a7502ee35155bb085fbfd026d979e49ed407ec",
     "cad": "Letter.scad",
     "cad_sha256": "86022a638a92d4521aaad18b6252f609b05b4ab5468ce43f3c5bb3c0e23f3060",
     "printer": "Bambu Lab A2L",
@@ -3173,7 +3173,7 @@
             "subtype": "normal_part",
             "settings": {
               "name": "C1 A2L flat M core",
-              "matrix": "1 0 0 -268.29881324780274 0 1 0 139.36775203759765 0 0 1 9 0 0 0 1",
+              "matrix": "1 0 0 -402.44822424780273 0 1 0 209.05162803759765 0 0 1 13.5 0 0 0 1",
               "source_file": "Dara-A2L-Editable.3mf",
               "source_object_id": "54",
               "source_volume_id": "0",
@@ -3201,7 +3201,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 -60.128573385668943 0 1 0 216.16482571972657 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 -90.192860585668939 0 1 0 324.24723871972657 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3224,7 +3224,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 -524 0 1 0 142 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 -786 0 1 0 213 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3247,7 +3247,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 -56 0 1 0 152 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 -84 0 1 0 228 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3270,7 +3270,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 -522 0 1 0 -22 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 -783 0 1 0 -33 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3332,7 +3332,7 @@
             "subtype": "normal_part",
             "settings": {
               "name": "C2 A2L flat M core",
-              "matrix": "1 0 0 299.58757580073734 0 1 0 121.36775203759765 0 0 1 9 0 0 0 1",
+              "matrix": "1 0 0 449.38136780073734 0 1 0 182.05162803759765 0 0 1 13.5 0 0 0 1",
               "source_file": "Dara-A2L-Editable.3mf",
               "source_object_id": "55",
               "source_volume_id": "0",
@@ -3360,7 +3360,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 426 0 1 0 296 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 639 0 1 0 444 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3383,7 +3383,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 524.83950002832034 0 1 0 23.554080204730226 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 787.25925402832036 0 1 0 35.331120204730226 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3406,7 +3406,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 519.23325392480467 0 1 0 -26.51173468123169 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 778.84987692480468 0 1 0 -39.767602081231686 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3468,7 +3468,7 @@
             "subtype": "normal_part",
             "settings": {
               "name": "C3 A2L flat M core",
-              "matrix": "1 0 0 -11.027410503601075 0 1 0 -149.36775203759765 0 0 1 9 0 0 0 1",
+              "matrix": "1 0 0 -16.541115753601076 0 1 0 -224.05162803759765 0 0 1 13.5 0 0 0 1",
               "source_file": "Dara-A2L-Editable.3mf",
               "source_object_id": "56",
               "source_volume_id": "0",
@@ -3496,7 +3496,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 -58 0 1 0 -124 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 -87 0 1 0 -186 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3558,7 +3558,7 @@
             "subtype": "normal_part",
             "settings": {
               "name": "C4 A2L flat M core",
-              "matrix": "1 0 0 -414.20468169824221 0 1 0 -201.36775203759765 0 0 1 9 0 0 0 1",
+              "matrix": "1 0 0 -621.30702269824224 0 1 0 -302.05162803759765 0 0 1 13.5 0 0 0 1",
               "source_file": "Dara-A2L-Editable.3mf",
               "source_object_id": "57",
               "source_volume_id": "0",
@@ -3586,7 +3586,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 -426 0 1 0 -340 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 -639 0 1 0 -510 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3648,7 +3648,7 @@
             "subtype": "normal_part",
             "settings": {
               "name": "C5 A2L flat M core",
-              "matrix": "1 0 0 406.62147860986329 0 1 0 -219.36775203759765 0 0 1 9 0 0 0 1",
+              "matrix": "1 0 0 609.93221560986331 0 1 0 -329.05162803759765 0 0 1 13.5 0 0 0 1",
               "source_file": "Dara-A2L-Editable.3mf",
               "source_object_id": "58",
               "source_volume_id": "0",
@@ -3676,7 +3676,7 @@
             "subtype": "modifier_part",
             "settings": {
               "name": "Local solid screw reinforcement",
-              "matrix": "1 0 0 426 0 1 0 -296 0 0 1 17 0 0 0 1",
+              "matrix": "1 0 0 639 0 1 0 -444 0 0 1 25.5 0 0 0 1",
               "sparse_infill_density": "100%"
             },
             "faces": 252,
@@ -3741,7 +3741,7 @@
         "parts": [
           {
             "file": "Letter STL/V1-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
-            "sha256": "565e2e5763d510cb42d31d36970012e71fc291f21c9cb950cd9e06958c5107b8",
+            "sha256": "2751f1bcaeb1acdb8a978446f6155c75783642729f1e9cecf8d18fbdccc2e3c0",
             "subtype": "normal_part",
             "settings": {
               "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
@@ -3753,7 +3753,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.66925048828125"
             },
-            "faces": 494434,
+            "faces": 496630,
             "bounds": [
               [
                 -106.232162,
@@ -3815,7 +3815,7 @@
         "parts": [
           {
             "file": "Letter STL/V2-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
-            "sha256": "c487ad61046edd1f4ce90dc57828c3030df3904f7bf7fb576322a40cf004fc7d",
+            "sha256": "69c015c5b4c25dc4b37af4e0391625739697b2843c3d11fe243e895e2fc38715",
             "subtype": "normal_part",
             "settings": {
               "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
@@ -3827,7 +3827,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.67436218261719"
             },
-            "faces": 465774,
+            "faces": 467542,
             "bounds": [
               [
                 -106.235886,
@@ -3889,7 +3889,7 @@
         "parts": [
           {
             "file": "Letter STL/V3-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
-            "sha256": "4fb6c41bc24ef95b701341ce88e1ea9d5ecf48764690b7568265b5749c1a89a4",
+            "sha256": "85c99971eed23f9a0465ad6d98ed29878a91a1239c638dd2bf7c8e4a903a304c",
             "subtype": "normal_part",
             "settings": {
               "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
@@ -3901,7 +3901,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.67436218261719"
             },
-            "faces": 495798,
+            "faces": 498626,
             "bounds": [
               [
                 -106.235733,
@@ -3919,7 +3919,7 @@
       }
     ],
     "unique_stl": 18,
-    "sliced": false
+    "sliced": true
   },
   "Small Parts": {
     "project": "Small Parts.3mf",

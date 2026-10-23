@@ -54,7 +54,27 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
-- **User consolidation, 2026-10-22:** the current `Letter.3mf` supersedes the seven-plate layout below: C1 on 1, C2 on 2, C3/C4/C5 on 3, veneers V1/V2/V3 on 4–6. Preserve the exact user-saved project. It has no stored slices and requires slicing before printing.
+- **Approved veneer edge correction, 2026-10-22:** the user requested correction
+  of both the main project and the supplied Desktop ERYONE r3 sample, followed
+  by commit/push. Current `Letter.3mf` retains the six-plate consolidation and
+  now contains fresh native slices. Its V1/V2/V3 edge-crossing cleanup pockets
+  and connections move inward (30/29/43 respectively). The 2.60 mm square,
+  0.40 mm deep pockets retain their dimensions; moved pockets leave at least
+  1.69 mm of perimeter stock. Restore the original nominal Z8.6 back/side edge
+  at old pockets and remove their obsolete upper stems. The complete perimeter
+  has a checked 1.20 mm continuous rim. New 1.20 mm square necks connect the
+  existing inclined wall at Z4.3 to the veneer at Z9.2. Keep the original
+  continuous walls, openings, end bands, orientations, tree supports, interior
+  connections, artwork, core geometry and effective print/material settings.
+  Do not regenerate the former edge-open pockets from historical builders.
+  The matching current finish sample is **ERYONE r4**, with 15 moved edge
+  connections, tracked at `release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf`
+  as the explicitly requested exception to the seven-production-project-only
+  tracked 3MF inventory. See `release/veneer-edge-r7/` for exact hashes and
+  fresh validation. Physical cleanup, fit and anti-warp performance remain
+  unqualified for this revision.
+
+- **User consolidation, 2026-10-22:** `Letter.3mf` supersedes the seven-plate layout below: C1 on 1, C2 on 2, C3/C4/C5 on 3, veneers V1/V2/V3 on 4–6. Preserve the user-saved geometry/settings/poses except for the approved edge correction above. It originally had no stored slices; the corrected revision has fresh slices.
 
 - **Approved root organization, 2026-10-22:** the user requested root projects
   with adjacent CAD and STL, removal of all other Bambu projects from source

@@ -11,7 +11,14 @@
     "plate_9": "239ebff69cf402565db859cb1f5c166fd76d0730c02cbdd13d6167b27124ed8d",
     "plate_10": "0bf6c4420e14bd4a77dcfaba46d328bb4ce02f1e64be3a00fc0204d0338f3146"
   },
-  "Letter": {},
+  "Letter": {
+    "plate_2": "0113ee92743d85ba7cbbb4e0edbd94795a27ae8a0e7afaf959b4f8d5e29b2845",
+    "plate_1": "e162f4199f2eb79fc16a967a3022faf8221162b451ed4dc627b3cc94ae1a30ce",
+    "plate_3": "b323645a9349f1e4f6ff3c8b8ba82b426d35c71c46c8adbfb6ed2d3804c45afc",
+    "plate_5": "41375ba8036c0deb00a4789179dd515cee1f8c4fbb25bcd5b73b00e47eef2f2e",
+    "plate_4": "fd51708f23ec02390f3a1d280a79d270e7e7018c862a98794b7d8fa524547d52",
+    "plate_6": "48ddc0d28f62f5f9b240c61778a3f7739ecd08c9f1a8e5e93282ddc57f28d51e"
+  },
   "Small Parts": {
     "plate_1": "be34cd12d3d3155053f46aae785e4c744eecb8ee75e363525e2da875fc24c81b",
     "plate_2": "9287072f51fde6acea938b5bfb05efc3648a5bbc7c975fae68d4ee2833836f59",

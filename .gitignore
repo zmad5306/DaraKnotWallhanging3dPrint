@@ -24,3 +24,6 @@ __pycache__/
 !/Small Parts - Sanding Block PLA STL/*.stl
 !/Small Parts - Crate Stencils.3mf
 !/Small Parts - Crate Stencils STL/*.stl
+
+# Explicitly requested ERYONE finish sample accompanying the edge correction.
+!/release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf

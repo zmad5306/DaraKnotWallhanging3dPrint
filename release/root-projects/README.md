@@ -5,14 +5,14 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
 | Knot | 10 | 80h 43m | 2271.96 g |
-| Letter | 6 | Needs slicing | Needs slicing |
+| Letter | 6 | 72h 19m | 1223.65 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | 4h 12m | 104.23 g |
 | Small Parts - Photo Cut Aligner | 1 | 0h 33m | 6.66 g |
 | Small Parts - Sanding Block PLA | 1 | 4h 20m | 116.65 g |
 | Small Parts - Crate Stencils | 6 | 5h 10m | 162.47 g |
 
-The Letter project is the user-saved six-plate consolidation and has no stored slices. See `letter-consolidation.json` for its current hash and layout. Previous Letter native/preservation reports and their estimates describe the prior seven-plate project. Other values are slicer estimates, not observed print times.
+Letter retains the user-saved six-plate consolidation and now contains fresh slices after the approved veneer edge correction. Current hashes and checks are in `../veneer-edge-r7/`; `letter-consolidation.json` records the earlier unsliced input. The veneers and all supports total 903.96 g. The requested ERYONE r4 finish sample is tracked in `../samples/` and declared in its catalog. All values are slicer estimates, not observed print times.
 
 ## Preservation evidence
 
@@ -24,7 +24,7 @@ The Letter project is the user-saved six-plate consolidation and has no stored s
 - `cad-validation.json`: all seven OpenSCAD entry files parsed successfully. CAD is explicitly mesh-based, using the adjacent STL volumes. Original design development remains available separately; no parametric feature history is claimed for these snapshots.
 - `catalog.json`: current project, CAD and per-volume STL hashes, geometry bounds, settings, material regions, modifiers and placements. `gcode-sha256.json` identifies every stored plate toolpath.
 
-Knot and Sanding Block are byte-identical copies of their selected source projects. Letter now requires slicing after the user consolidation. Small Parts, Crate Clips, Photo Cut Aligner and Crate Stencils were freshly sliced. The local clip and guide layouts were preserved; the source projects were not overwritten. No printer job was sent.
+Knot and Sanding Block are byte-identical copies of their selected source projects. Letter now includes fresh slices after the veneer edge correction. Small Parts, Crate Clips, Photo Cut Aligner and Crate Stencils were freshly sliced. The local clip and guide layouts were preserved; the source projects were not overwritten. No printer job was sent.
 
 The quick audit is `python scripts/audit_root_projects.py`. It uses only Python's standard library and validates the tracked/root 3MF inventory, checksums, printer/process constants, plate assignments and G-code checksums. Deep mesh/pose comparisons are recorded against the same hashes. No physical validation is implied by these checks.
 

@@ -1,0 +1,144 @@
+{
+  "source_sha256": "3ba070e8a647b303b45ae12649185b338dc03d03a56e89441dd3d966838e775a",
+  "native_sha256": "395c1d34e7c01aca93f4445bca1863e8026e6b2e29b2ab9a423740139bfad7c0",
+  "preservation": {
+    "objects": 1,
+    "max_vertex_difference_mm": 1.9100000017147067e-06,
+    "settings_changes": {
+      "different_settings_to_system": [
+        null,
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "filament_map_2": [
+        null,
+        [
+          "1"
+        ]
+      ],
+      "inherits_group": [
+        null,
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": []
+  },
+  "warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "f23bf174e8123ad76fb6ffafaf84236eadad7172e56e218a107743a9417948a3",
+      "md5_verified": true,
+      "new_connections_model_toolpaths": {
+        "bond_probes_checked": 15,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09892824608902492,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "conservative_bed_clearance_mm": 105.67200000000001,
+      "tower": {
+        "plate": 1,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    }
+  ],
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 374,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 69,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Custom": 403.9954528808594,
+          "Flush": 11.0,
+          "Gap infill": 419.6966857910156,
+          "Inner wall": 1663.927001953125,
+          "Internal solid infill": 99.01859283447266,
+          "Outer wall": 4673.11279296875,
+          "Overhang wall": 0.32767781615257263,
+          "Support": 585.5093994140625,
+          "Top surface": 25.556175231933594,
+          "Travel": 896.7467651367188,
+          "Undefined": 895.1834106445312
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 34.14668273925781,
+            "total_used_g": 34.14668273925781
+          }
+        ],
+        "generate_support_material_time": 345,
+        "id": 1,
+        "infill_time": 34,
+        "layer_filament_change": 0,
+        "main_predication": 8352.669921875,
+        "make_perimeters_time": 73,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 97.02037811279297,
+              "height": 75.0,
+              "width": 60.655731201171875,
+              "x": 136.03302001953125,
+              "y": 105.67205810546875,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "V1 production hammered finish crop - ERYONE copper - r3",
+            "triangle_count": 43852
+          }
+        ],
+        "sliced_time": 1306,
+        "sliced_time_with_cache": 821,
+        "total_predication": 8777.1025390625,
+        "triangle_count": 43852,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "veneer_and_support_material_g": 34.14668273925781,
+  "core_toolpath_bounds": [],
+  "physical_validation_pending": true
+}

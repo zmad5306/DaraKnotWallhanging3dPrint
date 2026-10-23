@@ -1,0 +1,698 @@
+{
+  "source_sha256": "7738ff8c64e1c309e176c50e5ba5006476769576d447d93d273e1cdde5d9af2c",
+  "native_sha256": "ada67ba6b55a38c00599f74d49a7502ee35155bb085fbfd026d979e49ed407ec",
+  "preservation": {
+    "objects": 8,
+    "max_vertex_difference_mm": 8.084999990387587e-06,
+    "settings_changes": {
+      "different_settings_to_system": [
+        null,
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "inherits_group": [
+        null,
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "filament_map_2": [
+        null,
+        [
+          "1"
+        ]
+      ]
+    },
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": [
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -268.29881324780274 0 1 0 139.36775203759765 0 0 1 9 0 0 0 1",
+            "1 0 0 -402.44822424780273 0 1 0 209.05162803759765 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -60.128573385668943 0 1 0 216.16482571972657 0 0 1 17 0 0 0 1",
+            "1 0 0 -90.192860585668939 0 1 0 324.24723871972657 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -524 0 1 0 142 0 0 1 17 0 0 0 1",
+            "1 0 0 -786 0 1 0 213 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -56 0 1 0 152 0 0 1 17 0 0 0 1",
+            "1 0 0 -84 0 1 0 228 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -522 0 1 0 -22 0 0 1 17 0 0 0 1",
+            "1 0 0 -783 0 1 0 -33 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 299.58757580073734 0 1 0 121.36775203759765 0 0 1 9 0 0 0 1",
+            "1 0 0 449.38136780073734 0 1 0 182.05162803759765 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 426 0 1 0 296 0 0 1 17 0 0 0 1",
+            "1 0 0 639 0 1 0 444 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 524.83950002832034 0 1 0 23.554080204730226 0 0 1 17 0 0 0 1",
+            "1 0 0 787.25925402832036 0 1 0 35.331120204730226 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 519.23325392480467 0 1 0 -26.51173468123169 0 0 1 17 0 0 0 1",
+            "1 0 0 778.84987692480468 0 1 0 -39.767602081231686 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -11.027410503601075 0 1 0 -149.36775203759765 0 0 1 9 0 0 0 1",
+            "1 0 0 -16.541115753601076 0 1 0 -224.05162803759765 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -58 0 1 0 -124 0 0 1 17 0 0 0 1",
+            "1 0 0 -87 0 1 0 -186 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -414.20468169824221 0 1 0 -201.36775203759765 0 0 1 9 0 0 0 1",
+            "1 0 0 -621.30702269824224 0 1 0 -302.05162803759765 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -426 0 1 0 -340 0 0 1 17 0 0 0 1",
+            "1 0 0 -639 0 1 0 -510 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 406.62147860986329 0 1 0 -219.36775203759765 0 0 1 9 0 0 0 1",
+            "1 0 0 609.93221560986331 0 1 0 -329.05162803759765 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 426 0 1 0 -296 0 0 1 17 0 0 0 1",
+            "1 0 0 639 0 1 0 -444 0 0 1 25.5 0 0 0 1"
+          ]
+        }
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "plates": [
+    {
+      "plate": 4,
+      "gcode_sha256": "fd51708f23ec02390f3a1d280a79d270e7e7018c862a98794b7d8fa524547d52",
+      "md5_verified": true,
+      "new_connections_model_toolpaths": {
+        "bond_probes_checked": 30,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09892764955196748,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "conservative_bed_clearance_mm": 56.191,
+      "tower": {
+        "plate": 4,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "41375ba8036c0deb00a4789179dd515cee1f8c4fbb25bcd5b73b00e47eef2f2e",
+      "md5_verified": true,
+      "new_connections_model_toolpaths": {
+        "bond_probes_checked": 29,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.18893353070041763,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "conservative_bed_clearance_mm": 56.188,
+      "tower": {
+        "plate": 5,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "48ddc0d28f62f5f9b240c61778a3f7739ecd08c9f1a8e5e93282ddc57f28d51e",
+      "md5_verified": true,
+      "new_connections_model_toolpaths": {
+        "bond_probes_checked": 43,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.0998002350687993,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "conservative_bed_clearance_mm": 26.781999999999982,
+      "tower": {
+        "plate": 6,
+        "filament_count": 1,
+        "estimated_depth_mm": 0,
+        "estimated_footprint_area_mm2": 0,
+        "intersects_model": false,
+        "reason": "Conventional tower: no single-color tower or smooth timelapse"
+      }
+    }
+  ],
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 3657,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 1104,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 758.5751342773438,
+          "Bridge": 992.6361694335938,
+          "Brim": 58.566463470458984,
+          "Custom": 406.3600769042969,
+          "Flush": 11.0,
+          "Gap infill": 16.856212615966797,
+          "Inner wall": 2129.056884765625,
+          "Internal solid infill": 4458.857421875,
+          "Outer wall": 711.5658569335938,
+          "Sparse infill": 3225.661376953125,
+          "Top surface": 713.7924194335938,
+          "Travel": 412.5133361816406,
+          "Undefined": 408.5472717285156
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 98.91712951660156,
+            "total_used_g": 98.91712951660156
+          }
+        ],
+        "generate_support_material_time": 25,
+        "id": 1,
+        "infill_time": 370,
+        "layer_filament_change": 0,
+        "main_predication": 13467.0615234375,
+        "make_perimeters_time": 105,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.8835754394531,
+              "height": 9.0,
+              "width": 392.6263122558594,
+              "x": -44.69321060180664,
+              "y": 11.79266357421875,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "C1 A2L flat M core",
+            "triangle_count": 5960
+          }
+        ],
+        "sliced_time": 1430,
+        "sliced_time_with_cache": 905,
+        "total_predication": 13891.455078125,
+        "triangle_count": 5960,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 599.4496459960938,
+          "Bridge": 788.4772338867188,
+          "Brim": 48.886634826660156,
+          "Custom": 403.69189453125,
+          "Flush": 11.0,
+          "Gap infill": 11.587578773498535,
+          "Inner wall": 1755.009765625,
+          "Internal solid infill": 3541.265869140625,
+          "Outer wall": 588.982177734375,
+          "Sparse infill": 2515.936767578125,
+          "Top surface": 566.9282836914062,
+          "Travel": 323.71551513671875,
+          "Undefined": 322.47491455078125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 79.1906509399414,
+            "total_used_g": 79.1906509399414
+          }
+        ],
+        "generate_support_material_time": 20,
+        "id": 2,
+        "infill_time": 339,
+        "layer_filament_change": 0,
+        "main_predication": 10728.8203125,
+        "make_perimeters_time": 87,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 357.8824157714844,
+              "height": 9.0,
+              "width": 316.8561706542969,
+              "x": 394.746337890625,
+              "y": -23.252304077148438,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "C2 A2L flat M core",
+            "triangle_count": 4420
+          }
+        ],
+        "sliced_time": 1407,
+        "sliced_time_with_cache": 943,
+        "total_predication": 11153.271484375,
+        "triangle_count": 4420,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1115.893310546875,
+          "Bridge": 1520.543701171875,
+          "Brim": 76.5086441040039,
+          "Custom": 403.73065185546875,
+          "Flush": 11.0,
+          "Gap infill": 11.611356735229492,
+          "Inner wall": 2681.849853515625,
+          "Internal solid infill": 6718.53125,
+          "Outer wall": 899.8690795898438,
+          "Sparse infill": 3968.101318359375,
+          "Top surface": 1044.0843505859375,
+          "Travel": 428.5236511230469,
+          "Undefined": 427.372802734375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 141.5799102783203,
+            "total_used_g": 141.5799102783203
+          }
+        ],
+        "generate_support_material_time": 15,
+        "id": 3,
+        "infill_time": 439,
+        "layer_filament_change": 0,
+        "main_predication": 18455.66796875,
+        "make_perimeters_time": 86,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 69.65765380859375,
+              "height": 9.0,
+              "width": 209.36776733398438,
+              "x": 858.8861694335938,
+              "y": 30.866308212280273,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "C3 A2L flat M core",
+            "triangle_count": 2492
+          },
+          {
+            "bbox": {
+              "depth": 180.80618286132812,
+              "height": 9.0,
+              "width": 157.3677520751953,
+              "x": 801.0143432617188,
+              "y": 108.43767547607422,
+              "z": 0.0
+            },
+            "id": 17,
+            "name": "C4 A2L flat M core",
+            "triangle_count": 2064
+          },
+          {
+            "bbox": {
+              "depth": 181.34097290039062,
+              "height": 9.0,
+              "width": 139.36776733398438,
+              "x": 968.7359619140625,
+              "y": 90.2975082397461,
+              "z": 0.0
+            },
+            "id": 21,
+            "name": "C5 A2L flat M core",
+            "triangle_count": 2928
+          }
+        ],
+        "sliced_time": 1908,
+        "sliced_time_with_cache": 1280,
+        "total_predication": 18880.248046875,
+        "triangle_count": 7484,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.6077575683594,
+          "Flush": 11.0,
+          "Gap infill": 4379.01806640625,
+          "Inner wall": 17293.615234375,
+          "Internal solid infill": 4009.196044921875,
+          "Outer wall": 43915.89453125,
+          "Overhang wall": 1.3333427906036377,
+          "Support": 745.1156616210938,
+          "Top surface": 67.59745025634766,
+          "Travel": 7422.314453125,
+          "Undefined": 7422.314453125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 332.083740234375,
+            "total_used_g": 332.083740234375
+          }
+        ],
+        "generate_support_material_time": 984,
+        "id": 4,
+        "infill_time": 560,
+        "layer_filament_change": 0,
+        "main_predication": 77822.3984375,
+        "make_perimeters_time": 846,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 184.19076538085938,
+              "height": 297.3385009765625,
+              "width": 212.46432495117188,
+              "x": 56.191410064697266,
+              "y": -316.0203857421875,
+              "z": -4.88281216348696e-07
+            },
+            "id": 25,
+            "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 496630
+          }
+        ],
+        "sliced_time": 8474,
+        "sliced_time_with_cache": 5706,
+        "total_predication": 78247.0078125,
+        "triangle_count": 496630,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.6486511230469,
+          "Flush": 11.0,
+          "Gap infill": 4143.45947265625,
+          "Inner wall": 16379.6748046875,
+          "Internal solid infill": 3624.61962890625,
+          "Outer wall": 42423.453125,
+          "Overhang wall": 1.2528119087219238,
+          "Support": 843.8310546875,
+          "Top surface": 68.50055694580078,
+          "Travel": 7792.052734375,
+          "Undefined": 7792.052734375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 317.2326354980469,
+            "total_used_g": 317.232666015625
+          }
+        ],
+        "generate_support_material_time": 948,
+        "id": 5,
+        "infill_time": 473,
+        "layer_filament_change": 0,
+        "main_predication": 75254.8515625,
+        "make_perimeters_time": 1043,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 188.0997314453125,
+              "height": 297.3487243652344,
+              "width": 212.47177124023438,
+              "x": 452.1875305175781,
+              "y": -318.04986572265625,
+              "z": -1.826171853736014e-07
+            },
+            "id": 29,
+            "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 467542
+          }
+        ],
+        "sliced_time": 8414,
+        "sliced_time_with_cache": 5633,
+        "total_predication": 75679.5,
+        "triangle_count": 467542,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.80596923828125,
+          "Flush": 11.0,
+          "Gap infill": 3795.415283203125,
+          "Inner wall": 13800.03125,
+          "Internal solid infill": 3822.329833984375,
+          "Outer wall": 31789.626953125,
+          "Overhang wall": 1.6789671182632446,
+          "Sparse infill": 3.966426372528076,
+          "Support": 1694.3450927734375,
+          "Top surface": 67.28956604003906,
+          "Travel": 7108.35302734375,
+          "Undefined": 7108.35302734375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 3,
+            "main_used_g": 254.64382934570312,
+            "total_used_g": 254.64382934570312
+          }
+        ],
+        "generate_support_material_time": 1557,
+        "id": 6,
+        "infill_time": 511,
+        "layer_filament_change": 0,
+        "main_predication": 62040.1484375,
+        "make_perimeters_time": 1200,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 251.1000213623047,
+              "height": 297.3487243652344,
+              "width": 212.471435546875,
+              "x": 848.1878662109375,
+              "y": -349.5500183105469,
+              "z": -1.826171853736014e-07
+            },
+            "id": 33,
+            "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 498626
+          }
+        ],
+        "sliced_time": 9641,
+        "sliced_time_with_cache": 6056,
+        "total_predication": 62464.953125,
+        "triangle_count": 498626,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "veneer_and_support_material_g": 903.9602355957031,
+  "core_toolpath_bounds": [
+    {
+      "plate": 1,
+      "bead_xy_bounds_mm": [
+        [
+          12.106,
+          11.777
+        ],
+        [
+          317.883,
+          308.231
+        ]
+      ]
+    },
+    {
+      "plate": 2,
+      "bead_xy_bounds_mm": [
+        [
+          26.966,
+          26.17
+        ],
+        [
+          303.032,
+          293.832
+        ]
+      ]
+    },
+    {
+      "plate": 3,
+      "bead_xy_bounds_mm": [
+        [
+          7.98,
+          29.832
+        ],
+        [
+          317.139,
+          290.261
+        ]
+      ]
+    }
+  ],
+  "physical_validation_pending": true
+}

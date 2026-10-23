@@ -1,0 +1,9 @@
+{
+  "Dara-A2L-Hammered-Finish-ERYONE-r4": {
+    "file": "release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf",
+    "sha256": "395c1d34e7c01aca93f4445bca1863e8026e6b2e29b2ab9a423740139bfad7c0",
+    "printer": "Bambu Lab A2L",
+    "revision": "r4",
+    "validation": "release/veneer-edge-r7/ERYONE-r4-native.json"
+  }
+}

@@ -8601,7 +8601,7 @@
   },
   "Small Parts - Crate Clips PETG": {
     "project": "Small Parts - Crate Clips PETG.3mf",
-    "sha256": "3a1868498aa04317b5e65e9f80cfa2f2d573266116b73646ff662169f7a7f602",
+    "sha256": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
     "cad": "Small Parts - Crate Clips PETG.scad",
     "cad_sha256": "3c3e4490b1790c7275ce7993992db959818e5c8107b572a2567d53289490ebad",
     "printer": "Bambu Lab A1",
@@ -9388,7 +9388,9 @@
         ]
       }
     ],
-    "unique_stl": 1
+    "unique_stl": 1,
+    "sliced": false,
+    "validation": "release/root-projects/crate-clips-user-save-r1-validation.json"
   },
   "Small Parts - Photo Cut Aligner": {
     "project": "Small Parts - Photo Cut Aligner.3mf",
@@ -9811,7 +9813,7 @@
   },
   "Small Parts - Crate Stencils": {
     "project": "Small Parts - Crate Stencils.3mf",
-    "sha256": "213e14fb0df03cc111313858044bba0563bab7ecc9c5fdb1c7aa664a7de67950",
+    "sha256": "ea602d2bd5ddc8ef93b352f679846d30adf0bdbdbdb650bd76b3b830cd18de23",
     "cad": "Small Parts - Crate Stencils.scad",
     "cad_sha256": "183df75cef0477c2eb64915d4f72059c29dccc6e7c4f582c357be7ab4a854b0a",
     "printer": "Bambu Lab A1",

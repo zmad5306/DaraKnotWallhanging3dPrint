@@ -1,0 +1,183 @@
+{
+  "revision": "stencil-speed-r1",
+  "date": "2026-10-23",
+  "source_project": "Small Parts - Crate Stencils.3mf",
+  "source_sha256": "213e14fb0df03cc111313858044bba0563bab7ecc9c5fdb1c7aa664a7de67950",
+  "project_sha256": "ea602d2bd5ddc8ef93b352f679846d30adf0bdbdbdb650bd76b3b830cd18de23",
+  "settings_changes": {
+    "initial_layer_infill_speed": [
+      [
+        "105"
+      ],
+      [
+        "50"
+      ]
+    ],
+    "internal_solid_infill_speed": [
+      [
+        "250"
+      ],
+      [
+        "80"
+      ]
+    ],
+    "top_surface_speed": [
+      [
+        "200"
+      ],
+      [
+        "80"
+      ]
+    ]
+  },
+  "native_comparison": {
+    "objects": 6,
+    "max_vertex_difference_mm": 0,
+    "settings_changes": {},
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": []
+  },
+  "geometry_and_object_settings_byte_identical": true,
+  "other_archive_entries_byte_identical": true,
+  "native_reopen_passed": true,
+  "plates": [
+    {
+      "plate": 1,
+      "gcode_sha256": "d2dd79b6a7c5a28f32b0e7a3f8da6814b038285df654a3f906273f7c702dfc93",
+      "estimated_seconds": 4778.55419921875,
+      "material_g": 27.454336166381836,
+      "verified_fill_speeds_mm_s": {
+        "first_layer": 50,
+        "internal_solid": 80,
+        "top_surface": 80
+      }
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "57265e2a58545fd8fd21a3576478fbc635ba91f59222120e9d8e6dec8b811e47",
+      "estimated_seconds": 5026.00537109375,
+      "material_g": 29.170425415039062,
+      "verified_fill_speeds_mm_s": {
+        "first_layer": 50,
+        "internal_solid": 80,
+        "top_surface": 80
+      }
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "309ee10cdf7bfe324c9b34c9f2325a867986885ec03184bf268cf4dacd644725",
+      "estimated_seconds": 4988.5068359375,
+      "material_g": 29.321805953979492,
+      "verified_fill_speeds_mm_s": {
+        "first_layer": 50,
+        "internal_solid": 80,
+        "top_surface": 80
+      }
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "5dcc14d7303a87779bf439b4c63f57e2c5d59d9e56eeedb27fb3f98e9f3adb81",
+      "estimated_seconds": 4435.1435546875,
+      "material_g": 25.422317504882812,
+      "verified_fill_speeds_mm_s": {
+        "first_layer": 50,
+        "internal_solid": 80,
+        "top_surface": 80
+      }
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "a4b683d6bfc6e7370295196704a5d78a96d70fff7e25f81882e31e80f7854ce1",
+      "estimated_seconds": 4340.541015625,
+      "material_g": 24.84699821472168,
+      "verified_fill_speeds_mm_s": {
+        "first_layer": 50,
+        "internal_solid": 80,
+        "top_surface": 80
+      }
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "026caa3383acd24e6faf81bb7083654e2c314e215cf01f689675a7a675b0bab8",
+      "estimated_seconds": 4545.0654296875,
+      "material_g": 26.25664710998535,
+      "verified_fill_speeds_mm_s": {
+        "first_layer": 50,
+        "internal_solid": 80,
+        "top_surface": 80
+      }
+    }
+  ],
+  "slicer_warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "protected_projects": {
+    "Knot.3mf": "2510f6f9bd0139155d7aea0603b0e24c3e5c9ac414f946abf9aadf1464f9c356",
+    "Letter.3mf": "d12cfb8b76a3aac2bdc667a0385896fc4ce2e770557d226551de5bd45b09a8f5",
+    "Small Parts - Crate Clips PETG.3mf": "3a1868498aa04317b5e65e9f80cfa2f2d573266116b73646ff662169f7a7f602",
+    "Small Parts - Photo Cut Aligner.3mf": "a6084117e285567bbf9033b7220ed0d9d0fcd257c8d2aa44a3c8fbc473476f8d",
+    "Small Parts - Sanding Block PLA.3mf": "b4c389579763b98805c075a3747fdbc8dda9ed05250747c52675435b078a7459",
+    "Small Parts.3mf": "4836fda4db3178917761f434d5e3b36d970c1cdf94cea82cca49edafa9e0f099"
+  },
+  "physical_status": "Not printed. Speed-only trial after user reported continuous grinding and bed detachment with SUNLU bone-white PLA on A1. Cause not established."
+}

@@ -2,6 +2,9 @@
 __pycache__/
 *.pyc
 
+# Reproducible slicer console output; keep structured release evidence tracked.
+/release/root-projects/*-native.log
+
 # Keep scratch meshes and projects outside Git; named production files use LFS.
 *.[3][mM][fF]
 *.[sS][tT][lL]

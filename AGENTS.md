@@ -54,6 +54,17 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **User-saved crate clip filament revision, 2026-10-23:** preserve the saved
+  `Small Parts - Crate Clips PETG.3mf` with **SUNLU PETG @BBL A1** replacing
+  Generic PETG. Its saved nozzle temperatures are **250 C first layer / 245 C
+  subsequent layers**, Textured PEI bed **60 C**, flow ratio **0.94**, maximum
+  volumetric speed **9 mm3/s**, fan **10-30%**, and minimum cooling slowdown
+  speed **10 mm/s**. All twelve clip meshes, placements, object/volume settings
+  and locked structural constants are unchanged. This user save contains no
+  stored G-code; slice it before printing. Earlier clip time/material estimates
+  describe the previous Generic PETG slice. See
+  `release/root-projects/crate-clips-user-save-r1-validation.json`.
+
 - **Approved deeper blue knot trim, 2026-10-23:** the user requested two more
   blue layers for sanding allowance. In `Knot.3mf`, extend all ten blue color
   modifiers downward from nominal **Z12.9 to Z12.5 mm**, keeping the top at
@@ -90,6 +101,8 @@ except for the explicit existing solid regions below.
   full-height modifiers. All ten plates have fresh native slices; matching
   modifier STLs remain referenced by `Knot.scad`. Evidence is in
   `release/knot-reinforcement-skin-r1/`. Physical surface finish remains pending.
+
+- **Approved stencil speed revision, 2026-10-23:** in `Small Parts - Crate Stencils.3mf`, first-layer infill speed is **50 mm/s** (was 105), internal solid infill speed is **80 mm/s** (was 250), and top-surface speed is **80 mm/s** (was 200). All six plates were resliced. Preserve every other setting and all geometry/poses. This speed-only revision follows reported continuous grinding and bed detachment on the A1 with SUNLU bone-white PLA; the cause is unconfirmed and the revision remains physically unqualified. Evidence: `release/root-projects/stencil-speed-r1-validation.json`.
 
 - **Approved wall-nub cleanup, 2026-10-23:** remove only obsolete triangular
   connection bases from the current main project and ERYONE sample, then

@@ -1,31 +1,36 @@
 {
+  "source_sha256": "213e14fb0df03cc111313858044bba0563bab7ecc9c5fdb1c7aa664a7de67950",
+  "project_sha256": "ea602d2bd5ddc8ef93b352f679846d30adf0bdbdbdb650bd76b3b830cd18de23",
   "objects": 6,
   "max_vertex_difference_mm": 0,
   "settings_changes": {
-    "filament_map_2": [
-      null,
+    "initial_layer_infill_speed": [
       [
-        "1"
+        "105"
+      ],
+      [
+        "50"
       ]
     ],
-    "different_settings_to_system": [
-      null,
+    "internal_solid_infill_speed": [
       [
-        "",
-        "",
-        ""
+        "250"
+      ],
+      [
+        "80"
       ]
     ],
-    "inherits_group": [
-      null,
+    "top_surface_speed": [
       [
-        "",
-        "",
-        ""
+        "200"
+      ],
+      [
+        "80"
       ]
     ]
   },
   "paint_preserved": true,
   "bed_poses_preserved": true,
-  "source_bookkeeping_changes": []
+  "geometry_and_object_settings_byte_identical": true,
+  "validation": "stencil-speed-r1-validation.json"
 }

@@ -1,0 +1,241 @@
+{
+  "revision": "crate-clips-user-save-r1",
+  "date": "2026-10-23",
+  "project": "Small Parts - Crate Clips PETG.3mf",
+  "source_sha256": "3a1868498aa04317b5e65e9f80cfa2f2d573266116b73646ff662169f7a7f602",
+  "project_sha256": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+  "objects": 12,
+  "plates": 1,
+  "all_mesh_assets_byte_identical": true,
+  "all_transformed_vertices_faces_poses_and_paint_identical": true,
+  "all_object_volume_settings_identical": true,
+  "cad_stl_unchanged": true,
+  "locked_settings_verified": {
+    "sparse_infill_density": "8%",
+    "sparse_infill_pattern": "gyroid",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "4",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "curr_bed_type": "Textured PEI Plate"
+  },
+  "global_settings_changes": {
+    "different_settings_to_system": [
+      [
+        "",
+        "",
+        ""
+      ],
+      null
+    ],
+    "eng_plate_temp": [
+      [
+        "70"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "eng_plate_temp_initial_layer": [
+      [
+        "70"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "fan_max_speed": [
+      [
+        "90"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "fan_min_speed": [
+      [
+        "40"
+      ],
+      [
+        "10"
+      ]
+    ],
+    "filament_cost": [
+      [
+        "30"
+      ],
+      [
+        "22.99"
+      ]
+    ],
+    "filament_flow_ratio": [
+      [
+        "0.95"
+      ],
+      [
+        "0.94"
+      ]
+    ],
+    "filament_ids": [
+      [
+        "GFG99"
+      ],
+      [
+        "GFSNL08"
+      ]
+    ],
+    "filament_map_2": [
+      [
+        "1"
+      ],
+      null
+    ],
+    "filament_max_volumetric_speed": [
+      [
+        "8"
+      ],
+      [
+        "9"
+      ]
+    ],
+    "filament_settings_id": [
+      [
+        "Generic PETG @BBL A1"
+      ],
+      [
+        "SUNLU PETG @BBL A1"
+      ]
+    ],
+    "filament_vendor": [
+      [
+        "Generic"
+      ],
+      [
+        "SUNLU"
+      ]
+    ],
+    "hot_plate_temp": [
+      [
+        "80"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "hot_plate_temp_initial_layer": [
+      [
+        "80"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "inherits_group": [
+      [
+        "",
+        "",
+        ""
+      ],
+      null
+    ],
+    "nozzle_temperature": [
+      [
+        "255"
+      ],
+      [
+        "245"
+      ]
+    ],
+    "nozzle_temperature_initial_layer": [
+      [
+        "255"
+      ],
+      [
+        "250"
+      ]
+    ],
+    "nozzle_temperature_range_high": [
+      [
+        "270"
+      ],
+      [
+        "280"
+      ]
+    ],
+    "nozzle_temperature_range_low": [
+      [
+        "220"
+      ],
+      [
+        "230"
+      ]
+    ],
+    "print_settings_id": [
+      "Dara crate clips - A1 SUNLU PETG - 8% gyroid - r2(Dara-Crate-Clips-A1-PETG-r2.3mf)",
+      "Dara crate clips - A1 SUNLU PETG - 8% gyroid - r2(Dara-Crate-Clips-A1-PETG-r2.3mf)(Small Parts - Crate Clips PETG.3mf)"
+    ],
+    "slow_down_min_speed": [
+      [
+        "20"
+      ],
+      [
+        "10"
+      ]
+    ],
+    "temperature_vitrification": [
+      [
+        "70"
+      ],
+      [
+        "68"
+      ]
+    ],
+    "textured_plate_temp": [
+      [
+        "80"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "textured_plate_temp_initial_layer": [
+      [
+        "80"
+      ],
+      [
+        "60"
+      ]
+    ]
+  },
+  "sliced": false,
+  "stored_gcode_count": 0,
+  "prior_gcode_sha256": {
+    "plate_1": "9c868a8563f27bdf1c542f498fdc1eb4fd7c309f87f69bed0ae598fd2725193e"
+  },
+  "native_reopen": {
+    "error_string": "Success.",
+    "export_time": 0,
+    "layer_height": 0.0,
+    "plate_index": 0,
+    "prepare_time": 18,
+    "return_code": 0,
+    "sparse_infill_density": 0.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 0
+  },
+  "project_file_not_modified_during_cleanup": true,
+  "requires_slicing_before_printing": true,
+  "printer_job_sent": false
+}

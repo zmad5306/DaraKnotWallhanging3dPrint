@@ -36,7 +36,7 @@ except for the explicit existing solid regions below.
 | Top shell layers | **5** |
 | Bottom shell layers | **5** |
 | Build plate | **Textured PEI Plate** |
-| Filament slots | **1 white, 2 wood tan, 3 copper silk, 4 Azurite blue** |
+| Filament slots | **1 white, 2 wood tan, 3 copper silk, 4 Azurite blue**, except the approved Knot/Letter cleanup below |
 | Artwork width | **914.4 mm / 36 inches** |
 
 - Existing screw reinforcement modifiers remain **100% infill**. Veneers and
@@ -53,6 +53,22 @@ except for the explicit existing solid regions below.
   and the existing in-plane orientation. Do not auto-orient individual veneers.
 
 ## Printer and project identity
+
+- **Approved unused filament removal, 2026-10-23:** the user requested removing
+  unused copper from `Knot.3mf`, then white, wood and blue from `Letter.3mf`,
+  followed by commit/push. Knot now has **1 white SUNLU PLA Basic, 2 wood tan
+  SUNLU PLA Basic, 3 Azurite blue SUNLU PLA Metallic** (old blue slot 4 becomes
+  3). Letter has only **slot 1 ERYONE Ultra Silk Copper**, retaining the exact
+  successful sample profile identity and all saved values from former slot 3.
+  The removed slots were unused by every object, volume and stored slice.
+  Preserve all retained material parameters, surviving purge matrix entries,
+  process settings, object/volume overrides, geometry, support paint and poses.
+  All ten Knot and six Letter plates have fresh native slices using the new
+  slot numbers; five blue layers and the existing reinforcement remain intact.
+  This supersedes prior slot numbering and exact container/toolpath hashes for
+  these two projects only. CAD/STL, other projects and user preset files remain
+  unchanged. Source hashes, native checks and current hashes are recorded in
+  `release/unused-filaments-r1/`. Physical qualification is unchanged.
 
 - **Approved SUNLU preset defaults and copper preset, 2026-10-23:** promote
   the previously retained overrides into the user's local Bambu Studio presets:

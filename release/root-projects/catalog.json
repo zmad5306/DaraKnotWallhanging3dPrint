@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "4fff61104aed129fb4911a6304cf51a2e93dff70867c687f90a165e9e4e6bc46",
+    "sha256": "a4e5fdde354253f504c466807361e058a0523213ccc28c365ca3aa9186b67992",
     "cad": "Knot.scad",
     "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
     "printer": "Bambu Lab A2L",
@@ -160,7 +160,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -313.95180537207034 0 1 0 -5.0882110597851558 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 4468,
             "bounds": [
@@ -451,7 +451,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70198792480471 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 7836,
             "bounds": [
@@ -765,7 +765,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -253.92971800878905 0 1 0 581.27911388476559 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 9066,
             "bounds": [
@@ -1102,7 +1102,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 253.84689365527345 0 1 0 579.18232700585941 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 9042,
             "bounds": [
@@ -1439,7 +1439,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 660.60502575195312 0 1 0 289.54700844250488 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 7848,
             "bounds": [
@@ -1725,7 +1725,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 315.39918086828612 0 1 0 -4.253738401660156 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 4446,
             "bounds": [
@@ -1970,7 +1970,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 660.73797603710932 0 1 0 -289.810810137207 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 7824,
             "bounds": [
@@ -2284,7 +2284,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 253.95899981689453 0 1 0 -599.51237506835935 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 9066,
             "bounds": [
@@ -2649,7 +2649,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -253.87673975097658 0 1 0 -599.46710202539066 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 9024,
             "bounds": [
@@ -2986,7 +2986,7 @@
             "settings": {
               "name": "Modifier",
               "matrix": "1 0 0 -660.72444113476558 0 1 0 -289.65758847937013 0 0 1 26.399999609265137 0 0 0 1",
-              "extruder": "4"
+              "extruder": "3"
             },
             "faces": 7848,
             "bounds": [
@@ -3126,13 +3126,13 @@
     "filament_settings_id": [
       "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
       "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
-      "Generic PLA Silk @BBL A2L",
       "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle"
-    ]
+    ],
+    "filament_cleanup_validation": "release/unused-filaments-r1/knot-validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",
-    "sha256": "7040052d402418ade269f53d47eb4e2c487137656ab1687e21bfcd7bf74673f7",
+    "sha256": "8e391762ecb8415b77680a7bd4825e94afe37951d831bcfe41f6a43f31b16d4a",
     "cad": "Letter.scad",
     "cad_sha256": "86022a638a92d4521aaad18b6252f609b05b4ab5468ce43f3c5bb3c0e23f3060",
     "printer": "Bambu Lab A2L",
@@ -3171,7 +3171,7 @@
           "name": "C1 A2L flat M core",
           "brim_width": "1",
           "enable_support": "0",
-          "extruder": "3",
+          "extruder": "1",
           "null": null
         },
         "parts": [
@@ -3330,7 +3330,7 @@
           "name": "C2 A2L flat M core",
           "brim_width": "1",
           "enable_support": "0",
-          "extruder": "3",
+          "extruder": "1",
           "null": null
         },
         "parts": [
@@ -3466,7 +3466,7 @@
           "name": "C3 A2L flat M core",
           "brim_width": "1",
           "enable_support": "0",
-          "extruder": "3",
+          "extruder": "1",
           "null": null
         },
         "parts": [
@@ -3556,7 +3556,7 @@
           "name": "C4 A2L flat M core",
           "brim_width": "1",
           "enable_support": "0",
-          "extruder": "3",
+          "extruder": "1",
           "null": null
         },
         "parts": [
@@ -3646,7 +3646,7 @@
           "name": "C5 A2L flat M core",
           "brim_width": "1",
           "enable_support": "0",
-          "extruder": "3",
+          "extruder": "1",
           "null": null
         },
         "parts": [
@@ -3737,7 +3737,7 @@
           "brim_width": "0",
           "default_acceleration": "1500",
           "enable_support": "1",
-          "extruder": "3",
+          "extruder": "1",
           "inner_wall_speed": "80",
           "outer_wall_speed": "40",
           "sparse_infill_density": "100%",
@@ -3811,7 +3811,7 @@
           "brim_width": "0",
           "default_acceleration": "1500",
           "enable_support": "1",
-          "extruder": "3",
+          "extruder": "1",
           "inner_wall_speed": "80",
           "outer_wall_speed": "40",
           "sparse_infill_density": "100%",
@@ -3885,7 +3885,7 @@
           "brim_width": "0",
           "default_acceleration": "1500",
           "enable_support": "1",
-          "extruder": "3",
+          "extruder": "1",
           "inner_wall_speed": "80",
           "outer_wall_speed": "40",
           "sparse_infill_density": "100%",
@@ -3929,14 +3929,12 @@
     "unique_stl": 18,
     "sliced": true,
     "validation": "release/letter-eryone-r1/validation.json",
-    "filament_slot_3": "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)",
     "filament_validation": "release/sunlu-pla-r1/validation.json",
     "filament_settings_id": [
-      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
-      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
-      "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)",
-      "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle"
-    ]
+      "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)"
+    ],
+    "filament_cleanup_validation": "release/unused-filaments-r1/letter-validation.json",
+    "filament_slot_1": "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)"
   },
   "Small Parts": {
     "project": "Small Parts.3mf",

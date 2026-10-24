@@ -40,13 +40,24 @@ def audit():
         assert (ROOT/sample['validation']).is_file()
     assert {p.name for p in ROOT.glob('*.3mf')}==expected, 'Unexpected root 3MF.'
     total=0
+    cleanup_sources={}
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
         filament_revision = None
+        cleanup_revision = None
+        if row.get('filament_cleanup_validation'):
+            cleanup_revision=json.loads((ROOT/row['filament_cleanup_validation']).read_text())
+            assert cleanup_revision['project_sha256']==row['sha256']
+            assert cleanup_revision['all_retained_material_parameters_preserved']
+            assert cleanup_revision['all_process_parameters_preserved']
+            assert cleanup_revision['geometry_and_poses_byte_preserved']
+            assert cleanup_revision['object_volume_overrides_preserved_except_slot_indexes']
+            assert cleanup_revision['native_reopen_verified'] and cleanup_revision['fresh_native_slices']
+            cleanup_sources[row['project']]=cleanup_revision['source_project_sha256']
         if row.get('filament_validation'):
             revision=json.loads((ROOT/row['filament_validation']).read_text())
             filament_revision=revision['projects'][title]
-            assert filament_revision['project_sha256']==row['sha256']
+            assert filament_revision['project_sha256']==(cleanup_revision['source_project_sha256'] if cleanup_revision else row['sha256'])
             assert filament_revision['all_print_parameters_preserved']
             assert filament_revision['geometry_poses_support_paint_object_volume_settings_byte_preserved']
         assert sha(ROOT/row['cad'])==row['cad_sha256'],row['cad']
@@ -57,11 +68,23 @@ def audit():
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
             if filament_revision:
                 for key,change in filament_revision['project_setting_changes'].items():
-                    assert s[key]==change['after'],(title,key)
+                    expected=cleanup_revision['project_setting_changes'][key]['after'] if cleanup_revision else change['after']
+                    assert s[key]==expected,(title,key)
                 for name,digest in filament_revision['preserved_archive_entries_sha256'].items():
+                    if cleanup_revision and name not in cleanup_revision['preserved_archive_entries_sha256']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
+            if cleanup_revision:
+                for key,change in cleanup_revision['project_setting_changes'].items():
+                    assert s[key]==change['after'],(title,key)
+                for name,digest in cleanup_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
+                assert s['filament_settings_id']==row['filament_settings_id']==cleanup_revision['retained_profiles']
             cfg=ET.fromstring(z.read('Metadata/model_settings.config'));info=ET.fromstring(z.read('Metadata/slice_info.config'))
             model=ET.fromstring(z.read('3D/3dmodel.model'))
+            if cleanup_revision:
+                slots={str(i+1) for i in range(len(s['filament_settings_id']))}
+                assert {m.get('value') for m in cfg.iter('metadata') if m.get('key')=='extruder'}==slots
+                assert {f.get('id') for f in info.iter('filament')}==slots
             assert s['printer_model']==row['printer']
             stencil='Stencils' in title
             locks=dict(sparse_infill_density='0%' if stencil else '8%',sparse_infill_pattern='gyroid',
@@ -105,7 +128,8 @@ def audit():
                 for obj in cfg.findall('object'):
                     components={c.get('objectid'):c for c in objects[obj.get('id')].find(C+'components')}
                     for part in obj.findall('part'):
-                        blue=skin.get('blue_layer_count')==5 and props(part).get('extruder')=='4'
+                        blue_slot='3' if cleanup_revision else '4'
+                        blue=skin.get('blue_layer_count')==5 and props(part).get('extruder')==blue_slot
                         reinforcement=props(part).get('name')=='Local solid screw reinforcement'
                         if not (blue or reinforcement):continue
                         assert part.get('subtype')=='modifier_part'
@@ -133,9 +157,15 @@ def audit():
                 name=f'Metadata/plate_{i}.gcode';data=z.read(name)
                 if filament_revision:
                     filament_plate=next(p for p in filament_revision['plates'] if p['plate']==i)
-                    assert hashlib.sha256(data).hexdigest()==filament_plate['gcode_sha256']
-                    stripped=re.sub(rb'(?m)^; filament_(?:settings_id|vendor|ids) = [^\r\n]*',b'',data)
-                    assert hashlib.sha256(stripped).hexdigest()==filament_plate['nonidentity_content_sha256']
+                    if cleanup_revision:
+                        cleanup_plate=next(p for p in cleanup_revision['plates'] if p['plate']==i)
+                        assert cleanup_plate['source_gcode_sha256']==filament_plate['gcode_sha256']
+                        assert hashlib.sha256(data).hexdigest()==cleanup_plate['gcode_sha256']
+                        if title=='Knot':assert cleanup_plate['model_z_by_filament_mm']['3']==[12.8,13.0,13.2,13.4,13.6]
+                    else:
+                        assert hashlib.sha256(data).hexdigest()==filament_plate['gcode_sha256']
+                        stripped=re.sub(rb'(?m)^; filament_(?:settings_id|vendor|ids) = [^\r\n]*',b'',data)
+                        assert hashlib.sha256(stripped).hexdigest()==filament_plate['nonidentity_content_sha256']
                 if title=='Knot':
                     expected=next(p for p in skin['plates'] if p['plate']==i)
                     assert (filament_plate['source_gcode_sha256'] if filament_revision else hashlib.sha256(data).hexdigest())==expected['gcode_sha256']
@@ -162,7 +192,10 @@ def audit():
             assert row['native_load_verified'] and row['native_compared_option_count']==134
             preset_count+=1
         for name,digest in report['protected_projects'].items():
-            assert sha(ROOT/name)==digest,(folder,name)
+            # These reports describe preservation at the preset-installation
+            # revision. A subsequent authorized cleanup links that exact source
+            # to its current project, rather than rewriting historical evidence.
+            assert cleanup_sources.get(name,sha(ROOT/name))==digest,(folder,name)
     if preset_count:print(f'{preset_count} current SUNLU preset snapshots: hashes and native loading evidence pass.')
 
 

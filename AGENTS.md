@@ -54,6 +54,25 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved Letter ERYONE filament, 2026-10-23:** the user reported the supplied
+  Desktop `Dara-A2L-Hammered-Finish-ERYONE-r3.3mf` was "a raging success" and
+  requested promotion of its filament to `Letter.3mf`. The supplied file is
+  byte-identical to the tracked **ERYONE r4 with r8 wall-base cleanup**, SHA-256
+  `b82b2356c92c14640b4107405c0fde04488d61ced29d34821572c8b84003f0f6`;
+  the Desktop filename still says r3. Letter slot **3** now carries the exact
+  saved **ERYONE Ultra Silk Copper - production baseline @BBL A2L** profile
+  identity (including its saved sample suffix) and **ERYONE** vendor. All
+  printing parameters already matched: **220 C** nozzle first/subsequent,
+  **55 C** Textured PEI bed, **0.98** flow, **7.5 mm3/s** maximum volumetric speed,
+  **60-80%** fan and **20 mm/s** minimum cooling speed. Preserve all geometry,
+  colors, poses, process settings, object/volume overrides and other slots.
+  All six native command streams are retained exactly; only the two filament
+  identity comments and their checksums change. No reslice was needed. Retain
+  Letter's existing AMS dryer arrays and six-plate tower arrays. Evidence and
+  current hashes are in `release/letter-eryone-r1/validation.json`. This records
+  user-reported sample success, not full-size Letter qualification; the actual
+  printer/printed file hash were not independently observed.
+
 - **User-saved crate clip filament revision, 2026-10-23:** preserve the saved
   `Small Parts - Crate Clips PETG.3mf` with **SUNLU PETG @BBL A1** replacing
   Generic PETG. Its saved nozzle temperatures are **250 C first layer / 245 C

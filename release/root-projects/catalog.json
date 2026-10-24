@@ -3125,7 +3125,7 @@
   },
   "Letter": {
     "project": "Letter.3mf",
-    "sha256": "d12cfb8b76a3aac2bdc667a0385896fc4ce2e770557d226551de5bd45b09a8f5",
+    "sha256": "581205d99306741df116ec997cd0f8b39f92f4f439c8bcd1ea99912b271a84ad",
     "cad": "Letter.scad",
     "cad_sha256": "86022a638a92d4521aaad18b6252f609b05b4ab5468ce43f3c5bb3c0e23f3060",
     "printer": "Bambu Lab A2L",
@@ -3920,7 +3920,9 @@
       }
     ],
     "unique_stl": 18,
-    "sliced": true
+    "sliced": true,
+    "validation": "release/letter-eryone-r1/validation.json",
+    "filament_slot_3": "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)"
   },
   "Small Parts": {
     "project": "Small Parts.3mf",

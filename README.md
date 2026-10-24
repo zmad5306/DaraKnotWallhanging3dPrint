@@ -14,9 +14,10 @@ Open the root 3MF files **as projects** in Bambu Studio to retain their saved pr
 
 ## Plate order and settings
 
+
 **Knot:** plates 1–10 are F1–F10. The successful r3 full-curve test supplied the infill-first correction and 0.20 mm support-interface spacing. The support top gap remains 0.20 mm. The earlier 42 raised lower-lap pads remain removed. Mortises, keys, glue recesses, colors and remaining settings are preserved.
 
-**Letter:** user-consolidated six-plate project: C1 on 1, C2 on 2, C3/C4/C5 on 3, and V1/V2/V3 on 4–6. The current user-saved project contains no stored toolpaths and needs slicing in Bambu Studio. Infill-first remains off. The CAD snapshot and catalog match this layout; earlier slice estimates and preservation reports describe the previous seven-plate revision.
+**Letter:** user-consolidated six-plate project: C1 on 1, C2 on 2, C3/C4/C5 on 3, and V1/V2/V3 on 4–6. Slot 3 uses the ERYONE Ultra Silk Copper profile from the successful supplied sample: 220 C nozzle, 55 C Textured PEI bed, 0.98 flow and 7.5 mm3/s maximum volumetric speed. These printing parameters already matched the existing project. All six native print command streams are retained; their filament identity comments and checksums are updated. The current veneer edge correction, wall-base cleanup, CAD/STL, poses and process settings are preserved; infill-first remains off. See the [ERYONE promotion record](release/letter-eryone-r1/README.md).
 
 The M has two short visible crown seams totaling 24.3 mm in front projection. The nearest core seam is 116.9 mm from a veneer seam, with no cross-layer seam intersections. This retains the latest correction to the former broad-fork layout description.
 
@@ -32,9 +33,9 @@ STLs are exported per material volume and modifier, with identical copies stored
 
 ## Verification and physical status
 
-The **seven projects / 30 plates** include six unsliced Letter plates. Knot and the sanding block are byte-identical copies of their approved source projects. Small Parts, the local clip/guide layouts and the stencils were freshly sliced. Meshes, support paint, effective settings and actual bed poses were compared against the sources. OpenSCAD entry files passed parsing checks. Native notices concern unavailable traditional timelapse, not floating regions or bed collisions.
+The **seven projects / 30 plates** include six sliced Letter plates. Current slice availability for each project is listed in the [release record](release/root-projects/README.md). Letter's ERYONE update preserves every mesh, support-paint record, pose, object/volume setting and native print command. OpenSCAD entry files previously passed parsing checks and the Letter CAD/STL are unchanged. Native notices concern unavailable traditional timelapse, not floating regions or bed collisions.
 
-The full-curve knot test and sanding thread test were reported successful. The full-size knot, corrected sanding clamp orientation, veneer carrier performance, jig fit, local clip/guide layouts and stencil performance have not all been physically qualified by these digital checks. No printer job was sent.
+The full-curve knot test, sanding thread test and supplied ERYONE hammered-finish sample were reported successful. The supplied Desktop ERYONE file retains an r3 filename but exactly matches the tracked r4 sample with r8 wall-base cleanup. Its success is recorded against that file's hash. Full-size Letter veneer performance remains unqualified. The full-size knot, corrected sanding clamp orientation, jig fit, local clip/guide layouts and stencil performance have not all been physically qualified by these digital checks. No printer job was sent.
 
 After pulling this branch, run `git lfs pull` and `python scripts/audit_root_projects.py`. The [release record](release/root-projects/README.md) contains source hashes, preservation checks and estimates. `audit_dara_release.py` also routes to this current audit.
 

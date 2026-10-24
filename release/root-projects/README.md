@@ -12,7 +12,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 | Small Parts - Sanding Block PLA | 1 | 4h 20m | 116.65 g |
 | Small Parts - Crate Stencils | 6 | 7h 49m | 162.47 g |
 
-Letter retains the user-saved six-plate consolidation, the veneer edge correction and the approved wall-nub cleanup. Current hashes/checks are in `../veneer-nub-cleanup-r8/`; `../veneer-edge-r7/` records the edge correction before cleanup. Original core-plate toolpaths are preserved. The veneers and all supports total 904.11 g. The requested ERYONE r4 finish sample is tracked in `../samples/` and declared in its catalog. All values are slicer estimates, not observed print times.
+Letter retains the user-saved six-plate consolidation, the veneer edge correction and the approved wall-nub cleanup. Slot 3 now uses the successful sample's ERYONE Ultra Silk Copper identity. Current hashes/checks are in `../letter-eryone-r1/`; `../veneer-nub-cleanup-r8/` records the preceding identical geometry, and `../veneer-edge-r7/` records the edge correction before cleanup. All six original native print command streams are preserved; only two filament identity comments and their checksums changed. The printing parameters already matched the sample, so no reslice was needed. The veneers and all supports total 904.11 g. The requested ERYONE r4 finish sample is tracked in `../samples/` and declared in its catalog, now with the user's October 23 success report. All values are slicer estimates, not observed print times.
 
 ## Preservation evidence
 

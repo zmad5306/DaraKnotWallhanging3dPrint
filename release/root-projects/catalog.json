@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "1d5fb586b295c3778cf7f6b487c98e74736eb40a28ac2c6d4ea43e4f1327cedf",
+    "sha256": "4fff61104aed129fb4911a6304cf51a2e93dff70867c687f90a165e9e4e6bc46",
     "cad": "Knot.scad",
     "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
     "printer": "Bambu Lab A2L",
@@ -3121,11 +3121,18 @@
       }
     ],
     "unique_stl": 109,
-    "validation": "release/knot-blue-five-layers-r1/validation.json"
+    "validation": "release/knot-blue-five-layers-r1/validation.json",
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
+      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
+      "Generic PLA Silk @BBL A2L",
+      "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle"
+    ]
   },
   "Letter": {
     "project": "Letter.3mf",
-    "sha256": "581205d99306741df116ec997cd0f8b39f92f4f439c8bcd1ea99912b271a84ad",
+    "sha256": "7040052d402418ade269f53d47eb4e2c487137656ab1687e21bfcd7bf74673f7",
     "cad": "Letter.scad",
     "cad_sha256": "86022a638a92d4521aaad18b6252f609b05b4ab5468ce43f3c5bb3c0e23f3060",
     "printer": "Bambu Lab A2L",
@@ -3922,11 +3929,18 @@
     "unique_stl": 18,
     "sliced": true,
     "validation": "release/letter-eryone-r1/validation.json",
-    "filament_slot_3": "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)"
+    "filament_slot_3": "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)",
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
+      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
+      "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)",
+      "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle"
+    ]
   },
   "Small Parts": {
     "project": "Small Parts.3mf",
-    "sha256": "4836fda4db3178917761f434d5e3b36d970c1cdf94cea82cca49edafa9e0f099",
+    "sha256": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9",
     "cad": "Small Parts.scad",
     "cad_sha256": "5761ed4d27bd32b12feb6819b5c327f926a3e818f95da58b0111c17df5bc710d",
     "printer": "Bambu Lab A1",
@@ -8599,7 +8613,14 @@
         ]
       }
     ],
-    "unique_stl": 29
+    "unique_stl": 29,
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle",
+      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle",
+      "Generic PLA Silk @BBL A1",
+      "SUNLU PLA Metallic @Bambu Lab A1 0.4 nozzle"
+    ]
   },
   "Small Parts - Crate Clips PETG": {
     "project": "Small Parts - Crate Clips PETG.3mf",
@@ -9396,7 +9417,7 @@
   },
   "Small Parts - Photo Cut Aligner": {
     "project": "Small Parts - Photo Cut Aligner.3mf",
-    "sha256": "a6084117e285567bbf9033b7220ed0d9d0fcd257c8d2aa44a3c8fbc473476f8d",
+    "sha256": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
     "cad": "Small Parts - Photo Cut Aligner.scad",
     "cad_sha256": "981e0a3aeae6e5981cbf0328c53de30ad602927d90f1cdbfa3251d017eca4480",
     "printer": "Bambu Lab A1",
@@ -9475,11 +9496,18 @@
         ]
       }
     ],
-    "unique_stl": 1
+    "unique_stl": 1,
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU Transparent PLA @BBL A1 - Dara tracing(Dara-Photo-Tracing-Backers-A1-r1.3mf)",
+      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle",
+      "Generic PLA Silk @BBL A1",
+      "SUNLU PLA Metallic @Bambu Lab A1 0.4 nozzle"
+    ]
   },
   "Small Parts - Sanding Block PLA": {
     "project": "Small Parts - Sanding Block PLA.3mf",
-    "sha256": "b4c389579763b98805c075a3747fdbc8dda9ed05250747c52675435b078a7459",
+    "sha256": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
     "cad": "Small Parts - Sanding Block PLA.scad",
     "cad_sha256": "67a729f105157ef010edb3a5f6ca2363fa407bd05b3d9f8d7f0883bfdbb2ccb4",
     "printer": "Bambu Lab A1",
@@ -9811,11 +9839,15 @@
         ]
       }
     ],
-    "unique_stl": 5
+    "unique_stl": 5,
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle"
+    ]
   },
   "Small Parts - Crate Stencils": {
     "project": "Small Parts - Crate Stencils.3mf",
-    "sha256": "ea602d2bd5ddc8ef93b352f679846d30adf0bdbdbdb650bd76b3b830cd18de23",
+    "sha256": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
     "cad": "Small Parts - Crate Stencils.scad",
     "cad_sha256": "183df75cef0477c2eb64915d4f72059c29dccc6e7c4f582c357be7ab4a854b0a",
     "printer": "Bambu Lab A1",
@@ -10212,6 +10244,10 @@
         ]
       }
     ],
-    "unique_stl": 6
+    "unique_stl": 6,
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle"
+    ]
   }
 }

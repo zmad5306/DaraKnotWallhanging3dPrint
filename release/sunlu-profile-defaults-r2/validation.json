@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-23",
+  "profiles": {
+    "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle": {
+      "source_path": "C:\\Users\\Zach\\AppData\\Roaming\\BambuStudio\\user\\2065895616\\filament\\base\\SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle.json",
+      "before_sha256": "75a066843e71505dfee267ee7fdca2e1917d47a56e73c8297b64025ac9a63d13",
+      "after_sha256": "75a066843e71505dfee267ee7fdca2e1917d47a56e73c8297b64025ac9a63d13",
+      "changed": false,
+      "differences": {},
+      "all_other_fields_preserved": true,
+      "native_load_verified": true,
+      "native_compared_option_count": 134,
+      "installed_and_read_back_verified": true
+    },
+    "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle": {
+      "source_path": "C:\\Users\\Zach\\AppData\\Roaming\\BambuStudio\\user\\2065895616\\filament\\base\\SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle.json",
+      "before_sha256": "96d24ca57b8075d8390c1e7596d66401b4b3792bcd1d01fc3b1463d1c532ab04",
+      "after_sha256": "622dfbaba575dbd4f2a1753e38d4754f4d9cfa86ca52a9b90f9bf44437a293ab",
+      "changed": true,
+      "differences": {
+        "textured_plate_temp": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "65"
+          ]
+        },
+        "textured_plate_temp_initial_layer": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "65"
+          ]
+        }
+      },
+      "all_other_fields_preserved": true,
+      "native_load_verified": true,
+      "native_compared_option_count": 134,
+      "sync_marked_for_update": true,
+      "installed_and_read_back_verified": true
+    },
+    "SUNLU PLA Metallic @Bambu Lab A1 0.4 nozzle": {
+      "source_path": "C:\\Users\\Zach\\AppData\\Roaming\\BambuStudio\\user\\2065895616\\filament\\base\\SUNLU PLA Metallic @Bambu Lab A1 0.4 nozzle.json",
+      "before_sha256": "f3bf615beb558fb291b64cebc15a1781d4539fae7a03c01cc4bfd838527f178b",
+      "after_sha256": "5c854f8f96f5b20d22541baad1c9c60111a0955889e7f54615c47593419fbc38",
+      "changed": true,
+      "differences": {
+        "filament_max_volumetric_speed": {
+          "before": [
+            "12"
+          ],
+          "after": [
+            "7.5"
+          ]
+        }
+      },
+      "all_other_fields_preserved": true,
+      "native_load_verified": true,
+      "native_compared_option_count": 134,
+      "sync_marked_for_update": true,
+      "installed_and_read_back_verified": true
+    },
+    "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle": {
+      "source_path": "C:\\Users\\Zach\\AppData\\Roaming\\BambuStudio\\user\\2065895616\\filament\\base\\SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle.json",
+      "before_sha256": "fcf0091ee8ef91c6b246aea2a3cad87f3cf5f965f150b561d1b4440313a9da2b",
+      "after_sha256": "988e61fc99e79c9bf7a04db51cbba69de8b7b5d8dbde806e956395cca6112b26",
+      "changed": true,
+      "differences": {
+        "textured_plate_temp": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "65"
+          ]
+        },
+        "textured_plate_temp_initial_layer": {
+          "before": [
+            "55"
+          ],
+          "after": [
+            "65"
+          ]
+        },
+        "filament_max_volumetric_speed": {
+          "before": [
+            "12"
+          ],
+          "after": [
+            "7.5"
+          ]
+        }
+      },
+      "all_other_fields_preserved": true,
+      "native_load_verified": true,
+      "native_compared_option_count": 134,
+      "sync_marked_for_update": true,
+      "installed_and_read_back_verified": true
+    }
+  },
+  "protected_projects": {
+    "Knot.3mf": "4fff61104aed129fb4911a6304cf51a2e93dff70867c687f90a165e9e4e6bc46",
+    "Letter.3mf": "7040052d402418ade269f53d47eb4e2c487137656ab1687e21bfcd7bf74673f7",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9"
+  },
+  "project_files_unchanged": true,
+  "resliced": false,
+  "printer_job_sent": false,
+  "bambu_cloud_sync": "Pending normal Bambu Studio sync; not remotely verified.",
+  "native_reference": "https://github.com/bambulab/BambuStudio/wiki/Command-Line-Usage",
+  "sync_reference": "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/Preset.cpp",
+  "native_validation": {
+    "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle": {
+      "error_string": "Success.",
+      "export_time": 246,
+      "layer_height": 0.0,
+      "plate_index": 0,
+      "prepare_time": 415,
+      "return_code": 0,
+      "sparse_infill_density": 0.0,
+      "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+      ],
+      "wall_loops": 0
+    },
+    "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle": {
+      "error_string": "Success.",
+      "export_time": 413,
+      "layer_height": 0.0,
+      "plate_index": 0,
+      "prepare_time": 2129,
+      "return_code": 0,
+      "sparse_infill_density": 0.0,
+      "upward_compatible_machine": [
+        "Bambu Lab H2S 0.4 nozzle"
+      ],
+      "wall_loops": 0
+    },
+    "SUNLU PLA Metallic @Bambu Lab A1 0.4 nozzle": {
+      "error_string": "Success.",
+      "export_time": 249,
+      "layer_height": 0.0,
+      "plate_index": 0,
+      "prepare_time": 413,
+      "return_code": 0,
+      "sparse_infill_density": 0.0,
+      "upward_compatible_machine": [
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+      ],
+      "wall_loops": 0
+    },
+    "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle": {
+      "error_string": "Success.",
+      "export_time": 510,
+      "layer_height": 0.0,
+      "plate_index": 0,
+      "prepare_time": 2038,
+      "return_code": 0,
+      "sparse_infill_density": 0.0,
+      "upward_compatible_machine": [
+        "Bambu Lab H2S 0.4 nozzle"
+      ],
+      "wall_loops": 0
+    }
+  },
+  "native_validation_passed": true,
+  "native_import_wrapper": "Temporary copies add only type=filament, required by CLI; installed user files preserve the original format.",
+  "local_preset_installation_complete": true,
+  "repository_audit": {
+    "command": "python scripts/audit_root_projects.py",
+    "passed": true,
+    "root_projects": 7,
+    "plates": 30,
+    "current_sunlu_preset_snapshots": 6
+  }
+}

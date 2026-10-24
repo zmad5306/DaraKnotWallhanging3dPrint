@@ -42,12 +42,24 @@ def audit():
     total=0
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
+        filament_revision = None
+        if row.get('filament_validation'):
+            revision=json.loads((ROOT/row['filament_validation']).read_text())
+            filament_revision=revision['projects'][title]
+            assert filament_revision['project_sha256']==row['sha256']
+            assert filament_revision['all_print_parameters_preserved']
+            assert filament_revision['geometry_poses_support_paint_object_volume_settings_byte_preserved']
         assert sha(ROOT/row['cad'])==row['cad_sha256'],row['cad']
         for obj in row['objects']:
             for part in obj['parts']:assert sha(ROOT/part['file'])==part['sha256'],part['file']
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if filament_revision:
+                for key,change in filament_revision['project_setting_changes'].items():
+                    assert s[key]==change['after'],(title,key)
+                for name,digest in filament_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             cfg=ET.fromstring(z.read('Metadata/model_settings.config'));info=ET.fromstring(z.read('Metadata/slice_info.config'))
             model=ET.fromstring(z.read('3D/3dmodel.model'))
             assert s['printer_model']==row['printer']
@@ -68,7 +80,7 @@ def audit():
             for c in model.iter(C+'component'):assert c.get(P+'path').lstrip('/') in names
             if title=='Knot':
                 skin=json.loads((ROOT/row['validation']).read_text())
-                assert skin['project_sha256']==row['sha256']
+                assert skin['project_sha256']==(filament_revision['source_project_sha256'] if filament_revision else row['sha256'])
                 if skin.get('white_show_face_pattern')=='hilbertcurve':
                     assert skin['brown_blue_joint_and_pin_toolpath_geometry_preserved']
                     assert skin['screw_modifiers_preserved_at_z12_4']
@@ -119,9 +131,14 @@ def audit():
                     if k.endswith('_file') and v:assert v in names,(title,k,v)
                 if not sliced:continue
                 name=f'Metadata/plate_{i}.gcode';data=z.read(name)
+                if filament_revision:
+                    filament_plate=next(p for p in filament_revision['plates'] if p['plate']==i)
+                    assert hashlib.sha256(data).hexdigest()==filament_plate['gcode_sha256']
+                    stripped=re.sub(rb'(?m)^; filament_(?:settings_id|vendor|ids) = [^\r\n]*',b'',data)
+                    assert hashlib.sha256(stripped).hexdigest()==filament_plate['nonidentity_content_sha256']
                 if title=='Knot':
                     expected=next(p for p in skin['plates'] if p['plate']==i)
-                    assert hashlib.sha256(data).hexdigest()==expected['gcode_sha256']
+                    assert (filament_plate['source_gcode_sha256'] if filament_revision else hashlib.sha256(data).hexdigest())==expected['gcode_sha256']
                     if skin.get('blue_layer_count')==5:
                         assert expected['model_z_by_filament_mm']['4']==[12.8,13.0,13.2,13.4,13.6]
                 assert hashlib.md5(data).hexdigest().upper()==z.read(name+'.md5').decode().strip().upper()
@@ -134,6 +151,19 @@ def audit():
         total+=row['plates']
         print(f'{title}: {row["plates"]} plates; project, CAD, STL and settings checks pass; '+('G-code checks pass.' if sliced else 'unsliced, slicing required.'))
     print(f'{len(catalog)} root projects / {total} plates. Slice availability and physical qualification remain as documented.')
+    preset_count=0
+    for folder in ('sunlu-profile-defaults-r2','sunlu-silk-copper-r1'):
+        report_path=ROOT/'release'/folder/'validation.json'
+        if not report_path.exists():continue
+        report=json.loads(report_path.read_text())
+        assert report['native_validation_passed'] and report['local_preset_installation_complete']
+        for name,row in report['profiles'].items():
+            assert sha(report_path.parent/'presets'/(name+'.json'))==row['after_sha256']
+            assert row['native_load_verified'] and row['native_compared_option_count']==134
+            preset_count+=1
+        for name,digest in report['protected_projects'].items():
+            assert sha(ROOT/name)==digest,(folder,name)
+    if preset_count:print(f'{preset_count} current SUNLU preset snapshots: hashes and native loading evidence pass.')
 
 
 if __name__=='__main__':audit()

@@ -54,6 +54,48 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved SUNLU preset defaults and copper preset, 2026-10-23:** promote
+  the previously retained overrides into the user's local Bambu Studio presets:
+  A2L **SUNLU PLA Basic** and **SUNLU PLA Metallic** use **65 C** Textured PEI
+  first/subsequent temperatures, and Metallic on **both A1 and A2L** uses
+  **7.5 mm3/s** maximum volumetric speed. A1 Basic stays at 65 C and 12 mm3/s.
+  All other preset fields and existing identities are preserved. The user also
+  requested **SUNLU PLA Silk Copper**, created for A1 and A2L from the actual
+  saved Generic PLA Silk slot 3 in Small Parts and Knot respectively: **220 C**
+  nozzle first/subsequent, **55 C** Textured PEI bed, **0.98** flow, **7.5 mm3/s**,
+  **60-80%** fan, **20 mm/s** minimum cooling speed and **0.5 mm** retraction.
+  Preserve every other production-derived copper parameter, including each
+  printer's saved start G-code. This creates named presets only; it does not
+  reassign project copper or replace Letter's approved ERYONE profile.
+  Existing 3MF files and slices remain byte-identical during these local preset
+  operations. Letter's unused Basic/Metallic slots retain their embedded 55 C
+  settings and 12 mm3/s Metallic limit; Photo Cut Aligner's unused Metallic slot
+  retains 12 mm3/s. Do not silently reapply new defaults to those saved projects.
+  Current preset snapshots and native validation are in
+  `release/sunlu-profile-defaults-r2/` and `release/sunlu-silk-copper-r1/`.
+  Local installation is verified; Bambu cloud synchronization is pending normal
+  app sync and has not been independently observed. Physical status is unchanged.
+
+- **Approved SUNLU PLA identities, 2026-10-23:** the user requested replacing
+  Generic PLA with their saved SUNLU PLA Basic presets and supplied SUNLU PLA
+  Metallic for Azurite blue. After comparison, the user explicitly approved
+  retaining existing project overrides. In the six root PLA projects, former
+  Generic PLA slots use the matching A1/A2L SUNLU PLA Basic profile; Azurite
+  slot 4 uses SUNLU PLA Metallic. Preserve Knot's **65 C** Textured PEI bed
+  first/subsequent settings (the A2L preset then defaulted to 55 C), and the blue
+  **7.5 mm3/s** maximum volumetric speed in Knot and Small Parts (the Metallic
+  presets then defaulted to 12). All other compared preset parameters matched the saved
+  slots. Basic and Metallic then had identical parameters on each printer and
+  distinct profile identities. Preserve copper silk, Letter's approved ERYONE,
+  transparent PLA, PETG, colors, all geometry and every process/material value.
+  Only profile names/vendor/IDs, slice material IDs, three G-code identity
+  comments and checksums change; all 29 stored native command streams remain
+  byte-identical outside those comments. The successful ERYONE sample stays
+  byte-identical. Current hashes, preset snapshots and preservation evidence
+  are in `release/sunlu-pla-r1/validation.json`; earlier geometry and physical
+  reports remain records of their source revisions. No reslice or new physical
+  qualification is implied.
+
 - **Approved Letter ERYONE filament, 2026-10-23:** the user reported the supplied
   Desktop `Dara-A2L-Hammered-Finish-ERYONE-r3.3mf` was "a raging success" and
   requested promotion of its filament to `Letter.3mf`. The supplied file is

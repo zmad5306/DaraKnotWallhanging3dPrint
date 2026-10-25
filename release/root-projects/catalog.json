@@ -1,9 +1,9 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+    "sha256": "78f22d0ff7e22da7e27a3fd4c761c1aa815a5bb26c3acea3392cbd23797c52e6",
     "cad": "Knot.scad",
-    "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
+    "cad_sha256": "f34d8fe66f602476027ac1de41bc215ea75b4a9908320378ef643a37425adc63",
     "printer": "Bambu Lab A2L",
     "plates": 10,
     "objects": [
@@ -265,6 +265,98 @@
                 -21.0,
                 -54.0,
                 12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J01-solid-lap-modifier.stl",
+            "sha256": "8408647ff280dec0199e16d88518132a48a0b697feee5eb5e3fca52ef26373b4",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J1 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 224,
+            "bounds": [
+              [
+                -294.005460098,
+                15.9341998994,
+                0.0
+              ],
+              [
+                -203.297373898,
+                111.620232098,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J02-solid-lap-modifier.stl",
+            "sha256": "5ed621f6f0bf0b2ed627d37147f9a4fe16292370264d24d33690e44a8d6f79b4",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J2 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 20,
+            "bounds": [
+              [
+                -85.5528716967,
+                116.859737001,
+                0.0
+              ],
+              [
+                -17.4027251974,
+                161.832703501,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J11-solid-lap-modifier.stl",
+            "sha256": "3bce1a5f3126456f74707d9156014056e19d61261df384e738ed075f2e4b5928",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J11 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 12,
+            "bounds": [
+              [
+                -85.5528716967,
+                -160.0,
+                0.0
+              ],
+              [
+                -17.3990477994,
+                -142.000014998,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J13-solid-lap-modifier.stl",
+            "sha256": "1440cdb7868281d3a4f75037178daff7b8cf2f50c60dc101a7ec8baf052d7121",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J13 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 108,
+            "bounds": [
+              [
+                -296.021973401,
+                -110.330037199,
+                0.0
+              ],
+              [
+                -202.831523702,
+                -17.2628768012,
+                13.5
               ]
             ]
           }
@@ -579,6 +671,52 @@
                 -322.81427,
                 83.0476532,
                 12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J01-solid-lap-modifier.stl",
+            "sha256": "8408647ff280dec0199e16d88518132a48a0b697feee5eb5e3fca52ef26373b4",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J1 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 224,
+            "bounds": [
+              [
+                -294.005460098,
+                15.9341998994,
+                0.0
+              ],
+              [
+                -203.297373898,
+                111.620232098,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J03-solid-lap-modifier.stl",
+            "sha256": "ab121f07ecd04ac87a92b48cfd15bea5bd4baa648e7e740ee1acdb5acbfcfc64",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J3 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 168,
+            "bounds": [
+              [
+                -271.884278797,
+                203.202743299,
+                0.0
+              ],
+              [
+                -178.225785002,
+                295.8374248,
+                13.5
               ]
             ]
           }
@@ -918,6 +1056,75 @@
                 12.4
               ]
             ]
+          },
+          {
+            "file": "Knot STL/J02-solid-lap-modifier.stl",
+            "sha256": "5ed621f6f0bf0b2ed627d37147f9a4fe16292370264d24d33690e44a8d6f79b4",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J2 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 20,
+            "bounds": [
+              [
+                -85.5528716967,
+                116.859737001,
+                0.0
+              ],
+              [
+                -17.4027251974,
+                161.832703501,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J03-solid-lap-modifier.stl",
+            "sha256": "ab121f07ecd04ac87a92b48cfd15bea5bd4baa648e7e740ee1acdb5acbfcfc64",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J3 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 168,
+            "bounds": [
+              [
+                -271.884278797,
+                203.202743299,
+                0.0
+              ],
+              [
+                -178.225785002,
+                295.8374248,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J04-solid-lap-modifier.stl",
+            "sha256": "7f1222439f85c701ef6364c0a170ce09e7fb313f01a4ed0df0940d25a462cf3a",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J4 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 156,
+            "bounds": [
+              [
+                -18.0,
+                201.665481403,
+                0.0
+              ],
+              [
+                0.0,
+                272.969009303,
+                13.5
+              ]
+            ]
           }
         ]
       },
@@ -1255,6 +1462,75 @@
                 12.4
               ]
             ]
+          },
+          {
+            "file": "Knot STL/J04-solid-lap-modifier.stl",
+            "sha256": "7f1222439f85c701ef6364c0a170ce09e7fb313f01a4ed0df0940d25a462cf3a",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J4 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 156,
+            "bounds": [
+              [
+                -18.0,
+                201.665481403,
+                0.0
+              ],
+              [
+                0.0,
+                272.969009303,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J05-solid-lap-modifier.stl",
+            "sha256": "7f453541c954b5d0469eb28e10fcad5787c25153bfe7ef7f85067043ad49167c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J5 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 168,
+            "bounds": [
+              [
+                178.261794999,
+                203.199998498,
+                0.0
+              ],
+              [
+                271.885610998,
+                295.839561597,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J06-solid-lap-modifier.stl",
+            "sha256": "c78d059158d43aa0d48dfd168bd7d41d9659a45c12c0cf82bb9f48d7473fb185",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J6 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 24,
+            "bounds": [
+              [
+                17.8879813999,
+                114.055721998,
+                0.0
+              ],
+              [
+                85.4396286011,
+                164.057904698,
+                13.5
+              ]
+            ]
           }
         ]
       },
@@ -1569,6 +1845,52 @@
                 12.4
               ]
             ]
+          },
+          {
+            "file": "Knot STL/J05-solid-lap-modifier.stl",
+            "sha256": "7f453541c954b5d0469eb28e10fcad5787c25153bfe7ef7f85067043ad49167c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J5 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 168,
+            "bounds": [
+              [
+                178.261794999,
+                203.199998498,
+                0.0
+              ],
+              [
+                271.885610998,
+                295.839561597,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J07-solid-lap-modifier.stl",
+            "sha256": "82671d7829ce100aaf2ffa15585455371a04fc33570ca74fea260e6cae660cdc",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J7 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 60,
+            "bounds": [
+              [
+                203.568366997,
+                17.8858833015,
+                0.0
+              ],
+              [
+                296.788160101,
+                114.538562998,
+                13.5
+              ]
+            ]
           }
         ]
       },
@@ -1784,6 +2106,98 @@
                 267.61663063000003,
                 -5.2558674,
                 12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J06-solid-lap-modifier.stl",
+            "sha256": "c78d059158d43aa0d48dfd168bd7d41d9659a45c12c0cf82bb9f48d7473fb185",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J6 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 24,
+            "bounds": [
+              [
+                17.8879813999,
+                114.055721998,
+                0.0
+              ],
+              [
+                85.4396286011,
+                164.057904698,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J07-solid-lap-modifier.stl",
+            "sha256": "82671d7829ce100aaf2ffa15585455371a04fc33570ca74fea260e6cae660cdc",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J7 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 60,
+            "bounds": [
+              [
+                203.568366997,
+                17.8858833015,
+                0.0
+              ],
+              [
+                296.788160101,
+                114.538562998,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J08-solid-lap-modifier.stl",
+            "sha256": "7b0f4eb728977db2f271b836523c903916269b400455cc2b9bf5cdf966f7ca4c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J8 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 104,
+            "bounds": [
+              [
+                202.810241699,
+                -110.387036301,
+                0.0
+              ],
+              [
+                295.995754004,
+                -17.2830232978,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J09-solid-lap-modifier.stl",
+            "sha256": "5b03c258aa4a3518c6f00321382e833a86d48b66ac30794177bad5722b9fc9cf",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J9 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 12,
+            "bounds": [
+              [
+                17.3790130019,
+                -160.0,
+                0.0
+              ],
+              [
+                85.4853743985,
+                -142.000000201,
+                13.5
               ]
             ]
           }
@@ -2098,6 +2512,52 @@
                 329.597961,
                 -196.640549,
                 12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J08-solid-lap-modifier.stl",
+            "sha256": "7b0f4eb728977db2f271b836523c903916269b400455cc2b9bf5cdf966f7ca4c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J8 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 104,
+            "bounds": [
+              [
+                202.810241699,
+                -110.387036301,
+                0.0
+              ],
+              [
+                295.995754004,
+                -17.2830232978,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J10-solid-lap-modifier.stl",
+            "sha256": "5b1382a0ce12222907726ebaece45c9e34fa9eb24ef04d70653925d2c5b6fe95",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J10 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 172,
+            "bounds": [
+              [
+                203.182515897,
+                -271.911899403,
+                0.0
+              ],
+              [
+                295.663330004,
+                -178.1125338,
+                13.5
               ]
             ]
           }
@@ -2435,6 +2895,75 @@
                 171.0,
                 -207.0,
                 12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J09-solid-lap-modifier.stl",
+            "sha256": "5b03c258aa4a3518c6f00321382e833a86d48b66ac30794177bad5722b9fc9cf",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J9 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 12,
+            "bounds": [
+              [
+                17.3790130019,
+                -160.0,
+                0.0
+              ],
+              [
+                85.4853743985,
+                -142.000000201,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J10-solid-lap-modifier.stl",
+            "sha256": "5b1382a0ce12222907726ebaece45c9e34fa9eb24ef04d70653925d2c5b6fe95",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J10 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 172,
+            "bounds": [
+              [
+                203.182515897,
+                -271.911899403,
+                0.0
+              ],
+              [
+                295.663330004,
+                -178.1125338,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J12-solid-lap-modifier.stl",
+            "sha256": "b9091e722dd12a3106307da3e4b4b79ba6575c613f487cf2a4ae06df8240d4bd",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J12 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 156,
+            "bounds": [
+              [
+                0.0,
+                -272.969039299,
+                0.0
+              ],
+              [
+                18.0,
+                -201.665511496,
+                13.5
               ]
             ]
           }
@@ -2802,6 +3331,75 @@
                 12.4
               ]
             ]
+          },
+          {
+            "file": "Knot STL/J11-solid-lap-modifier.stl",
+            "sha256": "3bce1a5f3126456f74707d9156014056e19d61261df384e738ed075f2e4b5928",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J11 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 12,
+            "bounds": [
+              [
+                -85.5528716967,
+                -160.0,
+                0.0
+              ],
+              [
+                -17.3990477994,
+                -142.000014998,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J12-solid-lap-modifier.stl",
+            "sha256": "b9091e722dd12a3106307da3e4b4b79ba6575c613f487cf2a4ae06df8240d4bd",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J12 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 156,
+            "bounds": [
+              [
+                0.0,
+                -272.969039299,
+                0.0
+              ],
+              [
+                18.0,
+                -201.665511496,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J14-solid-lap-modifier.stl",
+            "sha256": "1d741d6963eb8a03204e842fa29bc3969694c2e75b8a726067a2b5594a5b9c5b",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J14 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 168,
+            "bounds": [
+              [
+                -295.676169701,
+                -271.891200602,
+                0.0
+              ],
+              [
+                -203.222043604,
+                -178.169537596,
+                13.5
+              ]
+            ]
           }
         ]
       },
@@ -3116,11 +3714,57 @@
                 12.4
               ]
             ]
+          },
+          {
+            "file": "Knot STL/J13-solid-lap-modifier.stl",
+            "sha256": "1440cdb7868281d3a4f75037178daff7b8cf2f50c60dc101a7ec8baf052d7121",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J13 - LOWER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 108,
+            "bounds": [
+              [
+                -296.021973401,
+                -110.330037199,
+                0.0
+              ],
+              [
+                -202.831523702,
+                -17.2628768012,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/J14-solid-lap-modifier.stl",
+            "sha256": "1d741d6963eb8a03204e842fa29bc3969694c2e75b8a726067a2b5594a5b9c5b",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "100% solid lap - J14 - UPPER",
+              "sparse_infill_density": "100%",
+              "sparse_infill_pattern": "zig-zag"
+            },
+            "faces": 168,
+            "bounds": [
+              [
+                -295.676169701,
+                -271.891200602,
+                0.0
+              ],
+              [
+                -203.222043604,
+                -178.169537596,
+                13.5
+              ]
+            ]
           }
         ]
       }
     ],
-    "unique_stl": 109,
+    "unique_stl": 123,
     "validation": "release/knot-blue-five-layers-r1/validation.json",
     "filament_validation": "release/sunlu-pla-r1/validation.json",
     "filament_settings_id": [
@@ -3131,7 +3775,8 @@
     "filament_cleanup_validation": "release/unused-filaments-r1/knot-validation.json",
     "infill_first_revert_validation": "release/knot-infill-first-revert-r1/validation.json",
     "normal_supports_validation": "release/knot-normal-supports-r1/validation.json",
-    "joint_approval_validation": "release/knot-joint-approval-r1/validation.json"
+    "joint_approval_validation": "release/knot-joint-approval-r1/validation.json",
+    "solid_laps_validation": "release/knot-solid-laps-r1/validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",

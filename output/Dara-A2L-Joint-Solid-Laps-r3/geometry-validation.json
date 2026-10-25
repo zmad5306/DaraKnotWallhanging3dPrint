@@ -1,0 +1,721 @@
+{
+  "source_project": "Knot.3mf",
+  "source_sha256": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+  "joint": "J3",
+  "source_joint_record": [
+    1,
+    2,
+    [
+      -237.543513685689,
+      237.54351368568905
+    ],
+    45.0,
+    97.13035744359813,
+    [
+      -32.37678581453271,
+      32.37678581453271
+    ]
+  ],
+  "source_plan_sha256": "afcdb48a0671aaf9a2fbb8a38078d91e2997829f53c6558af0255b06b032b020",
+  "source_parts": [
+    "F2 A2L knot",
+    "F3 A2L knot"
+  ],
+  "crop_joint_local_xy_mm": [
+    [
+      -14.0,
+      -38.0
+    ],
+    [
+      66.0,
+      38.0
+    ]
+  ],
+  "crop_assembly_polygon": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -164.00440844228805,
+          257.34250355891237
+        ],
+        [
+          -217.74452381246567,
+          311.08261892909
+        ],
+        [
+          -274.3130663073895,
+          254.51407643416618
+        ],
+        [
+          -220.57295093721186,
+          200.77396106398857
+        ],
+        [
+          -164.00440844228805,
+          257.34250355891237
+        ]
+      ]
+    ]
+  },
+  "crop_z_mm": [
+    -0.01,
+    20
+  ],
+  "geometry_changes": "No changes to any existing mesh. Two new local solid-fill lap modifiers.",
+  "sample_dimensions_local_mm": [
+    80.0,
+    76.0,
+    13.5
+  ],
+  "nominal_show_face_mm": 13.5,
+  "photo_retainer_identity": {
+    "role": "PHOTO_RETAINER_BLIND_SCREW_HOLE",
+    "production_photo_anchor_flat_index": 6,
+    "production_photo_anchor_mm": [
+      -212.4037081422777,
+      287.8370974171094
+    ],
+    "modifier_center_error_mm": 6.156423926540591e-06,
+    "blind_hole_diameter_mm": 3.175,
+    "blind_hole_end_z_mm": 10.6999998,
+    "show_face_z_mm": 13.5,
+    "material_over_blind_hole_mm": 2.8000001999999995,
+    "modifier_radius_mm": 7,
+    "modifier_cap_z_mm": 12.4,
+    "full_modifier_footprint_has_unbroken_show_face": true,
+    "matches_M_mount": false
+  },
+  "existing_alignment_pin_retained": false,
+  "side_cut_checks": [
+    {
+      "z_mm": 0.1,
+      "edge": 0,
+      "material_interval_mm": 79.67198821633126,
+      "geometry": "MULTILINESTRING ((-14 -38, 17.82098303142416 -38), (18.14899481509291 -38, 66 -38))",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 0.1,
+      "edge": 1,
+      "material_interval_mm": 79.67199515663083,
+      "geometry": "MULTILINESTRING ((-14 38, 17.82098929381028 38), (18.14899413717946 38, 66 38))",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 0.1,
+      "edge": 2,
+      "material_interval_mm": 76.0,
+      "geometry": "LINESTRING (-14 -38, -14 38)",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 0.1,
+      "edge": 3,
+      "material_interval_mm": 31.291207512510532,
+      "geometry": "MULTILINESTRING ((66 -38, 66 -24.317875035143572), (66 20.390917452345896, 66 38))",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 2.5,
+      "edge": 0,
+      "material_interval_mm": 79.85198513105165,
+      "geometry": "MULTILINESTRING ((-14 -38, 18.000990461783257 -38), (18.149005330731615 -38, 66 -38))",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 2.5,
+      "edge": 1,
+      "material_interval_mm": 79.85200337726721,
+      "geometry": "MULTILINESTRING ((-14 38, 18.00098724113662 38), (18.14898386386941 38, 66 38))",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 2.5,
+      "edge": 2,
+      "material_interval_mm": 76.0,
+      "geometry": "LINESTRING (-14 -38, -14 38)",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 2.5,
+      "edge": 3,
+      "material_interval_mm": 41.77839414128782,
+      "geometry": "MULTILINESTRING ((66 -38, 66 -18.661020785651196), (66 15.560585073060986, 66 38))",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 8.5,
+      "edge": 0,
+      "material_interval_mm": 80.0,
+      "geometry": "LINESTRING (-14 -38, 66 -38)",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 8.5,
+      "edge": 1,
+      "material_interval_mm": 80.0,
+      "geometry": "LINESTRING (-14 38, 66 38)",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 8.5,
+      "edge": 2,
+      "material_interval_mm": 76.0,
+      "geometry": "LINESTRING (-14 -38, -14 38)",
+      "source_photo_opening_retained": true
+    },
+    {
+      "z_mm": 8.5,
+      "edge": 3,
+      "material_interval_mm": 41.77839414128349,
+      "geometry": "MULTILINESTRING ((66 -38, 66 -18.661020785651196), (66 15.560585073065313, 66 38))",
+      "source_photo_opening_retained": true
+    }
+  ],
+  "key_geometry_checks": [
+    {
+      "key": 1,
+      "z_mm": 5.1,
+      "minimum_section_clearance_mm": 0.14869884441005726
+    },
+    {
+      "key": 1,
+      "z_mm": 5.3,
+      "minimum_section_clearance_mm": 0.1486988454227079
+    },
+    {
+      "key": 1,
+      "z_mm": 5.5,
+      "minimum_section_clearance_mm": 0.14869884370731748
+    },
+    {
+      "key": 1,
+      "z_mm": 5.7,
+      "minimum_section_clearance_mm": 0.14869884436728484
+    },
+    {
+      "key": 1,
+      "z_mm": 5.9,
+      "minimum_section_clearance_mm": 0.14869884474937195
+    },
+    {
+      "key": 2,
+      "z_mm": 5.1,
+      "minimum_section_clearance_mm": 0.1499961557476155
+    },
+    {
+      "key": 2,
+      "z_mm": 5.3,
+      "minimum_section_clearance_mm": 0.1499961557476155
+    },
+    {
+      "key": 2,
+      "z_mm": 5.5,
+      "minimum_section_clearance_mm": 0.1499961557476155
+    },
+    {
+      "key": 2,
+      "z_mm": 5.7,
+      "minimum_section_clearance_mm": 0.14999615574761552
+    },
+    {
+      "key": 2,
+      "z_mm": 5.9,
+      "minimum_section_clearance_mm": 0.1499961557465639
+    }
+  ],
+  "bolsters": [
+    {
+      "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+      "source_object": "F3 A2L knot",
+      "center_assembly_mm": [
+        -212.403702,
+        287.837097
+      ],
+      "radius_mm": 7.0,
+      "z_mm": [
+        0,
+        12.4
+      ],
+      "source_volume_index": 8,
+      "complete_modifier_retained": true,
+      "crop_clearance_beyond_modifier_mm": 5.660534867576626
+    }
+  ],
+  "source_volume_checks": [
+    {
+      "source_name": "F2 A2L knot",
+      "source_plate": 2,
+      "source_object_settings": {
+        "name": "F2 A2L knot",
+        "brim_width": "1",
+        "enable_support": "1",
+        "extruder": "1",
+        "infill_direction": "137.27",
+        "support_interface_spacing": "0.2",
+        "null": null
+      },
+      "source_rotation": [
+        [
+          -0.0396014862,
+          -0.999215553,
+          0.0
+        ],
+        [
+          0.999215553,
+          -0.0396014862,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_delta_mm": [
+        1.0383396767317095,
+        -127.93418143053873,
+        0.0
+      ],
+      "volume_crops": [
+        {
+          "source_volume_index": 0,
+          "source_settings": {
+            "name": "Continuous knot volume",
+            "matrix": "1 0 0 -625.86946915917974 0 1 0 433.88968647753904 0 0 1 13.5 0 0 0 1",
+            "source_file": "Dara-A2L-Editable.3mf",
+            "source_object_id": "1",
+            "source_volume_id": "0",
+            "source_offset_x": "-312.93473052978516",
+            "source_offset_y": "216.94484710693359",
+            "source_offset_z": "6.75"
+          },
+          "subtype": "normal_part",
+          "crop_volume_mm3": 18552.902193679816,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 7.991061544437459e-14
+        },
+        {
+          "source_volume_index": 4,
+          "source_settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70199592480469 0 0 1 18.299999238530273 0 0 0 1",
+            "extruder": "2"
+          },
+          "subtype": "modifier_part",
+          "crop_volume_mm3": 480.7068092831772,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        },
+        {
+          "source_volume_index": 5,
+          "source_settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70198792480471 0 0 1 26.399999609265137 0 0 0 1",
+            "extruder": "3"
+          },
+          "subtype": "modifier_part",
+          "crop_volume_mm3": 67.48890743026962,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        }
+      ],
+      "model_volume_mm3": 18552.902193679816,
+      "bed_contact_area_mm2": 2418.318856678939
+    },
+    {
+      "source_name": "F3 A2L knot",
+      "source_plate": 3,
+      "source_object_settings": {
+        "name": "F3 A2L knot",
+        "brim_width": "1",
+        "enable_support": "1",
+        "extruder": "1",
+        "infill_direction": "69.0575",
+        "support_interface_spacing": "0.2",
+        "null": null
+      },
+      "source_rotation": [
+        [
+          0.913137115,
+          -0.40765256,
+          0.0
+        ],
+        [
+          0.40765256,
+          0.913137115,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_delta_mm": [
+        119.97845080591594,
+        43.54708572363087,
+        0.0
+      ],
+      "volume_crops": [
+        {
+          "source_volume_index": 0,
+          "source_settings": {
+            "name": "Continuous knot volume",
+            "matrix": "1 0 0 -372.90020775976564 0 1 0 667.67195101757807 0 0 1 13.5 0 0 0 1",
+            "source_file": "Dara-A2L-Editable.3mf",
+            "source_object_id": "2",
+            "source_volume_id": "0",
+            "source_offset_x": "-186.45010375976562",
+            "source_offset_y": "333.83598327636719",
+            "source_offset_z": "6.75"
+          },
+          "subtype": "normal_part",
+          "crop_volume_mm3": 37979.8850175476,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        },
+        {
+          "source_volume_index": 2,
+          "source_settings": {
+            "name": "Continuous knot volume",
+            "matrix": "1 0 0 -336.76645648730471 0 1 0 474.21897081152343 0 0 1 13.5 0 0 0 1",
+            "source_file": "Dara-A2L-Editable.3mf",
+            "source_object_id": "2",
+            "source_volume_id": "2",
+            "source_offset_x": "-168.38323211669922",
+            "source_offset_y": "237.10948944091797",
+            "source_offset_z": "6.75"
+          },
+          "subtype": "normal_part",
+          "crop_volume_mm3": 9125.485070930808,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        },
+        {
+          "source_volume_index": 4,
+          "source_settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 -251.17973363818359 0 1 0 579.64017461816411 0 0 1 18.299999238530273 0 0 0 1",
+            "extruder": "2"
+          },
+          "subtype": "modifier_part",
+          "crop_volume_mm3": 1834.7565253398664,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        },
+        {
+          "source_volume_index": 5,
+          "source_settings": {
+            "name": "Modifier",
+            "matrix": "1 0 0 -253.92971800878905 0 1 0 581.27911388476559 0 0 1 26.399999609265137 0 0 0 1",
+            "extruder": "3"
+          },
+          "subtype": "modifier_part",
+          "crop_volume_mm3": 276.91532011460714,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        },
+        {
+          "source_volume_index": 8,
+          "source_settings": {
+            "name": "Local solid screw reinforcement",
+            "matrix": "1 0 0 -424.80740378222657 0 1 0 575.67419416796884 0 0 1 17 0 0 0 1",
+            "sparse_infill_density": "100%"
+          },
+          "subtype": "modifier_part",
+          "crop_volume_mm3": 1905.7676471294526,
+          "crop_roundtrip_error_mm3": 0.0,
+          "added_outside_source_mm3": 0.0
+        }
+      ],
+      "model_volume_mm3": 47105.37008031037,
+      "bed_contact_area_mm2": 3078.591904360685
+    }
+  ],
+  "records": [
+    {
+      "name": "A - J3 F2 tongue",
+      "plate": 1,
+      "object_id": 1000,
+      "assembly_to_printer": [
+        [
+          -0.0396014862,
+          -0.999215553,
+          0.0,
+          309.4192016767317
+        ],
+        [
+          0.999215553,
+          -0.0396014862,
+          0.0,
+          355.4071535694613
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          42.462246217665836,
+          71.23013565096426,
+          0.0
+        ],
+        [
+          117.53775378233416,
+          148.76986434903577,
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+      "plate": 1,
+      "object_id": 1100,
+      "assembly_to_printer": [
+        [
+          0.913137115,
+          -0.40765256,
+          0.0,
+          506.949780805916
+        ],
+        [
+          0.40765256,
+          0.913137115,
+          0.0,
+          -40.894575276369125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "body_bounds_mm": [
+        [
+          157.71506191407872,
+          65.59760268112593,
+          0.0
+        ],
+        [
+          252.28493808592123,
+          154.40239731887405,
+          13.5
+        ]
+      ]
+    }
+  ],
+  "global_setting_changes": {
+    "print_settings_id": [
+      "Dara A2L - 8% gyroid - cosmetic zero-gap",
+      "A2L J3 and photo-retainer bolster - 8% gyroid - r2"
+    ],
+    "wipe_tower_y": [
+      [
+        "160",
+        "160",
+        "160",
+        "160",
+        "160",
+        "160",
+        "160",
+        "160",
+        "160",
+        "160"
+      ],
+      [
+        "160"
+      ]
+    ],
+    "wipe_tower_x": [
+      [
+        "285",
+        "190",
+        "120",
+        "105",
+        "184",
+        "30",
+        "178",
+        "146",
+        "169",
+        "170"
+      ],
+      [
+        "285"
+      ]
+    ]
+  },
+  "sample_slot_mapping": {
+    "1": "white",
+    "2": "wood tan",
+    "3": "Azurite blue"
+  },
+  "startup_tower": {
+    "plate": 1,
+    "filament_count": 3,
+    "conservative_estimated_filament_count": 3,
+    "estimated_depth_mm": 22.5,
+    "estimated_footprint_area_mm2": 901.0,
+    "conservative_model_convex_hull_clearance_mm": 43.47114373838166,
+    "intersects_model": false
+  },
+  "editable_sha256": "b44bbe0bc1f7c61793e99e12320a07c42a84e1455f3a2bb07f235f7b8b7c86f1",
+  "protected_before": {
+    "Knot.3mf": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+    "Knot.scad": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
+    "output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf": "c0e48a0b2f7c8bf8adcc696b9785d4ff49359dd9104536ca486a1ec50055154d",
+    "output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/geometry-validation.json": "d51a2be97c37b9dce763fcbada4c05eea3cd16701063880e14ff52eb6212fd69",
+    "Knot STL/F1-A2L-knot-volume-1.stl": "bf480655b5313f9848e195c0ca62a429cfe3b0e519dde227b96ed3d9292ffe28",
+    "Knot STL/F1-A2L-knot-volume-2.stl": "71af71f5d1924f4e7587f97e326a21ba08141fe90600bd1b7fda09de1ce14140",
+    "Knot STL/F1-A2L-knot-volume-3.stl": "404030604db2425b0bf18f70e27c570dc018c08486c035cc6c1b8c10ac6d8d5c",
+    "Knot STL/F1-A2L-knot-volume-4.stl": "fc6ed3ba0a26bb93e3aad182f30eb6bf5e9f1ef8617746b9324b6f9b0e35093d",
+    "Knot STL/F1-A2L-knot-volume-5.stl": "f2451c4bffd06bf4f45ead9349fa406c4dfb790bfe9a78e6cf3854d8f8f40f35",
+    "Knot STL/F1-A2L-knot-volume-6.stl": "fb7f0fe4b44eb22a0f9c3f28e70623c4cb462d638bb8445cc18eedb68b7776bb",
+    "Knot STL/F1-A2L-knot-volume-7.stl": "ca3de6f213b870e3288744fd68d890875ada9cc21de74c0524f8f7775078eeb1",
+    "Knot STL/F1-A2L-knot-volume-8.stl": "d4b4581b9d55515e75fff1b03dffd2b0d293a83fc78cc49b5fb967b8dbe9a936",
+    "Knot STL/F1-A2L-knot-volume-9.stl": "08748b0c44a9f6df8fc192045aefe392139f2a60b9f56e982d8fe1788220868e",
+    "Knot STL/F10-A2L-knot-volume-1.stl": "d854285caedce6c328b365c5167acf3eb2d2272f78ff4028c54ede58f0ee9afd",
+    "Knot STL/F10-A2L-knot-volume-10.stl": "bd84d8c3ac63a52fa5737e069553dfea28764398149a04c6ed1b67084ed355b8",
+    "Knot STL/F10-A2L-knot-volume-11.stl": "1b503da3b9e97a0621cad2d503a91a1d173c8b4d10304805f1acd713bd1c288f",
+    "Knot STL/F10-A2L-knot-volume-2.stl": "7908099445af13aaaf4495f58b5fa40f0014434227741b35c5afeb4252f0109d",
+    "Knot STL/F10-A2L-knot-volume-3.stl": "ebdd8faa39e51cfde7a094b01fff3cabe842207a65f259ea194187bee2e5daca",
+    "Knot STL/F10-A2L-knot-volume-4.stl": "b036fb1735bf0e0aa4b29726465a94bcccc16bfca5e089c9f35938b3d81a3508",
+    "Knot STL/F10-A2L-knot-volume-5.stl": "c1f11951b9237ef030b353aca745738b611c5b8a9284db35f3e1d694ab00de3c",
+    "Knot STL/F10-A2L-knot-volume-6.stl": "ab1472d72da9e8d09389c471186b9e908c466d8dcab55c13b9c7d693891257ea",
+    "Knot STL/F10-A2L-knot-volume-7.stl": "f7e09ce85cd80fd3c1f2329ac22eaf7c6b55df308af5e9d8f3931a002e10c162",
+    "Knot STL/F10-A2L-knot-volume-8.stl": "7cb06cc609ee798fdf81c277d259645d37311b01c4645df20eea83f2d09a2cd7",
+    "Knot STL/F10-A2L-knot-volume-9.stl": "e15e3c9cb2e73e1ee4f5e60b0bf000108f9698cd86611435aaeadf2d03f7f101",
+    "Knot STL/F2-A2L-knot-volume-1.stl": "99caf07053059a059ccb88c8c0f47a5a3651b6da36ef9c0c287be45ef10dd31e",
+    "Knot STL/F2-A2L-knot-volume-10.stl": "896e893495cc28f989d650300f6236801b7ff64b09c1201e3527eb33df6bf063",
+    "Knot STL/F2-A2L-knot-volume-11.stl": "e40a88e7e28141addd65eb062cd165fa2af634c36b8fd05d70229f851b800053",
+    "Knot STL/F2-A2L-knot-volume-2.stl": "e8d8affb5d559920bf5b24431f309641486e2a9af00fddc71b7b0169412400a4",
+    "Knot STL/F2-A2L-knot-volume-3.stl": "7a77ecf48edffcbbe9e0b8949ae20921deb28fe14ceba815f0149ed8a9fb7a01",
+    "Knot STL/F2-A2L-knot-volume-4.stl": "209e53d7527e6c873b5cdb242933c10bf5ec38dcff7e0d30aaef9190934b9828",
+    "Knot STL/F2-A2L-knot-volume-5.stl": "a7f87c579d0915f53f5bda8c6444ed422412635fbcccde97f327308235743a60",
+    "Knot STL/F2-A2L-knot-volume-6.stl": "65683cd52fec17130e0aaa51663419fc21e2de400402cad5fdb210ccf4fb324b",
+    "Knot STL/F2-A2L-knot-volume-7.stl": "136ac68907c99b5683095e32f5eab6b38641f9a362bc8258da0594ec05d65d03",
+    "Knot STL/F2-A2L-knot-volume-8.stl": "bb60d310791b90a4dd2b21458ce8c0cf7ee08ab492fef9750bebfde226afe6a8",
+    "Knot STL/F2-A2L-knot-volume-9.stl": "28c0c12d871003a7f5df29141de74d1035d4a3d7cc4885b39fc42447e57efc75",
+    "Knot STL/F3-A2L-knot-volume-1.stl": "86f757824196109c267e4608a7fe231a26d7e91cc5ce1248940d24ac9b52044f",
+    "Knot STL/F3-A2L-knot-volume-10.stl": "3fa4c91fd07ebd28551f395dcd97e3e8312b9fd83f3872fa00a59865beaf1834",
+    "Knot STL/F3-A2L-knot-volume-11.stl": "bbd071e17e4c2fc3527ad62743ef09166da60083936123434b85cfabd1f74fd6",
+    "Knot STL/F3-A2L-knot-volume-12.stl": "c14b3aa1fa869dd5cafb3b35f989affe4bae577d11847ca2c93a9ec6c0721d66",
+    "Knot STL/F3-A2L-knot-volume-2.stl": "03d786fbe01b6af7678116345f4684102dc4da36bae37378c0ed92a373b2af1a",
+    "Knot STL/F3-A2L-knot-volume-3.stl": "07369ad01013157337dd3311996d09fdc958d2643fb0ffcc9d6f0e471a28a0d5",
+    "Knot STL/F3-A2L-knot-volume-4.stl": "6b2c355684648b669ed2a6783bfb80da30d2c9a5a05ca792a58c06ce85030c1d",
+    "Knot STL/F3-A2L-knot-volume-5.stl": "b477cdcc6df1073fedd2ae0a31d8b4826b53e805bf0a7ac75184e7091cff33db",
+    "Knot STL/F3-A2L-knot-volume-6.stl": "8dff29b937e4f360e6c9d3ac9dda9f99df2975896c96776c977458c76fc15250",
+    "Knot STL/F3-A2L-knot-volume-7.stl": "b396844a5ed8302a640acaad3fceeb3274584a71a4c8d0c631bec623835605e4",
+    "Knot STL/F3-A2L-knot-volume-8.stl": "dac84d01a5cd8a1a396af662f668a6b07c5e71f46afa00ffebc001c97dd5fdf6",
+    "Knot STL/F3-A2L-knot-volume-9.stl": "6e1f6b6f500e4503a15dfedacd9df82ba6c179da25dde387dd200bebf277e1bc",
+    "Knot STL/F4-A2L-knot-volume-1.stl": "119de64a9c81ae8b0fce450445aad6f0e9c978ae267f924b3087200cb1fc7b9b",
+    "Knot STL/F4-A2L-knot-volume-10.stl": "f4cacf8a8143de3ce64727ad09157bb219207f2ac8493f0e021750d66a3d1cbb",
+    "Knot STL/F4-A2L-knot-volume-11.stl": "429e9881f2a1a602047a3f1b07c4df77877d809f2c0b4cbf85cd37ea8e683340",
+    "Knot STL/F4-A2L-knot-volume-12.stl": "5cb8f2c26fddd560e726d64837fc39f4bbd36292890773c406d1310928244ff4",
+    "Knot STL/F4-A2L-knot-volume-2.stl": "e1b7a0376a026583f8720ba5f5ddf9b328464a95dd4fc93f2f234e4995b6d23c",
+    "Knot STL/F4-A2L-knot-volume-3.stl": "19d8fe240db33104ace785d3f06674d5f7309c825705280da2f4a5e17fb35f18",
+    "Knot STL/F4-A2L-knot-volume-4.stl": "5ed8e7db080197f77221a5a0818967c6eaade17cd9d62efe07cf11b42d33c593",
+    "Knot STL/F4-A2L-knot-volume-5.stl": "24c9b3d1deec35586e514dad7c36937c5ce2cb91b1e31a2b83b3d3aae7cea974",
+    "Knot STL/F4-A2L-knot-volume-6.stl": "84fec95274e439481784aff3cb61f08a25e24cb43e94f4e10d1da6736e9682e2",
+    "Knot STL/F4-A2L-knot-volume-7.stl": "961afc2e4ad7acc6a4ff7001e7fa18349d82248873fe9569d73c576f9427dbaf",
+    "Knot STL/F4-A2L-knot-volume-8.stl": "37201ef9fc82d728a58f82aad90ea34cff1b95b149c6311998bba11ea6f40dde",
+    "Knot STL/F4-A2L-knot-volume-9.stl": "f29f68791718aff882326f378f3ad4e7a4f6680cb49de70d7bb01c69c59475b8",
+    "Knot STL/F5-A2L-knot-volume-1.stl": "c0fb72c15ced3a403ff86a91d2173014f375fa37f25112f240f69c033c4e37e2",
+    "Knot STL/F5-A2L-knot-volume-10.stl": "80f1735c8e54b495d5ac19d9216377e2fde037fdd0d0037e2b2d7843220867a9",
+    "Knot STL/F5-A2L-knot-volume-11.stl": "5cec4d2bc0f0a9fa950a970e19fbcf6113c58f45ab909e1f984eba6307fccb90",
+    "Knot STL/F5-A2L-knot-volume-2.stl": "d1f2752edbc95483fda3b1d3767448208829996aa2cb39ad65d5b7cdcbd74613",
+    "Knot STL/F5-A2L-knot-volume-3.stl": "c1175f56a36bb7a7d50d2e51f00d531fdc26e8133d0defce956446db0d4f055e",
+    "Knot STL/F5-A2L-knot-volume-4.stl": "ca849ce50ed51f6ba996b9143e3c2845706d6affd5f742313808384ff879b3e1",
+    "Knot STL/F5-A2L-knot-volume-5.stl": "11feea17c795a5c92065d0601dc10c53531f65e95ae5abbe5fabd1775ccf293a",
+    "Knot STL/F5-A2L-knot-volume-6.stl": "2e1ad36f8696671c254a83514810050b96be502b6794ea73b619c95c46895244",
+    "Knot STL/F5-A2L-knot-volume-7.stl": "3bd913e9db25b3deee3d29c5b295ea71ead6b661b7079668c7e25bd595b01092",
+    "Knot STL/F5-A2L-knot-volume-8.stl": "3a1ffd314d8a2775569fdb878ed488956e9a4274eed1468efd7f7a5c1ebb99b9",
+    "Knot STL/F5-A2L-knot-volume-9.stl": "2a1e2f31965959e8adae9fb213773e1e4e51f8804393a98000edf251461b4e0c",
+    "Knot STL/F6-A2L-knot-volume-1.stl": "43b6e6813005a732b373557cab40c4a4c19ce25da3cea2f729845d237752f4b5",
+    "Knot STL/F6-A2L-knot-volume-2.stl": "13e7be14dc6559e1a58c63ab0689ab0b76501a3362ad6bab296925bc87ffd183",
+    "Knot STL/F6-A2L-knot-volume-3.stl": "21120471e96de745756f196cb319383e583c6d0d69db2e2ac1523aba8e7db971",
+    "Knot STL/F6-A2L-knot-volume-4.stl": "205d334ee2022a69ec7796ba8cd57794d95fcd60b4718201adc509d9c2d1700c",
+    "Knot STL/F6-A2L-knot-volume-5.stl": "75601456c35fa7a4c934512349a13839aa7581af10fe720cd7a1104b6e4466c2",
+    "Knot STL/F6-A2L-knot-volume-6.stl": "19c3a8b6e7fb94aab3ec1cb74b9121189ec4fd5ae9fe36b4d2e6d6b95afce79c",
+    "Knot STL/F6-A2L-knot-volume-7.stl": "9d9e722a4b256111ea8e72a2fd728348f8fb13c45ac7217e9f8fad59f24839e0",
+    "Knot STL/F7-A2L-knot-volume-1.stl": "7d06471237bb67acd231fa3673c6012f3bb0353c5df749b685797a7a111585a6",
+    "Knot STL/F7-A2L-knot-volume-10.stl": "ab6e4a0bcd744fa617c206b2f45f075c7a5deb350a3a4170db66f2706fc868b6",
+    "Knot STL/F7-A2L-knot-volume-11.stl": "620490b489fea22c4a21106ed317a3afbe130fdb38853937d12df67dd08e924a",
+    "Knot STL/F7-A2L-knot-volume-2.stl": "5c98f9016320f07406d728a2a6aa2627690d00e4ef710116129dca6f54973959",
+    "Knot STL/F7-A2L-knot-volume-3.stl": "425f3b4f92afebcd04a1d8aef506e8dfa1d1f7ff7c0346c2a9999a76d90fad87",
+    "Knot STL/F7-A2L-knot-volume-4.stl": "0241fba0d53d646bfc7cbc2d8614aa17bf30dbf2d1de69bde2683b0b997d70fd",
+    "Knot STL/F7-A2L-knot-volume-5.stl": "5fa40284f5db11f560a8e98bd903880de081dd0971c59aab4415a663065b80f9",
+    "Knot STL/F7-A2L-knot-volume-6.stl": "a0329eb5c04ba4c0b75199d35cac798f3d0b8bf2286d155e688d9dc104c3e7e1",
+    "Knot STL/F7-A2L-knot-volume-7.stl": "6d03b97c5e4496fd04e92d089f907f7c225006a407dcb74c3f7ffbc3a118440e",
+    "Knot STL/F7-A2L-knot-volume-8.stl": "e3cb88e102d52a16f1fefc0f3610d1e5ca72eecfa3c4aa6838b074d2c7a7d042",
+    "Knot STL/F7-A2L-knot-volume-9.stl": "f9070eb22c25012ce183d95cf0141d1c744097a22845760be6f22d2ad0e2cb4a",
+    "Knot STL/F8-A2L-knot-volume-1.stl": "8133cddb37d66bb9f5ae8d8ec3dea37c326c810cac145aeb17a27a022a8681c5",
+    "Knot STL/F8-A2L-knot-volume-10.stl": "40e240b1774450da0d3a0e1ba68da12bdcc768e54a99a87b52bc6966c3e4c8c5",
+    "Knot STL/F8-A2L-knot-volume-11.stl": "3c09fe1552dbc5e5e1b555e91fd3ef12263753e890a50c75658ef821dc9c0d02",
+    "Knot STL/F8-A2L-knot-volume-12.stl": "caa6693ef268c19534530e77a7742c8b8bd1552ca639e28ab7c033324620642e",
+    "Knot STL/F8-A2L-knot-volume-2.stl": "f80b18c0e1751de21f79fe6d45f24466f6cda2bb40e328225919ee4a137fb86e",
+    "Knot STL/F8-A2L-knot-volume-3.stl": "8d1766e7f7a343c7b23eb6397129592738eb84af68563b44dc805a43b65a1c7c",
+    "Knot STL/F8-A2L-knot-volume-4.stl": "9b11a768809e611bbd89feac4e542d057302748aa614f08d025633069afe3f9f",
+    "Knot STL/F8-A2L-knot-volume-5.stl": "0b7e1705df573ccddaf0393ab42c0ebaf12b4b4465b05819ef9833977c1d5600",
+    "Knot STL/F8-A2L-knot-volume-6.stl": "bad497e8d3e92605d9b686f2e7ca5d5e81715e5fa836948c6c5f080fba8f5387",
+    "Knot STL/F8-A2L-knot-volume-7.stl": "9e5bec3818136509a5e91a3e7fb589965f422225e4aa4ff8e32339d4b0f0fa05",
+    "Knot STL/F8-A2L-knot-volume-8.stl": "d701e2edc14d67b023917e3331b1935be2f1b498e186e3c1231f6129d70bc1b5",
+    "Knot STL/F8-A2L-knot-volume-9.stl": "1898b2f1568d2ea201a551e3d560ca9cebe487a60e4e0027f409b3d074e29a1c",
+    "Knot STL/F9-A2L-knot-volume-1.stl": "936cf5fd69657ec65e5f5001db2e95959fe65bbb80c93059dc04d8ef19eb517b",
+    "Knot STL/F9-A2L-knot-volume-10.stl": "0de122f8c77cb317cc379573d9dfc73e55dc034f32b76b530fefb7c265176839",
+    "Knot STL/F9-A2L-knot-volume-11.stl": "45730a097a17179184ecd1918569c47e3b276e0e6169ee66d04905458daef844",
+    "Knot STL/F9-A2L-knot-volume-12.stl": "99a7faca4597a4b82b6a81ac99292219c7c5e861ca37f2ac503bf501a0d4159a",
+    "Knot STL/F9-A2L-knot-volume-13.stl": "1b8f524cc101ac586f3bdaed66b3e85ecf1ebdc3468fbce39d5c5528ecf1eacf",
+    "Knot STL/F9-A2L-knot-volume-2.stl": "b36e298bc74613a8434380e2aee86033beb0e792b58165f03336e0248924e68d",
+    "Knot STL/F9-A2L-knot-volume-3.stl": "6591bf70ff6c0cd756428237a86646d575eb136542acfe9a4f4bbf9fc9951912",
+    "Knot STL/F9-A2L-knot-volume-4.stl": "2847926aad8be3f4499d4e69c44a5bf543c34636d55d3a6dfc4e7b03db3c3e9a",
+    "Knot STL/F9-A2L-knot-volume-5.stl": "bf984f3198a350f50d380101142738891bcd2aff9ac588685cfeb38920c3e04e",
+    "Knot STL/F9-A2L-knot-volume-6.stl": "d9829db16febbd7da4878475cd62e871c9d45611c8c22b5c387c7663d6e325c3",
+    "Knot STL/F9-A2L-knot-volume-7.stl": "a5ab640ae1f3743af251cd4f6e00cdd84e09e57ac721cce8d44bec3bc69c3b55",
+    "Knot STL/F9-A2L-knot-volume-8.stl": "fa4df8ad4ed825c927e6ebe5504f884895061806eb42406fe29e871aafbc147b",
+    "Knot STL/F9-A2L-knot-volume-9.stl": "a33e1d354974e26ae6fed9c593ada8749e757b4a23819a1bd609662c527ca094"
+  },
+  "physical_fit_and_finish_unverified": true,
+  "accepted_sample": "output\\Dara-A2L-Joint-Photo-Retainer-Bolster-r2\\Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf",
+  "accepted_sample_sha256": "c0e48a0b2f7c8bf8adcc696b9785d4ff49359dd9104536ca486a1ec50055154d",
+  "experiment": "100% rectilinear instead of 8% gyroid in both 18 mm overlapping lap sections only",
+  "lap_modifier_joint_local_bounds_mm": [
+    [
+      0,
+      -38,
+      0
+    ],
+    [
+      18,
+      38,
+      13.5
+    ]
+  ],
+  "original_mesh_archive_entries_byte_identical": [
+    "3D/Objects/object_1.model",
+    "3D/Objects/object_2.model"
+  ],
+  "accepted_comparison": {
+    "original_volumes_preserved": 8,
+    "max_original_vertex_error_mm": 0.0,
+    "original_object_settings_and_poses_preserved": true,
+    "added_local_solid_fill_modifiers": 2
+  }
+}

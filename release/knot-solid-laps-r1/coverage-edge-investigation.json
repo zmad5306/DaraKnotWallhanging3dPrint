@@ -1,0 +1,27 @@
+{
+  "plate": 5,
+  "joint": 5,
+  "layer_z_mm": 6,
+  "finding": "A centerline-only ROI filter omitted bead edges. The full swept-width calculation resolves the apparent gap without any print-artifact change.",
+  "measurements": [
+    {
+      "slice": "source",
+      "coverage": {
+        "centerlines_only": 0.9149518363172745,
+        "full_bead_widths": 1.0
+      }
+    },
+    {
+      "slice": "solid_laps",
+      "coverage": {
+        "centerlines_only": 0.9149518363172745,
+        "full_bead_widths": 1.0
+      }
+    }
+  ],
+  "source_and_new_selected_segment_sets_identical": true,
+  "segment_set_sha256": [
+    "c03160b58577c4ec2a878ce322208ea636ce50b2dca11b560ec54deefcecd9f0",
+    "c03160b58577c4ec2a878ce322208ea636ce50b2dca11b560ec54deefcecd9f0"
+  ]
+}

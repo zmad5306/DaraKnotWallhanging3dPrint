@@ -43,9 +43,29 @@ def audit():
     cleanup_sources={}
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
+        lap_revision = None
+        if row.get('solid_laps_validation'):
+            lap_revision=json.loads((ROOT/row['solid_laps_validation']).read_text())
+            assert title=='Knot' and lap_revision['project_sha256']==row['sha256']
+            assert lap_revision['user_reported_solid_lap_success']
+            assert lap_revision['joint_count']==14 and lap_revision['solid_lap_modifier_count']==28
+            assert lap_revision['local_fill_settings']=={'sparse_infill_density':'100%','sparse_infill_pattern':'zig-zag'}
+            assert lap_revision['original_meshes_settings_support_paint_and_poses_preserved']
+            assert lap_revision['all_global_settings_preserved'] and lap_revision['original_knot_stls_unchanged']
+            assert lap_revision['native_reopen_verified'] and lap_revision['fresh_native_slices']
+            assert lap_revision['all_50_screw_modifiers_capped_at_z12_4']
+            assert lap_revision['all_five_skin_layers_cross_screw_boundaries']
+            assert lap_revision['all_28_lap_regions_disjoint_from_screw_bolsters']
+            assert len(lap_revision['plates'])==10 and len(lap_revision['groove_support_checks'])==28
+            assert len(lap_revision['removed_pad_toolpath_checks'])==42
+            for name,digest in lap_revision['evidence_sha256'].items():
+                assert sha((ROOT/row['solid_laps_validation']).parent/name)==digest,name
+            for name,digest in lap_revision['new_modifier_stls'].items():assert sha(ROOT/name)==digest,name
+            sample=ROOT/lap_revision['accepted_sample']
+            if sample.exists():assert sha(sample)==lap_revision['accepted_sample_sha256']
         if row.get('joint_approval_validation'):
             approval=json.loads((ROOT/row['joint_approval_validation']).read_text())
-            assert title=='Knot' and approval['project_sha256']==row['sha256']
+            assert title=='Knot' and approval['project_sha256']==(lap_revision['source_project_sha256'] if lap_revision else row['sha256'])
             assert approval['user_reported_sample_joint_fit_pass']
             assert approval['production_geometry_already_matches_accepted_sample']
             assert approval['new_geometry_changes']==[]
@@ -80,7 +100,7 @@ def audit():
             assert {r['name'] for r in name_revision['names']}=={'Left letter veneer','Right letter veneer','Center letter veneer'}
         if row.get('normal_supports_validation'):
             normal_revision=json.loads((ROOT/row['normal_supports_validation']).read_text())
-            assert title=='Knot' and normal_revision['project_sha256']==row['sha256']
+            assert title=='Knot' and normal_revision['project_sha256']==(lap_revision['source_project_sha256'] if lap_revision else row['sha256'])
             assert normal_revision['changed_setting']=={'support_type':['tree(auto)','normal(auto)']}
             assert normal_revision['all_other_project_settings_preserved']
             assert normal_revision['geometry_poses_paint_byte_preserved']
@@ -123,6 +143,9 @@ def audit():
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if lap_revision:
+                for name,digest in lap_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if name_revision and not veneer_revision:
                 for name,digest in name_revision['archive_entries_sha256'].items():
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
@@ -140,6 +163,7 @@ def audit():
                         expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in filament_revision['preserved_archive_entries_sha256'].items():
+                    if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     if cleanup_revision and name not in cleanup_revision['preserved_archive_entries_sha256']:continue
                     if name_revision and name in name_revision['changed_archive_entries']:continue
                     if veneer_revision and name in veneer_revision['changed_archive_entries']:continue
@@ -153,6 +177,7 @@ def audit():
                         expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in cleanup_revision['preserved_archive_entries_sha256'].items():
+                    if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     if name_revision and name in name_revision['changed_archive_entries']:continue
                     if veneer_revision and name in veneer_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
@@ -173,11 +198,13 @@ def audit():
             if title in ['Knot','Letter']:assert s['is_infill_first']=='0'
             if rollback_revision:
                 for name,digest in rollback_revision['preserved_archive_entries_sha256'].items():
+                    if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
                 assert all(m.get('key')!='is_infill_first' or m.get('value')=='0' for m in cfg.iter('metadata'))
             if normal_revision:
                 assert s['support_type']=='normal(auto)' and s['support_style']=='default'
                 for name,digest in normal_revision['preserved_archive_entries_sha256'].items():
+                    if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
                 assert all(props(o)['enable_support']=='1' and props(o)['support_interface_spacing']=='0.2' for o in cfg.findall('object'))
                 assert all(m.get('key')!='support_type' or m.get('value')=='normal(auto)' for m in cfg.iter('metadata'))
@@ -186,6 +213,14 @@ def audit():
             assert len(info.findall('plate'))==(row['plates'] if sliced else 0)
             if not sliced:assert not any(n.endswith('.gcode') for n in names)
             assert len(cfg.findall('object'))==len(row['objects'])
+            if lap_revision:
+                laps=[p for o in cfg.findall('object') for p in o.findall('part') if props(p).get('name','').startswith('100% solid lap - J')]
+                assert len(laps)==28
+                for part in laps:
+                    assert part.get('subtype')=='modifier_part'
+                    settings=props(part)
+                    assert settings['sparse_infill_density']=='100%' and settings['sparse_infill_pattern']=='zig-zag'
+                    assert 'extruder' not in settings
             resources={o.get('id') for o in model.find(C+'resources')}
             assert {i.get('objectid') for i in model.find(C+'build')}==resources
             for c in model.iter(C+'component'):assert c.get(P+'path').lstrip('/') in names
@@ -260,7 +295,15 @@ def audit():
                             if normal_revision:
                                 normal_plate=next(p for p in normal_revision['plates'] if p['plate']==i)
                                 assert normal_plate['source_gcode_sha256']==rollback_plate['gcode_sha256']
-                                assert hashlib.sha256(data).hexdigest()==normal_plate['gcode_sha256']
+                                if lap_revision:
+                                    lap_plate=next(p for p in lap_revision['plates'] if p['plate']==i)
+                                    assert lap_plate['source_gcode_sha256']==normal_plate['gcode_sha256']
+                                    assert hashlib.sha256(data).hexdigest()==lap_plate['gcode_sha256']
+                                    assert lap_plate['global_gcode_config_unchanged'] and lap_plate['body_8_percent_gyroid_retained']
+                                    assert lap_plate['top_surface_directions_preserved']
+                                    assert all(min(site['crossing_segments'].values())>=5 for site in lap_plate['screw_skin_continuity'])
+                                else:
+                                    assert hashlib.sha256(data).hexdigest()==normal_plate['gcode_sha256']
                                 assert normal_plate['gcode_setting_changes']=={'support_type':['tree(auto)','normal(auto)']}
                                 assert normal_plate['support_extrusion_moves']>0 and normal_plate['support_interface_extrusion_moves']>0
                                 assert normal_plate['model_z_by_filament_mm']['3']==[12.8,13.0,13.2,13.4,13.6]

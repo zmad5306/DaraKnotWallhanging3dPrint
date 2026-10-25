@@ -1,12 +1,14 @@
 # Root project release — October 22, 2026
 
+**October 25 solid Knot laps:** the main `Knot.3mf` now contains the accepted **100% rectilinear fill in both halves of all 14 joints**, with 28 local modifiers and ten fresh native slices. Surrounding bodies stay 8% gyroid; original geometry, normal supports, infill-first off, all 50 Z12.4 screw caps and five top layers remain. Native reopening, current geometry/toolpaths and adjacent CAD/STL are verified in [knot-solid-laps-r1](../knot-solid-laps-r1/README.md). The user reported "Solids work wonderfully" for r3; full-size performance remains unconfirmed. Earlier Knot records below describe source revisions, not current container/toolpath hashes.
+
 **October 25 main Letter correction:** the main six-plate `Letter.3mf` contains the corrected **Left letter veneer**, **Right letter veneer** and **Center letter veneer** on plates 4–6. All six plates use the corrected shared ERYONE speed/temperature/acceleration limits and have fresh native slices; all five core meshes, reinforcement, poses and structural settings are preserved. The separate candidates are superseded. Current hashes, geometry/process comparisons, all-three continuity inspection and native verification are in [letter-veneer-correction](../letter-veneer-correction/README.md). The earlier name-only record is historical. The whole-part physical shift remains unresolved.
 
 The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects with adjacent CAD/STL, and removal of all other 3MF files from source control. The follow-up explicitly allowed multiple supporting projects for different A1 settings, and added the sanding block and photo cut aligner. The user selected **keeping both locally saved layouts exactly** after being told they contain 12 crate clips and one photo guide.
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 78h 57m | 2284.10 g |
+| Knot | 10 | 82h 41m | 2442.13 g |
 | Letter | 6 | 90h 07m | 1223.79 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |
@@ -18,11 +20,11 @@ Letter retains the user-saved six-plate consolidation, the veneer edge correctio
 
 ## Accepted knot joint sample and publication, 2026-10-25
 
-The user reported **"Joints are ok"** after `Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf` and requested propagation, commit and push. The accepted J3 F2/F3 test is a direct crop of this exact root `Knot.3mf`. Its geometry/settings are already present across the existing production design; ten current native slices retain **infill-first off and normal supports**. No new geometry change or redundant reslice was required. The [publication record](../knot-joint-approval-r1/README.md) ties the user report to the supplied sample and production hashes, verifies the crop again and preserves the preceding all-14-joint checks. Joint fit is user-reported; the actual printed hash/printer were not independently observed. Bolster surface appearance and full-size performance are not newly confirmed.
+The user reported **"Joints are ok"** after `Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf` and requested propagation, commit and push. The accepted J3 F2/F3 test was a direct crop of the preceding root `Knot.3mf` revision. Its geometry/settings were already present across that production design; those ten native slices retained **infill-first off and normal supports**. No new geometry change or redundant reslice was required. The [publication record](../knot-joint-approval-r1/README.md) ties the user report to the supplied sample and production hashes, verifies the crop again and preserves the preceding all-14-joint checks. Joint fit is user-reported; the actual printed hash/printer were not independently observed. Bolster surface appearance and full-size performance are not newly confirmed.
 
 ## Knot normal supports, 2026-10-24
 
-Current root `Knot.3mf` uses **normal(auto)** supports on all ten F1–F10 plates at the user's request. Infill-first stays off. Only support type changes; saved support activation/paint, build-plate-only support, 0.20 mm object interface spacing and top gap, all other settings, geometry and poses remain. All ten plates are resliced and the final project passes native reopen. Actual support/interface extrusion, bed/tower clearance, current key/groove paths, colors, pad removal and reinforcement skin are checked. CAD/STL and the other six projects, including Letter's veneer tree supports, remain byte-identical. See [the current verification record](../knot-normal-supports-r1/README.md). Support cleanup and physical joint fit remain unqualified.
+The preceding root `Knot.3mf` revision introduced **normal(auto)** supports on all ten F1–F10 plates at the user's request. Infill-first stays off. Only support type changes; saved support activation/paint, build-plate-only support, 0.20 mm object interface spacing and top gap, all other settings, geometry and poses remain. All ten plates are resliced and the final project passes native reopen. Actual support/interface extrusion, bed/tower clearance, current key/groove paths, colors, pad removal and reinforcement skin are checked. CAD/STL and the other six projects, including Letter's veneer tree supports, remain byte-identical. See [the current verification record](../knot-normal-supports-r1/README.md). Support cleanup and physical joint fit remain unqualified.
 
 ## Knot infill-first rollback, 2026-10-24
 

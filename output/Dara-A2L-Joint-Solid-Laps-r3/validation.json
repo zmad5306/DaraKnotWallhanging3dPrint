@@ -1,0 +1,1421 @@
+{
+  "status": "DIGITAL_CHECKS_PASS_PHYSICAL_SOLID_LAP_TEST_PENDING",
+  "current_sample": "Dara-A2L-Joint-Solid-Laps-r3.3mf",
+  "sample_sha256": "6898ed006c82b81beafe6a90012c3e59d23e4124a75daf22d50db93e8a2a447c",
+  "accepted_sample_sha256": "c0e48a0b2f7c8bf8adcc696b9785d4ff49359dd9104536ca486a1ec50055154d",
+  "production_sha256": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+  "geometry_validation_sha256": "495b5000b197c8dde5ab94612e7ad06aa9c6fd656ca6e8efde7433421d1e518c",
+  "accepted_preservation": {
+    "original_volumes_preserved": 8,
+    "max_original_vertex_error_mm": 4.0000008993956726e-07,
+    "original_object_settings_and_poses_preserved": true,
+    "added_local_solid_fill_modifiers": 2
+  },
+  "native_roundtrip": {
+    "max_vertex_error_mm": 1.3602000024093286e-05,
+    "settings_unchanged": true,
+    "poses_preserved": true,
+    "source_bookkeeping": [
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -236.12931060791016 0 1 0 238.95771789550781 0 0 1 6.75 0 0 0 1",
+            "1 0 0 -472.25862923730472 0 1 0 477.91543589550781 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -247.48100280761719 0 1 0 237.58151245117188 0 0 1 9.1499996185302734 0 0 0 1",
+            "1 0 0 -494.96200580761717 0 1 0 475.16302445117185 0 0 1 18.299999238530273 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -247.48100280761719 0 1 0 227.71862030029297 0 0 1 13 0 0 0 1",
+            "1 0 0 -494.96200580761717 0 1 0 455.43723267089842 0 0 1 26 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            null,
+            "1 0 0 -231.17955780029297 0 1 0 243.907470703125 0 0 1 6.75 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -224.19235229492188 0 1 0 260.95980072021484 0 0 1 6.75 0 0 0 1",
+            "1 0 0 -448.3847042949219 0 1 0 521.91959409082028 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -187.42070007324219 0 1 0 240.8448486328125 0 0 1 6.75 0 0 0 1",
+            "1 0 0 -374.8414000732422 0 1 0 481.68969763281251 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -210.6734619140625 0 1 0 266.70701599121094 0 0 1 9.1499996185302734 0 0 0 1",
+            "1 0 0 -421.34692391406247 0 1 0 533.41401673242194 0 0 1 18.299999238530273 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -210.67345428466797 0 1 0 266.12154388427734 0 0 1 13 0 0 0 1",
+            "1 0 0 -421.34690065527343 0 1 0 532.24308025488278 0 0 1 26 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -212.40370178222656 0 1 0 287.83709716796875 0 0 1 6.1999998092651367 0 0 0 1",
+            "1 0 0 -424.80740378222657 0 1 0 575.67419416796884 0 0 1 12.399999619265136 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            null,
+            "1 0 0 -231.17955780029297 0 1 0 243.907470703125 0 0 1 6.75 0 0 0 1"
+          ]
+        }
+      }
+    ]
+  },
+  "native_reopen": {
+    "max_vertex_error_mm": 3.9999997625272954e-07,
+    "settings_unchanged": true,
+    "poses_preserved": true,
+    "source_bookkeeping": [
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -472.25862923730472 0 1 0 477.91543589550781 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -708.38794823730473 0 1 0 716.87315389550781 0 0 1 20.25 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -494.96200580761717 0 1 0 475.16302445117185 0 0 1 18.299999238530273 0 0 0 1",
+            "1 0 0 -742.44300880761716 0 1 0 712.74453645117183 0 0 1 27.449998858530272 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -494.96200580761717 0 1 0 455.43723267089842 0 0 1 26 0 0 0 1",
+            "1 0 0 -742.44300880761716 0 1 0 683.15584467089843 0 0 1 39 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "A - J3 F2 tongue",
+        "changes": {
+          "matrix": [
+            "1 0 0 -231.17955780029297 0 1 0 243.907470703125 0 0 1 6.75 0 0 0 1",
+            "1 0 0 -462.35910817089842 0 1 0 487.81494170312499 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -448.3847042949219 0 1 0 521.91959409082028 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -672.57705629492193 0 1 0 782.87938709082027 0 0 1 20.25 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -374.8414000732422 0 1 0 481.68969763281251 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -562.26210007324221 0 1 0 722.53454663281252 0 0 1 20.25 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -421.34692391406247 0 1 0 533.41401673242194 0 0 1 18.299999238530273 0 0 0 1",
+            "1 0 0 -632.02038591406244 0 1 0 800.12101773242193 0 0 1 27.449998858530272 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -421.34690065527343 0 1 0 532.24308025488278 0 0 1 26 0 0 0 1",
+            "1 0 0 -632.02034665527344 0 1 0 798.36461625488278 0 0 1 39 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -424.80740378222657 0 1 0 575.67419416796884 0 0 1 12.399999619265136 0 0 0 1",
+            "1 0 0 -637.21110578222658 0 1 0 863.51129116796892 0 0 1 18.599999429265136 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "B - J3 F3 socket and PHOTO RETAINER blind-hole bolster",
+        "changes": {
+          "matrix": [
+            "1 0 0 -231.17955780029297 0 1 0 243.907470703125 0 0 1 6.75 0 0 0 1",
+            "1 0 0 -462.35910817089842 0 1 0 487.81494170312499 0 0 1 13.5 0 0 0 1"
+          ]
+        }
+      }
+    ]
+  },
+  "changed_variable": "Both overlapping 18 mm lap regions: 8% gyroid to 100% rectilinear. All existing geometry unchanged.",
+  "lap_density_toolpath_checks": [
+    {
+      "piece": 1,
+      "z_mm": 0.2,
+      "lap_interior_area_mm2": 1243.1746101133235,
+      "commanded_coverage_fraction": 0.9993373849747886,
+      "features": [
+        "Bottom surface",
+        "Inner wall"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 0.4,
+      "lap_interior_area_mm2": 1256.6385212475611,
+      "commanded_coverage_fraction": 0.9999912626474089,
+      "features": [
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 0.6,
+      "lap_interior_area_mm2": 1256.6385145106735,
+      "commanded_coverage_fraction": 0.9999841843357336,
+      "features": [
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 0.8,
+      "lap_interior_area_mm2": 1256.63850771727,
+      "commanded_coverage_fraction": 0.9999912982694723,
+      "features": [
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 1.0,
+      "lap_interior_area_mm2": 1256.6385013410807,
+      "commanded_coverage_fraction": 0.9999840943166706,
+      "features": [
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 1.2,
+      "lap_interior_area_mm2": 1256.6384952350897,
+      "commanded_coverage_fraction": 0.9999786847746147,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 1.4,
+      "lap_interior_area_mm2": 1256.6384892247572,
+      "commanded_coverage_fraction": 0.9999635996287889,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 1.6,
+      "lap_interior_area_mm2": 1256.6384837389714,
+      "commanded_coverage_fraction": 0.9999786923311288,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 1.8,
+      "lap_interior_area_mm2": 1256.6384784843701,
+      "commanded_coverage_fraction": 0.9999636071898493,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 2.0,
+      "lap_interior_area_mm2": 1256.6384737031026,
+      "commanded_coverage_fraction": 0.9999786847742494,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 2.2,
+      "lap_interior_area_mm2": 1256.6384688528144,
+      "commanded_coverage_fraction": 0.999963599637127,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 2.4,
+      "lap_interior_area_mm2": 1256.6384645404664,
+      "commanded_coverage_fraction": 0.9999786847740944,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 2.6,
+      "lap_interior_area_mm2": 1256.6384605586325,
+      "commanded_coverage_fraction": 0.9999636072074676,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 2.8,
+      "lap_interior_area_mm2": 1256.638456809903,
+      "commanded_coverage_fraction": 0.9999786847739632,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 3.0,
+      "lap_interior_area_mm2": 1256.6384536315063,
+      "commanded_coverage_fraction": 0.9999636072297796,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 3.2,
+      "lap_interior_area_mm2": 1256.6384503474123,
+      "commanded_coverage_fraction": 0.9999786923305624,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 3.4,
+      "lap_interior_area_mm2": 1256.6384475899788,
+      "commanded_coverage_fraction": 0.9999636071931857,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 3.6,
+      "lap_interior_area_mm2": 1256.6384451542856,
+      "commanded_coverage_fraction": 0.999978684773766,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 3.8,
+      "lap_interior_area_mm2": 1256.638443238664,
+      "commanded_coverage_fraction": 0.9874512025711684,
+      "features": [
+        "Floating vertical shell",
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 4.0,
+      "lap_interior_area_mm2": 1256.6384411992078,
+      "commanded_coverage_fraction": 0.9919577312882115,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 4.2,
+      "lap_interior_area_mm2": 1256.638439696359,
+      "commanded_coverage_fraction": 0.9959198630832989,
+      "features": [
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 4.4,
+      "lap_interior_area_mm2": 1255.9515306230542,
+      "commanded_coverage_fraction": 0.9916672975937637,
+      "features": [
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 4.6,
+      "lap_interior_area_mm2": 1250.5539988768855,
+      "commanded_coverage_fraction": 0.9984395638414392,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Top surface"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 4.8,
+      "lap_interior_area_mm2": 190.30347930726305,
+      "commanded_coverage_fraction": 0.9983611460150239,
+      "features": [
+        "Gap infill",
+        "Top surface"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 5.0,
+      "lap_interior_area_mm2": 44.22870517128046,
+      "commanded_coverage_fraction": 0.9997957067236646,
+      "features": [
+        "Gap infill",
+        "Inner wall"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 5.2,
+      "lap_interior_area_mm2": 44.22870518927779,
+      "commanded_coverage_fraction": 0.9997890063601822,
+      "features": [
+        "Gap infill",
+        "Inner wall"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 5.4,
+      "lap_interior_area_mm2": 44.22870519232988,
+      "commanded_coverage_fraction": 0.9997815022631928,
+      "features": [
+        "Gap infill",
+        "Inner wall"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 5.6,
+      "lap_interior_area_mm2": 44.228705179486525,
+      "commanded_coverage_fraction": 0.9997798335367176,
+      "features": [
+        "Gap infill",
+        "Inner wall"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 5.8,
+      "lap_interior_area_mm2": 44.228705174111255,
+      "commanded_coverage_fraction": 0.9997815022631026,
+      "features": [
+        "Gap infill",
+        "Inner wall"
+      ]
+    },
+    {
+      "piece": 1,
+      "z_mm": 6.0,
+      "lap_interior_area_mm2": 44.22870514899496,
+      "commanded_coverage_fraction": 1.0000000000000002,
+      "features": [
+        "Top surface"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 5.2,
+      "lap_interior_area_mm2": 1075.3473881780646,
+      "commanded_coverage_fraction": 0.9911287882406457,
+      "features": [
+        "Bridge",
+        "Gap infill",
+        "Overhang wall"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 5.4,
+      "lap_interior_area_mm2": 1086.3975409435286,
+      "commanded_coverage_fraction": 0.9996393155564162,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 5.6,
+      "lap_interior_area_mm2": 1090.3208469129333,
+      "commanded_coverage_fraction": 0.9956757572674477,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 5.8,
+      "lap_interior_area_mm2": 1096.0368846305403,
+      "commanded_coverage_fraction": 0.9996667159890674,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 6.0,
+      "lap_interior_area_mm2": 1096.087834055966,
+      "commanded_coverage_fraction": 0.9994986699361527,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 6.2,
+      "lap_interior_area_mm2": 1096.0878369947995,
+      "commanded_coverage_fraction": 0.9991382333556638,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 6.4,
+      "lap_interior_area_mm2": 1096.0743599125221,
+      "commanded_coverage_fraction": 0.9845178911427518,
+      "features": [
+        "Floating vertical shell",
+        "Gap infill",
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 6.6,
+      "lap_interior_area_mm2": 1233.0667098951333,
+      "commanded_coverage_fraction": 0.9981146665700925,
+      "features": [
+        "Bridge",
+        "Floating vertical shell",
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 6.8,
+      "lap_interior_area_mm2": 1235.8517200411798,
+      "commanded_coverage_fraction": 0.982933613203127,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 7.0,
+      "lap_interior_area_mm2": 1202.4503408928579,
+      "commanded_coverage_fraction": 0.9988632470575705,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 7.2,
+      "lap_interior_area_mm2": 1202.458848418242,
+      "commanded_coverage_fraction": 0.998262064998518,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 7.4,
+      "lap_interior_area_mm2": 1202.450730210861,
+      "commanded_coverage_fraction": 0.9996986086309756,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 7.6,
+      "lap_interior_area_mm2": 1202.4588483975808,
+      "commanded_coverage_fraction": 0.9999830197402504,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 7.8,
+      "lap_interior_area_mm2": 1202.4588483296181,
+      "commanded_coverage_fraction": 0.9999649491546551,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 8.0,
+      "lap_interior_area_mm2": 1235.851718218832,
+      "commanded_coverage_fraction": 0.9808801424993124,
+      "features": [
+        "Floating vertical shell",
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 8.2,
+      "lap_interior_area_mm2": 1235.85172532742,
+      "commanded_coverage_fraction": 0.990394151349745,
+      "features": [
+        "Floating vertical shell",
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 8.4,
+      "lap_interior_area_mm2": 1235.8517368732917,
+      "commanded_coverage_fraction": 0.9879638910033446,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 8.6,
+      "lap_interior_area_mm2": 1235.8517442936368,
+      "commanded_coverage_fraction": 0.9986528005422002,
+      "features": [
+        "Floating vertical shell",
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 8.8,
+      "lap_interior_area_mm2": 1235.8517476803545,
+      "commanded_coverage_fraction": 0.9988269800149676,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 9.0,
+      "lap_interior_area_mm2": 1235.851746947138,
+      "commanded_coverage_fraction": 0.9992669322793375,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Outer wall",
+        "Sparse infill",
+        "Top surface"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 9.2,
+      "lap_interior_area_mm2": 623.2061877254049,
+      "commanded_coverage_fraction": 0.9985179781218008,
+      "features": [
+        "Inner wall",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 9.4,
+      "lap_interior_area_mm2": 623.206181366289,
+      "commanded_coverage_fraction": 0.9986913711755159,
+      "features": [
+        "Inner wall",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 9.6,
+      "lap_interior_area_mm2": 623.2061754525982,
+      "commanded_coverage_fraction": 0.9983051838844187,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Outer wall",
+        "Sparse infill",
+        "Top surface"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 9.8,
+      "lap_interior_area_mm2": 567.8832911053697,
+      "commanded_coverage_fraction": 0.9981381320307529,
+      "features": [
+        "Inner wall",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 10.0,
+      "lap_interior_area_mm2": 557.409678547468,
+      "commanded_coverage_fraction": 0.9983777774401325,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 10.2,
+      "lap_interior_area_mm2": 557.4096738751791,
+      "commanded_coverage_fraction": 0.9985733000154938,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 10.4,
+      "lap_interior_area_mm2": 557.4096695707038,
+      "commanded_coverage_fraction": 0.9984343035929613,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 10.6,
+      "lap_interior_area_mm2": 557.4096656232659,
+      "commanded_coverage_fraction": 0.9985730370163021,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 10.8,
+      "lap_interior_area_mm2": 557.4096620699864,
+      "commanded_coverage_fraction": 0.9984327350884087,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 11.0,
+      "lap_interior_area_mm2": 557.4096589672987,
+      "commanded_coverage_fraction": 0.9985725184356827,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 11.2,
+      "lap_interior_area_mm2": 557.4096561187903,
+      "commanded_coverage_fraction": 0.9984320747881381,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 11.4,
+      "lap_interior_area_mm2": 557.4096538105982,
+      "commanded_coverage_fraction": 0.9985723118202755,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 11.6,
+      "lap_interior_area_mm2": 557.409651719924,
+      "commanded_coverage_fraction": 0.9984321664588168,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 11.8,
+      "lap_interior_area_mm2": 557.4096501863876,
+      "commanded_coverage_fraction": 0.9985718879730182,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 12.0,
+      "lap_interior_area_mm2": 557.4096488862075,
+      "commanded_coverage_fraction": 0.9984266919706344,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 12.2,
+      "lap_interior_area_mm2": 557.4096480587335,
+      "commanded_coverage_fraction": 0.9985730154656007,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 12.4,
+      "lap_interior_area_mm2": 557.409647591868,
+      "commanded_coverage_fraction": 0.9984278849741303,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 12.6,
+      "lap_interior_area_mm2": 557.4096473988418,
+      "commanded_coverage_fraction": 0.9985721351689456,
+      "features": [
+        "Inner wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 12.8,
+      "lap_interior_area_mm2": 557.4096474576193,
+      "commanded_coverage_fraction": 0.991682611345872,
+      "features": [
+        "Floating vertical shell",
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 13.0,
+      "lap_interior_area_mm2": 557.4096477969607,
+      "commanded_coverage_fraction": 0.998529190203124,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 13.2,
+      "lap_interior_area_mm2": 557.4096483953074,
+      "commanded_coverage_fraction": 0.9983293527729377,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "piece": 2,
+      "z_mm": 13.4,
+      "lap_interior_area_mm2": 557.4096491777101,
+      "commanded_coverage_fraction": 0.9985153732490261,
+      "features": [
+        "Gap infill",
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    }
+  ],
+  "body_sparse_infill_retained_both_pieces": true,
+  "key_toolpath_checks": [
+    {
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_clearance_mm": 0.1329183591597453,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 49,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 50
+      }
+    },
+    {
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_clearance_mm": 0.1479000742286406,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_clearance_mm": 0.1479000742286406,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_clearance_mm": 0.1479183591597446,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_clearance_mm": 0.1479000742286406,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 69
+      }
+    },
+    {
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_clearance_mm": 0.1347682927939745,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_clearance_mm": 0.14976829279397613,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_clearance_mm": 0.1494850839604995,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_clearance_mm": 0.14976829279397613,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_clearance_mm": 0.14976829279397613,
+      "overlap_mm2": 0.0,
+      "order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 69
+      }
+    }
+  ],
+  "color_boundary_checks": [
+    {
+      "piece": 1,
+      "checked_native_segments": 1098
+    },
+    {
+      "piece": 2,
+      "checked_native_segments": 3654
+    }
+  ],
+  "groove_support_checks": [
+    {
+      "key": 1,
+      "interface_top_z_mm": 6.2,
+      "first_model_layer_z_mm": 6.6,
+      "air_gap_mm": 0.1999999999999993
+    },
+    {
+      "key": 2,
+      "interface_top_z_mm": 6.2,
+      "first_model_layer_z_mm": 6.6,
+      "air_gap_mm": 0.1999999999999993
+    }
+  ],
+  "photo_retainer_audit_sha256": "79ac0ae13443f63e003745af71bb9ef57d390c421361fc7d53456d9835012350",
+  "model_z_by_filament_mm": {
+    "1": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      1.8,
+      2.0,
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2,
+      3.4,
+      3.6,
+      3.8,
+      4.0,
+      4.2,
+      4.4,
+      4.6,
+      4.8,
+      5.0,
+      5.2,
+      5.4,
+      5.6,
+      5.8,
+      6.0,
+      6.2,
+      6.4,
+      6.6,
+      6.8,
+      7.0,
+      7.2,
+      7.4,
+      7.6,
+      7.8,
+      8.0,
+      8.2,
+      8.4,
+      8.6,
+      8.8,
+      9.0,
+      9.2,
+      9.4,
+      9.6,
+      9.8,
+      10.0,
+      10.2,
+      10.4,
+      10.6,
+      10.8,
+      11.0,
+      11.2,
+      11.4,
+      11.6,
+      11.8,
+      12.0,
+      12.2,
+      12.4,
+      12.6,
+      12.8,
+      13.0,
+      13.2,
+      13.4,
+      13.6
+    ],
+    "2": [
+      8.6,
+      8.8,
+      9.0,
+      9.2,
+      9.4,
+      9.6,
+      9.8,
+      10.0
+    ],
+    "3": [
+      12.8,
+      13.0,
+      13.2,
+      13.4,
+      13.6
+    ]
+  },
+  "bed_clearance_mm": 12.922000000000025,
+  "startup_tower": {
+    "plate": 1,
+    "filament_count": 3,
+    "conservative_estimated_filament_count": 3,
+    "estimated_depth_mm": 22.5,
+    "estimated_footprint_area_mm2": 901.0,
+    "conservative_model_convex_hull_clearance_mm": 43.47114644635494,
+    "intersects_model": false
+  },
+  "tower": {
+    "studio_model_convex_hull_clearance_mm": 43.46439118108664,
+    "actual_tower_bead_bounds_mm": [
+      [
+        282.922,
+        157.922
+      ],
+      [
+        317.078,
+        175.328
+      ]
+    ],
+    "actual_tower_to_other_extrusion_clearance_mm": 42.32650391892806,
+    "actual_tower_bed_clearance_mm": 12.922000000000025,
+    "tower_extrusion_segments": 1248,
+    "other_extrusion_segments": 147787,
+    "support_and_brim_extrusions_included": true,
+    "reserved_envelope_contains_actual_tower": true
+  },
+  "warnings": [],
+  "gcode_md5_verified": true,
+  "gcode_sha256": "33baa3cfb24294afa55f2bddc7a68a94a97657d78c3a32926687932a600b83d1",
+  "gcode_global_config_changes": {
+    "print_settings_id": [
+      "A2L J3 and photo-retainer bolster - 8% gyroid - r2",
+      "A2L J3 - solid laps - 8% gyroid bodies - r3"
+    ]
+  },
+  "estimated_seconds": 7888.18896484375,
+  "estimated_grams": 54.73918652534485,
+  "production_and_accepted_sample_unchanged": true,
+  "protected_after": {
+    "Knot.3mf": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+    "Knot.scad": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
+    "output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf": "c0e48a0b2f7c8bf8adcc696b9785d4ff49359dd9104536ca486a1ec50055154d",
+    "output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/geometry-validation.json": "d51a2be97c37b9dce763fcbada4c05eea3cd16701063880e14ff52eb6212fd69",
+    "Knot STL/F1-A2L-knot-volume-1.stl": "bf480655b5313f9848e195c0ca62a429cfe3b0e519dde227b96ed3d9292ffe28",
+    "Knot STL/F1-A2L-knot-volume-2.stl": "71af71f5d1924f4e7587f97e326a21ba08141fe90600bd1b7fda09de1ce14140",
+    "Knot STL/F1-A2L-knot-volume-3.stl": "404030604db2425b0bf18f70e27c570dc018c08486c035cc6c1b8c10ac6d8d5c",
+    "Knot STL/F1-A2L-knot-volume-4.stl": "fc6ed3ba0a26bb93e3aad182f30eb6bf5e9f1ef8617746b9324b6f9b0e35093d",
+    "Knot STL/F1-A2L-knot-volume-5.stl": "f2451c4bffd06bf4f45ead9349fa406c4dfb790bfe9a78e6cf3854d8f8f40f35",
+    "Knot STL/F1-A2L-knot-volume-6.stl": "fb7f0fe4b44eb22a0f9c3f28e70623c4cb462d638bb8445cc18eedb68b7776bb",
+    "Knot STL/F1-A2L-knot-volume-7.stl": "ca3de6f213b870e3288744fd68d890875ada9cc21de74c0524f8f7775078eeb1",
+    "Knot STL/F1-A2L-knot-volume-8.stl": "d4b4581b9d55515e75fff1b03dffd2b0d293a83fc78cc49b5fb967b8dbe9a936",
+    "Knot STL/F1-A2L-knot-volume-9.stl": "08748b0c44a9f6df8fc192045aefe392139f2a60b9f56e982d8fe1788220868e",
+    "Knot STL/F10-A2L-knot-volume-1.stl": "d854285caedce6c328b365c5167acf3eb2d2272f78ff4028c54ede58f0ee9afd",
+    "Knot STL/F10-A2L-knot-volume-10.stl": "bd84d8c3ac63a52fa5737e069553dfea28764398149a04c6ed1b67084ed355b8",
+    "Knot STL/F10-A2L-knot-volume-11.stl": "1b503da3b9e97a0621cad2d503a91a1d173c8b4d10304805f1acd713bd1c288f",
+    "Knot STL/F10-A2L-knot-volume-2.stl": "7908099445af13aaaf4495f58b5fa40f0014434227741b35c5afeb4252f0109d",
+    "Knot STL/F10-A2L-knot-volume-3.stl": "ebdd8faa39e51cfde7a094b01fff3cabe842207a65f259ea194187bee2e5daca",
+    "Knot STL/F10-A2L-knot-volume-4.stl": "b036fb1735bf0e0aa4b29726465a94bcccc16bfca5e089c9f35938b3d81a3508",
+    "Knot STL/F10-A2L-knot-volume-5.stl": "c1f11951b9237ef030b353aca745738b611c5b8a9284db35f3e1d694ab00de3c",
+    "Knot STL/F10-A2L-knot-volume-6.stl": "ab1472d72da9e8d09389c471186b9e908c466d8dcab55c13b9c7d693891257ea",
+    "Knot STL/F10-A2L-knot-volume-7.stl": "f7e09ce85cd80fd3c1f2329ac22eaf7c6b55df308af5e9d8f3931a002e10c162",
+    "Knot STL/F10-A2L-knot-volume-8.stl": "7cb06cc609ee798fdf81c277d259645d37311b01c4645df20eea83f2d09a2cd7",
+    "Knot STL/F10-A2L-knot-volume-9.stl": "e15e3c9cb2e73e1ee4f5e60b0bf000108f9698cd86611435aaeadf2d03f7f101",
+    "Knot STL/F2-A2L-knot-volume-1.stl": "99caf07053059a059ccb88c8c0f47a5a3651b6da36ef9c0c287be45ef10dd31e",
+    "Knot STL/F2-A2L-knot-volume-10.stl": "896e893495cc28f989d650300f6236801b7ff64b09c1201e3527eb33df6bf063",
+    "Knot STL/F2-A2L-knot-volume-11.stl": "e40a88e7e28141addd65eb062cd165fa2af634c36b8fd05d70229f851b800053",
+    "Knot STL/F2-A2L-knot-volume-2.stl": "e8d8affb5d559920bf5b24431f309641486e2a9af00fddc71b7b0169412400a4",
+    "Knot STL/F2-A2L-knot-volume-3.stl": "7a77ecf48edffcbbe9e0b8949ae20921deb28fe14ceba815f0149ed8a9fb7a01",
+    "Knot STL/F2-A2L-knot-volume-4.stl": "209e53d7527e6c873b5cdb242933c10bf5ec38dcff7e0d30aaef9190934b9828",
+    "Knot STL/F2-A2L-knot-volume-5.stl": "a7f87c579d0915f53f5bda8c6444ed422412635fbcccde97f327308235743a60",
+    "Knot STL/F2-A2L-knot-volume-6.stl": "65683cd52fec17130e0aaa51663419fc21e2de400402cad5fdb210ccf4fb324b",
+    "Knot STL/F2-A2L-knot-volume-7.stl": "136ac68907c99b5683095e32f5eab6b38641f9a362bc8258da0594ec05d65d03",
+    "Knot STL/F2-A2L-knot-volume-8.stl": "bb60d310791b90a4dd2b21458ce8c0cf7ee08ab492fef9750bebfde226afe6a8",
+    "Knot STL/F2-A2L-knot-volume-9.stl": "28c0c12d871003a7f5df29141de74d1035d4a3d7cc4885b39fc42447e57efc75",
+    "Knot STL/F3-A2L-knot-volume-1.stl": "86f757824196109c267e4608a7fe231a26d7e91cc5ce1248940d24ac9b52044f",
+    "Knot STL/F3-A2L-knot-volume-10.stl": "3fa4c91fd07ebd28551f395dcd97e3e8312b9fd83f3872fa00a59865beaf1834",
+    "Knot STL/F3-A2L-knot-volume-11.stl": "bbd071e17e4c2fc3527ad62743ef09166da60083936123434b85cfabd1f74fd6",
+    "Knot STL/F3-A2L-knot-volume-12.stl": "c14b3aa1fa869dd5cafb3b35f989affe4bae577d11847ca2c93a9ec6c0721d66",
+    "Knot STL/F3-A2L-knot-volume-2.stl": "03d786fbe01b6af7678116345f4684102dc4da36bae37378c0ed92a373b2af1a",
+    "Knot STL/F3-A2L-knot-volume-3.stl": "07369ad01013157337dd3311996d09fdc958d2643fb0ffcc9d6f0e471a28a0d5",
+    "Knot STL/F3-A2L-knot-volume-4.stl": "6b2c355684648b669ed2a6783bfb80da30d2c9a5a05ca792a58c06ce85030c1d",
+    "Knot STL/F3-A2L-knot-volume-5.stl": "b477cdcc6df1073fedd2ae0a31d8b4826b53e805bf0a7ac75184e7091cff33db",
+    "Knot STL/F3-A2L-knot-volume-6.stl": "8dff29b937e4f360e6c9d3ac9dda9f99df2975896c96776c977458c76fc15250",
+    "Knot STL/F3-A2L-knot-volume-7.stl": "b396844a5ed8302a640acaad3fceeb3274584a71a4c8d0c631bec623835605e4",
+    "Knot STL/F3-A2L-knot-volume-8.stl": "dac84d01a5cd8a1a396af662f668a6b07c5e71f46afa00ffebc001c97dd5fdf6",
+    "Knot STL/F3-A2L-knot-volume-9.stl": "6e1f6b6f500e4503a15dfedacd9df82ba6c179da25dde387dd200bebf277e1bc",
+    "Knot STL/F4-A2L-knot-volume-1.stl": "119de64a9c81ae8b0fce450445aad6f0e9c978ae267f924b3087200cb1fc7b9b",
+    "Knot STL/F4-A2L-knot-volume-10.stl": "f4cacf8a8143de3ce64727ad09157bb219207f2ac8493f0e021750d66a3d1cbb",
+    "Knot STL/F4-A2L-knot-volume-11.stl": "429e9881f2a1a602047a3f1b07c4df77877d809f2c0b4cbf85cd37ea8e683340",
+    "Knot STL/F4-A2L-knot-volume-12.stl": "5cb8f2c26fddd560e726d64837fc39f4bbd36292890773c406d1310928244ff4",
+    "Knot STL/F4-A2L-knot-volume-2.stl": "e1b7a0376a026583f8720ba5f5ddf9b328464a95dd4fc93f2f234e4995b6d23c",
+    "Knot STL/F4-A2L-knot-volume-3.stl": "19d8fe240db33104ace785d3f06674d5f7309c825705280da2f4a5e17fb35f18",
+    "Knot STL/F4-A2L-knot-volume-4.stl": "5ed8e7db080197f77221a5a0818967c6eaade17cd9d62efe07cf11b42d33c593",
+    "Knot STL/F4-A2L-knot-volume-5.stl": "24c9b3d1deec35586e514dad7c36937c5ce2cb91b1e31a2b83b3d3aae7cea974",
+    "Knot STL/F4-A2L-knot-volume-6.stl": "84fec95274e439481784aff3cb61f08a25e24cb43e94f4e10d1da6736e9682e2",
+    "Knot STL/F4-A2L-knot-volume-7.stl": "961afc2e4ad7acc6a4ff7001e7fa18349d82248873fe9569d73c576f9427dbaf",
+    "Knot STL/F4-A2L-knot-volume-8.stl": "37201ef9fc82d728a58f82aad90ea34cff1b95b149c6311998bba11ea6f40dde",
+    "Knot STL/F4-A2L-knot-volume-9.stl": "f29f68791718aff882326f378f3ad4e7a4f6680cb49de70d7bb01c69c59475b8",
+    "Knot STL/F5-A2L-knot-volume-1.stl": "c0fb72c15ced3a403ff86a91d2173014f375fa37f25112f240f69c033c4e37e2",
+    "Knot STL/F5-A2L-knot-volume-10.stl": "80f1735c8e54b495d5ac19d9216377e2fde037fdd0d0037e2b2d7843220867a9",
+    "Knot STL/F5-A2L-knot-volume-11.stl": "5cec4d2bc0f0a9fa950a970e19fbcf6113c58f45ab909e1f984eba6307fccb90",
+    "Knot STL/F5-A2L-knot-volume-2.stl": "d1f2752edbc95483fda3b1d3767448208829996aa2cb39ad65d5b7cdcbd74613",
+    "Knot STL/F5-A2L-knot-volume-3.stl": "c1175f56a36bb7a7d50d2e51f00d531fdc26e8133d0defce956446db0d4f055e",
+    "Knot STL/F5-A2L-knot-volume-4.stl": "ca849ce50ed51f6ba996b9143e3c2845706d6affd5f742313808384ff879b3e1",
+    "Knot STL/F5-A2L-knot-volume-5.stl": "11feea17c795a5c92065d0601dc10c53531f65e95ae5abbe5fabd1775ccf293a",
+    "Knot STL/F5-A2L-knot-volume-6.stl": "2e1ad36f8696671c254a83514810050b96be502b6794ea73b619c95c46895244",
+    "Knot STL/F5-A2L-knot-volume-7.stl": "3bd913e9db25b3deee3d29c5b295ea71ead6b661b7079668c7e25bd595b01092",
+    "Knot STL/F5-A2L-knot-volume-8.stl": "3a1ffd314d8a2775569fdb878ed488956e9a4274eed1468efd7f7a5c1ebb99b9",
+    "Knot STL/F5-A2L-knot-volume-9.stl": "2a1e2f31965959e8adae9fb213773e1e4e51f8804393a98000edf251461b4e0c",
+    "Knot STL/F6-A2L-knot-volume-1.stl": "43b6e6813005a732b373557cab40c4a4c19ce25da3cea2f729845d237752f4b5",
+    "Knot STL/F6-A2L-knot-volume-2.stl": "13e7be14dc6559e1a58c63ab0689ab0b76501a3362ad6bab296925bc87ffd183",
+    "Knot STL/F6-A2L-knot-volume-3.stl": "21120471e96de745756f196cb319383e583c6d0d69db2e2ac1523aba8e7db971",
+    "Knot STL/F6-A2L-knot-volume-4.stl": "205d334ee2022a69ec7796ba8cd57794d95fcd60b4718201adc509d9c2d1700c",
+    "Knot STL/F6-A2L-knot-volume-5.stl": "75601456c35fa7a4c934512349a13839aa7581af10fe720cd7a1104b6e4466c2",
+    "Knot STL/F6-A2L-knot-volume-6.stl": "19c3a8b6e7fb94aab3ec1cb74b9121189ec4fd5ae9fe36b4d2e6d6b95afce79c",
+    "Knot STL/F6-A2L-knot-volume-7.stl": "9d9e722a4b256111ea8e72a2fd728348f8fb13c45ac7217e9f8fad59f24839e0",
+    "Knot STL/F7-A2L-knot-volume-1.stl": "7d06471237bb67acd231fa3673c6012f3bb0353c5df749b685797a7a111585a6",
+    "Knot STL/F7-A2L-knot-volume-10.stl": "ab6e4a0bcd744fa617c206b2f45f075c7a5deb350a3a4170db66f2706fc868b6",
+    "Knot STL/F7-A2L-knot-volume-11.stl": "620490b489fea22c4a21106ed317a3afbe130fdb38853937d12df67dd08e924a",
+    "Knot STL/F7-A2L-knot-volume-2.stl": "5c98f9016320f07406d728a2a6aa2627690d00e4ef710116129dca6f54973959",
+    "Knot STL/F7-A2L-knot-volume-3.stl": "425f3b4f92afebcd04a1d8aef506e8dfa1d1f7ff7c0346c2a9999a76d90fad87",
+    "Knot STL/F7-A2L-knot-volume-4.stl": "0241fba0d53d646bfc7cbc2d8614aa17bf30dbf2d1de69bde2683b0b997d70fd",
+    "Knot STL/F7-A2L-knot-volume-5.stl": "5fa40284f5db11f560a8e98bd903880de081dd0971c59aab4415a663065b80f9",
+    "Knot STL/F7-A2L-knot-volume-6.stl": "a0329eb5c04ba4c0b75199d35cac798f3d0b8bf2286d155e688d9dc104c3e7e1",
+    "Knot STL/F7-A2L-knot-volume-7.stl": "6d03b97c5e4496fd04e92d089f907f7c225006a407dcb74c3f7ffbc3a118440e",
+    "Knot STL/F7-A2L-knot-volume-8.stl": "e3cb88e102d52a16f1fefc0f3610d1e5ca72eecfa3c4aa6838b074d2c7a7d042",
+    "Knot STL/F7-A2L-knot-volume-9.stl": "f9070eb22c25012ce183d95cf0141d1c744097a22845760be6f22d2ad0e2cb4a",
+    "Knot STL/F8-A2L-knot-volume-1.stl": "8133cddb37d66bb9f5ae8d8ec3dea37c326c810cac145aeb17a27a022a8681c5",
+    "Knot STL/F8-A2L-knot-volume-10.stl": "40e240b1774450da0d3a0e1ba68da12bdcc768e54a99a87b52bc6966c3e4c8c5",
+    "Knot STL/F8-A2L-knot-volume-11.stl": "3c09fe1552dbc5e5e1b555e91fd3ef12263753e890a50c75658ef821dc9c0d02",
+    "Knot STL/F8-A2L-knot-volume-12.stl": "caa6693ef268c19534530e77a7742c8b8bd1552ca639e28ab7c033324620642e",
+    "Knot STL/F8-A2L-knot-volume-2.stl": "f80b18c0e1751de21f79fe6d45f24466f6cda2bb40e328225919ee4a137fb86e",
+    "Knot STL/F8-A2L-knot-volume-3.stl": "8d1766e7f7a343c7b23eb6397129592738eb84af68563b44dc805a43b65a1c7c",
+    "Knot STL/F8-A2L-knot-volume-4.stl": "9b11a768809e611bbd89feac4e542d057302748aa614f08d025633069afe3f9f",
+    "Knot STL/F8-A2L-knot-volume-5.stl": "0b7e1705df573ccddaf0393ab42c0ebaf12b4b4465b05819ef9833977c1d5600",
+    "Knot STL/F8-A2L-knot-volume-6.stl": "bad497e8d3e92605d9b686f2e7ca5d5e81715e5fa836948c6c5f080fba8f5387",
+    "Knot STL/F8-A2L-knot-volume-7.stl": "9e5bec3818136509a5e91a3e7fb589965f422225e4aa4ff8e32339d4b0f0fa05",
+    "Knot STL/F8-A2L-knot-volume-8.stl": "d701e2edc14d67b023917e3331b1935be2f1b498e186e3c1231f6129d70bc1b5",
+    "Knot STL/F8-A2L-knot-volume-9.stl": "1898b2f1568d2ea201a551e3d560ca9cebe487a60e4e0027f409b3d074e29a1c",
+    "Knot STL/F9-A2L-knot-volume-1.stl": "936cf5fd69657ec65e5f5001db2e95959fe65bbb80c93059dc04d8ef19eb517b",
+    "Knot STL/F9-A2L-knot-volume-10.stl": "0de122f8c77cb317cc379573d9dfc73e55dc034f32b76b530fefb7c265176839",
+    "Knot STL/F9-A2L-knot-volume-11.stl": "45730a097a17179184ecd1918569c47e3b276e0e6169ee66d04905458daef844",
+    "Knot STL/F9-A2L-knot-volume-12.stl": "99a7faca4597a4b82b6a81ac99292219c7c5e861ca37f2ac503bf501a0d4159a",
+    "Knot STL/F9-A2L-knot-volume-13.stl": "1b8f524cc101ac586f3bdaed66b3e85ecf1ebdc3468fbce39d5c5528ecf1eacf",
+    "Knot STL/F9-A2L-knot-volume-2.stl": "b36e298bc74613a8434380e2aee86033beb0e792b58165f03336e0248924e68d",
+    "Knot STL/F9-A2L-knot-volume-3.stl": "6591bf70ff6c0cd756428237a86646d575eb136542acfe9a4f4bbf9fc9951912",
+    "Knot STL/F9-A2L-knot-volume-4.stl": "2847926aad8be3f4499d4e69c44a5bf543c34636d55d3a6dfc4e7b03db3c3e9a",
+    "Knot STL/F9-A2L-knot-volume-5.stl": "bf984f3198a350f50d380101142738891bcd2aff9ac588685cfeb38920c3e04e",
+    "Knot STL/F9-A2L-knot-volume-6.stl": "d9829db16febbd7da4878475cd62e871c9d45611c8c22b5c387c7663d6e325c3",
+    "Knot STL/F9-A2L-knot-volume-7.stl": "a5ab640ae1f3743af251cd4f6e00cdd84e09e57ac721cce8d44bec3bc69c3b55",
+    "Knot STL/F9-A2L-knot-volume-8.stl": "fa4df8ad4ed825c927e6ebe5504f884895061806eb42406fe29e871aafbc147b",
+    "Knot STL/F9-A2L-knot-volume-9.stl": "a33e1d354974e26ae6fed9c593ada8749e757b4a23819a1bd609662c527ca094"
+  },
+  "printer_job_sent": false,
+  "physical_fit_clamping_resistance_and_surface_finish_unverified": true
+}

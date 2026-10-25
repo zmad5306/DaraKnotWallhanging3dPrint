@@ -657,3 +657,172 @@ if ((plate == 0 || plate == 10) && show_modifiers)
  translate(plate == 0 ? [396.0, -768.0, 0] : [0,0,0])
   multmatrix([[0.997912921, -0.0645740023, 0.0, 485.79029], [0.0645740023, 0.997912921, 0.0, 321.847285], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
    color("#FF00FF") import("Knot STL/F10-A2L-knot-volume-11.stl", convexity=20);
+
+// Approved 100% rectilinear lap modifiers; original model geometry retained.
+// Plate 1: 100% solid lap - J1 - UPPER
+if ((plate == 0 || plate == 1) && show_modifiers)
+ translate(plate == 0 ? [0.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.194963642, -0.98081047, 0.0, 149.219068], [0.98081047, -0.194963642, 0.0, 298.872868], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J01-solid-lap-modifier.stl", convexity=20);
+
+// Plate 1: 100% solid lap - J2 - UPPER
+if ((plate == 0 || plate == 1) && show_modifiers)
+ translate(plate == 0 ? [0.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.194963642, -0.98081047, 0.0, 149.219068], [0.98081047, -0.194963642, 0.0, 298.872868], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J02-solid-lap-modifier.stl", convexity=20);
+
+// Plate 1: 100% solid lap - J11 - UPPER
+if ((plate == 0 || plate == 1) && show_modifiers)
+ translate(plate == 0 ? [0.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.194963642, -0.98081047, 0.0, 149.219068], [0.98081047, -0.194963642, 0.0, 298.872868], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J11-solid-lap-modifier.stl", convexity=20);
+
+// Plate 1: 100% solid lap - J13 - UPPER
+if ((plate == 0 || plate == 1) && show_modifiers)
+ translate(plate == 0 ? [0.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.194963642, -0.98081047, 0.0, 149.219068], [0.98081047, -0.194963642, 0.0, 298.872868], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J13-solid-lap-modifier.stl", convexity=20);
+
+// Plate 2: 100% solid lap - J1 - LOWER
+if ((plate == 0 || plate == 2) && show_modifiers)
+ translate(plate == 0 ? [396.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.0396014862, -0.999215553, 0.0, 308.380862], [0.999215553, -0.0396014862, 0.0, 483.341335], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J01-solid-lap-modifier.stl", convexity=20);
+
+// Plate 2: 100% solid lap - J3 - LOWER
+if ((plate == 0 || plate == 2) && show_modifiers)
+ translate(plate == 0 ? [396.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.0396014862, -0.999215553, 0.0, 308.380862], [0.999215553, -0.0396014862, 0.0, 483.341335], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J03-solid-lap-modifier.stl", convexity=20);
+
+// Plate 3: 100% solid lap - J2 - LOWER
+if ((plate == 0 || plate == 3) && show_modifiers)
+ translate(plate == 0 ? [792.0, 0.0, 0] : [0,0,0])
+  multmatrix([[0.913137115, -0.40765256, 0.0, 386.9713300000001], [0.40765256, 0.913137115, 0.0, -84.441661], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J02-solid-lap-modifier.stl", convexity=20);
+
+// Plate 3: 100% solid lap - J3 - UPPER
+if ((plate == 0 || plate == 3) && show_modifiers)
+ translate(plate == 0 ? [792.0, 0.0, 0] : [0,0,0])
+  multmatrix([[0.913137115, -0.40765256, 0.0, 386.9713300000001], [0.40765256, 0.913137115, 0.0, -84.441661], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J03-solid-lap-modifier.stl", convexity=20);
+
+// Plate 3: 100% solid lap - J4 - UPPER
+if ((plate == 0 || plate == 3) && show_modifiers)
+ translate(plate == 0 ? [792.0, 0.0, 0] : [0,0,0])
+  multmatrix([[0.913137115, -0.40765256, 0.0, 386.9713300000001], [0.40765256, 0.913137115, 0.0, -84.441661], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J04-solid-lap-modifier.stl", convexity=20);
+
+// Plate 4: 100% solid lap - J4 - LOWER
+if ((plate == 0 || plate == 4) && show_modifiers)
+ translate(plate == 0 ? [1188.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.915804697, -0.4016239, 0.0, 384.50685999999996], [0.4016239, -0.915804697, 0.0, 405.079072], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J04-solid-lap-modifier.stl", convexity=20);
+
+// Plate 4: 100% solid lap - J5 - UPPER
+if ((plate == 0 || plate == 4) && show_modifiers)
+ translate(plate == 0 ? [1188.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.915804697, -0.4016239, 0.0, 384.50685999999996], [0.4016239, -0.915804697, 0.0, 405.079072], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J05-solid-lap-modifier.stl", convexity=20);
+
+// Plate 4: 100% solid lap - J6 - LOWER
+if ((plate == 0 || plate == 4) && show_modifiers)
+ translate(plate == 0 ? [1188.0, 0.0, 0] : [0,0,0])
+  multmatrix([[-0.915804697, -0.4016239, 0.0, 384.50685999999996], [0.4016239, -0.915804697, 0.0, 405.079072], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J06-solid-lap-modifier.stl", convexity=20);
+
+// Plate 5: 100% solid lap - J5 - LOWER
+if ((plate == 0 || plate == 5) && show_modifiers)
+ translate(plate == 0 ? [0.0, -384.0, 0] : [0,0,0])
+  multmatrix([[0.0394260095, -0.999222493, 0.0, 308.44139], [0.999222493, 0.0394260095, 0.0, -163.33550400000001], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J05-solid-lap-modifier.stl", convexity=20);
+
+// Plate 5: 100% solid lap - J7 - LOWER
+if ((plate == 0 || plate == 5) && show_modifiers)
+ translate(plate == 0 ? [0.0, -384.0, 0] : [0,0,0])
+  multmatrix([[0.0394260095, -0.999222493, 0.0, 308.44139], [0.999222493, 0.0394260095, 0.0, -163.33550400000001], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J07-solid-lap-modifier.stl", convexity=20);
+
+// Plate 6: 100% solid lap - J6 - UPPER
+if ((plate == 0 || plate == 6) && show_modifiers)
+ translate(plate == 0 ? [396.0, -384.0, 0] : [0,0,0])
+  multmatrix([[0.191586725, -0.981475688, 0.0, 150.617886], [0.981475688, 0.191586725, 0.0, 19.42829599999999], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J06-solid-lap-modifier.stl", convexity=20);
+
+// Plate 6: 100% solid lap - J7 - UPPER
+if ((plate == 0 || plate == 6) && show_modifiers)
+ translate(plate == 0 ? [396.0, -384.0, 0] : [0,0,0])
+  multmatrix([[0.191586725, -0.981475688, 0.0, 150.617886], [0.981475688, 0.191586725, 0.0, 19.42829599999999], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J07-solid-lap-modifier.stl", convexity=20);
+
+// Plate 6: 100% solid lap - J8 - UPPER
+if ((plate == 0 || plate == 6) && show_modifiers)
+ translate(plate == 0 ? [396.0, -384.0, 0] : [0,0,0])
+  multmatrix([[0.191586725, -0.981475688, 0.0, 150.617886], [0.981475688, 0.191586725, 0.0, 19.42829599999999], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J08-solid-lap-modifier.stl", convexity=20);
+
+// Plate 6: 100% solid lap - J9 - UPPER
+if ((plate == 0 || plate == 6) && show_modifiers)
+ translate(plate == 0 ? [396.0, -384.0, 0] : [0,0,0])
+  multmatrix([[0.191586725, -0.981475688, 0.0, 150.617886], [0.981475688, 0.191586725, 0.0, 19.42829599999999], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J09-solid-lap-modifier.stl", convexity=20);
+
+// Plate 7: 100% solid lap - J8 - LOWER
+if ((plate == 0 || plate == 7) && show_modifiers)
+ translate(plate == 0 ? [792.0, -384.0, 0] : [0,0,0])
+  multmatrix([[-0.997944356, -0.0640863655, 0.0, 485.8473100000001], [0.0640863655, -0.997944356, 0.0, -1.7231689999999844], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J08-solid-lap-modifier.stl", convexity=20);
+
+// Plate 7: 100% solid lap - J10 - UPPER
+if ((plate == 0 || plate == 7) && show_modifiers)
+ translate(plate == 0 ? [792.0, -384.0, 0] : [0,0,0])
+  multmatrix([[-0.997944356, -0.0640863655, 0.0, 485.8473100000001], [0.0640863655, -0.997944356, 0.0, -1.7231689999999844], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J10-solid-lap-modifier.stl", convexity=20);
+
+// Plate 8: 100% solid lap - J9 - LOWER
+if ((plate == 0 || plate == 8) && show_modifiers)
+ translate(plate == 0 ? [1188.0, -384.0, 0] : [0,0,0])
+  multmatrix([[-0.271260403, -0.962505997, 0.0, -103.38079999999991], [0.962505997, -0.271260403, 0.0, -46.560362], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J09-solid-lap-modifier.stl", convexity=20);
+
+// Plate 8: 100% solid lap - J10 - LOWER
+if ((plate == 0 || plate == 8) && show_modifiers)
+ translate(plate == 0 ? [1188.0, -384.0, 0] : [0,0,0])
+  multmatrix([[-0.271260403, -0.962505997, 0.0, -103.38079999999991], [0.962505997, -0.271260403, 0.0, -46.560362], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J10-solid-lap-modifier.stl", convexity=20);
+
+// Plate 8: 100% solid lap - J12 - UPPER
+if ((plate == 0 || plate == 8) && show_modifiers)
+ translate(plate == 0 ? [1188.0, -384.0, 0] : [0,0,0])
+  multmatrix([[-0.271260403, -0.962505997, 0.0, -103.38079999999991], [0.962505997, -0.271260403, 0.0, -46.560362], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J12-solid-lap-modifier.stl", convexity=20);
+
+// Plate 9: 100% solid lap - J11 - LOWER
+if ((plate == 0 || plate == 9) && show_modifiers)
+ translate(plate == 0 ? [0.0, -768.0, 0] : [0,0,0])
+  multmatrix([[-0.949808544, -0.31283179, 0.0, -40.68005], [0.31283179, -0.949808544, 0.0, -100.33222], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J11-solid-lap-modifier.stl", convexity=20);
+
+// Plate 9: 100% solid lap - J12 - LOWER
+if ((plate == 0 || plate == 9) && show_modifiers)
+ translate(plate == 0 ? [0.0, -768.0, 0] : [0,0,0])
+  multmatrix([[-0.949808544, -0.31283179, 0.0, -40.68005], [0.31283179, -0.949808544, 0.0, -100.33222], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J12-solid-lap-modifier.stl", convexity=20);
+
+// Plate 9: 100% solid lap - J14 - LOWER
+if ((plate == 0 || plate == 9) && show_modifiers)
+ translate(plate == 0 ? [0.0, -768.0, 0] : [0,0,0])
+  multmatrix([[-0.949808544, -0.31283179, 0.0, -40.68005], [0.31283179, -0.949808544, 0.0, -100.33222], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J14-solid-lap-modifier.stl", convexity=20);
+
+// Plate 10: 100% solid lap - J13 - LOWER
+if ((plate == 0 || plate == 10) && show_modifiers)
+ translate(plate == 0 ? [396.0, -768.0, 0] : [0,0,0])
+  multmatrix([[0.997912921, -0.0645740023, 0.0, 485.79029], [0.0645740023, 0.997912921, 0.0, 321.847285], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J13-solid-lap-modifier.stl", convexity=20);
+
+// Plate 10: 100% solid lap - J14 - UPPER
+if ((plate == 0 || plate == 10) && show_modifiers)
+ translate(plate == 0 ? [396.0, -768.0, 0] : [0,0,0])
+  multmatrix([[0.997912921, -0.0645740023, 0.0, 485.79029], [0.0645740023, 0.997912921, 0.0, 321.847285], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
+   color("#FF9900") import("Knot STL/J14-solid-lap-modifier.stl", convexity=20);

@@ -42,6 +42,8 @@ except for the explicit existing solid regions below.
 - Existing screw reinforcement modifiers remain **100% infill**. Veneers and
   their bonded carriers remain solid with their saved **100% infill** settings.
   Do not remove these exceptions or spread them to structural bodies/samples.
+- The approved October 25 solid-lap exception below uses **100% rectilinear**
+  only in both halves of each Knot overlap. Surrounding bodies remain 8% gyroid.
 - Preserve the saved material boundaries, filament profiles, top-surface finish
   directions, object rotations, supports, brims, cooling, speeds, temperatures,
   and purge settings unless the requested change specifically covers them.
@@ -53,6 +55,26 @@ except for the explicit existing solid regions below.
   and the existing in-plane orientation. Do not auto-orient individual veneers.
 
 ## Printer and project identity
+
+- **Approved solid Knot laps, 2026-10-25:** the user reported "Solids work
+  wonderfully" after `Dara-A2L-Joint-Solid-Laps-r3.3mf`, SHA-256
+  `6898ed006c82b81beafe6a90012c3e59d23e4124a75daf22d50db93e8a2a447c`,
+  and explicitly requested propagation to the main Knot project, commit and
+  push. Apply the accepted **100% rectilinear** fill (`sparse_infill_density =
+  100%`, `sparse_infill_pattern = zig-zag`) to **both overlapping halves of all
+  14 joints** using 28 local modifiers. The masks cover joint-local X0–18 mm,
+  Z0–13.5 and each actual lap's full projected outline. Preserve the original
+  model stock, keys, grooves, glue reliefs, removed pads, all color geometry,
+  poses and global settings. Surrounding bodies stay **8% gyroid**; infill-first
+  stays **off** and supports stay **normal(auto)**. All 50 screw modifiers stay
+  100% with their original pattern and Z12.4 caps; the solid-lap masks must not
+  overlap those bolster footprints. Five top layers and five blue layers remain.
+  All ten plates require fresh native slices and native reopen; synchronize
+  the new modifier STLs, `Knot.scad` references and release catalog. Evidence is
+  in `release/knot-solid-laps-r1/`. This supersedes the prior production hash
+  and slices while preserving the historical evidence chain. The user's report
+  establishes sample success; the actual printed hash/printer were not
+  independently observed, and full-size performance is not yet confirmed.
 
 - **Approved main Letter promotion, 2026-10-25:** the user explicitly required
   the corrected veneers in the main `Letter.3mf`, followed by commit and push.

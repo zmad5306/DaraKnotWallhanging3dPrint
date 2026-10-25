@@ -1,0 +1,715 @@
+{
+    "error_string": "Success.",
+    "export_time": 2943,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 799,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 942.5607299804688,
+                "Bridge": 1978.99609375,
+                "Brim": 39.99989318847656,
+                "Custom": 406.3998107910156,
+                "Flush": 1542.5003662109375,
+                "Gap infill": 147.8599853515625,
+                "Inner wall": 3598.125,
+                "Internal solid infill": 5520.994140625,
+                "Outer wall": 1965.6427001953125,
+                "Overhang wall": 360.6947021484375,
+                "Prime tower": 374.7684326171875,
+                "Sparse infill": 7846.92578125,
+                "Support": 1089.4385986328125,
+                "Support interface": 390.51470947265625,
+                "Support transition": 295.6935119628906,
+                "Top surface": 1579.524658203125,
+                "Travel": 1899.42138671875,
+                "Undefined": 1895.730712890625
+            },
+            "filament_change_times": 15,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 219.49830627441406,
+                    "total_used_g": 226.32672119140625
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 19.341636657714844,
+                    "total_used_g": 20.752286911010742
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 4.582493782043457,
+                    "total_used_g": 5.754562854766846
+                }
+            ],
+            "generate_support_material_time": 976,
+            "id": 1,
+            "infill_time": 6580,
+            "layer_filament_change": 0,
+            "main_predication": 27640.5390625,
+            "make_perimeters_time": 396,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 336.02197265625,
+                        "height": 16.5,
+                        "width": 369.97821044921875,
+                        "x": -6.115959644317627,
+                        "y": -23.02007484436035,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "F1 A2L knot",
+                    "triangle_count": 39912
+                }
+            ],
+            "sliced_time": 9859,
+            "sliced_time_with_cache": 1754,
+            "total_predication": 29971.515625,
+            "triangle_count": 39912,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 1001.8848876953125,
+                "Bridge": 1875.205810546875,
+                "Brim": 37.706398010253906,
+                "Custom": 403.8591003417969,
+                "Flush": 1407.267822265625,
+                "Gap infill": 132.83018493652344,
+                "Inner wall": 3121.408447265625,
+                "Internal solid infill": 5143.84716796875,
+                "Outer wall": 1690.24365234375,
+                "Overhang wall": 182.41319274902344,
+                "Prime tower": 362.5647277832031,
+                "Sparse infill": 7722.90283203125,
+                "Support": 318.5145263671875,
+                "Support interface": 133.1498260498047,
+                "Support transition": 94.5505599975586,
+                "Top surface": 1480.2828369140625,
+                "Travel": 1568.51806640625,
+                "Undefined": 1567.2584228515625
+            },
+            "filament_change_times": 14,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 191.06497192382813,
+                    "total_used_g": 197.1864471435547
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 17.444129943847656,
+                    "total_used_g": 18.854782104492188
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 3.0607264041900635,
+                    "total_used_g": 4.118715286254883
+                }
+            ],
+            "generate_support_material_time": 700,
+            "id": 2,
+            "infill_time": 6867,
+            "layer_filament_change": 0,
+            "main_predication": 24488.08203125,
+            "make_perimeters_time": 463,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 289.8399658203125,
+                        "height": 13.5,
+                        "width": 290.7314758300781,
+                        "x": 415.8335266113281,
+                        "y": 14.784384727478027,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "F2 A2L knot",
+                    "triangle_count": 42182
+                }
+            ],
+            "sliced_time": 10214,
+            "sliced_time_with_cache": 2034,
+            "total_predication": 26671.513671875,
+            "triangle_count": 42182,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 1102.893310546875,
+                "Bridge": 2293.579345703125,
+                "Brim": 33.117820739746094,
+                "Custom": 405.4062805175781,
+                "Flush": 1407.267822265625,
+                "Gap infill": 159.77474975585938,
+                "Inner wall": 3709.39990234375,
+                "Internal solid infill": 6040.201171875,
+                "Outer wall": 2079.82373046875,
+                "Overhang wall": 326.0103454589844,
+                "Prime tower": 362.5542297363281,
+                "Sparse infill": 10241.294921875,
+                "Support": 845.6414794921875,
+                "Support interface": 336.1652526855469,
+                "Support transition": 247.02613830566406,
+                "Top surface": 1693.076171875,
+                "Travel": 1994.290283203125,
+                "Undefined": 1991.3743896484375
+            },
+            "filament_change_times": 14,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 232.66282653808594,
+                    "total_used_g": 238.78431701660156
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 21.524709701538086,
+                    "total_used_g": 22.935361862182617
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 4.5281901359558105,
+                    "total_used_g": 5.586178779602051
+                }
+            ],
+            "generate_support_material_time": 1261,
+            "id": 3,
+            "infill_time": 10328,
+            "layer_filament_change": 0,
+            "main_predication": 31085.970703125,
+            "make_perimeters_time": 714,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 421.6116638183594,
+                        "height": 13.5,
+                        "width": 387.0082092285156,
+                        "x": 744.324951171875,
+                        "y": -88.5670166015625,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "F3 A2L knot",
+                    "triangle_count": 48338
+                }
+            ],
+            "sliced_time": 14934,
+            "sliced_time_with_cache": 2445,
+            "total_predication": 33269.28515625,
+            "triangle_count": 48338,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 1167.139404296875,
+                "Bridge": 2294.192138671875,
+                "Brim": 39.342079162597656,
+                "Custom": 403.0030212402344,
+                "Flush": 1542.5003662109375,
+                "Gap infill": 189.83139038085938,
+                "Inner wall": 3767.91650390625,
+                "Internal solid infill": 6158.62353515625,
+                "Outer wall": 2077.37451171875,
+                "Overhang wall": 259.2348937988281,
+                "Prime tower": 374.75048828125,
+                "Sparse infill": 10143.6396484375,
+                "Support": 673.1332397460938,
+                "Support interface": 264.6463928222656,
+                "Support transition": 193.90292358398438,
+                "Top surface": 1811.9403076171875,
+                "Travel": 2085.697509765625,
+                "Undefined": 2085.502685546875
+            },
+            "filament_change_times": 15,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 233.24420166015625,
+                    "total_used_g": 240.0725860595703
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 21.36063003540039,
+                    "total_used_g": 22.771282196044922
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 4.261343479156494,
+                    "total_used_g": 5.433412551879883
+                }
+            ],
+            "generate_support_material_time": 1249,
+            "id": 4,
+            "infill_time": 10436,
+            "layer_filament_change": 0,
+            "main_predication": 31110.44921875,
+            "make_perimeters_time": 698,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 430.6781311035156,
+                        "height": 16.5,
+                        "width": 403.2935791015625,
+                        "x": 1139.8902587890625,
+                        "y": -20.856077194213867,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "F4 A2L knot",
+                    "triangle_count": 50606
+                }
+            ],
+            "sliced_time": 15016,
+            "sliced_time_with_cache": 2453,
+            "total_predication": 33441.5078125,
+            "triangle_count": 50606,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 1038.74560546875,
+                "Bridge": 1887.4246826171875,
+                "Brim": 37.417823791503906,
+                "Custom": 405.3131103515625,
+                "Flush": 1542.5003662109375,
+                "Gap infill": 174.9015350341797,
+                "Inner wall": 3116.483154296875,
+                "Internal solid infill": 5132.87109375,
+                "Outer wall": 1690.32763671875,
+                "Overhang wall": 182.572021484375,
+                "Prime tower": 374.767822265625,
+                "Sparse infill": 7714.7158203125,
+                "Support": 317.19598388671875,
+                "Support interface": 133.67312622070313,
+                "Support transition": 95.09410858154297,
+                "Top surface": 1512.1700439453125,
+                "Travel": 1657.501708984375,
+                "Undefined": 1654.790771484375
+            },
+            "filament_change_times": 15,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 190.58731079101563,
+                    "total_used_g": 197.41571044921875
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 17.331029891967773,
+                    "total_used_g": 18.741680145263672
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 3.048227548599243,
+                    "total_used_g": 4.220296382904053
+                }
+            ],
+            "generate_support_material_time": 710,
+            "id": 5,
+            "infill_time": 7304,
+            "layer_filament_change": 0,
+            "main_predication": 24677.279296875,
+            "make_perimeters_time": 490,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 289.6799621582031,
+                        "height": 16.5,
+                        "width": 288.7349853515625,
+                        "x": 19.859996795654297,
+                        "y": -368.50714111328125,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "F5 A2L knot",
+                    "triangle_count": 42052
+                }
+            ],
+            "sliced_time": 10610,
+            "sliced_time_with_cache": 1963,
+            "total_predication": 27008.1484375,
+            "triangle_count": 42052,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 938.2452392578125,
+                "Bridge": 1958.2630615234375,
+                "Brim": 39.99553680419922,
+                "Custom": 403.06280517578125,
+                "Flush": 1407.267822265625,
+                "Gap infill": 169.31398010253906,
+                "Inner wall": 3434.880615234375,
+                "Internal solid infill": 5522.00830078125,
+                "Outer wall": 1896.717041015625,
+                "Overhang wall": 346.0377502441406,
+                "Prime tower": 362.5747375488281,
+                "Sparse infill": 7669.59619140625,
+                "Support": 1039.6873779296875,
+                "Support interface": 388.5196533203125,
+                "Support transition": 294.58502197265625,
+                "Top surface": 1490.3701171875,
+                "Travel": 1652.106201171875,
+                "Undefined": 1651.7828369140625
+            },
+            "filament_change_times": 14,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 217.77020263671875,
+                    "total_used_g": 223.89169311523438
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 19.342233657836914,
+                    "total_used_g": 20.752887725830078
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 4.599775314331055,
+                    "total_used_g": 5.657763957977295
+                }
+            ],
+            "generate_support_material_time": 842,
+            "id": 6,
+            "infill_time": 6995,
+            "layer_filament_change": 0,
+            "main_predication": 26831.96875,
+            "make_perimeters_time": 390,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 336.3185119628906,
+                        "height": 13.5,
+                        "width": 371.5860595703125,
+                        "x": 388.9286193847656,
+                        "y": -378.16851806640625,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "F6 A2L knot",
+                    "triangle_count": 38362
+                }
+            ],
+            "sliced_time": 9966,
+            "sliced_time_with_cache": 1596,
+            "total_predication": 29015.55078125,
+            "triangle_count": 38362,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 906.5471801757813,
+                "Bridge": 1858.3690185546875,
+                "Brim": 28.21571159362793,
+                "Custom": 406.2656555175781,
+                "Flush": 1542.5003662109375,
+                "Gap infill": 135.4223175048828,
+                "Inner wall": 3088.257568359375,
+                "Internal solid infill": 4945.72509765625,
+                "Outer wall": 1694.709716796875,
+                "Overhang wall": 266.2024841308594,
+                "Prime tower": 374.7800598144531,
+                "Sparse infill": 7906.78857421875,
+                "Support": 612.1702270507813,
+                "Support interface": 246.06983947753906,
+                "Support transition": 180.04867553710938,
+                "Top surface": 1488.443115234375,
+                "Travel": 1741.564697265625,
+                "Undefined": 1737.861572265625
+            },
+            "filament_change_times": 15,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 190.6121826171875,
+                    "total_used_g": 197.4405975341797
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 17.46411895751953,
+                    "total_used_g": 18.874771118164063
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 3.524015426635742,
+                    "total_used_g": 4.696084022521973
+                }
+            ],
+            "generate_support_material_time": 777,
+            "id": 7,
+            "infill_time": 7278,
+            "layer_filament_change": 0,
+            "main_predication": 25083.888671875,
+            "make_perimeters_time": 522,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 270.4083557128906,
+                        "height": 16.5,
+                        "width": 270.18505859375,
+                        "x": 822.6947631835938,
+                        "y": -355.4783020019531,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "F7 A2L knot",
+                    "triangle_count": 41850
+                }
+            ],
+            "sliced_time": 10736,
+            "sliced_time_with_cache": 2006,
+            "total_predication": 27414.73046875,
+            "triangle_count": 41850,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 1171.2537841796875,
+                "Bridge": 2266.912841796875,
+                "Brim": 41.453819274902344,
+                "Custom": 407.22796630859375,
+                "Flush": 1542.5003662109375,
+                "Gap infill": 163.8768310546875,
+                "Inner wall": 3715.6513671875,
+                "Internal solid infill": 6120.7080078125,
+                "Outer wall": 2040.6849365234375,
+                "Overhang wall": 242.0291748046875,
+                "Prime tower": 374.7588806152344,
+                "Sparse infill": 9877.00390625,
+                "Support": 547.6605224609375,
+                "Support interface": 224.1123809814453,
+                "Support transition": 160.87229919433594,
+                "Top surface": 1826.622802734375,
+                "Travel": 2055.088623046875,
+                "Undefined": 2050.5439453125
+            },
+            "filament_change_times": 15,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 228.507568359375,
+                    "total_used_g": 235.33595275878906
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 21.05272102355957,
+                    "total_used_g": 22.4633731842041
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 4.01655912399292,
+                    "total_used_g": 5.188627243041992
+                }
+            ],
+            "generate_support_material_time": 1103,
+            "id": 8,
+            "infill_time": 10386,
+            "layer_filament_change": 0,
+            "main_predication": 30441.638671875,
+            "make_perimeters_time": 718,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 370.0790100097656,
+                        "height": 16.5,
+                        "width": 383.58367919921875,
+                        "x": 1141.09326171875,
+                        "y": -392.0413818359375,
+                        "z": 0.0
+                    },
+                    "id": 33,
+                    "name": "F8 A2L knot",
+                    "triangle_count": 50452
+                }
+            ],
+            "sliced_time": 14809,
+            "sliced_time_with_cache": 2414,
+            "total_predication": 32772.58203125,
+            "triangle_count": 50452,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 1248.7264404296875,
+                "Bridge": 2613.242431640625,
+                "Brim": 47.53466033935547,
+                "Custom": 405.99761962890625,
+                "Flush": 1407.267822265625,
+                "Gap infill": 199.5277862548828,
+                "Inner wall": 3740.40087890625,
+                "Internal solid infill": 6251.84619140625,
+                "Outer wall": 2047.894287109375,
+                "Overhang wall": 175.25189208984375,
+                "Prime tower": 362.56427001953125,
+                "Sparse infill": 9810.830078125,
+                "Support": 376.2575988769531,
+                "Support interface": 150.55169677734375,
+                "Support transition": 107.75987243652344,
+                "Top surface": 1767.0458984375,
+                "Travel": 1916.06005859375,
+                "Undefined": 1912.817626953125
+            },
+            "filament_change_times": 14,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 232.0419921875,
+                    "total_used_g": 238.16348266601563
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 21.00521469116211,
+                    "total_used_g": 22.41586685180664
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 3.7410123348236084,
+                    "total_used_g": 4.799001216888428
+                }
+            ],
+            "generate_support_material_time": 1112,
+            "id": 9,
+            "infill_time": 10332,
+            "layer_filament_change": 0,
+            "main_predication": 30423.412109375,
+            "make_perimeters_time": 815,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 397.5075378417969,
+                        "height": 13.5,
+                        "width": 396.5368957519531,
+                        "x": -13.354485511779785,
+                        "y": -825.956298828125,
+                        "z": 0.0
+                    },
+                    "id": 37,
+                    "name": "F9 A2L knot",
+                    "triangle_count": 51238
+                }
+            ],
+            "sliced_time": 14841,
+            "sliced_time_with_cache": 2397,
+            "total_predication": 32607.0,
+            "triangle_count": 51238,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 947.3549194335938,
+                "Bridge": 1908.3125,
+                "Brim": 28.227670669555664,
+                "Custom": 405.12054443359375,
+                "Flush": 1542.5003662109375,
+                "Gap infill": 170.3693389892578,
+                "Inner wall": 3084.847412109375,
+                "Internal solid infill": 4954.06201171875,
+                "Outer wall": 1686.714111328125,
+                "Overhang wall": 266.30255126953125,
+                "Prime tower": 374.7486267089844,
+                "Sparse infill": 7898.3271484375,
+                "Support": 605.5872802734375,
+                "Support interface": 245.067626953125,
+                "Support transition": 179.6031494140625,
+                "Top surface": 1456.5921630859375,
+                "Travel": 1692.5501708984375,
+                "Undefined": 1690.1370849609375
+            },
+            "filament_change_times": 15,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 190.8746337890625,
+                    "total_used_g": 197.7030487060547
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 17.44156837463379,
+                    "total_used_g": 18.85222053527832
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 3.540583610534668,
+                    "total_used_g": 4.712652206420898
+                }
+            ],
+            "generate_support_material_time": 766,
+            "id": 10,
+            "infill_time": 7127,
+            "layer_filament_change": 0,
+            "main_predication": 25105.46484375,
+            "make_perimeters_time": 638,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 270.5224914550781,
+                        "height": 16.5,
+                        "width": 270.2799987792969,
+                        "x": 426.6592102050781,
+                        "y": -746.9996948242188,
+                        "z": 0.0
+                    },
+                    "id": 41,
+                    "name": "F10 A2L knot",
+                    "triangle_count": 41462
+                }
+            ],
+            "sliced_time": 10639,
+            "sliced_time_with_cache": 1958,
+            "total_predication": 27436.419921875,
+            "triangle_count": 41462,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

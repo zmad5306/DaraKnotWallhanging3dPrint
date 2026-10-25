@@ -43,10 +43,25 @@ def audit():
     cleanup_sources={}
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
+        labels_revision = None
+        if row.get('labels_validation'):
+            labels_revision=json.loads((ROOT/row['labels_validation']).read_text())
+            assert title=='Knot' and labels_revision['project_sha256']==row['sha256']
+            assert labels_revision['original_meshes_settings_support_paint_and_poses_preserved']
+            assert labels_revision['all_global_settings_preserved'] and labels_revision['original_knot_stls_unchanged']
+            assert labels_revision['native_reopen_verified'] and labels_revision['fresh_native_slices']
+            assert len(labels_revision['labels'])==len(labels_revision['plates'])==10
+            for n,label in enumerate(labels_revision['labels'],1):
+                assert label['text']==f'P{n} F{n}' and label['plate']==n and label['extruder']==3
+                assert label['z_mm']==[0,.2] and label['height_mm']==8
+                assert label['minimum_body_edge_clearance_mm']>3 and label['minimum_joint_screw_modifier_clearance_mm']>3
+            for name,digest in labels_revision['evidence_sha256'].items():
+                assert sha((ROOT/row['labels_validation']).parent/name)==digest,name
+            for name,digest in labels_revision['new_modifier_stls'].items():assert sha(ROOT/name)==digest,name
         lap_revision = None
         if row.get('solid_laps_validation'):
             lap_revision=json.loads((ROOT/row['solid_laps_validation']).read_text())
-            assert title=='Knot' and lap_revision['project_sha256']==row['sha256']
+            assert title=='Knot' and lap_revision['project_sha256']==(labels_revision['source_project_sha256'] if labels_revision else row['sha256'])
             assert lap_revision['user_reported_solid_lap_success']
             assert lap_revision['joint_count']==14 and lap_revision['solid_lap_modifier_count']==28
             assert lap_revision['local_fill_settings']=={'sparse_infill_density':'100%','sparse_infill_pattern':'zig-zag'}
@@ -143,8 +158,12 @@ def audit():
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if labels_revision:
+                for name,digest in labels_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if lap_revision:
                 for name,digest in lap_revision['preserved_archive_entries_sha256'].items():
+                    if labels_revision and name not in labels_revision['preserved_archive_entries_sha256']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if name_revision and not veneer_revision:
                 for name,digest in name_revision['archive_entries_sha256'].items():
@@ -163,6 +182,7 @@ def audit():
                         expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in filament_revision['preserved_archive_entries_sha256'].items():
+                    if labels_revision and name not in labels_revision['preserved_archive_entries_sha256']:continue
                     if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     if cleanup_revision and name not in cleanup_revision['preserved_archive_entries_sha256']:continue
                     if name_revision and name in name_revision['changed_archive_entries']:continue
@@ -177,6 +197,7 @@ def audit():
                         expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in cleanup_revision['preserved_archive_entries_sha256'].items():
+                    if labels_revision and name not in labels_revision['preserved_archive_entries_sha256']:continue
                     if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     if name_revision and name in name_revision['changed_archive_entries']:continue
                     if veneer_revision and name in veneer_revision['changed_archive_entries']:continue
@@ -221,6 +242,11 @@ def audit():
                     settings=props(part)
                     assert settings['sparse_infill_density']=='100%' and settings['sparse_infill_pattern']=='zig-zag'
                     assert 'extruder' not in settings
+            if labels_revision:
+                label_parts=[p for o in cfg.findall('object') for p in o.findall('part') if props(p).get('name','').startswith('Blue first-layer ID - ')]
+                assert len(label_parts)==10
+                assert {props(p)['name'] for p in label_parts}=={f'Blue first-layer ID - P{n} F{n}' for n in range(1,11)}
+                assert all(p.get('subtype')=='modifier_part' and props(p)=={'name':props(p)['name'],'extruder':'3'} for p in label_parts)
             resources={o.get('id') for o in model.find(C+'resources')}
             assert {i.get('objectid') for i in model.find(C+'build')}==resources
             for c in model.iter(C+'component'):assert c.get(P+'path').lstrip('/') in names
@@ -252,9 +278,10 @@ def audit():
                     components={c.get('objectid'):c for c in objects[obj.get('id')].find(C+'components')}
                     for part in obj.findall('part'):
                         blue_slot='3' if cleanup_revision else '4'
-                        blue=skin.get('blue_layer_count')==5 and props(part).get('extruder')==blue_slot
+                        is_label=props(part).get('name','').startswith('Blue first-layer ID - ')
+                        blue=skin.get('blue_layer_count')==5 and props(part).get('extruder')==blue_slot and not is_label
                         reinforcement=props(part).get('name')=='Local solid screw reinforcement'
-                        if not (blue or reinforcement):continue
+                        if not (blue or reinforcement or is_label):continue
                         assert part.get('subtype')=='modifier_part'
                         if reinforcement:assert props(part)['sparse_infill_density']=='100%'
                         co=components[part.get('id')];asset=co.get(P+'path').lstrip('/')
@@ -263,7 +290,9 @@ def audit():
                         t=list(map(float,co.get('transform').split()))
                         assert t[:9]==[1,0,0,0,1,0,0,0,1]
                         heights=[float(v.get('z'))+t[11] for v in mesh.find(C+'vertices')]
-                        if blue:
+                        if is_label:
+                            assert labels_revision and abs(min(heights))<1e-6 and abs(max(heights)-.2)<1e-6
+                        elif blue:
                             assert abs(min(heights)-12.5)<1e-6 and abs(max(heights)-13.5)<1e-6
                             blue_count+=1
                         else:
@@ -298,7 +327,17 @@ def audit():
                                 if lap_revision:
                                     lap_plate=next(p for p in lap_revision['plates'] if p['plate']==i)
                                     assert lap_plate['source_gcode_sha256']==normal_plate['gcode_sha256']
-                                    assert hashlib.sha256(data).hexdigest()==lap_plate['gcode_sha256']
+                                    if labels_revision:
+                                        label_plate=next(p for p in labels_revision['plates'] if p['plate']==i)
+                                        assert label_plate['source_gcode_sha256']==lap_plate['gcode_sha256']
+                                        assert hashlib.sha256(data).hexdigest()==label_plate['gcode_sha256']
+                                        assert label_plate['global_gcode_config_unchanged'] and label_plate['top_surface_directions_preserved']
+                                        assert label_plate['upper_model_path_segments_identical']
+                                        assert label_plate['label_coverage_fraction']>.96 and min(label_plate['glyph_coverage_fractions'])>.94
+                                        assert label_plate['white_backing_coverage_fraction']>.98
+                                        assert label_plate['model_z_by_filament_mm']['3']==[.2,12.8,13.0,13.2,13.4,13.6]
+                                    else:
+                                        assert hashlib.sha256(data).hexdigest()==lap_plate['gcode_sha256']
                                     assert lap_plate['global_gcode_config_unchanged'] and lap_plate['body_8_percent_gyroid_retained']
                                     assert lap_plate['top_surface_directions_preserved']
                                     assert all(min(site['crossing_segments'].values())>=5 for site in lap_plate['screw_skin_continuity'])

@@ -56,6 +56,22 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved Knot first-layer identifiers, 2026-10-25:** the user requested
+  permanent metallic-blue plate and part numbers and confirmed all ten Knot
+  pieces, followed by a push to main. Add flush **P1 F1 through P10 F10** text
+  to the bed-facing **Z0–0.20 mm** layer using ten color-only modifiers with
+  **extruder 3**, the existing SUNLU PLA Metallic Azurite blue. Text is **8 mm
+  tall**, bold, and mirrored in bed X to read normally from the underside.
+  Place it within continuous body stock, clear of joints, screw reinforcement
+  and holes. Preserve original mesh stock, all existing material regions,
+  the 28 solid-lap modifiers, 50 Z12.4 screw modifiers, top five blue layers,
+  poses, support paint and every saved process/material setting. All ten plates
+  require fresh native slices and native reopen. Synchronize label STLs, CAD
+  references and the release catalog; evidence is in
+  `release/knot-first-layer-labels-r1/`. This explicitly adds first-layer blue
+  in addition to the existing five blue top layers. Physical label legibility
+  and durability have not been observed.
+
 - **Approved solid Knot laps, 2026-10-25:** the user reported "Solids work
   wonderfully" after `Dara-A2L-Joint-Solid-Laps-r3.3mf`, SHA-256
   `6898ed006c82b81beafe6a90012c3e59d23e4124a75daf22d50db93e8a2a447c`,

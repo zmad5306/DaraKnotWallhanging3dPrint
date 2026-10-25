@@ -1,5 +1,15 @@
 # Root project release — October 22, 2026
 
+**October 25 permanent Knot labels:** all ten pieces now carry flush metallic-blue
+**P1 F1 through P10 F10** identifiers in their bed-facing first 0.20 mm layer.
+The bold text is 8 mm tall and mirrored to read normally from underneath. Ten
+color-only modifiers preserve the original meshes, joints, solid-lap settings,
+top colors, screw reinforcement, poses and all saved process/material settings.
+All ten plates are freshly sliced and native-reopened; current hashes, label
+path previews and checks are in [knot-first-layer-labels-r1](../knot-first-layer-labels-r1/README.md).
+Physical label legibility/durability remains unobserved. Earlier Knot hashes and
+estimates describe the preceding revisions.
+
 **October 25 solid Knot laps:** the main `Knot.3mf` now contains the accepted **100% rectilinear fill in both halves of all 14 joints**, with 28 local modifiers and ten fresh native slices. Surrounding bodies stay 8% gyroid; original geometry, normal supports, infill-first off, all 50 Z12.4 screw caps and five top layers remain. Native reopening, current geometry/toolpaths and adjacent CAD/STL are verified in [knot-solid-laps-r1](../knot-solid-laps-r1/README.md). The user reported "Solids work wonderfully" for r3; full-size performance remains unconfirmed. Earlier Knot records below describe source revisions, not current container/toolpath hashes.
 
 **October 25 main Letter correction:** the main six-plate `Letter.3mf` contains the corrected **Left letter veneer**, **Right letter veneer** and **Center letter veneer** on plates 4–6. All six plates use the corrected shared ERYONE speed/temperature/acceleration limits and have fresh native slices; all five core meshes, reinforcement, poses and structural settings are preserved. The separate candidates are superseded. Current hashes, geometry/process comparisons, all-three continuity inspection and native verification are in [letter-veneer-correction](../letter-veneer-correction/README.md). The earlier name-only record is historical. The whole-part physical shift remains unresolved.
@@ -8,7 +18,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 82h 41m | 2442.13 g |
+| Knot | 10 | 83h 13m | 2449.90 g |
 | Letter | 6 | 90h 07m | 1223.79 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |

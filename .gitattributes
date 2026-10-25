@@ -17,6 +17,7 @@
 /output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/*.json -text whitespace=cr-at-eol
 /output/Dara-A2L-Joint-Solid-Laps-r3/*.json -text whitespace=cr-at-eol
 /release/knot-solid-laps-r1/*.json -text whitespace=cr-at-eol
+/release/knot-first-layer-labels-r1/*.json -text whitespace=cr-at-eol
 
 # Exact Bambu user-preset snapshots must retain their validated bytes.
 /release/sunlu-*/presets/*.json -text whitespace=cr-at-eol

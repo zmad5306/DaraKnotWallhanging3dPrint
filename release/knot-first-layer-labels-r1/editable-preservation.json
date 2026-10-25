@@ -1,0 +1,62 @@
+[
+  {
+    "plate": 1,
+    "original_volumes": 13,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 2,
+    "original_volumes": 13,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 3,
+    "original_volumes": 15,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 4,
+    "original_volumes": 15,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 5,
+    "original_volumes": 13,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 6,
+    "original_volumes": 11,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 7,
+    "original_volumes": 13,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 8,
+    "original_volumes": 15,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 9,
+    "original_volumes": 16,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  },
+  {
+    "plate": 10,
+    "original_volumes": 13,
+    "original_meshes_paint_settings_poses_preserved": true,
+    "max_mesh_error_mm": 0.0
+  }
+]

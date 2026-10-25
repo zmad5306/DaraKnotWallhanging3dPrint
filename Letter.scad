@@ -94,20 +94,20 @@ if ((plate == 0 || plate == 3) && show_modifiers)
   multmatrix([[6.123234e-17, -1.0, 0.0, 136.73597600000005], [1.0, 6.123234e-17, 0.0, -22.3427434], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
    color("#FF00FF") import("Letter STL/C5-A2L-flat-M-core-volume-2.stl", convexity=20);
 
-// Plate 4: V1 A2L hammered veneer and wall cradle r6 end ties; volume 1; normal_part
+// Plate 4: Left letter veneer; volume 1; normal_part
 if ((plate == 0 || plate == 4))
  translate(plate == 0 ? [0.0, -384.0, 0] : [0,0,0])
-  multmatrix([[1.0, 0.0, 0.0, 162.423573], [0.0, 1.0, 0.0, 160.074997], [0.0, 0.0, 1.0, 148.66925], [0.0, 0.0, 0.0, 1.0]])
-   color("#B87333") import("Letter STL/V1-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl", convexity=20);
+  multmatrix([[1.0, 0.0, 0.0, 162.423573], [0.0, 1.0, 0.0, 160.075043], [0.0, 0.0, 1.0, 148.66925], [0.0, 0.0, 0.0, 1.0]])
+   color("#B87333") import("Letter STL/Left-letter-veneer-volume-1.stl", convexity=20);
 
-// Plate 5: V2 A2L hammered veneer and wall cradle r6 end ties; volume 1; normal_part
+// Plate 5: Right letter veneer; volume 1; normal_part
 if ((plate == 0 || plate == 5))
  translate(plate == 0 ? [396.0, -384.0, 0] : [0,0,0])
   multmatrix([[1.0, 0.0, 0.0, 162.42341199999998], [0.0, 1.0, 0.0, 160.0], [0.0, 0.0, 1.0, 148.674362], [0.0, 0.0, 0.0, 1.0]])
-   color("#B87333") import("Letter STL/V2-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl", convexity=20);
+   color("#B87333") import("Letter STL/Right-letter-veneer-volume-1.stl", convexity=20);
 
-// Plate 6: V3 A2L hammered veneer and wall cradle r6 end ties; volume 1; normal_part
+// Plate 6: Center letter veneer; volume 1; normal_part
 if ((plate == 0 || plate == 6))
  translate(plate == 0 ? [792.0, -384.0, 0] : [0,0,0])
-  multmatrix([[1.0, 0.0, 0.0, 162.42356900000004], [0.0, 1.0, 0.0, 159.999996], [0.0, 0.0, 1.0, 148.674362], [0.0, 0.0, 0.0, 1.0]])
-   color("#B87333") import("Letter STL/V3-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl", convexity=20);
+  multmatrix([[1.0, 0.0, 0.0, 162.42356900000004], [0.0, 1.0, 0.0, 159.999992], [0.0, 0.0, 1.0, 148.674362], [0.0, 0.0, 0.0, 1.0]])
+   color("#B87333") import("Letter STL/Center-letter-veneer-volume-1.stl", convexity=20);

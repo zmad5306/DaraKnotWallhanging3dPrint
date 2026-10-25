@@ -54,6 +54,65 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved main Letter promotion, 2026-10-25:** the user explicitly required
+  the corrected veneers in the main `Letter.3mf`, followed by commit and push.
+  The main six-plate project now contains the corrected Left/Right/Center
+  veneers on plates 4–6. Promote the exact candidate meshes, support paint,
+  poses and object settings; preserve the five core meshes, reinforcement,
+  poses and object/volume overrides on plates 1–3. Bambu shares the corrected
+  process and filament limits across the project, so the 23 candidate settings
+  apply globally and **all six plates are freshly sliced**. Printing uses
+  **220 C nozzle, 55 C Textured PEI bed, 30–60 mm/s XY extrusion commands and
+  1500/2500 mm/s2 maximum printing/travel acceleration**. The core plates also
+  use these limits; their old stored slices are superseded. Structural 8%
+  gyroid, solid veneer/carrier overrides, 0.4 mm nozzle, 0.20 mm layers, four
+  walls, five top/bottom layers, materials, cooling and all other settings are
+  preserved. The left carrier's 0.15 mm end step and two center-carrier steps
+  are replaced with continuous tapers; the right carrier geometry is retained.
+  All three full-height veneers and all six native command streams are checked;
+  veneer/support material totals 904.10 g. Native reopening passes. Exact
+  changes, hashes, inspections and physical limitations are recorded in
+  `release/letter-veneer-correction/`. The separate output projects are now
+  historical; use the main `Letter.3mf`. The whole-part physical shift remains
+  unexplained, and this promotion does not imply a successful physical print.
+
+- **Approved meaningful veneer names, 2026-10-25:** the user requested names
+  without versions. From the assembled artwork's front, **V1 = Left letter
+  veneer, V2 = Right letter veneer, V3 = Center letter veneer**. Root
+  `Letter.3mf` selector plates 4–6 and their objects/parts now use these names;
+  the old conflicting saved plate-number prefixes are removed. The initial
+  name-only revision preserved all six G-code files, geometry, paint, settings
+  and poses; its evidence is retained in `release/letter-veneer-names/`.
+  The subsequent main-file promotion above supersedes those container and slice
+  hashes. The preceding **`output/Letter Veneers/Letter Veneers.3mf`** candidate
+  is historical; its names and corrections are now in the main file.
+  The user clarified that the physical failure was on **Plate 5 of Letter**,
+  and that they have not printed or inspected the other veneers. Do not resolve
+  the old selector/saved-name ambiguity by assumption or claim the other veneers
+  were physically evaluated. Full-height digital inspection covers all three;
+  the whole-part physical shift remains unresolved.
+
+- **Approved ERYONE spool limits, 2026-10-25:** the user supplied **190–220 C
+  nozzle, 55–70 C bed and 30–60 mm/s printing speed**, and explicitly requested
+  compliance for all three veneers. These limits are now saved in the main
+  `Letter.3mf` under the promotion above. Printing remains **220 C nozzle / 55 C Textured
+  PEI bed**. Explicit flushing is now **220 C** (previous automatic result
+  240 C), and the saved nozzle-range maximum is **220 C** (was 240 C).
+  All three fresh native slices have checked **30–60 mm/s XY extrusion
+  feedrates**, including carriers and generated supports. Outer walls remain
+  40 mm/s; inner walls change 80 to 60; infill, top and support speeds cap at
+  60. Small-perimeter/cooling minima and severe-overhang settings become 30;
+  filament bridge speed changes 25 to 30. Preserve cooling fan values, flow,
+  volumetric limit, retraction, geometry, paint and poses. Non-extruding travel,
+  printer priming/calibration, 140 C nozzle probing, off commands and physical
+  acceleration/deceleration are separate from the requested printing range.
+  The main file retains the carrier-edge corrections and verified project-level
+  **1500/2500 mm/s2 printing/travel acceleration**. The successful historical
+  ERYONE sample and local user presets remain unchanged. Current differences,
+  hashes and native checks are in `release/letter-veneer-correction/validation.json`.
+  The reported whole-part shift remains unresolved, and candidate bridge/overhang
+  behavior and full-size finish remain physically unqualified.
+
 - **Accepted knot joint sample and production publication, 2026-10-25:** after
   receiving `Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf`, the user reported
   "Joints are ok" and requested propagation, commit and push. Record this as

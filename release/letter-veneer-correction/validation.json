@@ -1,0 +1,3074 @@
+{
+  "source_sha256": "75b14a311d5a92ad5cfd6fd4ff1a8228a19ed2e027a04b67b02439fd74905ecd",
+  "candidate_sha256": "6bcfc5bbc39382607d28d6a840f66e96b66051d22ca4df30ca41900f99c468f1",
+  "editable_sha256": "c37001e30b83cd23af6b81ff99e8ec0bdb8cd24b05f647af066f1648ead9fed4",
+  "project_setting_changes": {
+    "default_acceleration": [
+      [
+        "6000"
+      ],
+      [
+        "1500"
+      ]
+    ],
+    "filament_bridge_speed": [
+      [
+        "25"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "filament_flush_temp": [
+      [
+        "0"
+      ],
+      [
+        "220"
+      ]
+    ],
+    "filament_overhang_4_4_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "filament_overhang_totally_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "gap_infill_speed": [
+      [
+        "250"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "initial_layer_infill_speed": [
+      [
+        "105"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "initial_layer_travel_acceleration": [
+      [
+        "6000"
+      ],
+      [
+        "2500"
+      ]
+    ],
+    "inner_wall_speed": [
+      [
+        "300"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "internal_solid_infill_speed": [
+      [
+        "250"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "nozzle_temperature_range_high": [
+      [
+        "240"
+      ],
+      [
+        "220"
+      ]
+    ],
+    "outer_wall_acceleration": [
+      [
+        "5000"
+      ],
+      [
+        "1500"
+      ]
+    ],
+    "outer_wall_speed": [
+      [
+        "200"
+      ],
+      [
+        "40"
+      ]
+    ],
+    "overhang_4_4_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "overhang_totally_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "slow_down_min_speed": [
+      [
+        "20"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "small_perimeter_speed": [
+      [
+        "50%"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "sparse_infill_speed": [
+      [
+        "270"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "support_interface_speed": [
+      [
+        "80"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "support_speed": [
+      [
+        "150"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "top_surface_acceleration": [
+      [
+        "2000"
+      ],
+      [
+        "1500"
+      ]
+    ],
+    "top_surface_speed": [
+      [
+        "200"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "travel_acceleration": [
+      [
+        "8000"
+      ],
+      [
+        "2500"
+      ]
+    ]
+  },
+  "objects": [
+    {
+      "name": "C1 A2L flat M core",
+      "plate": 1,
+      "source": "original core",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "C2 A2L flat M core",
+      "plate": 2,
+      "source": "original core",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "C3 A2L flat M core",
+      "plate": 3,
+      "source": "original core",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "C4 A2L flat M core",
+      "plate": 3,
+      "source": "original core",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "C5 A2L flat M core",
+      "plate": 3,
+      "source": "original core",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "Left letter veneer",
+      "plate": 4,
+      "source": "approved veneer candidate",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "Right letter veneer",
+      "plate": 5,
+      "source": "approved veneer candidate",
+      "max_mesh_pose_difference_mm": 0,
+      "paint_and_object_volume_settings_preserved": true
+    },
+    {
+      "name": "Center letter veneer",
+      "plate": 6,
+      "source": "approved veneer candidate",
+      "max_mesh_pose_difference_mm": 1.1368683772161603e-13,
+      "paint_and_object_volume_settings_preserved": true
+    }
+  ],
+  "protected_projects": {
+    "Knot.3mf": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9"
+  },
+  "project_sha256": "d8e0bd1a4664db2a75291ce2418578c4c37ef86f1459572aa742aef4018ace9c",
+  "native_preservation": {
+    "objects": 8,
+    "max_vertex_difference_mm": 0,
+    "settings_changes": {},
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": [
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -402.44822424780273 0 1 0 209.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -536.59763524780271 0 1 0 278.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -90.192860585668939 0 1 0 324.24723871972657 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -120.25714778566893 0 1 0 432.3296517197266 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -786 0 1 0 213 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -1048 0 1 0 284 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -84 0 1 0 228 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -112 0 1 0 304 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -783 0 1 0 -33 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -1044 0 1 0 -44 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 449.38136780073734 0 1 0 182.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 599.17515980073733 0 1 0 242.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 639 0 1 0 444 0 0 1 25.5 0 0 0 1",
+            "1 0 0 852 0 1 0 592 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 787.25925402832036 0 1 0 35.331120204730226 0 0 1 25.5 0 0 0 1",
+            "1 0 0 1049.6790080283204 0 1 0 47.108160204730225 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 778.84987692480468 0 1 0 -39.767602081231686 0 0 1 25.5 0 0 0 1",
+            "1 0 0 1038.4664999248048 0 1 0 -53.023469481231686 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -16.541115753601076 0 1 0 -224.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -22.054821003601077 0 1 0 -298.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -87 0 1 0 -186 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -116 0 1 0 -248 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -621.30702269824224 0 1 0 -302.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 -828.40936369824226 0 1 0 -402.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -639 0 1 0 -510 0 0 1 25.5 0 0 0 1",
+            "1 0 0 -852 0 1 0 -680 0 0 1 34 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 609.93221560986331 0 1 0 -329.05162803759765 0 0 1 13.5 0 0 0 1",
+            "1 0 0 813.24295260986332 0 1 0 -438.73550403759765 0 0 1 18 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 639 0 1 0 -444 0 0 1 25.5 0 0 0 1",
+            "1 0 0 852 0 1 0 -592 0 0 1 34 0 0 0 1"
+          ]
+        }
+      }
+    ]
+  },
+  "checks": [
+    {
+      "plate": 1,
+      "gcode_sha256": "4bcdbefd1a1611a5f32f7459597ae6d666e8bda373e992aec0f0aa60791149dc",
+      "commands": {
+        "features": {
+          "Brim": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 500.0,
+            "moves": 1307,
+            "path_mm": 2806.9773494816163
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 31220,
+            "path_mm": 61254.04934703409
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 90988,
+            "path_mm": 181269.45287677544
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 983,
+            "path_mm": 240.48864490422017
+          },
+          "Bottom surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 500.0,
+            "moves": 2271,
+            "path_mm": 47719.31068342435
+          },
+          "Internal solid infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 18846,
+            "path_mm": 416473.1511084906
+          },
+          "Sparse infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 266673,
+            "path_mm": 180902.65010100458
+          },
+          "Bridge": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 2494,
+            "path_mm": 49001.01384157188
+          },
+          "Floating vertical shell": {
+            "min_mm_s": 48.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 2154,
+            "path_mm": 2341.845933421436
+          },
+          "Top surface": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1484,
+            "path_mm": 64038.28772458452
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 838,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 840,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 897,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 902,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 931,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 453548,
+            "layer": 9.0,
+            "command": "M104 S0"
+          },
+          {
+            "line": 453549,
+            "layer": 9.0,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "bead_bounds_mm": [
+        [
+          12.106,
+          11.777
+        ],
+        [
+          317.883,
+          308.231
+        ]
+      ]
+    },
+    {
+      "plate": 2,
+      "gcode_sha256": "8753c476367822db80a653a9eb11b5b140bda9a56cbfa89728f0faf2b46237fe",
+      "commands": {
+        "features": {
+          "Brim": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 500.0,
+            "moves": 1011,
+            "path_mm": 2341.138604255371
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 25842,
+            "path_mm": 51022.76936648567
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 75113,
+            "path_mm": 150470.24792527297
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1386,
+            "path_mm": 263.83116414878054
+          },
+          "Bottom surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 500.0,
+            "moves": 1835,
+            "path_mm": 37655.67097413196
+          },
+          "Internal solid infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 15948,
+            "path_mm": 329647.6450767861
+          },
+          "Sparse infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 207077,
+            "path_mm": 142673.796152332
+          },
+          "Bridge": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1982,
+            "path_mm": 38923.50620794828
+          },
+          "Floating vertical shell": {
+            "min_mm_s": 48.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1643,
+            "path_mm": 1873.5170496062242
+          },
+          "Top surface": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1204,
+            "path_mm": 50841.73842057383
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 360116,
+            "layer": 9.0,
+            "command": "M104 S0"
+          },
+          {
+            "line": 360117,
+            "layer": 9.0,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "bead_bounds_mm": [
+        [
+          26.966,
+          26.17
+        ],
+        [
+          303.032,
+          293.832
+        ]
+      ]
+    },
+    {
+      "plate": 3,
+      "gcode_sha256": "498d30f9eb6a82aa0b8f732f3dc3a2227a86c4149a0232d00ada4bbb94557818",
+      "commands": {
+        "features": {
+          "Brim": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 500.0,
+            "moves": 1235,
+            "path_mm": 3669.7520746001364
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 28819,
+            "path_mm": 78926.39615169687
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 82696,
+            "path_mm": 230192.7248640203
+          },
+          "Bottom surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 500.0,
+            "moves": 2922,
+            "path_mm": 72659.34343595416
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 664,
+            "path_mm": 179.24071782898477
+          },
+          "Internal solid infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 24847,
+            "path_mm": 633984.0207950865
+          },
+          "Sparse infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 315594,
+            "path_mm": 245086.01784880433
+          },
+          "Bridge": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 2540,
+            "path_mm": 75414.81976487789
+          },
+          "Floating vertical shell": {
+            "min_mm_s": 48.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1735,
+            "path_mm": 2498.289384103423
+          },
+          "Top surface": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 1703,
+            "path_mm": 96319.75017047937
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 605,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 656,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 694,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 700,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 731,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 752,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 762,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 790,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 841,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 898,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 903,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 932,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 497571,
+            "layer": 9.0,
+            "command": "M104 S0"
+          },
+          {
+            "line": 497572,
+            "layer": 9.0,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "bead_bounds_mm": [
+        [
+          7.98,
+          29.832
+        ],
+        [
+          317.139,
+          290.261
+        ]
+      ]
+    },
+    {
+      "plate": 4,
+      "gcode_sha256": "8e5b7675cd3629f3a3b5a1fbb1fe03c869988b6e79621c0916527b2f364d7f1f",
+      "commands": {
+        "features": {
+          "Support": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 76237,
+            "path_mm": 24551.37296655093
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 244131,
+            "path_mm": 1773633.3236299613
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 404672,
+            "path_mm": 1183308.7179336427
+          },
+          "Gap infill": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 83842,
+            "path_mm": 520003.3726721865
+          },
+          "Internal solid infill": {
+            "min_mm_s": 53.196016666666665,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 322376,
+            "path_mm": 261981.85005922904
+          },
+          "Top surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 793,
+            "path_mm": 3483.1875087171275
+          },
+          "Overhang wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 172,
+            "path_mm": 53.600259697905926
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 1961350,
+            "layer": 297.2,
+            "command": "M104 S0"
+          },
+          {
+            "line": 1961351,
+            "layer": 297.2,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "bead_bounds_mm": [
+        [
+          56.191,
+          67.98
+        ],
+        [
+          272.501,
+          252.17000000000002
+        ]
+      ],
+      "connections": {
+        "bond_probes_checked": 30,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09892764955196748,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "name": "Left letter veneer"
+    },
+    {
+      "plate": 5,
+      "gcode_sha256": "72734f1b8e766288e639a7371de8fa67f20a0c48d1db27aa28b95b82db2a4ce5",
+      "commands": {
+        "features": {
+          "Support": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 85664,
+            "path_mm": 27447.64359570927
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 236737,
+            "path_mm": 1711311.5391280346
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 377001,
+            "path_mm": 1124698.0016233525
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 79001,
+            "path_mm": 499080.6062579871
+          },
+          "Internal solid infill": {
+            "min_mm_s": 53.39751666666667,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 288105,
+            "path_mm": 233814.77873333392
+          },
+          "Top surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 820,
+            "path_mm": 3498.924878910351
+          },
+          "Overhang wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 155,
+            "path_mm": 47.741109967318856
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 1890299,
+            "layer": 297.2,
+            "command": "M104 S0"
+          },
+          {
+            "line": 1890300,
+            "layer": 297.2,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "bead_bounds_mm": [
+        [
+          56.188,
+          65.95
+        ],
+        [
+          272.485,
+          254.05
+        ]
+      ],
+      "connections": {
+        "bond_probes_checked": 29,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.18893353070041763,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "name": "Right letter veneer"
+    },
+    {
+      "plate": 6,
+      "gcode_sha256": "0c5e432f154e1b2c73f125ed9998b278a3f88bc94719b46682e57f91f9155072",
+      "commands": {
+        "features": {
+          "Support": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 181107,
+            "path_mm": 58224.00298736748
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 247099,
+            "path_mm": 1265313.43304186
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 396570,
+            "path_mm": 919066.8638654028
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 91484,
+            "path_mm": 393949.1032020125
+          },
+          "Internal solid infill": {
+            "min_mm_s": 53.549366666666664,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 301073,
+            "path_mm": 239093.43961866866
+          },
+          "Top surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 789,
+            "path_mm": 3468.961957356107
+          },
+          "Overhang wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 151,
+            "path_mm": 54.88226136226611
+          },
+          "Sparse infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 309,
+            "path_mm": 113.41282778566394
+          },
+          "Floating vertical shell": {
+            "min_mm_s": 48.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 548,
+            "path_mm": 587.0031518047274
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 2149278,
+            "layer": 297.2,
+            "command": "M104 S0"
+          },
+          {
+            "line": 2149279,
+            "layer": 297.2,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "bead_bounds_mm": [
+        [
+          56.188,
+          27.254
+        ],
+        [
+          272.44899999999996,
+          293.221
+        ]
+      ],
+      "connections": {
+        "bond_probes_checked": 43,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09980033603315977,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "name": "Center letter veneer"
+    }
+  ],
+  "fresh_native_slices": true,
+  "all_six_spool_limits_verified": true,
+  "veneer_mass_g": 904.1008758544922,
+  "warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "native_result": {
+    "error_string": "Success.",
+    "export_time": 6339,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 1162,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 913.7866821289062,
+          "Bridge": 1022.990966796875,
+          "Brim": 58.566463470458984,
+          "Custom": 406.3730773925781,
+          "Flush": 11.0,
+          "Gap infill": 21.23288345336914,
+          "Inner wall": 3174.89306640625,
+          "Internal solid infill": 7381.7099609375,
+          "Outer wall": 1580.7830810546875,
+          "Sparse infill": 4738.70947265625,
+          "Top surface": 1118.834228515625,
+          "Travel": 588.1344604492188,
+          "Undefined": 584.1553955078125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 98.9171142578125,
+            "total_used_g": 98.9171142578125
+          }
+        ],
+        "generate_support_material_time": 26,
+        "id": 1,
+        "infill_time": 391,
+        "layer_filament_change": 0,
+        "main_predication": 20595.21484375,
+        "make_perimeters_time": 107,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 336.8835754394531,
+              "height": 9.0,
+              "width": 392.6263122558594,
+              "x": -44.69321060180664,
+              "y": 11.79266357421875,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "C1 A2L flat M core",
+            "triangle_count": 5960
+          }
+        ],
+        "sliced_time": 1513,
+        "sliced_time_with_cache": 963,
+        "total_predication": 21019.609375,
+        "triangle_count": 5960,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 722.4962768554688,
+          "Bridge": 812.9013061523438,
+          "Brim": 48.886634826660156,
+          "Custom": 403.7049255371094,
+          "Flush": 11.0,
+          "Gap infill": 15.216607093811035,
+          "Inner wall": 2618.6083984375,
+          "Internal solid infill": 5865.3681640625,
+          "Outer wall": 1315.6702880859375,
+          "Sparse infill": 3692.912353515625,
+          "Top surface": 886.6173706054688,
+          "Travel": 457.63677978515625,
+          "Undefined": 456.3831481933594
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 79.1906509399414,
+            "total_used_g": 79.1906509399414
+          }
+        ],
+        "generate_support_material_time": 22,
+        "id": 2,
+        "infill_time": 318,
+        "layer_filament_change": 0,
+        "main_predication": 16424.369140625,
+        "make_perimeters_time": 86,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 357.8824157714844,
+              "height": 9.0,
+              "width": 316.8561706542969,
+              "x": 394.746337890625,
+              "y": -23.252304077148438,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "C2 A2L flat M core",
+            "triangle_count": 4420
+          }
+        ],
+        "sliced_time": 1364,
+        "sliced_time_with_cache": 918,
+        "total_predication": 16848.8203125,
+        "triangle_count": 4420,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 1365.209228515625,
+          "Bridge": 1550.558837890625,
+          "Brim": 76.5086441040039,
+          "Custom": 403.74365234375,
+          "Flush": 11.0,
+          "Gap infill": 14.460833549499512,
+          "Inner wall": 4016.29736328125,
+          "Internal solid infill": 11139.1396484375,
+          "Outer wall": 2027.46044921875,
+          "Sparse infill": 5711.6953125,
+          "Top surface": 1658.9000244140625,
+          "Travel": 605.6103515625,
+          "Undefined": 604.4464721679688
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 141.5799102783203,
+            "total_used_g": 141.5799102783203
+          }
+        ],
+        "generate_support_material_time": 16,
+        "id": 3,
+        "infill_time": 424,
+        "layer_filament_change": 0,
+        "main_predication": 28159.255859375,
+        "make_perimeters_time": 98,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 69.65765380859375,
+              "height": 9.0,
+              "width": 209.36776733398438,
+              "x": 858.8861694335938,
+              "y": 30.866308212280273,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "C3 A2L flat M core",
+            "triangle_count": 2492
+          },
+          {
+            "bbox": {
+              "depth": 180.80618286132812,
+              "height": 9.0,
+              "width": 157.3677520751953,
+              "x": 801.0143432617188,
+              "y": 108.43767547607422,
+              "z": 0.0
+            },
+            "id": 17,
+            "name": "C4 A2L flat M core",
+            "triangle_count": 2064
+          },
+          {
+            "bbox": {
+              "depth": 181.34097290039062,
+              "height": 9.0,
+              "width": 139.36776733398438,
+              "x": 968.7359619140625,
+              "y": 90.2975082397461,
+              "z": 0.0
+            },
+            "id": 21,
+            "name": "C5 A2L flat M core",
+            "triangle_count": 2928
+          }
+        ],
+        "sliced_time": 1856,
+        "sliced_time_with_cache": 1230,
+        "total_predication": 28583.8359375,
+        "triangle_count": 7484,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.61181640625,
+          "Flush": 11.0,
+          "Gap infill": 10203.751953125,
+          "Inner wall": 22335.15625,
+          "Internal solid infill": 5402.25390625,
+          "Outer wall": 44466.90625,
+          "Overhang wall": 1.2183321714401245,
+          "Support": 996.3253173828125,
+          "Top surface": 79.6326675415039,
+          "Travel": 8841.009765625,
+          "Undefined": 8841.009765625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 332.0632019042969,
+            "total_used_g": 332.0632019042969
+          }
+        ],
+        "generate_support_material_time": 1062,
+        "id": 4,
+        "infill_time": 649,
+        "layer_filament_change": 0,
+        "main_predication": 92119.671875,
+        "make_perimeters_time": 907,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 184.19085693359375,
+              "height": 297.3385009765625,
+              "width": 212.46432495117188,
+              "x": 56.191410064697266,
+              "y": -316.0203857421875,
+              "z": -4.88281216348696e-07
+            },
+            "id": 25,
+            "name": "Left letter veneer",
+            "triangle_count": 496842
+          }
+        ],
+        "sliced_time": 8779,
+        "sliced_time_with_cache": 5761,
+        "total_predication": 92544.28125,
+        "triangle_count": 496842,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.6402282714844,
+          "Flush": 11.0,
+          "Gap infill": 9860.501953125,
+          "Inner wall": 21329.91796875,
+          "Internal solid infill": 4921.1083984375,
+          "Outer wall": 42930.79296875,
+          "Overhang wall": 1.1171314716339111,
+          "Support": 1124.611328125,
+          "Top surface": 80.465087890625,
+          "Travel": 9056.498046875,
+          "Undefined": 9056.498046875
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 317.2191162109375,
+            "total_used_g": 317.2191467285156
+          }
+        ],
+        "generate_support_material_time": 1069,
+        "id": 5,
+        "infill_time": 604,
+        "layer_filament_change": 0,
+        "main_predication": 89127.4765625,
+        "make_perimeters_time": 1218,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 188.0997314453125,
+              "height": 297.3487243652344,
+              "width": 212.47177124023438,
+              "x": 452.1875305175781,
+              "y": -318.04986572265625,
+              "z": -1.826171853736014e-07
+            },
+            "id": 29,
+            "name": "Right letter veneer",
+            "triangle_count": 467360
+          }
+        ],
+        "sliced_time": 9443,
+        "sliced_time_with_cache": 6177,
+        "total_predication": 89552.1171875,
+        "triangle_count": 467360,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.8057861328125,
+          "Flush": 11.0,
+          "Gap infill": 8154.0634765625,
+          "Inner wall": 17993.720703125,
+          "Internal solid infill": 5159.830078125,
+          "Outer wall": 32528.44140625,
+          "Overhang wall": 1.321150302886963,
+          "Sparse infill": 4.761569023132324,
+          "Support": 2339.354248046875,
+          "Top surface": 79.186279296875,
+          "Travel": 9308.953125,
+          "Undefined": 9308.953125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 254.8185272216797,
+            "total_used_g": 254.8185272216797
+          }
+        ],
+        "generate_support_material_time": 1736,
+        "id": 6,
+        "infill_time": 721,
+        "layer_filament_change": 0,
+        "main_predication": 75463.015625,
+        "make_perimeters_time": 1359,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 251.10018920898438,
+              "height": 297.3487243652344,
+              "width": 212.471435546875,
+              "x": 848.1878662109375,
+              "y": -349.55010986328125,
+              "z": -1.826171853736014e-07
+            },
+            "id": 33,
+            "name": "Center letter veneer",
+            "triangle_count": 498970
+          }
+        ],
+        "sliced_time": 10581,
+        "sliced_time_with_cache": 6397,
+        "total_predication": 75887.8203125,
+        "triangle_count": 498970,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "physical_qualification": false,
+  "physical_shift_cause": "Unresolved; corrected geometry/process has no physical result.",
+  "native_reopen_comparison": {
+    "objects": 8,
+    "max_vertex_difference_mm": 0,
+    "settings_changes": {},
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": [
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -536.59763524780271 0 1 0 278.73550403759765 0 0 1 18 0 0 0 1",
+            "1 0 0 -670.7470462478027 0 1 0 348.41938003759765 0 0 1 22.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -120.25714778566893 0 1 0 432.3296517197266 0 0 1 34 0 0 0 1",
+            "1 0 0 -150.32143498566893 0 1 0 540.41206471972657 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -1048 0 1 0 284 0 0 1 34 0 0 0 1",
+            "1 0 0 -1310 0 1 0 355 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -112 0 1 0 304 0 0 1 34 0 0 0 1",
+            "1 0 0 -140 0 1 0 380 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C1 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -1044 0 1 0 -44 0 0 1 34 0 0 0 1",
+            "1 0 0 -1305 0 1 0 -55 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 599.17515980073733 0 1 0 242.73550403759765 0 0 1 18 0 0 0 1",
+            "1 0 0 748.96895180073739 0 1 0 303.41938003759765 0 0 1 22.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 852 0 1 0 592 0 0 1 34 0 0 0 1",
+            "1 0 0 1065 0 1 0 740 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 1049.6790080283204 0 1 0 47.108160204730225 0 0 1 34 0 0 0 1",
+            "1 0 0 1312.0987620283204 0 1 0 58.885200204730225 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C2 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 1038.4664999248048 0 1 0 -53.023469481231686 0 0 1 34 0 0 0 1",
+            "1 0 0 1298.0831229248047 0 1 0 -66.279336881231686 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -22.054821003601077 0 1 0 -298.73550403759765 0 0 1 18 0 0 0 1",
+            "1 0 0 -27.568526253601078 0 1 0 -373.41938003759765 0 0 1 22.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C3 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -116 0 1 0 -248 0 0 1 34 0 0 0 1",
+            "1 0 0 -145 0 1 0 -310 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -828.40936369824226 0 1 0 -402.73550403759765 0 0 1 18 0 0 0 1",
+            "1 0 0 -1035.5117046982423 0 1 0 -503.41938003759765 0 0 1 22.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C4 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 -852 0 1 0 -680 0 0 1 34 0 0 0 1",
+            "1 0 0 -1065 0 1 0 -850 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 813.24295260986332 0 1 0 -438.73550403759765 0 0 1 18 0 0 0 1",
+            "1 0 0 1016.5536896098633 0 1 0 -548.41938003759765 0 0 1 22.5 0 0 0 1"
+          ]
+        }
+      },
+      {
+        "object": "C5 A2L flat M core",
+        "changes": {
+          "matrix": [
+            "1 0 0 852 0 1 0 -592 0 0 1 34 0 0 0 1",
+            "1 0 0 1065 0 1 0 -740 0 0 1 42.5 0 0 0 1"
+          ]
+        }
+      }
+    ]
+  },
+  "native_reopen_verified": true,
+  "full_height_continuity": [
+    {
+      "name": "Left letter veneer",
+      "plate": 4,
+      "gcode_sha256": "8e5b7675cd3629f3a3b5a1fbb1fe03c869988b6e79621c0916527b2f364d7f1f",
+      "front_layers": 1469,
+      "front_z_range_mm": [
+        3.6,
+        297.2
+      ],
+      "missing_front_layers": 0,
+      "median_mesh_distance_mm": [
+        0.20679576931383592,
+        0.7303735051599337
+      ],
+      "continuous_face_z_range_mm": [
+        4,
+        296.8
+      ],
+      "continuous_face_median_mesh_distance_mm": [
+        0.20679576931383592,
+        0.210470429116981
+      ],
+      "maximum_adjacent_median_change_mm": 0.0018137053386091395,
+      "perimeter_closure_layers": [
+        [
+          3.6,
+          9.0,
+          0.7303735051599337,
+          0.20959165404059202,
+          2.379089040731371,
+          2.5638977092867585
+        ],
+        [
+          3.8,
+          24.0,
+          0.20954753041298033,
+          0.2095421807372759,
+          1.0812943459129098,
+          1.5879625217455624
+        ],
+        [
+          297.0,
+          261.0,
+          0.2097032205981577,
+          0.20286480848291896,
+          0.21393551358460175,
+          0.2206353119046298
+        ],
+        [
+          297.2,
+          455.0,
+          0.2127462431302805,
+          0.209659879456872,
+          0.40475019584641103,
+          0.40475019584641103
+        ]
+      ],
+      "peak_changes": [
+        [
+          18.4,
+          -0.0010598672083181326
+        ],
+        [
+          5.2,
+          -0.0010818721441293866
+        ],
+        [
+          17.4,
+          -0.0011157552421439398
+        ],
+        [
+          75.0,
+          -0.001180606264579942
+        ],
+        [
+          35.2,
+          0.001193246252202712
+        ],
+        [
+          35.0,
+          -0.0013206706286764125
+        ],
+        [
+          5.6,
+          -0.0016361670954214702
+        ],
+        [
+          296.2,
+          0.0018137053386091395
+        ],
+        [
+          297.2,
+          0.0030430225321227966
+        ],
+        [
+          3.8,
+          -0.5208259747469534
+        ]
+      ],
+      "maximum_sample_distance_mm": 2.5638977092867585,
+      "carrier_layers": 1471,
+      "carrier_z_range_mm": [
+        0.2,
+        294.2
+      ],
+      "carrier_reported_band": [
+        [
+          137.8,
+          68.19,
+          251.96
+        ],
+        [
+          138.0,
+          68.19,
+          251.96
+        ],
+        [
+          138.2,
+          68.19,
+          251.96
+        ],
+        [
+          138.4,
+          68.19,
+          251.96
+        ],
+        [
+          138.6,
+          68.19,
+          251.96
+        ],
+        [
+          138.8,
+          68.19,
+          251.96
+        ],
+        [
+          139.0,
+          68.19,
+          251.958
+        ],
+        [
+          139.2,
+          68.19,
+          251.956
+        ],
+        [
+          139.4,
+          68.19,
+          251.954
+        ]
+      ],
+      "carrier_largest_changes": [
+        [
+          [
+            289.4,
+            0.0
+          ],
+          [
+            289.6,
+            0.0
+          ],
+          [
+            289.8,
+            0.0
+          ],
+          [
+            290.0,
+            0.0
+          ],
+          [
+            290.2,
+            0.0
+          ],
+          [
+            290.4,
+            0.0
+          ],
+          [
+            290.6,
+            0.0
+          ],
+          [
+            290.8,
+            0.0
+          ],
+          [
+            291.0,
+            0.0
+          ],
+          [
+            294.2,
+            0.9989999999999952
+          ],
+          [
+            0.4,
+            3.3900000000000006
+          ],
+          [
+            0.8,
+            -3.5799999999999983
+          ]
+        ],
+        [
+          [
+            293.6,
+            -0.2609999999999957
+          ],
+          [
+            292.6,
+            -0.2609999999999957
+          ],
+          [
+            292.8,
+            -0.2609999999999957
+          ],
+          [
+            293.4,
+            -0.2609999999999957
+          ],
+          [
+            293.2,
+            -0.2609999999999957
+          ],
+          [
+            293.0,
+            -0.2610000000000241
+          ],
+          [
+            293.8,
+            -0.30699999999998795
+          ],
+          [
+            294.0,
+            -0.34900000000001796
+          ],
+          [
+            294.2,
+            -0.3499999999999943
+          ],
+          [
+            291.2,
+            -1.0999999999999943
+          ],
+          [
+            0.4,
+            -3.390000000000015
+          ],
+          [
+            0.8,
+            3.5800000000000125
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Right letter veneer",
+      "plate": 5,
+      "gcode_sha256": "72734f1b8e766288e639a7371de8fa67f20a0c48d1db27aa28b95b82db2a4ce5",
+      "front_layers": 1469,
+      "front_z_range_mm": [
+        3.6,
+        297.2
+      ],
+      "missing_front_layers": 0,
+      "median_mesh_distance_mm": [
+        0.20690075395486926,
+        0.5335920689544881
+      ],
+      "continuous_face_z_range_mm": [
+        4,
+        296.8
+      ],
+      "continuous_face_median_mesh_distance_mm": [
+        0.20690075395486926,
+        0.2123186526428747
+      ],
+      "maximum_adjacent_median_change_mm": 0.002074302967542324,
+      "perimeter_closure_layers": [
+        [
+          3.6,
+          20.0,
+          0.5335920689544881,
+          0.2143133677499256,
+          3.669151034219389,
+          4.14247709608846
+        ],
+        [
+          3.8,
+          31.0,
+          0.2107974755786947,
+          0.20348652259062971,
+          0.21549550035628615,
+          0.21705394734668199
+        ],
+        [
+          297.0,
+          75.0,
+          0.2108038594838668,
+          0.2017503406727542,
+          0.4204846606231953,
+          0.519430121237727
+        ],
+        [
+          297.2,
+          63.0,
+          0.21435275637596424,
+          0.21023756762932563,
+          0.37695821932962637,
+          0.3974119925442188
+        ]
+      ],
+      "peak_changes": [
+        [
+          29.2,
+          0.0012688041778053383
+        ],
+        [
+          267.0,
+          -0.0013442603345078241
+        ],
+        [
+          5.8,
+          0.00137741869400268
+        ],
+        [
+          37.4,
+          -0.0014484384998904587
+        ],
+        [
+          4.0,
+          0.001521177064180007
+        ],
+        [
+          6.0,
+          -0.0016775444816629625
+        ],
+        [
+          296.2,
+          0.0018358834858832052
+        ],
+        [
+          4.2,
+          -0.002074302967542324
+        ],
+        [
+          297.2,
+          0.0035488968920974473
+        ],
+        [
+          3.8,
+          -0.3227945933757934
+        ]
+      ],
+      "maximum_sample_distance_mm": 4.14247709608846,
+      "carrier_layers": 1471,
+      "carrier_z_range_mm": [
+        0.2,
+        294.2
+      ],
+      "carrier_reported_band": [
+        [
+          137.8,
+          66.16,
+          253.84
+        ],
+        [
+          138.0,
+          66.16,
+          253.84
+        ],
+        [
+          138.2,
+          66.16,
+          253.84
+        ],
+        [
+          138.4,
+          66.16,
+          253.84
+        ],
+        [
+          138.6,
+          66.16,
+          253.84
+        ],
+        [
+          138.8,
+          66.16,
+          253.84
+        ],
+        [
+          139.0,
+          66.16,
+          253.84
+        ],
+        [
+          139.2,
+          66.161,
+          253.84
+        ],
+        [
+          139.4,
+          66.161,
+          253.84
+        ]
+      ],
+      "carrier_largest_changes": [
+        [
+          [
+            292.4,
+            1.7249999999999943
+          ],
+          [
+            292.6,
+            1.8550000000000182
+          ],
+          [
+            292.8,
+            2.0249999999999773
+          ],
+          [
+            293.0,
+            2.225999999999999
+          ],
+          [
+            293.2,
+            2.6430000000000007
+          ],
+          [
+            293.4,
+            2.801000000000016
+          ],
+          [
+            0.4,
+            3.3900000000000006
+          ],
+          [
+            293.6,
+            3.400999999999982
+          ],
+          [
+            0.8,
+            -3.5799999999999983
+          ],
+          [
+            293.8,
+            4.171000000000021
+          ],
+          [
+            294.0,
+            5.713999999999999
+          ],
+          [
+            294.2,
+            10.400000000000006
+          ]
+        ],
+        [
+          [
+            289.2,
+            0.0
+          ],
+          [
+            289.4,
+            0.0
+          ],
+          [
+            289.6,
+            0.0
+          ],
+          [
+            289.8,
+            0.0
+          ],
+          [
+            290.0,
+            0.0
+          ],
+          [
+            290.2,
+            0.0
+          ],
+          [
+            290.4,
+            0.0
+          ],
+          [
+            290.6,
+            0.0
+          ],
+          [
+            290.8,
+            0.0
+          ],
+          [
+            291.0,
+            0.0
+          ],
+          [
+            0.4,
+            -3.390000000000015
+          ],
+          [
+            0.8,
+            3.5800000000000125
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Center letter veneer",
+      "plate": 6,
+      "gcode_sha256": "0c5e432f154e1b2c73f125ed9998b278a3f88bc94719b46682e57f91f9155072",
+      "front_layers": 1469,
+      "front_z_range_mm": [
+        3.6,
+        297.2
+      ],
+      "missing_front_layers": 0,
+      "median_mesh_distance_mm": [
+        0.2067440415547737,
+        2.0719374355489344
+      ],
+      "continuous_face_z_range_mm": [
+        4,
+        296.8
+      ],
+      "continuous_face_median_mesh_distance_mm": [
+        0.2067440415547737,
+        0.2103294928712458
+      ],
+      "maximum_adjacent_median_change_mm": 0.0019742843172444458,
+      "perimeter_closure_layers": [
+        [
+          3.6,
+          21.0,
+          2.0719374355489344,
+          0.21017039824088318,
+          245.93780632376493,
+          246.40878645559363
+        ],
+        [
+          3.8,
+          43.0,
+          0.21012184893918312,
+          0.21010800637250884,
+          0.21385869599726598,
+          0.21503601898571598
+        ],
+        [
+          297.0,
+          171.0,
+          0.21028759588508453,
+          0.2026424482448448,
+          0.21593407949011512,
+          0.21801929816281262
+        ],
+        [
+          297.2,
+          154.0,
+          0.21024446203287536,
+          0.20689982645919855,
+          0.2120691380341675,
+          0.28270115463794343
+        ]
+      ],
+      "peak_changes": [
+        [
+          6.0,
+          -0.0008056328636174004
+        ],
+        [
+          94.2,
+          -0.00081492310177117
+        ],
+        [
+          282.6,
+          0.0009134462806669186
+        ],
+        [
+          278.8,
+          0.0009284468205494056
+        ],
+        [
+          183.4,
+          -0.0010643935111937786
+        ],
+        [
+          282.4,
+          -0.0011076985444927467
+        ],
+        [
+          89.0,
+          -0.001251507815397096
+        ],
+        [
+          5.6,
+          -0.0015243103576842998
+        ],
+        [
+          296.6,
+          0.0019742843172444458
+        ],
+        [
+          3.8,
+          -1.8618155866097512
+        ]
+      ],
+      "maximum_sample_distance_mm": 246.40878645559363,
+      "carrier_layers": 1471,
+      "carrier_z_range_mm": [
+        0.2,
+        294.2
+      ],
+      "carrier_reported_band": [
+        [
+          137.8,
+          130.704,
+          200.325
+        ],
+        [
+          138.0,
+          130.704,
+          200.325
+        ],
+        [
+          138.2,
+          130.704,
+          200.325
+        ],
+        [
+          138.4,
+          130.705,
+          200.325
+        ],
+        [
+          138.6,
+          130.704,
+          200.325
+        ],
+        [
+          138.8,
+          130.705,
+          200.325
+        ],
+        [
+          139.0,
+          130.704,
+          200.325
+        ],
+        [
+          139.2,
+          130.704,
+          200.325
+        ],
+        [
+          139.4,
+          130.704,
+          200.325
+        ]
+      ],
+      "carrier_largest_changes": [
+        [
+          [
+            12.4,
+            0.9480000000000075
+          ],
+          [
+            12.2,
+            1.0589999999999975
+          ],
+          [
+            12.0,
+            1.0649999999999977
+          ],
+          [
+            11.8,
+            1.1630000000000038
+          ],
+          [
+            11.6,
+            1.2650000000000006
+          ],
+          [
+            11.4,
+            1.360999999999997
+          ],
+          [
+            11.2,
+            1.4909999999999997
+          ],
+          [
+            11.0,
+            1.696000000000005
+          ],
+          [
+            10.8,
+            1.972999999999999
+          ],
+          [
+            10.6,
+            2.4750000000000014
+          ],
+          [
+            10.4,
+            3.394999999999996
+          ],
+          [
+            10.2,
+            12.094000000000001
+          ]
+        ],
+        [
+          [
+            12.4,
+            -0.9479999999999791
+          ],
+          [
+            12.2,
+            -1.0600000000000023
+          ],
+          [
+            10.2,
+            -1.0610000000000355
+          ],
+          [
+            12.0,
+            -1.0670000000000073
+          ],
+          [
+            11.8,
+            -1.160000000000025
+          ],
+          [
+            11.6,
+            -1.2649999999999864
+          ],
+          [
+            11.4,
+            -1.36099999999999
+          ],
+          [
+            11.2,
+            -1.4910000000000423
+          ],
+          [
+            11.0,
+            -1.6959999999999695
+          ],
+          [
+            10.8,
+            -1.9730000000000132
+          ],
+          [
+            10.6,
+            -2.4739999999999895
+          ],
+          [
+            10.4,
+            -3.394999999999982
+          ]
+        ]
+      ]
+    }
+  ],
+  "assembly_to_printer_by_plate": {
+    "1": [
+      [
+        -3.5121427342182706e-17,
+        0.573576436351046,
+        0.8191520442889918,
+        157.18066886891685
+      ],
+      [
+        -1.0,
+        -6.123233995736766e-17,
+        0.0,
+        -48.319625
+      ],
+      [
+        5.015859645267624e-17,
+        -0.8191520442889918,
+        0.573576436351046,
+        144.38650221516573
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "2": [
+      [
+        -3.5121427342182706e-17,
+        0.573576436351046,
+        0.8191520442889918,
+        157.17709797704015
+      ],
+      [
+        -1.0,
+        -6.123233995736766e-17,
+        0.0,
+        366.290125
+      ],
+      [
+        5.015859645267624e-17,
+        -0.8191520442889918,
+        0.573576436351046,
+        144.3967017393978
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "3": [
+      [
+        -3.5121427342182706e-17,
+        0.573576436351046,
+        0.8191520442889918,
+        157.17709797704012
+      ],
+      [
+        -1.0,
+        -6.123233995736766e-17,
+        0.0,
+        160.0
+      ],
+      [
+        5.015859645267624e-17,
+        -0.8191520442889918,
+        0.573576436351046,
+        144.39670173939783
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "physical_observation": {
+    "reported_plate": "Plate 5 of Letter; previous saved plate labels conflict with selector numbers",
+    "identity_not_assumed": "Earlier V1 answer and later Plate 5 report retained; selector 4 was labelled 5 - V1, selector 5 was labelled 6 - V2.",
+    "user_has_printed_or_inspected_other_veneers": false,
+    "finding": "Whole part and carrier reportedly shift at both front and rear ends. Right-side photographs. Cause remains unresolved."
+  },
+  "geometry_correction": {
+    "source_sha256": "8e391762ecb8415b77680a7bd4825e94afe37951d831bcfe41f6a43f31b16d4a",
+    "candidate_sha256": "5fa23b0b99b4f56e5a5a821020cd1c34e7ff1382bd75e1c6959ea5135039653c",
+    "objects": [
+      {
+        "veneer": 1,
+        "plate": 4,
+        "changed": true,
+        "asset": "3D/Objects/object_60.model",
+        "additions_assembly_xy": [
+          [
+            [
+              -300.48998937755823,
+              9.9073076993227
+            ],
+            [
+              -300.414992839098,
+              9.875267252326012
+            ],
+            [
+              -300.33999548107386,
+              9.843230828642845
+            ],
+            [
+              -300.33999548107386,
+              1.0702837482094765
+            ],
+            [
+              -300.33999548107386,
+              -7.702647998929024
+            ],
+            [
+              -300.48998937755823,
+              9.9073076993227
+            ]
+          ]
+        ],
+        "added_mm3": 1.5810149935468256,
+        "removed_mm3": -9.048480841033812e-12,
+        "change_bounds_assembly_mm": [
+          [
+            -300.490090675652,
+            -7.7031484097242355,
+            3.2
+          ],
+          [
+            -221.8738548,
+            148.61749358507123,
+            4.4000107260453944
+          ]
+        ],
+        "preserved_triangles": 496811,
+        "retriangulated_carrier_triangles": 31,
+        "new_faces": 496842,
+        "new_volume_mm3": 273279.9040238041
+      },
+      {
+        "veneer": 2,
+        "plate": 5,
+        "changed": false,
+        "reason": "No corresponding carrier side-edge jog; geometry retained byte-for-byte."
+      },
+      {
+        "veneer": 3,
+        "plate": 6,
+        "changed": true,
+        "asset": "3D/Objects/object_62.model",
+        "additions_assembly_xy": [
+          [
+            [
+              -125.39999389648438,
+              166.84314783662558
+            ],
+            [
+              -125.54998779296875,
+              177.56035881489515
+            ],
+            [
+              -125.47499171644449,
+              177.56035881489515
+            ],
+            [
+              -125.39999389648438,
+              177.56035881489515
+            ],
+            [
+              -125.39999389648438,
+              172.20180414617062
+            ],
+            [
+              -125.39999389648438,
+              166.84314783662558
+            ]
+          ],
+          [
+            [
+              125.4000015258789,
+              172.16183084249496
+            ],
+            [
+              125.4000015258789,
+              177.53101235628128
+            ],
+            [
+              125.47500171512365,
+              177.53101235628128
+            ],
+            [
+              125.55000305175781,
+              177.53101235628128
+            ],
+            [
+              125.4000015258789,
+              166.79276672750711
+            ],
+            [
+              125.4000015258789,
+              172.16183084249496
+            ]
+          ]
+        ],
+        "added_mm3": 1.9334408484301797,
+        "removed_mm3": -6.812023288120134e-12,
+        "change_bounds_assembly_mm": [
+          [
+            -125.55008920282125,
+            154.4096751707384,
+            3.2
+          ],
+          [
+            125.55010446161032,
+            177.56045881658792,
+            4.400011481641627
+          ]
+        ],
+        "preserved_triangles": 498798,
+        "retriangulated_carrier_triangles": 172,
+        "new_faces": 498970,
+        "new_volume_mm3": 208321.24983695525
+      }
+    ],
+    "process_changed": false,
+    "physical_shift_cause_unresolved": true
+  },
+  "archive_entries_sha256": {
+    "[Content_Types].xml": "4acce1f577c7f0af6d9d5923faac96a76aeb1c06f0eef1762b2c8905cc0c846b",
+    "Metadata/plate_1.png": "d01fea16820c199ef67803c1804dd63f6270c4fa347535687529730920909b5f",
+    "Metadata/plate_1_small.png": "37aeba0e885833284aeb9355d63d4ad8b1aec4d7d1b56611b7cb1fb2b06028f6",
+    "Metadata/plate_2.png": "7e7217de9412e247d246574624ede119135258d141f7049950fee9fe48c710b9",
+    "Metadata/plate_2_small.png": "7ee1b6abd2694ada393cff079e2e0f44ffdec9fb0f28ff6cc307c1baf84ed5d3",
+    "Metadata/plate_3.png": "8e4b5726451ad42c2fc6d0aacfaaec51778462f27c55752ba7a5658ff33c5209",
+    "Metadata/plate_3_small.png": "711bd8a9959107ef2d3e1852cdb12d1b948159663f819459284af0b39fdbb92f",
+    "Metadata/plate_4.png": "095c5e3c697eb0b485167ed42efc818d4cd12a041b8c52406994f54ffa809b2c",
+    "Metadata/plate_4_small.png": "ae03f48fe6d85e59c82fd0997c0eda33f764ecde1276f20eee0aefc3909f2057",
+    "Metadata/plate_5.png": "151eafd1a67a7052f1ec274642026862f680d3e0d01d6285f01f2ac7716b04a3",
+    "Metadata/plate_5_small.png": "c24bd825c1bc482041f91856096e88f72b95e0278e21322531cd5bfc1ba43780",
+    "Metadata/plate_6.png": "a9000fe8c419f741a9196751b9238305f47bf86bcaaa78f405ee9fc45dc75e24",
+    "Metadata/plate_6_small.png": "8748daaa5ef979afada1941194140ac28ea6e08a3c1a19766e23ccf30310d475",
+    "Metadata/plate_no_light_1.png": "bb63595ca5778b510d833472ed644b8f624fa8d013cad3dc0c9a535d4653c382",
+    "Metadata/plate_no_light_2.png": "7b2fcdfccd6c9424cdd2b2376795b4d3832a8d6e37e240a4478e0eaf7943bfc1",
+    "Metadata/plate_no_light_3.png": "3adf7ad3f419680121626f569603d25e976a95c577f5406d4094c3b062d9552a",
+    "Metadata/plate_no_light_4.png": "c56ebb3c326d9a6c84ce0183035d583986ebc0d0c24ccf6e99b430356ce70dab",
+    "Metadata/plate_no_light_5.png": "47c9579bc61a5ae4b90305dd795520fa6819b0b260c7f2328460b06a45e75c80",
+    "Metadata/plate_no_light_6.png": "f4e97bb5bed3c6da2b2a708311b188369dc086624b11da000305a7aa4d9b92e1",
+    "Metadata/top_1.png": "28428b2fc4dd48bcf06f3cb8d3dd1f6d40dab4acfda7ae902d1c2a5682a4ac48",
+    "Metadata/pick_1.png": "98716d404859cb231cadff97ffee62cf3c5c4029282ebb6273c1001c0879a99a",
+    "Metadata/top_2.png": "15be31d16137a44fe81d4291f7eb0344ddf04cd4a22b2244ecdf7d597a816783",
+    "Metadata/pick_2.png": "8bf31e7e3e7699dcc81bf897532f4777c7d7c87df8fdf16a32f34ef913b1a4e8",
+    "Metadata/top_3.png": "cdf0787a0614a42fe5424b46e9c99fb42b82b96bc4bdfa3d74773291246e4fc3",
+    "Metadata/pick_3.png": "a5d55848464cc8d160f146c309b60f383a187046f184ac786c7cd5eb3b83e700",
+    "Metadata/top_4.png": "6e4e4ef218224c29eaadd98833bf2e244d1ce6ffc4aa75c388722bc33a9c130a",
+    "Metadata/pick_4.png": "d0533c07583a6c3312f4f63d2a21fd918584522f2cc07fc9d3406ef6a50f720f",
+    "Metadata/top_5.png": "f933e5ffb9c20135929f8a47eafa27603e7546f13683b4cea922ac1ad3035d73",
+    "Metadata/pick_5.png": "20e2a4ba133d5ee253846441c808f5e588f85b1e0f54473efa4a195e807fa445",
+    "Metadata/top_6.png": "0c6cc91f553ce7bbb568e0bf2162160400e5341964a38e5e068e268220d596f2",
+    "Metadata/pick_6.png": "2c3d90c93187091ff0b534432440bc4c0cc4625f82a642fc9045eb2cc6eac850",
+    "Metadata/plate_1.json": "21842bedf6364aef6110226547964345d66258749fa954e5aa1858106f5d2f41",
+    "Metadata/plate_2.json": "9d05f4b5df548e1f92471337d97ebc6760a60a1e27f68dfb765a7e25997c5770",
+    "Metadata/plate_3.json": "01da2430c81e0b3dfb7ec223d1839b44162496e641cc6e866b7ff58fb7389af7",
+    "Metadata/plate_4.json": "a03d409fcb9c7e429b06a3c1ebb360063c3456ae67b70327f3f2ce712cc0b43a",
+    "Metadata/plate_5.json": "aadd548419000a8d4312880633faa16d4dc178914b8bcfef70f21e62c64b03d4",
+    "Metadata/plate_6.json": "92ffd3d0eefcba3ad95683746b14a66e3b8c4558b6c2ac8bfb989f692846b4c6",
+    "3D/3dmodel.model": "87aa95ed841854346c6b7030b3728e4233077058277982b8c1ea036e6e645c0c",
+    "3D/_rels/3dmodel.model.rels": "c7237b8f675dd564ce1be5bb2e2a42ba878b3a113ab5c54a67fa8bff5f4c2ade",
+    "3D/Objects/object_58.model": "46a82b234613e9099d4f6c82be535ec12dae7af1de19770dc41568b45ad3544b",
+    "3D/Objects/object_57.model": "439dd06060470809f18e2d524ef20113b317632a95e40407e0c4e37172b60fa8",
+    "3D/Objects/object_59.model": "66673d0fd766e7cd405df3d997dee4c6a1f7e8c852323f42c930727e9c5d905d",
+    "3D/Objects/object_56.model": "9f56a6d746c05fa7de1a4657eeebe1d92b5a2c5f8b079f5e634e6b527e754dcf",
+    "3D/Objects/object_55.model": "a5a0409c2285250d6e5af96aa460b7d1e6cd82f622dd3efdcd21dda0ae3ed73b",
+    "3D/Objects/object_61.model": "b476d6b80423a15d9805f7a5f1fc3e58f15be9a263170c3c7fa5b4a92d500fdc",
+    "3D/Objects/object_62.model": "ebea7a2e1dbb61930dc962b6413433d76acd329197f4d2c4c70d4cf23c1e40a7",
+    "3D/Objects/object_60.model": "e86c393bb547305c167529728e53d9723b3c4a2f10984abb3154a50906002f20",
+    "Metadata/project_settings.config": "20b71e597ba79a1fa879fffc9bb592c9d1303bc0949a4e3e85ba3a48cb6f429f",
+    "Metadata/plate_1.gcode.md5": "ce3ba0747285ed177c354e9dd0a29f564cfa690a48b15cb7161ce533871a021d",
+    "Metadata/plate_2.gcode.md5": "c5fdafc8ebef6460750ed03e4467e0fcd3071de53beeed0dcd70d56916cc64c9",
+    "Metadata/plate_3.gcode.md5": "717627b101a5e454ff5201b08703c371e6267337069394e9f1f56ee51222e384",
+    "Metadata/plate_4.gcode.md5": "6d6df3329f592748a9b7f303de399d12614fb95ff5893e25564c9f7d71e95bae",
+    "Metadata/plate_5.gcode.md5": "52ece0918335599ef6b499ea7bcddd8371d1d0f0a5f801439fe05a9e1a63302c",
+    "Metadata/plate_6.gcode.md5": "3926c6647d2bbc66b851bcad6bc14efc3c6c263afe2597489bf61548d7ee09d9",
+    "Metadata/plate_2.gcode": "8753c476367822db80a653a9eb11b5b140bda9a56cbfa89728f0faf2b46237fe",
+    "Metadata/plate_3.gcode": "498d30f9eb6a82aa0b8f732f3dc3a2227a86c4149a0232d00ada4bbb94557818",
+    "Metadata/plate_1.gcode": "4bcdbefd1a1611a5f32f7459597ae6d666e8bda373e992aec0f0aa60791149dc",
+    "Metadata/plate_5.gcode": "72734f1b8e766288e639a7371de8fa67f20a0c48d1db27aa28b95b82db2a4ce5",
+    "Metadata/plate_4.gcode": "8e5b7675cd3629f3a3b5a1fbb1fe03c869988b6e79621c0916527b2f364d7f1f",
+    "Metadata/plate_6.gcode": "0c5e432f154e1b2c73f125ed9998b278a3f88bc94719b46682e57f91f9155072",
+    "Metadata/_rels/model_settings.config.rels": "88ff21cac3809ddb3cd865ace64a0dfb09403bb0b847d08cdc7bdc50675c1896",
+    "Metadata/model_settings.config": "017502139b31305aab4e8b975f117df0a88b7070c1ee1f54b2e20b366ea37c2c",
+    "Metadata/cut_information.xml": "7a4557268564be672dbaa310dc66c731607eb87da2fcf3b0bec511a34775881f",
+    "Metadata/slice_info.config": "ac1b95d6d0f95261162722e4602dd72d4b4dd128af15d9df15c7b118af28db6e",
+    "Metadata/filament_sequence.json": "30346cff3c587d445927e0c5ec54356bab558154e754fac7b8ffe9ec001728ea",
+    "_rels/.rels": "eba9728f3f5482ecaee5c07f78ab85ac1b537747f60035da471f79678f858aa9"
+  },
+  "changed_archive_entries": [
+    "Metadata/plate_3.gcode",
+    "Metadata/top_4.png",
+    "Metadata/plate_5.gcode.md5",
+    "Metadata/plate_4.png",
+    "Metadata/plate_2.gcode",
+    "Metadata/top_6.png",
+    "Metadata/plate_6.gcode",
+    "3D/Objects/object_61.model",
+    "Metadata/plate_4.gcode.md5",
+    "Metadata/model_settings.config",
+    "Metadata/slice_info.config",
+    "Metadata/plate_4.gcode",
+    "3D/Objects/object_60.model",
+    "3D/Objects/object_62.model",
+    "Metadata/project_settings.config",
+    "Metadata/plate_1.gcode.md5",
+    "Metadata/plate_6.png",
+    "Metadata/plate_4.json",
+    "Metadata/plate_2.gcode.md5",
+    "Metadata/plate_3.gcode.md5",
+    "Metadata/plate_6.gcode.md5",
+    "Metadata/plate_5.gcode",
+    "Metadata/plate_4_small.png",
+    "3D/3dmodel.model",
+    "Metadata/plate_1.gcode"
+  ],
+  "continuity_report": "release/letter-veneer-correction/continuity.json",
+  "transition_inspection": "release/letter-veneer-correction/transition-inspection.json",
+  "evidence_sha256": {
+    "continuity.json": "0292fe328797eeabf0a62298736a98ba2659ce4630638f2a8df0eca0e09ca85f",
+    "all-veneer-continuity.png": "231f12d5b0b25dcdfec7e8618a8d5c2b000eef33d25878b00bda14cbc852e369",
+    "transition-inspection.json": "bb4c44ce672222a09039bf80b837ab8e95d53054959a43b96e22fb86a538e57e",
+    "carrier-end-transitions.png": "57f9e604f770e22c7fcb1ece68204799288bf72a95182eb009b27ebcd4b64d42"
+  }
+}

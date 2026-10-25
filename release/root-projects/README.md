@@ -1,11 +1,13 @@
 # Root project release — October 22, 2026
 
+**October 25 main Letter correction:** the main six-plate `Letter.3mf` contains the corrected **Left letter veneer**, **Right letter veneer** and **Center letter veneer** on plates 4–6. All six plates use the corrected shared ERYONE speed/temperature/acceleration limits and have fresh native slices; all five core meshes, reinforcement, poses and structural settings are preserved. The separate candidates are superseded. Current hashes, geometry/process comparisons, all-three continuity inspection and native verification are in [letter-veneer-correction](../letter-veneer-correction/README.md). The earlier name-only record is historical. The whole-part physical shift remains unresolved.
+
 The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects with adjacent CAD/STL, and removal of all other 3MF files from source control. The follow-up explicitly allowed multiple supporting projects for different A1 settings, and added the sanding block and photo cut aligner. The user selected **keeping both locally saved layouts exactly** after being told they contain 12 crate clips and one photo guide.
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
 | Knot | 10 | 78h 57m | 2284.10 g |
-| Letter | 6 | 72h 17m | 1223.80 g |
+| Letter | 6 | 90h 07m | 1223.79 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |
 | Small Parts - Photo Cut Aligner | 1 | 0h 33m | 6.66 g |

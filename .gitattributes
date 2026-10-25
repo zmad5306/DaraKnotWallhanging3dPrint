@@ -11,6 +11,8 @@
 /release/knot-infill-first-revert-r1/*.json -text whitespace=cr-at-eol
 /release/knot-normal-supports-r1/*.json -text whitespace=cr-at-eol
 /release/knot-joint-approval-r1/*.json -text whitespace=cr-at-eol
+/release/letter-veneer-correction/*.json -text whitespace=cr-at-eol
+/release/letter-veneer-names/*.json -text whitespace=cr-at-eol
 /output/Dara-A2L-Joint-Screw-Bolster-r1/*.json -text whitespace=cr-at-eol
 /output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/*.json -text whitespace=cr-at-eol
 

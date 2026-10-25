@@ -59,6 +59,25 @@ def audit():
         cleanup_revision = None
         rollback_revision = None
         normal_revision = None
+        name_revision = None
+        veneer_revision = None
+        if row.get('veneer_correction_validation'):
+            veneer_revision=json.loads((ROOT/row['veneer_correction_validation']).read_text())
+            assert title=='Letter' and veneer_revision['project_sha256']==row['sha256']
+            assert veneer_revision['native_reopen_verified'] and veneer_revision['fresh_native_slices']
+            assert veneer_revision['all_six_spool_limits_verified'] and veneer_revision['veneer_mass_g']<1000
+            assert len(veneer_revision['checks'])==6 and len(veneer_revision['objects'])==8
+            assert all(r['max_mesh_pose_difference_mm']<.000001 and r['paint_and_object_volume_settings_preserved'] for r in veneer_revision['objects'])
+            assert sum(r.get('connections',{}).get('bond_probes_checked',0) for r in veneer_revision['checks'])==102
+            assert all(r['front_layers']==1469 and r['missing_front_layers']==0 for r in veneer_revision['full_height_continuity'])
+            for name,digest in veneer_revision['evidence_sha256'].items():
+                assert sha((ROOT/row['veneer_correction_validation']).parent/name)==digest,name
+        if row.get('name_validation'):
+            name_revision=json.loads((ROOT/row['name_validation']).read_text())
+            assert title=='Letter' and name_revision['sha256']==(veneer_revision['source_sha256'] if veneer_revision else row['sha256'])
+            assert name_revision['all_geometry_paint_poses_process_material_settings_and_gcode_byte_identical']
+            assert name_revision['stl_geometry_bytes_unchanged']
+            assert {r['name'] for r in name_revision['names']}=={'Left letter veneer','Right letter veneer','Center letter veneer'}
         if row.get('normal_supports_validation'):
             normal_revision=json.loads((ROOT/row['normal_supports_validation']).read_text())
             assert title=='Knot' and normal_revision['project_sha256']==row['sha256']
@@ -85,7 +104,7 @@ def audit():
                 assert sha(ROOT/rollback_revision[key])==rollback_revision[key+'_sha256']
         if row.get('filament_cleanup_validation'):
             cleanup_revision=json.loads((ROOT/row['filament_cleanup_validation']).read_text())
-            assert cleanup_revision['project_sha256']==(rollback_revision['source_project_sha256'] if rollback_revision else row['sha256'])
+            assert cleanup_revision['project_sha256']==(rollback_revision['source_project_sha256'] if rollback_revision else name_revision['source_sha256'] if name_revision else row['sha256'])
             assert cleanup_revision['all_retained_material_parameters_preserved']
             assert cleanup_revision['all_process_parameters_preserved']
             assert cleanup_revision['geometry_and_poses_byte_preserved']
@@ -104,17 +123,38 @@ def audit():
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if name_revision and not veneer_revision:
+                for name,digest in name_revision['archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
+            if veneer_revision:
+                for name,digest in veneer_revision['archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
+                for key,(_,value) in veneer_revision['project_setting_changes'].items():
+                    assert s[key]==value,(title,key)
             if filament_revision:
                 for key,change in filament_revision['project_setting_changes'].items():
                     expected=cleanup_revision['project_setting_changes'][key]['after'] if cleanup_revision else change['after']
+                    if veneer_revision and key in veneer_revision['project_setting_changes']:
+                        before,after=veneer_revision['project_setting_changes'][key]
+                        assert before==expected,(title,key)
+                        expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in filament_revision['preserved_archive_entries_sha256'].items():
                     if cleanup_revision and name not in cleanup_revision['preserved_archive_entries_sha256']:continue
+                    if name_revision and name in name_revision['changed_archive_entries']:continue
+                    if veneer_revision and name in veneer_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if cleanup_revision:
                 for key,change in cleanup_revision['project_setting_changes'].items():
-                    assert s[key]==change['after'],(title,key)
+                    expected=change['after']
+                    if veneer_revision and key in veneer_revision['project_setting_changes']:
+                        before,after=veneer_revision['project_setting_changes'][key]
+                        assert before==expected,(title,key)
+                        expected=after
+                    assert s[key]==expected,(title,key)
                 for name,digest in cleanup_revision['preserved_archive_entries_sha256'].items():
+                    if name_revision and name in name_revision['changed_archive_entries']:continue
+                    if veneer_revision and name in veneer_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
                 assert s['filament_settings_id']==row['filament_settings_id']==cleanup_revision['retained_profiles']
             cfg=ET.fromstring(z.read('Metadata/model_settings.config'));info=ET.fromstring(z.read('Metadata/slice_info.config'))
@@ -203,7 +243,13 @@ def audit():
                     if k.endswith('_file') and v:assert v in names,(title,k,v)
                 if not sliced:continue
                 name=f'Metadata/plate_{i}.gcode';data=z.read(name)
-                if filament_revision:
+                if veneer_revision:
+                    inspected=next(p for p in veneer_revision['checks'] if p['plate']==i)
+                    assert hashlib.sha256(data).hexdigest()==inspected['gcode_sha256']
+                    assert inspected['commands']['out_of_range_count']==0
+                    assert inspected['commands']['max_travel_acceleration_mm_s2']<=2500
+                    assert all(29.9999<=v['min_mm_s']<=v['max_mm_s']<=60.0001 and v['max_acceleration_mm_s2']<=1500 for v in inspected['commands']['features'].values())
+                elif filament_revision:
                     filament_plate=next(p for p in filament_revision['plates'] if p['plate']==i)
                     if cleanup_revision:
                         cleanup_plate=next(p for p in cleanup_revision['plates'] if p['plate']==i)

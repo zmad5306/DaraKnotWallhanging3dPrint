@@ -1,0 +1,98 @@
+{
+    "error_string": "Success.",
+    "export_time": 518,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 21,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 140.11416625976563,
+                "Bridge": 324.6369323730469,
+                "Brim": 14.404717445373535,
+                "Custom": 405.8434143066406,
+                "Flush": 1407.267822265625,
+                "Gap infill": 27.582130432128906,
+                "Inner wall": 760.8961791992188,
+                "Internal solid infill": 721.166015625,
+                "Outer wall": 376.13555908203125,
+                "Overhang wall": 79.08226776123047,
+                "Prime tower": 352.9189147949219,
+                "Sparse infill": 603.3589477539063,
+                "Support": 209.93798828125,
+                "Support interface": 73.19829559326172,
+                "Support transition": 56.36409378051758,
+                "Top surface": 223.0799102783203,
+                "Travel": 458.3408203125,
+                "Undefined": 455.8444519042969
+            },
+            "filament_change_times": 14,
+            "filaments": [
+                {
+                    "filament_id": "Pe271290",
+                    "id": 1,
+                    "main_used_g": 28.85599708557129,
+                    "total_used_g": 35.041343688964844
+                },
+                {
+                    "filament_id": "Pe271290",
+                    "id": 2,
+                    "main_used_g": 2.0457262992858887,
+                    "total_used_g": 3.4563779830932617
+                },
+                {
+                    "filament_id": "P4f017ac",
+                    "id": 3,
+                    "main_used_g": 0.24871282279491425,
+                    "total_used_g": 1.30670166015625
+                }
+            ],
+            "generate_support_material_time": 39,
+            "id": 1,
+            "infill_time": 188,
+            "layer_filament_change": 0,
+            "main_predication": 4057.267822265625,
+            "make_perimeters_time": 37,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 82.46248626708984,
+                        "height": 13.5,
+                        "width": 86.64167022705078,
+                        "x": 43.82124328613281,
+                        "y": 67.61408996582031,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "A - J2 F3 tongue",
+                    "triangle_count": 3342
+                },
+                {
+                    "bbox": {
+                        "depth": 80.63890838623047,
+                        "height": 16.5,
+                        "width": 82.6934814453125,
+                        "x": 168.4926300048828,
+                        "y": 70.07810974121094,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "B - J2 F1 socket and screw bolster",
+                    "triangle_count": 4364
+                }
+            ],
+            "sliced_time": 845,
+            "sliced_time_with_cache": 555,
+            "total_predication": 6231.8017578125,
+            "triangle_count": 7706,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

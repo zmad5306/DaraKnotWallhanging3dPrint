@@ -1,0 +1,3377 @@
+{
+  "project_sha256": "9be5d7d200fb69ba839a6cf6474a0662955ae9b2f7f01425c3b7e4ae6602de32",
+  "plan_sha256": "afcdb48a0671aaf9a2fbb8a38078d91e2997829f53c6558af0255b06b032b020",
+  "section_method": "Original triangle/plane intersections; no regenerated key geometry",
+  "joints": [
+    {
+      "joint": 1,
+      "male_plate": 2,
+      "female_plate": 1,
+      "assembled_interference_mm3": 0.004037673057362763,
+      "overlap_component_minimum_thickness_mm": [
+        2.70615580818893e-05,
+        1.1661628289660382e-05
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -43.378258499377324,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000068862894267,
+              "groove_width_mm": 3.2999897426368108,
+              "minimum_section_clearance_mm": 0.14868786318400823
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.000006919259171,
+              "groove_width_mm": 3.2999897624186545,
+              "minimum_section_clearance_mm": 0.14868786318400823
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000006952228894,
+              "groove_width_mm": 3.299989782200484,
+              "minimum_section_clearance_mm": 0.14868786318400823
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000068862894267,
+              "groove_width_mm": 3.2999897426368108,
+              "minimum_section_clearance_mm": 0.14868786318400803
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.000006919259185,
+              "groove_width_mm": 3.299989762418633,
+              "minimum_section_clearance_mm": 0.14868786318400803
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000006952228894,
+              "groove_width_mm": 3.29998978220047,
+              "minimum_section_clearance_mm": 0.14868786318400803
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000068862894125,
+              "groove_width_mm": 3.2999897426368108,
+              "minimum_section_clearance_mm": 0.14868786318400723
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.000006919259121,
+              "groove_width_mm": 3.299989762418633,
+              "minimum_section_clearance_mm": 0.14868786318400723
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000006952228887,
+              "groove_width_mm": 3.29998978220047,
+              "minimum_section_clearance_mm": 0.14868786318400723
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000068862894125,
+              "groove_width_mm": 3.2999897426368108,
+              "minimum_section_clearance_mm": 0.14868786318400706
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000069192591354,
+              "groove_width_mm": 3.299989762418633,
+              "minimum_section_clearance_mm": 0.14868786318400706
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000006952228887,
+              "groove_width_mm": 3.29998978220047,
+              "minimum_section_clearance_mm": 0.14868786318400706
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000068862894196,
+              "groove_width_mm": 3.2999897426368037,
+              "minimum_section_clearance_mm": 0.14868786318400642
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000069192591496,
+              "groove_width_mm": 3.2999897624186403,
+              "minimum_section_clearance_mm": 0.14868786318400642
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000006952228887,
+              "groove_width_mm": 3.299989782200477,
+              "minimum_section_clearance_mm": 0.14868786318400642
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 43.378258499377324,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999962774019124,
+              "groove_width_mm": 4.40000209690686,
+              "minimum_section_clearance_mm": 0.14998706669733344
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.9999965236217108,
+              "groove_width_mm": 4.39999725858182,
+              "minimum_section_clearance_mm": 0.14998706669733344
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999998021370324,
+              "groove_width_mm": 4.399992420256773,
+              "minimum_section_clearance_mm": 0.14998706669733344
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999962774019124,
+              "groove_width_mm": 4.40000209690686,
+              "minimum_section_clearance_mm": 0.14998706669734208
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.999996523621718,
+              "groove_width_mm": 4.399997258581813,
+              "minimum_section_clearance_mm": 0.14998706669734208
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999998021370324,
+              "groove_width_mm": 4.399992420256773,
+              "minimum_section_clearance_mm": 0.14998706669734208
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999962774019124,
+              "groove_width_mm": 4.40000209690686,
+              "minimum_section_clearance_mm": 0.1499870666973465
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999965236217037,
+              "groove_width_mm": 4.39999725858182,
+              "minimum_section_clearance_mm": 0.1499870666973465
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999998021370324,
+              "groove_width_mm": 4.399992420256773,
+              "minimum_section_clearance_mm": 0.1499870666973465
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999962774019124,
+              "groove_width_mm": 4.40000209690686,
+              "minimum_section_clearance_mm": 0.14998706669734096
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.999996523621725,
+              "groove_width_mm": 4.39999725858182,
+              "minimum_section_clearance_mm": 0.14998706669734096
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999998021370324,
+              "groove_width_mm": 4.399992420256773,
+              "minimum_section_clearance_mm": 0.14998706669734096
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999962774019124,
+              "groove_width_mm": 4.40000209690686,
+              "minimum_section_clearance_mm": 0.14998706669733738
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.999996523621718,
+              "groove_width_mm": 4.399997258581813,
+              "minimum_section_clearance_mm": 0.14998706669733738
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999998021370317,
+              "groove_width_mm": 4.399992420256773,
+              "minimum_section_clearance_mm": 0.14998706669733738
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 2,
+      "male_plate": 3,
+      "female_plate": 1,
+      "assembled_interference_mm3": 0.001257190615855579,
+      "overlap_component_minimum_thickness_mm": [
+        1.8400054906227466e-05,
+        3.7834556536608943e-06,
+        8.211253472723001e-06,
+        1.3724276612947506e-06,
+        4.780917969071652e-06
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -24.5007682544408,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000005308096018,
+              "groove_width_mm": 3.3000024975536633,
+              "minimum_section_clearance_mm": 0.1487024226340687
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.000005305546267,
+              "groove_width_mm": 3.3000024975536526,
+              "minimum_section_clearance_mm": 0.1487024226340687
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000053029965095,
+              "groove_width_mm": 3.3000024975536633,
+              "minimum_section_clearance_mm": 0.1487024226340687
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000005308096018,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.1487024226340653
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.000005305546267,
+              "groove_width_mm": 3.3000024975536597,
+              "minimum_section_clearance_mm": 0.1487024226340653
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000053029965095,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.1487024226340653
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000053080960143,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.1487024226340641
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.000005305546253,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.1487024226340641
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000053029965095,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.1487024226340641
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000005308096018,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.14870242263406325
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.000005305546267,
+              "groove_width_mm": 3.3000024975536526,
+              "minimum_section_clearance_mm": 0.14870242263406325
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000053029965095,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.14870242263406325
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000053080960143,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.14870242263406303
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000053055462566,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.14870242263406303
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000005302996506,
+              "groove_width_mm": 3.300002497553667,
+              "minimum_section_clearance_mm": 0.14870242263406303
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 24.5007682544408,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000049303315315,
+              "groove_width_mm": 4.400002559598139,
+              "minimum_section_clearance_mm": 0.1499959288143339
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0000005683748157,
+              "groove_width_mm": 4.399999756578332,
+              "minimum_section_clearance_mm": 0.1499959288143339
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999962064180963,
+              "groove_width_mm": 4.3999969535585315,
+              "minimum_section_clearance_mm": 0.1499959288143339
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000049303315315,
+              "groove_width_mm": 4.400002559598136,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0000005683748157,
+              "groove_width_mm": 4.399999756578328,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999962064180963,
+              "groove_width_mm": 4.3999969535585315,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000004930331535,
+              "groove_width_mm": 4.400002559598136,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0000005683748157,
+              "groove_width_mm": 4.399999756578332,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999962064180963,
+              "groove_width_mm": 4.3999969535585315,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000004930331535,
+              "groove_width_mm": 4.400002559598139,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.000000568374819,
+              "groove_width_mm": 4.399999756578335,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999962064180963,
+              "groove_width_mm": 4.3999969535585315,
+              "minimum_section_clearance_mm": 0.14999592881433393
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000004930331535,
+              "groove_width_mm": 4.400002559598136,
+              "minimum_section_clearance_mm": 0.1499959288143339
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.000000568374812,
+              "groove_width_mm": 4.399999756578332,
+              "minimum_section_clearance_mm": 0.1499959288143339
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999962064180963,
+              "groove_width_mm": 4.3999969535585315,
+              "minimum_section_clearance_mm": 0.1499959288143339
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 3,
+      "male_plate": 2,
+      "female_plate": 3,
+      "assembled_interference_mm3": 0.0,
+      "overlap_component_minimum_thickness_mm": [],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -32.37678581453271,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000030475680113,
+              "groove_width_mm": 3.299997290957439,
+              "minimum_section_clearance_mm": 0.1486988466139641
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.99999810097394,
+              "groove_width_mm": 3.300002149644655,
+              "minimum_section_clearance_mm": 0.1486988466139641
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999931543798937,
+              "groove_width_mm": 3.3000085489276074,
+              "minimum_section_clearance_mm": 0.1486988466139641
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000003047568015,
+              "groove_width_mm": 3.299997290957446,
+              "minimum_section_clearance_mm": 0.14869884661395957
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.9999981009739507,
+              "groove_width_mm": 3.300002149644669,
+              "minimum_section_clearance_mm": 0.14869884661395957
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999931543799008,
+              "groove_width_mm": 3.3000085489276074,
+              "minimum_section_clearance_mm": 0.14869884661395957
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000003047568015,
+              "groove_width_mm": 3.299997290957439,
+              "minimum_section_clearance_mm": 0.1486988466139592
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.999998100973947,
+              "groove_width_mm": 3.300002149644662,
+              "minimum_section_clearance_mm": 0.1486988466139592
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999931543799008,
+              "groove_width_mm": 3.3000085489276074,
+              "minimum_section_clearance_mm": 0.1486988466139592
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000003047568015,
+              "groove_width_mm": 3.299997290957439,
+              "minimum_section_clearance_mm": 0.1486988466139589
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.999998100973965,
+              "groove_width_mm": 3.300002149644662,
+              "minimum_section_clearance_mm": 0.1486988466139589
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999931543799043,
+              "groove_width_mm": 3.3000085489276074,
+              "minimum_section_clearance_mm": 0.1486988466139589
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000003047568015,
+              "groove_width_mm": 3.299997290957446,
+              "minimum_section_clearance_mm": 0.14869884661395652
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.999998100973947,
+              "groove_width_mm": 3.300002149644662,
+              "minimum_section_clearance_mm": 0.14869884661395652
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999931543798937,
+              "groove_width_mm": 3.3000085489276074,
+              "minimum_section_clearance_mm": 0.14869884661395652
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 32.37678581453271,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000234113727586,
+              "groove_width_mm": 4.3999974784019855,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.000008600425822,
+              "groove_width_mm": 4.400012321758098,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999937894788538,
+              "groove_width_mm": 4.400027165114217,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000234113727586,
+              "groove_width_mm": 4.399997478401982,
+              "minimum_section_clearance_mm": 0.14999615733007052
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.000008600425801,
+              "groove_width_mm": 4.400012321758094,
+              "minimum_section_clearance_mm": 0.14999615733007052
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999378947885,
+              "groove_width_mm": 4.400027165114224,
+              "minimum_section_clearance_mm": 0.14999615733007052
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000023411372755,
+              "groove_width_mm": 4.399997478401989,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0000086004258044,
+              "groove_width_mm": 4.4000123217581155,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999937894788467,
+              "groove_width_mm": 4.400027165114224,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000023411372762,
+              "groove_width_mm": 4.399997478401989,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.000008600425815,
+              "groove_width_mm": 4.400012321758105,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999378947885,
+              "groove_width_mm": 4.400027165114224,
+              "minimum_section_clearance_mm": 0.14999615733007055
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000023411372755,
+              "groove_width_mm": 4.3999974784019855,
+              "minimum_section_clearance_mm": 0.14999615733007052
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000086004257938,
+              "groove_width_mm": 4.400012321758101,
+              "minimum_section_clearance_mm": 0.14999615733007052
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993789478836,
+              "groove_width_mm": 4.400027165114224,
+              "minimum_section_clearance_mm": 0.14999615733007052
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 4,
+      "male_plate": 4,
+      "female_plate": 3,
+      "assembled_interference_mm3": 3.1348106516481696e-05,
+      "overlap_component_minimum_thickness_mm": [
+        1.13999999484804e-05,
+        3.673926436468615e-16,
+        8.242299857889408e-15,
+        5.805421655365649e-15
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -22.434500000000003,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.1486947715477055
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.1486947715477055
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.1486947715477055
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154770616
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154770616
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154770616
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.1486947715477135
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.1486947715477135
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.1486947715477135
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154771166
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154771166
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154771166
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154771063
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154771063
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14869477154771063
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 22.434500000000003,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1500014999999877
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1500014999999877
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1500014999999877
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1500014999999877
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1500014999999877
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1500014999999877
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.15000149999998766
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 5,
+      "male_plate": 5,
+      "female_plate": 4,
+      "assembled_interference_mm3": 0.0,
+      "overlap_component_minimum_thickness_mm": [],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -32.378703711790415,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000002811007306,
+              "groove_width_mm": 3.2999949400419126,
+              "minimum_section_clearance_mm": 0.14866770719138406
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524218385,
+              "groove_width_mm": 3.300001162581882,
+              "minimum_section_clearance_mm": 0.14866770719138406
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999928938363887,
+              "groove_width_mm": 3.3000073851218517,
+              "minimum_section_clearance_mm": 0.14866770719138406
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028110073096,
+              "groove_width_mm": 3.299994940041909,
+              "minimum_section_clearance_mm": 0.14866770719138273
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524218527,
+              "groove_width_mm": 3.300001162581868,
+              "minimum_section_clearance_mm": 0.14866770719138273
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999928938363887,
+              "groove_width_mm": 3.3000073851218517,
+              "minimum_section_clearance_mm": 0.14866770719138273
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028110073096,
+              "groove_width_mm": 3.299994940041909,
+              "minimum_section_clearance_mm": 0.14866770719138322
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.999997852421835,
+              "groove_width_mm": 3.3000011625818644,
+              "minimum_section_clearance_mm": 0.14866770719138322
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999928938363887,
+              "groove_width_mm": 3.3000073851218517,
+              "minimum_section_clearance_mm": 0.14866770719138322
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028110073096,
+              "groove_width_mm": 3.2999949400419126,
+              "minimum_section_clearance_mm": 0.1486677071913847
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.999997852421842,
+              "groove_width_mm": 3.300001162581907,
+              "minimum_section_clearance_mm": 0.1486677071913847
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999928938363887,
+              "groove_width_mm": 3.300007385121855,
+              "minimum_section_clearance_mm": 0.1486677071913847
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028110073096,
+              "groove_width_mm": 3.2999949400419126,
+              "minimum_section_clearance_mm": 0.14866770719138162
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524218456,
+              "groove_width_mm": 3.300001162581875,
+              "minimum_section_clearance_mm": 0.14866770719138162
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999928938363816,
+              "groove_width_mm": 3.300007385121855,
+              "minimum_section_clearance_mm": 0.14866770719138162
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 32.378703711790415,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000026457213806,
+              "groove_width_mm": 4.399996579772779,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978913131855,
+              "groove_width_mm": 4.400001538358225,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993136904969,
+              "groove_width_mm": 4.40000649694365,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000026457213806,
+              "groove_width_mm": 4.399996579772779,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978913131677,
+              "groove_width_mm": 4.400001538358225,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993136904969,
+              "groove_width_mm": 4.4000064969436465,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000002645721377,
+              "groove_width_mm": 4.399996579772779,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.999997891313157,
+              "groove_width_mm": 4.400001538358229,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999931369049655,
+              "groove_width_mm": 4.400006496943643,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000026457213806,
+              "groove_width_mm": 4.399996579772779,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.999997891313175,
+              "groove_width_mm": 4.400001538358204,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993136904962,
+              "groove_width_mm": 4.400006496943643,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000002645721384,
+              "groove_width_mm": 4.399996579772779,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.999997891313182,
+              "groove_width_mm": 4.400001538358211,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993136904962,
+              "groove_width_mm": 4.400006496943643,
+              "minimum_section_clearance_mm": 0.1499920136846325
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 6,
+      "male_plate": 4,
+      "female_plate": 6,
+      "assembled_interference_mm3": 0.0035007236464733513,
+      "overlap_component_minimum_thickness_mm": [
+        1.359167253411897e-05,
+        2.476208369201548e-05
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -25.05269654679606,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999966923277306,
+              "groove_width_mm": 3.300000156961751,
+              "minimum_section_clearance_mm": 0.1486956385849361
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.9999969344428017,
+              "groove_width_mm": 3.2999993642164327,
+              "minimum_section_clearance_mm": 0.1486956385849361
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999717655788,
+              "groove_width_mm": 3.2999985714711073,
+              "minimum_section_clearance_mm": 0.1486956385849361
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999966923277306,
+              "groove_width_mm": 3.3000001569617474,
+              "minimum_section_clearance_mm": 0.14869563858493476
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.999996934442809,
+              "groove_width_mm": 3.2999993642164256,
+              "minimum_section_clearance_mm": 0.14869563858493476
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999717655788,
+              "groove_width_mm": 3.2999985714711073,
+              "minimum_section_clearance_mm": 0.14869563858493476
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999966923277306,
+              "groove_width_mm": 3.3000001569617474,
+              "minimum_section_clearance_mm": 0.1486956385849331
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999969344427946,
+              "groove_width_mm": 3.299999364216422,
+              "minimum_section_clearance_mm": 0.1486956385849331
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999717655788,
+              "groove_width_mm": 3.2999985714711073,
+              "minimum_section_clearance_mm": 0.1486956385849331
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.999996692327734,
+              "groove_width_mm": 3.3000001569617474,
+              "minimum_section_clearance_mm": 0.14869563858493284
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.9999969344428052,
+              "groove_width_mm": 3.2999993642164327,
+              "minimum_section_clearance_mm": 0.14869563858493284
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999717655788,
+              "groove_width_mm": 3.2999985714711073,
+              "minimum_section_clearance_mm": 0.14869563858493284
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.999996692327734,
+              "groove_width_mm": 3.3000001569617474,
+              "minimum_section_clearance_mm": 0.14869563858493268
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.999996934442809,
+              "groove_width_mm": 3.299999364216422,
+              "minimum_section_clearance_mm": 0.14869563858493268
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.99999717655788,
+              "groove_width_mm": 3.2999985714711073,
+              "minimum_section_clearance_mm": 0.14869563858493268
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 25.05269654679606,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000034044501405,
+              "groove_width_mm": 4.400002218047096,
+              "minimum_section_clearance_mm": 0.14997763946586357
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0000001880818594,
+              "groove_width_mm": 4.399998649035965,
+              "minimum_section_clearance_mm": 0.14997763946586357
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999969717135855,
+              "groove_width_mm": 4.400002256314835,
+              "minimum_section_clearance_mm": 0.14997763946586357
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000003404450144,
+              "groove_width_mm": 4.400002218047099,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0000001880818523,
+              "groove_width_mm": 4.399998649035968,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999969717135855,
+              "groove_width_mm": 4.400002256314838,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000003404450144,
+              "groove_width_mm": 4.400002218047103,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.000000188081863,
+              "groove_width_mm": 4.399998649035968,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999969717135855,
+              "groove_width_mm": 4.400002256314835,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000034044501405,
+              "groove_width_mm": 4.400002218047099,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000001880818488,
+              "groove_width_mm": 4.399998649035968,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999969717135855,
+              "groove_width_mm": 4.400002256314835,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000034044501476,
+              "groove_width_mm": 4.400002218047103,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000001880818736,
+              "groove_width_mm": 4.399998649035965,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999996971713589,
+              "groove_width_mm": 4.400002256314838,
+              "minimum_section_clearance_mm": 0.14997763946586354
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.2999997,
+          "nominal_vertical_clearance_mm": 0.29999969999999987
+        }
+      ]
+    },
+    {
+      "joint": 7,
+      "male_plate": 5,
+      "female_plate": 6,
+      "assembled_interference_mm3": 2.5756454514087546e-07,
+      "overlap_component_minimum_thickness_mm": [
+        1.6728798712995278e-06,
+        2.7411601285083226e-06,
+        1.8684203767608452e-06,
+        9.118354833426317e-06,
+        9.617276505774276e-07,
+        9.604092291962623e-07
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -44.73171993652257,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999967546230266,
+              "groove_width_mm": 3.299993037050527,
+              "minimum_section_clearance_mm": 0.1487023479973898
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0000137089050156,
+              "groove_width_mm": 3.2999979506736423,
+              "minimum_section_clearance_mm": 0.1487023479973898
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000062395456126,
+              "groove_width_mm": 3.300002864296765,
+              "minimum_section_clearance_mm": 0.1487023479973898
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999967546230266,
+              "groove_width_mm": 3.299993037050534,
+              "minimum_section_clearance_mm": 0.14870234799738924
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0000137089050227,
+              "groove_width_mm": 3.2999979506736494,
+              "minimum_section_clearance_mm": 0.14870234799738924
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000062395456126,
+              "groove_width_mm": 3.300002864296765,
+              "minimum_section_clearance_mm": 0.14870234799738924
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999967546230195,
+              "groove_width_mm": 3.299993037050527,
+              "minimum_section_clearance_mm": 0.14870234799738946
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0000137089050156,
+              "groove_width_mm": 3.2999979506736494,
+              "minimum_section_clearance_mm": 0.14870234799738946
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000062395456126,
+              "groove_width_mm": 3.300002864296765,
+              "minimum_section_clearance_mm": 0.14870234799738946
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999967546230195,
+              "groove_width_mm": 3.299993037050527,
+              "minimum_section_clearance_mm": 0.1487023479973894
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000137089050156,
+              "groove_width_mm": 3.2999979506736494,
+              "minimum_section_clearance_mm": 0.1487023479973894
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000062395456126,
+              "groove_width_mm": 3.300002864296765,
+              "minimum_section_clearance_mm": 0.1487023479973894
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999967546230195,
+              "groove_width_mm": 3.299993037050534,
+              "minimum_section_clearance_mm": 0.14870234799739104
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000137089050085,
+              "groove_width_mm": 3.2999979506736565,
+              "minimum_section_clearance_mm": 0.14870234799739104
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000062395456055,
+              "groove_width_mm": 3.300002864296765,
+              "minimum_section_clearance_mm": 0.14870234799739104
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 44.73171993652257,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000059340294527,
+              "groove_width_mm": 4.399992094306889,
+              "minimum_section_clearance_mm": 0.14997349118152786
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.999996256239342,
+              "groove_width_mm": 4.399993347156922,
+              "minimum_section_clearance_mm": 0.14997349118152786
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999865784492386,
+              "groove_width_mm": 4.399994600006963,
+              "minimum_section_clearance_mm": 0.14997349118152786
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000059340294527,
+              "groove_width_mm": 4.399992094306896,
+              "minimum_section_clearance_mm": 0.14997349118152783
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.999996256239328,
+              "groove_width_mm": 4.399993347156929,
+              "minimum_section_clearance_mm": 0.14997349118152783
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999865784492386,
+              "groove_width_mm": 4.399994600006963,
+              "minimum_section_clearance_mm": 0.14997349118152783
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000059340294527,
+              "groove_width_mm": 4.399992094306896,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999962562393563,
+              "groove_width_mm": 4.399993347156922,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999865784492457,
+              "groove_width_mm": 4.399994600006956,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000059340294527,
+              "groove_width_mm": 4.399992094306896,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.999996256239342,
+              "groove_width_mm": 4.399993347156929,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999865784492386,
+              "groove_width_mm": 4.399994600006956,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000059340294527,
+              "groove_width_mm": 4.399992094306896,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.9999962562393563,
+              "groove_width_mm": 4.3999933471569435,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999865784492528,
+              "groove_width_mm": 4.399994600006963,
+              "minimum_section_clearance_mm": 0.1499734911815279
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 8,
+      "male_plate": 7,
+      "female_plate": 6,
+      "assembled_interference_mm3": 0.002916603003691569,
+      "overlap_component_minimum_thickness_mm": [
+        2.2924401882065813e-05
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -43.57068399755743,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999933563846213,
+              "groove_width_mm": 3.3000079296332885,
+              "minimum_section_clearance_mm": 0.14869543310620173
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0000026253832033,
+              "groove_width_mm": 3.299998206907759,
+              "minimum_section_clearance_mm": 0.14869543310620173
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000011894381778,
+              "groove_width_mm": 3.2999884841822364,
+              "minimum_section_clearance_mm": 0.14869543310620173
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999933563846213,
+              "groove_width_mm": 3.3000079296332885,
+              "minimum_section_clearance_mm": 0.14869543310619168
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0000026253832104,
+              "groove_width_mm": 3.299998206907773,
+              "minimum_section_clearance_mm": 0.14869543310619168
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000011894381778,
+              "groove_width_mm": 3.2999884841822364,
+              "minimum_section_clearance_mm": 0.14869543310619168
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999933563846213,
+              "groove_width_mm": 3.3000079296332885,
+              "minimum_section_clearance_mm": 0.14869543310620018
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.000002625383182,
+              "groove_width_mm": 3.299998206907766,
+              "minimum_section_clearance_mm": 0.14869543310620018
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000011894381778,
+              "groove_width_mm": 3.2999884841822293,
+              "minimum_section_clearance_mm": 0.14869543310620018
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999933563846213,
+              "groove_width_mm": 3.3000079296332743,
+              "minimum_section_clearance_mm": 0.148695433106196
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000026253832246,
+              "groove_width_mm": 3.299998206907759,
+              "minimum_section_clearance_mm": 0.148695433106196
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000011894381778,
+              "groove_width_mm": 3.2999884841822293,
+              "minimum_section_clearance_mm": 0.148695433106196
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999933563846284,
+              "groove_width_mm": 3.3000079296332814,
+              "minimum_section_clearance_mm": 0.14869543310619923
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000026253832104,
+              "groove_width_mm": 3.299998206907773,
+              "minimum_section_clearance_mm": 0.14869543310619923
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000011894381778,
+              "groove_width_mm": 3.2999884841822364,
+              "minimum_section_clearance_mm": 0.14869543310619923
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 43.57068399755743,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000031910885525,
+              "groove_width_mm": 4.399996128985194,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031910885596,
+              "groove_width_mm": 4.399996128985208,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000031910885596,
+              "groove_width_mm": 4.399996128985208,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000031910885454,
+              "groove_width_mm": 4.399996128985194,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031910885454,
+              "groove_width_mm": 4.399996128985215,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000031910885596,
+              "groove_width_mm": 4.399996128985208,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000031910885454,
+              "groove_width_mm": 4.399996128985194,
+              "minimum_section_clearance_mm": 0.149991066161224
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031910885525,
+              "groove_width_mm": 4.399996128985215,
+              "minimum_section_clearance_mm": 0.149991066161224
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000031910885596,
+              "groove_width_mm": 4.399996128985208,
+              "minimum_section_clearance_mm": 0.149991066161224
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000031910885454,
+              "groove_width_mm": 4.399996128985194,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031910885525,
+              "groove_width_mm": 4.399996128985187,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000031910885596,
+              "groove_width_mm": 4.399996128985208,
+              "minimum_section_clearance_mm": 0.14999106616122404
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000031910885383,
+              "groove_width_mm": 4.399996128985194,
+              "minimum_section_clearance_mm": 0.14999106616122407
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031910885454,
+              "groove_width_mm": 4.399996128985194,
+              "minimum_section_clearance_mm": 0.14999106616122407
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000031910885596,
+              "groove_width_mm": 4.399996128985208,
+              "minimum_section_clearance_mm": 0.14999106616122407
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 9,
+      "male_plate": 8,
+      "female_plate": 6,
+      "assembled_interference_mm3": 0.0,
+      "overlap_component_minimum_thickness_mm": [],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -22.70211925,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895629994
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895629994
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895629994
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.1487034589562993
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.1487034589562993
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.1487034589562993
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895629977
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895629977
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895629977
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895630066
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895630066
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895630066
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895630235
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895630235
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.300003000000004,
+              "minimum_section_clearance_mm": 0.14870345895630235
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 22.70211925,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.1499900999999966
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.1499900999999966
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.1499900999999966
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999657
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999657
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999657
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999657
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999657
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999657
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999655
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999655
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999655
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999655
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999655
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.400008999999997,
+              "minimum_section_clearance_mm": 0.14999009999999655
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 10,
+      "male_plate": 8,
+      "female_plate": 7,
+      "assembled_interference_mm3": 0.0,
+      "overlap_component_minimum_thickness_mm": [],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -32.399338803426595,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999827733720146,
+              "groove_width_mm": 3.3000169605578904,
+              "minimum_section_clearance_mm": 0.1486944178153585
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.9999977463641585,
+              "groove_width_mm": 3.3000025061105553,
+              "minimum_section_clearance_mm": 0.1486944178153585
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000127193563095,
+              "groove_width_mm": 3.299988051663199,
+              "minimum_section_clearance_mm": 0.1486944178153585
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999827733720146,
+              "groove_width_mm": 3.300016960557887,
+              "minimum_section_clearance_mm": 0.14869441781535894
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.9999977463641514,
+              "groove_width_mm": 3.3000025061105234,
+              "minimum_section_clearance_mm": 0.14869441781535894
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000012719356306,
+              "groove_width_mm": 3.299988051663192,
+              "minimum_section_clearance_mm": 0.14869441781535894
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999827733720146,
+              "groove_width_mm": 3.300016960557887,
+              "minimum_section_clearance_mm": 0.14869441781536027
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999977463641443,
+              "groove_width_mm": 3.3000025061105163,
+              "minimum_section_clearance_mm": 0.14869441781536027
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000127193563095,
+              "groove_width_mm": 3.299988051663192,
+              "minimum_section_clearance_mm": 0.14869441781536027
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999827733720146,
+              "groove_width_mm": 3.300016960557887,
+              "minimum_section_clearance_mm": 0.14869441781536155
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.9999977463641585,
+              "groove_width_mm": 3.3000025061105376,
+              "minimum_section_clearance_mm": 0.14869441781536155
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000012719356313,
+              "groove_width_mm": 3.299988051663192,
+              "minimum_section_clearance_mm": 0.14869441781536155
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999827733720146,
+              "groove_width_mm": 3.300016960557894,
+              "minimum_section_clearance_mm": 0.14869441781536394
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.9999977463641585,
+              "groove_width_mm": 3.3000025061105625,
+              "minimum_section_clearance_mm": 0.14869441781536394
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000127193563095,
+              "groove_width_mm": 3.2999880516632025,
+              "minimum_section_clearance_mm": 0.14869441781536394
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 32.399338803426595,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999928290251496,
+              "groove_width_mm": 4.39999657681544,
+              "minimum_section_clearance_mm": 0.14999552093405008
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.999997852428635,
+              "groove_width_mm": 4.400001502991795,
+              "minimum_section_clearance_mm": 0.14999552093405008
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.000002875832127,
+              "groove_width_mm": 4.400006429168151,
+              "minimum_section_clearance_mm": 0.14999552093405008
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999928290251425,
+              "groove_width_mm": 4.39999657681544,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524286277,
+              "groove_width_mm": 4.400001502991792,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000028758321236,
+              "groove_width_mm": 4.400006429168151,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999928290251496,
+              "groove_width_mm": 4.39999657681544,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524286277,
+              "groove_width_mm": 4.400001502991792,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000028758321236,
+              "groove_width_mm": 4.400006429168151,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999928290251496,
+              "groove_width_mm": 4.39999657681544,
+              "minimum_section_clearance_mm": 0.14999552093405014
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524286313,
+              "groove_width_mm": 4.400001502991788,
+              "minimum_section_clearance_mm": 0.14999552093405014
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000028758321307,
+              "groove_width_mm": 4.400006429168151,
+              "minimum_section_clearance_mm": 0.14999552093405014
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999928290251425,
+              "groove_width_mm": 4.39999657681544,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.9999978524286277,
+              "groove_width_mm": 4.4000015029918025,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000028758321236,
+              "groove_width_mm": 4.400006429168151,
+              "minimum_section_clearance_mm": 0.1499955209340501
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 11,
+      "male_plate": 9,
+      "female_plate": 1,
+      "assembled_interference_mm3": 0.0,
+      "overlap_component_minimum_thickness_mm": [],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -22.71794325,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.14869255436785264
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.14869255436785264
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.14869255436785264
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.1486925543678537
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.1486925543678537
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.1486925543678537
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.14869255436785386
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.14869255436785386
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.14869255436785386
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.148692554367854
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.148692554367854
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.148692554367854
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.1486925543678507
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.1486925543678507
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999981000000027,
+              "groove_width_mm": 3.299999200000002,
+              "minimum_section_clearance_mm": 0.1486925543678507
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 22.71794325,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.40000160000001,
+              "minimum_section_clearance_mm": 0.14997500000001196
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 12,
+      "male_plate": 9,
+      "female_plate": 8,
+      "assembled_interference_mm3": 7.644640079111746e-06,
+      "overlap_component_minimum_thickness_mm": [
+        1.8369610751023598e-16,
+        1.2186446765968173e-15,
+        2.4787969670159756e-15,
+        2.020650943037165e-16,
+        1.4899999996487168e-05
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -22.434500000000003,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344494
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344494
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344494
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344714
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344714
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344714
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344772
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344772
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604344772
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604345588
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604345588
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604345588
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604345435
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604345435
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 3.3000182999999765,
+              "minimum_section_clearance_mm": 0.14868570604345435
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 22.434500000000003,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.14999399999999238
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.14999399999999238
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.14999399999999238
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.14999399999999238
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.14999399999999238
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.14999399999999238
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0,
+              "groove_width_mm": 4.399993899999998,
+              "minimum_section_clearance_mm": 0.1499939999999924
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 13,
+      "male_plate": 10,
+      "female_plate": 1,
+      "assembled_interference_mm3": 0.005821920788799249,
+      "overlap_component_minimum_thickness_mm": [
+        2.6516504289502875e-05,
+        1.695223416470297e-05
+      ],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -43.556174166407466,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999926021624717,
+              "groove_width_mm": 3.3000075464455705,
+              "minimum_section_clearance_mm": 0.1487036772581492
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.999995130067653,
+              "groove_width_mm": 3.3000039772567646,
+              "minimum_section_clearance_mm": 0.1487036772581492
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999997657972834,
+              "groove_width_mm": 3.3000057607313877,
+              "minimum_section_clearance_mm": 0.1487036772581492
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999926021624717,
+              "groove_width_mm": 3.3000075464455776,
+              "minimum_section_clearance_mm": 0.14870367725814557
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.99999513006766,
+              "groove_width_mm": 3.3000039772567646,
+              "minimum_section_clearance_mm": 0.14870367725814557
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999997657972834,
+              "groove_width_mm": 3.300005760731395,
+              "minimum_section_clearance_mm": 0.14870367725814557
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999926021624717,
+              "groove_width_mm": 3.3000075464455705,
+              "minimum_section_clearance_mm": 0.14870367725814695
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999951300676457,
+              "groove_width_mm": 3.3000039772567646,
+              "minimum_section_clearance_mm": 0.14870367725814695
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999997657972834,
+              "groove_width_mm": 3.3000057607313877,
+              "minimum_section_clearance_mm": 0.14870367725814695
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999926021624717,
+              "groove_width_mm": 3.3000075464455776,
+              "minimum_section_clearance_mm": 0.1487036772581439
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.9999951300676457,
+              "groove_width_mm": 3.300003977256786,
+              "minimum_section_clearance_mm": 0.1487036772581439
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999997657972834,
+              "groove_width_mm": 3.300005760731395,
+              "minimum_section_clearance_mm": 0.1487036772581439
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 2.9999926021624646,
+              "groove_width_mm": 3.3000075464455776,
+              "minimum_section_clearance_mm": 0.14870367725814504
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.9999951300676457,
+              "groove_width_mm": 3.300003977256779,
+              "minimum_section_clearance_mm": 0.14870367725814504
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999997657972834,
+              "groove_width_mm": 3.3000057607313877,
+              "minimum_section_clearance_mm": 0.14870367725814504
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.2999997,
+          "nominal_vertical_clearance_mm": 0.29999969999999987
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 43.556174166407466,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000001784310527,
+              "groove_width_mm": 4.399998860186628,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 2.999987791578043,
+              "groove_width_mm": 4.400000124140064,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999982591998588,
+              "groove_width_mm": 4.400001388093507,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000001784310534,
+              "groove_width_mm": 4.399998860186635,
+              "minimum_section_clearance_mm": 0.1499959452006307
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 2.999987791578043,
+              "groove_width_mm": 4.4000001241400994,
+              "minimum_section_clearance_mm": 0.1499959452006307
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999982591998588,
+              "groove_width_mm": 4.400001388093521,
+              "minimum_section_clearance_mm": 0.1499959452006307
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000001784310527,
+              "groove_width_mm": 4.399998860186635,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 2.9999877915780573,
+              "groove_width_mm": 4.4000001241400994,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999982591998588,
+              "groove_width_mm": 4.400001388093521,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000001784310527,
+              "groove_width_mm": 4.399998860186635,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 2.9999877915780644,
+              "groove_width_mm": 4.400000124140085,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999982591998588,
+              "groove_width_mm": 4.400001388093514,
+              "minimum_section_clearance_mm": 0.14999594520063073
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.00000178431052,
+              "groove_width_mm": 4.399998860186635,
+              "minimum_section_clearance_mm": 0.1499959452006307
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 2.99998779157805,
+              "groove_width_mm": 4.400000124140071,
+              "minimum_section_clearance_mm": 0.1499959452006307
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999982591998574,
+              "groove_width_mm": 4.400001388093514,
+              "minimum_section_clearance_mm": 0.1499959452006307
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    },
+    {
+      "joint": 14,
+      "male_plate": 9,
+      "female_plate": 10,
+      "assembled_interference_mm3": 0.0,
+      "overlap_component_minimum_thickness_mm": [],
+      "serialized_mesh_overlap_tolerance_mm": 0.0001,
+      "keys": [
+        {
+          "key": 1,
+          "center_local_y_mm": -32.37094503434814,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028640517087,
+              "groove_width_mm": 3.2999971291480037,
+              "minimum_section_clearance_mm": 0.1487058009136439
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.000003155733456,
+              "groove_width_mm": 3.299997096738906,
+              "minimum_section_clearance_mm": 0.1487058009136439
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 3.00000344741521,
+              "groove_width_mm": 3.299997064329812,
+              "minimum_section_clearance_mm": 0.1487058009136439
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028640517087,
+              "groove_width_mm": 3.2999971291480072,
+              "minimum_section_clearance_mm": 0.14870580091364194
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031557334275,
+              "groove_width_mm": 3.299997096738906,
+              "minimum_section_clearance_mm": 0.14870580091364194
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000034474152066,
+              "groove_width_mm": 3.299997064329812,
+              "minimum_section_clearance_mm": 0.14870580091364194
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028640517087,
+              "groove_width_mm": 3.2999971291480072,
+              "minimum_section_clearance_mm": 0.14870580091364283
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.000003155733449,
+              "groove_width_mm": 3.299997096738906,
+              "minimum_section_clearance_mm": 0.14870580091364283
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000034474152066,
+              "groove_width_mm": 3.2999970643298155,
+              "minimum_section_clearance_mm": 0.14870580091364283
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028640517087,
+              "groove_width_mm": 3.2999971291480072,
+              "minimum_section_clearance_mm": 0.1487058009136443
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031557334523,
+              "groove_width_mm": 3.299997096738913,
+              "minimum_section_clearance_mm": 0.1487058009136443
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000034474152066,
+              "groove_width_mm": 3.2999970643298155,
+              "minimum_section_clearance_mm": 0.1487058009136443
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000028640517087,
+              "groove_width_mm": 3.2999971291480072,
+              "minimum_section_clearance_mm": 0.14870580091363955
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000031557334452,
+              "groove_width_mm": 3.299997096738924,
+              "minimum_section_clearance_mm": 0.14870580091363955
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 3.0000034474151995,
+              "groove_width_mm": 3.2999970643298155,
+              "minimum_section_clearance_mm": 0.14870580091363955
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        },
+        {
+          "key": 2,
+          "center_local_y_mm": 32.37094503434814,
+          "transverse_probes": [
+            {
+              "z_mm": 5.1,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000234821057887,
+              "groove_width_mm": 4.39999605827445,
+              "minimum_section_clearance_mm": 0.14998557666980278
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 9,
+              "key_width_mm": 3.000008671154326,
+              "groove_width_mm": 4.399996058274482,
+              "minimum_section_clearance_mm": 0.14998557666980278
+            },
+            {
+              "z_mm": 5.1,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999938602028067,
+              "groove_width_mm": 4.3999960582745,
+              "minimum_section_clearance_mm": 0.14998557666980278
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 3.5,
+              "key_width_mm": 3.000023482105778,
+              "groove_width_mm": 4.399996058274443,
+              "minimum_section_clearance_mm": 0.14998557666980833
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 9,
+              "key_width_mm": 3.000008671154262,
+              "groove_width_mm": 4.399996058274464,
+              "minimum_section_clearance_mm": 0.14998557666980833
+            },
+            {
+              "z_mm": 5.3,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993860202803,
+              "groove_width_mm": 4.399996058274496,
+              "minimum_section_clearance_mm": 0.14998557666980833
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000234821057816,
+              "groove_width_mm": 4.399996058274439,
+              "minimum_section_clearance_mm": 0.14998557666980275
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 9,
+              "key_width_mm": 3.0000086711542764,
+              "groove_width_mm": 4.399996058274471,
+              "minimum_section_clearance_mm": 0.14998557666980275
+            },
+            {
+              "z_mm": 5.5,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999938602028067,
+              "groove_width_mm": 4.399996058274496,
+              "minimum_section_clearance_mm": 0.14998557666980275
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000234821057816,
+              "groove_width_mm": 4.399996058274443,
+              "minimum_section_clearance_mm": 0.14998557666981288
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 9,
+              "key_width_mm": 3.0000086711543013,
+              "groove_width_mm": 4.399996058274464,
+              "minimum_section_clearance_mm": 0.14998557666981288
+            },
+            {
+              "z_mm": 5.7,
+              "x_mm": 14.5,
+              "key_width_mm": 2.9999938602028067,
+              "groove_width_mm": 4.3999960582745,
+              "minimum_section_clearance_mm": 0.14998557666981288
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 3.5,
+              "key_width_mm": 3.0000234821057923,
+              "groove_width_mm": 4.399996058274439,
+              "minimum_section_clearance_mm": 0.14998557666980392
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 9,
+              "key_width_mm": 3.0000086711543155,
+              "groove_width_mm": 4.3999960582744535,
+              "minimum_section_clearance_mm": 0.14998557666980392
+            },
+            {
+              "z_mm": 5.9,
+              "x_mm": 14.5,
+              "key_width_mm": 2.999993860202814,
+              "groove_width_mm": 4.399996058274496,
+              "minimum_section_clearance_mm": 0.14998557666980392
+            }
+          ],
+          "key_top_mm": 6.0,
+          "groove_roof_mm": 6.3000002,
+          "nominal_vertical_clearance_mm": 0.3000002000000004
+        }
+      ]
+    }
+  ],
+  "joint_count": 14,
+  "key_count": 28,
+  "physical_fit_established": false
+}

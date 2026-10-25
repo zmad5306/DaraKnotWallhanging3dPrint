@@ -7,5 +7,12 @@
 /release/root-projects/*.json text eol=lf
 /release/root-projects/*.md text eol=lf
 
+# New Knot validation records are themselves hash-checked after pulling.
+/release/knot-infill-first-revert-r1/*.json -text whitespace=cr-at-eol
+/release/knot-normal-supports-r1/*.json -text whitespace=cr-at-eol
+/release/knot-joint-approval-r1/*.json -text whitespace=cr-at-eol
+/output/Dara-A2L-Joint-Screw-Bolster-r1/*.json -text whitespace=cr-at-eol
+/output/Dara-A2L-Joint-Photo-Retainer-Bolster-r2/*.json -text whitespace=cr-at-eol
+
 # Exact Bambu user-preset snapshots must retain their validated bytes.
 /release/sunlu-*/presets/*.json -text whitespace=cr-at-eol

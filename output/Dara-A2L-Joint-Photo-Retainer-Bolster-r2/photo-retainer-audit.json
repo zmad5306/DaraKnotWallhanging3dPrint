@@ -1,0 +1,74 @@
+{
+  "native_project_sha256": "c0e48a0b2f7c8bf8adcc696b9785d4ff49359dd9104536ca486a1ec50055154d",
+  "feature": "PHOTO_RETAINER_BLIND_SCREW_HOLE",
+  "center_assembly_mm": [
+    -212.403702,
+    287.837097
+  ],
+  "production_photo_anchor_flat_index": 6,
+  "native_mesh_center_z_hits_mm": [
+    10.6999998,
+    13.5
+  ],
+  "first_native_model_extrusion_over_bore_mm": 11.0,
+  "bore_open_from_back": true,
+  "show_face_unbroken_over_full_14mm_bolster": true,
+  "screw_modifier_z_mm": [
+    0,
+    12.4
+  ],
+  "skin_layers": [
+    {
+      "z_mm": 12.8,
+      "commanded_coverage_fraction": 0.8909125139839128,
+      "production_coverage_fraction": 0.8910709366346986,
+      "features": [
+        "Bridge",
+        "Inner wall",
+        "Outer wall"
+      ]
+    },
+    {
+      "z_mm": 13,
+      "commanded_coverage_fraction": 0.9994816971436511,
+      "production_coverage_fraction": 0.9994896761145844,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "z_mm": 13.2,
+      "commanded_coverage_fraction": 0.9997412682565141,
+      "production_coverage_fraction": 0.9997306646957703,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "z_mm": 13.4,
+      "commanded_coverage_fraction": 0.9994812558218326,
+      "production_coverage_fraction": 0.999489681117078,
+      "features": [
+        "Inner wall",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "z_mm": 13.6,
+      "commanded_coverage_fraction": 0.9999999999999998,
+      "production_coverage_fraction": 0.9999999999999998,
+      "features": [
+        "Outer wall",
+        "Top surface"
+      ]
+    }
+  ],
+  "actual_geometry_and_gcode_checked": true,
+  "support_extrusions_within_retainer_bore_radius_1_3mm": 1320,
+  "retainer_bore_support_cleanup_required": true
+}

@@ -4,7 +4,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 81h 02m | 2278.10 g |
+| Knot | 10 | 78h 57m | 2284.10 g |
 | Letter | 6 | 72h 17m | 1223.80 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |
@@ -13,6 +13,18 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 | Small Parts - Crate Stencils | 6 | 7h 49m | 162.47 g |
 
 Letter retains the user-saved six-plate consolidation, the veneer edge correction and the approved wall-nub cleanup. Its only filament is now slot 1, the successful sample's ERYONE Ultra Silk Copper identity, moved from former slot 3 without changing its parameters. Knot now has only white, wood tan and Azurite blue in slots 1–3. Both projects have fresh native slices after removing their unused filaments. Current hashes/checks are in `../unused-filaments-r1/`; `../letter-eryone-r1/` records the preceding profile promotion, `../veneer-nub-cleanup-r8/` records the identical geometry, and `../veneer-edge-r7/` records the edge correction before cleanup. The veneers and all supports total 904.11 g. The requested ERYONE r4 finish sample is tracked in `../samples/` and declared in its catalog, with the user's October 23 success report. All values are slicer estimates, not observed print times.
+
+## Accepted knot joint sample and publication, 2026-10-25
+
+The user reported **"Joints are ok"** after `Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf` and requested propagation, commit and push. The accepted J3 F2/F3 test is a direct crop of this exact root `Knot.3mf`. Its geometry/settings are already present across the existing production design; ten current native slices retain **infill-first off and normal supports**. No new geometry change or redundant reslice was required. The [publication record](../knot-joint-approval-r1/README.md) ties the user report to the supplied sample and production hashes, verifies the crop again and preserves the preceding all-14-joint checks. Joint fit is user-reported; the actual printed hash/printer were not independently observed. Bolster surface appearance and full-size performance are not newly confirmed.
+
+## Knot normal supports, 2026-10-24
+
+Current root `Knot.3mf` uses **normal(auto)** supports on all ten F1–F10 plates at the user's request. Infill-first stays off. Only support type changes; saved support activation/paint, build-plate-only support, 0.20 mm object interface spacing and top gap, all other settings, geometry and poses remain. All ten plates are resliced and the final project passes native reopen. Actual support/interface extrusion, bed/tower clearance, current key/groove paths, colors, pad removal and reinforcement skin are checked. CAD/STL and the other six projects, including Letter's veneer tree supports, remain byte-identical. See [the current verification record](../knot-normal-supports-r1/README.md). Support cleanup and physical joint fit remain unqualified.
+
+## Knot infill-first rollback, 2026-10-24
+
+The preceding rollback set `is_infill_first = 0` and generated ten fresh native slices after the reported full-size key/groove fit failure. The normal-support revision above supersedes that exact container and its slices while retaining infill-first off. This changes only infill-first; the 0.20 mm object support-interface spacing, 0.20 mm support top gap, geometry, keys/grooves, poses, materials and all other settings remain. CAD/STL and other projects are byte-identical. All 14 joints / 28 keys were measured from the current meshes; 140 emitted key/groove layer comparisons check commanded clearance and walls preceding fill. All ten configurations, checksums, bed/tower clearances, pad removals, finish directions, blue layers and screw skin were checked, followed by native reopen. See [the current rollback record](../knot-infill-first-revert-r1/README.md) for hashes, limits and estimates. Older Knot records below describe its source revisions. This is not a physical fit pass, and the cause of the reported failure remains unconfirmed.
 
 ## Preservation evidence
 
@@ -33,7 +45,7 @@ The quick audit is `python scripts/audit_root_projects.py`. It uses only Python'
 
 ## Physical evidence carried forward
 
-The r3 full-curve knot test was reported successful; the full-size corrected knot remains physically unqualified. The 42 lap pads removed in the earlier correction stay removed. The successful supplied r3 test remains recoverable from commit `5dab12a` in Git/LFS history.
+The r3 full-curve knot test was reported successful. On October 24 the user reported that the first three full-size knot pieces, printed for a second time, had keys that did not fit their grooves. Infill-first was rolled back, then normal supports were requested. On October 25 the user reported the current r2 sample joints were okay and approved production publication, as recorded above. Full-size performance and bolster appearance remain unconfirmed. The 42 lap pads removed in the earlier correction stay removed. The historical r3 test remains recoverable from commit `5dab12a` in Git/LFS history.
 
 The sanding thread test was reported good. The complete current r4 retains those threads and support blocking; only the clamp's 1.174806-degree bed rotation was added in its own chat. That orientation, complete paper grip, jig fit/retention, clip fit, guide stiffness/clarity, stencil print/spray behavior and full-size veneer anti-warp performance are not newly qualified here.
 

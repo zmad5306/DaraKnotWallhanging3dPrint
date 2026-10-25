@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "a4e5fdde354253f504c466807361e058a0523213ccc28c365ca3aa9186b67992",
+    "sha256": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
     "cad": "Knot.scad",
     "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
     "printer": "Bambu Lab A2L",
@@ -3128,7 +3128,10 @@
       "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
       "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle"
     ],
-    "filament_cleanup_validation": "release/unused-filaments-r1/knot-validation.json"
+    "filament_cleanup_validation": "release/unused-filaments-r1/knot-validation.json",
+    "infill_first_revert_validation": "release/knot-infill-first-revert-r1/validation.json",
+    "normal_supports_validation": "release/knot-normal-supports-r1/validation.json",
+    "joint_approval_validation": "release/knot-joint-approval-r1/validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",

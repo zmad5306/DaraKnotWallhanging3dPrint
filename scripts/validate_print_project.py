@@ -112,7 +112,7 @@ def scan_gcode(text):
                         bead_low[axis] = min(bead_low[axis], point[axis] - width / 2)
                         bead_high[axis] = max(bead_high[axis], point[axis] + width / 2)
                 features[feature] += 1
-                if tool is not None and feature not in ('Prime tower', 'Support', 'Support interface', 'Brim', 'Skirt'):
+                if tool is not None and feature not in ('Prime tower', 'Support', 'Support interface', 'Support transition', 'Brim', 'Skirt'):
                     model_z[tool].add(round(nz, 4))
             x, y, z = nx, ny, nz
             e = e + v.get('E', 0) if relative_e else v.get('E', e)

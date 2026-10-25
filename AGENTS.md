@@ -54,6 +54,49 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Accepted knot joint sample and production publication, 2026-10-25:** after
+  receiving `Dara-A2L-Joint-Photo-Retainer-Bolster-r2.3mf`, the user reported
+  "Joints are ok" and requested propagation, commit and push. Record this as
+  user-reported joint-fit success for the current r2 J3 F2/F3 sample, SHA-256
+  `c0e48a0b2f7c8bf8adcc696b9785d4ff49359dd9104536ca486a1ec50055154d`.
+  The actual printed hash/printer were not independently observed. This report
+  does not confirm screw-bolster surface appearance or full-size performance.
+  The accepted sample is an unchanged crop of current `Knot.3mf`, SHA-256
+  `aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46`;
+  its geometry and effective settings are already present in production.
+  Publish that matching project with **infill-first OFF**, **normal(auto)
+  supports**, all 14 existing joints and ten current native slices. No new
+  joint dimensions or regeneration are required. Preserve the Z12.4 screw
+  modifiers and all other constants. The earlier r1 sample is withdrawn for
+  selecting an M through-hole instead of a photo-retainer blind-hole bolster.
+  Evidence: `release/knot-joint-approval-r1/`.
+
+- **Approved normal knot supports, 2026-10-24:** the user requested switching
+  Knot from trees to normal supports. In root `Knot.3mf`, **`support_type =
+  normal(auto)` replaces `tree(auto)`** for all ten F1–F10 plates. Preserve
+  `support_style = default`, existing per-object support activation and paint,
+  build-plate-only support, the **0.20 mm object interface spacing**, **0.20 mm
+  top gap**, geometry, poses, materials and every other setting. **Infill-first
+  stays off.** All ten plates require fresh native slices. Evidence is in
+  `release/knot-normal-supports-r1/`; the preceding rollback report retains its
+  historical hashes. Letter's veneer tree supports remain unchanged. Support
+  removal and full-size joint fit remain physically unqualified.
+
+- **Approved infill-first rollback, 2026-10-24:** the user reports that the first
+  three full-size knot pieces, printed for a second time, have keys that do not
+  fit the joint grooves, and explicitly requested reverting infill-first.
+  In current root `Knot.3mf`, **`is_infill_first = 0` replaces 1** globally on
+  all ten plates. This supersedes the infill-first portion of the October 22
+  correction below. Keep each object's **0.20 mm support-interface spacing**,
+  the **0.20 mm support top gap**, all geometry/keys/grooves, removed lap pads,
+  materials, poses, reinforcement and every other process/material setting.
+  Reslice all ten plates; do not restore any historical infill-first slice.
+  Evidence is in `release/knot-infill-first-revert-r1/`. The user's full-size
+  fit failure supersedes any implication that the earlier curve test qualified
+  joint fit. The exact printed hash/printer were not independently observed;
+  infill-first is the user's suspected cause, not a digitally proven diagnosis.
+  The rollback itself remains physically unqualified.
+
 - **Approved unused filament removal, 2026-10-23:** the user requested removing
   unused copper from `Knot.3mf`, then white, wood and blue from `Letter.3mf`,
   followed by commit/push. Knot now has **1 white SUNLU PLA Basic, 2 wood tan
@@ -244,8 +287,10 @@ except for the explicit existing solid regions below.
   for full-size F1-F10, replacing the knot plates 1-10 in the main project for
   printing. Plate numbers match. The user reported the r3 full-curve test
   worked, then explicitly chose a separate knot project to keep M settings
-  unchanged. In this separate project only, `is_infill_first = 1` replaces 0;
-  each knot object's `support_interface_spacing = 0.2` replaces inherited 0.5.
+  unchanged. At that revision, `is_infill_first = 1` replaced 0; the October 24
+  rollback above supersedes this setting for the current root Knot project.
+  Each knot object's `support_interface_spacing = 0.2` replaced inherited 0.5
+  and remains in effect.
   Preserve the 0.20 mm support top gap, geometry, all other process settings,
   modifiers and actual bed poses. Bambu applies infill-first globally;
   object overrides were verified ineffective. Do not enable it in the shared
@@ -312,6 +357,11 @@ except for the explicit existing solid regions below.
   later supplied flush-joint test was reported to fail badly, with a high upper
   lap, side cutouts and white in the brown fabric. Mortise binding is a user
   suspicion, not a measured diagnosis. The later simple-joint draft is unqualified.
+- **Physical update, 2026-10-24:** the user reports the first three full-size
+  knot pieces were printed for a second time and their keys do not fit the
+  grooves. Record this as a reported full-size joint-fit failure, not merely
+  pending qualification. The requested infill-first rollback does not itself
+  establish fit or resolve the already printed pieces.
 - `working/bambu/Dara-A2L-Flush-Joint-Test/` and the fins-only veneer comparison
   in `working/bambu/Dara-A2L-Veneer-Backing-Trial/` have withdrawal notices. Do not
   recommend or promote them based on older passing reports or stale README text.

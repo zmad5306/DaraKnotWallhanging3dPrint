@@ -1,0 +1,2528 @@
+{
+  "method": "Idealized model extrusion bands from emitted G1 centerlines and LINE_WIDTH comments, transformed into common assembly coordinates",
+  "limitation": "Commanded widths do not measure deposited PLA, support residue, sag, swelling or physical fit.",
+  "probes": [
+    {
+      "joint": 1,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1284231954923319,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 1,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14791975777820235,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 1,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14791975777820315,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 1,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14791975777820235,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 1,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14791975777820235,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 38
+      }
+    },
+    {
+      "joint": 1,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1341430202293624,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 1,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14914302022936224,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 1,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14914302022936235,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 1,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14914302022936238,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 1,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1491430202293622,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 29,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 38
+      }
+    },
+    {
+      "joint": 2,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1283063200551774,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 48,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 49
+      }
+    },
+    {
+      "joint": 2,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14792001346580932,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 2,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14793349151507737,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 2,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14792001346580932,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 2,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1411184869228147,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 68
+      }
+    },
+    {
+      "joint": 2,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1339443757566765,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 2,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14909038179616307,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 2,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14909038194432184,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 2,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14909038230074348,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 49,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 50
+      }
+    },
+    {
+      "joint": 2,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14967314355214817,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 64
+      }
+    },
+    {
+      "joint": 3,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13274818244051967,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 3,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14774818244051915,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 3,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14774818244051915,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 3,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14774818244051915,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 3,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14774818244051915,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 69
+      }
+    },
+    {
+      "joint": 3,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13489837163810162,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 3,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1498983716381016,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 3,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1498983716381016,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 3,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14946838832983383,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 3,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.149327679781633,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 69
+      }
+    },
+    {
+      "joint": 4,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.12847279807165285,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 4,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14777720200523367,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 4,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14777720200523373,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 4,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14777720200523373,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 4,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14777720200523373,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 57
+      }
+    },
+    {
+      "joint": 4,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13453611117815076,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 4,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14953611117815044,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 4,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14953611117815052,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 4,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14953611117815044,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 49,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 50
+      }
+    },
+    {
+      "joint": 4,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14953611117815044,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface"
+        ],
+        "segments": 55
+      }
+    },
+    {
+      "joint": 5,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.12820011253256275,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 5,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1478348438402195,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 5,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14783484384021972,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 5,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14783484384021883,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 5,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14783484384021894,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 36
+      }
+    },
+    {
+      "joint": 5,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1349045718642915,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 5,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14943229960516854,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 5,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14914851765314974,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 5,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1491485176531506,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 5,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1491485176531506,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 37
+      }
+    },
+    {
+      "joint": 6,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1278927256673175,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 6,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1475501356788599,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 6,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1475501356788599,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 6,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1475501356788599,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 6,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14778028399863066,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 88
+      }
+    },
+    {
+      "joint": 6,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13415844767136503,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 6,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1491585568198962,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 6,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1491585181538319,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 6,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14915844767136496,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 6,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14915845835836242,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 81
+      }
+    },
+    {
+      "joint": 7,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1325181317718691,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 7,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14751813177186793,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 7,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14751813177186796,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 7,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14751813177186793,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 7,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14751813177186796,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 66
+      }
+    },
+    {
+      "joint": 7,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.134318845230318,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 7,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14917752109616178,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 7,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14931884523031683,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 7,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14931884523031733,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 7,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1491775074630492,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 67
+      }
+    },
+    {
+      "joint": 8,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1284456036110574,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 8,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14766933646290836,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 8,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14766933646290845,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 8,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14766933646290845,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 8,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14766933646290845,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 37
+      }
+    },
+    {
+      "joint": 8,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1343260517586619,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 8,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14935624823882127,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 8,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1498574577660351,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 8,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1498355749909408,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 8,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1496757197120369,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 39
+      }
+    },
+    {
+      "joint": 9,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.12825795335610887,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 9,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1476978427459052,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 9,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1476978427459052,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 9,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1476978427459052,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 9,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1410703739517437,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 58
+      }
+    },
+    {
+      "joint": 9,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13426743003583866,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 9,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14926743003583867,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 9,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14926743003583867,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 9,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14926743003583867,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 9,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14926743003583867,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 58
+      }
+    },
+    {
+      "joint": 10,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13263186467716576,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 10,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1476318646771594,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 10,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1476318646771589,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 53,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 54
+      }
+    },
+    {
+      "joint": 10,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1476318646771589,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 10,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1476318646771594,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 67
+      }
+    },
+    {
+      "joint": 10,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13485104696522424,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 10,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14985104696522425,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 10,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14985104696522433,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 53,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 54
+      }
+    },
+    {
+      "joint": 10,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14943277813381622,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 10,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14985104696522433,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 66
+      }
+    },
+    {
+      "joint": 11,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1284825151892953,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 11,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14774294843121535,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 11,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1477445025599841,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 11,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1477445025599841,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 47,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 48
+      }
+    },
+    {
+      "joint": 11,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1477445025599841,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 59
+      }
+    },
+    {
+      "joint": 11,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1339398485201332,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 11,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1489398485201347,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 11,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1489398485201347,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 11,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14922725507078632,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 11,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14922725502283674,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 60
+      }
+    },
+    {
+      "joint": 12,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.12819941467127224,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 12,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1475087916386556,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 12,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1475087916386556,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 12,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1475087916386556,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 12,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1475087916386556,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 59
+      }
+    },
+    {
+      "joint": 12,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13456100386123587,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 12,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14942103554270172,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 12,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14942103554270172,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 12,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14942103554270172,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 12,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14942103554270172,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 58
+      }
+    },
+    {
+      "joint": 13,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13275210634808393,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 13,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14775210634808414,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 13,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.14775210634808422,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 13,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14775210634808414,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 13,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14775210634808422,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 67
+      }
+    },
+    {
+      "joint": 13,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13405951533533567,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 44,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 45
+      }
+    },
+    {
+      "joint": 13,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1490595153353356,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 13,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1490595153353356,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 45,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 46
+      }
+    },
+    {
+      "joint": 13,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.14891878373269657,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 46,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 47
+      }
+    },
+    {
+      "joint": 13,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1490595153353356,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 66
+      }
+    },
+    {
+      "joint": 14,
+      "key": 1,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.1283419454091987,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 52,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 53
+      }
+    },
+    {
+      "joint": 14,
+      "key": 1,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.14766785401495797,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 14,
+      "key": 1,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1478800252641074,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 14,
+      "key": 1,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1476678540149579,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 14,
+      "key": 1,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.14766785401495797,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 37
+      }
+    },
+    {
+      "joint": 14,
+      "key": 2,
+      "z_mm": 5.2,
+      "commanded_bead_clearance_mm": 0.13432733152454343,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 14,
+      "key": 2,
+      "z_mm": 5.4,
+      "commanded_bead_clearance_mm": 0.1493273494140736,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 14,
+      "key": 2,
+      "z_mm": 5.6,
+      "commanded_bead_clearance_mm": 0.1493273494140736,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 50,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 51
+      }
+    },
+    {
+      "joint": 14,
+      "key": 2,
+      "z_mm": 5.8,
+      "commanded_bead_clearance_mm": 0.1493273494140736,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 51,
+        "wall_before_fill": true,
+        "features": [
+          "Inner wall",
+          "Outer wall",
+          "Gap infill"
+        ],
+        "segments": 52
+      }
+    },
+    {
+      "joint": 14,
+      "key": 2,
+      "z_mm": 6.0,
+      "commanded_bead_clearance_mm": 0.1493273494140736,
+      "commanded_bead_overlap_mm2": 0.0,
+      "key_path_order": {
+        "first_wall": 0,
+        "first_fill": 28,
+        "wall_before_fill": true,
+        "features": [
+          "Outer wall",
+          "Top surface",
+          "Gap infill"
+        ],
+        "segments": 37
+      }
+    }
+  ],
+  "minimum_commanded_clearance_mm": 0.1278927256673175,
+  "all_keys_wall_before_fill": true,
+  "physical_fit_established": false
+}

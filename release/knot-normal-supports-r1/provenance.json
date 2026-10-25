@@ -1,0 +1,3333 @@
+{
+  "source_project": "Knot.3mf",
+  "source_project_sha256": "388cf37776eebfb59c714b5d0d54e4f8f52d3eff70e7a51da2df81fccfba92e4",
+  "editable_sha256": "9be5d7d200fb69ba839a6cf6474a0662955ae9b2f7f01425c3b7e4ae6602de32",
+  "changed_setting": {
+    "support_type": [
+      "tree(auto)",
+      "normal(auto)"
+    ]
+  },
+  "source_catalog_entry": {
+    "project": "Knot.3mf",
+    "sha256": "388cf37776eebfb59c714b5d0d54e4f8f52d3eff70e7a51da2df81fccfba92e4",
+    "cad": "Knot.scad",
+    "cad_sha256": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
+    "printer": "Bambu Lab A2L",
+    "plates": 10,
+    "objects": [
+      {
+        "name": "F1 A2L knot",
+        "plate": 1,
+        "transform": [
+          [
+            -0.194963642,
+            -0.98081047,
+            0.0,
+            149.219068
+          ],
+          [
+            0.98081047,
+            -0.194963642,
+            0.0,
+            298.872868
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F1 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "146.243",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-1.stl",
+            "sha256": "bf480655b5313f9848e195c0ca62a429cfe3b0e519dde227b96ed3d9292ffe28",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -313.42101830023194 0 1 0 38.578765834570312 0 0 1 16.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "0",
+              "source_volume_id": "0",
+              "source_offset_x": "-156.71050930023193",
+              "source_offset_y": "19.289382934570312",
+              "source_offset_z": "8.25"
+            },
+            "faces": 36152,
+            "bounds": [
+              [
+                -296.021971,
+                -123.2539371,
+                0.0
+              ],
+              [
+                -17.399046999999996,
+                161.8327029,
+                16.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-2.stl",
+            "sha256": "71af71f5d1924f4e7587f97e326a21ba08141fe90600bd1b7fda09de1ce14140",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -437.13809202050777 0 1 0 -190.58872982919922 0 0 1 18.44999932779541 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "0",
+              "source_volume_id": "1",
+              "source_offset_x": "-218.56904602050781",
+              "source_offset_y": "-95.294364929199219",
+              "source_offset_z": "9.2249999046325684"
+            },
+            "faces": 296,
+            "bounds": [
+              [
+                -233.6967163,
+                -110.3300323,
+                4.94999932
+              ],
+              [
+                -203.44137569999998,
+                -80.25869750000001,
+                13.49999952
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-3.stl",
+            "sha256": "404030604db2425b0bf18f70e27c570dc018c08486c035cc6c1b8c10ac6d8d5c",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -102.95191762415772 0 1 0 -269.70644007861324 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "0",
+              "source_volume_id": "2",
+              "source_offset_x": "-51.475958824157715",
+              "source_offset_y": "-134.85322189331055",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3464,
+            "bounds": [
+              [
+                -85.5528707,
+                -159.9999961,
+                0.0
+              ],
+              [
+                -17.399046900000002,
+                -109.70643989999999,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-4.stl",
+            "sha256": "fc6ed3ba0a26bb93e3aad182f30eb6bf5e9f1ef8617746b9324b6f9b0e35093d",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -313.95180537207034 0 1 0 -6.1992797825781256 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 23544,
+            "bounds": [
+              [
+                -275.45002,
+                -159.99999989,
+                8.39999962
+              ],
+              [
+                -38.501794000000004,
+                153.80072011000001,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-5.stl",
+            "sha256": "f2451c4bffd06bf4f45ead9349fa406c4dfb790bfe9a78e6cf3854d8f8f40f35",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -313.95180537207034 0 1 0 -5.0882110597851558 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 4468,
+            "bounds": [
+              [
+                -278.20002,
+                -160.00000753,
+                12.499999609
+              ],
+              [
+                -35.751794000000004,
+                154.91179647,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-6.stl",
+            "sha256": "fb7f0fe4b44eb22a0f9c3f28e70623c4cb462d638bb8445cc18eedb68b7776bb",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -60.128573385668943 0 1 0 216.16482571972657 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -38.064286249999995,
+                100.082413,
+                0.0
+              ],
+              [
+                -22.06428815,
+                116.082413,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-7.stl",
+            "sha256": "ca3de6f213b870e3288744fd68d890875ada9cc21de74c0524f8f7775078eeb1",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -56 0 1 0 152 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -36.0,
+                68.0,
+                0.0
+              ],
+              [
+                -20.0,
+                84.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-8.stl",
+            "sha256": "d4b4581b9d55515e75fff1b03dffd2b0d293a83fc78cc49b5fb967b8dbe9a936",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -522 0 1 0 -22 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -269.0,
+                -19.0,
+                0.0
+              ],
+              [
+                -253.0,
+                -3.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F1-A2L-knot-volume-9.stl",
+            "sha256": "08748b0c44a9f6df8fc192045aefe392139f2a60b9f56e982d8fe1788220868e",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -58 0 1 0 -124 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -37.0,
+                -70.0,
+                0.0
+              ],
+              [
+                -21.0,
+                -54.0,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F2 A2L knot",
+        "plate": 2,
+        "transform": [
+          [
+            -0.0396014862,
+            -0.999215553,
+            0.0,
+            308.380862
+          ],
+          [
+            0.999215553,
+            -0.0396014862,
+            0.0,
+            483.341335
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F2 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "137.27",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-1.stl",
+            "sha256": "99caf07053059a059ccb88c8c0f47a5a3651b6da36ef9c0c287be45ef10dd31e",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -625.86946915917974 0 1 0 433.88968647753904 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "1",
+              "source_volume_id": "0",
+              "source_offset_x": "-312.93473052978516",
+              "source_offset_y": "216.94484710693359",
+              "source_offset_z": "6.75"
+            },
+            "faces": 21610,
+            "bounds": [
+              [
+                -447.643693,
+                138.0522532,
+                0.0
+              ],
+              [
+                -178.22578499999997,
+                295.8374248,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-2.stl",
+            "sha256": "e8d8affb5d559920bf5b24431f309641486e2a9af00fddc71b7b0169412400a4",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -661.45503254492189 0 1 0 110.99207590637818 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "1",
+              "source_volume_id": "1",
+              "source_offset_x": "-330.72752380371094",
+              "source_offset_y": "55.496038913726807",
+              "source_offset_z": "6.75"
+            },
+            "faces": 12714,
+            "bounds": [
+              [
+                -457.199997,
+                15.934170200000004,
+                0.0
+              ],
+              [
+                -204.255021,
+                95.05790379999999,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-3.stl",
+            "sha256": "7a77ecf48edffcbbe9e0b8949ae20921deb28fe14ceba815f0149ed8a9fb7a01",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -832.07623245507807 0 1 0 240.09660769677734 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "1",
+              "source_volume_id": "2",
+              "source_offset_x": "-416.03811645507812",
+              "source_offset_y": "120.04830551147461",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4794,
+            "bounds": [
+              [
+                -457.1162105,
+                92.37251690000001,
+                0.0
+              ],
+              [
+                -374.9600215,
+                147.72408710000002,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-4.stl",
+            "sha256": "209e53d7527e6c873b5cdb242933c10bf5ec38dcff7e0d30aaef9190934b9828",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -474.41263608691406 0 1 0 225.76420196630858 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "1",
+              "source_volume_id": "3",
+              "source_offset_x": "-237.20632171630859",
+              "source_offset_y": "112.88209915161133",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3064,
+            "bounds": [
+              [
+                -271.1152572,
+                85.0363732,
+                0.0
+              ],
+              [
+                -203.29737079999998,
+                140.7278328,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-5.stl",
+            "sha256": "a7f87c579d0915f53f5bda8c6444ed422412635fbcccde97f327308235743a60",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70199592480469 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 23498,
+            "bounds": [
+              [
+                -436.726097,
+                38.52226300000001,
+                8.39999962
+              ],
+              [
+                -223.983283,
+                251.179733,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-6.stl",
+            "sha256": "65683cd52fec17130e0aaa51663419fc21e2de400402cad5fdb210ccf4fb324b",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -660.7093885517578 0 1 0 289.70198792480471 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 7836,
+            "bounds": [
+              [
+                -439.476097,
+                35.772270000000006,
+                12.499999609
+              ],
+              [
+                -221.233283,
+                253.92972600000002,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-7.stl",
+            "sha256": "136ac68907c99b5683095e32f5eab6b38641f9a362bc8258da0594ec05d65d03",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -524 0 1 0 142 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -270.0,
+                63.0,
+                0.0
+              ],
+              [
+                -254.0,
+                79.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-8.stl",
+            "sha256": "bb60d310791b90a4dd2b21458ce8c0cf7ee08ab492fef9750bebfde226afe6a8",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -780.75897208398442 0 1 0 268.66054185986332 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -397.379486,
+                127.33026518999999,
+                0.0
+              ],
+              [
+                -383.379486,
+                141.33027281,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-9.stl",
+            "sha256": "28c0c12d871003a7f5df29141de74d1035d4a3d7cc4885b39fc42447e57efc75",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -618.02447554882815 0 1 0 416.60763574902342 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -316.012238,
+                201.303818,
+                0.0
+              ],
+              [
+                -302.012238,
+                215.303818,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-10.stl",
+            "sha256": "896e893495cc28f989d650300f6236801b7ff64b09c1201e3527eb33df6bf063",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -523.23050663378899 0 1 0 284.11044355761715 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -268.61525663000003,
+                135.055222,
+                0.0
+              ],
+              [
+                -254.61524137,
+                149.055222,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F2-A2L-knot-volume-11.stl",
+            "sha256": "e40a88e7e28141addd65eb062cd165fa2af634c36b8fd05d70229f851b800053",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -659.62854001953133 0 1 0 152.0953063982422 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -336.81427,
+                69.0476532,
+                0.0
+              ],
+              [
+                -322.81427,
+                83.0476532,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F3 A2L knot",
+        "plate": 3,
+        "transform": [
+          [
+            0.913137115,
+            -0.40765256,
+            0.0,
+            386.9713300000001
+          ],
+          [
+            0.40765256,
+            0.913137115,
+            0.0,
+            -84.441661
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F3 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "69.0575",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-1.stl",
+            "sha256": "86f757824196109c267e4608a7fe231a26d7e91cc5ce1248940d24ac9b52044f",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -372.90020775976564 0 1 0 667.67195101757807 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "2",
+              "source_volume_id": "0",
+              "source_offset_x": "-186.45010375976562",
+              "source_offset_y": "333.83598327636719",
+              "source_offset_z": "6.75"
+            },
+            "faces": 19446,
+            "bounds": [
+              [
+                -271.8842776,
+                210.83699,
+                0.0
+              ],
+              [
+                -101.01593040000002,
+                456.83494599999995,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-2.stl",
+            "sha256": "03d786fbe01b6af7678116345f4684102dc4da36bae37378c0ed92a373b2af1a",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -155.98971558808594 0 1 0 568.19988225366205 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "2",
+              "source_volume_id": "1",
+              "source_offset_x": "-77.994857788085938",
+              "source_offset_y": "284.09994125366211",
+              "source_offset_z": "6.75"
+            },
+            "faces": 21308,
+            "bounds": [
+              [
+                -155.9897156,
+                116.859737,
+                0.0
+              ],
+              [
+                0.0,
+                451.340145,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-3.stl",
+            "sha256": "07369ad01013157337dd3311996d09fdc958d2643fb0ffcc9d6f0e471a28a0d5",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -336.76645648730471 0 1 0 474.21897081152343 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "2",
+              "source_volume_id": "2",
+              "source_offset_x": "-168.38323211669922",
+              "source_offset_y": "237.10948944091797",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3404,
+            "bounds": [
+              [
+                -210.8369975,
+                203.20273509999998,
+                0.0
+              ],
+              [
+                -125.92945050000002,
+                271.0162269,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-4.stl",
+            "sha256": "6b2c355684648b669ed2a6783bfb80da30d2c9a5a05ca792a58c06ce85030c1d",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -180.91361048286132 0 1 0 818.56274407031242 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "2",
+              "source_volume_id": "3",
+              "source_offset_x": "-90.456804275512695",
+              "source_offset_y": "409.2813720703125",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4180,
+            "bounds": [
+              [
+                -135.4863014,
+                361.36273189999997,
+                0.0
+              ],
+              [
+                -45.427311,
+                457.2000121,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-5.stl",
+            "sha256": "b477cdcc6df1073fedd2ae0a31d8b4826b53e805bf0a7ac75184e7091cff33db",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -251.17973363818359 0 1 0 579.64017461816411 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 28236,
+            "bounds": [
+              [
+                -251.179734,
+                142.82283,
+                8.39999962
+              ],
+              [
+                0.0,
+                436.817336,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-6.stl",
+            "sha256": "8dff29b937e4f360e6c9d3ac9dda9f99df2975896c96776c977458c76fc15250",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -253.92971800878905 0 1 0 581.27911388476559 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 9066,
+            "bounds": [
+              [
+                -253.929718,
+                141.71176200000002,
+                12.499999609
+              ],
+              [
+                0.0,
+                439.567352,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-7.stl",
+            "sha256": "b396844a5ed8302a640acaad3fceeb3274584a71a4c8d0c631bec623835605e4",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -152.16526797216795 0 1 0 699.06915241601564 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -83.082634,
+                342.534576,
+                0.0
+              ],
+              [
+                -69.082634,
+                356.534576,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-8.stl",
+            "sha256": "dac84d01a5cd8a1a396af662f668a6b07c5e71f46afa00ffebc001c97dd5fdf6",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -226.81231644726563 0 1 0 523.08331249414061 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -120.406158,
+                254.541656,
+                0.0
+              ],
+              [
+                -106.406158,
+                268.541656,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-9.stl",
+            "sha256": "6e1f6b6f500e4503a15dfedacd9df82ba6c179da25dde387dd200bebf277e1bc",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -424.80740378222657 0 1 0 575.67419416796884 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -219.403702,
+                280.837097,
+                0.0
+              ],
+              [
+                -205.403702,
+                294.837097,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-10.stl",
+            "sha256": "3fa4c91fd07ebd28551f395dcd97e3e8312b9fd83f3872fa00a59865beaf1834",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -307.18438760351563 0 1 0 761.80712845312496 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -160.592194,
+                373.903564,
+                0.0
+              ],
+              [
+                -146.592194,
+                387.903564,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-11.stl",
+            "sha256": "bbd071e17e4c2fc3527ad62743ef09166da60083936123434b85cfabd1f74fd6",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -302 0 1 0 428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -158.0,
+                207.0,
+                0.0
+              ],
+              [
+                -144.0,
+                221.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F3-A2L-knot-volume-12.stl",
+            "sha256": "c14b3aa1fa869dd5cafb3b35f989affe4bae577d11847ca2c93a9ec6c0721d66",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -270 0 1 0 428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -142.0,
+                207.0,
+                0.0
+              ],
+              [
+                -128.0,
+                221.0,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F4 A2L knot",
+        "plate": 4,
+        "transform": [
+          [
+            -0.915804697,
+            -0.4016239,
+            0.0,
+            384.50685999999996
+          ],
+          [
+            0.4016239,
+            -0.915804697,
+            0.0,
+            405.079072
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F4 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "21.3203",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-1.stl",
+            "sha256": "119de64a9c81ae8b0fce450445aad6f0e9c978ae267f924b3087200cb1fc7b9b",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 390.15214969287109 0 1 0 675.78776538085935 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "3",
+              "source_volume_id": "0",
+              "source_offset_x": "195.07607650756836",
+              "source_offset_y": "337.89387512207031",
+              "source_offset_z": "6.75"
+            },
+            "faces": 17304,
+            "bounds": [
+              [
+                118.2665637,
+                220.89006,
+                0.0
+              ],
+              [
+                271.8855823,
+                454.89772,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-2.stl",
+            "sha256": "e1b7a0376a026583f8720ba5f5ddf9b328464a95dd4fc93f2f234e4995b6d23c",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 152.54837038066407 0 1 0 570.43281514648436 0 0 1 16.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "3",
+              "source_volume_id": "1",
+              "source_offset_x": "76.274185180664062",
+              "source_offset_y": "285.21641540527344",
+              "source_offset_z": "8.25"
+            },
+            "faces": 24800,
+            "bounds": [
+              [
+                -18.0,
+                114.05571000000003,
+                0.0
+              ],
+              [
+                170.5483704,
+                456.37709,
+                16.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-3.stl",
+            "sha256": "19d8fe240db33104ace785d3f06674d5f7309c825705280da2f4a5e17fb35f18",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 216.31943937451172 0 1 0 824.74639846289062 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "3",
+              "source_volume_id": "2",
+              "source_offset_x": "108.15971755981445",
+              "source_offset_y": "412.37319946289062",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4926,
+            "bounds": [
+              [
+                59.745175,
+                367.5463863,
+                0.0
+              ],
+              [
+                156.57426900000002,
+                457.2000117,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-4.stl",
+            "sha256": "5ed8e7db080197f77221a5a0818967c6eaade17cd9d62efe07cf11b42d33c593",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 361.92476608496094 0 1 0 474.21622452050781 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "3",
+              "source_volume_id": "3",
+              "source_offset_x": "180.96237945556641",
+              "source_offset_y": "237.10811614990234",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3576,
+            "bounds": [
+              [
+                141.0347213,
+                203.19998879999997,
+                0.0
+              ],
+              [
+                220.8900527,
+                271.0162272,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-5.stl",
+            "sha256": "24c9b3d1deec35586e514dad7c36937c5ce2cb91b1e31a2b83b3d3aae7cea974",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 251.09689365527345 0 1 0 577.7735980439453 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 28106,
+            "bounds": [
+              [
+                0.0,
+                141.16047700000001,
+                8.39999962
+              ],
+              [
+                251.096894,
+                436.613113,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-6.stl",
+            "sha256": "84fec95274e439481784aff3cb61f08a25e24cb43e94f4e10d1da6736e9682e2",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 253.84689365527345 0 1 0 579.18232700585941 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 9042,
+            "bounds": [
+              [
+                0.0,
+                139.81919900000003,
+                12.499999609
+              ],
+              [
+                253.846894,
+                439.363113,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-7.stl",
+            "sha256": "961afc2e4ad7acc6a4ff7001e7fa18349d82248873fe9569d73c576f9427dbaf",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 320.837402171875 0 1 0 523.00634782812494 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                153.418701,
+                254.503174,
+                0.0
+              ],
+              [
+                167.418701,
+                268.503174,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-8.stl",
+            "sha256": "37201ef9fc82d728a58f82aad90ea34cff1b95b149c6311998bba11ea6f40dde",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 152.21804804785157 0 1 0 604.28955039062498 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                69.109024,
+                295.144775,
+                0.0
+              ],
+              [
+                83.109024,
+                309.144775,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-9.stl",
+            "sha256": "f29f68791718aff882326f378f3ad4e7a4f6680cb49de70d7bb01c69c59475b8",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 214.0978543071289 0 1 0 795.13458225976569 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                100.048927,
+                390.567291,
+                0.0
+              ],
+              [
+                114.048927,
+                404.567291,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-10.stl",
+            "sha256": "f4cacf8a8143de3ce64727ad09157bb219207f2ac8493f0e021750d66a3d1cbb",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 394.9039615908203 0 1 0 671.11407435351566 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                190.451981,
+                328.557037,
+                0.0
+              ],
+              [
+                204.451981,
+                342.557037,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-11.stl",
+            "sha256": "429e9881f2a1a602047a3f1b07c4df77877d809f2c0b4cbf85cd37ea8e683340",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 240 0 1 0 428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                113.0,
+                207.0,
+                0.0
+              ],
+              [
+                127.0,
+                221.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F4-A2L-knot-volume-12.stl",
+            "sha256": "5cb8f2c26fddd560e726d64837fc39f4bbd36292890773c406d1310928244ff4",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 296 0 1 0 428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                141.0,
+                207.0,
+                0.0
+              ],
+              [
+                155.0,
+                221.0,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F5 A2L knot",
+        "plate": 5,
+        "transform": [
+          [
+            0.0394260095,
+            -0.999222493,
+            0.0,
+            308.44139
+          ],
+          [
+            0.999222493,
+            0.0394260095,
+            0.0,
+            -163.33550400000001
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F5 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "132.74",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-1.stl",
+            "sha256": "c0fb72c15ced3a403ff86a91d2173014f375fa37f25112f240f69c033c4e37e2",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 623.7905731894532 0 1 0 439.9188618798828 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "4",
+              "source_volume_id": "0",
+              "source_offset_x": "311.89527893066406",
+              "source_offset_y": "219.95943450927734",
+              "source_offset_z": "6.75"
+            },
+            "faces": 21016,
+            "bounds": [
+              [
+                178.26179499999998,
+                144.07929239999999,
+                0.0
+              ],
+              [
+                445.52879299999995,
+                295.8395616,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-2.stl",
+            "sha256": "d1f2752edbc95483fda3b1d3767448208829996aa2cb39ad65d5b7cdcbd74613",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 660.76839404980467 0 1 0 118.91704369663086 0 0 1 16.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "4",
+              "source_volume_id": "1",
+              "source_offset_x": "330.38419342041016",
+              "source_offset_y": "59.458520889282227",
+              "source_offset_z": "8.25"
+            },
+            "faces": 13214,
+            "bounds": [
+              [
+                203.568382,
+                17.885883299999996,
+                0.0
+              ],
+              [
+                457.20002,
+                101.0311623,
+                16.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-3.stl",
+            "sha256": "c1175f56a36bb7a7d50d2e51f00d531fdc26e8133d0defce956446db0d4f055e",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 474.69187200683598 0 1 0 237.78287934521484 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "4",
+              "source_volume_id": "2",
+              "source_offset_x": "237.34593963623047",
+              "source_offset_y": "118.89143753051758",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3024,
+            "bounds": [
+              [
+                203.568367,
+                91.0380675,
+                0.0
+              ],
+              [
+                271.123497,
+                146.7448165,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-4.stl",
+            "sha256": "ca849ce50ed51f6ba996b9143e3c2845706d6affd5f742313808384ff879b3e1",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 828.26777661523442 0 1 0 251.97970590527342 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "4",
+              "source_volume_id": "3",
+              "source_offset_x": "414.13389587402344",
+              "source_offset_y": "125.98985290527344",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4798,
+            "bounds": [
+              [
+                371.43190039999996,
+                98.3534394,
+                0.0
+              ],
+              [
+                456.8358616,
+                153.6262666,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-5.stl",
+            "sha256": "11feea17c795a5c92065d0601dc10c53531f65e95ae5abbe5fabd1775ccf293a",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 660.60502575195312 0 1 0 289.54700844250488 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 23444,
+            "bounds": [
+              [
+                223.95973100000003,
+                38.450113000000016,
+                8.39999962
+              ],
+              [
+                436.645309,
+                251.096887,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-6.stl",
+            "sha256": "2e1ad36f8696671c254a83514810050b96be502b6794ea73b619c95c46895244",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 660.60502575195312 0 1 0 289.54700844250488 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 7848,
+            "bounds": [
+              [
+                221.20973100000003,
+                35.700113000000016,
+                12.499999609
+              ],
+              [
+                439.395309,
+                253.846887,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-7.stl",
+            "sha256": "3bd913e9db25b3deee3d29c5b295ea71ead6b661b7079668c7e25bd595b01092",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 426 0 1 0 296 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                205.0,
+                140.0,
+                0.0
+              ],
+              [
+                221.0,
+                156.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-8.stl",
+            "sha256": "3a1ffd314d8a2775569fdb878ed488956e9a4274eed1468efd7f7a5c1ebb99b9",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 648.69519021484371 0 1 0 405.73635832128906 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                317.347595,
+                195.868179,
+                0.0
+              ],
+              [
+                331.347595,
+                209.868179,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-9.stl",
+            "sha256": "2a1e2f31965959e8adae9fb213773e1e4e51f8804393a98000edf251461b4e0c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 790.31103557812503 0 1 0 238.5491639091797 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                388.155518,
+                112.274582,
+                0.0
+              ],
+              [
+                402.155518,
+                126.274582,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-10.stl",
+            "sha256": "80f1735c8e54b495d5ac19d9216377e2fde037fdd0d0037e2b2d7843220867a9",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 630.88848838476565 0 1 0 151.97653199121095 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                308.444244,
+                68.988266,
+                0.0
+              ],
+              [
+                322.444244,
+                82.988266,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F5-A2L-knot-volume-11.stl",
+            "sha256": "5cec4d2bc0f0a9fa950a970e19fbcf6113c58f45ab909e1f984eba6307fccb90",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 523.25510421777346 0 1 0 296.57168589550781 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                254.62754037,
+                141.285843,
+                0.0
+              ],
+              [
+                268.62755563,
+                155.285843,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F6 A2L knot",
+        "plate": 6,
+        "transform": [
+          [
+            0.191586725,
+            -0.981475688,
+            0.0,
+            150.617886
+          ],
+          [
+            0.981475688,
+            0.191586725,
+            0.0,
+            19.42829599999999
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F6 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "123.955",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-1.stl",
+            "sha256": "43b6e6813005a732b373557cab40c4a4c19ce25da3cea2f729845d237752f4b5",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 127.23111532426758 0 1 0 306.82718647753904 0 0 1 18.44999932779541 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "5",
+              "source_volume_id": "0",
+              "source_offset_x": "63.615556716918945",
+              "source_offset_y": "153.41359710693359",
+              "source_offset_z": "9.2249999046325684"
+            },
+            "faces": 698,
+            "bounds": [
+              [
+                41.7914867,
+                142.769279,
+                4.94999932
+              ],
+              [
+                85.43963049999999,
+                164.057899,
+                13.49999952
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-2.stl",
+            "sha256": "13e7be14dc6559e1a58c63ab0689ab0b76501a3362ad6bab296925bc87ffd183",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 314.16718655383301 0 1 0 -45.461448634716795 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "5",
+              "source_volume_id": "1",
+              "source_offset_x": "157.08359718322754",
+              "source_offset_y": "-22.730724334716797",
+              "source_offset_z": "6.75"
+            },
+            "faces": 33946,
+            "bounds": [
+              [
+                17.378998999999993,
+                -159.9999963,
+                0.0
+              ],
+              [
+                296.788179,
+                114.53854770000001,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-3.stl",
+            "sha256": "21120471e96de745756f196cb319383e583c6d0d69db2e2ac1523aba8e7db971",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 103.3276119152832 0 1 0 235.39245602734377 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "5",
+              "source_volume_id": "2",
+              "source_offset_x": "51.66380500793457",
+              "source_offset_y": "117.69622802734375",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3718,
+            "bounds": [
+              [
+                17.887981399999994,
+                84.10293580000001,
+                0.0
+              ],
+              [
+                85.4396324,
+                151.2895202,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-4.stl",
+            "sha256": "205d334ee2022a69ec7796ba8cd57794d95fcd60b4718201adc509d9c2d1700c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 315.4935420440674 0 1 0 -5.5950012203515627 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 23604,
+            "bounds": [
+              [
+                38.447428,
+                -159.99999960999997,
+                8.39999962
+              ],
+              [
+                277.046106,
+                154.40499839,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-5.stl",
+            "sha256": "75601456c35fa7a4c934512349a13839aa7581af10fe720cd7a1104b6e4466c2",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 315.39918086828612 0 1 0 -4.253738401660156 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 4446,
+            "bounds": [
+              [
+                35.697427000000005,
+                -160.0000072,
+                12.499999609
+              ],
+              [
+                279.701745,
+                155.74626880000002,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-6.stl",
+            "sha256": "19c3a8b6e7fb94aab3ec1cb74b9121189ec4fd5ae9fe36b4d2e6d6b95afce79c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 524.83950002832034 0 1 0 23.554080443148806 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                254.41976163,
+                3.7770402,
+                0.0
+              ],
+              [
+                270.41974637,
+                19.777040200000002,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F6-A2L-knot-volume-7.stl",
+            "sha256": "9d9e722a4b256111ea8e72a2fd728348f8fb13c45ac7217e9f8fad59f24839e0",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 519.23325392480467 0 1 0 -26.51173468123169 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                251.61661537,
+                -21.2558674,
+                0.0
+              ],
+              [
+                267.61663063000003,
+                -5.2558674,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F7 A2L knot",
+        "plate": 7,
+        "transform": [
+          [
+            -0.997944356,
+            -0.0640863655,
+            0.0,
+            485.8473100000001
+          ],
+          [
+            0.0640863655,
+            -0.997944356,
+            0.0,
+            -1.7231689999999844
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F7 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "41.3256",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-1.stl",
+            "sha256": "7d06471237bb67acd231fa3673c6012f3bb0353c5df749b685797a7a111585a6",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 778.35847473632816 0 1 0 -278.58923565289308 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "6",
+              "source_volume_id": "0",
+              "source_offset_x": "389.17924499511719",
+              "source_offset_y": "-139.29461765289307",
+              "source_offset_z": "6.75"
+            },
+            "faces": 20612,
+            "bounds": [
+              [
+                321.15846280000005,
+                -260.62957900000004,
+                0.0
+              ],
+              [
+                457.1999972,
+                -17.959657000000007,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-2.stl",
+            "sha256": "5c98f9016320f07406d728a2a6aa2627690d00e4ef710116129dca6f54973959",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 487.11816403124999 0 1 0 -292.21187986511234 0 0 1 16.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "6",
+              "source_volume_id": "1",
+              "source_offset_x": "243.55908203125",
+              "source_offset_y": "-146.1059398651123",
+              "source_offset_z": "8.25"
+            },
+            "faces": 12670,
+            "bounds": [
+              [
+                202.8102417,
+                -271.911894,
+                0.0
+              ],
+              [
+                284.3079223,
+                -20.299986000000004,
+                16.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-3.stl",
+            "sha256": "425f3b4f92afebcd04a1d8aef506e8dfa1d1f7ff7c0346c2a9999a76d90fad87",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 593.69978303320318 0 1 0 -102.86010936461182 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "6",
+              "source_volume_id": "2",
+              "source_offset_x": "296.84989929199219",
+              "source_offset_y": "-51.430054664611816",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3748,
+            "bounds": [
+              [
+                268.1995697,
+                -85.577096,
+                0.0
+              ],
+              [
+                325.50019829999997,
+                -17.2830134,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-4.stl",
+            "sha256": "0241fba0d53d646bfc7cbc2d8614aa17bf30dbf2d1de69bde2683b0b997d70fd",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 616.71130385546871 0 1 0 -459.5102156943359 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "6",
+              "source_volume_id": "3",
+              "source_offset_x": "308.35565185546875",
+              "source_offset_y": "-229.75510406494141",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4820,
+            "bounds": [
+              [
+                279.96896380000004,
+                -271.13709289999997,
+                0.0
+              ],
+              [
+                336.7423402,
+                -188.3731311,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-5.stl",
+            "sha256": "5fa40284f5db11f560a8e98bd903880de081dd0971c59aab4415a663065b80f9",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 660.73797603710932 0 1 0 -289.810810137207 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 23544,
+            "bounds": [
+              [
+                223.962646,
+                -251.20899200000002,
+                8.39999962
+              ],
+              [
+                436.77533,
+                -38.601814000000005,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-6.stl",
+            "sha256": "a0329eb5c04ba4c0b75199d35cac798f3d0b8bf2286d155e688d9dc104c3e7e1",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 660.73797603710932 0 1 0 -289.810810137207 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 7824,
+            "bounds": [
+              [
+                221.212646,
+                -253.95899200000002,
+                12.499999609
+              ],
+              [
+                439.52533,
+                -35.851814000000005,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-7.stl",
+            "sha256": "6d03b97c5e4496fd04e92d089f907f7c225006a407dcb74c3f7ffbc3a118440e",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 426 0 1 0 -296 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                205.0,
+                -156.0,
+                0.0
+              ],
+              [
+                221.0,
+                -140.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-8.stl",
+            "sha256": "e3cb88e102d52a16f1fefc0f3610d1e5ca72eecfa3c4aa6838b074d2c7a7d042",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 523.10910817089848 0 1 0 -292.93109165429689 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                254.55454237,
+                -153.465546,
+                0.0
+              ],
+              [
+                268.55455763000003,
+                -139.465546,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-9.stl",
+            "sha256": "f9070eb22c25012ce183d95cf0141d1c744097a22845760be6f22d2ad0e2cb4a",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 632.6224362617188 0 1 0 -152.18795778183593 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                309.311218,
+                -83.0939789,
+                0.0
+              ],
+              [
+                323.311218,
+                -69.0939789,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-10.stl",
+            "sha256": "ab6e4a0bcd744fa617c206b2f45f075c7a5deb350a3a4170db66f2706fc868b6",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 789.28393577343752 0 1 0 -241.51985184228516 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                387.641968,
+                -127.759926,
+                0.0
+              ],
+              [
+                401.641968,
+                -113.759926,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F7-A2L-knot-volume-11.stl",
+            "sha256": "620490b489fea22c4a21106ed317a3afbe130fdb38853937d12df67dd08e924a",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 645.19592242578119 0 1 0 -407.28109770605465 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                315.597961,
+                -210.640549,
+                0.0
+              ],
+              [
+                329.597961,
+                -196.640549,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F8 A2L knot",
+        "plate": 8,
+        "transform": [
+          [
+            -0.271260403,
+            -0.962505997,
+            0.0,
+            -103.38079999999991
+          ],
+          [
+            0.962505997,
+            -0.271260403,
+            0.0,
+            -46.560362
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F8 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "150.739",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-1.stl",
+            "sha256": "8133cddb37d66bb9f5ae8d8ec3dea37c326c810cac145aeb17a27a022a8681c5",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 295.66333003906249 0 1 0 -463.93499777929685 0 0 1 16.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "7",
+              "source_volume_id": "0",
+              "source_offset_x": "147.8316650390625",
+              "source_offset_y": "-231.96749877929688",
+              "source_offset_z": "8.25"
+            },
+            "faces": 24126,
+            "bounds": [
+              [
+                0.0,
+                -321.9349978,
+                0.0
+              ],
+              [
+                295.66333,
+                -142.0000002,
+                16.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-2.stl",
+            "sha256": "f80b18c0e1751de21f79fe6d45f24466f6cda2bb40e328225919ee4a137fb86e",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 261.98449753515627 0 1 0 -764.45062227929679 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "7",
+              "source_volume_id": "1",
+              "source_offset_x": "130.99224853515625",
+              "source_offset_y": "-382.22531127929688",
+              "source_offset_z": "6.75"
+            },
+            "faces": 18342,
+            "bounds": [
+              [
+                17.878570999999994,
+                -457.2000119,
+                0.0
+              ],
+              [
+                244.10592699999998,
+                -307.25061009999996,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-3.stl",
+            "sha256": "8d1766e7f7a343c7b23eb6397129592738eb84af68563b44dc805a43b65a1c7c",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 86.06759641777343 0 1 0 -573.48352025390625 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "7",
+              "source_volume_id": "2",
+              "source_offset_x": "43.03379821777343",
+              "source_offset_y": "-286.74176025390625",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3580,
+            "bounds": [
+              [
+                0.0,
+                -326.3361814,
+                0.0
+              ],
+              [
+                86.0675964,
+                -247.1473386,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-4.stl",
+            "sha256": "9b11a768809e611bbd89feac4e542d057302748aa614f08d025633069afe3f9f",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 439.76497606542966 0 1 0 -674.53669706445316 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "7",
+              "source_volume_id": "3",
+              "source_offset_x": "219.88248443603516",
+              "source_offset_y": "-337.26835632324219",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4404,
+            "bounds": [
+              [
+                174.39791100000002,
+                -371.0076141,
+                0.0
+              ],
+              [
+                265.367073,
+                -303.52906790000003,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-5.stl",
+            "sha256": "0b7e1705df573ccddaf0393ab42c0ebaf12b4b4465b05819ef9833977c1d5600",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 251.20899981689453 0 1 0 -596.76237506835935 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 27872,
+            "bounds": [
+              [
+                0.0,
+                -436.762375,
+                8.39999962
+              ],
+              [
+                251.209,
+                -160.000015,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-6.stl",
+            "sha256": "bad497e8d3e92605d9b686f2e7ca5d5e81715e5fa836948c6c5f080fba8f5387",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 253.95899981689453 0 1 0 -599.51237506835935 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 9066,
+            "bounds": [
+              [
+                0.0,
+                -439.512375,
+                12.499999609
+              ],
+              [
+                253.959,
+                -160.000015,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-7.stl",
+            "sha256": "9e5bec3818136509a5e91a3e7fb589965f422225e4aa4ff8e32339d4b0f0fa05",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 272.90625 0 1 0 -522.9746934638672 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                129.453125,
+                -268.48734336999996,
+                0.0
+              ],
+              [
+                143.453125,
+                -254.48735863,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-8.stl",
+            "sha256": "d701e2edc14d67b023917e3331b1935be2f1b498e186e3c1231f6129d70bc1b5",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 422.82382201074222 0 1 0 -591.75720207421875 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                204.411911,
+                -302.878601,
+                0.0
+              ],
+              [
+                218.411911,
+                -288.878601,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-9.stl",
+            "sha256": "1898b2f1568d2ea201a551e3d560ca9cebe487a60e4e0027f409b3d074e29a1c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 262.35339377734374 0 1 0 -783.09136981445317 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                124.17669699999999,
+                -398.545685,
+                0.0
+              ],
+              [
+                138.176697,
+                -384.545685,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-10.stl",
+            "sha256": "40e240b1774450da0d3a0e1ba68da12bdcc768e54a99a87b52bc6966c3e4c8c5",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 152.19874576376952 0 1 0 -625.11376976562497 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                69.0993729,
+                -319.556885,
+                0.0
+              ],
+              [
+                83.0993729,
+                -305.556885,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-11.stl",
+            "sha256": "3c09fe1552dbc5e5e1b555e91fd3ef12263753e890a50c75658ef821dc9c0d02",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 232 0 1 0 -428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                109.0,
+                -221.0,
+                0.0
+              ],
+              [
+                123.0,
+                -207.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F8-A2L-knot-volume-12.stl",
+            "sha256": "caa6693ef268c19534530e77a7742c8b8bd1552ca639e28ab7c033324620642e",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 328 0 1 0 -428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                157.0,
+                -221.0,
+                0.0
+              ],
+              [
+                171.0,
+                -207.0,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F9 A2L knot",
+        "plate": 9,
+        "transform": [
+          [
+            -0.949808544,
+            -0.31283179,
+            0.0,
+            -40.68005
+          ],
+          [
+            0.31283179,
+            -0.949808544,
+            0.0,
+            -100.33222
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F9 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "26.77",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-1.stl",
+            "sha256": "936cf5fd69657ec65e5f5001db2e95959fe65bbb80c93059dc04d8ef19eb517b",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -123.56101984873047 0 1 0 -598.02470361914061 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "8",
+              "source_volume_id": "0",
+              "source_offset_x": "-61.780509948730469",
+              "source_offset_y": "-299.01234436035156",
+              "source_offset_z": "6.75"
+            },
+            "faces": 21754,
+            "bounds": [
+              [
+                -141.5610198,
+                -456.02470300000004,
+                0.0
+              ],
+              [
+                18.0,
+                -142.000015,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-2.stl",
+            "sha256": "b36e298bc74613a8434380e2aee86033beb0e792b58165f03336e0248924e68d",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -410.11369661865234 0 1 0 -635.25610375781253 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "8",
+              "source_volume_id": "1",
+              "source_offset_x": "-205.05685043334961",
+              "source_offset_y": "-317.6280517578125",
+              "source_offset_z": "6.75"
+            },
+            "faces": 21428,
+            "bounds": [
+              [
+                -295.6761697,
+                -455.472626,
+                0.0
+              ],
+              [
+                -114.43752230000001,
+                -179.78347800000003,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-3.stl",
+            "sha256": "6591bf70ff6c0cd756428237a86646d575eb136542acfe9a4f4bbf9fc9951912",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -316.75164797460934 0 1 0 -474.71736935449218 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "8",
+              "source_volume_id": "2",
+              "source_offset_x": "-158.37582397460938",
+              "source_offset_y": "-237.35868072509766",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3372,
+            "bounds": [
+              [
+                -197.3617401,
+                -271.0162436,
+                0.0
+              ],
+              [
+                -119.3899079,
+                -203.7011344,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-4.stl",
+            "sha256": "2847926aad8be3f4499d4e69c44a5bf543c34636d55d3a6dfc4e7b03db3c3e9a",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -408.86471578808596 0 1 0 -362.85323348339841 0 0 1 4.8000001953674314 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "8",
+              "source_volume_id": "3",
+              "source_offset_x": "-204.43235778808594",
+              "source_offset_y": "-181.42661285400391",
+              "source_offset_z": "2.4000000953674316"
+            },
+            "faces": 76,
+            "bounds": [
+              [
+                -205.239334318,
+                -184.68370871000002,
+                0.0
+              ],
+              [
+                -203.62538168199998,
+                -178.16953329,
+                4.8000002
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-5.stl",
+            "sha256": "bf984f3198a350f50d380101142738891bcd2aff9ac588685cfeb38920c3e04e",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -198.59812543623048 0 1 0 -830.8201136972657 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "8",
+              "source_volume_id": "4",
+              "source_offset_x": "-99.299060821533203",
+              "source_offset_y": "-415.41004943847656",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4608,
+            "bounds": [
+              [
+                -140.1431465,
+                -457.2000268,
+                0.0
+              ],
+              [
+                -58.454982699999995,
+                -373.62010119999997,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-6.stl",
+            "sha256": "d9829db16febbd7da4878475cd62e871c9d45611c8c22b5c387c7663d6e325c3",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -251.1267543803711 0 1 0 -596.71710202539066 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 27694,
+            "bounds": [
+              [
+                -251.126754,
+                -436.71710199999995,
+                8.39999962
+              ],
+              [
+                0.0,
+                -159.99999999999997,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-7.stl",
+            "sha256": "a5ab640ae1f3743af251cd4f6e00cdd84e09e57ac721cce8d44bec3bc69c3b55",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -253.87673975097658 0 1 0 -599.46710202539066 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 9024,
+            "bounds": [
+              [
+                -253.87674,
+                -439.46710199999995,
+                12.499999609
+              ],
+              [
+                0.0,
+                -159.99999999999997,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-8.stl",
+            "sha256": "fa4df8ad4ed825c927e6ebe5504f884895061806eb42406fe29e871aafbc147b",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -320.44830361132813 0 1 0 -523.00667567480468 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -167.224152,
+                -268.50333436999995,
+                0.0
+              ],
+              [
+                -153.224152,
+                -254.50334962999997,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-9.stl",
+            "sha256": "a33e1d354974e26ae6fed9c593ada8749e757b4a23819a1bd609662c527ca094",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -152.23097224501953 0 1 0 -605.42926012695307 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -83.1154861,
+                -309.71463,
+                0.0
+              ],
+              [
+                -69.1154861,
+                -295.71463,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-10.stl",
+            "sha256": "0de122f8c77cb317cc379573d9dfc73e55dc034f32b76b530fefb7c265176839",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -212.8663637626953 0 1 0 -795.26818823828125 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -113.433182,
+                -404.634094,
+                0.0
+              ],
+              [
+                -99.433182,
+                -390.634094,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-11.stl",
+            "sha256": "45730a097a17179184ecd1918569c47e3b276e0e6169ee66d04905458daef844",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -394.56729162988279 0 1 0 -671.60894787695315 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -204.283646,
+                -342.804474,
+                0.0
+              ],
+              [
+                -190.283646,
+                -328.804474,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-12.stl",
+            "sha256": "99a7faca4597a4b82b6a81ac99292219c7c5e861ca37f2ac503bf501a0d4159a",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -352 0 1 0 -428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -183.0,
+                -221.0,
+                0.0
+              ],
+              [
+                -169.0,
+                -207.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F9-A2L-knot-volume-13.stl",
+            "sha256": "1b8f524cc101ac586f3bdaed66b3e85ecf1ebdc3468fbce39d5c5528ecf1eacf",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -292 0 1 0 -428 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -153.0,
+                -221.0,
+                0.0
+              ],
+              [
+                -139.0,
+                -207.0,
+                12.4
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "F10 A2L knot",
+        "plate": 10,
+        "transform": [
+          [
+            0.997912921,
+            -0.0645740023,
+            0.0,
+            485.79029
+          ],
+          [
+            0.0645740023,
+            0.997912921,
+            0.0,
+            321.847285
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "F10 A2L knot",
+          "brim_width": "1",
+          "enable_support": "1",
+          "extruder": "1",
+          "infill_direction": "48.7024",
+          "support_interface_spacing": "0.2",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-1.stl",
+            "sha256": "d854285caedce6c328b365c5167acf3eb2d2272f78ff4028c54ede58f0ee9afd",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -786.33526605664065 0 1 0 -275.57876202722167 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "9",
+              "source_volume_id": "0",
+              "source_offset_x": "-393.16763305664062",
+              "source_offset_y": "-137.78938102722168",
+              "source_offset_z": "6.75"
+            },
+            "faces": 19846,
+            "bounds": [
+              [
+                -457.2000122,
+                -257.64532299999996,
+                0.0
+              ],
+              [
+                -329.13525380000004,
+                -17.933438999999993,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-2.stl",
+            "sha256": "7908099445af13aaaf4495f58b5fa40f0014434227741b35c5afeb4252f0109d",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -495.20322427636722 0 1 0 -289.15407199658205 0 0 1 16.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "9",
+              "source_volume_id": "1",
+              "source_offset_x": "-247.60161590576172",
+              "source_offset_y": "-144.5770378112793",
+              "source_offset_z": "8.25"
+            },
+            "faces": 13608,
+            "bounds": [
+              [
+                -292.3716962,
+                -271.891197,
+                0.0
+              ],
+              [
+                -202.8315198,
+                -17.262871000000004,
+                16.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-3.stl",
+            "sha256": "ebdd8faa39e51cfde7a094b01fff3cabe842207a65f259ea194187bee2e5daca",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -632.63349894335943 0 1 0 -453.97611236816408 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "9",
+              "source_volume_id": "2",
+              "source_offset_x": "-316.31675720214844",
+              "source_offset_y": "-226.98805999755859",
+              "source_offset_z": "6.75"
+            },
+            "faces": 4926,
+            "bounds": [
+              [
+                -344.64677429999995,
+                -270.5610272,
+                0.0
+              ],
+              [
+                -287.9867097,
+                -183.4150768,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-4.stl",
+            "sha256": "b036fb1735bf0e0aa4b29726465a94bcccc16bfca5e089c9f35938b3d81a3508",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "Continuous knot volume",
+              "matrix": "1 0 0 -609.53254686914056 0 1 0 -103.44469265952148 0 0 1 13.5 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "9",
+              "source_volume_id": "3",
+              "source_offset_x": "-304.76628112792969",
+              "source_offset_y": "-51.722345352172852",
+              "source_offset_z": "6.75"
+            },
+            "faces": 3082,
+            "bounds": [
+              [
+                -333.50813309999995,
+                -85.5112572,
+                0.0
+              ],
+              [
+                -276.0243989,
+                -17.933437400000003,
+                13.5
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-5.stl",
+            "sha256": "c1f11951b9237ef030b353aca745738b611c5b8a9284db35f3e1d694ab00de3c",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -660.72444113476558 0 1 0 -289.65761173815918 0 0 1 18.299999238530273 0 0 0 1",
+              "extruder": "2"
+            },
+            "faces": 23574,
+            "bounds": [
+              [
+                -436.724899,
+                -251.152197,
+                8.39999962
+              ],
+              [
+                -223.999527,
+                -38.50542300000001,
+                9.89999962
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-6.stl",
+            "sha256": "ab1472d72da9e8d09389c471186b9e908c466d8dcab55c13b9c7d693891257ea",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Modifier",
+              "matrix": "1 0 0 -660.72444113476558 0 1 0 -289.65758847937013 0 0 1 26.399999609265137 0 0 0 1",
+              "extruder": "3"
+            },
+            "faces": 7848,
+            "bounds": [
+              [
+                -439.474899,
+                -253.902174,
+                12.499999609
+              ],
+              [
+                -221.249527,
+                -35.75541399999999,
+                13.499999991000001
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-7.stl",
+            "sha256": "f7e09ce85cd80fd3c1f2329ac22eaf7c6b55df308af5e9d8f3931a002e10c162",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -426 0 1 0 -340 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -221.0,
+                -178.0,
+                0.0
+              ],
+              [
+                -205.0,
+                -162.0,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-8.stl",
+            "sha256": "7cb06cc609ee798fdf81c277d259645d37311b01c4645df20eea83f2d09a2cd7",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -699.5159916054688 0 1 0 -152.0433654392578 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -356.757996,
+                -83.0216827,
+                0.0
+              ],
+              [
+                -342.757996,
+                -69.0216827,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-9.stl",
+            "sha256": "e15e3c9cb2e73e1ee4f5e60b0bf000108f9698cd86611435aaeadf2d03f7f101",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -523.10375988281248 0 1 0 -217.89263958007814 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -268.55188,
+                -115.94632,
+                0.0
+              ],
+              [
+                -254.55187999999998,
+                -101.94632,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-10.stl",
+            "sha256": "bd84d8c3ac63a52fa5737e069553dfea28764398149a04c6ed1b67084ed355b8",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -601.4534916054688 0 1 0 -420.68411227441408 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -307.726746,
+                -217.342056,
+                0.0
+              ],
+              [
+                -293.726746,
+                -203.342056,
+                12.4
+              ]
+            ]
+          },
+          {
+            "file": "Knot STL/F10-A2L-knot-volume-11.stl",
+            "sha256": "1b503da3b9e97a0621cad2d503a91a1d173c8b4d10304805f1acd713bd1c288f",
+            "subtype": "modifier_part",
+            "settings": {
+              "name": "Local solid screw reinforcement",
+              "matrix": "1 0 0 -761.91912820898438 0 1 0 -306.87069751074216 0 0 1 17 0 0 0 1",
+              "sparse_infill_density": "100%"
+            },
+            "faces": 252,
+            "bounds": [
+              [
+                -387.959564,
+                -160.435349,
+                0.0
+              ],
+              [
+                -373.959564,
+                -146.435349,
+                12.4
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "unique_stl": 109,
+    "validation": "release/knot-blue-five-layers-r1/validation.json",
+    "filament_validation": "release/sunlu-pla-r1/validation.json",
+    "filament_settings_id": [
+      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
+      "SUNLU PLA Basic @Bambu Lab A2L 0.4 nozzle",
+      "SUNLU PLA Metallic @Bambu Lab A2L 0.4 nozzle"
+    ],
+    "filament_cleanup_validation": "release/unused-filaments-r1/knot-validation.json",
+    "infill_first_revert_validation": "release/knot-infill-first-revert-r1/validation.json"
+  },
+  "protected_before": {
+    "Letter.3mf": "8e391762ecb8415b77680a7bd4825e94afe37951d831bcfe41f6a43f31b16d4a",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9",
+    "Knot.scad": "9bfbeddaded4b5e0fe90d537a5357153992bd04f51bb931187f9ed5b8bdb7606",
+    "Letter.scad": "86022a638a92d4521aaad18b6252f609b05b4ab5468ce43f3c5bb3c0e23f3060",
+    "Small Parts - Crate Clips PETG.scad": "3c3e4490b1790c7275ce7993992db959818e5c8107b572a2567d53289490ebad",
+    "Small Parts - Crate Stencils.scad": "183df75cef0477c2eb64915d4f72059c29dccc6e7c4f582c357be7ab4a854b0a",
+    "Small Parts - Photo Cut Aligner.scad": "981e0a3aeae6e5981cbf0328c53de30ad602927d90f1cdbfa3251d017eca4480",
+    "Small Parts - Sanding Block PLA.scad": "67a729f105157ef010edb3a5f6ca2363fa407bd05b3d9f8d7f0883bfdbb2ccb4",
+    "Small Parts.scad": "5761ed4d27bd32b12feb6819b5c327f926a3e818f95da58b0111c17df5bc710d",
+    "Knot STL/F1-A2L-knot-volume-1.stl": "bf480655b5313f9848e195c0ca62a429cfe3b0e519dde227b96ed3d9292ffe28",
+    "Knot STL/F1-A2L-knot-volume-2.stl": "71af71f5d1924f4e7587f97e326a21ba08141fe90600bd1b7fda09de1ce14140",
+    "Knot STL/F1-A2L-knot-volume-3.stl": "404030604db2425b0bf18f70e27c570dc018c08486c035cc6c1b8c10ac6d8d5c",
+    "Knot STL/F1-A2L-knot-volume-4.stl": "fc6ed3ba0a26bb93e3aad182f30eb6bf5e9f1ef8617746b9324b6f9b0e35093d",
+    "Knot STL/F1-A2L-knot-volume-5.stl": "f2451c4bffd06bf4f45ead9349fa406c4dfb790bfe9a78e6cf3854d8f8f40f35",
+    "Knot STL/F1-A2L-knot-volume-6.stl": "fb7f0fe4b44eb22a0f9c3f28e70623c4cb462d638bb8445cc18eedb68b7776bb",
+    "Knot STL/F1-A2L-knot-volume-7.stl": "ca3de6f213b870e3288744fd68d890875ada9cc21de74c0524f8f7775078eeb1",
+    "Knot STL/F1-A2L-knot-volume-8.stl": "d4b4581b9d55515e75fff1b03dffd2b0d293a83fc78cc49b5fb967b8dbe9a936",
+    "Knot STL/F1-A2L-knot-volume-9.stl": "08748b0c44a9f6df8fc192045aefe392139f2a60b9f56e982d8fe1788220868e",
+    "Knot STL/F10-A2L-knot-volume-1.stl": "d854285caedce6c328b365c5167acf3eb2d2272f78ff4028c54ede58f0ee9afd",
+    "Knot STL/F10-A2L-knot-volume-10.stl": "bd84d8c3ac63a52fa5737e069553dfea28764398149a04c6ed1b67084ed355b8",
+    "Knot STL/F10-A2L-knot-volume-11.stl": "1b503da3b9e97a0621cad2d503a91a1d173c8b4d10304805f1acd713bd1c288f",
+    "Knot STL/F10-A2L-knot-volume-2.stl": "7908099445af13aaaf4495f58b5fa40f0014434227741b35c5afeb4252f0109d",
+    "Knot STL/F10-A2L-knot-volume-3.stl": "ebdd8faa39e51cfde7a094b01fff3cabe842207a65f259ea194187bee2e5daca",
+    "Knot STL/F10-A2L-knot-volume-4.stl": "b036fb1735bf0e0aa4b29726465a94bcccc16bfca5e089c9f35938b3d81a3508",
+    "Knot STL/F10-A2L-knot-volume-5.stl": "c1f11951b9237ef030b353aca745738b611c5b8a9284db35f3e1d694ab00de3c",
+    "Knot STL/F10-A2L-knot-volume-6.stl": "ab1472d72da9e8d09389c471186b9e908c466d8dcab55c13b9c7d693891257ea",
+    "Knot STL/F10-A2L-knot-volume-7.stl": "f7e09ce85cd80fd3c1f2329ac22eaf7c6b55df308af5e9d8f3931a002e10c162",
+    "Knot STL/F10-A2L-knot-volume-8.stl": "7cb06cc609ee798fdf81c277d259645d37311b01c4645df20eea83f2d09a2cd7",
+    "Knot STL/F10-A2L-knot-volume-9.stl": "e15e3c9cb2e73e1ee4f5e60b0bf000108f9698cd86611435aaeadf2d03f7f101",
+    "Knot STL/F2-A2L-knot-volume-1.stl": "99caf07053059a059ccb88c8c0f47a5a3651b6da36ef9c0c287be45ef10dd31e",
+    "Knot STL/F2-A2L-knot-volume-10.stl": "896e893495cc28f989d650300f6236801b7ff64b09c1201e3527eb33df6bf063",
+    "Knot STL/F2-A2L-knot-volume-11.stl": "e40a88e7e28141addd65eb062cd165fa2af634c36b8fd05d70229f851b800053",
+    "Knot STL/F2-A2L-knot-volume-2.stl": "e8d8affb5d559920bf5b24431f309641486e2a9af00fddc71b7b0169412400a4",
+    "Knot STL/F2-A2L-knot-volume-3.stl": "7a77ecf48edffcbbe9e0b8949ae20921deb28fe14ceba815f0149ed8a9fb7a01",
+    "Knot STL/F2-A2L-knot-volume-4.stl": "209e53d7527e6c873b5cdb242933c10bf5ec38dcff7e0d30aaef9190934b9828",
+    "Knot STL/F2-A2L-knot-volume-5.stl": "a7f87c579d0915f53f5bda8c6444ed422412635fbcccde97f327308235743a60",
+    "Knot STL/F2-A2L-knot-volume-6.stl": "65683cd52fec17130e0aaa51663419fc21e2de400402cad5fdb210ccf4fb324b",
+    "Knot STL/F2-A2L-knot-volume-7.stl": "136ac68907c99b5683095e32f5eab6b38641f9a362bc8258da0594ec05d65d03",
+    "Knot STL/F2-A2L-knot-volume-8.stl": "bb60d310791b90a4dd2b21458ce8c0cf7ee08ab492fef9750bebfde226afe6a8",
+    "Knot STL/F2-A2L-knot-volume-9.stl": "28c0c12d871003a7f5df29141de74d1035d4a3d7cc4885b39fc42447e57efc75",
+    "Knot STL/F3-A2L-knot-volume-1.stl": "86f757824196109c267e4608a7fe231a26d7e91cc5ce1248940d24ac9b52044f",
+    "Knot STL/F3-A2L-knot-volume-10.stl": "3fa4c91fd07ebd28551f395dcd97e3e8312b9fd83f3872fa00a59865beaf1834",
+    "Knot STL/F3-A2L-knot-volume-11.stl": "bbd071e17e4c2fc3527ad62743ef09166da60083936123434b85cfabd1f74fd6",
+    "Knot STL/F3-A2L-knot-volume-12.stl": "c14b3aa1fa869dd5cafb3b35f989affe4bae577d11847ca2c93a9ec6c0721d66",
+    "Knot STL/F3-A2L-knot-volume-2.stl": "03d786fbe01b6af7678116345f4684102dc4da36bae37378c0ed92a373b2af1a",
+    "Knot STL/F3-A2L-knot-volume-3.stl": "07369ad01013157337dd3311996d09fdc958d2643fb0ffcc9d6f0e471a28a0d5",
+    "Knot STL/F3-A2L-knot-volume-4.stl": "6b2c355684648b669ed2a6783bfb80da30d2c9a5a05ca792a58c06ce85030c1d",
+    "Knot STL/F3-A2L-knot-volume-5.stl": "b477cdcc6df1073fedd2ae0a31d8b4826b53e805bf0a7ac75184e7091cff33db",
+    "Knot STL/F3-A2L-knot-volume-6.stl": "8dff29b937e4f360e6c9d3ac9dda9f99df2975896c96776c977458c76fc15250",
+    "Knot STL/F3-A2L-knot-volume-7.stl": "b396844a5ed8302a640acaad3fceeb3274584a71a4c8d0c631bec623835605e4",
+    "Knot STL/F3-A2L-knot-volume-8.stl": "dac84d01a5cd8a1a396af662f668a6b07c5e71f46afa00ffebc001c97dd5fdf6",
+    "Knot STL/F3-A2L-knot-volume-9.stl": "6e1f6b6f500e4503a15dfedacd9df82ba6c179da25dde387dd200bebf277e1bc",
+    "Knot STL/F4-A2L-knot-volume-1.stl": "119de64a9c81ae8b0fce450445aad6f0e9c978ae267f924b3087200cb1fc7b9b",
+    "Knot STL/F4-A2L-knot-volume-10.stl": "f4cacf8a8143de3ce64727ad09157bb219207f2ac8493f0e021750d66a3d1cbb",
+    "Knot STL/F4-A2L-knot-volume-11.stl": "429e9881f2a1a602047a3f1b07c4df77877d809f2c0b4cbf85cd37ea8e683340",
+    "Knot STL/F4-A2L-knot-volume-12.stl": "5cb8f2c26fddd560e726d64837fc39f4bbd36292890773c406d1310928244ff4",
+    "Knot STL/F4-A2L-knot-volume-2.stl": "e1b7a0376a026583f8720ba5f5ddf9b328464a95dd4fc93f2f234e4995b6d23c",
+    "Knot STL/F4-A2L-knot-volume-3.stl": "19d8fe240db33104ace785d3f06674d5f7309c825705280da2f4a5e17fb35f18",
+    "Knot STL/F4-A2L-knot-volume-4.stl": "5ed8e7db080197f77221a5a0818967c6eaade17cd9d62efe07cf11b42d33c593",
+    "Knot STL/F4-A2L-knot-volume-5.stl": "24c9b3d1deec35586e514dad7c36937c5ce2cb91b1e31a2b83b3d3aae7cea974",
+    "Knot STL/F4-A2L-knot-volume-6.stl": "84fec95274e439481784aff3cb61f08a25e24cb43e94f4e10d1da6736e9682e2",
+    "Knot STL/F4-A2L-knot-volume-7.stl": "961afc2e4ad7acc6a4ff7001e7fa18349d82248873fe9569d73c576f9427dbaf",
+    "Knot STL/F4-A2L-knot-volume-8.stl": "37201ef9fc82d728a58f82aad90ea34cff1b95b149c6311998bba11ea6f40dde",
+    "Knot STL/F4-A2L-knot-volume-9.stl": "f29f68791718aff882326f378f3ad4e7a4f6680cb49de70d7bb01c69c59475b8",
+    "Knot STL/F5-A2L-knot-volume-1.stl": "c0fb72c15ced3a403ff86a91d2173014f375fa37f25112f240f69c033c4e37e2",
+    "Knot STL/F5-A2L-knot-volume-10.stl": "80f1735c8e54b495d5ac19d9216377e2fde037fdd0d0037e2b2d7843220867a9",
+    "Knot STL/F5-A2L-knot-volume-11.stl": "5cec4d2bc0f0a9fa950a970e19fbcf6113c58f45ab909e1f984eba6307fccb90",
+    "Knot STL/F5-A2L-knot-volume-2.stl": "d1f2752edbc95483fda3b1d3767448208829996aa2cb39ad65d5b7cdcbd74613",
+    "Knot STL/F5-A2L-knot-volume-3.stl": "c1175f56a36bb7a7d50d2e51f00d531fdc26e8133d0defce956446db0d4f055e",
+    "Knot STL/F5-A2L-knot-volume-4.stl": "ca849ce50ed51f6ba996b9143e3c2845706d6affd5f742313808384ff879b3e1",
+    "Knot STL/F5-A2L-knot-volume-5.stl": "11feea17c795a5c92065d0601dc10c53531f65e95ae5abbe5fabd1775ccf293a",
+    "Knot STL/F5-A2L-knot-volume-6.stl": "2e1ad36f8696671c254a83514810050b96be502b6794ea73b619c95c46895244",
+    "Knot STL/F5-A2L-knot-volume-7.stl": "3bd913e9db25b3deee3d29c5b295ea71ead6b661b7079668c7e25bd595b01092",
+    "Knot STL/F5-A2L-knot-volume-8.stl": "3a1ffd314d8a2775569fdb878ed488956e9a4274eed1468efd7f7a5c1ebb99b9",
+    "Knot STL/F5-A2L-knot-volume-9.stl": "2a1e2f31965959e8adae9fb213773e1e4e51f8804393a98000edf251461b4e0c",
+    "Knot STL/F6-A2L-knot-volume-1.stl": "43b6e6813005a732b373557cab40c4a4c19ce25da3cea2f729845d237752f4b5",
+    "Knot STL/F6-A2L-knot-volume-2.stl": "13e7be14dc6559e1a58c63ab0689ab0b76501a3362ad6bab296925bc87ffd183",
+    "Knot STL/F6-A2L-knot-volume-3.stl": "21120471e96de745756f196cb319383e583c6d0d69db2e2ac1523aba8e7db971",
+    "Knot STL/F6-A2L-knot-volume-4.stl": "205d334ee2022a69ec7796ba8cd57794d95fcd60b4718201adc509d9c2d1700c",
+    "Knot STL/F6-A2L-knot-volume-5.stl": "75601456c35fa7a4c934512349a13839aa7581af10fe720cd7a1104b6e4466c2",
+    "Knot STL/F6-A2L-knot-volume-6.stl": "19c3a8b6e7fb94aab3ec1cb74b9121189ec4fd5ae9fe36b4d2e6d6b95afce79c",
+    "Knot STL/F6-A2L-knot-volume-7.stl": "9d9e722a4b256111ea8e72a2fd728348f8fb13c45ac7217e9f8fad59f24839e0",
+    "Knot STL/F7-A2L-knot-volume-1.stl": "7d06471237bb67acd231fa3673c6012f3bb0353c5df749b685797a7a111585a6",
+    "Knot STL/F7-A2L-knot-volume-10.stl": "ab6e4a0bcd744fa617c206b2f45f075c7a5deb350a3a4170db66f2706fc868b6",
+    "Knot STL/F7-A2L-knot-volume-11.stl": "620490b489fea22c4a21106ed317a3afbe130fdb38853937d12df67dd08e924a",
+    "Knot STL/F7-A2L-knot-volume-2.stl": "5c98f9016320f07406d728a2a6aa2627690d00e4ef710116129dca6f54973959",
+    "Knot STL/F7-A2L-knot-volume-3.stl": "425f3b4f92afebcd04a1d8aef506e8dfa1d1f7ff7c0346c2a9999a76d90fad87",
+    "Knot STL/F7-A2L-knot-volume-4.stl": "0241fba0d53d646bfc7cbc2d8614aa17bf30dbf2d1de69bde2683b0b997d70fd",
+    "Knot STL/F7-A2L-knot-volume-5.stl": "5fa40284f5db11f560a8e98bd903880de081dd0971c59aab4415a663065b80f9",
+    "Knot STL/F7-A2L-knot-volume-6.stl": "a0329eb5c04ba4c0b75199d35cac798f3d0b8bf2286d155e688d9dc104c3e7e1",
+    "Knot STL/F7-A2L-knot-volume-7.stl": "6d03b97c5e4496fd04e92d089f907f7c225006a407dcb74c3f7ffbc3a118440e",
+    "Knot STL/F7-A2L-knot-volume-8.stl": "e3cb88e102d52a16f1fefc0f3610d1e5ca72eecfa3c4aa6838b074d2c7a7d042",
+    "Knot STL/F7-A2L-knot-volume-9.stl": "f9070eb22c25012ce183d95cf0141d1c744097a22845760be6f22d2ad0e2cb4a",
+    "Knot STL/F8-A2L-knot-volume-1.stl": "8133cddb37d66bb9f5ae8d8ec3dea37c326c810cac145aeb17a27a022a8681c5",
+    "Knot STL/F8-A2L-knot-volume-10.stl": "40e240b1774450da0d3a0e1ba68da12bdcc768e54a99a87b52bc6966c3e4c8c5",
+    "Knot STL/F8-A2L-knot-volume-11.stl": "3c09fe1552dbc5e5e1b555e91fd3ef12263753e890a50c75658ef821dc9c0d02",
+    "Knot STL/F8-A2L-knot-volume-12.stl": "caa6693ef268c19534530e77a7742c8b8bd1552ca639e28ab7c033324620642e",
+    "Knot STL/F8-A2L-knot-volume-2.stl": "f80b18c0e1751de21f79fe6d45f24466f6cda2bb40e328225919ee4a137fb86e",
+    "Knot STL/F8-A2L-knot-volume-3.stl": "8d1766e7f7a343c7b23eb6397129592738eb84af68563b44dc805a43b65a1c7c",
+    "Knot STL/F8-A2L-knot-volume-4.stl": "9b11a768809e611bbd89feac4e542d057302748aa614f08d025633069afe3f9f",
+    "Knot STL/F8-A2L-knot-volume-5.stl": "0b7e1705df573ccddaf0393ab42c0ebaf12b4b4465b05819ef9833977c1d5600",
+    "Knot STL/F8-A2L-knot-volume-6.stl": "bad497e8d3e92605d9b686f2e7ca5d5e81715e5fa836948c6c5f080fba8f5387",
+    "Knot STL/F8-A2L-knot-volume-7.stl": "9e5bec3818136509a5e91a3e7fb589965f422225e4aa4ff8e32339d4b0f0fa05",
+    "Knot STL/F8-A2L-knot-volume-8.stl": "d701e2edc14d67b023917e3331b1935be2f1b498e186e3c1231f6129d70bc1b5",
+    "Knot STL/F8-A2L-knot-volume-9.stl": "1898b2f1568d2ea201a551e3d560ca9cebe487a60e4e0027f409b3d074e29a1c",
+    "Knot STL/F9-A2L-knot-volume-1.stl": "936cf5fd69657ec65e5f5001db2e95959fe65bbb80c93059dc04d8ef19eb517b",
+    "Knot STL/F9-A2L-knot-volume-10.stl": "0de122f8c77cb317cc379573d9dfc73e55dc034f32b76b530fefb7c265176839",
+    "Knot STL/F9-A2L-knot-volume-11.stl": "45730a097a17179184ecd1918569c47e3b276e0e6169ee66d04905458daef844",
+    "Knot STL/F9-A2L-knot-volume-12.stl": "99a7faca4597a4b82b6a81ac99292219c7c5e861ca37f2ac503bf501a0d4159a",
+    "Knot STL/F9-A2L-knot-volume-13.stl": "1b8f524cc101ac586f3bdaed66b3e85ecf1ebdc3468fbce39d5c5528ecf1eacf",
+    "Knot STL/F9-A2L-knot-volume-2.stl": "b36e298bc74613a8434380e2aee86033beb0e792b58165f03336e0248924e68d",
+    "Knot STL/F9-A2L-knot-volume-3.stl": "6591bf70ff6c0cd756428237a86646d575eb136542acfe9a4f4bbf9fc9951912",
+    "Knot STL/F9-A2L-knot-volume-4.stl": "2847926aad8be3f4499d4e69c44a5bf543c34636d55d3a6dfc4e7b03db3c3e9a",
+    "Knot STL/F9-A2L-knot-volume-5.stl": "bf984f3198a350f50d380101142738891bcd2aff9ac588685cfeb38920c3e04e",
+    "Knot STL/F9-A2L-knot-volume-6.stl": "d9829db16febbd7da4878475cd62e871c9d45611c8c22b5c387c7663d6e325c3",
+    "Knot STL/F9-A2L-knot-volume-7.stl": "a5ab640ae1f3743af251cd4f6e00cdd84e09e57ac721cce8d44bec3bc69c3b55",
+    "Knot STL/F9-A2L-knot-volume-8.stl": "fa4df8ad4ed825c927e6ebe5504f884895061806eb42406fe29e871aafbc147b",
+    "Knot STL/F9-A2L-knot-volume-9.stl": "a33e1d354974e26ae6fed9c593ada8749e757b4a23819a1bd609662c527ca094",
+    "Letter STL/C1-A2L-flat-M-core-volume-1.stl": "4ff0f536c65431ee2bbf55874bf7784ea21f169347ed3c81fe71c1c455082a96",
+    "Letter STL/C1-A2L-flat-M-core-volume-2.stl": "da9fd1450316a19a1480984ef07ff274d6dabb4905d2d43363c24fe1059fca83",
+    "Letter STL/C1-A2L-flat-M-core-volume-3.stl": "a870228a9ad706c10316c84ee7a0583bd8253a9fc90ffa8ca72f8a5ddfad95d2",
+    "Letter STL/C1-A2L-flat-M-core-volume-4.stl": "759212def6e39ba555a6b6d1fb4f115abaa714ce6a5ef3dff97b388a2309fb1e",
+    "Letter STL/C1-A2L-flat-M-core-volume-5.stl": "377cc31d5a493bd5f58e79f191465611b1e7626fd863d3c79d7fe7984a43a0e8",
+    "Letter STL/C2-A2L-flat-M-core-volume-1.stl": "bd6065bc20770bb5839527ee1707f73fe20b0caf0a8a18ee81ecca5ae8d93583",
+    "Letter STL/C2-A2L-flat-M-core-volume-2.stl": "545e67a8e1a8372b41e4a07ccf2efd31b55b166a5841511af8ed5005934115ac",
+    "Letter STL/C2-A2L-flat-M-core-volume-3.stl": "dc2f3b96815534cae102fe9616475e3ba300f7695805c4ebf3c520b44745daab",
+    "Letter STL/C2-A2L-flat-M-core-volume-4.stl": "ed16132781aceec5f33038ecc300c93294c298fb769740a295452ef87e6c5943",
+    "Letter STL/C3-A2L-flat-M-core-volume-1.stl": "5324a937c88297c091c64002384c72422097ac3407322e0ab2270b10df98b548",
+    "Letter STL/C3-A2L-flat-M-core-volume-2.stl": "8d52cd4eca3eb282e350efb0b6dbf2db5def5a1a2d9b6096a42cf4cfe78ecbac",
+    "Letter STL/C4-A2L-flat-M-core-volume-1.stl": "b5d778a7fcb04374bd320b2dabf4331571cddc230fbaaed95ff1f32b025e3e6a",
+    "Letter STL/C4-A2L-flat-M-core-volume-2.stl": "e16a9e072d1d36d40366aceb1555535ffbf79ecf75d6fe1e136594685bbd4cec",
+    "Letter STL/C5-A2L-flat-M-core-volume-1.stl": "aa117d5cf6ddfc9cfb4e0bfb9f7771cc2a50838da6eb76944e1e9ccafce7e521",
+    "Letter STL/C5-A2L-flat-M-core-volume-2.stl": "de58a9dfac66c3c238c15a8ddd890e097a565eabe61ce378f5627ccfde43daf1",
+    "Letter STL/V1-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl": "3abf46a2a73a8aeae48dfe9986c346390dc5440eed90c14503d6cf0d177171c9",
+    "Letter STL/V2-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl": "def854ea6bbc862e82bdd7023a4216298d773ea37b34bb5dcf48e8bb1f99c998",
+    "Letter STL/V3-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl": "850fb8e8aabe96199f6700917fe53e38f39deb9d7a5bebabcdc3a4ed84150962",
+    "Small Parts - Crate Clips PETG STL/Crate-clip-1---10mm-spacer---1-4in-lip-volume-1.stl": "dee3784b88928e795e0ac45ce5bfef32d2680bb69a42efbf83f4dc79e1bbf870",
+    "Small Parts - Crate Stencils STL/01-THIS-END-UP-1-of-3-volume-1.stl": "5075f2f9e46ab9cd71a0df520baec867fbd3b2ef00bad3f46d2f2d833da49103",
+    "Small Parts - Crate Stencils STL/02-THIS-END-UP-2-of-3-volume-1.stl": "721a9f675def0d3238ebceab0056bad79a2d945739630e3b2f2d13de381ee882",
+    "Small Parts - Crate Stencils STL/03-THIS-END-UP-3-of-3-volume-1.stl": "f0a1451b5eb563d031abae1e9fde3ed8dbb681ffc27aeccb370f690f1713dc86",
+    "Small Parts - Crate Stencils STL/04-FRAGILE-1-of-3-volume-1.stl": "1c714701bdf4589c716194ed6b479472ecf9bd37a9d1a88798a00e6f682e100f",
+    "Small Parts - Crate Stencils STL/05-FRAGILE-2-of-3-volume-1.stl": "80bea35fb7e79349e1d79e370659c357225ee164401a87118f8d66018fb864da",
+    "Small Parts - Crate Stencils STL/06-FRAGILE-3-of-3-volume-1.stl": "1d459fa622fb762197fd641d86fe655a1c14c826344a154a021555f7c5e93475",
+    "Small Parts - Photo Cut Aligner STL/Backer-2---honeycomb-tracing---2mm-volume-1.stl": "33a7eb5e98b8ede0483c04facbb2dbe6733b278067ebc28d15b7cc102a0ce822",
+    "Small Parts - Sanding Block PLA STL/Base---quarter-sheet-volume-1.stl": "d9d93ffa441bb4445f293a3b85bf45dd5c837a1770d6948e0582906fc65bef5e",
+    "Small Parts - Sanding Block PLA STL/Lock---quarter-sheet-volume-1.stl": "35ebf0088601c14f03bd1aa49d66936cc3e2651ed1ee05edf96db2324efba842",
+    "Small Parts - Sanding Block PLA STL/Nut---quarter-sheet-volume-1.stl": "9cf62dd38ceee989f97e8e6cf027f190def2930a6a42fb2e0f3294b400c77466",
+    "Small Parts - Sanding Block PLA STL/Screw---quarter-sheet-volume-1.stl": "0b169aca156049ed87ee9e0b7d09db0e2fa38569e1f391e1361c493c4a9d2421",
+    "Small Parts - Sanding Block PLA STL/Tighteneer---quarter-sheet-volume-1.stl": "0f92a78742fc4212e340012f30c63454cb3a1a4e4e5f48e721842410d2a71709",
+    "Small Parts STL/B---stem-bottom---V3-alignment-shoe-r3-volume-1.stl": "baa9cb8be2b19d599375c7e45060adeb613a872f1e7edcf18b3e08fc14deec06",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-1.stl": "1b9ff06605ceedf6117d6ebbf1d6baac2bb0110dfae6368be18e3ecb294c434a",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-2.stl": "3c47eae6c3a3c84758503c204b2d561529a14b011b0a5d4ea8b99e041df5bf4d",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-3.stl": "b8257786ae75f39e36db1f34f4e282394891ae6e0f390796eeba9606fdaeb6ba",
+    "Small Parts STL/B1-A1-companion-wall-block-volume-4.stl": "a99e5c40ad4af514d653a1c40e5aaaf6f65f0837ef47b1a582d61d398ed55ade",
+    "Small Parts STL/B2-A1-companion-wall-block-volume-1.stl": "354925119bce4969aa130f2986cea36f9239aef073e62b1341d475be947e793a",
+    "Small Parts STL/B2-A1-companion-wall-block-volume-2.stl": "f3dc6706b4c713681602ed8613467223c862d4a2bd94e75e20a37d22965a1179",
+    "Small Parts STL/B2-A1-companion-wall-block-volume-3.stl": "bc90b38094ba5783a106f00a5c4954bfd0bbd59e1970455aeaa7826a9e5457f5",
+    "Small Parts STL/B3-A1-companion-wall-block-volume-1.stl": "3391e23c689f4359741ca65313712fda00c99ee774b70edbfd19b546f1854755",
+    "Small Parts STL/B3-A1-companion-wall-block-volume-2.stl": "8eb430db2d1a75f55cd72e5b5aff142010debe7201fc5e21c4c3b6e1b43b2355",
+    "Small Parts STL/B3-A1-companion-wall-block-volume-3.stl": "f26469c88dd51b5e9edbc2076b91c17ca6025423ce48b76270654ebc29cae722",
+    "Small Parts STL/B4-A1-companion-wall-block-volume-1.stl": "6ee280e12caa2a5479756d08e6495f66c894c735daca6aa004c304f85efc8edc",
+    "Small Parts STL/B4-A1-companion-wall-block-volume-2.stl": "17b0eb8f9f8610bfa25ace1c82edeedee98ecfa4b18ef337ee50baff3412ee7f",
+    "Small Parts STL/B4-A1-companion-wall-block-volume-3.stl": "955afcfefc01968b2504d9a0916076d4200b9a0d27a65f8214b13dac7407b009",
+    "Small Parts STL/Backer1-volume-1.stl": "2c7c17d94e42f54ae42d3a2ccf2a7fd50a730ad41d1bb7d31bc8a9464cf1d27d",
+    "Small Parts STL/Backer2-volume-1.stl": "e92981a0fe979b7f733dade21887d6bd27b80b375268c177a842f5dcb84a81ed",
+    "Small Parts STL/Backer3-volume-1.stl": "817a180570182aa98cdfc19241220c119313be88cc2ae151540a87977012e7c7",
+    "Small Parts STL/Backer4-volume-1.stl": "5f917acd7cb3f714c01906652b9f9304e34cfafe2cbba909f620d769e606d494",
+    "Small Parts STL/Backer5-volume-1.stl": "b0214e34bff5ea156180790462568cf700771b5df75dcccb09a1c4464552a537",
+    "Small Parts STL/Backer6-volume-1.stl": "16258ccd28b45085ca54c7b7c0d793236f1c412c3d82a66601fd6fcafaa02a1c",
+    "Small Parts STL/Backer7-volume-1.stl": "1cf2aa97c6db6635cd597c6c703c6fb5ba0396ee3740cb8b95de731a97f30346",
+    "Small Parts STL/Backer8-volume-1.stl": "ef12c263188f1a6d2763a49e4de2a7c9f225bcf4256fe54ff26893bf2c6f9c7d",
+    "Small Parts STL/L1---left-upper-curve---V1-alignment-r1-volume-1.stl": "9aba46115cdbe1a16dfb4de773d69fd64b4ef60b1b467f9fb5fea3c49b6826de",
+    "Small Parts STL/L2---left-lower-end---V1-alignment-r1-volume-1.stl": "624605defa141ed46413607b91cdc540152b430f3585974bbf097d98d7af6d50",
+    "Small Parts STL/R1---right-upper-curve---V2-alignment-r1-volume-1.stl": "dc6508b5f7c44401be1a7d188c21d7636168c23faabf4c1a1cf3e99785fc6e36",
+    "Small Parts STL/R1-photo-retainer-volume-1.stl": "44f94afa86d38ec8bfc87a23107b261886f612dbb3eaaa1fd145c975cbe50c11",
+    "Small Parts STL/R1-photo-retainer-volume-2.stl": "f042fe39af2e65cadb229fbc0ac569984a960e799a44148b236088968f0b15d1",
+    "Small Parts STL/R2---right-lower-end---V2-alignment-r1-volume-1.stl": "b5e93ebb0b2b16792c3c1b57d7d2223c5708d924999a7ed9b0beca725182c33d",
+    "Small Parts STL/V---crotch-datum---V3-alignment-shoe-r3-volume-1.stl": "9cf3de07d97c9e43c310912af0e7e062a796907e3af65abf4ff8d1bbe59a8132",
+    "release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf": "b82b2356c92c14640b4107405c0fde04488d61ced29d34821572c8b84003f0f6"
+  },
+  "user_request": "Switch the knot to normal supports instead of trees.",
+  "support_activation": "Existing per-object enable_support = 1 retained on all ten objects",
+  "support_style": "default retained",
+  "support_on_build_plate_only": "1 retained",
+  "physical_support_cleanup_and_joint_fit_unqualified": true
+}

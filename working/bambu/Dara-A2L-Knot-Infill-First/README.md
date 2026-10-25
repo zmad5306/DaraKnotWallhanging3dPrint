@@ -1,4 +1,6 @@
-> **Historical record:** the 3MF files in this folder are retired from source control. Use Knot.3mf at the repository root. This document records the original revision; retrieve commit `5dab12a` and its LFS objects if the historical projects are needed.
+> **Withdrawn infill-first configuration, 2026-10-24:** the user reported full-size knot keys/grooves did not fit after a second print and requested infill-first off. Use current root `Knot.3mf`, with infill-first disabled and fresh slices. The print instructions below are historical and superseded. The rollback remains physically unqualified. See `release/knot-infill-first-revert-r1/` at the repository root.
+>
+> **Historical record:** the 3MF files in this folder are retired from source control. This document records the original revision; retrieve commit `5dab12a` and its LFS objects only if historical inspection is needed.
 
 # Dara A2L knot — infill first, r1
 

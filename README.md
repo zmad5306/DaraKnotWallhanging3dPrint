@@ -21,12 +21,13 @@ Original body/joint geometry, the solid laps, existing top colors and saved
 settings are preserved. All ten plates have fresh native slices. See the
 [label preview and checks](release/knot-first-layer-labels-r1/README.md).
 
-**Knot support and brim colors:** support bases and tear-away brims print in
-slot 1 white; the first-layer labels remain metallic blue. Layer one starts with
-white to set the brim color. The support-interface selector and later-layer
-order stay Auto; brim width and gap are unchanged. All ten fresh native slices,
-actual brim/support colors and native reopen are checked in the
-[current white-brim release](release/knot-white-brim-r1/README.md).
+**Knot brims removed:** the ten broad, low bodies now print without tear-away
+model brims. Support bases remain white; first-layer blue model extrusion is
+confined to the labels, with all other first-layer outer walls white. Supports,
+the purge-tower brim and other settings are retained. All ten fresh native slices
+and native reopen are checked in the
+[current no-brim release](release/knot-no-brim-r1/README.md).
+Brimless adhesion still requires physical confirmation.
 
 The six PLA projects now use the user's **SUNLU PLA Basic** identities for former Generic PLA slots and **SUNLU PLA Metallic** for Azurite blue slot 4. Printing parameters remain unchanged: Knot keeps its 65 C Textured PEI bed, and blue in Knot and Small Parts keeps its 7.5 mm3/s flow limit as approved project overrides. Letter's ERYONE copper, other silk, transparent PLA and PETG are preserved. All 29 stored native toolpaths retain their print commands; profile metadata and checksums were updated. See the [SUNLU preset comparison and migration](release/sunlu-pla-r1/README.md).
 

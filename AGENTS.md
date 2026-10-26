@@ -56,6 +56,20 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved Knot model-brim removal, 2026-10-26:** the user asked whether
+  tear-away brims were needed, requested removal if unnecessary, commit/push,
+  and reported a blue first-layer outline in the repository project preview.
+  The low 13.5 mm bodies have broad bed-contact areas of 36952–49592 mm2;
+  remove the narrow model brims with **brim_type = no_brim** (was outer_only)
+  on all ten plates. Retain dormant width 1 mm/gap 0.1 mm, white-first order,
+  white support base, interface Auto, all supports and **2 mm purge-tower brim**.
+  Preserve all geometry, paint, poses, labels, upper blue trim and other saved
+  settings. Require fresh native slices, native reopen, zero model Brim
+  extrusion and spatial verification that first-layer blue model extrusion is
+  confined to the identifiers. All nonlabel first-layer outer walls must use
+  white. Evidence belongs in `release/knot-no-brim-r1/`; earlier hashes remain
+  historical. Brimless adhesion and physical finish remain unqualified.
+
 - **Approved Knot white tear-away brims, 2026-10-25:** the user reported the
   removable perimeter still blue after the support-base correction. Set
   **first_layer_print_sequence = [1, 3, 2]** instead of Auto `[0]`, starting

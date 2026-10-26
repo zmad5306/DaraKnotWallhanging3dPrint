@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-26",
+  "user_confirmed_screenshot_project": "Repository Knot.3mf",
+  "source_project_sha256": "d7fba1c2820d34181bf1a9f5828c8b499b3969ab59fee15016c830cadd4d3c74",
+  "local_preference": {
+    "config_file": "BambuStudio.conf",
+    "section": "app",
+    "show_shells_in_preview": true
+  },
+  "ui_inspection": {
+    "confirmed_live": false,
+    "error": "accessibility window-opened handler did not become ready",
+    "launch_attempts": 2
+  },
+  "primary_sources": [
+    "https://github.com/bambulab/BambuStudio/blob/master/src/slic3r/GUI/Preferences.cpp",
+    "https://github.com/bambulab/BambuStudio/blob/master/src/slic3r/GUI/GCodeRenderer/BaseRenderer.cpp"
+  ],
+  "finding": "First-layer blue extrusion on F1 is contained entirely in the ID and purge tower; no blue outline extrusion exists in the saved source. All-plate checks and exact source model-path comparison are in validation.json.",
+  "inference": "An enabled model-shell overlay is a plausible cause of the screenshot edge; the display cause was not visually confirmed. No local preview preference was changed."
+}

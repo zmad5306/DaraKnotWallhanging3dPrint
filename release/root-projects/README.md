@@ -1,5 +1,14 @@
 # Root project release — October 22, 2026
 
+**October 26 Knot model brims removed:** `brim_type` changes from outer_only
+to no_brim on all ten plates. Broad, low PLA bodies retain their full bed contact;
+all supports and the 2 mm purge-tower brim remain. Blue IDs, white support bases,
+geometry and other settings are preserved. Fresh native slices explicitly check
+zero model Brim extrusion and blue first-layer model paths contained in the IDs,
+plus white nonlabel outer walls and native reopening. See
+[knot-no-brim-r1](../knot-no-brim-r1/README.md).
+Physical brimless adhesion remains unqualified. Earlier hashes are historical.
+
 **October 25 white Knot brims:** all ten tear-away brims now use white slot 1.
 First-layer order changes from Auto to white, blue, wood (`[1,3,2]`); later-layer
 order stays Auto. White support bases, blue IDs, 1 mm brim width, 0.1 mm gap,
@@ -35,7 +44,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 83h 30m | 2453.28 g |
+| Knot | 10 | 83h 24m | 2451.26 g |
 | Letter | 6 | 90h 07m | 1223.79 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |

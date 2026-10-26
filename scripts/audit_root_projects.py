@@ -43,18 +43,32 @@ def audit():
     cleanup_sources={}
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
+        no_brim_revision = None
+        no_brim_changed = set()
+        if row.get('no_brim_validation'):
+            no_brim_revision=json.loads((ROOT/row['no_brim_validation']).read_text())
+            assert title=='Knot' and no_brim_revision['project_sha256']==row['sha256']
+            assert no_brim_revision['changed_setting']=={'brim_type':['outer_only','no_brim']}
+            assert no_brim_revision['all_other_project_settings_preserved']
+            assert no_brim_revision['geometry_poses_paint_object_volume_overrides_preserved']
+            assert no_brim_revision['all_original_3d_archive_entries_byte_identical'] and no_brim_revision['all_cad_stl_unchanged']
+            assert no_brim_revision['fresh_native_slices'] and no_brim_revision['native_reopen_verified']
+            assert len(no_brim_revision['plates'])==10
+            no_brim_changed=set(no_brim_revision['changed_archive_entries'])
+            for name,digest in no_brim_revision['evidence_sha256'].items():
+                assert sha((ROOT/row['no_brim_validation']).parent/name)==digest,name
         brim_revision = None
         brim_changed = set()
         if row.get('white_brim_validation'):
             brim_revision=json.loads((ROOT/row['white_brim_validation']).read_text())
-            assert title=='Knot' and brim_revision['project_sha256']==row['sha256']
+            assert title=='Knot' and brim_revision['project_sha256']==(no_brim_revision['source_project_sha256'] if no_brim_revision else row['sha256'])
             assert brim_revision['changed_setting']=={'first_layer_print_sequence':[['0'],['1','3','2']]}
             assert brim_revision['all_other_project_settings_preserved']
             assert brim_revision['geometry_poses_paint_object_volume_overrides_preserved']
             assert brim_revision['all_original_3d_archive_entries_byte_identical'] and brim_revision['all_cad_stl_unchanged']
             assert brim_revision['fresh_native_slices'] and brim_revision['native_reopen_verified']
             assert len(brim_revision['plates'])==10
-            brim_changed=set(brim_revision['changed_archive_entries'])
+            brim_changed=set(brim_revision['changed_archive_entries'])|no_brim_changed
             for name,digest in brim_revision['evidence_sha256'].items():
                 assert sha((ROOT/row['white_brim_validation']).parent/name)==digest,name
         white_support_revision = None
@@ -187,10 +201,15 @@ def audit():
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if no_brim_revision:
+                assert s['brim_type']=='no_brim' and s['prime_tower_brim_width']=='2'
+                for name,digest in no_brim_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if brim_revision:
                 assert s['first_layer_print_sequence']==['1','3','2'] and s['other_layers_print_sequence']==['0']
-                assert s['brim_width']=='1' and s['brim_object_gap']=='0.1' and s['brim_type']=='outer_only'
+                assert s['brim_width']=='1' and s['brim_object_gap']=='0.1' and s['brim_type']==('no_brim' if no_brim_revision else 'outer_only')
                 for name,digest in brim_revision['preserved_archive_entries_sha256'].items():
+                    if name in no_brim_changed:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if white_support_revision:
                 assert s['support_filament']=='1' and s['support_interface_filament']=='0'
@@ -381,7 +400,24 @@ def audit():
                                             if brim_revision:
                                                 brim_plate=next(p for p in brim_revision['plates'] if p['plate']==i)
                                                 assert brim_plate['source_gcode_sha256']==white_plate['gcode_sha256']
-                                                assert hashlib.sha256(data).hexdigest()==brim_plate['gcode_sha256']
+                                                if no_brim_revision:
+                                                    no_brim_plate=next(p for p in no_brim_revision['plates'] if p['plate']==i)
+                                                    assert no_brim_plate['source_gcode_sha256']==brim_plate['gcode_sha256']
+                                                    assert hashlib.sha256(data).hexdigest()==no_brim_plate['gcode_sha256']
+                                                    assert no_brim_plate['gcode_setting_changes']=={'brim_type':['outer_only','no_brim']}
+                                                    assert no_brim_plate['brim_segments']==0 and no_brim_plate['no_model_brim_extrusion']
+                                                    assert no_brim_plate['first_layer_blue_confined_to_label_and_purge_tower']
+                                                    assert no_brim_plate['first_layer_blue_outside_label_area_mm2']<.001
+                                                    assert no_brim_plate['first_layer_blue_centerline_outside_exact_glyphs_mm']<.000001
+                                                    assert no_brim_plate['label_bead_corner_allowance_mm']==.05
+                                                    assert no_brim_plate['first_layer_nonlabel_outer_wall_slots']==[1]
+                                                    assert no_brim_plate['first_layer_nonlabel_outer_wall_segments']>0
+                                                    assert no_brim_plate['all_support_base_white'] and no_brim_plate['no_blue_support_extrusion']
+                                                    assert no_brim_plate['model_path_geometry_materials_widths_identical']
+                                                    assert no_brim_plate['interface_transition_geometry_materials_widths_identical']
+                                                    assert no_brim_plate['first_layer_support_geometry_materials_widths_identical']
+                                                else:
+                                                    assert hashlib.sha256(data).hexdigest()==brim_plate['gcode_sha256']
                                                 assert brim_plate['gcode_setting_changes']=={'first_layer_print_sequence':['0','1,3,2']}
                                                 assert brim_plate['all_brim_white'] and brim_plate['brim_after_slots']==[1]
                                                 assert brim_plate['brim_white_segments']>0 and brim_plate['brim_outline_preserved_within_gcode_rounding']
@@ -446,6 +482,8 @@ def audit():
                         assert expected['model_z_by_filament_mm']['4']==[12.8,13.0,13.2,13.4,13.6]
                 assert hashlib.md5(data).hexdigest().upper()==z.read(name+'.md5').decode().strip().upper()
                 config=data.decode(errors='replace')
+                if no_brim_revision:
+                    assert re.search(r'^; brim_type = no_brim\s*$',config,re.M),(title,i)
                 if brim_revision:
                     assert re.search(r'^; first_layer_print_sequence = 1,3,2\s*$',config,re.M),(title,i)
                 if white_support_revision:

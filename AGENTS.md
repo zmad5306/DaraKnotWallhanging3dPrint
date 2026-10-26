@@ -56,6 +56,21 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved Knot white tear-away brims, 2026-10-25:** the user reported the
+  removable perimeter still blue after the support-base correction. Set
+  **first_layer_print_sequence = [1, 3, 2]** instead of Auto `[0]`, starting
+  layer one with white so all ten brims use white. Keep blue underside IDs,
+  support base white (1), interface Auto (0), other-layer order Auto, **1 mm
+  brim width, 0.1 mm object gap and outer_only** mode. Preserve all geometry,
+  paint, poses, material regions and other saved settings. All ten plates
+  require fresh native slices and native reopen. Verify actual Brim and all
+  support feature colors, label paths, brim outline and support contacts.
+  Native loop starts and support-body hatch paths may regenerate; record this
+  separately from geometry/settings preservation. Evidence belongs in
+  `release/knot-white-brim-r1/`; preceding support/label hashes are historical.
+  This continues the authorized correction, commit and push to main. Physical
+  removal, label finish and durability remain unobserved.
+
 - **Approved Knot white support base, 2026-10-25:** after observing blue
   first-layer supports from Auto selection, the user explicitly requested
   **support base Auto → slot 1 white** (`support_filament = 1`, previously 0),

@@ -81,7 +81,7 @@ def native(reopen=False):
 
 def assemble():
     old,edited,sliced=[read(p) for p in (BASE,EDIT,WORK/'native/sliced.3mf')]
-    expected={**json.loads(old['Metadata/project_settings.config']),'support_filament':'1'}
+    expected={**json.loads(old['Metadata/project_settings.config']),**{k:v[1] for k,v in CHANGE.items()}}
     assert json.loads(edited['Metadata/project_settings.config'])==expected==json.loads(sliced['Metadata/project_settings.config'])
     native_check=compare(EDIT,WORK/'native/sliced.3mf');assert not native_check['settings_changes']
     cfg=ET.fromstring(old['Metadata/model_settings.config']);ec=ET.fromstring(edited['Metadata/model_settings.config']);nc=ET.fromstring(sliced['Metadata/model_settings.config'])

@@ -43,11 +43,25 @@ def audit():
     cleanup_sources={}
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
+        brim_revision = None
+        brim_changed = set()
+        if row.get('white_brim_validation'):
+            brim_revision=json.loads((ROOT/row['white_brim_validation']).read_text())
+            assert title=='Knot' and brim_revision['project_sha256']==row['sha256']
+            assert brim_revision['changed_setting']=={'first_layer_print_sequence':[['0'],['1','3','2']]}
+            assert brim_revision['all_other_project_settings_preserved']
+            assert brim_revision['geometry_poses_paint_object_volume_overrides_preserved']
+            assert brim_revision['all_original_3d_archive_entries_byte_identical'] and brim_revision['all_cad_stl_unchanged']
+            assert brim_revision['fresh_native_slices'] and brim_revision['native_reopen_verified']
+            assert len(brim_revision['plates'])==10
+            brim_changed=set(brim_revision['changed_archive_entries'])
+            for name,digest in brim_revision['evidence_sha256'].items():
+                assert sha((ROOT/row['white_brim_validation']).parent/name)==digest,name
         white_support_revision = None
         white_support_changed = set()
         if row.get('white_support_base_validation'):
             white_support_revision=json.loads((ROOT/row['white_support_base_validation']).read_text())
-            assert title=='Knot' and white_support_revision['project_sha256']==row['sha256']
+            assert title=='Knot' and white_support_revision['project_sha256']==(brim_revision['source_project_sha256'] if brim_revision else row['sha256'])
             assert white_support_revision['changed_setting']=={'support_filament':['0','1']}
             assert white_support_revision['all_other_project_settings_preserved']
             assert white_support_revision['geometry_poses_paint_object_volume_overrides_preserved']
@@ -55,7 +69,7 @@ def audit():
             assert white_support_revision['fresh_native_slices'] and white_support_revision['native_reopen_verified']
             assert white_support_revision['parser_indented_tool_and_leading_decimal_extrusion_regression_passed']
             assert len(white_support_revision['plates'])==10
-            white_support_changed=set(white_support_revision['changed_archive_entries'])
+            white_support_changed=set(white_support_revision['changed_archive_entries'])|brim_changed
             for name,digest in white_support_revision['evidence_sha256'].items():
                 assert sha((ROOT/row['white_support_base_validation']).parent/name)==digest,name
         labels_revision = None
@@ -173,9 +187,15 @@ def audit():
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if brim_revision:
+                assert s['first_layer_print_sequence']==['1','3','2'] and s['other_layers_print_sequence']==['0']
+                assert s['brim_width']=='1' and s['brim_object_gap']=='0.1' and s['brim_type']=='outer_only'
+                for name,digest in brim_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if white_support_revision:
                 assert s['support_filament']=='1' and s['support_interface_filament']=='0'
                 for name,digest in white_support_revision['preserved_archive_entries_sha256'].items():
+                    if name in brim_changed:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if labels_revision:
                 for name,digest in labels_revision['preserved_archive_entries_sha256'].items():
@@ -358,7 +378,23 @@ def audit():
                                         if white_support_revision:
                                             white_plate=next(p for p in white_support_revision['plates'] if p['plate']==i)
                                             assert white_plate['source_gcode_sha256']==label_plate['gcode_sha256']
-                                            assert hashlib.sha256(data).hexdigest()==white_plate['gcode_sha256']
+                                            if brim_revision:
+                                                brim_plate=next(p for p in brim_revision['plates'] if p['plate']==i)
+                                                assert brim_plate['source_gcode_sha256']==white_plate['gcode_sha256']
+                                                assert hashlib.sha256(data).hexdigest()==brim_plate['gcode_sha256']
+                                                assert brim_plate['gcode_setting_changes']=={'first_layer_print_sequence':['0','1,3,2']}
+                                                assert brim_plate['all_brim_white'] and brim_plate['brim_after_slots']==[1]
+                                                assert brim_plate['brim_white_segments']>0 and brim_plate['brim_outline_preserved_within_gcode_rounding']
+                                                assert brim_plate['brim_outline_hausdorff_mm']<.001 and brim_plate['brim_outline_length_delta_mm']<.01
+                                                assert brim_plate['all_support_base_white'] and brim_plate['no_blue_support_extrusion']
+                                                assert brim_plate['model_path_geometry_materials_widths_identical']
+                                                assert brim_plate['interface_transition_geometry_materials_widths_identical']
+                                                assert brim_plate['first_layer_support_geometry_materials_widths_identical']
+                                                assert brim_plate['first_layer_blue_label_segments']>0
+                                                assert brim_plate['first_layer_filament_order']==[1,3]
+                                                assert brim_plate['model_z_by_filament_mm']['3']==[.2,12.8,13.0,13.2,13.4,13.6]
+                                            else:
+                                                assert hashlib.sha256(data).hexdigest()==white_plate['gcode_sha256']
                                             assert white_plate['gcode_setting_changes']=={'support_filament':['0','1']}
                                             assert white_plate['all_support_base_white'] and white_plate['no_blue_support_extrusion']
                                             assert set(white_plate['support_after']['Support'])=={'1'}
@@ -410,6 +446,8 @@ def audit():
                         assert expected['model_z_by_filament_mm']['4']==[12.8,13.0,13.2,13.4,13.6]
                 assert hashlib.md5(data).hexdigest().upper()==z.read(name+'.md5').decode().strip().upper()
                 config=data.decode(errors='replace')
+                if brim_revision:
+                    assert re.search(r'^; first_layer_print_sequence = 1,3,2\s*$',config,re.M),(title,i)
                 if white_support_revision:
                     assert re.search(r'^; support_filament = 1\s*$',config,re.M),(title,i)
                     assert re.search(r'^; support_interface_filament = 0\s*$',config,re.M),(title,i)

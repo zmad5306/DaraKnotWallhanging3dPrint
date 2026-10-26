@@ -21,6 +21,11 @@ Original body/joint geometry, the solid laps, existing top colors and saved
 settings are preserved. All ten plates have fresh native slices. See the
 [label preview and checks](release/knot-first-layer-labels-r1/README.md).
 
+**Knot support color correction:** support bases are explicitly assigned to
+slot 1 white; the first-layer labels remain metallic blue. The support-interface
+selector stays Auto. Fresh slices and support-color checks are recorded in the
+[current white-support release](release/knot-white-support-base-r1/README.md).
+
 The six PLA projects now use the user's **SUNLU PLA Basic** identities for former Generic PLA slots and **SUNLU PLA Metallic** for Azurite blue slot 4. Printing parameters remain unchanged: Knot keeps its 65 C Textured PEI bed, and blue in Knot and Small Parts keeps its 7.5 mm3/s flow limit as approved project overrides. Letter's ERYONE copper, other silk, transparent PLA and PETG are preserved. All 29 stored native toolpaths retain their print commands; profile metadata and checksums were updated. See the [SUNLU preset comparison and migration](release/sunlu-pla-r1/README.md).
 
 The local [SUNLU preset defaults](release/sunlu-profile-defaults-r2/README.md) now include 65 C Textured PEI temperatures for A2L Basic/Metallic and a 7.5 mm3/s Metallic flow limit on both printers. The new [SUNLU PLA Silk Copper](release/sunlu-silk-copper-r1/README.md) presets copy the saved copper settings for A1 and A2L. These preset updates do not change saved projects or Letter's ERYONE assignment. Current preset JSON snapshots are provided in those release folders.

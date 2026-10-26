@@ -56,6 +56,19 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved Knot white support base, 2026-10-25:** after observing blue
+  first-layer supports from Auto selection, the user explicitly requested
+  **support base Auto → slot 1 white** (`support_filament = 1`, previously 0),
+  preserving the blue labels, followed by all-ten-plate reslicing, support-color
+  verification, commit and push to main. **Support interface remains Auto**
+  (`support_interface_filament = 0`). Preserve normal supports, gaps, spacing,
+  paint, all geometry/modifiers, poses, CAD/STL and every other saved setting.
+  Verify actual base/body support is white and inspect all support, interface
+  and transition toolpaths for blue; labels remain slot 3 blue. Native reopen
+  and evidence belong in `release/knot-white-support-base-r1/`. This supersedes
+  the exact first-layer-label container/slices below; physical finish and
+  support removal remain unqualified.
+
 - **Approved Knot first-layer identifiers, 2026-10-25:** the user requested
   permanent metallic-blue plate and part numbers and confirmed all ten Knot
   pieces, followed by a push to main. Add flush **P1 F1 through P10 F10** text

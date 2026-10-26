@@ -1,5 +1,13 @@
 # Root project release — October 22, 2026
 
+**October 25 white Knot support bases:** `support_filament` changes from Auto
+(0) to white (1) on all ten plates, with blue first-layer labels retained.
+The interface selector stays Auto (0); all other saved settings, mesh/pose/paint
+data and CAD/STL remain unchanged. Fresh native slices, actual support-color
+checks and native reopen are recorded in
+[knot-white-support-base-r1](../knot-white-support-base-r1/README.md).
+This supersedes the first-layer-label container and slice hashes below.
+
 **October 25 permanent Knot labels:** all ten pieces now carry flush metallic-blue
 **P1 F1 through P10 F10** identifiers in their bed-facing first 0.20 mm layer.
 The bold text is 8 mm tall and mirrored to read normally from underneath. Ten
@@ -18,7 +26,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 83h 13m | 2449.90 g |
+| Knot | 10 | 83h 13m | 2449.70 g |
 | Letter | 6 | 90h 07m | 1223.79 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |

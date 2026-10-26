@@ -43,10 +43,25 @@ def audit():
     cleanup_sources={}
     for title,row in catalog.items():
         path=ROOT/row['project'];assert sha(path)==row['sha256'],path
+        white_support_revision = None
+        white_support_changed = set()
+        if row.get('white_support_base_validation'):
+            white_support_revision=json.loads((ROOT/row['white_support_base_validation']).read_text())
+            assert title=='Knot' and white_support_revision['project_sha256']==row['sha256']
+            assert white_support_revision['changed_setting']=={'support_filament':['0','1']}
+            assert white_support_revision['all_other_project_settings_preserved']
+            assert white_support_revision['geometry_poses_paint_object_volume_overrides_preserved']
+            assert white_support_revision['all_original_3d_archive_entries_byte_identical'] and white_support_revision['all_cad_stl_unchanged']
+            assert white_support_revision['fresh_native_slices'] and white_support_revision['native_reopen_verified']
+            assert white_support_revision['parser_indented_tool_and_leading_decimal_extrusion_regression_passed']
+            assert len(white_support_revision['plates'])==10
+            white_support_changed=set(white_support_revision['changed_archive_entries'])
+            for name,digest in white_support_revision['evidence_sha256'].items():
+                assert sha((ROOT/row['white_support_base_validation']).parent/name)==digest,name
         labels_revision = None
         if row.get('labels_validation'):
             labels_revision=json.loads((ROOT/row['labels_validation']).read_text())
-            assert title=='Knot' and labels_revision['project_sha256']==row['sha256']
+            assert title=='Knot' and labels_revision['project_sha256']==(white_support_revision['source_project_sha256'] if white_support_revision else row['sha256'])
             assert labels_revision['original_meshes_settings_support_paint_and_poses_preserved']
             assert labels_revision['all_global_settings_preserved'] and labels_revision['original_knot_stls_unchanged']
             assert labels_revision['native_reopen_verified'] and labels_revision['fresh_native_slices']
@@ -158,11 +173,17 @@ def audit():
         with zipfile.ZipFile(path) as z:
             assert z.testzip() is None
             names=set(z.namelist());s=json.loads(z.read('Metadata/project_settings.config'))
+            if white_support_revision:
+                assert s['support_filament']=='1' and s['support_interface_filament']=='0'
+                for name,digest in white_support_revision['preserved_archive_entries_sha256'].items():
+                    assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if labels_revision:
                 for name,digest in labels_revision['preserved_archive_entries_sha256'].items():
+                    if name in white_support_changed:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if lap_revision:
                 for name,digest in lap_revision['preserved_archive_entries_sha256'].items():
+                    if name in white_support_changed:continue
                     if labels_revision and name not in labels_revision['preserved_archive_entries_sha256']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
             if name_revision and not veneer_revision:
@@ -182,6 +203,7 @@ def audit():
                         expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in filament_revision['preserved_archive_entries_sha256'].items():
+                    if name in white_support_changed:continue
                     if labels_revision and name not in labels_revision['preserved_archive_entries_sha256']:continue
                     if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     if cleanup_revision and name not in cleanup_revision['preserved_archive_entries_sha256']:continue
@@ -197,6 +219,7 @@ def audit():
                         expected=after
                     assert s[key]==expected,(title,key)
                 for name,digest in cleanup_revision['preserved_archive_entries_sha256'].items():
+                    if name in white_support_changed:continue
                     if labels_revision and name not in labels_revision['preserved_archive_entries_sha256']:continue
                     if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     if name_revision and name in name_revision['changed_archive_entries']:continue
@@ -219,12 +242,14 @@ def audit():
             if title in ['Knot','Letter']:assert s['is_infill_first']=='0'
             if rollback_revision:
                 for name,digest in rollback_revision['preserved_archive_entries_sha256'].items():
+                    if name in white_support_changed:continue
                     if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
                 assert all(m.get('key')!='is_infill_first' or m.get('value')=='0' for m in cfg.iter('metadata'))
             if normal_revision:
                 assert s['support_type']=='normal(auto)' and s['support_style']=='default'
                 for name,digest in normal_revision['preserved_archive_entries_sha256'].items():
+                    if name in white_support_changed:continue
                     if lap_revision and name in lap_revision['changed_archive_entries']:continue
                     assert hashlib.sha256(z.read(name)).hexdigest()==digest,(title,name)
                 assert all(props(o)['enable_support']=='1' and props(o)['support_interface_spacing']=='0.2' for o in cfg.findall('object'))
@@ -330,7 +355,21 @@ def audit():
                                     if labels_revision:
                                         label_plate=next(p for p in labels_revision['plates'] if p['plate']==i)
                                         assert label_plate['source_gcode_sha256']==lap_plate['gcode_sha256']
-                                        assert hashlib.sha256(data).hexdigest()==label_plate['gcode_sha256']
+                                        if white_support_revision:
+                                            white_plate=next(p for p in white_support_revision['plates'] if p['plate']==i)
+                                            assert white_plate['source_gcode_sha256']==label_plate['gcode_sha256']
+                                            assert hashlib.sha256(data).hexdigest()==white_plate['gcode_sha256']
+                                            assert white_plate['gcode_setting_changes']=={'support_filament':['0','1']}
+                                            assert white_plate['all_support_base_white'] and white_plate['no_blue_support_extrusion']
+                                            assert set(white_plate['support_after']['Support'])=={'1'}
+                                            assert all('3' not in tools for tools in white_plate['support_after'].values())
+                                            assert white_plate['first_layer_support_white_segments']>0 and white_plate['first_layer_blue_label_segments']>0
+                                            assert white_plate['model_path_geometry_materials_widths_identical']
+                                            assert white_plate['interface_transition_geometry_materials_widths_identical']
+                                            assert white_plate['first_layer_support_geometry_widths_identical']
+                                            assert white_plate['model_z_by_filament_mm']['3']==[.2,12.8,13.0,13.2,13.4,13.6]
+                                        else:
+                                            assert hashlib.sha256(data).hexdigest()==label_plate['gcode_sha256']
                                         assert label_plate['global_gcode_config_unchanged'] and label_plate['top_surface_directions_preserved']
                                         assert label_plate['upper_model_path_segments_identical']
                                         assert label_plate['label_coverage_fraction']>.96 and min(label_plate['glyph_coverage_fractions'])>.94
@@ -371,6 +410,9 @@ def audit():
                         assert expected['model_z_by_filament_mm']['4']==[12.8,13.0,13.2,13.4,13.6]
                 assert hashlib.md5(data).hexdigest().upper()==z.read(name+'.md5').decode().strip().upper()
                 config=data.decode(errors='replace')
+                if white_support_revision:
+                    assert re.search(r'^; support_filament = 1\s*$',config,re.M),(title,i)
+                    assert re.search(r'^; support_interface_filament = 0\s*$',config,re.M),(title,i)
                 if title in ['Knot','Letter']:
                     assert re.search(r'^; is_infill_first = 0\s*$',config,re.M),(title,i)
                 if normal_revision:

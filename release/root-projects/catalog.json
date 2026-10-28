@@ -1,7 +1,7 @@
 {
   "Knot": {
     "project": "Knot.3mf",
-    "sha256": "8726fdcd42b2916d01b9656c698c738bc4ca536520af7e7abe5533f7d1d80bb6",
+    "sha256": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
     "cad": "Knot.scad",
     "cad_sha256": "cf5b3275b0f958e23aa7440c2601d6c79a22e439f17cb268f09dd34f74ab23f1",
     "printer": "Bambu Lab A2L",
@@ -4000,7 +4000,9 @@
     "labels_validation": "release/knot-first-layer-labels-r1/validation.json",
     "white_support_base_validation": "release/knot-white-support-base-r1/validation.json",
     "white_brim_validation": "release/knot-white-brim-r1/validation.json",
-    "no_brim_validation": "release/knot-no-brim-r1/validation.json"
+    "no_brim_validation": "release/knot-no-brim-r1/validation.json",
+    "lower_lap_brim_validation": "release/knot-lower-lap-brims-r1/validation.json",
+    "lower_lap_edge_brim_validation": "release/knot-lower-lap-brims-r2/validation.json"
   },
   "Letter": {
     "project": "Letter.3mf",

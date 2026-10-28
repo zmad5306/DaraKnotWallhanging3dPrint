@@ -21,6 +21,8 @@
 /release/knot-white-support-base-r1/*.json -text whitespace=cr-at-eol
 /release/knot-white-brim-r1/*.json -text whitespace=cr-at-eol
 /release/knot-no-brim-r1/*.json -text whitespace=cr-at-eol
+/release/knot-lower-lap-brims-r1/*.json -text whitespace=cr-at-eol
+/release/knot-lower-lap-brims-r2/*.json -text whitespace=cr-at-eol
 
 # Exact Bambu user-preset snapshots must retain their validated bytes.
 /release/sunlu-*/presets/*.json -text whitespace=cr-at-eol

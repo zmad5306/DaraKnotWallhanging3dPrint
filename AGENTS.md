@@ -56,6 +56,45 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved Knot continuous white lower-lap brims, 2026-10-27:** the user
+  reported that the corner-only ears were insufficient and appeared blue,
+  and requested white brims. This supersedes the corner-only placement below.
+  Replace the 28 isolated ears with overlapping native painted points along
+  the actual exposed edges of all 14 solid lower laps. Use up to **6 mm point
+  radius**, tapering to 2 mm at the shoulders and reducing radius as needed
+  for bed clearance; preserve all part poses. Keep **brim_ears** mode,
+  **0.10 mm gap**, **0.20 mm first layer** and dormant ordinary width 1 mm.
+  Explicitly save **first_layer_print_sequence = 1 3 2 on every plate**, in
+  addition to the matching existing global setting, to retain white-first
+  order when opened and resliced in Bambu Studio. P1/P6 have only upper laps
+  and receive no model brim. Preserve geometry, labels, material boundaries,
+  support settings, other-layer order and every other saved parameter.
+  Require fresh native slices on all ten plates, native reopen, persistent
+  plate order and painted points, white Brim extrusion, full free-end edge
+  coverage and tapered side brims. Evidence belongs in `release/knot-lower-lap-brims-r2/`.
+  Prior stored slices already commanded white, but the exact cause of the
+  screenshot's blue preview was not reproduced. Physical adhesion and removal
+  remain unqualified.
+
+- **Approved Knot lower-lap brim ears, 2026-10-27:** the user reported a
+  lower-lap corner lifting on P4 and explicitly requested brim ears on the solid
+  bottom laps on all plates. Change **brim_type = no_brim -> brim_ears** (Painted)
+  in `Knot.3mf`, with **two 12 mm diameter ears on each of the 14 lower laps**,
+  **28 ears total**, at the actual bed-contact free-end corners. Keep the
+  **0.10 mm object gap**, **0.20 mm first layer**, white-first sequence, white
+  support base, interface Auto and **2 mm purge-tower brim**. The dormant ordinary
+  brim width stays 1 mm; painted-ear diameter is stored separately. P1 and P6
+  contain only upper laps and therefore receive no ears. Three P9 ear centers
+  slide 1.17-1.55 mm along the contact edge to fit the bed; retain every object
+  pose. Ears use white slot 1 and remain confined to the lower-lap corners.
+  Preserve all meshes, keys, grooves, removed pads, the 28 solid-lap modifiers,
+  50 Z12.4 screw modifiers, colors, labels, support paint and all other settings.
+  All ten plates require fresh native slices, saved-point roundtrip, spatial
+  brim/color checks and native reopen. Evidence belongs in
+  `release/knot-lower-lap-brims-r1/`; the no-brim revision below is historical.
+  The report establishes a P4 adhesion failure, with printed hash/printer not
+  independently observed. Ear adhesion and removal remain physically unqualified.
+
 - **Approved Knot model-brim removal, 2026-10-26:** the user asked whether
   tear-away brims were needed, requested removal if unnecessary, commit/push,
   and reported a blue first-layer outline in the repository project preview.

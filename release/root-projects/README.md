@@ -1,5 +1,14 @@
 # Root project release — October 22, 2026
 
+**October 27 Knot continuous white lower-lap brims:** the user requested wider
+coverage and white brims after seeing isolated blue corner ears. All 14 lower
+laps now have continuous localized edge brims, with explicit white-first order
+saved on every plate. P1/P6 have no lower laps and receive no model brim.
+All ten plates are freshly sliced and reopened; actual white extrusion, edge
+coverage, labels, geometry, supports and bed clearance are checked in
+[knot-lower-lap-brims-r2](../knot-lower-lap-brims-r2/README.md). Physical adhesion
+and removal remain unqualified. Earlier corner-ear/no-brim slices are historical.
+
 **October 26 Knot model brims removed:** `brim_type` changes from outer_only
 to no_brim on all ten plates. Broad, low PLA bodies retain their full bed contact;
 all supports and the 2 mm purge-tower brim remain. Blue IDs, white support bases,
@@ -44,7 +53,7 @@ The user requested root Knot (A2L), Letter (A2L), and supporting A1 projects wit
 
 | Project | Plates | Native time | Material |
 | --- | ---: | ---: | ---: |
-| Knot | 10 | 83h 24m | 2451.26 g |
+| Knot | 10 | 83h 33m | 2453.33 g |
 | Letter | 6 | 90h 07m | 1223.79 g |
 | Small Parts | 5 | 13h 49m | 476.53 g |
 | Small Parts - Crate Clips PETG | 1 | Needs slicing | Not estimated |

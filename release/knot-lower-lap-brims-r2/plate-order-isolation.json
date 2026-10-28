@@ -1,0 +1,25 @@
+{
+  "diagnostic_only": true,
+  "printer_job_sent": false,
+  "plate": 4,
+  "source_editable_sha256": "cd321e4d878e3b1e225209b23b1672677219a9d2b4774f882703280aab9a2ad2",
+  "diagnostic_sha256": "4dd0ae68918a8431fb854f1fd2a1b12d56bf9edf4bb5945ad6634a2276b8c1f3",
+  "temporary_global_sequence": [
+    "0"
+  ],
+  "saved_plate_sequence": [
+    1,
+    3,
+    2
+  ],
+  "actual_first_layer_order": [
+    1,
+    3
+  ],
+  "brim_filament_slots": [
+    1
+  ],
+  "brim_segments": 2695,
+  "native_gcode_sha256": "8415a312bbf028f4c1a9cb700bdb5de7188fcb5e43d3c53d28eb392997507365",
+  "conclusion": "Native slice uses the explicit plate order even when global order is Auto."
+}

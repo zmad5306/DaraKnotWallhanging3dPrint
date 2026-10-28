@@ -1,9 +1,9 @@
 {
     "error_string": "Success.",
-    "export_time": 3161,
+    "export_time": 3178,
     "layer_height": 0.20000000298023224,
     "plate_index": 0,
-    "prepare_time": 794,
+    "prepare_time": 809,
     "return_code": 0,
     "sliced_plates": [
         {
@@ -17,22 +17,22 @@
                 "Internal solid infill": 5520.994140625,
                 "Outer wall": 1966.873291015625,
                 "Overhang wall": 360.6947021484375,
-                "Prime tower": 385.2030944824219,
+                "Prime tower": 385.20220947265625,
                 "Sparse infill": 7846.92578125,
-                "Support": 1089.472900390625,
-                "Support interface": 390.51470947265625,
-                "Support transition": 295.6935119628906,
+                "Support": 1080.1375732421875,
+                "Support interface": 390.586181640625,
+                "Support transition": 295.77398681640625,
                 "Top surface": 1579.524658203125,
-                "Travel": 1889.724365234375,
-                "Undefined": 1886.03369140625
+                "Travel": 1882.409423828125,
+                "Undefined": 1878.71875
             },
             "filament_change_times": 16,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 221.2779998779297,
-                    "total_used_g": 228.1793212890625
+                    "main_used_g": 221.2316131591797,
+                    "total_used_g": 228.13294982910156
                 },
                 {
                     "filament_id": "Pe271290",
@@ -47,12 +47,12 @@
                     "total_used_g": 4.048039436340332
                 }
             ],
-            "generate_support_material_time": 1128,
+            "generate_support_material_time": 1007,
             "id": 1,
-            "infill_time": 7181,
+            "infill_time": 6699,
             "layer_filament_change": 0,
-            "main_predication": 27590.62109375,
-            "make_perimeters_time": 446,
+            "main_predication": 27574.208984375,
+            "make_perimeters_time": 407,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -69,9 +69,9 @@
                     "triangle_count": 39912
                 }
             ],
-            "sliced_time": 11176,
-            "sliced_time_with_cache": 2246,
-            "total_predication": 30028.314453125,
+            "sliced_time": 10081,
+            "sliced_time_with_cache": 1803,
+            "total_predication": 30011.90234375,
             "triangle_count": 39912,
             "warning_message": ""
         },
@@ -79,6 +79,7 @@
             "feature_type_times": {
                 "Bottom surface": 1002.2346801757813,
                 "Bridge": 1875.205810546875,
+                "Brim": 88.75466918945313,
                 "Custom": 403.8591003417969,
                 "Flush": 1503.5482177734375,
                 "Gap infill": 132.85772705078125,
@@ -87,21 +88,21 @@
                 "Outer wall": 1691.2623291015625,
                 "Overhang wall": 182.41319274902344,
                 "Prime tower": 373.0104675292969,
-                "Sparse infill": 7722.90283203125,
-                "Support": 318.4972839355469,
+                "Sparse infill": 7722.90234375,
+                "Support": 318.6623229980469,
                 "Support interface": 133.150146484375,
-                "Support transition": 94.5505599975586,
+                "Support transition": 94.55052947998047,
                 "Top surface": 1480.2828369140625,
-                "Travel": 1562.087890625,
-                "Undefined": 1560.8282470703125
+                "Travel": 1568.674072265625,
+                "Undefined": 1567.4144287109375
             },
             "filament_change_times": 15,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 191.64694213867188,
-                    "total_used_g": 197.84136962890625
+                    "main_used_g": 192.02256774902344,
+                    "total_used_g": 198.2169647216797
                 },
                 {
                     "filament_id": "Pe271290",
@@ -116,12 +117,12 @@
                     "total_used_g": 3.6131577491760254
                 }
             ],
-            "generate_support_material_time": 778,
+            "generate_support_material_time": 733,
             "id": 2,
-            "infill_time": 7472,
+            "infill_time": 6932,
             "layer_filament_change": 0,
-            "main_predication": 24443.34375,
-            "make_perimeters_time": 492,
+            "main_predication": 24538.646484375,
+            "make_perimeters_time": 470,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -138,16 +139,17 @@
                     "triangle_count": 42182
                 }
             ],
-            "sliced_time": 11235,
-            "sliced_time_with_cache": 2322,
-            "total_predication": 26733.501953125,
+            "sliced_time": 10282,
+            "sliced_time_with_cache": 1999,
+            "total_predication": 26828.8046875,
             "triangle_count": 42182,
             "warning_message": ""
         },
         {
             "feature_type_times": {
-                "Bottom surface": 1103.2432861328125,
+                "Bottom surface": 1103.2431640625,
                 "Bridge": 2293.579345703125,
+                "Brim": 26.925153732299805,
                 "Custom": 405.4062805175781,
                 "Flush": 1503.5482177734375,
                 "Gap infill": 159.75405883789063,
@@ -155,22 +157,22 @@
                 "Internal solid infill": 6040.201171875,
                 "Outer wall": 2081.377197265625,
                 "Overhang wall": 326.0103454589844,
-                "Prime tower": 372.9990234375,
+                "Prime tower": 372.9886779785156,
                 "Sparse infill": 10241.294921875,
-                "Support": 845.7353515625,
-                "Support interface": 336.1652526855469,
-                "Support transition": 247.02613830566406,
+                "Support": 842.5145263671875,
+                "Support interface": 336.1643981933594,
+                "Support transition": 247.0306854248047,
                 "Top surface": 1693.076171875,
-                "Travel": 1989.6881103515625,
-                "Undefined": 1986.772216796875
+                "Travel": 1990.724609375,
+                "Undefined": 1987.8087158203125
             },
             "filament_change_times": 15,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 234.16680908203125,
-                    "total_used_g": 240.3612518310547
+                    "main_used_g": 234.26478576660156,
+                    "total_used_g": 240.459228515625
                 },
                 {
                     "filament_id": "Pe271290",
@@ -185,12 +187,12 @@
                     "total_used_g": 4.184597015380859
                 }
             ],
-            "generate_support_material_time": 1505,
+            "generate_support_material_time": 1273,
             "id": 3,
-            "infill_time": 11552,
+            "infill_time": 10260,
             "layer_filament_change": 0,
-            "main_predication": 31049.392578125,
-            "make_perimeters_time": 783,
+            "main_predication": 31074.728515625,
+            "make_perimeters_time": 719,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -207,9 +209,9 @@
                     "triangle_count": 48338
                 }
             ],
-            "sliced_time": 17360,
-            "sliced_time_with_cache": 3267,
-            "total_predication": 33339.43359375,
+            "sliced_time": 15292,
+            "sliced_time_with_cache": 2844,
+            "total_predication": 33364.7578125,
             "triangle_count": 48338,
             "warning_message": ""
         },
@@ -217,6 +219,7 @@
             "feature_type_times": {
                 "Bottom surface": 1167.4893798828125,
                 "Bridge": 2294.192138671875,
+                "Brim": 67.4824447631836,
                 "Custom": 403.0030212402344,
                 "Flush": 1638.78076171875,
                 "Gap infill": 189.8365478515625,
@@ -226,20 +229,20 @@
                 "Overhang wall": 259.2348937988281,
                 "Prime tower": 385.1852722167969,
                 "Sparse infill": 10143.6396484375,
-                "Support": 673.1054077148438,
+                "Support": 671.8690185546875,
                 "Support interface": 264.6463928222656,
                 "Support transition": 193.90292358398438,
                 "Top surface": 1811.9403076171875,
-                "Travel": 2081.10791015625,
-                "Undefined": 2080.9130859375
+                "Travel": 2087.158935546875,
+                "Undefined": 2086.964111328125
             },
             "filament_change_times": 16,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 234.43292236328125,
-                    "total_used_g": 241.33425903320313
+                    "main_used_g": 234.67919921875,
+                    "total_used_g": 241.5805206298828
                 },
                 {
                     "filament_id": "Pe271290",
@@ -254,12 +257,12 @@
                     "total_used_g": 4.312605857849121
                 }
             ],
-            "generate_support_material_time": 1377,
+            "generate_support_material_time": 1276,
             "id": 4,
-            "infill_time": 11233,
+            "infill_time": 11308,
             "layer_filament_change": 0,
-            "main_predication": 31065.251953125,
-            "make_perimeters_time": 832,
+            "main_predication": 31136.5234375,
+            "make_perimeters_time": 835,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -276,16 +279,17 @@
                     "triangle_count": 50606
                 }
             ],
-            "sliced_time": 16490,
-            "sliced_time_with_cache": 2857,
-            "total_predication": 33503.02734375,
+            "sliced_time": 16090,
+            "sliced_time_with_cache": 2485,
+            "total_predication": 33574.296875,
             "triangle_count": 50606,
             "warning_message": ""
         },
         {
             "feature_type_times": {
-                "Bottom surface": 1039.0955810546875,
+                "Bottom surface": 1039.095703125,
                 "Bridge": 1887.4246826171875,
+                "Brim": 90.26615905761719,
                 "Custom": 405.3131103515625,
                 "Flush": 1638.78076171875,
                 "Gap infill": 174.5635223388672,
@@ -293,22 +297,22 @@
                 "Internal solid infill": 5132.87109375,
                 "Outer wall": 1691.0867919921875,
                 "Overhang wall": 182.572021484375,
-                "Prime tower": 385.2030944824219,
+                "Prime tower": 385.1923828125,
                 "Sparse infill": 7714.7158203125,
-                "Support": 317.280517578125,
-                "Support interface": 133.67312622070313,
-                "Support transition": 95.09410858154297,
+                "Support": 317.2666931152344,
+                "Support interface": 133.67335510253906,
+                "Support transition": 95.17752838134766,
                 "Top surface": 1512.1700439453125,
-                "Travel": 1653.0526123046875,
-                "Undefined": 1650.3416748046875
+                "Travel": 1660.057373046875,
+                "Undefined": 1657.346435546875
             },
             "filament_change_times": 16,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 191.17469787597656,
-                    "total_used_g": 198.07603454589844
+                    "main_used_g": 191.55271911621094,
+                    "total_used_g": 198.4540557861328
                 },
                 {
                     "filament_id": "Pe271290",
@@ -323,12 +327,12 @@
                     "total_used_g": 3.709613561630249
                 }
             ],
-            "generate_support_material_time": 783,
+            "generate_support_material_time": 723,
             "id": 5,
-            "infill_time": 7633,
+            "infill_time": 7149,
             "layer_filament_change": 0,
-            "main_predication": 24635.4609375,
-            "make_perimeters_time": 518,
+            "main_predication": 24732.55078125,
+            "make_perimeters_time": 487,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -345,9 +349,9 @@
                     "triangle_count": 42052
                 }
             ],
-            "sliced_time": 11347,
-            "sliced_time_with_cache": 2258,
-            "total_predication": 27073.046875,
+            "sliced_time": 10529,
+            "sliced_time_with_cache": 2017,
+            "total_predication": 27170.126953125,
             "triangle_count": 42052,
             "warning_message": ""
         },
@@ -362,22 +366,22 @@
                 "Internal solid infill": 5522.00830078125,
                 "Outer wall": 1896.8583984375,
                 "Overhang wall": 346.0377502441406,
-                "Prime tower": 373.0188293457031,
+                "Prime tower": 373.0187683105469,
                 "Sparse infill": 7669.59619140625,
-                "Support": 1039.8306884765625,
-                "Support interface": 388.5196533203125,
-                "Support transition": 294.58502197265625,
+                "Support": 1035.4957275390625,
+                "Support interface": 388.52001953125,
+                "Support transition": 294.58514404296875,
                 "Top surface": 1490.3701171875,
-                "Travel": 1646.2177734375,
-                "Undefined": 1645.8944091796875
+                "Travel": 1640.2890625,
+                "Undefined": 1639.9656982421875
             },
             "filament_change_times": 15,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 219.53073120117188,
-                    "total_used_g": 225.72512817382813
+                    "main_used_g": 219.5067138671875,
+                    "total_used_g": 225.70114135742188
                 },
                 {
                     "filament_id": "Pe271290",
@@ -392,12 +396,12 @@
                     "total_used_g": 3.9591081142425537
                 }
             ],
-            "generate_support_material_time": 926,
+            "generate_support_material_time": 856,
             "id": 6,
-            "infill_time": 7464,
+            "infill_time": 7017,
             "layer_filament_change": 0,
-            "main_predication": 26786.37890625,
-            "make_perimeters_time": 445,
+            "main_predication": 26776.14453125,
+            "make_perimeters_time": 404,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -414,16 +418,17 @@
                     "triangle_count": 38362
                 }
             ],
-            "sliced_time": 10793,
-            "sliced_time_with_cache": 1821,
-            "total_predication": 29076.6875,
+            "sliced_time": 10059,
+            "sliced_time_with_cache": 1632,
+            "total_predication": 29066.453125,
             "triangle_count": 38362,
             "warning_message": ""
         },
         {
             "feature_type_times": {
-                "Bottom surface": 906.5471801757813,
+                "Bottom surface": 906.897216796875,
                 "Bridge": 1858.3690185546875,
+                "Brim": 44.214683532714844,
                 "Custom": 406.2656555175781,
                 "Flush": 1638.78076171875,
                 "Gap infill": 135.44834899902344,
@@ -431,22 +436,22 @@
                 "Internal solid infill": 4945.72509765625,
                 "Outer wall": 1695.303955078125,
                 "Overhang wall": 266.2024841308594,
-                "Prime tower": 385.21514892578125,
+                "Prime tower": 385.2149353027344,
                 "Sparse infill": 7906.78857421875,
-                "Support": 612.233154296875,
-                "Support interface": 246.06983947753906,
-                "Support transition": 180.04867553710938,
+                "Support": 608.510009765625,
+                "Support interface": 246.06971740722656,
+                "Support transition": 180.04644775390625,
                 "Top surface": 1488.443115234375,
-                "Travel": 1738.599365234375,
-                "Undefined": 1734.896240234375
+                "Travel": 1736.7852783203125,
+                "Undefined": 1733.0821533203125
             },
             "filament_change_times": 16,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 191.71282958984375,
-                    "total_used_g": 198.61415100097656
+                    "main_used_g": 191.85108947753906,
+                    "total_used_g": 198.75242614746094
                 },
                 {
                     "filament_id": "Pe271290",
@@ -463,10 +468,10 @@
             ],
             "generate_support_material_time": 899,
             "id": 7,
-            "infill_time": 7618,
+            "infill_time": 7648,
             "layer_filament_change": 0,
-            "main_predication": 25051.333984375,
-            "make_perimeters_time": 568,
+            "main_predication": 25089.78125,
+            "make_perimeters_time": 565,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -483,9 +488,9 @@
                     "triangle_count": 41850
                 }
             ],
-            "sliced_time": 11517,
-            "sliced_time_with_cache": 2286,
-            "total_predication": 27488.892578125,
+            "sliced_time": 11733,
+            "sliced_time_with_cache": 2450,
+            "total_predication": 27527.33984375,
             "triangle_count": 41850,
             "warning_message": ""
         },
@@ -493,6 +498,7 @@
             "feature_type_times": {
                 "Bottom surface": 1171.603759765625,
                 "Bridge": 2266.912841796875,
+                "Brim": 88.58480834960938,
                 "Custom": 407.22796630859375,
                 "Flush": 1638.78076171875,
                 "Gap infill": 163.8058319091797,
@@ -501,21 +507,21 @@
                 "Outer wall": 2042.6214599609375,
                 "Overhang wall": 242.0291748046875,
                 "Prime tower": 385.1933288574219,
-                "Sparse infill": 9877.00390625,
-                "Support": 547.6608276367188,
-                "Support interface": 224.1123809814453,
-                "Support transition": 160.87229919433594,
+                "Sparse infill": 9877.005859375,
+                "Support": 546.9264526367188,
+                "Support interface": 224.0985107421875,
+                "Support transition": 160.86004638671875,
                 "Top surface": 1826.622802734375,
-                "Travel": 2046.69091796875,
-                "Undefined": 2042.1461181640625
+                "Travel": 2054.88232421875,
+                "Undefined": 2050.337646484375
             },
             "filament_change_times": 16,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 229.4872283935547,
-                    "total_used_g": 236.3885498046875
+                    "main_used_g": 229.8101348876953,
+                    "total_used_g": 236.7114715576172
                 },
                 {
                     "filament_id": "Pe271290",
@@ -530,12 +536,12 @@
                     "total_used_g": 4.265942096710205
                 }
             ],
-            "generate_support_material_time": 1250,
+            "generate_support_material_time": 1204,
             "id": 8,
-            "infill_time": 11114,
+            "infill_time": 11332,
             "layer_filament_change": 0,
-            "main_predication": 30390.419921875,
-            "make_perimeters_time": 844,
+            "main_predication": 30485.701171875,
+            "make_perimeters_time": 880,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -552,16 +558,17 @@
                     "triangle_count": 50452
                 }
             ],
-            "sliced_time": 16286,
-            "sliced_time_with_cache": 2885,
-            "total_predication": 32828.078125,
+            "sliced_time": 16440,
+            "sliced_time_with_cache": 2836,
+            "total_predication": 32923.359375,
             "triangle_count": 50452,
             "warning_message": ""
         },
         {
             "feature_type_times": {
-                "Bottom surface": 1249.076416015625,
+                "Bottom surface": 1249.0762939453125,
                 "Bridge": 2613.242431640625,
+                "Brim": 114.37578582763672,
                 "Custom": 405.99761962890625,
                 "Flush": 1503.5482177734375,
                 "Gap infill": 199.55226135253906,
@@ -569,22 +576,22 @@
                 "Internal solid infill": 6251.84619140625,
                 "Outer wall": 2049.133544921875,
                 "Overhang wall": 175.25189208984375,
-                "Prime tower": 373.00946044921875,
+                "Prime tower": 373.0103759765625,
                 "Sparse infill": 9810.830078125,
-                "Support": 376.2312927246094,
-                "Support interface": 150.55169677734375,
-                "Support transition": 107.75987243652344,
+                "Support": 372.2065124511719,
+                "Support interface": 150.55267333984375,
+                "Support transition": 107.75992584228516,
                 "Top surface": 1767.0458984375,
-                "Travel": 1908.5264892578125,
-                "Undefined": 1905.2840576171875
+                "Travel": 1916.620849609375,
+                "Undefined": 1913.37841796875
             },
             "filament_change_times": 15,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 232.71278381347656,
-                    "total_used_g": 238.9071807861328
+                    "main_used_g": 233.1319122314453,
+                    "total_used_g": 239.32635498046875
                 },
                 {
                     "filament_id": "Pe271290",
@@ -599,12 +606,12 @@
                     "total_used_g": 4.15286111831665
                 }
             ],
-            "generate_support_material_time": 1227,
+            "generate_support_material_time": 1238,
             "id": 9,
-            "infill_time": 11052,
+            "infill_time": 11068,
             "layer_filament_change": 0,
-            "main_predication": 30367.69921875,
-            "make_perimeters_time": 896,
+            "main_predication": 30486.501953125,
+            "make_perimeters_time": 883,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -621,9 +628,9 @@
                     "triangle_count": 51238
                 }
             ],
-            "sliced_time": 16123,
-            "sliced_time_with_cache": 2756,
-            "total_predication": 32658.013671875,
+            "sliced_time": 16315,
+            "sliced_time_with_cache": 2926,
+            "total_predication": 32776.81640625,
             "triangle_count": 51238,
             "warning_message": ""
         },
@@ -631,6 +638,7 @@
             "feature_type_times": {
                 "Bottom surface": 947.7047119140625,
                 "Bridge": 1908.3125,
+                "Brim": 45.22439193725586,
                 "Custom": 405.12054443359375,
                 "Flush": 1638.78076171875,
                 "Gap infill": 170.01510620117188,
@@ -639,21 +647,21 @@
                 "Outer wall": 1688.16796875,
                 "Overhang wall": 266.30255126953125,
                 "Prime tower": 385.19354248046875,
-                "Sparse infill": 7898.3271484375,
-                "Support": 605.7510375976563,
+                "Sparse infill": 7898.32666015625,
+                "Support": 605.8041381835938,
                 "Support interface": 245.06764221191406,
                 "Support transition": 179.6031494140625,
                 "Top surface": 1456.5921630859375,
-                "Travel": 1689.8111572265625,
-                "Undefined": 1687.3980712890625
+                "Travel": 1696.538818359375,
+                "Undefined": 1694.125732421875
             },
             "filament_change_times": 16,
             "filaments": [
                 {
                     "filament_id": "Pe271290",
                     "id": 1,
-                    "main_used_g": 191.9730987548828,
-                    "total_used_g": 198.87442016601563
+                    "main_used_g": 192.1333770751953,
+                    "total_used_g": 199.0347137451172
                 },
                 {
                     "filament_id": "Pe271290",
@@ -668,12 +676,12 @@
                     "total_used_g": 3.7408289909362793
                 }
             ],
-            "generate_support_material_time": 841,
+            "generate_support_material_time": 823,
             "id": 10,
-            "infill_time": 7714,
+            "infill_time": 7825,
             "layer_filament_change": 0,
-            "main_predication": 25073.7578125,
-            "make_perimeters_time": 657,
+            "main_predication": 25125.91015625,
+            "make_perimeters_time": 765,
             "obj_cached_cnt": 0,
             "objects": [
                 {
@@ -690,9 +698,9 @@
                     "triangle_count": 41462
                 }
             ],
-            "sliced_time": 11664,
-            "sliced_time_with_cache": 2285,
-            "total_predication": 27511.439453125,
+            "sliced_time": 11833,
+            "sliced_time_with_cache": 2260,
+            "total_predication": 27563.591796875,
             "triangle_count": 41462,
             "warning_message": ""
         }

@@ -1,0 +1,31 @@
+{
+  "source_sha256": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9",
+  "changes": [
+    {
+      "block": "B1 A1 companion wall block",
+      "keyhole_x_before_mm": 51,
+      "keyhole_x_after_mm": -51,
+      "cavity_volume_mm3": 954.8600672344897,
+      "watertight": true,
+      "attachment_bores_and_keys_preserved": true,
+      "solid_difference_confined_to_keyholes": true
+    },
+    {
+      "block": "B3 A1 companion wall block",
+      "keyhole_x_before_mm": 51,
+      "keyhole_x_after_mm": -51,
+      "cavity_volume_mm3": 954.8600669874285,
+      "watertight": true,
+      "attachment_bores_and_keys_preserved": true,
+      "solid_difference_confined_to_keyholes": true
+    }
+  ],
+  "protected_projects": {
+    "Knot.3mf": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
+    "Letter.3mf": "d8e0bd1a4664db2a75291ce2418578c4c37ef86f1459572aa742aef4018ace9c",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4"
+  }
+}

@@ -56,6 +56,20 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved right-hand wall-block keyhole correction, 2026-10-31:** the user
+  confirmed that the photo's top is the artwork's top and requested correction
+  of only the two blocks on the photo's right: **B1 on F3 and B3 on F9**.
+  In `Small Parts.3mf` plate 3, move their keyhole centers from local **X+51
+  to X-51 mm**, including the exact existing hidden head channels and their
+  100% solid reinforcement. Keep the original upward keyhole direction:
+  entry Y-5, seat Y+6; **do not rotate any keyholes**. B2/B4 remain unchanged.
+  Preserve attachment screw holes, locating keys, block outlines, poses,
+  all settings and other objects. Plate 3 has a fresh native slice; plates
+  1/2/4/5 retain their exact G-code. Matching CAD/STL and catalog are updated.
+  Evidence is in `release/wall-keyholes-r1/`. The temporary all-four 90-degree
+  revision in `release/wall-keyholes-r2/` is withdrawn following the user's
+  orientation correction. Replacement blocks remain physically untested.
+
 - **Approved Knot continuous white lower-lap brims, 2026-10-27:** the user
   reported that the corner-only ears were insufficient and appeared blue,
   and requested white brims. This supersedes the corner-only placement below.

@@ -98,7 +98,7 @@ if ((plate == 0 || plate == 3) && show_modifiers)
 if ((plate == 0 || plate == 3) && show_modifiers)
  translate(plate == 0 ? [614.4, 0.0, 0] : [0,0,0])
   multmatrix([[1.0, -0.0, 0.0, 84.0], [0.0, 1.0, 0.0, 103.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
-   color("#FF00FF") import("Small Parts STL/B1-A1-companion-wall-block-volume-4.stl", convexity=20);
+   color("#FF00FF") import("Small Parts STL/B2-A1-companion-wall-block-volume-4.stl", convexity=20);
 
 // Plate 3: B3 A1 companion wall block; volume 1; normal_part
 if ((plate == 0 || plate == 3))
@@ -146,7 +146,7 @@ if ((plate == 0 || plate == 3) && show_modifiers)
 if ((plate == 0 || plate == 3) && show_modifiers)
  translate(plate == 0 ? [614.4, 0.0, 0] : [0,0,0])
   multmatrix([[1.0, -0.0, 0.0, 84.0], [0.0, 1.0, 0.0, 199.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])
-   color("#FF00FF") import("Small Parts STL/B1-A1-companion-wall-block-volume-4.stl", convexity=20);
+   color("#FF00FF") import("Small Parts STL/B2-A1-companion-wall-block-volume-4.stl", convexity=20);
 
 // Plate 3: R1 photo retainer; volume 1; normal_part
 if ((plate == 0 || plate == 3))

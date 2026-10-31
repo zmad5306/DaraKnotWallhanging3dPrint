@@ -1,0 +1,561 @@
+{
+  "project_sha256": "2c97d1a98d89742896d386abb8c9cda35fb7c894e94e2e6970e3c4fc11b4df48",
+  "native_reopen": true,
+  "native_plate": 3,
+  "other_plate_gcode_byte_identical": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "unrelated_geometry_settings_and_poses_preserved": true,
+  "global_settings_byte_identical": true,
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 755,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 3,
+    "prepare_time": 332,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 776.7443237304688,
+          "Bridge": 862.7508544921875,
+          "Brim": 58.67558670043945,
+          "Custom": 368.58477783203125,
+          "Flush": 25.0,
+          "Gap infill": 212.3543243408203,
+          "Inner wall": 3159.731689453125,
+          "Internal solid infill": 3452.811767578125,
+          "Outer wall": 1179.3486328125,
+          "Overhang wall": 58.14726257324219,
+          "Sparse infill": 5266.390625,
+          "Support": 470.2291259765625,
+          "Support interface": 34.18998718261719,
+          "Top surface": 721.8901977539062,
+          "Travel": 1561.1895751953125,
+          "Undefined": 1544.2685546875
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "Pe271290",
+            "id": 1,
+            "main_used_g": 145.49465942382812,
+            "total_used_g": 145.49465942382812
+          }
+        ],
+        "generate_support_material_time": 222,
+        "id": 3,
+        "infill_time": 529,
+        "layer_filament_change": 0,
+        "main_predication": 17797.673828125,
+        "make_perimeters_time": 286,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 139.99996948242188,
+              "x": 628.4000244140625,
+              "y": 36.0,
+              "z": 0.0
+            },
+            "id": 37,
+            "name": "B1 A1 companion wall block",
+            "triangle_count": 2328
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 139.99996948242188,
+              "x": 628.4000244140625,
+              "y": 84.0,
+              "z": 0.0
+            },
+            "id": 41,
+            "name": "B2 A1 companion wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 139.99996948242188,
+              "x": 628.4000244140625,
+              "y": 132.0,
+              "z": 0.0
+            },
+            "id": 45,
+            "name": "B3 A1 companion wall block",
+            "triangle_count": 2332
+          },
+          {
+            "bbox": {
+              "depth": 38.0,
+              "height": 13.0,
+              "width": 139.99996948242188,
+              "x": 628.4000244140625,
+              "y": 180.0,
+              "z": 0.0
+            },
+            "id": 49,
+            "name": "B4 A1 companion wall block",
+            "triangle_count": 2152
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 43.0,
+              "z": 0.0
+            },
+            "id": 53,
+            "name": "R1 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 43.0,
+              "z": 0.0
+            },
+            "id": 57,
+            "name": "R2 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 43.0,
+              "z": 0.0
+            },
+            "id": 61,
+            "name": "R3 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 59.0,
+              "z": 0.0
+            },
+            "id": 65,
+            "name": "R4 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 59.0,
+              "z": 0.0
+            },
+            "id": 69,
+            "name": "R5 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 59.0,
+              "z": 0.0
+            },
+            "id": 73,
+            "name": "R6 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 75.0,
+              "z": 0.0
+            },
+            "id": 77,
+            "name": "R7 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 75.0,
+              "z": 0.0
+            },
+            "id": 81,
+            "name": "R8 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 75.0,
+              "z": 0.0
+            },
+            "id": 85,
+            "name": "R9 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 91.0,
+              "z": 0.0
+            },
+            "id": 89,
+            "name": "R10 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 91.0,
+              "z": 0.0
+            },
+            "id": 93,
+            "name": "R11 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 91.0,
+              "z": 0.0
+            },
+            "id": 97,
+            "name": "R12 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 107.0,
+              "z": 0.0
+            },
+            "id": 101,
+            "name": "R13 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 107.0,
+              "z": 0.0
+            },
+            "id": 105,
+            "name": "R14 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 107.0,
+              "z": 0.0
+            },
+            "id": 109,
+            "name": "R15 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 123.0,
+              "z": 0.0
+            },
+            "id": 113,
+            "name": "R16 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 123.0,
+              "z": 0.0
+            },
+            "id": 117,
+            "name": "R17 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 123.0,
+              "z": 0.0
+            },
+            "id": 121,
+            "name": "R18 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 139.0,
+              "z": 0.0
+            },
+            "id": 125,
+            "name": "R19 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 139.0,
+              "z": 0.0
+            },
+            "id": 129,
+            "name": "R20 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 139.0,
+              "z": 0.0
+            },
+            "id": 133,
+            "name": "R21 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 155.0,
+              "z": 0.0
+            },
+            "id": 137,
+            "name": "R22 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 155.0,
+              "z": 0.0
+            },
+            "id": 141,
+            "name": "R23 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 155.0,
+              "z": 0.0
+            },
+            "id": 145,
+            "name": "R24 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 171.0,
+              "z": 0.0
+            },
+            "id": 149,
+            "name": "R25 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 171.0,
+              "z": 0.0
+            },
+            "id": 153,
+            "name": "R26 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 171.0,
+              "z": 0.0
+            },
+            "id": 157,
+            "name": "R27 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 187.0,
+              "z": 0.0
+            },
+            "id": 161,
+            "name": "R28 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 187.0,
+              "z": 0.0
+            },
+            "id": 165,
+            "name": "R29 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 835.4000244140625,
+              "y": 187.0,
+              "z": 0.0
+            },
+            "id": 169,
+            "name": "R30 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 783.4000244140625,
+              "y": 203.0,
+              "z": 0.0
+            },
+            "id": 173,
+            "name": "R31 photo retainer",
+            "triangle_count": 520
+          },
+          {
+            "bbox": {
+              "depth": 10.0,
+              "height": 3.0,
+              "width": 19.999975204467773,
+              "x": 809.4000244140625,
+              "y": 203.0,
+              "z": 0.0
+            },
+            "id": 177,
+            "name": "R32 photo retainer",
+            "triangle_count": 520
+          }
+        ],
+        "sliced_time": 3558,
+        "sliced_time_with_cache": 2356,
+        "total_predication": 18199.337890625,
+        "triangle_count": 25604,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "physical_qualification": "Not yet printed",
+  "locked_settings_verified": {
+    "sparse_infill_density": "8%",
+    "sparse_infill_pattern": "gyroid",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "4",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "curr_bed_type": "Textured PEI Plate",
+    "nozzle_diameter": [
+      "0.4"
+    ]
+  },
+  "native_gcode_md5_verified": true,
+  "slice_object_identifiers_verified": true
+}

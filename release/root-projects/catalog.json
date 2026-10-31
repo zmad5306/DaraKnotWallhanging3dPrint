@@ -4814,9 +4814,9 @@
   },
   "Small Parts": {
     "project": "Small Parts.3mf",
-    "sha256": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9",
+    "sha256": "2c97d1a98d89742896d386abb8c9cda35fb7c894e94e2e6970e3c4fc11b4df48",
     "cad": "Small Parts.scad",
-    "cad_sha256": "5761ed4d27bd32b12feb6819b5c327f926a3e818f95da58b0111c17df5bc710d",
+    "cad_sha256": "03ad7a4b163a0572cb736624e80e6e4d40b47f8bfd7f300b05d186f8bc381a35",
     "printer": "Bambu Lab A1",
     "plates": 5,
     "objects": [
@@ -5441,7 +5441,7 @@
         "parts": [
           {
             "file": "Small Parts STL/B1-A1-companion-wall-block-volume-1.stl",
-            "sha256": "1b9ff06605ceedf6117d6ebbf1d6baac2bb0110dfae6368be18e3ecb294c434a",
+            "sha256": "0d53f09bf2be3e609ffef5e5fa3cdd2c613a5465c38f5897f93cfeedec5ed93f",
             "subtype": "normal_part",
             "settings": {
               "name": "B1",
@@ -5454,7 +5454,7 @@
               "source_offset_z": "6.5",
               "extruder": "1"
             },
-            "faces": 2152,
+            "faces": 2328,
             "bounds": [
               [
                 -70.0,
@@ -5518,23 +5518,23 @@
           },
           {
             "file": "Small Parts STL/B1-A1-companion-wall-block-volume-4.stl",
-            "sha256": "a99e5c40ad4af514d653a1c40e5aaaf6f65f0837ef47b1a582d61d398ed55ade",
+            "sha256": "20e275fb749edaef51ee1a55df51f574e279eba8b069617fb1d5471d31dc7171",
             "subtype": "modifier_part",
             "settings": {
               "name": "100% wall keyhole seat and lip",
-              "matrix": "1 0 0 102 0 1 0 1 0 0 1 10 0 0 0 1",
+              "matrix": "1 0 0 -102 0 1 0 1 0 0 1 10 0 0 0 1",
               "sparse_infill_density": "100%",
               "sparse_infill_pattern": "cubic"
             },
             "faces": 12,
             "bounds": [
               [
-                39.0,
+                -63.0,
                 -15.0,
                 0.0
               ],
               [
-                63.0,
+                -39.0,
                 16.0,
                 10.0
               ]
@@ -5663,7 +5663,7 @@
             ]
           },
           {
-            "file": "Small Parts STL/B1-A1-companion-wall-block-volume-4.stl",
+            "file": "Small Parts STL/B2-A1-companion-wall-block-volume-4.stl",
             "sha256": "a99e5c40ad4af514d653a1c40e5aaaf6f65f0837ef47b1a582d61d398ed55ade",
             "subtype": "modifier_part",
             "settings": {
@@ -5733,7 +5733,7 @@
         "parts": [
           {
             "file": "Small Parts STL/B3-A1-companion-wall-block-volume-1.stl",
-            "sha256": "3391e23c689f4359741ca65313712fda00c99ee774b70edbfd19b546f1854755",
+            "sha256": "ffa566952b50b443a3ec634aab4936d9c034bf87c65f4ddbbc080eccc26e37c6",
             "subtype": "normal_part",
             "settings": {
               "name": "B3",
@@ -5746,7 +5746,7 @@
               "source_offset_z": "6.5",
               "extruder": "1"
             },
-            "faces": 2152,
+            "faces": 2332,
             "bounds": [
               [
                 -70.0,
@@ -5810,23 +5810,23 @@
           },
           {
             "file": "Small Parts STL/B1-A1-companion-wall-block-volume-4.stl",
-            "sha256": "a99e5c40ad4af514d653a1c40e5aaaf6f65f0837ef47b1a582d61d398ed55ade",
+            "sha256": "20e275fb749edaef51ee1a55df51f574e279eba8b069617fb1d5471d31dc7171",
             "subtype": "modifier_part",
             "settings": {
               "name": "100% wall keyhole seat and lip",
-              "matrix": "1 0 0 102 0 1 0 1 0 0 1 10 0 0 0 1",
+              "matrix": "1 0 0 -102 0 1 0 1 0 0 1 10 0 0 0 1",
               "sparse_infill_density": "100%",
               "sparse_infill_pattern": "cubic"
             },
             "faces": 12,
             "bounds": [
               [
-                39.0,
+                -63.0,
                 -15.0,
                 0.0
               ],
               [
-                63.0,
+                -39.0,
                 16.0,
                 10.0
               ]
@@ -5955,7 +5955,7 @@
             ]
           },
           {
-            "file": "Small Parts STL/B1-A1-companion-wall-block-volume-4.stl",
+            "file": "Small Parts STL/B2-A1-companion-wall-block-volume-4.stl",
             "sha256": "a99e5c40ad4af514d653a1c40e5aaaf6f65f0837ef47b1a582d61d398ed55ade",
             "subtype": "modifier_part",
             "settings": {
@@ -9487,14 +9487,7 @@
         ]
       }
     ],
-    "unique_stl": 29,
-    "filament_validation": "release/sunlu-pla-r1/validation.json",
-    "filament_settings_id": [
-      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle",
-      "SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle",
-      "Generic PLA Silk @BBL A1",
-      "SUNLU PLA Metallic @Bambu Lab A1 0.4 nozzle"
-    ]
+    "unique_stl": 30
   },
   "Small Parts - Crate Clips PETG": {
     "project": "Small Parts - Crate Clips PETG.3mf",

@@ -4006,7 +4006,7 @@
   },
   "Letter": {
     "project": "Letter.3mf",
-    "sha256": "d8e0bd1a4664db2a75291ce2418578c4c37ef86f1459572aa742aef4018ace9c",
+    "sha256": "bcdbf0c549b18eaf68726edc1da40d81eaed43234670974dd7751cadbc9ae81f",
     "cad": "Letter.scad",
     "cad_sha256": "6c9ea44043dc8cc23e290c0c8468fc6338859b4484f185ad87cb24f301aacfce",
     "printer": "Bambu Lab A2L",
@@ -4697,7 +4697,7 @@
         "parts": [
           {
             "file": "Letter STL/Right-letter-veneer-volume-1.stl",
-            "sha256": "41598f83294fd9601fe39185824b7d265a0f1bac8ea55a5b9d3575a2614c349c",
+            "sha256": "c27f8260086dcbd057049930b425eac5fb41688e2882b532114e448c666158aa",
             "subtype": "normal_part",
             "settings": {
               "name": "Right letter veneer",
@@ -4709,7 +4709,7 @@
               "source_offset_y": "160",
               "source_offset_z": "148.67436218261719"
             },
-            "faces": 467360,
+            "faces": 469046,
             "bounds": [
               [
                 -106.235886,
@@ -4810,7 +4810,8 @@
     "filament_cleanup_validation": "release/unused-filaments-r1/letter-validation.json",
     "filament_slot_1": "ERYONE Ultra Silk Copper - production baseline @BBL A2L(Dara-A2L-Hammered-Finish-ERYONE-r3.3mf)",
     "name_validation": "release/letter-veneer-names/validation.json",
-    "veneer_correction_validation": "release/letter-veneer-correction/validation.json"
+    "veneer_correction_validation": "release/letter-veneer-correction/validation.json",
+    "rear_brace_validation": "release/letter-rear-braces-r1/validation.json"
   },
   "Small Parts": {
     "project": "Small Parts.3mf",

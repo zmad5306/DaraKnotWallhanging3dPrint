@@ -246,31 +246,31 @@
       "feature_type_times": {
         "Custom": 402.6402282714844,
         "Flush": 11.0,
-        "Gap infill": 9860.501953125,
-        "Inner wall": 21329.91796875,
-        "Internal solid infill": 4921.1083984375,
-        "Outer wall": 42930.79296875,
-        "Overhang wall": 1.1171314716339111,
-        "Support": 1124.611328125,
-        "Top surface": 80.465087890625,
-        "Travel": 9056.498046875,
-        "Undefined": 9056.498046875
+        "Gap infill": 10023.556640625,
+        "Inner wall": 21350.189453125,
+        "Internal solid infill": 4974.041015625,
+        "Outer wall": 43506.8515625,
+        "Overhang wall": 1.1169499158859253,
+        "Support": 1123.911376953125,
+        "Top surface": 80.46302795410156,
+        "Travel": 9395.6318359375,
+        "Undefined": 9395.6318359375
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFL96",
           "id": 1,
-          "main_used_g": 317.2191162109375,
-          "total_used_g": 317.2191467285156
+          "main_used_g": 319.5607604980469,
+          "total_used_g": 319.5607604980469
         }
       ],
-      "generate_support_material_time": 1069,
+      "generate_support_material_time": 889,
       "id": 5,
-      "infill_time": 604,
+      "infill_time": 470,
       "layer_filament_change": 0,
-      "main_predication": 89127.4765625,
-      "make_perimeters_time": 1218,
+      "main_predication": 90276.6953125,
+      "make_perimeters_time": 741,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -284,13 +284,13 @@
           },
           "id": 29,
           "name": "Right letter veneer",
-          "triangle_count": 467360
+          "triangle_count": 469046
         }
       ],
-      "sliced_time": 9443,
-      "sliced_time_with_cache": 6177,
-      "total_predication": 89552.1171875,
-      "triangle_count": 467360,
+      "sliced_time": 8006,
+      "sliced_time_with_cache": 5621,
+      "total_predication": 90701.3359375,
+      "triangle_count": 469046,
       "warning_message": ""
     },
     {

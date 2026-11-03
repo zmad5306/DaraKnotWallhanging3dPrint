@@ -1,0 +1,6 @@
+exec(open('.work/check_core_footprint.py').read().split("r=Path('reference")[0])
+photos=unary_union([polys('photo_loop_'+str(i)) for i in range(1,9)])
+added=unary_union([f,m]).difference(photos)
+final=unary_union([k,added])
+print('Final backing connected:',final.geom_type,'valid:',final.is_valid)
+print('Added backing intrusion into photos:',added.intersection(photos).area)

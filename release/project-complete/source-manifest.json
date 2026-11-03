@@ -1,0 +1,2102 @@
+[
+  {
+    "source": "repository/.work/M_five_search.py",
+    "captured_path": "archive/development-sources/repository/.work/M_five_search.py",
+    "sha256": "f5a91cc5968208a257be78ef7ebae83a5fcf709b5b04aa7a85cb671858ade3c4"
+  },
+  {
+    "source": "repository/.work/add_cad_preview.py",
+    "captured_path": "archive/development-sources/repository/.work/add_cad_preview.py",
+    "sha256": "d6d6307aec530cc55773e47249c7bf61e6a3781e6f9ae6e00c36cf70279964ae"
+  },
+  {
+    "source": "repository/.work/add_m_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/add_m_mounts.py",
+    "sha256": "b2847b63238b3a76343926f1766ae687113e33661a16e44535f935814dc7a38f"
+  },
+  {
+    "source": "repository/.work/add_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/add_wall_blocks.py",
+    "sha256": "c2d272f62993b65b5f3bd912e9ef94dfbe36f232d51daf471b0588bd526409c4"
+  },
+  {
+    "source": "repository/.work/add_wall_screws.py",
+    "captured_path": "archive/development-sources/repository/.work/add_wall_screws.py",
+    "sha256": "c24a0c9df244ee7739a168a2e14d01845cb96e5c5bba05be3fb43cca44219d55"
+  },
+  {
+    "source": "repository/.work/ams-colors/publish.py",
+    "captured_path": "archive/development-sources/repository/.work/ams-colors/publish.py",
+    "sha256": "2ab7cb55c32ae3f567be37d6c4ed31ad47ae1eb79e1b42ed5f9eea2af8c75766"
+  },
+  {
+    "source": "repository/.work/analyze_cover_marks.py",
+    "captured_path": "archive/development-sources/repository/.work/analyze_cover_marks.py",
+    "sha256": "89252beb20e402d0d4dbc2262b6f09c29f7487faaf723fa710452d4f91b7a546"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/audit_veneer_restraint.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/audit_veneer_restraint.py",
+    "sha256": "c0735fb7d1c556570bd4fa573c151456286c32990240967b52bc35374f5448b0"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle.py",
+    "sha256": "d43bda239926bcbee9f4d61bb24b29a89be9f12432c42c5e063a643145ba626a"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r2.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r2.py",
+    "sha256": "936f5ea935f0fc3213050860b38b2fd2a15126fc2532afbccf345ffb7e74d551"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r3.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r3.py",
+    "sha256": "9f1a7947138502f98714dc13609d77b6a860974b236098633e968925a44ae631"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r4.py",
+    "sha256": "87c638f95214c7606a9d8e0c281638a23ad6aef1d484f2ce5e938963a61f1d66"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r5.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/build_veneer_wall_cradle_r5.py",
+    "sha256": "76b798ce26d4b468a50d657f2cb75ee168bb2b8a61c0f88c8bdaaaf934e324ea"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/package_veneer_wall_cradle_r3.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/package_veneer_wall_cradle_r3.py",
+    "sha256": "a177ed00753edd84a8a0faf775c83a632aac1a440a2b63f5a8d2c94cfd146f79"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/package_veneer_wall_cradle_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/package_veneer_wall_cradle_r4.py",
+    "sha256": "4fe964f039a1c9f7b6646563689353ddbbc0b613bd2d1aabc9965c10b345b00d"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/package_veneer_wall_cradle_r5.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/package_veneer_wall_cradle_r5.py",
+    "sha256": "cfc66327da61608c9324f1ca562b16962fccf3259ba208c59bf13a8a37fd1f3d"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_base_r5.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_base_r5.py",
+    "sha256": "25a5acbc36304ff4289def273f600de9bce177d86ff466984c4b45e543deda6a"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie.py",
+    "sha256": "692e69f8f8296b20c3f94ab0889b103d7fa5f1d5c482bf1af09f9e49128aa37c"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie_r3.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie_r3.py",
+    "sha256": "3dfa0e6e265c2fddfa29c54110ee48f4a6397b385515a0e95b6006a21b124d2d"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie_r4.py",
+    "sha256": "b48293b8bfc25508ffde6951d246ccdf08c58d247a09b8d90cf90df0b5d9ab19"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie_r5.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_bed_tie_r5.py",
+    "sha256": "91c56e24181f1d7eecc559b4272f99ba064e4a66f2c4a146314ab8d65ece8ae9"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_wall_cradle.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_wall_cradle.py",
+    "sha256": "b50f6582b26052180f0e699e9423087bd29c06ee97e142a995f3983322529534"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_wall_cradle_r3.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_wall_cradle_r3.py",
+    "sha256": "15ed045d2eef4062301f9e4715e273754b27d029e8bae5859d4408b3bb656314"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_wall_cradle_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/render_veneer_wall_cradle_r4.py",
+    "sha256": "47645ccdb52743104cc9c0b745f6386c839f8c56f98f00de53e9a5c8dba3a470"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle.py",
+    "sha256": "a3c7e07beb2940bc3fe2126eb2693cf0272708155fac80a1045ef83cb08a1f9c"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r2.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r2.py",
+    "sha256": "517d50845c30a0a231fc2754de305474362ae9b42a0f0a841668f2ab04abfa55"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r3.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r3.py",
+    "sha256": "2662a7a1c027411ff59e9e381608555ccf6be2e4f33d4f56c1debeeeb8e24401"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r4.py",
+    "sha256": "7b15abb5078b19aed0c48b0eaaa03a6f6a7b8c06c26cbfeb67ef5512e6e5c1c4"
+  },
+  {
+    "source": "repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r5.py",
+    "captured_path": "archive/development-sources/repository/.work/archived-veneer-wall-experiments-2026-10-21/scripts/validate_veneer_wall_cradle_r5.py",
+    "sha256": "e513c6b68ad3aae23cc3523774806f03d9d0a9fa083f081f838d0dd03bc06201"
+  },
+  {
+    "source": "repository/.work/bambu-project/validate_package.py",
+    "captured_path": "archive/development-sources/repository/.work/bambu-project/validate_package.py",
+    "sha256": "2b5f4386c9309e564ed52b9c46f590db96f6f7f608cc8137d7bd23126c566803"
+  },
+  {
+    "source": "repository/.work/bambu-project/validate_slices.py",
+    "captured_path": "archive/development-sources/repository/.work/bambu-project/validate_slices.py",
+    "sha256": "0c7798f9f11db5c2234728b416145aea42ade37cda87ef58aadf9a76281ee41d"
+  },
+  {
+    "source": "repository/.work/band-repair/measure.py",
+    "captured_path": "archive/development-sources/repository/.work/band-repair/measure.py",
+    "sha256": "f96e5c4e0324eb3c030f01599df6f58ee546504bde40bb2ee8cbf7a23f136a7d"
+  },
+  {
+    "source": "repository/.work/build_repartition.py",
+    "captured_path": "archive/development-sources/repository/.work/build_repartition.py",
+    "sha256": "2b008e84506ffe244db66997f6ba28dc3149426de8acd7eeab19ae2d7a75123a"
+  },
+  {
+    "source": "repository/.work/build_sectioned.py",
+    "captured_path": "archive/development-sources/repository/.work/build_sectioned.py",
+    "sha256": "816fff0f9bc5593bd8a42e75c7124d14f976521feb9a71af09bd0df48a2953ee"
+  },
+  {
+    "source": "repository/.work/cache_repartition.py",
+    "captured_path": "archive/development-sources/repository/.work/cache_repartition.py",
+    "sha256": "afb43a88cef638d9a3360356e52b80a249720230add63ef9440976ec58562343"
+  },
+  {
+    "source": "repository/.work/cache_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/cache_wall_blocks.py",
+    "sha256": "7055bac344caed8e984188d3e576488c9175b9bbc3694be579e94e5dcd993b24"
+  },
+  {
+    "source": "repository/.work/check-band-layout.py",
+    "captured_path": "archive/development-sources/repository/.work/check-band-layout.py",
+    "sha256": "7f3f4dbee80792c59f32db0f3ed794a222924769918b3887436eba06c72999b8"
+  },
+  {
+    "source": "repository/.work/check_core_footprint.py",
+    "captured_path": "archive/development-sources/repository/.work/check_core_footprint.py",
+    "sha256": "aa5fe1ff80294d7afca5be5f090f74496c606fc02f0308196f4dd948b249e988"
+  },
+  {
+    "source": "repository/.work/check_cover_tessellation.py",
+    "captured_path": "archive/development-sources/repository/.work/check_cover_tessellation.py",
+    "sha256": "3db4951d4ea4f2d4f432cb4414e63a25b9062e87ba815eb8b5eff7fcb0fa6996"
+  },
+  {
+    "source": "repository/.work/check_final_footprint.py",
+    "captured_path": "archive/development-sources/repository/.work/check_final_footprint.py",
+    "sha256": "df238b4b4a8d2ec8f357a69f23e073e1fbdc20e98d38da9248c4e54903f6704b"
+  },
+  {
+    "source": "repository/.work/check_jointed_cad.py",
+    "captured_path": "archive/development-sources/repository/.work/check_jointed_cad.py",
+    "sha256": "81bd6a87cfae0da44320c4380238364e2ba3453cec0f1c4e82eed7865e96eddc"
+  },
+  {
+    "source": "repository/.work/check_mount_orientation.py",
+    "captured_path": "archive/development-sources/repository/.work/check_mount_orientation.py",
+    "sha256": "b7ef1b58880929fab5fc09a5baa8f086e5780e844886f39358d39255aa10a2e2"
+  },
+  {
+    "source": "repository/.work/check_original_knot.py",
+    "captured_path": "archive/development-sources/repository/.work/check_original_knot.py",
+    "sha256": "c76860030fbc16f456f840fe1bbf47aa58716bf689d3c902657c42ca01b94714"
+  },
+  {
+    "source": "repository/.work/check_polygons.py",
+    "captured_path": "archive/development-sources/repository/.work/check_polygons.py",
+    "sha256": "7af7fa15129182d5e961a680777ff58a884a641e2bf9a61ef323e3c2c2a61411"
+  },
+  {
+    "source": "repository/.work/check_print_M.py",
+    "captured_path": "archive/development-sources/repository/.work/check_print_M.py",
+    "sha256": "2cfb29da8c75a413f11d6eb4c7ec7da51573dc56e070edc8caf18aa3c49519a2"
+  },
+  {
+    "source": "repository/.work/check_print_core.py",
+    "captured_path": "archive/development-sources/repository/.work/check_print_core.py",
+    "sha256": "eee48f9bf6d5bb4398a5f4309c191b323174fad58dd24022a49f6c31cba503f6"
+  },
+  {
+    "source": "repository/.work/check_production_cover.py",
+    "captured_path": "archive/development-sources/repository/.work/check_production_cover.py",
+    "sha256": "b56958e44221e7bd4a93ffed50713d3e3752fbc59675a76e10ce219fee5805a7"
+  },
+  {
+    "source": "repository/.work/check_release_links.py",
+    "captured_path": "archive/development-sources/repository/.work/check_release_links.py",
+    "sha256": "1e6f2b6e85f1ef7d5e777eeda5bb4e890746fa5c7b9a1de756c0202122817f27"
+  },
+  {
+    "source": "repository/.work/check_repartition_layout.py",
+    "captured_path": "archive/development-sources/repository/.work/check_repartition_layout.py",
+    "sha256": "4cc9b6cace7b0fd5f2f23efa4faf87cdafd65ab679680b5dbc9a20c3bea4a273"
+  },
+  {
+    "source": "repository/.work/check_separate_parts.py",
+    "captured_path": "archive/development-sources/repository/.work/check_separate_parts.py",
+    "sha256": "57cd866900a74afff56f7cc418fbe1f2cf29571065373f18add98168e3b17c20"
+  },
+  {
+    "source": "repository/.work/check_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/check_wall_blocks.py",
+    "sha256": "1c5e09429faa4832fbf4671f892e25584102fdb040e20ea174a924e6666f0203"
+  },
+  {
+    "source": "repository/.work/check_wall_pilots.py",
+    "captured_path": "archive/development-sources/repository/.work/check_wall_pilots.py",
+    "sha256": "2129ffa7ba0f424c1aed4d60de3878a79b68edfd1ac813273f67c648262eed42"
+  },
+  {
+    "source": "repository/.work/check_wider_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/check_wider_wall_blocks.py",
+    "sha256": "2475019489bd07b1b535bd22a671c20ed74bfaeca062e277a6b933d35f263dba"
+  },
+  {
+    "source": "repository/.work/check_y_orientation.py",
+    "captured_path": "archive/development-sources/repository/.work/check_y_orientation.py",
+    "sha256": "7699e6f8933d3f704ba79968f6bd7063479bb23e9ffe248cfb654f3762aa0242"
+  },
+  {
+    "source": "repository/.work/commit-eryone/scripts/promote_letter_eryone.py",
+    "captured_path": "scripts/promote_letter_eryone.py",
+    "sha256": "2c8871963e069e539ebea895f0f9ae1c6d2a610448d90d71994ca0fe9ddb4750"
+  },
+  {
+    "source": "repository/.work/continuous-covers/check_paths.py",
+    "captured_path": "archive/development-sources/repository/.work/continuous-covers/check_paths.py",
+    "sha256": "3b6ba5c5bd180dfa7170a890b13d286df27920e702d405fa94490678c58d4a63"
+  },
+  {
+    "source": "repository/.work/continuous-covers/try_resolution.py",
+    "captured_path": "archive/development-sources/repository/.work/continuous-covers/try_resolution.py",
+    "sha256": "d78f17871431dbb2fb1811b5e02063d841562707e1868884e25633447cbf59ae"
+  },
+  {
+    "source": "repository/.work/cover-crease/probe_smoothing.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-crease/probe_smoothing.py",
+    "sha256": "8cd2eea2d41a578576a871fe8b2ec34dbe0c0b758492c6b8f23608dd69b40f5d"
+  },
+  {
+    "source": "repository/.work/cover-marks/check_current_meshes.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-marks/check_current_meshes.py",
+    "sha256": "ddc6db868e51a40f34df5514d8595dff5503cd951beb1c37587d4a292dffcf42"
+  },
+  {
+    "source": "repository/.work/cover-marks/save_review.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-marks/save_review.py",
+    "sha256": "90496cdbd5c364fdb7c965cce9abd2ebc037ec109870668b036619b525b67458"
+  },
+  {
+    "source": "repository/.work/cover-marks/slice_precision.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-marks/slice_precision.py",
+    "sha256": "b159ecae0c9e79472e90144ab4a0dcce22846f7fd36e7f3a5fc4d3c52901ebb6"
+  },
+  {
+    "source": "repository/.work/cover-reference.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-reference.py",
+    "sha256": "cfc7b3c254d567e6c5b6b7a37a47e1f6b1da4ae35abacf8e63025c9d17aafc5e"
+  },
+  {
+    "source": "repository/.work/cover-render/render.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-render/render.py",
+    "sha256": "8e595a91ace4dc50435a6cb7a80734f65454bcbd6fc910c364f35890efcde9ba"
+  },
+  {
+    "source": "repository/.work/cover-render/repair_edge.py",
+    "captured_path": "archive/development-sources/repository/.work/cover-render/repair_edge.py",
+    "sha256": "965d696fcb860604575010e98e8a460d7cde3a54906ead689873935e693da62e"
+  },
+  {
+    "source": "repository/.work/create_photo_working.py",
+    "captured_path": "archive/development-sources/repository/.work/create_photo_working.py",
+    "sha256": "d08bbe71daddbf8815ab3727e0d65fc38ea51b490f7b09be7c4b79cec05eb7ae"
+  },
+  {
+    "source": "repository/.work/curve-repair/original.scad",
+    "captured_path": "archive/development-sources/repository/.work/curve-repair/original.scad",
+    "sha256": "6a36c93c064dc1b59ba02562f343b1ae2b3d563f72296fbaf79a3e5b58d98994"
+  },
+  {
+    "source": "repository/.work/dara-crate-clips-r2/preview.scad",
+    "captured_path": "archive/development-sources/repository/.work/dara-crate-clips-r2/preview.scad",
+    "sha256": "f728adb199858a8983b3b3f24a21970b4f8061b01bf9c37e48bb0e50e0f2a624"
+  },
+  {
+    "source": "repository/.work/design_sections.py",
+    "captured_path": "archive/development-sources/repository/.work/design_sections.py",
+    "sha256": "7ac3738d3ca46ab9f0a50439958a0f214f388e4f81e3c4fad3695cb87805c638"
+  },
+  {
+    "source": "repository/.work/edge-quality/analytic.py",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/analytic.py",
+    "sha256": "bd18cb628c0f70483cf854b30c0a1027bcc239d723c3a23c0d13dd3bfd3d3e2b"
+  },
+  {
+    "source": "repository/.work/edge-quality/baseline-continuous.scad",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/baseline-continuous.scad",
+    "sha256": "dcd467893411bca2ddaefc2110132db8b98dfd855f9dfdf1902084aa4d63706b"
+  },
+  {
+    "source": "repository/.work/edge-quality/baseline.scad",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/baseline.scad",
+    "sha256": "0c6166d97fbc5490312e49fc3896ad284f9c866458d17f52123381659ddfd17d"
+  },
+  {
+    "source": "repository/.work/edge-quality/check_final_models.py",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/check_final_models.py",
+    "sha256": "95458d390d40dce6bea00f680e77e0c4a6037d96b3f3ff359a43f6da1e4cc2c6"
+  },
+  {
+    "source": "repository/.work/edge-quality/debug_roundtrip.py",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/debug_roundtrip.py",
+    "sha256": "1b54608effd0a53232ed1d4e51b0863feaa11450740248e00c3cb41eb09e193e"
+  },
+  {
+    "source": "repository/.work/edge-quality/debug_stage.py",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/debug_stage.py",
+    "sha256": "0c3aaadc320b4e24c4a1bb8e6e9c04590878cf5daa59eb3ce372aac5f3b058ed"
+  },
+  {
+    "source": "repository/.work/edge-quality/explore.py",
+    "captured_path": "scripts/outline_curve_analysis.py",
+    "sha256": "0669db3a6a5641843f1ee667e713d694813c2908db2eaa090a9c061a0243b15a"
+  },
+  {
+    "source": "repository/.work/edge-quality/fit_test.py",
+    "captured_path": "archive/development-sources/repository/.work/edge-quality/fit_test.py",
+    "sha256": "3c3048ac40990f65880abbb4f9fc71f2e9ff843d8b7b1c968496abab89114593"
+  },
+  {
+    "source": "repository/.work/explore_curves.py",
+    "captured_path": "archive/development-sources/repository/.work/explore_curves.py",
+    "sha256": "222bcf5845b3759235c2a71feb33873fe0a8b25de11a2a6c7c445e908b5d150c"
+  },
+  {
+    "source": "repository/.work/final-review/validate_slices_corrected.py",
+    "captured_path": "archive/development-sources/repository/.work/final-review/validate_slices_corrected.py",
+    "sha256": "c2bd2f01d8d64d5c019c5cfa73ff41b03e7f242fac7355729b736e41d98d7493"
+  },
+  {
+    "source": "repository/.work/final_cad_checks.py",
+    "captured_path": "archive/development-sources/repository/.work/final_cad_checks.py",
+    "sha256": "819765ce7a43f60528740a68b1c11bf23b67f71d647035375456777158f138cb"
+  },
+  {
+    "source": "repository/.work/final_mount_checks.py",
+    "captured_path": "archive/development-sources/repository/.work/final_mount_checks.py",
+    "sha256": "e1c3f0767c8c8073194643d5796ce0cd567f7ef6860eca52379222097eaf8697"
+  },
+  {
+    "source": "repository/.work/final_photo_retainer_checks.py",
+    "captured_path": "archive/development-sources/repository/.work/final_photo_retainer_checks.py",
+    "sha256": "6eafb612a6bb5339bf921a52eea1761ec8dc2c8eaa825b3f3313bb350bdefd30"
+  },
+  {
+    "source": "repository/.work/final_wall_checks.py",
+    "captured_path": "archive/development-sources/repository/.work/final_wall_checks.py",
+    "sha256": "d8529d74572bf13a452aa5982ff00937de51e8ee4150149f9a535108c200eb88"
+  },
+  {
+    "source": "repository/.work/finalize_main_docs.py",
+    "captured_path": "archive/development-sources/repository/.work/finalize_main_docs.py",
+    "sha256": "4623752a8c004c4cb194a146a732011460e290dab664c5b2e2d7d8848f968e95"
+  },
+  {
+    "source": "repository/.work/fix_wall_render_cameras.py",
+    "captured_path": "archive/development-sources/repository/.work/fix_wall_render_cameras.py",
+    "sha256": "92a5ff0b2d79d0eaf56b34cc3a844b7eefae704c32e4d1935c9736509b7e31ea"
+  },
+  {
+    "source": "repository/.work/independent_repartition_body.py",
+    "captured_path": "archive/development-sources/repository/.work/independent_repartition_body.py",
+    "sha256": "529491f7714d28306d87c2507348861f631319a2bc44628106451aa349d2168a"
+  },
+  {
+    "source": "repository/.work/inspect_center_jig.py",
+    "captured_path": "archive/development-sources/repository/.work/inspect_center_jig.py",
+    "sha256": "2941482dd1d837e3286c17cb98aa2e5507f792a1829b969b10641768cd92a812"
+  },
+  {
+    "source": "repository/.work/inspect_geometry.py",
+    "captured_path": "archive/development-sources/repository/.work/inspect_geometry.py",
+    "sha256": "f0157bdcd460818c8b67f0b366fa3c12acc6847e42c6d1a22fa1d7fc665bcde0"
+  },
+  {
+    "source": "repository/.work/inspect_knot_sample.py",
+    "captured_path": "archive/development-sources/repository/.work/inspect_knot_sample.py",
+    "sha256": "d5e19d649ba78e48230a5b101b042ff62cc96f6ae55187d05dd1be86d10bff15"
+  },
+  {
+    "source": "repository/.work/inspect_laps.py",
+    "captured_path": "archive/development-sources/repository/.work/inspect_laps.py",
+    "sha256": "50c6670751233193e25760e74c220904bdd2ade9cbaff75280023943b48dfc56"
+  },
+  {
+    "source": "repository/.work/inspect_mount_reference.py",
+    "captured_path": "archive/development-sources/repository/.work/inspect_mount_reference.py",
+    "sha256": "7d5b7e601dfc7b57c53986ae5ef3f7ad4e40b139c4112a642f9ca06ccd6d42c1"
+  },
+  {
+    "source": "repository/.work/inspect_wall_diff.py",
+    "captured_path": "archive/development-sources/repository/.work/inspect_wall_diff.py",
+    "sha256": "04e965975f4b6ff45e343dcf6ba995f531c95d9f4c6cf1f3ea676de9ba06df92"
+  },
+  {
+    "source": "repository/.work/joint-concept-data.py",
+    "captured_path": "archive/development-sources/repository/.work/joint-concept-data.py",
+    "sha256": "dea6db9eff2f2fc4915f8ea533379124d9c0ddfb78793a415683f578bdbbfa06"
+  },
+  {
+    "source": "repository/.work/knot-blue-five-layers-r1/stage_blue.py",
+    "captured_path": "archive/development-sources/repository/.work/knot-blue-five-layers-r1/stage_blue.py",
+    "sha256": "efa6d5506dc6bba99e75825d7e892a48d4d5c93b63c6f5376b6d4e5f8ffb4963"
+  },
+  {
+    "source": "repository/.work/knot-reinforcement-skin-r1/stage_knot.py",
+    "captured_path": "archive/development-sources/repository/.work/knot-reinforcement-skin-r1/stage_knot.py",
+    "sha256": "923828379b17c1bdd9dfc49ff6f7efe79170d42d5600d35544b336deb17b440b"
+  },
+  {
+    "source": "repository/.work/knot-white-hilbert-r1/stage_hilbert.py",
+    "captured_path": "archive/development-sources/repository/.work/knot-white-hilbert-r1/stage_hilbert.py",
+    "sha256": "a3f54b321b7c5f121220c84a5d0db63e1bc31d0938f2a25657e402f6ec484dcb"
+  },
+  {
+    "source": "repository/.work/knot-white-hilbert-removal-r2/stage_removal.py",
+    "captured_path": "archive/development-sources/repository/.work/knot-white-hilbert-removal-r2/stage_removal.py",
+    "sha256": "646f053bf19fbe514024e9eea6a31a382a9537fce43a13a97724b8397a54b6d0"
+  },
+  {
+    "source": "repository/.work/letter-veneer-promotion/inspect_transitions.py",
+    "captured_path": "archive/development-sources/repository/.work/letter-veneer-promotion/inspect_transitions.py",
+    "sha256": "1aba9ffe94b305a9e32c0bf542c37acffca2b22b90a9d490c916f8e4971e840d"
+  },
+  {
+    "source": "repository/.work/mesh_search.py",
+    "captured_path": "archive/development-sources/repository/.work/mesh_search.py",
+    "sha256": "13b12c6a6c15f74784c9a532c580f665e279a7fc6c5deaf94552ae6ab0ecaafe"
+  },
+  {
+    "source": "repository/.work/mirrored-joints/baseline/working/Dara-Photo-Frame-A1-Jointed.scad",
+    "captured_path": "archive/development-sources/repository/.work/mirrored-joints/baseline/working/Dara-Photo-Frame-A1-Jointed.scad",
+    "sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f"
+  },
+  {
+    "source": "repository/.work/mounts-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/mounts-before.scad",
+    "sha256": "f67f86ca7f75f6f78ce701fc36a15f6d42f5912a0702cc17330edfb12b8d7114"
+  },
+  {
+    "source": "repository/.work/native_preview.py",
+    "captured_path": "archive/development-sources/repository/.work/native_preview.py",
+    "sha256": "be6e153c3d1a6dce1ffd2d31f83bd1d1750eac19e6148c4ac028b53bd7efa5a8"
+  },
+  {
+    "source": "repository/.work/package_cover_source.py",
+    "captured_path": "archive/development-sources/repository/.work/package_cover_source.py",
+    "sha256": "7a1ff76ce0694e71bfcad38199c063a48f23a421634fc513a2f0d563ed7fcb6f"
+  },
+  {
+    "source": "repository/.work/photo-rabbet-review-current/check_current_rabbet.py",
+    "captured_path": "archive/development-sources/repository/.work/photo-rabbet-review-current/check_current_rabbet.py",
+    "sha256": "776c2431d9a12a48e7c77e604c6e60cdd3a6517d672e2567ee73ae94287210e4"
+  },
+  {
+    "source": "repository/.work/photo-retainers-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/photo-retainers-before.scad",
+    "sha256": "050e565ad1ce88c62dbf2ec85ea870d5f713bd0698045a49c5db0931d054095c"
+  },
+  {
+    "source": "repository/.work/photo-retainers/cache-probe.scad",
+    "captured_path": "archive/development-sources/repository/.work/photo-retainers/cache-probe.scad",
+    "sha256": "da40a6660556064710e084989827202fbae67122bbd407e6b48d117e85109db0"
+  },
+  {
+    "source": "repository/.work/photo_features.scad",
+    "captured_path": "archive/development-sources/repository/.work/photo_features.scad",
+    "sha256": "73c34d3916eb3c0992175e6e5aec7371f0e8fbc26ab787c2a8474ae766f42a1d"
+  },
+  {
+    "source": "repository/.work/plan_flat_m_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/plan_flat_m_mounts.py",
+    "sha256": "3fd32fac3119cf21dcb0b9218afe4690a1a0359bc3307576f7e5442bd9fb9164"
+  },
+  {
+    "source": "repository/.work/plan_m_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/plan_m_mounts.py",
+    "sha256": "39f91d513d4a95a30b9a6c55e3085956a58ce692a1b546fb8d07f11831c6af54"
+  },
+  {
+    "source": "repository/.work/plan_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/plan_wall_blocks.py",
+    "sha256": "371d1160962bb8ee33b1102def51bbb4ac7eeeccec4b34688a8235151b53a3af"
+  },
+  {
+    "source": "repository/.work/plan_wall_screws.py",
+    "captured_path": "archive/development-sources/repository/.work/plan_wall_screws.py",
+    "sha256": "4987121e165b2f7fc192b26a848b3f06293bb288ea72dea402e47f9ae1d327f7"
+  },
+  {
+    "source": "repository/.work/plot_knot_top.py",
+    "captured_path": "archive/development-sources/repository/.work/plot_knot_top.py",
+    "sha256": "a0a514f18b079ded4f685761a1ea42fd92f66a136f0a6d4d54fdf51881087076"
+  },
+  {
+    "source": "repository/.work/preview_flat_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/preview_flat_mounts.py",
+    "sha256": "88e3491d35838751d995042e854f23545db0acea1c43e8616c3c437aeefab743"
+  },
+  {
+    "source": "repository/.work/preview_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/preview_mounts.py",
+    "sha256": "bd2e6ebf2254943df9b879f71827141592cc5ea39b9aa92fb46ac81d1f6ddfb6"
+  },
+  {
+    "source": "repository/.work/preview_photo_retainers.py",
+    "captured_path": "archive/development-sources/repository/.work/preview_photo_retainers.py",
+    "sha256": "236c4c57d69b1a32d33af77760c64ef3a604541e239532110b3a9ba832041083"
+  },
+  {
+    "source": "repository/.work/preview_separate_parts.py",
+    "captured_path": "archive/development-sources/repository/.work/preview_separate_parts.py",
+    "sha256": "0211a86c43ab478db1779a7be941dd6d011410109f807161520b989e6aa0fc0e"
+  },
+  {
+    "source": "repository/.work/probe_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/probe_wall_blocks.py",
+    "sha256": "54c7d0873975c306fb007f078c5cf3efbc25c9b348c20b3873b2d3b33cd99f68"
+  },
+  {
+    "source": "repository/.work/probe_wall_horizontal.py",
+    "captured_path": "archive/development-sources/repository/.work/probe_wall_horizontal.py",
+    "sha256": "03f435c6d2e5d7411b432b4c5da8ecc8c6fbcfa4710b319165063a61a37d625e"
+  },
+  {
+    "source": "repository/.work/probe_wall_rails.py",
+    "captured_path": "archive/development-sources/repository/.work/probe_wall_rails.py",
+    "sha256": "01c7ff941e5f98aa8a3f63ca99a9dab3c7bb80a5e3e52ba81becff44cc0478f2"
+  },
+  {
+    "source": "repository/.work/probe_wall_valid.py",
+    "captured_path": "archive/development-sources/repository/.work/probe_wall_valid.py",
+    "sha256": "c35df5931905ced7b1b44cc32bfceabdf778ae31c66948ec339ada687c4abb6e"
+  },
+  {
+    "source": "repository/.work/prod_ids.py",
+    "captured_path": "archive/development-sources/repository/.work/prod_ids.py",
+    "sha256": "5e37d4d3019f090105b3c3f472921f5905b9e5f6f87d706d664a44b793e06090"
+  },
+  {
+    "source": "repository/.work/protruding-mounts-before-revision.scad",
+    "captured_path": "archive/development-sources/repository/.work/protruding-mounts-before-revision.scad",
+    "sha256": "6bb530975a4f0e397f74699460097abd7e6c5c30db36c02f849be8b8fa8c0dc5"
+  },
+  {
+    "source": "repository/.work/quad2_search.py",
+    "captured_path": "archive/development-sources/repository/.work/quad2_search.py",
+    "sha256": "59204b567aa7efe9272a390f3cc99a76165ca33e5fee0296c6b1e01f1c99a479"
+  },
+  {
+    "source": "repository/.work/quadrant_search.py",
+    "captured_path": "archive/development-sources/repository/.work/quadrant_search.py",
+    "sha256": "b2465c9cf5512cbb4ac073ef46c67b0c722edede035eff9c68512eeb9fb25b88"
+  },
+  {
+    "source": "repository/.work/quadrant_v2.py",
+    "captured_path": "archive/development-sources/repository/.work/quadrant_v2.py",
+    "sha256": "5d1beee3d47a99b50eb29d62f9a2a1ef64e12c903f5802e8cbea335c762951e5"
+  },
+  {
+    "source": "repository/.work/rabbet-clearance/baseline.scad",
+    "captured_path": "archive/development-sources/repository/.work/rabbet-clearance/baseline.scad",
+    "sha256": "de8e20ed07835b8690052ea7d5b2d01f18e5c194d6f6c3bc50c9f7b335175279"
+  },
+  {
+    "source": "repository/.work/rabbet-clearance/publish.py",
+    "captured_path": "archive/development-sources/repository/.work/rabbet-clearance/publish.py",
+    "sha256": "fa697cc0f97b38173da4306dd3f989900178386eee85430a892dc94a9995ad6b"
+  },
+  {
+    "source": "repository/.work/rebuild_frame_check.py",
+    "captured_path": "archive/development-sources/repository/.work/rebuild_frame_check.py",
+    "sha256": "fa4857b36161b1d395208ca225213844242029d858b2a6de2d04b62d27e0e19d"
+  },
+  {
+    "source": "repository/.work/reference-before-scale.scad",
+    "captured_path": "archive/development-sources/repository/.work/reference-before-scale.scad",
+    "sha256": "c57621cf868843653de0b826808edecc141b4b39569231633be90c2e0d081594"
+  },
+  {
+    "source": "repository/.work/refine_wall_views.py",
+    "captured_path": "archive/development-sources/repository/.work/refine_wall_views.py",
+    "sha256": "15802308cb05196de8cca155ff133f69992fc3ce317f333839d6c7443e163ac4"
+  },
+  {
+    "source": "repository/.work/refresh_flat_mount_previews.py",
+    "captured_path": "archive/development-sources/repository/.work/refresh_flat_mount_previews.py",
+    "sha256": "ee28cab76e715d3d59ffbd21175f50ecd5e2ab1e55b47264d85bf78dddf4350b"
+  },
+  {
+    "source": "repository/.work/refresh_mount_previews.py",
+    "captured_path": "archive/development-sources/repository/.work/refresh_mount_previews.py",
+    "sha256": "df6027ed45540298e3ff7b6474593c9e33bbf1e6d4fae05d269ff03892be8e48"
+  },
+  {
+    "source": "repository/.work/refresh_photo_retainer_previews.py",
+    "captured_path": "archive/development-sources/repository/.work/refresh_photo_retainer_previews.py",
+    "sha256": "afc06e8918e3ae4b13d3c2b7f9837587ad50ae80eccdaf87654aa0c4d45352cc"
+  },
+  {
+    "source": "repository/.work/remove_knot_hilbert.py",
+    "captured_path": "archive/development-sources/repository/.work/remove_knot_hilbert.py",
+    "sha256": "4427dcde9b2a2c96d3fe8323b379364c5f05b930c1da1cc84f086032118a71ef"
+  },
+  {
+    "source": "repository/.work/render_flat_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/render_flat_mounts.py",
+    "sha256": "e8b157b170fe8c24dd13485b4b50aadf53275e7809d53c9a4355aae694edab49"
+  },
+  {
+    "source": "repository/.work/render_joint_details.py",
+    "captured_path": "archive/development-sources/repository/.work/render_joint_details.py",
+    "sha256": "114368f784a2ef44ed01d228adf9616bcd9e4ec0ff262c3c271699ad9ce3e516"
+  },
+  {
+    "source": "repository/.work/render_jointed_frame.py",
+    "captured_path": "archive/development-sources/repository/.work/render_jointed_frame.py",
+    "sha256": "261a5c8915d562de72616c77e58653068a01e3b70bbd7e0af67a618c0fd62519"
+  },
+  {
+    "source": "repository/.work/render_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/render_mounts.py",
+    "sha256": "c7f2d17023f4ec7e3732a42cd4da48dbafb798a6964b7755b048d422e6291963"
+  },
+  {
+    "source": "repository/.work/render_photo.py",
+    "captured_path": "archive/development-sources/repository/.work/render_photo.py",
+    "sha256": "e5b34d6d4b62ed1facc6160cc2184ee9a922b9e67aa5c08f82b02c22d2796abe"
+  },
+  {
+    "source": "repository/.work/render_photo_final.py",
+    "captured_path": "archive/development-sources/repository/.work/render_photo_final.py",
+    "sha256": "f71ae85fb643953d73261791fd6df5bce4f52f0c6348d87dda3eaa324605f3c1"
+  },
+  {
+    "source": "repository/.work/render_photo_retainers.py",
+    "captured_path": "archive/development-sources/repository/.work/render_photo_retainers.py",
+    "sha256": "878df7332292f4d3e74dae1dc4db969f6129917f0449df29bb1d9f1cb5af55ef"
+  },
+  {
+    "source": "repository/.work/render_print_core.py",
+    "captured_path": "archive/development-sources/repository/.work/render_print_core.py",
+    "sha256": "fe0cd31a0309a88ca845887308297dd9d18f0875855bfb5e67425588d46ff364"
+  },
+  {
+    "source": "repository/.work/render_reference.py",
+    "captured_path": "archive/development-sources/repository/.work/render_reference.py",
+    "sha256": "0b0d0ab02b186c35c953b80598362c8edacbefa6867fd472ba88834acb8f6786"
+  },
+  {
+    "source": "repository/.work/render_repartition_original.py",
+    "captured_path": "archive/development-sources/repository/.work/render_repartition_original.py",
+    "sha256": "7615e859dba0338205f54e197f6eea76104a1e52662b21c01f7be477b9e8504d"
+  },
+  {
+    "source": "repository/.work/render_repartition_views.py",
+    "captured_path": "archive/development-sources/repository/.work/render_repartition_views.py",
+    "sha256": "137947d27393e9a33dfe1cd46666d8631982513f7001fda716f03c643ca74adc"
+  },
+  {
+    "source": "repository/.work/render_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/render_wall_blocks.py",
+    "sha256": "e4d9786658659889842e135f5627cf9796f16cdbb28f33c45ee9e2512fc33714"
+  },
+  {
+    "source": "repository/.work/repair_wall_preview.py",
+    "captured_path": "archive/development-sources/repository/.work/repair_wall_preview.py",
+    "sha256": "eb55930053ad9436d9eeb78cb7a83e184182586fd44423f23d0cd3e1404eb4c2"
+  },
+  {
+    "source": "repository/.work/repartition-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/repartition-before.scad",
+    "sha256": "098241f192a051535abe3d2d7a5a71ea97392e8b90638a2e81005d51bc3ba61c"
+  },
+  {
+    "source": "repository/.work/repartition/native/original-M.scad",
+    "captured_path": "archive/development-sources/repository/.work/repartition/native/original-M.scad",
+    "sha256": "eefde895a1fe9227bc6b89e273bc4f03f073038833d2a6c0d56ca992369ad54c"
+  },
+  {
+    "source": "repository/.work/repartition/native/original-frame.scad",
+    "captured_path": "archive/development-sources/repository/.work/repartition/native/original-frame.scad",
+    "sha256": "ee9dd4e184404f38717320a980aa63901e6c991edf2046e7151d1243592f9ef6"
+  },
+  {
+    "source": "repository/.work/repartition_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/repartition_mounts.py",
+    "sha256": "d8b4d41d4b278881aab7d59c97da9461919e761bcca957d3ff100ee0b7004328"
+  },
+  {
+    "source": "repository/.work/repartition_search.py",
+    "captured_path": "archive/development-sources/repository/.work/repartition_search.py",
+    "sha256": "92c6913285ee6b520f380f53c1a1860e18e216b1bd3cc0f215965b92a75a5d45"
+  },
+  {
+    "source": "repository/.work/revise_flat_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/revise_flat_mounts.py",
+    "sha256": "23dacad8f16e09dbe917f8b3418409626870cdb20e04994031546ce35b9e282f"
+  },
+  {
+    "source": "repository/.work/revise_photo_retainers.py",
+    "captured_path": "archive/development-sources/repository/.work/revise_photo_retainers.py",
+    "sha256": "45bedc8e06655df5337bbbd857db1a3b4ad6a190e523e201daac114808226168"
+  },
+  {
+    "source": "repository/.work/revise_photo_working.py",
+    "captured_path": "archive/development-sources/repository/.work/revise_photo_working.py",
+    "sha256": "638d3ed8f285753f6d167dc87f29276d0dae6e907c1c96996f29bb38adbbed39"
+  },
+  {
+    "source": "repository/.work/root-projects/docs.py",
+    "captured_path": "archive/development-sources/repository/.work/root-projects/docs.py",
+    "sha256": "d57a09ca4be202a3788b62645f4c4116bfd3af8244741f4860ed9f5e5572f639"
+  },
+  {
+    "source": "repository/.work/root-projects/inspect_project_archive.py",
+    "captured_path": "archive/development-sources/repository/.work/root-projects/inspect_project_archive.py",
+    "sha256": "97d470df2169a812dc91d8d1a00026cdbbbf7ebc1eb85bab8b7d08ae05156e7d"
+  },
+  {
+    "source": "repository/.work/root-projects/inventory.py",
+    "captured_path": "archive/development-sources/repository/.work/root-projects/inventory.py",
+    "sha256": "a13bd4355b88c11f55403aa0bf276db546daa4a3677e2af5f6ac0de2c380c1cb"
+  },
+  {
+    "source": "repository/.work/root-projects/release_docs.py",
+    "captured_path": "archive/development-sources/repository/.work/root-projects/release_docs.py",
+    "sha256": "439ed3e38dce6683252a3eb9cbe0b09070f2ac572b8b3b14c976069d30f51360"
+  },
+  {
+    "source": "repository/.work/root-projects/stencils/build_crate_stencils.py",
+    "captured_path": "archive/development-sources/repository/.work/root-projects/stencils/build_crate_stencils.py",
+    "sha256": "dfcbeeb92161bab9e69a0de762db24b95b52fe56e64bf7cccda2dbf9a1658092"
+  },
+  {
+    "source": "repository/.work/root-projects/validate.py",
+    "captured_path": "archive/development-sources/repository/.work/root-projects/validate.py",
+    "sha256": "33a1f754448e3fa0035ba20179eba5c997f41a4a8407ad6b9397dd611aff3934"
+  },
+  {
+    "source": "repository/.work/sanding-block-release-r3/prepare.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block-release-r3/prepare.py",
+    "sha256": "100b422bbfb6c402b7c5641d5acd9bcecec443ff884bf300358c6c67bc739dae"
+  },
+  {
+    "source": "repository/.work/sanding-block-release-r3/validate_release.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block-release-r3/validate_release.py",
+    "sha256": "2ee487a7b6028305121892de01022e64ecfe79caefd6a1bf9a0d979035b1b869"
+  },
+  {
+    "source": "repository/.work/sanding-block/build.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block/build.py",
+    "sha256": "d0590e7c9089a8c4be313b9ffc427b917245b60765c5300c1b3c9179415e9776"
+  },
+  {
+    "source": "repository/.work/sanding-block/finalize.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block/finalize.py",
+    "sha256": "4990c19b66fbd53507ce6f6923652257e86f8bb4faa830a9704a9f3997494b8d"
+  },
+  {
+    "source": "repository/.work/sanding-block/inspect_source.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block/inspect_source.py",
+    "sha256": "816274fa1ce34bd35f343d7f09165ed87d7d59f4ce98c0e9e8fcd76f64d32f49"
+  },
+  {
+    "source": "repository/.work/sanding-block/preview.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block/preview.py",
+    "sha256": "2ca8ab49634a63574713dc1fcd9b69edf55ab47e9aa1d12c71f868eadf2b6c43"
+  },
+  {
+    "source": "repository/.work/sanding-block/slice.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block/slice.py",
+    "sha256": "b9e2a4d68258a58bc8111083acf33c02f10429884e7a2707605faf34b1235403"
+  },
+  {
+    "source": "repository/.work/sanding-block/update_support.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-block/update_support.py",
+    "sha256": "377154750fec073a499fc54fa2a639b84fb87453b8bb594a0a83edcacde7c386"
+  },
+  {
+    "source": "repository/.work/sanding-clamp-bottom-review/check_bottom.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-clamp-bottom-review/check_bottom.py",
+    "sha256": "7c5e3d759ff53ab559dcbcca089122d761cea42261e07fa11d9892fba1bf0f9c"
+  },
+  {
+    "source": "repository/.work/sanding-clamp-bottom-review/layers.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-clamp-bottom-review/layers.py",
+    "sha256": "544ea78e6d44b7302ae93b7f35ed86060c21a561eafe9994caa58a8f33d639f4"
+  },
+  {
+    "source": "repository/.work/sanding-clamp-bottom-review/make_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-clamp-bottom-review/make_r4.py",
+    "sha256": "ab65cd24ea503cc292a57650b23f53a4c6a32ec2113b871aa824dd86784b705d"
+  },
+  {
+    "source": "repository/.work/sanding-clamp-bottom-review/validate_r4.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-clamp-bottom-review/validate_r4.py",
+    "sha256": "63ebdf1d12d2f5eb7160f4d63b05f9aea089fe850800b13def99087596e51b82"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/audit.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/audit.py",
+    "sha256": "5c87c68ea400a5ec64ffb403c53afe10260056c72b4b7b3e7d4ae50d91e990a9"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/build_r2.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/build_r2.py",
+    "sha256": "e74a14e9abe7a09c48fa79556ff7fd8e07e30bdf1ee1f634174f3ec517b2fe1c"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/check_r1.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/check_r1.py",
+    "sha256": "e242ffd691d3890e2ab7935177e03159c500f7f74566b78b80709986c61311b8"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/finalize_r2.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/finalize_r2.py",
+    "sha256": "7848c6d2203f64470a72854af8caad70803cccce03cc688981cc23a7f7c0bfed"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/motion.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/motion.py",
+    "sha256": "5e759d56198137662b2aae99ac52151b95cec595c962fcb70d832d802cf38623"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/slice_r2.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/slice_r2.py",
+    "sha256": "fc1f4fceb51d3a1bf652f87b5dc12b5c7742aa33c01f465666b9ab1c144ebb71"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/support_audit.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/support_audit.py",
+    "sha256": "e28de099cd6bc0719654f1ca4446df656605d35c302505628950b14967f94b9c"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/thread_profile.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/thread_profile.py",
+    "sha256": "017c091d9980b95712a675ee1960e2c8c509451efd4f298c56b83682db0f9602"
+  },
+  {
+    "source": "repository/.work/sanding-thread-review/verify_supports.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-review/verify_supports.py",
+    "sha256": "c66abc0894891344c32f5b797bd142c252d25d91b097d3b9604c3c337d88835f"
+  },
+  {
+    "source": "repository/.work/sanding-thread-test/build_test.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-test/build_test.py",
+    "sha256": "92e2ad38c244969bb03958e44cd6145351ff6deb8b4a6a77b4e2c358f25e219a"
+  },
+  {
+    "source": "repository/.work/sanding-thread-test/finalize_test.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-test/finalize_test.py",
+    "sha256": "76661e46a9311b9fe999311515132416595946e87ba01f57f4711fe6f11f9b52"
+  },
+  {
+    "source": "repository/.work/sanding-thread-test/slice_test.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-test/slice_test.py",
+    "sha256": "e75ba5f468972c5a079875c57b3d3dc9536962b37f129dd0a32c25cf0508a3d5"
+  },
+  {
+    "source": "repository/.work/sanding-thread-test/verify_supports.py",
+    "captured_path": "archive/development-sources/repository/.work/sanding-thread-test/verify_supports.py",
+    "sha256": "a440b5988f6fdb2355d58798b9f84d50e75c0b2cedcca67463476a9189bec741"
+  },
+  {
+    "source": "repository/.work/select_repartition.py",
+    "captured_path": "archive/development-sources/repository/.work/select_repartition.py",
+    "sha256": "160098187b9bcdc9aac8d4a3385c24a827fd6ba8f5ae944838c101f179375523"
+  },
+  {
+    "source": "repository/.work/select_wall_blocks.py",
+    "captured_path": "archive/development-sources/repository/.work/select_wall_blocks.py",
+    "sha256": "97e9652fbd0c9d0065943680f31fc036b1e614d3b11924757ba560c452364fda"
+  },
+  {
+    "source": "repository/.work/stage-knot-approval.py",
+    "captured_path": "archive/development-sources/repository/.work/stage-knot-approval.py",
+    "sha256": "4fed21d1429df3af1a86e77bf7677ab0c6fddf8251aae93a73ec2f0186fc14e0"
+  },
+  {
+    "source": "repository/.work/stencil-speed-r1/run.py",
+    "captured_path": "archive/development-sources/repository/.work/stencil-speed-r1/run.py",
+    "sha256": "c8c01d65b7c2c556439ea3cdf1e26d12944ae385da6bc09b7d45d3d6f2ca26e0"
+  },
+  {
+    "source": "repository/.work/stencil-speed-r1/validate.py",
+    "captured_path": "archive/development-sources/repository/.work/stencil-speed-r1/validate.py",
+    "sha256": "e400b62e8790d1fcb68b7343658b59eac1b5af87eb6aacc3ae284e9fb5f1a906"
+  },
+  {
+    "source": "repository/.work/sync_letter_consolidation.py",
+    "captured_path": "archive/development-sources/repository/.work/sync_letter_consolidation.py",
+    "sha256": "8e8932724fb0540b09f29bdef963a73d7491b35297a0b0a5a82dcfd5af9d4198"
+  },
+  {
+    "source": "repository/.work/transplant_search.py",
+    "captured_path": "archive/development-sources/repository/.work/transplant_search.py",
+    "sha256": "d68ae3de36cb97f24587c909f21fa9d902d95e6762d12c0eb57d7ca7ce75f004"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_a2l_flush_joint_test.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_a2l_flush_joint_test.py",
+    "sha256": "1b7d5157c1c06f513c81655d3c341465c6852baa1a18d9befb2c2358fe584654"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_a2l_hammered_finish_r2.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_a2l_hammered_finish_r2.py",
+    "sha256": "03bd943f6d4658c5c7c76c10a97dcabdabe48a5a791bf6a7832aa5c8a7d484f3"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_a2l_hammered_finish_r3.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_a2l_hammered_finish_r3.py",
+    "sha256": "94d4b1888df9e20040e9ce4bc1921130e7dfad7875153d687a7cd93d30b47e3a"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_a2l_hammered_finish_test.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_a2l_hammered_finish_test.py",
+    "sha256": "bef8f8516f4da198286fae39e993e15770a730d116081094a13eaee25f649c05"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_photo_fit_sample.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_photo_fit_sample.py",
+    "sha256": "698dbadc51cc650491baf8bb6846c1b95c07285ed5f828d896c2ee3e8bebac2b"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_simple_joint_correction.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_simple_joint_correction.py",
+    "sha256": "68c9ed72aa7ee0421f5e3eede48aa4f261b1154f395dcd48e3c1f5c765910030"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_veneer_backing_trial.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_veneer_backing_trial.py",
+    "sha256": "02fe0d9faef5bdc00b488fc375e37bd09c9db706e76a09803640851d02e0f3f7"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/build_veneer_print_checks.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/build_veneer_print_checks.py",
+    "sha256": "370dd009681f927b76d3c27addc5f0440e322f1e3e4b628859e547a132560b62"
+  },
+  {
+    "source": "repository/.work/untracked-cleanup-2026-10-23/compare_veneer_supports.py",
+    "captured_path": "archive/development-sources/repository/.work/untracked-cleanup-2026-10-23/compare_veneer_supports.py",
+    "sha256": "d61999bf05b12f54655b28d5ed3de17b41a1b4f0ba164bee72e2a678d6f3ccca"
+  },
+  {
+    "source": "repository/.work/update_wall_checks.py",
+    "captured_path": "archive/development-sources/repository/.work/update_wall_checks.py",
+    "sha256": "ef9629f50006b608cbc4285ffe9d5068bc50c92df0da9d0b9b7fe2abb241651e"
+  },
+  {
+    "source": "repository/.work/update_y_docs.py",
+    "captured_path": "archive/development-sources/repository/.work/update_y_docs.py",
+    "sha256": "f1dd656d9a15dadb15e113e92b160011a85a4b9d2947dce6641073ca109d2187"
+  },
+  {
+    "source": "repository/.work/validate_a1_parts.py",
+    "captured_path": "archive/development-sources/repository/.work/validate_a1_parts.py",
+    "sha256": "65037b2915fdb36dd5d04d50f423d93c288abf084ed10e56246f29cab9b4b485"
+  },
+  {
+    "source": "repository/.work/validate_repartition.py",
+    "captured_path": "archive/development-sources/repository/.work/validate_repartition.py",
+    "sha256": "2ba92b23f834e7b7557fe4b8c0dea89477aedab5ed2927b6ad5de18b8be6a926"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/analyze_edges.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/analyze_edges.py",
+    "sha256": "e1e620fb23d84e75a12e08ad1d08c01b585f2162ab8870abef5ba475ea2c2753"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/analyze_panel_outline.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/analyze_panel_outline.py",
+    "sha256": "318accbf5ce75a97ab3b785755956a479abb97541b0bf0962498668188f5a107"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/analyze_paths.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/analyze_paths.py",
+    "sha256": "b1f2828559f0b31696e75615e2e779d1f1d8a847d2cbf25ab5a0f97f7eff15b0"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/audit_motion.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/audit_motion.py",
+    "sha256": "7ecc843e0316487f7d7429c35a95d56fe134f7fc4c397b2699166581d9b80d12"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/build_edge_candidate.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/build_edge_candidate.py",
+    "sha256": "ac1ceae81a76166911d360ae80d8444c413408c6a72af3d166d6196e7e8e0c94"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/check_candidate_edges.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/check_candidate_edges.py",
+    "sha256": "02be60eb842afa10cd449884e0c2db8d018b2349484b7e7e232c589e1d814d97"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/check_carrier.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/check_carrier.py",
+    "sha256": "0d41d74ef63326b1af9dc8b062da5c82a8338782823a5dbf885fd236052c096d"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/check_chains.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/check_chains.py",
+    "sha256": "1a039a0d988467880786077a4d0650f1b3d4ee71ac282b98cc300c78735893da"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/check_inset.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/check_inset.py",
+    "sha256": "5b4c4c7ec002ae03a962e4ad8c89d408d3c2a11dcf6bd14214f8619d4dad079d"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/check_surface.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/check_surface.py",
+    "sha256": "9acf36d9bacd90e19dbad125db4af681be7013455d71ee739dddab5cfc65e1ac"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/extract_baseline.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/extract_baseline.py",
+    "sha256": "e3158535407f1438130f2bb6a362ad27992b9301e90b6532bda368110a973450"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/inspect_corner.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/inspect_corner.py",
+    "sha256": "1d1680e7ada23da56e3c3ca7ee98d025e94ca0b1fa16cdb4bbc0e3473e76c70b"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/match_image.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/match_image.py",
+    "sha256": "eaff7259688968ff4f0c6b34670d86781ae324caa85a49fd752e7309c800977e"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/package_candidate.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/package_candidate.py",
+    "sha256": "44444b82aa14e127baf7126ce1d3628bb7360b7866942e66b2c53505e59508b0"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/prepare_motion_candidate.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/prepare_motion_candidate.py",
+    "sha256": "f33323436e0072aa9279332f75f5e9abeb56cf40932ca107d5383d588ed87605"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/render_paths.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/render_paths.py",
+    "sha256": "52c346b97c2519848fcda3c1ec5c4b9c48cc1f49b1ef6be9f947d1214b6aba53"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/save_findings.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/save_findings.py",
+    "sha256": "166dfa675dd1c49695b4381c28a529f7a32b977b3b62329d00796d8f20d6cbe9"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/slice_baseline.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/slice_baseline.py",
+    "sha256": "03e081b3bef6a60c3f355b0bfb1ccb243973c451aa795bda562cceac2f465862"
+  },
+  {
+    "source": "repository/.work/veneer-face-r9/validate_candidate.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-face-r9/validate_candidate.py",
+    "sha256": "e562472a6469510da4162855e511d0089b346d5385026100f3a90b236fdd3d75"
+  },
+  {
+    "source": "repository/.work/veneer-full-height/inspect_transitions.py",
+    "captured_path": "archive/development-sources/repository/.work/veneer-full-height/inspect_transitions.py",
+    "sha256": "8d2ecc055f21b4526646b35bc1b479bcf7f016f6c46c5f500c343f2fb9b384e1"
+  },
+  {
+    "source": "repository/.work/verified-assembly.scad",
+    "captured_path": "archive/development-sources/repository/.work/verified-assembly.scad",
+    "sha256": "a37177dd6df1edc453593dd2c77b85b2e1ebba5edff3a6f73710472dfeea24d7"
+  },
+  {
+    "source": "repository/.work/verify_flat_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_flat_mounts.py",
+    "sha256": "334731475d92f5c3a7841b27c5bd868cae91e9608be12d345e0a12be66604c6c"
+  },
+  {
+    "source": "repository/.work/verify_jointed_geometry.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_jointed_geometry.py",
+    "sha256": "5493ea991f48e8c5107362e28de7238c224bd0cfd5aebfa2a3773019be39c7c2"
+  },
+  {
+    "source": "repository/.work/verify_mounts.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_mounts.py",
+    "sha256": "38dff24477b48bb3f134602c8411dcdb4dfcf7352ae2df6ab0b8f4d665b7908b"
+  },
+  {
+    "source": "repository/.work/verify_native_sections.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_native_sections.py",
+    "sha256": "792785237cf5b79bfb58abe5766fbdaf1ca9866c1863f87c2faf7e6d1e348643"
+  },
+  {
+    "source": "repository/.work/verify_photo.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_photo.py",
+    "sha256": "123c21b578ec39e72edba0d37e041391ffd679ecba5009155a5e5ddcbd11b1d7"
+  },
+  {
+    "source": "repository/.work/verify_photo_retainers.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_photo_retainers.py",
+    "sha256": "a50d05b64bedc0a343273f2d3707c2ad61022d4ddf8f9465641d076fd1de6892"
+  },
+  {
+    "source": "repository/.work/verify_print_M.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_print_M.py",
+    "sha256": "0224fba302761fbc84a6c51847e82fcec7bc4cad483d73b2a29856ef28d5dc33"
+  },
+  {
+    "source": "repository/.work/verify_reference.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_reference.py",
+    "sha256": "ad1c88c52c672e970db54f8ccab94c48e4469bbacb9275f7211192c1026b5ad5"
+  },
+  {
+    "source": "repository/.work/verify_repartition.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_repartition.py",
+    "sha256": "441de3fa34f7e8f6ac597bd614d0522845a8bf41fe619f7fedf7afe6c3f98a32"
+  },
+  {
+    "source": "repository/.work/verify_repartition_native.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_repartition_native.py",
+    "sha256": "ae4142c9cc1ca79b5c5814560d53e150c7f619f2229b816276f87cec23550f96"
+  },
+  {
+    "source": "repository/.work/verify_separate_M.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_separate_M.py",
+    "sha256": "8d9d5ab2e981c7f3d16e88155d325a843f1b277c5606c145d0bb4dc72241c025"
+  },
+  {
+    "source": "repository/.work/verify_separate_parts.py",
+    "captured_path": "archive/development-sources/repository/.work/verify_separate_parts.py",
+    "sha256": "dc681d1cf0e8920da73eb5e09874b14401ebb3ed68a3d3d6c37327e875a588e7"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/B1.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B1.scad",
+    "sha256": "e7d59d7879090c763dcb5f45e8700977ceb7149cc45ee1b4a42854effe78b48b"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/B2.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B2.scad",
+    "sha256": "cecd711f8ef011e4c3c7c341a116910b726e48e651964f101eaa86d6ff021bec"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/B3.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B3.scad",
+    "sha256": "7938d681af88c4d06dc4c067e850a4d4ac3cb72db14042f74a30459e529f5777"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/B4.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B4.scad",
+    "sha256": "0370251faf5208ba85e57c1dbedb1189613ba8d8715464dc105a39b22353d337"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F16-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F16-after.scad",
+    "sha256": "4f3b5b4f05c73a8f3b332d7ff886cd8b2227ad962fd624131052c39850f7862e"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F16-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F16-before.scad",
+    "sha256": "354510d7992626e5d2c91560d64ae6067a9741bab75d7a918d68ee5d667e0703"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F16-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F16-cached.scad",
+    "sha256": "e20c2c1b8641c78e7d73c5f8e6edbd26c0f444c3c13118c0609b1b6ab08e8b29"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F18-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F18-after.scad",
+    "sha256": "218094be2a6e9ff22c4fc4d96043e8e5d147de5b5953466010ec19a0e7e40166"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F18-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F18-before.scad",
+    "sha256": "f567416dfc5508959ef0b3aad95a83b537f9c9f966fa7272fded84817c7f1f2f"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F18-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F18-cached.scad",
+    "sha256": "4f21cfc7a406e471c7f110ad1e438365a8c630e4a8853e191b337a8d28b6bb55"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F3-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F3-after.scad",
+    "sha256": "81c30f09d0469c7ed8f0e7f6bc438eab0159f7f95305d063b85228ec21428b56"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F3-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F3-before.scad",
+    "sha256": "683f83e6f22555ddc7cb173e07d4a9954bb686341391319575ccd249a1ec149b"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F3-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F3-cached.scad",
+    "sha256": "60102e0be407bd91668f478c7a4be4964b0d0c7162a5bf57417124d460213af2"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F5-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F5-after.scad",
+    "sha256": "a9cf2b115c7c2007c65d7c6a549c53e5cb9dc57379eeb8cef88b0dd73cad0e0b"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F5-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F5-before.scad",
+    "sha256": "5a6af8a413db373c848bbaa128663756673f1c739edf9e24392f03a875c55855"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/F5-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F5-cached.scad",
+    "sha256": "ca906413095a7753633464f1cfcc802b36312b6d052fd65ceb23fa85c0480a6f"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/baseline-modules.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/baseline-modules.scad",
+    "sha256": "e7211c1b18bfd4a2d6665bf4a70f1f263894f5c9864fae9e743ed77192b4019c"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/cache-guards.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/cache-guards.scad",
+    "sha256": "7e5896297c541bcf9347198e9324a4d8a7075a19a478a0eb1000aa7eae99653b"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/current-modules.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/current-modules.scad",
+    "sha256": "c9f438e2bad84d2066199e6ef6c436673ecee4694b8d01553ea266f115b587b5"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/fit-sample.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/fit-sample.scad",
+    "sha256": "11a4ab517ff9498bf12f87c75ec1170ac697d083021f04731ad496a67954f2b9"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/four-blocks.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/four-blocks.scad",
+    "sha256": "08e7ac8ef8ee8f5afb52785c4a8c142b6820bdd960f3ddfa2193ad42423aaf30"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/render.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/render.scad",
+    "sha256": "10e068042a2eaf2a6504a1ea802ffcd26e0bbbfe5ca2771a2abf198ff8a34827"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/slots-0.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/slots-0.scad",
+    "sha256": "5ee1ea340f2032eb621323bf067481852bbc629bd717a639452342692ed50136"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/slots-1.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/slots-1.scad",
+    "sha256": "1f4f0482c9e69d2da319c7947a565ea48423a38fed633271c720f0559314ad01"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/slots-2.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/slots-2.scad",
+    "sha256": "524cf1ce38d9e511bddf6755bbc50008651d5dd8b46533c62fca40c4fd545477"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/slots-3.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/slots-3.scad",
+    "sha256": "e32be365287b023149b5ba73f973851c24b6e2ff8ca18a236a20ca23f136d60d"
+  },
+  {
+    "source": "repository/.work/wall-blocks-screwed/thick-tabs.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B1.scad",
+    "sha256": "e7d59d7879090c763dcb5f45e8700977ceb7149cc45ee1b4a42854effe78b48b"
+  },
+  {
+    "source": "repository/.work/wall-blocks/B1.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B1.scad",
+    "sha256": "e7d59d7879090c763dcb5f45e8700977ceb7149cc45ee1b4a42854effe78b48b"
+  },
+  {
+    "source": "repository/.work/wall-blocks/B2.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B2.scad",
+    "sha256": "cecd711f8ef011e4c3c7c341a116910b726e48e651964f101eaa86d6ff021bec"
+  },
+  {
+    "source": "repository/.work/wall-blocks/B3.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B3.scad",
+    "sha256": "7938d681af88c4d06dc4c067e850a4d4ac3cb72db14042f74a30459e529f5777"
+  },
+  {
+    "source": "repository/.work/wall-blocks/B4.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B4.scad",
+    "sha256": "0370251faf5208ba85e57c1dbedb1189613ba8d8715464dc105a39b22353d337"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F16-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F16-after.scad",
+    "sha256": "4f3b5b4f05c73a8f3b332d7ff886cd8b2227ad962fd624131052c39850f7862e"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F16-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F16-before.scad",
+    "sha256": "354510d7992626e5d2c91560d64ae6067a9741bab75d7a918d68ee5d667e0703"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F16-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/F16-cached.scad",
+    "sha256": "185732a28e7b47d151127b6ed9abee3cab382da5522319020826b5122569478e"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F18-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F18-after.scad",
+    "sha256": "218094be2a6e9ff22c4fc4d96043e8e5d147de5b5953466010ec19a0e7e40166"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F18-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F18-before.scad",
+    "sha256": "f567416dfc5508959ef0b3aad95a83b537f9c9f966fa7272fded84817c7f1f2f"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F18-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/F18-cached.scad",
+    "sha256": "b62205cc39c1c879d7e5a84bf7ee5e215b7cc8c6bf8bf2bb1ee74ce61603353b"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F3-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F3-after.scad",
+    "sha256": "81c30f09d0469c7ed8f0e7f6bc438eab0159f7f95305d063b85228ec21428b56"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F3-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F3-before.scad",
+    "sha256": "683f83e6f22555ddc7cb173e07d4a9954bb686341391319575ccd249a1ec149b"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F3-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/F3-cached.scad",
+    "sha256": "26b2e66131a155896571cb87f304600a53ef697c01650f50e03e21e949893c69"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F5-after.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F5-after.scad",
+    "sha256": "a9cf2b115c7c2007c65d7c6a549c53e5cb9dc57379eeb8cef88b0dd73cad0e0b"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F5-before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/F5-before.scad",
+    "sha256": "5a6af8a413db373c848bbaa128663756673f1c739edf9e24392f03a875c55855"
+  },
+  {
+    "source": "repository/.work/wall-blocks/F5-cached.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/F5-cached.scad",
+    "sha256": "6e3aaa8af98ba00b04b1d4aec57fcf0d55e0d135210da9268ab051310e811b4e"
+  },
+  {
+    "source": "repository/.work/wall-blocks/baseline-modules.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/baseline-modules.scad",
+    "sha256": "e7211c1b18bfd4a2d6665bf4a70f1f263894f5c9864fae9e743ed77192b4019c"
+  },
+  {
+    "source": "repository/.work/wall-blocks/before.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/before.scad",
+    "sha256": "20cbd623b76ec140623f3862dfd65a865055a6d30a346795c646cb439dc98295"
+  },
+  {
+    "source": "repository/.work/wall-blocks/current-modules.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/current-modules.scad",
+    "sha256": "b6cda5a6d71a331ebdd03489c5aee757a0d88fe9cb45785c07ce3b0b81383ce1"
+  },
+  {
+    "source": "repository/.work/wall-blocks/fit-sample.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/fit-sample.scad",
+    "sha256": "11a4ab517ff9498bf12f87c75ec1170ac697d083021f04731ad496a67954f2b9"
+  },
+  {
+    "source": "repository/.work/wall-blocks/four-blocks.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/four-blocks.scad",
+    "sha256": "08e7ac8ef8ee8f5afb52785c4a8c142b6820bdd960f3ddfa2193ad42423aaf30"
+  },
+  {
+    "source": "repository/.work/wall-blocks/slots-0.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/slots-0.scad",
+    "sha256": "c0d4053c3bd456c78b41f4fe4f8ec0fd7280289180f696e78ce4247ebf37696e"
+  },
+  {
+    "source": "repository/.work/wall-blocks/slots-1.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/slots-1.scad",
+    "sha256": "8d3ffd1927aa3f1ba591e1c0a4dc7ab8df2b5c61ed9f62e3800a6b87b5b1a1ed"
+  },
+  {
+    "source": "repository/.work/wall-blocks/slots-2.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/slots-2.scad",
+    "sha256": "bed4f2e931b7116f293537f9158c49b42cdf5d9f3ed8cff17b3bab8e0de00108"
+  },
+  {
+    "source": "repository/.work/wall-blocks/slots-3.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks/slots-3.scad",
+    "sha256": "e0fe3e9e864482ca29110753cb8727d8a30ddbab4e40e73ae231436764f95454"
+  },
+  {
+    "source": "repository/.work/wall-blocks/thick-tabs.scad",
+    "captured_path": "archive/development-sources/repository/.work/wall-blocks-screwed/B1.scad",
+    "sha256": "e7d59d7879090c763dcb5f45e8700977ceb7149cc45ee1b4a42854effe78b48b"
+  },
+  {
+    "source": "repository/.work/weave-restore/publish.py",
+    "captured_path": "archive/development-sources/repository/.work/weave-restore/publish.py",
+    "sha256": "88eea3b02b81d8c2cc0589d3f6f96965188af2480674161e39e0d1fced364595"
+  },
+  {
+    "source": "repository/.work/weave-restore/render_texture.py",
+    "captured_path": "archive/development-sources/repository/.work/weave-restore/render_texture.py",
+    "sha256": "7cb4d05bdc0f6ed215292810e5b36096a238f0f7cb396c9182feb33d9457a109"
+  },
+  {
+    "source": "repository/output/Dara-A2L-Veneers-Only-No-Supports-r1/build_project.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-A2L-Veneers-Only-No-Supports-r1/build_project.py",
+    "sha256": "d60bdf5ad998204228fb32b0ab10b749e5da71bb818df6e3b105871a7c7fef29"
+  },
+  {
+    "source": "repository/output/Dara-A2L-Veneers-Only-No-Supports-r1/verify_project.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-A2L-Veneers-Only-No-Supports-r1/verify_project.py",
+    "sha256": "236b00493cb09e095fc2170f18087c32c75da2f522d5e8e896695d3e1ee67174"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/B1-cover.scad",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/B1-cover.scad",
+    "sha256": "addc21d50914dff29452206e56ff7ccbeedea90f23d8d7d5e8d4901cb83c82b3"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/generate_cover.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/generate_cover.py",
+    "sha256": "42970bb89b98496ed055fbf4daf27a0bac1cee7ac53673934fff59ffda05a628"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/add_blue_ribbon_edge.py",
+    "captured_path": "scripts/add_blue_ribbon_edge.py",
+    "sha256": "f9a2eae786bd8c4108abf4f56ed1555f5a34d1a40f4176b3cb7956382a09fcfd"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/add_weave_test_coupon.py",
+    "captured_path": "scripts/add_weave_test_coupon.py",
+    "sha256": "4bddf914069401c2549d311e45dc0e07a5803bee0f8736e1e267ea0fca4376bf"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/append_print_check_plate.py",
+    "captured_path": "scripts/append_print_check_plate.py",
+    "sha256": "bca849de03d05be924c816e4e35600ceebdfb68fc8fa5b19b6c2cd32b18a6820"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/build_jointed_bambu_project.py",
+    "captured_path": "scripts/build_jointed_bambu_project.py",
+    "sha256": "3e0f0004fd2a5aa67eebb20e82abbeb3b9efcb3d76dff1500ccbdd40d2afdf93"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/colorize_print_project.py",
+    "captured_path": "scripts/colorize_print_project.py",
+    "sha256": "3c999ae960c9e1499c624c1770995fe5e8acf17c931e39e807847a792895bac5"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/export_jointed_stls.py",
+    "captured_path": "scripts/export_jointed_stls.py",
+    "sha256": "3f501f8e7a0cc295b64214a968f4765bc1428708e7b54823043db8a29d123001"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/integrate_hammered_dara.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/integrate_hammered_dara.py",
+    "sha256": "8565d3b492d1f404038859f2dafb19e44569f47d64dfa7bccfaf91c16581affe"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/mesh_sections.py",
+    "captured_path": "scripts/mesh_sections.py",
+    "sha256": "f1b8566b924ca41aff0f52aae86161bf1ae06db836315a16e1c086f5a12c9f95"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_copper_diagnostic_test.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_copper_diagnostic_test.py",
+    "sha256": "5c99b4353812861bef6b04f05b48bd31e5fad0be7fa3200372b99b8af9ecc792"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_cover_crown_test.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_cover_crown_test.py",
+    "sha256": "8fae2eef07d8d7a67795c83276ac662a8a24627f15b9ae62dd697e3a09a41197"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_cover_edge_test.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_cover_edge_test.py",
+    "sha256": "77d764137d4a05ad00e93fbbe608a900f70d2008bd5bf031f222e4f4d3a1087e"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_cover_precision_test.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_cover_precision_test.py",
+    "sha256": "ec8ca9a28bf6d25d63d787d37de5bf9d0a273a1d71b47427cefa0cc46e88f448"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_hammered_bands.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_hammered_bands.py",
+    "sha256": "2a60d4fd1a9bb49fef6be7a9a3adb77346d140f6fa706a051af1074e5ec5af2c"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_hammered_m_project.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_hammered_m_project.py",
+    "sha256": "d5cd0f95071ce2518a2fa3898360d7c8c01c0582515ef83d53090c7d5792a044"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_tilted_hammered_joint.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_tilted_hammered_joint.py",
+    "sha256": "5dcc5c731c7140fc093b6045ed2345dce079da45024437a0a73b34488902fe91"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/prepare_y_stable_dara.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/prepare_y_stable_dara.py",
+    "sha256": "6efad916cbb3a6bd95e9de72fee774c033cc21b65470cffed4edc4c8cf0e2f97"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/tune_silk_project.py",
+    "captured_path": "scripts/tune_silk_project.py",
+    "sha256": "b70017b30710bfdee7b4c70b053934acd1dbf18dc09bfd6fd2ff1d7aebf220fb"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/validate_print_project.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/validate_print_project.py",
+    "sha256": "c7874bbc8389527afe8a7c56b70768ef16fa909c012063b081689d8c09ba4bf2"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/scripts/y_axis_orientation.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-B1-Cover-Source/scripts/y_axis_orientation.py",
+    "sha256": "a0377313fc75311edf79b129284dbc9e8945bf730f1c2407537a03ec69543d80"
+  },
+  {
+    "source": "repository/output/Dara-B1-Cover-Source/working/Dara-Photo-Frame-A1-Jointed.scad",
+    "captured_path": "archive/development-sources/repository/.work/mirrored-joints/baseline/working/Dara-Photo-Frame-A1-Jointed.scad",
+    "sha256": "a9677ae7f54c7915ae49eb8ab8799b935db688ba573a1e67e71430d154cf017f"
+  },
+  {
+    "source": "repository/output/Dara-Center-Veneer-Alignment-Jig-A1/build_center_veneer_alignment_jig_r1.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Center-Veneer-Alignment-Jig-A1/build_center_veneer_alignment_jig_r1.py",
+    "sha256": "c7985ff7c6fee7dfa99ea27274f37dbeb1120ddae3f31f0d27f365a90b284602"
+  },
+  {
+    "source": "repository/output/Dara-Center-Veneer-Alignment-Jig-A1/r2/build_center_veneer_alignment_jig_r2.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Center-Veneer-Alignment-Jig-A1/r2/build_center_veneer_alignment_jig_r2.py",
+    "sha256": "a22816c26fc2a692640ccdc6a81e48476cd107e1f45a4a7f4cc4155a7ea331de"
+  },
+  {
+    "source": "repository/output/Dara-Center-Veneer-Alignment-Jig-A1/r3/build_center_veneer_alignment_jig_r3.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Center-Veneer-Alignment-Jig-A1/r3/build_center_veneer_alignment_jig_r3.py",
+    "sha256": "e447a5cfe69bb5078badc4a92674fe55b3e2e33845a59479944ecffe9da3ac1b"
+  },
+  {
+    "source": "repository/output/Dara-Crate-Clips-A1-PETG-r1/build_clips.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Crate-Clips-A1-PETG-r1/build_clips.py",
+    "sha256": "c3cbadbe7278d35dc8a8071b72d88da542c843e6260637f72804a22b489d75c6"
+  },
+  {
+    "source": "repository/output/Dara-Crate-Clips-A1-PETG-r2/build_clips.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Crate-Clips-A1-PETG-r2/build_clips.py",
+    "sha256": "5648e26c2ccd49b05f3990c44ea355d2a089fe5cf9ab88d6ab7d0fb2dd9a98a3"
+  },
+  {
+    "source": "repository/output/Dara-Photo-Tracing-Backers-A1-r1/build_photo_tracing_backers_r1.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Photo-Tracing-Backers-A1-r1/build_photo_tracing_backers_r1.py",
+    "sha256": "014cee2fc395fb5a3a1071b6a72b31fd5bed8972c344fd034111aea8ec751e03"
+  },
+  {
+    "source": "repository/output/Dara-Side-Veneer-Alignment-Jigs-A1/r1/build_side_veneer_alignment_jigs_r1.py",
+    "captured_path": "archive/development-sources/repository/output/Dara-Side-Veneer-Alignment-Jigs-A1/r1/build_side_veneer_alignment_jigs_r1.py",
+    "sha256": "6421ac51c61c3dae8016ab596a0c728ac65f57bbb3536c11c64f854365ac7fe5"
+  },
+  {
+    "source": "nextcloud-v26/source/approved-knot-master.geojson",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/approved-knot-master.geojson",
+    "sha256": "46e198894d3476a79a519d02c90e013451a34773815946648b32baf708a54b0f"
+  },
+  {
+    "source": "nextcloud-v26/source/batch_v26.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/batch_v26.py",
+    "sha256": "fbebdc18a91abf274da1504ec378d7aac47c1843ed90dd341673bc13e703c85d"
+  },
+  {
+    "source": "nextcloud-v26/source/build_project.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/build_project.py",
+    "sha256": "1350922a886e30064908d622ca8a2fe96fe9ffb93305b50f514ae4060acb7e3a"
+  },
+  {
+    "source": "nextcloud-v26/source/check_v26_sequence.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/check_v26_sequence.py",
+    "sha256": "32fe7203e2fc1f281e24d3383a63477175eb873eb0a31d93ac59ac848484ccec"
+  },
+  {
+    "source": "nextcloud-v26/source/CURRENT-REPAIRS.txt",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/CURRENT-REPAIRS.txt",
+    "sha256": "c84e61ca7253ab8f9655473a0b75b82187914d40d6bf5fdd17366d42015b2fda"
+  },
+  {
+    "source": "nextcloud-v26/source/export_current_cad.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/export_current_cad.py",
+    "sha256": "3cd35996bdb52e913743b44471da4c25b73d3bae465f4695672dce1b331b20b6"
+  },
+  {
+    "source": "nextcloud-v26/source/export_v26_cad.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/export_v26_cad.py",
+    "sha256": "4a85b67934eed30c21605ba6b915c96b69b8d8b7b6bbf482c93a26030773c5e7"
+  },
+  {
+    "source": "nextcloud-v26/source/mesh_helpers.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/mesh_helpers.py",
+    "sha256": "0852d3f351281ee748b70281f1222adfde0738b0ef83c61b511a1e418a777727"
+  },
+  {
+    "source": "nextcloud-v26/source/previous_geometry_helpers.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/previous_geometry_helpers.py",
+    "sha256": "b8093dfc7a847ab5ce5bb67142e74a9fa98edb8d31a989857fd8b4aebe9067d0"
+  },
+  {
+    "source": "nextcloud-v26/source/README.txt",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/README.txt",
+    "sha256": "fbb807c8f2ca23b7b51af7828c74b31de6ae5aae8c2342aa3b18c3f4b550c431"
+  },
+  {
+    "source": "nextcloud-v26/source/requirements.txt",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/requirements.txt",
+    "sha256": "f16bfdb02dc13d1d3b47e3075ae869eeb31c54ddc0479859b6dc7cbaef758520"
+  },
+  {
+    "source": "nextcloud-v26/source/slice_v26_separated.py",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/slice_v26_separated.py",
+    "sha256": "08e52ff382ad6064d66b47942e7aee3bc05369bc059263ec522b6ef51c7a9967"
+  },
+  {
+    "source": "nextcloud-v26/source/SOLID-M-BOSSES.txt",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/SOLID-M-BOSSES.txt",
+    "sha256": "73a4d964eb20a4e3fc37a00c7dcb4220da603087511752a76a34ed1e97af0872"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/01-knot-assembly-map.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/01-knot-assembly-map.svg",
+    "sha256": "3077658fdd4dc5307dcdd5ae6d1a6029810c6c268a32aa7e267f511d3eb78db4"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/03-letter-parts.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/03-letter-parts.svg",
+    "sha256": "e414fe310fc19df174fec4e8ea03b373f8c162473fbea80b4311214a594a9794"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/04-optional-adhesive-pad-map.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/04-optional-adhesive-pad-map.svg",
+    "sha256": "7101560170ec3d040211306bb65639f2adacb970c4e8726c3f20e386fe463929"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/Joint-Pocket-Fills.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/Joint-Pocket-Fills.png",
+    "sha256": "b0d0a5e74217d5bdfe9aaa3ae7a428bea93075cfd8bd187a142c13cc1ffd911a"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/K52-Sliced-Curve-Check.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/K52-Sliced-Curve-Check.png",
+    "sha256": "39dc40804f933af5ac194d7470a2d454f7b566575c7569c99802d1677f6bb13e"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/Production-Rear-Details.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/Production-Rear-Details.png",
+    "sha256": "8269fa7cc32cc9d27af13ef7c29921ab78b47215ee7b22cd61845da4e114bd00"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/Repair-Details.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/Repair-Details.png",
+    "sha256": "4b72d9cc983e99439bb4a96a08f28dc5c6c733e350380382530d10903998faa8"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/drawings/wall-mount-map.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/wall-mount-map.svg",
+    "sha256": "5131dd7c755e7bb030e30cc1c45f774d5f44b9db196c231445317b89b3ee47f2"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/Outer-Photo-Cutting-Guides-Letter.pdf",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/Outer-Photo-Cutting-Guides-Letter.pdf",
+    "sha256": "14af791fa674aaf0d8adba00ffeca3af0cf038535a7837829e745e1466d3ae54"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_01_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_01_1to1.svg",
+    "sha256": "f23b35a5669ab4871098897aaa5c5405dd12ce600a948e075548cd66d5fe9eec"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_02_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_02_1to1.svg",
+    "sha256": "373ee590b21807f6e668aa511299ccfbd7651040ec040b2247955e330df5fdc4"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_03_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_03_1to1.svg",
+    "sha256": "fc3eb085b6864bf52ad073f57a715a6c925d326b8b423d30d5c893912edc681d"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_04_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_04_1to1.svg",
+    "sha256": "817067c8ec2dd398db0c79ff0552222c35a45b5678b626940c716a6e8713f7a1"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_05_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_05_1to1.svg",
+    "sha256": "2cff37c03e433b97d5bdc7edab86d969babfbf21315792829efa65737768caed"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_06_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_06_1to1.svg",
+    "sha256": "cbcf559c49bbd43815b32337155d90904732ab8c1afc35dd8f3e4723434f433e"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_07_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_07_1to1.svg",
+    "sha256": "f4538ba466caef94e085d034c08e3c7e2e57d8887768365e629d5320624d6e98"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_08_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_08_1to1.svg",
+    "sha256": "40d9d0764b37a67a626feb6e2ca2cbb17ec46c328f706fa2c355f8adcdf1217c"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/project-data.json",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/project-data.json",
+    "sha256": "b12ca089fe68afd73362f6d114cb67869d2dfa6d829f2a542f3b4c5bed4b0bb2"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/01-knot-assembly-map.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/01-knot-assembly-map.svg",
+    "sha256": "3077658fdd4dc5307dcdd5ae6d1a6029810c6c268a32aa7e267f511d3eb78db4"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/03-letter-parts.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/03-letter-parts.svg",
+    "sha256": "e414fe310fc19df174fec4e8ea03b373f8c162473fbea80b4311214a594a9794"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/04-optional-adhesive-pad-map.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/04-optional-adhesive-pad-map.svg",
+    "sha256": "7101560170ec3d040211306bb65639f2adacb970c4e8726c3f20e386fe463929"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/K52-Sliced-Curve-Check.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/K52-Sliced-Curve-Check.png",
+    "sha256": "39dc40804f933af5ac194d7470a2d454f7b566575c7569c99802d1677f6bb13e"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/Production-Rear-Details.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/Production-Rear-Details.png",
+    "sha256": "8269fa7cc32cc9d27af13ef7c29921ab78b47215ee7b22cd61845da4e114bd00"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/Repair-Details.png",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/Repair-Details.png",
+    "sha256": "4b72d9cc983e99439bb4a96a08f28dc5c6c733e350380382530d10903998faa8"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/drawings/wall-mount-map.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/drawings/wall-mount-map.svg",
+    "sha256": "5131dd7c755e7bb030e30cc1c45f774d5f44b9db196c231445317b89b3ee47f2"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/hardware/M_LOCATING_DOWEL.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/hardware/M_LOCATING_DOWEL.stl",
+    "sha256": "b08dfaa47e2830d3e84434d02ab4b6061e38de64fb671b60a91a54e9ef3dd139"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/hardware/OPTIONAL_ADHESIVE_PAD_110x30.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/hardware/OPTIONAL_ADHESIVE_PAD_110x30.stl",
+    "sha256": "2c72cdd1162a4336c80a51547e6e9ec91c403225bde7228063ecfb6c882c6196"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/hardware/WALL_KEYHOLE_BLOCK.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/hardware/WALL_KEYHOLE_BLOCK.stl",
+    "sha256": "d9c4e97dd1a8b2b90a3c559b2933b978ae6a8010bb219b145bd8912340e3ccbd"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K12.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K12.stl",
+    "sha256": "5e15bc11dcdebd28c4eba4448a982c79b12c5c0e5a3ffa76a71e55d1be3f3138"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K13a.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K13a.stl",
+    "sha256": "b2a32631c7c4f1c988bcf2f716b5b0d0de849dbffbc5f9a934dd138bf7cc4383"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K13b.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K13b.stl",
+    "sha256": "fa919a4a6add133e7f7bcfd1d8cb4a4d82e8c137cc1853c73775d0b4691cb7e9"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K14.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K14.stl",
+    "sha256": "34edd1ce258b7b8bba69a1e24e8ca32f879f41d11f05017c5d44cdc5c813d5ef"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K21.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K21.stl",
+    "sha256": "b2753c4fac88b03dd9657185bcee0eb7aa7390d9a63d973a8526119e780714a7"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K22.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K22.stl",
+    "sha256": "89387a4b198504357c569c215a3b02419963001b8ad7228c62be8cc9928e6f66"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K23.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K23.stl",
+    "sha256": "e3b712d9e1f3dcedf08663f571d05898a4ceeb23822f2b08f5313ab28b3bad75"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K24.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K24.stl",
+    "sha256": "33e823b77aa818c6f992d36d88c2ee27b541006be451b918997d860a5a2f7d3d"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K25.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K25.stl",
+    "sha256": "bb3581473ef9a6868a21565059a94a848d02a24f556f78554b53fc9fdd8bda4b"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K31a.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K31a.stl",
+    "sha256": "4c9909fea70415e932702a3fbe8903a17fbfb8a06c7ea4eeb42f8a3db8d0e665"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K31b.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K31b.stl",
+    "sha256": "11e0d95e9832569db8bc322741051b61cb9aaf807542a776ccc06c098fb030f3"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K32.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K32.stl",
+    "sha256": "04ca9ce80fe0ada990dceae7390da47f9d4328436dc999ded0a92780bbfc901d"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K33a.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K33a.stl",
+    "sha256": "116bb1dff43bc9a6db584d3386d33c501affd5449d8827ef7d7f3c9e48eb73d6"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K33b.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K33b.stl",
+    "sha256": "7e429b2de69ab29910b08b1b8f85de35cbc1f37dfd362bf9fb6e23a3b8a6b512"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K33c.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K33c.stl",
+    "sha256": "b1c31d7f1b6fd834137fb147c0ab68b232ca692615f14c9fbe08766763a654e1"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K33d.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K33d.stl",
+    "sha256": "06abafa5197bade16e528c900f1dab7acd07ace945182225da5cca6dbe31d82f"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K34.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K34.stl",
+    "sha256": "713cfae3ffc70356ba2c2cf20c24a6ce3b82a5b281f39d1ef229b25548e99c18"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K35a.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K35a.stl",
+    "sha256": "a344b1030e4612c251751a17c2744129e1849e95efeb51e8e73c23815d73a7b0"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K35b.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K35b.stl",
+    "sha256": "e20b08ca934d7ed44890aa57fb68c59b73cbad03bcdf48d792d75ac306b5d471"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K41.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K41.stl",
+    "sha256": "2d7c04b11a95f838c12aa8abdb0b6d0fe23a9983786b98fcb3c8daa32a0e0644"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K42.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K42.stl",
+    "sha256": "61973e5e5cce041defbe5b411d77652cd25a781c31ebb7a8e18ef1c772c4619a"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K43.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K43.stl",
+    "sha256": "f64ef29245bfaf590a5090b233e911a739ac38a52e8b8eb9ca11798bde34a899"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K44.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K44.stl",
+    "sha256": "1c1a66ae33be1c9ac474a902dd9d4ae3de37f388c28ab30dfccef8f8493d12c5"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K45.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K45.stl",
+    "sha256": "6582b426ff96a87250d33cc285cc53fb13515873cd150c266c1accee3b2d10de"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K52.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K52.stl",
+    "sha256": "cbbaca76197ce159d8ef186f623445b2318b35c8226a8b4eec3aa3cdc8ce50ba"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K53a.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K53a.stl",
+    "sha256": "edec42557289e754b918158d02c8e9836896b58ae44f3530fdada819ff8533ef"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K53b.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K53b.stl",
+    "sha256": "c81df5c87c1c862a38de07605b1e5f37ca30af98271e07f9ba5b4f6cb80c36ce"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/knot/K54.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/knot/K54.stl",
+    "sha256": "a8b25dafc5795c2fceb9abb343d279eb88e500b09d56316fceefb0c940c92242"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_01.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_01.stl",
+    "sha256": "8eead461de9e7b5562bf408b82054c0e2ec3b9b0ae45f67413c6f65bd4fd5b2d"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_02.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_02.stl",
+    "sha256": "40d97b703e66b5e2d1e8bbb45b66c5d41c2a4157b38685d1111bfffd8b71e4f7"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_03.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_03.stl",
+    "sha256": "5cf1aa94a2a0442239a2d791687b2d9d76429e2bfe3897843be25ea50bb1bc4a"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_04.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_04.stl",
+    "sha256": "7c160a1038fb143b23b69fa5facccbfd04885f0466a771141494bc2f9da614b9"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_05.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_05.stl",
+    "sha256": "f1ad5f577fa9d13164fe09fd9716097b21241a54202c683335379d2aacfcd671"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_06.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_06.stl",
+    "sha256": "892a695e67adf23be8505061f423920030741998c5c059a4782ef31450a77382"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_07.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_07.stl",
+    "sha256": "6c2a354172af95698092b00a1d079a1cb90e8eab0b1c7e90cf0d2f1135117eae"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/STL/letter/M_08.stl",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v25/STL/letter/M_08.stl",
+    "sha256": "aa828d10c4c52f24ba609614035f4adbb7d27b22190a89af1ad15bbd4b428183"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/Outer-Photo-Cutting-Guides-Letter.pdf",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/Outer-Photo-Cutting-Guides-Letter.pdf",
+    "sha256": "14af791fa674aaf0d8adba00ffeca3af0cf038535a7837829e745e1466d3ae54"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_01_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_01_1to1.svg",
+    "sha256": "f23b35a5669ab4871098897aaa5c5405dd12ce600a948e075548cd66d5fe9eec"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_02_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_02_1to1.svg",
+    "sha256": "373ee590b21807f6e668aa511299ccfbd7651040ec040b2247955e330df5fdc4"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_03_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_03_1to1.svg",
+    "sha256": "fc3eb085b6864bf52ad073f57a715a6c925d326b8b423d30d5c893912edc681d"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_04_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_04_1to1.svg",
+    "sha256": "817067c8ec2dd398db0c79ff0552222c35a45b5678b626940c716a6e8713f7a1"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_05_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_05_1to1.svg",
+    "sha256": "2cff37c03e433b97d5bdc7edab86d969babfbf21315792829efa65737768caed"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_06_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_06_1to1.svg",
+    "sha256": "cbcf559c49bbd43815b32337155d90904732ab8c1afc35dd8f3e4723434f433e"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_07_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_07_1to1.svg",
+    "sha256": "f4538ba466caef94e085d034c08e3c7e2e57d8887768365e629d5320624d6e98"
+  },
+  {
+    "source": "nextcloud-v26/source/baseline-v25/templates/PHOTO_OUTER_08_1to1.svg",
+    "captured_path": "archive/development-sources/nextcloud-v26/source/baseline-v13/templates/PHOTO_OUTER_08_1to1.svg",
+    "sha256": "40d9d0764b37a67a626feb6e2ca2cbb17ec46c328f706fa2c355f8adcdf1217c"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Dara-Review-Assembly.scad",
+    "captured_path": "archive/development-sources/nextcloud-v26/CAD/Dara-Review-Assembly.scad",
+    "sha256": "78e8cd1d958d5de2cf91d0eeffaee2bbccf14d3bc4bedde15ae1e3cbc4743c78"
+  },
+  {
+    "source": "nextcloud-v26/CAD/READ-ME.txt",
+    "captured_path": "archive/development-sources/nextcloud-v26/CAD/READ-ME.txt",
+    "sha256": "a5aca60997cb4670af2e4d3157cb117d11e039d8ae0dfa0ad626c83ee19ba8ca"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/Dara-Clean-Reference-angle.png",
+    "captured_path": "reference/Dara-Clean-Reference-angle.png",
+    "sha256": "a11f31d6e8b6c997327924a97a056dc9827ef4756c252fa25a44cc0d718b9f7c"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/Dara-Clean-Reference-back.png",
+    "captured_path": "reference/Dara-Clean-Reference-back.png",
+    "sha256": "93df707c77a9b946d0a64fd4b14608b47ec70be66741d2f2af1ad6d2751cb2e1"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/Dara-Clean-Reference-drawing.svg",
+    "captured_path": "reference/Dara-Clean-Reference-drawing.svg",
+    "sha256": "c67a8cd7c37f579c3c50df131f626f98d9c54924b06f868b9c6e2ec5f206a4a1"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/Dara-Clean-Reference-front.png",
+    "captured_path": "reference/Dara-Clean-Reference-front.png",
+    "sha256": "a89296e9c9d3bae984735a561c23f5f02139f6d3f37454a77be994901bfc8297"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/Dara-Clean-Reference.scad",
+    "captured_path": "reference/Dara-Clean-Reference.scad",
+    "sha256": "d214952476c9a398b54235cc27edc35c7365a6b085cf850d1e967f29ffa2a237"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/provenance.json",
+    "captured_path": "reference/provenance.json",
+    "sha256": "d0dc3f35071e20178ecb7bc7fffa9b66656e3135712f6a761c0ae31091ccdb6f"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/READ-ME.txt",
+    "captured_path": "archive/development-sources/nextcloud-v26/CAD/Clean-Reference/READ-ME.txt",
+    "sha256": "493bdf841f3ed2fc279d1f8e362c35d3a8c0e8e10c5fbee672690e33f46870ad"
+  },
+  {
+    "source": "nextcloud-v26/CAD/Clean-Reference/verification.json",
+    "captured_path": "reference/verification.json",
+    "sha256": "2274c095e0017364dfea594cd000ef13140b92feb1e5b9a48317629cc080a58d"
+  }
+]

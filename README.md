@@ -1,5 +1,7 @@
 # Dara knot wall hanging
 
+**Complete — November 2, 2026.** Printing and assembly are complete, and the finished gift is ready for Christmas morning, as confirmed by the owner. See the [completion and source archive record](release/project-complete/README.md). Earlier physical-status notes below describe their respective revisions.
+
 Open the root 3MF files **as projects** in Bambu Studio to retain their saved printers, materials and settings. These are the only Bambu projects maintained in source control. Supporting A1 projects are separated where their settings differ.
 
 | Project | Printer | Plates | Contents | CAD / STL |

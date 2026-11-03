@@ -1,0 +1,1 @@
+Python 3.10+ with numpy, trimesh, manifold3d, shapely and mapbox-earcut. Run build_project.py to rebuild geometry into regenerated-v26. Baseline v25 meshes are included. Bambu slicing is a separate operation. Current production K34 need not be reprinted; the completed v23 piece remains compatible.

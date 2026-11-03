@@ -1,0 +1,3817 @@
+{
+  "width_mm": 1219.2,
+  "knot_height_mm": 1219.2,
+  "shell_skin_mm": 1.2,
+  "photo_pocket_depth_mm": 1.6,
+  "knot_depth_mm": 18,
+  "M_front_z": 32,
+  "M_width_mm": 800,
+  "M_height_mm": 478.4743459141579,
+  "wall_standoff_mm": 10,
+  "grid_x_mm": [
+    -609.6,
+    -365.76,
+    -121.92000000000002,
+    121.91999999999996,
+    365.76,
+    609.6
+  ],
+  "grid_y_mm": [
+    -609.6,
+    -365.76,
+    -121.92000000000002,
+    121.91999999999996,
+    365.76,
+    609.6
+  ],
+  "nominal_seam_gap_mm": 0.16,
+  "joints": [],
+  "M_joints": [],
+  "assembly_method": "Integral tongues and sockets, total clearance 0.30 mm, glue seam and tongues. Row-first assembly.",
+  "photo_clips": [
+    {
+      "id": "OUTER_01_C1",
+      "photo": "OUTER_01",
+      "x": 103.87441118069633,
+      "y": 531.8535854191691,
+      "angle": 127.11446495606651
+    },
+    {
+      "id": "OUTER_01_C2",
+      "photo": "OUTER_01",
+      "x": 203.29692685714951,
+      "y": 514.310402968726,
+      "angle": 75.71032616691787
+    },
+    {
+      "id": "OUTER_01_C3",
+      "photo": "OUTER_01",
+      "x": 285.2568377893799,
+      "y": 351.701605172908,
+      "angle": -36.760258537921764
+    },
+    {
+      "id": "OUTER_02_C1",
+      "photo": "OUTER_02",
+      "x": 456.3285235831411,
+      "y": 263.69091495135183,
+      "angle": 71.6658541056349
+    },
+    {
+      "id": "OUTER_02_C2",
+      "photo": "OUTER_02",
+      "x": 532.7289535803859,
+      "y": 104.0233676949217,
+      "angle": -36.814901859842934
+    },
+    {
+      "id": "OUTER_02_C3",
+      "photo": "OUTER_02",
+      "x": 441.8667201920321,
+      "y": 96.1557099418552,
+      "angle": -81.51118927597746
+    },
+    {
+      "id": "OUTER_03_C1",
+      "photo": "OUTER_03",
+      "x": 348.46376069247816,
+      "y": -103.42137684433557,
+      "angle": 135.89521775118158
+    },
+    {
+      "id": "OUTER_03_C2",
+      "photo": "OUTER_03",
+      "x": 435.04188477209357,
+      "y": -96.02783535344143,
+      "angle": 86.03127801570518
+    },
+    {
+      "id": "OUTER_03_C3",
+      "photo": "OUTER_03",
+      "x": 533.3282280969865,
+      "y": -104.12306820990906,
+      "angle": 36.62029977777057
+    },
+    {
+      "id": "OUTER_04_C1",
+      "photo": "OUTER_04",
+      "x": 101.86742264075777,
+      "y": -351.1414075583114,
+      "angle": 135.6357165397952
+    },
+    {
+      "id": "OUTER_04_C2",
+      "photo": "OUTER_04",
+      "x": 187.73305406007114,
+      "y": -343.46158961935186,
+      "angle": 85.89151417686074
+    },
+    {
+      "id": "OUTER_04_C3",
+      "photo": "OUTER_04",
+      "x": 285.8234759043019,
+      "y": -352.3825830432242,
+      "angle": 36.35336253855464
+    },
+    {
+      "id": "OUTER_05_C1",
+      "photo": "OUTER_05",
+      "x": -286.1640620997846,
+      "y": -352.7643688807004,
+      "angle": 143.86273708441365
+    },
+    {
+      "id": "OUTER_05_C2",
+      "photo": "OUTER_05",
+      "x": -195.64957856781837,
+      "y": -343.69066059476415,
+      "angle": 99.34472667038034
+    },
+    {
+      "id": "OUTER_05_C3",
+      "photo": "OUTER_05",
+      "x": -101.78441422050969,
+      "y": -351.19219945490397,
+      "angle": 44.319441467627634
+    },
+    {
+      "id": "OUTER_06_C1",
+      "photo": "OUTER_06",
+      "x": -453.17040990207994,
+      "y": -96.64072183850033,
+      "angle": 105.82489336632386
+    },
+    {
+      "id": "OUTER_06_C2",
+      "photo": "OUTER_06",
+      "x": -350.5352497494311,
+      "y": -101.97321481110833,
+      "angle": 45.37976368896101
+    },
+    {
+      "id": "OUTER_06_C3",
+      "photo": "OUTER_06",
+      "x": -343.44575737950726,
+      "y": -188.39961161561737,
+      "angle": -4.551670718269348
+    },
+    {
+      "id": "OUTER_07_C1",
+      "photo": "OUTER_07",
+      "x": -533.4609553026504,
+      "y": 104.23531565457725,
+      "angle": -143.4541536428526
+    },
+    {
+      "id": "OUTER_07_C2",
+      "photo": "OUTER_07",
+      "x": -513.8796212691999,
+      "y": 204.60282749807018,
+      "angle": 164.81249997775825
+    },
+    {
+      "id": "OUTER_07_C3",
+      "photo": "OUTER_07",
+      "x": -350.7749216695885,
+      "y": 283.322969337317,
+      "angle": 52.40779128650729
+    },
+    {
+      "id": "OUTER_08_C1",
+      "photo": "OUTER_08",
+      "x": -261.12913618107507,
+      "y": 460.95128244082133,
+      "angle": 158.19438836689127
+    },
+    {
+      "id": "OUTER_08_C2",
+      "photo": "OUTER_08",
+      "x": -104.81002706428876,
+      "y": 533.4313481903841,
+      "angle": 53.6407953976402
+    },
+    {
+      "id": "OUTER_08_C3",
+      "photo": "OUTER_08",
+      "x": -96.20852020837779,
+      "y": 443.5112051411304,
+      "angle": 9.560488789681743
+    }
+  ],
+  "wall_mounts": [
+    {
+      "id": "W1",
+      "x": -305,
+      "y": 315
+    },
+    {
+      "id": "W2",
+      "x": 305,
+      "y": 315
+    },
+    {
+      "id": "W3",
+      "x": -305,
+      "y": -315
+    },
+    {
+      "id": "W4",
+      "x": 305,
+      "y": -315
+    }
+  ],
+  "adhesive_pad_sites": [
+    {
+      "id": "T1",
+      "x": -335.0,
+      "y": 335.0,
+      "angle": 0
+    },
+    {
+      "id": "T2",
+      "x": 335.0,
+      "y": 335.0,
+      "angle": 90
+    },
+    {
+      "id": "T3",
+      "x": -335.0,
+      "y": -335.0,
+      "angle": 90
+    },
+    {
+      "id": "T4",
+      "x": 335.0,
+      "y": -335.0,
+      "angle": 90
+    }
+  ],
+  "letter_mounts": [
+    {
+      "x": -290.0,
+      "y": 115.0
+    },
+    {
+      "x": 285.0,
+      "y": 145.0
+    },
+    {
+      "x": -280.0,
+      "y": -110.0
+    },
+    {
+      "x": 285.0,
+      "y": -120.0
+    },
+    {
+      "x": -35.0,
+      "y": 115.0
+    },
+    {
+      "x": -35.0,
+      "y": -120.0
+    }
+  ],
+  "photos": {
+    "OUTER_01": {
+      "cut_width_mm": 169.38,
+      "cut_height_mm": 169.67,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.68,
+      "overlap_mm": 6
+    },
+    "OUTER_02": {
+      "cut_width_mm": 169.58,
+      "cut_height_mm": 169.61,
+      "cut_width_in": 6.68,
+      "cut_height_in": 6.68,
+      "overlap_mm": 6
+    },
+    "OUTER_03": {
+      "cut_width_mm": 169.48,
+      "cut_height_mm": 169.52,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.67,
+      "overlap_mm": 6
+    },
+    "OUTER_04": {
+      "cut_width_mm": 169.48,
+      "cut_height_mm": 169.58,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.68,
+      "overlap_mm": 6
+    },
+    "OUTER_05": {
+      "cut_width_mm": 169.49,
+      "cut_height_mm": 169.56,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.68,
+      "overlap_mm": 6
+    },
+    "OUTER_06": {
+      "cut_width_mm": 169.52,
+      "cut_height_mm": 169.3,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.67,
+      "overlap_mm": 6
+    },
+    "OUTER_07": {
+      "cut_width_mm": 169.46,
+      "cut_height_mm": 169.22,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.66,
+      "overlap_mm": 6
+    },
+    "OUTER_08": {
+      "cut_width_mm": 169.49,
+      "cut_height_mm": 169.56,
+      "cut_width_in": 6.67,
+      "cut_height_in": 6.68,
+      "overlap_mm": 6
+    }
+  },
+  "parts": [
+    {
+      "part": "K12",
+      "file": "STL/knot/K12.stl",
+      "quantity": 1,
+      "x_mm": 246.22,
+      "y_mm": 243.626,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 103.48962802984688,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -362.1401,
+      "assembly_origin_y": 365.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -362.14013671875
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          365.8389892578125
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605575
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K12",
+        "print_position_mm": [
+          217.92729757394397,
+          238.20759823210796,
+          17.59999923706053
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K13a",
+      "file": "STL/knot/K13a.stl",
+      "quantity": 1,
+      "x_mm": 223.419,
+      "y_mm": 223.03,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 147.82175371305613,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -121.84,
+      "assembly_origin_y": 365.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          0.587785252292473,
+          -0.8090169943749473,
+          9.907600726170916e-17,
+          -54.72794313741247
+        ],
+        [
+          0.8090169943749473,
+          0.587785252292473,
+          -1.9444761269533495e-16,
+          322.39614310503725
+        ],
+        [
+          9.907600726170915e-17,
+          1.9444761269533497e-16,
+          1.0,
+          -0.7999992370605753
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 54,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K13a",
+        "print_position_mm": [
+          190.94810496406825,
+          196.28018985611175,
+          17.599999237060544
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K13b",
+      "file": "STL/knot/K13b.stl",
+      "quantity": 1,
+      "x_mm": 223.372,
+      "y_mm": 222.949,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 146.71172019949842,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 23.2995,
+      "assembly_origin_y": 365.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          -0.587785252292473,
+          -0.8090169943749475,
+          9.907600726170915e-17,
+          235.18309327814487
+        ],
+        [
+          0.8090169943749475,
+          -0.587785252292473,
+          -5.048174713413567e-17,
+          453.5104706058289
+        ],
+        [
+          9.907600726170917e-17,
+          5.0481747134135694e-17,
+          1.0000000000000002,
+          -0.799999237060554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 126,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K13b",
+        "print_position_mm": [
+          60.94693077375983,
+          199.9345182616796,
+          17.599999237060533
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K14",
+      "file": "STL/knot/K14.stl",
+      "quantity": 1,
+      "x_mm": 240.119,
+      "y_mm": 243.675,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 103.30489584928124,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 122.0,
+      "assembly_origin_y": 365.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          121.9990005493164
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          365.8389892578125
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K14",
+        "print_position_mm": [
+          5.4010009765625,
+          238.24500055102075,
+          17.599999237060537
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K21",
+      "file": "STL/knot/K21.stl",
+      "quantity": 1,
+      "x_mm": 243.416,
+      "y_mm": 247.684,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 185.06750267789945,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -609.5194,
+      "assembly_origin_y": 122.0,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          -0.9993908270190955,
+          -0.034899496702501136,
+          4.2739556928571626e-18,
+          -357.75286878063565
+        ],
+        [
+          0.034899496702501136,
+          -0.9993908270190957,
+          -7.460217411914793e-20,
+          361.0429461070014
+        ],
+        [
+          4.2739556928571626e-18,
+          7.460217411914793e-20,
+          1.0,
+          -0.7999992370605362
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 178,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K21",
+        "print_position_mm": [
+          156.46822627921333,
+          228.16647632570312,
+          17.59999923706054
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K22",
+      "file": "STL/knot/K22.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 139.83968871837217,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -365.68,
+      "assembly_origin_y": 122.0,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -365.6809997558594
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          121.99899291992188
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605682
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K22",
+        "print_position_mm": [
+          91.4010009765625,
+          234.281005859375,
+          17.59999923706054
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K23",
+      "file": "STL/knot/K23.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 186.31952597217713,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -121.84,
+      "assembly_origin_y": 122.0,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -121.84099578857422
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          121.99899291992188
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -3.197442310920451e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K23",
+        "print_position_mm": [
+          5.400993347167969,
+          234.281005859375,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K24",
+      "file": "STL/knot/K24.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 142.11786465046214,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 122.0,
+      "assembly_origin_y": 122.0,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          121.9990005493164
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          121.99899291992188
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605788
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K24",
+        "print_position_mm": [
+          5.4010009765625,
+          234.281005859375,
+          17.59999923706055
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K25",
+      "file": "STL/knot/K25.stl",
+      "quantity": 1,
+      "x_mm": 243.655,
+      "y_mm": 239.328,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 103.18743273093685,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 365.84,
+      "assembly_origin_y": 122.0,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          365.8389892578125
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          121.99899291992188
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K25",
+        "print_position_mm": [
+          5.4010009765625,
+          233.90923128706464,
+          17.599999237060537
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K31a",
+      "file": "STL/knot/K31a.stl",
+      "quantity": 1,
+      "x_mm": 222.931,
+      "y_mm": 223.443,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 146.87516618890928,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -609.4979,
+      "assembly_origin_y": -121.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          0.587785252292473,
+          -0.8090169943749473,
+          9.907600726170916e-17,
+          -453.49389882884986
+        ],
+        [
+          0.8090169943749473,
+          0.587785252292473,
+          -1.9444761269533495e-16,
+          -235.18351140475295
+        ],
+        [
+          9.907600726170915e-17,
+          1.9444761269533497e-16,
+          1.0,
+          -0.7999992370605753
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 54,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K31a",
+        "print_position_mm": [
+          50.750008108569645,
+          218.04245153317294,
+          17.59999923706053
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K31b",
+      "file": "STL/knot/K31b.stl",
+      "quantity": 1,
+      "x_mm": 223.202,
+      "y_mm": 222.786,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 146.4023649334298,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -609.52,
+      "assembly_origin_y": 23.5054,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          0.8090169943749473,
+          -0.587785252292473,
+          7.198293278059964e-17,
+          -503.24116147015616
+        ],
+        [
+          0.587785252292473,
+          0.8090169943749473,
+          -2.2154068717644443e-16,
+          -76.32244062365386
+        ],
+        [
+          7.198293278059965e-17,
+          2.2154068717644448e-16,
+          1.0,
+          -0.7999992370605788
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 36,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K31b",
+        "print_position_mm": [
+          17.400219142502458,
+          196.03642817612908,
+          17.599999237060544
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K32",
+      "file": "STL/knot/K32.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 193.73428283286145,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -365.68,
+      "assembly_origin_y": -121.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -365.6809997558594
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -121.84098815917969
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.799999237060554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K32",
+        "print_position_mm": [
+          5.4010009765625,
+          232.28099060058594,
+          17.599999237060523
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K33b",
+      "file": "STL/knot/K33b.stl",
+      "quantity": 1,
+      "x_mm": 101.231,
+      "y_mm": 103.991,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 56.27771271130934,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 23.2128,
+      "assembly_origin_y": -121.84,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          0.03489949670250107,
+          -0.9993908270190955,
+          1.2239007774061615e-16,
+          126.40562132751597
+        ],
+        [
+          0.9993908270190957,
+          0.03489949670250107,
+          -1.2673863560759247e-16,
+          -125.44356989634211
+        ],
+        [
+          1.2239007774061617e-16,
+          1.2673863560759247e-16,
+          1.0,
+          -1.4210854715202004e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 88,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K33b",
+        "print_position_mm": [
+          5.516660772291504,
+          98.59041951394762,
+          16.8
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K33a",
+      "file": "STL/knot/K33a.stl",
+      "quantity": 1,
+      "x_mm": 98.609,
+      "y_mm": 97.849,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 39.28045584517329,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -121.84,
+      "assembly_origin_y": -121.84,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -121.84099578857422
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -121.84099769592285
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -1.0658141036401503e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K33a",
+        "print_position_mm": [
+          5.400993347167969,
+          92.44648038157804,
+          16.8
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K33c",
+      "file": "STL/knot/K33c.stl",
+      "quantity": 1,
+      "x_mm": 103.477,
+      "y_mm": 101.935,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 59.050120898032915,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -121.84,
+      "assembly_origin_y": 24.0174,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          -0.03489949670250095,
+          -0.9993908270190955,
+          1.2239007774061615e-16,
+          -19.930679357170632
+        ],
+        [
+          0.9993908270190957,
+          -0.03489949670250095,
+          -1.1819072422187818e-16,
+          26.538834217848525
+        ],
+        [
+          1.2239007774061617e-16,
+          1.1819072422187818e-16,
+          1.0,
+          -1.4210854715202004e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 92,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K33c",
+        "print_position_mm": [
+          79.40056109838469,
+          86.41857026263425,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K33d",
+      "file": "STL/knot/K33d.stl",
+      "quantity": 1,
+      "x_mm": 103.941,
+      "y_mm": 103.908,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 38.27698631609369,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 23.979,
+      "assembly_origin_y": 24.0122,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          23.978992462158203
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          24.012184143066406
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -1.7763568394002505e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K33d",
+        "print_position_mm": [
+          77.40302256602126,
+          84.42781829833984,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K34",
+      "file": "STL/knot/K34.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 193.06290179691905,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 122.0,
+      "assembly_origin_y": -121.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          121.9990005493164
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -121.84098815917969
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.799999237060554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v13 smooth outline; 2.4 mm walls; compact locating joints; decorative face UP; preserve concealed cavity supports where unobstructive",
+      "hidden_label": {
+        "text": "K34",
+        "print_position_mm": [
+          147.4010009765625,
+          232.28099060058594,
+          17.599999237060523
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K35a",
+      "file": "STL/knot/K35a.stl",
+      "quantity": 1,
+      "x_mm": 223.408,
+      "y_mm": 222.938,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 146.09277307584648,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 365.84,
+      "assembly_origin_y": -121.84,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          0.8090169943749473,
+          -0.587785252292473,
+          7.198293278059964e-17,
+          453.47699313269356
+        ],
+        [
+          0.587785252292473,
+          0.8090169943749473,
+          -2.2154068717644443e-16,
+          -235.2038184678937
+        ],
+        [
+          7.198293278059965e-17,
+          2.2154068717644448e-16,
+          1.0,
+          -0.7999992370605788
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 36,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K35a",
+        "print_position_mm": [
+          60.962741071942105,
+          199.92319223954664,
+          17.59999923706054
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K35b",
+      "file": "STL/knot/K35b.stl",
+      "quantity": 1,
+      "x_mm": 223.394,
+      "y_mm": 222.763,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 147.95243480830328,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 365.84,
+      "assembly_origin_y": 23.5152,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          -0.8090169943749473,
+          -0.5877852522924732,
+          7.198293278059966e-17,
+          634.2303485963337
+        ],
+        [
+          0.5877852522924732,
+          -0.8090169943749473,
+          -2.3388672653026173e-17,
+          103.86825543987227
+        ],
+        [
+          7.198293278059968e-17,
+          2.3388672653026173e-17,
+          1.0,
+          -0.7999992370605575
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 144,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K35b",
+        "print_position_mm": [
+          147.40020708729392,
+          199.69687348088846,
+          17.59999923706054
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K41",
+      "file": "STL/knot/K41.stl",
+      "quantity": 1,
+      "x_mm": 249.738,
+      "y_mm": 245.406,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 99.04479625140347,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -609.4979,
+      "assembly_origin_y": -361.3263,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -609.4979248046875
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -361.3262634277344
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -2.842170943040401e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K41",
+        "print_position_mm": [
+          75.42623147331406,
+          221.92626190185547,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K42",
+      "file": "STL/knot/K42.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 143.87823671605244,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -365.68,
+      "assembly_origin_y": -365.68,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -365.6809997558594
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -365.6809997558594
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605717
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K42",
+        "print_position_mm": [
+          9.4010009765625,
+          224.28099822998047,
+          17.599999237060544
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K43",
+      "file": "STL/knot/K43.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 193.6532764937846,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -121.84,
+      "assembly_origin_y": -365.68,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -121.84099578857422
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -365.6809997558594
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K43",
+        "print_position_mm": [
+          83.40099334716797,
+          226.28099822998047,
+          17.599999237060523
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K44",
+      "file": "STL/knot/K44.stl",
+      "quantity": 1,
+      "x_mm": 249.761,
+      "y_mm": 249.761,
+      "z_mm": 18.8,
+      "solid_volume_cm3": 141.46839706317502,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 122.0,
+      "assembly_origin_y": -365.68,
+      "assembly_origin_z": -0.8,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          121.9990005493164
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -365.6809997558594
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -0.7999992370605504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K44",
+        "print_position_mm": [
+          153.4010009765625,
+          226.28099822998047,
+          17.599999237060523
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K45",
+      "file": "STL/knot/K45.stl",
+      "quantity": 1,
+      "x_mm": 243.67,
+      "y_mm": 245.289,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 99.1097907267348,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 365.84,
+      "assembly_origin_y": -361.2093,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          365.8389892578125
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -361.2092590332031
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -2.842170943040401e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K45",
+        "print_position_mm": [
+          157.4010009765625,
+          221.80925750732422,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K52",
+      "file": "STL/knot/K52.stl",
+      "quantity": 1,
+      "x_mm": 246.22,
+      "y_mm": 249.754,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 99.61161791260122,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -362.1398,
+      "assembly_origin_y": -609.5139,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -362.1398010253906
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -609.5138549804688
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          -3.197442310920451e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K52",
+        "print_position_mm": [
+          75.93506421119518,
+          226.27386474609375,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K53a",
+      "file": "STL/knot/K53a.stl",
+      "quantity": 1,
+      "x_mm": 223.062,
+      "y_mm": 223.341,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 138.61817799195194,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -121.84,
+      "assembly_origin_y": -609.5139,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          0.8090169943749473,
+          -0.587785252292473,
+          7.198293278059964e-17,
+          -103.90951939516106
+        ],
+        [
+          0.587785252292473,
+          0.8090169943749473,
+          -2.2154068717644443e-16,
+          -634.1931003050231
+        ],
+        [
+          7.198293278059965e-17,
+          2.2154068717644448e-16,
+          1.0,
+          -3.197442310920451e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 36,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K53a",
+        "print_position_mm": [
+          134.7489295285251,
+          194.39271605421618,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K53b",
+      "file": "STL/knot/K53b.stl",
+      "quantity": 1,
+      "x_mm": 223.44,
+      "y_mm": 222.872,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 138.7840320840462,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 23.3009,
+      "assembly_origin_y": -609.3854,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          0.587785252292473,
+          -0.8090169943749473,
+          9.907600726170916e-17,
+          103.81033859536353
+        ],
+        [
+          0.8090169943749473,
+          0.587785252292473,
+          -1.9444761269533495e-16,
+          -634.2010779563088
+        ],
+        [
+          9.907600726170915e-17,
+          1.9444761269533497e-16,
+          1.0,
+          -3.197442310920451e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 54,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K53b",
+        "print_position_mm": [
+          147.40019171108935,
+          199.86211702059495,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "K54",
+      "file": "STL/knot/K54.stl",
+      "quantity": 1,
+      "x_mm": 243.288,
+      "y_mm": 248.088,
+      "z_mm": 18.0,
+      "solid_volume_cm3": 173.35400064032743,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 122.0,
+      "assembly_origin_y": -609.3844,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          -0.03489949670250095,
+          -0.9993908270190955,
+          1.2239007774061615e-16,
+          369.9421326773895
+        ],
+        [
+          0.9993908270190957,
+          -0.03489949670250095,
+          -1.1819072422187818e-16,
+          -600.8761126815042
+        ],
+        [
+          1.2239007774061617e-16,
+          1.1819072422187818e-16,
+          1.0,
+          -3.197442310920451e-14
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 92,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "K54",
+        "print_position_mm": [
+          75.40014116194484,
+          228.57071391947687,
+          16.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_01",
+      "file": "STL/letter/M_01.stl",
+      "quantity": 1,
+      "x_mm": 205.057,
+      "y_mm": 207.631,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 39.637410405330485,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -362.3856,
+      "assembly_origin_y": 130.08,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          0.4383711467890774,
+          -0.8987940462991669,
+          1.1007052518929728e-16,
+          -175.76779484155625
+        ],
+        [
+          0.8987940462991669,
+          0.43837114678907735,
+          -1.7614966209011515e-16,
+          39.060436605674155
+        ],
+        [
+          1.1007052518929728e-16,
+          1.7614966209011515e-16,
+          1.0,
+          17.999999999999964
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 64,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_01",
+        "print_position_mm": [
+          52.922695279592695,
+          183.92004547526142,
+          12.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_02",
+      "file": "STL/letter/M_02.stl",
+      "quantity": 1,
+      "x_mm": 209.802,
+      "y_mm": 208.523,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 41.96442181297977,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 100.08,
+      "assembly_origin_y": 130.08,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          0.8987940462991669,
+          -0.43837114678907735,
+          5.368498217537981e-17,
+          182.88061385958045
+        ],
+        [
+          0.4383711467890773,
+          0.8987940462991669,
+          -2.325352051040326e-16,
+          38.10904483646863
+        ],
+        [
+          5.3684982175379806e-17,
+          2.325352051040326e-16,
+          1.0,
+          17.999999999999964
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 26,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_02",
+        "print_position_mm": [
+          98.8647522993014,
+          159.235791127241,
+          12.800000000000006
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_03",
+      "file": "STL/letter/M_03.stl",
+      "quantity": 1,
+      "x_mm": 205.921,
+      "y_mm": 235.169,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 83.6415597828702,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -99.92,
+      "assembly_origin_y": -4.92,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -99.9209976196289
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -4.9210052490234375
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          17.99999999999997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_03",
+        "print_position_mm": [
+          31.000999450683594,
+          201.41773032085587,
+          12.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_04",
+      "file": "STL/letter/M_04.stl",
+      "quantity": 1,
+      "x_mm": 123.2,
+      "y_mm": 140.921,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 54.13241675363835,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 276.72,
+      "assembly_origin_y": -4.92,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          276.72003173828125
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -4.9210052490234375
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          17.99999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_04",
+        "print_position_mm": [
+          79.7606216224012,
+          121.84100341796875,
+          12.800000000000002
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_05",
+      "file": "STL/letter/M_05.stl",
+      "quantity": 1,
+      "x_mm": 125.376,
+      "y_mm": 140.921,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 53.54027327398476,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -399.9123,
+      "assembly_origin_y": -4.92,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -399.91229248046875
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -4.9210052490234375
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          17.99999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_05",
+        "print_position_mm": [
+          33.33851111674789,
+          119.84100341796875,
+          12.800000000000002
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_06",
+      "file": "STL/letter/M_06.stl",
+      "quantity": 1,
+      "x_mm": 240.785,
+      "y_mm": 247.244,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 81.80419334461652,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": 150.1875,
+      "assembly_origin_y": -239.1572,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          -0.9993908270190955,
+          -0.034899496702501136,
+          4.2739556928571626e-18,
+          399.45408673412015
+        ],
+        [
+          0.034899496702501136,
+          -0.9993908270190957,
+          -7.460217411914793e-20,
+          -0.4670512785480696
+        ],
+        [
+          4.2739556928571626e-18,
+          7.460217411914793e-20,
+          1.0,
+          17.999999999999996
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 178,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_06",
+        "print_position_mm": [
+          199.3562558213731,
+          241.39878618550236,
+          12.8
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_07",
+      "file": "STL/letter/M_07.stl",
+      "quantity": 1,
+      "x_mm": 232.497,
+      "y_mm": 228.998,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 71.31573853516245,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -53.5048,
+      "assembly_origin_y": -239.1572,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          0.6946583704589973,
+          -0.7193398003386512,
+          8.809371839840251e-17,
+          -5.744782788239746
+        ],
+        [
+          0.7193398003386512,
+          0.6946583704589973,
+          -2.0753579490308808e-16,
+          -285.2784511739354
+        ],
+        [
+          8.809371839840254e-17,
+          2.0753579490308805e-16,
+          1.0,
+          17.999999999999964
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 46,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_07",
+        "print_position_mm": [
+          150.69446806013426,
+          205.91499795503773,
+          12.800000000000004
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_08",
+      "file": "STL/letter/M_08.stl",
+      "quantity": 1,
+      "x_mm": 244.321,
+      "y_mm": 240.157,
+      "z_mm": 14.0,
+      "solid_volume_cm3": 96.50648267363222,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -399.92,
+      "assembly_origin_y": -239.1572,
+      "assembly_origin_z": 18.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -399.9200134277344
+        ],
+        [
+          0.0,
+          1.0,
+          -2.4492935982947064e-16,
+          -239.15716552734375
+        ],
+        [
+          0.0,
+          2.4492935982947064e-16,
+          1.0,
+          17.999999999999968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "decorative face up",
+      "notes": "v25: face-up; permanent channel walls/end ties on knot, connector bracing, protected interfaces/labels; K34 physical trial pending.",
+      "hidden_label": {
+        "text": "M_08",
+        "print_position_mm": [
+          5.320046022144757,
+          231.0771717549924,
+          12.800000000000002
+        ],
+        "relief_mm": 0.4,
+        "stroke_mm": 0.65,
+        "letter_height_mm": 4.55
+      }
+    },
+    {
+      "part": "M_LOCATING_DOWEL",
+      "file": "STL/hardware/M_LOCATING_DOWEL.stl",
+      "quantity": 6,
+      "x_mm": 2.973,
+      "y_mm": 2.973,
+      "z_mm": 2.8,
+      "solid_volume_cm3": 0.02,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -1.4928,
+      "assembly_origin_y": -1.4928,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          -0.4383711467890775,
+          0.898794046299167,
+          0.0,
+          -0.6843260296750167
+        ],
+        [
+          -0.8987940462991669,
+          -0.4383711467890775,
+          -0.0,
+          1.9874270992588918
+        ],
+        [
+          0.0,
+          0.0,
+          1.0000000000000002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 116,
+      "orientation": "rear/flat side down",
+      "notes": "Loose locating dowel, glue fit; not a snap"
+    },
+    {
+      "part": "WALL_KEYHOLE_BLOCK",
+      "file": "STL/hardware/WALL_KEYHOLE_BLOCK.stl",
+      "quantity": 4,
+      "x_mm": 52.0,
+      "y_mm": 36.0,
+      "z_mm": 10.0,
+      "solid_volume_cm3": 16.084,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -26.0,
+      "assembly_origin_y": -18.0,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -26.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 0,
+      "orientation": "rear/flat side down",
+      "notes": "Not load rated; four distributed wall fixings required"
+    },
+    {
+      "part": "OPTIONAL_ADHESIVE_PAD_110x30",
+      "file": "STL/hardware/OPTIONAL_ADHESIVE_PAD_110x30.stl",
+      "quantity": 4,
+      "x_mm": 97.993,
+      "y_mm": 99.967,
+      "z_mm": 10.0,
+      "solid_volume_cm3": 11.239,
+      "watertight": true,
+      "connected": true,
+      "assembly_origin_x": -55.0,
+      "assembly_origin_y": -15.0,
+      "assembly_origin_z": 0.0,
+      "assembly_transform": [
+        [
+          0.6946583704589973,
+          0.7193398003386512,
+          0.0,
+          -69.99086240528644
+        ],
+        [
+          -0.7193398003386512,
+          0.6946583704589973,
+          -0.0,
+          0.5234924505375163
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "print_rotation_deg": 46,
+      "orientation": "rear/flat side down",
+      "notes": "Alternative to keyholes. Smooth both faces; adhesive-only wall mounting is unvalidated for this size"
+    }
+  ],
+  "validation": {
+    "meshes_checked": true,
+    "physical_K34_trial": "running; result pending",
+    "full_project_sliced": true,
+    "all_plate_toolpaths_in_bounds": true,
+    "assembly_sequence_checked": true
+  },
+  "locating_joints": [
+    {
+      "id": "J01",
+      "parts": [
+        "K12",
+        "K13a"
+      ],
+      "male": "K12",
+      "female": "K13a",
+      "x": -121.92000000000002,
+      "y": 564.2875565096986,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J02",
+      "parts": [
+        "K22",
+        "K12"
+      ],
+      "male": "K22",
+      "female": "K12",
+      "x": -316.51508547379444,
+      "y": 365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J03",
+      "parts": [
+        "K23",
+        "K13a"
+      ],
+      "male": "K23",
+      "female": "K13a",
+      "x": -69.07027888030615,
+      "y": 365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J04",
+      "parts": [
+        "K13b",
+        "K14"
+      ],
+      "male": "K13b",
+      "female": "K14",
+      "x": 121.91999999999996,
+      "y": 564.32880921895,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J05",
+      "parts": [
+        "K23",
+        "K13b"
+      ],
+      "male": "K23",
+      "female": "K13b",
+      "x": 69.07506858178176,
+      "y": 365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J06",
+      "parts": [
+        "K24",
+        "K14"
+      ],
+      "male": "K24",
+      "female": "K14",
+      "x": 316.4577028234866,
+      "y": 365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J07",
+      "parts": [
+        "K21",
+        "K22"
+      ],
+      "male": "K21",
+      "female": "K22",
+      "x": -365.76,
+      "y": 316.5659576575455,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J08",
+      "parts": [
+        "K31b",
+        "K21"
+      ],
+      "male": "K31b",
+      "female": "K21",
+      "x": -564.308605297341,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J09",
+      "parts": [
+        "K22",
+        "K23"
+      ],
+      "male": "K22",
+      "female": "K23",
+      "x": -121.92000000000002,
+      "y": 316.5142797404181,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J10",
+      "parts": [
+        "K32",
+        "K22"
+      ],
+      "male": "K32",
+      "female": "K22",
+      "x": -316.508066581306,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J11",
+      "parts": [
+        "K23",
+        "K24"
+      ],
+      "male": "K23",
+      "female": "K24",
+      "x": 121.91999999999996,
+      "y": 316.5740134997528,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J12",
+      "parts": [
+        "K33c",
+        "K23"
+      ],
+      "male": "K33c",
+      "female": "K23",
+      "x": -68.74763114193937,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J13",
+      "parts": [
+        "K33d",
+        "K23"
+      ],
+      "male": "K33d",
+      "female": "K23",
+      "x": 69.07759282970551,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J14",
+      "parts": [
+        "K24",
+        "K25"
+      ],
+      "male": "K24",
+      "female": "K25",
+      "x": 365.76,
+      "y": 316.5659576575455,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J15",
+      "parts": [
+        "K34",
+        "K24"
+      ],
+      "male": "K34",
+      "female": "K24",
+      "x": 316.4480635210597,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J16",
+      "parts": [
+        "K35b",
+        "K25"
+      ],
+      "male": "K35b",
+      "female": "K25",
+      "x": 564.420585306967,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J17",
+      "parts": [
+        "K31a",
+        "K32"
+      ],
+      "male": "K31a",
+      "female": "K32",
+      "x": -365.76,
+      "y": -69.07027888030615,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J18",
+      "parts": [
+        "K41",
+        "K31a"
+      ],
+      "male": "K41",
+      "female": "K31a",
+      "x": -564.2875565096986,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J19",
+      "parts": [
+        "K31b",
+        "K32"
+      ],
+      "male": "K31b",
+      "female": "K32",
+      "x": -365.76,
+      "y": 69.07759282970551,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J20",
+      "parts": [
+        "K32",
+        "K33a"
+      ],
+      "male": "K32",
+      "female": "K33a",
+      "x": -121.92000000000002,
+      "y": -69.07759282970551,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J21",
+      "parts": [
+        "K32",
+        "K33c"
+      ],
+      "male": "K32",
+      "female": "K33c",
+      "x": -121.92000000000002,
+      "y": 69.07759282970551,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J22",
+      "parts": [
+        "K42",
+        "K32"
+      ],
+      "male": "K42",
+      "female": "K32",
+      "x": -316.4480635210597,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J23",
+      "parts": [
+        "K43",
+        "K33a"
+      ],
+      "male": "K43",
+      "female": "K33a",
+      "x": -68.74763114193937,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J24",
+      "parts": [
+        "K33b",
+        "K34"
+      ],
+      "male": "K33b",
+      "female": "K34",
+      "x": 121.91999999999996,
+      "y": -69.07759282970551,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J25",
+      "parts": [
+        "K43",
+        "K33b"
+      ],
+      "male": "K43",
+      "female": "K33b",
+      "x": 68.68732394366197,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J26",
+      "parts": [
+        "K33d",
+        "K34"
+      ],
+      "male": "K33d",
+      "female": "K34",
+      "x": 121.91999999999996,
+      "y": 69.1379000279829,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J27",
+      "parts": [
+        "K34",
+        "K35a"
+      ],
+      "male": "K34",
+      "female": "K35a",
+      "x": 365.76,
+      "y": -69.07536909202142,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J28",
+      "parts": [
+        "K34",
+        "K35b"
+      ],
+      "male": "K34",
+      "female": "K35b",
+      "x": 365.76,
+      "y": 69.070315436838,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J29",
+      "parts": [
+        "K44",
+        "K34"
+      ],
+      "male": "K44",
+      "female": "K34",
+      "x": 316.4480635210597,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J30",
+      "parts": [
+        "K45",
+        "K35a"
+      ],
+      "male": "K45",
+      "female": "K35a",
+      "x": 564.420585306967,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J31",
+      "parts": [
+        "K41",
+        "K42"
+      ],
+      "male": "K41",
+      "female": "K42",
+      "x": -365.76,
+      "y": -316.5659576575454,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J32",
+      "parts": [
+        "K42",
+        "K43"
+      ],
+      "male": "K42",
+      "female": "K43",
+      "x": -121.92000000000002,
+      "y": -316.5142797404181,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J33",
+      "parts": [
+        "K52",
+        "K42"
+      ],
+      "male": "K52",
+      "female": "K42",
+      "x": -316.508066581306,
+      "y": -365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J34",
+      "parts": [
+        "K43",
+        "K44"
+      ],
+      "male": "K43",
+      "female": "K44",
+      "x": 121.91999999999996,
+      "y": -316.4550882709849,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J35",
+      "parts": [
+        "K53a",
+        "K43"
+      ],
+      "male": "K53a",
+      "female": "K43",
+      "x": -69.07383262940488,
+      "y": -365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J36",
+      "parts": [
+        "K53b",
+        "K43"
+      ],
+      "male": "K53b",
+      "female": "K43",
+      "x": 69.07027888030615,
+      "y": -365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J37",
+      "parts": [
+        "K44",
+        "K45"
+      ],
+      "male": "K44",
+      "female": "K45",
+      "x": 365.76,
+      "y": -316.4848765090002,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J38",
+      "parts": [
+        "K54",
+        "K44"
+      ],
+      "male": "K54",
+      "female": "K44",
+      "x": 316.508066581306,
+      "y": -365.76,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J39",
+      "parts": [
+        "K52",
+        "K53a"
+      ],
+      "male": "K52",
+      "female": "K53a",
+      "x": -121.92000000000002,
+      "y": -564.2875565096986,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "J40",
+      "parts": [
+        "K53b",
+        "K54"
+      ],
+      "male": "K53b",
+      "female": "K54",
+      "x": 121.91999999999996,
+      "y": -564.3098573744586,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 0
+    },
+    {
+      "id": "MJ01",
+      "parts": [
+        "M_01",
+        "M_03"
+      ],
+      "male": "M_01",
+      "female": "M_03",
+      "x": -100.0,
+      "y": 214.70926285629932,
+      "angle": 0,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 10,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    },
+    {
+      "id": "MJ02",
+      "parts": [
+        "M_05",
+        "M_01"
+      ],
+      "male": "M_05",
+      "female": "M_01",
+      "x": -318.4809287902036,
+      "y": 130.0,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    },
+    {
+      "id": "MJ03",
+      "parts": [
+        "M_03",
+        "M_02"
+      ],
+      "male": "M_03",
+      "female": "M_02",
+      "x": 100.0,
+      "y": 218.7584621369082,
+      "angle": 0,
+      "tongue_count": 1,
+      "tongue_spacing_mm": 0,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    },
+    {
+      "id": "MJ04",
+      "parts": [
+        "M_04",
+        "M_02"
+      ],
+      "male": "M_04",
+      "female": "M_02",
+      "x": 324.0979154468381,
+      "y": 130.0,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    },
+    {
+      "id": "MJ05",
+      "parts": [
+        "M_07",
+        "M_03"
+      ],
+      "male": "M_07",
+      "female": "M_03",
+      "x": -7.3553710832468795,
+      "y": -5.0,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    },
+    {
+      "id": "MJ06",
+      "parts": [
+        "M_06",
+        "M_04"
+      ],
+      "male": "M_06",
+      "female": "M_04",
+      "x": 344.4433534782374,
+      "y": -5.0,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    },
+    {
+      "id": "MJ07",
+      "parts": [
+        "M_08",
+        "M_05"
+      ],
+      "male": "M_08",
+      "female": "M_05",
+      "x": -343.00550905045503,
+      "y": -5.0,
+      "angle": 90,
+      "tongue_count": 2,
+      "tongue_spacing_mm": 20,
+      "total_clearance_mm": 0.3,
+      "rear_z": 18
+    }
+  ],
+  "legacy_joint_map_positions": [
+    {
+      "id": "J01",
+      "x": -121.92000000000002,
+      "y": 564.2875565096986,
+      "angle": 0,
+      "parts": [
+        "K12",
+        "K13a"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J02",
+      "x": -316.51508547379444,
+      "y": 365.76,
+      "angle": 90,
+      "parts": [
+        "K12",
+        "K22"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J03",
+      "x": -69.07027888030615,
+      "y": 365.76,
+      "angle": 90,
+      "parts": [
+        "K13a",
+        "K23"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J04",
+      "x": 121.91999999999996,
+      "y": 564.32880921895,
+      "angle": 0,
+      "parts": [
+        "K13b",
+        "K14"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J05",
+      "x": 69.07506858178176,
+      "y": 365.76,
+      "angle": 90,
+      "parts": [
+        "K13b",
+        "K23"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J06",
+      "x": 316.4577028234866,
+      "y": 365.76,
+      "angle": 90,
+      "parts": [
+        "K14",
+        "K24"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J07",
+      "x": -365.76,
+      "y": 316.5659576575455,
+      "angle": 0,
+      "parts": [
+        "K21",
+        "K22"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J08",
+      "x": -564.308605297341,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "parts": [
+        "K21",
+        "K31b"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J09",
+      "x": -121.92000000000002,
+      "y": 316.5142797404181,
+      "angle": 0,
+      "parts": [
+        "K22",
+        "K23"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J10",
+      "x": -316.508066581306,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "parts": [
+        "K22",
+        "K32"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J11",
+      "x": 121.91999999999996,
+      "y": 316.5740134997528,
+      "angle": 0,
+      "parts": [
+        "K23",
+        "K24"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J12",
+      "x": -68.74763114193937,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "parts": [
+        "K23",
+        "K33c"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J13",
+      "x": 69.07759282970551,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "parts": [
+        "K23",
+        "K33d"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J14",
+      "x": 365.76,
+      "y": 316.5659576575455,
+      "angle": 0,
+      "parts": [
+        "K24",
+        "K25"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J15",
+      "x": 316.4480635210597,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "parts": [
+        "K24",
+        "K34"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J16",
+      "x": 564.420585306967,
+      "y": 121.91999999999996,
+      "angle": 90,
+      "parts": [
+        "K25",
+        "K35b"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J17",
+      "x": -365.76,
+      "y": -69.07027888030615,
+      "angle": 0,
+      "parts": [
+        "K31a",
+        "K32"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J18",
+      "x": -564.2875565096986,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "parts": [
+        "K31a",
+        "K41"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J19",
+      "x": -365.76,
+      "y": 69.07759282970551,
+      "angle": 0,
+      "parts": [
+        "K31b",
+        "K32"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J20",
+      "x": -121.92000000000002,
+      "y": -69.07759282970551,
+      "angle": 0,
+      "parts": [
+        "K32",
+        "K33a"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J21",
+      "x": -121.92000000000002,
+      "y": 69.07759282970551,
+      "angle": 0,
+      "parts": [
+        "K32",
+        "K33c"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J22",
+      "x": -316.4480635210597,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "parts": [
+        "K32",
+        "K42"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J23",
+      "x": -68.74763114193937,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "parts": [
+        "K33a",
+        "K43"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J24",
+      "x": 121.91999999999996,
+      "y": -69.07759282970551,
+      "angle": 0,
+      "parts": [
+        "K33b",
+        "K34"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J25",
+      "x": 68.68732394366197,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "parts": [
+        "K33b",
+        "K43"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J26",
+      "x": 121.91999999999996,
+      "y": 69.1379000279829,
+      "angle": 0,
+      "parts": [
+        "K33d",
+        "K34"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J27",
+      "x": 365.76,
+      "y": -69.07536909202142,
+      "angle": 0,
+      "parts": [
+        "K34",
+        "K35a"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J28",
+      "x": 365.76,
+      "y": 69.070315436838,
+      "angle": 0,
+      "parts": [
+        "K34",
+        "K35b"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J29",
+      "x": 316.4480635210597,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "parts": [
+        "K34",
+        "K44"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J30",
+      "x": 564.420585306967,
+      "y": -121.92000000000002,
+      "angle": 90,
+      "parts": [
+        "K35a",
+        "K45"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J31",
+      "x": -365.76,
+      "y": -316.5659576575454,
+      "angle": 0,
+      "parts": [
+        "K41",
+        "K42"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J32",
+      "x": -121.92000000000002,
+      "y": -316.5142797404181,
+      "angle": 0,
+      "parts": [
+        "K42",
+        "K43"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J33",
+      "x": -316.508066581306,
+      "y": -365.76,
+      "angle": 90,
+      "parts": [
+        "K42",
+        "K52"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J34",
+      "x": 121.91999999999996,
+      "y": -316.4550882709849,
+      "angle": 0,
+      "parts": [
+        "K43",
+        "K44"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J35",
+      "x": -69.07383262940488,
+      "y": -365.76,
+      "angle": 90,
+      "parts": [
+        "K43",
+        "K53a"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J36",
+      "x": 69.07027888030615,
+      "y": -365.76,
+      "angle": 90,
+      "parts": [
+        "K43",
+        "K53b"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J37",
+      "x": 365.76,
+      "y": -316.4848765090002,
+      "angle": 0,
+      "parts": [
+        "K44",
+        "K45"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J38",
+      "x": 316.508066581306,
+      "y": -365.76,
+      "angle": 90,
+      "parts": [
+        "K44",
+        "K54"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J39",
+      "x": -121.92000000000002,
+      "y": -564.2875565096986,
+      "angle": 0,
+      "parts": [
+        "K52",
+        "K53a"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "J40",
+      "x": 121.91999999999996,
+      "y": -564.3098573744586,
+      "angle": 0,
+      "parts": [
+        "K53b",
+        "K54"
+      ],
+      "length": 50,
+      "width": 18,
+      "hole_offset": 16
+    },
+    {
+      "id": "MJ01",
+      "x": -100.0,
+      "y": 213.20926285629932,
+      "angle": -20,
+      "parts": [
+        "M_01",
+        "M_03"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    },
+    {
+      "id": "MJ02",
+      "x": -318.4809287902036,
+      "y": 130.0,
+      "angle": 90,
+      "parts": [
+        "M_01",
+        "M_05"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    },
+    {
+      "id": "MJ03",
+      "x": 100.0,
+      "y": 218.7584621369082,
+      "angle": 20,
+      "parts": [
+        "M_02",
+        "M_03"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    },
+    {
+      "id": "MJ04",
+      "x": 324.0979154468381,
+      "y": 130.0,
+      "angle": 90,
+      "parts": [
+        "M_02",
+        "M_04"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    },
+    {
+      "id": "MJ05",
+      "x": -7.3553710832468795,
+      "y": -5.0,
+      "angle": 90,
+      "parts": [
+        "M_03",
+        "M_07"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    },
+    {
+      "id": "MJ06",
+      "x": 344.4433534782374,
+      "y": -5.0,
+      "angle": 90,
+      "parts": [
+        "M_04",
+        "M_06"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    },
+    {
+      "id": "MJ07",
+      "x": -343.00550905045503,
+      "y": -5.0,
+      "angle": 90,
+      "parts": [
+        "M_05",
+        "M_08"
+      ],
+      "length": 30,
+      "width": 8,
+      "hole_offset": 9
+    }
+  ],
+  "fit_feedback": {
+    "locating_socket_total_clearance_mm": 0.3,
+    "user_report": "Socket 3 nice and tight; sockets 1 and 2 will not insert."
+  },
+  "revision": "v25 full reinforced project; K34 identical to running v23",
+  "shell_wall_mm": 2.4,
+  "status": "Saved production revision; physical K34 trial pending. Do not start remaining plates until K34 result is checked.",
+  "production_estimate": {
+    "groups": [
+      {
+        "project": "01-Knot",
+        "grams": 5517.570472717285,
+        "hours": 213.61312527126736,
+        "plates": 28
+      },
+      {
+        "project": "02-Manuscript-M",
+        "grams": 746.5359573364258,
+        "hours": 26.086590440538195,
+        "plates": 7
+      },
+      {
+        "project": "03-Dowels-and-Screw-Mounts",
+        "grams": 78.75836944580078,
+        "hours": 2.240714653862847,
+        "plates": 1
+      }
+    ],
+    "production_kg_including_supports_brims": 6.3428647994995115,
+    "production_hours": 241.94043036566842,
+    "plates": 36,
+    "K34_counted_once": true,
+    "remaining_kg_after_current_K34_success": 6.010664799499512,
+    "excludes": "Optional adhesive pads, prior failed prints, trial coupons and future reprints. Not finished hanging weight."
+  }
+}

@@ -1,0 +1,1 @@
+Current authoritative M STL meshes have solid 10 mm screw bosses (no pilot bores). Preserve these meshes via the existing M override in build_project.py. Bambu 02 project adds one 20-wall modifier per boss; retain these modifiers when exporting print projects. See M-SCREW-MOUNTS-READ-ME.txt for drilling.

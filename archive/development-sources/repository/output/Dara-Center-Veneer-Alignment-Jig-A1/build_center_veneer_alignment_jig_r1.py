@@ -1,0 +1,519 @@
+"""Three removable A1 locating shoes for the saved production V3 veneer.
+
+Reads production meshes; never regenerates or edits M/knot/companion projects.
+Run with the repository's .work/python-libs on PYTHONPATH.
+"""
+import argparse
+import collections
+import copy
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import xml.etree.ElementTree as ET
+import zipfile
+
+import numpy as np
+import shapely
+from shapely.geometry import Polygon, LineString, box, shape, mapping
+from shapely import union_all
+from scipy.spatial import cKDTree
+import trimesh
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from matplotlib.textpath import TextPath
+from matplotlib.font_manager import FontProperties
+
+import development_3mf as d
+from develop_m_veneer import prism
+from mesh_sections import mesh_slice
+from validate_print_project import scan_gcode, TOKEN
+
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE = ROOT / "Dara.3mf"
+COMPANION = ROOT / "working/bambu/Dara-A1-Companion/Dara-A1-Companion.3mf"
+PROD = ROOT / "working/bambu/Dara-Photo-Frame-A2L"
+OUT = ROOT / "output/Dara-Center-Veneer-Alignment-Jig-A1"
+WORK = ROOT / ".work/center-veneer-jig"
+EDIT = OUT / "Dara-Center-Veneer-Alignment-Jig-A1-r1-Editable.3mf"
+FINAL = OUT / "Dara-Center-Veneer-Alignment-Jig-A1-r1.3mf"
+EXE = Path(r"C:\Program Files\Bambu Studio\bambu-studio.exe")
+BASE = 3.2
+GAP = .15
+WALL = 3.2
+GUIDE_TOP = 10.2  # assembly Z; below the veneer edge at 10.5
+LOCKED = dict(
+    printer_model="Bambu Lab A1", nozzle_diameter=["0.4"],
+    sparse_infill_density="8%", sparse_infill_pattern="gyroid",
+    layer_height="0.2", initial_layer_print_height="0.2",
+    wall_loops="4", top_shell_layers="5", bottom_shell_layers="5",
+    curr_bed_type="Textured PEI Plate",
+)
+
+
+def files(path, geometry=True):
+    with zipfile.ZipFile(path) as z:
+        return {n: z.read(n) for n in z.namelist()
+                if n in ["3D/3dmodel.model", "Metadata/model_settings.config",
+                         "Metadata/project_settings.config", "[Content_Types].xml"]
+                or (geometry and n.startswith("3D/Objects/"))}
+
+
+def protected():
+    paths = [SOURCE, PROD/"Dara-A2L-Complete.3mf", PROD/"Dara-A2L-Editable.3mf",
+             PROD/"production-plan.json", PROD/"M-geometry-validation.json"]
+    paths += sorted(COMPANION.parent.glob("*"))
+    return {str(p.relative_to(ROOT)): d.sha(p) for p in paths if p.is_file()}
+
+
+def filled(g):
+    return union_all([Polygon(p.exterior) for p in
+                      ([g] if g.geom_type == "Polygon" else g.geoms)
+                      if p.geom_type == "Polygon"])
+
+
+def extract():
+    f = files(SOURCE)
+    cfg = ET.fromstring(f["Metadata/model_settings.config"])
+    root = ET.fromstring(f["3D/3dmodel.model"])
+    plan = json.loads((PROD/"production-plan.json").read_text())
+    poses = json.loads((PROD/"M-geometry-validation.json").read_text())
+    meshes, records = {}, []
+    for co in cfg.findall("object"):
+        name = d.props(co).get("name", "")
+        if not name.startswith(("C1 ", "C2 ", "C3 ", "C4 ", "C5 ", "V3 ")):
+            continue
+        entries, st = d.read_object(f, co.get("id"))
+        m = entries[0]["mesh"]
+        if name.startswith("V3 "):
+            # Native save centers the carried mesh, then places it on plate 17.
+            item = next(i for i in root.find(d.tag("build"))
+                        if i.get("objectid") == co.get("id"))
+            T = d.transform(item.get("transform"))
+            T[:2, 3] -= [396, -1152]
+            m.apply_transform(T)
+            m.apply_transform(np.linalg.inv(np.array(poses["skins"][2]["assembly_to_printer"])))
+        label = name.split()[0]
+        assert m.is_volume, label
+        meshes[label] = m
+        records.append(dict(name=name, object_id=co.get("id"),
+                            source_mesh_sha256=hashlib.sha256(
+                                m.vertices.tobytes()+m.faces.tobytes()).hexdigest()))
+    region = shape(plan["skin_regions"][2])
+    # At Z9.5 all rear carrier stock and pockets have ended locally. Limit the
+    # cross section to the verified V3 region to discard the remote bed guard.
+    veneer = mesh_slice(meshes["V3"], 9.5).intersection(region.buffer(.02))
+    error = veneer.symmetric_difference(region).area
+    assert error < .01, error
+    cores = union_all([mesh_slice(meshes[f"C{i}"], 4) for i in range(1, 6)])
+    return f, meshes, filled(cores), filled(veneer), region, records, error
+
+
+def lettering(text, xy):
+    path = TextPath((0, 0), text, size=5.5,
+                    prop=FontProperties(family="DejaVu Sans", weight="bold"))
+    g = Polygon()
+    for ring in path.to_polygons():
+        g = g.symmetric_difference(Polygon(ring))
+    from shapely import affinity
+    b = g.bounds
+    return affinity.translate(g, xy[0]-(b[0]+b[2])/2,
+                              xy[1]-(b[1]+b[3])/2)
+
+
+def shoes(core, veneer):
+    # Every guide lies on an original outside/inside artwork edge, never on
+    # either artificial V3 seam at x=+-125 or a hidden core joint.
+    specs = [
+        dict(name="L - upper left", letter="L",
+             window=box(-112, 130, -82, 192), tab=box(-109, 179, -85, 190),
+             label=(-97, 185.6), xy=(88, 100)),
+        dict(name="R - upper right", letter="R",
+             window=box(82, 130, 112, 192), tab=box(85, 179, 109, 190),
+             label=(97, 185.6), xy=(166, 100)),
+        dict(name="B - stem bottom", letter="B",
+             window=box(-48, -191, 37, -155), tab=box(-17, -190, 7, -179),
+             label=(-5, -185.6), xy=(128, 166)),
+    ]
+    result = []
+    for sp in specs:
+        win = sp["window"]
+        # Curved top shoes capture both sides of each narrow arch; bottom
+        # shoe captures the stem's two sides and original flat end.
+        foot = veneer.buffer(WALL+1.0, quad_segs=12).intersection(win).union(sp["tab"])
+        assert foot.geom_type == "Polygon"
+        outside = core.buffer(GAP+WALL, quad_segs=12).intersection(
+            veneer.buffer(GAP+WALL, quad_segs=12)).intersection(win)
+        normal = outside.difference(core.buffer(GAP, quad_segs=12).union(
+                                    veneer.buffer(GAP, quad_segs=12)))
+        relief = outside.difference(core.buffer(.85, quad_segs=12).union(
+                                    veneer.buffer(.85, quad_segs=12)))
+        base = prism(foot, 0, BASE)
+        body = base + prism(normal, BASE-.0001, BASE+8.0)
+        body += prism(relief, BASE+8.0-.0001, BASE+9.2)
+        # 45 degree return from the squeeze-out recess; no unsupported roof.
+        for z, c in [(9.2, .65), (9.4, .45), (9.6, .25), (9.8, GAP)]:
+            ring = outside.difference(core.buffer(c, quad_segs=12).union(
+                                      veneer.buffer(c, quad_segs=12)))
+            body += prism(ring, BASE+z-.0001, BASE+z+.2)
+        body += prism(normal, BASE+10.0-.0001, BASE+GUIDE_TOP)
+        label = lettering(sp["letter"], sp["label"])
+        assert label.difference(foot).area < 1e-6
+        body += prism(label, BASE-.01, BASE+.4)
+        m = d.mesh(body)
+        assert m.is_volume and len(body.decompose()) == 1, sp["name"]
+        result.append(dict(**sp, foot=foot, wall=normal, body=body, mesh=m))
+    return result
+
+
+def build():
+    OUT.mkdir(parents=True, exist_ok=True)
+    WORK.mkdir(parents=True, exist_ok=True)
+    before = protected()
+    f, mm, core, veneer, region, sources, error = extract()
+    ss = json.loads(files(COMPANION, False)["Metadata/project_settings.config"])
+    for k, v in LOCKED.items():
+        assert ss[k] == v, (k, ss.get(k))
+    baseline = copy.deepcopy(ss)
+    ss["print_settings_id"] = "Dara center veneer alignment jig r1 - 8% gyroid"
+    # Use the saved A1 machine/material configuration intact. The project
+    # writer's original package metadata is explicitly redirected to production.
+    d.source = lambda: f
+    d.source_path = lambda: SOURCE
+    pieces = shoes(core, veneer)
+    entries, checks = [], []
+    core_solid = None
+    for i in range(1, 6):
+        b = d.solid(mm[f"C{i}"])
+        core_solid = b if core_solid is None else core_solid+b
+    visible_veneer = d.solid(mm["V3"]) ^ prism(region, 8.6, 13)
+    for sp in pieces:
+        m, b = sp["mesh"], sp["body"]
+        assert abs(m.bounds[0, 2]) < 1e-6
+        # In-use positions: production M elevated by the shoes' common base.
+        core_overlap = abs((b ^ core_solid.translate([0, 0, BASE])).volume())
+        veneer_overlap = abs((b ^ visible_veneer.translate([0, 0, BASE])).volume())
+        assert max(core_overlap, veneer_overlap) < 1e-4, sp["name"]
+        contact = filled(mesh_slice(mm["C3"], .01)) if sp["letter"] == "B" else core
+        support = sp["foot"].intersection(contact).area
+        assert support > 350
+        local_region = region.intersection(sp["window"])
+        # Guide tops must remain below even the lowest edge of the front.
+        v = mm["V3"].vertices
+        sel = shapely.contains_xy(sp["window"], v[:, 0], v[:, 1]) & (
+            v[:, 2] > 10.4) & (v[:, 2] < 13)
+        assert sel.any()
+        minimum_front = float(v[sel, 2].min())
+        assert minimum_front-GUIDE_TOP > .29
+        # No guide at either veneer seam or any non-artwork edge.
+        assert sp["wall"].distance(box(-125.01, 160, -124.99, 182)) > 9
+        assert sp["wall"].distance(box(124.99, 160, 125.01, 182)) > 9
+        T = d.centered(m, xy=sp["xy"])
+        obj = dict(name=sp["name"]+" - V3 alignment shoe r1",
+                   parts=[dict(mesh=m, settings=dict(extruder="1"))],
+                   transform=T,
+                   settings=dict(extruder="1", brim_width="1", enable_support="0"))
+        entries.append(obj)
+        standalone = m.copy()
+        standalone.apply_translation([-m.bounds[0, 0], -m.bounds[0, 1], 0])
+        stl = OUT/f"V3-Jig-r1-{sp['letter']}.stl"
+        standalone.export(stl)
+        checks.append(dict(
+            piece=sp["letter"], source_window_xy_mm=list(sp["window"].bounds),
+            size_mm=m.extents.tolist(), stl_sha256=d.sha(stl),
+            connected_solids=len(b.decompose()), watertight=m.is_watertight,
+            positive_volume=m.is_volume, base_contact_area_mm2=sp["foot"].area,
+            supported_core_area_mm2=support,
+            assembled_core_intersection_mm3=core_overlap,
+            assembled_veneer_intersection_mm3=veneer_overlap,
+            minimum_front_edge_clearance_above_guide_mm=minimum_front-GUIDE_TOP,
+            geometry= dict(foot=mapping(sp["foot"]), wall=mapping(sp["wall"]))))
+    records = d.write_project(EDIT, [entries], ss["print_settings_id"], ss)
+    assert before == protected(), "Protected production file changed"
+    diff = {k: dict(old=baseline.get(k), new=v) for k,v in ss.items()
+            if baseline.get(k) != v}
+    d.save_json(OUT/"geometry-validation.json", dict(
+        revision="r1", purpose="Locate V3 on the already assembled M cores; weights clamp",
+        source_project=str(SOURCE), source_sha256=d.sha(SOURCE),
+        profile_project=str(COMPANION), profile_sha256=d.sha(COMPANION),
+        source_objects=sources, actual_veneer_section_vs_plan_area_error_mm2=error,
+        source_section_z_mm=dict(core=4, veneer=9.5),
+        base_thickness_mm=BASE, clearance_per_side_mm=GAP,
+        maximum_nominal_relative_side_play_mm=2*GAP,
+        nominal_guide_top_above_core_back_mm=GUIDE_TOP,
+        core_height_mm=8.4, veneer_back_mm=8.6, minimum_veneer_edge_mm=10.5,
+        glue_relief=dict(assembly_z_mm=[8.0,9.2], setback_mm=.85,
+                         ramp_to_normal_assembly_z_mm=[9.2,10.0]),
+        pieces=checks, placements=records, editable_sha256=d.sha(EDIT),
+        project_settings_differences_from_saved_A1_companion=diff,
+        intentional_object_settings=dict(extruder="1", brim_width="1",
+                                         enable_support="0"),
+        locked_settings=LOCKED, protected_files_before=before,
+        protected_files_after=protected(), physical_fit_pending=True,
+        physical_clamping_load_not_qualified=True))
+    draw(pieces, core, veneer)
+    print("Built three shoes on one A1 plate:", EDIT, flush=True)
+
+
+def draw(pieces, core, veneer):
+    fig = plt.figure(figsize=(13, 8), facecolor="#f5f3ef")
+    ax = fig.add_axes([.04, .12, .54, .79])
+    def poly(ax, g, **kw):
+        for p in ([g] if g.geom_type=="Polygon" else g.geoms):
+            x,y=p.exterior.xy;ax.fill(x,y,**kw)
+    poly(ax, core, color="#d6d7d5", zorder=1)
+    poly(ax, veneer, color="#bb7d4e", zorder=2)
+    for sp in pieces:
+        poly(ax, sp["foot"], color="#268f9e", alpha=.65,zorder=3)
+        poly(ax, sp["wall"], color="#15545f",zorder=4)
+        tx,ty=sp["label"]
+        ax.annotate(sp["letter"], (tx,ty), xytext=(tx+(-60 if tx<0 else 60),ty+26),
+                    fontsize=15,weight="bold",color="#15545f",
+                    arrowprops=dict(arrowstyle="-",color="#15545f"),ha="center")
+    ax.set_aspect("equal");ax.set_xlim(-325,325);ax.set_ylim(-210,222)
+    ax.axis("off")
+    fig.text(.04,.955,"Center veneer alignment shoes · A1 · r1",fontsize=22,weight="bold",color="#243b41")
+    fig.text(.04,.91,"Copper: V3 veneer     Gray: assembled cores     Teal: three removable shoes",fontsize=11)
+    for n,sp in enumerate(pieces):
+        a=fig.add_axes([.64,.69-n*.235,.30,.205])
+        poly(a,sp["foot"],color="#76b5bc")
+        # Exact outlines at the assembly; the open ends are not locating faces.
+        v=veneer.intersection(sp["window"])
+        poly(a,v,color="#bb7d4e",alpha=.65)
+        poly(a,sp["wall"],color="#15545f")
+        a.text(*sp["label"],sp["letter"],ha="center",va="center",weight="bold",color="white")
+        a.set_aspect("equal");a.axis("off")
+        a.set_title(sp["name"],fontsize=12,loc="left")
+    fig.text(.04,.065,"Slip the shoes under the core, then lower V3 into the shared guides. Existing veneer locators still seat normally.",fontsize=11)
+    fig.text(.04,.035,"3.2 mm under the core · 0.15 mm clearance per side · relieved glue line · guides below the show face",fontsize=11)
+    fig.savefig(OUT/"V3-Jig-r1-layout.png",dpi=160)
+    plt.close(fig)
+    draw_solids(pieces)
+
+
+def draw_solids(pieces):
+    from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+    from matplotlib.colors import to_rgb
+    fig=plt.figure(figsize=(14,5),facecolor="#f5f3ef")
+    light=np.array([-.35,-.45,.82]);light/=np.linalg.norm(light)
+    for i,sp in enumerate(pieces):
+        ax=fig.add_subplot(1,3,i+1,projection="3d",facecolor="#f5f3ef")
+        m=sp["mesh"].copy()
+        m.apply_translation([-m.bounds[:,0].mean(),-m.bounds[:,1].mean(),0])
+        shade=.55+.45*np.maximum(0,m.face_normals@light)
+        colors=np.array(to_rgb("#4b9eab"))[None,:]*shade[:,None]
+        coll=Poly3DCollection(m.triangles,facecolors=colors,edgecolors="none",
+                              linewidths=0,rasterized=True)
+        ax.add_collection3d(coll)
+        lo,hi=m.bounds
+        ax.set_xlim(lo[0]-2,hi[0]+2);ax.set_ylim(lo[1]-2,hi[1]+2)
+        ax.set_zlim(0,15);ax.set_box_aspect([m.extents[0],m.extents[1],15])
+        ax.view_init(elev=28,azim=-65 if i!=2 else -70)
+        ax.axis("off");ax.set_title(sp["name"],fontsize=14)
+    fig.suptitle("Actual printable shoes — open top, glue-line relief, flat underside",
+                 fontsize=19,weight="bold",color="#243b41")
+    fig.text(.5,.045,"All three print together in white PLA. Teal is used here to show the geometry.",
+             fontsize=11,ha="center")
+    fig.subplots_adjust(left=.02,right=.98,top=.88,bottom=.12,wspace=.03)
+    fig.savefig(OUT/"V3-Jig-r1-shoes.png",dpi=160)
+    plt.close(fig)
+
+
+def native():
+    folder=WORK/"native";folder.mkdir(exist_ok=True)
+    with (folder/"slice.log").open("w") as log:
+        p=subprocess.run([str(EXE),"--slice","1","--export-3mf","sliced.3mf",
+                          "--outputdir",str(folder),str(EDIT)],
+                         cwd=EXE.parent,stdout=log,stderr=subprocess.STDOUT,
+                         creationflags=subprocess.CREATE_NO_WINDOW)
+    print("Native slicer exit:",p.returncode,flush=True)
+    assert p.returncode==0
+    validate(folder)
+
+
+def project_entries(f):
+    cfg=ET.fromstring(f["Metadata/model_settings.config"])
+    root=ET.fromstring(f["3D/3dmodel.model"])
+    result={}
+    for co in cfg.findall("object"):
+        parts,st=d.read_object(f,co.get("id"))
+        T=d.transform(next(i for i in root.find(d.tag("build"))
+                           if i.get("objectid")==co.get("id")).get("transform"))
+        result[st["name"]]=dict(parts=parts,settings=st,T=T)
+    return result
+
+
+def guide_paths(text, entries):
+    """Inspect native beads at the side guides and every relief transition."""
+    x=y=z=e=0.
+    rel_e=rel_xyz=False
+    feature="Custom"
+    width=.5
+    rows=collections.defaultdict(list)
+    special=collections.defaultdict(collections.Counter)
+    for raw in text.splitlines():
+        if raw.startswith("; FEATURE: "):feature=raw.split(": ",1)[1]
+        if raw.startswith("; LINE_WIDTH: "):width=float(raw.split(": ",1)[1])
+        code=raw.split(";",1)[0].strip()
+        if not code:continue
+        cmd=code.split()[0]
+        v={k:float(n) for k,n in TOKEN.findall(code)}
+        if cmd=="M83":rel_e=True
+        elif cmd=="M82":rel_e=False
+        elif cmd=="G90":rel_xyz=False
+        elif cmd=="G91":rel_xyz=True
+        elif cmd=="G92":
+            x,y,z,e=[v.get(k,old) for k,old in zip("XYZE",(x,y,z,e))]
+        elif cmd in ["G0","G1","G2","G3"]:
+            nx,ny,nz=[old+v.get(k,0) if rel_xyz else v.get(k,old)
+                      for k,old in zip("XYZ",(x,y,z))]
+            de=v.get("E",0) if rel_e else v.get("E",e)-e
+            if de>0 and feature not in ["Custom","Brim"] and np.hypot(nx-x,ny-y)>.001:
+                assert cmd in ["G0","G1"],"Unexpected model arc"
+                zz=round(nz,2)
+                if zz>=3.4:
+                    rows[zz].append(([(x,y),(nx,ny)],width,feature))
+                if feature in ["Floating vertical shell","Bridge"]:
+                    special[feature][zz]+=1
+            x,y,z=nx,ny,nz
+            e=e+v.get("E",0) if rel_e else v.get("E",e)
+    _,_,core,veneer,_,_,_=extract()
+    checked=[]
+    for name,row in entries.items():
+        T=row["T"]
+        m=row["parts"][0]["mesh"].copy();m.apply_transform(T)
+        lo,hi=m.bounds
+        label=name[0]
+        # The editable meshes retain assembly coordinates; T is only a
+        # translation for these upright shoes.
+        assert np.allclose(T[:3,:3],np.eye(3))
+        from shapely import affinity
+        fit=affinity.translate(core.union(veneer),*T[:2,3])
+        beadrows={}
+        for zz,segments in rows.items():
+            lines=[LineString(xy).buffer(w/2,quad_segs=4)
+                   for xy,w,feature in segments
+                   if lo[0]-.5<=xy[0][0]<=hi[0]+.5 and lo[1]-.5<=xy[0][1]<=hi[1]+.5]
+            if lines:beadrows[zz]=union_all(lines)
+        assert 13.4 in beadrows
+        # Embossed letters occupy only 3.4/3.6, outside the core pocket.
+        critical=[5.0,11.0,11.6,12.4,12.6,12.8,13.0,13.2,13.4]
+        clearances=[]
+        for zz in critical:
+            beads=beadrows[zz]
+            overlap=beads.intersection(fit).area
+            assert overlap<.0001,(label,zz,overlap)
+            clearance=beads.distance(fit)
+            assert clearance>.08,(label,zz,clearance)
+            clearances.append(dict(z_mm=zz,bead_clearance_mm=clearance))
+        # At each returning ledge layer, inspect native bead areas against the
+        # complete preceding mesh section, rather than interpreting a feature
+        # label as a floating-region warning.
+        overhang=[]
+        for zz in [12.6,12.8,13.0,13.2,13.4]:
+            below=mesh_slice(m,zz-.3)
+            beads=beadrows[zz]
+            distance=0.
+            for g in ([beads] if beads.geom_type=="Polygon" else beads.geoms):
+                coords=np.array(g.exterior.coords)
+                distance=max(distance,float(shapely.distance(shapely.points(coords),below).max()))
+            assert distance<.29,(label,zz,distance)
+            overhang.append(dict(z_mm=zz,max_bead_edge_beyond_previous_layer_mm=distance))
+        checked.append(dict(piece=label,guide_bead_clearances=clearances,
+                            relief_ramp_overhangs=overhang))
+    return dict(shoes=checked,special_feature_layers={
+        k:{str(z):n for z,n in sorted(v.items())} for k,v in special.items()},
+        note="Bridge and Floating vertical shell are infill feature names. "
+             "The slicer warning field is empty; guide ledges have <=0.29 mm "
+             "horizontal advance per 0.20 mm layer.")
+
+
+def validate(folder):
+    proof=json.loads((OUT/"geometry-validation.json").read_text())
+    assert proof["editable_sha256"]==d.sha(EDIT)
+    assert proof["protected_files_before"]==protected()
+    result=json.loads((folder/"result.json").read_text())
+    assert result["return_code"]==0,result
+    f=files(folder/"sliced.3mf");s=json.loads(f["Metadata/project_settings.config"])
+    for k,v in LOCKED.items():assert s[k]==v,(k,s.get(k))
+    ef=files(EDIT);es=json.loads(ef["Metadata/project_settings.config"])
+    baseline=json.loads(files(COMPANION,False)["Metadata/project_settings.config"])
+    machine_keys=["machine_start_gcode","machine_end_gcode","change_filament_gcode",
+                  "layer_change_gcode","time_lapse_gcode"]
+    for k in machine_keys:assert s[k]==es[k]==baseline[k],k
+    assert s["filament_settings_id"]==baseline["filament_settings_id"]
+    assert s["filament_colour"]==baseline["filament_colour"]
+    a,b=project_entries(ef),project_entries(f)
+    assert a.keys()==b.keys() and len(a)==3
+    roundtrip=[]
+    for name, row in a.items():
+        for r in [row,b[name]]:
+            for k,v in LOCKED.items():assert r["settings"].get(k,s[k])==v,(name,k)
+            assert r["settings"]["extruder"]=="1"
+            for part in r["parts"]:
+                for k,v in LOCKED.items():assert part["settings"].get(k,r["settings"].get(k,s[k]))==v
+        def vertices(r):
+            vv=np.concatenate([x["mesh"].vertices for x in r["parts"]])
+            return vv@r["T"][:3,:3].T+r["T"][:3,3]
+        av,bv=vertices(row),vertices(b[name])
+        e=max(cKDTree(av).query(bv)[0].max(),cKDTree(bv).query(av)[0].max())
+        assert e<.001,(name,e)
+        roundtrip.append(dict(name=name,maximum_mesh_pose_error_mm=float(e)))
+    with zipfile.ZipFile(folder/"sliced.3mf") as z:
+        assert z.testzip() is None
+        gnames=[n for n in z.namelist() if n.endswith(".gcode")]
+        assert len(gnames)==1
+        gb=z.read(gnames[0]);text=gb.decode()
+        checksum=z.read(gnames[0]+".md5").decode().strip()
+        assert hashlib.md5(gb).hexdigest().upper()==checksum.upper()
+    config={}
+    for line in text.splitlines():
+        if line.startswith("; ") and " = " in line:
+            k,v=line[2:].split(" = ",1);config[k]=v
+    for k,v in LOCKED.items():
+        assert config.get(k)==(";".join(v) if isinstance(v,list) else v),(k,config.get(k))
+    scan=scan_gcode(text)
+    assert scan["conservative_bed_edge_clearance_mm"]>2
+    assert not any(scan["features"].get(k,0) for k in ["Support","Support interface","Prime tower"])
+    assert set(scan["model_extrusion_z_by_filament_mm"])=={"1"}
+    assert "; EXECUTABLE_BLOCK_END" in text
+    # Check native extrusion through each glue-relief transition and guide band.
+    layers=scan["model_extrusion_z_by_filament_mm"]["1"]
+    for h in [BASE,BASE+8,BASE+9.2,BASE+GUIDE_TOP]:
+        assert any(abs(z-h)<.001 for z in layers),h
+    log=(folder/"slice.log").read_text(errors="replace")
+    suspicious=[ln for ln in log.splitlines()
+                if any(w in ln.lower() for w in ["floating","collision","non-manifold","empty layer"])]
+    assert not suspicious,suspicious
+    est=result["sliced_plates"][0]
+    assert not est.get("warning_message"),est.get("warning_message")
+    guide_checks=guide_paths(text,a)
+    report=dict(
+        revision="r1",editable_sha256=d.sha(EDIT),
+        native_sha256=d.sha(folder/"sliced.3mf"),
+        native_return_code=0,slicer_result=result,
+        machine_gcode_keys_verified=machine_keys,locked_settings=s and LOCKED,
+        all_object_and_volume_overrides_checked=True,mesh_roundtrip=roundtrip,
+        gcode_sha256=hashlib.sha256(gb).hexdigest(),gcode_md5=checksum,
+        gcode_configuration_checked=True,toolpaths=scan,
+        suspicious_native_log_lines=suspicious,
+        native_warning_message=est.get("warning_message",""),
+        actual_guide_toolpath_checks=guide_checks,
+        estimate_seconds=est["total_predication"],
+        estimate_grams=sum(v["total_used_g"] for v in est["filaments"]),
+        protected_files_after=protected(),physical_fit_pending=True)
+    d.save_json(OUT/"native-validation.json",report)
+    shutil.copyfile(folder/"sliced.3mf",FINAL)
+    print("Validated and saved:",FINAL,flush=True)
+    print("Estimate:",report["estimate_seconds"],"s",report["estimate_grams"],"g",flush=True)
+
+
+if __name__=="__main__":
+    p=argparse.ArgumentParser()
+    p.add_argument("action",choices=["build","slice","validate"])
+    args=p.parse_args()
+    if args.action=="build":build()
+    elif args.action=="slice":native()
+    else:validate(WORK/"native")

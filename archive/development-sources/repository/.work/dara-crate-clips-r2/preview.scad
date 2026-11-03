@@ -1,0 +1,1 @@
+color([0.20,0.56,0.64]) import("C:/Users/Zach/Repos/Personal/DaraKnotWallhanging3dPrint/output/Dara-Crate-Clips-A1-PETG-r2/Dara-Crate-Clip-r2.stl");

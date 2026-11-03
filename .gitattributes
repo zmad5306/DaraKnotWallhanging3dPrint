@@ -26,3 +26,6 @@
 
 # Exact Bambu user-preset snapshots must retain their validated bytes.
 /release/sunlu-*/presets/*.json -text whitespace=cr-at-eol
+
+# Completion archive preserves exact source bytes for its SHA-256 manifest.
+/archive/development-sources/** -text -whitespace

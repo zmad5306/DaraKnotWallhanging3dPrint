@@ -1,0 +1,9 @@
+CAD REVIEW - NOT A PRINT PLATE
+
+Open Dara-Review-Assembly.scad in OpenSCAD for component toggles and an exploded M view. This is an exact mesh-based CAD assembly, not a feature-based STEP model. Keep the extracted package folder intact: it imports the adjacent STL files.
+
+Dara-Review-Assembly.3mf is the complete full-size assembled artwork, including integral locating joints and screw wall blocks. Use it ONLY for review; do not scale it to fit a bed or print it as one object. Grouped print projects are in Bambu-Studio/Grouped-Projects/. Repairs synchronized on October 10, 2026. Existing completed parts remain compatible.
+
+Dara-Review-Assembly.glb is an alternative 3D viewing file.
+
+The printable STLs are the authoritative current geometry. Historical generators in source/ predate these repairs; use export_current_cad.py to regenerate this mesh-based CAD review from the current STLs. Units throughout are millimetres.

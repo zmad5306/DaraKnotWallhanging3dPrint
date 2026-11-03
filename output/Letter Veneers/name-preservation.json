@@ -1,0 +1,36 @@
+{
+  "source": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\output\\Dara-A2L-Veneers-ERYONE-r10\\Dara-A2L-Veneers-ERYONE-r10.3mf",
+  "source_sha256": "b2d2a7b0299ddc1b604d557f5c90d2f4052297461487a1afc6fa47136d164ee9",
+  "file": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\output\\Letter Veneers\\Letter Veneers.3mf",
+  "sha256": "6bcfc5bbc39382607d28d6a840f66e96b66051d22ca4df30ca41900f99c468f1",
+  "names": [
+    {
+      "plate": 1,
+      "old": "1 - V1 ERYONE spool limits r10",
+      "name": "Left letter veneer"
+    },
+    {
+      "plate": 2,
+      "old": "2 - V2 ERYONE spool limits r10",
+      "name": "Right letter veneer"
+    },
+    {
+      "plate": 3,
+      "old": "3 - V3 ERYONE spool limits r10",
+      "name": "Center letter veneer"
+    }
+  ],
+  "changed_archive_entries": [
+    "Metadata/plate_1.json",
+    "Metadata/plate_2.json",
+    "Metadata/plate_3.json",
+    "Metadata/model_settings.config",
+    "Metadata/slice_info.config"
+  ],
+  "unchanged_gcode_sha256": {
+    "Metadata/plate_2.gcode": "04bfd8304da0d1df24bd43b6ff32631de3fde4942cdabcf5279137fb2a12d77f",
+    "Metadata/plate_1.gcode": "8fb214fc1ad09a7262eff0016f3e493ee65b80ccd98d7c7857082541afc15e97",
+    "Metadata/plate_3.gcode": "f41cd9864cbb99723aef4e06c333bd874096188682751914dbe2f1f760aa8e36"
+  },
+  "all_geometry_paint_poses_process_material_settings_and_gcode_byte_identical": true
+}

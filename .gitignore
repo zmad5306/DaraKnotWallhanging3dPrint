@@ -72,3 +72,6 @@ __pycache__/
 /working/review/veneer-layer-overlap/
 /working/review/veneer-restraint-audit/
 /working/review/veneer-support-comparison/
+
+# Historical CAD dependencies captured at project completion.
+!/archive/development-sources/**/*.stl

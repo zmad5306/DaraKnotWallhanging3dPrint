@@ -1,0 +1,3 @@
+October 10 synchronized geometry
+
+The current STL directory is authoritative for all repaired parts. The historical build_project.py and baseline directories predate the cavity repairs and should not be used to replace current production files. export_current_cad.py regenerates all three CAD review formats from the current printable STLs and project-data.json. The CAD is an exact mesh assembly, not a feature-based STEP model.

@@ -1,0 +1,905 @@
+{
+  "status": "DIGITALLY_VERIFIED_SPOOL_LIMITS; whole-part physical shift still unresolved",
+  "source": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\output\\Dara-A2L-Veneers-Carrier-Motion-r9\\Dara-A2L-Veneers-Carrier-Motion-r9.3mf",
+  "source_sha256": "0eeb8b60ce2624a802416906e51126d4e63d879b2f00ab30b63f86e1339b7b75",
+  "editable_sha256": "b47cdac1554afb768764d65150d6e14c97647094d409df119a12aa555b3d03d5",
+  "requested_limits": {
+    "nozzle_c": [
+      190,
+      220
+    ],
+    "bed_c": [
+      55,
+      70
+    ],
+    "commanded_print_speed_mm_s": [
+      30,
+      60
+    ]
+  },
+  "settings_changes": {
+    "outer_wall_speed": [
+      [
+        "200"
+      ],
+      [
+        "40"
+      ]
+    ],
+    "inner_wall_speed": [
+      [
+        "300"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "sparse_infill_speed": [
+      [
+        "270"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "internal_solid_infill_speed": [
+      [
+        "250"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "gap_infill_speed": [
+      [
+        "250"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "top_surface_speed": [
+      [
+        "200"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "support_speed": [
+      [
+        "150"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "support_interface_speed": [
+      [
+        "80"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "initial_layer_infill_speed": [
+      [
+        "105"
+      ],
+      [
+        "60"
+      ]
+    ],
+    "small_perimeter_speed": [
+      [
+        "50%"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "slow_down_min_speed": [
+      [
+        "20"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "filament_bridge_speed": [
+      [
+        "25"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "overhang_4_4_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "overhang_totally_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "filament_overhang_4_4_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "filament_overhang_totally_speed": [
+      [
+        "10"
+      ],
+      [
+        "30"
+      ]
+    ],
+    "nozzle_temperature_range_high": [
+      [
+        "240"
+      ],
+      [
+        "220"
+      ]
+    ],
+    "filament_flush_temp": [
+      [
+        "0"
+      ],
+      [
+        "220"
+      ]
+    ]
+  },
+  "object_changes": [
+    {
+      "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+      "inner_wall_speed": [
+        "80",
+        "60"
+      ]
+    },
+    {
+      "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+      "inner_wall_speed": [
+        "80",
+        "60"
+      ]
+    },
+    {
+      "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+      "inner_wall_speed": [
+        "80",
+        "60"
+      ]
+    }
+  ],
+  "protected_hashes": {
+    "Knot.3mf": "aefab9b242945a149fdc18900c694c556eb7ad5d8d5d5f7fbc4451280730ae46",
+    "Letter.3mf": "8e391762ecb8415b77680a7bd4825e94afe37951d831bcfe41f6a43f31b16d4a",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "a384c80047a83bcfbf8a7b2c770584e3e1908783e485818c417b55db9ac460d9"
+  },
+  "native_sha256": "b2d2a7b0299ddc1b604d557f5c90d2f4052297461487a1afc6fa47136d164ee9",
+  "native_preservation": {
+    "objects": 3,
+    "max_vertex_difference_mm": 0,
+    "settings_changes": {},
+    "paint_preserved": true,
+    "bed_poses_preserved": true,
+    "source_bookkeeping_changes": []
+  },
+  "geometry_and_support_paint_unchanged": true,
+  "checks": [
+    {
+      "veneer": 1,
+      "plate": 1,
+      "gcode_sha256": "8fb214fc1ad09a7262eff0016f3e493ee65b80ccd98d7c7857082541afc15e97",
+      "commands": {
+        "features": {
+          "Support": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 76237,
+            "path_mm": 24551.365803188663
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 244131,
+            "path_mm": 1773633.3334262837
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 404672,
+            "path_mm": 1183308.6980365482
+          },
+          "Gap infill": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 83842,
+            "path_mm": 520003.27586018783
+          },
+          "Internal solid infill": {
+            "min_mm_s": 53.196016666666665,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 322376,
+            "path_mm": 261981.8464750736
+          },
+          "Top surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 793,
+            "path_mm": 3483.1875087171275
+          },
+          "Overhang wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 172,
+            "path_mm": 53.600259697905926
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 1961349,
+            "layer": 297.2,
+            "command": "M104 S0"
+          },
+          {
+            "line": 1961350,
+            "layer": 297.2,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "connections": {
+        "bond_probes_checked": 30,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09892764955196748,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "bead_bounds_mm": [
+        [
+          56.191,
+          67.98
+        ],
+        [
+          272.501,
+          252.17000000000002
+        ]
+      ]
+    },
+    {
+      "veneer": 2,
+      "plate": 2,
+      "gcode_sha256": "04bfd8304da0d1df24bd43b6ff32631de3fde4942cdabcf5279137fb2a12d77f",
+      "commands": {
+        "features": {
+          "Support": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 85664,
+            "path_mm": 27447.64072086869
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 236737,
+            "path_mm": 1711311.5421718892
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 377001,
+            "path_mm": 1124698.000898586
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 79001,
+            "path_mm": 499080.6062862199
+          },
+          "Internal solid infill": {
+            "min_mm_s": 53.39751666666667,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 288105,
+            "path_mm": 233814.77921741497
+          },
+          "Top surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 820,
+            "path_mm": 3498.9241723197056
+          },
+          "Overhang wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 155,
+            "path_mm": 47.741109967318856
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 1890298,
+            "layer": 297.2,
+            "command": "M104 S0"
+          },
+          {
+            "line": 1890299,
+            "layer": 297.2,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "connections": {
+        "bond_probes_checked": 29,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.18893353070041763,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "bead_bounds_mm": [
+        [
+          56.188,
+          65.95
+        ],
+        [
+          272.485,
+          254.05
+        ]
+      ]
+    },
+    {
+      "veneer": 3,
+      "plate": 3,
+      "gcode_sha256": "f41cd9864cbb99723aef4e06c333bd874096188682751914dbe2f1f760aa8e36",
+      "commands": {
+        "features": {
+          "Support": {
+            "min_mm_s": 50.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 181107,
+            "path_mm": 58223.99542738011
+          },
+          "Outer wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 247099,
+            "path_mm": 1265313.4354543972
+          },
+          "Inner wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 396569,
+            "path_mm": 919066.86553819
+          },
+          "Gap infill": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 91484,
+            "path_mm": 393949.10234944377
+          },
+          "Internal solid infill": {
+            "min_mm_s": 53.549366666666664,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 301073,
+            "path_mm": 239093.44238104997
+          },
+          "Top surface": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 789,
+            "path_mm": 3468.961957356107
+          },
+          "Overhang wall": {
+            "min_mm_s": 30.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 151,
+            "path_mm": 54.8802613622661
+          },
+          "Sparse infill": {
+            "min_mm_s": 60.0,
+            "max_mm_s": 60.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 309,
+            "path_mm": 113.41282778566394
+          },
+          "Floating vertical shell": {
+            "min_mm_s": 48.0,
+            "max_mm_s": 50.0,
+            "max_acceleration_mm_s2": 1500.0,
+            "moves": 548,
+            "path_mm": 587.0031518047274
+          }
+        },
+        "out_of_range_count": 0,
+        "out_of_range_examples": [],
+        "temperature_commands": [
+          {
+            "line": 603,
+            "layer": 0.0,
+            "command": "M140 S55"
+          },
+          {
+            "line": 654,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 692,
+            "layer": 0.0,
+            "command": "M104 S140 A"
+          },
+          {
+            "line": 698,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 729,
+            "layer": 0.0,
+            "command": "M104 S220"
+          },
+          {
+            "line": 750,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 760,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 788,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 837,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 839,
+            "layer": 0.0,
+            "command": "M109 S140 A"
+          },
+          {
+            "line": 896,
+            "layer": 0.0,
+            "command": "M104 S220 A"
+          },
+          {
+            "line": 901,
+            "layer": 0.0,
+            "command": "M190 S55"
+          },
+          {
+            "line": 930,
+            "layer": 0.0,
+            "command": "M109 S220"
+          },
+          {
+            "line": 2149230,
+            "layer": 297.2,
+            "command": "M104 S0"
+          },
+          {
+            "line": 2149231,
+            "layer": 297.2,
+            "command": "M140 S0"
+          }
+        ],
+        "flush_temperatures_c": [
+          220.0
+        ],
+        "max_travel_acceleration_mm_s2": 2500.0,
+        "interpretation": "Feedrates on XY extrusion commands for model, carrier, supports and brim. Travel, retraction, machine priming/calibration and thermal warmup/probing/cooldown are separate. Actual mechanical speed changes during acceleration and turns."
+      },
+      "connections": {
+        "bond_probes_checked": 43,
+        "maximum_distance_to_model_extrusion_centerline_mm": 0.09980033603315977,
+        "slicer_support_extrusion_excluded": true,
+        "physical_bond_strength_pending": true
+      },
+      "bead_bounds_mm": [
+        [
+          56.188,
+          27.254
+        ],
+        [
+          272.44899999999996,
+          293.221
+        ]
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "total_mass_g": 904.1008758544922,
+  "native_result": {
+    "error_string": "Success.",
+    "export_time": 3657,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 1124,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Custom": 402.4649353027344,
+          "Flush": 11.0,
+          "Gap infill": 10203.7529296875,
+          "Inner wall": 22335.150390625,
+          "Internal solid infill": 5402.2509765625,
+          "Outer wall": 44466.90625,
+          "Overhang wall": 1.2183321714401245,
+          "Support": 996.3244018554688,
+          "Top surface": 79.6326675415039,
+          "Travel": 8840.6533203125,
+          "Undefined": 8840.6533203125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 332.0632019042969,
+            "total_used_g": 332.0632019042969
+          }
+        ],
+        "generate_support_material_time": 910,
+        "id": 1,
+        "infill_time": 544,
+        "layer_filament_change": 0,
+        "main_predication": 92119.296875,
+        "make_perimeters_time": 736,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 184.1908416748047,
+              "height": 297.3385009765625,
+              "width": 212.46432495117188,
+              "x": 56.191410064697266,
+              "y": 67.97962188720703,
+              "z": -4.88281216348696e-07
+            },
+            "id": 5,
+            "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 496842
+          }
+        ],
+        "sliced_time": 7407,
+        "sliced_time_with_cache": 4915,
+        "total_predication": 92543.765625,
+        "triangle_count": 496842,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.5287170410156,
+          "Flush": 11.0,
+          "Gap infill": 9860.5009765625,
+          "Inner wall": 21329.921875,
+          "Internal solid infill": 4921.10400390625,
+          "Outer wall": 42930.8046875,
+          "Overhang wall": 1.1171314716339111,
+          "Support": 1124.6109619140625,
+          "Top surface": 80.46508026123047,
+          "Travel": 9056.4677734375,
+          "Undefined": 9056.4677734375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 317.2191162109375,
+            "total_used_g": 317.2191467285156
+          }
+        ],
+        "generate_support_material_time": 951,
+        "id": 2,
+        "infill_time": 462,
+        "layer_filament_change": 0,
+        "main_predication": 89127.453125,
+        "make_perimeters_time": 999,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 188.09974670410156,
+              "height": 297.3487243652344,
+              "width": 212.47177124023438,
+              "x": 452.1875305175781,
+              "y": 65.95012664794922,
+              "z": -1.826171853736014e-07
+            },
+            "id": 9,
+            "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 467360
+          }
+        ],
+        "sliced_time": 7669,
+        "sliced_time_with_cache": 4952,
+        "total_predication": 89551.984375,
+        "triangle_count": 467360,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Custom": 402.8057861328125,
+          "Flush": 11.0,
+          "Gap infill": 8154.5087890625,
+          "Inner wall": 17992.943359375,
+          "Internal solid infill": 5153.904296875,
+          "Outer wall": 32534.083984375,
+          "Overhang wall": 1.3210867643356323,
+          "Sparse infill": 4.761569023132324,
+          "Support": 2339.70263671875,
+          "Top surface": 79.186279296875,
+          "Travel": 9307.7822265625,
+          "Undefined": 9307.7822265625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL96",
+            "id": 1,
+            "main_used_g": 254.8185272216797,
+            "total_used_g": 254.8185272216797
+          }
+        ],
+        "generate_support_material_time": 1528,
+        "id": 3,
+        "infill_time": 507,
+        "layer_filament_change": 0,
+        "main_predication": 75461.609375,
+        "make_perimeters_time": 1184,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 251.10018920898438,
+              "height": 297.3487243652344,
+              "width": 212.47146606445312,
+              "x": 56.187835693359375,
+              "y": -349.55010986328125,
+              "z": -1.826171853736014e-07
+            },
+            "id": 13,
+            "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+            "triangle_count": 498970
+          }
+        ],
+        "sliced_time": 9157,
+        "sliced_time_with_cache": 5617,
+        "total_predication": 75886.4140625,
+        "triangle_count": 498970,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 8.0,
+    "upward_compatible_machine": [
+      "Bambu Lab H2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+  },
+  "process_exits": [
+    0
+  ],
+  "delivered_file": "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\output\\Dara-A2L-Veneers-ERYONE-r10\\Dara-A2L-Veneers-ERYONE-r10.3mf",
+  "delivered_sha256": "b2d2a7b0299ddc1b604d557f5c90d2f4052297461487a1afc6fa47136d164ee9"
+}

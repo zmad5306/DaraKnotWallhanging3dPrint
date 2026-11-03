@@ -1,0 +1,235 @@
+{
+  "Dara-A2L-Veneers-ERYONE-r10": {
+    "project": "Dara-A2L-Veneers-ERYONE-r10.3mf",
+    "sha256": "b2d2a7b0299ddc1b604d557f5c90d2f4052297461487a1afc6fa47136d164ee9",
+    "cad": "Dara-A2L-Veneers-ERYONE-r10.scad",
+    "cad_sha256": "92b697046e783603f1a5b1b286cd411e4617a00995e2f2825ac3520f493a9e61",
+    "printer": "Bambu Lab A2L",
+    "plates": 3,
+    "objects": [
+      {
+        "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+        "plate": 1,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            162.423573
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            160.075043
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            148.66925
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+          "brim_width": "0",
+          "default_acceleration": "1500",
+          "enable_support": "1",
+          "extruder": "1",
+          "inner_wall_speed": "60",
+          "outer_wall_speed": "40",
+          "sparse_infill_density": "100%",
+          "support_critical_regions_only": "0",
+          "travel_acceleration": "2500",
+          "tree_support_branch_angle": "30",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Dara-A2L-Veneers-ERYONE-r10 STL/V1-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
+            "sha256": "37f8b1692d6e3e222c28027280856ac855a18bd25afd8cdb814780e88d469f32",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "V1 A2L hammered veneer and wall cradle r6 end ties",
+              "matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "59",
+              "source_volume_id": "0",
+              "source_offset_x": "165",
+              "source_offset_y": "160",
+              "source_offset_z": "148.66925048828125"
+            },
+            "faces": 496842,
+            "bounds": [
+              [
+                -106.232162,
+                -92.0954208,
+                -148.66925
+              ],
+              [
+                106.232162,
+                92.0954208,
+                148.66925
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+        "plate": 2,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            162.42341199999998
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            160.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            148.674362
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+          "brim_width": "0",
+          "default_acceleration": "1500",
+          "enable_support": "1",
+          "extruder": "1",
+          "inner_wall_speed": "60",
+          "outer_wall_speed": "40",
+          "sparse_infill_density": "100%",
+          "support_critical_regions_only": "0",
+          "travel_acceleration": "2500",
+          "tree_support_branch_angle": "30",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Dara-A2L-Veneers-ERYONE-r10 STL/V2-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
+            "sha256": "41598f83294fd9601fe39185824b7d265a0f1bac8ea55a5b9d3575a2614c349c",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "V2 A2L hammered veneer and wall cradle r6 end ties",
+              "matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "60",
+              "source_volume_id": "0",
+              "source_offset_x": "165",
+              "source_offset_y": "160",
+              "source_offset_z": "148.67436218261719"
+            },
+            "faces": 467360,
+            "bounds": [
+              [
+                -106.235886,
+                -94.0498734,
+                -148.674362
+              ],
+              [
+                106.235886,
+                94.0498734,
+                148.674362
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+        "plate": 3,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            162.423569
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            159.999992
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            148.674362
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "settings": {
+          "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+          "brim_width": "0",
+          "default_acceleration": "1500",
+          "enable_support": "1",
+          "extruder": "1",
+          "inner_wall_speed": "60",
+          "outer_wall_speed": "40",
+          "sparse_infill_density": "100%",
+          "support_critical_regions_only": "0",
+          "travel_acceleration": "2500",
+          "tree_support_branch_angle": "30",
+          "null": null
+        },
+        "parts": [
+          {
+            "file": "Dara-A2L-Veneers-ERYONE-r10 STL/V3-A2L-hammered-veneer-and-wall-cradle-r6-end-ties-volume-1.stl",
+            "sha256": "494d1525a480aeb0bef2a8a04aa9f48839c0ff01966e3a75ce73a2c141506bb8",
+            "subtype": "normal_part",
+            "settings": {
+              "name": "V3 A2L hammered veneer and wall cradle r6 end ties",
+              "matrix": "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1",
+              "source_file": "Dara-A2L-Editable.3mf",
+              "source_object_id": "61",
+              "source_volume_id": "0",
+              "source_offset_x": "165",
+              "source_offset_y": "160",
+              "source_offset_z": "148.67436218261719"
+            },
+            "faces": 498970,
+            "bounds": [
+              [
+                -106.235733,
+                -125.550095,
+                -148.674362
+              ],
+              [
+                106.235733,
+                125.550095,
+                148.674362
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "unique_stl": 3
+  }
+}

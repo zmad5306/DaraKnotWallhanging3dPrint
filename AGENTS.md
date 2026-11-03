@@ -538,6 +538,12 @@ except for the explicit existing solid regions below.
 
 ## Physical evidence and the route to production
 
+- **Project complete, 2026-11-02:** the user confirms printing and assembly
+  are complete and the gift is ready for Christmas morning. This is the current
+  overall project status; older pending-qualification notes remain historical
+  revision records. Preserve the finished production files and settings. The
+  completion report does not identify individual printed hashes or printers.
+
 - Digital checks establish what the files contain, not successful physical fit,
   material adhesion, flushness, support cleanup or full-size veneer stability.
   Never describe an unprinted revision as "tested", "proven" or ready for the

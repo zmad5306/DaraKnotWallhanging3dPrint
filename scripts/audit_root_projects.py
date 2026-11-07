@@ -27,18 +27,38 @@ def props(node):
     return {m.get('key'):m.get('value') for m in node.findall('metadata')}
 
 
-def audit():
+def audit(accessories_only=False):
     catalog=json.loads((ROOT/'release/root-projects/catalog.json').read_text())
     expected={v['project'] for v in catalog.values()}
     sample_catalog=ROOT/'release/samples/catalog.json'
     samples=json.loads(sample_catalog.read_text()) if sample_catalog.exists() else {}
-    expected_tracked=expected|{v['file'] for v in samples.values()}
+    accessory_catalog=ROOT/'accessories/catalog.json'
+    accessories=json.loads(accessory_catalog.read_text()) if accessory_catalog.exists() else {}
+    expected_tracked=expected|{v['file'] for v in samples.values()}|{v['file'] for v in accessories.values()}
     tracked=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
     assert {p for p in tracked if p.lower().endswith('.3mf')}==expected_tracked, 'Tracked 3MF inventory differs from the declared releases/samples.'
     for sample in samples.values():
         assert sha(ROOT/sample['file'])==sample['sha256']
         assert (ROOT/sample['validation']).is_file()
+    for title,entry in accessories.items():
+        assert sha(ROOT/entry['file'])==entry['sha256']
+        report=json.loads((ROOT/entry['validation']).read_text())
+        assert report['project']==entry['file'] and report['sha256']==entry['sha256']
+        assert report['native_slice']['return_code']==0 and report['native_reopen']['return_code']==0
+        assert report['protected_before']==report['protected_after']
+        for filename,digest in entry['artifact_sha256'].items():assert sha(ROOT/filename)==digest,filename
+        with zipfile.ZipFile(ROOT/entry['file']) as z:
+            assert z.testzip() is None
+            settings=json.loads(z.read('Metadata/project_settings.config'))
+            for k,v in report['locked_settings'].items():assert settings[k]==v,(title,k)
+            gcode=z.read('Metadata/plate_1.gcode')
+            assert hashlib.md5(gcode).hexdigest()==report['gcode_md5']
+            assert z.read('Metadata/plate_1.gcode.md5').decode().strip().lower()==report['gcode_md5']
+        print(f'{title}: accessory project, CAD/STL, reference hashes, settings and native slice checks pass.')
     assert {p.name for p in ROOT.glob('*.3mf')}==expected, 'Unexpected root 3MF.'
+    if accessories_only:
+        print(f'{len(accessories)} accessory projects verified; legacy root-project checks were not requested.')
+        return
     total=0
     cleanup_sources={}
     for title,row in catalog.items():
@@ -594,4 +614,8 @@ def audit():
     if preset_count:print(f'{preset_count} current SUNLU preset snapshots: hashes and native loading evidence pass.')
 
 
-if __name__=='__main__':audit()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--accessories-only',action='store_true',help='Verify the accessory catalog and tracked inventory without auditing legacy root projects.')
+    audit(accessories_only=parser.parse_args().accessories_only)

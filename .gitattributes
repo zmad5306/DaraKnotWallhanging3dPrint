@@ -29,3 +29,6 @@
 
 # Completion archive preserves exact source bytes for its SHA-256 manifest.
 /archive/development-sources/** -text -whitespace
+
+# Accessory release files and input snapshots have exact SHA-256 records.
+/accessories/A2L-Poop-Bucket/** -text -whitespace

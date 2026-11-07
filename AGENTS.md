@@ -56,6 +56,27 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved A2L bucket publication, 2026-11-07:** the user accepted the R8
+  rear-tip design and requested the full project, their SUNLU PLA Basic,
+  commit and push. Maintain the separate accessory at
+  `accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf`, printed on the
+  **A1**, with adjacent mesh CAD/STL and `accessories/catalog.json` evidence.
+  This is an explicit additional tracked production project; the seven Dara
+  root projects remain unchanged. Carry the exact R8 mating contour into the
+  full bucket: **19/32 inch inside curves**, **1/2 inch convex rear tip**,
+  **49.6568 mm nominal pillar spacing**, **41.275 mm front reach**, and
+  **15.621 mm rear return**. The full bucket retains its original outside back
+  wall, 3.175 mm behind the sample's rear edge, and its original handle, lip,
+  catch wall, print pose, 1.98 mm floor, 2 mm walls and 58 mm low rim.
+  Use the actual saved **SUNLU PLA Basic @Bambu Lab A1 0.4 nozzle** profile:
+  **220 C nozzle**, **65 C Textured PEI bed**, **0.98 flow**, **12 mm3/s**.
+  Preserve its other saved filament values and the original bucket process,
+  automatic snug supports and automatic brim. Structural constants stay fixed.
+  The user approved R8's design; a successful physical R8 print/fit was not
+  explicitly stated, and full-bucket fit/motion clearance remains unconfirmed.
+  Native slicing, reopening and contour/preservation evidence are alongside
+  the project. Earlier bucket/sample outputs are historical local files.
+
 - **Approved right-hand wall-block keyhole correction, 2026-10-31:** the user
   confirmed that the photo's top is the artwork's top and requested correction
   of only the two blocks on the photo's right: **B1 on F3 and B3 on F9**.

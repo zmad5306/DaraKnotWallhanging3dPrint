@@ -2,7 +2,7 @@
 
 **Complete — November 2, 2026.** Printing and assembly are complete, and the finished gift is ready for Christmas morning, as confirmed by the owner. See the [completion and source archive record](release/project-complete/README.md). Earlier physical-status notes below describe their respective revisions.
 
-Open the root 3MF files **as projects** in Bambu Studio to retain their saved printers, materials and settings. These are the only Bambu projects maintained in source control. Supporting A1 projects are separated where their settings differ.
+Open the root 3MF files **as projects** in Bambu Studio to retain their saved printers, materials and settings. The completed Dara projects are listed below; the separate printer accessory is linked after the table. Supporting A1 projects are separated where their settings differ.
 
 | Project | Printer | Plates | Contents | CAD / STL |
 | --- | --- | ---: | --- | --- |
@@ -13,6 +13,12 @@ Open the root 3MF files **as projects** in Bambu Studio to retain their saved pr
 | [Photo Cut Aligner](<Small Parts - Photo Cut Aligner.3mf>) | A1 | 1 | The locally saved single Backer 2 honeycomb guide; SUNLU transparent PLA | [CAD](<Small Parts - Photo Cut Aligner.scad>) / [STL](<Small Parts - Photo Cut Aligner STL/>) |
 | [Sanding Block PLA](<Small Parts - Sanding Block PLA.3mf>) | A1 | 1 | All five r4 parts, confirmed thread setup and corrected clamp orientation | [CAD](<Small Parts - Sanding Block PLA.scad>) / [STL](<Small Parts - Sanding Block PLA STL/>) |
 | [Crate Stencils](<Small Parts - Crate Stencils.3mf>) | A1 | 6 | Three THIS END UP tiles and three FRAGILE tiles | [CAD](<Small Parts - Crate Stencils.scad>) / [STL](<Small Parts - Crate Stencils STL/>) |
+
+**A2L poop bucket, printed on A1:** the [full accessory project](accessories/A2L-Poop-Bucket/README.md)
+uses the approved R8 pillar outline and SUNLU PLA Basic at 220 C nozzle / 65 C
+Textured PEI bed. One plate, approximately 6 h 28 min and 239.8 g. The project,
+CAD/STL, accepted contour references and native validation are stored together.
+This accessory does not alter the completed Dara artwork.
 
 ## Plate order and settings
 

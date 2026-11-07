@@ -31,6 +31,10 @@ __pycache__/
 # Explicitly requested ERYONE finish sample accompanying the edge correction.
 !/release/samples/Dara-A2L-Hammered-Finish-ERYONE-r4.3mf
 
+# User-approved full A2L bucket, prepared for A1 / SUNLU PLA Basic.
+!/accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf
+!/accessories/A2L-Poop-Bucket/Bucket.stl
+
 # Historical local sample outputs and review evidence; retain files on disk.
 # Existing tracked files in these folders remain tracked. Keep scripts visible.
 /output/A2L-Pillar-Fit-Sample-A1-r1/

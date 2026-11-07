@@ -56,6 +56,18 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved A2L bucket tree supports, 2026-11-07:** the user requested tree
+  supports, commit and push for the bucket. In its single-plate A1 project,
+  change **support_type = normal(auto) to tree(auto)** and the compatible
+  **support_style = snug to default**. Preserve all other global, object and
+  plate settings, including SUNLU PLA Basic, support gaps, automatic brim,
+  structural constants, geometry, CAD/STL and poses. The fresh native slice and
+  native reopen both generated tree supports; all extrusion stays inside the
+  A1 bed. Current evidence is in
+  `accessories/A2L-Poop-Bucket/history/tree-supports-r10.json` and the updated
+  accessory validation/catalog. This supersedes the original normal supports
+  below. Physical printing and tree-support removal remain unobserved.
+
 - **Approved A2L bucket publication, 2026-11-07:** the user accepted the R8
   rear-tip design and requested the full project, their SUNLU PLA Basic,
   commit and push. Maintain the separate accessory at

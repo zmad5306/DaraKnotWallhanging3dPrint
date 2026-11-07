@@ -146,13 +146,14 @@ def main():
         if k not in meta and k in cfg:cfg[k]=copy.deepcopy(v);applied.append(k)
     cfg['filament_settings_id']=[preset['name']];cfg['filament_ids']=[preset['filament_id']]
     cfg['filament_vendor']=preset['filament_vendor'];cfg['inherits_group'][1]=preset.get('inherits','')
+    cfg.update(support_type='tree(auto)',support_style='default')
     cfg_diff={k:[baseline.get(k),cfg.get(k)] for k in baseline.keys()|cfg.keys() if baseline.get(k)!=cfg.get(k)}
-    assert set(cfg_diff)<=set(applied)|{'print_settings_id','filament_ids','inherits_group'}
+    assert set(cfg_diff)<=set(applied)|{'print_settings_id','filament_ids','inherits_group','support_type','support_style'}
     locked={'printer_model':'Bambu Lab A1','printer_settings_id':'Bambu Lab A1 0.4 nozzle',
             'nozzle_diameter':['0.4'],'layer_height':'0.2','initial_layer_print_height':'0.2',
             'wall_loops':'4','top_shell_layers':'5','bottom_shell_layers':'5',
             'sparse_infill_density':'8%','sparse_infill_pattern':'gyroid','curr_bed_type':'Textured PEI Plate',
-            'enable_support':'1','support_type':'normal(auto)','support_style':'snug',
+            'enable_support':'1','support_type':'tree(auto)','support_style':'default',
             'brim_type':'auto_brim','enable_prime_tower':'0','filament_colour':['#FFFFFF'],
             'filament_settings_id':[preset['name']],'filament_ids':[preset['filament_id']],
             'nozzle_temperature':['220'],'nozzle_temperature_initial_layer':['220'],
@@ -227,7 +228,7 @@ def main():
     reopen=native(FINAL,WORK/'reopened');assert get_cfg((WORK/'reopened/plate_1.gcode').read_text())==gcfg
     after={rel(p):sha(p) for p in protected};assert before==after
     estimate=result['sliced_plates'][0]
-    report=dict(revision='r9',project=rel(FINAL),sha256=sha(FINAL),printer='Bambu Lab A1',plates=1,
+    report=dict(revision='r10',project=rel(FINAL),sha256=sha(FINAL),printer='Bambu Lab A1',plates=1,
                 source_project=doc['source_path'],source_sha256=doc['source_sha256'],
                 accepted_sample=doc['fit_path'],accepted_sample_sha256=doc['fit_sha256'],
                 user_approval='2026-11-07: that is it, update the project, set it for my sunlu pla basic, commit and push.',
@@ -241,7 +242,9 @@ def main():
                 overall_dimensions_mm=tm.extents.tolist(),floor_thickness_mm=1.98,wall_thickness_mm=2,low_rim_height_mm=58,
                 native_mesh_roundtrip_error_mm=float(error),placed_bounds_mm=c.bounds.tolist(),
                 preset_source=doc['preset_source_path'],preset_sha256=doc['preset_sha256'],
-                filament_settings_differences=cfg_diff,applied_preset_keys=applied,locked_settings=locked,
+                filament_settings_differences={k:v for k,v in cfg_diff.items() if k not in ['support_type','support_style']},
+                support_settings_differences={k:v for k,v in cfg_diff.items() if k in ['support_type','support_style']},
+                applied_preset_keys=applied,locked_settings=locked,
                 native_slice=result,native_reopen=reopen,gcode_md5=checksum,toolpath_audit=audit,warnings=warnings,
                 estimated_seconds=estimate['total_predication'],estimated_pla_g=estimate['filaments'][0]['total_used_g'],
                 protected_before=before,protected_after=after,

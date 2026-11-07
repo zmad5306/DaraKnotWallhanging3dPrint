@@ -16,7 +16,8 @@ Open the root 3MF files **as projects** in Bambu Studio to retain their saved pr
 
 **A2L poop bucket, printed on A1:** the [full accessory project](accessories/A2L-Poop-Bucket/README.md)
 uses the approved R8 pillar outline and SUNLU PLA Basic at 220 C nozzle / 65 C
-Textured PEI bed. One plate, approximately 6 h 28 min and 239.8 g. The project,
+Textured PEI bed, with automatic tree supports. One plate, approximately
+7 h 1 min and 217.3 g. The project,
 CAD/STL, accepted contour references and native validation are stored together.
 This accessory does not alter the completed Dara artwork.
 

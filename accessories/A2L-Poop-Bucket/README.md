@@ -2,7 +2,8 @@
 
 Open [A2L-Poop-Bucket-A1-SUNLU-PLA.3mf](A2L-Poop-Bucket-A1-SUNLU-PLA.3mf)
 **as a project** in Bambu Studio. This is the complete bucket with the approved
-R8 pillar outline, not a fit sample. Revision r9, approved November 7, 2026.
+R8 pillar outline, not a fit sample. Revision r10 adds the requested automatic
+tree supports, approved November 7, 2026.
 
 ![Full bucket and accepted contour](preview.png)
 
@@ -15,15 +16,16 @@ R8 pillar outline, not a fit sample. Revision r9, approved November 7, 2026.
 | Layer height | 0.20 mm, including first layer |
 | Walls / top / bottom | 4 / 5 / 5 |
 | Sparse infill | 8% gyroid |
-| Supports / brim | Original normal(auto), snug / automatic, 5 mm saved width |
-| Estimate | 6 h 28 min; 239.84 g PLA |
+| Supports / brim | Tree(auto), default / automatic, 5 mm saved width |
+| Estimate | 7 h 1 min; 217.27 g PLA |
 | Overall size | 112.296 × 244.164 × 150.804 mm |
 
 The filament is the user's actual saved SUNLU profile, including its cooling
 and other parameters. The Textured PEI bed changes from the old Generic PLA
 project's 55 C to 65 C. All material differences are recorded in
-[validation.json](validation.json); other process settings and the original
-print pose are retained. No local preset files were changed.
+[validation.json](validation.json). The support-only r10 revision changes
+normal(auto) / snug to tree(auto) / default. All other saved settings, geometry
+and the original print pose are identical to r9. No local presets were changed.
 
 ## Approved shape
 
@@ -57,16 +59,21 @@ No printer job has been sent.
 - [validation.json](validation.json) records source/output hashes, full profile
   comparison, preserved regions, mesh checks, native A1 slice/reopen, material
   assignment, actual toolpath bounds and the G-code checksum.
+- [Tree-support revision evidence](history/tree-supports-r10.json) records the
+  exact two-setting change, unchanged mesh/poses, native tree generation and
+  fresh slice/reopen. [The r9 report](history/r9-validation.json) retains the
+  original normal-support publication evidence.
 
 The floor matches the accepted contour within 0.002 mm², and wall sections at
 5, 30 and 57 mm match the promoted profile. The original handle/lip and geometry
 outside the local change region were compared as solids. Native reopening and
-754 model layers pass, with supports, interface paths and bed clearance checked.
+754 model layers pass, with tree supports, interface paths and 3.129 mm minimum
+conservative bed-edge clearance checked.
 Native warnings are traditional-timelapse notices only. Digital verification
 does not replace the physical checks described above.
 
 SHA-256 of the current project:
-`e5cc8899d8bfc1ddcb7b1ff442e0e50ac2d14e7c4240c09f55e46b478a89b9f2`
+`4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a`
 
 After pulling, run `git lfs pull`, then
 `python scripts/audit_root_projects.py --accessories-only`.

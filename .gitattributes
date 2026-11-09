@@ -32,3 +32,4 @@
 
 # Accessory release files and input snapshots have exact SHA-256 records.
 /accessories/A2L-Poop-Bucket/** -text -whitespace
+/accessories/A2L-Poop-Bucket-Fresh/** -text -whitespace

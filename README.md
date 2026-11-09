@@ -14,12 +14,14 @@ Open the root 3MF files **as projects** in Bambu Studio to retain their saved pr
 | [Sanding Block PLA](<Small Parts - Sanding Block PLA.3mf>) | A1 | 1 | All five r4 parts, confirmed thread setup and corrected clamp orientation | [CAD](<Small Parts - Sanding Block PLA.scad>) / [STL](<Small Parts - Sanding Block PLA STL/>) |
 | [Crate Stencils](<Small Parts - Crate Stencils.3mf>) | A1 | 6 | Three THIS END UP tiles and three FRAGILE tiles | [CAD](<Small Parts - Crate Stencils.scad>) / [STL](<Small Parts - Crate Stencils STL/>) |
 
-**A2L poop bucket, printed on A1:** the [full accessory project](accessories/A2L-Poop-Bucket/README.md)
-uses the approved R8 pillar outline and SUNLU PLA Basic at 220 C nozzle / 65 C
-Textured PEI bed, with automatic tree supports. One plate, approximately
-7 h 1 min and 217.3 g. The project,
-CAD/STL, accepted contour references and native validation are stored together.
-This accessory does not alter the completed Dara artwork.
+**A2L poop bucket:** the current [fresh parametric accessory](accessories/A2L-Poop-Bucket-Fresh/README.md)
+prints on the **A2L** with a **gray body and green Bambu mark**, **SUNLU PLA+ 2.0**
+and automatic tree supports. One plate, approximately **10 h 38 min / 344.7 g**
+including color changes and the purge tower. CAD, combined/separate STLs,
+the sliced Bambu project and validation are stored together. The earlier
+[A1 mesh adaptation](accessories/A2L-Poop-Bucket/README.md) is historical;
+the fresh design uses the agreed functional fit dimensions and new parametric
+shell geometry. These accessories do not alter the completed Dara artwork.
 
 ## Plate order and settings
 

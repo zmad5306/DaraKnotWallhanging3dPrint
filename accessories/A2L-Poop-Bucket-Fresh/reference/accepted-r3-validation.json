@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-09",
+  "revision": "r3",
+  "status": "Design preview only; new tall pillar wall and enlarged envelope need physical movement-clearance checking.",
+  "scad": "A2L-Poop-Bucket-Fresh-r3.scad",
+  "scad_sha256": "43cd0dc9bed5d99fafb01ea0c330eb87a6df6e1fb79c567f47f1eb1aa1df457c",
+  "changes": {
+    "pillar_wall": "Continuous slope from 58 mm at the front shoulder to 160.804 mm at the rear wall.",
+    "body_width_mm": [
+      100,
+      110
+    ],
+    "body_length_mm": [
+      245,
+      255
+    ],
+    "back_wall_height_mm": [
+      150.804,
+      160.804
+    ]
+  },
+  "enlargement_direction": "Relative to the unchanged printer/pillar fit, 10 mm forward and 10 mm away from printer. Chute extends forward with new front end; its entry height and rear end remain unchanged.",
+  "fit_frame_registration_new_to_r2_mm": [
+    -10,
+    -10,
+    0
+  ],
+  "unchanged_fit_mm": {
+    "front_reach": 41.275,
+    "rear_return": 15.621,
+    "pillar_gap": 49.6568,
+    "inside_radius": 15.08125,
+    "convex_tip_radius": 12.7
+  },
+  "floor_mm": 1.98,
+  "wall_mm": 2,
+  "low_wall_chute_root_height_mm": 58,
+  "chute_reach_rise_mm": [
+    18,
+    8
+  ],
+  "native_render_return_code": 0,
+  "native_render_log": "ECHO: \"PREVIEW ONLY: new shell, established nominal fit dimensions\"\nECHO: \"Body W/L/H\", [110, 255, 160.804]\nECHO: \"Gap, inner R, convex R\", [49.6568, 15.0813, 12.7]\nECHO: \"Chute reach/rise\", [18, 8]\nGeometries in cache: 25\nGeometry cache size in bytes: 1150048\nCGAL Polyhedrons in cache: 6\nCGAL cache size in bytes: 7290672\nTotal rendering time: 0:00:54.590\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2662\n   Halfedges:    7988\n   Edges:        3994\n   Halffacets:   2670\n   Facets:       1335\n   Volumes:         2\n",
+  "mesh_watertight": true,
+  "mesh_body_count": 1,
+  "mesh_bounds_mm": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      128.0,
+      255.0,
+      160.8040008544922
+    ]
+  ],
+  "lower_fit_region_difference_mm3": 0.0001327232958169399,
+  "existing_chute_region_difference_mm3": 0.0,
+  "upper_pillar_section_added_xy_area_mm2": [
+    3.159170003375067e-08,
+    1.3023985306892527e-08,
+    1.6994858409447033e-08,
+    2.7035755856275046e-09,
+    0.0
+  ],
+  "slope_height_checks": [
+    {
+      "point_in_r2_fit_frame_mm": [
+        57.725,
+        205.0,
+        95.08274869208276
+      ],
+      "material_mm3": 0.0010000000000001535
+    },
+    {
+      "point_in_r2_fit_frame_mm": [
+        57.725,
+        205.0,
+        95.58274869208276
+      ],
+      "material_mm3": 0.0
+    },
+    {
+      "point_in_r2_fit_frame_mm": [
+        59.8794789753915,
+        225.959375,
+        131.213251795871
+      ],
+      "material_mm3": 0.0010000000000005838
+    },
+    {
+      "point_in_r2_fit_frame_mm": [
+        59.8794789753915,
+        225.959375,
+        131.713251795871
+      ],
+      "material_mm3": 0.0
+    },
+    {
+      "point_in_r2_fit_frame_mm": [
+        71.77849722427793,
+        237.04726419720555,
+        150.3269426885668
+      ],
+      "material_mm3": 0.0010000000000006254
+    },
+    {
+      "point_in_r2_fit_frame_mm": [
+        71.77849722427793,
+        237.04726419720555,
+        150.8269426885668
+      ],
+      "material_mm3": 0.0
+    }
+  ],
+  "protected_before": {
+    "Knot.3mf": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
+    "Letter.3mf": "bcdbf0c549b18eaf68726edc1da40d81eaed43234670974dd7751cadbc9ae81f",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "2c97d1a98d89742896d386abb8c9cda35fb7c894e94e2e6970e3c4fc11b4df48",
+    "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf": "4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a",
+    "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket.3mf": "321825a92594f6b4ab8d06f3284c669f1b4c4457eeae13b3427b4d1ef6ae1581",
+    "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
+    "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381",
+    "accessories/A2L-Poop-Bucket/build_bucket.py": "2362584b299285ad0176ef6337ffbe4a42e4ce8593a4e5ea470d9dc5f3529160",
+    "accessories/A2L-Poop-Bucket/native-preview.png": "a19b3b347df8af0e36489fe66a29222edc2f7eca9954e5f3c3190f0b22f0ed1a",
+    "accessories/A2L-Poop-Bucket/preview.png": "2c65c13296664b83fca2a36146b01b167fc2bb3b261386b95384bb66a35431a6",
+    "accessories/A2L-Poop-Bucket/README.md": "0bce1a4fe5d8e0e0586695390d379efd39ddf41b28936cdb7a228e6430432c2b",
+    "accessories/A2L-Poop-Bucket/switch_to_tree_supports_r10.py": "8f2cbe7504f49f937d1820f1484d117cdd5290176b53116dd73a5021be2ccb9f",
+    "accessories/A2L-Poop-Bucket/validation.json": "4f6f6e6c3a2faf59a128cfec6b47ac55d4292c2dc6a884e50ce0221e5586fc16",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/A2L-Poop-Bucket-Fresh-r2.scad": "fff3eb743e6b8fa567044e0d82c91f4c9b8a30746e541eba4a245f7d24dd67a5",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/preview.png": "610be5aff166d338d5798e5195b776b14c2d5e85ddbcd021d1b13f565888c5c1",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/README.md": "2c40396765550fce18728261354a9e7106388c4f9223218b86c70d74a7317b48",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/validation.json": "a1295b8d7594524279ebd6b876737da35ce22e0072d52aad4b52c04d523c59c3"
+  },
+  "protected_after": {
+    "Knot.3mf": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
+    "Letter.3mf": "bcdbf0c549b18eaf68726edc1da40d81eaed43234670974dd7751cadbc9ae81f",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "2c97d1a98d89742896d386abb8c9cda35fb7c894e94e2e6970e3c4fc11b4df48",
+    "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf": "4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a",
+    "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket.3mf": "321825a92594f6b4ab8d06f3284c669f1b4c4457eeae13b3427b4d1ef6ae1581",
+    "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
+    "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381",
+    "accessories/A2L-Poop-Bucket/build_bucket.py": "2362584b299285ad0176ef6337ffbe4a42e4ce8593a4e5ea470d9dc5f3529160",
+    "accessories/A2L-Poop-Bucket/native-preview.png": "a19b3b347df8af0e36489fe66a29222edc2f7eca9954e5f3c3190f0b22f0ed1a",
+    "accessories/A2L-Poop-Bucket/preview.png": "2c65c13296664b83fca2a36146b01b167fc2bb3b261386b95384bb66a35431a6",
+    "accessories/A2L-Poop-Bucket/README.md": "0bce1a4fe5d8e0e0586695390d379efd39ddf41b28936cdb7a228e6430432c2b",
+    "accessories/A2L-Poop-Bucket/switch_to_tree_supports_r10.py": "8f2cbe7504f49f937d1820f1484d117cdd5290176b53116dd73a5021be2ccb9f",
+    "accessories/A2L-Poop-Bucket/validation.json": "4f6f6e6c3a2faf59a128cfec6b47ac55d4292c2dc6a884e50ce0221e5586fc16",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/A2L-Poop-Bucket-Fresh-r2.scad": "fff3eb743e6b8fa567044e0d82c91f4c9b8a30746e541eba4a245f7d24dd67a5",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/preview.png": "610be5aff166d338d5798e5195b776b14c2d5e85ddbcd021d1b13f565888c5c1",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/README.md": "2c40396765550fce18728261354a9e7106388c4f9223218b86c70d74a7317b48",
+    "output/A2L-Poop-Bucket-Fresh-SCAD-r2/validation.json": "a1295b8d7594524279ebd6b876737da35ce22e0072d52aad4b52c04d523c59c3"
+  }
+}

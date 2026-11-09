@@ -35,6 +35,12 @@ __pycache__/
 !/accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf
 !/accessories/A2L-Poop-Bucket/Bucket.stl
 
+# Fresh parametric A2L bucket, gray/green SUNLU PLA+ 2.0.
+!/accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf
+!/accessories/A2L-Poop-Bucket-Fresh/Bucket.stl
+!/accessories/A2L-Poop-Bucket-Fresh/Gray-Body.stl
+!/accessories/A2L-Poop-Bucket-Fresh/Green-Logo.stl
+
 # Historical local sample outputs and review evidence; retain files on disk.
 # Existing tracked files in these folders remain tracked. Keep scripts visible.
 /output/A2L-Pillar-Fit-Sample-A1-r1/

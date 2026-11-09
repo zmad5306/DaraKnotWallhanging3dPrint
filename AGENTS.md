@@ -56,6 +56,30 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved fresh A2L bucket and two-color release, 2026-11-09:** the user
+  accepted the fresh r3 parametric design, requested STL and an **A2L** project,
+  corrected the material to **SUNLU PLA+ 2.0**, and requested a **gray body /
+  green Bambu front logo**, tree supports, commit and push. Current files are
+  in `accessories/A2L-Poop-Bucket-Fresh/`; the earlier mesh adaptation is historical.
+  Preserve the accepted r3 shell: **110 x 255 mm** body, **160.804 mm** tall back
+  and rear walls, triangular front, rising pillar wall and **18 mm** chute with
+  **8 mm** rise at its **58 mm** root. Floor is **1.98 mm**, walls **2 mm**.
+  Keep the established interface: **41.275 mm** front reach, **15.621 mm** rear
+  return, **49.6568 mm** pillar gap, **19/32 inch** concave radius and **1/2 inch**
+  convex rear tip. The front mark is **32 mm** tall at X55 / Z40, **0.8 mm**
+  embedded with **0.4 mm** relief. It is a separate green material volume;
+  the remainder stays gray. Slot **1 = gray #555555**, **2 = green #00CC00**.
+  The embedded SUNLU PLA+ 2.0 project profile uses the installed SUNLU material
+  values (**220 C**, **65 C Textured PEI**, **1.0 flow**, **22 mm3/s**) with
+  A2L-specific start/flush/cooling/retraction behavior retained. This is an
+  adaptation, not a newly calibrated or installed system preset. Keep locked
+  **0.4 nozzle, 0.20 layers, four walls, five top/bottom layers, 8% gyroid**.
+  Supports are **tree(auto), default**, with automatic brim and a purge tower
+  for the two colors. The fresh native slice and reopen pass; evidence is in
+  the new accessory validation/catalog. Full-bucket physical fit, movement
+  clearance, color quality and support removal remain unobserved. Preserve
+  the seven root Dara projects and historical bucket artifacts.
+
 - **A2L bucket standalone CAD correction, 2026-11-09:** after the user reported
   MakerWorld SCAD validation failure and an STL upload name of
   `A2L Poop Bucket.stl`, replace the accessory SCAD's external `Bucket.stl`

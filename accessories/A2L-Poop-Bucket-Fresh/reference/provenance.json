@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-09",
+  "body": "Exact accepted r3 parametric body; logo is the only geometry addition. No earlier remix mesh is used.",
+  "accepted_scad_sha256": "43cd0dc9bed5d99fafb01ea0c330eb87a6df6e1fb79c567f47f1eb1aa1df457c",
+  "accepted_stl_sha256": "1ef0a7ecf27ef090146d374ed36f1060f997f9fc02b36dc94e0a952b7209ad6d",
+  "settings_source_sha256": "321825a92594f6b4ab8d06f3284c669f1b4c4457eeae13b3427b4d1ef6ae1581",
+  "logo_source": "Bambu Studio 02.09.01.70 resources/images/splash_logo.svg",
+  "logo_source_sha256": "3ddba56f57a598af406f1b9af51e5e2a426ce1211d5c4ab1b1ed22268daa3403",
+  "colors": {
+    "1": "#555555",
+    "2": "#00CC00"
+  },
+  "colors_source": "User SUNLU PLA+ 2.0 inventory colors; no live AMS mapping is assigned."
+}

@@ -56,6 +56,16 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **A2L bucket standalone CAD correction, 2026-11-09:** after the user reported
+  MakerWorld SCAD validation failure and an STL upload name of
+  `A2L Poop Bucket.stl`, replace the accessory SCAD's external `Bucket.stl`
+  import with the exact embedded STL triangles. Keep all dimensions fixed;
+  this is a standalone mesh snapshot, not a parametric redesign. Preserve the
+  STL and tree-support Bambu project byte-for-byte. Native OpenSCAD rendering
+  without the STL present produces the exact source triangles and a closed
+  body. Evidence is in the accessory's `history/standalone-scad-r1.json`.
+  MakerWorld's online validation remains pending a user retry.
+
 - **Approved A2L bucket tree supports, 2026-11-07:** the user requested tree
   supports, commit and push for the bucket. In its single-plate A1 project,
   change **support_type = normal(auto) to tree(auto)** and the compatible

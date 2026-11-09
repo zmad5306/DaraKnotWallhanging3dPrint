@@ -48,8 +48,10 @@ No printer job has been sent.
 
 ## Files and verification
 
-- [Bucket.scad](Bucket.scad) imports the adjacent [Bucket.stl](Bucket.stl) as a
-  mesh snapshot; it is not a reconstructed parametric CAD history. Redundant
+- [Bucket.scad](Bucket.scad) embeds the exact [Bucket.stl](Bucket.stl) triangles
+  as a standalone mesh snapshot. It needs no adjacent files, so the STL can be
+  uploaded as `A2L Poop Bucket.stl` without breaking the SCAD. This is fixed
+  geometry, not a reconstructed parametric CAD history. Redundant
   microscopic triangles are cleaned within 0.0001 mm for reliable STL export;
   the native project retains its original validated mesh.
 - [build_bucket.py](build_bucket.py) rebuilds the bucket from the exact geometry
@@ -63,6 +65,11 @@ No printer job has been sent.
   exact two-setting change, unchanged mesh/poses, native tree generation and
   fresh slice/reopen. [The r9 report](history/r9-validation.json) retains the
   original normal-support publication evidence.
+- [Standalone SCAD validation](history/standalone-scad-r1.json) records the
+  November 9 packaging correction: OpenSCAD renders the file without a nearby
+  STL, and its exported triangles match the existing STL exactly. The STL and
+  saved Bambu project are byte-identical. MakerWorld's online validation has
+  not been rerun here; upload the corrected SCAD to retry it.
 
 The floor matches the accepted contour within 0.002 mm², and wall sections at
 5, 30 and 57 mm match the promoted profile. The original handle/lip and geometry

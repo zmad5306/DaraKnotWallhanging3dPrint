@@ -29,6 +29,25 @@ TITLE='A2L poop bucket - A1 SUNLU PLA Basic - 8% gyroid - r9'
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def rel(p):return Path(p).relative_to(ROOT).as_posix()
+def write_standalone_scad(stl_path,scad_path):
+    """Embed the exact STL triangles; cloud renderers cannot access local files."""
+    raw=trimesh.load(stl_path,force='mesh',process=False)
+    vertices,inverse=np.unique(raw.vertices,axis=0,return_inverse=True)
+    faces=inverse[raw.faces]
+    body=trimesh.Trimesh(vertices,faces,process=False)
+    assert body.is_volume and len(body.split())==1
+    # OpenSCAD polyhedra use the opposite face winding to STL.
+    points=',\n'.join('        ['+','.join(format(float(x),'.17g') for x in v)+']' for v in vertices)
+    triangles=',\n'.join('        ['+','.join(str(int(x)) for x in f[::-1])+']' for f in faces)
+    text=('// A2L poop bucket: standalone mesh CAD, dimensions in millimeters.\n'
+          '// Exact geometry from Bucket.stl, embedded without external files.\n'
+          '// Fixed approved fit; this is not a parametric feature history.\n'
+          '// Original design: A better Poop Bucket-A1 by PCH3D, MakerWorld 495125.\n'
+          '// Print using the adjacent A1/SUNLU 3MF for the saved settings.\n\n'
+          'module bucket() {\n    polyhedron(\n    points=[\n'+points+
+          '\n    ],\n    faces=[\n'+triangles+'\n    ],\n    convexity=20);\n}\n\nbucket();\n')
+    Path(scad_path).write_text(text,encoding='utf8')
+    return body
 def package(p):
     with zipfile.ZipFile(p) as z:
         assert z.testzip() is None
@@ -254,7 +273,7 @@ def main():
     (OUT/'native-preview.png').write_bytes(sliced['Metadata/plate_1.png'])
     (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
     # This is deliberately a mesh snapshot, matching the repository convention.
-    (OUT/'Bucket.scad').write_text('// Full-bucket mesh snapshot; redundant tessellation cleaned within 0.0001 mm.\n// Print using the adjacent 3MF, which retains the native mesh and settings.\nimport("Bucket.stl", convexity=20);\n',encoding='utf8')
+    write_standalone_scad(OUT/'Bucket.stl',OUT/'Bucket.scad')
     render_preview(actual_floor,template,report)
     print(json.dumps({k:report[k] for k in ['project','sha256','estimated_seconds','estimated_pla_g','filament_settings_differences']},indent=2))
 

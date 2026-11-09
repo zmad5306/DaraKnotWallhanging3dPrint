@@ -2618,5 +2618,10 @@
     "previous_estimated_pla_g": 239.84326171875,
     "physical_tree_support_result": "Not yet observed; no printer job sent."
   },
-  "user_support_approval": "2026-11-07: Switch the project to tree supports, commit and push."
+  "user_support_approval": "2026-11-07: Switch the project to tree supports, commit and push.",
+  "cad_packaging_revision": {
+    "validation": "accessories/A2L-Poop-Bucket/history/standalone-scad-r1.json",
+    "scad_sha256": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
+    "stl_and_project_unchanged": true
+  }
 }

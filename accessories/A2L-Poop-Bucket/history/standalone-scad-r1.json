@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-09",
+  "reason": "User reports MakerWorld SCAD validation failure and STL uploaded as A2L Poop Bucket.stl. Prior SCAD imported Bucket.stl by exact filename.",
+  "source_scad_sha256": "6d014ccefa400c87f310b383dca98f6c9f75543588d01f50a167e576461e849e",
+  "source_scad_contents": "// Full-bucket mesh snapshot; redundant tessellation cleaned within 0.0001 mm.\n// Print using the adjacent 3MF, which retains the native mesh and settings.\nimport(\"Bucket.stl\", convexity=20);\n",
+  "scad": "accessories/A2L-Poop-Bucket/Bucket.scad",
+  "scad_sha256": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
+  "stl_sha256": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381",
+  "project_sha256": "4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a",
+  "change": "Replace external STL import with a standalone polyhedron containing the exact STL coordinates and triangles; reverse winding for OpenSCAD.",
+  "vertices": 4676,
+  "triangles": 9352,
+  "external_dependencies": [],
+  "isolated_render_without_adjacent_stl": true,
+  "native_openscad_version": "OpenSCAD version 2021.01",
+  "native_return_code": 0,
+  "native_log": "Geometries in cache: 1\nGeometry cache size in bytes: 673456\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.027\n   Top level object is a 3D object:\n   Facets:       9352\n",
+  "canonical_rendered_triangles_exactly_equal_to_stl": true,
+  "rendered_body_watertight": true,
+  "rendered_body_count": 1,
+  "protected_before": {
+    "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381",
+    "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf": "4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a",
+    "Knot.3mf": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
+    "Letter.3mf": "bcdbf0c549b18eaf68726edc1da40d81eaed43234670974dd7751cadbc9ae81f",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "2c97d1a98d89742896d386abb8c9cda35fb7c894e94e2e6970e3c4fc11b4df48"
+  },
+  "protected_after": {
+    "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381",
+    "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf": "4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a",
+    "Knot.3mf": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
+    "Letter.3mf": "bcdbf0c549b18eaf68726edc1da40d81eaed43234670974dd7751cadbc9ae81f",
+    "Small Parts - Crate Clips PETG.3mf": "aa144101e4c2749cbf409f12a2fda289ee635bf7f85a7f429f1ccb97b3b42d8a",
+    "Small Parts - Crate Stencils.3mf": "8a8ba051ff64aa724e014f33db21f866657cf1c03157f1a264e147f87cc6beb7",
+    "Small Parts - Photo Cut Aligner.3mf": "e7fca728f27665791cf55618485320a4391d49971af129a61590424b99cb4b11",
+    "Small Parts - Sanding Block PLA.3mf": "261c16f70980e8118cba9eabe2f1d103f92662fcb28d870a12e73351d493dfa4",
+    "Small Parts.3mf": "2c97d1a98d89742896d386abb8c9cda35fb7c894e94e2e6970e3c4fc11b4df48"
+  },
+  "makerworld_online_validation": "Not performed; user must retry corrected SCAD.",
+  "references": [
+    "https://forum.bambulab.com/t/paramatric-model-maker-v0-8-0-support-uploading-files/91853",
+    "https://files.openscad.org/documentation/manual/Primitive_Solids.html"
+  ]
+}

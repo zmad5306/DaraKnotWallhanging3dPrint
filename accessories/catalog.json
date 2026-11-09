@@ -8,20 +8,22 @@
     "validation": "accessories/A2L-Poop-Bucket/validation.json",
     "artifact_sha256": {
       "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket-A1-SUNLU-PLA.3mf": "4d9983ad158bbb4c88227d3f3c256d8afc7d14418310c460010f2ec0ee54531a",
-      "accessories/A2L-Poop-Bucket/Bucket.scad": "6d014ccefa400c87f310b383dca98f6c9f75543588d01f50a167e576461e849e",
+      "accessories/A2L-Poop-Bucket/A2L-Poop-Bucket.3mf": "321825a92594f6b4ab8d06f3284c669f1b4c4457eeae13b3427b4d1ef6ae1581",
+      "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
       "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381",
-      "accessories/A2L-Poop-Bucket/build_bucket.py": "3de98a26f406057b4671843ca3be676a7e9ba0063531a1447b6626718514fe0c",
+      "accessories/A2L-Poop-Bucket/build_bucket.py": "2362584b299285ad0176ef6337ffbe4a42e4ce8593a4e5ea470d9dc5f3529160",
       "accessories/A2L-Poop-Bucket/history/r9-validation.json": "1f5cbddb4d185b4ad4fc76554886d575d1cf1b6454aa89dcc3b543702eeb78b5",
+      "accessories/A2L-Poop-Bucket/history/standalone-scad-r1.json": "ff1b200966613ae5734f653d12bbb58ae8f8938969abf9dc64c60f069dc9a057",
       "accessories/A2L-Poop-Bucket/history/tree-supports-r10.json": "b603f51d47414dd053d79fd1d9a500eab4842f70519eb3105accf06b4f3a9574",
       "accessories/A2L-Poop-Bucket/native-preview.png": "a19b3b347df8af0e36489fe66a29222edc2f7eca9954e5f3c3190f0b22f0ed1a",
       "accessories/A2L-Poop-Bucket/preview.png": "2c65c13296664b83fca2a36146b01b167fc2bb3b261386b95384bb66a35431a6",
-      "accessories/A2L-Poop-Bucket/README.md": "932d9e31337fb2c6317876212459af4685c7b5405ae8ab9f7f3925bc4f7c5e99",
+      "accessories/A2L-Poop-Bucket/README.md": "0bce1a4fe5d8e0e0586695390d379efd39ddf41b28936cdb7a228e6430432c2b",
       "accessories/A2L-Poop-Bucket/reference/accepted-r8-mesh.npz": "68c3ce201b16ef746a77db1665517837dc2bcbeb79e510c7ba699c2d140d6632",
       "accessories/A2L-Poop-Bucket/reference/source-r4-mesh.npz": "73e8e8a0fccc0045ce6aba88e51680e09dadfe9ec11122905252af2f42e76e5a",
       "accessories/A2L-Poop-Bucket/reference/source-template.json": "8a995500198bbc8cd8b275064465b6ff894883a44502961c36a5a47060f18ce4",
       "accessories/A2L-Poop-Bucket/reference/SUNLU-PLA-Basic-A1.json": "75a066843e71505dfee267ee7fdca2e1917d47a56e73c8297b64025ac9a63d13",
       "accessories/A2L-Poop-Bucket/switch_to_tree_supports_r10.py": "8f2cbe7504f49f937d1820f1484d117cdd5290176b53116dd73a5021be2ccb9f",
-      "accessories/A2L-Poop-Bucket/validation.json": "b230a093be23930fff3df51a3ff42cf0888b899c05c94d7d9c74431324e2e011"
+      "accessories/A2L-Poop-Bucket/validation.json": "4f6f6e6c3a2faf59a128cfec6b47ac55d4292c2dc6a884e50ce0221e5586fc16"
     }
   }
 }

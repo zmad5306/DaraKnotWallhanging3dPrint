@@ -5,7 +5,7 @@ use the accepted-r3.scad reference; no earlier remixed mesh is a geometry input.
 Requires the repository's trimesh/manifold3d geometry dependencies and Bambu CLI.
 """
 from pathlib import Path
-import copy, hashlib, json, re, shutil, subprocess, sys, time, zipfile
+import copy, hashlib, json, math, re, shutil, subprocess, sys, time, zipfile
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -18,12 +18,15 @@ import trimesh
 from scipy.spatial import cKDTree
 from development_3mf import solid, mesh, mesh_xml
 from build_jointed_bambu_project import C,P,R,IDENTITY,tag,xml,model,meta
-from validate_print_project import scan_gcode, transform
+from validate_print_project import scan_gcode, transform, TOKEN
+from shapely.geometry import Polygon, LineString
+from shapely.affinity import translate
+from mesh_sections import mesh_slice
 
 FINAL=OUT/'A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf'
-PROFILE='SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle (project)'
+PROFILE='SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle'
 COLORS=['#555555','#00CC00']
-TITLE='A2L poop bucket - gray body / green Bambu mark - SUNLU PLA+ 2.0'
+TITLE='A2L Poop Bucket'
 PLACEMENT=np.array([101.,32.7,0.])
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -76,60 +79,30 @@ def render_inputs(force=False):
         assert p.returncode==0
 
 def configuration():
-    source=json.loads((REF/'a2l-settings-source.json').read_text())
-    cfg=copy.deepcopy(source)
-    plus=json.loads((REF/'SUNLU-PLA-Plus-2-source.json').read_text())
-    a2l=json.loads((REF/'SUNLU-A2L-machine-source.json').read_text())
-    profile=copy.deepcopy(plus)
-    # Retain A2L-specific start/flush/cooling/retraction behavior. Material flow,
-    # density, speed and temperature values come from the installed SUNLU preset.
-    machine_keys=['filament_start_gcode','filament_flush_temp_fast','pre_start_fan_time',
-                  'overhang_fan_threshold','eng_plate_temp','eng_plate_temp_initial_layer',
-                  'filament_long_retractions_when_cut','filament_retraction_distances_when_cut']
-    for k in machine_keys:profile[k]=a2l[k]
-    profile.update(name=PROFILE,filament_settings_id=[PROFILE],filament_id='GFSNL04',
-                   compatible_printers=['Bambu Lab A2L 0.4 nozzle'],default_filament_colour=[''],
-                   filament_notes='Project adaptation of installed SUNLU PLA+ 2.0 settings to the saved A2L machine behavior. Gray and green use identical parameters; no new calibration is implied.')
-    for k in ['filament_flow_ratio','impact_strength_z','filament_dev_chamber_drying_time']:
-        profile[k]=[format(float(v),'g') for v in profile[k]]
-    jsave(REF/'SUNLU-PLA-Plus-2-A2L-project.json',profile)
-    # Expand the single-color template's per-filament values, including newer
-    # fields absent from the older user preset. No machine/process arrays expand.
-    for k,v in list(cfg.items()):
-        if k.startswith('filament_') and isinstance(v,list) and len(v)==1:cfg[k]=v*2
-    excluded={'name','inherits','from','version','filament_id','compatible_printers',
-              'compatible_printers_condition','compatible_prints','compatible_prints_condition'}
-    for k,v in profile.items():
-        if k in excluded:continue
-        cfg[k]=v*2 if isinstance(v,list) else v
-    cfg.update(filament_colour=COLORS,filament_multi_colour=COLORS,
-               filament_colour_type=['1','1'],filament_ids=['GFSNL04','GFSNL04'],
-               filament_map=['1','1'],filament_nozzle_map=['0','0'],filament_volume_map=['0','0'],
-               filament_diameter_map=['0.4','0.4'],filament_settings_id=[PROFILE,PROFILE],
-               print_settings_id='Fresh A2L bucket - 0.20 mm - 8% gyroid - tree supports',
-               layer_height='0.2',initial_layer_print_height='0.2',wall_loops='4',
-               top_shell_layers='5',bottom_shell_layers='5',sparse_infill_density='8%',
-               sparse_infill_pattern='gyroid',enable_support='1',support_type='tree(auto)',
-               support_style='default',enable_prime_tower='1',wipe_tower_x=['25'],wipe_tower_y=['235'],
-               flush_volumes_matrix=['0','280','280','0'],flush_volumes_vector=['140']*4,
-               filament_map_2=['1'],inherits_group=['','','',''],different_settings_to_system=['','','',''])
+    """Use the current saved process/material values, including user purge edits."""
+    cfg=json.loads((REF/'current-project-settings.json').read_text())
     locked_keys=['printer_model','printer_settings_id','printer_variant','nozzle_diameter',
                  'printable_area','printable_height','layer_height','initial_layer_print_height',
                  'wall_loops','top_shell_layers','bottom_shell_layers','sparse_infill_density',
-                 'sparse_infill_pattern','curr_bed_type','enable_support','support_type','support_style',
+                 'sparse_infill_pattern','curr_bed_type','enable_support','support_type','support_style','support_on_build_plate_only',
                  'enable_prime_tower','brim_type','filament_colour','filament_ids','filament_settings_id',
                  'nozzle_temperature','nozzle_temperature_initial_layer','textured_plate_temp',
                  'textured_plate_temp_initial_layer','filament_flow_ratio','filament_max_volumetric_speed']
     locked={k:cfg[k] for k in locked_keys}
-    changes={k:{'source':source.get(k),'saved':v} for k,v in cfg.items() if source.get(k)!=v}
-    return cfg,locked,changes,machine_keys
+    assert cfg['support_on_build_plate_only']=='1'
+    assert cfg['filament_settings_id']==[PROFILE,PROFILE]
+    machine_keys=['filament_start_gcode','filament_flush_temp_fast','pre_start_fan_time',
+                  'overhang_fan_threshold','eng_plate_temp','eng_plate_temp_initial_layer',
+                  'filament_long_retractions_when_cut','filament_retraction_distances_when_cut']
+    return cfg,locked,{},machine_keys
+
 
 def make_project(body,logo,cfg):
     child=model();res=ET.SubElement(child,tag('resources'))
     mesh_xml(res,1,body);mesh_xml(res,2,logo)
     root=ET.Element(tag('model'),unit='millimeter',requiredextensions='p',attrib={'{http://www.w3.org/XML/1998/namespace}lang':'en-US'})
     for k,v in [('Application','BambuStudio-02.09.01.70'),('BambuStudio:3mfVersion','1'),
-                ('Title',TITLE),('Description','Fresh parametric A2L purge bucket with triangular front, full-height back, sloped pillar wall, catch chute and green Bambu mark.')]:
+                ('Title',TITLE),('Description','A2L poop bucket with triangular front, full-height back, sloped pillar wall, catch chute and green Bambu logo.')]:
         ET.SubElement(root,tag('metadata'),name=k).text=v
     rr=ET.SubElement(root,tag('resources'));obj=ET.SubElement(rr,tag('object'),id='3',type='model')
     comps=ET.SubElement(obj,tag('components'))
@@ -137,14 +110,14 @@ def make_project(body,logo,cfg):
     pose='1 0 0 0 1 0 0 0 1 '+' '.join(map(str,PLACEMENT))
     ET.SubElement(ET.SubElement(root,tag('build')),tag('item'),objectid='3',transform=pose,printable='1')
     settings=ET.Element('config');o=ET.SubElement(settings,'object',id='3')
-    meta(o,'name','A2L poop bucket');meta(o,'extruder','1')
-    for oid,name,tm in [(1,'Gray bucket body',body),(2,'Green Bambu front logo',logo)]:
+    meta(o,'name','A2L Poop Bucket');meta(o,'extruder','1')
+    for oid,name,tm in [(1,'Gray Body',body),(2,'Green Logo',logo)]:
         part=ET.SubElement(o,'part',id=str(oid),subtype='normal_part')
         meta(part,'name',name);meta(part,'extruder',oid)
         meta(part,'matrix','1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1')
         ET.SubElement(part,'mesh_stat',face_count=str(len(tm.faces)),edges_fixed='0',degenerate_facets='0',facets_removed='0',facets_reversed='0',backwards_edges='0')
     plate=ET.SubElement(settings,'plate')
-    for k,v in [('plater_id',1),('plater_name','A2L bucket - gray and green PLA+ 2.0'),('locked','false'),
+    for k,v in [('plater_id',1),('plater_name','A2L Poop Bucket'),('locked','false'),
                 ('filament_map_mode','Auto For Flush'),('filament_maps','1 1'),('filament_volume_maps','0 0')]:meta(plate,k,v)
     inst=ET.SubElement(plate,'model_instance')
     for k,v in [('object_id',3),('instance_id',0),('identify_id',100)]:meta(inst,k,v)
@@ -175,6 +148,51 @@ def saved_parts(files):
         result.append(trimesh.Trimesh(v@t[:3,:3].T+t[:3,3],f,process=True))
     return result
 
+def cavity():
+    m=trimesh.load(OUT/'Bucket.stl',force='mesh')
+    section=mesh_slice(m,10)
+    assert section.geom_type=='Polygon' and len(section.interiors)==1
+    return translate(Polygon(section.interiors[0]),xoff=101,yoff=32.7)
+
+def support_audit(gc):
+    interior=cavity();cached={};feature='Custom';width=.5;x=y=z=e=0.
+    relative_e=False;relative_xyz=False;count=inside=0;bounds=[np.full(3,np.inf),np.full(3,-np.inf)];examples=[]
+    for raw in gc.splitlines():
+        line=raw.strip()
+        if line.startswith('; FEATURE: '):feature=line.split(': ',1)[1]
+        elif line.startswith('; LINE_WIDTH: '):width=float(line.split(': ',1)[1])
+        code=line.split(';',1)[0].strip()
+        if not code:continue
+        cmd=code.split()[0]
+        if cmd=='M83':relative_e=True
+        elif cmd=='M82':relative_e=False
+        elif cmd in ['G90','G91']:relative_xyz=cmd=='G91'
+        elif cmd=='G92':
+            v={k:float(n) for k,n in TOKEN.findall(code)};x,y,z,e=v.get('X',x),v.get('Y',y),v.get('Z',z),v.get('E',e)
+        elif cmd in ['G0','G1','G2','G3']:
+            v={k:float(n) for k,n in TOKEN.findall(code)}
+            nx,ny,nz=[old+v.get(k,0) if relative_xyz else v.get(k,old) for k,old in zip('XYZ',[x,y,z])]
+            de=v.get('E',0) if relative_e else v.get('E',e)-e
+            if de>0 and feature in ['Support','Support interface','Support transition'] and any(k in v for k in ['X','Y','I','J']):
+                count+=1;points=[(x,y),(nx,ny)]
+                if cmd in ['G2','G3']:
+                    cx,cy=x+v.get('I',0),y+v.get('J',0);rad=math.hypot(x-cx,y-cy)
+                    a,b=math.atan2(y-cy,x-cx),math.atan2(ny-cy,nx-cx);sgn=1 if cmd=='G3' else -1
+                    span=((b-a)*sgn)%(2*math.pi);n=max(2,math.ceil(rad*span/.1))
+                    points=[(cx+rad*math.cos(a+sgn*span*i/n),cy+rad*math.sin(a+sgn*span*i/n)) for i in range(n+1)]
+                radius=round(width/2,5)
+                if radius not in cached:cached[radius]=interior.buffer(radius-.001)
+                shape=cached[radius]
+                if nz>1.98 and LineString(points).intersects(shape):
+                    inside+=1
+                    for px,py in points:
+                        bounds[0]=np.minimum(bounds[0],[px,py,nz]);bounds[1]=np.maximum(bounds[1],[px,py,nz])
+                    if len(examples)<5:examples.append({'feature':feature,'start':[x,y,z],'end':[nx,ny,nz],'width':width})
+            x,y,z=nx,ny,nz;e=e+v.get('E',0) if relative_e else v.get('E',e)
+    return {'support_extrusions_checked':count,'support_extrusions_intersecting_collection_cavity':inside,
+        'interior_support_bounds_mm':[v.tolist() for v in bounds] if inside else None,'examples':examples,
+        'check':'Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm.'}
+
 def main():
     WORK.mkdir(parents=True,exist_ok=True)
     if not (WORK/'protected-before.json').exists():
@@ -190,9 +208,13 @@ def main():
     a,l,f=map(solid,[accepted,logo,full])
     assert accepted.is_volume and full.is_volume and len(full.split())==1
     assert len(logo.split())==4 and logo.is_volume
-    assert vol_diff(a+l,f)<0.02
-    assert (a-f).volume()<0.01, 'Body material was removed beyond the color split'
-    body=mesh(a-l)
+    # The accepted shell loses only the inward chute shelf. Fit and outer reach stay fixed.
+    removed=(a+l)-f
+    assert (f-(a+l)).volume()<0.02
+    allowed=trimesh.creation.box(bounds=[[103.9999,7.9999,54.3999],[108.0001,189.3433,58.0001]])
+    assert abs((removed-solid(allowed)).volume())<0.02, 'Material removed outside the chute shelf'
+    assert abs(removed.volume()-1450.75)<0.1
+    body=mesh(f-l)
     body.export(OUT/'Gray-Body.stl')
     overlap=(solid(body)^l).volume()
     assert abs(overlap)<0.001
@@ -220,13 +242,15 @@ def main():
     gc=sliced['Metadata/plate_1.gcode'].decode()
     gcfg=dict(re.findall(r'^; (\w+) = (.*)$',gc,re.M))
     for k in ['layer_height','initial_layer_print_height','wall_loops','top_shell_layers','bottom_shell_layers',
-              'sparse_infill_density','sparse_infill_pattern','curr_bed_type','enable_support','support_type','support_style']:
+              'sparse_infill_density','sparse_infill_pattern','curr_bed_type','enable_support','support_type','support_style','support_on_build_plate_only']:
         assert gcfg[k]==locked[k],(k,gcfg.get(k),locked[k])
     assert PROFILE in gcfg['filament_settings_id']
     assert re.search(r'^\s*M(?:140|190) S65\b',gc,re.M)
     assert re.search(r'^\s*M(?:104|109) S220\b',gc,re.M)
     checksum=hashlib.md5(sliced['Metadata/plate_1.gcode']).hexdigest()
     assert sliced['Metadata/plate_1.gcode.md5'].decode().strip().lower()==checksum
+    interior_supports=support_audit(gc)
+    assert interior_supports['support_extrusions_intersecting_collection_cavity']==0
     audit=scan_gcode(gc)
     low,high=audit['bead_xy_bounds_mm']
     audit['bed_size_mm']=[330,320]
@@ -247,14 +271,16 @@ def main():
     if 'Metadata/plate_1.png' in sliced:(OUT/'native-preview.png').write_bytes(sliced['Metadata/plate_1.png'])
     print('Native two-color slice passed. Reopening saved production project.',flush=True)
     reopened=native(FINAL,WORK/'reopened')
+    reopened_supports=support_audit((WORK/'reopened/plate_1.gcode').read_text())
+    assert reopened_supports['support_extrusions_intersecting_collection_cavity']==0
     after={p:sha(ROOT/p) for p in before};assert before==after
-    report={'date':'2026-11-09','revision':'fresh-r4','project':rel(FINAL),'sha256':sha(FINAL),
+    report={'date':'2026-11-09','revision':'fresh-r5','project':rel(FINAL),'sha256':sha(FINAL),
             'geometry':{'accepted_r3_scad_sha256':sha(REF/'accepted-r3.scad'),
               'accepted_r3_stl_sha256':sha(WORK/'accepted-r3.stl'),
               'full_mesh_watertight':bool(full.is_watertight),'full_mesh_body_count':len(full.split()),
               'bounds_mm':full.bounds.tolist(),'gray_mesh_watertight':bool(body.is_watertight),
               'green_logo_components':4,'logo_height_mm':32,'logo_inset_mm':0.8,'logo_relief_mm':0.4,
-              'unchanged_r3_plus_logo_difference_mm3':vol_diff(a+l,f),
+              'removed_inward_shelf_volume_mm3':removed.volume(),
               'color_part_overlap_mm3':float(overlap),'saved_part_vertex_error_mm':errors,
               'nominal_fit_mm':{'front_reach':41.275,'rear_return':15.621,'pillar_gap':49.6568,
                 'inside_radius':15.08125,'convex_tip_radius':12.7},'placement_mm':PLACEMENT.tolist()},
@@ -262,6 +288,7 @@ def main():
             'a2l_specific_material_fields_retained':machine_keys,
             'native_slice':result,'native_reopen':reopened,'gcode_md5':checksum,
             'gcode_audit':audit,'slice_warnings':warnings,
+            'support_audit':interior_supports,'reopen_support_audit':reopened_supports,
             'protected_before':before,'protected_after':after,
             'physical_status':'Design approved; full bucket fit, motion clearance, color quality and support removal have not been physically observed.'}
     jsave(OUT/'validation.json',report)

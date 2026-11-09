@@ -1,0 +1,54 @@
+[
+  {
+    "file": "Cover 4x3.png",
+    "dimensions": [
+      2400,
+      1800
+    ],
+    "mesh_sources": [
+      "Gray-Body.stl",
+      "Green-Logo.stl"
+    ],
+    "colors": [
+      "#555555",
+      "#00CC00"
+    ],
+    "camera_eye": [
+      515.333912127701,
+      -456.8274075234573,
+      494.9071991574849
+    ],
+    "camera_target": [
+      60,
+      126,
+      76
+    ],
+    "method": "Exact STL mesh render with directional lighting and shadow map; no generated geometry."
+  },
+  {
+    "file": "Cover 3x4.png",
+    "dimensions": [
+      1800,
+      2400
+    ],
+    "mesh_sources": [
+      "Gray-Body.stl",
+      "Green-Logo.stl"
+    ],
+    "colors": [
+      "#555555",
+      "#00CC00"
+    ],
+    "camera_eye": [
+      425.02208829380413,
+      -549.2908633435377,
+      441.02208829380413
+    ],
+    "camera_target": [
+      60,
+      126,
+      76
+    ],
+    "method": "Exact STL mesh render with directional lighting and shadow map; no generated geometry."
+  }
+]

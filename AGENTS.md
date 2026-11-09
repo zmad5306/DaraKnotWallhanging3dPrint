@@ -56,6 +56,23 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved A2L chute and publication update, 2026-11-09:** after reporting
+  unwanted supports inside the collection cavity, the user requested new SUNLU
+  PLA+ 2.0 and Bambu PLA Basic files, clean publication names, and commit/push of
+  the SUNLU version. In `accessories/A2L-Poop-Bucket-Fresh/`, the chute's inward
+  overlap changes **4 to 0 mm**, bringing its inner edge from **X104 to X108 mm**,
+  flush with the inside wall. Outer reach stays **X128 mm**. Set
+  **support_on_build_plate_only = 1**, retaining automatic trees/default style.
+  Preserve bucket size, pillar contour, outer chute reach/rise, logo, placements,
+  all other process/material settings and the user's saved purge values. The
+  current SUNLU preset identity has no `(project)` suffix. Public project/plate
+  names are **A2L Poop Bucket**. CAD/STLs match the saved SUNLU project; native
+  slices and reopens have zero support extrusion paths inside the collection
+  cavity, including interfaces and transitions. Full physical printing of this
+  revision remains unobserved. The Bambu PLA Basic publication package stays
+  outside source control. Current evidence is in the accessory validation and
+  catalog; the previous two-color validation is retained under `history/`.
+
 - **Approved fresh A2L bucket and two-color release, 2026-11-09:** the user
   accepted the fresh r3 parametric design, requested STL and an **A2L** project,
   corrected the material to **SUNLU PLA+ 2.0**, and requested a **gray body /

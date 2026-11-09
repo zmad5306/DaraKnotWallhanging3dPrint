@@ -1,8 +1,8 @@
-// A2L purge bucket - fresh parametric body with two-color front mark, 2026-11-09.
+// A2L Poop Bucket - parametric CAD with a two-color front logo.
 // Units: millimeters. Body uses no imported meshes or external libraries.
 // Bambu mark polygons transcribed from Bambu Studio resources/images/splash_logo.svg.
-// Uses measured/test-fitted printer interface dimensions only.
-// The adjacent A2L 3MF contains the two-color print settings. Physical fit is unconfirmed.
+// Printer interface dimensions are specified below.
+// Use the accompanying 3MF for the two-color print setup.
 
 /* [View] */
 view_mode = "Assembly"; // [Assembly,GrayBody,GreenLogo,SingleColor,Footprint]
@@ -14,9 +14,7 @@ logo_bottom_z = 40;
 logo_inset = 0.8;
 logo_relief = 0.4;
 
-/* [New body] */
-// +10 mm width away from the printer; +10 mm length toward the front.
-// When seated on the same pillar, the rear end and chute entry stay aligned.
+/* [Body] */
 body_width = 110;
 body_length = 255;
 outer_corner_radius = 6;
@@ -35,24 +33,24 @@ pillar_wall_slope_enabled = true;
 
 /* [Printer catch chute] */
 chute_enabled = true;
-// Preview dimensions; confirm clearance to the printer before printing.
+// Catch chute dimensions.
 chute_reach = 18;          // Projection beyond the printer-side wall
 chute_rise = 8;            // Outer edge rises above the 58 mm wall
 chute_thickness = 2;       // Vertical section thickness
-chute_inside_overlap = 4;  // Leads past the inside wall into the bucket
+chute_inside_overlap = 0;  // Flush with the inside wall
 chute_front_setback = 8;
 chute_pillar_setback = 4;
 
-/* [Established A2L fit] */
-// Distances are functional fit dimensions, not dimensions of the old shell.
-front_reach = 41.275;           // 1.625 in after the 1/8 in shortening
+/* [Pillar opening] */
+// Functional printer interface dimensions.
+front_reach = 41.275;           // 1.625 in
 rear_return = 15.621;          // 0.615 in
-pillar_gap = 49.6568;          // Last narrowed sample's nominal shoulder gap
-inside_radius = 15.08125;      // 19/32 in, selected during fit testing
-rear_tip_convex_radius = 12.7; // 1/2 in, requested at the short rear tip
+pillar_gap = 49.6568;          // Nominal pillar gap
+inside_radius = 15.08125;      // 19/32 in
+rear_tip_convex_radius = 12.7; // 1/2 in convex rear tip
 
 /* [Opening placement] */
-// New rear-edge allowance; positions the opening in this new body.
+// Distance from the rear edge to the opening.
 rear_edge_allowance = 12;
 
 /* [Hidden] */
@@ -123,7 +121,7 @@ module tall_wall_region() {
     }
 }
 
-// Extrude a freshly drawn X/Z profile along Y.
+// Extrude an X/Z profile along Y.
 module xz_prism(points, y_start, y_length) {
     translate([0,y_start+y_length,0])
         rotate([90,0,0])
@@ -132,7 +130,7 @@ module xz_prism(points, y_start, y_length) {
 }
 
 module triangular_front_wall() {
-    // Match the existing rounded wall stock, including both front corners.
+    // Follow the rounded wall profile, including both front corners.
     // The top slopes from full height at the back to the low printer-side wall.
     // Resolve the thin intersection so the triangular face is visible in F5.
     render(convexity=10) intersection() {
@@ -154,7 +152,8 @@ module printer_chute() {
     x_inner = body_width-wall_thickness-chute_inside_overlap;
     x_outer = body_width+chute_reach;
     // The top surface slopes down toward the bucket. Its root overlaps the
-    // low wall as solid material; the inside edge has no raised catching ledge.
+    // low wall as solid material. The inner edge is flush with the wall,
+    // so it cannot create a suspended shelf over the collection cavity.
     xz_prism([
         [x_inner,chute_top_z(x_inner)-chute_thickness],
         [x_outer,chute_top_z(x_outer)-chute_thickness],
@@ -165,7 +164,7 @@ module printer_chute() {
 }
 
 module sloped_pillar_wall() {
-    // Raise only the existing wall ring. Its XY fit contour never moves.
+    // Raise the wall along the pillar opening.
     // Start at the low front shoulder and meet the inside of the tall rear
     // wall continuously, including the concave and convex corner curves.
     slope_end_y = body_length-wall_thickness-eps;
@@ -247,7 +246,7 @@ module gray_body() {
 
 if (view_mode == "Footprint") color("gray") footprint();
 else if (view_mode == "GrayBody") {
-    // Avoid OpenCSG's nested-boolean preview defect; F6 exports the exact split.
+    // Use the complete shell for quick preview and the color volume for export.
     if ($preview) bucket(); else gray_body();
 }
 else if (view_mode == "GreenLogo") green_logo();

@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(__file__).resolve().parent
 REF=OUT/'reference'
-WORK=ROOT/'.work/a2l-bucket-single-build'
+WORK=ROOT/'.work/a2l-bucket-measured-clearance-build'
 sys.path[:0]=[str(ROOT/'.work/python-libs'),str(ROOT/'scripts')]
 import numpy as np
 import trimesh
@@ -179,22 +179,32 @@ def validate_geometry(full):
     assert np.max(np.abs(full.bounds-np.array([[0,0,0],[132.296,255,160.804]])))<.0001
     accepted=trimesh.load(WORK/'accepted-r3.stl',force='mesh')
     a,b=solid(accepted),solid(full)
-    domain=solid(trimesh.creation.box(bounds=[[103.999,7.999,54.39],[132.297,189.344,66.01]]))
+    domain=solid(trimesh.creation.box(bounds=[[103.999,7.999,54.39],[132.297,189.344,69.591]]))
     outside_change=abs(((a-b)-domain).volume())+abs(((b-a)-domain).volume())
     assert outside_change<.03, outside_change
     profile=Polygon(full.section(plane_origin=[0,100,0],plane_normal=[0,1,0]).discrete[0][:,[0,2]])
-    local=profile.intersection(box(108,55,133,67))
-    expected=Polygon([[108,55],[110,55],[110,58.026],[110.268,58.326],
-                      [132.296,62.348],[131.896,64.016],[108.304,59.546],[108,59.194]])
+    local=profile.intersection(box(108,55,133,71))
+    expected=Polygon([[108,55],[110,55],[110,63.6],[110.268,63.9],
+                      [132.296,67.922],[131.896,69.59],[108.304,65.12],[108,64.768]])
     profile_error=local.symmetric_difference(expected).area
     assert profile_error<.001, profile_error
+    # Check the entire external underside, including the root transition.
+    mask=(full.face_normals[:,2]<-.01)&(full.triangles_center[:,0]>110.00001)
+    mask &= (full.triangles_center[:,1]>7.999)&(full.triangles_center[:,1]<189.344)
+    assert mask.any()
+    underside_min=float(full.triangles[mask,:,2].min())
+    clearance=underside_min-2.464*25.4
+    assert clearance>=1.0,clearance
     return {'closed_single_body':True,'bounds_mm':full.bounds.tolist(),
             'outside_chute_change_from_accepted_body_mm3':outside_change,
             'reference_dimension_section_error_mm2':profile_error,
             'logo_present':False,'front_surface_y_mm':0,
             'pillar_fit_unchanged':True,'body_size_unchanged':True,
-            'chute_wall_height_mm':58.026,'chute_tip_top_mm':64.016,
-            'chute_tip_bottom_mm':62.348,'chute_reach_mm':22.296}
+            'chute_wall_height_mm':63.6,'chute_tip_top_mm':69.59,
+            'chute_tip_bottom_mm':67.922,'chute_reach_mm':22.296,
+            'user_housing_height_in':2.464,'user_housing_height_mm':2.464*25.4,
+            'minimum_chute_underside_height_mm':underside_min,'minimum_vertical_clearance_mm':clearance,
+            'chute_vertical_offset_mm':5.574,'wall_height_in':63.6/25.4,'tip_top_height_in':69.59/25.4}
 
 def build_project(cfg, destination, run_dir):
     protected=list(ROOT.glob('*.3mf'))+list((ROOT/'accessories/A2L-Poop-Bucket').glob('*.3mf'))
@@ -253,13 +263,13 @@ def build_project(cfg, destination, run_dir):
     for k in ['printer_model','printer_settings_id','nozzle_diameter','filament_settings_id','filament_colour',
               'filament_flow_ratio','filament_max_volumetric_speed','nozzle_temperature','textured_plate_temp']:
         locked[k]=cfg[k]
-    report={'date':'2026-11-10','revision':'single-color-reference-chute','project':str(destination),
+    report={'date':'2026-11-10','revision':'measured-printer-clearance','project':str(destination),
             'sha256':sha(destination),'geometry':geometry,'saved_part_vertex_error_mm':mesh_difference,
             'saved_settings':settings,'native_slice':sliced_result,'native_reopen':reopen,
             'support_audit':sa,'reopen_support_audit':rsa,'bed_edge_clearance_mm':clearance,
             'gcode_md5':checksum,'color_changes':0,'prime_tower_extrusions':0,
             'locked_settings':locked,'protected_before':protected_before,'protected_after':protected_after,
-            'physical_status':'User reports the reference bucket fits. Current wall/chute dimensions match that reference; a physical print of this single-color bucket has not been observed.'}
+            'physical_status':'User measured printer housing height as 2.464 inches and approved raising the entire chute while preserving its slope. Digital geometry provides at least 1 mm clearance; physical printing and fit of this revision remain unobserved.'}
     jsave(run_dir/'validation.json',report)
     print(destination.name,'native reopen passed',flush=True)
     return report

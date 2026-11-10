@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
-  "revision": "single-color-reference-chute",
+  "revision": "measured-printer-clearance",
   "project": "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf",
-  "sha256": "02591cb5e5c0f15810a83bd0668c118df6c897fbe798c0738196f09b231c2fe0",
+  "sha256": "d63a8d878c6fb6965344fd2308e70c842ea454be2f0eb18f60193a5e3bac91f7",
   "geometry": {
     "closed_single_body": true,
     "bounds_mm": [
@@ -18,17 +18,51 @@
       ]
     ],
     "outside_chute_change_from_accepted_body_mm3": 0.0,
-    "reference_dimension_section_error_mm2": 0.0003720438185837324,
+    "reference_dimension_section_error_mm2": 0.00013496404727414714,
     "logo_present": false,
     "front_surface_y_mm": 0,
     "pillar_fit_unchanged": true,
     "body_size_unchanged": true,
-    "chute_wall_height_mm": 58.026,
-    "chute_tip_top_mm": 64.016,
-    "chute_tip_bottom_mm": 62.348,
+    "chute_wall_height_mm": 63.6,
+    "chute_tip_top_mm": 69.59,
+    "chute_tip_bottom_mm": 67.922,
     "chute_reach_mm": 22.296,
-    "original_chute_profile_max_distance_mm": 0.08373919565252703,
-    "original_chute_profile_area_difference_mm2": 0.06546897659148036
+    "user_housing_height_in": 2.464,
+    "user_housing_height_mm": 62.58559999999999,
+    "minimum_chute_underside_height_mm": 63.59999084472656,
+    "minimum_vertical_clearance_mm": 1.0143908447265702,
+    "chute_vertical_offset_mm": 5.574,
+    "wall_height_in": 2.5039370078740157,
+    "tip_top_height_in": 2.7397637795275593,
+    "translated_original_chute_and_extended_wall_difference_mm3": 0.043376343128787985,
+    "translated_chute_section_errors": [
+      {
+        "y_mm": 8.001,
+        "distance_mm": 7.726318339718844e-06,
+        "area_mm2": 0.00023989230331102307
+      },
+      {
+        "y_mm": 50,
+        "distance_mm": 5.126953126932676e-06,
+        "area_mm2": 0.00023887489131688768
+      },
+      {
+        "y_mm": 100,
+        "distance_mm": 5.126953126932676e-06,
+        "area_mm2": 0.00023887489133639893
+      },
+      {
+        "y_mm": 150,
+        "distance_mm": 5.126953126932676e-06,
+        "area_mm2": 0.00023887489139623209
+      },
+      {
+        "y_mm": 189.342,
+        "distance_mm": 5.126953126932676e-06,
+        "area_mm2": 0.00023887489116544247
+      }
+    ],
+    "chute_slope_and_thickness_preserved": true
   },
   "saved_part_vertex_error_mm": 3.790886647219736e-06,
   "saved_settings": {
@@ -1296,38 +1330,38 @@
   "native_slice": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1001.58984375,
+    "peak_rss_mb": 1047.12890625,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
           "Bottom surface": 623.8240356445312,
-          "Custom": 406.73388671875,
+          "Custom": 406.7354431152344,
           "Flush": 11.0,
-          "Gap infill": 2011.77490234375,
-          "Inner wall": 4270.28759765625,
-          "Internal solid infill": 2511.655517578125,
-          "Outer wall": 4791.68359375,
-          "Overhang wall": 724.6083374023438,
-          "Support": 4308.0380859375,
-          "Support interface": 397.35687255859375,
-          "Top surface": 925.5210571289062,
-          "Travel": 3382.20947265625,
-          "Undefined": 3377.854736328125
+          "Gap infill": 2034.391845703125,
+          "Inner wall": 4305.9716796875,
+          "Internal solid infill": 2512.99951171875,
+          "Outer wall": 4856.99365234375,
+          "Overhang wall": 724.6375122070312,
+          "Support": 4471.82763671875,
+          "Support interface": 392.7357482910156,
+          "Top surface": 924.264404296875,
+          "Travel": 3426.6552734375,
+          "Undefined": 3422.300537109375
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 289.42388916015625,
-            "total_used_g": 289.42388916015625
+            "main_used_g": 292.8307800292969,
+            "total_used_g": 292.8307800292969
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 23955.923828125,
+        "main_predication": 24283.58203125,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -1346,44 +1380,44 @@
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 67,
-          "export_gcode_time": 2494,
+          "detect_overhangs_time": 78,
+          "export_gcode_time": 2843,
           "flush_plan_time": 0,
-          "generate_support_material_time": 2876,
-          "infill_generate_time": 45,
-          "infill_time": 153,
+          "generate_support_material_time": 3188,
+          "infill_generate_time": 48,
+          "infill_time": 161,
           "ironing_time": 0,
-          "make_perimeters_time": 653,
+          "make_perimeters_time": 712,
           "multifilament_segment_2d_time": 0,
           "other_slice_time": 1,
-          "prepare_infill_time": 108,
+          "prepare_infill_time": 113,
           "region_split_time": 1,
-          "skirt_brim_time": 2,
-          "slice_layers_time": 276,
-          "sliced_time": 6285,
-          "sliced_time_with_cache": 2496,
-          "support_detect_time": 139,
-          "support_interface_time": 11,
+          "skirt_brim_time": 3,
+          "slice_layers_time": 285,
+          "sliced_time": 7032,
+          "sliced_time_with_cache": 2846,
+          "support_detect_time": 153,
+          "support_interface_time": 13,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 679,
-          "support_tree_generate_time": 2036,
-          "toolpath_time": 33,
-          "wall_time": 376,
+          "support_toolpath_time": 813,
+          "support_tree_generate_time": 2199,
+          "toolpath_time": 37,
+          "wall_time": 426,
           "wipe_tower_time": 5
         },
-        "total_predication": 24380.302734375,
+        "total_predication": 24707.962890625,
         "triangle_count": 5316,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1232,
+      "export_3mf_time": 1409,
       "export_slicedata_time": 0,
-      "export_time": 3379,
-      "import_time": 25,
+      "export_time": 3986,
+      "import_time": 24,
       "load_slicedata_time": 0,
-      "prepare_time": 31
+      "prepare_time": 30
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -1397,38 +1431,38 @@
   "native_reopen": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1025.3359375,
+    "peak_rss_mb": 1018.40234375,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
           "Bottom surface": 623.8240356445312,
-          "Custom": 406.73388671875,
+          "Custom": 406.7354431152344,
           "Flush": 11.0,
-          "Gap infill": 2011.77490234375,
-          "Inner wall": 4270.28759765625,
-          "Internal solid infill": 2511.655517578125,
-          "Outer wall": 4791.68359375,
-          "Overhang wall": 724.6083374023438,
-          "Support": 4308.0380859375,
-          "Support interface": 397.35687255859375,
-          "Top surface": 925.5210571289062,
-          "Travel": 3382.20947265625,
-          "Undefined": 3377.854736328125
+          "Gap infill": 2034.391845703125,
+          "Inner wall": 4305.9716796875,
+          "Internal solid infill": 2512.99951171875,
+          "Outer wall": 4856.99365234375,
+          "Overhang wall": 724.6375122070312,
+          "Support": 4471.82763671875,
+          "Support interface": 392.7357482910156,
+          "Top surface": 924.264404296875,
+          "Travel": 3426.6552734375,
+          "Undefined": 3422.300537109375
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 289.42388916015625,
-            "total_used_g": 289.42388916015625
+            "main_used_g": 292.8307800292969,
+            "total_used_g": 292.8307800292969
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 23955.923828125,
+        "main_predication": 24283.58203125,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -1447,44 +1481,44 @@
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 67,
-          "export_gcode_time": 2486,
+          "detect_overhangs_time": 61,
+          "export_gcode_time": 2841,
           "flush_plan_time": 0,
-          "generate_support_material_time": 2863,
-          "infill_generate_time": 49,
-          "infill_time": 155,
+          "generate_support_material_time": 2920,
+          "infill_generate_time": 45,
+          "infill_time": 142,
           "ironing_time": 0,
-          "make_perimeters_time": 648,
+          "make_perimeters_time": 673,
           "multifilament_segment_2d_time": 0,
-          "other_slice_time": 1,
-          "prepare_infill_time": 106,
-          "region_split_time": 1,
+          "other_slice_time": 2,
+          "prepare_infill_time": 97,
+          "region_split_time": 0,
           "skirt_brim_time": 2,
-          "slice_layers_time": 275,
-          "sliced_time": 6262,
-          "sliced_time_with_cache": 2488,
-          "support_detect_time": 145,
-          "support_interface_time": 12,
+          "slice_layers_time": 291,
+          "sliced_time": 6679,
+          "sliced_time_with_cache": 2843,
+          "support_detect_time": 138,
+          "support_interface_time": 11,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 643,
-          "support_tree_generate_time": 2052,
-          "toolpath_time": 33,
-          "wall_time": 372,
+          "support_toolpath_time": 809,
+          "support_tree_generate_time": 1951,
+          "toolpath_time": 32,
+          "wall_time": 382,
           "wipe_tower_time": 5
         },
-        "total_predication": 24380.302734375,
+        "total_predication": 24707.962890625,
         "triangle_count": 5316,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1243,
+      "export_3mf_time": 1308,
       "export_slicedata_time": 0,
-      "export_time": 1246,
-      "import_time": 140,
+      "export_time": 1311,
+      "import_time": 139,
       "load_slicedata_time": 0,
-      "prepare_time": 146
+      "prepare_time": 143
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -1496,1541 +1530,60 @@
     ]
   },
   "support_audit": {
-    "support_extrusions_checked": 459712,
+    "support_extrusions_checked": 475421,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "reopen_support_audit": {
-    "support_extrusions_checked": 459712,
+    "support_extrusions_checked": 475421,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "bed_edge_clearance_mm": 32.30000000000001,
-  "gcode_md5": "46067eb21bfb00f34cb54b00366500de",
+  "gcode_md5": "8c344d26190af8ce94032f73039c2ad0",
   "color_changes": 0,
   "prime_tower_extrusions": 0,
-  "physical_status": "User reports the reference bucket fits. Current wall/chute dimensions match that reference; a physical print of this single-color bucket has not been observed.",
-  "settings_changed_from_two_color": {
-    "counter_limit_min": [
-      [
-        "-0.035",
-        "-0.035"
-      ],
-      [
-        "-0.035"
-      ]
-    ],
-    "filament_mixed_sublayer_ratios": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
-    ],
-    "supertack_plate_temp": [
-      [
-        "45",
-        "45"
-      ],
-      [
-        "45"
-      ]
-    ],
-    "flush_volumes_matrix": [
-      [
-        "0",
-        "373",
-        "210",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_dev_chamber_drying_time": [
-      [
-        "12",
-        "12"
-      ],
-      [
-        "12"
-      ]
-    ],
-    "impact_strength_z": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "filament_colour": [
-      [
-        "#555555",
-        "#00CC00"
-      ],
-      [
-        "#555555"
-      ]
-    ],
-    "filament_bridge_speed": [
-      [
-        "25",
-        "25"
-      ],
-      [
-        "25"
-      ]
-    ],
-    "filament_dev_ams_drying_ams_limitations": [
-      [
-        "1",
-        "0",
-        "1",
-        "0"
-      ],
-      [
-        "1",
-        "0"
-      ]
-    ],
-    "nozzle_temperature_range_high": [
-      [
-        "240",
-        "240"
-      ],
-      [
-        "240"
-      ]
-    ],
-    "filament_overhang_2_4_speed": [
-      [
-        "50",
-        "50"
-      ],
-      [
-        "50"
-      ]
-    ],
-    "cooling_perimeter_transition_distance": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "circle_compensation_speed": [
-      [
-        "200",
-        "200"
-      ],
-      [
-        "200"
-      ]
-    ],
-    "long_retractions_when_ec": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "full_fan_speed_layer": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "hole_limit_max": [
-      [
-        "0.22",
-        "0.22"
-      ],
-      [
-        "0.22"
-      ]
-    ],
-    "filament_pre_cooling_temperature_nc": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_printable": [
-      [
-        "3",
-        "3"
-      ],
-      [
-        "3"
-      ]
-    ],
-    "filament_pre_heating_enabled": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_overhang_totally_speed": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "temperature_vitrification": [
-      [
-        "54",
-        "54"
-      ],
-      [
-        "54"
-      ]
-    ],
-    "filament_retraction_speed": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_z_hop_types": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_long_retractions_when_cut": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "first_x_layer_fan_speed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_overhang_1_4_speed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "volumetric_speed_coefficients": [
-      [
-        "0 0 0 0 0 0",
-        "0 0 0 0 0 0"
-      ],
-      [
-        "0 0 0 0 0 0"
-      ]
-    ],
-    "eng_plate_temp_initial_layer": [
-      [
-        "55",
-        "55"
-      ],
-      [
-        "55"
-      ]
-    ],
-    "filament_retract_before_wipe": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_adhesiveness_category": [
-      [
-        "100",
-        "100"
-      ],
-      [
-        "100"
-      ]
-    ],
-    "inherits_group": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ],
-      [
-        "",
-        "",
-        ""
-      ]
-    ],
-    "nozzle_temperature": [
-      [
-        "220",
-        "220"
-      ],
-      [
-        "220"
-      ]
-    ],
-    "filament_ramming_volumetric_speed": [
-      [
-        "-1",
-        "-1"
-      ],
-      [
-        "-1"
-      ]
-    ],
-    "filament_z_hop": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "override_process_overhang_speed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "slow_down_layer_time": [
-      [
-        "6",
-        "6"
-      ],
-      [
-        "6"
-      ]
-    ],
-    "cool_plate_temp_initial_layer": [
-      [
-        "35",
-        "35"
-      ],
-      [
-        "35"
-      ]
-    ],
-    "hole_limit_min": [
-      [
-        "0.088",
-        "0.088"
-      ],
-      [
-        "0.088"
-      ]
-    ],
-    "filament_prime_volume_nc": [
-      [
-        "60",
-        "60"
-      ],
-      [
-        "60"
-      ]
-    ],
-    "filament_ramming_travel_time": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "enable_pressure_advance": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "close_additional_fan_first_x_layers": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_dev_ams_drying_heat_distortion_temperature": [
-      [
-        "45",
-        "45"
-      ],
-      [
-        "45"
-      ]
-    ],
-    "filament_dev_drying_softening_temperature": [
-      [
-        "50",
-        "50"
-      ],
-      [
-        "50"
-      ]
-    ],
-    "overhang_threshold_participating_cooling": [
-      [
-        "95%",
-        "95%"
-      ],
-      [
-        "95%"
-      ]
-    ],
-    "textured_plate_temp": [
-      [
-        "65",
-        "65"
-      ],
-      [
-        "65"
-      ]
-    ],
-    "no_slow_down_for_cooling_on_outwalls": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "counter_coef_3": [
-      [
-        "-0.041",
-        "-0.041"
-      ],
-      [
-        "-0.041"
-      ]
-    ],
-    "filament_retract_restart_extra": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "hole_coef_2": [
-      [
-        "-0.008",
-        "-0.008"
-      ],
-      [
-        "-0.008"
-      ]
-    ],
-    "filament_wipe_distance": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_pre_cooling_temperature": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_scarf_seam_type": [
-      [
-        "none",
-        "none"
-      ],
-      [
-        "none"
-      ]
-    ],
-    "close_fan_the_first_x_layers": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "counter_coef_1": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_flush_temp": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "slow_down_min_speed": [
-      [
-        "20",
-        "20"
-      ],
-      [
-        "20"
-      ]
-    ],
-    "filament_ramming_volumetric_speed_nc": [
-      [
-        "-1",
-        "-1"
-      ],
-      [
-        "-1"
-      ]
-    ],
-    "filament_retract_length_toolchange": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_density": [
-      [
-        "1.21",
-        "1.21"
-      ],
-      [
-        "1.21"
-      ]
-    ],
-    "filament_colour_type": [
-      [
-        "0",
-        "2"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "nozzle_temperature_initial_layer": [
-      [
-        "220",
-        "220"
-      ],
-      [
-        "220"
-      ]
-    ],
-    "default_filament_colour": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
-    ],
-    "filament_cost": [
-      [
-        "18.99",
-        "18.99"
-      ],
-      [
-        "18.99"
-      ]
-    ],
-    "fan_max_speed": [
-      [
-        "80",
-        "80"
-      ],
-      [
-        "80"
-      ]
-    ],
-    "hole_coef_3": [
-      [
-        "0.23415",
-        "0.23415"
-      ],
-      [
-        "0.23415"
-      ]
-    ],
-    "filament_retraction_minimum_travel": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_preheat_temperature_delta": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_mixed_gradient_curve": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
-    ],
-    "filament_map": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "diameter_limit": [
-      [
-        "50",
-        "50"
-      ],
-      [
-        "50"
-      ]
-    ],
-    "filament_mixed_components": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
-    ],
-    "filament_flow_ratio": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_prime_tower_speed_factor_curve": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
-    ],
-    "filament_tower_interface_purge_volume": [
-      [
-        "20",
-        "20"
-      ],
-      [
-        "20"
-      ]
-    ],
-    "filament_scarf_length": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "additional_fan_full_speed_layer": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_tower_ironing_area": [
-      [
-        "4",
-        "4"
-      ],
-      [
-        "4"
-      ]
-    ],
-    "filament_retract_length_nc": [
-      [
-        "14",
-        "14"
-      ],
-      [
-        "14"
-      ]
-    ],
-    "pressure_advance": [
-      [
-        "0.02",
-        "0.02"
-      ],
-      [
-        "0.02"
-      ]
-    ],
-    "filament_vendor": [
-      [
-        "SUNLU",
-        "SUNLU"
-      ],
-      [
-        "SUNLU"
-      ]
-    ],
-    "hole_coef_1": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_tower_interface_pre_extrusion_dist": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "filament_mixed_gradient": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "fan_cooling_layer_time": [
-      [
-        "80",
-        "80"
-      ],
-      [
-        "80"
-      ]
-    ],
-    "filament_dev_drying_cooling_temperature": [
-      [
-        "45",
-        "45"
-      ],
-      [
-        "45"
-      ]
-    ],
-    "enable_prime_tower": [
-      "1",
-      "0"
-    ],
-    "filament_metal_stickiness": [
-      [
-        "None",
-        "None"
-      ],
-      [
-        "None"
-      ]
-    ],
-    "filament_flush_temp_fast": [
-      [
-        "220",
-        "220"
-      ],
-      [
-        "220"
-      ]
-    ],
-    "filament_soluble": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "hot_plate_temp_initial_layer": [
-      [
-        "65",
-        "65"
-      ],
-      [
-        "65"
-      ]
-    ],
-    "eng_plate_temp": [
-      [
-        "55",
-        "55"
-      ],
-      [
-        "55"
-      ]
-    ],
-    "filament_start_gcode": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
-    ],
-    "chamber_temperatures": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
+  "locked_settings": {
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "4",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "sparse_infill_density": "8%",
+    "sparse_infill_pattern": "gyroid",
+    "support_type": "tree(auto)",
+    "support_style": "default",
+    "support_on_build_plate_only": "1",
+    "curr_bed_type": "Textured PEI Plate",
+    "enable_prime_tower": "0",
+    "printer_model": "Bambu Lab A2L",
+    "printer_settings_id": "Bambu Lab A2L 0.4 nozzle",
+    "nozzle_diameter": [
+      "0.4"
     ],
     "filament_settings_id": [
-      [
-        "SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle",
-        "SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle"
-      ],
-      [
-        "SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle"
-      ]
+      "SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle"
     ],
-    "slow_down_for_layer_cooling": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
+    "filament_colour": [
+      "#555555"
     ],
-    "filament_diameter": [
-      [
-        "1.75",
-        "1.75"
-      ],
-      [
-        "1.75"
-      ]
-    ],
-    "filament_cooling_before_tower": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "textured_plate_temp_initial_layer": [
-      [
-        "65",
-        "65"
-      ],
-      [
-        "65"
-      ]
+    "filament_flow_ratio": [
+      "1"
     ],
     "filament_max_volumetric_speed": [
-      [
-        "22",
-        "22"
-      ],
-      [
-        "22"
-      ]
+      "22"
     ],
-    "filament_mixed_gradient_range": [
-      [
-        "",
-        ""
-      ],
-      [
-        ""
-      ]
+    "nozzle_temperature": [
+      "220"
     ],
-    "filament_ramming_travel_time_nc": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_tower_interface_pre_extrusion_length": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_self_index": [
-      [
-        "1",
-        "2"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "enable_overhang_bridge_fan": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_dev_ams_drying_time": [
-      [
-        "12",
-        "12",
-        "12",
-        "12",
-        "12",
-        "12",
-        "12",
-        "12"
-      ],
-      [
-        "12",
-        "12",
-        "12",
-        "12"
-      ]
-    ],
-    "filament_change_length_nc": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "filament_ids": [
-      [
-        "GFSNL04",
-        "GFSNL04"
-      ],
-      [
-        "GFSNL04"
-      ]
-    ],
-    "counter_limit_max": [
-      [
-        "0.033",
-        "0.033"
-      ],
-      [
-        "0.033"
-      ]
-    ],
-    "supertack_plate_temp_initial_layer": [
-      [
-        "45",
-        "45"
-      ],
-      [
-        "45"
-      ]
-    ],
-    "filament_scarf_height": [
-      [
-        "5%",
-        "5%"
-      ],
-      [
-        "5%"
-      ]
-    ],
-    "filament_retraction_length": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_retract_when_changing_layer": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_volume_map": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "overhang_fan_threshold": [
-      [
-        "25%",
-        "25%"
-      ],
-      [
-        "25%"
-      ]
-    ],
-    "overhang_fan_speed": [
-      [
-        "100",
-        "100"
-      ],
-      [
-        "100"
-      ]
-    ],
-    "hot_plate_temp": [
-      [
-        "65",
-        "65"
-      ],
-      [
-        "65"
-      ]
-    ],
-    "filament_wipe": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_retraction_distances_when_cut": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "required_nozzle_HRC": [
-      [
-        "3",
-        "3"
-      ],
-      [
-        "3"
-      ]
-    ],
-    "filament_idle_travel_cooling_enabled": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_velocity_adaptation_factor": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "cooling_slowdown_logic": [
-      [
-        "uniform_cooling",
-        "uniform_cooling"
-      ],
-      [
-        "uniform_cooling"
-      ]
-    ],
-    "retraction_distances_when_ec": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_extruder_variant": [
-      [
-        "Direct Drive Standard",
-        "Direct Drive Standard"
-      ],
-      [
-        "Direct Drive Standard"
-      ]
-    ],
-    "ironing_fan_speed": [
-      [
-        "-1",
-        "-1"
-      ],
-      [
-        "-1"
-      ]
-    ],
-    "fan_min_speed": [
-      [
-        "60",
-        "60"
-      ],
-      [
-        "60"
-      ]
-    ],
-    "filament_prime_volume": [
-      [
-        "45",
-        "45"
-      ],
-      [
-        "45"
-      ]
-    ],
-    "additional_cooling_fan_speed": [
-      [
-        "70",
-        "70"
-      ],
-      [
-        "70"
-      ]
-    ],
-    "nozzle_temperature_range_low": [
-      [
-        "190",
-        "190"
-      ],
-      [
-        "190"
-      ]
-    ],
-    "filament_is_mixed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "cool_plate_temp": [
-      [
-        "35",
-        "35"
-      ],
-      [
-        "35"
-      ]
-    ],
-    "counter_coef_2": [
-      [
-        "0.008",
-        "0.008"
-      ],
-      [
-        "0.008"
-      ]
-    ],
-    "filament_extruder_compatibility": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_enable_overhang_speed": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_mixed_gradient_per_part": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_scarf_gap": [
-      [
-        "0%",
-        "0%"
-      ],
-      [
-        "0%"
-      ]
-    ],
-    "filament_nozzle_map": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "flush_volumes_vector": [
-      [
-        "140",
-        "140",
-        "140",
-        "140"
-      ],
-      [
-        "140",
-        "140"
-      ]
-    ],
-    "filament_overhang_4_4_speed": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "reduce_fan_stop_start_freq": [
-      [
-        "1",
-        "1"
-      ],
-      [
-        "1"
-      ]
-    ],
-    "filament_dev_ams_drying_temperature": [
-      [
-        "45",
-        "45",
-        "45",
-        "45",
-        "45",
-        "45",
-        "45",
-        "45"
-      ],
-      [
-        "45",
-        "45",
-        "45",
-        "45"
-      ]
-    ],
-    "filament_shrink": [
-      [
-        "100%",
-        "100%"
-      ],
-      [
-        "100%"
-      ]
-    ],
-    "filament_is_support": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "first_x_layer_part_fan_speed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "different_settings_to_system": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ],
-      [
-        "",
-        "",
-        ""
-      ]
-    ],
-    "filament_end_gcode": [
-      [
-        "; filament end gcode \n\n",
-        "; filament end gcode \n\n"
-      ],
-      [
-        "; filament end gcode \n\n"
-      ]
-    ],
-    "filament_multi_colour": [
-      [
-        "#555555",
-        "#00CC00"
-      ],
-      [
-        "#555555"
-      ]
-    ],
-    "pre_start_fan_time": [
-      [
-        "2",
-        "2"
-      ],
-      [
-        "2"
-      ]
-    ],
-    "filament_minimal_purge_on_wipe_tower": [
-      [
-        "15",
-        "15"
-      ],
-      [
-        "15"
-      ]
-    ],
-    "filament_overhang_3_4_speed": [
-      [
-        "30",
-        "30"
-      ],
-      [
-        "30"
-      ]
-    ],
-    "filament_tower_interface_print_temp": [
-      [
-        "-1",
-        "-1"
-      ],
-      [
-        "-1"
-      ]
-    ],
-    "activate_air_filtration": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_adaptive_volumetric_speed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "during_print_exhaust_fan_speed": [
-      [
-        "70",
-        "70"
-      ],
-      [
-        "70"
-      ]
-    ],
-    "filament_flush_volumetric_speed": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0"
-      ]
-    ],
-    "filament_retract_restart_extra_toolchange": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
-    ],
-    "filament_type": [
-      [
-        "PLA",
-        "PLA"
-      ],
-      [
-        "PLA"
-      ]
-    ],
-    "filament_diameter_map": [
-      [
-        "0.4",
-        "0.4"
-      ],
-      [
-        "0.4"
-      ]
-    ],
-    "complete_print_exhaust_fan_speed": [
-      [
-        "70",
-        "70"
-      ],
-      [
-        "70"
-      ]
-    ],
-    "filament_dev_chamber_drying_bed_temperature": [
-      [
-        "70",
-        "70"
-      ],
-      [
-        "70"
-      ]
-    ],
-    "filament_change_length": [
-      [
-        "10",
-        "10"
-      ],
-      [
-        "10"
-      ]
-    ],
-    "filament_deretraction_speed": [
-      [
-        "nil",
-        "nil"
-      ],
-      [
-        "nil"
-      ]
+    "textured_plate_temp": [
+      "65"
     ]
   },
-  "reference_dimensions": {
-    "source_reference": ".work/a2l-poop-bucket/source.stl",
-    "source_sha256": "277b73688b51c889771459045a43e8f704616e5d7b3af0e58417d41063eb5da4",
-    "source_original_upload": "monochrome+printing.3mf",
-    "reference_exposed_wall_top_mm": 58.026,
-    "reference_overhang_mm": 22.296,
-    "reference_top_edge_reach_mm": 21.896,
-    "reference_tip_top_mm": 64.016,
-    "reference_tip_bottom_mm": 62.348,
-    "reference_top_root_reach_mm": -1.696,
-    "reference_top_root_height_mm": 59.546,
-    "reference_bottom_root_reach_mm": 0.268,
-    "reference_bottom_root_height_mm": 58.326,
-    "reference_inside_root_height_mm": 59.194,
-    "construction": "Parametric wall and chute section using measured fit dimensions; no original bucket mesh is incorporated.",
-    "scope": "Retain the enlarged body, pillar fit, triangular front and rear walls. Remove the entire logo and use one gray filament without a purge tower.",
-    "physical_report": "User reports the reference fits and the previous tall-chute revision rides up on the printer."
-  },
-  "previous_project_sha256": "8f9973be6415f0ab1b652f4aa59f8b64c35ed8db37a40965c3f44d768a66abd5",
   "protected_before": {
     "Knot.3mf": "2a02b0b67f6d4007ba0a60d5737afc122895d4d90c560be25bad95537ed964ea",
     "Letter.3mf": "bcdbf0c549b18eaf68726edc1da40d81eaed43234670974dd7751cadbc9ae81f",
@@ -3057,41 +1610,25 @@
     "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
     "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381"
   },
-  "locked_settings": {
-    "printer_model": "Bambu Lab A2L",
-    "printer_settings_id": "Bambu Lab A2L 0.4 nozzle",
-    "nozzle_diameter": [
-      "0.4"
-    ],
-    "filament_settings_id": [
-      "SUNLU PLA+ 2.0 @Bambu Lab A2L 0.4 nozzle"
-    ],
-    "filament_colour": [
-      "#555555"
-    ],
-    "filament_flow_ratio": [
-      "1"
-    ],
-    "filament_max_volumetric_speed": [
-      "22"
-    ],
-    "nozzle_temperature": [
-      "220"
-    ],
-    "textured_plate_temp": [
-      "65"
-    ],
-    "layer_height": "0.2",
-    "initial_layer_print_height": "0.2",
-    "wall_loops": "4",
-    "top_shell_layers": "5",
-    "bottom_shell_layers": "5",
-    "sparse_infill_density": "8%",
-    "sparse_infill_pattern": "gyroid",
-    "support_type": "tree(auto)",
-    "support_style": "default",
-    "support_on_build_plate_only": "1",
-    "curr_bed_type": "Textured PEI Plate",
-    "enable_prime_tower": "0"
+  "physical_status": "User measured printer housing height as 2.464 inches and approved raising the entire chute while preserving its slope. Digital geometry provides at least 1 mm clearance; physical printing and fit of this revision remain unobserved.",
+  "previous_project_sha256": "02591cb5e5c0f15810a83bd0668c118df6c897fbe798c0738196f09b231c2fe0",
+  "settings_changed": {},
+  "measured_printer_clearance": {
+    "date": "2026-11-10",
+    "source": "User supplied printer housing height and approved raising the complete chute while preserving its slope.",
+    "printer_housing_height_in": 2.464,
+    "printer_housing_height_mm": 62.5856,
+    "requested_minimum_clearance_mm": 1.0,
+    "wall_height_mm": 63.6,
+    "wall_height_in": 2.5039370078740157,
+    "nominal_clearance_mm": 1.0144,
+    "nominal_clearance_in": 0.03993700787401575,
+    "layer_grid_mm": 0.2,
+    "chute_vertical_offset_mm": 5.574,
+    "chute_tip_top_mm": 69.59,
+    "chute_tip_top_in": 2.7397637795275593,
+    "chute_tip_bottom_mm": 67.922,
+    "chute_reach_mm": 22.296,
+    "scope": "Raise only the chute and extend its supporting wall. Retain its slope/thickness, body, pillar fit, all saved settings, single gray filament, and clean publication names."
   }
 }

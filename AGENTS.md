@@ -56,6 +56,27 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved measured printer clearance, 2026-11-10:** the user measured the
+  housing at **2.464 inches / 62.5856 mm**, requested transition clearance, and
+  explicitly chose to raise the entire chute to **2.740 inches**, keeping its
+  slope. In `accessories/A2L-Poop-Bucket-Fresh/`, raise the wall/chute underside
+  from **58.026 to 63.6 mm (2.504 inches)** and translate the complete chute
+  upward **5.574 mm**. Its upper tip changes **64.016 to 69.59 mm** and lower
+  tip **62.348 to 67.922 mm**. The underside height rounds the measured housing
+  plus 1 mm clearance upward to the 0.20 mm layer grid, providing **1.0144 mm /
+  0.040 inches** nominal clearance. Extend the supporting wall; preserve chute
+  slope, thickness, 22.296 mm reach, body, pillar fit, placement and every saved
+  print/material setting from the preceding single-gray project. Keep one gray
+  SUNLU PLA+ 2.0 slot, automatic trees/default style, build-plate-only supports,
+  automatic brim and no purge tower. The single-gray Bambu PLA Basic package
+  remains outside Git with clean publication names. Both fresh native slices
+  and reopens pass with zero cavity support extrusion and zero color changes.
+  The entire external chute underside has at least 1 mm digital clearance;
+  five sections confirm retained slope/thickness. Physical printing and fit
+  of this height remain unobserved. This supersedes only the reference mounting
+  height below; evidence is in `reference/printer-clearance.json` and current
+  `validation.json`, with the preceding validation retained under `history/`.
+
 - **Approved reference chute and single-gray bucket, 2026-11-10:** the user
   reported that the previous bucket rides up against the printer, instructed
   using the reference bucket's dimensions because it fits, and requested

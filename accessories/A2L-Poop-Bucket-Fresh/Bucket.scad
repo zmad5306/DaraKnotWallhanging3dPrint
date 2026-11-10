@@ -24,17 +24,22 @@ pillar_wall_slope_enabled = true;
 
 /* [Printer catch chute] */
 chute_enabled = true;
-// Printer-facing fit dimensions, measured from the reference bucket.
-chute_wall_height = 58.026; // Vertical outside wall below the chute
+// Measured housing height plus clearance, rounded up to the print layer grid.
+printer_housing_height_in = 2.464;
+chute_clearance = 1;       // Minimum vertical clearance in millimeters
+chute_layer_grid = 0.2;
+chute_wall_height = ceil((printer_housing_height_in*25.4+chute_clearance)
+                         /chute_layer_grid)*chute_layer_grid;
+chute_height_offset = chute_wall_height - 58.026;
 chute_reach = 22.296;      // Outermost projection from the wall
 chute_tip_top_reach = 21.896;
-chute_tip_top_height = 64.016;
-chute_tip_bottom_height = 62.348;
-chute_inner_height = 59.194;
+chute_tip_top_height = 64.016 + chute_height_offset;
+chute_tip_bottom_height = 62.348 + chute_height_offset;
+chute_inner_height = 59.194 + chute_height_offset;
 chute_top_root_reach = -1.696;
-chute_top_root_height = 59.546;
+chute_top_root_height = 59.546 + chute_height_offset;
 chute_bottom_root_reach = 0.268;
-chute_bottom_root_height = 58.326;
+chute_bottom_root_height = 58.326 + chute_height_offset;
 chute_front_setback = 8;
 chute_pillar_setback = 4;
 
@@ -144,7 +149,8 @@ module triangular_front_wall() {
 
 module printer_chute() {
     // The root is flush with the inner wall; the outer wall retains its full
-    // height before the chute underside begins. Heights are from the base.
+    // height before the chute underside begins. The complete sloped section
+    // rises as one unit; all heights are measured from the bucket bottom.
     xz_prism([
         [body_width-wall_thickness,low_wall_height-eps],
         [body_width,low_wall_height-eps],
@@ -208,6 +214,8 @@ assert(back_wall_height >= low_wall_height && low_wall_height > floor_thickness,
 assert(rear_return < front_reach, "Rear return must be shorter than front reach.");
 assert(chute_reach > chute_tip_top_reach && chute_tip_top_height > chute_tip_bottom_height,
        "Chute edge must have positive thickness and reach.");
+assert(chute_wall_height-printer_housing_height_in*25.4 >= chute_clearance,
+       "Chute underside must clear the measured printer housing.");
 assert(chute_wall_height >= low_wall_height && chute_inner_height > low_wall_height,
        "Chute must start above the full wall height.");
 assert(chute_front_setback >= outer_corner_radius && chute_pillar_setback > 0,

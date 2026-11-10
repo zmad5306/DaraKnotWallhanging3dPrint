@@ -1,18 +1,9 @@
-// A2L Poop Bucket - parametric CAD with a two-color front logo.
+// A2L Poop Bucket - parametric CAD.
 // Units: millimeters. Body uses no imported meshes or external libraries.
-// Bambu mark polygons transcribed from Bambu Studio resources/images/splash_logo.svg.
 // Printer interface dimensions are specified below.
-// Use the accompanying 3MF for the two-color print setup.
 
 /* [View] */
-view_mode = "Assembly"; // [Assembly,GrayBody,GreenLogo,SingleColor,Footprint]
-
-/* [Front logo] */
-logo_height = 32;
-logo_center_x = 55;
-logo_bottom_z = 40;
-logo_inset = 0.8;
-logo_relief = 0.4;
+view_mode = "Bucket"; // [Bucket,Footprint]
 
 /* [Body] */
 body_width = 110;
@@ -33,11 +24,17 @@ pillar_wall_slope_enabled = true;
 
 /* [Printer catch chute] */
 chute_enabled = true;
-// Catch chute dimensions.
-chute_reach = 18;          // Projection beyond the printer-side wall
-chute_rise = 8;            // Outer edge rises above the 58 mm wall
-chute_thickness = 2;       // Vertical section thickness
-chute_inside_overlap = 0;  // Flush with the inside wall
+// Printer-facing fit dimensions, measured from the reference bucket.
+chute_wall_height = 58.026; // Vertical outside wall below the chute
+chute_reach = 22.296;      // Outermost projection from the wall
+chute_tip_top_reach = 21.896;
+chute_tip_top_height = 64.016;
+chute_tip_bottom_height = 62.348;
+chute_inner_height = 59.194;
+chute_top_root_reach = -1.696;
+chute_top_root_height = 59.546;
+chute_bottom_root_reach = 0.268;
+chute_bottom_root_height = 58.326;
 chute_front_setback = 8;
 chute_pillar_setback = 4;
 
@@ -145,20 +142,18 @@ module triangular_front_wall() {
     }
 }
 
-function chute_top_z(x) = low_wall_height
-    + (x-(body_width-wall_thickness))*chute_rise/(chute_reach+wall_thickness);
-
 module printer_chute() {
-    x_inner = body_width-wall_thickness-chute_inside_overlap;
-    x_outer = body_width+chute_reach;
-    // The top surface slopes down toward the bucket. Its root overlaps the
-    // low wall as solid material. The inner edge is flush with the wall,
-    // so it cannot create a suspended shelf over the collection cavity.
+    // The root is flush with the inner wall; the outer wall retains its full
+    // height before the chute underside begins. Heights are from the base.
     xz_prism([
-        [x_inner,chute_top_z(x_inner)-chute_thickness],
-        [x_outer,chute_top_z(x_outer)-chute_thickness],
-        [x_outer,chute_top_z(x_outer)],
-        [x_inner,chute_top_z(x_inner)]
+        [body_width-wall_thickness,low_wall_height-eps],
+        [body_width,low_wall_height-eps],
+        [body_width,chute_wall_height],
+        [body_width+chute_bottom_root_reach,chute_bottom_root_height],
+        [body_width+chute_reach,chute_tip_bottom_height],
+        [body_width+chute_tip_top_reach,chute_tip_top_height],
+        [body_width+chute_top_root_reach,chute_top_root_height],
+        [body_width-wall_thickness,chute_inner_height]
     ], chute_front_setback,
        lower_shoulder_y-chute_pillar_setback-chute_front_setback);
 }
@@ -211,49 +206,16 @@ assert(lower_shoulder_y > outer_corner_radius+wall_thickness,
 assert(back_wall_height >= low_wall_height && low_wall_height > floor_thickness,
        "Wall heights must exceed the floor thickness.");
 assert(rear_return < front_reach, "Rear return must be shorter than front reach.");
-assert(chute_reach > 0 && chute_rise > 0 && chute_thickness > 0,
-       "Chute reach, rise and thickness must be positive.");
+assert(chute_reach > chute_tip_top_reach && chute_tip_top_height > chute_tip_bottom_height,
+       "Chute edge must have positive thickness and reach.");
+assert(chute_wall_height >= low_wall_height && chute_inner_height > low_wall_height,
+       "Chute must start above the full wall height.");
 assert(chute_front_setback >= outer_corner_radius && chute_pillar_setback > 0,
        "Keep the chute clear of the front corner and pillar opening.");
 assert(lower_shoulder_y-chute_pillar_setback > chute_front_setback,
        "No length remains for the chute.");
-assert(chute_top_z(body_width)-chute_thickness < low_wall_height,
-       "Chute root must overlap the low wall as solid material.");
-
-// Coordinates in the original 94 x 122 SVG; Y points down in that source.
-module bambu_mark_2d() {
-    union() {
-        polygon([[50.3856,45.5508],[50.3856,122],[94,122],[94,62.6627]]);
-        polygon([[50.3856,0],[50.3856,38.2419],[94,55.3884],[94,0]]);
-        polygon([[0,76.4838],[0,0],[43.6143,0],[43.6143,59.3373]]);
-        polygon([[0,122],[0,83.7927],[43.6143,66.6462],[43.6143,122]]);
-    }
-}
-
-// Upright when viewed from the front (negative Y). Embed in the wall so the
-// colored material is bonded through 0.8 mm; relief is only 0.4 mm outward.
-module green_logo() {
-    translate([logo_center_x-94*logo_height/122/2,logo_inset,logo_bottom_z])
-        rotate([90,0,0])
-            linear_extrude(height=logo_inset+logo_relief)
-                scale([logo_height/122,logo_height/122])
-                    translate([0,122]) mirror([0,1]) bambu_mark_2d();
-}
-
-module gray_body() {
-    difference() { render(convexity=20) bucket(); green_logo(); }
-}
+assert(chute_top_root_reach > -wall_thickness && chute_bottom_root_reach >= 0,
+       "Chute must remain outside the collection cavity.");
 
 if (view_mode == "Footprint") color("gray") footprint();
-else if (view_mode == "GrayBody") {
-    // Use the complete shell for quick preview and the color volume for export.
-    if ($preview) bucket(); else gray_body();
-}
-else if (view_mode == "GreenLogo") green_logo();
-else if (view_mode == "SingleColor") union() { bucket(); green_logo(); }
-else {
-    // The embedded 0.8 mm portion is hidden by the gray wall in quick preview.
-    // Final rendering/export uses non-overlapping color volumes.
-    color("#555555") { if ($preview) bucket(); else gray_body(); }
-    color("#00CC00") green_logo();
-}
+else color("#555555") bucket();

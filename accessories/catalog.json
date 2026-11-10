@@ -27,26 +27,26 @@
     },
     "status": "Historical mesh adaptation; current fresh design is in A2L-Poop-Bucket-Fresh."
   },
-  "Fresh A2L poop bucket (gray and green PLA+ 2.0)": {
+  "A2L poop bucket (gray SUNLU PLA+ 2.0)": {
     "file": "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf",
-    "sha256": "8f9973be6415f0ab1b652f4aa59f8b64c35ed8db37a40965c3f44d768a66abd5",
-    "revision": "fresh-r5",
+    "sha256": "02591cb5e5c0f15810a83bd0668c118df6c897fbe798c0738196f09b231c2fe0",
+    "revision": "single-color-reference-chute",
     "printer": "Bambu Lab A2L",
     "plates": 1,
-    "status": "Current design; zero interior support paths in native slice and reopen checks. Physical printing remains unobserved.",
+    "status": "Single gray; reference wall/chute dimensions. Native slice/reopen verified; current physical print unobserved.",
     "validation": "accessories/A2L-Poop-Bucket-Fresh/validation.json",
     "artifact_sha256": {
-      "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf": "8f9973be6415f0ab1b652f4aa59f8b64c35ed8db37a40965c3f44d768a66abd5",
-      "accessories/A2L-Poop-Bucket-Fresh/Bucket.scad": "8caa2e5c71db86dcc0438a2c8c3243bb1b6ffd3ef312e480c2fdc9f76af70d99",
-      "accessories/A2L-Poop-Bucket-Fresh/Bucket.stl": "8d588145735c871d71920002f183e75931180cb7cd5279610d9341e98aaf9a42",
-      "accessories/A2L-Poop-Bucket-Fresh/Gray-Body.stl": "231ad28d230756a841f3a25fb8a2e23d8667b474fb1617b397a79bf8cbae00e9",
-      "accessories/A2L-Poop-Bucket-Fresh/Green-Logo.stl": "357ce56858589ca7181892d8027216eb1f6ae098a37b9d802f2ae9ad0d7a29d5",
-      "accessories/A2L-Poop-Bucket-Fresh/README.md": "6a7be9c673db70313f9322c3ad1e82f3849953882afc919eb028f1bae02abc7e",
-      "accessories/A2L-Poop-Bucket-Fresh/build_project.py": "f35ad31198c398e57e0e094657f6405bf96657f7086ea54c8587ad54ea516931",
+      "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf": "02591cb5e5c0f15810a83bd0668c118df6c897fbe798c0738196f09b231c2fe0",
+      "accessories/A2L-Poop-Bucket-Fresh/Bucket.scad": "abffa443630801de9e6d44f6e9ea506a6ee9ba235aad564729ddeec3b1ab291e",
+      "accessories/A2L-Poop-Bucket-Fresh/Bucket.stl": "8702f44b61d1467001fba9dfed753feb27cca509f3f7251cf70c2fca88809cf1",
+      "accessories/A2L-Poop-Bucket-Fresh/README.md": "16389130467a4774d752729acdfbe84cf20cbebe32b4c666728d563f560737d2",
+      "accessories/A2L-Poop-Bucket-Fresh/build_project.py": "e4751e569215b10c849b3973c77d544d47655f6df87da2353ba78144364dcd1a",
       "accessories/A2L-Poop-Bucket-Fresh/history/preview-rendering.json": "bbcec9ada0046cc64fccdd5dfb574b8bd391ded652d9aee4f32429707c17f0a2",
+      "accessories/A2L-Poop-Bucket-Fresh/history/single-color-preview-rendering.json": "2dd695e2bd0e42ce9000ccd877a32692683b006d888273f91e5ea6540aa890ed",
+      "accessories/A2L-Poop-Bucket-Fresh/history/two-color-flush-chute-validation.json": "e3dc4c8aa0edce97a3918c89ef0ab244a501e0c970fa0c5d961454b0919d55fc",
       "accessories/A2L-Poop-Bucket-Fresh/history/two-color-release-validation.json": "25dbd031711ece9786260d426ca26179be630c95d3af9c30502e8d5f52929617",
-      "accessories/A2L-Poop-Bucket-Fresh/native-preview.png": "47b958c31562904d11332ccdeff34651886174665693b36f0685e4a356cf9c99",
-      "accessories/A2L-Poop-Bucket-Fresh/preview.png": "be531d614fe670cc571cc93f819bedc1834534249440d38e96453ccd264651ce",
+      "accessories/A2L-Poop-Bucket-Fresh/native-preview.png": "a38089ad3f90a99c7ccce84e8975426a399b8302f924f4581a5ce74fee7fa4d2",
+      "accessories/A2L-Poop-Bucket-Fresh/preview.png": "71b0c49107c4e3120eab90a0b914aa34258d03f4a40469ff3df7ef6d1791eaf1",
       "accessories/A2L-Poop-Bucket-Fresh/reference/SUNLU-A2L-machine-source.json": "622dfbaba575dbd4f2a1753e38d4754f4d9cfa86ca52a9b90f9bf44437a293ab",
       "accessories/A2L-Poop-Bucket-Fresh/reference/SUNLU-PLA-Plus-2-A2L-project.json": "a0082e99cab10abebb64c0d31a80c64359fa6a404e1db72b058eaadf7c63deee",
       "accessories/A2L-Poop-Bucket-Fresh/reference/SUNLU-PLA-Plus-2-source.json": "b5eede0c91e2472971c4465708bfe22015a316ab5edafcc7d34396f7db191fa8",
@@ -54,9 +54,10 @@
       "accessories/A2L-Poop-Bucket-Fresh/reference/accepted-r3-validation.json": "7aba3a577f1683872d8ef9a605a900eb4f939d06d0ac0b9b49545960928aa7a3",
       "accessories/A2L-Poop-Bucket-Fresh/reference/accepted-r3.scad": "43cd0dc9bed5d99fafb01ea0c330eb87a6df6e1fb79c567f47f1eb1aa1df457c",
       "accessories/A2L-Poop-Bucket-Fresh/reference/bambu-mark.svg": "3ddba56f57a598af406f1b9af51e5e2a426ce1211d5c4ab1b1ed22268daa3403",
-      "accessories/A2L-Poop-Bucket-Fresh/reference/current-project-settings.json": "34bc440ac7e65b7b8e50ce4517bd9a0b1501f655f34f4b779bf64204ec881128",
+      "accessories/A2L-Poop-Bucket-Fresh/reference/current-project-settings.json": "99720865e5ecf75459921dd3a5380c3cd5e787a8dcdd5102ea078b877a4eb09e",
+      "accessories/A2L-Poop-Bucket-Fresh/reference/printer-chute-dimensions.json": "56a1192ff7c681f24d86290d7d0ac74dfd215081bec7ac6b4be2262ee4dd34cb",
       "accessories/A2L-Poop-Bucket-Fresh/reference/provenance.json": "792b9459a2de987553f72e14582f6e106d7c12249b5332c2a8b6d93a746781be",
-      "accessories/A2L-Poop-Bucket-Fresh/validation.json": "e3dc4c8aa0edce97a3918c89ef0ab244a501e0c970fa0c5d961454b0919d55fc"
+      "accessories/A2L-Poop-Bucket-Fresh/validation.json": "35c80258a1f95f527627eaec0636d54f1b5568621cf81261138e1c1ecae6bbe5"
     }
   }
 }

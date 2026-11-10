@@ -1,0 +1,18 @@
+{
+  "source_reference": ".work/a2l-poop-bucket/source.stl",
+  "source_sha256": "277b73688b51c889771459045a43e8f704616e5d7b3af0e58417d41063eb5da4",
+  "source_original_upload": "monochrome+printing.3mf",
+  "reference_exposed_wall_top_mm": 58.026,
+  "reference_overhang_mm": 22.296,
+  "reference_top_edge_reach_mm": 21.896,
+  "reference_tip_top_mm": 64.016,
+  "reference_tip_bottom_mm": 62.348,
+  "reference_top_root_reach_mm": -1.696,
+  "reference_top_root_height_mm": 59.546,
+  "reference_bottom_root_reach_mm": 0.268,
+  "reference_bottom_root_height_mm": 58.326,
+  "reference_inside_root_height_mm": 59.194,
+  "construction": "Parametric wall and chute section using measured fit dimensions; no original bucket mesh is incorporated.",
+  "scope": "Retain the enlarged body, pillar fit, triangular front and rear walls. Remove the entire logo and use one gray filament without a purge tower.",
+  "physical_report": "User reports the reference fits and the previous tall-chute revision rides up on the printer."
+}

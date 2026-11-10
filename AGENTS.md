@@ -56,6 +56,29 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved reference chute and single-gray bucket, 2026-11-10:** the user
+  reported that the previous bucket rides up against the printer, instructed
+  using the reference bucket's dimensions because it fits, and requested
+  removing the logo and dual-color printing. Restore the measured functional
+  wall/chute section: exposed outside wall **56.8 to 58.026 mm**, projection
+  **18 to 22.296 mm**, upper tip **66 to 64.016 mm**, and lower tip
+  **64 to 62.348 mm**. The inner root is **59.194 mm** high and flush with the
+  inside wall. This supersedes the previous 18 mm / 8 mm-rise chute. Retain the
+  110 x 255 x 160.804 mm body, 1.98 mm floor, 2 mm walls, nominal 58 mm low rim,
+  complete pillar fit, tall/sloped walls and placement. Remove the entire logo,
+  its inset/material partition and green slot; retain **one gray SUNLU PLA+
+  2.0** slot with all its saved parameters. Set **enable_prime_tower = 0** and
+  compact per-filament arrays to the retained gray slot. Preserve all other
+  settings, automatic trees/default style, build-plate-only supports and brim.
+  The matching Bambu PLA Basic publication package is also single gray and stays
+  outside Git with clean filenames. Both native slices/reopens show zero color
+  changes, no purge-tower extrusion and zero support extrusion inside the cavity.
+  The measured reference section and new section differ by at most **0.084 mm**
+  at rounded transitions. The user reports the reference fits; a physical print
+  of this revision remains unobserved. Measurements, source hash and validation
+  are in the current accessory's `reference/printer-chute-dimensions.json` and
+  `validation.json`; earlier two-color validations remain under `history/`.
+
 - **Approved A2L chute and publication update, 2026-11-09:** after reporting
   unwanted supports inside the collection cavity, the user requested new SUNLU
   PLA+ 2.0 and Bambu PLA Basic files, clean publication names, and commit/push of

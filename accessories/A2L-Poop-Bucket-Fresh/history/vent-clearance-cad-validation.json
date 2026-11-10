@@ -1,0 +1,20 @@
+{
+  "openscad_version": "2021.01",
+  "cad_sha256": "bb1949e0a67ba6411797b2daf18be9e90f7e34cd784f06f76382b2ccd86e14e2",
+  "stl_sha256": "e0e8728c65240a6fbdcd060e85511ef84db0469ec94e65f3e3aadb88a0557689",
+  "checks": {
+    "preview": {
+      "mode": "preview",
+      "exit_code": 0,
+      "seconds": 105.25,
+      "log": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 1 elements\nGeometries in cache: 44\nGeometry cache size in bytes: 1957232\nCGAL Polyhedrons in cache: 5\nCGAL cache size in bytes: 7385048\nTotal rendering time: 0:01:44.961\n"
+    },
+    "render": {
+      "mode": "render",
+      "exit_code": 0,
+      "seconds": 105.09400000001187,
+      "log": "Geometries in cache: 43\nGeometry cache size in bytes: 1568752\nCGAL Polyhedrons in cache: 7\nCGAL cache size in bytes: 11138220\nTotal rendering time: 0:01:44.755\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2697\n   Halfedges:    8092\n   Edges:        4046\n   Halffacets:   2710\n   Facets:       1355\n   Volumes:         2\n"
+    }
+  },
+  "visual_check": "Complete native preview inspected; all walls, shortened chute and recessed mark present."
+}

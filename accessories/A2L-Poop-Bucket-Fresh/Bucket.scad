@@ -13,9 +13,13 @@ logo_center_x = 55;
 logo_bottom_z = 40;
 logo_depth = 0.6;
 
+/* [Vent clearance] */
+// Maximum distance from the pillar's front face to the bucket's front edge.
+pillar_to_front_limit_in = 6;
+vent_clearance = 1; // Millimeters inside the maximum forward reach
+
 /* [Body] */
 body_width = 110;
-body_length = 255;
 outer_corner_radius = 6;
 wall_thickness = 2;
 floor_thickness = 1.98;
@@ -71,6 +75,9 @@ rear_edge_allowance = 12;
 /* [Hidden] */
 eps = 0.02;
 arc_step_degrees = 0.75;
+// Keep the rear allowance and fitted pillar opening; shorten only the front run.
+pillar_to_front = pillar_to_front_limit_in*25.4-vent_clearance;
+body_length = pillar_to_front+pillar_gap+rear_edge_allowance;
 
 // X runs from the tall long wall toward the printer/open side.
 // Y runs from the short front end toward the full-height rear end.
@@ -227,6 +234,10 @@ module bucket() {
     }
 }
 
+assert(vent_clearance >= 0 && lower_shoulder_y <= pillar_to_front_limit_in*25.4,
+       "Bucket must remain within the pillar-to-front vent clearance limit.");
+assert(abs(lower_shoulder_y-pillar_to_front) < eps,
+       "The front reach must be measured from the pillar front face.");
 assert(body_width > front_reach+2*wall_thickness,
        "Body is too narrow for the pillar opening.");
 assert(outer_corner_radius > wall_thickness,

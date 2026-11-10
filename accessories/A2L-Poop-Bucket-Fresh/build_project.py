@@ -1,7 +1,7 @@
 """Package the single-color parametric bucket for A2L / SUNLU PLA+ 2.0.
 
 The STL is exported by OpenSCAD from Bucket.scad. Geometry comparisons use
-the preceding recessed-logo CAD; no earlier remixed mesh is a geometry input.
+the preceding long-bucket CAD; no earlier remixed mesh is a geometry input.
 Requires the repository's trimesh/manifold3d geometry dependencies and Bambu CLI.
 """
 from pathlib import Path
@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(__file__).resolve().parent
 REF=OUT/'reference'
-WORK=ROOT/'.work/a2l-bucket-wall-transitions-build'
+WORK=ROOT/'.work/a2l-bucket-vent-clearance-build'
 sys.path[:0]=[str(ROOT/'.work/python-libs'),str(ROOT/'scripts')]
 import numpy as np
 import trimesh
@@ -66,7 +66,7 @@ def native(src,directory,export=False):
 def render_inputs(force=False):
     """Recreate missing CAD inputs without needing historical local outputs."""
     exe=Path('C:/Program Files (x86)/OpenSCAD/openscad.exe')
-    exports=[(OUT/'history/recessed-logo-low-walls.scad',WORK/'prior-walls.stl',None),
+    exports=[(OUT/'history/before-vent-clearance.scad',WORK/'prior-long.stl',None),
              (OUT/'Bucket.scad',OUT/'Bucket.stl',None)]
     for source,target,mode in exports:
         if target.exists() and not force:continue
@@ -193,7 +193,7 @@ def support_audit(gc):
 def validate_recess(full):
     """Check the retained blind cut, source SVG and complete wall backing."""
     from shapely.ops import unary_union
-    original=trimesh.load(WORK/'prior-walls.stl',force='mesh')
+    original=trimesh.load(WORK/'prior-long.stl',force='mesh')
     before,after=solid(original),solid(full)
     svg=ET.parse(REF/'bambu-mark.svg').getroot()
     # Read the source's M/L/H/V path commands independently of the CAD polygons.
@@ -248,33 +248,72 @@ def top_height(mesh,x,y):
     return float((u*tri[:,0,2]+v*tri[:,1,2]+w*tri[:,2,2])[inside].max())
 
 
-def validate_wall_transitions(before_mesh,full):
+FORWARD_LIMIT=6*25.4
+VENT_MARGIN=1.0
+FORWARD_REACH=FORWARD_LIMIT-VENT_MARGIN
+BODY_LENGTH=FORWARD_REACH+49.6568+12
+SHORTENING=255-BODY_LENGTH
+
+
+def validate_shortening(before_mesh,full):
     from shapely.geometry import box
     before,after=solid(before_mesh),solid(full)
-    removed,added=before-after,after-before
     def cube(lo,hi):return solid(trimesh.creation.box(bounds=[lo,hi]))
-    allowed=cube([-.001,-.001,57.999],[110.001,8.0001,160.805])
-    allowed+=cube([-.001,189.3431,57.999],[110.001,255.001,160.805])
-    outside=abs((added-allowed).volume())
-    ring=(before ^ cube([-1,-1,10],[150,260,11])).translate([0,0,-10]).scale([1,1,161])
-    nonwall=abs((added-ring).volume())
-    chute=cube([107.999,8.0001,55],[133,189.3431,71])
-    chute_diff=vol_diff(before ^ chute,after ^ chute)
-    assert abs(removed.volume())<.03,removed.volume()
-    assert outside<.03 and nonwall<.03,(outside,nonwall)
-    # Float32 STL retriangulation has a few microns of Boolean volume noise.
-    # Independently require the entire chute section to match at five stations.
-    sections=[]
-    for y in [8.001,50,100,150,189.342]:
-        profiles=[]
-        for model in [before_mesh,full]:
-            loop=model.section(plane_origin=[0,y,0],plane_normal=[0,1,0]).discrete[0][:,[0,2]]
-            profiles.append(Polygon(loop).intersection(box(108,55,133,71)))
-        distance=profiles[0].hausdorff_distance(profiles[1])
-        area=profiles[0].symmetric_difference(profiles[1]).area
-        assert distance<.00002 and area<.001,(y,distance,area)
-        sections.append({'y_mm':y,'max_distance_mm':distance,'difference_area_mm2':area})
-    assert chute_diff<.02,chute_diff
+    # Independent construction: remove a straight middle length and rejoin.
+    # Retain the complete front end and translate the remainder as one solid.
+    front=cube([-1,-1,-1],[134,8,162])
+    rear=cube([-1,8+SHORTENING,-1],[134,256,162])
+    expected=(before ^ front)+(before ^ rear).translate([0,-SHORTENING,0])
+    expected_difference=vol_diff(expected,after)
+    front_difference=vol_diff(before ^ front,after ^ front)
+    rear_domain=cube([-1,193.3432-.001,-1],[134,256,162])
+    rear_difference=vol_diff(before ^ rear_domain,after.translate([0,SHORTENING,0]) ^ rear_domain)
+    # Translating float32 STL coordinates accumulates small surface-volume noise.
+    # Bound it with independent section distances/areas across the full height.
+    section_checks=[]
+    for z in [1,10,40,58,63.7,65.5,100,150]:
+        base=mesh_slice(before_mesh,z);actual=mesh_slice(full,z)
+        expect=base.intersection(box(-1,-1,134,8)).union(
+            translate(base.intersection(box(-1,8+SHORTENING,134,256)),yoff=-SHORTENING))
+        distance=expect.hausdorff_distance(actual)
+        area=expect.symmetric_difference(actual).area
+        assert distance<.0002 and area<.003,(z,distance,area)
+        section_checks.append({'z_mm':z,'max_distance_mm':distance,'difference_area_mm2':area})
+    assert expected_difference<.5,expected_difference
+    assert front_difference<.01,front_difference
+    assert rear_difference<.5,rear_difference
+    prior_outline=mesh_slice(before_mesh,10)
+    outline=mesh_slice(full,10)
+    prior_pillar=prior_outline.intersection(box(-1,192.5,134,256))
+    aligned_pillar=translate(outline,yoff=SHORTENING).intersection(box(-1,192.5,134,256))
+    pillar_distance=prior_pillar.hausdorff_distance(aligned_pillar)
+    pillar_area=prior_pillar.symmetric_difference(aligned_pillar).area
+    assert pillar_distance<.00005 and pillar_area<.005,(pillar_distance,pillar_area)
+    # Measure the actual straight pillar-front contact face from the STL outline.
+    points=np.asarray(outline.exterior.coords);segments=[]
+    for a,b in zip(points[:-1],points[1:]):
+        if (80<a[1]<190 and 80<b[1]<190 and min(a[0],b[0])>80
+            and max(a[0],b[0])<=110.0001 and abs(a[1]-b[1])<.00001 and abs(a[0]-b[0])>.1):
+            segments.append((a+b)/2)
+    assert segments
+    planes=np.array(segments)[:,1]
+    assert np.ptp(planes)<.0001,planes
+    pillar_front=float(planes.mean());frontmost=float(full.bounds[0,1])
+    reach=pillar_front-frontmost
+    assert abs(reach-FORWARD_REACH)<.0001 and FORWARD_LIMIT-reach>=.9999,(reach,FORWARD_LIMIT)
+    return {'limit_mm':FORWARD_LIMIT,'limit_in':6,'target_margin_mm':VENT_MARGIN,
+        'stl_pillar_front_y_mm':pillar_front,'stl_frontmost_y_mm':frontmost,
+        'measured_forward_reach_mm':reach,'measured_forward_reach_in':reach/25.4,
+        'measured_margin_mm':FORWARD_LIMIT-reach,'previous_forward_reach_mm':193.3432,
+        'body_length_mm':BODY_LENGTH,'previous_body_length_mm':255,'shortening_mm':SHORTENING,
+        'independent_shortening_difference_mm3':expected_difference,
+        'front_end_difference_mm3':front_difference,'aligned_rear_difference_mm3':rear_difference,
+        'aligned_pillar_outline_distance_mm':pillar_distance,'aligned_pillar_outline_difference_mm2':pillar_area,
+        'independent_section_comparisons':section_checks,
+        'all_geometry_within_forward_limit':True}
+
+
+def validate_wall_transitions(full):
     start=65.12+1.696*(69.59-65.12)/(21.896+1.696)
     checks=[]
     def check(name,x,y,expected):
@@ -283,33 +322,26 @@ def validate_wall_transitions(before_mesh,full):
         checks.append({'location':name,'xy_mm':[float(x),float(y)],'top_mm':actual,'expected_mm':expected})
     for x in [20,55,90,104]:
         check('front slope',x,1,160.804+(start-160.804)*(x-8)/102)
-    for y in [6.1,7,7.999,189.344,190,192,193.343]:
+    for y in [6.1,7,7.999,FORWARD_REACH-3.999,FORWARD_REACH-3,FORWARD_REACH-1,FORWARD_REACH-.001]:
         check('connecting wall',109,y,start)
-    # Sample the entire rear pillar contour at its existing outside XY edge.
-    outline=np.asarray(mesh_slice(before_mesh,10).exterior.coords)
-    rear=outline[(outline[:,1]>193.3433)&(outline[:,1]<252.97)&(outline[:,0]>8.02)]
+    outline=np.asarray(mesh_slice(full,10).exterior.coords)
+    rear=outline[(outline[:,1]>FORWARD_REACH+.0001)&(outline[:,1]<BODY_LENGTH-2.03)&(outline[:,0]>8.02)]
     assert len(rear)>20
     for x,y in rear[::max(1,len(rear)//24)]:
-        check('rear slope',x,y,start+(160.804-start)*(y-193.3432)/(252.98-193.3432))
-    # Both end connections are at or above the whole chute root surface.
-    # Check both inside/outside faces across each short wall return.
-    for y in [7.999,189.344,192.5]:
+        check('rear slope',x,y,start+(160.804-start)*(y-FORWARD_REACH)/(BODY_LENGTH-2.02-FORWARD_REACH))
+    for y in [7.999,FORWARD_REACH-3.999,FORWARD_REACH-.8]:
         for x in np.linspace(108.001,109.999,9):check('lip connection',x,y,start)
     return {'adjoining_wall_start_mm':start,'adjoining_wall_start_in':start/25.4,
-        'previous_wall_start_mm':58,'minimum_lip_root_height_mm':64.768,
-        'maximum_lip_root_height_mm':start,'added_wall_volume_mm3':added.volume(),
-        'removed_volume_mm3':removed.volume(),'change_outside_front_rear_mm3':outside,
-        'added_stock_outside_existing_wall_ring_mm3':nonwall,'chute_difference_mm3':chute_diff,
-        'height_checks':checks,'chute_section_comparisons':sections,
-        'front_and_rear_connections_reach_lip_top':True}
+        'height_checks':checks,'front_and_rear_connections_reach_lip_top':True}
 
 
 def validate_geometry(full):
     from shapely.geometry import box
     assert full.is_volume and len(full.split())==1
-    assert np.max(np.abs(full.bounds-np.array([[0,0,0],[132.296,255,160.804]])))<.0001
+    assert np.max(np.abs(full.bounds-np.array([[0,0,0],[132.296,BODY_LENGTH,160.804]])))<.0001
     original,logo=validate_recess(full)
-    transitions=validate_wall_transitions(original,full)
+    shortening=validate_shortening(original,full)
+    transitions=validate_wall_transitions(full)
     profile=Polygon(full.section(plane_origin=[0,100,0],plane_normal=[0,1,0]).discrete[0][:,[0,2]])
     local=profile.intersection(box(108,55,133,71))
     expected=Polygon([[108,55],[110,55],[110,63.6],[110.268,63.9],
@@ -318,16 +350,16 @@ def validate_geometry(full):
     assert profile_error<.001, profile_error
     # Check the entire external underside, including the root transition.
     mask=(full.face_normals[:,2]<-.01)&(full.triangles_center[:,0]>110.00001)
-    mask &= (full.triangles_center[:,1]>7.999)&(full.triangles_center[:,1]<189.344)
+    mask &= (full.triangles_center[:,1]>7.999)&(full.triangles_center[:,1]<FORWARD_REACH-3.999)
     assert mask.any()
     underside_min=float(full.triangles[mask,:,2].min())
     clearance=underside_min-2.464*25.4
     assert clearance>=1.0,clearance
     return {'closed_single_body':True,'bounds_mm':full.bounds.tolist(),
-            'wall_transitions':transitions,
+            'wall_transitions':transitions,'vent_clearance':shortening,
             'reference_dimension_section_error_mm2':profile_error,
             'logo_present':True,'logo':logo,'front_surface_y_mm':0,
-            'pillar_fit_unchanged':True,'body_size_unchanged':True,
+            'pillar_fit_unchanged':True,'body_width_and_height_unchanged':True,'body_length_mm':BODY_LENGTH,
             'chute_wall_height_mm':63.6,'chute_tip_top_mm':69.59,
             'chute_tip_bottom_mm':67.922,'chute_reach_mm':22.296,
             'user_housing_height_in':2.464,'user_housing_height_mm':2.464*25.4,
@@ -391,13 +423,13 @@ def build_project(cfg, destination, run_dir):
     for k in ['printer_model','printer_settings_id','nozzle_diameter','filament_settings_id','filament_colour',
               'filament_flow_ratio','filament_max_volumetric_speed','nozzle_temperature','textured_plate_temp']:
         locked[k]=cfg[k]
-    report={'date':'2026-11-10','revision':'adjoining-wall-transitions','project':str(destination),
+    report={'date':'2026-11-10','revision':'vent-clearance','project':str(destination),
             'sha256':sha(destination),'geometry':geometry,'saved_part_vertex_error_mm':mesh_difference,
             'saved_settings':settings,'native_slice':sliced_result,'native_reopen':reopen,
             'support_audit':sa,'reopen_support_audit':rsa,'bed_edge_clearance_mm':clearance,
             'gcode_md5':checksum,'color_changes':0,'prime_tower_extrusions':0,
             'locked_settings':locked,'protected_before':protected_before,'protected_after':protected_after,
-            'physical_status':'Front and rear wall starts and their connecting runs raised to the chute top at the outside wall. Chute clearance/slope, pillar contour and recessed logo retained. Physical printing and fit remain unobserved.'}
+            'physical_status':'User requires at most 6 inches from pillar front to bucket front. Shortened forward reach to 151.4 mm, leaving 1 mm nominal margin. Pillar/rear shape, chute section, raised wall transitions and recessed logo retained. Physical printing and vent clearance remain unobserved.'}
     jsave(run_dir/'validation.json',report)
     print(destination.name,'native reopen passed',flush=True)
     return report

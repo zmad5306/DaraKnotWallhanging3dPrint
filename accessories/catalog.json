@@ -29,18 +29,20 @@
   },
   "A2L poop bucket (gray SUNLU PLA+ 2.0)": {
     "file": "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf",
-    "sha256": "4a454b42077d97e3e84d393b0621d18944c6931494e7ff457cba7c059288d95d",
-    "revision": "adjoining-wall-transitions",
+    "sha256": "94b093078339677592281857eaf31198bb44398105e3082f673aa0fda6c85528",
+    "revision": "vent-clearance",
     "printer": "Bambu Lab A2L",
     "plates": 1,
-    "status": "Both adjoining wall starts and connecting runs meet the lip at 2.576 inches. Chute clearance/slope, pillar contour, recessed logo and all saved settings preserved. Native slices/reopens verified; physical fit unobserved.",
+    "status": "5.961-inch forward reach from pillar front with 1 mm margin below six inches. Pillar/rear contour, chute section, raised wall transitions, recessed logo and saved settings preserved. Native F5/F6 and slice/reopen checks pass; physical fit unobserved.",
     "validation": "accessories/A2L-Poop-Bucket-Fresh/validation.json",
     "artifact_sha256": {
-      "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf": "4a454b42077d97e3e84d393b0621d18944c6931494e7ff457cba7c059288d95d",
-      "accessories/A2L-Poop-Bucket-Fresh/Bucket.scad": "e7662bafb82e3bf3b2902b29d7ad33532236c0cfc778ad1cd98d45ef1df77bbd",
-      "accessories/A2L-Poop-Bucket-Fresh/Bucket.stl": "abd317fbbf734e125147bf0278c2e270729e4fcae07c3ed911626e7122d4a5e6",
-      "accessories/A2L-Poop-Bucket-Fresh/README.md": "0d8676fda8eaf110e257844608a9a6f68d4afc1b924ef76779a4f88ecb5ead2f",
-      "accessories/A2L-Poop-Bucket-Fresh/build_project.py": "6b4c7c8ba27d6a4d415932584c148a3c2e86685d9cd10f49f9cc43fce82f8112",
+      "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf": "94b093078339677592281857eaf31198bb44398105e3082f673aa0fda6c85528",
+      "accessories/A2L-Poop-Bucket-Fresh/Bucket.scad": "bb1949e0a67ba6411797b2daf18be9e90f7e34cd784f06f76382b2ccd86e14e2",
+      "accessories/A2L-Poop-Bucket-Fresh/Bucket.stl": "e0e8728c65240a6fbdcd060e85511ef84db0469ec94e65f3e3aadb88a0557689",
+      "accessories/A2L-Poop-Bucket-Fresh/README.md": "f5e71d9c50407eba86ecd8e6fac85eedd446f59f061b7b37835579967137901b",
+      "accessories/A2L-Poop-Bucket-Fresh/build_project.py": "c7b3b1606c234f66bea9ef8018cd9e321980cb8fd2f6900df4d47669d843c59e",
+      "accessories/A2L-Poop-Bucket-Fresh/history/before-vent-clearance-validation.json": "ad7dc9f8f559270d74ae577f996284f791cffca23b41b929f1612ed259f695d7",
+      "accessories/A2L-Poop-Bucket-Fresh/history/before-vent-clearance.scad": "e7662bafb82e3bf3b2902b29d7ad33532236c0cfc778ad1cd98d45ef1df77bbd",
       "accessories/A2L-Poop-Bucket-Fresh/history/measured-clearance-plain-front-validation.json": "215e01aaecb2e7530888342c64f69c7a1566dd61d055a8ddd18f6a47e5a3981a",
       "accessories/A2L-Poop-Bucket-Fresh/history/measured-clearance-plain-front.scad": "535fa1bde26cffdfeca859f9159c0ec9cb2112d88c0f3e0328e62ef9141d63ca",
       "accessories/A2L-Poop-Bucket-Fresh/history/measured-clearance-preview-rendering.json": "2dd695e2bd0e42ce9000ccd877a32692683b006d888273f91e5ea6540aa890ed",
@@ -54,9 +56,12 @@
       "accessories/A2L-Poop-Bucket-Fresh/history/single-color-preview-rendering.json": "2dd695e2bd0e42ce9000ccd877a32692683b006d888273f91e5ea6540aa890ed",
       "accessories/A2L-Poop-Bucket-Fresh/history/two-color-flush-chute-validation.json": "e3dc4c8aa0edce97a3918c89ef0ab244a501e0c970fa0c5d961454b0919d55fc",
       "accessories/A2L-Poop-Bucket-Fresh/history/two-color-release-validation.json": "25dbd031711ece9786260d426ca26179be630c95d3af9c30502e8d5f52929617",
+      "accessories/A2L-Poop-Bucket-Fresh/history/vent-clearance-cad-preview.png": "94483c520d4ccb14f676aa6c0c6973310134810517bbc29a4a237af4d60786ca",
+      "accessories/A2L-Poop-Bucket-Fresh/history/vent-clearance-cad-validation.json": "e7d5f844ad8aa4c0b0b11a21e996dc52861676c55c41f354184b1831aafa1782",
+      "accessories/A2L-Poop-Bucket-Fresh/history/vent-clearance-rendering.json": "2dd695e2bd0e42ce9000ccd877a32692683b006d888273f91e5ea6540aa890ed",
       "accessories/A2L-Poop-Bucket-Fresh/history/wall-transitions-preview-rendering.json": "2dd695e2bd0e42ce9000ccd877a32692683b006d888273f91e5ea6540aa890ed",
-      "accessories/A2L-Poop-Bucket-Fresh/native-preview.png": "6af9df8d5c791299fe957656d3870946b72557a37bbb67bbba8b43c38a1de41b",
-      "accessories/A2L-Poop-Bucket-Fresh/preview.png": "f5bedc703965a00793a04f943c892944c668c326e10d8f69c1c7476192447a69",
+      "accessories/A2L-Poop-Bucket-Fresh/native-preview.png": "d322b13bc46f855ad04f7bad48cd689d14bed75358a72d630c412955e1594919",
+      "accessories/A2L-Poop-Bucket-Fresh/preview.png": "9dc625070cdaf8b32a6b314c3da0af9b928f3550c34a568d25ac623d183a8b0b",
       "accessories/A2L-Poop-Bucket-Fresh/reference/SUNLU-A2L-machine-source.json": "622dfbaba575dbd4f2a1753e38d4754f4d9cfa86ca52a9b90f9bf44437a293ab",
       "accessories/A2L-Poop-Bucket-Fresh/reference/SUNLU-PLA-Plus-2-A2L-project.json": "a0082e99cab10abebb64c0d31a80c64359fa6a404e1db72b058eaadf7c63deee",
       "accessories/A2L-Poop-Bucket-Fresh/reference/SUNLU-PLA-Plus-2-source.json": "b5eede0c91e2472971c4465708bfe22015a316ab5edafcc7d34396f7db191fa8",
@@ -68,8 +73,10 @@
       "accessories/A2L-Poop-Bucket-Fresh/reference/printer-chute-dimensions.json": "56a1192ff7c681f24d86290d7d0ac74dfd215081bec7ac6b4be2262ee4dd34cb",
       "accessories/A2L-Poop-Bucket-Fresh/reference/printer-clearance.json": "83e5a6c9caf8590a370080ef2b9c268bb62b5c9128ad0d31b286e0c25b6ff8ed",
       "accessories/A2L-Poop-Bucket-Fresh/reference/provenance.json": "792b9459a2de987553f72e14582f6e106d7c12249b5332c2a8b6d93a746781be",
-      "accessories/A2L-Poop-Bucket-Fresh/validation.json": "ad7dc9f8f559270d74ae577f996284f791cffca23b41b929f1612ed259f695d7"
+      "accessories/A2L-Poop-Bucket-Fresh/reference/vent-clearance-dimensions.png": "6ff7e899732159bdcc89cc777d02c24adea46091e2e2c9a80d454d9d9dff0721",
+      "accessories/A2L-Poop-Bucket-Fresh/reference/vent-clearance.json": "bc64c36052f3d0a4965009fb06957f80529fb993480592385d57833b26749598",
+      "accessories/A2L-Poop-Bucket-Fresh/validation.json": "c9a5d2ee1a059ad60f19aa1a52d368b2d3c9488f4b5e131c3aa9e24d4cf3fd10"
     },
-    "cad_validation": "accessories/A2L-Poop-Bucket-Fresh/history/openscad-preview-validation.json"
+    "cad_validation": "accessories/A2L-Poop-Bucket-Fresh/history/vent-clearance-cad-validation.json"
   }
 }

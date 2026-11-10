@@ -56,6 +56,29 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved forward vent clearance, 2026-11-10:** the user established a
+  **6 inch / 152.4 mm maximum** from the pillar's front face to the bucket's
+  frontmost edge to avoid the side vents. Shorten this distance from
+  **193.3432 to 151.4 mm (5.961 inches)**, leaving **1 mm** below the maximum.
+  Derive body length from that forward reach plus the retained **49.6568 mm
+  pillar gap** and **12 mm rear allowance**: **255 to 213.0568 mm** overall.
+  Remove **41.9432 mm** of straight forward length; retain the complete front
+  wall/logo shape and the rear/pillar geometry under a matching Y translation.
+  Preserve width, height, wall/floor thicknesses, pillar contour/radii, chute
+  X/Z section and clearance, raised adjoining wall endpoints, single gray,
+  all saved print/material settings and the existing build-plate placement.
+  The chute's length follows the shortened body, keeping its existing front
+  and pillar setbacks. Preserve the one-final-render CAD construction.
+  Measure the actual exported pillar-front contact plane and frontmost vertex,
+  and require the entire model to stay inside the six-inch forward envelope.
+  Compare against an independent cut/translation of the preceding model and
+  check the retained wall heights, F5/F6, native slices/reopens and cavity
+  support paths. Update tracked SUNLU files and the clean Bambu publication
+  package outside Git. Evidence is in `reference/vent-clearance.json`, current
+  validation and the dimensioned top view; the preceding CAD/validation is
+  retained under `history/before-vent-clearance*`. Physical vent clearance and
+  fit remain unobserved.
+
 - **A2L CAD preview correction, 2026-11-10:** the user supplied OpenSCAD
   2021.01's "mesh is not closed" error from the publication SCAD. Reproduce
   the F5 failure separately from the successful F6 export. Remove intermediate

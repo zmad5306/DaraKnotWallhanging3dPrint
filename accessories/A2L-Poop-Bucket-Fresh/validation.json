@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
-  "revision": "adjoining-wall-transitions",
+  "revision": "vent-clearance",
   "project": "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf",
-  "sha256": "4a454b42077d97e3e84d393b0621d18944c6931494e7ff457cba7c059288d95d",
+  "sha256": "94b093078339677592281857eaf31198bb44398105e3082f673aa0fda6c85528",
   "geometry": {
     "closed_single_body": true,
     "bounds_mm": [
@@ -13,21 +13,13 @@
       ],
       [
         132.29598999023438,
-        255.0,
+        213.05679321289062,
         160.8040008544922
       ]
     ],
     "wall_transitions": {
       "adjoining_wall_start_mm": 65.44134282807732,
       "adjoining_wall_start_in": 2.5764308200030444,
-      "previous_wall_start_mm": 58,
-      "minimum_lip_root_height_mm": 64.768,
-      "maximum_lip_root_height_mm": 65.44134282807732,
-      "added_wall_volume_mm3": 1844.7638099525207,
-      "removed_volume_mm3": 0.00650105774545472,
-      "change_outside_front_rear_mm3": 2.6771073153598893e-05,
-      "added_stock_outside_existing_wall_ring_mm3": 3.2249084068486834e-05,
-      "chute_difference_mm3": 0.006489616622521377,
       "height_checks": [
         {
           "location": "front slope",
@@ -96,7 +88,7 @@
           "location": "connecting wall",
           "xy_mm": [
             109.0,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -105,7 +97,7 @@
           "location": "connecting wall",
           "xy_mm": [
             109.0,
-            190.0
+            148.39999999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -114,16 +106,16 @@
           "location": "connecting wall",
           "xy_mm": [
             109.0,
-            192.0
+            150.39999999999998
           ],
-          "top_mm": 65.44134521484375,
+          "top_mm": 65.44134521484376,
           "expected_mm": 65.44134282807732
         },
         {
           "location": "connecting wall",
           "xy_mm": [
             109.0,
-            193.343
+            151.39899999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -132,226 +124,226 @@
           "location": "rear slope",
           "xy_mm": [
             84.34599304199219,
-            252.8972625732422
+            210.9540557861328
           ],
           "top_mm": 160.67169189453125,
-          "expected_mm": 160.67169811822245
+          "expected_mm": 160.67168726524605
         },
         {
           "location": "rear slope",
           "xy_mm": [
             84.19184875488281,
-            250.92453002929688
+            208.98133850097656
           ],
-          "top_mm": 157.51718139648438,
-          "expected_mm": 157.51718584928528
+          "top_mm": 157.51719665527344,
+          "expected_mm": 157.5171993959861
         },
         {
           "location": "rear slope",
           "xy_mm": [
             83.73313903808594,
-            248.9997100830078
+            207.05650329589844
           ],
           "top_mm": 154.4392852783203,
-          "expected_mm": 154.439288566808
+          "expected_mm": 154.4392777138316
         },
         {
           "location": "rear slope",
           "xy_mm": [
             82.98100280761719,
-            247.1694793701172
+            205.22628784179688
           ],
-          "top_mm": 151.51263427734375,
-          "expected_mm": 151.51264488339586
+          "top_mm": 151.51266479492188,
+          "expected_mm": 151.51265843009668
         },
         {
           "location": "rear slope",
           "xy_mm": [
             81.95372009277344,
-            245.4783172607422
+            203.5351104736328
           ],
-          "top_mm": 148.80838012695312,
-          "expected_mm": 148.80837985813505
+          "top_mm": 148.80836486816406,
+          "expected_mm": 148.80836900515865
         },
         {
           "location": "rear slope",
           "xy_mm": [
             80.67620849609375,
-            243.9672393798828
+            202.02403259277344
           ],
           "top_mm": 146.39207458496094,
-          "expected_mm": 146.39207982338354
+          "expected_mm": 146.39206897040717
         },
         {
           "location": "rear slope",
           "xy_mm": [
             79.17947387695312,
-            242.67294311523438
+            200.729736328125
           ],
           "top_mm": 144.32241821289062,
-          "expected_mm": 144.32242600284707
+          "expected_mm": 144.3224151498707
         },
         {
           "location": "rear slope",
           "xy_mm": [
             77.4998779296875,
-            241.62684631347656
+            199.68365478515625
           ],
-          "top_mm": 142.649658203125,
-          "expected_mm": 142.64965733191445
+          "top_mm": 142.64967346191406,
+          "expected_mm": 142.64967087861527
         },
         {
           "location": "rear slope",
           "xy_mm": [
             75.34031677246094,
-            240.3996124267578
+            198.45640563964844
           ],
-          "top_mm": 140.68724060058594,
-          "expected_mm": 140.6872400927446
+          "top_mm": 140.68722534179688,
+          "expected_mm": 140.68722923976816
         },
         {
           "location": "rear slope",
           "xy_mm": [
             73.50437927246094,
-            238.93309020996094
+            196.98988342285156
           ],
           "top_mm": 138.34217834472656,
-          "expected_mm": 138.34218711546532
+          "expected_mm": 138.34217626248892
         },
         {
           "location": "rear slope",
           "xy_mm": [
             71.91854858398438,
-            237.19918823242188
+            195.2559814453125
           ],
-          "top_mm": 135.569580078125,
-          "expected_mm": 135.56957859432106
+          "top_mm": 135.56956481933594,
+          "expected_mm": 135.56956774134466
         },
         {
           "location": "rear slope",
           "xy_mm": [
             70.62127685546875,
-            235.24000549316406
+            193.2967987060547
           ],
-          "top_mm": 132.43673706054688,
-          "expected_mm": 132.43673323875214
+          "top_mm": 132.4367218017578,
+          "expected_mm": 132.43672238577574
         },
         {
           "location": "rear slope",
           "xy_mm": [
             69.64408874511719,
-            233.10308837890625
+            191.15988159179688
           ],
-          "top_mm": 129.01968383789062,
-          "expected_mm": 129.0196804429653
+          "top_mm": 129.01966857910156,
+          "expected_mm": 129.0196695899889
         },
         {
           "location": "rear slope",
           "xy_mm": [
             69.01068115234375,
-            230.84031677246094
+            188.89710998535156
           ],
-          "top_mm": 125.40137481689453,
-          "expected_mm": 125.40137910949659
+          "top_mm": 125.4013671875,
+          "expected_mm": 125.4013682565202
         },
         {
           "location": "rear slope",
           "xy_mm": [
             68.7364501953125,
-            228.50662231445312
+            186.5634307861328
           ],
-          "top_mm": 121.66967010498047,
-          "expected_mm": 121.66966807632555
+          "top_mm": 121.66968536376953,
+          "expected_mm": 121.66968162302638
         },
         {
           "location": "rear slope",
           "xy_mm": [
             68.80760192871094,
-            206.8480224609375
+            164.90481567382812
           ],
-          "top_mm": 87.03633117675781,
-          "expected_mm": 87.03632704101405
+          "top_mm": 87.03631591796875,
+          "expected_mm": 87.03631618803765
         },
         {
           "location": "rear slope",
           "xy_mm": [
             69.23887634277344,
-            204.52113342285156
+            162.5779266357422
           ],
-          "top_mm": 83.31550598144531,
-          "expected_mm": 83.31549826388157
+          "top_mm": 83.31548309326172,
+          "expected_mm": 83.31548741090516
         },
         {
           "location": "rear slope",
           "xy_mm": [
             70.02883911132812,
-            202.29034423828125
+            160.34715270996094
           ],
-          "top_mm": 79.74834442138672,
-          "expected_mm": 79.7483386538587
+          "top_mm": 79.74835205078125,
+          "expected_mm": 79.74835220055952
         },
         {
           "location": "rear slope",
           "xy_mm": [
             71.15803527832031,
-            200.21060180664062
+            158.2674102783203
           ],
           "top_mm": 76.42272186279297,
-          "expected_mm": 76.42271144860212
+          "expected_mm": 76.42272499530293
         },
         {
           "location": "rear slope",
           "xy_mm": [
             72.59869384765625,
-            198.33311462402344
+            156.38992309570312
           ],
           "top_mm": 73.4205093383789,
-          "expected_mm": 73.42050196485044
+          "expected_mm": 73.42051551155126
         },
         {
           "location": "rear slope",
           "xy_mm": [
             74.3153076171875,
-            196.70411682128906
+            154.7609100341797
           ],
-          "top_mm": 70.8156509399414,
-          "expected_mm": 70.81564122456972
+          "top_mm": 70.81562805175781,
+          "expected_mm": 70.81563037159331
         },
         {
           "location": "rear slope",
           "xy_mm": [
             76.26560974121094,
-            195.3636932373047
+            153.42050170898438
           ],
-          "top_mm": 68.67223358154297,
-          "expected_mm": 68.67222717980772
+          "top_mm": 68.6722412109375,
+          "expected_mm": 68.67224072650855
         },
         {
           "location": "rear slope",
           "xy_mm": [
             78.401611328125,
-            194.34487915039062
+            152.4016876220703
           ],
           "top_mm": 67.04309844970703,
-          "expected_mm": 67.04308513173822
+          "expected_mm": 67.04309867843905
         },
         {
           "location": "rear slope",
           "xy_mm": [
             80.67066955566406,
-            193.67276000976562
+            151.72955322265625
           ],
-          "top_mm": 65.96833801269531,
-          "expected_mm": 65.96832814970516
+          "top_mm": 65.96831512451172,
+          "expected_mm": 65.96831729672877
         },
         {
           "location": "rear slope",
           "xy_mm": [
             83.01695251464844,
-            193.36386108398438
+            151.420654296875
           ],
-          "top_mm": 65.4743881225586,
-          "expected_mm": 65.47438108413404
+          "top_mm": 65.474365234375,
+          "expected_mm": 65.47437023115764
         },
         {
           "location": "lip connection",
@@ -438,7 +430,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.001,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -447,7 +439,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.25075000000001,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -456,7 +448,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.5005,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -465,7 +457,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.75025,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -474,7 +466,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.0,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -483,7 +475,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.24975,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -492,7 +484,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.4995,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -501,7 +493,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.74924999999999,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -510,7 +502,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.999,
-            189.344
+            147.40099999999998
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -519,7 +511,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.001,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -528,7 +520,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.25075000000001,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -537,7 +529,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.5005,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -546,7 +538,7 @@
           "location": "lip connection",
           "xy_mm": [
             108.75025,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -555,7 +547,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.0,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -564,7 +556,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.24975,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -573,7 +565,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.4995,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -582,7 +574,7 @@
           "location": "lip connection",
           "xy_mm": [
             109.74924999999999,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
@@ -591,42 +583,77 @@
           "location": "lip connection",
           "xy_mm": [
             109.999,
-            192.5
+            150.59999999999997
           ],
           "top_mm": 65.44134521484375,
           "expected_mm": 65.44134282807732
         }
       ],
-      "chute_section_comparisons": [
-        {
-          "y_mm": 8.001,
-          "max_distance_mm": 2.9807429682231205e-06,
-          "difference_area_mm2": 3.578641921819781e-05
-        },
-        {
-          "y_mm": 50,
-          "max_distance_mm": 2.9807429682231205e-06,
-          "difference_area_mm2": 3.578641921498347e-05
-        },
-        {
-          "y_mm": 100,
-          "max_distance_mm": 2.9807429682231205e-06,
-          "difference_area_mm2": 3.578641926713349e-05
-        },
-        {
-          "y_mm": 150,
-          "max_distance_mm": 2.9807429682231205e-06,
-          "difference_area_mm2": 3.578641920576656e-05
-        },
-        {
-          "y_mm": 189.342,
-          "max_distance_mm": 2.9807429682231205e-06,
-          "difference_area_mm2": 3.578641911209484e-05
-        }
-      ],
       "front_and_rear_connections_reach_lip_top": true
     },
-    "reference_dimension_section_error_mm2": 0.0001707504665622569,
+    "vent_clearance": {
+      "limit_mm": 152.39999999999998,
+      "limit_in": 6,
+      "target_margin_mm": 1.0,
+      "stl_pillar_front_y_mm": 151.39999389648438,
+      "stl_frontmost_y_mm": 0.0,
+      "measured_forward_reach_mm": 151.39999389648438,
+      "measured_forward_reach_in": 5.960629680963952,
+      "measured_margin_mm": 1.0000061035156023,
+      "previous_forward_reach_mm": 193.3432,
+      "body_length_mm": 213.05679999999998,
+      "previous_body_length_mm": 255,
+      "shortening_mm": 41.94320000000002,
+      "independent_shortening_difference_mm3": 0.2557349938929063,
+      "front_end_difference_mm3": 0.0,
+      "aligned_rear_difference_mm3": 0.23881106071064911,
+      "aligned_pillar_outline_distance_mm": 2.8208260615075946e-05,
+      "aligned_pillar_outline_difference_mm2": 0.0017530800555063896,
+      "independent_section_comparisons": [
+        {
+          "z_mm": 1,
+          "max_distance_mm": 8.471679706190116e-06,
+          "difference_area_mm2": 0.0009625434963219895
+        },
+        {
+          "z_mm": 10,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.002001059050563532
+        },
+        {
+          "z_mm": 40,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.0020010408209979605
+        },
+        {
+          "z_mm": 58,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.002001067730590476
+        },
+        {
+          "z_mm": 63.7,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.0020016858772896008
+        },
+        {
+          "z_mm": 65.5,
+          "max_distance_mm": 0.0001372370855370929,
+          "difference_area_mm2": 0.0016299033843267363
+        },
+        {
+          "z_mm": 100,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.001353695589008701
+        },
+        {
+          "z_mm": 150,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.0011700590492630485
+        }
+      ],
+      "all_geometry_within_forward_limit": true
+    },
+    "reference_dimension_section_error_mm2": 0.00017075046636356544,
     "logo_present": true,
     "logo": {
       "style": "recessed, single color",
@@ -642,7 +669,8 @@
     },
     "front_surface_y_mm": 0,
     "pillar_fit_unchanged": true,
-    "body_size_unchanged": true,
+    "body_width_and_height_unchanged": true,
+    "body_length_mm": 213.05679999999998,
     "chute_wall_height_mm": 63.6,
     "chute_tip_top_mm": 69.59,
     "chute_tip_bottom_mm": 67.922,
@@ -655,7 +683,7 @@
     "wall_height_in": 2.5039370078740157,
     "tip_top_height_in": 2.7397637795275593
   },
-  "saved_part_vertex_error_mm": 3.790886647219736e-06,
+  "saved_part_vertex_error_mm": 3.86219553445217e-06,
   "saved_settings": {
     "accel_to_decel_enable": "0",
     "accel_to_decel_factor": "50%",
@@ -1921,43 +1949,43 @@
   "native_slice": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1037.671875,
+    "peak_rss_mb": 908.28125,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
-          "Bottom surface": 623.8238525390625,
-          "Custom": 406.7362060546875,
+          "Bottom surface": 517.0281372070312,
+          "Custom": 406.7270812988281,
           "Flush": 11.0,
-          "Gap infill": 2070.941650390625,
-          "Inner wall": 4356.5556640625,
-          "Internal solid infill": 2512.99365234375,
-          "Outer wall": 4972.3466796875,
-          "Overhang wall": 726.7527465820312,
-          "Support": 4472.70458984375,
-          "Support interface": 393.2534484863281,
-          "Top surface": 924.2427978515625,
-          "Travel": 3663.42041015625,
-          "Undefined": 3659.065673828125
+          "Gap infill": 1893.4810791015625,
+          "Inner wall": 3932.731201171875,
+          "Internal solid infill": 2070.1337890625,
+          "Outer wall": 4528.56884765625,
+          "Overhang wall": 559.3306884765625,
+          "Support": 3475.3837890625,
+          "Support interface": 304.8205871582031,
+          "Top surface": 735.1656494140625,
+          "Travel": 2942.2587890625,
+          "Undefined": 2937.9208984375
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 294.5023498535156,
-            "total_used_g": 294.5023498535156
+            "main_used_g": 255.30467224121094,
+            "total_used_g": 255.30467224121094
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 24727.37109375,
+        "main_predication": 20963.6796875,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 255.0,
+              "depth": 213.05679321289062,
               "height": 160.8040008544922,
               "width": 132.29598999023438,
               "x": 101.0,
@@ -1966,46 +1994,46 @@
             },
             "id": 5,
             "name": "A2L Poop Bucket",
-            "triangle_count": 5390
+            "triangle_count": 5388
           }
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 63,
-          "export_gcode_time": 2883,
+          "detect_overhangs_time": 49,
+          "export_gcode_time": 2425,
           "flush_plan_time": 0,
-          "generate_support_material_time": 2975,
-          "infill_generate_time": 49,
-          "infill_time": 163,
+          "generate_support_material_time": 2427,
+          "infill_generate_time": 41,
+          "infill_time": 157,
           "ironing_time": 0,
-          "make_perimeters_time": 713,
+          "make_perimeters_time": 657,
           "multifilament_segment_2d_time": 0,
-          "other_slice_time": 2,
-          "prepare_infill_time": 114,
+          "other_slice_time": 1,
+          "prepare_infill_time": 116,
           "region_split_time": 1,
           "skirt_brim_time": 3,
-          "slice_layers_time": 283,
-          "sliced_time": 6844,
-          "sliced_time_with_cache": 2886,
-          "support_detect_time": 151,
-          "support_interface_time": 12,
+          "slice_layers_time": 285,
+          "sliced_time": 5752,
+          "sliced_time_with_cache": 2428,
+          "support_detect_time": 155,
+          "support_interface_time": 8,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 776,
-          "support_tree_generate_time": 2026,
-          "toolpath_time": 34,
-          "wall_time": 429,
-          "wipe_tower_time": 6
+          "support_toolpath_time": 484,
+          "support_tree_generate_time": 1770,
+          "toolpath_time": 27,
+          "wall_time": 371,
+          "wipe_tower_time": 4
         },
-        "total_predication": 25151.751953125,
-        "triangle_count": 5390,
+        "total_predication": 21388.068359375,
+        "triangle_count": 5388,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1296,
+      "export_3mf_time": 1225,
       "export_slicedata_time": 0,
-      "export_time": 3444,
+      "export_time": 3592,
       "import_time": 24,
       "load_slicedata_time": 0,
       "prepare_time": 30
@@ -2022,43 +2050,43 @@
   "native_reopen": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1033.21875,
+    "peak_rss_mb": 906.66015625,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
-          "Bottom surface": 623.8238525390625,
-          "Custom": 406.7362060546875,
+          "Bottom surface": 517.0281372070312,
+          "Custom": 406.7270812988281,
           "Flush": 11.0,
-          "Gap infill": 2070.941650390625,
-          "Inner wall": 4356.5556640625,
-          "Internal solid infill": 2512.99365234375,
-          "Outer wall": 4972.3466796875,
-          "Overhang wall": 726.7527465820312,
-          "Support": 4472.70458984375,
-          "Support interface": 393.2534484863281,
-          "Top surface": 924.2427978515625,
-          "Travel": 3663.42041015625,
-          "Undefined": 3659.065673828125
+          "Gap infill": 1893.4810791015625,
+          "Inner wall": 3932.731201171875,
+          "Internal solid infill": 2070.1337890625,
+          "Outer wall": 4528.56884765625,
+          "Overhang wall": 559.3306884765625,
+          "Support": 3475.3837890625,
+          "Support interface": 304.8205871582031,
+          "Top surface": 735.1656494140625,
+          "Travel": 2942.2587890625,
+          "Undefined": 2937.9208984375
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 294.5023498535156,
-            "total_used_g": 294.5023498535156
+            "main_used_g": 255.30467224121094,
+            "total_used_g": 255.30467224121094
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 24727.37109375,
+        "main_predication": 20963.6796875,
         "obj_cached_cnt": 0,
         "objects": [
           {
             "bbox": {
-              "depth": 255.0,
+              "depth": 213.05679321289062,
               "height": 160.8040008544922,
               "width": 132.29598999023438,
               "x": 101.0,
@@ -2067,49 +2095,49 @@
             },
             "id": 5,
             "name": "A2L Poop Bucket",
-            "triangle_count": 5390
+            "triangle_count": 5388
           }
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 74,
-          "export_gcode_time": 2929,
+          "detect_overhangs_time": 57,
+          "export_gcode_time": 2464,
           "flush_plan_time": 0,
-          "generate_support_material_time": 2971,
-          "infill_generate_time": 48,
-          "infill_time": 147,
+          "generate_support_material_time": 2415,
+          "infill_generate_time": 44,
+          "infill_time": 159,
           "ironing_time": 0,
-          "make_perimeters_time": 699,
+          "make_perimeters_time": 655,
           "multifilament_segment_2d_time": 0,
-          "other_slice_time": 2,
-          "prepare_infill_time": 99,
+          "other_slice_time": 1,
+          "prepare_infill_time": 115,
           "region_split_time": 1,
-          "skirt_brim_time": 3,
-          "slice_layers_time": 298,
-          "sliced_time": 6864,
-          "sliced_time_with_cache": 2932,
+          "skirt_brim_time": 2,
+          "slice_layers_time": 274,
+          "sliced_time": 5787,
+          "sliced_time_with_cache": 2466,
           "support_detect_time": 147,
-          "support_interface_time": 11,
+          "support_interface_time": 7,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 802,
-          "support_tree_generate_time": 2000,
-          "toolpath_time": 34,
-          "wall_time": 400,
+          "support_toolpath_time": 482,
+          "support_tree_generate_time": 1770,
+          "toolpath_time": 27,
+          "wall_time": 380,
           "wipe_tower_time": 4
         },
-        "total_predication": 25151.751953125,
-        "triangle_count": 5390,
+        "total_predication": 21388.068359375,
+        "triangle_count": 5388,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1272,
+      "export_3mf_time": 1083,
       "export_slicedata_time": 0,
-      "export_time": 1275,
-      "import_time": 143,
+      "export_time": 1085,
+      "import_time": 126,
       "load_slicedata_time": 0,
-      "prepare_time": 150
+      "prepare_time": 132
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -2121,21 +2149,21 @@
     ]
   },
   "support_audit": {
-    "support_extrusions_checked": 475660,
+    "support_extrusions_checked": 369378,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "reopen_support_audit": {
-    "support_extrusions_checked": 475660,
+    "support_extrusions_checked": 369378,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
-  "bed_edge_clearance_mm": 32.30000000000001,
-  "gcode_md5": "ce561d1008979a27fef14f360b2a8f37",
+  "bed_edge_clearance_mm": 32.684999999999995,
+  "gcode_md5": "09ebec0562f7a2fe316b34e964f9b7aa",
   "color_changes": 0,
   "prime_tower_extrusions": 0,
   "locked_settings": {
@@ -2201,8 +2229,8 @@
     "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
     "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381"
   },
-  "physical_status": "Front and rear wall starts and their connecting runs raised to the chute top at the outside wall. Chute clearance/slope, pillar contour and recessed logo retained. Physical printing and fit remain unobserved.",
-  "previous_project_sha256": "ed238b849875cacf2a7b7d71ad0c4d2ffd32c682d47ff5feb0c6d90039509a46",
+  "physical_status": "User requires at most 6 inches from pillar front to bucket front. Shortened forward reach to 151.4 mm, leaving 1 mm nominal margin. Pillar/rear shape, chute section, raised wall transitions and recessed logo retained. Physical printing and vent clearance remain unobserved.",
+  "previous_project_sha256": "4a454b42077d97e3e84d393b0621d18944c6931494e7ff457cba7c059288d95d",
   "settings_changed": {},
   "measured_printer_clearance": {
     "date": "2026-11-10",
@@ -2222,13 +2250,88 @@
     "chute_reach_mm": 22.296,
     "scope": "Raise only the chute and extend its supporting wall. Retain its slope/thickness, body, pillar fit, all saved settings, single gray filament, and clean publication names."
   },
+  "forward_vent_clearance": {
+    "date": "2026-11-10",
+    "source": "User requires no more than six inches forward of the pillar to avoid the side vents.",
+    "datum": "Straight front contact face of the pillar opening to the frontmost point of the entire bucket, along Y.",
+    "forward_limit_in": 6,
+    "forward_limit_mm": 152.4,
+    "nominal_forward_reach_mm": 151.4,
+    "nominal_forward_reach_in": 5.9606299212598435,
+    "margin_mm": 1,
+    "body_length_mm": 213.0568,
+    "prior_forward_reach_mm": 193.3432,
+    "prior_body_length_mm": 255,
+    "shortening_mm": 41.9432,
+    "mesh_measurements": {
+      "limit_mm": 152.39999999999998,
+      "limit_in": 6,
+      "target_margin_mm": 1.0,
+      "stl_pillar_front_y_mm": 151.39999389648438,
+      "stl_frontmost_y_mm": 0.0,
+      "measured_forward_reach_mm": 151.39999389648438,
+      "measured_forward_reach_in": 5.960629680963952,
+      "measured_margin_mm": 1.0000061035156023,
+      "previous_forward_reach_mm": 193.3432,
+      "body_length_mm": 213.05679999999998,
+      "previous_body_length_mm": 255,
+      "shortening_mm": 41.94320000000002,
+      "independent_shortening_difference_mm3": 0.2557349938929063,
+      "front_end_difference_mm3": 0.0,
+      "aligned_rear_difference_mm3": 0.23881106071064911,
+      "aligned_pillar_outline_distance_mm": 2.8208260615075946e-05,
+      "aligned_pillar_outline_difference_mm2": 0.0017530800555063896,
+      "independent_section_comparisons": [
+        {
+          "z_mm": 1,
+          "max_distance_mm": 8.471679706190116e-06,
+          "difference_area_mm2": 0.0009625434963219895
+        },
+        {
+          "z_mm": 10,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.002001059050563532
+        },
+        {
+          "z_mm": 40,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.0020010408209979605
+        },
+        {
+          "z_mm": 58,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.002001067730590476
+        },
+        {
+          "z_mm": 63.7,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.0020016858772896008
+        },
+        {
+          "z_mm": 65.5,
+          "max_distance_mm": 0.0001372370855370929,
+          "difference_area_mm2": 0.0016299033843267363
+        },
+        {
+          "z_mm": 100,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.001353695589008701
+        },
+        {
+          "z_mm": 150,
+          "max_distance_mm": 2.8208260615075946e-05,
+          "difference_area_mm2": 0.0011700590492630485
+        }
+      ],
+      "all_geometry_within_forward_limit": true
+    },
+    "physical_status": "Physical vent clearance and fit remain unobserved."
+  },
   "cad_preview_validation": {
-    "report": "history/openscad-preview-validation.json",
+    "report": "history/vent-clearance-cad-validation.json",
     "openscad_version": "2021.01",
     "f5_preview_passed": true,
     "f6_render_passed": true,
-    "export_byte_identical_to_saved_stl": true,
-    "stl_and_print_projects_unchanged": true,
-    "source_cad_sha256": "e7662bafb82e3bf3b2902b29d7ad33532236c0cfc778ad1cd98d45ef1df77bbd"
+    "source_cad_sha256": "bb1949e0a67ba6411797b2daf18be9e90f7e34cd784f06f76382b2ccd86e14e2"
   }
 }

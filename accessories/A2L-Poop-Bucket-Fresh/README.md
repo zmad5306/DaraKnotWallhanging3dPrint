@@ -25,12 +25,19 @@ full-height back and rear walls, a rising pillar wall and a catch chute.
 | Supports | Automatic trees, default style, build plate only |
 | Adhesion | Automatic brim |
 | Purge tower / color changes | Disabled / zero |
-| Estimate | 6 h 59 min; 294.5 g including supports |
+| Estimate | 5 h 56 min; 255.3 g including supports |
 
 ## Dimensions
 
-The body is 110 x 255 x 160.804 mm. The complete envelope including the chute
-is 132.296 x 255 x 160.804 mm. Floor thickness is 1.98 mm and walls are 2 mm.
+The body is 110 x 213.0568 x 160.804 mm. The complete envelope including the chute
+is 132.296 x 213.0568 x 160.804 mm. Floor thickness is 1.98 mm and walls are 2 mm.
+
+The frontmost bucket edge is **5.961 inches / 151.4 mm** forward of the pillar's
+front contact face. This leaves **1 mm** inside the user's **6 inch / 152.4 mm**
+maximum for the side vents. The CAD derives total length from this limit while
+retaining the fitted pillar opening and 12 mm rear allowance.
+
+![Forward vent clearance](reference/vent-clearance-dimensions.png)
 
 The printer housing measures **2.464 inches / 62.5856 mm** from the tabletop.
 The chute underside begins at **2.504 inches / 63.6 mm**, leaving **0.040 inches /
@@ -41,9 +48,9 @@ is 67.922 mm high. The root remains flush with the collection wall.
 These mounting heights use the owner's measurement; the earlier reference
 bucket height is historical.
 
-The pillar interface remains 41.275 mm front reach, 15.621 mm rear return,
+The pillar interface retains its 41.275 mm transverse shoulder reach, 15.621 mm rear return,
 49.6568 mm nominal gap, 15.08125 mm (19/32 inch) inside curves and a 12.7 mm
-(1/2 inch) convex rear tip. The enlarged body and its existing placement are retained.
+(1/2 inch) convex rear tip. The body width, height and existing build-plate placement are retained.
 
 Both sloping walls start at 65.441 mm (2.576 inches), matching the chute top
 at the bucket's outside wall. The short runs between each slope and the chute
@@ -56,22 +63,19 @@ Its polygons come from the retained Bambu Studio SVG reference.
 
 ## Verification
 
-OpenSCAD exports one closed body. Solid comparisons confine all additions to
-the existing front/rear wall footprints. Height checks cover both slopes and
-both connecting wall runs; their starts reach the chute root's upper surface.
-Five chute sections match the preceding model to within 0.000003 mm. The
-underside clearance, pillar XY contour and recessed logo are preserved.
-All saved print/material settings match the preceding project. Fresh native
-slices and reopens show zero support extrusion inside the cavity, zero color
-changes and no purge tower.
+OpenSCAD 2021.01 F5 preview and F6 rendering both pass and export one closed body.
+The actual STL frontmost point and straight pillar-front face establish the
+5.961-inch forward reach. An independent cut/translation of the preceding model
+checks the shorter body; eight sections across its height match within 0.0002 mm.
+The complete front end is unchanged, and the aligned pillar/rear contour matches.
+The chute section, measured underside clearance, raised wall transitions and
+recessed logo remain intact. All saved print/material settings and placement are
+preserved. Fresh native slices/reopens have zero cavity support extrusion,
+zero color changes and no purge tower.
 
-OpenSCAD 2021.01 F5 preview and F6 rendering both pass. The completed solid is
-evaluated in one CGAL pass, and its export is byte-identical to the saved STL.
-The build script also checks preview logs for errors even when OpenSCAD exits
-with a success code. See the [CAD preview validation](history/openscad-preview-validation.json).
-
-See [validation.json](validation.json) and the [printer clearance](reference/printer-clearance.json).
-A physical print, logo finish and fit check have not yet been observed.
+See [validation.json](validation.json), [vent clearance](reference/vent-clearance.json)
+and [CAD checks](history/vent-clearance-cad-validation.json). Physical printing,
+vent clearance and fit have not yet been observed for this shorter bucket.
 
 `build_project.py` rebuilds from this CAD and `reference/current-project-settings.json`.
 Historical two-color evidence remains in `history/`. The Bambu PLA Basic

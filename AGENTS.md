@@ -56,6 +56,25 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved adjoining wall heights, 2026-11-10:** the user reported that the
+  front and rear wall starts remained below the raised lip and requested that
+  they come up higher. Raise both the triangular front's low endpoint and the
+  rising pillar wall's low endpoint from **58 to 65.4413428 mm (2.576 inches)**,
+  calculated from the chute top at the bucket's outside wall. Fill the two
+  short connecting wall runs to this same height: front **Y0-8 mm** and rear
+  from **Y189.3432 mm** to the existing rear slope. Retain their existing 2 mm
+  wall footprints; add no shelf inside the cavity and no outward projection.
+  Preserve the tall wall ends at **160.804 mm**, entire chute profile/reach,
+  **63.6 mm underside / 69.59 mm outer top**, measured housing clearance,
+  pillar XY contour, recessed single-gray logo, placement and every saved
+  process/material value. The nominal 58 mm base wall remains beneath the
+  unchanged chute. Both SUNLU and outside-Git Bambu publication files require
+  fresh native slices/reopens and updated renderings. Validate both connecting
+  edges and both slopes, preservation outside the front/rear wall additions,
+  unchanged chute sections and zero interior support extrusion. Physical print
+  and fit remain unobserved. Earlier recessed-logo CAD/validation is retained
+  under `history/recessed-logo-low-walls.*`.
+
 - **Approved recessed Bambu front logo, 2026-11-10:** the user requested the
   Bambu mark recessed into the front like the sample project. Add a **0.6 mm
   blind recess** using the existing Bambu vector mark at its former **32 mm

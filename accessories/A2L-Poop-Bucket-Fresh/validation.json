@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
-  "revision": "recessed-front-logo",
+  "revision": "adjoining-wall-transitions",
   "project": "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf",
-  "sha256": "ed238b849875cacf2a7b7d71ad0c4d2ffd32c682d47ff5feb0c6d90039509a46",
+  "sha256": "4a454b42077d97e3e84d393b0621d18944c6931494e7ff457cba7c059288d95d",
   "geometry": {
     "closed_single_body": true,
     "bounds_mm": [
@@ -17,8 +17,616 @@
         160.8040008544922
       ]
     ],
-    "outside_chute_change_from_accepted_body_mm3": 0.0,
-    "reference_dimension_section_error_mm2": 0.00013496404727414714,
+    "wall_transitions": {
+      "adjoining_wall_start_mm": 65.44134282807732,
+      "adjoining_wall_start_in": 2.5764308200030444,
+      "previous_wall_start_mm": 58,
+      "minimum_lip_root_height_mm": 64.768,
+      "maximum_lip_root_height_mm": 65.44134282807732,
+      "added_wall_volume_mm3": 1844.7638099525207,
+      "removed_volume_mm3": 0.00650105774545472,
+      "change_outside_front_rear_mm3": 2.6771073153598893e-05,
+      "added_stock_outside_existing_wall_ring_mm3": 3.2249084068486834e-05,
+      "chute_difference_mm3": 0.006489616622521377,
+      "height_checks": [
+        {
+          "location": "front slope",
+          "xy_mm": [
+            20.0,
+            1.0
+          ],
+          "top_mm": 149.58484935760498,
+          "expected_mm": 149.58486386212675
+        },
+        {
+          "location": "front slope",
+          "xy_mm": [
+            55.0,
+            1.0
+          ],
+          "top_mm": 116.86236866315207,
+          "expected_mm": 116.86238345999641
+        },
+        {
+          "location": "front slope",
+          "xy_mm": [
+            90.0,
+            1.0
+          ],
+          "top_mm": 84.139889086218,
+          "expected_mm": 84.13990305786609
+        },
+        {
+          "location": "front slope",
+          "xy_mm": [
+            104.0,
+            1.0
+          ],
+          "top_mm": 71.05089735393814,
+          "expected_mm": 71.05091089701396
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            6.1
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            7.0
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            190.0
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            192.0
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "connecting wall",
+          "xy_mm": [
+            109.0,
+            193.343
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            84.34599304199219,
+            252.8972625732422
+          ],
+          "top_mm": 160.67169189453125,
+          "expected_mm": 160.67169811822245
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            84.19184875488281,
+            250.92453002929688
+          ],
+          "top_mm": 157.51718139648438,
+          "expected_mm": 157.51718584928528
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            83.73313903808594,
+            248.9997100830078
+          ],
+          "top_mm": 154.4392852783203,
+          "expected_mm": 154.439288566808
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            82.98100280761719,
+            247.1694793701172
+          ],
+          "top_mm": 151.51263427734375,
+          "expected_mm": 151.51264488339586
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            81.95372009277344,
+            245.4783172607422
+          ],
+          "top_mm": 148.80838012695312,
+          "expected_mm": 148.80837985813505
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            80.67620849609375,
+            243.9672393798828
+          ],
+          "top_mm": 146.39207458496094,
+          "expected_mm": 146.39207982338354
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            79.17947387695312,
+            242.67294311523438
+          ],
+          "top_mm": 144.32241821289062,
+          "expected_mm": 144.32242600284707
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            77.4998779296875,
+            241.62684631347656
+          ],
+          "top_mm": 142.649658203125,
+          "expected_mm": 142.64965733191445
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            75.34031677246094,
+            240.3996124267578
+          ],
+          "top_mm": 140.68724060058594,
+          "expected_mm": 140.6872400927446
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            73.50437927246094,
+            238.93309020996094
+          ],
+          "top_mm": 138.34217834472656,
+          "expected_mm": 138.34218711546532
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            71.91854858398438,
+            237.19918823242188
+          ],
+          "top_mm": 135.569580078125,
+          "expected_mm": 135.56957859432106
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            70.62127685546875,
+            235.24000549316406
+          ],
+          "top_mm": 132.43673706054688,
+          "expected_mm": 132.43673323875214
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            69.64408874511719,
+            233.10308837890625
+          ],
+          "top_mm": 129.01968383789062,
+          "expected_mm": 129.0196804429653
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            69.01068115234375,
+            230.84031677246094
+          ],
+          "top_mm": 125.40137481689453,
+          "expected_mm": 125.40137910949659
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            68.7364501953125,
+            228.50662231445312
+          ],
+          "top_mm": 121.66967010498047,
+          "expected_mm": 121.66966807632555
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            68.80760192871094,
+            206.8480224609375
+          ],
+          "top_mm": 87.03633117675781,
+          "expected_mm": 87.03632704101405
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            69.23887634277344,
+            204.52113342285156
+          ],
+          "top_mm": 83.31550598144531,
+          "expected_mm": 83.31549826388157
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            70.02883911132812,
+            202.29034423828125
+          ],
+          "top_mm": 79.74834442138672,
+          "expected_mm": 79.7483386538587
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            71.15803527832031,
+            200.21060180664062
+          ],
+          "top_mm": 76.42272186279297,
+          "expected_mm": 76.42271144860212
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            72.59869384765625,
+            198.33311462402344
+          ],
+          "top_mm": 73.4205093383789,
+          "expected_mm": 73.42050196485044
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            74.3153076171875,
+            196.70411682128906
+          ],
+          "top_mm": 70.8156509399414,
+          "expected_mm": 70.81564122456972
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            76.26560974121094,
+            195.3636932373047
+          ],
+          "top_mm": 68.67223358154297,
+          "expected_mm": 68.67222717980772
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            78.401611328125,
+            194.34487915039062
+          ],
+          "top_mm": 67.04309844970703,
+          "expected_mm": 67.04308513173822
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            80.67066955566406,
+            193.67276000976562
+          ],
+          "top_mm": 65.96833801269531,
+          "expected_mm": 65.96832814970516
+        },
+        {
+          "location": "rear slope",
+          "xy_mm": [
+            83.01695251464844,
+            193.36386108398438
+          ],
+          "top_mm": 65.4743881225586,
+          "expected_mm": 65.47438108413404
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.001,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.25075000000001,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.5005,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.75025,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.0,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.24975,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.4995,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.74924999999999,
+            7.999
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.999,
+            7.999
+          ],
+          "top_mm": 65.44134521484376,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.001,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.25075000000001,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.5005,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.75025,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.0,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.24975,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.4995,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.74924999999999,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.999,
+            189.344
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.001,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.25075000000001,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.5005,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            108.75025,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.0,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.24975,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.4995,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.74924999999999,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        },
+        {
+          "location": "lip connection",
+          "xy_mm": [
+            109.999,
+            192.5
+          ],
+          "top_mm": 65.44134521484375,
+          "expected_mm": 65.44134282807732
+        }
+      ],
+      "chute_section_comparisons": [
+        {
+          "y_mm": 8.001,
+          "max_distance_mm": 2.9807429682231205e-06,
+          "difference_area_mm2": 3.578641921819781e-05
+        },
+        {
+          "y_mm": 50,
+          "max_distance_mm": 2.9807429682231205e-06,
+          "difference_area_mm2": 3.578641921498347e-05
+        },
+        {
+          "y_mm": 100,
+          "max_distance_mm": 2.9807429682231205e-06,
+          "difference_area_mm2": 3.578641926713349e-05
+        },
+        {
+          "y_mm": 150,
+          "max_distance_mm": 2.9807429682231205e-06,
+          "difference_area_mm2": 3.578641920576656e-05
+        },
+        {
+          "y_mm": 189.342,
+          "max_distance_mm": 2.9807429682231205e-06,
+          "difference_area_mm2": 3.578641911209484e-05
+        }
+      ],
+      "front_and_rear_connections_reach_lip_top": true
+    },
+    "reference_dimension_section_error_mm2": 0.0001707504665622569,
     "logo_present": true,
     "logo": {
       "style": "recessed, single color",
@@ -28,11 +636,9 @@
       "depth_mm": 0.6,
       "remaining_wall_mm": 1.4,
       "source": "reference/bambu-mark.svg",
-      "removed_volume_mm3": 413.00280919343766,
-      "independent_svg_cut_difference_mm3": 0.0005757893862841053,
-      "added_volume_mm3": 0.0,
+      "material_remaining_in_recess_mm3": 0.0004835203318102085,
       "missing_wall_backing_mm3": 0.0,
-      "all_geometry_outside_logo_unchanged": true
+      "logo_region_difference_mm3": 0.0
     },
     "front_surface_y_mm": 0,
     "pillar_fit_unchanged": true,
@@ -1315,38 +1921,38 @@
   "native_slice": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1029.51171875,
+    "peak_rss_mb": 1037.671875,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
-          "Bottom surface": 623.8240356445312,
-          "Custom": 406.73614501953125,
+          "Bottom surface": 623.8238525390625,
+          "Custom": 406.7362060546875,
           "Flush": 11.0,
-          "Gap infill": 2053.1357421875,
-          "Inner wall": 4322.67724609375,
-          "Internal solid infill": 2512.996337890625,
-          "Outer wall": 4920.1396484375,
-          "Overhang wall": 726.3024291992188,
-          "Support": 4472.81201171875,
-          "Support interface": 393.4645080566406,
-          "Top surface": 924.2576293945312,
-          "Travel": 3703.851318359375,
-          "Undefined": 3699.49658203125
+          "Gap infill": 2070.941650390625,
+          "Inner wall": 4356.5556640625,
+          "Internal solid infill": 2512.99365234375,
+          "Outer wall": 4972.3466796875,
+          "Overhang wall": 726.7527465820312,
+          "Support": 4472.70458984375,
+          "Support interface": 393.2534484863281,
+          "Top surface": 924.2427978515625,
+          "Travel": 3663.42041015625,
+          "Undefined": 3659.065673828125
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 292.317138671875,
-            "total_used_g": 292.3171691894531
+            "main_used_g": 294.5023498535156,
+            "total_used_g": 294.5023498535156
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 24663.91796875,
+        "main_predication": 24727.37109375,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -1360,49 +1966,49 @@
             },
             "id": 5,
             "name": "A2L Poop Bucket",
-            "triangle_count": 5380
+            "triangle_count": 5390
           }
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 70,
-          "export_gcode_time": 2909,
+          "detect_overhangs_time": 63,
+          "export_gcode_time": 2883,
           "flush_plan_time": 0,
-          "generate_support_material_time": 2976,
-          "infill_generate_time": 46,
-          "infill_time": 156,
+          "generate_support_material_time": 2975,
+          "infill_generate_time": 49,
+          "infill_time": 163,
           "ironing_time": 0,
-          "make_perimeters_time": 678,
+          "make_perimeters_time": 713,
           "multifilament_segment_2d_time": 0,
           "other_slice_time": 2,
-          "prepare_infill_time": 110,
+          "prepare_infill_time": 114,
           "region_split_time": 1,
           "skirt_brim_time": 3,
-          "slice_layers_time": 281,
-          "sliced_time": 6835,
-          "sliced_time_with_cache": 2912,
-          "support_detect_time": 155,
-          "support_interface_time": 11,
+          "slice_layers_time": 283,
+          "sliced_time": 6844,
+          "sliced_time_with_cache": 2886,
+          "support_detect_time": 151,
+          "support_interface_time": 12,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 796,
-          "support_tree_generate_time": 2002,
-          "toolpath_time": 35,
-          "wall_time": 396,
-          "wipe_tower_time": 5
+          "support_toolpath_time": 776,
+          "support_tree_generate_time": 2026,
+          "toolpath_time": 34,
+          "wall_time": 429,
+          "wipe_tower_time": 6
         },
-        "total_predication": 25088.298828125,
-        "triangle_count": 5380,
+        "total_predication": 25151.751953125,
+        "triangle_count": 5390,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1433,
+      "export_3mf_time": 1296,
       "export_slicedata_time": 0,
-      "export_time": 3914,
-      "import_time": 25,
+      "export_time": 3444,
+      "import_time": 24,
       "load_slicedata_time": 0,
-      "prepare_time": 31
+      "prepare_time": 30
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -1416,38 +2022,38 @@
   "native_reopen": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1023.81640625,
+    "peak_rss_mb": 1033.21875,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
-          "Bottom surface": 623.8240356445312,
-          "Custom": 406.73614501953125,
+          "Bottom surface": 623.8238525390625,
+          "Custom": 406.7362060546875,
           "Flush": 11.0,
-          "Gap infill": 2053.1357421875,
-          "Inner wall": 4322.67724609375,
-          "Internal solid infill": 2512.996337890625,
-          "Outer wall": 4920.1396484375,
-          "Overhang wall": 726.3024291992188,
-          "Support": 4472.81201171875,
-          "Support interface": 393.4645080566406,
-          "Top surface": 924.2576293945312,
-          "Travel": 3703.851318359375,
-          "Undefined": 3699.49658203125
+          "Gap infill": 2070.941650390625,
+          "Inner wall": 4356.5556640625,
+          "Internal solid infill": 2512.99365234375,
+          "Outer wall": 4972.3466796875,
+          "Overhang wall": 726.7527465820312,
+          "Support": 4472.70458984375,
+          "Support interface": 393.2534484863281,
+          "Top surface": 924.2427978515625,
+          "Travel": 3663.42041015625,
+          "Undefined": 3659.065673828125
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 292.317138671875,
-            "total_used_g": 292.3171691894531
+            "main_used_g": 294.5023498535156,
+            "total_used_g": 294.5023498535156
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 24663.91796875,
+        "main_predication": 24727.37109375,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -1461,49 +2067,49 @@
             },
             "id": 5,
             "name": "A2L Poop Bucket",
-            "triangle_count": 5380
+            "triangle_count": 5390
           }
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 68,
-          "export_gcode_time": 3045,
+          "detect_overhangs_time": 74,
+          "export_gcode_time": 2929,
           "flush_plan_time": 0,
-          "generate_support_material_time": 3147,
-          "infill_generate_time": 47,
-          "infill_time": 156,
+          "generate_support_material_time": 2971,
+          "infill_generate_time": 48,
+          "infill_time": 147,
           "ironing_time": 0,
-          "make_perimeters_time": 662,
+          "make_perimeters_time": 699,
           "multifilament_segment_2d_time": 0,
           "other_slice_time": 2,
-          "prepare_infill_time": 109,
+          "prepare_infill_time": 99,
           "region_split_time": 1,
           "skirt_brim_time": 3,
-          "slice_layers_time": 283,
-          "sliced_time": 7126,
-          "sliced_time_with_cache": 3048,
-          "support_detect_time": 157,
-          "support_interface_time": 13,
+          "slice_layers_time": 298,
+          "sliced_time": 6864,
+          "sliced_time_with_cache": 2932,
+          "support_detect_time": 147,
+          "support_interface_time": 11,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 851,
-          "support_tree_generate_time": 2115,
-          "toolpath_time": 36,
-          "wall_time": 378,
-          "wipe_tower_time": 6
+          "support_toolpath_time": 802,
+          "support_tree_generate_time": 2000,
+          "toolpath_time": 34,
+          "wall_time": 400,
+          "wipe_tower_time": 4
         },
-        "total_predication": 25088.298828125,
-        "triangle_count": 5380,
+        "total_predication": 25151.751953125,
+        "triangle_count": 5390,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1281,
+      "export_3mf_time": 1272,
       "export_slicedata_time": 0,
-      "export_time": 1285,
-      "import_time": 140,
+      "export_time": 1275,
+      "import_time": 143,
       "load_slicedata_time": 0,
-      "prepare_time": 147
+      "prepare_time": 150
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -1515,21 +2121,21 @@
     ]
   },
   "support_audit": {
-    "support_extrusions_checked": 475624,
+    "support_extrusions_checked": 475660,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "reopen_support_audit": {
-    "support_extrusions_checked": 475624,
+    "support_extrusions_checked": 475660,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "bed_edge_clearance_mm": 32.30000000000001,
-  "gcode_md5": "9205d7a0dd133c1d9bdfba84f6c14da0",
+  "gcode_md5": "ce561d1008979a27fef14f360b2a8f37",
   "color_changes": 0,
   "prime_tower_extrusions": 0,
   "locked_settings": {
@@ -1595,8 +2201,8 @@
     "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
     "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381"
   },
-  "physical_status": "Recessed single-color logo added at the user request. Measured 2.464-inch housing clearance and chute slope are unchanged. Physical printing, logo finish and fit remain unobserved.",
-  "previous_project_sha256": "d63a8d878c6fb6965344fd2308e70c842ea454be2f0eb18f60193a5e3bac91f7",
+  "physical_status": "Front and rear wall starts and their connecting runs raised to the chute top at the outside wall. Chute clearance/slope, pillar contour and recessed logo retained. Physical printing and fit remain unobserved.",
+  "previous_project_sha256": "ed238b849875cacf2a7b7d71ad0c4d2ffd32c682d47ff5feb0c6d90039509a46",
   "settings_changed": {},
   "measured_printer_clearance": {
     "date": "2026-11-10",

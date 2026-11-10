@@ -50,6 +50,11 @@ chute_bottom_root_reach = 0.268;
 chute_bottom_root_height = 58.326 + chute_height_offset;
 chute_front_setback = 8;
 chute_pillar_setback = 4;
+// Both adjoining walls meet the chute top at the outside face of the bucket.
+chute_top_at_wall = chute_top_root_height
+    - chute_top_root_reach*(chute_tip_top_height-chute_top_root_height)
+      /(chute_tip_top_reach-chute_top_root_reach);
+adjoining_wall_start_height = chute_enabled ? chute_top_at_wall : low_wall_height;
 
 /* [Pillar opening] */
 // Functional printer interface dimensions.
@@ -148,7 +153,7 @@ module triangular_front_wall() {
         xz_prism([
             [-eps,low_wall_height-eps],
             [body_width+eps,low_wall_height-eps],
-            [body_width,low_wall_height],
+            [body_width,adjoining_wall_start_height],
             [outer_corner_radius+wall_thickness,back_wall_height],
             [-eps,back_wall_height]
         ], -eps, outer_corner_radius+2*eps);
@@ -187,9 +192,25 @@ module sloped_pillar_wall() {
                         [body_length+eps,low_wall_height-eps],
                         [body_length+eps,back_wall_height],
                         [slope_end_y,back_wall_height],
-                        [lower_shoulder_y,low_wall_height]
+                        [lower_shoulder_y,adjoining_wall_start_height]
                     ]);
     }
+}
+
+module adjoining_wall_returns() {
+    // Fill the short wall runs from each chute end to the sloping walls.
+    // Intersect only the existing wall ring: no inward shelf or outward stock.
+    linear_extrude(height=adjoining_wall_start_height, convexity=10)
+        intersection() {
+            wall_ring();
+            union() {
+                translate([-eps,-eps])
+                    square([body_width+2*eps,chute_front_setback+eps]);
+                translate([-eps,lower_shoulder_y-chute_pillar_setback])
+                    square([body_width+2*eps,
+                        body_length-lower_shoulder_y+chute_pillar_setback+eps]);
+            }
+        }
 }
 
 module bucket() {
@@ -202,7 +223,7 @@ module bucket() {
                 tall_wall_region();
             }
         if (front_triangle_enabled) triangular_front_wall();
-        if (chute_enabled) printer_chute();
+        if (chute_enabled) { printer_chute(); adjoining_wall_returns(); }
         if (pillar_wall_slope_enabled) sloped_pillar_wall();
     }
 }

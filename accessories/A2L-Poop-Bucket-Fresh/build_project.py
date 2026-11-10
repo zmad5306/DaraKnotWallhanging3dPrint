@@ -1,7 +1,7 @@
 """Package the single-color parametric bucket for A2L / SUNLU PLA+ 2.0.
 
-The STL is exported by OpenSCAD from Bucket.scad. Geometry comparisons
-use the accepted-r3.scad reference; no earlier remixed mesh is a geometry input.
+The STL is exported by OpenSCAD from Bucket.scad. Geometry comparisons use
+the preceding recessed-logo CAD; no earlier remixed mesh is a geometry input.
 Requires the repository's trimesh/manifold3d geometry dependencies and Bambu CLI.
 """
 from pathlib import Path
@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(__file__).resolve().parent
 REF=OUT/'reference'
-WORK=ROOT/'.work/a2l-bucket-recessed-logo-build'
+WORK=ROOT/'.work/a2l-bucket-wall-transitions-build'
 sys.path[:0]=[str(ROOT/'.work/python-libs'),str(ROOT/'scripts')]
 import numpy as np
 import trimesh
@@ -66,8 +66,7 @@ def native(src,directory,export=False):
 def render_inputs(force=False):
     """Recreate missing CAD inputs without needing historical local outputs."""
     exe=Path('C:/Program Files (x86)/OpenSCAD/openscad.exe')
-    exports=[(REF/'accepted-r3.scad',WORK/'accepted-r3.stl',None),
-             (OUT/'history/measured-clearance-plain-front.scad',WORK/'prior-unmarked.stl',None),
+    exports=[(OUT/'history/recessed-logo-low-walls.scad',WORK/'prior-walls.stl',None),
              (OUT/'Bucket.scad',OUT/'Bucket.stl',None)]
     for source,target,mode in exports:
         if target.exists() and not force:continue
@@ -175,9 +174,9 @@ def support_audit(gc):
         'check':'Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm.'}
 
 def validate_recess(full):
-    """Check a blind cut against the preceding plain-front model and logo SVG."""
+    """Check the retained blind cut, source SVG and complete wall backing."""
     from shapely.ops import unary_union
-    original=trimesh.load(WORK/'prior-unmarked.stl',force='mesh')
+    original=trimesh.load(WORK/'prior-walls.stl',force='mesh')
     before,after=solid(original),solid(full)
     svg=ET.parse(REF/'bambu-mark.svg').getroot()
     # Read the source's M/L/H/V path commands independently of the CAD polygons.
@@ -205,30 +204,95 @@ def validate_recess(full):
             pieces.append(piece)
         return solid(trimesh.util.concatenate(pieces))
     expected=prism(.6,0)
-    removed,added=before-after,after-before
-    error=vol_diff(removed,expected)
+    residual=abs((expected ^ after).volume())
     backing_missing=abs((prism(1.4,.6)-after).volume())
-    assert abs(added.volume())<.001
-    assert error<.02,error
-    assert backing_missing<.001,backing_missing
-    assert abs(removed.volume()-shape.area*.6)<.02
+    local=solid(trimesh.creation.box(bounds=[[40,-.001,39],[70,2.001,73]]))
+    unchanged=vol_diff(before ^ local,after ^ local)
+    assert residual<.001 and backing_missing<.001 and unchanged<.001
     return original,{'style':'recessed, single color','height_mm':32,'center_x_mm':55,
         'bottom_z_mm':40,'depth_mm':.6,'remaining_wall_mm':1.4,
-        'source':'reference/bambu-mark.svg','removed_volume_mm3':removed.volume(),
-        'independent_svg_cut_difference_mm3':error,'added_volume_mm3':added.volume(),
-        'missing_wall_backing_mm3':backing_missing,
-        'all_geometry_outside_logo_unchanged':True}
+        'source':'reference/bambu-mark.svg','material_remaining_in_recess_mm3':residual,
+        'missing_wall_backing_mm3':backing_missing,'logo_region_difference_mm3':unchanged}
+
+
+def top_height(mesh,x,y):
+    tri=mesh.triangles
+    ax,ay=tri[:,0,0],tri[:,0,1]
+    bx,by=tri[:,1,0],tri[:,1,1]
+    cx,cy=tri[:,2,0],tri[:,2,1]
+    denom=(by-cy)*(ax-cx)+(cx-bx)*(ay-cy)
+    good=np.abs(denom)>1e-10
+    denom=np.where(good,denom,1)
+    u=((by-cy)*(x-cx)+(cx-bx)*(y-cy))/denom
+    v=((cy-ay)*(x-cx)+(ax-cx)*(y-cy))/denom
+    w=1-u-v
+    inside=good & (u>=-1e-5) & (v>=-1e-5) & (w>=-1e-5)
+    assert inside.any(),(x,y)
+    return float((u*tri[:,0,2]+v*tri[:,1,2]+w*tri[:,2,2])[inside].max())
+
+
+def validate_wall_transitions(before_mesh,full):
+    from shapely.geometry import box
+    before,after=solid(before_mesh),solid(full)
+    removed,added=before-after,after-before
+    def cube(lo,hi):return solid(trimesh.creation.box(bounds=[lo,hi]))
+    allowed=cube([-.001,-.001,57.999],[110.001,8.0001,160.805])
+    allowed+=cube([-.001,189.3431,57.999],[110.001,255.001,160.805])
+    outside=abs((added-allowed).volume())
+    ring=(before ^ cube([-1,-1,10],[150,260,11])).translate([0,0,-10]).scale([1,1,161])
+    nonwall=abs((added-ring).volume())
+    chute=cube([107.999,8.0001,55],[133,189.3431,71])
+    chute_diff=vol_diff(before ^ chute,after ^ chute)
+    assert abs(removed.volume())<.03,removed.volume()
+    assert outside<.03 and nonwall<.03,(outside,nonwall)
+    # Float32 STL retriangulation has a few microns of Boolean volume noise.
+    # Independently require the entire chute section to match at five stations.
+    sections=[]
+    for y in [8.001,50,100,150,189.342]:
+        profiles=[]
+        for model in [before_mesh,full]:
+            loop=model.section(plane_origin=[0,y,0],plane_normal=[0,1,0]).discrete[0][:,[0,2]]
+            profiles.append(Polygon(loop).intersection(box(108,55,133,71)))
+        distance=profiles[0].hausdorff_distance(profiles[1])
+        area=profiles[0].symmetric_difference(profiles[1]).area
+        assert distance<.00002 and area<.001,(y,distance,area)
+        sections.append({'y_mm':y,'max_distance_mm':distance,'difference_area_mm2':area})
+    assert chute_diff<.02,chute_diff
+    start=65.12+1.696*(69.59-65.12)/(21.896+1.696)
+    checks=[]
+    def check(name,x,y,expected):
+        actual=top_height(full,x,y)
+        assert abs(actual-expected)<.0002,(name,x,y,actual,expected)
+        checks.append({'location':name,'xy_mm':[float(x),float(y)],'top_mm':actual,'expected_mm':expected})
+    for x in [20,55,90,104]:
+        check('front slope',x,1,160.804+(start-160.804)*(x-8)/102)
+    for y in [6.1,7,7.999,189.344,190,192,193.343]:
+        check('connecting wall',109,y,start)
+    # Sample the entire rear pillar contour at its existing outside XY edge.
+    outline=np.asarray(mesh_slice(before_mesh,10).exterior.coords)
+    rear=outline[(outline[:,1]>193.3433)&(outline[:,1]<252.97)&(outline[:,0]>8.02)]
+    assert len(rear)>20
+    for x,y in rear[::max(1,len(rear)//24)]:
+        check('rear slope',x,y,start+(160.804-start)*(y-193.3432)/(252.98-193.3432))
+    # Both end connections are at or above the whole chute root surface.
+    # Check both inside/outside faces across each short wall return.
+    for y in [7.999,189.344,192.5]:
+        for x in np.linspace(108.001,109.999,9):check('lip connection',x,y,start)
+    return {'adjoining_wall_start_mm':start,'adjoining_wall_start_in':start/25.4,
+        'previous_wall_start_mm':58,'minimum_lip_root_height_mm':64.768,
+        'maximum_lip_root_height_mm':start,'added_wall_volume_mm3':added.volume(),
+        'removed_volume_mm3':removed.volume(),'change_outside_front_rear_mm3':outside,
+        'added_stock_outside_existing_wall_ring_mm3':nonwall,'chute_difference_mm3':chute_diff,
+        'height_checks':checks,'chute_section_comparisons':sections,
+        'front_and_rear_connections_reach_lip_top':True}
+
 
 def validate_geometry(full):
     from shapely.geometry import box
     assert full.is_volume and len(full.split())==1
     assert np.max(np.abs(full.bounds-np.array([[0,0,0],[132.296,255,160.804]])))<.0001
     original,logo=validate_recess(full)
-    accepted=trimesh.load(WORK/'accepted-r3.stl',force='mesh')
-    a,b=solid(accepted),solid(original)
-    domain=solid(trimesh.creation.box(bounds=[[103.999,7.999,54.39],[132.297,189.344,69.591]]))
-    outside_change=abs(((a-b)-domain).volume())+abs(((b-a)-domain).volume())
-    assert outside_change<.03, outside_change
+    transitions=validate_wall_transitions(original,full)
     profile=Polygon(full.section(plane_origin=[0,100,0],plane_normal=[0,1,0]).discrete[0][:,[0,2]])
     local=profile.intersection(box(108,55,133,71))
     expected=Polygon([[108,55],[110,55],[110,63.6],[110.268,63.9],
@@ -243,7 +307,7 @@ def validate_geometry(full):
     clearance=underside_min-2.464*25.4
     assert clearance>=1.0,clearance
     return {'closed_single_body':True,'bounds_mm':full.bounds.tolist(),
-            'outside_chute_change_from_accepted_body_mm3':outside_change,
+            'wall_transitions':transitions,
             'reference_dimension_section_error_mm2':profile_error,
             'logo_present':True,'logo':logo,'front_surface_y_mm':0,
             'pillar_fit_unchanged':True,'body_size_unchanged':True,
@@ -310,13 +374,13 @@ def build_project(cfg, destination, run_dir):
     for k in ['printer_model','printer_settings_id','nozzle_diameter','filament_settings_id','filament_colour',
               'filament_flow_ratio','filament_max_volumetric_speed','nozzle_temperature','textured_plate_temp']:
         locked[k]=cfg[k]
-    report={'date':'2026-11-10','revision':'recessed-front-logo','project':str(destination),
+    report={'date':'2026-11-10','revision':'adjoining-wall-transitions','project':str(destination),
             'sha256':sha(destination),'geometry':geometry,'saved_part_vertex_error_mm':mesh_difference,
             'saved_settings':settings,'native_slice':sliced_result,'native_reopen':reopen,
             'support_audit':sa,'reopen_support_audit':rsa,'bed_edge_clearance_mm':clearance,
             'gcode_md5':checksum,'color_changes':0,'prime_tower_extrusions':0,
             'locked_settings':locked,'protected_before':protected_before,'protected_after':protected_after,
-            'physical_status':'Recessed single-color logo added at the user request. Measured 2.464-inch housing clearance and chute slope are unchanged. Physical printing, logo finish and fit remain unobserved.'}
+            'physical_status':'Front and rear wall starts and their connecting runs raised to the chute top at the outside wall. Chute clearance/slope, pillar contour and recessed logo retained. Physical printing and fit remain unobserved.'}
     jsave(run_dir/'validation.json',report)
     print(destination.name,'native reopen passed',flush=True)
     return report

@@ -65,6 +65,11 @@ All saved print/material settings match the preceding project. Fresh native
 slices and reopens show zero support extrusion inside the cavity, zero color
 changes and no purge tower.
 
+OpenSCAD 2021.01 F5 preview and F6 rendering both pass. The completed solid is
+evaluated in one CGAL pass, and its export is byte-identical to the saved STL.
+The build script also checks preview logs for errors even when OpenSCAD exits
+with a success code. See the [CAD preview validation](history/openscad-preview-validation.json).
+
 See [validation.json](validation.json) and the [printer clearance](reference/printer-clearance.json).
 A physical print, logo finish and fit check have not yet been observed.
 

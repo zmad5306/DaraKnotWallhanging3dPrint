@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-10",
+  "openscad_version": "2021.01",
+  "reported_error": "The given mesh is not closed! Unable to convert to CGAL_Nef_Polyhedron.",
+  "cause": "Intermediate render conversions during F5 preview. F6 evaluation already exports a closed solid.",
+  "change": "Remove intermediate render nodes; evaluate the entire bucket and recessed logo with one final render node.",
+  "before_cad_sha256": {
+    "source": "8a55af4bf013c3f39ef198dd1afb9174314a15fba846dec9638a82b064aac8c5",
+    "publication": "aae4ee9b2fc171a08ca046cc1702dd7df62b2dc5a82b19a07fb59bb1c7acbc7f"
+  },
+  "after_cad_sha256": {
+    "source": "e7662bafb82e3bf3b2902b29d7ad33532236c0cfc778ad1cd98d45ef1df77bbd",
+    "publication": "e87c7b5133b4ecf414b17fe069ea49814632aa9390a62d1f64742e68c7db733e"
+  },
+  "native_checks": {
+    "baseline-preview": {
+      "command": [
+        "C:/Program Files (x86)/OpenSCAD/openscad.exe",
+        "--hardwarnings",
+        "--imgsize=1200,1000",
+        "--viewall",
+        "--autocenter",
+        "--projection=o",
+        "-o",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\baseline-preview.png",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\before-public.scad"
+      ],
+      "exit": 0,
+      "seconds": 83.86000000001513,
+      "log": "ERROR: The given mesh is not closed! Unable to convert to CGAL_Nef_Polyhedron.\nCompiling design (CSG Products normalization)...\nNormalized CSG tree has 2 elements\nGeometries in cache: 44\nGeometry cache size in bytes: 2315648\nCGAL Polyhedrons in cache: 4\nCGAL cache size in bytes: 5606976\nTotal rendering time: 0:01:23.572\n"
+    },
+    "baseline-render": {
+      "command": [
+        "C:/Program Files (x86)/OpenSCAD/openscad.exe",
+        "--hardwarnings",
+        "--export-format",
+        "binstl",
+        "-o",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\baseline-render.stl",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\before-public.scad"
+      ],
+      "exit": 0,
+      "seconds": 101.23500000001513,
+      "log": "Geometries in cache: 43\nGeometry cache size in bytes: 1568752\nCGAL Polyhedrons in cache: 9\nCGAL cache size in bytes: 12907172\nTotal rendering time: 0:01:40.889\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2697\n   Halfedges:    8092\n   Edges:        4046\n   Halffacets:   2710\n   Facets:       1355\n   Volumes:         2\n"
+    },
+    "final-solid-preview": {
+      "command": [
+        "C:/Program Files (x86)/OpenSCAD/openscad.exe",
+        "--hardwarnings",
+        "--imgsize=1200,1000",
+        "--viewall",
+        "--autocenter",
+        "--projection=o",
+        "-o",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\final-solid-preview.png",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\candidate-final-solid.scad"
+      ],
+      "exit": 0,
+      "seconds": 105.17200000002049,
+      "log": "Compiling design (CSG Products normalization)...\nNormalized CSG tree has 1 elements\nGeometries in cache: 44\nGeometry cache size in bytes: 1957088\nCGAL Polyhedrons in cache: 5\nCGAL cache size in bytes: 7383408\nTotal rendering time: 0:01:44.891\n"
+    },
+    "final-solid-render": {
+      "command": [
+        "C:/Program Files (x86)/OpenSCAD/openscad.exe",
+        "--hardwarnings",
+        "--export-format",
+        "binstl",
+        "-o",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\final-solid-render.stl",
+        "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\.work\\a2l-scad-preview\\candidate-final-solid.scad"
+      ],
+      "exit": 0,
+      "seconds": 104.78100000001723,
+      "log": "Geometries in cache: 43\nGeometry cache size in bytes: 1568752\nCGAL Polyhedrons in cache: 7\nCGAL cache size in bytes: 11138220\nTotal rendering time: 0:01:44.397\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2697\n   Halfedges:    8092\n   Edges:        4046\n   Halffacets:   2710\n   Facets:       1355\n   Volumes:         2\n"
+    }
+  },
+  "geometry_preservation": {
+    "closed_single_body": true,
+    "stl_bytes_equal": true,
+    "symmetric_volume_difference_mm3": 0.0,
+    "max_vertex_distance_mm": 0.0,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        132.29598999023438,
+        255.0,
+        160.8040008544922
+      ]
+    ]
+  },
+  "preserved_files": {
+    "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\accessories\\A2L-Poop-Bucket-Fresh\\Bucket.stl": "abd317fbbf734e125147bf0278c2e270729e4fcae07c3ed911626e7122d4a5e6",
+    "C:\\Users\\Zach\\Repos\\Personal\\DaraKnotWallhanging3dPrint\\accessories\\A2L-Poop-Bucket-Fresh\\A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf": "4a454b42077d97e3e84d393b0621d18944c6931494e7ff457cba7c059288d95d",
+    "C:\\Users\\Zach\\Nextcloud\\3D prints\\Dara-Solid-Joint-Backs-v26\\MakerWorld\\A2L Poop Bucket\\A2L Poop Bucket.stl": "abd317fbbf734e125147bf0278c2e270729e4fcae07c3ed911626e7122d4a5e6",
+    "C:\\Users\\Zach\\Nextcloud\\3D prints\\Dara-Solid-Joint-Backs-v26\\MakerWorld\\A2L Poop Bucket\\A2L Poop Bucket.3mf": "cc56f07016fb9e35d16b12c0b0f57930409979b4f260b8a0a4470c9842ec396c"
+  },
+  "visual_check": "Complete F5 preview inspected: all walls, chute, floor and recessed mark visible.",
+  "physical_status": "No geometry or print-project change; physical qualification unchanged."
+}

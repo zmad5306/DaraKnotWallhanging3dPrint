@@ -73,9 +73,26 @@ def render_inputs(force=False):
         args=[str(exe),'--hardwarnings','--export-format','binstl']
         if mode:args+=['-D',f'view_mode="{mode}"']
         args+=['-o',str(target),str(source)]
-        with (WORK/(target.stem+'-render.log')).open('w') as log:
+        log_path=WORK/(target.stem+'-render.log')
+        with log_path.open('w',encoding='utf8') as log:
             p=subprocess.run(args,stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW)
-        assert p.returncode==0
+        message=log_path.read_text(encoding='utf8')
+        assert p.returncode==0 and not re.search(r'(?im)^\s*(ERROR|WARNING):',message),(p.returncode,message)
+    # OpenSCAD 2021.01 can report a CGAL preview error yet return exit code 0.
+    # F6 export alone therefore does not qualify the interactive F5 CAD path.
+    preview=WORK/'cad-preview.png';record=WORK/'cad-preview-check.json'
+    source=OUT/'Bucket.scad'
+    if force or not preview.exists() or not record.exists() or json.loads(record.read_text())['cad_sha256']!=sha(source):
+        log_path=WORK/'cad-preview.log'
+        args=[str(exe),'--hardwarnings','--imgsize=1200,1000','--viewall','--autocenter',
+              '--projection=o','-o',str(preview),str(source)]
+        with log_path.open('w',encoding='utf8') as log:
+            p=subprocess.run(args,stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW)
+        message=log_path.read_text(encoding='utf8')
+        assert p.returncode==0 and not re.search(r'(?im)^\s*(ERROR|WARNING):',message),(p.returncode,message)
+        assert preview.exists() and preview.stat().st_size>0
+        jsave(record,{'cad_sha256':sha(source),'preview_exit':p.returncode,'log':message,
+                      'preview_png':str(preview)})
 
 def make_project(body,cfg):
     child=model();res=ET.SubElement(child,tag('resources'))
@@ -391,6 +408,7 @@ def main():
     cfg=json.loads((REF/'current-project-settings.json').read_text())
     report=build_project(cfg,FINAL,WORK/'production')
     report['project']=rel(FINAL)
+    report['cad_preview_check']=json.loads((WORK/'cad-preview-check.json').read_text())
     jsave(OUT/'validation.json',report)
     (OUT/'native-preview.png').write_bytes(package(FINAL)['Metadata/plate_1.png'])
 

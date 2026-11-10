@@ -56,6 +56,21 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **A2L CAD preview correction, 2026-11-10:** the user supplied OpenSCAD
+  2021.01's "mesh is not closed" error from the publication SCAD. Reproduce
+  the F5 failure separately from the successful F6 export. Remove intermediate
+  `render()` conversions around the wall intersections and resolve the entire
+  bucket/negative-logo Boolean with one final `render(convexity=20)`. This is
+  a CAD evaluation change only: the new native F6 export is byte-identical to
+  the saved STL. Preserve both SUNLU/Bambu STLs and projects byte-for-byte,
+  all dimensions, materials, settings and renderings. Update the source and
+  outside-Git publication SCAD/ZIP. Require a complete F5 preview and F6 render
+  with no logged errors/warnings, not merely zero process exit; OpenSCAD
+  returned zero even for the reproduced preview failure. The builder now
+  checks native logs and the F5 preview. Evidence is in the accessory's
+  `history/openscad-preview-validation.json` and `history/openscad-preview.png`.
+  Physical qualification is unchanged.
+
 - **Approved adjoining wall heights, 2026-11-10:** the user reported that the
   front and rear wall starts remained below the raised lip and requested that
   they come up higher. Raise both the triangular front's low endpoint and the

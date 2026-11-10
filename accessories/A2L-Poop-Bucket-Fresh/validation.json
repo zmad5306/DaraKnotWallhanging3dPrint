@@ -2221,5 +2221,14 @@
     "chute_tip_bottom_mm": 67.922,
     "chute_reach_mm": 22.296,
     "scope": "Raise only the chute and extend its supporting wall. Retain its slope/thickness, body, pillar fit, all saved settings, single gray filament, and clean publication names."
+  },
+  "cad_preview_validation": {
+    "report": "history/openscad-preview-validation.json",
+    "openscad_version": "2021.01",
+    "f5_preview_passed": true,
+    "f6_render_passed": true,
+    "export_byte_identical_to_saved_stl": true,
+    "stl_and_print_projects_unchanged": true,
+    "source_cad_sha256": "e7662bafb82e3bf3b2902b29d7ad33532236c0cfc778ad1cd98d45ef1df77bbd"
   }
 }

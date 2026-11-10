@@ -147,8 +147,7 @@ module xz_prism(points, y_start, y_length) {
 module triangular_front_wall() {
     // Follow the rounded wall profile, including both front corners.
     // The top slopes from full height at the back to the low printer-side wall.
-    // Resolve the thin intersection so the triangular face is visible in F5.
-    render(convexity=10) intersection() {
+    intersection() {
         linear_extrude(height=back_wall_height, convexity=10) wall_ring();
         xz_prism([
             [-eps,low_wall_height-eps],
@@ -182,7 +181,7 @@ module sloped_pillar_wall() {
     // Start at the low front shoulder and meet the inside of the tall rear
     // wall continuously, including the concave and convex corner curves.
     slope_end_y = body_length-wall_thickness-eps;
-    render(convexity=10) intersection() {
+    intersection() {
         linear_extrude(height=back_wall_height, convexity=10) wall_ring();
         translate([-eps,0,0])
             rotate([90,0,90])
@@ -274,8 +273,10 @@ module recessed_logo_cut() {
 }
 
 module finished_bucket() {
-    difference() {
-        render(convexity=20) bucket();
+    // Resolve the complete solid, including the recess, for the F5 preview.
+    // Keep intermediate surfaces in CGAL until the final closed body exists.
+    render(convexity=20) difference() {
+        bucket();
         if (logo_enabled) recessed_logo_cut();
     }
 }

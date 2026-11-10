@@ -56,6 +56,20 @@ except for the explicit existing solid regions below.
 
 ## Printer and project identity
 
+- **Approved recessed Bambu front logo, 2026-11-10:** the user requested the
+  Bambu mark recessed into the front like the sample project. Add a **0.6 mm
+  blind recess** using the existing Bambu vector mark at its former **32 mm
+  height, X55 center and Z40 bottom**. The 2 mm front wall retains **1.4 mm**
+  behind the mark. This supersedes the plain-front appearance only; retain one
+  gray filament, zero color changes and no purge tower. Preserve the complete
+  measured-height chute below, pillar fit, body, placement and all saved print
+  and material settings. Update the SUNLU CAD/STL/project in source control
+  and matching Bambu PLA Basic publication package outside Git, with clean
+  public names and new renderings. Independent SVG/solid comparison verifies
+  that the blind logo cut is the only geometry change and its backing is solid.
+  Require fresh native slices/reopens and zero cavity support extrusion.
+  Logo finish and full-bucket physical fit remain unobserved.
+
 - **Approved measured printer clearance, 2026-11-10:** the user measured the
   housing at **2.464 inches / 62.5856 mm**, requested transition clearance, and
   explicitly chose to raise the entire chute to **2.740 inches**, keeping its

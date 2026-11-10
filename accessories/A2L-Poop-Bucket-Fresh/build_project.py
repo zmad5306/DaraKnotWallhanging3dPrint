@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(__file__).resolve().parent
 REF=OUT/'reference'
-WORK=ROOT/'.work/a2l-bucket-measured-clearance-build'
+WORK=ROOT/'.work/a2l-bucket-recessed-logo-build'
 sys.path[:0]=[str(ROOT/'.work/python-libs'),str(ROOT/'scripts')]
 import numpy as np
 import trimesh
@@ -67,6 +67,7 @@ def render_inputs(force=False):
     """Recreate missing CAD inputs without needing historical local outputs."""
     exe=Path('C:/Program Files (x86)/OpenSCAD/openscad.exe')
     exports=[(REF/'accepted-r3.scad',WORK/'accepted-r3.stl',None),
+             (OUT/'history/measured-clearance-plain-front.scad',WORK/'prior-unmarked.stl',None),
              (OUT/'Bucket.scad',OUT/'Bucket.stl',None)]
     for source,target,mode in exports:
         if target.exists() and not force:continue
@@ -173,12 +174,58 @@ def support_audit(gc):
         'interior_support_bounds_mm':[v.tolist() for v in bounds] if inside else None,'examples':examples,
         'check':'Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm.'}
 
+def validate_recess(full):
+    """Check a blind cut against the preceding plain-front model and logo SVG."""
+    from shapely.ops import unary_union
+    original=trimesh.load(WORK/'prior-unmarked.stl',force='mesh')
+    before,after=solid(original),solid(full)
+    svg=ET.parse(REF/'bambu-mark.svg').getroot()
+    # Read the source's M/L/H/V path commands independently of the CAD polygons.
+    polygons=[]
+    for path in svg:
+        points=[];x=y=0.;tokens=re.findall(r'[MLHVZ]|-?\d+(?:\.\d+)?',path.get('d'))
+        i=0
+        while i<len(tokens):
+            op=tokens[i];i+=1
+            if op=='Z':break
+            if op in ('M','L'):x,y=map(float,tokens[i:i+2]);i+=2
+            elif op=='H':x=float(tokens[i]);i+=1
+            elif op=='V':y=float(tokens[i]);i+=1
+            else:raise ValueError(op)
+            points.append([55+(x-47)*32/122,40+(122-y)*32/122])
+        polygons.append(Polygon(points))
+    shape=unary_union(polygons)
+    def prism(depth,y_start):
+        pieces=[]
+        for poly in shape.geoms:
+            vertices=np.array(poly.exterior.coords[:-1])
+            assert len(vertices)==4 and abs(poly.area-poly.convex_hull.area)<1e-8
+            piece=trimesh.creation.extrude_triangulation(vertices,np.array([[0,1,2],[0,2,3]]),depth)
+            piece.apply_transform(np.array([[1,0,0,0],[0,0,1,y_start],[0,1,0,0],[0,0,0,1.]]))
+            pieces.append(piece)
+        return solid(trimesh.util.concatenate(pieces))
+    expected=prism(.6,0)
+    removed,added=before-after,after-before
+    error=vol_diff(removed,expected)
+    backing_missing=abs((prism(1.4,.6)-after).volume())
+    assert abs(added.volume())<.001
+    assert error<.02,error
+    assert backing_missing<.001,backing_missing
+    assert abs(removed.volume()-shape.area*.6)<.02
+    return original,{'style':'recessed, single color','height_mm':32,'center_x_mm':55,
+        'bottom_z_mm':40,'depth_mm':.6,'remaining_wall_mm':1.4,
+        'source':'reference/bambu-mark.svg','removed_volume_mm3':removed.volume(),
+        'independent_svg_cut_difference_mm3':error,'added_volume_mm3':added.volume(),
+        'missing_wall_backing_mm3':backing_missing,
+        'all_geometry_outside_logo_unchanged':True}
+
 def validate_geometry(full):
     from shapely.geometry import box
     assert full.is_volume and len(full.split())==1
     assert np.max(np.abs(full.bounds-np.array([[0,0,0],[132.296,255,160.804]])))<.0001
+    original,logo=validate_recess(full)
     accepted=trimesh.load(WORK/'accepted-r3.stl',force='mesh')
-    a,b=solid(accepted),solid(full)
+    a,b=solid(accepted),solid(original)
     domain=solid(trimesh.creation.box(bounds=[[103.999,7.999,54.39],[132.297,189.344,69.591]]))
     outside_change=abs(((a-b)-domain).volume())+abs(((b-a)-domain).volume())
     assert outside_change<.03, outside_change
@@ -198,7 +245,7 @@ def validate_geometry(full):
     return {'closed_single_body':True,'bounds_mm':full.bounds.tolist(),
             'outside_chute_change_from_accepted_body_mm3':outside_change,
             'reference_dimension_section_error_mm2':profile_error,
-            'logo_present':False,'front_surface_y_mm':0,
+            'logo_present':True,'logo':logo,'front_surface_y_mm':0,
             'pillar_fit_unchanged':True,'body_size_unchanged':True,
             'chute_wall_height_mm':63.6,'chute_tip_top_mm':69.59,
             'chute_tip_bottom_mm':67.922,'chute_reach_mm':22.296,
@@ -263,13 +310,13 @@ def build_project(cfg, destination, run_dir):
     for k in ['printer_model','printer_settings_id','nozzle_diameter','filament_settings_id','filament_colour',
               'filament_flow_ratio','filament_max_volumetric_speed','nozzle_temperature','textured_plate_temp']:
         locked[k]=cfg[k]
-    report={'date':'2026-11-10','revision':'measured-printer-clearance','project':str(destination),
+    report={'date':'2026-11-10','revision':'recessed-front-logo','project':str(destination),
             'sha256':sha(destination),'geometry':geometry,'saved_part_vertex_error_mm':mesh_difference,
             'saved_settings':settings,'native_slice':sliced_result,'native_reopen':reopen,
             'support_audit':sa,'reopen_support_audit':rsa,'bed_edge_clearance_mm':clearance,
             'gcode_md5':checksum,'color_changes':0,'prime_tower_extrusions':0,
             'locked_settings':locked,'protected_before':protected_before,'protected_after':protected_after,
-            'physical_status':'User measured printer housing height as 2.464 inches and approved raising the entire chute while preserving its slope. Digital geometry provides at least 1 mm clearance; physical printing and fit of this revision remain unobserved.'}
+            'physical_status':'Recessed single-color logo added at the user request. Measured 2.464-inch housing clearance and chute slope are unchanged. Physical printing, logo finish and fit remain unobserved.'}
     jsave(run_dir/'validation.json',report)
     print(destination.name,'native reopen passed',flush=True)
     return report

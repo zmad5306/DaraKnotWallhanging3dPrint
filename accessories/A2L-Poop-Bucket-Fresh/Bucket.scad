@@ -1,9 +1,17 @@
 // A2L Poop Bucket - parametric CAD.
 // Units: millimeters. Body uses no imported meshes or external libraries.
 // Printer interface dimensions are specified below.
+// Bambu mark polygons follow the Bambu Studio splash logo.
 
 /* [View] */
 view_mode = "Bucket"; // [Bucket,Footprint]
+
+/* [Front logo] */
+logo_enabled = true;
+logo_height = 32;
+logo_center_x = 55;
+logo_bottom_z = 40;
+logo_depth = 0.6;
 
 /* [Body] */
 body_width = 110;
@@ -225,5 +233,34 @@ assert(lower_shoulder_y-chute_pillar_setback > chute_front_setback,
 assert(chute_top_root_reach > -wall_thickness && chute_bottom_root_reach >= 0,
        "Chute must remain outside the collection cavity.");
 
+// Original 94 x 122 SVG coordinates; source Y points down.
+module bambu_mark_2d() {
+    union() {
+        polygon([[50.3856,45.5508],[50.3856,122],[94,122],[94,62.6627]]);
+        polygon([[50.3856,0],[50.3856,38.2419],[94,55.3884],[94,0]]);
+        polygon([[0,76.4838],[0,0],[43.6143,0],[43.6143,59.3373]]);
+        polygon([[0,122],[0,83.7927],[43.6143,66.6462],[43.6143,122]]);
+    }
+}
+
+// Cut inward from the front (negative Y), leaving a closed wall behind it.
+module recessed_logo_cut() {
+    translate([logo_center_x-94*logo_height/122/2,logo_depth,logo_bottom_z])
+        rotate([90,0,0])
+            linear_extrude(height=logo_depth+eps)
+                scale([logo_height/122,logo_height/122])
+                    translate([0,122]) mirror([0,1]) bambu_mark_2d();
+}
+
+module finished_bucket() {
+    difference() {
+        render(convexity=20) bucket();
+        if (logo_enabled) recessed_logo_cut();
+    }
+}
+
+assert(!logo_enabled || (logo_depth > 0 && logo_depth <= wall_thickness-1.2),
+       "Leave at least 1.2 mm of wall behind the recessed logo.");
+
 if (view_mode == "Footprint") color("gray") footprint();
-else color("#555555") bucket();
+else color("#555555") finished_bucket();

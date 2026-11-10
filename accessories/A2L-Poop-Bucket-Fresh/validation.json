@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
-  "revision": "measured-printer-clearance",
+  "revision": "recessed-front-logo",
   "project": "accessories/A2L-Poop-Bucket-Fresh/A2L-Poop-Bucket-SUNLU-PLA-Plus-2.0.3mf",
-  "sha256": "d63a8d878c6fb6965344fd2308e70c842ea454be2f0eb18f60193a5e3bac91f7",
+  "sha256": "ed238b849875cacf2a7b7d71ad0c4d2ffd32c682d47ff5feb0c6d90039509a46",
   "geometry": {
     "closed_single_body": true,
     "bounds_mm": [
@@ -19,7 +19,21 @@
     ],
     "outside_chute_change_from_accepted_body_mm3": 0.0,
     "reference_dimension_section_error_mm2": 0.00013496404727414714,
-    "logo_present": false,
+    "logo_present": true,
+    "logo": {
+      "style": "recessed, single color",
+      "height_mm": 32,
+      "center_x_mm": 55,
+      "bottom_z_mm": 40,
+      "depth_mm": 0.6,
+      "remaining_wall_mm": 1.4,
+      "source": "reference/bambu-mark.svg",
+      "removed_volume_mm3": 413.00280919343766,
+      "independent_svg_cut_difference_mm3": 0.0005757893862841053,
+      "added_volume_mm3": 0.0,
+      "missing_wall_backing_mm3": 0.0,
+      "all_geometry_outside_logo_unchanged": true
+    },
     "front_surface_y_mm": 0,
     "pillar_fit_unchanged": true,
     "body_size_unchanged": true,
@@ -33,36 +47,7 @@
     "minimum_vertical_clearance_mm": 1.0143908447265702,
     "chute_vertical_offset_mm": 5.574,
     "wall_height_in": 2.5039370078740157,
-    "tip_top_height_in": 2.7397637795275593,
-    "translated_original_chute_and_extended_wall_difference_mm3": 0.043376343128787985,
-    "translated_chute_section_errors": [
-      {
-        "y_mm": 8.001,
-        "distance_mm": 7.726318339718844e-06,
-        "area_mm2": 0.00023989230331102307
-      },
-      {
-        "y_mm": 50,
-        "distance_mm": 5.126953126932676e-06,
-        "area_mm2": 0.00023887489131688768
-      },
-      {
-        "y_mm": 100,
-        "distance_mm": 5.126953126932676e-06,
-        "area_mm2": 0.00023887489133639893
-      },
-      {
-        "y_mm": 150,
-        "distance_mm": 5.126953126932676e-06,
-        "area_mm2": 0.00023887489139623209
-      },
-      {
-        "y_mm": 189.342,
-        "distance_mm": 5.126953126932676e-06,
-        "area_mm2": 0.00023887489116544247
-      }
-    ],
-    "chute_slope_and_thickness_preserved": true
+    "tip_top_height_in": 2.7397637795275593
   },
   "saved_part_vertex_error_mm": 3.790886647219736e-06,
   "saved_settings": {
@@ -1330,38 +1315,38 @@
   "native_slice": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1047.12890625,
+    "peak_rss_mb": 1029.51171875,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
           "Bottom surface": 623.8240356445312,
-          "Custom": 406.7354431152344,
+          "Custom": 406.73614501953125,
           "Flush": 11.0,
-          "Gap infill": 2034.391845703125,
-          "Inner wall": 4305.9716796875,
-          "Internal solid infill": 2512.99951171875,
-          "Outer wall": 4856.99365234375,
-          "Overhang wall": 724.6375122070312,
-          "Support": 4471.82763671875,
-          "Support interface": 392.7357482910156,
-          "Top surface": 924.264404296875,
-          "Travel": 3426.6552734375,
-          "Undefined": 3422.300537109375
+          "Gap infill": 2053.1357421875,
+          "Inner wall": 4322.67724609375,
+          "Internal solid infill": 2512.996337890625,
+          "Outer wall": 4920.1396484375,
+          "Overhang wall": 726.3024291992188,
+          "Support": 4472.81201171875,
+          "Support interface": 393.4645080566406,
+          "Top surface": 924.2576293945312,
+          "Travel": 3703.851318359375,
+          "Undefined": 3699.49658203125
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 292.8307800292969,
-            "total_used_g": 292.8307800292969
+            "main_used_g": 292.317138671875,
+            "total_used_g": 292.3171691894531
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 24283.58203125,
+        "main_predication": 24663.91796875,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -1375,49 +1360,49 @@
             },
             "id": 5,
             "name": "A2L Poop Bucket",
-            "triangle_count": 5316
+            "triangle_count": 5380
           }
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 78,
-          "export_gcode_time": 2843,
+          "detect_overhangs_time": 70,
+          "export_gcode_time": 2909,
           "flush_plan_time": 0,
-          "generate_support_material_time": 3188,
-          "infill_generate_time": 48,
-          "infill_time": 161,
+          "generate_support_material_time": 2976,
+          "infill_generate_time": 46,
+          "infill_time": 156,
           "ironing_time": 0,
-          "make_perimeters_time": 712,
+          "make_perimeters_time": 678,
           "multifilament_segment_2d_time": 0,
-          "other_slice_time": 1,
-          "prepare_infill_time": 113,
+          "other_slice_time": 2,
+          "prepare_infill_time": 110,
           "region_split_time": 1,
           "skirt_brim_time": 3,
-          "slice_layers_time": 285,
-          "sliced_time": 7032,
-          "sliced_time_with_cache": 2846,
-          "support_detect_time": 153,
-          "support_interface_time": 13,
+          "slice_layers_time": 281,
+          "sliced_time": 6835,
+          "sliced_time_with_cache": 2912,
+          "support_detect_time": 155,
+          "support_interface_time": 11,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 813,
-          "support_tree_generate_time": 2199,
-          "toolpath_time": 37,
-          "wall_time": 426,
+          "support_toolpath_time": 796,
+          "support_tree_generate_time": 2002,
+          "toolpath_time": 35,
+          "wall_time": 396,
           "wipe_tower_time": 5
         },
-        "total_predication": 24707.962890625,
-        "triangle_count": 5316,
+        "total_predication": 25088.298828125,
+        "triangle_count": 5380,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1409,
+      "export_3mf_time": 1433,
       "export_slicedata_time": 0,
-      "export_time": 3986,
-      "import_time": 24,
+      "export_time": 3914,
+      "import_time": 25,
       "load_slicedata_time": 0,
-      "prepare_time": 30
+      "prepare_time": 31
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -1431,38 +1416,38 @@
   "native_reopen": {
     "error_string": "Success.",
     "layer_height": 0.20000000298023224,
-    "peak_rss_mb": 1018.40234375,
+    "peak_rss_mb": 1023.81640625,
     "plate_index": 1,
     "return_code": 0,
     "sliced_plates": [
       {
         "feature_type_times": {
           "Bottom surface": 623.8240356445312,
-          "Custom": 406.7354431152344,
+          "Custom": 406.73614501953125,
           "Flush": 11.0,
-          "Gap infill": 2034.391845703125,
-          "Inner wall": 4305.9716796875,
-          "Internal solid infill": 2512.99951171875,
-          "Outer wall": 4856.99365234375,
-          "Overhang wall": 724.6375122070312,
-          "Support": 4471.82763671875,
-          "Support interface": 392.7357482910156,
-          "Top surface": 924.264404296875,
-          "Travel": 3426.6552734375,
-          "Undefined": 3422.300537109375
+          "Gap infill": 2053.1357421875,
+          "Inner wall": 4322.67724609375,
+          "Internal solid infill": 2512.996337890625,
+          "Outer wall": 4920.1396484375,
+          "Overhang wall": 726.3024291992188,
+          "Support": 4472.81201171875,
+          "Support interface": 393.4645080566406,
+          "Top surface": 924.2576293945312,
+          "Travel": 3703.851318359375,
+          "Undefined": 3699.49658203125
         },
         "filament_change_times": 0,
         "filaments": [
           {
             "filament_id": "GFSNL04",
             "id": 1,
-            "main_used_g": 292.8307800292969,
-            "total_used_g": 292.8307800292969
+            "main_used_g": 292.317138671875,
+            "total_used_g": 292.3171691894531
           }
         ],
         "id": 1,
         "layer_filament_change": 0,
-        "main_predication": 24283.58203125,
+        "main_predication": 24663.91796875,
         "obj_cached_cnt": 0,
         "objects": [
           {
@@ -1476,49 +1461,49 @@
             },
             "id": 5,
             "name": "A2L Poop Bucket",
-            "triangle_count": 5316
+            "triangle_count": 5380
           }
         ],
         "times": {
           "conflict_check_time": 0,
-          "detect_overhangs_time": 61,
-          "export_gcode_time": 2841,
+          "detect_overhangs_time": 68,
+          "export_gcode_time": 3045,
           "flush_plan_time": 0,
-          "generate_support_material_time": 2920,
-          "infill_generate_time": 45,
-          "infill_time": 142,
+          "generate_support_material_time": 3147,
+          "infill_generate_time": 47,
+          "infill_time": 156,
           "ironing_time": 0,
-          "make_perimeters_time": 673,
+          "make_perimeters_time": 662,
           "multifilament_segment_2d_time": 0,
           "other_slice_time": 2,
-          "prepare_infill_time": 97,
-          "region_split_time": 0,
-          "skirt_brim_time": 2,
-          "slice_layers_time": 291,
-          "sliced_time": 6679,
-          "sliced_time_with_cache": 2843,
-          "support_detect_time": 138,
-          "support_interface_time": 11,
+          "prepare_infill_time": 109,
+          "region_split_time": 1,
+          "skirt_brim_time": 3,
+          "slice_layers_time": 283,
+          "sliced_time": 7126,
+          "sliced_time_with_cache": 3048,
+          "support_detect_time": 157,
+          "support_interface_time": 13,
           "support_normal_generate_time": 0,
-          "support_toolpath_time": 809,
-          "support_tree_generate_time": 1951,
-          "toolpath_time": 32,
-          "wall_time": 382,
-          "wipe_tower_time": 5
+          "support_toolpath_time": 851,
+          "support_tree_generate_time": 2115,
+          "toolpath_time": 36,
+          "wall_time": 378,
+          "wipe_tower_time": 6
         },
-        "total_predication": 24707.962890625,
-        "triangle_count": 5316,
+        "total_predication": 25088.298828125,
+        "triangle_count": 5380,
         "warning_message": ""
       }
     ],
     "sparse_infill_density": 8.0,
     "times": {
-      "export_3mf_time": 1308,
+      "export_3mf_time": 1281,
       "export_slicedata_time": 0,
-      "export_time": 1311,
-      "import_time": 139,
+      "export_time": 1285,
+      "import_time": 140,
       "load_slicedata_time": 0,
-      "prepare_time": 143
+      "prepare_time": 147
     },
     "upward_compatible_machine": [
       "Bambu Lab H2S 0.4 nozzle",
@@ -1530,21 +1515,21 @@
     ]
   },
   "support_audit": {
-    "support_extrusions_checked": 475421,
+    "support_extrusions_checked": 475624,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "reopen_support_audit": {
-    "support_extrusions_checked": 475421,
+    "support_extrusions_checked": 475624,
     "support_extrusions_intersecting_collection_cavity": 0,
     "interior_support_bounds_mm": null,
     "examples": [],
     "check": "Every support/interface/transition extrusion above the floor; bead half-width included; arcs sampled at <=0.1 mm."
   },
   "bed_edge_clearance_mm": 32.30000000000001,
-  "gcode_md5": "8c344d26190af8ce94032f73039c2ad0",
+  "gcode_md5": "9205d7a0dd133c1d9bdfba84f6c14da0",
   "color_changes": 0,
   "prime_tower_extrusions": 0,
   "locked_settings": {
@@ -1610,8 +1595,8 @@
     "accessories/A2L-Poop-Bucket/Bucket.scad": "48c9a270c956a0c148bb951f0c9ee4131df65427060102c4117be526c81e4f43",
     "accessories/A2L-Poop-Bucket/Bucket.stl": "70f41fabd130447d57bb12b00b440d720a8c448dcf30907bdddbd16662263381"
   },
-  "physical_status": "User measured printer housing height as 2.464 inches and approved raising the entire chute while preserving its slope. Digital geometry provides at least 1 mm clearance; physical printing and fit of this revision remain unobserved.",
-  "previous_project_sha256": "02591cb5e5c0f15810a83bd0668c118df6c897fbe798c0738196f09b231c2fe0",
+  "physical_status": "Recessed single-color logo added at the user request. Measured 2.464-inch housing clearance and chute slope are unchanged. Physical printing, logo finish and fit remain unobserved.",
+  "previous_project_sha256": "d63a8d878c6fb6965344fd2308e70c842ea454be2f0eb18f60193a5e3bac91f7",
   "settings_changed": {},
   "measured_printer_clearance": {
     "date": "2026-11-10",
